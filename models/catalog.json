@@ -1,0 +1,668 @@
+{
+  "schema": "iea-model-catalog-v1",
+  "changed_on": "2026-11-05",
+  "current": "from-sft-standard/sft-calibrated/seed-02",
+  "lineage": {
+    "qwen2.5-vl-7b-instruct": [
+      "from-base/sft-standard",
+      "from-base/sft-resampled",
+      "from-base/sft-functional/seed-01"
+    ],
+    "from-base/sft-standard": [
+      "from-sft-standard/sft-continued",
+      "from-sft-standard/grpo-l1",
+      "from-sft-standard/sft-calibrated/seed-01",
+      "from-sft-standard/sft-calibrated/seed-02",
+      "from-sft-standard/sft-calibrated/seed-03"
+    ],
+    "from-sft-standard/sft-calibrated/seed-02": [
+      "from-sft-calibrated/sft-functional/seed-01",
+      "from-sft-calibrated/sft-functional/seed-02"
+    ]
+  },
+  "models": [
+    {
+      "schema": "iea-model-info-v1",
+      "id": "from-base/sft-standard",
+      "display_name": "标准监督训练",
+      "legacy_id": "A",
+      "canonical_path": "models/from-base/sft-standard",
+      "kind": "lora_adapter",
+      "base_model": {
+        "id": "qwen2.5-vl-7b-instruct",
+        "upstream": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+        "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct"
+      },
+      "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306",
+      "adapter_config_sha256": "e7302b266bba50dd679a7e20869dffa837cb1b23e166fa1392edba39c4a417b1",
+      "training_seed": 20261031,
+      "selected_for_current": false,
+      "evaluation_records": [
+        "experiments/quality-v2-20261103/metadata/final-models-lock.json",
+        "experiments/quality-v2-20261103/metadata/final-analysis-summary.json",
+        "experiments/quality-v2-20261103/review/visual-review-summary.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      },
+      "name_changed_on": "2026-11-04",
+      "parent_model": {
+        "id": "qwen2.5-vl-7b-instruct",
+        "legacy_id": "Base",
+        "weight_shards_sha256": {
+          "model-00001-of-00005.safetensors": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+          "model-00002-of-00005.safetensors": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+          "model-00003-of-00005.safetensors": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+          "model-00004-of-00005.safetensors": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+          "model-00005-of-00005.safetensors": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67"
+        }
+      },
+      "training": {
+        "method": "QLoRA supervised fine-tuning",
+        "rows_or_draws": 3000,
+        "optimizer_steps": 376,
+        "epochs": 2,
+        "learning_rate": 0.0001,
+        "target_format": "explanation and fenced parameter JSON",
+        "started_at": "2026-10-31T09:35:31.539466+00:00",
+        "completion_confirmed_at": "2026-10-31T10:35:40.633288+00:00",
+        "configuration": "configs/qlora-stage1-A-3k.yaml",
+        "sampling": "original training distribution",
+        "source_groups": 1078
+      },
+      "export": {
+        "method": "validation-selected checkpoint",
+        "checkpoint_step": 376
+      }
+    },
+    {
+      "schema": "iea-model-info-v1",
+      "id": "from-base/sft-resampled",
+      "display_name": "重采样监督训练",
+      "legacy_id": "B",
+      "canonical_path": "models/from-base/sft-resampled",
+      "kind": "lora_adapter",
+      "base_model": {
+        "id": "qwen2.5-vl-7b-instruct",
+        "upstream": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+        "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct"
+      },
+      "adapter_sha256": "1e8752c182dc40b86e5f974477b0ba83e3a674a5669fe9fd1fa8d2bc49082304",
+      "adapter_config_sha256": "35bab7526c80621359a288c274ccb21c9e19e554837e75b3a9a3ce4f4f60ea97",
+      "training_seed": 20261031,
+      "selected_for_current": false,
+      "evaluation_records": [
+        "experiments/quality-v2-20261103/metadata/final-models-lock.json",
+        "experiments/quality-v2-20261103/metadata/final-analysis-summary.json",
+        "experiments/quality-v2-20261103/review/visual-review-summary.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      },
+      "name_changed_on": "2026-11-04",
+      "parent_model": {
+        "id": "qwen2.5-vl-7b-instruct",
+        "legacy_id": "Base",
+        "weight_shards_sha256": {
+          "model-00001-of-00005.safetensors": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+          "model-00002-of-00005.safetensors": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+          "model-00003-of-00005.safetensors": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+          "model-00004-of-00005.safetensors": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+          "model-00005-of-00005.safetensors": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67"
+        }
+      },
+      "training": {
+        "method": "QLoRA supervised fine-tuning",
+        "rows_or_draws": 3000,
+        "optimizer_steps": 376,
+        "epochs": 2,
+        "learning_rate": 0.0001,
+        "target_format": "explanation and fenced parameter JSON",
+        "started_at": "2026-10-31T10:42:42.296291+00:00",
+        "completion_confirmed_at": "2026-10-31T11:42:14.400528+00:00",
+        "configuration": "configs/qlora-stage1-B-3k.yaml",
+        "sampling": "exposure/sharpness weighted resampling with replacement",
+        "source_groups": 901
+      },
+      "export": {
+        "method": "validation-selected checkpoint",
+        "checkpoint_step": 376
+      }
+    },
+    {
+      "schema": "iea-model-info-v1",
+      "id": "from-sft-standard/sft-continued",
+      "display_name": "继续监督训练",
+      "legacy_id": "SFT",
+      "canonical_path": "models/from-sft-standard/sft-continued",
+      "kind": "lora_adapter",
+      "base_model": {
+        "id": "qwen2.5-vl-7b-instruct",
+        "upstream": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+        "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct"
+      },
+      "adapter_sha256": "167cc7f7aed2f87e01fd602e425fb2d66777f8a8f807e5509f2db69a77d3d78a",
+      "adapter_config_sha256": "480492e966f3fcff02af97235afd592fa490a806dce44c7e26f7cc3d72c56bf0",
+      "training_seed": 20261101,
+      "selected_for_current": false,
+      "evaluation_records": [
+        "experiments/quality-v2-20261103/metadata/final-models-lock.json",
+        "experiments/quality-v2-20261103/metadata/final-analysis-summary.json",
+        "experiments/quality-v2-20261103/review/visual-review-summary.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      },
+      "name_changed_on": "2026-11-04",
+      "parent_model": {
+        "id": "from-base/sft-standard",
+        "legacy_id": "A",
+        "canonical_path": "models/from-base/sft-standard",
+        "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306"
+      },
+      "training": {
+        "method": "continued supervised fine-tuning",
+        "rows": 512,
+        "source_groups": 414,
+        "optimizer_steps": 128,
+        "learning_rate": 1e-06,
+        "dataset_server_path": "/mnt/sdc/zhc/IEA/data/stage2/stage2-A-edit-grpo-v1/train.json",
+        "dataset_sha256": "de565c842980de3a1c0f66154cec602be42288f5574b35ae5f7d5d41e9ced5fc",
+        "evidence": "experiments/stage2/metadata/data-manifest.json"
+      },
+      "export": {
+        "method": "final checkpoint",
+        "checkpoint_step": 128
+      }
+    },
+    {
+      "schema": "iea-model-info-v1",
+      "id": "from-sft-standard/grpo-l1",
+      "display_name": "L1 奖励强化学习",
+      "legacy_id": "GRPO",
+      "canonical_path": "models/from-sft-standard/grpo-l1",
+      "kind": "lora_adapter",
+      "base_model": {
+        "id": "qwen2.5-vl-7b-instruct",
+        "upstream": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+        "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct"
+      },
+      "adapter_sha256": "148c039763698694f30fe78efa63f71572a4c84d092374f222a4b19284f533d4",
+      "adapter_config_sha256": "ba186bf52e4aef3cf2459ab8457a77e66f54962eab8c7b27602810a7fc29cc2f",
+      "training_seed": 20261101,
+      "selected_for_current": false,
+      "evaluation_records": [
+        "experiments/quality-v2-20261103/metadata/final-models-lock.json",
+        "experiments/quality-v2-20261103/metadata/final-analysis-summary.json",
+        "experiments/quality-v2-20261103/review/visual-review-summary.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      },
+      "name_changed_on": "2026-11-04",
+      "parent_model": {
+        "id": "from-base/sft-standard",
+        "legacy_id": "A",
+        "canonical_path": "models/from-base/sft-standard",
+        "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306"
+      },
+      "training": {
+        "method": "GRPO",
+        "rows": 512,
+        "source_groups": 414,
+        "optimizer_steps": 128,
+        "learning_rate": 1e-06,
+        "dataset_server_path": "/mnt/sdc/zhc/IEA/data/stage2/stage2-A-edit-grpo-v1/train.json",
+        "dataset_sha256": "de565c842980de3a1c0f66154cec602be42288f5574b35ae5f7d5d41e9ced5fc",
+        "evidence": "experiments/stage2/metadata/data-manifest.json",
+        "reward": "historical simplified pixel-L1 improvement reward",
+        "candidates_per_prompt": 4
+      },
+      "export": {
+        "method": "validation-selected checkpoint",
+        "checkpoint_step": 128
+      }
+    },
+    {
+      "schema": "iea-model-info-v1",
+      "id": "from-sft-standard/sft-calibrated/seed-01",
+      "display_name": "校准监督训练·复现1",
+      "legacy_id": "Seed20261103",
+      "canonical_path": "models/from-sft-standard/sft-calibrated/seed-01",
+      "kind": "lora_adapter",
+      "base_model": {
+        "id": "qwen2.5-vl-7b-instruct",
+        "upstream": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+        "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct"
+      },
+      "adapter_sha256": "7bde70bf58b75eda1baa6e2b8ac0d529c23db3fdfd00bfc7f11fd9ecb589f041",
+      "adapter_config_sha256": "480492e966f3fcff02af97235afd592fa490a806dce44c7e26f7cc3d72c56bf0",
+      "training_seed": 20261103,
+      "selected_for_current": false,
+      "evaluation_records": [
+        "experiments/quality-v2-20261103/metadata/final-models-lock.json",
+        "experiments/quality-v2-20261103/metadata/final-analysis-summary.json",
+        "experiments/quality-v2-20261103/review/visual-review-summary.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      },
+      "name_changed_on": "2026-11-04",
+      "parent_model": {
+        "id": "from-base/sft-standard",
+        "legacy_id": "A",
+        "canonical_path": "models/from-base/sft-standard",
+        "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306"
+      },
+      "training": {
+        "method": "continued QLoRA SFT on calibrated labels; JSON-only supervision",
+        "rows": 3000,
+        "source_groups": 1078,
+        "optimizer_steps": 1024,
+        "sample_exposures": 4096,
+        "learning_rate": 0.0001,
+        "dataset": "data/training/quality-v2-20261103/train3k-contrast-calibrated.json",
+        "dataset_sha256": "d1dc31ae91f583e1d672ba047d390723d3b1ce6494ea88f802bb67356a226a19",
+        "evidence": "experiments/quality-v2-20261103/metadata/development-training-lock-3k-v2.json",
+        "timestamp_note": "Exact run times, when recorded, remain in the historical run logs; seed values are not dates."
+      },
+      "export": {
+        "method": "LoRA A/B tensor averaging within one training trajectory",
+        "checkpoint_steps": [
+          512,
+          1024
+        ],
+        "weights": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "schema": "iea-model-info-v1",
+      "id": "from-sft-standard/sft-calibrated/seed-02",
+      "display_name": "校准监督训练·复现2",
+      "legacy_id": "Seed20261104",
+      "canonical_path": "models/from-sft-standard/sft-calibrated/seed-02",
+      "kind": "lora_adapter",
+      "base_model": {
+        "id": "qwen2.5-vl-7b-instruct",
+        "upstream": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+        "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct"
+      },
+      "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884",
+      "adapter_config_sha256": "ba186bf52e4aef3cf2459ab8457a77e66f54962eab8c7b27602810a7fc29cc2f",
+      "training_seed": 20261104,
+      "selected_for_current": true,
+      "evaluation_records": [
+        "experiments/quality-v2-20261103/metadata/final-models-lock.json",
+        "experiments/quality-v2-20261103/metadata/final-analysis-summary.json",
+        "experiments/quality-v2-20261103/review/visual-review-summary.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      },
+      "name_changed_on": "2026-11-04",
+      "parent_model": {
+        "id": "from-base/sft-standard",
+        "legacy_id": "A",
+        "canonical_path": "models/from-base/sft-standard",
+        "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306"
+      },
+      "training": {
+        "method": "continued QLoRA SFT on calibrated labels; JSON-only supervision",
+        "rows": 3000,
+        "source_groups": 1078,
+        "optimizer_steps": 1024,
+        "sample_exposures": 4096,
+        "learning_rate": 0.0001,
+        "dataset": "data/training/quality-v2-20261103/train3k-contrast-calibrated.json",
+        "dataset_sha256": "d1dc31ae91f583e1d672ba047d390723d3b1ce6494ea88f802bb67356a226a19",
+        "evidence": "experiments/quality-v2-20261103/metadata/development-training-lock-3k-v2.json",
+        "timestamp_note": "Exact run times, when recorded, remain in the historical run logs; seed values are not dates."
+      },
+      "export": {
+        "method": "LoRA A/B tensor averaging within one training trajectory",
+        "checkpoint_steps": [
+          512,
+          1024
+        ],
+        "weights": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "schema": "iea-model-info-v1",
+      "id": "from-sft-standard/sft-calibrated/seed-03",
+      "display_name": "校准监督训练·复现3",
+      "legacy_id": "Seed20261105",
+      "canonical_path": "models/from-sft-standard/sft-calibrated/seed-03",
+      "kind": "lora_adapter",
+      "base_model": {
+        "id": "qwen2.5-vl-7b-instruct",
+        "upstream": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+        "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct"
+      },
+      "adapter_sha256": "8f4317857ae43f4fe449683ca6a8ec3127b77e4a674986713a824218da9b8817",
+      "adapter_config_sha256": "480492e966f3fcff02af97235afd592fa490a806dce44c7e26f7cc3d72c56bf0",
+      "training_seed": 20261105,
+      "selected_for_current": false,
+      "evaluation_records": [
+        "experiments/quality-v2-20261103/metadata/final-models-lock.json",
+        "experiments/quality-v2-20261103/metadata/final-analysis-summary.json",
+        "experiments/quality-v2-20261103/review/visual-review-summary.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      },
+      "name_changed_on": "2026-11-04",
+      "parent_model": {
+        "id": "from-base/sft-standard",
+        "legacy_id": "A",
+        "canonical_path": "models/from-base/sft-standard",
+        "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306"
+      },
+      "training": {
+        "method": "continued QLoRA SFT on calibrated labels; JSON-only supervision",
+        "rows": 3000,
+        "source_groups": 1078,
+        "optimizer_steps": 1024,
+        "sample_exposures": 4096,
+        "learning_rate": 0.0001,
+        "dataset": "data/training/quality-v2-20261103/train3k-contrast-calibrated.json",
+        "dataset_sha256": "d1dc31ae91f583e1d672ba047d390723d3b1ce6494ea88f802bb67356a226a19",
+        "evidence": "experiments/quality-v2-20261103/metadata/development-training-lock-3k-v2.json",
+        "timestamp_note": "Exact run times, when recorded, remain in the historical run logs; seed values are not dates."
+      },
+      "export": {
+        "method": "LoRA A/B tensor averaging within one training trajectory",
+        "checkpoint_steps": [
+          512,
+          1024
+        ],
+        "weights": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "schema": "iea-model-info-v1",
+      "id": "from-base/sft-functional/seed-01",
+      "trial_id": "functional-base-20261104",
+      "canonical_path": "models/from-base/sft-functional/seed-01",
+      "kind": "lora_adapter",
+      "base_model": {
+        "id": "qwen2.5-vl-7b-instruct",
+        "upstream": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+        "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct"
+      },
+      "adapter_sha256": "e78e8b9c06fb2d097a849685148e2065d1dbbcdd56b7cf5cf1fa15a5b3a2b7bf",
+      "adapter_config_sha256": "ba186bf52e4aef3cf2459ab8457a77e66f54962eab8c7b27602810a7fc29cc2f",
+      "training_seed": 20261104,
+      "parent_model": {
+        "id": "qwen2.5-vl-7b-instruct"
+      },
+      "training": {
+        "dataset": "data/training/functional-v1-20261104/train-accepted.json",
+        "dataset_sha256": "d460d9b058f1fede3ff90b10bdb28e14df06fc9aa1ab628774f45fa366a387a4",
+        "semantic_cases": 220,
+        "source_groups": 160,
+        "bilingual_records": 440,
+        "method": "NF4 QLoRA, language q/v, rank 8 alpha 16, effective batch 4, learning rate 1e-4, four epochs",
+        "selected_epoch": 3,
+        "selected_step": 330,
+        "full_run": "experiments/functional-v1-20261104/runs/base-seed-20261104"
+      },
+      "selection": {
+        "development_only": true,
+        "uses_L1": false,
+        "rule": "Completion in both languages with acceptable quality; fewer severe damage cases, paired preference, earlier checkpoint.",
+        "replication_same_epoch": false
+      },
+      "evaluation_id": "base-e3",
+      "source_checkpoint": "experiments/functional-v1-20261104/runs/base-seed-20261104/checkpoint-330",
+      "selected_for_functional_trial": false,
+      "human_review": false,
+      "status": "Experimental global editor; pilot complete, high practical usefulness not achieved",
+      "evaluation_records": [
+        "experiments/functional-v1-20261104/results.json",
+        "experiments/functional-v1-20261104/REPORT.md"
+      ]
+    },
+    {
+      "schema": "iea-model-info-v1",
+      "id": "from-sft-calibrated/sft-functional/seed-01",
+      "trial_id": "functional-current-20261104",
+      "canonical_path": "models/from-sft-calibrated/sft-functional/seed-01",
+      "kind": "lora_adapter",
+      "base_model": {
+        "id": "qwen2.5-vl-7b-instruct",
+        "upstream": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+        "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct"
+      },
+      "adapter_sha256": "54161bd9c9f2e3aa518572be6cf1dad81f8bebe33d92d31107d64d1f3c4435b0",
+      "adapter_config_sha256": "480492e966f3fcff02af97235afd592fa490a806dce44c7e26f7cc3d72c56bf0",
+      "training_seed": 20261104,
+      "parent_model": {
+        "id": "from-sft-standard/sft-calibrated/seed-02",
+        "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884"
+      },
+      "training": {
+        "dataset": "data/training/functional-v1-20261104/train-accepted.json",
+        "dataset_sha256": "d460d9b058f1fede3ff90b10bdb28e14df06fc9aa1ab628774f45fa366a387a4",
+        "semantic_cases": 220,
+        "source_groups": 160,
+        "bilingual_records": 440,
+        "method": "NF4 QLoRA, language q/v, rank 8 alpha 16, effective batch 4, learning rate 1e-4, four epochs",
+        "selected_epoch": 1,
+        "selected_step": 110,
+        "full_run": "experiments/functional-v1-20261104/runs/current-seed-20261104"
+      },
+      "selection": {
+        "development_only": true,
+        "uses_L1": false,
+        "rule": "Completion in both languages with acceptable quality; fewer severe damage cases, paired preference, earlier checkpoint.",
+        "replication_same_epoch": false
+      },
+      "evaluation_id": "current-e1",
+      "source_checkpoint": "experiments/functional-v1-20261104/runs/current-seed-20261104/checkpoint-110",
+      "selected_for_functional_trial": true,
+      "human_review": false,
+      "status": "Experimental global editor; pilot complete, high practical usefulness not achieved",
+      "evaluation_records": [
+        "experiments/functional-v1-20261104/results.json",
+        "experiments/functional-v1-20261104/REPORT.md"
+      ]
+    },
+    {
+      "schema": "iea-model-info-v1",
+      "id": "from-sft-calibrated/sft-functional/seed-02",
+      "trial_id": "functional-current-20261105",
+      "canonical_path": "models/from-sft-calibrated/sft-functional/seed-02",
+      "kind": "lora_adapter",
+      "base_model": {
+        "id": "qwen2.5-vl-7b-instruct",
+        "upstream": "Qwen/Qwen2.5-VL-7B-Instruct",
+        "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+        "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct"
+      },
+      "adapter_sha256": "40e9070d8c5808f689de99a44aae5d0fd9aa7df9f909018a08cb90ca99836fb6",
+      "adapter_config_sha256": "480492e966f3fcff02af97235afd592fa490a806dce44c7e26f7cc3d72c56bf0",
+      "training_seed": 20261105,
+      "parent_model": {
+        "id": "from-sft-standard/sft-calibrated/seed-02",
+        "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884"
+      },
+      "training": {
+        "dataset": "data/training/functional-v1-20261104/train-accepted.json",
+        "dataset_sha256": "d460d9b058f1fede3ff90b10bdb28e14df06fc9aa1ab628774f45fa366a387a4",
+        "semantic_cases": 220,
+        "source_groups": 160,
+        "bilingual_records": 440,
+        "method": "NF4 QLoRA, language q/v, rank 8 alpha 16, effective batch 4, learning rate 1e-4, four epochs",
+        "selected_epoch": 1,
+        "selected_step": 110,
+        "full_run": "experiments/functional-v1-20261104/runs/current-seed-20261105"
+      },
+      "selection": {
+        "development_only": true,
+        "uses_L1": false,
+        "rule": "Completion in both languages with acceptable quality; fewer severe damage cases, paired preference, earlier checkpoint.",
+        "replication_same_epoch": true
+      },
+      "evaluation_id": "replication-selected",
+      "source_checkpoint": "experiments/functional-v1-20261104/runs/current-seed-20261105/checkpoint-110",
+      "selected_for_functional_trial": false,
+      "human_review": false,
+      "status": "Experimental global editor; pilot complete, high practical usefulness not achieved",
+      "evaluation_records": [
+        "experiments/functional-v1-20261104/results.json",
+        "experiments/functional-v1-20261104/REPORT.md"
+      ]
+    },
+    {
+      "trial_id": "functional-v2-curriculum-20261106",
+      "name": "functional-v2-curriculum-20261106",
+      "canonical_path": "models/from-functional-v1/sft-curriculum/seed-01",
+      "parent": "models/from-sft-calibrated/sft-functional/seed-01",
+      "adapter_sha256": "4048de5078f4eda6b19621a2968718be50f4cd5ad35fd17dbf23614a885edb71",
+      "dataset_sha256": "7a1392009df397b13e7f2bcedb8f9e0d3c7c8ef38b77846d3d078cccb2e6a472",
+      "selected_epoch": 3,
+      "status": "experimental_not_promoted_acceptance_closed",
+      "metadata": "models/from-functional-v1/sft-curriculum/seed-01/metadata.json"
+    },
+    {
+      "trial_id": "functional-v2-control-20261106",
+      "name": "functional-v2-control-20261106",
+      "canonical_path": "models/from-functional-v1/sft-control/seed-01",
+      "parent": "models/from-sft-calibrated/sft-functional/seed-01",
+      "adapter_sha256": "50b9e3dee814e9eacf33cd0d7db468454034de876de21145f3aa17b8db93ba47",
+      "dataset_sha256": "dd76ef6dbd7e0ff30959f8d4595263fa1552749dd2dce943160392303b49d1c1",
+      "selected_epoch": 2,
+      "status": "experimental_not_promoted_acceptance_closed",
+      "metadata": "models/from-functional-v1/sft-control/seed-01/metadata.json"
+    },
+    {
+      "trial_id": "functional-v3-dpo-20261107",
+      "name": "functional-v3-dpo-20261107",
+      "canonical_path": "models/from-functional-v2/dpo-correction/seed-01",
+      "parent": "models/from-functional-v1/sft-curriculum/seed-01",
+      "adapter_sha256": "8cf6f53dda8f823b12677a01664675d1ee27658167e4704c3481eecf1e42c06b",
+      "dataset_sha256": "1d153b9490099992b49c5999aaae8a361ecf7a93b1a455c4331a3af8a51ce1bc",
+      "selected_epoch": 1,
+      "status": "diagnostic_only_pilot_failed_acceptance_closed",
+      "metadata": "models/from-functional-v2/dpo-correction/seed-01/metadata.json"
+    },
+    {
+      "trial_id": "functional-v3-sft-20261107",
+      "name": "functional-v3-sft-20261107",
+      "canonical_path": "models/from-functional-v2/sft-correction/seed-01",
+      "parent": "models/from-functional-v1/sft-curriculum/seed-01",
+      "adapter_sha256": "184001678373f8a625d40e4ee5c830bab0c1c9ecfcb4d141d1afe6bf7db997d9",
+      "dataset_sha256": "1d153b9490099992b49c5999aaae8a361ecf7a93b1a455c4331a3af8a51ce1bc",
+      "selected_epoch": 1,
+      "status": "diagnostic_only_pilot_failed_acceptance_closed",
+      "metadata": "models/from-functional-v2/sft-correction/seed-01/metadata.json"
+    },
+    {
+      "id": "functional-v4-plain-20261108",
+      "display_name": "第四轮 · 普通输入对照（未通过）",
+      "canonical_path": "models/from-functional-v2/sft-input-plain/seed-01",
+      "kind": "lora_adapter",
+      "adapter_sha256": "48c3af14acd5b7d628919ec018e40bf781fcf5e988113e96a7b75fa90d64d944",
+      "parent_model": {
+        "canonical_path": "models/from-functional-v1/sft-curriculum/seed-01",
+        "adapter_sha256": "4048de5078f4eda6b19621a2968718be50f4cd5ad35fd17dbf23614a885edb71"
+      },
+      "selected_for_current": false,
+      "status": "diagnostic_trial_only_not_promoted",
+      "runtime_family": "functional_v4",
+      "input_route": "plain",
+      "training": {
+        "rows": 920,
+        "semantic_cases": 370,
+        "source_groups": 60,
+        "seed": 20261108,
+        "dataset_sha256": "4d7f1605238aa8dea095c0ab1e0b7dfc7e0333b7d52bbe6f7a72cae99c2428a6"
+      },
+      "evaluation_records": [
+        "experiments/functional-v4-20261105/development-selection.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      }
+    },
+    {
+      "id": "functional-v4-measured-20261108",
+      "display_name": "第四轮 · 图像观测输入（未通过）",
+      "canonical_path": "models/from-functional-v2/sft-input-measured/seed-01",
+      "kind": "lora_adapter",
+      "adapter_sha256": "4a26313de6a02a3c9e4fd68b44d80f05c848334c3e1b01161c0383f138ddc868",
+      "parent_model": {
+        "canonical_path": "models/from-functional-v1/sft-curriculum/seed-01",
+        "adapter_sha256": "4048de5078f4eda6b19621a2968718be50f4cd5ad35fd17dbf23614a885edb71"
+      },
+      "selected_for_current": false,
+      "status": "diagnostic_trial_only_not_promoted",
+      "runtime_family": "functional_v4",
+      "input_route": "measured",
+      "training": {
+        "rows": 920,
+        "semantic_cases": 370,
+        "source_groups": 60,
+        "seed": 20261108,
+        "dataset_sha256": "4d7f1605238aa8dea095c0ab1e0b7dfc7e0333b7d52bbe6f7a72cae99c2428a6"
+      },
+      "evaluation_records": [
+        "experiments/functional-v4-20261105/development-selection.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      }
+    }
+  ],
+  "full_models": [
+    {
+      "id": "qwen2.5-vl-7b-instruct",
+      "display_name": "Qwen2.5-VL-7B-Instruct",
+      "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct",
+      "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+      "availability": {
+        "local": false,
+        "server": true
+      }
+    },
+    {
+      "id": "official-iea",
+      "display_name": "Official IEA",
+      "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-IEA",
+      "availability": {
+        "local": false,
+        "server": true
+      }
+    }
+  ],
+  "historical_identifiers": "Frozen reports, model locks, and blind-review keys retain their original identifiers.",
+  "functional_trial_default": "functional-current-20261104"
+}

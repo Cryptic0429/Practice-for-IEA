@@ -1,0 +1,15 @@
+{
+  "status": "rejected_before_training",
+  "reason": "Direct Codex visual inspection found haze / lifted black floor in shadow-lift candidates. Frozen-base AI accepted train-001 candidate-02; Codex rejects it as acceptable high-quality supervision.",
+  "observed_cases": [
+    "train-001",
+    "train-002",
+    "train-003",
+    "train-004"
+  ],
+  "evidence": "preflight/first-label-candidates.jpg",
+  "reviewer": "Codex direct visual inspection; AI-assisted, not human",
+  "action": "Preserve original black and white endpoints with bounded gamma adjustment; re-render and repeat matched baselines under a new editor identity.",
+  "training_started": false,
+  "time": "2026-11-04T05:51:12.985930+00:00"
+}

@@ -1,0 +1,2780 @@
+{
+  "split": "development",
+  "name": "baselines",
+  "created_at": "2026-11-04T08:59:30.565482+00:00",
+  "cases_sha256": "47b7dfa6af4de74a415db0943e58d52fa809059f688ecc477ce4f17336a97b46",
+  "models": {
+    "base": {
+      "model_id": "base",
+      "adapter": null,
+      "adapter_sha256": null,
+      "case_sha256": "47b7dfa6af4de74a415db0943e58d52fa809059f688ecc477ce4f17336a97b46",
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime_sha256": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+      "common_sha256": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+      "editor_sha256": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+      "inputs": "Original image, original bilingual request and fixed tool specification only."
+    },
+    "current": {
+      "model_id": "current",
+      "adapter": "/mnt/sdc/zhc/IEA/models/from-sft-standard/sft-calibrated/seed-02",
+      "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884",
+      "case_sha256": "47b7dfa6af4de74a415db0943e58d52fa809059f688ecc477ce4f17336a97b46",
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime_sha256": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+      "common_sha256": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+      "editor_sha256": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+      "inputs": "Original image, original bilingual request and fixed tool specification only."
+    }
+  },
+  "mapping": [
+    {
+      "model_id": "base",
+      "case_id": "development-001",
+      "language": "zh",
+      "item_id": "26b55298a2a7e0aa"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-001",
+      "language": "en",
+      "item_id": "42617c2882e9742e"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-002",
+      "language": "zh",
+      "item_id": "92ca8208fd1e5c5b"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-002",
+      "language": "en",
+      "item_id": "92ca8208fd1e5c5b"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-003",
+      "language": "zh",
+      "item_id": "0ded753f78edc716"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-003",
+      "language": "en",
+      "item_id": "e54f421e089350f8"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-004",
+      "language": "zh",
+      "item_id": "e9ef16d8edca1984"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-004",
+      "language": "en",
+      "item_id": "e9ef16d8edca1984"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-005",
+      "language": "zh",
+      "item_id": "27a833dbef3a0b9f"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-005",
+      "language": "en",
+      "item_id": "d443b73a41cecaee"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-006",
+      "language": "zh",
+      "item_id": "146f06b35f9ba815"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-006",
+      "language": "en",
+      "item_id": "146f06b35f9ba815"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-007",
+      "language": "zh",
+      "item_id": "df123bfba6178905"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-007",
+      "language": "en",
+      "item_id": "4a6da0cbd8ec970b"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-008",
+      "language": "zh",
+      "item_id": "df3612ee24d3ddee"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-008",
+      "language": "en",
+      "item_id": "df3612ee24d3ddee"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-009",
+      "language": "zh",
+      "item_id": "9241751f7bddca80"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-009",
+      "language": "en",
+      "item_id": "3a4bb07e1807b719"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-010",
+      "language": "zh",
+      "item_id": "0fb600b33a06cdbd"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-010",
+      "language": "en",
+      "item_id": "0fb600b33a06cdbd"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-011",
+      "language": "zh",
+      "item_id": "ce2342c378e32147"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-011",
+      "language": "en",
+      "item_id": "2b7184ce0a781ec7"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-012",
+      "language": "zh",
+      "item_id": "4d2abcce4963f74f"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-012",
+      "language": "en",
+      "item_id": "4d2abcce4963f74f"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-013",
+      "language": "zh",
+      "item_id": "db617fc93220aeaa"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-013",
+      "language": "en",
+      "item_id": "20c8307e56701a7b"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-014",
+      "language": "zh",
+      "item_id": "7ad2aeea446945e7"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-014",
+      "language": "en",
+      "item_id": "d4c46478ffee7c0d"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-015",
+      "language": "zh",
+      "item_id": "103f4e95da324d6d"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-015",
+      "language": "en",
+      "item_id": "4e465adc63785afa"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-016",
+      "language": "zh",
+      "item_id": "5197035ad332c798"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-016",
+      "language": "en",
+      "item_id": "5197035ad332c798"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-017",
+      "language": "zh",
+      "item_id": "31ccbe7c8d75341c"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-017",
+      "language": "en",
+      "item_id": "b17834150501f540"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-018",
+      "language": "zh",
+      "item_id": "e0eb6ad4fe204c81"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-018",
+      "language": "en",
+      "item_id": "e0eb6ad4fe204c81"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-019",
+      "language": "zh",
+      "item_id": "933c6132e0cd3654"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-019",
+      "language": "en",
+      "item_id": "7336bf21a62c4200"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-020",
+      "language": "zh",
+      "item_id": "63c90c18d3fcff1f"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-020",
+      "language": "en",
+      "item_id": "63c90c18d3fcff1f"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-021",
+      "language": "zh",
+      "item_id": "711cf12886129839"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-021",
+      "language": "en",
+      "item_id": "d729323601994b70"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-022",
+      "language": "zh",
+      "item_id": "0ebe018d496b2dda"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-022",
+      "language": "en",
+      "item_id": "56163cd96f12d037"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-023",
+      "language": "zh",
+      "item_id": "8d5db00051c64f42"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-023",
+      "language": "en",
+      "item_id": "dd4e9515795b6276"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-024",
+      "language": "zh",
+      "item_id": "241febe901d474da"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-024",
+      "language": "en",
+      "item_id": "2ede0c61ec0c04d1"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-025",
+      "language": "zh",
+      "item_id": "613452a6996f4acf"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-025",
+      "language": "en",
+      "item_id": "326053e448410191"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-026",
+      "language": "zh",
+      "item_id": "e45afc2897b34778"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-026",
+      "language": "en",
+      "item_id": "976e09ace23dd057"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-027",
+      "language": "zh",
+      "item_id": "3b54ae385be8221e"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-027",
+      "language": "en",
+      "item_id": "da906bc7b0814639"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-028",
+      "language": "zh",
+      "item_id": "f60335710e8289f9"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-028",
+      "language": "en",
+      "item_id": "b217fd206bf70b90"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-029",
+      "language": "zh",
+      "item_id": "2ceec393b5ebb941"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-029",
+      "language": "en",
+      "item_id": "34533114072899ae"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-030",
+      "language": "zh",
+      "item_id": "50dc2f3b7889c72d"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-030",
+      "language": "en",
+      "item_id": "e65031aa921882cf"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-031",
+      "language": "zh",
+      "item_id": "0d079000534b16c8"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-031",
+      "language": "en",
+      "item_id": "c1d3adee596e7525"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-032",
+      "language": "zh",
+      "item_id": "1d0ae8c9abfe9bb3"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-032",
+      "language": "en",
+      "item_id": "0b04341938ee1364"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-033",
+      "language": "zh",
+      "item_id": "96f194bd6a3b2820"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-033",
+      "language": "en",
+      "item_id": "1dc61dfb94195c32"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-034",
+      "language": "zh",
+      "item_id": "0c67b670d8aae91f"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-034",
+      "language": "en",
+      "item_id": "d91f6038c38d3cfd"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-035",
+      "language": "zh",
+      "item_id": "082bfbfff2097135"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-035",
+      "language": "en",
+      "item_id": "e07eeca7584945d7"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-036",
+      "language": "zh",
+      "item_id": "d3f15a786e4318c7"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-036",
+      "language": "en",
+      "item_id": "32de6fe31bbf98cf"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-037",
+      "language": "zh",
+      "item_id": "a90ae826fc77fee0"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-037",
+      "language": "en",
+      "item_id": "2a3c4964be801cf1"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-038",
+      "language": "zh",
+      "item_id": "eda747174fa9510c"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-038",
+      "language": "en",
+      "item_id": "988f081c7196800e"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-039",
+      "language": "zh",
+      "item_id": "6446ce98cb40ed90"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-039",
+      "language": "en",
+      "item_id": "c1889383bfb9430b"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-040",
+      "language": "zh",
+      "item_id": "7a1d58802773e90c"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-040",
+      "language": "en",
+      "item_id": "07fc28f082d8a40b"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-041",
+      "language": "zh",
+      "item_id": "bf16e394f90fc5f2"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-041",
+      "language": "en",
+      "item_id": "bf16e394f90fc5f2"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-042",
+      "language": "zh",
+      "item_id": "e7f8f3a5047c18f7"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-042",
+      "language": "en",
+      "item_id": "e7f8f3a5047c18f7"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-043",
+      "language": "zh",
+      "item_id": "e0ac632b8e8faa6d"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-043",
+      "language": "en",
+      "item_id": "e0ac632b8e8faa6d"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-044",
+      "language": "zh",
+      "item_id": "bd73c9014e32357b"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-044",
+      "language": "en",
+      "item_id": "bd73c9014e32357b"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-045",
+      "language": "zh",
+      "item_id": "4965804409f3437f"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-045",
+      "language": "en",
+      "item_id": "4965804409f3437f"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-046",
+      "language": "zh",
+      "item_id": "fe764add690c0e21"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-046",
+      "language": "en",
+      "item_id": "fe764add690c0e21"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-047",
+      "language": "zh",
+      "item_id": "4128e10e2816496c"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-047",
+      "language": "en",
+      "item_id": "4128e10e2816496c"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-048",
+      "language": "zh",
+      "item_id": "b673db70f0b27315"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-048",
+      "language": "en",
+      "item_id": "b673db70f0b27315"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-049",
+      "language": "zh",
+      "item_id": "35f08b1467f1bf10"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-049",
+      "language": "en",
+      "item_id": "35f08b1467f1bf10"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-050",
+      "language": "zh",
+      "item_id": "921ffd9018b30af5"
+    },
+    {
+      "model_id": "base",
+      "case_id": "development-050",
+      "language": "en",
+      "item_id": "921ffd9018b30af5"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-001",
+      "language": "zh",
+      "item_id": "9b51288ef9b3ae56"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-001",
+      "language": "en",
+      "item_id": "2c7244b154702e5e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-002",
+      "language": "zh",
+      "item_id": "b85abebe901d700e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-002",
+      "language": "en",
+      "item_id": "82229635a498aa24"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-003",
+      "language": "zh",
+      "item_id": "5dfe88648b0455c6"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-003",
+      "language": "en",
+      "item_id": "4a38475f95baf995"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-004",
+      "language": "zh",
+      "item_id": "8a1fa465455bf858"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-004",
+      "language": "en",
+      "item_id": "974bc952cbfc3899"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-005",
+      "language": "zh",
+      "item_id": "6fe53b7d42dceacd"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-005",
+      "language": "en",
+      "item_id": "10f55ed6b2780917"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-006",
+      "language": "zh",
+      "item_id": "f95bcd2a35bb03e1"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-006",
+      "language": "en",
+      "item_id": "c7d6a605b7e04737"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-007",
+      "language": "zh",
+      "item_id": "eebfeba704a2db16"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-007",
+      "language": "en",
+      "item_id": "9b21128da1d3b4d3"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-008",
+      "language": "zh",
+      "item_id": "9bdd60bd84bcdc88"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-008",
+      "language": "en",
+      "item_id": "6af9fe08ce92a0ca"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-009",
+      "language": "zh",
+      "item_id": "c4d3bd36f1ad6017"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-009",
+      "language": "en",
+      "item_id": "1d52f1129ab1e50c"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-010",
+      "language": "zh",
+      "item_id": "0fee31d5d7d4422f"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-010",
+      "language": "en",
+      "item_id": "a3417298114e3186"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-011",
+      "language": "zh",
+      "item_id": "5aee2d5f4aa009cf"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-011",
+      "language": "en",
+      "item_id": "79a381f822b56b8e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-012",
+      "language": "zh",
+      "item_id": "0bcf8cbf596a3645"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-012",
+      "language": "en",
+      "item_id": "3d497f9492e12b96"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-013",
+      "language": "zh",
+      "item_id": "a4c59b94fa52f57b"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-013",
+      "language": "en",
+      "item_id": "59033230deac3497"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-014",
+      "language": "zh",
+      "item_id": "65ec2a10159a056e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-014",
+      "language": "en",
+      "item_id": "5ef58d0bc3a68ddf"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-015",
+      "language": "en",
+      "item_id": "6057fcadc8734ca1"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-016",
+      "language": "zh",
+      "item_id": "58a30fee7d6e856a"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-016",
+      "language": "en",
+      "item_id": "b0faee50d1f1ea14"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-017",
+      "language": "zh",
+      "item_id": "c769e9b2d1ac3a65"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-017",
+      "language": "en",
+      "item_id": "e595fc40fa8cddd8"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-018",
+      "language": "zh",
+      "item_id": "3139dab563bc6295"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-018",
+      "language": "en",
+      "item_id": "4e35ecc5cf7d9bad"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-019",
+      "language": "en",
+      "item_id": "87ad244309f3e4ed"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-020",
+      "language": "zh",
+      "item_id": "9518485d680b684e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-020",
+      "language": "en",
+      "item_id": "9518485d680b684e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-021",
+      "language": "zh",
+      "item_id": "4ecdfd7311ad0345"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-021",
+      "language": "en",
+      "item_id": "2148d18002a19032"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-022",
+      "language": "zh",
+      "item_id": "907faf09f8288eb8"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-022",
+      "language": "en",
+      "item_id": "8c96b2df5e176de8"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-023",
+      "language": "zh",
+      "item_id": "fb5a7e3dc649290e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-023",
+      "language": "en",
+      "item_id": "f306996a9beeb2f3"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-024",
+      "language": "zh",
+      "item_id": "4d5fc19a28490280"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-024",
+      "language": "en",
+      "item_id": "6ab2e07e9bc5a766"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-025",
+      "language": "zh",
+      "item_id": "26afe183923d899a"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-025",
+      "language": "en",
+      "item_id": "d82d33090aa6012b"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-026",
+      "language": "zh",
+      "item_id": "b9c6a907d6069a8f"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-026",
+      "language": "en",
+      "item_id": "70c16c51177c5356"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-027",
+      "language": "zh",
+      "item_id": "4fef5f83cd9cc424"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-027",
+      "language": "en",
+      "item_id": "acb4780c764a2275"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-028",
+      "language": "zh",
+      "item_id": "79d154011b7617c4"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-028",
+      "language": "en",
+      "item_id": "ae09633d511d1bdf"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-029",
+      "language": "zh",
+      "item_id": "6ca3360cc0969015"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-029",
+      "language": "en",
+      "item_id": "6ca3360cc0969015"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-030",
+      "language": "zh",
+      "item_id": "b067394807a6c34f"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-030",
+      "language": "en",
+      "item_id": "7725dede7ae09c8c"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-031",
+      "language": "zh",
+      "item_id": "ed711ca83454c978"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-031",
+      "language": "en",
+      "item_id": "ed711ca83454c978"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-032",
+      "language": "zh",
+      "item_id": "0c1227522073f4ad"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-032",
+      "language": "en",
+      "item_id": "555fe81f051f78c5"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-033",
+      "language": "zh",
+      "item_id": "acd19a4f378164a2"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-033",
+      "language": "en",
+      "item_id": "acd19a4f378164a2"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-034",
+      "language": "zh",
+      "item_id": "2640067f420e77ea"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-034",
+      "language": "en",
+      "item_id": "6ffdfcaff98bc24a"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-035",
+      "language": "zh",
+      "item_id": "d871fc7c6a8db24a"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-035",
+      "language": "en",
+      "item_id": "d871fc7c6a8db24a"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-036",
+      "language": "zh",
+      "item_id": "e2d6721b3e1656a8"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-036",
+      "language": "en",
+      "item_id": "75147345db0775fa"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-037",
+      "language": "zh",
+      "item_id": "3dbc52a9a23dca90"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-037",
+      "language": "en",
+      "item_id": "3dbc52a9a23dca90"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-038",
+      "language": "zh",
+      "item_id": "634631dba34d67a9"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-038",
+      "language": "en",
+      "item_id": "56f8d6d965410866"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-039",
+      "language": "zh",
+      "item_id": "0e946fdf48fade13"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-039",
+      "language": "en",
+      "item_id": "0e946fdf48fade13"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-040",
+      "language": "zh",
+      "item_id": "2d6a94d8f3321c0d"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-040",
+      "language": "en",
+      "item_id": "8849937525ad60f0"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-041",
+      "language": "zh",
+      "item_id": "703f3c89435c0e2c"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-041",
+      "language": "en",
+      "item_id": "1e41c8e5280f9fe7"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-042",
+      "language": "zh",
+      "item_id": "8baf08ec34514be8"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-042",
+      "language": "en",
+      "item_id": "8add76ba19d83ae1"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-043",
+      "language": "zh",
+      "item_id": "fbbf5b527f8c7a57"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-043",
+      "language": "en",
+      "item_id": "fbbf5b527f8c7a57"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-044",
+      "language": "zh",
+      "item_id": "89c218aa63849c3e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-044",
+      "language": "en",
+      "item_id": "cdc3d949f19f4f5d"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-045",
+      "language": "zh",
+      "item_id": "0877a682d94f52b6"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-045",
+      "language": "en",
+      "item_id": "0877a682d94f52b6"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-046",
+      "language": "zh",
+      "item_id": "89995ddac517b7dc"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-046",
+      "language": "en",
+      "item_id": "6c74808eddcfabfa"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-047",
+      "language": "zh",
+      "item_id": "eff2046f47f6cdb6"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-047",
+      "language": "en",
+      "item_id": "75aa0cd6e8101880"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-048",
+      "language": "zh",
+      "item_id": "7c9333cec05393a7"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-048",
+      "language": "en",
+      "item_id": "7e10df15f40631a7"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-049",
+      "language": "zh",
+      "item_id": "4499987ebd411f08"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-049",
+      "language": "en",
+      "item_id": "fe2983c80195ce8b"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-050",
+      "language": "zh",
+      "item_id": "be8800f08f4f6470"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-050",
+      "language": "en",
+      "item_id": "b357a94bf99109d4"
+    }
+  ],
+  "invalid": [
+    {
+      "model_id": "current",
+      "case_id": "development-015",
+      "language": "zh",
+      "reason": "ValueError: expected_one_json_code_block_without_other_text"
+    },
+    {
+      "model_id": "current",
+      "case_id": "development-019",
+      "language": "zh",
+      "reason": "ValueError: expected_one_json_code_block_without_other_text"
+    }
+  ],
+  "items": [
+    {
+      "item_id": "26b55298a2a7e0aa",
+      "case_id": "development-001",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-001-zh.png",
+      "image_sha256": "8fe1efa7fb9970902d6abed56defa462e2b5ba98c6ba74b9ffbcd892ee5adebf"
+    },
+    {
+      "item_id": "42617c2882e9742e",
+      "case_id": "development-001",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-001-en.png",
+      "image_sha256": "236f1e66792a1766e81609bee0fa83ea042fe0e22d152d9f9b89910d10a09ce7"
+    },
+    {
+      "item_id": "92ca8208fd1e5c5b",
+      "case_id": "development-002",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-002-zh.png",
+      "image_sha256": "747b8dfe3c75b59f2eef7729cb2614a625acbe9b373f1e4471e3faa788c832c6"
+    },
+    {
+      "item_id": "0ded753f78edc716",
+      "case_id": "development-003",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-003-zh.png",
+      "image_sha256": "79a1877300812325713386d7fb6ca86c35b83305179bb76069bf88c533fd6c7b"
+    },
+    {
+      "item_id": "e54f421e089350f8",
+      "case_id": "development-003",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-003-en.png",
+      "image_sha256": "82c67b657e7a648310cc8b44c12535604486cc756bed22db98fbe65af820ff29"
+    },
+    {
+      "item_id": "e9ef16d8edca1984",
+      "case_id": "development-004",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-004-zh.png",
+      "image_sha256": "654fcf90f45c6b4629be3c1c8bf07100da24f0fd2d15031e20e6267df5622f01"
+    },
+    {
+      "item_id": "27a833dbef3a0b9f",
+      "case_id": "development-005",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-005-zh.png",
+      "image_sha256": "29ab2d79000d83d05c6013213b7847b3b6a277236be08aa838ef2df80e6f70f3"
+    },
+    {
+      "item_id": "d443b73a41cecaee",
+      "case_id": "development-005",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-005-en.png",
+      "image_sha256": "35bb9afac03c92baf8c54afa267c1af0d7e5049d30ff5a26064fd49a97a600e5"
+    },
+    {
+      "item_id": "146f06b35f9ba815",
+      "case_id": "development-006",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-006-zh.png",
+      "image_sha256": "3762e3e853de6c306bf0fb5dbda1d6c2f9a6822ae9ed1c1a85282fa664bfcb68"
+    },
+    {
+      "item_id": "df123bfba6178905",
+      "case_id": "development-007",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-007-zh.png",
+      "image_sha256": "71253d58fcdb8012641a6389aaa568de18c30449fda69a3240eebd90e557a761"
+    },
+    {
+      "item_id": "4a6da0cbd8ec970b",
+      "case_id": "development-007",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-007-en.png",
+      "image_sha256": "6a07fdd978590dbc9fa910f9988aa5c856b2a6b33789179a0b114bca9139591a"
+    },
+    {
+      "item_id": "df3612ee24d3ddee",
+      "case_id": "development-008",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-008-zh.png",
+      "image_sha256": "d4c24a1962d8d61149ecc5c3f697242ff3e972e0622bf9355c665790e8289dd2"
+    },
+    {
+      "item_id": "9241751f7bddca80",
+      "case_id": "development-009",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-009-zh.png",
+      "image_sha256": "f6be4b9f4c574165bcab07424c042c53e82a2fc198c757d9db5f3b290c583878"
+    },
+    {
+      "item_id": "3a4bb07e1807b719",
+      "case_id": "development-009",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-009-en.png",
+      "image_sha256": "24a9385b5aece48617be3b398be073fa95bd2c3dc9ec442c6c9eac3cb48fa4ef"
+    },
+    {
+      "item_id": "0fb600b33a06cdbd",
+      "case_id": "development-010",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-010-zh.png",
+      "image_sha256": "4e1f8afda2d13bc2b2efbc444abb4d8f3cd960e56ddc0d22e843c072672e6481"
+    },
+    {
+      "item_id": "ce2342c378e32147",
+      "case_id": "development-011",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-011-zh.png",
+      "image_sha256": "61b2b3eee1f708b2be557795612f86cd08af987c54300359e08e48e867ab2543"
+    },
+    {
+      "item_id": "2b7184ce0a781ec7",
+      "case_id": "development-011",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-011-en.png",
+      "image_sha256": "a7fb621fdbbc0b7c1d4eed6556434c91fc28aacf69478a1a609fe3bb7744f9b0"
+    },
+    {
+      "item_id": "4d2abcce4963f74f",
+      "case_id": "development-012",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-012-zh.png",
+      "image_sha256": "553a50bf4fe0fd6481676d1de3945e515b81647f2f0bc4b5f1d7dc0135ae6f6d"
+    },
+    {
+      "item_id": "db617fc93220aeaa",
+      "case_id": "development-013",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-013-zh.png",
+      "image_sha256": "05a0e69fd3f35d3e8f72431ebf32b4ba69ca1a54380bf02ffd32a27a56adbd6d"
+    },
+    {
+      "item_id": "20c8307e56701a7b",
+      "case_id": "development-013",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-013-en.png",
+      "image_sha256": "20e624e641401ff4187649be706178b3e95a04bf55c98c576a115401d78b3602"
+    },
+    {
+      "item_id": "7ad2aeea446945e7",
+      "case_id": "development-014",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-014-zh.png",
+      "image_sha256": "c2da347227b1d4759384b1a0d3e2a46ba15e062fd1d9f09e28498a2bb7280c77"
+    },
+    {
+      "item_id": "d4c46478ffee7c0d",
+      "case_id": "development-014",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-014-en.png",
+      "image_sha256": "52be7137e36be8ffa75fa17b5ef0011f50481ace638aef31f5042e38a9cec4d9"
+    },
+    {
+      "item_id": "103f4e95da324d6d",
+      "case_id": "development-015",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-015-zh.png",
+      "image_sha256": "aad9b6fdef51b751cf62f34d6551259883d42dfd1cf2b38bf5a61e4c04e1654a"
+    },
+    {
+      "item_id": "4e465adc63785afa",
+      "case_id": "development-015",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-015-en.png",
+      "image_sha256": "d2e461e53e63a8813fb616da2019687403177beb42603c5107071e20c6af355e"
+    },
+    {
+      "item_id": "5197035ad332c798",
+      "case_id": "development-016",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-016-zh.png",
+      "image_sha256": "f02c16b3c5635894e4afabed687ac479356ade06b11e054575d20319a0cf976d"
+    },
+    {
+      "item_id": "31ccbe7c8d75341c",
+      "case_id": "development-017",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-017-zh.png",
+      "image_sha256": "ff466fc06ae02dc9cfe195788e922a6a238d5344b66c45272f9c9b4a02f55eb4"
+    },
+    {
+      "item_id": "b17834150501f540",
+      "case_id": "development-017",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-017-en.png",
+      "image_sha256": "24d9b510afb2483d993935477205867b7858181c28e85cc36c091c54388d4922"
+    },
+    {
+      "item_id": "e0eb6ad4fe204c81",
+      "case_id": "development-018",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-018-zh.png",
+      "image_sha256": "3286c5652014b10c61567add9c7c52cd395753a6aa30c865f540fc200c3ddc67"
+    },
+    {
+      "item_id": "933c6132e0cd3654",
+      "case_id": "development-019",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-019-zh.png",
+      "image_sha256": "c510270ae545679f1ca623ff83ef3011b06dbc785c8bb3001b89bf6d52d78a98"
+    },
+    {
+      "item_id": "7336bf21a62c4200",
+      "case_id": "development-019",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-019-en.png",
+      "image_sha256": "20993f648980d77f9cc3e2bb980c2de147c53926b9b9b88b4953cb2465ffa20c"
+    },
+    {
+      "item_id": "63c90c18d3fcff1f",
+      "case_id": "development-020",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-020-zh.png",
+      "image_sha256": "5896d27649b4dfb7dcb95a51c00adca7ebaf0b8d61ec0bac73a6bcf3a6e3b05c"
+    },
+    {
+      "item_id": "711cf12886129839",
+      "case_id": "development-021",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-021-zh.png",
+      "image_sha256": "7e602402922b125a3463ac7943c233a266c0d5c2cdc5c23d5359da46840f853e"
+    },
+    {
+      "item_id": "d729323601994b70",
+      "case_id": "development-021",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-021-en.png",
+      "image_sha256": "29becaae3009357b33b5aa78354f8287ddcc6c8dba5342044d422eb011882bdf"
+    },
+    {
+      "item_id": "0ebe018d496b2dda",
+      "case_id": "development-022",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-022-zh.png",
+      "image_sha256": "cdd59744766dcf480c355b368d2cec43b0c91d721f181d23cf012bd71f8bc738"
+    },
+    {
+      "item_id": "56163cd96f12d037",
+      "case_id": "development-022",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-022-en.png",
+      "image_sha256": "b36eecc6daba0dbdea13f47a4c8b1058f1a31791595b133df5429873f575a010"
+    },
+    {
+      "item_id": "8d5db00051c64f42",
+      "case_id": "development-023",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-023-zh.png",
+      "image_sha256": "a5c5e9975b20a0dc1326e0f90046f275486cbede11762964726cf5bc24cb0849"
+    },
+    {
+      "item_id": "dd4e9515795b6276",
+      "case_id": "development-023",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-023-en.png",
+      "image_sha256": "32cfce72677dcbe1657a62566d5757d554860d5a9f3b7dd293881c9a9308fafd"
+    },
+    {
+      "item_id": "241febe901d474da",
+      "case_id": "development-024",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-024-zh.png",
+      "image_sha256": "cac4d9bea4d927f8d450c7c936da0cc64779c97f0413ba54cc08483e075a33ff"
+    },
+    {
+      "item_id": "2ede0c61ec0c04d1",
+      "case_id": "development-024",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-024-en.png",
+      "image_sha256": "950eab0a2918b752585548c6599a2603d87ed5f1ada27c9aaa053a0e00d665bb"
+    },
+    {
+      "item_id": "613452a6996f4acf",
+      "case_id": "development-025",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-025-zh.png",
+      "image_sha256": "66ccb10fb671fc9f8e2eab6014d69dc2b81e6ccaaf9a1ab9249095ebfc88b465"
+    },
+    {
+      "item_id": "326053e448410191",
+      "case_id": "development-025",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-025-en.png",
+      "image_sha256": "dab436f18d6491d7c53b96103aed1b6abd9596d4baeb7d2738a14ca76ee46ccb"
+    },
+    {
+      "item_id": "e45afc2897b34778",
+      "case_id": "development-026",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-026-zh.png",
+      "image_sha256": "cf7d2048f97fc9cb2ea420a9e6cab21a2b666836328989dda01cc605a6cb6802"
+    },
+    {
+      "item_id": "976e09ace23dd057",
+      "case_id": "development-026",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-026-en.png",
+      "image_sha256": "3b6d433479473d994b18334f54c90157e04ec845a6a2a335baa012f9c8cf7199"
+    },
+    {
+      "item_id": "3b54ae385be8221e",
+      "case_id": "development-027",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-027-zh.png",
+      "image_sha256": "e9fd5879ae9ea0a7cea39b315b0a161d1b59282ac74a997ee37d0068125ec388"
+    },
+    {
+      "item_id": "da906bc7b0814639",
+      "case_id": "development-027",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-027-en.png",
+      "image_sha256": "5e143793cea76fe6dcb7b89d7b89a2d6796a26922c65e76e96ee1fd56257dc57"
+    },
+    {
+      "item_id": "f60335710e8289f9",
+      "case_id": "development-028",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-028-zh.png",
+      "image_sha256": "5004297e39e816b300ed8a3046879855681732f6b55a73b352c851812434d773"
+    },
+    {
+      "item_id": "b217fd206bf70b90",
+      "case_id": "development-028",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-028-en.png",
+      "image_sha256": "a7de0f777f0bb6842e118c3cbe84c1db5a07fa7830eeef4196080c07ca3ef3f7"
+    },
+    {
+      "item_id": "2ceec393b5ebb941",
+      "case_id": "development-029",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-029-zh.png",
+      "image_sha256": "0ae6bc8f8bd40adf66f3ef3430c9a19d1187ad0240e435206455b3a2f06c9735"
+    },
+    {
+      "item_id": "34533114072899ae",
+      "case_id": "development-029",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-029-en.png",
+      "image_sha256": "3b9e727099e6ade3153af126e10d535dd2db7cff44220035f93dc27b9c669061"
+    },
+    {
+      "item_id": "50dc2f3b7889c72d",
+      "case_id": "development-030",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-030-zh.png",
+      "image_sha256": "2ef445b90da8797b123443e7e0cbb30eeb49c0168b3e960888c5bb235b33eebe"
+    },
+    {
+      "item_id": "e65031aa921882cf",
+      "case_id": "development-030",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-030-en.png",
+      "image_sha256": "410e2246678ac83c1ec65028951057d53bbac4523543b7d241bc6dbc42c6357c"
+    },
+    {
+      "item_id": "0d079000534b16c8",
+      "case_id": "development-031",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-031-zh.png",
+      "image_sha256": "1a8efb5f1eba17d2bb2026f63407ffed9f8b9210311be72f7a052d14f7eb3fa2"
+    },
+    {
+      "item_id": "c1d3adee596e7525",
+      "case_id": "development-031",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-031-en.png",
+      "image_sha256": "62eceda542fbf1d4e4a737d84a0a6876ca1798af403964f24ab5350ac959a6fb"
+    },
+    {
+      "item_id": "1d0ae8c9abfe9bb3",
+      "case_id": "development-032",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-032-zh.png",
+      "image_sha256": "6a491c2a0dc7ded00a379612b1ba96f3b9e5666385135bd9274d07d156883333"
+    },
+    {
+      "item_id": "0b04341938ee1364",
+      "case_id": "development-032",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-032-en.png",
+      "image_sha256": "28cb10b1d8e2acf6ab3610a7858539ccf173815fa89c8b15078a7789872db392"
+    },
+    {
+      "item_id": "96f194bd6a3b2820",
+      "case_id": "development-033",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-033-zh.png",
+      "image_sha256": "2d91ef61eb9bb9628d9896a733538449fd89ace0de90e9f474648a79d547fc9b"
+    },
+    {
+      "item_id": "1dc61dfb94195c32",
+      "case_id": "development-033",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-033-en.png",
+      "image_sha256": "c8059b1c795896e882e307529e17fd0e95cb81c95fd9ace7b814f0098790690b"
+    },
+    {
+      "item_id": "0c67b670d8aae91f",
+      "case_id": "development-034",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-034-zh.png",
+      "image_sha256": "85f84105ee0175f18e13ed4076a6abdbac3b24fac127ba70e98b3cf81806d29d"
+    },
+    {
+      "item_id": "d91f6038c38d3cfd",
+      "case_id": "development-034",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-034-en.png",
+      "image_sha256": "e0902ad492ddfa58186c63f848aa9aa9cfdba1aec0c9117142e1b08e138312df"
+    },
+    {
+      "item_id": "082bfbfff2097135",
+      "case_id": "development-035",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-035-zh.png",
+      "image_sha256": "0e603114f12cb027565f0d90899020575e8de68bf14f865859de0dc2327d70ca"
+    },
+    {
+      "item_id": "e07eeca7584945d7",
+      "case_id": "development-035",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-035-en.png",
+      "image_sha256": "f35f7d28eb091dcb332c70ebf80a1efff2030cb5adba205cb0d94bdb867b01bc"
+    },
+    {
+      "item_id": "d3f15a786e4318c7",
+      "case_id": "development-036",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-036-zh.png",
+      "image_sha256": "2192c0b29548d8a2d6e75c02fe55f5b6164b0adbeb8930b0540339a6b3438d49"
+    },
+    {
+      "item_id": "32de6fe31bbf98cf",
+      "case_id": "development-036",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-036-en.png",
+      "image_sha256": "e159b128728701103dde800f7a10dd2f50c6bdfaad6cb2b9ff03591bf945afe9"
+    },
+    {
+      "item_id": "a90ae826fc77fee0",
+      "case_id": "development-037",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-037-zh.png",
+      "image_sha256": "3e332510963181e1eb3389fee2a7141a9dbd5bd54d24e206ec6727072d2affd2"
+    },
+    {
+      "item_id": "2a3c4964be801cf1",
+      "case_id": "development-037",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-037-en.png",
+      "image_sha256": "64c85ab4e811965752c62c6aacc64f9b89e40425ab6f833aaa0e7a95ddc8c6dc"
+    },
+    {
+      "item_id": "eda747174fa9510c",
+      "case_id": "development-038",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-038-zh.png",
+      "image_sha256": "506ebfe58d913d8123129878654c70c9cadf06b3a22f3267904978d698096cc4"
+    },
+    {
+      "item_id": "988f081c7196800e",
+      "case_id": "development-038",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-038-en.png",
+      "image_sha256": "f710fd1da08f566b0d0f5eecac967fb0da856ed0d1ddda21c70699c9e68f657c"
+    },
+    {
+      "item_id": "6446ce98cb40ed90",
+      "case_id": "development-039",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-039-zh.png",
+      "image_sha256": "e3b655d672307c4dc4a7b67918c5ad07afb3a5a92f790c1ab51c7d1a43960402"
+    },
+    {
+      "item_id": "c1889383bfb9430b",
+      "case_id": "development-039",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-039-en.png",
+      "image_sha256": "9330492adb60e15795dc132d8cb44e597c51904268ef15c45fb06b8e29aa7e7d"
+    },
+    {
+      "item_id": "7a1d58802773e90c",
+      "case_id": "development-040",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-040-zh.png",
+      "image_sha256": "3c94ec5282c5026a8563c654428a65bbdf15ac31c2903ccd748f2578dbce3892"
+    },
+    {
+      "item_id": "07fc28f082d8a40b",
+      "case_id": "development-040",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-040-en.png",
+      "image_sha256": "5560e04db062f61b0a22bab75e7e2d94ec3e7c37cbbacde40a63c64a91dd8759"
+    },
+    {
+      "item_id": "bf16e394f90fc5f2",
+      "case_id": "development-041",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-041-zh.png",
+      "image_sha256": "8124f0696b696d5da5275370c0f5a5949e9c6e7f48c9852a2c7f97579a44dad5"
+    },
+    {
+      "item_id": "e7f8f3a5047c18f7",
+      "case_id": "development-042",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-042-zh.png",
+      "image_sha256": "68c7a8b4ab7b13e1675722d11c72a766f638765de36e148ef42d32f246703b8b"
+    },
+    {
+      "item_id": "e0ac632b8e8faa6d",
+      "case_id": "development-043",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-043-zh.png",
+      "image_sha256": "853e67a43ba2090ac72f75aaf058527e440e23bb2bb1e46f96c1c7f84fcbd07a"
+    },
+    {
+      "item_id": "bd73c9014e32357b",
+      "case_id": "development-044",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-044-zh.png",
+      "image_sha256": "6d40cd812343df3718e8eba3e69994152b44318ecf0e3ec2e29fbd1cf5701038"
+    },
+    {
+      "item_id": "4965804409f3437f",
+      "case_id": "development-045",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-045-zh.png",
+      "image_sha256": "c4a5a2d2b4fc4a484fc851b7f9de1533930186b488496fdc512427fed3b2cac4"
+    },
+    {
+      "item_id": "fe764add690c0e21",
+      "case_id": "development-046",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-046-zh.png",
+      "image_sha256": "1abd5dce5738029717b32f5f7b69ead9479415a8906181a407aa930bcdbb8be0"
+    },
+    {
+      "item_id": "4128e10e2816496c",
+      "case_id": "development-047",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-047-zh.png",
+      "image_sha256": "a9fb6de12d6823672383e1a1d4903d6775c6b9c9de80b50bca6346005cb65e11"
+    },
+    {
+      "item_id": "b673db70f0b27315",
+      "case_id": "development-048",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-048-zh.png",
+      "image_sha256": "371719ec390eb6ac1b4f14afd161a4219cfa7706dde7c5192dfc82f8e10700cf"
+    },
+    {
+      "item_id": "35f08b1467f1bf10",
+      "case_id": "development-049",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-049-zh.png",
+      "image_sha256": "ff71b27be11c0a551067556a5402f67ea83514953319f444459127ca87c60eca"
+    },
+    {
+      "item_id": "921ffd9018b30af5",
+      "case_id": "development-050",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/base/images/development-050-zh.png",
+      "image_sha256": "bd7aa05e6bbbafd1356df5d03058b632d601b771ff01d977233fef0828c4eaef"
+    },
+    {
+      "item_id": "9b51288ef9b3ae56",
+      "case_id": "development-001",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-001-zh.png",
+      "image_sha256": "5d7c975e8ad91329ecccd4b562e8a3a97e835c6ec759fae94c43a442affda223"
+    },
+    {
+      "item_id": "2c7244b154702e5e",
+      "case_id": "development-001",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-001-en.png",
+      "image_sha256": "86a5cc0a58f0dbb62b12954e6d1705a7235db42520f10c6634d05a7bbcd8af54"
+    },
+    {
+      "item_id": "b85abebe901d700e",
+      "case_id": "development-002",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-002-zh.png",
+      "image_sha256": "62268bc1db91c4e983c37e8e0fe0352317bba54dc920f0791bce002d86ff19f4"
+    },
+    {
+      "item_id": "82229635a498aa24",
+      "case_id": "development-002",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-002-en.png",
+      "image_sha256": "6d80444609753fd68c3cd1508ec9a2634d3300791526033644176b39930f7da3"
+    },
+    {
+      "item_id": "5dfe88648b0455c6",
+      "case_id": "development-003",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-003-zh.png",
+      "image_sha256": "da76c87638dcbf91cb21a19ef6593c33d0d2a94caf3b3fa39f24b636b5aeef73"
+    },
+    {
+      "item_id": "4a38475f95baf995",
+      "case_id": "development-003",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-003-en.png",
+      "image_sha256": "65081c7501dade538f9dea6c83e71a0a4b2a3c241077939d23ae92e5394b0790"
+    },
+    {
+      "item_id": "8a1fa465455bf858",
+      "case_id": "development-004",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-004-zh.png",
+      "image_sha256": "b049bc75da8af45b70fba2b60afa1a6040a5bcc4f1e4166a1b3985a1fb2f5ac9"
+    },
+    {
+      "item_id": "974bc952cbfc3899",
+      "case_id": "development-004",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-004-en.png",
+      "image_sha256": "32b2edbb5e3fd9b52bf0759ec10cb7202488c889e87d26f1a401e051f873ba51"
+    },
+    {
+      "item_id": "6fe53b7d42dceacd",
+      "case_id": "development-005",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-005-zh.png",
+      "image_sha256": "674bf78e12e11d8634a0e81530a1a35a2883f4b6fb3da8ec4c1ab40588a27138"
+    },
+    {
+      "item_id": "10f55ed6b2780917",
+      "case_id": "development-005",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-005-en.png",
+      "image_sha256": "ca30a60e4814ec9cbed6cae70be7e926a432bcde9fb967b290841697991af52d"
+    },
+    {
+      "item_id": "f95bcd2a35bb03e1",
+      "case_id": "development-006",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-006-zh.png",
+      "image_sha256": "bb2020c64e3e431ac677ac24cbdbdb4dbcb4e2eda27e4b954a710df065b7990a"
+    },
+    {
+      "item_id": "c7d6a605b7e04737",
+      "case_id": "development-006",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-006-en.png",
+      "image_sha256": "048689e95b54c087f1cf017751a57ea23362bde082d2858ed59266a83124202f"
+    },
+    {
+      "item_id": "eebfeba704a2db16",
+      "case_id": "development-007",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-007-zh.png",
+      "image_sha256": "d27cb213fc1bdff38dffbcd5f85cfaa794c8790107dbf4fc49b8f17d12fadc4e"
+    },
+    {
+      "item_id": "9b21128da1d3b4d3",
+      "case_id": "development-007",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-007-en.png",
+      "image_sha256": "85ac6172b2b3686196af4f5810b443b0da600d17a4fc04f8effff5d2627f0ca8"
+    },
+    {
+      "item_id": "9bdd60bd84bcdc88",
+      "case_id": "development-008",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-008-zh.png",
+      "image_sha256": "c8bef1485fefa4ddc3f020d2acbb75d75ce48b86667a7c88341a923e7e916573"
+    },
+    {
+      "item_id": "6af9fe08ce92a0ca",
+      "case_id": "development-008",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-008-en.png",
+      "image_sha256": "f26b46217a13deb7926a017ca705b51b5dfb1d339c275820934ef4856157c333"
+    },
+    {
+      "item_id": "c4d3bd36f1ad6017",
+      "case_id": "development-009",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-009-zh.png",
+      "image_sha256": "4b025a739bcbfc0d1f41ef12f88e771537f43ac8dd96379900d08e34b7256f05"
+    },
+    {
+      "item_id": "1d52f1129ab1e50c",
+      "case_id": "development-009",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-009-en.png",
+      "image_sha256": "ee827f3a74f29b496db19d6141b68ee334c3d3a89cd3d3c7c2d5d9376feac015"
+    },
+    {
+      "item_id": "0fee31d5d7d4422f",
+      "case_id": "development-010",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-010-zh.png",
+      "image_sha256": "dba7c59f707d1ea66710457dff6b105f44cc80aea4a8689de158a851c6862c04"
+    },
+    {
+      "item_id": "a3417298114e3186",
+      "case_id": "development-010",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-010-en.png",
+      "image_sha256": "58e407b5b3c961e96b45a4a1af7892cf8bdcdab80a4f7736df65420a0d4de716"
+    },
+    {
+      "item_id": "5aee2d5f4aa009cf",
+      "case_id": "development-011",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-011-zh.png",
+      "image_sha256": "5bab0dc6d8d2caa3c014fd93828b4e97a1bcfa30fe1d854463e9bf633a9e4dda"
+    },
+    {
+      "item_id": "79a381f822b56b8e",
+      "case_id": "development-011",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-011-en.png",
+      "image_sha256": "1f44a1997acdc9a587c8c4f187f453d389d4fc6d632eaa3b7339920c0dadbe24"
+    },
+    {
+      "item_id": "0bcf8cbf596a3645",
+      "case_id": "development-012",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-012-zh.png",
+      "image_sha256": "8d5773748471e6d7ff640f32f90aad3ea4a90c0d92e8347a6fc87ac94876395b"
+    },
+    {
+      "item_id": "3d497f9492e12b96",
+      "case_id": "development-012",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-012-en.png",
+      "image_sha256": "6d8c70123bf456c90d0a9dd1fe8f8bf3a87c7304d0bdbe28cbc7c23d4d084b7a"
+    },
+    {
+      "item_id": "a4c59b94fa52f57b",
+      "case_id": "development-013",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-013-zh.png",
+      "image_sha256": "0185f1c608184330523a5af9c94f3a2fb7656e1efa7c8d189c9ea0aa82bf2325"
+    },
+    {
+      "item_id": "59033230deac3497",
+      "case_id": "development-013",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-013-en.png",
+      "image_sha256": "173685f81cd8d00e391f0e2cc7fbd9971212d81c17a0b28c9ff1378cb9dd9a7f"
+    },
+    {
+      "item_id": "65ec2a10159a056e",
+      "case_id": "development-014",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-014-zh.png",
+      "image_sha256": "0fe964544820a1e6487025e40fdd6143864344ed4bf48f36702d3ab6ca19f818"
+    },
+    {
+      "item_id": "5ef58d0bc3a68ddf",
+      "case_id": "development-014",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-014-en.png",
+      "image_sha256": "599fc13becb520e1dad2d0fb7ca5de7ee5d4959af0b352249298706d259d1ffa"
+    },
+    {
+      "item_id": "6057fcadc8734ca1",
+      "case_id": "development-015",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-015-en.png",
+      "image_sha256": "1d47188a4fbcc0ff7b3390ebb15b830b62c99ea755a18a3946b527799bf4cc24"
+    },
+    {
+      "item_id": "58a30fee7d6e856a",
+      "case_id": "development-016",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-016-zh.png",
+      "image_sha256": "16a0d42c8db90756d5ce18e8e67d2cae944a51470339165647ebae557a0cbae4"
+    },
+    {
+      "item_id": "b0faee50d1f1ea14",
+      "case_id": "development-016",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-016-en.png",
+      "image_sha256": "c99a6f5d719602713b766f84ca947fbb1a0930473d2f1061090aa0fed87399f5"
+    },
+    {
+      "item_id": "c769e9b2d1ac3a65",
+      "case_id": "development-017",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-017-zh.png",
+      "image_sha256": "df46a214a1dd2b326ef2b322902ebb3663eb0a4e1f40b15b1e18634516bbec96"
+    },
+    {
+      "item_id": "e595fc40fa8cddd8",
+      "case_id": "development-017",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-017-en.png",
+      "image_sha256": "19b44c834a380a4088e2f2785c29b93f8847df1a5139627870f7bfd0da8c7f33"
+    },
+    {
+      "item_id": "3139dab563bc6295",
+      "case_id": "development-018",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-018-zh.png",
+      "image_sha256": "03f192babdbab6788ff587606daac6298a7c7d6cc6f2b19d9c46daa15bb6e547"
+    },
+    {
+      "item_id": "4e35ecc5cf7d9bad",
+      "case_id": "development-018",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-018-en.png",
+      "image_sha256": "4006507d4bc1a2194a99ce9e9da6e906fd9316e6fed2dfd331884c394c152ba1"
+    },
+    {
+      "item_id": "87ad244309f3e4ed",
+      "case_id": "development-019",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-019-en.png",
+      "image_sha256": "f15fac7be859bbfb8556dc94a48f553f797804d8e8a3786ca7c1113dec161aa5"
+    },
+    {
+      "item_id": "9518485d680b684e",
+      "case_id": "development-020",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-020-zh.png",
+      "image_sha256": "c95ba0db00817a820d594c923716052408d6e037630159d8289a7e6f3e81d50f"
+    },
+    {
+      "item_id": "4ecdfd7311ad0345",
+      "case_id": "development-021",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-021-zh.png",
+      "image_sha256": "85e061142aa958fe2e33b4df8445751f5aea01892c89eee2acd422d0d771433c"
+    },
+    {
+      "item_id": "2148d18002a19032",
+      "case_id": "development-021",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-021-en.png",
+      "image_sha256": "e709294491c3e10502e25380cbcf7f94f15839045c2c45b886b33bf35c90627d"
+    },
+    {
+      "item_id": "907faf09f8288eb8",
+      "case_id": "development-022",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-022-zh.png",
+      "image_sha256": "0725787e7f590584435edb8c29d40656173fe4cf7368d622ec13ac0460e7831f"
+    },
+    {
+      "item_id": "8c96b2df5e176de8",
+      "case_id": "development-022",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-022-en.png",
+      "image_sha256": "176648e6ee56a6549bbf6facbf869fa038f82145652924187a805bbef966f552"
+    },
+    {
+      "item_id": "fb5a7e3dc649290e",
+      "case_id": "development-023",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-023-zh.png",
+      "image_sha256": "eede6e73d9b5bc60c7634d70a3a94f55181b493fe95d3854c625123bbcdaaab9"
+    },
+    {
+      "item_id": "f306996a9beeb2f3",
+      "case_id": "development-023",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-023-en.png",
+      "image_sha256": "082e79c370fecdf01f00e5544672d999316faeecb4488c6b8a1850dcca322c03"
+    },
+    {
+      "item_id": "4d5fc19a28490280",
+      "case_id": "development-024",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-024-zh.png",
+      "image_sha256": "601f4d010f57b7f0720c7970307b10f24572f4b1f6c0be3f410d21f12736df5e"
+    },
+    {
+      "item_id": "6ab2e07e9bc5a766",
+      "case_id": "development-024",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-024-en.png",
+      "image_sha256": "e99a642bcd37fbc376c1da78740aebe41a4630dae0970435814f12eaa42dd11a"
+    },
+    {
+      "item_id": "26afe183923d899a",
+      "case_id": "development-025",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-025-zh.png",
+      "image_sha256": "3473613b1dc18618ccc68c3a6daf0188de64ca374011aef4aad161a4dd404f83"
+    },
+    {
+      "item_id": "d82d33090aa6012b",
+      "case_id": "development-025",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-025-en.png",
+      "image_sha256": "2c4945cbfe2cca69a81040496e74924226de7d30bed0b12ed94d5a1906b90d4c"
+    },
+    {
+      "item_id": "b9c6a907d6069a8f",
+      "case_id": "development-026",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-026-zh.png",
+      "image_sha256": "d8c2afe7ad1bcebc3d491c1b0d4059640ed1d46a7cfda602754cc9381bbf4915"
+    },
+    {
+      "item_id": "70c16c51177c5356",
+      "case_id": "development-026",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-026-en.png",
+      "image_sha256": "b6db1b9bba8099d83ab74f6a797bca7b61dfda4a7b8be20099b74ba3f983d1db"
+    },
+    {
+      "item_id": "4fef5f83cd9cc424",
+      "case_id": "development-027",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-027-zh.png",
+      "image_sha256": "246b055574fd20d9a007779e0f800d8ae54b54ccfa5be9f01c8d499c67370063"
+    },
+    {
+      "item_id": "acb4780c764a2275",
+      "case_id": "development-027",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-027-en.png",
+      "image_sha256": "4ce7d2b67b0f067c27517b15b0870f9976a4927969e1803830bff87586282c74"
+    },
+    {
+      "item_id": "79d154011b7617c4",
+      "case_id": "development-028",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-028-zh.png",
+      "image_sha256": "7d5707f5f2be6ac2cec31081acb1681d908935f8774750a032348285832b3a7b"
+    },
+    {
+      "item_id": "ae09633d511d1bdf",
+      "case_id": "development-028",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-028-en.png",
+      "image_sha256": "2f1ae58cd67d73d8a2317f9efae456e102a012858dc4710aefa3c5ed97f5a512"
+    },
+    {
+      "item_id": "6ca3360cc0969015",
+      "case_id": "development-029",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-029-zh.png",
+      "image_sha256": "1594d818361ea49c6a21dd57deaf47e832e3b6f0e8d1f682c4e009f096aa171a"
+    },
+    {
+      "item_id": "b067394807a6c34f",
+      "case_id": "development-030",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-030-zh.png",
+      "image_sha256": "20883b03a8f13e2caa7f76447d7490ec3c41e7cf771380d76b35f250b36a192f"
+    },
+    {
+      "item_id": "7725dede7ae09c8c",
+      "case_id": "development-030",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-030-en.png",
+      "image_sha256": "d53d0e85c512d4125cd72e122b8fe4059c5fe4421d0c3146419ce803c8bf319c"
+    },
+    {
+      "item_id": "ed711ca83454c978",
+      "case_id": "development-031",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-031-zh.png",
+      "image_sha256": "b7e41843f47fffc5e7d15e96266b61982ad4bd5a04accda0c4ada47c03c6a9bb"
+    },
+    {
+      "item_id": "0c1227522073f4ad",
+      "case_id": "development-032",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-032-zh.png",
+      "image_sha256": "6da75f5389df5c6ce19fa1ba8dfaa2065e2943bbf4e15b4e78ab21ff40d73679"
+    },
+    {
+      "item_id": "555fe81f051f78c5",
+      "case_id": "development-032",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-032-en.png",
+      "image_sha256": "a21f37de468e43f9c9935f46156238b3dcc22e1fbb072fceec9a9897e5be85ce"
+    },
+    {
+      "item_id": "acd19a4f378164a2",
+      "case_id": "development-033",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-033-zh.png",
+      "image_sha256": "b162f2bba5d77b2cbbd3694ce787d31bd40a68dd1c9f16c4629d21e4f496794d"
+    },
+    {
+      "item_id": "2640067f420e77ea",
+      "case_id": "development-034",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-034-zh.png",
+      "image_sha256": "2c7a89c992cfef54b09cd7ae155875b64dc85ce22ef419a271f1cce12fda25d2"
+    },
+    {
+      "item_id": "6ffdfcaff98bc24a",
+      "case_id": "development-034",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-034-en.png",
+      "image_sha256": "aea3ce31dfc3027f50eb840c7b81560529fabd575602fde16007baa0db2288cb"
+    },
+    {
+      "item_id": "d871fc7c6a8db24a",
+      "case_id": "development-035",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-035-zh.png",
+      "image_sha256": "70d16ff34f059b303dca42a179645f098906ba810943d66fc2a4e8af55a03677"
+    },
+    {
+      "item_id": "e2d6721b3e1656a8",
+      "case_id": "development-036",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-036-zh.png",
+      "image_sha256": "1182cc71c0614a2fb903565c717a989842f8c4d86f16c294d7ea5ec0cb952337"
+    },
+    {
+      "item_id": "75147345db0775fa",
+      "case_id": "development-036",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-036-en.png",
+      "image_sha256": "bcd932a1087181fc20d0a18d0fb4a1e1efa6fa36f5b9e5b3a5504910eadbb330"
+    },
+    {
+      "item_id": "3dbc52a9a23dca90",
+      "case_id": "development-037",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-037-zh.png",
+      "image_sha256": "2242c4e5dd15c09b5dab05eeb30a336baa4df96652b32f42ec18ff39ca7fce23"
+    },
+    {
+      "item_id": "634631dba34d67a9",
+      "case_id": "development-038",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-038-zh.png",
+      "image_sha256": "b8c47e0a8c097d6ebff44703689582d17563000184051dc07a6a70f1cfa8c297"
+    },
+    {
+      "item_id": "56f8d6d965410866",
+      "case_id": "development-038",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-038-en.png",
+      "image_sha256": "5f5c8604e85a2f35f3ca21a9d3cd483dfd8b3f33d934dc512db38e8d0c6899bf"
+    },
+    {
+      "item_id": "0e946fdf48fade13",
+      "case_id": "development-039",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-039-zh.png",
+      "image_sha256": "96ae5abac36e0a191d008771aa65f9124c0db481c276bbf3cbe568e0c4e03748"
+    },
+    {
+      "item_id": "2d6a94d8f3321c0d",
+      "case_id": "development-040",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-040-zh.png",
+      "image_sha256": "51667f15a6320cbb224340fd34b8e4524eb13c6f66e84143db70e6934adec497"
+    },
+    {
+      "item_id": "8849937525ad60f0",
+      "case_id": "development-040",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-040-en.png",
+      "image_sha256": "8ec8e76e1838519f2760c9c6d98e5c9a1cd5c0358acbbbd1160c6768571780d9"
+    },
+    {
+      "item_id": "703f3c89435c0e2c",
+      "case_id": "development-041",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-041-zh.png",
+      "image_sha256": "c5fc5cec0a5ae13620e243e0bec3e9527cb7d7aaac342ae22921dbab604d4c99"
+    },
+    {
+      "item_id": "1e41c8e5280f9fe7",
+      "case_id": "development-041",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-041-en.png",
+      "image_sha256": "060fb60224cfdce769de192aefbc5a971ebb2899865b0088a4c82ecbb3bc4d3a"
+    },
+    {
+      "item_id": "8baf08ec34514be8",
+      "case_id": "development-042",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-042-zh.png",
+      "image_sha256": "16910c3a0c2651671e88303829a0d868921ab9744939ddaed3c5a98e2dea8b7e"
+    },
+    {
+      "item_id": "8add76ba19d83ae1",
+      "case_id": "development-042",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-042-en.png",
+      "image_sha256": "eb66024b81b0028e4536aca6e320596d03dd2e32f10575cca9c530f4fbb6b73b"
+    },
+    {
+      "item_id": "fbbf5b527f8c7a57",
+      "case_id": "development-043",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-043-zh.png",
+      "image_sha256": "58eb65592479ab4a2753aac8746959749e4699ed1ff3316e8e5f5a1464a175a9"
+    },
+    {
+      "item_id": "89c218aa63849c3e",
+      "case_id": "development-044",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-044-zh.png",
+      "image_sha256": "6c00081b7629341e5e091e9fc76b14ee29a7a3613f03c724e839754bb761f572"
+    },
+    {
+      "item_id": "cdc3d949f19f4f5d",
+      "case_id": "development-044",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-044-en.png",
+      "image_sha256": "722fd9abef18a8d727052d1c966a02e63948944a9cf7e29a1497c8f03b0213b1"
+    },
+    {
+      "item_id": "0877a682d94f52b6",
+      "case_id": "development-045",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-045-zh.png",
+      "image_sha256": "638638a91a5b17f9b0aea6456ad332b0655393a92616ac241738f9fbcd45d836"
+    },
+    {
+      "item_id": "89995ddac517b7dc",
+      "case_id": "development-046",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-046-zh.png",
+      "image_sha256": "ca9261fb5e455f5e54e5d62a68256c1913034e3e78c1b11dc4d5c20911984017"
+    },
+    {
+      "item_id": "6c74808eddcfabfa",
+      "case_id": "development-046",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-046-en.png",
+      "image_sha256": "f90d2180837e27ec3fdb1979a22c2bc4537b11ce50469df6444ef2773898e510"
+    },
+    {
+      "item_id": "eff2046f47f6cdb6",
+      "case_id": "development-047",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-047-zh.png",
+      "image_sha256": "34c2bdb0c03d99c3c6195af8724dc56d7d1b63641838c9d5d123e6831c4aba79"
+    },
+    {
+      "item_id": "75aa0cd6e8101880",
+      "case_id": "development-047",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-047-en.png",
+      "image_sha256": "777d3d388f8d264fd0c09483bebec669f8224eca7c98c1fa435bd5a94dabca4d"
+    },
+    {
+      "item_id": "7c9333cec05393a7",
+      "case_id": "development-048",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-048-zh.png",
+      "image_sha256": "c8dcd407beb9bf38063919cbc6e1ecf6bce084bc5af0d755e3c8b76476c65526"
+    },
+    {
+      "item_id": "7e10df15f40631a7",
+      "case_id": "development-048",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-048-en.png",
+      "image_sha256": "ae6cfd3ef66e3f5989f18899fcf88b27bf1b4fc4c2dce9cd05445005c2821e5e"
+    },
+    {
+      "item_id": "4499987ebd411f08",
+      "case_id": "development-049",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-049-zh.png",
+      "image_sha256": "1af8c68d99b151cc790e1c9d2dbea1a1d34f9f103602ef922e690b276c6072db"
+    },
+    {
+      "item_id": "fe2983c80195ce8b",
+      "case_id": "development-049",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-049-en.png",
+      "image_sha256": "c5eab873564d79892accc0586992fc87e9e21edd596297079476159c963855f9"
+    },
+    {
+      "item_id": "be8800f08f4f6470",
+      "case_id": "development-050",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-050-zh.png",
+      "image_sha256": "76832a1baed7bf01cbb9bf704d58a041b3e47520a6641a7efb040578870e4611"
+    },
+    {
+      "item_id": "b357a94bf99109d4",
+      "case_id": "development-050",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/development/current/images/development-050-en.png",
+      "image_sha256": "a5a38144184bba286ffa7e14c0af7d223db93ac7d8295765e56ae6dda85ca13d"
+    }
+  ],
+  "sheets": [
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-001-01.jpg",
+      "sha256": "37a734215ea13d8a71420764993eaf0cc40bbd931f2730b9436e44789809ada6",
+      "case_id": "development-001",
+      "items": [
+        "26b55298a2a7e0aa",
+        "2c7244b154702e5e",
+        "42617c2882e9742e",
+        "9b51288ef9b3ae56"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-002-01.jpg",
+      "sha256": "b4dd8974b307596f71b5c800eeab5aaf28f9165549962c254d01131bfa70e8cd",
+      "case_id": "development-002",
+      "items": [
+        "82229635a498aa24",
+        "92ca8208fd1e5c5b",
+        "b85abebe901d700e"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-003-01.jpg",
+      "sha256": "186feb8f9bb7c712a6dfcce99694d17b6b5884604a8209abe5879a43d56cf965",
+      "case_id": "development-003",
+      "items": [
+        "0ded753f78edc716",
+        "4a38475f95baf995",
+        "5dfe88648b0455c6",
+        "e54f421e089350f8"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-004-01.jpg",
+      "sha256": "bafcec7f29348e2795808da6cdcbf68be6d3c80f60ded2fc0e0e5e41321a6212",
+      "case_id": "development-004",
+      "items": [
+        "8a1fa465455bf858",
+        "974bc952cbfc3899",
+        "e9ef16d8edca1984"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-005-01.jpg",
+      "sha256": "72607bfb7d134574a82fbaa8ac5c8b6d0245b72bdb0b9fb9e06e91ae45a03133",
+      "case_id": "development-005",
+      "items": [
+        "10f55ed6b2780917",
+        "27a833dbef3a0b9f",
+        "6fe53b7d42dceacd",
+        "d443b73a41cecaee"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-006-01.jpg",
+      "sha256": "9bc6d0e0d117eaf2839597c536a36d48d6184bc7982e3c39330075581a43aab0",
+      "case_id": "development-006",
+      "items": [
+        "146f06b35f9ba815",
+        "c7d6a605b7e04737",
+        "f95bcd2a35bb03e1"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-007-01.jpg",
+      "sha256": "7f36813907addfd89ef6724d84a562f49417670e5a3f43426cc10ef9d99bc1b4",
+      "case_id": "development-007",
+      "items": [
+        "4a6da0cbd8ec970b",
+        "9b21128da1d3b4d3",
+        "df123bfba6178905",
+        "eebfeba704a2db16"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-008-01.jpg",
+      "sha256": "069c0c9f0ce896ee357595a4556dfb2dc21aea371f4740ee0b4fcad11a05f6cc",
+      "case_id": "development-008",
+      "items": [
+        "6af9fe08ce92a0ca",
+        "9bdd60bd84bcdc88",
+        "df3612ee24d3ddee"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-009-01.jpg",
+      "sha256": "dd329d0110edace2c07dc48c1a89c8ea774509be161ffe9acc6f35e2cba64079",
+      "case_id": "development-009",
+      "items": [
+        "1d52f1129ab1e50c",
+        "3a4bb07e1807b719",
+        "9241751f7bddca80",
+        "c4d3bd36f1ad6017"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-010-01.jpg",
+      "sha256": "4deb137bde2b022af3afa189759f4c77056e5e19d834ae623e28daf8bbc8e198",
+      "case_id": "development-010",
+      "items": [
+        "0fb600b33a06cdbd",
+        "0fee31d5d7d4422f",
+        "a3417298114e3186"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-011-01.jpg",
+      "sha256": "0ba7576967639d42b081a11e88771f2a8ccd5b608f8ef8f3e7416c00132ac7da",
+      "case_id": "development-011",
+      "items": [
+        "2b7184ce0a781ec7",
+        "5aee2d5f4aa009cf",
+        "79a381f822b56b8e",
+        "ce2342c378e32147"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-012-01.jpg",
+      "sha256": "0d7e6e419c1fbd7eb041da5b4c12477153019a4db1643cc09297c6f40b24a1d4",
+      "case_id": "development-012",
+      "items": [
+        "0bcf8cbf596a3645",
+        "3d497f9492e12b96",
+        "4d2abcce4963f74f"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-013-01.jpg",
+      "sha256": "f7729393c1707b11a348709ff32287afb41e69d6055acad705a01d2fa9d58cde",
+      "case_id": "development-013",
+      "items": [
+        "20c8307e56701a7b",
+        "59033230deac3497",
+        "a4c59b94fa52f57b",
+        "db617fc93220aeaa"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-014-01.jpg",
+      "sha256": "d900d9ddc83f98357c8105021131cd67905ccf00ce94d0a4617bd3ec536b5d37",
+      "case_id": "development-014",
+      "items": [
+        "5ef58d0bc3a68ddf",
+        "65ec2a10159a056e",
+        "7ad2aeea446945e7",
+        "d4c46478ffee7c0d"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-015-01.jpg",
+      "sha256": "5477e21f9a1099cb8994786f068b065959ded4a0fa534d05aa481d4a04067f70",
+      "case_id": "development-015",
+      "items": [
+        "103f4e95da324d6d",
+        "4e465adc63785afa",
+        "6057fcadc8734ca1"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-016-01.jpg",
+      "sha256": "6265d3166b1dc10a4e356c1478c3c15f8010aa90b8635af46834caef619d7bf0",
+      "case_id": "development-016",
+      "items": [
+        "5197035ad332c798",
+        "58a30fee7d6e856a",
+        "b0faee50d1f1ea14"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-017-01.jpg",
+      "sha256": "c2d75051b1f73eeeb9be0bf7804b55a271b33113662317a0c2e239a922eafb4f",
+      "case_id": "development-017",
+      "items": [
+        "31ccbe7c8d75341c",
+        "b17834150501f540",
+        "c769e9b2d1ac3a65",
+        "e595fc40fa8cddd8"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-018-01.jpg",
+      "sha256": "f74356403eceb79f045ff9016a7163bcebbbfef343fccbed02390d8aa05be2c3",
+      "case_id": "development-018",
+      "items": [
+        "3139dab563bc6295",
+        "4e35ecc5cf7d9bad",
+        "e0eb6ad4fe204c81"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-019-01.jpg",
+      "sha256": "d5bcedcbbd2b4ffce152e26c5e3e20a634d9f708a4bae9baeaca6815f9beb816",
+      "case_id": "development-019",
+      "items": [
+        "7336bf21a62c4200",
+        "87ad244309f3e4ed",
+        "933c6132e0cd3654"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-020-01.jpg",
+      "sha256": "e7ba3b23c200da3ad5bcf9f8a977ae3aad070711cad2fbb9e60a91d4567df2bf",
+      "case_id": "development-020",
+      "items": [
+        "63c90c18d3fcff1f",
+        "9518485d680b684e"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-021-01.jpg",
+      "sha256": "bb8a4fd460cccd2084b608c2d5659995b3ca87a78521b55c563f5bedd8468e79",
+      "case_id": "development-021",
+      "items": [
+        "2148d18002a19032",
+        "4ecdfd7311ad0345",
+        "711cf12886129839",
+        "d729323601994b70"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-022-01.jpg",
+      "sha256": "c34459011af1083cdef523ad04cfa26b59e5712acd8d04683e12acaed4bdc9ba",
+      "case_id": "development-022",
+      "items": [
+        "0ebe018d496b2dda",
+        "56163cd96f12d037",
+        "8c96b2df5e176de8",
+        "907faf09f8288eb8"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-023-01.jpg",
+      "sha256": "cb7b1cf994b5d5ecfc2229473f0bd646ea30dc957e1ed0a500feeb24166b2cd2",
+      "case_id": "development-023",
+      "items": [
+        "8d5db00051c64f42",
+        "dd4e9515795b6276",
+        "f306996a9beeb2f3",
+        "fb5a7e3dc649290e"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-024-01.jpg",
+      "sha256": "42d2614c7e5dec15bca3e689cdae1ff99d5f87664568b1e85dbb1a0b156f1a06",
+      "case_id": "development-024",
+      "items": [
+        "241febe901d474da",
+        "2ede0c61ec0c04d1",
+        "4d5fc19a28490280",
+        "6ab2e07e9bc5a766"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-025-01.jpg",
+      "sha256": "b6ea3dde048932b7fc72252729ecac188129f778809a31bdbf2a0ebd4febb459",
+      "case_id": "development-025",
+      "items": [
+        "26afe183923d899a",
+        "326053e448410191",
+        "613452a6996f4acf",
+        "d82d33090aa6012b"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-026-01.jpg",
+      "sha256": "579624323bedcad333592f5f2b08f38b11066c75e606c10538060a1fe10b3d9d",
+      "case_id": "development-026",
+      "items": [
+        "70c16c51177c5356",
+        "976e09ace23dd057",
+        "b9c6a907d6069a8f",
+        "e45afc2897b34778"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-027-01.jpg",
+      "sha256": "9d3f83c0ad06ad466b63594336b4ed10bcbe763308839d1f9a60403a0992d5c1",
+      "case_id": "development-027",
+      "items": [
+        "3b54ae385be8221e",
+        "4fef5f83cd9cc424",
+        "acb4780c764a2275",
+        "da906bc7b0814639"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-028-01.jpg",
+      "sha256": "3e29fe9c4ea84aa2a36b49e576a7d17734a4d8ebbf66088c6f5d0ca89f411b75",
+      "case_id": "development-028",
+      "items": [
+        "79d154011b7617c4",
+        "ae09633d511d1bdf",
+        "b217fd206bf70b90",
+        "f60335710e8289f9"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-029-01.jpg",
+      "sha256": "8062a5136bea22ab1ca0318a473236fb2345ef70fc2428fadf9a95b4cec03119",
+      "case_id": "development-029",
+      "items": [
+        "2ceec393b5ebb941",
+        "34533114072899ae",
+        "6ca3360cc0969015"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-030-01.jpg",
+      "sha256": "ea1d0290b77880a17c09af4cdd498a1c287b20b74aba781dd027ab56f5611ff2",
+      "case_id": "development-030",
+      "items": [
+        "50dc2f3b7889c72d",
+        "7725dede7ae09c8c",
+        "b067394807a6c34f",
+        "e65031aa921882cf"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-031-01.jpg",
+      "sha256": "46987dad6c73803c00e8efb59e285911f3d0fa887b8c5b37ee6fc55ca9777f7e",
+      "case_id": "development-031",
+      "items": [
+        "0d079000534b16c8",
+        "c1d3adee596e7525",
+        "ed711ca83454c978"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-032-01.jpg",
+      "sha256": "1138f2a8a98a2e1549ee08c088747c095d73ee3fea20f7b7d5730f56d0dd4ebc",
+      "case_id": "development-032",
+      "items": [
+        "0b04341938ee1364",
+        "0c1227522073f4ad",
+        "1d0ae8c9abfe9bb3",
+        "555fe81f051f78c5"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-033-01.jpg",
+      "sha256": "2734afb429f86e660e30253480c8d4f9020ab3002df10b21dd2cc73b99439430",
+      "case_id": "development-033",
+      "items": [
+        "1dc61dfb94195c32",
+        "96f194bd6a3b2820",
+        "acd19a4f378164a2"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-034-01.jpg",
+      "sha256": "20552d96589b82b9dc546ccfd2bd27f3da7d4ddddb955a8a2ffbcce32fb5c790",
+      "case_id": "development-034",
+      "items": [
+        "0c67b670d8aae91f",
+        "2640067f420e77ea",
+        "6ffdfcaff98bc24a",
+        "d91f6038c38d3cfd"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-035-01.jpg",
+      "sha256": "3a2fa49443ca81afa244cc187a2379e52ded614299fdbebf2f56b02c773149f7",
+      "case_id": "development-035",
+      "items": [
+        "082bfbfff2097135",
+        "d871fc7c6a8db24a",
+        "e07eeca7584945d7"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-036-01.jpg",
+      "sha256": "eace3d9f7f4a31c9b98e049dc6cb44c3376cd1ed20f1403ce8596b76178bdca0",
+      "case_id": "development-036",
+      "items": [
+        "32de6fe31bbf98cf",
+        "75147345db0775fa",
+        "d3f15a786e4318c7",
+        "e2d6721b3e1656a8"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-037-01.jpg",
+      "sha256": "dc9d9a809730b7943440f2f076686abdc7f423dc3842fc4830f75c6f76ea06e1",
+      "case_id": "development-037",
+      "items": [
+        "2a3c4964be801cf1",
+        "3dbc52a9a23dca90",
+        "a90ae826fc77fee0"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-038-01.jpg",
+      "sha256": "2345081864212c55a0a93dea02b259186dbb7d1ac3332ac0386393bdd5b008c9",
+      "case_id": "development-038",
+      "items": [
+        "56f8d6d965410866",
+        "634631dba34d67a9",
+        "988f081c7196800e",
+        "eda747174fa9510c"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-039-01.jpg",
+      "sha256": "c32b79d3c5d0bdb341ce7f9a87b982987eb6b3de5f96b77ae3a91afd61311dfa",
+      "case_id": "development-039",
+      "items": [
+        "0e946fdf48fade13",
+        "6446ce98cb40ed90",
+        "c1889383bfb9430b"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-040-01.jpg",
+      "sha256": "61aead3bad6742a9df22ab69833a01793c791481aae3736f948965bbf9ee1313",
+      "case_id": "development-040",
+      "items": [
+        "07fc28f082d8a40b",
+        "2d6a94d8f3321c0d",
+        "7a1d58802773e90c",
+        "8849937525ad60f0"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-041-01.jpg",
+      "sha256": "c3a9385fa036c7d96e38a167733ecf1423cb59880f301383a7ef509776c81493",
+      "case_id": "development-041",
+      "items": [
+        "1e41c8e5280f9fe7",
+        "703f3c89435c0e2c",
+        "bf16e394f90fc5f2"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-042-01.jpg",
+      "sha256": "e573b9fff11a3f368e107ce8f05480d5eb1ff09d6a85f0e008f5c4b4cc263f97",
+      "case_id": "development-042",
+      "items": [
+        "8add76ba19d83ae1",
+        "8baf08ec34514be8",
+        "e7f8f3a5047c18f7"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-043-01.jpg",
+      "sha256": "cb01c8147c9f4961e198bff893c5ea30734a9a5d8d7e1742edb3122011454bd7",
+      "case_id": "development-043",
+      "items": [
+        "e0ac632b8e8faa6d",
+        "fbbf5b527f8c7a57"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-044-01.jpg",
+      "sha256": "d2593a57cb6bc15ce0e19923321fe6db744739a08bc346ce40f9f5564f20aa10",
+      "case_id": "development-044",
+      "items": [
+        "89c218aa63849c3e",
+        "bd73c9014e32357b",
+        "cdc3d949f19f4f5d"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-045-01.jpg",
+      "sha256": "6d626ddc73e9b3e15e5dee56ea41a8967656e1a5b5c864b416fc5a2280cc1d70",
+      "case_id": "development-045",
+      "items": [
+        "0877a682d94f52b6",
+        "4965804409f3437f"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-046-01.jpg",
+      "sha256": "8dff016dfb981e6fe03eba4944c82750bb462be7fe5812733f6898e4c9b14b62",
+      "case_id": "development-046",
+      "items": [
+        "6c74808eddcfabfa",
+        "89995ddac517b7dc",
+        "fe764add690c0e21"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-047-01.jpg",
+      "sha256": "58281683ee1c01488e6e42a7831cc854c47846f0b86b1591c1399cda58ce0f8e",
+      "case_id": "development-047",
+      "items": [
+        "4128e10e2816496c",
+        "75aa0cd6e8101880",
+        "eff2046f47f6cdb6"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-048-01.jpg",
+      "sha256": "f6a670552337324ceafe056d1f3f93676d8a197f268b2c0bae7d7668420b6df8",
+      "case_id": "development-048",
+      "items": [
+        "7c9333cec05393a7",
+        "7e10df15f40631a7",
+        "b673db70f0b27315"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-049-01.jpg",
+      "sha256": "9f92645b75ac814a3554e781fd4e165b8d1edda86a953d488fb0ff85e5dca2da",
+      "case_id": "development-049",
+      "items": [
+        "35f08b1467f1bf10",
+        "4499987ebd411f08",
+        "fe2983c80195ce8b"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/development/baselines/development-050-01.jpg",
+      "sha256": "1a720ada6701590e2e4287232ba18a5b4c84dd9a9542537752668e94c2e09d7d",
+      "case_id": "development-050",
+      "items": [
+        "921ffd9018b30af5",
+        "b357a94bf99109d4",
+        "be8800f08f4f6470"
+      ]
+    }
+  ],
+  "review_policy": "Actual direct Codex observation. Exact same output for the same bilingual semantic case is reviewed once and mapped back; translations are not independent samples.",
+  "no_automatic_completion_ratings": true
+}

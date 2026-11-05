@@ -1,0 +1,504 @@
+[
+  {
+    "source_id": "train-002",
+    "evidence": "曝光恢复后幼儿脸部和蓝衣回到阴天自然亮度；暖色两档可辨，复合目标轻暖并降低颜色浓度。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target and compared the requested direction/strength; identity still requires exact-pixel verification."
+  },
+  {
+    "source_id": "train-007",
+    "evidence": "两档去灰恢复后玩偶服装与路面层次清楚；轻度增艳可用，强度增艳使真人面部和衣服过浓，需降低；复合提亮暗部及轻对比仍清楚。",
+    "rejected_cases": [
+      "train-007-style-saturation-strong"
+    ],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target and compared the requested direction/strength; identity still requires exact-pixel verification."
+  },
+  {
+    "source_id": "train-010",
+    "evidence": "两档褪色恢复后肤色和紫衬衫自然；对比增强两档可辨，衣服和天空未见明显新损伤；复合目标压亮并略冷。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target and compared the requested direction/strength; identity still requires exact-pixel verification."
+  },
+  {
+    "source_id": "train-013",
+    "evidence": "恢复曝光后面部和黑衣可辨；轻棕与完整棕褐效果明显不同，复合暖色加低饱和均可见。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target and compared the requested direction/strength; identity still requires exact-pixel verification."
+  },
+  {
+    "source_id": "train-016",
+    "evidence": "去灰后婴儿肤色、灰衣与草地恢复自然；两档提暗部保留脸部层次及白背景；复合阴影提亮与轻对比可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target and compared the requested direction/strength; identity still requires exact-pixel verification."
+  },
+  {
+    "source_id": "train-018",
+    "evidence": "褪色恢复后情侣肤色、蓝衣和岩石清楚；冷色两档有区别，强档仍保留皮肤和衣服层次；复合压亮并略冷可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target and compared the requested direction/strength; identity still requires exact-pixel verification."
+  },
+  {
+    "source_id": "train-020",
+    "evidence": "两档曝光恢复后男子蓝衣与红摩托自然；低饱和两档保留彩色，暖色加低饱和目标没有明显新过曝。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target and compared the requested direction/strength; identity still requires exact-pixel verification."
+  },
+  {
+    "source_id": "train-025",
+    "evidence": "去灰后面部与浅发恢复清楚；低对比两档有柔化差异且眼睛仍清晰；复合提暗部和轻对比没有明显肤色额外变化。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed all sheet inputs/targets; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-030",
+    "evidence": "两档褪色恢复后蓝衣和肤色可辨；棕褐两档从保留原色到整体棕色有明显区别；复合压亮、略冷均可见。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed all sheet inputs/targets; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-031",
+    "evidence": "两档曝光恢复后草地、红裙和女孩面部可辨；压暗阴影两档保留主体，复合暖色及低饱和可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed all sheet inputs/targets; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-034",
+    "evidence": "两档去灰恢复后白衣、肤色与草地清楚；轻暖可用，强暖使草地和皮肤过黄需减轻；复合提暗部与轻对比仍自然。",
+    "rejected_cases": [
+      "train-034-style-temperature-strong"
+    ],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed all sheet inputs/targets; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-035",
+    "evidence": "两档颜色恢复后面部与衣物自然；弱增艳仍可用，强增艳把肤色推成橙色需降低；复合压亮略冷保留眼睛和衣服。",
+    "rejected_cases": [
+      "train-035-style-saturation-strong"
+    ],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-041",
+    "evidence": "曝光恢复后白衬衫和车身自然；轻对比可用，强对比面部与深色裤子过暗，需暗部补偿；复合暖色低饱和可辨。",
+    "rejected_cases": [
+      "train-041-style-contrast-strong"
+    ],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-042",
+    "evidence": "去灰恢复后砖墙与白衣自然；轻棕仍保留原色、强棕统一棕褐，主体与纹理可辨；复合提暗部且轻对比可用。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-044",
+    "evidence": "两档褪色恢复后肤色与蓝车自然；阴影提升两档分明且保留白衣纹理；复合压亮略冷保留结构。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-045",
+    "evidence": "曝光恢复后连帽男子和桥墩清楚；弱冷可用，强冷使脸部与海面偏蓝紫需减轻；复合暖色低饱和可辨。",
+    "rejected_cases": [
+      "train-045-style-temperature-strong"
+    ],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-048",
+    "evidence": "去灰恢复后衣服和树干清楚；两档低饱和均保留彩色，复合提暗部与轻对比有可见效果。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-053",
+    "evidence": "两档褪色恢复后面部和西服颜色可辨；两档柔化对比保留眼睛与服装纹理；复合降低高光和略冷可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-057",
+    "evidence": "两档曝光恢复后合影面部与白衣可辨；棕色两档明确且保留服装图案；复合暖色低饱和仍保留肤色层次。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-059",
+    "evidence": "去灰恢复后跳跃人物与彩色服装清楚；压暗阴影两档仍可辨主体，复合提暗部和轻对比保留阴天天空。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-064",
+    "evidence": "两档褪色恢复后蓝衣和马匹颜色可辨；弱暖可用，强暖令阴天天空与肤色过黄需减轻；复合压亮略冷可辨。",
+    "rejected_cases": [
+      "train-064-style-temperature-strong"
+    ],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-066",
+    "evidence": "曝光恢复后面部清楚且没有新增亮斑；弱增艳可用，强增艳令肤色和头发偏橙需减轻；复合暖色低饱和保留层次。",
+    "rejected_cases": [
+      "train-066-style-saturation-strong"
+    ],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-072",
+    "evidence": "去灰恢复后长城与山峦清楚；弱对比可用，强对比令黑裙折痕减弱，需暗部补偿；复合提暗部轻对比仍清楚。",
+    "rejected_cases": [
+      "train-072-style-contrast-strong"
+    ],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-082",
+    "evidence": "褪色恢复后衣服与瀑布水色可辨；两档棕色效果分明且保留水流亮部；复合压亮与冷色可见。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-096",
+    "evidence": "曝光恢复后白衬衫和面部自然；两档提暗部保留白衣纹理，复合暖色低饱和可见。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-102",
+    "evidence": "两档去灰恢复后合影及秋叶可辨；弱冷可用，强冷使肤色偏蓝紫需减轻；复合提暗部轻对比保留人脸。",
+    "rejected_cases": [
+      "train-102-style-temperature-strong"
+    ],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-110",
+    "evidence": "两档褪色恢复后气球与树林自然；两档低饱和仍保留彩色，复合压亮略冷可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-113",
+    "evidence": "曝光恢复后面部、草地与紫衣清楚；柔化对比两档可辨且主体清晰；复合暖色低饱和可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-133",
+    "evidence": "两档去灰恢复后面部层次清楚；两档棕褐差异明显，眼睛和胡须仍可辨；复合提暗部轻对比可用。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-138",
+    "evidence": "两档褪色恢复后肤色与粉裙清楚；压暗阴影两档保留脸部和衣服轮廓；复合压亮略冷保留结构。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-021",
+    "evidence": "曝光恢复后水面与云层清楚；两档暖色分明，强档有明显暖色风格且岩石仍可辨；复合暖色低饱和保留水纹。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-027",
+    "evidence": "去灰恢复后桥梁和秋叶层次可辨；两档增艳保持秋季配色，复合提暗部轻对比可见。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-039",
+    "evidence": "两档褪色恢复为低彩度冬季树林，棕叶仍可辨；两档增强对比保留树枝和路面，复合压亮略冷可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-043",
+    "evidence": "曝光恢复后石屋和灌木清楚；棕色两档明确，云层与屋顶细节没有明显新增损失；复合暖色低饱和可见。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-074",
+    "evidence": "去灰恢复后谷仓屋顶和草地清楚；两档提暗部改善建筑可见性，天空没有新增大片白；复合暗部及对比均有改变。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-085",
+    "evidence": "两档褪色恢复后树林与船只颜色可辨；两档冷色明确而船体层次保留；复合压亮略冷可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-086",
+    "evidence": "曝光恢复后暮色海湾与云层清楚；两档低饱和保留淡青水色和粉云，复合暖色低饱和保留日落气氛。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-100",
+    "evidence": "去灰恢复后花坛和蓝天层次清楚；两档柔化对比保留花色及雕像结构；复合提暗部轻对比可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-106",
+    "evidence": "褪色恢复后海桥与山峦色彩清楚；两档棕色效果明确，白云仍有层次；复合压亮略冷保留水面。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-114",
+    "evidence": "曝光恢复后皮艇和水纹清楚；两档压暗阴影仍有可见结构，复合暖色低饱和保留水色与暮光。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-120",
+    "evidence": "去灰恢复后路面和树林清楚；暖色两档可辨，强档保留阴云层次；复合提暗部轻对比可用。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-130",
+    "evidence": "两档褪色恢复后泳池与海面自然；增艳两档明确且水纹可辨，复合压亮略冷保留云层。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-149",
+    "evidence": "曝光恢复后金色河面与云层清楚；弱对比可用，强对比使桥下及树林过黑需暗部补偿；复合暖色低饱和可辨。",
+    "rejected_cases": [
+      "train-149-style-contrast-strong"
+    ],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-152",
+    "evidence": "去灰恢复后海面及蓝天清楚；两档棕褐效果明确且保留水纹；复合提暗部轻对比可见。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-164",
+    "evidence": "两档褪色恢复后暮光与沙滩仍为自然低彩度；提暗部两档改善沙滩和人物可见性且保留云层；复合压亮略冷可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-191",
+    "evidence": "曝光恢复后建筑、球场和天空清楚；两档冷色效果明显，强冷的白色稍蓝紫符合明确要求；复合暖色低饱和可辨且保留景物。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-195",
+    "evidence": "恢复对比后黑色标牌、白色建筑及云层清楚；两档降饱和逐级柔和；复合提暗部保留标牌与白墙层次。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-200",
+    "evidence": "褪色恢复后棕色蕨类和绿色树木自然；两档降低对比保留瀑布雾感与水流；复合压亮冷色仍保留水流层次。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-201",
+    "evidence": "曝光恢复后树框、湖面反光及岸边清楚；两档棕褐效果有可辨力度差异；复合暖色低饱和可辨，没有新增明显暗部损失。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-204",
+    "evidence": "对比恢复后雪山森林可辨，原本宽幅白天空保留；两档压暗阴影逐级变化，复合提暗部仍保留雪山明亮区域；仅核验全局色调，不声称缩略图细节质量。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-206",
+    "evidence": "褪色恢复保留暮光的冷暖过渡；暖色两档可辨，强档呈金色且保留云层与水面；复合压亮冷色明确，人物原为剪影，不以此声称人脸细节恢复。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-210",
+    "evidence": "曝光恢复后山谷、河流、草地清楚，保留原来白天空；两档增艳有可辨力度，强档草地更鲜明；复合暖色低饱和可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-214",
+    "evidence": "对比恢复后山峰与遗址层次清楚；弱增强可用，强增强把近处阶梯和树影压黑，应增加暗部补偿；复合提暗部保留蓝天。",
+    "rejected_cases": [
+      "train-214-style-contrast-strong"
+    ],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-220",
+    "evidence": "原图雪景本身低彩度，褪色恢复保留棕树干与衣物微色；棕褐两档强弱明确，雪和山脉层次保留；复合压亮冷色可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-243",
+    "evidence": "曝光恢复后蓝天与雪山清楚；提暗部两档逐级改善地面与人物可见性；复合暖色降饱和仍保留天空渐变。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-263",
+    "evidence": "对比恢复后森林与河面层次清楚；两档冷色变化明确，强档水面略蓝符合明确风格要求；复合压亮冷色不新增明显剪切。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-273",
+    "evidence": "夜航原图有噪点，褪色恢复仍保留暮光渐变及城市灯光；两档降饱和逐级柔和，复合暖色低饱和可辨；不声称降噪效果。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-278",
+    "evidence": "曝光恢复后帆布和水纹清楚；两档增强对比可辨，帆布纹理保留，船体原本很暗；复合提暗部改善船体可见性且保留天空。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-285",
+    "evidence": "对比恢复后竹林纵深清楚，原有天空亮斑没有新扩大；棕褐两档逐级去冷转棕且保留竹干；复合压亮略冷可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  },
+  {
+    "source_id": "train-291",
+    "evidence": "褪色恢复后庭院砖地与黄灯自然；两档压暗阴影逐级加深，白墙和座椅结构保留；复合压亮略冷可辨。",
+    "rejected_cases": [],
+    "reviewed_case_count": 6,
+    "reviewer": "Codex direct visual AI-assisted; not human",
+    "scope": "Viewed every displayed input/target; no fine-detail or sharpening claim."
+  }
+]

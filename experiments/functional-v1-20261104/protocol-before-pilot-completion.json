@@ -1,0 +1,108 @@
+{
+  "version": "functional-v1-20261104",
+  "status": "matched_pilots_running",
+  "objective": "得到实用性高的修图模型；根据真实编辑结果持续改进数据和微调方法，小规模SFT只是首轮验证，不作为最终目标替代。",
+  "human_review": false,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "limit_gpu_hours": 16,
+  "allowed_gpus": [
+    0,
+    2,
+    3
+  ],
+  "protected_gpu": 1,
+  "datasets": {
+    "train_semantic_cases": 220,
+    "train_language_records": 440,
+    "train_source_groups": 160,
+    "development_semantic_cases": 50,
+    "acceptance_semantic_cases": 50
+  },
+  "training": {
+    "starts": [
+      "original Qwen2.5-VL-7B-Instruct",
+      "current calibrated adapter seed-02"
+    ],
+    "seed": 20261104,
+    "replication_seed": 20261105,
+    "epochs": 4,
+    "effective_batch": 4,
+    "learning_rate": 0.0001,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "loss": "assistant parameter JSON only"
+  },
+  "gates": [
+    "冻结功能案例与类别标准",
+    "全量旧数据程序审计",
+    "Codex逐图主评审与精确参数重放；未通过校准的原始7B仅作参考",
+    "相同数据预算的两个训练起点",
+    "开发集功能与图像质量选模",
+    "锁定模型后最终验收",
+    "网页端同路径实际试用"
+  ],
+  "plan_adjustments": [
+    {
+      "change": "新增sepia全局棕褐色工具；初始八工具扩展为九工具",
+      "reason": "case-12原数据标签重放也呈黄绿色，未完成棕色调；单靠色温不足以可靠表达目标",
+      "evidence": "experiments/functional-v1-20261104/preflight/brown-tool-probe.png",
+      "comparison_policy": "底座、旧模型、新模型使用相同新工具和提示；保留旧流程对照，单独报告工具贡献"
+    },
+    {
+      "change": "明确新高光/阴影操作使用亮度掩码和有界调整",
+      "reason": "原流程全局提亮易损坏亮部；新版本逐工具验证，避免把不同颜色通道分别当成明暗区",
+      "comparison_policy": "所有新比较使用同一编辑器版本，历史结果不覆盖"
+    },
+    {
+      "change": "Pre-training shadow-curve correction, editor v1.1",
+      "reason": "Direct Codex viewing rejected gray haze in the draft masked additive shadow lift; bounded gamma retains black and white endpoints.",
+      "evidence": "preflight/editor-draft-01-rejection.json",
+      "training_started": false
+    },
+    {
+      "change": "High-tone-only darkening labels and editor v1.2",
+      "reason": "Codex rejected several global darkening targets because already-dark faces also became harder to see. Negative highlights now lower bright values while sparing dark regions; stronger bounded shadow candidates address insufficient recovery.",
+      "training_started": false
+    }
+  ],
+  "disclosures": [
+    "训练任务将逐条标记原始请求、改写和可控合成来源，不能将合成请求称为原始自然请求",
+    "旧留出图有历史评测接触，不称为全新未见独立测试",
+    "AI辅助评审不能替代用户实际试用结论",
+    "候选图为最高1024边长的视觉核验预览；工具参数用于同版本全分辨率渲染",
+    "GIER source images include photographs, scans and at least one illustration; do not describe the entire controlled training set as real photographs."
+  ],
+  "created_at": "2026-11-04T05:40:39.368918+00:00",
+  "editor": "functional-editor-v1.2-sepia",
+  "tools": [
+    "exposure",
+    "brightness",
+    "contrast",
+    "highlights",
+    "shadows",
+    "saturation",
+    "temperature",
+    "tint",
+    "sepia"
+  ],
+  "review_policy": {
+    "version": "review-policy-v2-direct-ai",
+    "primary": "codex_direct_visual",
+    "human_review": false,
+    "frozen_qwen_role": "advisory_only_excluded_from_admission_and_model_selection_after_failed_calibration",
+    "calibration_evidence": "preflight/reviewer-calibration-failure.json",
+    "calibration_evidence_sha256": "e23a316ec2accc4c0ab3eeb6a49bd84430e49f87154f6dd49243619c7d227b02",
+    "reason": "Known factual contradictions in frozen 7B image judgments. Do not replace pixel-L1 with another unreliable automatic score.",
+    "label_gate": "Every admitted target must be actually viewed by Codex, fully instruction-complete, acceptable in image quality, and tied to exact input/output and contact-sheet hashes. Partial, failed or uncertain direct observations are not admitted.",
+    "disagreement_policy": "Preserve prior 7B disagreement and uncertain observations. Do not claim two-reviewer agreement or human certification. Uncertainty in the designated primary visual review remains excluded.",
+    "created_at": "2026-11-04T06:53:01.609215+00:00"
+  },
+  "actual_training_data_sha256": "d460d9b058f1fede3ff90b10bdb28e14df06fc9aa1ab628774f45fa366a387a4"
+}

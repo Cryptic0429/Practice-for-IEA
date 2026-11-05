@@ -1,0 +1,35 @@
+{
+  "status": "accepted_for_pilot_training",
+  "accepted_at": "2026-11-04T08:35:49.514765+00:00",
+  "semantic_cases": 220,
+  "language_records": 440,
+  "source_groups": 160,
+  "dataset_sha256": "d460d9b058f1fede3ff90b10bdb28e14df06fc9aa1ab628774f45fa366a387a4",
+  "case_manifest_sha256": "c3926b18803df468d2e8b71b927065d545ff78b1722d9e9685c1690bc61c408e",
+  "primary_review_policy": {
+    "version": "review-policy-v2-direct-ai",
+    "primary": "codex_direct_visual",
+    "human_review": false,
+    "frozen_qwen_role": "advisory_only_excluded_from_admission_and_model_selection_after_failed_calibration",
+    "calibration_evidence": "preflight/reviewer-calibration-failure.json",
+    "calibration_evidence_sha256": "e23a316ec2accc4c0ab3eeb6a49bd84430e49f87154f6dd49243619c7d227b02",
+    "reason": "Known factual contradictions in frozen 7B image judgments. Do not replace pixel-L1 with another unreliable automatic score.",
+    "label_gate": "Every admitted target must be actually viewed by Codex, fully instruction-complete, acceptable in image quality, and tied to exact input/output and contact-sheet hashes. Partial, failed or uncertain direct observations are not admitted.",
+    "disagreement_policy": "Preserve prior 7B disagreement and uncertain observations. Do not claim two-reviewer agreement or human certification. Uncertainty in the designated primary visual review remains excluded.",
+    "created_at": "2026-11-04T06:53:01.609215+00:00"
+  },
+  "selected_target_manifest_sha256": "d0cbe4a82a5160f78f87b44e29ac0233643a0fbeddfff5f49eeef3792c2a37fd",
+  "frozen_base_review_sha256": "0cdda15827fd9358303c49c5751d29b272d89d05bcdd98c760969d86a373db54",
+  "codex_review_sha256": "2103bf501d73f7085fec731da0b662d648b4e449b2bfe069120a1b86e15040ec",
+  "human_review": false,
+  "instruction_origins": {
+    "controlled_bilingual_counterfactual_pair": 240,
+    "controlled_bilingual_task": 200
+  },
+  "limits": [
+    "Controlled-task supervision rather than untouched natural GIER requests.",
+    "Codex direct AI visual verification; failed-calibration Qwen screening is advisory only, not a second certification.",
+    "Training contains photographs, old scans, illustrations and graphics; this is not a photography-only dataset.",
+    "Targets inspected at full-frame preview scale, maximum edge 1024; no fine-detail restoration capability is claimed."
+  ]
+}

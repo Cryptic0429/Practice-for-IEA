@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "development-001",
+    "split": "development",
+    "group_id": "ccb518e7c6ed4a7458f6e970742170e96f8965877e5af6326f26876846eab967",
+    "family": "lighting",
+    "action": "lighten",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/ccb518e7c6ed4a7458f6.png",
+    "input_sha256": "827d163a16a077f5ff2f7706bcd92f2c86e738ad34eebd228ee1f945c4eb84fb",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bZCHy_bZCHy.jpg",
+    "original_source_sha256": "e1c6f651c4d57c8a76365738194d7466de6203f228fa464254a133cfe3b02d45",
+    "original_record_id": "GIER-Edit:train:007964",
+    "original_request": "",
+    "instructions": {
+      "zh": "暗的地方看不清，请把它们提亮，同时保留原有颜色。",
+      "en": "The dark areas are hard to see. Brighten them while keeping the original colours."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "光照按要求变亮或变暗；提亮要求应改善暗部可见性。",
+    "must_preserve": "亮部有层次，暗部不压黑，颜色和主体不被无关改变。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-002",
+    "split": "development",
+    "group_id": "6a19c68bcd9a794f74ce14dcc7181dd3071acc2232f5170276b8c835b94f8090",
+    "family": "lighting",
+    "action": "darken",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/6a19c68bcd9a794f74ce.png",
+    "input_sha256": "c864a238ae111d8b001c4444079509c067631fded02f0a1ace476fd4710169eb",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2yl5hg_2yl5hg.jpg",
+    "original_source_sha256": "7216cb5f3c57b8b8550ef873c1502e12a3f1b486e603316895cca16a9d941495",
+    "original_record_id": "GIER-Edit:train:018756",
+    "original_request": "Just refine this image, make it better.",
+    "instructions": {
+      "zh": "请把曝光压低一些，让明亮的区域更柔和。",
+      "en": "Please lower the exposure a little so the bright areas look softer."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "光照按要求变亮或变暗；提亮要求应改善暗部可见性。",
+    "must_preserve": "亮部有层次，暗部不压黑，颜色和主体不被无关改变。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-003",
+    "split": "development",
+    "group_id": "b1fdf5317215e801443c18ab39e2c877cb436ef9950340079e11b2c816f95b63",
+    "family": "lighting",
+    "action": "lighten",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/b1fdf5317215e801443c.png",
+    "input_sha256": "5b7a39fd24681dc556895711467a08440d74fec65f16269a3b41659678c6a67b",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xn7uc_3xn7uc.jpg",
+    "original_source_sha256": "fa3d134846b33a7f7533e7b093a20dbc77f0d53ad09825e3398f91850e1261ed",
+    "original_record_id": "GIER-Edit:train:010603",
+    "original_request": "",
+    "instructions": {
+      "zh": "暗的地方看不清，请把它们提亮，同时保留原有颜色。",
+      "en": "The dark areas are hard to see. Brighten them while keeping the original colours."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "光照按要求变亮或变暗；提亮要求应改善暗部可见性。",
+    "must_preserve": "亮部有层次，暗部不压黑，颜色和主体不被无关改变。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-004",
+    "split": "development",
+    "group_id": "e94c027d3abf27d4b725cc1baf9e750f39d1fad6fd16e2d46f02999b1db6a29e",
+    "family": "lighting",
+    "action": "darken",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/e94c027d3abf27d4b725.png",
+    "input_sha256": "d63e338c6678b8d79c064309ae12573d4bd23787b1367ae44bab91226ecdf9e4",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3jhird_3jhird.jpg",
+    "original_source_sha256": "9177d397b18fd5454c7091d1be37fb9c0efb7b417e653398b92a3d8616a6e0ab",
+    "original_record_id": "GIER-Edit:train:000174",
+    "original_request": "",
+    "instructions": {
+      "zh": "请把曝光压低一些，让明亮的区域更柔和。",
+      "en": "Please lower the exposure a little so the bright areas look softer."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "光照按要求变亮或变暗；提亮要求应改善暗部可见性。",
+    "must_preserve": "亮部有层次，暗部不压黑，颜色和主体不被无关改变。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-005",
+    "split": "development",
+    "group_id": "bc992384d2fc83a160c987e82ccd9f6b63ef86b8cea7e89b0fc6bf258475934f",
+    "family": "lighting",
+    "action": "lighten",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/bc992384d2fc83a160c9.png",
+    "input_sha256": "cccb5dd34f2b309f9ba21fdc9d2879ddac59fa963fe34192c6cca381fcb04053",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/1iwxod_1iwxod.jpg",
+    "original_source_sha256": "1f04682bbb11d646ba8150f3fb1cc150533cc2edbdb39470b6bfa0a25382d771",
+    "original_record_id": "GIER-Edit:train:010488",
+    "original_request": "Please simply make this image better.",
+    "instructions": {
+      "zh": "暗的地方看不清，请把它们提亮，同时保留原有颜色。",
+      "en": "The dark areas are hard to see. Brighten them while keeping the original colours."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "光照按要求变亮或变暗；提亮要求应改善暗部可见性。",
+    "must_preserve": "亮部有层次，暗部不压黑，颜色和主体不被无关改变。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-006",
+    "split": "development",
+    "group_id": "aec4228080bba958c0c41a95cbefb23daafdc8708996c399926d67435ce323d4",
+    "family": "lighting",
+    "action": "darken",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/aec4228080bba958c0c4.png",
+    "input_sha256": "b7a361cfa1aff1b8905711ca84a560b468eb1122974b5a6ceb220d156b065777",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xsajb_3xsajb.jpg",
+    "original_source_sha256": "2fdd5b317ae99dab6131876426f8d39e018f2f9ffddcbf34358c3b07a715b04f",
+    "original_record_id": "GIER-Edit:train:005255",
+    "original_request": "",
+    "instructions": {
+      "zh": "请把曝光压低一些，让明亮的区域更柔和。",
+      "en": "Please lower the exposure a little so the bright areas look softer."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "光照按要求变亮或变暗；提亮要求应改善暗部可见性。",
+    "must_preserve": "亮部有层次，暗部不压黑，颜色和主体不被无关改变。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-007",
+    "split": "development",
+    "group_id": "849740c55a392aceaafca6d7158b36acd144173590e35e25f1cc042b835a6795",
+    "family": "lighting",
+    "action": "lighten",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/849740c55a392aceaafc.png",
+    "input_sha256": "bf6be0e15490f81c6a97a36ddcdd44f80ac28701064b0b851b51d58f3d9bee4b",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/skHNt_skHNt.jpg",
+    "original_source_sha256": "8aa6610bbdc374ff45dff6561be53ed31ec121c3a2b2e74d2ceab157afe3dbfb",
+    "original_record_id": "GIER-Edit:train:008209",
+    "original_request": "Increase the colors in the picture so that the grass looks greener",
+    "instructions": {
+      "zh": "暗的地方看不清，请把它们提亮，同时保留原有颜色。",
+      "en": "The dark areas are hard to see. Brighten them while keeping the original colours."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "光照按要求变亮或变暗；提亮要求应改善暗部可见性。",
+    "must_preserve": "亮部有层次，暗部不压黑，颜色和主体不被无关改变。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-008",
+    "split": "development",
+    "group_id": "e0606c0422ddd983cdfabb8437e4251cd2ab9a0b620916673e28f078c437c040",
+    "family": "lighting",
+    "action": "darken",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/e0606c0422ddd983cdfa.png",
+    "input_sha256": "7fbff550d7ecec192d4d169a96b1786fb79a33699c56a838b705cd24b3548894",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4acpmv_4acpmv.jpg",
+    "original_source_sha256": "bdeef9163abbb3928a07adcacc7416fe013a3741c708a29985ff414c3de17cd1",
+    "original_record_id": "GIER-Edit:train:013283",
+    "original_request": "Edit this image to make it more beautiful",
+    "instructions": {
+      "zh": "请把曝光压低一些，让明亮的区域更柔和。",
+      "en": "Please lower the exposure a little so the bright areas look softer."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "光照按要求变亮或变暗；提亮要求应改善暗部可见性。",
+    "must_preserve": "亮部有层次，暗部不压黑，颜色和主体不被无关改变。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-009",
+    "split": "development",
+    "group_id": "563edccb12bd82612a284de5763bb2ef327e55ff37c0005c39b6c426c5cb8849",
+    "family": "lighting",
+    "action": "lighten",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/563edccb12bd82612a28.png",
+    "input_sha256": "c8054a08c51f44ea658887b1002bb2d8e7fddf78948d2d1869c9aa49245a8d02",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4birrc_4birrc.jpg",
+    "original_source_sha256": "4281b59032d08962ca1c02fc501b8d2bb78b375d72581628ef7f63803a128d49",
+    "original_record_id": "GIER-Edit:train:023627",
+    "original_request": "What will you do to improve this image?",
+    "instructions": {
+      "zh": "暗的地方看不清，请把它们提亮，同时保留原有颜色。",
+      "en": "The dark areas are hard to see. Brighten them while keeping the original colours."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "光照按要求变亮或变暗；提亮要求应改善暗部可见性。",
+    "must_preserve": "亮部有层次，暗部不压黑，颜色和主体不被无关改变。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-010",
+    "split": "development",
+    "group_id": "709044f434994480b0f1917baf2fafee944f196e092a552454f8058cf446e0f1",
+    "family": "lighting",
+    "action": "darken",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/709044f434994480b0f1.png",
+    "input_sha256": "259a39b57f953daadcbbd09beb159aef7bd13bd9c2c14f4adaaceee8a7ea744f",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8H1xq_8H1xq.jpg",
+    "original_source_sha256": "8358af9f6cf4c68dcad60f30a69164a86e8b20ddc67300c67992372089219072",
+    "original_record_id": "GIER-Edit:train:014879",
+    "original_request": "Brighten the image a bit.",
+    "instructions": {
+      "zh": "请把曝光压低一些，让明亮的区域更柔和。",
+      "en": "Please lower the exposure a little so the bright areas look softer."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "光照按要求变亮或变暗；提亮要求应改善暗部可见性。",
+    "must_preserve": "亮部有层次，暗部不压黑，颜色和主体不被无关改变。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-011",
+    "split": "development",
+    "group_id": "93c1c7a673772a64540f5f85dce0eec10e7917e8b26db566546f67d9b391711e",
+    "family": "white_balance",
+    "action": "warm",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/93c1c7a673772a64540f.png",
+    "input_sha256": "c56790a6ca282c6350f19c68657b9d12fdcaea38980ca9fb5e058b6d6a51225b",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3osvdc_3osvdc.jpg",
+    "original_source_sha256": "0b3f7eff61460cd0d04e3e2c5266f7644aa81af3955196487e9a7b8140fc0693",
+    "original_record_id": "GIER-Edit:train:017195",
+    "original_request": "Edit this image to make it more beautiful",
+    "instructions": {
+      "zh": "请增加一点暖色调。",
+      "en": "Please add a little warmth to the photo."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "色调按要求明显变暖或变冷。",
+    "must_preserve": "亮度和饱和度基本稳定，不出现过强橙黄、蓝或绿色偏。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-012",
+    "split": "development",
+    "group_id": "f6dd8ceda09a5b9563155a7bc29fd7b639abc54abd35526660ee6ab20c73f86e",
+    "family": "white_balance",
+    "action": "cool",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/f6dd8ceda09a5b956315.png",
+    "input_sha256": "a036734cdc7455cb7e7f658f5e1dd1e65d3694e39bb7f5f4944b6e278a3b5e26",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xtus5_3xtus5.jpg",
+    "original_source_sha256": "38b912120cc2c80281f347c76bfaf0af6cf2f8d7ccd9a3de1696b42315f9dd99",
+    "original_record_id": "GIER-Edit:train:021809",
+    "original_request": "",
+    "instructions": {
+      "zh": "请增加一点冷色调。",
+      "en": "Please add a little coolness to the photo."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "色调按要求明显变暖或变冷。",
+    "must_preserve": "亮度和饱和度基本稳定，不出现过强橙黄、蓝或绿色偏。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-013",
+    "split": "development",
+    "group_id": "d36754cbd60149830812dacc15332e1da4b1cbc5e0df9ef7accf7b435f61fccc",
+    "family": "white_balance",
+    "action": "warm",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/d36754cbd60149830812.png",
+    "input_sha256": "eb65d85f73d12f017ce5666d7aca35adf6fc39773be95945e07631411350d329",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2b3wym_2b3wym.jpg",
+    "original_source_sha256": "5691c8f79f485fefd765174843f2d031e8a2879e16ed7d6248b1d5f1940305fc",
+    "original_record_id": "GIER-Edit:train:001922",
+    "original_request": "Please simply make this image better.",
+    "instructions": {
+      "zh": "请增加一点暖色调。",
+      "en": "Please add a little warmth to the photo."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "色调按要求明显变暖或变冷。",
+    "must_preserve": "亮度和饱和度基本稳定，不出现过强橙黄、蓝或绿色偏。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-014",
+    "split": "development",
+    "group_id": "f83f625374ad47667b3c9e23a972afa7bd10951c20e7dce4687a87d6326ac110",
+    "family": "white_balance",
+    "action": "cool",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/f83f625374ad47667b3c.png",
+    "input_sha256": "524e8ea1dfa1bb87e4e95ca80cf6d280fe04d113c661ddbb64cc5ca48c6dccf4",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4n95ny_4n95ny.jpg",
+    "original_source_sha256": "9887ab9b2b88b8bb3bf15fe3528531d67ccc742bc09685758d49d1a8a2ea2e17",
+    "original_record_id": "GIER-Edit:train:009665",
+    "original_request": "Please simply make this image better.",
+    "instructions": {
+      "zh": "请增加一点冷色调。",
+      "en": "Please add a little coolness to the photo."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "色调按要求明显变暖或变冷。",
+    "must_preserve": "亮度和饱和度基本稳定，不出现过强橙黄、蓝或绿色偏。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-015",
+    "split": "development",
+    "group_id": "d5e05fbb4b89a27029a29bbbb0424656db6e9223d97fe8424c1d975f2e8d7534",
+    "family": "white_balance",
+    "action": "warm",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/d5e05fbb4b89a27029a2.png",
+    "input_sha256": "15373a6552d920e867df382b881444c90b73a89a892359fa90a95b004f3d90f6",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4gwvy5_4gwvy5.jpg",
+    "original_source_sha256": "acd863b6e557e23a2f0772211f9788cec8fe9fe1c7fbeac468b018703132a1f0",
+    "original_record_id": "GIER-Edit:train:019864",
+    "original_request": " I need a senior photo; could you adjust this one so I am clearer against the background/brighter/etc.? Thank you!",
+    "instructions": {
+      "zh": "请增加一点暖色调。",
+      "en": "Please add a little warmth to the photo."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "色调按要求明显变暖或变冷。",
+    "must_preserve": "亮度和饱和度基本稳定，不出现过强橙黄、蓝或绿色偏。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-016",
+    "split": "development",
+    "group_id": "163d691b53c3f953f0bbc1491750b5b7e675a6344935783bd9c584dc5a3d4f1e",
+    "family": "white_balance",
+    "action": "cool",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/163d691b53c3f953f0bb.png",
+    "input_sha256": "ddf9d8ed558f62186a98d04073688c127b0051240ef15cbfaed61e1e5f95f182",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2v5oqd_2v5oqd.jpg",
+    "original_source_sha256": "fc8078d31dc1a5656ed1fd5bbdae1ba5152d954c7dfdc2c55f5995442d3fba6e",
+    "original_record_id": "GIER-Edit:train:020263",
+    "original_request": "Is it possible to make the car paint look better and cleaner, fix the shadow, and lower the car just a little more?!",
+    "instructions": {
+      "zh": "请增加一点冷色调。",
+      "en": "Please add a little coolness to the photo."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "色调按要求明显变暖或变冷。",
+    "must_preserve": "亮度和饱和度基本稳定，不出现过强橙黄、蓝或绿色偏。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-017",
+    "split": "development",
+    "group_id": "0e38f7c6b7816c8880f3796b6eadc3e0a2562e326cefbb98a39f499068042063",
+    "family": "white_balance",
+    "action": "warm",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/0e38f7c6b7816c8880f3.png",
+    "input_sha256": "1380bf0924e6a8ed4254a8a526f9ed650d82699bfe31a8a87feeb5e9288d7e34",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6XjXg_6XjXg.jpg",
+    "original_source_sha256": "70fcb1a0dc3f85cff56a8afaefd3f678892f10b0206509b7739f3ef497c2e4a0",
+    "original_record_id": "GIER-Edit:train:003635",
+    "original_request": "Brighten the image moderately.",
+    "instructions": {
+      "zh": "请增加一点暖色调。",
+      "en": "Please add a little warmth to the photo."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "色调按要求明显变暖或变冷。",
+    "must_preserve": "亮度和饱和度基本稳定，不出现过强橙黄、蓝或绿色偏。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-018",
+    "split": "development",
+    "group_id": "c6714f3ecbc15ca891f85b920285b7e34f5fdfd57c7628947d7278f92ca83c83",
+    "family": "white_balance",
+    "action": "cool",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/c6714f3ecbc15ca891f8.png",
+    "input_sha256": "307fcc051949eec73663ba05afed676068060832e340377a3242631bcfce662b",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9h90M_9h90M.jpg",
+    "original_source_sha256": "45efa94bcf88742baabb303864402e9fd3114d3a25a5c4fce480a6fdc57b5d56",
+    "original_record_id": "GIER-Edit:train:012642",
+    "original_request": "Darken the photo slightly.",
+    "instructions": {
+      "zh": "请增加一点冷色调。",
+      "en": "Please add a little coolness to the photo."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "色调按要求明显变暖或变冷。",
+    "must_preserve": "亮度和饱和度基本稳定，不出现过强橙黄、蓝或绿色偏。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-019",
+    "split": "development",
+    "group_id": "df3aacceaf21d1217f4676ffceef6dcd9d9807042cf4736c98c7e86944892fdf",
+    "family": "white_balance",
+    "action": "warm",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/df3aacceaf21d1217f46.png",
+    "input_sha256": "7e3fd2e6e994be3ba14ccff9c0b7b052a93af717176c4bb4d9c7a94f2097d2d4",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/al2t5c_al2t5c.jpg",
+    "original_source_sha256": "6fba9c5315c41d4ff0922fbe5212e5e722bdc93df62c194278b5c7f0fba7911a",
+    "original_record_id": "GIER-Edit:train:014796",
+    "original_request": "Give the picture a old-western look",
+    "instructions": {
+      "zh": "请增加一点暖色调。",
+      "en": "Please add a little warmth to the photo."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "色调按要求明显变暖或变冷。",
+    "must_preserve": "亮度和饱和度基本稳定，不出现过强橙黄、蓝或绿色偏。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-020",
+    "split": "development",
+    "group_id": "48f1fc9abd948e3a5481092e115b7bbae7e4d6707891be5896e4b585a9429cb8",
+    "family": "white_balance",
+    "action": "cool",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/48f1fc9abd948e3a5481.png",
+    "input_sha256": "a4fda0e41f8fd8a91fccb9f06935f16aefbf225edc764be4af77872ba76a36dc",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35jv7q_35jv7q.jpg",
+    "original_source_sha256": "8d59fdf7125f1609e22ed4e8ee76fac0f299b366aafd4b18abd7fed21977f52a",
+    "original_record_id": "GIER-Edit:train:000295",
+    "original_request": "Change image from brown tones to cool tones.",
+    "instructions": {
+      "zh": "请增加一点冷色调。",
+      "en": "Please add a little coolness to the photo."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "色调按要求明显变暖或变冷。",
+    "must_preserve": "亮度和饱和度基本稳定，不出现过强橙黄、蓝或绿色偏。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-021",
+    "split": "development",
+    "group_id": "1af6a6859be6322939619dadf2eb82dea483c1f98af32f8ef0d73f8be5b90bdd",
+    "family": "saturation",
+    "action": "saturate",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/1af6a6859be632293961.png",
+    "input_sha256": "3a9407bcf58a63700b10b6d605798236f61f0a138921e234e68c02c3254f0c45",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/a2i6rc_a2i6rc.jpg",
+    "original_source_sha256": "148e26fd3726e4545307282b4f69c7b2bd2d83e7f6f45553d4d6d4348e06e4fd",
+    "original_record_id": "GIER-Edit:train:000027",
+    "original_request": "Make the background a little darker and the sog a little brighter and easier to see",
+    "instructions": {
+      "zh": "请让照片的色彩更丰富一点。",
+      "en": "Please make the colours in this photo a little richer."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "颜色按要求更鲜艳或更柔和。",
+    "must_preserve": "保留原有色相和明暗，不出现荧光色或意外黑白。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-022",
+    "split": "development",
+    "group_id": "e73fef7a780e4e3e03301869f68078e37db7f812918f593e4abb2ed0a36640b2",
+    "family": "saturation",
+    "action": "desaturate",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/e73fef7a780e4e3e0330.png",
+    "input_sha256": "6191bbfa1bf973fc1064ab34a3d8c33613c1388fba7cf07e20020bd5b9283638",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7hy6ro_7hy6ro.jpg",
+    "original_source_sha256": "98efd6c9250577c5653ac5bfd7f6618d764375294f13d0a0f4619e47cad6f2e9",
+    "original_record_id": "GIER-Edit:train:009871",
+    "original_request": "Edit this image to make it more beautiful",
+    "instructions": {
+      "zh": "请把颜色调淡一点，但仍然保留彩色。",
+      "en": "Please tone down the colours a little, but keep the image in colour."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "颜色按要求更鲜艳或更柔和。",
+    "must_preserve": "保留原有色相和明暗，不出现荧光色或意外黑白。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-023",
+    "split": "development",
+    "group_id": "10f6c6374d8da4e1c3de8066b402ef9d31fb39c0467ad5866f36c8a690f80629",
+    "family": "saturation",
+    "action": "saturate",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/10f6c6374d8da4e1c3de.png",
+    "input_sha256": "38be4b3ef69c94c51120b4d07f16829bcedddfee8d4d16b3dc41dcd367fb906c",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4ovy0j_4ovy0j.jpg",
+    "original_source_sha256": "6afcf64f086c94f19076c3f7be1fef986fead0bc360cbac78e7d89e29cdbbad4",
+    "original_record_id": "GIER-Edit:train:006977",
+    "original_request": "Just refine this image, make it better.",
+    "instructions": {
+      "zh": "请让照片的色彩更丰富一点。",
+      "en": "Please make the colours in this photo a little richer."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "颜色按要求更鲜艳或更柔和。",
+    "must_preserve": "保留原有色相和明暗，不出现荧光色或意外黑白。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-024",
+    "split": "development",
+    "group_id": "92db917c9789d1f7087340d2878d6388b3061e686ad4b813b6a363139dc8266a",
+    "family": "saturation",
+    "action": "desaturate",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/92db917c9789d1f70873.png",
+    "input_sha256": "67d7a29c4071bb3dfd312a02a6f0f668bf5da86c5fc8b339fa10102c582eb053",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5385x5_5385x5.jpg",
+    "original_source_sha256": "45a47732209a5c294084531b47e0999c6921d5f4d2fd442b4695ce8b57f28a85",
+    "original_record_id": "GIER-Edit:train:020311",
+    "original_request": "Please, add more colors to the photo, background make red and to  face add natural ton",
+    "instructions": {
+      "zh": "请把颜色调淡一点，但仍然保留彩色。",
+      "en": "Please tone down the colours a little, but keep the image in colour."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "颜色按要求更鲜艳或更柔和。",
+    "must_preserve": "保留原有色相和明暗，不出现荧光色或意外黑白。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-025",
+    "split": "development",
+    "group_id": "1f496b00e0b75123226fab2785b5d4587f3d0b40b568d92d2a470b93cbe466d2",
+    "family": "saturation",
+    "action": "saturate",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/1f496b00e0b75123226f.png",
+    "input_sha256": "4c433dc41bd4d53ab9c77ae8aab69f9774c85512e12f6494929b1a62da420c80",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4lqzt6_4lqzt6.jpg",
+    "original_source_sha256": "334cd4688f52c88bf8a8f8d6414a3a4baa28490b2699365e6f86db971f91cbeb",
+    "original_record_id": "GIER-Edit:train:021385",
+    "original_request": "Just refine this image, make it better.",
+    "instructions": {
+      "zh": "请让照片的色彩更丰富一点。",
+      "en": "Please make the colours in this photo a little richer."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "颜色按要求更鲜艳或更柔和。",
+    "must_preserve": "保留原有色相和明暗，不出现荧光色或意外黑白。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-026",
+    "split": "development",
+    "group_id": "861a9818048275f2e16ad9b3e895ee73fa91b24d5ae057bd21f8e2b4474f771c",
+    "family": "saturation",
+    "action": "desaturate",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/861a9818048275f2e16a.png",
+    "input_sha256": "e90d14f9eb6dcd089b714e135584373e7b4231710a59dbb0f7490e26da620869",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4g61xp_4g61xp.jpg",
+    "original_source_sha256": "52f6171c0a9fda1aadf7beb386ef250a8e0552796d48afe490acd3944e3a1f7b",
+    "original_record_id": "GIER-Edit:train:002744",
+    "original_request": "",
+    "instructions": {
+      "zh": "请把颜色调淡一点，但仍然保留彩色。",
+      "en": "Please tone down the colours a little, but keep the image in colour."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "颜色按要求更鲜艳或更柔和。",
+    "must_preserve": "保留原有色相和明暗，不出现荧光色或意外黑白。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-027",
+    "split": "development",
+    "group_id": "43e37dc258436bc04091529ffc53325818a1a9c0a41fab2026bd5bbf1248d316",
+    "family": "saturation",
+    "action": "saturate",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/43e37dc258436bc04091.png",
+    "input_sha256": "9e25cc2decf6ee7d2d8ea252fba5d0b671cd97493c4b54630f21db236eba03c6",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/mbqz5_mbqz5.jpg",
+    "original_source_sha256": "cde1e29372a08bc8c32e2ee048e08413dd853cf829a10dd4089311c3ca7417e3",
+    "original_record_id": "GIER-Edit:train:006507",
+    "original_request": "Edit this image to make it more beautiful",
+    "instructions": {
+      "zh": "请让照片的色彩更丰富一点。",
+      "en": "Please make the colours in this photo a little richer."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "颜色按要求更鲜艳或更柔和。",
+    "must_preserve": "保留原有色相和明暗，不出现荧光色或意外黑白。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-028",
+    "split": "development",
+    "group_id": "5e720b47a3a4a7dfb5232333c786641adb5976a52c0e52605d500bc9117b5b23",
+    "family": "saturation",
+    "action": "desaturate",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/5e720b47a3a4a7dfb523.png",
+    "input_sha256": "ff424efe1ec537dacc25cdd69125f0f99fa4c0ee71b5b490d0e8ed49419b7ad7",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vf8ct_vf8ct.jpg",
+    "original_source_sha256": "aa4a460dad90c4d7cd78b29728c2e6b6d2e5874ca353a868a9961ed7159cb080",
+    "original_record_id": "GIER-Edit:train:025396",
+    "original_request": "How to enhance this image?",
+    "instructions": {
+      "zh": "请把颜色调淡一点，但仍然保留彩色。",
+      "en": "Please tone down the colours a little, but keep the image in colour."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "颜色按要求更鲜艳或更柔和。",
+    "must_preserve": "保留原有色相和明暗，不出现荧光色或意外黑白。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-029",
+    "split": "development",
+    "group_id": "ff676d0db5c37d7e10964135f3bea27b5b11397ddf78c32663201f12c8fd962d",
+    "family": "saturation",
+    "action": "saturate",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/ff676d0db5c37d7e1096.png",
+    "input_sha256": "d3bdc0147470d6f792648c857dee5174013af6a02e9438ff37e1a8d02b9a8221",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bfPLF_bfPLF.jpg",
+    "original_source_sha256": "6bdc93e8f0ece4ec152fb74528f4a0752e2039b30214e51be13322d9020d256f",
+    "original_record_id": "GIER-Edit:train:011558",
+    "original_request": "How to enhance this image?",
+    "instructions": {
+      "zh": "请让照片的色彩更丰富一点。",
+      "en": "Please make the colours in this photo a little richer."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "颜色按要求更鲜艳或更柔和。",
+    "must_preserve": "保留原有色相和明暗，不出现荧光色或意外黑白。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-030",
+    "split": "development",
+    "group_id": "d48b58650705079b661e659cf88523601c4415e3dd02e46f5d4d702043eb0162",
+    "family": "saturation",
+    "action": "desaturate",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/d48b58650705079b661e.png",
+    "input_sha256": "854f07fb21f186f9659af49df39c6d3626458a237c49e7401e71b02bed3fad59",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3wdazw_3wdazw.jpg",
+    "original_source_sha256": "e0a8e1573be9fb7fdbca15290898428d66e425c8b7d4138ccd67fa95cf798c46",
+    "original_record_id": "GIER-Edit:train:007537",
+    "original_request": "How to enhance this image?",
+    "instructions": {
+      "zh": "请把颜色调淡一点，但仍然保留彩色。",
+      "en": "Please tone down the colours a little, but keep the image in colour."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "颜色按要求更鲜艳或更柔和。",
+    "must_preserve": "保留原有色相和明暗，不出现荧光色或意外黑白。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-031",
+    "split": "development",
+    "group_id": "c7ea953b681ef78864c8576a82e45e9dfe77129537fc640f6846cd25ca57fc69",
+    "family": "contrast",
+    "action": "more_contrast",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/c7ea953b681ef78864c8.png",
+    "input_sha256": "cbf271877305bc570e3f20a176ac8ad9487bc4ab29f637b0de9f978b209bebaa",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/at1x46_at1x46.jpg",
+    "original_source_sha256": "877e27c49129d1d6924fee7c564b3d8f0dc7cbc2ed58f542ae3e518b09494f99",
+    "original_record_id": "GIER-Edit:train:013465",
+    "original_request": "colorize the image",
+    "instructions": {
+      "zh": "照片有些平，请增强明暗对比，避免效果过强。",
+      "en": "The photo looks a little flat. Increase tonal contrast without overdoing it."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "明暗反差按要求增强或减弱。",
+    "must_preserve": "不明显丢失高光暗部细节，不出现灰雾或不必要偏色。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-032",
+    "split": "development",
+    "group_id": "ca92ef7587632d6a0a26f0075cc2e68617834ef1d6251d5b801fa44640debab4",
+    "family": "contrast",
+    "action": "less_contrast",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/ca92ef7587632d6a0a26.png",
+    "input_sha256": "166c1a4812b020374b3e5d859633eb4ffa0c2056f569053814e5b9b8e0d3d46c",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2t70pu_2t70pu.jpg",
+    "original_source_sha256": "3f0192ab836b28c8c9266fd9cb07fe14ae2cf45d1bee8ee2fa1b814fdc475886",
+    "original_record_id": "GIER-Edit:train:024129",
+    "original_request": "",
+    "instructions": {
+      "zh": "这张照片想要柔和一点的明暗效果。",
+      "en": "I would like softer tonal contrast in this photograph."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "明暗反差按要求增强或减弱。",
+    "must_preserve": "不明显丢失高光暗部细节，不出现灰雾或不必要偏色。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-033",
+    "split": "development",
+    "group_id": "59e3425b7702555d758fc60352a714f0039d9fc6d13a51936151be2353773816",
+    "family": "contrast",
+    "action": "more_contrast",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/59e3425b7702555d758f.png",
+    "input_sha256": "d3d8fafb6922be592f753e2b6aaad3c81f708c6a9d935041e37204d015f8b579",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bzrC6_bzrC6.jpg",
+    "original_source_sha256": "1014ec44a1e079fe225a0651d2f49a1fa7ac385803c352b09ce905c3de368529",
+    "original_record_id": "GIER-Edit:train:016069",
+    "original_request": "Add a filter so gold color looks more yellow.",
+    "instructions": {
+      "zh": "照片有些平，请增强明暗对比，避免效果过强。",
+      "en": "The photo looks a little flat. Increase tonal contrast without overdoing it."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "明暗反差按要求增强或减弱。",
+    "must_preserve": "不明显丢失高光暗部细节，不出现灰雾或不必要偏色。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-034",
+    "split": "development",
+    "group_id": "56d9781689a905e6427d79581406b9d2c840b37f13b87be09e28855b360119b0",
+    "family": "contrast",
+    "action": "less_contrast",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/56d9781689a905e6427d.png",
+    "input_sha256": "394abb67e44429308a9af801f555d17d2fca0512587b3146edc38a5f6e8ae29b",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2mvtc1_2mvtc1.jpg",
+    "original_source_sha256": "1bf1477c24a80f4a0e2ce5855e1f8d98e1a68b007416cd0bd28452cfc1dc285b",
+    "original_record_id": "GIER-Edit:train:021463",
+    "original_request": "What will you do to improve this image?",
+    "instructions": {
+      "zh": "这张照片想要柔和一点的明暗效果。",
+      "en": "I would like softer tonal contrast in this photograph."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "明暗反差按要求增强或减弱。",
+    "must_preserve": "不明显丢失高光暗部细节，不出现灰雾或不必要偏色。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-035",
+    "split": "development",
+    "group_id": "09236bad7c220fde52f4c9ef2773668af0e3a94305f5f6dc33622206bc16e82c",
+    "family": "contrast",
+    "action": "more_contrast",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/09236bad7c220fde52f4.png",
+    "input_sha256": "ec9c7f0023819e4e442a3a94bf8c7d223e650edff9940964444687a637309eee",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/hPQDq_hPQDq.jpg",
+    "original_source_sha256": "578c5380cbbb86af03f2ce08f590c371bcb373c4c562119afe3d0dd8d3d1e930",
+    "original_record_id": "GIER-Edit:train:001710",
+    "original_request": "Please simply make this image better.",
+    "instructions": {
+      "zh": "照片有些平，请增强明暗对比，避免效果过强。",
+      "en": "The photo looks a little flat. Increase tonal contrast without overdoing it."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "明暗反差按要求增强或减弱。",
+    "must_preserve": "不明显丢失高光暗部细节，不出现灰雾或不必要偏色。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-036",
+    "split": "development",
+    "group_id": "f1d64fa7bfb4001735467aa4f7ece413325670b7bcbe6eb0fbc8af93f4cdc7c1",
+    "family": "contrast",
+    "action": "less_contrast",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/f1d64fa7bfb400173546.png",
+    "input_sha256": "d78e12973e9d61accde12cc63f988e63766e6344c96e7ecda61ee568ceef4986",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/lYCLG_lYCLG.jpg",
+    "original_source_sha256": "8793ae964027ae66ad0413d9ce0c2ed49b3794cdd8708c5184dcbedcb3281cac",
+    "original_record_id": "GIER-Edit:train:015986",
+    "original_request": "make it more clear remove the blur",
+    "instructions": {
+      "zh": "这张照片想要柔和一点的明暗效果。",
+      "en": "I would like softer tonal contrast in this photograph."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "明暗反差按要求增强或减弱。",
+    "must_preserve": "不明显丢失高光暗部细节，不出现灰雾或不必要偏色。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-037",
+    "split": "development",
+    "group_id": "a0d3a073e2194e460f1fec2b1755ab031dfbef880442e0a609927b7020bcba31",
+    "family": "contrast",
+    "action": "more_contrast",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/a0d3a073e2194e460f1f.png",
+    "input_sha256": "99944753d8366ba84851e8274d2d43670f526b49d285ae2d4cd1590b71d92c39",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4k2i1u_4k2i1u.jpg",
+    "original_source_sha256": "42ee1307756c2e5119dfe528498d25d81c86b85a972a2f6915a32aca7da05180",
+    "original_record_id": "GIER-Edit:train:019715",
+    "original_request": "",
+    "instructions": {
+      "zh": "照片有些平，请增强明暗对比，避免效果过强。",
+      "en": "The photo looks a little flat. Increase tonal contrast without overdoing it."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "明暗反差按要求增强或减弱。",
+    "must_preserve": "不明显丢失高光暗部细节，不出现灰雾或不必要偏色。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-038",
+    "split": "development",
+    "group_id": "535c7230e5368f6bd80a0373c97c4e19b411effd005febb3629bf6721e8d9619",
+    "family": "contrast",
+    "action": "less_contrast",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/535c7230e5368f6bd80a.png",
+    "input_sha256": "aedee7d527e6333c91518e40216e2a9af5e33688b7ee11d91276d5d0d1a10aad",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/tdg5Y_tdg5Y.jpg",
+    "original_source_sha256": "0e95cd55419c8f3ebcb2e957c8c74838a990799ad065b131814b5bc620f54846",
+    "original_record_id": "GIER-Edit:train:014362",
+    "original_request": "Edit this image to make it more beautiful",
+    "instructions": {
+      "zh": "这张照片想要柔和一点的明暗效果。",
+      "en": "I would like softer tonal contrast in this photograph."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "明暗反差按要求增强或减弱。",
+    "must_preserve": "不明显丢失高光暗部细节，不出现灰雾或不必要偏色。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-039",
+    "split": "development",
+    "group_id": "46cba89a8084cd49d2a9ea435217b5ed1c6bd92d29295600fa6da3d82e88d48d",
+    "family": "contrast",
+    "action": "more_contrast",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/46cba89a8084cd49d2a9.png",
+    "input_sha256": "50d6bf6c2942190090e32edee1549de85a2f18bc3398fa8f48bac9312555b238",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/j6dkZ_j6dkZ.jpg",
+    "original_source_sha256": "c0fcb7fa84c96f12c966196b57dcce72bcf33ac63e1f269e898cc5884b015850",
+    "original_record_id": "GIER-Edit:train:003903",
+    "original_request": "Edit this image to make it more beautiful",
+    "instructions": {
+      "zh": "照片有些平，请增强明暗对比，避免效果过强。",
+      "en": "The photo looks a little flat. Increase tonal contrast without overdoing it."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "明暗反差按要求增强或减弱。",
+    "must_preserve": "不明显丢失高光暗部细节，不出现灰雾或不必要偏色。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-040",
+    "split": "development",
+    "group_id": "99f929c3b800808c553f7c97573798f6fd1e9e626cc6bd1fb407a0ce0d8fccd4",
+    "family": "contrast",
+    "action": "less_contrast",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/99f929c3b800808c553f.png",
+    "input_sha256": "439c82801e8c0ca5f5cd204f63acffd03936fa603078524b797fba9b3385c52a",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8a07ae_8a07ae.jpg",
+    "original_source_sha256": "509825a58c6b3bd755daed5e732f6565fc6a11382c9abce4979afa53eb0447a6",
+    "original_record_id": "GIER-Edit:train:017844",
+    "original_request": "What will you do to improve this image?",
+    "instructions": {
+      "zh": "这张照片想要柔和一点的明暗效果。",
+      "en": "I would like softer tonal contrast in this photograph."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "明暗反差按要求增强或减弱。",
+    "must_preserve": "不明显丢失高光暗部细节，不出现灰雾或不必要偏色。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-041",
+    "split": "development",
+    "group_id": "879fa47ee5be51ae4187b12541ab968531aab8b5533af4a241b3ea5d2fc92a86",
+    "family": "brown_tone",
+    "action": "brown",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/879fa47ee5be51ae4187.png",
+    "input_sha256": "5992c759d18b95d9da4e08cf7eed7d90428d3962ee2c4475dfb68be1667a83a4",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/v9GSh_v9GSh.jpg",
+    "original_source_sha256": "63cce2ed1e992b0459a755969ed10766b453b47507adf1ab9013eff0550847cf",
+    "original_record_id": "GIER-Edit:train:023141",
+    "original_request": "What will you do to improve this image?",
+    "instructions": {
+      "zh": "请添加棕色调。",
+      "en": "Please, add brown tone."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "整体应呈现可辨认的棕褐色风格；绿色植被不能仍是主要色调。",
+    "must_preserve": "保留结构、亮部和暗部层次，不出现过曝或荧光绿。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-042",
+    "split": "development",
+    "group_id": "7e3ee6e9a99a48b98e44bca43f0ae04a2483809c6bde2e7bf1b335609128e894",
+    "family": "brown_tone",
+    "action": "brown",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/7e3ee6e9a99a48b98e44.png",
+    "input_sha256": "e1ccc35ba8acfac1e77d2aecc5289f7d550248fa73d46e2f44d180573923fb3a",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/ZZFQg_ZZFQg.jpg",
+    "original_source_sha256": "4d952f3f10d387f65cd6631e27cbfd52ff368ae7e5c33a974b8529291f52aa92",
+    "original_record_id": "GIER-Edit:train:001977",
+    "original_request": "Increase brightness a little bit to make car white",
+    "instructions": {
+      "zh": "请添加棕色调。",
+      "en": "Please, add brown tone."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "整体应呈现可辨认的棕褐色风格；绿色植被不能仍是主要色调。",
+    "must_preserve": "保留结构、亮部和暗部层次，不出现过曝或荧光绿。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-043",
+    "split": "development",
+    "group_id": "eefeb6ebaa31388138c94109c6d7966162bb437d81b4f82fbb47696207964912",
+    "family": "brown_tone",
+    "action": "brown",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/eefeb6ebaa31388138c9.png",
+    "input_sha256": "834001a26c43659a5b9e525bf8ae9dc877acf2e4406c414aabcd911a0c3b0a49",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/45x407_45x407.jpg",
+    "original_source_sha256": "e99405fe233853ee800dd57a7556bb1509c1735100913d79babd4948bc0f2118",
+    "original_record_id": "GIER-Edit:train:021566",
+    "original_request": "Make brighter.",
+    "instructions": {
+      "zh": "请添加棕色调。",
+      "en": "Please, add brown tone."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "整体应呈现可辨认的棕褐色风格；绿色植被不能仍是主要色调。",
+    "must_preserve": "保留结构、亮部和暗部层次，不出现过曝或荧光绿。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-044",
+    "split": "development",
+    "group_id": "a5dc2a7cbc69b996da2a87799f7dde29b5eb271739e388c881ce4d7234244b21",
+    "family": "brown_tone",
+    "action": "brown",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/a5dc2a7cbc69b996da2a.png",
+    "input_sha256": "731d90330b0125f649bad35ae48f54dde1fa34923fdf4617d3d20a200085d018",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4apt1b_4apt1b.jpg",
+    "original_source_sha256": "25eb2863a54cb1cac7160a84442c16e53f3df26863ec5d852d1feab3fd07f937",
+    "original_record_id": "GIER-Edit:train:000159",
+    "original_request": "Please simply make this image better.",
+    "instructions": {
+      "zh": "请添加棕色调。",
+      "en": "Please, add brown tone."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "整体应呈现可辨认的棕褐色风格；绿色植被不能仍是主要色调。",
+    "must_preserve": "保留结构、亮部和暗部层次，不出现过曝或荧光绿。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-045",
+    "split": "development",
+    "group_id": "cfa0ede7023bdd5d54968ed0c3bd5f142661b05a4c0a0abea2eb1977b67b6a8f",
+    "family": "brown_tone",
+    "action": "brown",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/cfa0ede7023bdd5d5496.png",
+    "input_sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2trdgx_2trdgx.jpg",
+    "original_source_sha256": "53cd4fa4f1fc10880c75ded08a5b14791ed19407ae85df70b388d242c62493e8",
+    "original_record_id": "GIER-Edit:train:022958",
+    "original_request": "",
+    "instructions": {
+      "zh": "请添加棕色调。",
+      "en": "Please, add brown tone."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "整体应呈现可辨认的棕褐色风格；绿色植被不能仍是主要色调。",
+    "must_preserve": "保留结构、亮部和暗部层次，不出现过曝或荧光绿。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-046",
+    "split": "development",
+    "group_id": "6a4a506f7ffb83f5d4136a911e240195d2a2147a2bed5e3b07aa7568029eb9c5",
+    "family": "brown_tone",
+    "action": "brown",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/6a4a506f7ffb83f5d413.png",
+    "input_sha256": "ed81dbee313ff544b6d69fa6218ae76569b9e0309e0876389405a51a8e77536b",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/pBt0g_pBt0g.jpg",
+    "original_source_sha256": "afceb190c1ac63359092abb2c891560308d7558f37958de7c757f13558c97a6d",
+    "original_record_id": "GIER-Edit:train:012618",
+    "original_request": "Can someone touch it up make it a little nicer brighten it up.",
+    "instructions": {
+      "zh": "请添加棕色调。",
+      "en": "Please, add brown tone."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "整体应呈现可辨认的棕褐色风格；绿色植被不能仍是主要色调。",
+    "must_preserve": "保留结构、亮部和暗部层次，不出现过曝或荧光绿。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-047",
+    "split": "development",
+    "group_id": "f09e3e6b329bc2209c56cc6267a7ec58ed076dc0ca6326e841d61276edf4d613",
+    "family": "brown_tone",
+    "action": "brown",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/f09e3e6b329bc2209c56.png",
+    "input_sha256": "c5e649a41b0d64ac2de33214794b36e72923e4877c71a68523deffdff737cc30",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3n0ft2_3n0ft2.jpg",
+    "original_source_sha256": "26d9db99665d3f756a65c169dbeb73ccbb8a833bea72406eb64048ebf6f0097b",
+    "original_record_id": "GIER-Edit:train:017639",
+    "original_request": "brighten the image",
+    "instructions": {
+      "zh": "请添加棕色调。",
+      "en": "Please, add brown tone."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "整体应呈现可辨认的棕褐色风格；绿色植被不能仍是主要色调。",
+    "must_preserve": "保留结构、亮部和暗部层次，不出现过曝或荧光绿。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-048",
+    "split": "development",
+    "group_id": "3bea5282f41da80faac264f02ba3077df203ad63592fb8d22fea059506336976",
+    "family": "brown_tone",
+    "action": "brown",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/3bea5282f41da80faac2.png",
+    "input_sha256": "6b4a311a9bad1e6b21381c268e8e730e8d63f4f80048074bd7cfd11f24aa0d13",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9fvotn_9fvotn.jpg",
+    "original_source_sha256": "9e2619889cdf64805bdd8251d29cbbcb83a897d5d18df1c51055dafefb5cd058",
+    "original_record_id": "GIER-Edit:train:020657",
+    "original_request": "Just refine this image, make it better.",
+    "instructions": {
+      "zh": "请添加棕色调。",
+      "en": "Please, add brown tone."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "整体应呈现可辨认的棕褐色风格；绿色植被不能仍是主要色调。",
+    "must_preserve": "保留结构、亮部和暗部层次，不出现过曝或荧光绿。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-049",
+    "split": "development",
+    "group_id": "feedc5d847bab5d4fac527f1da558dcc1f47442dc9f7f9f0f5a8ba3f9526782f",
+    "family": "brown_tone",
+    "action": "brown",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/feedc5d847bab5d4fac5.png",
+    "input_sha256": "eeced939fbf7c79f105050b4c216cd42a64f96d86c13c23b4c6abf8558cee9ac",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4mcds9_4mcds9.jpg",
+    "original_source_sha256": "2d0b25f2c1e605bc7b67ad317cbb6290e978a5956f2b306f6805e23fb953d4e3",
+    "original_record_id": "GIER-Edit:train:020388",
+    "original_request": "What will you do to improve this image?",
+    "instructions": {
+      "zh": "请添加棕色调。",
+      "en": "Please, add brown tone."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "整体应呈现可辨认的棕褐色风格；绿色植被不能仍是主要色调。",
+    "must_preserve": "保留结构、亮部和暗部层次，不出现过曝或荧光绿。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  },
+  {
+    "id": "development-050",
+    "split": "development",
+    "group_id": "058d6f7d79266c0dac8dd0f100a696c52e1a475afc3566ca7090dd4595912a80",
+    "family": "brown_tone",
+    "action": "brown",
+    "pair_id": null,
+    "image": "data/training/functional-v1-20261104/inputs/058d6f7d79266c0dac8d.png",
+    "input_sha256": "6ab1c456452a1a81b531ee06d8dfdbdf9529340f3d8d4e9f00923fe1d61e9a34",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/pKLvJ_pKLvJ.jpg",
+    "original_source_sha256": "f206f3a5d78667705ab4306461e727263abb6b3ce64006efdd0dc0c632601ea6",
+    "original_record_id": "GIER-Edit:train:003749",
+    "original_request": "How to enhance this image?",
+    "instructions": {
+      "zh": "请添加棕色调。",
+      "en": "Please, add brown tone."
+    },
+    "instruction_origin": "controlled_bilingual_task",
+    "expected_change": "整体应呈现可辨认的棕褐色风格；绿色植被不能仍是主要色调。",
+    "must_preserve": "保留结构、亮部和暗部层次，不出现过曝或荧光绿。",
+    "failure_conditions": [
+      "未完成要求或方向相反",
+      "编辑幅度不足以完成要求",
+      "明显过曝、压黑、偏色、细节损失或无关变化"
+    ],
+    "reference_usage": "Original GIER target is NOT the target for this rewritten task."
+  }
+]

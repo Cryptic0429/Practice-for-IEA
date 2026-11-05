@@ -1,0 +1,34 @@
+{
+  "at": "2026-11-05T03:28:32.814570+00:00",
+  "status": "candidate_geometry_screen_not_final_freeze",
+  "manifest_sha256": "0eb115989d62c9dc1ee320c859f5535a847ad60b746cea7c32cd8c8513206823",
+  "collisions": [
+    {
+      "a": "development-native-056",
+      "b": "development-native-151",
+      "reason": "near_current_sources",
+      "cross_split": false,
+      "geometry": {
+        "hash_hamming": 16,
+        "ratio_matches": 181,
+        "ransac_inliers": 137,
+        "inlier_fraction": 0.7569060773480663,
+        "hull_coverage": [
+          0.264171749546249,
+          0.25045766532304753
+        ]
+      }
+    }
+  ],
+  "counts": {
+    "near_current_sources": 1
+  },
+  "unique_pairs": 257738,
+  "method": "Coarse pHash<=20; ORB1000 at maxedge640; Hamming ratio<.75, >=20 matches; RANSAC4px >=15inliers, fraction>=.6, convexhull coverage>=3% in both photos. Potential shared image content/related shots, not a functional-quality score.",
+  "rule": "Resolve or exclude every selected cross-split candidate flag before freezing. Preserve manual related-source clusters. These checks can still miss other crops or shoots.",
+  "known_directly_viewed_missed_pair": [
+    "development-native-056",
+    "development-native-151"
+  ],
+  "inference_or_training_started": false
+}

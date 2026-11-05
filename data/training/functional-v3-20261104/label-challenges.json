@@ -1,0 +1,105 @@
+{
+  "at": "2026-11-04T15:48:28.088273+00:00",
+  "previous_round_unchanged": true,
+  "revisions": [
+    {
+      "case_id": "train-043-restore-exposure-mild",
+      "previous_parameters": {
+        "exposure": 30
+      },
+      "previous_target": "data/training/functional-v2-20261104/targets/train-043-restore-exposure-mild.png",
+      "previous_sha256": "95832d5c051d404cb29c7dae6a63dbc2d40d67c10db477b5927b300ab8cb8752",
+      "replacement_parameters": {
+        "exposure": 20
+      },
+      "replacement_target": "experiments/functional-v3-20261104/collection/images/train-043-restore-exposure-mild-zh.png",
+      "replacement_sha256": "6cb56478d392c80327a9dc81d5da94613af4d4d2f9a090d3efc4587028b96676",
+      "evidence": "2提亮房屋并较好保留灰蓝天空和云层；1天空大面积泛白，新增亮部层次损失，2质量更好。",
+      "sheet": "experiments/functional-v3-20261104/preference-review/train-043-restore-exposure-mild.jpg",
+      "sheet_sha256": "2db20408c86e2327266e4548d0abbd307efff04a3c14ade055d677956888edb0"
+    },
+    {
+      "case_id": "train-210-restore-exposure-strong",
+      "previous_parameters": {
+        "exposure": 80
+      },
+      "previous_target": "data/training/functional-v2-20261104/targets/train-210-restore-exposure-strong.png",
+      "previous_sha256": "ec6489f4dd5c5573910117c35f8baa20a18374919651a09acd2883571cfc6b77",
+      "replacement_parameters": {
+        "exposure": 65
+      },
+      "replacement_target": "experiments/functional-v3-20261104/collection/images/train-210-restore-exposure-strong-zh.png",
+      "replacement_sha256": "7a0f351ac2b55ed0dadd282f67072f3e446ebcb6cc065c0c3f3c504938fb438e",
+      "evidence": "2自然恢复河谷、山坡和草丛亮度，阴天天空有灰度层次；1天空明显泛白、云层变薄，提亮过度。",
+      "sheet": "experiments/functional-v3-20261104/preference-review/train-210-restore-exposure-strong.jpg",
+      "sheet_sha256": "206e9408267ca657901989b405fa542188fca904b42751b490483fe100b1f382"
+    },
+    {
+      "case_id": "train-214-restore-contrast-mild",
+      "previous_parameters": {
+        "contrast": 30
+      },
+      "previous_target": "data/training/functional-v2-20261104/targets/train-214-restore-contrast-mild.png",
+      "previous_sha256": "5d19ebbf0732a73184c09e8193558fb3cc4a05b3d0e5ff7a533177607a0aeed0",
+      "replacement_parameters": {
+        "contrast": 20
+      },
+      "replacement_target": "experiments/functional-v3-20261104/collection/images/train-214-restore-contrast-mild-zh.png",
+      "replacement_sha256": "1995974596198d69a4d7f1eca4d8250c7534f301d9139d9da0e7021683bd880e",
+      "evidence": "2恢复遗址和山地反差且较好保留蓝天、云层和阴影；1反差过强，天空更白、暗部更黑，有额外层次损失。",
+      "sheet": "experiments/functional-v3-20261104/preference-review/train-214-restore-contrast-mild.jpg",
+      "sheet_sha256": "c2da74cee6b0580ed4db600fa6c8dd306d701020cf5e1c4512c0d8f2ceedb2b3"
+    },
+    {
+      "case_id": "train-214-style-contrast-strong",
+      "previous_parameters": {
+        "contrast": 22,
+        "shadows": 25
+      },
+      "previous_target": "data/training/functional-v2-20261104/targets-revised/train-214-style-contrast-strong.png",
+      "previous_sha256": "592671d3b7fde9a1a05fa96023b8379c266048a5742f15a7cac54cea2deaf5d3",
+      "replacement_parameters": {
+        "contrast": 22,
+        "shadows": 20
+      },
+      "replacement_target": "experiments/functional-v3-20261104/collection/images/train-214-style-contrast-strong-zh.png",
+      "replacement_sha256": "cd145c64caaaecf90e0929be61a867999a6403101b9664256fcc92312ebe9a80",
+      "evidence": "两者都有明显反差增强，2保留更多遗址前景和山谷暗部层次；1暗区被压得更黑，2在完成强对比要求时副作用较少。",
+      "sheet": "experiments/functional-v3-20261104/preference-review/train-214-style-contrast-strong.jpg",
+      "sheet_sha256": "c80da9c34d106c0822e087f9f8490426626cdaff1b313b9716c2f951c7102e55"
+    },
+    {
+      "case_id": "train-018-restore-saturation-mild",
+      "previous_parameters": {
+        "saturation": 30
+      },
+      "previous_target": "data/training/functional-v2-20261104/targets/train-018-restore-saturation-mild.png",
+      "previous_sha256": "7b929c33dfae8506241b88adb9242e09ae9e29c8b202bd11515034c3b83dd538",
+      "replacement_parameters": {
+        "saturation": 20
+      },
+      "replacement_target": "experiments/functional-v3-20261104/collection/images/train-018-restore-saturation-mild-en.png",
+      "replacement_sha256": "bdb088d9aaa4a96e0b661b9d5d098f194000503418614bcba360c8ac53cf072c",
+      "evidence": "2恢复服装和环境颜色，肤色较克制；1面部、头发和岩石过度偏橙，违反自然饱和度且有肤色副作用。",
+      "sheet": "experiments/functional-v3-20261104/preference-review/train-018-restore-saturation-mild.jpg",
+      "sheet_sha256": "ef1b8ce40e80cc17bf1c3a4ec119c0b08fee64efd9408a94c7facba637859451"
+    },
+    {
+      "case_id": "train-018-restore-saturation-strong",
+      "previous_parameters": {
+        "saturation": 80
+      },
+      "previous_target": "data/training/functional-v2-20261104/targets/train-018-restore-saturation-strong.png",
+      "previous_sha256": "0a4a58b7c18db4d718ec6a8ca33e4dc092119473924360115178476804d78bf9",
+      "replacement_parameters": {
+        "saturation": 20
+      },
+      "replacement_target": "experiments/functional-v3-20261104/collection/images/train-018-restore-saturation-strong-zh.png",
+      "replacement_sha256": "13065177e03a9d6b1a621fd669151c8141d633499a65f8620e8c30a0a7a76dc3",
+      "evidence": "3恢复服装与岩石的柔和自然颜色，肤色较自然；1脸部与头发明显橙化，过度增艳。2处于两者之间，是否优于3不够明确，不另建立偏好。",
+      "sheet": "experiments/functional-v3-20261104/preference-review/train-018-restore-saturation-strong.jpg",
+      "sheet_sha256": "82d1c2c919c3cb0a990de07e6a372e349ded2e13874713b02b97e183021c8885"
+    }
+  ],
+  "interpretation": "New direct pairwise inspection preferred a real policy render over some previous approved targets. Revisions apply only to this new training snapshot, not frozen round2 results."
+}

@@ -1,0 +1,3373 @@
+{
+  "status": "frozen_before_round2_training",
+  "at": "2026-11-04T13:06:29.986346+00:00",
+  "source_bank_sha256": "9d208a039e5581c95ed83e073a95bb958cda750f714ff6451f7428e105296d64",
+  "observations_sha256": "24fd92537503afe0b55408e0df3c313c809cf131a1e4422914d1164fdffde018",
+  "sources": [
+    {
+      "id": "train-002",
+      "split": "train",
+      "group_id": "49b5a624b5e37b3680abfad1b6ec7b5c68a859c74d8645cde1d30300ae22d0cf",
+      "record_id": "GIER-Edit:train:001669",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5Kk7S_5Kk7S.jpg",
+      "source_sha256": "016063aaa0ca855c13878976c7ea9778ecf8d9f7962730d1a7edc9d911bb8790",
+      "original_request": "What will you do to improve this image?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5Kk7S_5Kk7S.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5Kk7S_34Kkz.jpg",
+        "label": {
+          "brightness": 30,
+          "contrast": 20,
+          "saturation": 5
+        },
+        "instruction": "What will you do to improve this image?",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.24364498257637024,
+        "luminance_std": 0.115587517619133,
+        "saturation": 0.3956918716430664,
+        "warmth": 0.0348452664911747,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "栏杆旁幼儿，面部和蓝色衣服可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-007",
+      "split": "train",
+      "group_id": "ff0a2780b64e2aa426a08a2562a3aa31de22a173e614cf2d9e0b2ced24703023",
+      "record_id": "GIER-Edit:train:002292",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4cdhbl_4cdhbl.jpg",
+      "source_sha256": "c3d3f3465411f69069b909bb96a26a54baa09b84cff2eaf9bfc8f7acf3781461",
+      "original_request": "Just refine this image, make it better.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4cdhbl_4cdhbl.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4cdhbl_rClAg6p.jpg",
+        "label": {
+          "brightness": -40,
+          "contrast": 15,
+          "temperature": 20,
+          "saturation": 5,
+          "highlights": -10,
+          "tint": 15
+        },
+        "instruction": "Just refine this image, make it better.",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.6794620752334595,
+        "luminance_std": 0.30482837557792664,
+        "saturation": 0.2804391384124756,
+        "warmth": -0.040759213268756866,
+        "white_clip_fraction": 0.015869140625,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "迪士尼游客与卡通玩偶合影，真人主体清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-010",
+      "split": "train",
+      "group_id": "531ba90cb0eb25cf4c63a586fe6e0808f9ed98284d5c70c680696b762ffb4ade",
+      "record_id": "GIER-Edit:train:003608",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4kg6gv_4kg6gv.jpg",
+      "source_sha256": "331bfc7ce6d729b1ac1fb9db87674fabb0c0d39b8aa0ad090394a31f0bb847c8",
+      "original_request": "make it more warm, increase brightness and contrast",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4kg6gv_4kg6gv.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4kg6gv_vqfHvAk.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 15,
+          "temperature": 15,
+          "saturation": 20,
+          "highlights": -25,
+          "tint": 10
+        },
+        "instruction": "make it more warm, increase brightness and contrast",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.3898839056491852,
+        "luminance_std": 0.25843557715415955,
+        "saturation": 0.2688571512699127,
+        "warmth": 0.0029094619676470757,
+        "white_clip_fraction": 6.103515625e-05,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "毕业生户外合影，脸部及服装可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-013",
+      "split": "train",
+      "group_id": "667c09557c19737f3e16035b44d76fa955900541b1e8721d3cf4facca8a4a61e",
+      "record_id": "GIER-Edit:train:003538",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/biae0i_biae0i.jpg",
+      "source_sha256": "b746cb35e0d7657cab5c24ae7f2e2c9a41351f59185bc5a2ae1dec36dd5ab0d7",
+      "original_request": "Brighten the pic just a little bit and adjust color temperature towards cool.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/biae0i_biae0i.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/biae0i_3HxI24n.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 10,
+          "saturation": -30
+        },
+        "instruction": "Brighten the pic just a little bit and adjust color temperature towards cool.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.28078022599220276,
+        "luminance_std": 0.18391329050064087,
+        "saturation": 0.49806639552116394,
+        "warmth": 0.1228838860988617,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "绿树旁女子半身像，肤色及背景细节清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-016",
+      "split": "train",
+      "group_id": "6c757fcb536fa4bcd10ed2171eb108ddf7903e5ba3c17bf96d1b4e8698dd89ad",
+      "record_id": "GIER-Edit:train:022031",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/40ejek_40ejek.jpg",
+      "source_sha256": "9c2d37f12b948c3fff5b73cff561a74735db5d3b97504777d7a65a04dbbd7583",
+      "original_request": " Can you just make this photo of my daughter look better? (the colors) I am new to photography and photoshop, and I took this photo in JPEG, not RAW, so I can't rely on Photoshop to correct the white balance, and now her face looks red. Thanks!!",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/40ejek_40ejek.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/40ejek_cBkTd0J.jpg",
+        "label": {
+          "contrast": 5,
+          "temperature": 5,
+          "saturation": 20,
+          "highlights": 10
+        },
+        "instruction": " Can you just make this photo of my daughter look better? (the colors) I am new to photography and photoshop, and I took this photo in JPEG, not RAW, so I can't rely on Photoshop to correct the white balance, and now her face looks red. Thanks!!",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.6839878559112549,
+        "luminance_std": 0.23297886550426483,
+        "saturation": 0.17110390961170197,
+        "warmth": 0.02067500352859497,
+        "white_clip_fraction": 0.19195556640625,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "草地上幼儿坐像，脸部和白衣可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-018",
+      "split": "train",
+      "group_id": "94f925b7c4ce4b000daf157b656907c2dd90c9e3fa5bcf29aeb5210ec33c982b",
+      "record_id": "GIER-Edit:train:006633",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/32wgj7_32wgj7.jpg",
+      "source_sha256": "6436a249094f33b20812107fd27025ba924519f0cf653789541e55ab174f8474",
+      "original_request": "add sa cooler tint",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/32wgj7_32wgj7.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/32wgj7_nqYuyhD.jpg",
+        "label": {
+          "tint": -35
+        },
+        "instruction": "add sa cooler tint",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.6094624400138855,
+        "luminance_std": 0.23548811674118042,
+        "saturation": 0.4004017412662506,
+        "warmth": 0.24874170124530792,
+        "white_clip_fraction": 0.0070953369140625,
+        "black_clip_fraction": 1.52587890625e-05
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "岩石背景情侣拥抱合影，主体轮廓完整；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-020",
+      "split": "train",
+      "group_id": "6ccdc621edf5c214e6a3db1c11bf85063370861ee9f75d66eecb94bd95cb5136",
+      "record_id": "GIER-Edit:train:017704",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cLHRP_cLHRP.jpg",
+      "source_sha256": "1b2eaa61790b5268cc7c0b7c14833527c6a47ca7a4b3b5e32be196c86e6e66af",
+      "original_request": "Edit this image to make it more beautiful",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cLHRP_cLHRP.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cLHRP_fchQH.jpg",
+        "label": {
+          "contrast": -30
+        },
+        "instruction": "Edit this image to make it more beautiful",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5480723977088928,
+        "luminance_std": 0.2729508578777313,
+        "saturation": 0.26913249492645264,
+        "warmth": 0.08546961843967438,
+        "white_clip_fraction": 0.000579833984375,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "河畔摩托车上男子，蓝衬衫与脸部清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-025",
+      "split": "train",
+      "group_id": "724b792df1988d74bd6f557e718ed56a3ac1e05268973dce1630ba90846a9848",
+      "record_id": "GIER-Edit:train:009349",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35tmtt_35tmtt.jpg",
+      "source_sha256": "708a0d31c0f4d99f21140f0f7d3c0d83d1dd296155aa95d85bb0084f5459d60e",
+      "original_request": "Increase the saturation and make it more yellow.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35tmtt_35tmtt.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35tmtt_LI6mfuV.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 5,
+          "temperature": 25,
+          "saturation": 10,
+          "highlights": -5,
+          "tint": 5
+        },
+        "instruction": "Increase the saturation and make it more yellow.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4704267382621765,
+        "luminance_std": 0.23710982501506805,
+        "saturation": 0.10191655158996582,
+        "warmth": -0.024781469255685806,
+        "white_clip_fraction": 0.01959228515625,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "车内女子近景，浅色头发和脸部清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-030",
+      "split": "train",
+      "group_id": "62ec9ccb9f528d8b10df93bec7cb5d59f661fc8d857080b1f279258c1f63f4d0",
+      "record_id": "GIER-Edit:train:008249",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9l37B_9l37B.jpg",
+      "source_sha256": "a87eabd46bb0754a02d5f3bcb4d0b90480b369d7d6e96388f858c6f7a4287b7f",
+      "original_request": "Enhance the colors and make them more vivid",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9l37B_9l37B.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9l37B_fqJYf.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 5,
+          "temperature": 5,
+          "saturation": 90,
+          "highlights": 5,
+          "tint": 5
+        },
+        "instruction": "Enhance the colors and make them more vivid",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5204582810401917,
+        "luminance_std": 0.12398771196603775,
+        "saturation": 0.3407657742500305,
+        "warmth": -0.07623971998691559,
+        "white_clip_fraction": 7.62939453125e-05,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "蓝色长袖男子站像，面部与背景叶子可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-031",
+      "split": "train",
+      "group_id": "7581d2bd6ce05e003a182411f2e597c0656fdb6cbce93c29a46ee6facc874541",
+      "record_id": "GIER-Edit:train:012089",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35wbv8_35wbv8.jpg",
+      "source_sha256": "37d54f965c112e637704e9ed3e8a6f5405ed211fa9bc221abcd8228b5fa4dcf2",
+      "original_request": "lighten the image and saturate the color",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35wbv8_35wbv8.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35wbv8_2teJdxb.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 10,
+          "saturation": 25,
+          "highlights": 5,
+          "temperature": -5,
+          "tint": -50
+        },
+        "instruction": "lighten the image and saturate the color",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.48750388622283936,
+        "luminance_std": 0.17895899713039398,
+        "saturation": 0.31295835971832275,
+        "warmth": 0.1060175895690918,
+        "white_clip_fraction": 0.0045013427734375,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "草地上红裙女孩，全身和背景树林清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-034",
+      "split": "train",
+      "group_id": "6c37d47cb2be759ec4e060ae12736c5814b094726b2cbf50492037b4a1b87096",
+      "record_id": "GIER-Edit:train:020595",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/pJHmX_pJHmX.jpg",
+      "source_sha256": "7e0af82cf33fe78dfeb2b43ed6fb99a6a1491f69a9192676d8da3df3555eaa60",
+      "original_request": "Edit this image to make it more beautiful",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/pJHmX_pJHmX.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/pJHmX_9RNZk.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 15,
+          "temperature": 5,
+          "saturation": 30,
+          "highlights": 5,
+          "tint": -50
+        },
+        "instruction": "Edit this image to make it more beautiful",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.6395801901817322,
+        "luminance_std": 0.17259658873081207,
+        "saturation": 0.31041795015335083,
+        "warmth": 0.1282113492488861,
+        "white_clip_fraction": 0.01025390625,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "草坡上戴帽女子，衣服与面部可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-035",
+      "split": "train",
+      "group_id": "30e20f51bfc634771cf08da5af4c999d60fb59e1a40cd4499cc1b766a2459ba0",
+      "record_id": "GIER-Edit:train:000927",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/tZY0v_tZY0v.jpg",
+      "source_sha256": "6c9f24f4b4ac9b0d30196d9731c7a89314eaa7cba2421fcef25e7043368f45bb",
+      "original_request": "brighten the picture",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/tZY0v_tZY0v.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/tZY0v_cS124.jpg",
+        "label": {
+          "brightness": 15,
+          "temperature": -5
+        },
+        "instruction": "brighten the picture",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.608421802520752,
+        "luminance_std": 0.29596713185310364,
+        "saturation": 0.30476951599121094,
+        "warmth": 0.13411225378513336,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 9.1552734375e-05
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "户外女子近景，皮肤与黑发清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-041",
+      "split": "train",
+      "group_id": "45d5b1ddcfb619f9cf34a100fa155c5407b64ad08d179486b9cf795e07db2bbc",
+      "record_id": "GIER-Edit:train:024986",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6R0PD_6R0PD.jpg",
+      "source_sha256": "002dd6be0c42e2d430ed6a1a9ab46564513a461c3082694cc8c90bec6bb49bf3",
+      "original_request": "enhance colors, increase brightness and contrast",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6R0PD_6R0PD.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6R0PD_vqWGv.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 10,
+          "temperature": 10,
+          "saturation": 10,
+          "highlights": 15,
+          "tint": 5
+        },
+        "instruction": "enhance colors, increase brightness and contrast",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4166851043701172,
+        "luminance_std": 0.2450634092092514,
+        "saturation": 0.3159079849720001,
+        "warmth": 0.07084536552429199,
+        "white_clip_fraction": 0.00018310546875,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "白衬衫男子坐在汽车上，树荫和车身可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-042",
+      "split": "train",
+      "group_id": "3b365586124edaa4f94005fd330df04e1a344cf413dee97b86fcd3e54d85ca01",
+      "record_id": "GIER-Edit:train:004588",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3er006_3er006.jpg",
+      "source_sha256": "dba50c354dfac3743bdfa0bae3b489381b7e476c472569495cde3ac5f85a3ce2",
+      "original_request": "Edit this image to make it more beautiful",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3er006_3er006.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3er006_gLJC92h.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 15,
+          "sharpness": 35
+        },
+        "instruction": "Edit this image to make it more beautiful",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4985944628715515,
+        "luminance_std": 0.17620643973350525,
+        "saturation": 0.32456037402153015,
+        "warmth": 0.1516135036945343,
+        "white_clip_fraction": 1.52587890625e-05,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "砖墙前站立女子，服装及墙砖清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-044",
+      "split": "train",
+      "group_id": "5f0351df04ca1e0177cc181a6e8e0fe4c3b020497450448b480bf628141868c2",
+      "record_id": "GIER-Edit:train:004856",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/56z0fl_56z0fl.jpg",
+      "source_sha256": "f99b67d33f7aaa094c28fb478374ced2608a24e6d980d8cce989f4f73fb09545",
+      "original_request": "make this picture grainy and add retro effect",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/56z0fl_56z0fl.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/56z0fl_UizCL71.jpg",
+        "label": {
+          "brightness": 20,
+          "contrast": -30,
+          "temperature": 35,
+          "saturation": -55,
+          "highlights": 10,
+          "tint": 10
+        },
+        "instruction": "make this picture grainy and add retro effect",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.594855010509491,
+        "luminance_std": 0.2752351760864258,
+        "saturation": 0.23373347520828247,
+        "warmth": 0.042493872344493866,
+        "white_clip_fraction": 0.0001678466796875,
+        "black_clip_fraction": 0.000762939453125
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "敞篷车内女子，白衣和车内装饰清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-045",
+      "split": "train",
+      "group_id": "a4dfc6557bebf076aa3ec01ea76ad597c28bf70a59da944c9a101a357d02cb81",
+      "record_id": "GIER-Edit:train:002884",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5z346p_5z346p.jpg",
+      "source_sha256": "0b4dfff8227f29f67e4c3df2b2933b287546c041f74e188977799e773eb45c23",
+      "original_request": "Please simply make this image better.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5z346p_5z346p.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5z346p_NPjR1VA.jpg",
+        "label": {
+          "temperature": 10,
+          "saturation": 5,
+          "tint": 5
+        },
+        "instruction": "Please simply make this image better.",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4309515058994293,
+        "luminance_std": 0.26796039938926697,
+        "saturation": 0.17623990774154663,
+        "warmth": 0.028460513800382614,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "桥墩旁连帽男子，人脸与衣服可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-048",
+      "split": "train",
+      "group_id": "09c0df0508474960740ba1627814989e3ad6dbcacfca9ed4aa50783efdf50c1b",
+      "record_id": "GIER-Edit:train:012980",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cqCmL_cqCmL.jpg",
+      "source_sha256": "00f6517d3ffa8f87e0270c3bfc7b41572b24dc9ec93da09b7556d7841cfea688",
+      "original_request": "Please simply make this image better.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cqCmL_cqCmL.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cqCmL_vcZk5.jpg",
+        "label": {
+          "brightness": 30,
+          "contrast": 5,
+          "temperature": 5,
+          "saturation": 10,
+          "highlights": 10,
+          "tint": 5
+        },
+        "instruction": "Please simply make this image better.",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.47448456287384033,
+        "luminance_std": 0.29032576084136963,
+        "saturation": 0.3261593282222748,
+        "warmth": 0.10506519675254822,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0026702880859375
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "树旁打电话男子，浅绿色衣服可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-053",
+      "split": "train",
+      "group_id": "b4c022d1994176dd75407559ed047567dc48c0b27e1cc9a653e3585601e23951",
+      "record_id": "GIER-Edit:train:002781",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3y3jhl_3y3jhl.jpg",
+      "source_sha256": "40133c978a5a4f1f38ad4cf42be4ccac45ef2bd7302342c95337fba71fa33eb3",
+      "original_request": "Add a sepia hue.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3y3jhl_3y3jhl.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3y3jhl_dLsQU3r.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 10,
+          "temperature": 50,
+          "saturation": -70,
+          "highlights": 5,
+          "tint": 5
+        },
+        "instruction": "Add a sepia hue.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5456433296203613,
+        "luminance_std": 0.26462629437446594,
+        "saturation": 0.1328846961259842,
+        "warmth": 0.04402998462319374,
+        "white_clip_fraction": 0.0013885498046875,
+        "black_clip_fraction": 0.000274658203125
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "穿西服男子近景，脸部与细格外套清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-057",
+      "split": "train",
+      "group_id": "a47cd897e4aa70d1d8922678b59d7e1c61f5a6ba88cb9939a2d93ae37648c113",
+      "record_id": "GIER-Edit:train:007802",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5CzQB_5CzQB.jpg",
+      "source_sha256": "49c5cd4254791235a14917172d83e5d1360202f0960dcbd77a7ade7d51698cd7",
+      "original_request": "Increase the contrast a little and sharpen it a little.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5CzQB_5CzQB.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5CzQB_cncQW.jpg",
+        "label": {
+          "brightness": 10
+        },
+        "instruction": "Increase the contrast a little and sharpen it a little.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4769369661808014,
+        "luminance_std": 0.3034944534301758,
+        "saturation": 0.3027880787849426,
+        "warmth": 0.0581456795334816,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "两名女子与婴儿合影，肤色和白衣可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-059",
+      "split": "train",
+      "group_id": "75637bfaf29c8556ed7a3fb70a68e587b6a1a63d672515fc8def9020e3f7b6ab",
+      "record_id": "GIER-Edit:train:006593",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2hzuro_2hzuro.jpg",
+      "source_sha256": "98cb4f94d30d5c73eab100cec6b13a5fd6d6381c4f19f4eb9fab4edbcd1f96b6",
+      "original_request": "Can you help Vader lift the neon girl a bit higher?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2hzuro_2hzuro.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2hzuro_xElD2e6.jpg",
+        "label": {
+          "temperature": -5,
+          "tint": 5
+        },
+        "instruction": "Can you help Vader lift the neon girl a bit higher?",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.48506709933280945,
+        "luminance_std": 0.26705360412597656,
+        "saturation": 0.184045672416687,
+        "warmth": 0.014852249994874,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0001678466796875
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "户外一组跳跃人物，动作和服装可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-064",
+      "split": "train",
+      "group_id": "811535dd016a4409f643511b8baa6255dbe34ad264a5147f7c02c9b14ad4b9fc",
+      "record_id": "GIER-Edit:train:017662",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2xrtv0_2xrtv0.jpg",
+      "source_sha256": "db1e4ee7ac314707178e19817817b14a5c0e28d070e2039145581b155acc3476",
+      "original_request": "What will you do to improve this image?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2xrtv0_2xrtv0.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2xrtv0_DZQ7jw7.jpg",
+        "label": {
+          "brightness": 5,
+          "sharpness": 20
+        },
+        "instruction": "What will you do to improve this image?",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5931247472763062,
+        "luminance_std": 0.23588921129703522,
+        "saturation": 0.24913689494132996,
+        "warmth": 0.0315764844417572,
+        "white_clip_fraction": 0.01190185546875,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "雪山前两人与马合影，人物服装及背景可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-066",
+      "split": "train",
+      "group_id": "b7caf29ebf5788b75f0397efc9a273104232facc03ffac25c05b5bd279a883d1",
+      "record_id": "GIER-Edit:train:017568",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/ps0CJ_ps0CJ.jpg",
+      "source_sha256": "145cd238c013051ee5a9cb9d70944d31540ef9986ccc0d8876fd3623b0558025",
+      "original_request": "Edit this image to make it more beautiful",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/ps0CJ_ps0CJ.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/ps0CJ_tzZnT.jpg",
+        "label": {
+          "brightness": 25,
+          "contrast": 10,
+          "saturation": 5
+        },
+        "instruction": "Edit this image to make it more beautiful",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4683050513267517,
+        "luminance_std": 0.25360164046287537,
+        "saturation": 0.3845100402832031,
+        "warmth": 0.1869359016418457,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "女子正面近景，自然肤色和头发层次清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-072",
+      "split": "train",
+      "group_id": "7eba1bbee59d8bd619b5d1232e14d7cb569a56ca0d74c6aa934ce8c951df8e21",
+      "record_id": "GIER-Edit:train:007318",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/g7XKK_g7XKK.jpg",
+      "source_sha256": "33493e8d7022d5dc81703fdceed5c3b27b00591729b12b6f985c1dc285cde6fa",
+      "original_request": "Remove all the people in front of the woman in black",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/g7XKK_g7XKK.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/g7XKK_w95Hp.jpg",
+        "label": {
+          "brightness": 0,
+          "contrast": 0
+        },
+        "instruction": "Remove all the people in front of the woman in black",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5744526982307434,
+        "luminance_std": 0.2185554802417755,
+        "saturation": 0.23396170139312744,
+        "warmth": -0.07586561143398285,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "长城上背影游客，人物和远处山峦清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-082",
+      "split": "train",
+      "group_id": "d4bd73fc778e1b7d705c7b99db1c64c6f52f6e409660e7ef557a144186654a75",
+      "record_id": "GIER-Edit:train:018768",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/385rd5_385rd5.jpg",
+      "source_sha256": "dbe4064014415290a64d00dc0d25676ec4b4fddc8c89b242a33a89b39f2bcf8c",
+      "original_request": "Please brighten up this photo a lot, enhance the colors and remove the object in the water behind the woman's head.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/385rd5_385rd5.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/385rd5_vQXeHn7.jpg",
+        "label": {
+          "brightness": 35,
+          "contrast": 5,
+          "temperature": 5,
+          "saturation": 15,
+          "highlights": 5,
+          "tint": 5
+        },
+        "instruction": "Please brighten up this photo a lot, enhance the colors and remove the object in the water behind the woman's head.",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5152103900909424,
+        "luminance_std": 0.19532352685928345,
+        "saturation": 0.2357374131679535,
+        "warmth": 0.049878232181072235,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "瀑布前情侣近景，服装及水景可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-096",
+      "split": "train",
+      "group_id": "07c91b5456b77e45a05d7ec03fd6683aa6a53cd9b18ffeb77d5e398f30aed3fa",
+      "record_id": "GIER-Edit:train:003864",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/jcdTK_jcdTK.jpg",
+      "source_sha256": "ba8b41a903d433709b6c003ca609aa53f87eca10389ee051c3db9c160d9f8140",
+      "original_request": "Please simply make this image better.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/jcdTK_jcdTK.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/jcdTK_gLDVR.jpg",
+        "label": {
+          "brightness": 35,
+          "contrast": 5,
+          "saturation": 15,
+          "highlights": 10
+        },
+        "instruction": "Please simply make this image better.",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5164523124694824,
+        "luminance_std": 0.21258214116096497,
+        "saturation": 0.20745602250099182,
+        "warmth": 0.09359095245599747,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "镜前男子自拍，白衬衫与脸部可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-102",
+      "split": "train",
+      "group_id": "409dcd765725e137184973a9621f0c1bc07adb090c4a22822237f5d1d3f815b4",
+      "record_id": "GIER-Edit:train:023548",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/mf7S0_mf7S0.jpg",
+      "source_sha256": "08001efebdd701929122b1e1e3ee0bfc8454ee6cf672f9772e8071012aa3c791",
+      "original_request": "Darken the image a shade.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/mf7S0_mf7S0.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/mf7S0_crrHc.jpg",
+        "label": {
+          "brightness": -20,
+          "contrast": 5,
+          "saturation": -25,
+          "highlights": -45
+        },
+        "instruction": "Darken the image a shade.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.30670177936553955,
+        "luminance_std": 0.21860148012638092,
+        "saturation": 0.4516059160232544,
+        "warmth": 0.04586983099579811,
+        "white_clip_fraction": 0.001312255859375,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "树林前家庭合影，人物肤色与秋叶可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-110",
+      "split": "train",
+      "group_id": "7dfd1ced84aefc30f18f180a7b939960e7a35a55617fb8a17c6378fac076a7fa",
+      "record_id": "GIER-Edit:train:000065",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9Hyqg_9Hyqg.jpg",
+      "source_sha256": "4918b6dcb683c7eb157fbe25a2057933002ba1f5dfe6e9c9eb3652a0ac1af589",
+      "original_request": "Edit this image to make it more beautiful",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9Hyqg_9Hyqg.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9Hyqg_jrKDF.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 10,
+          "temperature": 10,
+          "saturation": 15,
+          "highlights": 5,
+          "tint": 5
+        },
+        "instruction": "Edit this image to make it more beautiful",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.3551885187625885,
+        "luminance_std": 0.20337262749671936,
+        "saturation": 0.3525215685367584,
+        "warmth": 0.03958507254719734,
+        "white_clip_fraction": 0.0001220703125,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "树林中持气球女孩，白裙及脸部可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-113",
+      "split": "train",
+      "group_id": "717f5a4451b1acb247400f67ca7f4cf8859e75e0f46aa090210ab8413a0b8f75",
+      "record_id": "GIER-Edit:train:023437",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/338p6o_338p6o.jpg",
+      "source_sha256": "4dae13c8bbfaa4045b3bf899a68e9dabc798c468d65d304b7de405c03abc6684",
+      "original_request": "Please, enhance the lightness a lot",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/338p6o_338p6o.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/338p6o_uK3eNow.jpg",
+        "label": {
+          "brightness": 35,
+          "contrast": 5,
+          "saturation": 80,
+          "highlights": 30,
+          "tint": 5
+        },
+        "instruction": "Please, enhance the lightness a lot",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.36409592628479004,
+        "luminance_std": 0.24259929358959198,
+        "saturation": 0.465332955121994,
+        "warmth": 0.08251863718032837,
+        "white_clip_fraction": 0.0033416748046875,
+        "black_clip_fraction": 1.52587890625e-05
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "树旁男子全身像，紫衣和草地层次清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-133",
+      "split": "train",
+      "group_id": "20d53cb931cb422b6cac6e4442f4248a7ab6b110ff0d425e0d6fa94b8cb6e5fe",
+      "record_id": "GIER-Edit:train:022362",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bR20n_bR20n.jpg",
+      "source_sha256": "c079a031edfb68ef12f40e9e3a40bdab9286462d9bdf2c46f6401936fbed542b",
+      "original_request": "Just refine this image, make it better.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bR20n_bR20n.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bR20n_Z7ySk.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 5
+        },
+        "instruction": "Just refine this image, make it better.",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.6925737857818604,
+        "luminance_std": 0.24215801060199738,
+        "saturation": 0.111745685338974,
+        "warmth": 0.0026481510140001774,
+        "white_clip_fraction": 0.01605224609375,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "浅背景男子面部近景，皮肤和胡须可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-138",
+      "split": "train",
+      "group_id": "df80e1a833e495be9e72bb37caf1770f5d93f8f6b02fa7cd5c1ff23c24697a1b",
+      "record_id": "GIER-Edit:train:018505",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/lHT34_lHT34.jpg",
+      "source_sha256": "2c651769d57a778503fa5602de3ab51ee29c0a3bbf7b78ba218cb8043e6031a6",
+      "original_request": "Please simply make this image better.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/lHT34_lHT34.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/lHT34_jwtyK.jpg",
+        "label": {
+          "brightness": -80,
+          "saturation": -90,
+          "tint": 25
+        },
+        "instruction": "Please simply make this image better.",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5480823516845703,
+        "luminance_std": 0.2466328889131546,
+        "saturation": 0.29798805713653564,
+        "warmth": 0.11266222596168518,
+        "white_clip_fraction": 3.0517578125e-05,
+        "black_clip_fraction": 0.000274658203125
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "室内婚礼人群，粉色裙装与肤色可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-021",
+      "split": "train",
+      "group_id": "206a21d03934f7ea90c104142cdae141bf9829a862f36b2968e41318c33d50fe",
+      "record_id": "GIER-Edit:train:003340",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vkWMK_vkWMK.jpg",
+      "source_sha256": "2d1c2e857746d63b2dcbd3e5be55878f5bfa853f297d70273e1c71a3fe04e3da",
+      "original_request": "make it more vivid, make the sea and the sky more blue",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vkWMK_vkWMK.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vkWMK_wcLb7.jpg",
+        "label": {
+          "brightness": 15,
+          "contrast": 10,
+          "temperature": 5,
+          "saturation": 90
+        },
+        "instruction": "make it more vivid, make the sea and the sky more blue",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4450604319572449,
+        "luminance_std": 0.23392485082149506,
+        "saturation": 0.2089519500732422,
+        "warmth": -0.09970385581254959,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.000457763671875
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "海边岩石和远岸，水面及天空可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-027",
+      "split": "train",
+      "group_id": "b58909a04029930ef31013fab1da3dfbfa1242655ddf7e3e48a23053a115fb4f",
+      "record_id": "GIER-Edit:train:007336",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8VQQC_8VQQC.jpg",
+      "source_sha256": "d6302588df86e539258d7d5fcf1eb26f1d7b97d8c2cf116614840c3aa9a27c2f",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8VQQC_8VQQC.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8VQQC_3KGZ0.jpg",
+        "label": {
+          "brightness": 40,
+          "contrast": 5,
+          "temperature": -70,
+          "saturation": 25,
+          "highlights": 10,
+          "tint": 25,
+          "sharpness": 15
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.3348960280418396,
+        "luminance_std": 0.2069314867258072,
+        "saturation": 0.5238233804702759,
+        "warmth": 0.16252610087394714,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "秋季城镇航拍，桥梁河道和树林清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-039",
+      "split": "train",
+      "group_id": "5694d36056c1a99187ad2ce759bb8cb16b2c2e03f468b79f327ce4ba5ec7ab53",
+      "record_id": "GIER-Edit:train:005035",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/b7fn0m_b7fn0m.jpg",
+      "source_sha256": "2f2fa4482d29f2a2f762f18c657e016d48f6a6a7bbb32470e6fa3452edf47ebb",
+      "original_request": "Reduce the brightness",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/b7fn0m_b7fn0m.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/b7fn0m_Sa6HewO.jpg",
+        "label": {
+          "contrast": 10,
+          "brightness": -10,
+          "saturation": 10,
+          "temperature": -5,
+          "highlights": -10,
+          "tint": 0
+        },
+        "instruction": "Reduce the brightness",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4907448887825012,
+        "luminance_std": 0.17053617537021637,
+        "saturation": 0.17934909462928772,
+        "warmth": 0.07016877084970474,
+        "white_clip_fraction": 0.0006103515625,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "枯树林中的小路，树枝与路面细节清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-043",
+      "split": "train",
+      "group_id": "692cab1d6db15e5c67238549f2f69ca1c4affbe68cc83e2b3404def25a43e540",
+      "record_id": "GIER-Edit:train:014973",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/61n69_61n69.jpg",
+      "source_sha256": "f544914e6bfafaae85f4fa0750e18d70ef8c39620f03e04916bae81f7e87b811",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/61n69_61n69.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/61n69_7bdlq.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 5,
+          "saturation": 80,
+          "highlights": -35
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5048004388809204,
+        "luminance_std": 0.38272544741630554,
+        "saturation": 0.1513841599225998,
+        "warmth": -0.005769078619778156,
+        "white_clip_fraction": 0.161285400390625,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "灌木前石屋，屋顶及明亮天空可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-074",
+      "split": "train",
+      "group_id": "928c4cb4d41cc13dbad7e280dc12d4df87c77159958b28b2ee51f40e9e3d4e08",
+      "record_id": "GIER-Edit:train:011679",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/m2GLd_m2GLd.jpg",
+      "source_sha256": "6363fdea66d34338a7563e829437636f1aa9135ad00df64c2997a5f17a507ffb",
+      "original_request": "Edit this image to make it more beautiful",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/m2GLd_m2GLd.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/m2GLd_hSTD0.jpg",
+        "label": {
+          "brightness": 25,
+          "contrast": 5,
+          "saturation": 15,
+          "sharpness": 15,
+          "temperature": -10
+        },
+        "instruction": "Edit this image to make it more beautiful",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.3618818521499634,
+        "luminance_std": 0.2445792853832245,
+        "saturation": 0.4141012132167816,
+        "warmth": -0.0236504003405571,
+        "white_clip_fraction": 1.52587890625e-05,
+        "black_clip_fraction": 4.57763671875e-05
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "乡间谷仓与草地，阴影和金属屋顶清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-085",
+      "split": "train",
+      "group_id": "2145277c51d9f27db6a2697afc9496251bd64fa5f672904e75dada4eb1ce0e4b",
+      "record_id": "GIER-Edit:train:003779",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/78t6X_78t6X.jpg",
+      "source_sha256": "8378f3a805dfa2f65abac64cd1eba65f7397620783a02fc933b4c18cb1dc595f",
+      "original_request": "Please simply make this image better.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/78t6X_78t6X.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/78t6X_csFHw.jpg",
+        "label": {
+          "brightness": 15,
+          "contrast": 10,
+          "saturation": 80
+        },
+        "instruction": "Please simply make this image better.",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.561740517616272,
+        "luminance_std": 0.18088509142398834,
+        "saturation": 0.11149272322654724,
+        "warmth": -0.02709553949534893,
+        "white_clip_fraction": 9.1552734375e-05,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "湖边码头小船，水面与远岸树林清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-086",
+      "split": "train",
+      "group_id": "dfbffb87db40cd34005da83dab07c01911109060dc1f0058b4f644dbbb696245",
+      "record_id": "GIER-Edit:train:004966",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/hqYr6_hqYr6.jpg",
+      "source_sha256": "8be5a25bc2d7dc21cd5cfbc8fea5e92f2936e0d3a0f8dff80fad8cbbbed50aa0",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/hqYr6_hqYr6.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/hqYr6_k722k.jpg",
+        "label": {
+          "temperature": 10,
+          "saturation": 100,
+          "highlights": 30,
+          "tint": 25
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5213889479637146,
+        "luminance_std": 0.28265491127967834,
+        "saturation": 0.1806512326002121,
+        "warmth": -0.04765104129910469,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0009307861328125
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "海湾沙滩与暮色云层，岸边树木可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-100",
+      "split": "train",
+      "group_id": "f1ff63ce6e58d942c7ed971df89cd1ef296a3ff225e1fad73d13c7f3765993d8",
+      "record_id": "GIER-Edit:train:014825",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9WXLD_9WXLD.jpg",
+      "source_sha256": "99e246ee2974232f0fac672c7efefde3965524cf050fb45aaf2b4913f6c19b7f",
+      "original_request": "Just refine this image, make it better.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9WXLD_9WXLD.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9WXLD_sGVlT.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 0,
+          "temperature": 5,
+          "saturation": 5
+        },
+        "instruction": "Just refine this image, make it better.",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4241029918193817,
+        "luminance_std": 0.22993555665016174,
+        "saturation": 0.6387380361557007,
+        "warmth": 0.15552161633968353,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "花坛与雕像广场，花色及蓝天清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-106",
+      "split": "train",
+      "group_id": "44ee44ff95e50065daf5bc49db25bcf16353cbcbe246e02defdd11acc46c802a",
+      "record_id": "GIER-Edit:train:016867",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3ykb9c_3ykb9c.jpg",
+      "source_sha256": "ccbb681890690a902af6d5a157dac9e3d7b49ec5071f40f1fed7b5a6ea3ab435",
+      "original_request": "What will you do to improve this image?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3ykb9c_3ykb9c.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3ykb9c_IKZ1qM5.jpg",
+        "label": {
+          "brightness": 35,
+          "contrast": 15,
+          "temperature": 45,
+          "saturation": 35,
+          "tint": 5
+        },
+        "instruction": "What will you do to improve this image?",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5226100087165833,
+        "luminance_std": 0.26258352398872375,
+        "saturation": 0.3619594871997833,
+        "warmth": -0.23513579368591309,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "海面长桥与远山，蓝天云朵及岸边可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-114",
+      "split": "train",
+      "group_id": "78d38068c95e7c233bd981140712440f3a0b44b4d9d9c9a8de77e1a669780f57",
+      "record_id": "GIER-Edit:train:013117",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2q097u_2q097u.jpg",
+      "source_sha256": "c22f8651038473c600c1b5a46bc15a5d045e5a601c7e9eabe9c144b925f2030b",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2q097u_2q097u.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2q097u_L4ZKQIJ.jpg",
+        "label": {
+          "brightness": 35,
+          "contrast": 20,
+          "saturation": 5,
+          "sharpness": 30
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.48211991786956787,
+        "luminance_std": 0.2847345173358917,
+        "saturation": 0.21381670236587524,
+        "warmth": -0.030625764280557632,
+        "white_clip_fraction": 0.0298919677734375,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "湖中皮艇为小主体，水面山林和天空占主要画面；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-120",
+      "split": "train",
+      "group_id": "e400632d04cdf370e7379a9a4e093134ba0c4a9b0bd1193d4c02e1dada0c4cc7",
+      "record_id": "GIER-Edit:train:017219",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/kj7K2_kj7K2.jpg",
+      "source_sha256": "c6e469a421d49b027de1199876b1a8bd818ff38d2d90f6276ce46ffd13d315d1",
+      "original_request": "Edit this image to make it more beautiful",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/kj7K2_kj7K2.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/kj7K2_5YHYD.jpg",
+        "label": {
+          "contrast": 15,
+          "temperature": 5,
+          "saturation": 90
+        },
+        "instruction": "Edit this image to make it more beautiful",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.539122462272644,
+        "luminance_std": 0.27296024560928345,
+        "saturation": 0.14390361309051514,
+        "warmth": 0.025391582399606705,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "低机位公路风景，路面纹理与路边树林清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-130",
+      "split": "train",
+      "group_id": "63b53b90379ff90e48b39d1312d217d8e420d7e348a4d8e181ce210419886aea",
+      "record_id": "GIER-Edit:train:017170",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4hDpc_4hDpc.jpg",
+      "source_sha256": "934e04a2ecb7ce761073bf6820001ec05463e98d59a303d0e3feae800ca85624",
+      "original_request": "Edit this image to make it more beautiful",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4hDpc_4hDpc.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4hDpc_jn1cZ.jpg",
+        "label": {
+          "brightness": -5,
+          "contrast": -50,
+          "temperature": -25,
+          "saturation": -5,
+          "tint": 10
+        },
+        "instruction": "Edit this image to make it more beautiful",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5127729177474976,
+        "luminance_std": 0.18332262337207794,
+        "saturation": 0.516704797744751,
+        "warmth": -0.34620243310928345,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "海景泳池与远山，少量人物为陪体；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-149",
+      "split": "train",
+      "group_id": "8ccef5f1a78d86b6131dad6c249e0f9d3f070e6c07e1659eecbe59149c78dee4",
+      "record_id": "GIER-Edit:train:004099",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4c91fu_4c91fu.jpg",
+      "source_sha256": "a714df0ccf93564f744d90f9c1248a03804419bb06c72ca205947535b557d993",
+      "original_request": "Make the foreground less sharp a little in the background sharper a little",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4c91fu_4c91fu.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4c91fu_ffrxyys.jpg",
+        "label": {
+          "brightness": 20,
+          "contrast": 5,
+          "temperature": -10,
+          "saturation": 5,
+          "highlights": -5
+        },
+        "instruction": "Make the foreground less sharp a little in the background sharper a little",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4264780580997467,
+        "luminance_std": 0.2213396579027176,
+        "saturation": 0.36843574047088623,
+        "warmth": 0.12826891243457794,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "傍晚河面和桥梁，金色树木及倒影清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-152",
+      "split": "train",
+      "group_id": "a3b0c928063145ce04f350cc4b9756be90718d1b9080a7cbbbaee254ef31ded6",
+      "record_id": "GIER-Edit:train:016036",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4r5fok_4r5fok.jpg",
+      "source_sha256": "0b42f78f5ca9201adbf83615aa8f3479f6419c9a9a6b6d7befc478dd60d55ba8",
+      "original_request": "make the sky more blue, increase saturnation a lot",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4r5fok_4r5fok.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4r5fok_FHU3GHy.jpg",
+        "label": {
+          "temperature": -35,
+          "saturation": 95,
+          "highlights": -10
+        },
+        "instruction": "make the sky more blue, increase saturnation a lot",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5475695729255676,
+        "luminance_std": 0.1767781376838684,
+        "saturation": 0.2849915623664856,
+        "warmth": -0.18073007464408875,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "海湾与机场远景，水面和大面积蓝天清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-164",
+      "split": "train",
+      "group_id": "523220679b21f241f54e9423c0753461db1096f4500234359268dc572c3e122f",
+      "record_id": "GIER-Edit:train:002367",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8MSxR_8MSxR.jpg",
+      "source_sha256": "344aae650c4400e8673e374e8dd0d5373c0b96723c0361f403fbfb9d8b45011b",
+      "original_request": "input image has less color",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8MSxR_8MSxR.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8MSxR_fPJ4K.jpg",
+        "label": {
+          "brightness": 25,
+          "contrast": 15,
+          "temperature": 10,
+          "saturation": 80,
+          "highlights": 5,
+          "tint": 5
+        },
+        "instruction": "input image has less color",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4931636452674866,
+        "luminance_std": 0.254378080368042,
+        "saturation": 0.10255786776542664,
+        "warmth": 0.01298834104090929,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "海边日落与小比例人物，沙滩和云层可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-191",
+      "split": "train",
+      "group_id": "3ab215c7103db6925d0b1555c897d05c8e8c3c134dbc5b111de9c61c59689c5b",
+      "record_id": "GIER-Edit:train:013012",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7oxab7_7oxab7.jpg",
+      "source_sha256": "c03a1f9b4d4c2c0b2c4f19d007995142e2becb1f0fa18ee64e7c7d667447cbb0",
+      "original_request": " can someone make the sky blue and the ground/grass green",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7oxab7_7oxab7.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7oxab7_zpwbPKj.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 15,
+          "temperature": -45,
+          "saturation": 90,
+          "highlights": 5,
+          "tint": 5
+        },
+        "instruction": " can someone make the sky blue and the ground/grass green",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.6505205035209656,
+        "luminance_std": 0.17573381960391998,
+        "saturation": 0.14523983001708984,
+        "warmth": 0.025886567309498787,
+        "white_clip_fraction": 0.0002593994140625,
+        "black_clip_fraction": 0.0001220703125
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "平原体育场航拍，建筑道路与远处天际线清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-195",
+      "split": "train",
+      "group_id": "8503b4c82cd0bd5399635bab851abdddea751c15d9cf83fc0ae346b97833dfff",
+      "record_id": "GIER-Edit:train:018889",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/41lbtx_41lbtx.jpg",
+      "source_sha256": "b67832d392b1943a2b586d2ab39daa166ce2e508de8fd4c3187321b028995ec9",
+      "original_request": "Remove the sky around the building only.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/41lbtx_41lbtx.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/41lbtx_Y5ctVqQ.png",
+        "label": {
+          "brightness": 15,
+          "highlights": 5,
+          "temperature": 5
+        },
+        "instruction": "Remove the sky around the building only.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.37444448471069336,
+        "luminance_std": 0.2575770318508148,
+        "saturation": 0.2167472094297409,
+        "warmth": 0.0344492606818676,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.042572021484375
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "法院建筑外景，石墙与阴云可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-200",
+      "split": "train",
+      "group_id": "ff2989546843ecaac701158c6dd4184b1639b1a4a51df05b4986756d5344874c",
+      "record_id": "GIER-Edit:train:014748",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/wHRB7_wHRB7.jpg",
+      "source_sha256": "d32d4ad82330580053ecfa4451048b6e8326776771c5cab7a417a7c7403c19d4",
+      "original_request": "sharpen image. add blue hue to water and turn dead grass green",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/wHRB7_wHRB7.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/wHRB7_lKz8M.jpg",
+        "label": {
+          "temperature": -5,
+          "saturation": 5,
+          "tint": -5
+        },
+        "instruction": "sharpen image. add blue hue to water and turn dead grass green",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.34235623478889465,
+        "luminance_std": 0.19637461006641388,
+        "saturation": 0.24794559180736542,
+        "warmth": 0.04683012142777443,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "山林瀑布长曝光照片，流水与植被清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-201",
+      "split": "train",
+      "group_id": "2fc703f934babe07c37bf2c6cc5a391da9be2013d19f5c19cf2806322f04458e",
+      "record_id": "GIER-Edit:train:021043",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/mxJyR_mxJyR.jpg",
+      "source_sha256": "a32e8d092a4584f53ab5687cadd964b554830d536c6bee1a67132ef2276caf35",
+      "original_request": "crop the picture zoom to the river",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/mxJyR_mxJyR.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/mxJyR_qGfcP.jpg",
+        "label": {
+          "brightness": 30,
+          "contrast": 5,
+          "temperature": 5,
+          "saturation": 10,
+          "highlights": 5,
+          "tint": 5
+        },
+        "instruction": "crop the picture zoom to the river",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.36396515369415283,
+        "luminance_std": 0.3130633234977722,
+        "saturation": 0.35607975721359253,
+        "warmth": 0.04022384434938431,
+        "white_clip_fraction": 0.00128173828125,
+        "black_clip_fraction": 0.010589599609375
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "树荫中湖畔风景，水面和枝叶可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-204",
+      "split": "train",
+      "group_id": "7ac3a31d4752021dea4f9f0413aa0eb00908b8082430d54f24f77144db894609",
+      "record_id": "GIER-Edit:train:007952",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6xknlj_6xknlj.jpg",
+      "source_sha256": "746b5e9f05c2354f4480bdac79240915cd2f7e7afb69e0fb8a15b75bc1810b18",
+      "original_request": "darken the photo and make the sky blue",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6xknlj_6xknlj.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6xknlj_7FZMUfM.jpg",
+        "label": {
+          "temperature": -15,
+          "saturation": -60,
+          "highlights": -15
+        },
+        "instruction": "darken the photo and make the sky blue",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5446324944496155,
+        "luminance_std": 0.29556336998939514,
+        "saturation": 0.09105715155601501,
+        "warmth": -0.010149667039513588,
+        "white_clip_fraction": 0.0004119873046875,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "雪峰与山林全景，主要为自然景色；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-206",
+      "split": "train",
+      "group_id": "b1aaea6877729b3ed220a396b66d0bb0f322c4b198befe8a4d643c35688956b9",
+      "record_id": "GIER-Edit:train:018847",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/j8RZJ_j8RZJ.jpg",
+      "source_sha256": "d4e601d8aabf7462b05d7bcccd81991c89ac1faf5f03b916651dc5e8aef375fe",
+      "original_request": "Sharpen and brighten the image a lot and add a yellow tone to the sky.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/j8RZJ_j8RZJ.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/j8RZJ_994NR.jpg",
+        "label": {
+          "brightness": 60,
+          "contrast": 90,
+          "temperature": 40,
+          "saturation": 35,
+          "highlights": 35,
+          "tint": 10
+        },
+        "instruction": "Sharpen and brighten the image a lot and add a yellow tone to the sky.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.327908456325531,
+        "luminance_std": 0.26731449365615845,
+        "saturation": 0.29705777764320374,
+        "warmth": -0.07606081664562225,
+        "white_clip_fraction": 0.0003509521484375,
+        "black_clip_fraction": 9.1552734375e-05
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "岩岸日落全景，小比例人影为陪体；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-210",
+      "split": "train",
+      "group_id": "4e9ed855264e126376dcb6ba225f4b2b0871adb076ea6888ceb789455f0b6ff8",
+      "record_id": "GIER-Edit:train:000759",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4kn7o8_4kn7o8.jpg",
+      "source_sha256": "d2d3a995ddd8747909ef689183e4c849c57019fa0d524ee7f70042891b48b6d1",
+      "original_request": " Can someone please help put some colour in the sky and make this photo look more dreamlike? THANK YOU! :)",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4kn7o8_4kn7o8.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4kn7o8_misAHWn.jpg",
+        "label": {
+          "brightness": 15,
+          "contrast": 15,
+          "saturation": 30,
+          "temperature": 5,
+          "highlights": -15,
+          "tint": 0
+        },
+        "instruction": " Can someone please help put some colour in the sky and make this photo look more dreamlike? THANK YOU! :)",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.517622172832489,
+        "luminance_std": 0.28535041213035583,
+        "saturation": 0.2722243070602417,
+        "warmth": 0.0255587138235569,
+        "white_clip_fraction": 0.088226318359375,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "河谷山地风景，河道及草坡清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-214",
+      "split": "train",
+      "group_id": "0fd2b1f577c17cc562f65425a203b638f14fe5ac683c151c424b8b65a247cbb5",
+      "record_id": "GIER-Edit:train:018112",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bHWhS_bHWhS.jpg",
+      "source_sha256": "4d210535a4c0272717dc22e9a027685208381fdc6df58f2c7fcc744625199f19",
+      "original_request": "add a yellow tone to the grass and sharpen the image",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bHWhS_bHWhS.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bHWhS_4qXpr.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 10,
+          "temperature": 20,
+          "saturation": 30,
+          "highlights": 5,
+          "tint": 5
+        },
+        "instruction": "add a yellow tone to the grass and sharpen the image",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4558034837245941,
+        "luminance_std": 0.2664874196052551,
+        "saturation": 0.3245176374912262,
+        "warmth": -0.10654853284358978,
+        "white_clip_fraction": 0.0120086669921875,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "马丘比丘山地遗址，山峦与石阶清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-220",
+      "split": "train",
+      "group_id": "f7a65790ed2a83d16eb7690fca98cc81221a9a929e1136aea45441556e6b8ba7",
+      "record_id": "GIER-Edit:train:019565",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7353x_7353x.jpg",
+      "source_sha256": "0079dfea95c04baff4a22b685ca10416ccf6774fd42ff5d100ba84136a6226d2",
+      "original_request": "Brighten the entire picture, emphasize colors of trees, rocks and clothes.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7353x_7353x.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7353x_4mtff.jpg",
+        "label": {
+          "brightness": 20,
+          "contrast": 15,
+          "temperature": 5,
+          "saturation": 90,
+          "highlights": 5,
+          "sharpness": 10
+        },
+        "instruction": "Brighten the entire picture, emphasize colors of trees, rocks and clothes.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.47543221712112427,
+        "luminance_std": 0.2652004063129425,
+        "saturation": 0.11243712157011032,
+        "warmth": 0.01375738438218832,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.001861572265625
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "雪山树林风景，左侧小比例人物为陪体；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-243",
+      "split": "train",
+      "group_id": "9a2ffb910de4b0c0868cc2cea9614a20c1ea4e17dde4896f7cdc007fc92b51ae",
+      "record_id": "GIER-Edit:train:008727",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/mWBLm_mWBLm.jpg",
+      "source_sha256": "cb3475bda3ca33e2f4a9bbca05f98fc1f228df27a18390a1b5ff5d0733634bb6",
+      "original_request": "Brighten image.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/mWBLm_mWBLm.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/mWBLm_7BDMW.jpg",
+        "label": {
+          "contrast": 5,
+          "saturation": 0
+        },
+        "instruction": "Brighten image.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4267593324184418,
+        "luminance_std": 0.10784135013818741,
+        "saturation": 0.8119781017303467,
+        "warmth": -0.5513848066329956,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 1.52587890625e-05
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "雪山和高原全景，小比例游客在远侧；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-263",
+      "split": "train",
+      "group_id": "173cb24e8c92b1877fcd172ecb3763a18980204dbc52ceefeb275a94d79d0ae2",
+      "record_id": "GIER-Edit:train:010400",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cVyVc_cVyVc.jpg",
+      "source_sha256": "74b1ecff6a536bbbb88ef0ccf25f94dfbd6094b9daf1c633f257a141840f64b3",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cVyVc_cVyVc.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cVyVc_fm9T6.jpg",
+        "label": {
+          "brightness": 20,
+          "contrast": 15,
+          "saturation": 75,
+          "highlights": 10,
+          "sharpness": 15
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5077041387557983,
+        "luminance_std": 0.29205694794654846,
+        "saturation": 0.21202416718006134,
+        "warmth": 0.04816613718867302,
+        "white_clip_fraction": 0.0007171630859375,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "河谷及两岸森林，水面与岩石清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-273",
+      "split": "train",
+      "group_id": "0b33ca81a63fe52de8fb6aada009a8d7433eadece324284c702c28850fd4e706",
+      "record_id": "GIER-Edit:train:005739",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/l0BCp_l0BCp.jpg",
+      "source_sha256": "7aabd4043f3552f5eaf489d134fd79a27818897ec80b325c788185f8833e33dc",
+      "original_request": "Brighten and increase the contrast of the image",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/l0BCp_l0BCp.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/l0BCp_b0Qdx.jpg",
+        "label": {
+          "brightness": 25,
+          "contrast": 45,
+          "saturation": 35,
+          "tint": 35,
+          "sharpness": 20
+        },
+        "instruction": "Brighten and increase the contrast of the image",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.2377835065126419,
+        "luminance_std": 0.15138158202171326,
+        "saturation": 0.4672866463661194,
+        "warmth": 0.02636587806046009,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "机窗城市夜景，灯光和暮色天空清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-278",
+      "split": "train",
+      "group_id": "28c79bf1e101cd7ab57f55b70100249a6f979b8adea777a82341d4117e86d06c",
+      "record_id": "GIER-Edit:train:009744",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9iyg33_9iyg33.jpg",
+      "source_sha256": "0b64d2a3467d4a318cb7f56c656232574fa30e7af5c67320efacc183a580a232",
+      "original_request": "Please, enhance the lightness a lot",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9iyg33_9iyg33.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9iyg33_4xIFHKI.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 20,
+          "saturation": 35,
+          "highlights": 15
+        },
+        "instruction": "Please, enhance the lightness a lot",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4915790557861328,
+        "luminance_std": 0.21317137777805328,
+        "saturation": 0.2908090054988861,
+        "warmth": -0.10019524395465851,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0013885498046875
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "湖中帆船外景，水面和浅色船帆清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-285",
+      "split": "train",
+      "group_id": "4aa6952d3242888d083cf8d0ad206abd4e05b96737960701a7ee1a39d5964ed8",
+      "record_id": "GIER-Edit:train:018424",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35STJ_35STJ.jpg",
+      "source_sha256": "ee914ef601a88004b0b80dc823d18b2130ad458ffefe1d8e3fde42bc785a5b5f",
+      "original_request": "Edit this image to make it more beautiful",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35STJ_35STJ.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35STJ_nfQ7M.jpg",
+        "label": {
+          "contrast": 5,
+          "saturation": -15,
+          "highlights": -65,
+          "tint": 45,
+          "sharpness": 5
+        },
+        "instruction": "Edit this image to make it more beautiful",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.2981990873813629,
+        "luminance_std": 0.23322749137878418,
+        "saturation": 0.4012840986251831,
+        "warmth": -0.12855906784534454,
+        "white_clip_fraction": 0.0013580322265625,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "仰拍绿色竹林，树干与叶间亮处可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "train-291",
+      "split": "train",
+      "group_id": "34d17d08983924754a16f4f56bb04c1fa84ccf6753a6573244474ccd2647234c",
+      "record_id": "GIER-Edit:train:025465",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/axd6ds_axd6ds.jpg",
+      "source_sha256": "5b0ac8570104970de4c4729598b1c2df7e39161e0a4120af4a1ff04e0cc793c5",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/axd6ds_axd6ds.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/axd6ds_fndXYM0.jpg",
+        "label": {
+          "brightness": -100,
+          "contrast": 5,
+          "temperature": -40,
+          "saturation": -55,
+          "highlights": -35,
+          "tint": 25
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.46526604890823364,
+        "luminance_std": 0.2430018037557602,
+        "saturation": 0.14600630104541779,
+        "warmth": 0.02168908342719078,
+        "white_clip_fraction": 0.028472900390625,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "树木环绕建筑庭院，砖墙和落叶清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-001",
+      "split": "development",
+      "group_id": "c5633a0b449b0763355879dd6e5984b3a34154e6110868d6618042ed2059ff42",
+      "record_id": "GIER-Edit:train:025719",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4Fpvn_4Fpvn.jpg",
+      "source_sha256": "07f463a0e06222b97b9ac7a9f5ae2abb170cdd732c744c562cb6f7ff7f299057",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4Fpvn_4Fpvn.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4Fpvn_qJZ8Q.jpg",
+        "label": {
+          "brightness": -25,
+          "contrast": 15,
+          "temperature": 45,
+          "saturation": 5,
+          "highlights": -45,
+          "tint": 20
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4462660849094391,
+        "luminance_std": 0.24622634053230286,
+        "saturation": 0.45790499448776245,
+        "warmth": 0.14403662085533142,
+        "white_clip_fraction": 6.103515625e-05,
+        "black_clip_fraction": 0.00030517578125
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "树林草地上戴王冠幼儿，身体和肤色清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-003",
+      "split": "development",
+      "group_id": "147b714aa343a2f2cb6e07e32414920339d5b088a3b53b32f165ae39ff41686c",
+      "record_id": "GIER-Edit:train:021737",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/htT3J_htT3J.jpg",
+      "source_sha256": "fde1047bbe73f61cddb67b476296a824e3044259b88b87e8349e783538049735",
+      "original_request": "Darken the image a bit. Increase the vividness of the red in the images.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/htT3J_htT3J.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/htT3J_Z91GX.jpg",
+        "label": {
+          "brightness": -5,
+          "temperature": 0,
+          "saturation": 15,
+          "highlights": -20
+        },
+        "instruction": "Darken the image a bit. Increase the vividness of the red in the images.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4060235321521759,
+        "luminance_std": 0.3211701512336731,
+        "saturation": 0.1647651642560959,
+        "warmth": 0.04233948886394501,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.24993896484375
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "白床单上的红衣婴儿，肤色与织物可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-014",
+      "split": "development",
+      "group_id": "cb165994e7ab3608d6957a41f64a996739b0d33c4b8a8ef60488a5aedf8942c5",
+      "record_id": "GIER-Edit:train:008924",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/31jiq1_31jiq1.jpg",
+      "source_sha256": "290ca3e6106217edce7bfaac2178b4ac4b67c5b9eff56bba5e3754af62278f5f",
+      "original_request": "How to enhance this image?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/31jiq1_31jiq1.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/31jiq1_AtSKrtj.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 15,
+          "saturation": 20
+        },
+        "instruction": "How to enhance this image?",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.6061298251152039,
+        "luminance_std": 0.22192327678203583,
+        "saturation": 0.2865790128707886,
+        "warmth": 0.08715067058801651,
+        "white_clip_fraction": 0.011505126953125,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "户外两男子合影，肤色和紫蓝色衬衫清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-018",
+      "split": "development",
+      "group_id": "186c5c40a264d7d635fd7564796c427882a0860a2628d0c783f33f3b4b43ab5c",
+      "record_id": "GIER-Edit:train:001951",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/57zb0b_57zb0b.jpg",
+      "source_sha256": "5e110a4e33a4fbf67ec2ccc22701c532e47eec2484c811e568b5c00ab518a41c",
+      "original_request": "Please, brighten the photo little bit and sharpen to make look more visible",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/57zb0b_57zb0b.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/57zb0b_zufy7Fb.png",
+        "label": {
+          "brightness": 20,
+          "contrast": 5,
+          "temperature": -5,
+          "saturation": 15,
+          "sharpness": 15
+        },
+        "instruction": "Please, brighten the photo little bit and sharpen to make look more visible",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.17396856844425201,
+        "luminance_std": 0.1693871170282364,
+        "saturation": 0.512650191783905,
+        "warmth": 0.1167449951171875,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0010528564453125
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "沙发上父亲抱婴儿，面部和衣服可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-020",
+      "split": "development",
+      "group_id": "1fdc9d531f7e1af79c77a26f2706bc524d174af7c1c3ab331fce4856ac14ea3d",
+      "record_id": "GIER-Edit:train:011085",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2j8ck7_2j8ck7.jpg",
+      "source_sha256": "863efe832dc33fbb6c537b3b71fc25cb38f5006bfd97ae7de9bcf8f730af6db7",
+      "original_request": "What will you do to improve this image?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2j8ck7_2j8ck7.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2j8ck7_rCpq4vK.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 5,
+          "saturation": 15,
+          "temperature": -10,
+          "highlights": -5,
+          "sharpness": 5
+        },
+        "instruction": "What will you do to improve this image?",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4364210367202759,
+        "luminance_std": 0.20766396820545197,
+        "saturation": 0.4224945902824402,
+        "warmth": 0.25189632177352905,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "橙色背景家庭肖像，脸部和服装清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-028",
+      "split": "development",
+      "group_id": "507b3a997ef5ce418c76064283ac2f82460b581abb9d1d68c8c6fe81b4b428c3",
+      "record_id": "GIER-Edit:train:010456",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/gDRZp_gDRZp.jpg",
+      "source_sha256": "9dbca806672463e4ad801c69a6ab82269769b2b5266b9fe96721b13e75833075",
+      "original_request": "Please brighten the image.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/gDRZp_gDRZp.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/gDRZp_6qYyz.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 15,
+          "saturation": 10,
+          "highlights": -10,
+          "tint": 5
+        },
+        "instruction": "Please brighten the image.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.6312648057937622,
+        "luminance_std": 0.24710792303085327,
+        "saturation": 0.3850933909416199,
+        "warmth": 0.15555377304553986,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "海边情侣合影，肤色与蓝色裙装清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-031",
+      "split": "development",
+      "group_id": "722cf5f6e8356362508cccda11741c2f05f8f3fa967a272c2e99b798d03121bb",
+      "record_id": "GIER-Edit:train:015734",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2w88at_2w88at.jpg",
+      "source_sha256": "d8873471bf38d19c07dbfe672a8ee85396cecd6f5085147661bd9d3d16b4f441",
+      "original_request": "Edit this image to make it more beautiful",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2w88at_2w88at.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2w88at_J8XNjhn.jpg",
+        "label": {
+          "brightness": -10,
+          "contrast": -30,
+          "saturation": -45,
+          "highlights": -5
+        },
+        "instruction": "Edit this image to make it more beautiful",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5743852853775024,
+        "luminance_std": 0.26599228382110596,
+        "saturation": 0.24605759978294373,
+        "warmth": 0.11408888548612595,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.00555419921875
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "孕妇侧身像，肤色和花纹衣物可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-033",
+      "split": "development",
+      "group_id": "ed27f6b7bb4b4e11204345e53bf178fc3c9f62d16cbb8c70058c383143209e3f",
+      "record_id": "GIER-Edit:train:017813",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/dT5XT_dT5XT.jpg",
+      "source_sha256": "71caceab5b2a524178cce5390a817bbd35252c4df7f69ee81f5c0d219fcd23fa",
+      "original_request": "Make the colors a bit more vibrant and brighter",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/dT5XT_dT5XT.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/dT5XT_bcv9B.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 15,
+          "saturation": 5,
+          "highlights": 20
+        },
+        "instruction": "Make the colors a bit more vibrant and brighter",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.36242765188217163,
+        "luminance_std": 0.24301229417324066,
+        "saturation": 0.4312129616737366,
+        "warmth": 0.03758730739355087,
+        "white_clip_fraction": 0.0001678466796875,
+        "black_clip_fraction": 1.52587890625e-05
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "树林花园女子坐像，面部和衣服可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-040",
+      "split": "development",
+      "group_id": "30b2709b5e67b3b236d41c2e23647fdc0b7b95915bd6428c599c797f3f85d264",
+      "record_id": "GIER-Edit:train:024303",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vqq6j_vqq6j.jpg",
+      "source_sha256": "95231829352366f60b03b4bc73742d43269ebf9d3c32946714c3ed468223c168",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vqq6j_vqq6j.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vqq6j_cCJzR.jpg",
+        "label": {
+          "contrast": 10,
+          "saturation": 5,
+          "tint": 60,
+          "sharpness": 10
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5254378318786621,
+        "luminance_std": 0.2404133826494217,
+        "saturation": 0.24865005910396576,
+        "warmth": 0.04677758365869522,
+        "white_clip_fraction": 0.0007476806640625,
+        "black_clip_fraction": 9.1552734375e-05
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "门廊上两人合影，肤色及背景结构清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-055",
+      "split": "development",
+      "group_id": "4c861adab82398b3abdcf086f3f27f3f2a3c41a7bcba262e0df711103e786085",
+      "record_id": "GIER-Edit:train:014164",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3palqf_3palqf.jpg",
+      "source_sha256": "23ae72e6b9f538336ba25f3616b0913513c2f70dc99c7bedf9f4305be7e77563",
+      "original_request": "Add a little more color",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3palqf_3palqf.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3palqf_HRXQG4g.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 3,
+          "temperature": -5,
+          "saturation": 25,
+          "highlights": -30
+        },
+        "instruction": "Add a little more color",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5435401201248169,
+        "luminance_std": 0.2471160739660263,
+        "saturation": 0.23714801669120789,
+        "warmth": 0.009290983900427818,
+        "white_clip_fraction": 0.0136566162109375,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "户外戴眼镜男子近景，脸部及明亮衣服清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-006",
+      "split": "development",
+      "group_id": "b821f774293e0bf19db14a6e6a0ce8f913c49e2877f68fc1a9d93d9b7700b3b0",
+      "record_id": "GIER-Edit:train:021450",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xPLn_3xPLn.jpg",
+      "source_sha256": "b0dc405c1f118abea9578401c6aae67463ab322c20d8bccd14769864f0d4b84a",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xPLn_3xPLn.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xPLn_8nP21.jpg",
+        "label": {
+          "brightness": 15,
+          "contrast": 15,
+          "saturation": 60,
+          "tint": 35
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4149901866912842,
+        "luminance_std": 0.26199233531951904,
+        "saturation": 0.3682953417301178,
+        "warmth": 0.13429385423660278,
+        "white_clip_fraction": 0.00921630859375,
+        "black_clip_fraction": 3.0517578125e-05
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "山林间河流和桥梁，水流与树木清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-010",
+      "split": "development",
+      "group_id": "b4d4256a8336f84785e0ac463c5a1e9c422d83514904b68533c09ed84179d3b2",
+      "record_id": "GIER-Edit:train:003993",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2ha4nm_2ha4nm.jpg",
+      "source_sha256": "25670b1804e04df23d72172adba29011e16a0fa84efca9f8c5ccaf8ca8d3f52a",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2ha4nm_2ha4nm.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2ha4nm_1TwSWcu.jpg",
+        "label": {
+          "brightness": -10,
+          "contrast": 100,
+          "saturation": 45,
+          "highlights": -80,
+          "temperature": -5,
+          "tint": -5
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5025098919868469,
+        "luminance_std": 0.16268041729927063,
+        "saturation": 0.16095587611198425,
+        "warmth": -0.07627737522125244,
+        "white_clip_fraction": 0.007598876953125,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "雪地群山全景，雪面和云层可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-019",
+      "split": "development",
+      "group_id": "7a2be2f5b565311f0bda22409f6ef58c75aef7b47993a66899516c5f49ea9176",
+      "record_id": "GIER-Edit:train:005979",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nSTjX_nSTjX.jpg",
+      "source_sha256": "464b113c83fc09cdafb456573bd187eae05da7dc60fd63a425feeb6b0cc7980e",
+      "original_request": "The desired image is much brighter and provides better over all color warmth.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nSTjX_nSTjX.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nSTjX_ZtJFl.jpg",
+        "label": {
+          "brightness": 20,
+          "contrast": 10,
+          "temperature": 5,
+          "saturation": 90,
+          "sharpness": 5
+        },
+        "instruction": "The desired image is much brighter and provides better over all color warmth.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.43397969007492065,
+        "luminance_std": 0.3112122118473053,
+        "saturation": 0.24895454943180084,
+        "warmth": 0.033502914011478424,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "暮色田野和树木，粉色云层及暗部清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-022",
+      "split": "development",
+      "group_id": "e09cfede65453d9fc06d560f8872c225afed98845c63c157d84a7be5d4aced11",
+      "record_id": "GIER-Edit:train:004035",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2cpnei_2cpnei.jpg",
+      "source_sha256": "01ab9509b3dc754f446fde92dca6615e055ccf8cb8d1d9ddd27387c1888784ed",
+      "original_request": "make the picture more colorful and vivid",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2cpnei_2cpnei.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2cpnei_j3uVzMj.jpg",
+        "label": {
+          "temperature": 10,
+          "saturation": 40,
+          "highlights": 40
+        },
+        "instruction": "make the picture more colorful and vivid",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4973127841949463,
+        "luminance_std": 0.18568351864814758,
+        "saturation": 0.31579160690307617,
+        "warmth": 0.11269861459732056,
+        "white_clip_fraction": 1.52587890625e-05,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "岩层荒地风景，岩石纹理和阴云可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-027",
+      "split": "development",
+      "group_id": "3b4caf5696f882243240baad7efc7ab8171586403df2b7911d65b47ff871cf13",
+      "record_id": "GIER-Edit:train:018290",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3qgtb4_3qgtb4.jpg",
+      "source_sha256": "59b8bb6e85d4e9cb19b49b6d1d746b777381907552d778cf52c52ece13a7ae72",
+      "original_request": "What will you do to improve this image?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3qgtb4_3qgtb4.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3qgtb4_Qs1Yklu.png",
+        "label": {
+          "brightness": 5,
+          "contrast": 15,
+          "temperature": 15,
+          "saturation": 45,
+          "highlights": 5,
+          "tint": 5
+        },
+        "instruction": "What will you do to improve this image?",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.49236178398132324,
+        "luminance_std": 0.21328049898147583,
+        "saturation": 0.5380865335464478,
+        "warmth": 0.32188689708709717,
+        "white_clip_fraction": 0.0001373291015625,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "秋季公园长椅，金色叶子与石路清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-029",
+      "split": "development",
+      "group_id": "1ab95a5c4310f2de36be8918df3e32f3b796900bf07c2e79eafc190a6408ef87",
+      "record_id": "GIER-Edit:train:022788",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3T65m_3T65m.jpg",
+      "source_sha256": "916c152f44688823a592f988b75e8b39d913490ab7e5bb80f14b46baa0e221b6",
+      "original_request": "What will you do to improve this image?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3T65m_3T65m.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3T65m_x37W6.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 10,
+          "temperature": 10,
+          "saturation": 90,
+          "highlights": 15,
+          "sharpness": 5
+        },
+        "instruction": "What will you do to improve this image?",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5136822462081909,
+        "luminance_std": 0.2215781956911087,
+        "saturation": 0.18929129838943481,
+        "warmth": -0.050306785851716995,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 1.52587890625e-05
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "海湾水面和远岸，阴云与绿叶可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-030",
+      "split": "development",
+      "group_id": "64e426ede54c6eb56041e040a75a1764add885f09e4e45f84c48000c73861e6b",
+      "record_id": "GIER-Edit:train:025223",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/47lx7w_47lx7w.jpg",
+      "source_sha256": "d23ee46b5d53bd3362f32605c3c6d86bc6ce89869d030399382153922f937a9e",
+      "original_request": "Please, darken the photo a lot",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/47lx7w_47lx7w.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/47lx7w_XoghOXf.jpg",
+        "label": {
+          "brightness": -70,
+          "contrast": 5,
+          "highlights": -55,
+          "saturation": -45,
+          "temperature": -10,
+          "tint": 25
+        },
+        "instruction": "Please, darken the photo a lot",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.493926465511322,
+        "luminance_std": 0.16190481185913086,
+        "saturation": 0.2104053944349289,
+        "warmth": 0.08273302763700485,
+        "white_clip_fraction": 0.003997802734375,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "林间弯曲公路，黄色路标与枯叶清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-041",
+      "split": "development",
+      "group_id": "6fd31ff07de96e304dcc1ceafc33668e7a25dd494e59ee0355daa9e105a7647e",
+      "record_id": "GIER-Edit:train:022389",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4e1a76_4e1a76.jpg",
+      "source_sha256": "fbe8bd062b0791fb85ee9dc1415dd91f571edc661768b94e8fb7591fc73add3c",
+      "original_request": "Edit this image to make it more beautiful",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4e1a76_4e1a76.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4e1a76_PgS8h7X.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 5,
+          "saturation": 5,
+          "highlights": -5
+        },
+        "instruction": "Edit this image to make it more beautiful",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5085324048995972,
+        "luminance_std": 0.21610036492347717,
+        "saturation": 0.42571404576301575,
+        "warmth": -0.09950022399425507,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0016021728515625
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "山地梯田风景，田埂与蓝天可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-080",
+      "split": "development",
+      "group_id": "ec4d49885ad8aba6677e54f82a6b5ec75016d38d014f683d2eaa2da546dfa991",
+      "record_id": "GIER-Edit:train:022188",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/s1wT4_s1wT4.jpg",
+      "source_sha256": "6744803231a8968fd63a0977e385a9a31034d5a136875b92fdf94ee091c29780",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/s1wT4_s1wT4.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/s1wT4_x7JFd.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 5,
+          "saturation": 50,
+          "temperature": 5,
+          "tint": 5
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5535881519317627,
+        "luminance_std": 0.18708989024162292,
+        "saturation": 0.2838861644268036,
+        "warmth": -0.14670588076114655,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "旱地山谷全景，道路与远山清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "development-106",
+      "split": "development",
+      "group_id": "7f53fe2d6a190242c173c12a9da5d7f4461811bbe5e76411377b491fc930e721",
+      "record_id": "GIER-Edit:train:016592",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3s58dj_3s58dj.jpg",
+      "source_sha256": "a2ee7144c07db880b5182fd3e8f13bbf7d7279bde46766f639d66606b6db9cdf",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3s58dj_3s58dj.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3s58dj_GFL6Q2C.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 5,
+          "temperature": 5,
+          "saturation": 20,
+          "highlights": -5,
+          "tint": 10
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4528215527534485,
+        "luminance_std": 0.2857910394668579,
+        "saturation": 0.40056416392326355,
+        "warmth": 0.05405393987894058,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0001068115234375
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "夕照岩石荒漠，红色岩石及明暗清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-009",
+      "split": "acceptance",
+      "group_id": "d1b3f5878ef88a52b00890d5b39e4bb1cbfee6e0097b88e36c6f14470aa26b91",
+      "record_id": "GIER-Edit:test:000759",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bl0kY_bl0kY.jpg",
+      "source_sha256": "8af9e28645bf413e872c4119d8e6998566c728223e74c0cd01733af289209334",
+      "original_request": "How to enhance this image?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bl0kY_bl0kY.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bl0kY_smtky.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 5,
+          "temperature": -45,
+          "saturation": 80,
+          "tint": 15,
+          "sharpness": 15
+        },
+        "instruction": "How to enhance this image?",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5547348856925964,
+        "luminance_std": 0.3294566571712494,
+        "saturation": 0.10618462413549423,
+        "warmth": 0.024199001491069794,
+        "white_clip_fraction": 0.0290374755859375,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "台阶上男子坐像，脸部和深色毛衣可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-011",
+      "split": "acceptance",
+      "group_id": "6948a28d4361fdc4e36c4bfe37b08a2fd51ceec4ab96ce42dd57444badafecb9",
+      "record_id": "GIER-Edit:test:002549",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3cir3b_3cir3b.jpg",
+      "source_sha256": "4f7c91fe4033dc239a4cd5fc759ea93e612ebbbc2a93f189fae1cb5681873163",
+      "original_request": "Please simply make this image better.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3cir3b_3cir3b.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3cir3b_k2n9KpL.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 5,
+          "temperature": 15,
+          "saturation": 20,
+          "highlights": -50,
+          "tint": 5
+        },
+        "instruction": "Please simply make this image better.",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4654320478439331,
+        "luminance_std": 0.27280205488204956,
+        "saturation": 0.20225542783737183,
+        "warmth": 0.06644406914710999,
+        "white_clip_fraction": 0.0002288818359375,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "两名军人侧面肖像，皮肤及制服清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-013",
+      "split": "acceptance",
+      "group_id": "3cdcbe61dea912a33ead3a12497ba9ca3520dd7c33ede3fc5a90142937641b38",
+      "record_id": "GIER-Edit:test:001352",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3cXB3_3cXB3.jpg",
+      "source_sha256": "0e9ecb31f428cf3c9e4802a99b21ec2c16cd7bd5215eeaf820642bb899d06f52",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3cXB3_3cXB3.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3cXB3_3sxLw.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 10,
+          "temperature": -20,
+          "saturation": 10,
+          "highlights": -5,
+          "tint": 10
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.3346450626850128,
+        "luminance_std": 0.20273184776306152,
+        "saturation": 0.5061604380607605,
+        "warmth": 0.036207132041454315,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "草地旁蓝衣男子，脸部及服装清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-014",
+      "split": "acceptance",
+      "group_id": "ed2a663fc01f9f68b786e3c1037d1f3efd8378547e4999b14082301d2e26180d",
+      "record_id": "GIER-Edit:test:000851",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9Xg1j_9Xg1j.jpg",
+      "source_sha256": "13d7244fc8bd977d9f0b26dac1c0b2f8c50dcd98741a8db2b3e034000c5d8f31",
+      "original_request": "Professional photography type",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9Xg1j_9Xg1j.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9Xg1j_wlPnR.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 10,
+          "saturation": 50
+        },
+        "instruction": "Professional photography type",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.49269190430641174,
+        "luminance_std": 0.25947341322898865,
+        "saturation": 0.15485045313835144,
+        "warmth": 0.006134572438895702,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0033721923828125
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "山前男子侧面坐像，皮肤与黑夹克可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-017",
+      "split": "acceptance",
+      "group_id": "1070bb6ccc90d87cc195d2066fd080448dae2e1c4829d6a9a6affcb9c64b4fc2",
+      "record_id": "GIER-Edit:test:001257",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/lZcdv_lZcdv.jpg",
+      "source_sha256": "ff5501e6d4f93316e98b7cbedc9f9dd21c9de0f16f07776d318e064fb2d0d077",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/lZcdv_lZcdv.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/lZcdv_bBbvb.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 5,
+          "saturation": 15,
+          "sharpness": 10
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.38967448472976685,
+        "luminance_std": 0.23386889696121216,
+        "saturation": 0.30695387721061707,
+        "warmth": 0.041394464671611786,
+        "white_clip_fraction": 0.0017242431640625,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "户外板凳上幼儿，脸部和衣服清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-029",
+      "split": "acceptance",
+      "group_id": "f478bc99e7c260717f70755d54e3a6657221add0487edc7fc9bffbdb97426224",
+      "record_id": "GIER-Edit:test:001868",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2vgrc7_2vgrc7.jpg",
+      "source_sha256": "c396a3f975a201da8fc4c5f58855b86d6e4619ce9c0b9fd4e34dd2f408e76947",
+      "original_request": "Please simply make this image better.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2vgrc7_2vgrc7.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2vgrc7_KyunhX9.jpg",
+        "label": {
+          "brightness": 20,
+          "contrast": 5,
+          "saturation": -15,
+          "highlights": -15
+        },
+        "instruction": "Please simply make this image better.",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.37537169456481934,
+        "luminance_std": 0.2446080893278122,
+        "saturation": 0.2837188243865967,
+        "warmth": 0.11124272644519806,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "室内台阶上两人与狗合影，肤色和衣服清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-033",
+      "split": "acceptance",
+      "group_id": "ebc785e1ab41fa7ce5c85587fe6547e7c09edcc6c34f68b6fa7ca3f74f300764",
+      "record_id": "GIER-Edit:test:002054",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bkkSq_bkkSq.jpg",
+      "source_sha256": "94ecbb032ee0524c3aa0f2bef14171e5e60fea2f9de1cbf3295f85cf2870f28c",
+      "original_request": "Increase Brightness a little bit. Increase contrast a lot.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bkkSq_bkkSq.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bkkSq_xfGX1.jpg",
+        "label": {
+          "brightness": 15,
+          "contrast": 20,
+          "saturation": 25,
+          "highlights": 20,
+          "tint": 5
+        },
+        "instruction": "Increase Brightness a little bit. Increase contrast a lot.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4748920798301697,
+        "luminance_std": 0.18799039721488953,
+        "saturation": 0.17611989378929138,
+        "warmth": 0.005805701017379761,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "沙地上婴儿，肤色及彩色玩具清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-034",
+      "split": "acceptance",
+      "group_id": "307833924e176177769f9701f5f0c4fdfc59beaf5b4408d168fc73922fa8bdf7",
+      "record_id": "GIER-Edit:test:001145",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/42tvh1_42tvh1.jpg",
+      "source_sha256": "d7e32149cdcd6bb9c2650a7d7414bd7a852c3b0d6c30e7c8375197a281e8a47b",
+      "original_request": " Could someone please make my front teeth a little more even?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/42tvh1_42tvh1.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/42tvh1_aNjV26w.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 10,
+          "saturation": 10
+        },
+        "instruction": " Could someone please make my front teeth a little more even?",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.44031351804733276,
+        "luminance_std": 0.2445470541715622,
+        "saturation": 0.18505144119262695,
+        "warmth": 0.0839901864528656,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "深色背景男子近景，脸部与白衬衫清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-058",
+      "split": "acceptance",
+      "group_id": "ba7d56ea663859610ce5b4198904292016e62cbfc963cbc02a84d70f699374fd",
+      "record_id": "GIER-Edit:test:000375",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/l4gBJ_l4gBJ.jpg",
+      "source_sha256": "884a4cfab64552c6dfbbdbd7ec118640ac1357fc7a3036bbacfc2376d48c6631",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/l4gBJ_l4gBJ.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/l4gBJ_8nVqy.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 5,
+          "temperature": 5,
+          "saturation": 20,
+          "sharpness": 5
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5475004315376282,
+        "luminance_std": 0.20267489552497864,
+        "saturation": 0.18411092460155487,
+        "warmth": 0.04345666989684105,
+        "white_clip_fraction": 3.0517578125e-05,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "河边石头上女子坐像，脸部及蓝裤可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-060",
+      "split": "acceptance",
+      "group_id": "a35d67006803ef6d5ffe8bc71e146b395e991e3598a1405b00a0019614b28495",
+      "record_id": "GIER-Edit:test:000717",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/57lm4_57lm4.jpg",
+      "source_sha256": "8c23984ca172779c595c39d983f6eaf9cca7a7a9db5c6139864872d14f4043bf",
+      "original_request": "How to enhance this image?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/57lm4_57lm4.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/57lm4_jWYrp.jpg",
+        "label": {
+          "brightness": 35,
+          "contrast": 5
+        },
+        "instruction": "How to enhance this image?",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.44021356105804443,
+        "luminance_std": 0.18692809343338013,
+        "saturation": 0.2543802559375763,
+        "warmth": 0.054270725697278976,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "portrait",
+      "classification_evidence": "窗边女子半身像，肤色和浅蓝上衣清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-041",
+      "split": "acceptance",
+      "group_id": "0c7e193055fdb0d349efd46c5a695b5331d9a69c78f5623a05f34a185a415c83",
+      "record_id": "GIER-Edit:test:000875",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cJ9X3_cJ9X3.jpg",
+      "source_sha256": "ef79a866219a993548db577010069f0a6734f97796f2b25b615768d290f41f85",
+      "original_request": "increase the white balance slightly",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cJ9X3_cJ9X3.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cJ9X3_vYWck.jpg",
+        "label": {
+          "brightness": 20,
+          "contrast": 15,
+          "saturation": 15,
+          "highlights": -15
+        },
+        "instruction": "increase the white balance slightly",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.44758376479148865,
+        "luminance_std": 0.23987755179405212,
+        "saturation": 0.38460201025009155,
+        "warmth": -0.06230528652667999,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "桥梁与潮间带风景，蓝天树木及暗部清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-052",
+      "split": "acceptance",
+      "group_id": "97daf187a1cf2ba5b4e3969481289417a9fd3ed328fe660d0e70bd021ccdb21d",
+      "record_id": "GIER-Edit:test:002304",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nCDbk_nCDbk.jpg",
+      "source_sha256": "0dc42c76901081b0795d930360f3eacac4975c9e328816e081b11668ac8092c4",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nCDbk_nCDbk.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nCDbk_c97gr.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 5
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4222469627857208,
+        "luminance_std": 0.25694191455841064,
+        "saturation": 0.3920973241329193,
+        "warmth": 0.12970006465911865,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "埃菲尔铁塔秋景，小比例行人为陪体；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-055",
+      "split": "acceptance",
+      "group_id": "35d84b811468feec47dc8d8a8fa9bd3a07c723199f12dd49672b2b9b7e0f45ad",
+      "record_id": "GIER-Edit:test:001442",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cBrCY_cBrCY.jpg",
+      "source_sha256": "9f63410324c531dc1e6f8b1080c57aa91bc26b3594309e9782b7aef90da0d806",
+      "original_request": "Add the red tone to the image",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cBrCY_cBrCY.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cBrCY_wB1nH.jpg",
+        "label": {
+          "brightness": 10,
+          "contrast": 30,
+          "temperature": 85,
+          "saturation": 100,
+          "highlights": 5
+        },
+        "instruction": "Add the red tone to the image",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.23008093237876892,
+        "luminance_std": 0.15519697964191437,
+        "saturation": 0.45622897148132324,
+        "warmth": 0.14535558223724365,
+        "white_clip_fraction": 0.000518798828125,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "湖面日落风景，金色倒影和云层清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-066",
+      "split": "acceptance",
+      "group_id": "118d75036fb8f9fe5f351936d876d032a351f42248b21ca06783b28d60f45a5c",
+      "record_id": "GIER-Edit:test:000351",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3dw8g3_3dw8g3.jpg",
+      "source_sha256": "ac29d8e6560a4cda0f697fc9dffef479e51a6b6271682522b92484f66eaba545",
+      "original_request": "darken a bit, make the image more vivid",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3dw8g3_3dw8g3.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3dw8g3_TCS4x0q.jpg",
+        "label": {
+          "brightness": -10,
+          "contrast": 15,
+          "saturation": 15,
+          "temperature": 5,
+          "highlights": 10,
+          "tint": -10
+        },
+        "instruction": "darken a bit, make the image more vivid",
+        "inst_type": "expert",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.617538571357727,
+        "luminance_std": 0.28600040078163147,
+        "saturation": 0.29574453830718994,
+        "warmth": 0.10600951313972473,
+        "white_clip_fraction": 0.0050811767578125,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "田野日落风景，草地及低太阳可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-067",
+      "split": "acceptance",
+      "group_id": "f73e7076afd4fd57d5f896b5806b821793253c57bd86b97a76cbd0d1d7a965c9",
+      "record_id": "GIER-Edit:test:000467",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2cyfgi_2cyfgi.jpg",
+      "source_sha256": "9cef56a7c7e36140836b25e199ee6b77bb7404bdc0066db52c971390792c2522",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2cyfgi_2cyfgi.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2cyfgi_gzjU32e.jpg",
+        "label": {
+          "brightness": 5,
+          "contrast": 10,
+          "temperature": 10,
+          "saturation": 90,
+          "highlights": 10,
+          "tint": 5
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.5467682480812073,
+        "luminance_std": 0.08621367067098618,
+        "saturation": 0.07580522447824478,
+        "warmth": 0.011430684477090836,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "空中雪山云海，薄雾和粉色峰顶可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-072",
+      "split": "acceptance",
+      "group_id": "ef449722fadf53447c1ec038963cf99a6b72d4596d12e7f1c59f78d33e50d956",
+      "record_id": "GIER-Edit:test:001851",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/rM388_rM388.jpg",
+      "source_sha256": "c20f983b926c6296782ea1beb8a2c5beaa5ade588403117817b4c9f2258ae3f1",
+      "original_request": "Brighten and sharpen the image while adding a more green hue.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/rM388_rM388.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/rM388_ck10D.jpg",
+        "label": {
+          "temperature": 30,
+          "saturation": 10,
+          "highlights": 80
+        },
+        "instruction": "Brighten and sharpen the image while adding a more green hue.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.40576842427253723,
+        "luminance_std": 0.33441397547721863,
+        "saturation": 0.482633113861084,
+        "warmth": 0.14784498512744904,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "树木与田野日落，太阳及暗部层次可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-073",
+      "split": "acceptance",
+      "group_id": "b34c8406be2e224f2d52d113cde3b4ecd26b3ce36bbf2e3e3edee2ba8f999d15",
+      "record_id": "GIER-Edit:test:001261",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3mpdtn_3mpdtn.jpg",
+      "source_sha256": "a02d1b23146f4cff26aaf491a3cf0b3ebc61af0cc6ad81dd48acd62f0356570b",
+      "original_request": "How to enhance this image?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3mpdtn_3mpdtn.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3mpdtn_pYJ8KfN.jpg",
+        "label": {
+          "brightness": 45,
+          "contrast": 5,
+          "temperature": 5,
+          "saturation": 80,
+          "highlights": 15,
+          "tint": 5
+        },
+        "instruction": "How to enhance this image?",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.2814631462097168,
+        "luminance_std": 0.23087620735168457,
+        "saturation": 0.2741098701953888,
+        "warmth": -0.03392687439918518,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 3.0517578125e-05
+      },
+      "status": "source_not_yet_visually_classified",
+      "domain": "landscape",
+      "classification_evidence": "城市全景，建筑及天际线清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-105",
+      "split": "acceptance",
+      "group_id": "c4adf7ca09a13ca0aad171cf90b9785acf241a7dae2058b7e4ba0d67c4296f32",
+      "record_id": "GIER-Edit:test:002390",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/33qby2_33qby2.jpg",
+      "source_sha256": "3771eb2497f0f387abbf697a59bd73188f5581a15818ce4667a854901f7540bd",
+      "original_request": "How to enhance this image?",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/33qby2_33qby2.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/33qby2_2JDdEsL.jpg",
+        "label": {
+          "brightness": -70,
+          "contrast": -50,
+          "highlights": -50
+        },
+        "instruction": "How to enhance this image?",
+        "inst_type": "general",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.4218336343765259,
+        "luminance_std": 0.38890424370765686,
+        "saturation": 0.16135919094085693,
+        "warmth": 0.0062914080917835236,
+        "white_clip_fraction": 0.2115020751953125,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "山崖和绿树风景，岩壁及明亮云层可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-111",
+      "split": "acceptance",
+      "group_id": "6ecbe44e74f98ae08e556c99f1c2072ef3e371b120b560997fad41f0c5b6b085",
+      "record_id": "GIER-Edit:test:001533",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9zLGQ_9zLGQ.jpg",
+      "source_sha256": "f2c522f6cbee89b5a5c5b14db985e33494cf15fb549c7bbf2b3dcfd8de53c19d",
+      "original_request": "I would like if you could liven up the colors in this image.",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9zLGQ_9zLGQ.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9zLGQ_5cSkC.jpg",
+        "label": {
+          "brightness": 5,
+          "saturation": 30,
+          "temperature": 5,
+          "tint": 5
+        },
+        "instruction": "I would like if you could liven up the colors in this image.",
+        "inst_type": "amateur",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.45546677708625793,
+        "luminance_std": 0.21919649839401245,
+        "saturation": 0.3358720541000366,
+        "warmth": 0.12587496638298035,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "雾中秋季树林，树干和落叶清楚；仅确认照片场景，编辑标签尚待逐图核验。"
+    },
+    {
+      "id": "acceptance-123",
+      "split": "acceptance",
+      "group_id": "1ec4a7cc13954ea7717b08ad04f1b3065571ccb18d5d87d5b33a554b58ab4037",
+      "record_id": "GIER-Edit:test:000670",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/g67f5_g67f5.jpg",
+      "source_sha256": "ecc8b59aa37f27836fd4e7c2f5f2b1d8661190decd653f310cef04f2c7ab8119",
+      "original_request": "",
+      "source_metadata": {
+        "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/g67f5_g67f5.jpg",
+        "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/g67f5_fvhx1.jpg",
+        "label": {
+          "saturation": 70,
+          "temperature": 25,
+          "highlights": -15,
+          "tint": 5
+        },
+        "instruction": "",
+        "inst_type": "none",
+        "task_type": "image_editing"
+      },
+      "statistics": {
+        "mean_luminance": 0.6338028311729431,
+        "luminance_std": 0.2278585582971573,
+        "saturation": 0.21683716773986816,
+        "warmth": -0.03238530829548836,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.00079345703125
+      },
+      "status": "source_not_yet_visually_classified",
+      "candidate_retrieval": "landscape-related request keywords then deterministic hash; not visual classification",
+      "domain": "landscape",
+      "classification_evidence": "雪山前城镇和植被全景，建筑及山坡可辨；仅确认照片场景，编辑标签尚待逐图核验。"
+    }
+  ],
+  "isolation_audit_sha256": "413b76aca43941e3c08b6e84a62db37ac2e60a40329b536ade6dbd4aa3f51512",
+  "history": "Original validation/test pools have historical evaluation exposure; fresh to this round, not newly collected independent user photos."
+}

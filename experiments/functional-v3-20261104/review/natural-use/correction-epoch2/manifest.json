@@ -1,0 +1,275 @@
+{
+  "split": "natural-use",
+  "name": "correction-epoch2",
+  "created_at": "2026-11-04T17:44:48.270073+00:00",
+  "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+  "models": {
+    "dpo-e2": {
+      "model_id": "dpo-e2",
+      "adapter": "/mnt/sdc/zhc/IEA/experiments/functional-v3-20261104/runs/dpo-seed-20261107/checkpoint-48",
+      "adapter_sha256": "4548370c1d3bfe8ecf724e299af2853a93e6d756c57a6967efcd273c846b6571",
+      "case_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime_sha256": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+      "common_sha256": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+      "editor_sha256": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+      "inputs": "Original image, original bilingual request and fixed tool specification only."
+    },
+    "sft-e2": {
+      "model_id": "sft-e2",
+      "adapter": "/mnt/sdc/zhc/IEA/experiments/functional-v3-20261104/runs/sft-seed-20261107/checkpoint-48",
+      "adapter_sha256": "5201b3225351e046d7df5d2691164ad3673cc73a86b7a7d0534ebecf2bf1031c",
+      "case_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime_sha256": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+      "common_sha256": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+      "editor_sha256": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+      "inputs": "Original image, original bilingual request and fixed tool specification only."
+    }
+  },
+  "mapping": [
+    {
+      "model_id": "dpo-e2",
+      "case_id": "natural-028",
+      "language": "zh",
+      "item_id": "8d7774994204e0b4"
+    },
+    {
+      "model_id": "dpo-e2",
+      "case_id": "natural-028",
+      "language": "en",
+      "item_id": "f86d5e048abd7c40"
+    },
+    {
+      "model_id": "dpo-e2",
+      "case_id": "natural-033",
+      "language": "zh",
+      "item_id": "c4f38953b9b552a9"
+    },
+    {
+      "model_id": "dpo-e2",
+      "case_id": "natural-033",
+      "language": "en",
+      "item_id": "ced1300d0f67d852"
+    },
+    {
+      "model_id": "dpo-e2",
+      "case_id": "natural-055",
+      "language": "zh",
+      "item_id": "a0a726890a3f8996"
+    },
+    {
+      "model_id": "dpo-e2",
+      "case_id": "natural-055",
+      "language": "en",
+      "item_id": "a127657138472aa8"
+    },
+    {
+      "model_id": "dpo-e2",
+      "case_id": "natural-019",
+      "language": "zh",
+      "item_id": "492cc12e000e8e1f"
+    },
+    {
+      "model_id": "dpo-e2",
+      "case_id": "natural-019",
+      "language": "en",
+      "item_id": "eb9cc1995f1cf446"
+    },
+    {
+      "model_id": "dpo-e2",
+      "case_id": "natural-022",
+      "language": "zh",
+      "item_id": "057fff2d6b8277a6"
+    },
+    {
+      "model_id": "dpo-e2",
+      "case_id": "natural-022",
+      "language": "en",
+      "item_id": "c712639b5d15a8f8"
+    },
+    {
+      "model_id": "dpo-e2",
+      "case_id": "natural-030",
+      "language": "zh",
+      "item_id": "ef2b927d5cecc570"
+    },
+    {
+      "model_id": "dpo-e2",
+      "case_id": "natural-030",
+      "language": "en",
+      "item_id": "4b1c4928d24f8346"
+    },
+    {
+      "model_id": "sft-e2",
+      "case_id": "natural-028",
+      "language": "zh",
+      "item_id": "8d7774994204e0b4"
+    },
+    {
+      "model_id": "sft-e2",
+      "case_id": "natural-028",
+      "language": "en",
+      "item_id": "0fad2fd7076c30be"
+    },
+    {
+      "model_id": "sft-e2",
+      "case_id": "natural-033",
+      "language": "zh",
+      "item_id": "c4f38953b9b552a9"
+    },
+    {
+      "model_id": "sft-e2",
+      "case_id": "natural-033",
+      "language": "en",
+      "item_id": "ced1300d0f67d852"
+    },
+    {
+      "model_id": "sft-e2",
+      "case_id": "natural-055",
+      "language": "zh",
+      "item_id": "a0a726890a3f8996"
+    },
+    {
+      "model_id": "sft-e2",
+      "case_id": "natural-055",
+      "language": "en",
+      "item_id": "a127657138472aa8"
+    },
+    {
+      "model_id": "sft-e2",
+      "case_id": "natural-019",
+      "language": "zh",
+      "item_id": "492cc12e000e8e1f"
+    },
+    {
+      "model_id": "sft-e2",
+      "case_id": "natural-019",
+      "language": "en",
+      "item_id": "eb9cc1995f1cf446"
+    },
+    {
+      "model_id": "sft-e2",
+      "case_id": "natural-022",
+      "language": "zh",
+      "item_id": "057fff2d6b8277a6"
+    },
+    {
+      "model_id": "sft-e2",
+      "case_id": "natural-022",
+      "language": "en",
+      "item_id": "c712639b5d15a8f8"
+    },
+    {
+      "model_id": "sft-e2",
+      "case_id": "natural-030",
+      "language": "zh",
+      "item_id": "ef2b927d5cecc570"
+    },
+    {
+      "model_id": "sft-e2",
+      "case_id": "natural-030",
+      "language": "en",
+      "item_id": "4b1c4928d24f8346"
+    }
+  ],
+  "invalid": [],
+  "items": [
+    {
+      "item_id": "8d7774994204e0b4",
+      "case_id": "natural-028",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e2/images/natural-028-zh.png",
+      "image_sha256": "8cc11163a49e0597db55aa734830a2e4a4255004537b14dd83cb117ba42f1a41"
+    },
+    {
+      "item_id": "f86d5e048abd7c40",
+      "case_id": "natural-028",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e2/images/natural-028-en.png",
+      "image_sha256": "533437695365c10c608661c0e9fb8294b993539fb053dea74b98813eaaeccf20"
+    },
+    {
+      "item_id": "c4f38953b9b552a9",
+      "case_id": "natural-033",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e2/images/natural-033-zh.png",
+      "image_sha256": "9d34d086f40d787b94dbd4aa0854ab0c7bce18dbcebdff9244d339b76a798671"
+    },
+    {
+      "item_id": "ced1300d0f67d852",
+      "case_id": "natural-033",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e2/images/natural-033-en.png",
+      "image_sha256": "f7d8743064ea7c041cfa65d228a5eddfea69b2f6b83bffd207f33bb374d6cf95"
+    },
+    {
+      "item_id": "a0a726890a3f8996",
+      "case_id": "natural-055",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e2/images/natural-055-zh.png",
+      "image_sha256": "b57f05fc6dd3507f2f395a7374e77a68e070d05ededd659643929568cded5067"
+    },
+    {
+      "item_id": "a127657138472aa8",
+      "case_id": "natural-055",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e2/images/natural-055-en.png",
+      "image_sha256": "92adbaf9631e8369786b0558a208eb80d153529b5c2fb011086f4d621dd77440"
+    },
+    {
+      "item_id": "492cc12e000e8e1f",
+      "case_id": "natural-019",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e2/images/natural-019-zh.png",
+      "image_sha256": "10ba21c87e18322b4ae556cfdaf113e0b6f241cc01f570f1c23325d7c91f2780"
+    },
+    {
+      "item_id": "eb9cc1995f1cf446",
+      "case_id": "natural-019",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e2/images/natural-019-en.png",
+      "image_sha256": "f25464031152d68744e5fbc22afc82a72678ff8bb76fa015f038b27fe152c761"
+    },
+    {
+      "item_id": "057fff2d6b8277a6",
+      "case_id": "natural-022",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e2/images/natural-022-zh.png",
+      "image_sha256": "2f7d648768b3d7f9f0582bb7b65e2669d75c7daf0d78ad6cdc5c0667c29e93ba"
+    },
+    {
+      "item_id": "c712639b5d15a8f8",
+      "case_id": "natural-022",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e2/images/natural-022-en.png",
+      "image_sha256": "b98ae82376a927c36030bac802e1b658372c683b0047ca1de1d4a46be8753126"
+    },
+    {
+      "item_id": "ef2b927d5cecc570",
+      "case_id": "natural-030",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e2/images/natural-030-zh.png",
+      "image_sha256": "136290905acdf738a6e13113293cc84a512fcc591ac51591ca0c764787e744d2"
+    },
+    {
+      "item_id": "4b1c4928d24f8346",
+      "case_id": "natural-030",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e2/images/natural-030-en.png",
+      "image_sha256": "e5c2123f73f8c2484fc9ae0567e22b29e6d0581107203d8cdb4a59d3a42ecd0c"
+    },
+    {
+      "item_id": "0fad2fd7076c30be",
+      "case_id": "natural-028",
+      "image": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/sft-e2/images/natural-028-en.png",
+      "image_sha256": "2cda6577e232a6b5a26c667e9e325b1b95986f5fb5eb0ca9ee462c3a1cd4eded"
+    }
+  ],
+  "sheets": [],
+  "reused_exact_image_observations": [
+    "057fff2d6b8277a6",
+    "0fad2fd7076c30be",
+    "492cc12e000e8e1f",
+    "4b1c4928d24f8346",
+    "8d7774994204e0b4",
+    "a0a726890a3f8996",
+    "a127657138472aa8",
+    "c4f38953b9b552a9",
+    "c712639b5d15a8f8",
+    "ced1300d0f67d852",
+    "eb9cc1995f1cf446",
+    "ef2b927d5cecc570",
+    "f86d5e048abd7c40"
+  ],
+  "review_policy": "Actual direct Codex observation. Exact same output for the same bilingual semantic case is reviewed once and mapped back; translations are not independent samples.",
+  "no_automatic_completion_ratings": true
+}

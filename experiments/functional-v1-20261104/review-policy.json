@@ -1,0 +1,12 @@
+{
+  "version": "review-policy-v2-direct-ai",
+  "primary": "codex_direct_visual",
+  "human_review": false,
+  "frozen_qwen_role": "advisory_only_excluded_from_admission_and_model_selection_after_failed_calibration",
+  "calibration_evidence": "preflight/reviewer-calibration-failure.json",
+  "calibration_evidence_sha256": "e23a316ec2accc4c0ab3eeb6a49bd84430e49f87154f6dd49243619c7d227b02",
+  "reason": "Known factual contradictions in frozen 7B image judgments. Do not replace pixel-L1 with another unreliable automatic score.",
+  "label_gate": "Every admitted target must be actually viewed by Codex, fully instruction-complete, acceptable in image quality, and tied to exact input/output and contact-sheet hashes. Partial, failed or uncertain direct observations are not admitted.",
+  "disagreement_policy": "Preserve prior 7B disagreement and uncertain observations. Do not claim two-reviewer agreement or human certification. Uncertainty in the designated primary visual review remains excluded.",
+  "created_at": "2026-11-04T06:53:01.609215+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "case_id": "train-006",
+  "time": "2026-11-04T06:51:32.862495+00:00",
+  "input_sha256": "2155a86877d28386001f2b542780b6deb842c1f7400205fadd586962e41ba161",
+  "candidate_sha256": "27fd5e8f0b68ddf47a6837128bd18503825a32498fb64c28bca7cd9dea816fd7",
+  "parameters": {
+    "highlights": -40
+  },
+  "reviewer_assessment": {
+    "completion": "failed",
+    "quality": "major_issue",
+    "strength": "excessive",
+    "evidence": "The image has been overedited, resulting in a significant loss of detail and an unnatural brightening of the entire scene.",
+    "raw_response": "```json\n{\n  \"completion\": \"failed\",\n  \"quality\": \"major_issue\",\n  \"strength\": \"excessive\",\n  \"evidence\": \"The image has been overedited, resulting in a significant loss of detail and an unnatural brightening of the entire scene.\"\n}\n```"
+  },
+  "maximum_RGB_channel_change": -1,
+  "mean_RGB_channel_change": -4.822320205694612,
+  "every_output_channel_no_brighter_than_input": true,
+  "finding": "The reviewer explicitly reported unnatural brightening although no output RGB channel became brighter. Its unsupported factual judgments cannot be the primary admission or model-selection gate.",
+  "limits": "This necessary direction contradiction audits the reviewer; it does not prove that the edited image is good or instruction-complete. Direct visual review is still required."
+}

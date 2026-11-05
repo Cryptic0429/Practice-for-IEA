@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "completed_at": "2026-11-04T06:22:37.150690+00:00",
+  "source": "data/training/quality-v2-20261103/train3k.json",
+  "source_sha256": "439ebf726d7e01c913a9e85c0866240268edb3b5919bb583b4823270fe361104",
+  "rows": 3000,
+  "source_groups": 1078,
+  "empty_instructions": 510,
+  "generic_instruction_proxy": 4,
+  "possibly_local_or_out_of_scope_proxy": 124,
+  "executable_labels": 3000,
+  "unsupported_label_tools": {
+    "sharpness": 653
+  },
+  "limits": [
+    "Full program replay and mechanical screening, not a semantic acceptance of all 3000 labels.",
+    "Local/generic request detection is a screening proxy, not a final semantic classification.",
+    "Rewritten requests require new target checks; original references are not automatically applicable."
+  ]
+}

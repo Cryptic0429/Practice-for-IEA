@@ -1,0 +1,235 @@
+{
+  "at": "2026-11-05T02:42:58.385452+00:00",
+  "status": "failed_predeclared_original_request_gate",
+  "results": {
+    "vlm-e20": {
+      "model_id": "vlm-e20",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 12,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 2,
+      "raw_individual_completed_both_languages": 2,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 6,
+      "all_tasks_complete_photo_groups": 2,
+      "major_quality_issues": 0,
+      "major_issue_cases": [],
+      "per_family": {
+        "compound": {
+          "completed": 0,
+          "cases": 2
+        },
+        "lighting": {
+          "completed": 0,
+          "cases": 2
+        },
+        "saturation": {
+          "completed": 2,
+          "cases": 2
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 5,
+          "partial": 1
+        },
+        "en": {
+          "completed": 3,
+          "partial": 2,
+          "failed": 1
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 1,
+          "cases": 3
+        },
+        "landscape": {
+          "completed": 1,
+          "cases": 3
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "review_sha256": "8cdfb75f6ed45417205ac10cf9b7031d586f58718a5017ce030a9de6e41d4d73"
+    },
+    "vlm-e80": {
+      "model_id": "vlm-e80",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 12,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 3,
+      "raw_individual_completed_both_languages": 3,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 6,
+      "all_tasks_complete_photo_groups": 3,
+      "major_quality_issues": 0,
+      "major_issue_cases": [],
+      "per_family": {
+        "compound": {
+          "completed": 1,
+          "cases": 2
+        },
+        "lighting": {
+          "completed": 0,
+          "cases": 2
+        },
+        "saturation": {
+          "completed": 2,
+          "cases": 2
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 4,
+          "partial": 1,
+          "failed": 1
+        },
+        "en": {
+          "completed": 4,
+          "partial": 1,
+          "failed": 1
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 2,
+          "cases": 3
+        },
+        "landscape": {
+          "completed": 1,
+          "cases": 3
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "review_sha256": "8cdfb75f6ed45417205ac10cf9b7031d586f58718a5017ce030a9de6e41d4d73"
+    },
+    "vlm-stats-e20": {
+      "model_id": "vlm-stats-e20",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 12,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 3,
+      "raw_individual_completed_both_languages": 3,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 6,
+      "all_tasks_complete_photo_groups": 3,
+      "major_quality_issues": 1,
+      "major_issue_cases": [
+        "natural-028"
+      ],
+      "per_family": {
+        "compound": {
+          "completed": 1,
+          "cases": 2
+        },
+        "lighting": {
+          "completed": 0,
+          "cases": 2
+        },
+        "saturation": {
+          "completed": 2,
+          "cases": 2
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 4,
+          "partial": 1,
+          "failed": 1
+        },
+        "en": {
+          "completed": 4,
+          "partial": 1,
+          "failed": 1
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 2,
+          "cases": 3
+        },
+        "landscape": {
+          "completed": 1,
+          "cases": 3
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "review_sha256": "8cdfb75f6ed45417205ac10cf9b7031d586f58718a5017ce030a9de6e41d4d73"
+    },
+    "vlm-stats-e80": {
+      "model_id": "vlm-stats-e80",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 12,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 4,
+      "raw_individual_completed_both_languages": 4,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 6,
+      "all_tasks_complete_photo_groups": 4,
+      "major_quality_issues": 1,
+      "major_issue_cases": [
+        "natural-030"
+      ],
+      "per_family": {
+        "compound": {
+          "completed": 1,
+          "cases": 2
+        },
+        "lighting": {
+          "completed": 1,
+          "cases": 2
+        },
+        "saturation": {
+          "completed": 2,
+          "cases": 2
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 4,
+          "partial": 1,
+          "failed": 1
+        },
+        "en": {
+          "completed": 4,
+          "partial": 1,
+          "failed": 1
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 3,
+          "cases": 3
+        },
+        "landscape": {
+          "completed": 1,
+          "cases": 3
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "review_sha256": "8cdfb75f6ed45417205ac10cf9b7031d586f58718a5017ce030a9de6e41d4d73"
+    }
+  },
+  "full_controlled_review_started": false,
+  "acceptance_opened": false,
+  "promoted": false,
+  "seed_replication_started": false,
+  "trial_default_changed": false,
+  "reason": "Three checkpoints do not exceed3/6; the remaining4/6 checkpoint has a severe opposite-direction edit. No checkpoint can pass the predeclared joint gate. Stop the route before full100-task review; do not claim any controlled completion rate."
+}

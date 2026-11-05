@@ -1,0 +1,3772 @@
+[
+  {
+    "id": "development-001-restore-exposure-mild",
+    "group_id": "c5633a0b449b0763355879dd6e5984b3a34154e6110868d6618042ed2059ff42",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-001",
+    "image": "data/training/functional-v2-20261104/inputs/development-001/restore-exposure-mild.png",
+    "input_sha256": "3b0eba4d881395863a535bdc2947cd7a0d4ff92c5335845606ad27f0bcc5945d",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-mild",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4Fpvn_4Fpvn.jpg",
+    "original_source_sha256": "07f463a0e06222b97b9ac7a9f5ae2abb170cdd732c744c562cb6f7ff7f299057",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-001/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-001-restore-exposure-mild.png",
+    "target_sha256": "1391a746bbb87bc374e36b0bf87de62e517fd1cf357e9a7f4f2126f4b6df4ad2",
+    "parameters": {
+      "exposure": 25
+    },
+    "degradation": {
+      "exposure": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-001-restore-exposure-strong",
+    "group_id": "c5633a0b449b0763355879dd6e5984b3a34154e6110868d6618042ed2059ff42",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-001",
+    "image": "data/training/functional-v2-20261104/inputs/development-001/restore-exposure-strong.png",
+    "input_sha256": "ebbdafbdd582532d02d94aabbeacfcb460d13d69b75f1b6679f3c1b7c97cf0e6",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-strong",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4Fpvn_4Fpvn.jpg",
+    "original_source_sha256": "07f463a0e06222b97b9ac7a9f5ae2abb170cdd732c744c562cb6f7ff7f299057",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-001/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-001-restore-exposure-strong.png",
+    "target_sha256": "6929682b33ceed7c458b3bb97f73f496f0a6be9a8e0fc76e506ad14af414366c",
+    "parameters": {
+      "exposure": 75
+    },
+    "degradation": {
+      "exposure": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-001-style-temperature-weak",
+    "group_id": "c5633a0b449b0763355879dd6e5984b3a34154e6110868d6618042ed2059ff42",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-001",
+    "image": "data/training/functional-v2-20261104/inputs/development-001/original.png",
+    "input_sha256": "f7c399dec09713601b8dc675a51ace55be01f085bd843d984771c6a24e74f3ad",
+    "instructions": {
+      "zh": "我想让这张照片轻微调暖整体色调，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly warm the overall tone while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "white_balance",
+    "action": "style-temperature-weak",
+    "expected_change": "轻微按指定方向调整temperature；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4Fpvn_4Fpvn.jpg",
+    "original_source_sha256": "07f463a0e06222b97b9ac7a9f5ae2abb170cdd732c744c562cb6f7ff7f299057",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-001/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-001-style-temperature-weak.png",
+    "target_sha256": "b7fbe88308d3fa7b1e1b4da2c92b4a4a62ea31f150c35d01ec7f7afa81e5e427",
+    "parameters": {
+      "temperature": 10
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-001-style-temperature-strong",
+    "group_id": "c5633a0b449b0763355879dd6e5984b3a34154e6110868d6618042ed2059ff42",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-001",
+    "image": "data/training/functional-v2-20261104/inputs/development-001/original.png",
+    "input_sha256": "f7c399dec09713601b8dc675a51ace55be01f085bd843d984771c6a24e74f3ad",
+    "instructions": {
+      "zh": "我想让这张照片明显调暖整体色调，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably warm the overall tone while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "white_balance",
+    "action": "style-temperature-strong",
+    "expected_change": "明显按指定方向调整temperature；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4Fpvn_4Fpvn.jpg",
+    "original_source_sha256": "07f463a0e06222b97b9ac7a9f5ae2abb170cdd732c744c562cb6f7ff7f299057",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-001/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-001-style-temperature-strong.png",
+    "target_sha256": "9fbc6f8220e801535eeb7ec4b9271877062b84d1ec8391565e9b1966fccaab27",
+    "parameters": {
+      "temperature": 30
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-001-compound",
+    "group_id": "c5633a0b449b0763355879dd6e5984b3a34154e6110868d6618042ed2059ff42",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-001",
+    "image": "data/training/functional-v2-20261104/inputs/development-001/original.png",
+    "input_sha256": "f7c399dec09713601b8dc675a51ace55be01f085bd843d984771c6a24e74f3ad",
+    "instructions": {
+      "zh": "整体暖一点，同时把颜色调得柔和、低饱和一些。",
+      "en": "Warm the overall tone a little and make the colours softer and less saturated."
+    },
+    "family": "compound",
+    "action": "compound",
+    "expected_change": "同时完成两项要求；不能只执行第一项。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored two-clause request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4Fpvn_4Fpvn.jpg",
+    "original_source_sha256": "07f463a0e06222b97b9ac7a9f5ae2abb170cdd732c744c562cb6f7ff7f299057",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-001/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-001-compound.png",
+    "target_sha256": "87004b87b4d66cb166d75ad7ffc29edbcd2dee5e8eb6b36d540724106d9f0b48",
+    "parameters": {
+      "temperature": 15,
+      "saturation": -20
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-003-restore-contrast-mild",
+    "group_id": "147b714aa343a2f2cb6e07e32414920339d5b088a3b53b32f165ae39ff41686c",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-003",
+    "image": "data/training/functional-v2-20261104/inputs/development-003/restore-contrast-mild.png",
+    "input_sha256": "781e941e01b9ca9f5a6261831998e8ef8c5fe1580489562a01c47c6a766146ef",
+    "instructions": {
+      "zh": "这张照片的明暗反差太平，请恢复自然的对比。",
+      "en": "The tonal range looks too flat. Restore natural contrast."
+    },
+    "family": "contrast",
+    "action": "restore-contrast-mild",
+    "expected_change": "修复可见的低对比灰雾，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/htT3J_htT3J.jpg",
+    "original_source_sha256": "fde1047bbe73f61cddb67b476296a824e3044259b88b87e8349e783538049735",
+    "original_pool_request": "Darken the image a bit. Increase the vividness of the red in the images.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-003/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-003-restore-contrast-mild.png",
+    "target_sha256": "6b2d6669ff5eb5677b596041b422500a20c925ee9bd54a966dcff0272ce925c2",
+    "parameters": {
+      "contrast": 25
+    },
+    "degradation": {
+      "contrast": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-003-restore-contrast-strong",
+    "group_id": "147b714aa343a2f2cb6e07e32414920339d5b088a3b53b32f165ae39ff41686c",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-003",
+    "image": "data/training/functional-v2-20261104/inputs/development-003/restore-contrast-strong.png",
+    "input_sha256": "eb0d497bfdbd3f797881a65c0c6581b501ca9fbfae4b77adf361cc0215b81ee0",
+    "instructions": {
+      "zh": "这张照片的明暗反差太平，请恢复自然的对比。",
+      "en": "The tonal range looks too flat. Restore natural contrast."
+    },
+    "family": "contrast",
+    "action": "restore-contrast-strong",
+    "expected_change": "修复可见的低对比灰雾，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/htT3J_htT3J.jpg",
+    "original_source_sha256": "fde1047bbe73f61cddb67b476296a824e3044259b88b87e8349e783538049735",
+    "original_pool_request": "Darken the image a bit. Increase the vividness of the red in the images.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-003/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-003-restore-contrast-strong.png",
+    "target_sha256": "3d5e93e93ff73766de04c4274567858e93b0bb2b96a43381e28e55ff6692bbfe",
+    "parameters": {
+      "contrast": 75
+    },
+    "degradation": {
+      "contrast": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-003-style-saturation-weak",
+    "group_id": "147b714aa343a2f2cb6e07e32414920339d5b088a3b53b32f165ae39ff41686c",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-003",
+    "image": "data/training/functional-v2-20261104/inputs/development-003/original.png",
+    "input_sha256": "74c5ec66393761bf23bf8e7a925e6f98f098516d508f5977a5ad5ae48be6978f",
+    "instructions": {
+      "zh": "我想让这张照片轻微提高饱和度，让颜色更鲜艳，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly increase colour saturation while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "saturation",
+    "action": "style-saturation-weak",
+    "expected_change": "轻微按指定方向调整saturation；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/htT3J_htT3J.jpg",
+    "original_source_sha256": "fde1047bbe73f61cddb67b476296a824e3044259b88b87e8349e783538049735",
+    "original_pool_request": "Darken the image a bit. Increase the vividness of the red in the images.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-003/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-003-style-saturation-weak.png",
+    "target_sha256": "88bbe0e378f446bd4935b1c903474fac4548b2c26aacfcf40a231e996e9098e0",
+    "parameters": {
+      "saturation": 12
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-003-style-saturation-strong",
+    "group_id": "147b714aa343a2f2cb6e07e32414920339d5b088a3b53b32f165ae39ff41686c",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-003",
+    "image": "data/training/functional-v2-20261104/inputs/development-003/original.png",
+    "input_sha256": "74c5ec66393761bf23bf8e7a925e6f98f098516d508f5977a5ad5ae48be6978f",
+    "instructions": {
+      "zh": "我想让这张照片明显提高饱和度，让颜色更鲜艳，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably increase colour saturation while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "saturation",
+    "action": "style-saturation-strong",
+    "expected_change": "明显按指定方向调整saturation；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/htT3J_htT3J.jpg",
+    "original_source_sha256": "fde1047bbe73f61cddb67b476296a824e3044259b88b87e8349e783538049735",
+    "original_pool_request": "Darken the image a bit. Increase the vividness of the red in the images.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-003/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-003-style-saturation-strong.png",
+    "target_sha256": "a5bedcff2414c5115b21a3cf06569b772e52c60090f49d1ff3e85e774bd60731",
+    "parameters": {
+      "saturation": 40
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-003-identity",
+    "group_id": "147b714aa343a2f2cb6e07e32414920339d5b088a3b53b32f165ae39ff41686c",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-003",
+    "image": "data/training/functional-v2-20261104/inputs/development-003/restore-contrast-strong.png",
+    "input_sha256": "eb0d497bfdbd3f797881a65c0c6581b501ca9fbfae4b77adf361cc0215b81ee0",
+    "instructions": {
+      "zh": "请保持这张照片原样，不需要任何修图或自动增强。",
+      "en": "Keep this photograph exactly as supplied. Do not edit or automatically enhance it."
+    },
+    "family": "identity",
+    "action": "identity",
+    "expected_change": "按要求直接返回原图，像素保持原样。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored explicit no-op, including visibly degraded photos",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/htT3J_htT3J.jpg",
+    "original_source_sha256": "fde1047bbe73f61cddb67b476296a824e3044259b88b87e8349e783538049735",
+    "original_pool_request": "Darken the image a bit. Increase the vividness of the red in the images.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-003/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-003-identity.png",
+    "target_sha256": "eb0d497bfdbd3f797881a65c0c6581b501ca9fbfae4b77adf361cc0215b81ee0",
+    "parameters": {},
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-014-restore-saturation-mild",
+    "group_id": "cb165994e7ab3608d6957a41f64a996739b0d33c4b8a8ef60488a5aedf8942c5",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-014",
+    "image": "data/training/functional-v2-20261104/inputs/development-014/restore-saturation-mild.png",
+    "input_sha256": "2a4b227002c1ed8dcb36e1def0ed93c45d09b94bb79e3a605418c7627d26ad05",
+    "instructions": {
+      "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+      "en": "The colours look faded. Restore realistic, natural colour intensity."
+    },
+    "family": "saturation",
+    "action": "restore-saturation-mild",
+    "expected_change": "修复可见的色彩褪淡，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/31jiq1_31jiq1.jpg",
+    "original_source_sha256": "290ca3e6106217edce7bfaac2178b4ac4b67c5b9eff56bba5e3754af62278f5f",
+    "original_pool_request": "How to enhance this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-014/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-014-restore-saturation-mild.png",
+    "target_sha256": "ab10ca9661c42c53af226210c4807080c625e9d1cf3dad25600aa9a1fa62ef86",
+    "parameters": {
+      "saturation": 25
+    },
+    "degradation": {
+      "saturation": -20.0
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-014-restore-saturation-strong",
+    "group_id": "cb165994e7ab3608d6957a41f64a996739b0d33c4b8a8ef60488a5aedf8942c5",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-014",
+    "image": "data/training/functional-v2-20261104/inputs/development-014/restore-saturation-strong.png",
+    "input_sha256": "fb0f348783fe7922a6f0e79656dea0c332e5ccb75ae6f68f006249cb56d59e78",
+    "instructions": {
+      "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+      "en": "The colours look faded. Restore realistic, natural colour intensity."
+    },
+    "family": "saturation",
+    "action": "restore-saturation-strong",
+    "expected_change": "修复可见的色彩褪淡，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/31jiq1_31jiq1.jpg",
+    "original_source_sha256": "290ca3e6106217edce7bfaac2178b4ac4b67c5b9eff56bba5e3754af62278f5f",
+    "original_pool_request": "How to enhance this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-014/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-014-restore-saturation-strong.png",
+    "target_sha256": "9cb8cfd595ca366a6f26fae5afeabe62489cfcd640a837f1e87a1de50be01c32",
+    "parameters": {
+      "saturation": 75
+    },
+    "degradation": {
+      "saturation": -42.857143
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-014-style-contrast-weak",
+    "group_id": "cb165994e7ab3608d6957a41f64a996739b0d33c4b8a8ef60488a5aedf8942c5",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-014",
+    "image": "data/training/functional-v2-20261104/inputs/development-014/original.png",
+    "input_sha256": "073ff5f733be216855af628ce6b9b0ce709902e17b27db872ef3d44fa98b9b56",
+    "instructions": {
+      "zh": "我想让这张照片轻微增强明暗对比，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly increase tonal contrast while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "contrast",
+    "action": "style-contrast-weak",
+    "expected_change": "轻微按指定方向调整contrast；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/31jiq1_31jiq1.jpg",
+    "original_source_sha256": "290ca3e6106217edce7bfaac2178b4ac4b67c5b9eff56bba5e3754af62278f5f",
+    "original_pool_request": "How to enhance this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-014/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-014-style-contrast-weak.png",
+    "target_sha256": "74f92a23e1b01ecb3387a2109b21a67aeb34d18b0aff05c1bfef786e444ab6d9",
+    "parameters": {
+      "contrast": 8
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-014-style-contrast-strong",
+    "group_id": "cb165994e7ab3608d6957a41f64a996739b0d33c4b8a8ef60488a5aedf8942c5",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-014",
+    "image": "data/training/functional-v2-20261104/inputs/development-014/original.png",
+    "input_sha256": "073ff5f733be216855af628ce6b9b0ce709902e17b27db872ef3d44fa98b9b56",
+    "instructions": {
+      "zh": "我想让这张照片明显增强明暗对比，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably increase tonal contrast while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "contrast",
+    "action": "style-contrast-strong",
+    "expected_change": "明显按指定方向调整contrast；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/31jiq1_31jiq1.jpg",
+    "original_source_sha256": "290ca3e6106217edce7bfaac2178b4ac4b67c5b9eff56bba5e3754af62278f5f",
+    "original_pool_request": "How to enhance this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-014/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-014-style-contrast-strong.png",
+    "target_sha256": "a7f38a190835417b856d40bd66f0a87bc68a8edd25f6ca73aa3a2ba54e4d5775",
+    "parameters": {
+      "contrast": 22
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-014-compound",
+    "group_id": "cb165994e7ab3608d6957a41f64a996739b0d33c4b8a8ef60488a5aedf8942c5",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-014",
+    "image": "data/training/functional-v2-20261104/inputs/development-014/original.png",
+    "input_sha256": "073ff5f733be216855af628ce6b9b0ce709902e17b27db872ef3d44fa98b9b56",
+    "instructions": {
+      "zh": "把过亮的地方柔和压暗，同时增加一点冷色调。",
+      "en": "Gently tone down the bright areas and add a little coolness."
+    },
+    "family": "compound",
+    "action": "compound",
+    "expected_change": "同时完成两项要求；不能只执行第一项。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored two-clause request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/31jiq1_31jiq1.jpg",
+    "original_source_sha256": "290ca3e6106217edce7bfaac2178b4ac4b67c5b9eff56bba5e3754af62278f5f",
+    "original_pool_request": "How to enhance this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-014/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-014-compound.png",
+    "target_sha256": "207fb1a9d9cb42e390820afe9dff420a8dbbc6157fce312710fc96cc968b7490",
+    "parameters": {
+      "highlights": -25,
+      "temperature": -12
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-018-restore-exposure-mild",
+    "group_id": "186c5c40a264d7d635fd7564796c427882a0860a2628d0c783f33f3b4b43ab5c",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-018",
+    "image": "data/training/functional-v2-20261104/inputs/development-018/restore-exposure-mild.png",
+    "input_sha256": "8afc7226bedcc5a036f529a1e39be934f9d729ddc7310269acfb54b571f72b38",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-mild",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/57zb0b_57zb0b.jpg",
+    "original_source_sha256": "5e110a4e33a4fbf67ec2ccc22701c532e47eec2484c811e568b5c00ab518a41c",
+    "original_pool_request": "Please, brighten the photo little bit and sharpen to make look more visible",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-018/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-018-restore-exposure-mild.png",
+    "target_sha256": "2683ec97a2db512885cadd1b62d04e4c253d7b57b10c07712dde527c2f4311ed",
+    "parameters": {
+      "exposure": 25
+    },
+    "degradation": {
+      "exposure": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-018-restore-exposure-strong",
+    "group_id": "186c5c40a264d7d635fd7564796c427882a0860a2628d0c783f33f3b4b43ab5c",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-018",
+    "image": "data/training/functional-v2-20261104/inputs/development-018/restore-exposure-strong.png",
+    "input_sha256": "d4c3e8fd291d6be6ceafafd87d93f3bc2a9581c3736f04701cc68264efe0e2a4",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-strong",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/57zb0b_57zb0b.jpg",
+    "original_source_sha256": "5e110a4e33a4fbf67ec2ccc22701c532e47eec2484c811e568b5c00ab518a41c",
+    "original_pool_request": "Please, brighten the photo little bit and sharpen to make look more visible",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-018/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-018-restore-exposure-strong.png",
+    "target_sha256": "acc170fedd8ad6c0bc868d857a3ebde5370b3b7b362ed53b81663928b4247a12",
+    "parameters": {
+      "exposure": 75
+    },
+    "degradation": {
+      "exposure": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-018-style-sepia-weak",
+    "group_id": "186c5c40a264d7d635fd7564796c427882a0860a2628d0c783f33f3b4b43ab5c",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-018",
+    "image": "data/training/functional-v2-20261104/inputs/development-018/original.png",
+    "input_sha256": "967a32ff3bb984ad7f7561c11e87fcbdda9dd7ce9b56edf463f2d7d282d7a341",
+    "instructions": {
+      "zh": "给照片添加轻微的棕褐色复古效果，保留明暗层次。",
+      "en": "Give the photo a subtle brown sepia vintage look while retaining tonal detail."
+    },
+    "family": "brown_tone",
+    "action": "style-sepia-weak",
+    "expected_change": "轻微按指定方向调整sepia；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/57zb0b_57zb0b.jpg",
+    "original_source_sha256": "5e110a4e33a4fbf67ec2ccc22701c532e47eec2484c811e568b5c00ab518a41c",
+    "original_pool_request": "Please, brighten the photo little bit and sharpen to make look more visible",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-018/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-018-style-sepia-weak.png",
+    "target_sha256": "1449cf028a986a80cf84db85e9741c6473a260d558da8a3906bed4d98cc5c736",
+    "parameters": {
+      "sepia": 35
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-018-style-sepia-strong",
+    "group_id": "186c5c40a264d7d635fd7564796c427882a0860a2628d0c783f33f3b4b43ab5c",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-018",
+    "image": "data/training/functional-v2-20261104/inputs/development-018/original.png",
+    "input_sha256": "967a32ff3bb984ad7f7561c11e87fcbdda9dd7ce9b56edf463f2d7d282d7a341",
+    "instructions": {
+      "zh": "给照片添加明显的棕褐色复古效果，保留明暗层次。",
+      "en": "Give the photo a strong brown sepia vintage look while retaining tonal detail."
+    },
+    "family": "brown_tone",
+    "action": "style-sepia-strong",
+    "expected_change": "明显按指定方向调整sepia；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/57zb0b_57zb0b.jpg",
+    "original_source_sha256": "5e110a4e33a4fbf67ec2ccc22701c532e47eec2484c811e568b5c00ab518a41c",
+    "original_pool_request": "Please, brighten the photo little bit and sharpen to make look more visible",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-018/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-018-style-sepia-strong.png",
+    "target_sha256": "7b9a158dd928ca4817e3b8db5ac8a7e643154d6e0a8fc3220ef2c13045aa3bcf",
+    "parameters": {
+      "sepia": 95
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-018-identity",
+    "group_id": "186c5c40a264d7d635fd7564796c427882a0860a2628d0c783f33f3b4b43ab5c",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-018",
+    "image": "data/training/functional-v2-20261104/inputs/development-018/original.png",
+    "input_sha256": "967a32ff3bb984ad7f7561c11e87fcbdda9dd7ce9b56edf463f2d7d282d7a341",
+    "instructions": {
+      "zh": "请保持这张照片原样，不需要任何修图或自动增强。",
+      "en": "Keep this photograph exactly as supplied. Do not edit or automatically enhance it."
+    },
+    "family": "identity",
+    "action": "identity",
+    "expected_change": "按要求直接返回原图，像素保持原样。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored explicit no-op, including visibly degraded photos",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/57zb0b_57zb0b.jpg",
+    "original_source_sha256": "5e110a4e33a4fbf67ec2ccc22701c532e47eec2484c811e568b5c00ab518a41c",
+    "original_pool_request": "Please, brighten the photo little bit and sharpen to make look more visible",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-018/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-018-identity.png",
+    "target_sha256": "967a32ff3bb984ad7f7561c11e87fcbdda9dd7ce9b56edf463f2d7d282d7a341",
+    "parameters": {},
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-020-restore-contrast-mild",
+    "group_id": "1fdc9d531f7e1af79c77a26f2706bc524d174af7c1c3ab331fce4856ac14ea3d",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-020",
+    "image": "data/training/functional-v2-20261104/inputs/development-020/restore-contrast-mild.png",
+    "input_sha256": "8634abe2e9a0fe48f1a3feb9ee15cb1ec2bee4ff36a04db12d55e0843c3d1d63",
+    "instructions": {
+      "zh": "这张照片的明暗反差太平，请恢复自然的对比。",
+      "en": "The tonal range looks too flat. Restore natural contrast."
+    },
+    "family": "contrast",
+    "action": "restore-contrast-mild",
+    "expected_change": "修复可见的低对比灰雾，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2j8ck7_2j8ck7.jpg",
+    "original_source_sha256": "863efe832dc33fbb6c537b3b71fc25cb38f5006bfd97ae7de9bcf8f730af6db7",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-020-restore-contrast-mild.png",
+    "target_sha256": "c6d2616aeaf0d68835592502c4037e1f3a28f213a9e36ae9a9461b2fd71ffe96",
+    "parameters": {
+      "contrast": 25
+    },
+    "degradation": {
+      "contrast": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-020-restore-contrast-strong",
+    "group_id": "1fdc9d531f7e1af79c77a26f2706bc524d174af7c1c3ab331fce4856ac14ea3d",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-020",
+    "image": "data/training/functional-v2-20261104/inputs/development-020/restore-contrast-strong.png",
+    "input_sha256": "d0fade7575750d771d83cfc4636649ba4afd5abe22f65fc4084ced7c08c311e7",
+    "instructions": {
+      "zh": "这张照片的明暗反差太平，请恢复自然的对比。",
+      "en": "The tonal range looks too flat. Restore natural contrast."
+    },
+    "family": "contrast",
+    "action": "restore-contrast-strong",
+    "expected_change": "修复可见的低对比灰雾，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2j8ck7_2j8ck7.jpg",
+    "original_source_sha256": "863efe832dc33fbb6c537b3b71fc25cb38f5006bfd97ae7de9bcf8f730af6db7",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-020-restore-contrast-strong.png",
+    "target_sha256": "e48b7ce4a11072e042ac79684286b735d061028533fa55fcb02ea0eecfeb6bea",
+    "parameters": {
+      "contrast": 75
+    },
+    "degradation": {
+      "contrast": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-020-style-shadows-weak",
+    "group_id": "1fdc9d531f7e1af79c77a26f2706bc524d174af7c1c3ab331fce4856ac14ea3d",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-020",
+    "image": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+    "input_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+    "instructions": {
+      "zh": "我想让这张照片轻微提亮暗部，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly lift the shadows while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "lighting",
+    "action": "style-shadows-weak",
+    "expected_change": "轻微按指定方向调整shadows；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2j8ck7_2j8ck7.jpg",
+    "original_source_sha256": "863efe832dc33fbb6c537b3b71fc25cb38f5006bfd97ae7de9bcf8f730af6db7",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-020-style-shadows-weak.png",
+    "target_sha256": "ac45e830952de47b1febbd62e3adb1d510061e8a09e312fd1e57ea7562ae6f72",
+    "parameters": {
+      "shadows": 20
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-020-style-shadows-strong",
+    "group_id": "1fdc9d531f7e1af79c77a26f2706bc524d174af7c1c3ab331fce4856ac14ea3d",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-020",
+    "image": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+    "input_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+    "instructions": {
+      "zh": "我想让这张照片明显提亮暗部，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably lift the shadows while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "lighting",
+    "action": "style-shadows-strong",
+    "expected_change": "明显按指定方向调整shadows；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2j8ck7_2j8ck7.jpg",
+    "original_source_sha256": "863efe832dc33fbb6c537b3b71fc25cb38f5006bfd97ae7de9bcf8f730af6db7",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-020-style-shadows-strong.png",
+    "target_sha256": "20b7354cb8f736c7401f1b4efc9c8c9bae1db634f025b175907d18eb3e240c6d",
+    "parameters": {
+      "shadows": 60
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-020-compound",
+    "group_id": "1fdc9d531f7e1af79c77a26f2706bc524d174af7c1c3ab331fce4856ac14ea3d",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-020",
+    "image": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+    "input_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+    "instructions": {
+      "zh": "提亮暗部，同时轻微增强对比度，亮处不要过曝。",
+      "en": "Lift the shadows and slightly increase contrast without blowing out the highlights."
+    },
+    "family": "compound",
+    "action": "compound",
+    "expected_change": "同时完成两项要求；不能只执行第一项。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored two-clause request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2j8ck7_2j8ck7.jpg",
+    "original_source_sha256": "863efe832dc33fbb6c537b3b71fc25cb38f5006bfd97ae7de9bcf8f730af6db7",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-020-compound.png",
+    "target_sha256": "4ddb18262fb7dad601139322f84338a87c9ee0d65cce1fc578d6a81032faba3c",
+    "parameters": {
+      "shadows": 40,
+      "contrast": 10
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-028-restore-saturation-mild",
+    "group_id": "507b3a997ef5ce418c76064283ac2f82460b581abb9d1d68c8c6fe81b4b428c3",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-028",
+    "image": "data/training/functional-v2-20261104/inputs/development-028/restore-saturation-mild.png",
+    "input_sha256": "43fd6f3c36e8d2dacd60a7b9c1ae30bef5166cc3179681d5a76f309ae65a7247",
+    "instructions": {
+      "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+      "en": "The colours look faded. Restore realistic, natural colour intensity."
+    },
+    "family": "saturation",
+    "action": "restore-saturation-mild",
+    "expected_change": "修复可见的色彩褪淡，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/gDRZp_gDRZp.jpg",
+    "original_source_sha256": "9dbca806672463e4ad801c69a6ab82269769b2b5266b9fe96721b13e75833075",
+    "original_pool_request": "Please brighten the image.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-028/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-028-restore-saturation-mild.png",
+    "target_sha256": "8927119fdd728febe13f81b6d0fc00a3683bc3482467932f335f6f4eb34cfb0a",
+    "parameters": {
+      "saturation": 25
+    },
+    "degradation": {
+      "saturation": -20.0
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-028-restore-saturation-strong",
+    "group_id": "507b3a997ef5ce418c76064283ac2f82460b581abb9d1d68c8c6fe81b4b428c3",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-028",
+    "image": "data/training/functional-v2-20261104/inputs/development-028/restore-saturation-strong.png",
+    "input_sha256": "65e203f4971491c8df2fb18f41b047a39d7e4258da99f6423941e3bba01fccec",
+    "instructions": {
+      "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+      "en": "The colours look faded. Restore realistic, natural colour intensity."
+    },
+    "family": "saturation",
+    "action": "restore-saturation-strong",
+    "expected_change": "修复可见的色彩褪淡，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/gDRZp_gDRZp.jpg",
+    "original_source_sha256": "9dbca806672463e4ad801c69a6ab82269769b2b5266b9fe96721b13e75833075",
+    "original_pool_request": "Please brighten the image.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-028/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-028-restore-saturation-strong.png",
+    "target_sha256": "eb862f1a651d22310826342dec879eac815ff093331dda14e9bf950a26b89bb5",
+    "parameters": {
+      "saturation": 75
+    },
+    "degradation": {
+      "saturation": -42.857143
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-028-style-temperature-weak",
+    "group_id": "507b3a997ef5ce418c76064283ac2f82460b581abb9d1d68c8c6fe81b4b428c3",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-028",
+    "image": "data/training/functional-v2-20261104/inputs/development-028/original.png",
+    "input_sha256": "a72c46469d9f2afb149b87aa00dbc09539cf394645e7652e64972483fe0a7f81",
+    "instructions": {
+      "zh": "我想让这张照片轻微调冷整体色调，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly cool the overall tone while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "white_balance",
+    "action": "style-temperature-weak",
+    "expected_change": "轻微按指定方向调整temperature；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/gDRZp_gDRZp.jpg",
+    "original_source_sha256": "9dbca806672463e4ad801c69a6ab82269769b2b5266b9fe96721b13e75833075",
+    "original_pool_request": "Please brighten the image.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-028/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-028-style-temperature-weak.png",
+    "target_sha256": "4f9e5ebb1ddfa4a48334a1899a3d4ac017e7993e64332a14c96ab73d26c27630",
+    "parameters": {
+      "temperature": -10
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-028-style-temperature-strong",
+    "group_id": "507b3a997ef5ce418c76064283ac2f82460b581abb9d1d68c8c6fe81b4b428c3",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-028",
+    "image": "data/training/functional-v2-20261104/inputs/development-028/original.png",
+    "input_sha256": "a72c46469d9f2afb149b87aa00dbc09539cf394645e7652e64972483fe0a7f81",
+    "instructions": {
+      "zh": "我想让这张照片明显调冷整体色调，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably cool the overall tone while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "white_balance",
+    "action": "style-temperature-strong",
+    "expected_change": "明显按指定方向调整temperature；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/gDRZp_gDRZp.jpg",
+    "original_source_sha256": "9dbca806672463e4ad801c69a6ab82269769b2b5266b9fe96721b13e75833075",
+    "original_pool_request": "Please brighten the image.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-028/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-028-style-temperature-strong.png",
+    "target_sha256": "33062f6397b282af5e007225636ac0ced08cde433b1d6b24ef2163bdbf73b4d7",
+    "parameters": {
+      "temperature": -30
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-028-identity",
+    "group_id": "507b3a997ef5ce418c76064283ac2f82460b581abb9d1d68c8c6fe81b4b428c3",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-028",
+    "image": "data/training/functional-v2-20261104/inputs/development-028/restore-saturation-strong.png",
+    "input_sha256": "65e203f4971491c8df2fb18f41b047a39d7e4258da99f6423941e3bba01fccec",
+    "instructions": {
+      "zh": "请保持这张照片原样，不需要任何修图或自动增强。",
+      "en": "Keep this photograph exactly as supplied. Do not edit or automatically enhance it."
+    },
+    "family": "identity",
+    "action": "identity",
+    "expected_change": "按要求直接返回原图，像素保持原样。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored explicit no-op, including visibly degraded photos",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/gDRZp_gDRZp.jpg",
+    "original_source_sha256": "9dbca806672463e4ad801c69a6ab82269769b2b5266b9fe96721b13e75833075",
+    "original_pool_request": "Please brighten the image.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-028/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-028-identity.png",
+    "target_sha256": "65e203f4971491c8df2fb18f41b047a39d7e4258da99f6423941e3bba01fccec",
+    "parameters": {},
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-031-restore-exposure-mild",
+    "group_id": "722cf5f6e8356362508cccda11741c2f05f8f3fa967a272c2e99b798d03121bb",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-031",
+    "image": "data/training/functional-v2-20261104/inputs/development-031/restore-exposure-mild.png",
+    "input_sha256": "d0107614adbb4d383ed4e8c09e3b152c35f1bb230cabb59f15959591bcd3a3cd",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-mild",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2w88at_2w88at.jpg",
+    "original_source_sha256": "d8873471bf38d19c07dbfe672a8ee85396cecd6f5085147661bd9d3d16b4f441",
+    "original_pool_request": "Edit this image to make it more beautiful",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-031/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-031-restore-exposure-mild.png",
+    "target_sha256": "1d661f78088a9f660d827cda59fc963c9575f0cdf0a59a486b5d45eedba24c06",
+    "parameters": {
+      "exposure": 25
+    },
+    "degradation": {
+      "exposure": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-031-restore-exposure-strong",
+    "group_id": "722cf5f6e8356362508cccda11741c2f05f8f3fa967a272c2e99b798d03121bb",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-031",
+    "image": "data/training/functional-v2-20261104/inputs/development-031/restore-exposure-strong.png",
+    "input_sha256": "34d97c21c1417ea9a1a897c707a1427cd003f8c2d6565f4e49e6e66822530c8f",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-strong",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2w88at_2w88at.jpg",
+    "original_source_sha256": "d8873471bf38d19c07dbfe672a8ee85396cecd6f5085147661bd9d3d16b4f441",
+    "original_pool_request": "Edit this image to make it more beautiful",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-031/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-031-restore-exposure-strong.png",
+    "target_sha256": "92ca2dc7b40576dea97dd0b8615f00233f314407da2ae52ca0f08addf69aa7b7",
+    "parameters": {
+      "exposure": 75
+    },
+    "degradation": {
+      "exposure": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-031-style-saturation-weak",
+    "group_id": "722cf5f6e8356362508cccda11741c2f05f8f3fa967a272c2e99b798d03121bb",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-031",
+    "image": "data/training/functional-v2-20261104/inputs/development-031/original.png",
+    "input_sha256": "a5de3b10091ba168a9d6645524c99e96589af38d1c18990e24e0c9b841ff3627",
+    "instructions": {
+      "zh": "我想让这张照片轻微降低饱和度，让颜色更淡雅，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly reduce colour saturation while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "saturation",
+    "action": "style-saturation-weak",
+    "expected_change": "轻微按指定方向调整saturation；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2w88at_2w88at.jpg",
+    "original_source_sha256": "d8873471bf38d19c07dbfe672a8ee85396cecd6f5085147661bd9d3d16b4f441",
+    "original_pool_request": "Edit this image to make it more beautiful",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-031/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-031-style-saturation-weak.png",
+    "target_sha256": "642312d5d8aaec50544feba2714f84785701916f63f1c67d562e74a1486377ff",
+    "parameters": {
+      "saturation": -12
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-031-style-saturation-strong",
+    "group_id": "722cf5f6e8356362508cccda11741c2f05f8f3fa967a272c2e99b798d03121bb",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-031",
+    "image": "data/training/functional-v2-20261104/inputs/development-031/original.png",
+    "input_sha256": "a5de3b10091ba168a9d6645524c99e96589af38d1c18990e24e0c9b841ff3627",
+    "instructions": {
+      "zh": "我想让这张照片明显降低饱和度，让颜色更淡雅，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably reduce colour saturation while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "saturation",
+    "action": "style-saturation-strong",
+    "expected_change": "明显按指定方向调整saturation；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2w88at_2w88at.jpg",
+    "original_source_sha256": "d8873471bf38d19c07dbfe672a8ee85396cecd6f5085147661bd9d3d16b4f441",
+    "original_pool_request": "Edit this image to make it more beautiful",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-031/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-031-style-saturation-strong.png",
+    "target_sha256": "72280c0e8b91168dd82c46d21297ce04e03d4b441dbc685af44d1043bfc1caaa",
+    "parameters": {
+      "saturation": -40
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-031-compound",
+    "group_id": "722cf5f6e8356362508cccda11741c2f05f8f3fa967a272c2e99b798d03121bb",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-031",
+    "image": "data/training/functional-v2-20261104/inputs/development-031/original.png",
+    "input_sha256": "a5de3b10091ba168a9d6645524c99e96589af38d1c18990e24e0c9b841ff3627",
+    "instructions": {
+      "zh": "整体暖一点，同时把颜色调得柔和、低饱和一些。",
+      "en": "Warm the overall tone a little and make the colours softer and less saturated."
+    },
+    "family": "compound",
+    "action": "compound",
+    "expected_change": "同时完成两项要求；不能只执行第一项。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored two-clause request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2w88at_2w88at.jpg",
+    "original_source_sha256": "d8873471bf38d19c07dbfe672a8ee85396cecd6f5085147661bd9d3d16b4f441",
+    "original_pool_request": "Edit this image to make it more beautiful",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-031/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-031-compound.png",
+    "target_sha256": "13eaa7bc24816b5f833179fc9ff0a9b8c09da598bb004a6941cd1a7c92550524",
+    "parameters": {
+      "temperature": 15,
+      "saturation": -20
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-033-restore-contrast-mild",
+    "group_id": "ed27f6b7bb4b4e11204345e53bf178fc3c9f62d16cbb8c70058c383143209e3f",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-033",
+    "image": "data/training/functional-v2-20261104/inputs/development-033/restore-contrast-mild.png",
+    "input_sha256": "eefb956acbdd6cf2fd94e0e552999aad1a671bb98d8629406c458add443fc0bb",
+    "instructions": {
+      "zh": "这张照片的明暗反差太平，请恢复自然的对比。",
+      "en": "The tonal range looks too flat. Restore natural contrast."
+    },
+    "family": "contrast",
+    "action": "restore-contrast-mild",
+    "expected_change": "修复可见的低对比灰雾，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/dT5XT_dT5XT.jpg",
+    "original_source_sha256": "71caceab5b2a524178cce5390a817bbd35252c4df7f69ee81f5c0d219fcd23fa",
+    "original_pool_request": "Make the colors a bit more vibrant and brighter",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-033/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-033-restore-contrast-mild.png",
+    "target_sha256": "74f64e115212a1ab155b9db97f86fb40ac978c5e3d8846eab5025223d9dea789",
+    "parameters": {
+      "contrast": 25
+    },
+    "degradation": {
+      "contrast": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-033-restore-contrast-strong",
+    "group_id": "ed27f6b7bb4b4e11204345e53bf178fc3c9f62d16cbb8c70058c383143209e3f",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-033",
+    "image": "data/training/functional-v2-20261104/inputs/development-033/restore-contrast-strong.png",
+    "input_sha256": "f72ed5d56436da533ea47944a43d7ac7d5f5fa987b1a73f6f01384e05aa2f294",
+    "instructions": {
+      "zh": "这张照片的明暗反差太平，请恢复自然的对比。",
+      "en": "The tonal range looks too flat. Restore natural contrast."
+    },
+    "family": "contrast",
+    "action": "restore-contrast-strong",
+    "expected_change": "修复可见的低对比灰雾，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/dT5XT_dT5XT.jpg",
+    "original_source_sha256": "71caceab5b2a524178cce5390a817bbd35252c4df7f69ee81f5c0d219fcd23fa",
+    "original_pool_request": "Make the colors a bit more vibrant and brighter",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-033/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-033-restore-contrast-strong.png",
+    "target_sha256": "d1cf3c75a3671ef3973accada2938b3071f080c293b1ede83fa91c994f7afa7e",
+    "parameters": {
+      "contrast": 75
+    },
+    "degradation": {
+      "contrast": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-033-style-contrast-weak",
+    "group_id": "ed27f6b7bb4b4e11204345e53bf178fc3c9f62d16cbb8c70058c383143209e3f",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-033",
+    "image": "data/training/functional-v2-20261104/inputs/development-033/original.png",
+    "input_sha256": "8ae5778ef6c4e27c227dd0585b94fd52e2b04975e0a7bc3d313a27f5e72e664a",
+    "instructions": {
+      "zh": "我想让这张照片轻微减弱明暗反差，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly soften tonal contrast while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "contrast",
+    "action": "style-contrast-weak",
+    "expected_change": "轻微按指定方向调整contrast；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/dT5XT_dT5XT.jpg",
+    "original_source_sha256": "71caceab5b2a524178cce5390a817bbd35252c4df7f69ee81f5c0d219fcd23fa",
+    "original_pool_request": "Make the colors a bit more vibrant and brighter",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-033/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-033-style-contrast-weak.png",
+    "target_sha256": "c773ad52f5050757f83e0ee5f5a4fd478bcc3b2a614af751ca4debd0e974c15a",
+    "parameters": {
+      "contrast": -8
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-033-style-contrast-strong",
+    "group_id": "ed27f6b7bb4b4e11204345e53bf178fc3c9f62d16cbb8c70058c383143209e3f",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-033",
+    "image": "data/training/functional-v2-20261104/inputs/development-033/original.png",
+    "input_sha256": "8ae5778ef6c4e27c227dd0585b94fd52e2b04975e0a7bc3d313a27f5e72e664a",
+    "instructions": {
+      "zh": "我想让这张照片明显减弱明暗反差，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably soften tonal contrast while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "contrast",
+    "action": "style-contrast-strong",
+    "expected_change": "明显按指定方向调整contrast；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/dT5XT_dT5XT.jpg",
+    "original_source_sha256": "71caceab5b2a524178cce5390a817bbd35252c4df7f69ee81f5c0d219fcd23fa",
+    "original_pool_request": "Make the colors a bit more vibrant and brighter",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-033/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-033-style-contrast-strong.png",
+    "target_sha256": "5964f152b00d083ea3a7cc5a5fe8a67c91626e66bd3b808da810009c409cb2d3",
+    "parameters": {
+      "contrast": -22
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-033-identity",
+    "group_id": "ed27f6b7bb4b4e11204345e53bf178fc3c9f62d16cbb8c70058c383143209e3f",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-033",
+    "image": "data/training/functional-v2-20261104/inputs/development-033/restore-contrast-strong.png",
+    "input_sha256": "f72ed5d56436da533ea47944a43d7ac7d5f5fa987b1a73f6f01384e05aa2f294",
+    "instructions": {
+      "zh": "请保持这张照片原样，不需要任何修图或自动增强。",
+      "en": "Keep this photograph exactly as supplied. Do not edit or automatically enhance it."
+    },
+    "family": "identity",
+    "action": "identity",
+    "expected_change": "按要求直接返回原图，像素保持原样。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored explicit no-op, including visibly degraded photos",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/dT5XT_dT5XT.jpg",
+    "original_source_sha256": "71caceab5b2a524178cce5390a817bbd35252c4df7f69ee81f5c0d219fcd23fa",
+    "original_pool_request": "Make the colors a bit more vibrant and brighter",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-033/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-033-identity.png",
+    "target_sha256": "f72ed5d56436da533ea47944a43d7ac7d5f5fa987b1a73f6f01384e05aa2f294",
+    "parameters": {},
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-040-restore-saturation-mild",
+    "group_id": "30b2709b5e67b3b236d41c2e23647fdc0b7b95915bd6428c599c797f3f85d264",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-040",
+    "image": "data/training/functional-v2-20261104/inputs/development-040/restore-saturation-mild.png",
+    "input_sha256": "fa0f4ec6557e151d3ee54b5dee0781a5f43a3b8721bcd0ea5f0000277c7bf430",
+    "instructions": {
+      "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+      "en": "The colours look faded. Restore realistic, natural colour intensity."
+    },
+    "family": "saturation",
+    "action": "restore-saturation-mild",
+    "expected_change": "修复可见的色彩褪淡，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vqq6j_vqq6j.jpg",
+    "original_source_sha256": "95231829352366f60b03b4bc73742d43269ebf9d3c32946714c3ed468223c168",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-040/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-040-restore-saturation-mild.png",
+    "target_sha256": "1dbe1da55541b319879b83fb5f0c934588bfd88b181a0cc271a663162704f69c",
+    "parameters": {
+      "saturation": 25
+    },
+    "degradation": {
+      "saturation": -20.0
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-040-restore-saturation-strong",
+    "group_id": "30b2709b5e67b3b236d41c2e23647fdc0b7b95915bd6428c599c797f3f85d264",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-040",
+    "image": "data/training/functional-v2-20261104/inputs/development-040/restore-saturation-strong.png",
+    "input_sha256": "aac40ff751bdb12145f591c002a49ac1a84b4f3caf9f6ad10cae5ef8e5fd1f98",
+    "instructions": {
+      "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+      "en": "The colours look faded. Restore realistic, natural colour intensity."
+    },
+    "family": "saturation",
+    "action": "restore-saturation-strong",
+    "expected_change": "修复可见的色彩褪淡，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vqq6j_vqq6j.jpg",
+    "original_source_sha256": "95231829352366f60b03b4bc73742d43269ebf9d3c32946714c3ed468223c168",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-040/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-040-restore-saturation-strong.png",
+    "target_sha256": "d38ec23d3976c5d58f38a63ad6dbbbdfd18686afc8027d0b79d2608207ad1f15",
+    "parameters": {
+      "saturation": 75
+    },
+    "degradation": {
+      "saturation": -42.857143
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-040-style-sepia-weak",
+    "group_id": "30b2709b5e67b3b236d41c2e23647fdc0b7b95915bd6428c599c797f3f85d264",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-040",
+    "image": "data/training/functional-v2-20261104/inputs/development-040/original.png",
+    "input_sha256": "69c8e294162c282c570a6131bc6d68b7db30be1bac04fd4cf3e784f3b6c6f26e",
+    "instructions": {
+      "zh": "给照片添加轻微的棕褐色复古效果，保留明暗层次。",
+      "en": "Give the photo a subtle brown sepia vintage look while retaining tonal detail."
+    },
+    "family": "brown_tone",
+    "action": "style-sepia-weak",
+    "expected_change": "轻微按指定方向调整sepia；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vqq6j_vqq6j.jpg",
+    "original_source_sha256": "95231829352366f60b03b4bc73742d43269ebf9d3c32946714c3ed468223c168",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-040/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-040-style-sepia-weak.png",
+    "target_sha256": "41c8735a2653b9c5a0d55165773b7bcefc9e6710787d3148563acd1694da3d8b",
+    "parameters": {
+      "sepia": 35
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-040-style-sepia-strong",
+    "group_id": "30b2709b5e67b3b236d41c2e23647fdc0b7b95915bd6428c599c797f3f85d264",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-040",
+    "image": "data/training/functional-v2-20261104/inputs/development-040/original.png",
+    "input_sha256": "69c8e294162c282c570a6131bc6d68b7db30be1bac04fd4cf3e784f3b6c6f26e",
+    "instructions": {
+      "zh": "给照片添加明显的棕褐色复古效果，保留明暗层次。",
+      "en": "Give the photo a strong brown sepia vintage look while retaining tonal detail."
+    },
+    "family": "brown_tone",
+    "action": "style-sepia-strong",
+    "expected_change": "明显按指定方向调整sepia；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vqq6j_vqq6j.jpg",
+    "original_source_sha256": "95231829352366f60b03b4bc73742d43269ebf9d3c32946714c3ed468223c168",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-040/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-040-style-sepia-strong.png",
+    "target_sha256": "d6128eeda3e4bc077ecd7d1ebc63b1943f9fe2781d7db850aeeb8bdc4a8eca68",
+    "parameters": {
+      "sepia": 95
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-040-compound",
+    "group_id": "30b2709b5e67b3b236d41c2e23647fdc0b7b95915bd6428c599c797f3f85d264",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-040",
+    "image": "data/training/functional-v2-20261104/inputs/development-040/original.png",
+    "input_sha256": "69c8e294162c282c570a6131bc6d68b7db30be1bac04fd4cf3e784f3b6c6f26e",
+    "instructions": {
+      "zh": "把过亮的地方柔和压暗，同时增加一点冷色调。",
+      "en": "Gently tone down the bright areas and add a little coolness."
+    },
+    "family": "compound",
+    "action": "compound",
+    "expected_change": "同时完成两项要求；不能只执行第一项。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored two-clause request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vqq6j_vqq6j.jpg",
+    "original_source_sha256": "95231829352366f60b03b4bc73742d43269ebf9d3c32946714c3ed468223c168",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-040/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-040-compound.png",
+    "target_sha256": "70fd5f0eaf4db351ac8132ab9444a513f784553613d5f80cb091a965d86bc326",
+    "parameters": {
+      "highlights": -25,
+      "temperature": -12
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-055-restore-exposure-mild",
+    "group_id": "4c861adab82398b3abdcf086f3f27f3f2a3c41a7bcba262e0df711103e786085",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-055",
+    "image": "data/training/functional-v2-20261104/inputs/development-055/restore-exposure-mild.png",
+    "input_sha256": "70bce1320a1948feeceda73c70794e3dc47782079265cd249f824c8b824e090d",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-mild",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3palqf_3palqf.jpg",
+    "original_source_sha256": "23ae72e6b9f538336ba25f3616b0913513c2f70dc99c7bedf9f4305be7e77563",
+    "original_pool_request": "Add a little more color",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-055-restore-exposure-mild.png",
+    "target_sha256": "8fb2b6ec7259a6169b714216e92dea8877ab36e33d48f33437baf8283f993a8a",
+    "parameters": {
+      "exposure": 25
+    },
+    "degradation": {
+      "exposure": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-055-restore-exposure-strong",
+    "group_id": "4c861adab82398b3abdcf086f3f27f3f2a3c41a7bcba262e0df711103e786085",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-055",
+    "image": "data/training/functional-v2-20261104/inputs/development-055/restore-exposure-strong.png",
+    "input_sha256": "6ddf1d057fab8b8d26003099782db7878701b479cafa4bfa9574d907bc34c755",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-strong",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3palqf_3palqf.jpg",
+    "original_source_sha256": "23ae72e6b9f538336ba25f3616b0913513c2f70dc99c7bedf9f4305be7e77563",
+    "original_pool_request": "Add a little more color",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-055-restore-exposure-strong.png",
+    "target_sha256": "a935ba7b667435e517222cf4386bc04e844ab3719cd2c524b538f72ca9333ea0",
+    "parameters": {
+      "exposure": 75
+    },
+    "degradation": {
+      "exposure": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-055-style-shadows-weak",
+    "group_id": "4c861adab82398b3abdcf086f3f27f3f2a3c41a7bcba262e0df711103e786085",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-055",
+    "image": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+    "input_sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+    "instructions": {
+      "zh": "我想让这张照片轻微压暗阴影，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly darken the shadows while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "lighting",
+    "action": "style-shadows-weak",
+    "expected_change": "轻微按指定方向调整shadows；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3palqf_3palqf.jpg",
+    "original_source_sha256": "23ae72e6b9f538336ba25f3616b0913513c2f70dc99c7bedf9f4305be7e77563",
+    "original_pool_request": "Add a little more color",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-055-style-shadows-weak.png",
+    "target_sha256": "b383734e9db28d9b955e4c82cb889b85ec32dfd0231bb36319ca20750a52149e",
+    "parameters": {
+      "shadows": -12
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-055-style-shadows-strong",
+    "group_id": "4c861adab82398b3abdcf086f3f27f3f2a3c41a7bcba262e0df711103e786085",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-055",
+    "image": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+    "input_sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+    "instructions": {
+      "zh": "我想让这张照片明显压暗阴影，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably darken the shadows while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "lighting",
+    "action": "style-shadows-strong",
+    "expected_change": "明显按指定方向调整shadows；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3palqf_3palqf.jpg",
+    "original_source_sha256": "23ae72e6b9f538336ba25f3616b0913513c2f70dc99c7bedf9f4305be7e77563",
+    "original_pool_request": "Add a little more color",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-055-style-shadows-strong.png",
+    "target_sha256": "4feb9ccfdda2e7d24d33c775aa78685162a90e71dd6705931936a1c1605d6b3a",
+    "parameters": {
+      "shadows": -36
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-055-identity",
+    "group_id": "4c861adab82398b3abdcf086f3f27f3f2a3c41a7bcba262e0df711103e786085",
+    "split": "development",
+    "domain": "portrait",
+    "source_id": "development-055",
+    "image": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+    "input_sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+    "instructions": {
+      "zh": "请保持这张照片原样，不需要任何修图或自动增强。",
+      "en": "Keep this photograph exactly as supplied. Do not edit or automatically enhance it."
+    },
+    "family": "identity",
+    "action": "identity",
+    "expected_change": "按要求直接返回原图，像素保持原样。",
+    "must_preserve": "保持面部结构及自然肤色，保留服装、背景和明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored explicit no-op, including visibly degraded photos",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3palqf_3palqf.jpg",
+    "original_source_sha256": "23ae72e6b9f538336ba25f3616b0913513c2f70dc99c7bedf9f4305be7e77563",
+    "original_pool_request": "Add a little more color",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-055-identity.png",
+    "target_sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+    "parameters": {},
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-006-restore-exposure-mild",
+    "group_id": "b821f774293e0bf19db14a6e6a0ce8f913c49e2877f68fc1a9d93d9b7700b3b0",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-006",
+    "image": "data/training/functional-v2-20261104/inputs/development-006/restore-exposure-mild.png",
+    "input_sha256": "10894f22e7d03af11159bae7e957fdb76fc757ebea1f496f6b9bc27d8489c2f2",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-mild",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xPLn_3xPLn.jpg",
+    "original_source_sha256": "b0dc405c1f118abea9578401c6aae67463ab322c20d8bccd14769864f0d4b84a",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-006/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-006-restore-exposure-mild.png",
+    "target_sha256": "07c271c35d357bf47235b34b0992f8df070f7432d8197c6d56a3e490b63779f1",
+    "parameters": {
+      "exposure": 25
+    },
+    "degradation": {
+      "exposure": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-006-restore-exposure-strong",
+    "group_id": "b821f774293e0bf19db14a6e6a0ce8f913c49e2877f68fc1a9d93d9b7700b3b0",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-006",
+    "image": "data/training/functional-v2-20261104/inputs/development-006/restore-exposure-strong.png",
+    "input_sha256": "fa0bc2973c8aadc599080d0a4e4e0f13809cdfde41f7a7a077e98f8a49a5c150",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-strong",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xPLn_3xPLn.jpg",
+    "original_source_sha256": "b0dc405c1f118abea9578401c6aae67463ab322c20d8bccd14769864f0d4b84a",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-006/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-006-restore-exposure-strong.png",
+    "target_sha256": "f44c2bb2ed74c61dee2e120d9e24a68df3bad8c3ab6f8abae0040eb63e571248",
+    "parameters": {
+      "exposure": 75
+    },
+    "degradation": {
+      "exposure": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-006-style-temperature-weak",
+    "group_id": "b821f774293e0bf19db14a6e6a0ce8f913c49e2877f68fc1a9d93d9b7700b3b0",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-006",
+    "image": "data/training/functional-v2-20261104/inputs/development-006/original.png",
+    "input_sha256": "3976e7bb30c0e1407b814ef6a858280ffdf875aee35ed072cd9c77197a8a1e4a",
+    "instructions": {
+      "zh": "我想让这张照片轻微调暖整体色调，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly warm the overall tone while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "white_balance",
+    "action": "style-temperature-weak",
+    "expected_change": "轻微按指定方向调整temperature；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xPLn_3xPLn.jpg",
+    "original_source_sha256": "b0dc405c1f118abea9578401c6aae67463ab322c20d8bccd14769864f0d4b84a",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-006/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-006-style-temperature-weak.png",
+    "target_sha256": "c00650c4b41de5dac7c572a183a168e8ae28ab133e05c56e6146b039e04d19e1",
+    "parameters": {
+      "temperature": 10
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-006-style-temperature-strong",
+    "group_id": "b821f774293e0bf19db14a6e6a0ce8f913c49e2877f68fc1a9d93d9b7700b3b0",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-006",
+    "image": "data/training/functional-v2-20261104/inputs/development-006/original.png",
+    "input_sha256": "3976e7bb30c0e1407b814ef6a858280ffdf875aee35ed072cd9c77197a8a1e4a",
+    "instructions": {
+      "zh": "我想让这张照片明显调暖整体色调，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably warm the overall tone while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "white_balance",
+    "action": "style-temperature-strong",
+    "expected_change": "明显按指定方向调整temperature；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xPLn_3xPLn.jpg",
+    "original_source_sha256": "b0dc405c1f118abea9578401c6aae67463ab322c20d8bccd14769864f0d4b84a",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-006/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-006-style-temperature-strong.png",
+    "target_sha256": "a8bd0c0a88277969653b147842a6d7062db1c5e42eb84f72de00c951becb3ba4",
+    "parameters": {
+      "temperature": 30
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-006-compound",
+    "group_id": "b821f774293e0bf19db14a6e6a0ce8f913c49e2877f68fc1a9d93d9b7700b3b0",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-006",
+    "image": "data/training/functional-v2-20261104/inputs/development-006/original.png",
+    "input_sha256": "3976e7bb30c0e1407b814ef6a858280ffdf875aee35ed072cd9c77197a8a1e4a",
+    "instructions": {
+      "zh": "整体暖一点，同时把颜色调得柔和、低饱和一些。",
+      "en": "Warm the overall tone a little and make the colours softer and less saturated."
+    },
+    "family": "compound",
+    "action": "compound",
+    "expected_change": "同时完成两项要求；不能只执行第一项。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored two-clause request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xPLn_3xPLn.jpg",
+    "original_source_sha256": "b0dc405c1f118abea9578401c6aae67463ab322c20d8bccd14769864f0d4b84a",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-006/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-006-compound.png",
+    "target_sha256": "8965d156d9030392d7dc400511b91876c31883ebf0f12b6ada17cab2ec2f04fd",
+    "parameters": {
+      "temperature": 15,
+      "saturation": -20
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-010-restore-contrast-mild",
+    "group_id": "b4d4256a8336f84785e0ac463c5a1e9c422d83514904b68533c09ed84179d3b2",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-010",
+    "image": "data/training/functional-v2-20261104/inputs/development-010/restore-contrast-mild.png",
+    "input_sha256": "55cb53120760ad436f9d2b61491492f77e71bbe6873521bf048a4f342f69c376",
+    "instructions": {
+      "zh": "这张照片的明暗反差太平，请恢复自然的对比。",
+      "en": "The tonal range looks too flat. Restore natural contrast."
+    },
+    "family": "contrast",
+    "action": "restore-contrast-mild",
+    "expected_change": "修复可见的低对比灰雾，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2ha4nm_2ha4nm.jpg",
+    "original_source_sha256": "25670b1804e04df23d72172adba29011e16a0fa84efca9f8c5ccaf8ca8d3f52a",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-010/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-010-restore-contrast-mild.png",
+    "target_sha256": "7ee33df1af2badc30248c9adfd0043acde640188a562803c4db02143af54eac5",
+    "parameters": {
+      "contrast": 25
+    },
+    "degradation": {
+      "contrast": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-010-restore-contrast-strong",
+    "group_id": "b4d4256a8336f84785e0ac463c5a1e9c422d83514904b68533c09ed84179d3b2",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-010",
+    "image": "data/training/functional-v2-20261104/inputs/development-010/restore-contrast-strong.png",
+    "input_sha256": "f19e28288a427148eb5230d30fe1ee243124828b54c80a4c61a9081efea879ed",
+    "instructions": {
+      "zh": "这张照片的明暗反差太平，请恢复自然的对比。",
+      "en": "The tonal range looks too flat. Restore natural contrast."
+    },
+    "family": "contrast",
+    "action": "restore-contrast-strong",
+    "expected_change": "修复可见的低对比灰雾，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2ha4nm_2ha4nm.jpg",
+    "original_source_sha256": "25670b1804e04df23d72172adba29011e16a0fa84efca9f8c5ccaf8ca8d3f52a",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-010/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-010-restore-contrast-strong.png",
+    "target_sha256": "8c469118c3d16b9603824c40e879c7e83f783ed43fe8a635f71731c998fc1acd",
+    "parameters": {
+      "contrast": 75
+    },
+    "degradation": {
+      "contrast": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-010-style-saturation-weak",
+    "group_id": "b4d4256a8336f84785e0ac463c5a1e9c422d83514904b68533c09ed84179d3b2",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-010",
+    "image": "data/training/functional-v2-20261104/inputs/development-010/original.png",
+    "input_sha256": "51bfaa3dea574da19e79c68d1fe93c087f89e866bd381751d75a03eb48328da9",
+    "instructions": {
+      "zh": "我想让这张照片轻微提高饱和度，让颜色更鲜艳，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly increase colour saturation while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "saturation",
+    "action": "style-saturation-weak",
+    "expected_change": "轻微按指定方向调整saturation；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2ha4nm_2ha4nm.jpg",
+    "original_source_sha256": "25670b1804e04df23d72172adba29011e16a0fa84efca9f8c5ccaf8ca8d3f52a",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-010/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-010-style-saturation-weak.png",
+    "target_sha256": "40de0a637ad0e801a873579a3c50956e2e6da0a0231665225752e7ad36403e01",
+    "parameters": {
+      "saturation": 12
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-010-style-saturation-strong",
+    "group_id": "b4d4256a8336f84785e0ac463c5a1e9c422d83514904b68533c09ed84179d3b2",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-010",
+    "image": "data/training/functional-v2-20261104/inputs/development-010/original.png",
+    "input_sha256": "51bfaa3dea574da19e79c68d1fe93c087f89e866bd381751d75a03eb48328da9",
+    "instructions": {
+      "zh": "我想让这张照片明显提高饱和度，让颜色更鲜艳，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably increase colour saturation while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "saturation",
+    "action": "style-saturation-strong",
+    "expected_change": "明显按指定方向调整saturation；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2ha4nm_2ha4nm.jpg",
+    "original_source_sha256": "25670b1804e04df23d72172adba29011e16a0fa84efca9f8c5ccaf8ca8d3f52a",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-010/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-010-style-saturation-strong.png",
+    "target_sha256": "f754f36a228f9c03cd358dc6dc0363e48eee8a49ef9336f63480e3a56f68af70",
+    "parameters": {
+      "saturation": 40
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-010-identity",
+    "group_id": "b4d4256a8336f84785e0ac463c5a1e9c422d83514904b68533c09ed84179d3b2",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-010",
+    "image": "data/training/functional-v2-20261104/inputs/development-010/restore-contrast-strong.png",
+    "input_sha256": "f19e28288a427148eb5230d30fe1ee243124828b54c80a4c61a9081efea879ed",
+    "instructions": {
+      "zh": "请保持这张照片原样，不需要任何修图或自动增强。",
+      "en": "Keep this photograph exactly as supplied. Do not edit or automatically enhance it."
+    },
+    "family": "identity",
+    "action": "identity",
+    "expected_change": "按要求直接返回原图，像素保持原样。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored explicit no-op, including visibly degraded photos",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2ha4nm_2ha4nm.jpg",
+    "original_source_sha256": "25670b1804e04df23d72172adba29011e16a0fa84efca9f8c5ccaf8ca8d3f52a",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-010/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-010-identity.png",
+    "target_sha256": "f19e28288a427148eb5230d30fe1ee243124828b54c80a4c61a9081efea879ed",
+    "parameters": {},
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-019-restore-saturation-mild",
+    "group_id": "7a2be2f5b565311f0bda22409f6ef58c75aef7b47993a66899516c5f49ea9176",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-019",
+    "image": "data/training/functional-v2-20261104/inputs/development-019/restore-saturation-mild.png",
+    "input_sha256": "e1827342c6d2c9f862d411747d5c26cd3889838f24a3389e32d2b4348d7e71f5",
+    "instructions": {
+      "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+      "en": "The colours look faded. Restore realistic, natural colour intensity."
+    },
+    "family": "saturation",
+    "action": "restore-saturation-mild",
+    "expected_change": "修复可见的色彩褪淡，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nSTjX_nSTjX.jpg",
+    "original_source_sha256": "464b113c83fc09cdafb456573bd187eae05da7dc60fd63a425feeb6b0cc7980e",
+    "original_pool_request": "The desired image is much brighter and provides better over all color warmth.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-019-restore-saturation-mild.png",
+    "target_sha256": "a756e3c189be076ef00dbdb9929c2468f257ef2c2732fddd55d809f5da8015e6",
+    "parameters": {
+      "saturation": 25
+    },
+    "degradation": {
+      "saturation": -20.0
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-019-restore-saturation-strong",
+    "group_id": "7a2be2f5b565311f0bda22409f6ef58c75aef7b47993a66899516c5f49ea9176",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-019",
+    "image": "data/training/functional-v2-20261104/inputs/development-019/restore-saturation-strong.png",
+    "input_sha256": "ef4932c00175d0a3b55500c37dfca6d767206272512036d57559c51ee942d7b5",
+    "instructions": {
+      "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+      "en": "The colours look faded. Restore realistic, natural colour intensity."
+    },
+    "family": "saturation",
+    "action": "restore-saturation-strong",
+    "expected_change": "修复可见的色彩褪淡，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nSTjX_nSTjX.jpg",
+    "original_source_sha256": "464b113c83fc09cdafb456573bd187eae05da7dc60fd63a425feeb6b0cc7980e",
+    "original_pool_request": "The desired image is much brighter and provides better over all color warmth.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-019-restore-saturation-strong.png",
+    "target_sha256": "1836239038e088e53b7ea36885dcabb050dd584c0e845f23827f6d17ea1a6c53",
+    "parameters": {
+      "saturation": 75
+    },
+    "degradation": {
+      "saturation": -42.857143
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-019-style-contrast-weak",
+    "group_id": "7a2be2f5b565311f0bda22409f6ef58c75aef7b47993a66899516c5f49ea9176",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-019",
+    "image": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+    "input_sha256": "a784ecfdaa611deb2a9f8b3aeeaaf87855f62d8ab124144d4ebddf7becf58d01",
+    "instructions": {
+      "zh": "我想让这张照片轻微增强明暗对比，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly increase tonal contrast while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "contrast",
+    "action": "style-contrast-weak",
+    "expected_change": "轻微按指定方向调整contrast；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nSTjX_nSTjX.jpg",
+    "original_source_sha256": "464b113c83fc09cdafb456573bd187eae05da7dc60fd63a425feeb6b0cc7980e",
+    "original_pool_request": "The desired image is much brighter and provides better over all color warmth.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-019-style-contrast-weak.png",
+    "target_sha256": "bea68aacf91d7f0558b85334dbe1727b66a3e4d8a28f4358072bd0ee430726d1",
+    "parameters": {
+      "contrast": 8
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-019-style-contrast-strong",
+    "group_id": "7a2be2f5b565311f0bda22409f6ef58c75aef7b47993a66899516c5f49ea9176",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-019",
+    "image": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+    "input_sha256": "a784ecfdaa611deb2a9f8b3aeeaaf87855f62d8ab124144d4ebddf7becf58d01",
+    "instructions": {
+      "zh": "我想让这张照片明显增强明暗对比，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably increase tonal contrast while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "contrast",
+    "action": "style-contrast-strong",
+    "expected_change": "明显按指定方向调整contrast；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nSTjX_nSTjX.jpg",
+    "original_source_sha256": "464b113c83fc09cdafb456573bd187eae05da7dc60fd63a425feeb6b0cc7980e",
+    "original_pool_request": "The desired image is much brighter and provides better over all color warmth.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-019-style-contrast-strong.png",
+    "target_sha256": "80bb3c9105712feef61c5c43cef417af8e0b937f227d1ef801047369f8c3888c",
+    "parameters": {
+      "contrast": 22
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-019-compound",
+    "group_id": "7a2be2f5b565311f0bda22409f6ef58c75aef7b47993a66899516c5f49ea9176",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-019",
+    "image": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+    "input_sha256": "a784ecfdaa611deb2a9f8b3aeeaaf87855f62d8ab124144d4ebddf7becf58d01",
+    "instructions": {
+      "zh": "把过亮的地方柔和压暗，同时增加一点冷色调。",
+      "en": "Gently tone down the bright areas and add a little coolness."
+    },
+    "family": "compound",
+    "action": "compound",
+    "expected_change": "同时完成两项要求；不能只执行第一项。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored two-clause request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nSTjX_nSTjX.jpg",
+    "original_source_sha256": "464b113c83fc09cdafb456573bd187eae05da7dc60fd63a425feeb6b0cc7980e",
+    "original_pool_request": "The desired image is much brighter and provides better over all color warmth.",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-019-compound.png",
+    "target_sha256": "e966cc9cfc3aee748e3398e24295a4ce890c29b73c7f01d5b9bfc8dca3cb9eae",
+    "parameters": {
+      "highlights": -25,
+      "temperature": -12
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-022-restore-exposure-mild",
+    "group_id": "e09cfede65453d9fc06d560f8872c225afed98845c63c157d84a7be5d4aced11",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-022",
+    "image": "data/training/functional-v2-20261104/inputs/development-022/restore-exposure-mild.png",
+    "input_sha256": "0a72e4e87432ce56b1fc9e1bed3ebfe8adb1002488674a114249786813223566",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-mild",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2cpnei_2cpnei.jpg",
+    "original_source_sha256": "01ab9509b3dc754f446fde92dca6615e055ccf8cb8d1d9ddd27387c1888784ed",
+    "original_pool_request": "make the picture more colorful and vivid",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-022/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-022-restore-exposure-mild.png",
+    "target_sha256": "ad8ccf79601c64beddeefed6456358e3b84fb91da24e30f7edbaabd76275a87e",
+    "parameters": {
+      "exposure": 25
+    },
+    "degradation": {
+      "exposure": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-022-restore-exposure-strong",
+    "group_id": "e09cfede65453d9fc06d560f8872c225afed98845c63c157d84a7be5d4aced11",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-022",
+    "image": "data/training/functional-v2-20261104/inputs/development-022/restore-exposure-strong.png",
+    "input_sha256": "4228afd152db3ccfa1f7c892f55fa13049c82f0f548efcdc6d4440c18cde47fa",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-strong",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2cpnei_2cpnei.jpg",
+    "original_source_sha256": "01ab9509b3dc754f446fde92dca6615e055ccf8cb8d1d9ddd27387c1888784ed",
+    "original_pool_request": "make the picture more colorful and vivid",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-022/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-022-restore-exposure-strong.png",
+    "target_sha256": "a2e47d93d4b5eda8bf714979dc8190cc9fa7cd9dd8307b8150d3a7686f478711",
+    "parameters": {
+      "exposure": 75
+    },
+    "degradation": {
+      "exposure": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-022-style-sepia-weak",
+    "group_id": "e09cfede65453d9fc06d560f8872c225afed98845c63c157d84a7be5d4aced11",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-022",
+    "image": "data/training/functional-v2-20261104/inputs/development-022/original.png",
+    "input_sha256": "0baac0766f8640e91aa7c446981c0ec2173e726fcf1ce59fa1f7e9f797288cea",
+    "instructions": {
+      "zh": "给照片添加轻微的棕褐色复古效果，保留明暗层次。",
+      "en": "Give the photo a subtle brown sepia vintage look while retaining tonal detail."
+    },
+    "family": "brown_tone",
+    "action": "style-sepia-weak",
+    "expected_change": "轻微按指定方向调整sepia；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2cpnei_2cpnei.jpg",
+    "original_source_sha256": "01ab9509b3dc754f446fde92dca6615e055ccf8cb8d1d9ddd27387c1888784ed",
+    "original_pool_request": "make the picture more colorful and vivid",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-022/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-022-style-sepia-weak.png",
+    "target_sha256": "81082b269391be91904d2b1705e6837993009d4f0573c960abc215cd875bf0f0",
+    "parameters": {
+      "sepia": 35
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-022-style-sepia-strong",
+    "group_id": "e09cfede65453d9fc06d560f8872c225afed98845c63c157d84a7be5d4aced11",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-022",
+    "image": "data/training/functional-v2-20261104/inputs/development-022/original.png",
+    "input_sha256": "0baac0766f8640e91aa7c446981c0ec2173e726fcf1ce59fa1f7e9f797288cea",
+    "instructions": {
+      "zh": "给照片添加明显的棕褐色复古效果，保留明暗层次。",
+      "en": "Give the photo a strong brown sepia vintage look while retaining tonal detail."
+    },
+    "family": "brown_tone",
+    "action": "style-sepia-strong",
+    "expected_change": "明显按指定方向调整sepia；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2cpnei_2cpnei.jpg",
+    "original_source_sha256": "01ab9509b3dc754f446fde92dca6615e055ccf8cb8d1d9ddd27387c1888784ed",
+    "original_pool_request": "make the picture more colorful and vivid",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-022/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-022-style-sepia-strong.png",
+    "target_sha256": "0c65458ca0a85157bf9a27c1d5fdd5d6d5bcfa8b4a1b01f0e5247a9fbf93df60",
+    "parameters": {
+      "sepia": 95
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-022-identity",
+    "group_id": "e09cfede65453d9fc06d560f8872c225afed98845c63c157d84a7be5d4aced11",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-022",
+    "image": "data/training/functional-v2-20261104/inputs/development-022/original.png",
+    "input_sha256": "0baac0766f8640e91aa7c446981c0ec2173e726fcf1ce59fa1f7e9f797288cea",
+    "instructions": {
+      "zh": "请保持这张照片原样，不需要任何修图或自动增强。",
+      "en": "Keep this photograph exactly as supplied. Do not edit or automatically enhance it."
+    },
+    "family": "identity",
+    "action": "identity",
+    "expected_change": "按要求直接返回原图，像素保持原样。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored explicit no-op, including visibly degraded photos",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2cpnei_2cpnei.jpg",
+    "original_source_sha256": "01ab9509b3dc754f446fde92dca6615e055ccf8cb8d1d9ddd27387c1888784ed",
+    "original_pool_request": "make the picture more colorful and vivid",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-022/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-022-identity.png",
+    "target_sha256": "0baac0766f8640e91aa7c446981c0ec2173e726fcf1ce59fa1f7e9f797288cea",
+    "parameters": {},
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-027-restore-contrast-mild",
+    "group_id": "3b4caf5696f882243240baad7efc7ab8171586403df2b7911d65b47ff871cf13",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-027",
+    "image": "data/training/functional-v2-20261104/inputs/development-027/restore-contrast-mild.png",
+    "input_sha256": "b59e1d8df67412d6b8cbfc032d9558c10bc761ea6f2ac7958bd6e3f16d0b4a5a",
+    "instructions": {
+      "zh": "这张照片的明暗反差太平，请恢复自然的对比。",
+      "en": "The tonal range looks too flat. Restore natural contrast."
+    },
+    "family": "contrast",
+    "action": "restore-contrast-mild",
+    "expected_change": "修复可见的低对比灰雾，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3qgtb4_3qgtb4.jpg",
+    "original_source_sha256": "59b8bb6e85d4e9cb19b49b6d1d746b777381907552d778cf52c52ece13a7ae72",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-027-restore-contrast-mild.png",
+    "target_sha256": "f6181a8cc18a6e124cb0a059d36dd934d7f33998c0631b624b47c6bd84a862ef",
+    "parameters": {
+      "contrast": 25
+    },
+    "degradation": {
+      "contrast": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-027-restore-contrast-strong",
+    "group_id": "3b4caf5696f882243240baad7efc7ab8171586403df2b7911d65b47ff871cf13",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-027",
+    "image": "data/training/functional-v2-20261104/inputs/development-027/restore-contrast-strong.png",
+    "input_sha256": "365a6fe8edc7bf7f37f396eea5cc2ef34636fcea68a580af27b2da00cccb7875",
+    "instructions": {
+      "zh": "这张照片的明暗反差太平，请恢复自然的对比。",
+      "en": "The tonal range looks too flat. Restore natural contrast."
+    },
+    "family": "contrast",
+    "action": "restore-contrast-strong",
+    "expected_change": "修复可见的低对比灰雾，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3qgtb4_3qgtb4.jpg",
+    "original_source_sha256": "59b8bb6e85d4e9cb19b49b6d1d746b777381907552d778cf52c52ece13a7ae72",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-027-restore-contrast-strong.png",
+    "target_sha256": "943684399afdebcc6874ab95b5dc194c79a9d9574935ae7a9abd023e15e9eb79",
+    "parameters": {
+      "contrast": 75
+    },
+    "degradation": {
+      "contrast": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-027-style-shadows-weak",
+    "group_id": "3b4caf5696f882243240baad7efc7ab8171586403df2b7911d65b47ff871cf13",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-027",
+    "image": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+    "input_sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+    "instructions": {
+      "zh": "我想让这张照片轻微提亮暗部，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly lift the shadows while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "lighting",
+    "action": "style-shadows-weak",
+    "expected_change": "轻微按指定方向调整shadows；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3qgtb4_3qgtb4.jpg",
+    "original_source_sha256": "59b8bb6e85d4e9cb19b49b6d1d746b777381907552d778cf52c52ece13a7ae72",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-027-style-shadows-weak.png",
+    "target_sha256": "5207f47758c7014f44055c5b156335aad7d67a6b7d2e4e8b4d4306d887c1ba45",
+    "parameters": {
+      "shadows": 20
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-027-style-shadows-strong",
+    "group_id": "3b4caf5696f882243240baad7efc7ab8171586403df2b7911d65b47ff871cf13",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-027",
+    "image": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+    "input_sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+    "instructions": {
+      "zh": "我想让这张照片明显提亮暗部，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably lift the shadows while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "lighting",
+    "action": "style-shadows-strong",
+    "expected_change": "明显按指定方向调整shadows；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3qgtb4_3qgtb4.jpg",
+    "original_source_sha256": "59b8bb6e85d4e9cb19b49b6d1d746b777381907552d778cf52c52ece13a7ae72",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-027-style-shadows-strong.png",
+    "target_sha256": "098b783ede05ed64dfcb3e3637e364bc8daff5de1700f2bc239fbe938a3c1246",
+    "parameters": {
+      "shadows": 60
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-027-compound",
+    "group_id": "3b4caf5696f882243240baad7efc7ab8171586403df2b7911d65b47ff871cf13",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-027",
+    "image": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+    "input_sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+    "instructions": {
+      "zh": "提亮暗部，同时轻微增强对比度，亮处不要过曝。",
+      "en": "Lift the shadows and slightly increase contrast without blowing out the highlights."
+    },
+    "family": "compound",
+    "action": "compound",
+    "expected_change": "同时完成两项要求；不能只执行第一项。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored two-clause request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3qgtb4_3qgtb4.jpg",
+    "original_source_sha256": "59b8bb6e85d4e9cb19b49b6d1d746b777381907552d778cf52c52ece13a7ae72",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-027-compound.png",
+    "target_sha256": "91b7155a7b7e8467ffefc3326b3624169ab2fd41071ec4e6cda669d15dab8650",
+    "parameters": {
+      "shadows": 40,
+      "contrast": 10
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-029-restore-saturation-mild",
+    "group_id": "1ab95a5c4310f2de36be8918df3e32f3b796900bf07c2e79eafc190a6408ef87",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-029",
+    "image": "data/training/functional-v2-20261104/inputs/development-029/restore-saturation-mild.png",
+    "input_sha256": "bb39a20666684fe4a5204fa55c10530fbe2c41694a28a3d8b404fe43693ee5c5",
+    "instructions": {
+      "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+      "en": "The colours look faded. Restore realistic, natural colour intensity."
+    },
+    "family": "saturation",
+    "action": "restore-saturation-mild",
+    "expected_change": "修复可见的色彩褪淡，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3T65m_3T65m.jpg",
+    "original_source_sha256": "916c152f44688823a592f988b75e8b39d913490ab7e5bb80f14b46baa0e221b6",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-029/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-029-restore-saturation-mild.png",
+    "target_sha256": "47e748348ff39191f871c6f6cf99bd1ac6232f9ad451067aa7aaa2389768fd49",
+    "parameters": {
+      "saturation": 25
+    },
+    "degradation": {
+      "saturation": -20.0
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-029-restore-saturation-strong",
+    "group_id": "1ab95a5c4310f2de36be8918df3e32f3b796900bf07c2e79eafc190a6408ef87",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-029",
+    "image": "data/training/functional-v2-20261104/inputs/development-029/restore-saturation-strong.png",
+    "input_sha256": "82103a8bfa05450d9e5c449dffa7ffdece905369a7bb7d8a87430c92b7b1633d",
+    "instructions": {
+      "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+      "en": "The colours look faded. Restore realistic, natural colour intensity."
+    },
+    "family": "saturation",
+    "action": "restore-saturation-strong",
+    "expected_change": "修复可见的色彩褪淡，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3T65m_3T65m.jpg",
+    "original_source_sha256": "916c152f44688823a592f988b75e8b39d913490ab7e5bb80f14b46baa0e221b6",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-029/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-029-restore-saturation-strong.png",
+    "target_sha256": "dede77226d0f3b82320c719ac1292d252b24d050bb31c33e3c774f26b2dd5a0e",
+    "parameters": {
+      "saturation": 75
+    },
+    "degradation": {
+      "saturation": -42.857143
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-029-style-temperature-weak",
+    "group_id": "1ab95a5c4310f2de36be8918df3e32f3b796900bf07c2e79eafc190a6408ef87",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-029",
+    "image": "data/training/functional-v2-20261104/inputs/development-029/original.png",
+    "input_sha256": "038af5fb40d48486872bd9a3fe1a7ba6ac2ad3961e14a100d08aa56a2d7d3962",
+    "instructions": {
+      "zh": "我想让这张照片轻微调冷整体色调，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly cool the overall tone while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "white_balance",
+    "action": "style-temperature-weak",
+    "expected_change": "轻微按指定方向调整temperature；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3T65m_3T65m.jpg",
+    "original_source_sha256": "916c152f44688823a592f988b75e8b39d913490ab7e5bb80f14b46baa0e221b6",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-029/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-029-style-temperature-weak.png",
+    "target_sha256": "6f98d5f45f5b3e6558b9c123de5ba4b74575f74a33c1aaa4f6613acff921ef56",
+    "parameters": {
+      "temperature": -10
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-029-style-temperature-strong",
+    "group_id": "1ab95a5c4310f2de36be8918df3e32f3b796900bf07c2e79eafc190a6408ef87",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-029",
+    "image": "data/training/functional-v2-20261104/inputs/development-029/original.png",
+    "input_sha256": "038af5fb40d48486872bd9a3fe1a7ba6ac2ad3961e14a100d08aa56a2d7d3962",
+    "instructions": {
+      "zh": "我想让这张照片明显调冷整体色调，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably cool the overall tone while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "white_balance",
+    "action": "style-temperature-strong",
+    "expected_change": "明显按指定方向调整temperature；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3T65m_3T65m.jpg",
+    "original_source_sha256": "916c152f44688823a592f988b75e8b39d913490ab7e5bb80f14b46baa0e221b6",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-029/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-029-style-temperature-strong.png",
+    "target_sha256": "1a5072154cb40ac58f6445a37eef8e486898da8cc5e27fbe0009d7e4ffb65337",
+    "parameters": {
+      "temperature": -30
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-029-identity",
+    "group_id": "1ab95a5c4310f2de36be8918df3e32f3b796900bf07c2e79eafc190a6408ef87",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-029",
+    "image": "data/training/functional-v2-20261104/inputs/development-029/restore-saturation-strong.png",
+    "input_sha256": "82103a8bfa05450d9e5c449dffa7ffdece905369a7bb7d8a87430c92b7b1633d",
+    "instructions": {
+      "zh": "请保持这张照片原样，不需要任何修图或自动增强。",
+      "en": "Keep this photograph exactly as supplied. Do not edit or automatically enhance it."
+    },
+    "family": "identity",
+    "action": "identity",
+    "expected_change": "按要求直接返回原图，像素保持原样。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored explicit no-op, including visibly degraded photos",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3T65m_3T65m.jpg",
+    "original_source_sha256": "916c152f44688823a592f988b75e8b39d913490ab7e5bb80f14b46baa0e221b6",
+    "original_pool_request": "What will you do to improve this image?",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-029/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-029-identity.png",
+    "target_sha256": "82103a8bfa05450d9e5c449dffa7ffdece905369a7bb7d8a87430c92b7b1633d",
+    "parameters": {},
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-030-restore-exposure-mild",
+    "group_id": "64e426ede54c6eb56041e040a75a1764add885f09e4e45f84c48000c73861e6b",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-030",
+    "image": "data/training/functional-v2-20261104/inputs/development-030/restore-exposure-mild.png",
+    "input_sha256": "216e494e8ee79d8dde1cb879bbad1fafe980d8d1055507c78941bf47feb2e8c7",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-mild",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/47lx7w_47lx7w.jpg",
+    "original_source_sha256": "d23ee46b5d53bd3362f32605c3c6d86bc6ce89869d030399382153922f937a9e",
+    "original_pool_request": "Please, darken the photo a lot",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-030/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-030-restore-exposure-mild.png",
+    "target_sha256": "8e4f41f82bb2576dd046419fd0e500d22fe5a6099bb0913f348576e714646c86",
+    "parameters": {
+      "exposure": 25
+    },
+    "degradation": {
+      "exposure": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-030-restore-exposure-strong",
+    "group_id": "64e426ede54c6eb56041e040a75a1764add885f09e4e45f84c48000c73861e6b",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-030",
+    "image": "data/training/functional-v2-20261104/inputs/development-030/restore-exposure-strong.png",
+    "input_sha256": "421884f99d92f3d8bce3157d175f0761a1a91f798b2b73aeeb738d6bed97e1bd",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-strong",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/47lx7w_47lx7w.jpg",
+    "original_source_sha256": "d23ee46b5d53bd3362f32605c3c6d86bc6ce89869d030399382153922f937a9e",
+    "original_pool_request": "Please, darken the photo a lot",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-030/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-030-restore-exposure-strong.png",
+    "target_sha256": "06d84bbb4d2e262c35c971ccbed5661be5c74cfcbd664d25622f81eab88c339e",
+    "parameters": {
+      "exposure": 75
+    },
+    "degradation": {
+      "exposure": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-030-style-saturation-weak",
+    "group_id": "64e426ede54c6eb56041e040a75a1764add885f09e4e45f84c48000c73861e6b",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-030",
+    "image": "data/training/functional-v2-20261104/inputs/development-030/original.png",
+    "input_sha256": "d689e28a3a82ad01967cface02a70628968d56abd5f2a485abd997227df4f3bc",
+    "instructions": {
+      "zh": "我想让这张照片轻微降低饱和度，让颜色更淡雅，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly reduce colour saturation while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "saturation",
+    "action": "style-saturation-weak",
+    "expected_change": "轻微按指定方向调整saturation；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/47lx7w_47lx7w.jpg",
+    "original_source_sha256": "d23ee46b5d53bd3362f32605c3c6d86bc6ce89869d030399382153922f937a9e",
+    "original_pool_request": "Please, darken the photo a lot",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-030/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-030-style-saturation-weak.png",
+    "target_sha256": "0361053581e0c3cdd35142ce84d5addb1bae7b9eaea762a3dfcc16140d89165e",
+    "parameters": {
+      "saturation": -12
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-030-style-saturation-strong",
+    "group_id": "64e426ede54c6eb56041e040a75a1764add885f09e4e45f84c48000c73861e6b",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-030",
+    "image": "data/training/functional-v2-20261104/inputs/development-030/original.png",
+    "input_sha256": "d689e28a3a82ad01967cface02a70628968d56abd5f2a485abd997227df4f3bc",
+    "instructions": {
+      "zh": "我想让这张照片明显降低饱和度，让颜色更淡雅，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably reduce colour saturation while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "saturation",
+    "action": "style-saturation-strong",
+    "expected_change": "明显按指定方向调整saturation；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/47lx7w_47lx7w.jpg",
+    "original_source_sha256": "d23ee46b5d53bd3362f32605c3c6d86bc6ce89869d030399382153922f937a9e",
+    "original_pool_request": "Please, darken the photo a lot",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-030/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-030-style-saturation-strong.png",
+    "target_sha256": "1a2d7cbbe1a5f926c70f1dc0c59434e8b039e896537e378cea399b6bd8691762",
+    "parameters": {
+      "saturation": -40
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-030-compound",
+    "group_id": "64e426ede54c6eb56041e040a75a1764add885f09e4e45f84c48000c73861e6b",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-030",
+    "image": "data/training/functional-v2-20261104/inputs/development-030/original.png",
+    "input_sha256": "d689e28a3a82ad01967cface02a70628968d56abd5f2a485abd997227df4f3bc",
+    "instructions": {
+      "zh": "整体暖一点，同时把颜色调得柔和、低饱和一些。",
+      "en": "Warm the overall tone a little and make the colours softer and less saturated."
+    },
+    "family": "compound",
+    "action": "compound",
+    "expected_change": "同时完成两项要求；不能只执行第一项。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored two-clause request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/47lx7w_47lx7w.jpg",
+    "original_source_sha256": "d23ee46b5d53bd3362f32605c3c6d86bc6ce89869d030399382153922f937a9e",
+    "original_pool_request": "Please, darken the photo a lot",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-030/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-030-compound.png",
+    "target_sha256": "50d7ac1ff03d1ce8ceced600865447becaa609a9b64bda7ea35197a182e4a71a",
+    "parameters": {
+      "temperature": 15,
+      "saturation": -20
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-041-restore-contrast-mild",
+    "group_id": "6fd31ff07de96e304dcc1ceafc33668e7a25dd494e59ee0355daa9e105a7647e",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-041",
+    "image": "data/training/functional-v2-20261104/inputs/development-041/restore-contrast-mild.png",
+    "input_sha256": "85a2a70a2b2dfe7544525c73e0747bcbbb1aeca1693211e9f87ad6bb5a59f560",
+    "instructions": {
+      "zh": "这张照片的明暗反差太平，请恢复自然的对比。",
+      "en": "The tonal range looks too flat. Restore natural contrast."
+    },
+    "family": "contrast",
+    "action": "restore-contrast-mild",
+    "expected_change": "修复可见的低对比灰雾，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4e1a76_4e1a76.jpg",
+    "original_source_sha256": "fbe8bd062b0791fb85ee9dc1415dd91f571edc661768b94e8fb7591fc73add3c",
+    "original_pool_request": "Edit this image to make it more beautiful",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-041/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-041-restore-contrast-mild.png",
+    "target_sha256": "97ac8119e1e221bdc8f6a29577151f96023a14bef38ba888aef0fd56b9507e5b",
+    "parameters": {
+      "contrast": 25
+    },
+    "degradation": {
+      "contrast": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-041-restore-contrast-strong",
+    "group_id": "6fd31ff07de96e304dcc1ceafc33668e7a25dd494e59ee0355daa9e105a7647e",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-041",
+    "image": "data/training/functional-v2-20261104/inputs/development-041/restore-contrast-strong.png",
+    "input_sha256": "e5c08da09137dc714c70031b9875351348c523978e1ace16e4d6fcfa318a3a2d",
+    "instructions": {
+      "zh": "这张照片的明暗反差太平，请恢复自然的对比。",
+      "en": "The tonal range looks too flat. Restore natural contrast."
+    },
+    "family": "contrast",
+    "action": "restore-contrast-strong",
+    "expected_change": "修复可见的低对比灰雾，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4e1a76_4e1a76.jpg",
+    "original_source_sha256": "fbe8bd062b0791fb85ee9dc1415dd91f571edc661768b94e8fb7591fc73add3c",
+    "original_pool_request": "Edit this image to make it more beautiful",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-041/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-041-restore-contrast-strong.png",
+    "target_sha256": "a2d5f9d6d709ffb88cf5b9a07f84e32aeb0e9b6b5301645bf9ee1923033935b7",
+    "parameters": {
+      "contrast": 75
+    },
+    "degradation": {
+      "contrast": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-041-style-contrast-weak",
+    "group_id": "6fd31ff07de96e304dcc1ceafc33668e7a25dd494e59ee0355daa9e105a7647e",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-041",
+    "image": "data/training/functional-v2-20261104/inputs/development-041/original.png",
+    "input_sha256": "c2edd41597e0e42cb8d206f5b23c8b6e2a52c724a79b6241ce95d63270c3aa01",
+    "instructions": {
+      "zh": "我想让这张照片轻微减弱明暗反差，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly soften tonal contrast while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "contrast",
+    "action": "style-contrast-weak",
+    "expected_change": "轻微按指定方向调整contrast；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4e1a76_4e1a76.jpg",
+    "original_source_sha256": "fbe8bd062b0791fb85ee9dc1415dd91f571edc661768b94e8fb7591fc73add3c",
+    "original_pool_request": "Edit this image to make it more beautiful",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-041/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-041-style-contrast-weak.png",
+    "target_sha256": "7dd471352fb1a0bbe48e95b622e500f0b7b41f90eb6aada807480c66a83f02d2",
+    "parameters": {
+      "contrast": -8
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-041-style-contrast-strong",
+    "group_id": "6fd31ff07de96e304dcc1ceafc33668e7a25dd494e59ee0355daa9e105a7647e",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-041",
+    "image": "data/training/functional-v2-20261104/inputs/development-041/original.png",
+    "input_sha256": "c2edd41597e0e42cb8d206f5b23c8b6e2a52c724a79b6241ce95d63270c3aa01",
+    "instructions": {
+      "zh": "我想让这张照片明显减弱明暗反差，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably soften tonal contrast while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "contrast",
+    "action": "style-contrast-strong",
+    "expected_change": "明显按指定方向调整contrast；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4e1a76_4e1a76.jpg",
+    "original_source_sha256": "fbe8bd062b0791fb85ee9dc1415dd91f571edc661768b94e8fb7591fc73add3c",
+    "original_pool_request": "Edit this image to make it more beautiful",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-041/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-041-style-contrast-strong.png",
+    "target_sha256": "71d38c428c934b383fa093f96a04fcabd2d6ce77f75270c9f39fb5d8740b2ed0",
+    "parameters": {
+      "contrast": -22
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-041-identity",
+    "group_id": "6fd31ff07de96e304dcc1ceafc33668e7a25dd494e59ee0355daa9e105a7647e",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-041",
+    "image": "data/training/functional-v2-20261104/inputs/development-041/restore-contrast-strong.png",
+    "input_sha256": "e5c08da09137dc714c70031b9875351348c523978e1ace16e4d6fcfa318a3a2d",
+    "instructions": {
+      "zh": "请保持这张照片原样，不需要任何修图或自动增强。",
+      "en": "Keep this photograph exactly as supplied. Do not edit or automatically enhance it."
+    },
+    "family": "identity",
+    "action": "identity",
+    "expected_change": "按要求直接返回原图，像素保持原样。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored explicit no-op, including visibly degraded photos",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4e1a76_4e1a76.jpg",
+    "original_source_sha256": "fbe8bd062b0791fb85ee9dc1415dd91f571edc661768b94e8fb7591fc73add3c",
+    "original_pool_request": "Edit this image to make it more beautiful",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-041/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-041-identity.png",
+    "target_sha256": "e5c08da09137dc714c70031b9875351348c523978e1ace16e4d6fcfa318a3a2d",
+    "parameters": {},
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-080-restore-saturation-mild",
+    "group_id": "ec4d49885ad8aba6677e54f82a6b5ec75016d38d014f683d2eaa2da546dfa991",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-080",
+    "image": "data/training/functional-v2-20261104/inputs/development-080/restore-saturation-mild.png",
+    "input_sha256": "20c2de6d89766566292f4f76268da63d6fb965acfaf3fdd9326b4118bd21da5f",
+    "instructions": {
+      "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+      "en": "The colours look faded. Restore realistic, natural colour intensity."
+    },
+    "family": "saturation",
+    "action": "restore-saturation-mild",
+    "expected_change": "修复可见的色彩褪淡，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/s1wT4_s1wT4.jpg",
+    "original_source_sha256": "6744803231a8968fd63a0977e385a9a31034d5a136875b92fdf94ee091c29780",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-080/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-080-restore-saturation-mild.png",
+    "target_sha256": "c0eb80f77aff478b140ac2b7dab547e91045cbafa492194d05a40a50fcd244dd",
+    "parameters": {
+      "saturation": 25
+    },
+    "degradation": {
+      "saturation": -20.0
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-080-restore-saturation-strong",
+    "group_id": "ec4d49885ad8aba6677e54f82a6b5ec75016d38d014f683d2eaa2da546dfa991",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-080",
+    "image": "data/training/functional-v2-20261104/inputs/development-080/restore-saturation-strong.png",
+    "input_sha256": "6987002effc6c40754497526ef744a1e8c23fb7a83df6e242d020ffac6f06874",
+    "instructions": {
+      "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+      "en": "The colours look faded. Restore realistic, natural colour intensity."
+    },
+    "family": "saturation",
+    "action": "restore-saturation-strong",
+    "expected_change": "修复可见的色彩褪淡，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/s1wT4_s1wT4.jpg",
+    "original_source_sha256": "6744803231a8968fd63a0977e385a9a31034d5a136875b92fdf94ee091c29780",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-080/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-080-restore-saturation-strong.png",
+    "target_sha256": "bc6aeb70bf4369eef495c4838459f25991ac807b3ece29454d59cf1c5c0827f1",
+    "parameters": {
+      "saturation": 75
+    },
+    "degradation": {
+      "saturation": -42.857143
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-080-style-sepia-weak",
+    "group_id": "ec4d49885ad8aba6677e54f82a6b5ec75016d38d014f683d2eaa2da546dfa991",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-080",
+    "image": "data/training/functional-v2-20261104/inputs/development-080/original.png",
+    "input_sha256": "3680ac74d41cd5e752287c769513b1e02f8b825ecbfe977eff38129bfebf6ab6",
+    "instructions": {
+      "zh": "给照片添加轻微的棕褐色复古效果，保留明暗层次。",
+      "en": "Give the photo a subtle brown sepia vintage look while retaining tonal detail."
+    },
+    "family": "brown_tone",
+    "action": "style-sepia-weak",
+    "expected_change": "轻微按指定方向调整sepia；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/s1wT4_s1wT4.jpg",
+    "original_source_sha256": "6744803231a8968fd63a0977e385a9a31034d5a136875b92fdf94ee091c29780",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-080/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-080-style-sepia-weak.png",
+    "target_sha256": "c27eccd167e884b7d87a75ca8be3eb199f4775b7b5fa9c3ae10da324165ed4c1",
+    "parameters": {
+      "sepia": 35
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-080-style-sepia-strong",
+    "group_id": "ec4d49885ad8aba6677e54f82a6b5ec75016d38d014f683d2eaa2da546dfa991",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-080",
+    "image": "data/training/functional-v2-20261104/inputs/development-080/original.png",
+    "input_sha256": "3680ac74d41cd5e752287c769513b1e02f8b825ecbfe977eff38129bfebf6ab6",
+    "instructions": {
+      "zh": "给照片添加明显的棕褐色复古效果，保留明暗层次。",
+      "en": "Give the photo a strong brown sepia vintage look while retaining tonal detail."
+    },
+    "family": "brown_tone",
+    "action": "style-sepia-strong",
+    "expected_change": "明显按指定方向调整sepia；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/s1wT4_s1wT4.jpg",
+    "original_source_sha256": "6744803231a8968fd63a0977e385a9a31034d5a136875b92fdf94ee091c29780",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-080/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-080-style-sepia-strong.png",
+    "target_sha256": "2363341a3c0d19250919fce412c826da15f14266d0a29b5adc069b7d2590e882",
+    "parameters": {
+      "sepia": 95
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-080-compound",
+    "group_id": "ec4d49885ad8aba6677e54f82a6b5ec75016d38d014f683d2eaa2da546dfa991",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-080",
+    "image": "data/training/functional-v2-20261104/inputs/development-080/original.png",
+    "input_sha256": "3680ac74d41cd5e752287c769513b1e02f8b825ecbfe977eff38129bfebf6ab6",
+    "instructions": {
+      "zh": "把过亮的地方柔和压暗，同时增加一点冷色调。",
+      "en": "Gently tone down the bright areas and add a little coolness."
+    },
+    "family": "compound",
+    "action": "compound",
+    "expected_change": "同时完成两项要求；不能只执行第一项。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored two-clause request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/s1wT4_s1wT4.jpg",
+    "original_source_sha256": "6744803231a8968fd63a0977e385a9a31034d5a136875b92fdf94ee091c29780",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-080/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-080-compound.png",
+    "target_sha256": "f56763d42300edc16ac951340b3604b473173fa78bdbabf856ed1c07f2674df8",
+    "parameters": {
+      "highlights": -25,
+      "temperature": -12
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-106-restore-exposure-mild",
+    "group_id": "7f53fe2d6a190242c173c12a9da5d7f4461811bbe5e76411377b491fc930e721",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-106",
+    "image": "data/training/functional-v2-20261104/inputs/development-106/restore-exposure-mild.png",
+    "input_sha256": "1947cd05ed39f7c011b8e956f2727e8bc968e2f9ab6a904dc4548947d792eab0",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-mild",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3s58dj_3s58dj.jpg",
+    "original_source_sha256": "a2ee7144c07db880b5182fd3e8f13bbf7d7279bde46766f639d66606b6db9cdf",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-106/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-106-restore-exposure-mild.png",
+    "target_sha256": "147ae71e9e91427fc9d40655463a6cb1ed2630aac0c01843df4db366b4c89324",
+    "parameters": {
+      "exposure": 25
+    },
+    "degradation": {
+      "exposure": -25
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-106-restore-exposure-strong",
+    "group_id": "7f53fe2d6a190242c173c12a9da5d7f4461811bbe5e76411377b491fc930e721",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-106",
+    "image": "data/training/functional-v2-20261104/inputs/development-106/restore-exposure-strong.png",
+    "input_sha256": "5ae950314f297336eda7d303200ac1a88705ecd8086d21545249a3cfc57a475f",
+    "instructions": {
+      "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+      "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+    },
+    "family": "lighting",
+    "action": "restore-exposure-strong",
+    "expected_change": "修复可见的曝光不足，恢复自然观感；两种问题程度应采用不同力度。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored restoration request + known synthetic degradation, directly reviewed target required",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3s58dj_3s58dj.jpg",
+    "original_source_sha256": "a2ee7144c07db880b5182fd3e8f13bbf7d7279bde46766f639d66606b6db9cdf",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-106/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-106-restore-exposure-strong.png",
+    "target_sha256": "62884f1277187ce37f3681c1c62d9c3d2f7a7c5fc5afb8e7aa6593098c538a64",
+    "parameters": {
+      "exposure": 75
+    },
+    "degradation": {
+      "exposure": -75
+    },
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-106-style-shadows-weak",
+    "group_id": "7f53fe2d6a190242c173c12a9da5d7f4461811bbe5e76411377b491fc930e721",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-106",
+    "image": "data/training/functional-v2-20261104/inputs/development-106/original.png",
+    "input_sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+    "instructions": {
+      "zh": "我想让这张照片轻微压暗阴影，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, slightly darken the shadows while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "lighting",
+    "action": "style-shadows-weak",
+    "expected_change": "轻微按指定方向调整shadows；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3s58dj_3s58dj.jpg",
+    "original_source_sha256": "a2ee7144c07db880b5182fd3e8f13bbf7d7279bde46766f639d66606b6db9cdf",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-106/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-106-style-shadows-weak.png",
+    "target_sha256": "fb91d036c91990eeda66a4f5708813f2774d4bd23d202b63fd9b903825fb0492",
+    "parameters": {
+      "shadows": -12
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-106-style-shadows-strong",
+    "group_id": "7f53fe2d6a190242c173c12a9da5d7f4461811bbe5e76411377b491fc930e721",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-106",
+    "image": "data/training/functional-v2-20261104/inputs/development-106/original.png",
+    "input_sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+    "instructions": {
+      "zh": "我想让这张照片明显压暗阴影，保留主体和细节，其他效果保持自然。",
+      "en": "For this photograph, noticeably darken the shadows while preserving the subject and detail; keep other aspects natural."
+    },
+    "family": "lighting",
+    "action": "style-shadows-strong",
+    "expected_change": "明显按指定方向调整shadows；同图两档要求必须有可辨认的力度差异。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored counterfactual strength request",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3s58dj_3s58dj.jpg",
+    "original_source_sha256": "a2ee7144c07db880b5182fd3e8f13bbf7d7279bde46766f639d66606b6db9cdf",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-106/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-106-style-shadows-strong.png",
+    "target_sha256": "6307fb6177cd133cb3e0bef822750f9b3d8f11bba5de8f492b007adda8e14f3b",
+    "parameters": {
+      "shadows": -36
+    },
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  },
+  {
+    "id": "development-106-identity",
+    "group_id": "7f53fe2d6a190242c173c12a9da5d7f4461811bbe5e76411377b491fc930e721",
+    "split": "development",
+    "domain": "landscape",
+    "source_id": "development-106",
+    "image": "data/training/functional-v2-20261104/inputs/development-106/original.png",
+    "input_sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+    "instructions": {
+      "zh": "请保持这张照片原样，不需要任何修图或自动增强。",
+      "en": "Keep this photograph exactly as supplied. Do not edit or automatically enhance it."
+    },
+    "family": "identity",
+    "action": "identity",
+    "expected_change": "按要求直接返回原图，像素保持原样。",
+    "must_preserve": "保持景物结构、天空层次、植被和水面自然色彩，保留明暗细节。",
+    "failure_conditions": [
+      "未完成要求的方向或力度",
+      "过曝、暗部明显丢失、额外偏色或结构改动",
+      "复合要求有任何一项遗漏"
+    ],
+    "instruction_origin": "AI-authored explicit no-op, including visibly degraded photos",
+    "english_origin": "AI-authored or AI translation, not a user trial request",
+    "original_source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3s58dj_3s58dj.jpg",
+    "original_source_sha256": "a2ee7144c07db880b5182fd3e8f13bbf7d7279bde46766f639d66606b6db9cdf",
+    "original_pool_request": "",
+    "canonical_photo": "data/training/functional-v2-20261104/inputs/development-106/original.png",
+    "target": "data/training/functional-v2-20261104/targets/development-106-identity.png",
+    "target_sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+    "parameters": {},
+    "degradation": null,
+    "status": "unverified_candidate_not_training_data",
+    "editor": "functional-editor-v1.2-sepia",
+    "target_input_policy": "Target/canonical photo/parameters/review never enter model input."
+  }
+]

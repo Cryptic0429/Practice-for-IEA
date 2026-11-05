@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-05T04:17:56.945921+00:00",
+  "status": "source_requests_and_criteria_frozen_before_round6_training_or_output",
+  "cases": 20,
+  "language_rows": 40,
+  "domains": {
+    "portrait": 10,
+    "landscape": 10
+  },
+  "cases_sha256": "57e925135e2b7e076848aaa805b6a5ec6d167829f464ddf7d15c7889b7de0dca",
+  "source_isolation_sha256": "e497a52101767412ac21565cd8206ec241ab2d89947dc90733e549add31c2f28",
+  "source_conflict_resolution_sha256": null,
+  "source_manifest_sha256": "08a83e79b0fc7b31886a3ec24f70704e857cedac3d83cff00e624c88a33caa80",
+  "observations_sha256": "cc6079d25fefdb4da0e779c9e98e0fbecb78a121fa8c4fda44f29879d20ef8a5",
+  "implementation_sha256": "198ebfa15a704c22c72a2ff78addfe064fc2f98f08987ecdeebb0d0dcde44143",
+  "overlap_existing_controlled_acceptance_groups": 0,
+  "opening_rule": "No model outputs until final weights, parser, prompt and editor are locked after developmental selection. No checkpoint replacement or parameter changes on these outcomes.",
+  "history": "Source photographs directly viewed now to define tasks, not new unviewed photos. Original reserved test partition, no reference/output used in this freeze, no user feedback. Prior datasets have been evaluated historically; do not call it a pristine newly collected independent human test.",
+  "training_data_admitted": false,
+  "candidate_model_inference_started": false
+}

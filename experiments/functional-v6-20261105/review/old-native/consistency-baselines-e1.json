@@ -1,0 +1,232 @@
+{
+  "at": "2026-11-05T06:57:30.699190+00:00",
+  "historical_source_hashes": {
+    "experiments/functional-v2-20261104/review/natural-use/codex-observations.jsonl": "8dcd52f113d8cf7c2f48d10692918e619d54bb93c5452da30b8361bbafdea460",
+    "experiments/functional-v3-20261104/review/natural-use/codex-observations.jsonl": "79bd8dfd38bb2fbbdf219ef567a91b522e1f75d2d66f12b8ea257c17e4620d86",
+    "experiments/functional-v4-20261105/review/natural-use/codex-observations.jsonl": "6ecb99cacc7ddb4c49f88b1f1099fb60d6031a0bf2924a13c617f827ab85de71",
+    "experiments/functional-v5-20261105/review/natural-use/codex-observations.jsonl": "8cdfb75f6ed45417205ac10cf9b7031d586f58718a5017ce030a9de6e41d4d73"
+  },
+  "disagreements": [
+    {
+      "item_id": "25f4c96299238fb8",
+      "case_id": "natural-028",
+      "fresh": {
+        "completion": "partial",
+        "quality": "acceptable",
+        "evidence": "The portrait remains too close to the original brightness; the requested lift is not clearly visible."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v2-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "completed",
+          "quality": "acceptable",
+          "evidence": "面部、衣物和背景均有所提亮，没有额外明显偏色或大面积泛白。"
+        },
+        {
+          "file": "experiments/functional-v3-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "completed",
+          "quality": "acceptable",
+          "evidence": "面部、衣物和背景均有所提亮，没有额外明显偏色或大面积泛白。"
+        },
+        {
+          "file": "experiments/functional-v4-20261105/review/natural-use/codex-observations.jsonl",
+          "completion": "completed",
+          "quality": "acceptable",
+          "evidence": "面部、衣物和背景均有所提亮，没有额外明显偏色或大面积泛白。"
+        }
+      ],
+      "disagreed_fields": [
+        "completion"
+      ]
+    },
+    {
+      "item_id": "f86d5e048abd7c40",
+      "case_id": "natural-028",
+      "fresh": {
+        "completion": "completed",
+        "quality": "major_issue",
+        "evidence": "The portrait is overbrightened, clipping much of the white shirt and pale background/skin."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v2-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "提亮过度，白衬衫、脸部和天空大面积发白；存在严重高光损失，不能作为合格结果。"
+        },
+        {
+          "file": "experiments/functional-v3-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "提亮过度，白衬衫、脸部和天空大面积发白；存在严重高光损失，不能作为合格结果。"
+        },
+        {
+          "file": "experiments/functional-v4-20261105/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "提亮过度，白衬衫、脸部和天空大面积发白；存在严重高光损失，不能作为合格结果。"
+        }
+      ],
+      "disagreed_fields": [
+        "completion"
+      ]
+    },
+    {
+      "item_id": "13ced311b1b4d6f9",
+      "case_id": "natural-033",
+      "fresh": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "The woman and foliage become modestly brighter and more colourful with face and dress structure retained."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v2-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "acceptable",
+          "evidence": "绿叶更鲜艳，但人物和画面整体未得到足够可见的提亮，双项请求只明确完成了色彩部分。"
+        },
+        {
+          "file": "experiments/functional-v3-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "acceptable",
+          "evidence": "绿叶更鲜艳，但人物和画面整体未得到足够可见的提亮，双项请求只明确完成了色彩部分。"
+        },
+        {
+          "file": "experiments/functional-v4-20261105/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "acceptable",
+          "evidence": "绿叶更鲜艳，但人物和画面整体未得到足够可见的提亮，双项请求只明确完成了色彩部分。"
+        }
+      ],
+      "disagreed_fields": [
+        "completion"
+      ]
+    },
+    {
+      "item_id": "1c45cdb3e86a0f3c",
+      "case_id": "natural-019",
+      "fresh": {
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "The scene becomes warmer and brighter, but cloud/horizon tones become excessively pale and lose useful gradation."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v2-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "minor_issue",
+          "evidence": "画面提亮并变暖，但天空云霞泛白、暖色层次减弱，质量副作用使结果不能算完整合格。"
+        },
+        {
+          "file": "experiments/functional-v3-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "minor_issue",
+          "evidence": "画面提亮并变暖，但天空云霞泛白、暖色层次减弱，质量副作用使结果不能算完整合格。"
+        },
+        {
+          "file": "experiments/functional-v4-20261105/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "minor_issue",
+          "evidence": "画面提亮并变暖，但天空云霞泛白、暖色层次减弱，质量副作用使结果不能算完整合格。"
+        }
+      ],
+      "disagreed_fields": [
+        "completion"
+      ]
+    },
+    {
+      "item_id": "492cc12e000e8e1f",
+      "case_id": "natural-019",
+      "fresh": {
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "The larger warm brightness lift washes out part of the pale cloud/horizon gradation."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v3-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "minor_issue",
+          "evidence": "整体提亮并转暖，但云霞色彩与天空渐变泛白变薄，有亮部层次副作用，不能完整合格。"
+        },
+        {
+          "file": "experiments/functional-v4-20261105/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "minor_issue",
+          "evidence": "整体提亮并转暖，但云霞色彩与天空渐变泛白变薄，有亮部层次副作用，不能完整合格。"
+        }
+      ],
+      "disagreed_fields": [
+        "completion"
+      ]
+    },
+    {
+      "item_id": "c841fd86cee80b30",
+      "case_id": "natural-019",
+      "fresh": {
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "The scene warms and brightens but too much pale cloud gradation is lost around the horizon."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v2-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "minor_issue",
+          "evidence": "虽然亮度和暖色同时提高，天空明显发白，原有云霞色彩层次受损。"
+        },
+        {
+          "file": "experiments/functional-v3-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "minor_issue",
+          "evidence": "虽然亮度和暖色同时提高，天空明显发白，原有云霞色彩层次受损。"
+        },
+        {
+          "file": "experiments/functional-v4-20261105/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "minor_issue",
+          "evidence": "虽然亮度和暖色同时提高，天空明显发白，原有云霞色彩层次受损。"
+        }
+      ],
+      "disagreed_fields": [
+        "completion"
+      ]
+    },
+    {
+      "item_id": "f718aa34511a8dd2",
+      "case_id": "natural-030",
+      "fresh": {
+        "completion": "failed",
+        "quality": "minor_issue",
+        "evidence": "The scene is visibly lighter and flatter instead of substantially darker."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v2-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "acceptable",
+          "evidence": "只作较小幅度压暗，仍不能称为把照片明显调暗，未见明显额外质量损失。"
+        },
+        {
+          "file": "experiments/functional-v3-20261104/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "acceptable",
+          "evidence": "只作较小幅度压暗，仍不能称为把照片明显调暗，未见明显额外质量损失。"
+        },
+        {
+          "file": "experiments/functional-v4-20261105/review/natural-use/codex-observations.jsonl",
+          "completion": "partial",
+          "quality": "acceptable",
+          "evidence": "只作较小幅度压暗，仍不能称为把照片明显调暗，未见明显额外质量损失。"
+        }
+      ],
+      "disagreed_fields": [
+        "completion",
+        "quality"
+      ]
+    }
+  ],
+  "scope": "Same semantic/output hash only. Older reviews include inherited records, not independent reviewers. Original files and first fresh observations stay immutable.",
+  "policy": "Disputed fields uncertain; never silently reuse a favourable opinion. Different outputs still require actual direct viewing."
+}

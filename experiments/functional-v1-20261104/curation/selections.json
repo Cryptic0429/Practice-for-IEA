@@ -1,0 +1,1100 @@
+[
+  {
+    "case_id": "train-001",
+    "base_proposal": {
+      "response": "```json\n{\n  \"exposure\": 10,\n  \"brightness\": 10,\n  \"contrast\": 10,\n  \"highlights\": 10,\n  \"shadows\": 10,\n  \"saturation\": 0,\n  \"temperature\": 0,\n  \"tint\": 0,\n  \"sepia\": 0\n}\n```",
+      "parameters": {
+        "exposure": 10,
+        "brightness": 10,
+        "contrast": 10,
+        "highlights": 10,
+        "shadows": 10,
+        "saturation": 0,
+        "temperature": 0,
+        "tint": 0,
+        "sepia": 0
+      },
+      "valid": true,
+      "reused_from_previous_frozen_proposal": true
+    },
+    "evaluations": [
+      {
+        "candidate": {
+          "candidate_id": "candidate-01",
+          "parameters": {
+            "shadows": 55
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-001/candidate-01.png",
+          "sha256": "9b8ff74ec51c07dbdb8c4d9bfeb16188f49f926707abebc2e6b564bd79afcdb0",
+          "statistics": {
+            "mean_luminance": 0.402385950088501,
+            "luminance_std": 0.34036704897880554,
+            "saturation": 0.0,
+            "warmth": 0.0,
+            "white_clip_fraction": 0.05235678585159554,
+            "black_clip_fraction": 0.025693963860053827
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The darker areas of the photo have been slightly brightened, enhancing the overall visibility without affecting the bright areas or the sky detail.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The darker areas of the photo have been slightly brightened, enhancing the overall visibility without affecting the bright areas or the sky detail.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "base-proposal",
+          "parameters": {
+            "exposure": 10,
+            "brightness": 10,
+            "contrast": 10,
+            "highlights": 10,
+            "shadows": 10,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "sepia": 0
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-001/base-proposal.png",
+          "sha256": "2d9a091850ea484127145861b83ff9dd58a0ed0e6f187643c40ea80f6e46800b",
+          "origin": "frozen_original_qwen_proposal"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The darker areas of the photo have been lifted, improving the visibility of the subject's features without affecting the bright areas or the sky.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The darker areas of the photo have been lifted, improving the visibility of the subject's features without affecting the bright areas or the sky.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-02",
+          "parameters": {
+            "shadows": 69
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-001/candidate-02.png",
+          "sha256": "e9ea8e0a242d12102a2dccd44bec6e013e8a27d827effa3fc2fb34226017f0a8",
+          "statistics": {
+            "mean_luminance": 0.4124903678894043,
+            "luminance_std": 0.33451640605926514,
+            "saturation": 0.0,
+            "warmth": 0.0,
+            "white_clip_fraction": 0.05235678585159554,
+            "black_clip_fraction": 0.025693963860053827
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The darker areas of the photo have been lifted, improving the visibility of the subject's features without affecting the bright areas or the sky.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The darker areas of the photo have been lifted, improving the visibility of the subject's features without affecting the bright areas or the sky.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-00",
+          "parameters": {
+            "shadows": 41
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-001/candidate-00.png",
+          "sha256": "8799fe1bd4603dda63537fb54cf41134ea20e84c9ec5c25e836288e80a1cec66",
+          "statistics": {
+            "mean_luminance": 0.39286884665489197,
+            "luminance_std": 0.3456973135471344,
+            "saturation": 0.0,
+            "warmth": 0.0,
+            "white_clip_fraction": 0.05235678585159554,
+            "black_clip_fraction": 0.025693963860053827
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The darker areas of the photo have been slightly brightened, enhancing the visibility of the subject's features without affecting the bright areas or the sky.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The darker areas of the photo have been slightly brightened, enhancing the visibility of the subject's features without affecting the bright areas or the sky.\"\n}\n```"
+        }
+      }
+    ],
+    "selected": {
+      "candidate_id": "candidate-01",
+      "parameters": {
+        "shadows": 55
+      },
+      "image": "data/training/functional-v1-20261104/candidates-v1.2/train-001/candidate-01.png",
+      "sha256": "9b8ff74ec51c07dbdb8c4d9bfeb16188f49f926707abebc2e6b564bd79afcdb0",
+      "statistics": {
+        "mean_luminance": 0.402385950088501,
+        "luminance_std": 0.34036704897880554,
+        "saturation": 0.0,
+        "warmth": 0.0,
+        "white_clip_fraction": 0.05235678585159554,
+        "black_clip_fraction": 0.025693963860053827
+      },
+      "visual_preview_max_edge": 1024,
+      "origin": "controlled_tool_proposal_not_original_reference_optimization"
+    },
+    "status": "awaiting_direct_codex_visual_review",
+    "reviewed_at": "2026-11-04T06:35:42.051720+00:00"
+  },
+  {
+    "case_id": "train-002",
+    "base_proposal": {
+      "response": "```json\n{\n  \"exposure\": -20,\n  \"brightness\": -20,\n  \"contrast\": -10,\n  \"highlights\": -10,\n  \"shadows\": 10,\n  \"saturation\": 0,\n  \"temperature\": 0,\n  \"tint\": 0,\n  \"sepia\": 0\n}\n```",
+      "parameters": {
+        "exposure": -20,
+        "brightness": -20,
+        "contrast": -10,
+        "highlights": -10,
+        "shadows": 10,
+        "saturation": 0,
+        "temperature": 0,
+        "tint": 0,
+        "sepia": 0
+      },
+      "valid": true,
+      "reused_from_previous_frozen_proposal": true
+    },
+    "evaluations": [
+      {
+        "candidate": {
+          "candidate_id": "candidate-01",
+          "parameters": {
+            "highlights": -40
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-002/candidate-01.png",
+          "sha256": "3369db3cc3af9f160dc30c3904b391436d13a1f0c4aee28c391e96952f108ad8",
+          "statistics": {
+            "mean_luminance": 0.33275046944618225,
+            "luminance_std": 0.3070729076862335,
+            "saturation": 0.0,
+            "warmth": 0.0,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 0.04846212995001922
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "failed",
+          "quality": "major_issue",
+          "strength": "excessive",
+          "evidence": "The photo has been over-darkened, resulting in a significant loss of detail in the subject's face and hair, which does not align with the request to moderately darken the photo for softer light.",
+          "raw_response": "```json\n{\n  \"completion\": \"failed\",\n  \"quality\": \"major_issue\",\n  \"strength\": \"excessive\",\n  \"evidence\": \"The photo has been over-darkened, resulting in a significant loss of detail in the subject's face and hair, which does not align with the request to moderately darken the photo for softer light.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "base-proposal",
+          "parameters": {
+            "exposure": -20,
+            "brightness": -20,
+            "contrast": -10,
+            "highlights": -10,
+            "shadows": 10,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "sepia": 0
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-002/base-proposal.png",
+          "sha256": "53b3363e4d513bec8b499c502726a809d1b61ddbda618cef0785a782b75c8d61",
+          "origin": "frozen_original_qwen_proposal"
+        },
+        "assessment": {
+          "completion": "partial",
+          "quality": "acceptable",
+          "strength": "insufficient",
+          "evidence": "The photo appears to have been slightly darkened, but the overall brightness remains high, and the shadow detail is not fully preserved.",
+          "raw_response": "```json\n{\n  \"completion\": \"partial\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"insufficient\",\n  \"evidence\": \"The photo appears to have been slightly darkened, but the overall brightness remains high, and the shadow detail is not fully preserved.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-00",
+          "parameters": {
+            "highlights": -30
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-002/candidate-00.png",
+          "sha256": "a8d6cedca1d8cc73af6c12cf81dfb15c7071dbaa7f46e44c7acc83d44f300d29",
+          "statistics": {
+            "mean_luminance": 0.34164074063301086,
+            "luminance_std": 0.3197748363018036,
+            "saturation": 0.0,
+            "warmth": 0.0,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 0.04846212995001922
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "partial",
+          "quality": "minor_issue",
+          "strength": "insufficient",
+          "evidence": "The photo appears to have been slightly over-darkened, which reduces the contrast and makes the image appear less bright than intended.",
+          "raw_response": "```json\n{\n  \"completion\": \"partial\",\n  \"quality\": \"minor_issue\",\n  \"strength\": \"insufficient\",\n  \"evidence\": \"The photo appears to have been slightly over-darkened, which reduces the contrast and makes the image appear less bright than intended.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-02",
+          "parameters": {
+            "highlights": -50
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-002/candidate-02.png",
+          "sha256": "fdc850b5a496c1a2aa48fe2948ebd84a13a482f61cb8a0ca914a4abbaf629ddd",
+          "statistics": {
+            "mean_luminance": 0.32387208938598633,
+            "luminance_std": 0.2944597899913788,
+            "saturation": 0.0,
+            "warmth": 0.0,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 0.04846212995001922
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "failed",
+          "quality": "major_issue",
+          "strength": "excessive",
+          "evidence": "The photo has been over-darkened, resulting in a significant loss of detail in the subject's face and hair, which does not align with the request to moderately darken the photo for softer light.",
+          "raw_response": "```json\n{\n  \"completion\": \"failed\",\n  \"quality\": \"major_issue\",\n  \"strength\": \"excessive\",\n  \"evidence\": \"The photo has been over-darkened, resulting in a significant loss of detail in the subject's face and hair, which does not align with the request to moderately darken the photo for softer light.\"\n}\n```"
+        }
+      }
+    ],
+    "selected": null,
+    "status": "needs_label_revision",
+    "reviewed_at": "2026-11-04T06:35:54.592233+00:00"
+  },
+  {
+    "case_id": "train-003",
+    "base_proposal": {
+      "response": "```json\n{\n  \"exposure\": 10,\n  \"brightness\": 10,\n  \"highlights\": 10,\n  \"shadows\": 10\n}\n```",
+      "parameters": {
+        "exposure": 10,
+        "brightness": 10,
+        "highlights": 10,
+        "shadows": 10
+      },
+      "valid": true,
+      "reused_from_previous_frozen_proposal": true
+    },
+    "evaluations": [
+      {
+        "candidate": {
+          "candidate_id": "candidate-00",
+          "parameters": {
+            "shadows": 41
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-003/candidate-00.png",
+          "sha256": "59d3fa5ccd114fa906b19b7d62d2b510041b5236d72dfc42fbb704752a322eea",
+          "statistics": {
+            "mean_luminance": 0.4791029691696167,
+            "luminance_std": 0.2712151110172272,
+            "saturation": 0.5198683142662048,
+            "warmth": 0.33583423495292664,
+            "white_clip_fraction": 0.018962184297218156,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The photo has been slightly brightened, enhancing the visibility of shadow details without causing overexposure.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The photo has been slightly brightened, enhancing the visibility of shadow details without causing overexposure.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "base-proposal",
+          "parameters": {
+            "exposure": 10,
+            "brightness": 10,
+            "highlights": 10,
+            "shadows": 10
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-003/base-proposal.png",
+          "sha256": "aa03d4b366da977f9c58ee24442db443d9c71e517beb623fda5a4888f7fce89b",
+          "origin": "frozen_original_qwen_proposal"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The photo has been brightened, revealing more shadow detail without causing overexposure.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The photo has been brightened, revealing more shadow detail without causing overexposure.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-02",
+          "parameters": {
+            "shadows": 69
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-003/candidate-02.png",
+          "sha256": "a8b279bc66a5c6167305cf90428c630f779114897a5c4e2ea2bc02656daa246a",
+          "statistics": {
+            "mean_luminance": 0.49700504541397095,
+            "luminance_std": 0.25796735286712646,
+            "saturation": 0.5004993677139282,
+            "warmth": 0.33429092168807983,
+            "white_clip_fraction": 0.018962184297218156,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The photo has been slightly brightened, enhancing the visibility of shadows without causing overexposure.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The photo has been slightly brightened, enhancing the visibility of shadows without causing overexposure.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-01",
+          "parameters": {
+            "shadows": 55
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-003/candidate-01.png",
+          "sha256": "abaee23392c38805a6aa253d0ba813e8a779a837705bfcfcaaed45a9ba6f5a93",
+          "statistics": {
+            "mean_luminance": 0.487959086894989,
+            "luminance_std": 0.26473483443260193,
+            "saturation": 0.5102577209472656,
+            "warmth": 0.33526909351348877,
+            "white_clip_fraction": 0.018962184297218156,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The photo has been slightly brightened, enhancing the visibility of shadow details without causing overexposure.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The photo has been slightly brightened, enhancing the visibility of shadow details without causing overexposure.\"\n}\n```"
+        }
+      }
+    ],
+    "selected": {
+      "candidate_id": "candidate-01",
+      "parameters": {
+        "shadows": 55
+      },
+      "image": "data/training/functional-v1-20261104/candidates-v1.2/train-003/candidate-01.png",
+      "sha256": "abaee23392c38805a6aa253d0ba813e8a779a837705bfcfcaaed45a9ba6f5a93",
+      "statistics": {
+        "mean_luminance": 0.487959086894989,
+        "luminance_std": 0.26473483443260193,
+        "saturation": 0.5102577209472656,
+        "warmth": 0.33526909351348877,
+        "white_clip_fraction": 0.018962184297218156,
+        "black_clip_fraction": 0.0
+      },
+      "visual_preview_max_edge": 1024,
+      "origin": "controlled_tool_proposal_not_original_reference_optimization"
+    },
+    "status": "awaiting_direct_codex_visual_review",
+    "reviewed_at": "2026-11-04T06:36:08.199473+00:00"
+  },
+  {
+    "case_id": "train-004",
+    "base_proposal": {
+      "response": "```json\n{\n  \"exposure\": -10,\n  \"brightness\": -10,\n  \"highlights\": -10,\n  \"shadows\": 10\n}\n```",
+      "parameters": {
+        "exposure": -10,
+        "brightness": -10,
+        "highlights": -10,
+        "shadows": 10
+      },
+      "valid": true,
+      "reused_from_previous_frozen_proposal": true
+    },
+    "evaluations": [
+      {
+        "candidate": {
+          "candidate_id": "base-proposal",
+          "parameters": {
+            "exposure": -10,
+            "brightness": -10,
+            "highlights": -10,
+            "shadows": 10
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-004/base-proposal.png",
+          "sha256": "7620a2f605d3aeadb71aa0cc5aa75333a7f7cb0c4ff6fb05f50a62fa2d8aa4c9",
+          "origin": "frozen_original_qwen_proposal"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The photograph has been darkened slightly, maintaining the visibility of details in the shadows without making them pure black.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The photograph has been darkened slightly, maintaining the visibility of details in the shadows without making them pure black.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-00",
+          "parameters": {
+            "highlights": -30
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-004/candidate-00.png",
+          "sha256": "dde107d40ad926a78d6a4b215457795b9c39a0024141a787a88285140da78995",
+          "statistics": {
+            "mean_luminance": 0.42890405654907227,
+            "luminance_std": 0.2555187940597534,
+            "saturation": 0.5461234450340271,
+            "warmth": 0.32355666160583496,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The photograph has been darkened slightly, maintaining the visibility of details in the shadows without making them pure black.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The photograph has been darkened slightly, maintaining the visibility of details in the shadows without making them pure black.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-01",
+          "parameters": {
+            "highlights": -40
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-004/candidate-01.png",
+          "sha256": "80833013cb39e7276a424ed8b6d328982f9412890ec9ce7a344515ea76f5ca51",
+          "statistics": {
+            "mean_luminance": 0.42018863558769226,
+            "luminance_std": 0.24487130343914032,
+            "saturation": 0.5460692048072815,
+            "warmth": 0.31973549723625183,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The photograph has been darkened slightly, maintaining the visibility of details in the shadows without making them pure black.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The photograph has been darkened slightly, maintaining the visibility of details in the shadows without making them pure black.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-02",
+          "parameters": {
+            "highlights": -50
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-004/candidate-02.png",
+          "sha256": "5cf413b43948262c5de53b1a112fd2ee7a77c332ddaf3733ac3eea98a9fb7efc",
+          "statistics": {
+            "mean_luminance": 0.41149669885635376,
+            "luminance_std": 0.23439262807369232,
+            "saturation": 0.5461163520812988,
+            "warmth": 0.31596237421035767,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The photograph has been darkened slightly, maintaining the visibility of details in the shadows without making them pure black.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The photograph has been darkened slightly, maintaining the visibility of details in the shadows without making them pure black.\"\n}\n```"
+        }
+      }
+    ],
+    "selected": {
+      "candidate_id": "candidate-01",
+      "parameters": {
+        "highlights": -40
+      },
+      "image": "data/training/functional-v1-20261104/candidates-v1.2/train-004/candidate-01.png",
+      "sha256": "80833013cb39e7276a424ed8b6d328982f9412890ec9ce7a344515ea76f5ca51",
+      "statistics": {
+        "mean_luminance": 0.42018863558769226,
+        "luminance_std": 0.24487130343914032,
+        "saturation": 0.5460692048072815,
+        "warmth": 0.31973549723625183,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "visual_preview_max_edge": 1024,
+      "origin": "controlled_tool_proposal_not_original_reference_optimization"
+    },
+    "status": "awaiting_direct_codex_visual_review",
+    "reviewed_at": "2026-11-04T06:36:22.202720+00:00"
+  },
+  {
+    "case_id": "train-005",
+    "base_proposal": {
+      "response": "```json\n{\n  \"shadows\": 50\n}\n```",
+      "parameters": {
+        "shadows": 50
+      },
+      "valid": true,
+      "reused_from_previous_frozen_proposal": true
+    },
+    "evaluations": [
+      {
+        "candidate": {
+          "candidate_id": "candidate-02",
+          "parameters": {
+            "shadows": 69
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-005/candidate-02.png",
+          "sha256": "f1472df30d46e24c78afc8415afd1ea3fdbd13b4e34447d8b0fc785777da4d76",
+          "statistics": {
+            "mean_luminance": 0.509867787361145,
+            "luminance_std": 0.07722488045692444,
+            "saturation": 0.15835073590278625,
+            "warmth": 0.06024760380387306,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The shadows in the 'AFTER' image are moderately lifted, improving the visibility of the dark areas without overexposing the highlights.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The shadows in the 'AFTER' image are moderately lifted, improving the visibility of the dark areas without overexposing the highlights.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-00",
+          "parameters": {
+            "shadows": 41
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-005/candidate-00.png",
+          "sha256": "fa6228e321fc9887aeeda1e343790acd0d4a4a1b1b9a0b2fbba9ac2715e4a837",
+          "statistics": {
+            "mean_luminance": 0.4954678416252136,
+            "luminance_std": 0.08299888670444489,
+            "saturation": 0.16603408753871918,
+            "warmth": 0.06118542328476906,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The shadows in the 'AFTER' image are moderately lifted, improving the visibility of the dark areas without overexposing the highlights.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The shadows in the 'AFTER' image are moderately lifted, improving the visibility of the dark areas without overexposing the highlights.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "base-proposal",
+          "parameters": {
+            "shadows": 50
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-005/base-proposal.png",
+          "sha256": "055c12e5f6728bb6daea7ae36af5d0b5e2368280e8a827c368f35201bb29ec7f",
+          "origin": "frozen_original_qwen_proposal"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The shadows in the 'AFTER' image are moderately lifted, improving the visibility of the dark areas without overexposing the highlights.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The shadows in the 'AFTER' image are moderately lifted, improving the visibility of the dark areas without overexposing the highlights.\"\n}\n```",
+          "reused_from_identical_image_review": true
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-01",
+          "parameters": {
+            "shadows": 55
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-005/candidate-01.png",
+          "sha256": "4edefeed360f72b9efc3cdca0c9df875c12a938859bff01370e71197863a6c3a",
+          "statistics": {
+            "mean_luminance": 0.5027658939361572,
+            "luminance_std": 0.08008217066526413,
+            "saturation": 0.16215358674526215,
+            "warmth": 0.06075217202305794,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The shadows in the 'AFTER' image are moderately lifted, improving the visibility of the dark areas without overexposing the highlights.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The shadows in the 'AFTER' image are moderately lifted, improving the visibility of the dark areas without overexposing the highlights.\"\n}\n```"
+        }
+      }
+    ],
+    "selected": {
+      "candidate_id": "candidate-01",
+      "parameters": {
+        "shadows": 55
+      },
+      "image": "data/training/functional-v1-20261104/candidates-v1.2/train-005/candidate-01.png",
+      "sha256": "4edefeed360f72b9efc3cdca0c9df875c12a938859bff01370e71197863a6c3a",
+      "statistics": {
+        "mean_luminance": 0.5027658939361572,
+        "luminance_std": 0.08008217066526413,
+        "saturation": 0.16215358674526215,
+        "warmth": 0.06075217202305794,
+        "white_clip_fraction": 0.0,
+        "black_clip_fraction": 0.0
+      },
+      "visual_preview_max_edge": 1024,
+      "origin": "controlled_tool_proposal_not_original_reference_optimization"
+    },
+    "status": "awaiting_direct_codex_visual_review",
+    "reviewed_at": "2026-11-04T06:36:31.166748+00:00"
+  },
+  {
+    "case_id": "train-006",
+    "base_proposal": {
+      "response": "```json\n{\n  \"exposure\": -10,\n  \"brightness\": -10,\n  \"contrast\": -10,\n  \"highlights\": -10,\n  \"shadows\": 10,\n  \"saturation\": 0,\n  \"temperature\": 0,\n  \"tint\": 0,\n  \"sepia\": 0\n}\n```",
+      "parameters": {
+        "exposure": -10,
+        "brightness": -10,
+        "contrast": -10,
+        "highlights": -10,
+        "shadows": 10,
+        "saturation": 0,
+        "temperature": 0,
+        "tint": 0,
+        "sepia": 0
+      },
+      "valid": true,
+      "reused_from_previous_frozen_proposal": true
+    },
+    "evaluations": [
+      {
+        "candidate": {
+          "candidate_id": "candidate-01",
+          "parameters": {
+            "highlights": -40
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-006/candidate-01.png",
+          "sha256": "27fd5e8f0b68ddf47a6837128bd18503825a32498fb64c28bca7cd9dea816fd7",
+          "statistics": {
+            "mean_luminance": 0.4542153477668762,
+            "luminance_std": 0.08019756525754929,
+            "saturation": 0.17722544074058533,
+            "warmth": 0.06035969406366348,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "failed",
+          "quality": "major_issue",
+          "strength": "excessive",
+          "evidence": "The image has been overedited, resulting in a significant loss of detail and an unnatural brightening of the entire scene.",
+          "raw_response": "```json\n{\n  \"completion\": \"failed\",\n  \"quality\": \"major_issue\",\n  \"strength\": \"excessive\",\n  \"evidence\": \"The image has been overedited, resulting in a significant loss of detail and an unnatural brightening of the entire scene.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-02",
+          "parameters": {
+            "highlights": -50
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-006/candidate-02.png",
+          "sha256": "96f492ec6259748dc5a14b99a6f518d6972fb3aa878731b3bbfd47aa817c75a3",
+          "statistics": {
+            "mean_luminance": 0.44944608211517334,
+            "luminance_std": 0.07742106914520264,
+            "saturation": 0.17722925543785095,
+            "warmth": 0.05993847921490669,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "failed",
+          "quality": "major_issue",
+          "strength": "excessive",
+          "evidence": "The image has been overedited, resulting in a significant loss of detail and an unnatural brightening of the entire scene.",
+          "raw_response": "```json\n{\n  \"completion\": \"failed\",\n  \"quality\": \"major_issue\",\n  \"strength\": \"excessive\",\n  \"evidence\": \"The image has been overedited, resulting in a significant loss of detail and an unnatural brightening of the entire scene.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "base-proposal",
+          "parameters": {
+            "exposure": -10,
+            "brightness": -10,
+            "contrast": -10,
+            "highlights": -10,
+            "shadows": 10,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "sepia": 0
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-006/base-proposal.png",
+          "sha256": "a4db3c428f02edaf882c7a8d828b0553474e51732535dc0c6eaeae039b80a645",
+          "origin": "frozen_original_qwen_proposal"
+        },
+        "assessment": {
+          "completion": "failed",
+          "quality": "major_issue",
+          "strength": "excessive",
+          "evidence": "The image has been overedited, resulting in a significant loss of detail and an unnatural color cast, which does not align with the requested tone adjustment.",
+          "raw_response": "```json\n{\n  \"completion\": \"failed\",\n  \"quality\": \"major_issue\",\n  \"strength\": \"excessive\",\n  \"evidence\": \"The image has been overedited, resulting in a significant loss of detail and an unnatural color cast, which does not align with the requested tone adjustment.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-00",
+          "parameters": {
+            "highlights": -30
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-006/candidate-00.png",
+          "sha256": "999d6126996555222027994e34699c1e4dacf2378e9eb698e6f2ad3f1f7cf248",
+          "statistics": {
+            "mean_luminance": 0.45884838700294495,
+            "luminance_std": 0.08307681232690811,
+            "saturation": 0.176931694149971,
+            "warmth": 0.06052972376346588,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "partial",
+          "quality": "acceptable",
+          "strength": "insufficient",
+          "evidence": "The image appears to have been slightly darkened, reducing the brightness of the bright areas as requested, but the overall tone and details of the original image are preserved.",
+          "raw_response": "```json\n{\n  \"completion\": \"partial\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"insufficient\",\n  \"evidence\": \"The image appears to have been slightly darkened, reducing the brightness of the bright areas as requested, but the overall tone and details of the original image are preserved.\"\n}\n```"
+        }
+      }
+    ],
+    "selected": null,
+    "status": "needs_label_revision",
+    "reviewed_at": "2026-11-04T06:36:43.487372+00:00"
+  },
+  {
+    "case_id": "train-007",
+    "base_proposal": {
+      "response": "```json\n{\n  \"exposure\": 10,\n  \"brightness\": 10,\n  \"contrast\": 10,\n  \"highlights\": 10,\n  \"shadows\": 10,\n  \"saturation\": 0,\n  \"temperature\": 0,\n  \"tint\": 0,\n  \"sepia\": 0\n}\n```",
+      "parameters": {
+        "exposure": 10,
+        "brightness": 10,
+        "contrast": 10,
+        "highlights": 10,
+        "shadows": 10,
+        "saturation": 0,
+        "temperature": 0,
+        "tint": 0,
+        "sepia": 0
+      },
+      "valid": true,
+      "reused_from_previous_frozen_proposal": true
+    },
+    "evaluations": [
+      {
+        "candidate": {
+          "candidate_id": "base-proposal",
+          "parameters": {
+            "exposure": 10,
+            "brightness": 10,
+            "contrast": 10,
+            "highlights": 10,
+            "shadows": 10,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "sepia": 0
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-007/base-proposal.png",
+          "sha256": "07614501a81b4e6609e50fdb720cf1d8d6e0d1a2a5fa7e23014c00261855fa89",
+          "origin": "frozen_original_qwen_proposal"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The darker areas of the photo have been lifted, improving the visibility of the subjects without affecting the bright areas or the sky.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The darker areas of the photo have been lifted, improving the visibility of the subjects without affecting the bright areas or the sky.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-00",
+          "parameters": {
+            "shadows": 41
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-007/candidate-00.png",
+          "sha256": "becc62b0d210f297b5055ba371e87e72ce58d67de8b258586dc4590cff4c3e14",
+          "statistics": {
+            "mean_luminance": 0.4985879957675934,
+            "luminance_std": 0.2873932421207428,
+            "saturation": 0.2800031900405884,
+            "warmth": 0.059730224311351776,
+            "white_clip_fraction": 1.9500780031201248e-05,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The darker areas of the photo have been lifted, improving the visibility of the subjects without affecting the bright areas or the sky.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The darker areas of the photo have been lifted, improving the visibility of the subjects without affecting the bright areas or the sky.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-02",
+          "parameters": {
+            "shadows": 69
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-007/candidate-02.png",
+          "sha256": "a56060ea4281cd9682b4a1ed921eb7971aff27496dc80fb073ffadc3dde940d2",
+          "statistics": {
+            "mean_luminance": 0.5148179531097412,
+            "luminance_std": 0.2731367349624634,
+            "saturation": 0.26390066742897034,
+            "warmth": 0.06078236177563667,
+            "white_clip_fraction": 1.9500780031201248e-05,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The darker areas of the photo have been lifted, improving the visibility of the subjects without affecting the bright areas or the sky.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The darker areas of the photo have been lifted, improving the visibility of the subjects without affecting the bright areas or the sky.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-01",
+          "parameters": {
+            "shadows": 55
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-007/candidate-01.png",
+          "sha256": "ccc5f12114d34677c86ac19cf30a8af76acea548643e0a18fcfb7b67de30f736",
+          "statistics": {
+            "mean_luminance": 0.5065544247627258,
+            "luminance_std": 0.2805217206478119,
+            "saturation": 0.2719534635543823,
+            "warmth": 0.06024104356765747,
+            "white_clip_fraction": 1.9500780031201248e-05,
+            "black_clip_fraction": 0.0
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "completed",
+          "quality": "acceptable",
+          "strength": "appropriate",
+          "evidence": "The darker areas of the photo have been lifted, improving the visibility of the subjects without affecting the bright areas or the sky.",
+          "raw_response": "```json\n{\n  \"completion\": \"completed\",\n  \"quality\": \"acceptable\",\n  \"strength\": \"appropriate\",\n  \"evidence\": \"The darker areas of the photo have been lifted, improving the visibility of the subjects without affecting the bright areas or the sky.\"\n}\n```"
+        }
+      }
+    ],
+    "selected": {
+      "candidate_id": "candidate-01",
+      "parameters": {
+        "shadows": 55
+      },
+      "image": "data/training/functional-v1-20261104/candidates-v1.2/train-007/candidate-01.png",
+      "sha256": "ccc5f12114d34677c86ac19cf30a8af76acea548643e0a18fcfb7b67de30f736",
+      "statistics": {
+        "mean_luminance": 0.5065544247627258,
+        "luminance_std": 0.2805217206478119,
+        "saturation": 0.2719534635543823,
+        "warmth": 0.06024104356765747,
+        "white_clip_fraction": 1.9500780031201248e-05,
+        "black_clip_fraction": 0.0
+      },
+      "visual_preview_max_edge": 1024,
+      "origin": "controlled_tool_proposal_not_original_reference_optimization"
+    },
+    "status": "awaiting_direct_codex_visual_review",
+    "reviewed_at": "2026-11-04T06:36:54.605222+00:00"
+  },
+  {
+    "case_id": "train-008",
+    "base_proposal": {
+      "response": "```json\n{\n  \"exposure\": -20,\n  \"brightness\": -20,\n  \"contrast\": -10,\n  \"highlights\": -10,\n  \"shadows\": 10,\n  \"saturation\": 0,\n  \"temperature\": 0,\n  \"tint\": 0,\n  \"sepia\": 0\n}\n```",
+      "parameters": {
+        "exposure": -20,
+        "brightness": -20,
+        "contrast": -10,
+        "highlights": -10,
+        "shadows": 10,
+        "saturation": 0,
+        "temperature": 0,
+        "tint": 0,
+        "sepia": 0
+      },
+      "valid": true,
+      "reused_from_previous_frozen_proposal": true
+    },
+    "evaluations": [
+      {
+        "candidate": {
+          "candidate_id": "candidate-00",
+          "parameters": {
+            "highlights": -30
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-008/candidate-00.png",
+          "sha256": "a9b5c1a9d2e2773861b1ee63f0de0a798ffda9d44d45c8c73d8075bbac051cfa",
+          "statistics": {
+            "mean_luminance": 0.4487440884113312,
+            "luminance_std": 0.2765582799911499,
+            "saturation": 0.3034486174583435,
+            "warmth": 0.05610603466629982,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 6.500260010400416e-06
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "failed",
+          "quality": "major_issue",
+          "strength": "excessive",
+          "evidence": "The photo has been over-darkened, resulting in a significant loss of detail in the darker areas.",
+          "raw_response": "```json\n{\n  \"completion\": \"failed\",\n  \"quality\": \"major_issue\",\n  \"strength\": \"excessive\",\n  \"evidence\": \"The photo has been over-darkened, resulting in a significant loss of detail in the darker areas.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-01",
+          "parameters": {
+            "highlights": -40
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-008/candidate-01.png",
+          "sha256": "7ce2f95a7b469c497a9c3e09dbbca56d30279801d0df807624d2d5825b804e19",
+          "statistics": {
+            "mean_luminance": 0.4391871988773346,
+            "luminance_std": 0.26728230714797974,
+            "saturation": 0.30344927310943604,
+            "warmth": 0.05543031916022301,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 6.500260010400416e-06
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "failed",
+          "quality": "major_issue",
+          "strength": "excessive",
+          "evidence": "The photo has been over-darkened, resulting in a significant loss of detail in the darker areas.",
+          "raw_response": "```json\n{\n  \"completion\": \"failed\",\n  \"quality\": \"major_issue\",\n  \"strength\": \"excessive\",\n  \"evidence\": \"The photo has been over-darkened, resulting in a significant loss of detail in the darker areas.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "base-proposal",
+          "parameters": {
+            "exposure": -20,
+            "brightness": -20,
+            "contrast": -10,
+            "highlights": -10,
+            "shadows": 10,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "sepia": 0
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-008/base-proposal.png",
+          "sha256": "755268a820ed1b25613fb7446de34c9552ba0050fd04e609216a896a11fc9f19",
+          "origin": "frozen_original_qwen_proposal"
+        },
+        "assessment": {
+          "completion": "failed",
+          "quality": "major_issue",
+          "strength": "excessive",
+          "evidence": "The photo has been excessively darkened, resulting in a loss of detail in the darker areas and an overall dim appearance.",
+          "raw_response": "```json\n{\n  \"completion\": \"failed\",\n  \"quality\": \"major_issue\",\n  \"strength\": \"excessive\",\n  \"evidence\": \"The photo has been excessively darkened, resulting in a loss of detail in the darker areas and an overall dim appearance.\"\n}\n```"
+        }
+      },
+      {
+        "candidate": {
+          "candidate_id": "candidate-02",
+          "parameters": {
+            "highlights": -50
+          },
+          "image": "data/training/functional-v1-20261104/candidates-v1.2/train-008/candidate-02.png",
+          "sha256": "502d3e7e4b6191db113714237a408d0dfc4e12e1583bf10e70683138e20ee73f",
+          "statistics": {
+            "mean_luminance": 0.4296519458293915,
+            "luminance_std": 0.25809457898139954,
+            "saturation": 0.3034385144710541,
+            "warmth": 0.05472836270928383,
+            "white_clip_fraction": 0.0,
+            "black_clip_fraction": 6.500260010400416e-06
+          },
+          "visual_preview_max_edge": 1024,
+          "origin": "controlled_tool_proposal_not_original_reference_optimization"
+        },
+        "assessment": {
+          "completion": "failed",
+          "quality": "major_issue",
+          "strength": "excessive",
+          "evidence": "The photo has been over-darkened, resulting in a significant loss of detail in the darker areas.",
+          "raw_response": "```json\n{\n  \"completion\": \"failed\",\n  \"quality\": \"major_issue\",\n  \"strength\": \"excessive\",\n  \"evidence\": \"The photo has been over-darkened, resulting in a significant loss of detail in the darker areas.\"\n}\n```"
+        }
+      }
+    ],
+    "selected": null,
+    "status": "needs_label_revision",
+    "reviewed_at": "2026-11-04T06:37:05.377461+00:00"
+  }
+]

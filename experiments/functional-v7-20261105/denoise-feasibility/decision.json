@@ -1,0 +1,18 @@
+{
+  "status": "feasibility_probe_failed_to_establish_acceptable_noisy_target",
+  "at": "2026-11-05T09:00:41.770845+00:00",
+  "training_sources_only": true,
+  "unique_outputs_directly_viewed": 16,
+  "full_size_detail_sources": [
+    "native-train-x351",
+    "native-train-n048"
+  ],
+  "all_panels_directly_viewed": true,
+  "no_new_targets_admitted": true,
+  "new_tool_registered": false,
+  "training_started": false,
+  "development_or_acceptance_denoise_outputs_generated": false,
+  "GPU_hours": 0,
+  "conclusion": "Fixed classical NLM suppresses some fine noise but leaves block colour artifacts or destroys mountain, stars and clothing texture. Do not use it as an automatic fix or admit rejected x351 into training.",
+  "next_hypothesis": "Investigate a separate learned denoiser using official weights, first on training-only sources and detail controls. No promise that this can recover missing detail."
+}

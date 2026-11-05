@@ -1,0 +1,25 @@
+{
+  "purpose": "Known case-12 regression and natural language usability probes; one previously viewed source group, not independent tests.",
+  "reviewer": "Codex direct visual review; AI-assisted, not human",
+  "viewed_sheets": [
+    {
+      "path": "experiments/functional-v1-20261104/challenge/natural-probes-2.jpg",
+      "sha256": "7ffca790449ec73baec50d9d3a4ca6ad441af5d1e3437d6d78b52ad35833fed1"
+    },
+    {
+      "path": "experiments/functional-v1-20261104/challenge/natural-probes-1.jpg",
+      "sha256": "c0933f4ddf2209a5a168859345123cc43fc2ac5ce4e52bd95b7c3b4db37bdb08"
+    }
+  ],
+  "observations": {
+    "brown": "A coherent brown sepia palette is now visible and scene layout remains. This depends on the additional sepia editor tool as well as the trained model choosing it.",
+    "warm_cool_pair": "Opposite requests produce visibly opposite temperature changes.",
+    "shadows": "Dark vegetation becomes moderately more visible while the cloud structure remains.",
+    "saturation_pair": "Increasing and decreasing saturation visibly move in opposite directions.",
+    "strength_failure": "Slightly richer and much more vibrant produce exactly identical saturation 25 and identical output pixels in both candidates; relative strength discrimination failed.",
+    "compound_failure_current": "Warm slightly and reduce saturation returns only temperature 25; the visible green remains rich. The second clause is omitted.",
+    "compound_base": "Base-start candidate returns temperature 25 and saturation -20; executable two-clause output, not a multi-image generalization result."
+  },
+  "conclusion": "Improved basic global tool selection; high practical usefulness not established. Do not continue training only fixed-amplitude templates.",
+  "training_use": false
+}

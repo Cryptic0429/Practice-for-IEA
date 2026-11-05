@@ -1,0 +1,70 @@
+{
+  "model_id": "current-default",
+  "status": "completed",
+  "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+  "human_review": false,
+  "reviewed_outputs": 40,
+  "missing_unique_images": [],
+  "fully_completed_both_languages": 12,
+  "raw_individual_completed_both_languages": 12,
+  "identical_strength_pairs": [],
+  "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+  "photo_groups": 20,
+  "all_tasks_complete_photo_groups": 12,
+  "major_quality_issues": 2,
+  "major_issue_cases": [
+    "native-dev-011",
+    "native-dev-108"
+  ],
+  "per_family": {
+    "brown_tone": {
+      "completed": 1,
+      "cases": 1
+    },
+    "compound": {
+      "completed": 2,
+      "cases": 6
+    },
+    "contrast": {
+      "completed": 1,
+      "cases": 1
+    },
+    "lighting": {
+      "completed": 4,
+      "cases": 7
+    },
+    "saturation": {
+      "completed": 4,
+      "cases": 4
+    },
+    "white_balance": {
+      "completed": 0,
+      "cases": 1
+    }
+  },
+  "per_language": {
+    "zh": {
+      "completed": 12,
+      "failed": 1,
+      "partial": 7
+    },
+    "en": {
+      "completed": 12,
+      "failed": 1,
+      "partial": 7
+    }
+  },
+  "per_domain": {
+    "portrait": {
+      "completed": 6,
+      "cases": 10
+    },
+    "landscape": {
+      "completed": 6,
+      "cases": 10
+    }
+  },
+  "selection_uses_L1": false,
+  "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+  "review_sha256": "701299336acdb1439a447f4f6453b10ab139457ece0034efff90842ba21d518b"
+}

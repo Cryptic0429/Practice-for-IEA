@@ -1,0 +1,43 @@
+{
+  "status": "frozen_before_training",
+  "at": "2026-11-04T15:48:29.863741+00:00",
+  "parent": "models/from-functional-v1/sft-curriculum/seed-01",
+  "parent_sha256": "4048de5078f4eda6b19621a2968718be50f4cd5ad35fd17dbf23614a885edb71",
+  "admission_sha256": "879d6ddc97fce870d963f0b255f632f6ea56e6583ea0afa8e0955ef164c63a5d",
+  "pool_sha256": "1d153b9490099992b49c5999aaae8a361ecf7a93b1a455c4331a3af8a51ce1bc",
+  "cases_sha256": "2b68d44479da3c1a4fd3a78f65104e166dbcdb1e0a7b76c83f45972faffb05e2",
+  "training": {
+    "routes": [
+      "DPO plus chosen SFT anchor",
+      "matched chosen-only SFT"
+    ],
+    "epochs": 2,
+    "learning_rate": 1e-05,
+    "effective_batch": 4,
+    "beta": 0.1,
+    "chosen_sft_weight_on_preference_rows": 0.1,
+    "anchor_sft_weight": 1.0,
+    "seed": 20261107,
+    "rank": 8,
+    "alpha": 16,
+    "quantization": "NF4",
+    "layers": "language q/v only; vision frozen",
+    "reference": "Frozen parent response log probabilities precomputed in identical train dtype and processor; no second live model",
+    "rows_each": 93
+  },
+  "selection": "No major damage on controlled development and six natural-development probes; then more both-language natural requests fully qualified, then controlled functional count, then less minor damage, paired blind preference, earlier checkpoint. No L1. These six photos are reused development, not independent user validation.",
+  "promotion_gate": "Require improvement over parent on natural requests (>3/6), no new major damage relative to zero-major round1 baseline, controlled functional completion at least81/100. Otherwise fail this correction pilot; no acceptance opening for promotion.",
+  "acceptance_status": "closed; lock final models before any inference; final cases hash bound",
+  "acceptance_final_cases_sha256": "43eebd663a04a4b9436b35c0ab40e1587cdad4e4dec8097dcf9235b62dd84404",
+  "core_code_hashes": {
+    "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+    "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+    "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc"
+  },
+  "budget": "Same original16 occupied GPU hours across all rounds; GPUs0/2/3 protect1; no reset.",
+  "research_hypothesis": "Rendered outcome preference could penalise over-adjustment better than JSON imitation alone; unproven for this policy.",
+  "references": [
+    "https://arxiv.org/abs/2305.18290",
+    "https://huggingface.co/docs/trl/v0.23.1/dpo_trainer"
+  ]
+}

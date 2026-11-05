@@ -1,0 +1,3726 @@
+[
+  {
+    "id": "native-train-n001",
+    "source_id": "train-native-001",
+    "group_id": "e911462931cfe7b5ff46a72dd499bfe2f31df6e9acf561bb58a99efacc1b1296",
+    "domain": "portrait",
+    "split": "train",
+    "family": "brown_tone",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n001.png",
+    "input_sha256": "02e64e06404d38680e6bb50e9415847996969d38b6d0db82b5c6845213123b89",
+    "instructions": {
+      "en": "Make the image more sepia style",
+      "zh": "让照片更有棕褐色风格。"
+    },
+    "expected_change": "让照片更有棕褐色风格。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:009780",
+    "original_source_sha256": "07bae36eccb813c65db338ddb7f2a5267679170cfdfd6b5a478b8b457cbdc896",
+    "native_annotation": [
+      {
+        "metadata_index": 5013,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Make the image more sepia style"
+      }
+    ],
+    "source_classification_evidence": "Wedding couple by tree; clear request for overall sepia, white dress highlights must be preserved. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n011",
+    "source_id": "train-native-011",
+    "group_id": "3c94f4322988e486af1b1328de7beb76fc906b4faba6aa328f83186b04bf18c5",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n011.png",
+    "input_sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+    "instructions": {
+      "en": "Please brighten and reduce the brown tone from the photo.",
+      "zh": "请提亮照片，并减弱其中的棕色调。"
+    },
+    "expected_change": "请提亮照片，并减弱其中的棕色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:003459",
+    "original_source_sha256": "ea5cd4ea3d70db60c0ef4cb6b447cb44515af6269863e1d327811b6c9b6ec23f",
+    "native_annotation": [
+      {
+        "metadata_index": 4502,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please brighten and reduce the brown tone from the photo."
+      }
+    ],
+    "source_classification_evidence": "Older man indoors wearing red sash; brighten and reduce brown cast, preserve face and red fabric. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n021",
+    "source_id": "train-native-021",
+    "group_id": "a84f1bd3e159410eb1b74fa4112484b4aa2a3033b386432868427cb517d13cac",
+    "domain": "portrait",
+    "split": "train",
+    "family": "brown_tone",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n021.png",
+    "input_sha256": "22d988913066eb31bc0153e1736dc4a00a6334e6d6fc47799d11cc307a40b4fd",
+    "instructions": {
+      "en": "add brown tone",
+      "zh": "添加棕色调。"
+    },
+    "expected_change": "添加棕色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:017278",
+    "original_source_sha256": "d003e5eb18d0d2f96043118c3b67e1e32e8361846ce123d8210f6dc1fa96203c",
+    "native_annotation": [
+      {
+        "metadata_index": 3862,
+        "field": "expert_summary",
+        "item_index": 2,
+        "original_text": "add brown tone"
+      }
+    ],
+    "source_classification_evidence": "Woman taking mirror selfie with tattoo; overall brown-tone request, subject unchanged. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n022",
+    "source_id": "train-native-022",
+    "group_id": "7e5ca219d87b767c75842a2886ac506254573b4d2c5b79e1460444ca8aa1d4f5",
+    "domain": "portrait",
+    "split": "train",
+    "family": "brown_tone",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n022.png",
+    "input_sha256": "84b0ac51f24b0e808ef016764b837fd2a67516641f70bedcc82c7fe25e3c6757",
+    "instructions": {
+      "en": "Please add a brown, warmer tone to the photo.",
+      "zh": "请给照片添加棕色、较暖的色调。"
+    },
+    "expected_change": "请给照片添加棕色、较暖的色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:005280",
+    "original_source_sha256": "6a35458ab8ee1697ba10de69694a8a307a816e7c766bd7b5c83bad8651ffbfa0",
+    "native_annotation": [
+      {
+        "metadata_index": 2848,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please add a brown, warmer tone to the photo."
+      }
+    ],
+    "source_classification_evidence": "Long-haired man seated in green garden; brown/warm tone explicitly requested for photograph. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n026",
+    "source_id": "train-native-026",
+    "group_id": "3c30081baa5718a87e8cd3548f374c65c56be0740ce664e617b457c53d7f7df3",
+    "domain": "portrait",
+    "split": "train",
+    "family": "brown_tone",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n026.png",
+    "input_sha256": "596aef2cb26da7ca6f72170b8bd7a6e7298e804c89a2adf84d2b2f7b5c3661f7",
+    "instructions": {
+      "en": "Please, add a brown tone little bit",
+      "zh": "请添加少量棕色调。"
+    },
+    "expected_change": "请添加少量棕色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:017200",
+    "original_source_sha256": "52d3874c3e694ab1e95e8c8254ae57a6b92fcc788312fa8722dd32aec52b8215",
+    "native_annotation": [
+      {
+        "metadata_index": 4136,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please, add a brown tone little bit"
+      }
+    ],
+    "source_classification_evidence": "Two friends near outdoor stadium stage; slight brown tone, preserve existing blue shade as appropriate. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n031",
+    "source_id": "train-native-031",
+    "group_id": "4730c0bee7fdc80614238a790246aa1de57fa7edbc13a081b5b7eecfdadd6dfb",
+    "domain": "portrait",
+    "split": "train",
+    "family": "brown_tone",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n031.png",
+    "input_sha256": "402f251403ae493570d13ccd2e6d117194fa285cedb1e81370bc0099591eb315",
+    "instructions": {
+      "en": "Please, add a brown tone to the image a little bit",
+      "zh": "请给照片添加少量棕色调。"
+    },
+    "expected_change": "请给照片添加少量棕色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:012224",
+    "original_source_sha256": "4e9d2aa8a9a326deb320bc73cb6cb289deadad339924083d8d747b6d343d62be",
+    "native_annotation": [
+      {
+        "metadata_index": 6,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please, add a brown tone to the image a little bit"
+      }
+    ],
+    "source_classification_evidence": "Monochrome woman close-up; slight brown tone can be added without changing facial details. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n036",
+    "source_id": "train-native-036",
+    "group_id": "6dfb2fc41f880e78f0e66df6eb939175e340051bd894e2b35e62e3f17e641383",
+    "domain": "portrait",
+    "split": "train",
+    "family": "brown_tone",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n036.png",
+    "input_sha256": "42652a5160c0a0bdb559d5a1c146abcc1c54824fca185fd9f91478b68a24328b",
+    "instructions": {
+      "en": "Change the color tone of the photo to sepia",
+      "zh": "把照片色调改成棕褐色。"
+    },
+    "expected_change": "把照片色调改成棕褐色。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:019635",
+    "original_source_sha256": "bf7bd5bd0d10f23f1f4e3ca3ddc5175f7eee91bf630d8b2e43436108331cf8c9",
+    "native_annotation": [
+      {
+        "metadata_index": 3858,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Change the color tone of the photo to sepia"
+      }
+    ],
+    "source_classification_evidence": "Man leaning in garden with blue sunglasses; overall sepia requested, no geometry changes. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n041",
+    "source_id": "train-native-041",
+    "group_id": "322480b4ce17a62741db0f818d6f016b0a4fbcc1fdff8183abc21ba0594bc4cf",
+    "domain": "portrait",
+    "split": "train",
+    "family": "white_balance",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n041.png",
+    "input_sha256": "e672275ff1c957187ce8abe405b4cc7f46c514c129a124a8121892d084c7059b",
+    "instructions": {
+      "en": "Eliminate brown tone in the image, please",
+      "zh": "请去除照片中的棕色调。"
+    },
+    "expected_change": "请去除照片中的棕色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:011460",
+    "original_source_sha256": "8df11979f59f8a41356df8acbecc461c4687e7fd24978c196b0a118c8d8f31db",
+    "native_annotation": [
+      {
+        "metadata_index": 1709,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Eliminate brown tone in the image, please"
+      }
+    ],
+    "source_classification_evidence": "Warm aged outdoor couple photo; remove brown cast globally, cannot invent lost scan detail. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n071",
+    "source_id": "train-native-071",
+    "group_id": "9f1f1541df511bf9091dedf18e57b0ea6f35370ddfbf320b6398f86adb42e86c",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n071.png",
+    "input_sha256": "02d0fda90d6835a3e7bcb0c252798ec6efd1004ca32db01659e6c636b121e346",
+    "instructions": {
+      "en": "Recolor it to make it look more sepia-toned.  Brighten it slightly.",
+      "zh": "重新调整色调，让照片更偏棕褐色，并稍微提亮。"
+    },
+    "expected_change": "重新调整色调，让照片更偏棕褐色，并稍微提亮。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:006262",
+    "original_source_sha256": "e458e2b2e1b95017219c080dbdab6be064a30efa86a86265ab38e182227d22a5",
+    "native_annotation": [
+      {
+        "metadata_index": 5064,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Recolor it to make it look more sepia-toned.  Brighten it slightly."
+      }
+    ],
+    "source_classification_evidence": "Woman close-up indoors; sepia tone and slight brightening, preserve lips and face detail. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n164",
+    "source_id": "train-native-164",
+    "group_id": "85e2d412f5791d1253705578c1e9c25abaac568436d4a71af36ec2f7424bee87",
+    "domain": "portrait",
+    "split": "train",
+    "family": "brown_tone",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n164.png",
+    "input_sha256": "748a6e2512a10a619f6d94750fa8d4ee207bba2267dd2d5d1f622a8b18b2dfbf",
+    "instructions": {
+      "en": "Please, add color to the photo little brown tone",
+      "zh": "请给照片添加少量棕色调。"
+    },
+    "expected_change": "请给照片添加少量棕色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:017913",
+    "original_source_sha256": "6d0df044a5f3891d9d715a90b03e6de14f73c477c1a3ff4cae2cdfa5f7ad1b92",
+    "native_annotation": [
+      {
+        "metadata_index": 3434,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please, add color to the photo little brown tone"
+      }
+    ],
+    "source_classification_evidence": "Monochrome young male formal portrait; slight brown tone globally requested. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n012",
+    "source_id": "train-native-012",
+    "group_id": "abe17c87e4fe8dee51ca00b3b8c051aff2535fc50132c549d9a64e1d004a0215",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n012.png",
+    "input_sha256": "47172eee6e8633d481bfdbcf888de9b642f7f3120dc34f9c224d580300027011",
+    "instructions": {
+      "en": "add cool tone, increase contrast",
+      "zh": "添加冷色调，提高对比度。"
+    },
+    "expected_change": "添加冷色调，提高对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:018801",
+    "original_source_sha256": "e064975caf1833f38d8c6c7e029313176d5752dc5dd01870f8b0e8e373076129",
+    "native_annotation": [
+      {
+        "metadata_index": 1986,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "add cool tone, increase contrast"
+      }
+    ],
+    "source_classification_evidence": "Couple seated at restaurant table; cool tone and increased contrast explicitly global. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n017",
+    "source_id": "train-native-017",
+    "group_id": "bd41309d93d5c0f6ea0f64103364260bb5041a0a7d56eb995ed6cd381f664b8f",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n017.png",
+    "input_sha256": "a034f224d908b58c835acaa4616d802e5bccfa82f0aac9fb1329e00757acce60",
+    "instructions": {
+      "en": "brighten the image and add a warm tone to it",
+      "zh": "提亮照片，并添加暖色调。"
+    },
+    "expected_change": "提亮照片，并添加暖色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:008464",
+    "original_source_sha256": "4c8dbe4261bec854ce1af8fee49abd7c1c475277523e2f6769730ae81c9e3fb5",
+    "native_annotation": [
+      {
+        "metadata_index": 185,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "brighten the image and add a warm tone to it"
+      }
+    ],
+    "source_classification_evidence": "Couple standing indoors with string lights; brighten plus warm tone, black clothes and faces visible. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n027",
+    "source_id": "train-native-027",
+    "group_id": "54089f54066ca9a7fba44eccb22c4d59a9820620035198c5a9dd172c2c29fb0a",
+    "domain": "portrait",
+    "split": "train",
+    "family": "white_balance",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n027.png",
+    "input_sha256": "20dde1609055b707843c5dccc2f0cc8b1073b27e87c1cfcee525348e7122ac03",
+    "instructions": {
+      "en": "Add a warm tone to the image.",
+      "zh": "给照片添加暖色调。"
+    },
+    "expected_change": "给照片添加暖色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:014926",
+    "original_source_sha256": "126e75aacb5a7885703dfb20ba213d352eafcac9cc501d47e39812f32d9e0ce9",
+    "native_annotation": [
+      {
+        "metadata_index": 1178,
+        "field": "amateur_summary",
+        "item_index": 0,
+        "original_text": "Add a warm tone to the image."
+      }
+    ],
+    "source_classification_evidence": "Young man in knit hat in warm indoor hall; warm overall tone, preserve natural face detail. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n032",
+    "source_id": "train-native-032",
+    "group_id": "ab59aaa1bc9306f2479645fbb0020225960cf1ececaa55eb8923822ea6240f1e",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n032.png",
+    "input_sha256": "a3bfe5ac414308cb545022bc5742c36cdc8d3906fd9824275a373b4a8c9a7afd",
+    "instructions": {
+      "en": "enhance colors and make them cooler",
+      "zh": "增强色彩，并让色调更冷一些。"
+    },
+    "expected_change": "增强色彩，并让色调更冷一些。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:004738",
+    "original_source_sha256": "7eb19764872af562c3ee617186454cc8a6e52427376cabdeed96ceceac0e44c1",
+    "native_annotation": [
+      {
+        "metadata_index": 775,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "enhance colors and make them cooler"
+      }
+    ],
+    "source_classification_evidence": "Man outdoors under bare branches; colour enhancement and cooler cast, preserve face. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n037",
+    "source_id": "train-native-037",
+    "group_id": "9c2858fb3cf78bee040ced2b8de807948513927ca70af3242f09735916762d7c",
+    "domain": "portrait",
+    "split": "train",
+    "family": "white_balance",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n037.png",
+    "input_sha256": "ca39b42a22c16c8d7bb9fcb823b5ab8f09ebcf5100064619067d5975ffac862d",
+    "instructions": {
+      "en": "make the colors slightly warmer",
+      "zh": "让颜色稍微暖一点。"
+    },
+    "expected_change": "让颜色稍微暖一点。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:015747",
+    "original_source_sha256": "1b623009dcfbde9241c82c437bb3fe543d25dcb29272ae4796b644c8a74e6284",
+    "native_annotation": [
+      {
+        "metadata_index": 1634,
+        "field": "amateur_summary",
+        "item_index": 0,
+        "original_text": "make the colors slightly warmer"
+      }
+    ],
+    "source_classification_evidence": "Two young children lying on grey blanket; slight warmer colours requested. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n057",
+    "source_id": "train-native-057",
+    "group_id": "8699c1868de39caf4cc5c39b872c9aa5c3435bc8bb0630631af56afda244d7a6",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n057.png",
+    "input_sha256": "a34e791bda3206dde347db5f2f4e4124a2ad62778a484a79a3e0fb63da617e34",
+    "instructions": {
+      "en": "Increase brightness and make warmer.",
+      "zh": "提高亮度，并调暖一些。"
+    },
+    "expected_change": "提高亮度，并调暖一些。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:014106",
+    "original_source_sha256": "1c794904e3cbdab8820b685d71a66696f2588aeb1f49ce1e3765ba1a367300f9",
+    "native_annotation": [
+      {
+        "metadata_index": 2226,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Increase brightness and make warmer."
+      }
+    ],
+    "source_classification_evidence": "Woman photographer in snowy forest with backlight; brighten and warm, preserve snow detail. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n062",
+    "source_id": "train-native-062",
+    "group_id": "cb6f4b808913c6deedc8076b22f7267873e277b09d0fa371e4a00387e8967701",
+    "domain": "portrait",
+    "split": "train",
+    "family": "white_balance",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n062.png",
+    "input_sha256": "edddcbd82bd8977ec4de0ca15337f99432db2c1fa7f071ec1c9bae41db570a4b",
+    "instructions": {
+      "en": "Give the image an overall warmer tone.",
+      "zh": "让整张照片的色调更暖。"
+    },
+    "expected_change": "让整张照片的色调更暖。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:017254",
+    "original_source_sha256": "9034e589b1163415b75fc8bf56c2c742c299588ea1d58c70f1b0d70e73fe5eea",
+    "native_annotation": [
+      {
+        "metadata_index": 1251,
+        "field": "amateur_summary",
+        "item_index": 0,
+        "original_text": "Give the image an overall warmer tone."
+      }
+    ],
+    "source_classification_evidence": "Four paintball players with strong blue cast; overall warmer tone request. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n165",
+    "source_id": "train-native-165",
+    "group_id": "e41c1be9a26e2326709b996f6d390757475640b9f3e48b128e0a61e87d05034b",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n165.png",
+    "input_sha256": "ab70c6337ec66269d2af984ab9f5375cca7413c8cc2fa89e341658628e788d53",
+    "instructions": {
+      "en": "increase contrast and make it less yellow",
+      "zh": "提高对比度，并减弱黄色偏色。"
+    },
+    "expected_change": "提高对比度，并减弱黄色偏色。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:014492",
+    "original_source_sha256": "7659280ad883afba367f50b62fd8f85acbf213403f29f4bd152075303b105d67",
+    "native_annotation": [
+      {
+        "metadata_index": 2059,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "increase contrast and make it less yellow"
+      }
+    ],
+    "source_classification_evidence": "Group indoors in strong yellow light; increase contrast and reduce yellow cast. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n097",
+    "source_id": "train-native-097",
+    "group_id": "b0fa9eb2806e0a066ddec572f7b4bb0bb87b9d84dd27ab7e7baf95e0a5dad6a7",
+    "domain": "portrait",
+    "split": "train",
+    "family": "white_balance",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n097.png",
+    "input_sha256": "b0a519c74f3d93d693e728622d49af2188d2bf8ebc29936c356623a2594f4773",
+    "instructions": {
+      "en": "Give this photo a warmer tone.",
+      "zh": "让照片色调更暖。"
+    },
+    "expected_change": "让照片色调更暖。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:013685",
+    "original_source_sha256": "478eef4ecb0d09553538e1395450ae308cc877145e8c00a56c56bfcc4f2557eb",
+    "native_annotation": [
+      {
+        "metadata_index": 4017,
+        "field": "amateur_summary",
+        "item_index": 2,
+        "original_text": "Give this photo a warmer tone."
+      }
+    ],
+    "source_classification_evidence": "Woman in yellow scarf outdoors with bright background; warmer tone requested. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n142",
+    "source_id": "train-native-142",
+    "group_id": "2880ec83f8db944c5f839f047544d1af625bbec19234a34a1c43646df6d6514d",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n142.png",
+    "input_sha256": "a4506e55ef4f020282b398fa9fd83f6ab06b2ca7e1139baf480d1479683dfe1e",
+    "instructions": {
+      "en": "make it more warm and saturnated",
+      "zh": "让照片更暖、饱和度更高。"
+    },
+    "expected_change": "让照片更暖、饱和度更高。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:003199",
+    "original_source_sha256": "ea9dfb4c9ad52fab1b84bb199e6ccdb34ba2a0f5b6e686a54b25fee5e7ad94ae",
+    "native_annotation": [
+      {
+        "metadata_index": 976,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "make it more warm and saturnated"
+      }
+    ],
+    "source_classification_evidence": "Man seated on coastal rocks under pale sky; warmer and more saturated requested. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n003",
+    "source_id": "train-native-003",
+    "group_id": "464588592d8e464f334de79651d530f4eaaa5826d6fad424e7598fe0b30d283e",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n003.png",
+    "input_sha256": "d4c69ce1e4d0073630e9c5f59f771faa354643c11c6a72a1073b23a7c86eda56",
+    "instructions": {
+      "en": "increase contrast, make the colors more vivid",
+      "zh": "提高对比度，让颜色更鲜明。"
+    },
+    "expected_change": "提高对比度，让颜色更鲜明。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:015705",
+    "original_source_sha256": "29f2e53bf01403506123971a5369dc937e23d5cd42ea2d818af5091d8ba03d15",
+    "native_annotation": [
+      {
+        "metadata_index": 4929,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "increase contrast, make the colors more vivid"
+      }
+    ],
+    "source_classification_evidence": "Three friends in night selfie; contrast plus vivid colour request, faces and lamps visible. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n013",
+    "source_id": "train-native-013",
+    "group_id": "dda8b501ad3c3a36712025bb9a08bba6d582e925df0d9f3860c5ca5bbfc40161",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n013.png",
+    "input_sha256": "15f4580496fcdc0a6462362004192996953921f3d09b3f8d362f8b548d05a5ae",
+    "instructions": {
+      "en": "Please add a strong contrast and enhance the colors.",
+      "zh": "请大幅提高对比度，并增强色彩。"
+    },
+    "expected_change": "请大幅提高对比度，并增强色彩。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:006945",
+    "original_source_sha256": "b42c57df2cd4d211ad4c84f7750c60004d6389e06d112b329f1392f64feb8123",
+    "native_annotation": [
+      {
+        "metadata_index": 2813,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please add a strong contrast and enhance the colors."
+      }
+    ],
+    "source_classification_evidence": "Backlit male selfie with washed-out bright sky; strong contrast and colour request cannot recover clipped areas. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n018",
+    "source_id": "train-native-018",
+    "group_id": "98bb29e8973d8c280cf4f16f4555fc2490ad982aa10516c0edd70fbae00b40df",
+    "domain": "portrait",
+    "split": "train",
+    "family": "contrast",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n018.png",
+    "input_sha256": "310d1083f1e9fa027673256a33b531f83bc6d90c7ac54acce8083593b48e1be1",
+    "instructions": {
+      "en": "Increase the contrast",
+      "zh": "提高对比度。"
+    },
+    "expected_change": "提高对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:023111",
+    "original_source_sha256": "9d0dbdfa137789f312dbc2db0ed439ec103026511814a98cc9a1af00f9e58755",
+    "native_annotation": [
+      {
+        "metadata_index": 687,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Increase the contrast"
+      }
+    ],
+    "source_classification_evidence": "Old monochrome seated couple photograph; increasing contrast supported without inventing colour. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n028",
+    "source_id": "train-native-028",
+    "group_id": "0b7d3987f8f028ae3e3ef2070c6cfc794ae50e8275001a6ff257da57f693bed4",
+    "domain": "portrait",
+    "split": "train",
+    "family": "contrast",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n028.png",
+    "input_sha256": "c7b8698410b5e86b358733fc522820248567f265b09b456500d00389bea3a58c",
+    "instructions": {
+      "en": "Increase the contrast",
+      "zh": "提高对比度。"
+    },
+    "expected_change": "提高对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:022660",
+    "original_source_sha256": "d1ff5e9f361145af896c38a449116ca5b0ae48b8af7ae998dd4aba3e65078a69",
+    "native_annotation": [
+      {
+        "metadata_index": 4428,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Increase the contrast"
+      }
+    ],
+    "source_classification_evidence": "Man in red jacket indoors at night; increased contrast with face and jacket detail retained. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n043",
+    "source_id": "train-native-043",
+    "group_id": "2433098a51cde29672561c111fbc449279aa52d1e49cbb6d19a2f737d0ff8574",
+    "domain": "portrait",
+    "split": "train",
+    "family": "contrast",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n043.png",
+    "input_sha256": "215057b01d0f52b14b8f2db266c732e6df4c952d3d01b77dc1df7ddb9c447794",
+    "instructions": {
+      "en": "add move contrast to image.",
+      "zh": "给照片增加一些对比度。"
+    },
+    "expected_change": "给照片增加一些对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:011505",
+    "original_source_sha256": "7fb0eadb0c295875c05ba686e7a2beffb9e92c2087df1d49b58672157eb75f19",
+    "native_annotation": [
+      {
+        "metadata_index": 2253,
+        "field": "amateur_summary",
+        "item_index": 2,
+        "original_text": "add move contrast to image."
+      }
+    ],
+    "source_classification_evidence": "Woman in black dress on sunny footbridge; typo move contrast interpreted as more contrast. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n048",
+    "source_id": "train-native-048",
+    "group_id": "794f56c83a53dc7278f20f35db8aa185f48d7a399aa7f311ca83e4ac027f87c4",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n048.png",
+    "input_sha256": "48dcdd843cf679df909568be41ea46aa505be0130565270be87f98fa8964a696",
+    "instructions": {
+      "en": "Add more contrast and lighten image",
+      "zh": "提高对比度，并提亮照片。"
+    },
+    "expected_change": "提高对比度，并提亮照片。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:021739",
+    "original_source_sha256": "9d1c9b55935c078f094730cb956ae7ff17e2b3290864f9a566ecf175842ec595",
+    "native_annotation": [
+      {
+        "metadata_index": 575,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Add more contrast and lighten image"
+      }
+    ],
+    "source_classification_evidence": "Wedding couple in church; add contrast and lighten, preserve white wedding dress. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n058",
+    "source_id": "train-native-058",
+    "group_id": "b0093ebd3cfea440514af527438138531110270bd2be365daf3025a042a47ad8",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n058.png",
+    "input_sha256": "1609aff72b84874f901b31d6ce06f0c50a6f7709492d528296b30d86c934b32a",
+    "instructions": {
+      "en": "darken a bit, enhance colors, increase contrast",
+      "zh": "稍微调暗一点，增强色彩并提高对比度。"
+    },
+    "expected_change": "稍微调暗一点，增强色彩并提高对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:006639",
+    "original_source_sha256": "b686215f2685f79f1e283c017d0745c75de2ec3a2cdb346d5e9c3ba47f04f3bf",
+    "native_annotation": [
+      {
+        "metadata_index": 807,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "darken a bit, enhance colors, increase contrast"
+      }
+    ],
+    "source_classification_evidence": "Formal group on lawn in evening sun; slight darken, enhanced colour and contrast. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n063",
+    "source_id": "train-native-063",
+    "group_id": "44ba3b65e7e7ba78ca96e97a7c5413bb278772ca6afe8f78cea14cb344c8290e",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n063.png",
+    "input_sha256": "8a6fb87c4a858c7dedf46372dfc955e87bd5aabc02e78f864a68ec00eaac5211",
+    "instructions": {
+      "en": "increase brightness and contrast a bit",
+      "zh": "稍微提高亮度和对比度。"
+    },
+    "expected_change": "稍微提高亮度和对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:025039",
+    "original_source_sha256": "133fe71a776ed048f9fc8511a8d8c72f784fc64748b905e4a1044a1d7b8cd739",
+    "native_annotation": [
+      {
+        "metadata_index": 1418,
+        "field": "expert_summary",
+        "item_index": 2,
+        "original_text": "increase brightness and contrast a bit"
+      }
+    ],
+    "source_classification_evidence": "Father and child with hockey stick in dim room; slightly increase brightness and contrast. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n068",
+    "source_id": "train-native-068",
+    "group_id": "f4fab11bee02e10585a00569a21399718fbe3b69511e1ceab271a8ed60559b17",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n068.png",
+    "input_sha256": "be9a61f0b4e47e5d987ca13aab70a68d98686f33e754dc3fd861bad119440c2b",
+    "instructions": {
+      "en": "increase contrast all over by a lot and give it a more amber/rose gold tint",
+      "zh": "大幅提高整张照片的对比度，并增加琥珀色或玫瑰金色调。"
+    },
+    "expected_change": "大幅提高整张照片的对比度，并增加琥珀色或玫瑰金色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:008640",
+    "original_source_sha256": "0ff8d1048760c8207e38a396eb0cbf2f6f5282184d7031123a17b7ab87121493",
+    "native_annotation": [
+      {
+        "metadata_index": 5055,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "increase contrast all over by a lot and give it a more amber/rose gold tint"
+      }
+    ],
+    "source_classification_evidence": "Washed-out man on suspension bridge; strong contrast and amber/rose-gold tint requested. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n161",
+    "source_id": "train-native-161",
+    "group_id": "8b5ff6c3b1db43b98d682ee735b1c0702f9e2050139b2b1959197f549350cdbf",
+    "domain": "portrait",
+    "split": "train",
+    "family": "contrast",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n161.png",
+    "input_sha256": "238c1e60d56319453154495448b1891ba7424f77abdab93f5cb46201998618f2",
+    "instructions": {
+      "en": "increase contrast",
+      "zh": "提高对比度。"
+    },
+    "expected_change": "提高对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:025420",
+    "original_source_sha256": "028c1b2f7aca60971d828eae1154035d69cd7e4ce3b407ff29ffcfc4932c9385",
+    "native_annotation": [
+      {
+        "metadata_index": 2915,
+        "field": "amateur_summary",
+        "item_index": 3,
+        "original_text": "increase contrast"
+      }
+    ],
+    "source_classification_evidence": "Woman selfie near Christmas tree; increase contrast, preserve face and dark hair. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n064",
+    "source_id": "train-native-064",
+    "group_id": "e8d2273f236c3a05f6c429ba7486632c30be422be2032833d9313bff9a3934f6",
+    "domain": "portrait",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n064.png",
+    "input_sha256": "2448207eade65676f7ff9eea94764375e1e22607a2b676b42473a8d6eb7ead14",
+    "instructions": {
+      "en": "Saturate image.",
+      "zh": "提高照片饱和度。"
+    },
+    "expected_change": "提高照片饱和度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:018848",
+    "original_source_sha256": "77a6ca854b7cebcfdd691a5515b4e94d22f2077a1d7bd4d329e4505db5ae8412",
+    "native_annotation": [
+      {
+        "metadata_index": 815,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Saturate image."
+      }
+    ],
+    "source_classification_evidence": "Couple standing beside tall dry grass in daylight; increase saturation globally. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n087",
+    "source_id": "train-native-087",
+    "group_id": "eba76ef0cbff255c16fe4d203a9144b8c3631cca2adfe87ee998b274b9abd4da",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n087.png",
+    "input_sha256": "f4497739f354fcefdc35851cdc02e68ea36698d9dfc8aba4abcc53b72e1472be",
+    "instructions": {
+      "en": "Make colors warmer and stronger",
+      "zh": "让颜色更暖、更浓郁。"
+    },
+    "expected_change": "让颜色更暖、更浓郁。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:011282",
+    "original_source_sha256": "13aa5f29dbc91fe13d8daeb3cca951b7dbecee9c3cf7a5bc64fd351ec7a1bf82",
+    "native_annotation": [
+      {
+        "metadata_index": 4557,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Make colors warmer and stronger"
+      }
+    ],
+    "source_classification_evidence": "Woman in blue dress holding brass horn; stronger warmer colours, preserve natural face. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n150",
+    "source_id": "train-native-150",
+    "group_id": "6603e8f0623f86f3306c7a180242a0a25e5656aa84e0c6be55b432c45473d32a",
+    "domain": "portrait",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n150.png",
+    "input_sha256": "47cec944204f0e8b210c25e7bd1151146e6b3be4da7a35261792f843aec619c1",
+    "instructions": {
+      "en": "make the image more colorful and vivid",
+      "zh": "让照片色彩更丰富、更鲜明。"
+    },
+    "expected_change": "让照片色彩更丰富、更鲜明。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:002476",
+    "original_source_sha256": "2ef5a16275cf50d402561dc1ba251a20b8682475b361588d9d8b86076bcd7721",
+    "native_annotation": [
+      {
+        "metadata_index": 3710,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "make the image more colorful and vivid"
+      }
+    ],
+    "source_classification_evidence": "Couple in shaded tree-lined park; more colourful/vivid globally requested. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n179",
+    "source_id": "train-native-179",
+    "group_id": "06d31e08d6def4222da2b5b003d9a3f26a4be481123abd068b1ed6cdbc98f146",
+    "domain": "portrait",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n179.png",
+    "input_sha256": "d2a324b761e648e0639ba08dead4d56d6c4278c3f25d7a7d3ed335e1dee008d0",
+    "instructions": {
+      "en": "Reduce the vibrant colors to softer, and more natural color palette.",
+      "zh": "降低鲜艳程度，让色彩更柔和、更自然。"
+    },
+    "expected_change": "降低鲜艳程度，让色彩更柔和、更自然。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:003016",
+    "original_source_sha256": "0444190e2fd37ba6b344c9e188809d60b2ddb7508da441b0239193eee2b68913",
+    "native_annotation": [
+      {
+        "metadata_index": 3485,
+        "field": "amateur_summary",
+        "item_index": 0,
+        "original_text": "Reduce the vibrant colors to softer, and more natural color palette."
+      }
+    ],
+    "source_classification_evidence": "Cosplay portrait with very vivid pink hair and green bushes; reduce vibrant colours toward softer natural palette. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n185",
+    "source_id": "train-native-185",
+    "group_id": "981affed880396c2f2f87556198d8bc1903a1af451433a6795343ee194eddcb7",
+    "domain": "portrait",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n185.png",
+    "input_sha256": "6a9974b708c45d439e2b32d065b93b367f1e2d734f32916c8206dbb69f8e2439",
+    "instructions": {
+      "en": "Make the colors less vivid",
+      "zh": "让颜色不那么鲜艳。"
+    },
+    "expected_change": "让颜色不那么鲜艳。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:024171",
+    "original_source_sha256": "3fe9526297cb17192825f400f728dbceecd241888ad9c862c221f4a6d8bd9bd9",
+    "native_annotation": [
+      {
+        "metadata_index": 4930,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Make the colors less vivid"
+      }
+    ],
+    "source_classification_evidence": "Family group in very vivid autumn garden; make colours less vivid, preserve people. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n188",
+    "source_id": "train-native-188",
+    "group_id": "3e8cabd101fad36192cf50a0806c2a40e546ba7a670548dcecfab9f0e8d3efb7",
+    "domain": "portrait",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n188.png",
+    "input_sha256": "28509a2c56d6d82b7515d3b3ce92cad23d4853760afec42b0ac939b2d8708ab7",
+    "instructions": {
+      "en": "Enhance colors and make them more vivid",
+      "zh": "增强色彩，让颜色更鲜明。"
+    },
+    "expected_change": "增强色彩，让颜色更鲜明。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:008232",
+    "original_source_sha256": "7a7f21578a58138c45156725cb04099776b363f21aeb1e2622d7106574a6bb51",
+    "native_annotation": [
+      {
+        "metadata_index": 51,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Enhance colors and make them more vivid"
+      }
+    ],
+    "source_classification_evidence": "Woman by large tree in bright washed-out portrait; vivid colour request, retain face highlights. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n191",
+    "source_id": "train-native-191",
+    "group_id": "658c64832bb8de8238ccbbc50a90f39a0636aeb0841c1d04ab248c06b67d28fb",
+    "domain": "portrait",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n191.png",
+    "input_sha256": "5896072cc940689ddf08e50b18fe8cd37376b96f5319322b78e196d1e4c2d55d",
+    "instructions": {
+      "en": "Make the colors less vivid",
+      "zh": "让颜色不那么鲜艳。"
+    },
+    "expected_change": "让颜色不那么鲜艳。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:021911",
+    "original_source_sha256": "c32a5f1c52ef6f553bfd0cfe045d3fde84ba3579d5def61fa7e47a76ebfe68ce",
+    "native_annotation": [
+      {
+        "metadata_index": 1608,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Make the colors less vivid"
+      }
+    ],
+    "source_classification_evidence": "Wedding couple beneath brightly coloured night ferris wheel; reduce vividness toward softer colours. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n206",
+    "source_id": "train-native-206",
+    "group_id": "c1431103399a28047eda17608877134f3e101cd1a8d4610425031c8b7418c111",
+    "domain": "portrait",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n206.png",
+    "input_sha256": "8b5b7a762da6195910c379166a3250914974c23dea7af58568edd2c0919f7817",
+    "instructions": {
+      "en": "Enhance the colors and make them more vivid and powerful",
+      "zh": "增强色彩，让颜色更鲜明、更有表现力。"
+    },
+    "expected_change": "增强色彩，让颜色更鲜明、更有表现力。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:003187",
+    "original_source_sha256": "9f5a4350f6d49f32d0d70e5dbdb03daf237d891df66a12fe7a433a8cd9e18738",
+    "native_annotation": [
+      {
+        "metadata_index": 5356,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Enhance the colors and make them more vivid and powerful"
+      }
+    ],
+    "source_classification_evidence": "Man in pale blue shirt and sunglasses against stone; vivid stronger colours, retain shirt detail. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n209",
+    "source_id": "train-native-209",
+    "group_id": "70aa466203d143cf73aab54d12fd5d25519a0e0c39e8c29d2d33c77e68f89e03",
+    "domain": "portrait",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n209.png",
+    "input_sha256": "8704776495f9b8620622f38e570ecb2c4a62261062c7eb1ada808bfe99c2c0ad",
+    "instructions": {
+      "en": "Enhance colors and make them more vivid and powerful",
+      "zh": "增强色彩，让颜色更鲜明、更有表现力。"
+    },
+    "expected_change": "增强色彩，让颜色更鲜明、更有表现力。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:010404",
+    "original_source_sha256": "4e2422551237cf3ce0564290c22805e57345148aec62c4f5688a9b1eddda0e15",
+    "native_annotation": [
+      {
+        "metadata_index": 5130,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Enhance colors and make them more vivid and powerful"
+      }
+    ],
+    "source_classification_evidence": "Baby with birthday cake and pastel balloons; vivid/powerful colours while preserving pale backdrop. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n238",
+    "source_id": "train-native-238",
+    "group_id": "cdc534296543b88edee6531c0fe5ec93a75e15a48ee6562ba296a85e656bba5b",
+    "domain": "portrait",
+    "split": "train",
+    "family": "contrast",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n238.png",
+    "input_sha256": "9ae2c63c28d37e8dae942ecb44ce1bb2dee59bc50bb8c4c588d6dd9b9925aebb",
+    "instructions": {
+      "en": "Increase color contrast slightly",
+      "zh": "稍微提高色彩对比度。"
+    },
+    "expected_change": "稍微提高色彩对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:002696",
+    "original_source_sha256": "ef9e63990f637f402707fc5a9d4b14cc1c2187c7387c1bccf33864613a76a58e",
+    "native_annotation": [
+      {
+        "metadata_index": 517,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Increase color contrast slightly"
+      }
+    ],
+    "source_classification_evidence": "Old colour scan of two boys with broad green/yellow cast; slight colour contrast increase. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n005",
+    "source_id": "train-native-005",
+    "group_id": "3f94b5beba31f960f278e322e8c65d98c7bd922b55bf1b1595feafaf3bc346c9",
+    "domain": "portrait",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n005.png",
+    "input_sha256": "9169d2b29d075c8316f7c21b07cc3146415afb0f583b885f981fa506f58a5bd9",
+    "instructions": {
+      "en": "Lighten the entire image",
+      "zh": "提亮整张照片。"
+    },
+    "expected_change": "提亮整张照片。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:009208",
+    "original_source_sha256": "2ce80e178ff3a7edc0dac9d42305723262f10971b521d7d3aeed2de3326b52ec",
+    "native_annotation": [
+      {
+        "metadata_index": 103,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Lighten the entire image"
+      }
+    ],
+    "source_classification_evidence": "Four people in lecture room; whole-image lightening request with recoverable shadowed faces. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n010",
+    "source_id": "train-native-010",
+    "group_id": "376b46c27d76a6ff08cbb43bf391965811968f12b9dd9c5c428c2f6ca345d18f",
+    "domain": "portrait",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n010.png",
+    "input_sha256": "c1c6cdb95f4c160e3dbfd145999f6bdac58010e17b35318d07290b7b84469074",
+    "instructions": {
+      "en": "Brighten image.",
+      "zh": "提亮照片。"
+    },
+    "expected_change": "提亮照片。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:019218",
+    "original_source_sha256": "10f031f3aa6b61955297a446f17d8e586be7753df3a5867dd96aa606a17a9214",
+    "native_annotation": [
+      {
+        "metadata_index": 897,
+        "field": "amateur_summary",
+        "item_index": 2,
+        "original_text": "Brighten image."
+      }
+    ],
+    "source_classification_evidence": "Woman in pale flowing dress outside stone building; brightening request with recoverable dress detail. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n015",
+    "source_id": "train-native-015",
+    "group_id": "298f560932386e2cef522ee148f504d84a868b23f6017be01690752db15c9d1e",
+    "domain": "portrait",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n015.png",
+    "input_sha256": "b892f1a057d547675eaac001cba992b7c6693240ff460061cc43a0f117b4d83e",
+    "instructions": {
+      "en": "Increase exposure",
+      "zh": "提高曝光。"
+    },
+    "expected_change": "提高曝光。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:012635",
+    "original_source_sha256": "fe0548c1f1d97a1f665a7f08eadf02b286bacd905c1115d5841662cfbca3b0b2",
+    "native_annotation": [
+      {
+        "metadata_index": 4390,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Increase exposure"
+      }
+    ],
+    "source_classification_evidence": "Family of four against grey wall; increase exposure, retain pale clothing and faces. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n019",
+    "source_id": "train-native-019",
+    "group_id": "5cc4daa65d7235b7f05121bc1e7f2605eda5b4525adf2fcf3a1770ce6fdaaa36",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n019.png",
+    "input_sha256": "69c539c87f7302eda1dc1137551244009b015a580be32d50f11427d8f461b347",
+    "instructions": {
+      "en": "darken and make it more colorful",
+      "zh": "把照片调暗，并让颜色更丰富。"
+    },
+    "expected_change": "把照片调暗，并让颜色更丰富。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:021945",
+    "original_source_sha256": "50e9ea14be90f219c29785da81ce050061b15b6c2bdc3f06bf33697e47c9e59e",
+    "native_annotation": [
+      {
+        "metadata_index": 4330,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "darken and make it more colorful"
+      }
+    ],
+    "source_classification_evidence": "Man by doorway with striped polo; darken and make more colourful, preserve shirt pattern. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n020",
+    "source_id": "train-native-020",
+    "group_id": "f23973b7f7d3f2187f689c67d420ab83743592706d862727c9005d3828a510ce",
+    "domain": "portrait",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n020.png",
+    "input_sha256": "07f6b83b97658544b83c7431f24c3566fc4c293c1eaf7466f148d2db47136da4",
+    "instructions": {
+      "en": "Brighten the photo a lot.",
+      "zh": "大幅提亮照片。"
+    },
+    "expected_change": "大幅提亮照片。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:025065",
+    "original_source_sha256": "0c578b5f79fbace8c311b255b56918a990a31dbdaf48d2235264d372eb0a4585",
+    "native_annotation": [
+      {
+        "metadata_index": 829,
+        "field": "amateur_summary",
+        "item_index": 2,
+        "original_text": "Brighten the photo a lot."
+      }
+    ],
+    "source_classification_evidence": "Couple in dark indoor venue; brighten a lot while preserving door lights and faces. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n025",
+    "source_id": "train-native-025",
+    "group_id": "7b8d159bbc47c9381fef479776fe234c35fea3dbd760724d043b66fceca8d9ed",
+    "domain": "portrait",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n025.png",
+    "input_sha256": "4e356434f5348ef2006704f4ff8453a8037a8b22db4bf6fb85f55c1261928f9f",
+    "instructions": {
+      "en": "please lighten the photo",
+      "zh": "请提亮照片。"
+    },
+    "expected_change": "请提亮照片。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:022759",
+    "original_source_sha256": "b13f466fe5192fb53e4d1c65f4496dc4af944c58f007bec71850de3200db9484",
+    "native_annotation": [
+      {
+        "metadata_index": 572,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "please lighten the photo"
+      }
+    ],
+    "source_classification_evidence": "Two boys under college arch with strong tree shadows; whole-photo lightening, preserve bright stone. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n070",
+    "source_id": "train-native-070",
+    "group_id": "fd251d29a693d5514b07e3c8c04c51e1c2a1cfb3bbd43fa6c1f0152944300651",
+    "domain": "portrait",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n070.png",
+    "input_sha256": "d5455342aacf026a5bc6316b30f13d5d221bde78a2c023c4c05143cf31ff75ea",
+    "instructions": {
+      "en": "Significantly lighten the entire image, please",
+      "zh": "请大幅提亮整张照片。"
+    },
+    "expected_change": "请大幅提亮整张照片。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:000425",
+    "original_source_sha256": "d45fd56c9d8c7a13c7997b44ef80adcc5afda0ffb7e4d7465f11d3f63995d0b1",
+    "native_annotation": [
+      {
+        "metadata_index": 626,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Significantly lighten the entire image, please"
+      }
+    ],
+    "source_classification_evidence": "Large group in dim bar with bright television; significantly lighten whole image, retain faces. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n127",
+    "source_id": "train-native-127",
+    "group_id": "23018628f248466dba47fb4d697044655322ca14c888f8bc8ffd6f815a58c171",
+    "domain": "portrait",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n127.png",
+    "input_sha256": "791c0d7f8ea2f81d6c4c649d8dcf030aeca52eaee70aff806e576c8a13392278",
+    "instructions": {
+      "en": "Can you brighten this photo a lot?",
+      "zh": "能把这张照片大幅提亮吗？"
+    },
+    "expected_change": "能把这张照片大幅提亮吗？ 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:011635",
+    "original_source_sha256": "64efe136be50c4dea90f9385155e5abc681cf5e2651a7583a5957e74581c3a15",
+    "native_annotation": [
+      {
+        "metadata_index": 4941,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Can you brighten this photo a lot?"
+      }
+    ],
+    "source_classification_evidence": "Woman silhouetted in dark sea cave at dusk; brighten a lot, retain seascape and cave edges. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n143",
+    "source_id": "train-native-143",
+    "group_id": "9bc58811ef2855135313128fa25d9727cb26d0f92dc35cec48b1dc5ff0bc9318",
+    "domain": "portrait",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n143.png",
+    "input_sha256": "b95e110fac0a687ea88c24bafa8c983bffae85a8541e9ff44e14946bb33ba735",
+    "instructions": {
+      "en": "brighten the image a bit",
+      "zh": "把照片稍微提亮一点。"
+    },
+    "expected_change": "把照片稍微提亮一点。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:013729",
+    "original_source_sha256": "aa82dd4adeac9df4fad699913bb948f877f2116ee8fa852202f285705969507d",
+    "native_annotation": [
+      {
+        "metadata_index": 3420,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "brighten the image a bit"
+      }
+    ],
+    "source_classification_evidence": "Backlit man in paper hat and glasses by window; slight brightening with bright window unchanged structurally. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n204",
+    "source_id": "train-native-204",
+    "group_id": "04de3b800c05a498bc1d7d14b1f05c6a37ca11c1139fe325306a655d9e8adc58",
+    "domain": "portrait",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n204.png",
+    "input_sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+    "instructions": {
+      "en": "Increase the brightness dramatically.",
+      "zh": "大幅提高亮度。"
+    },
+    "expected_change": "大幅提高亮度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:011105",
+    "original_source_sha256": "7662b11eed23ddb650d693669b79dad5e4327b10fbc9e061adb13f2a90ce18e9",
+    "native_annotation": [
+      {
+        "metadata_index": 1761,
+        "field": "amateur_summary",
+        "item_index": 2,
+        "original_text": "Increase the brightness dramatically."
+      }
+    ],
+    "source_classification_evidence": "Girl in white/red costume in dim interior; dramatic brightness increase, preserve white blouse. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n004",
+    "source_id": "train-native-004",
+    "group_id": "51b2a96ac7d19537e08371b1f3dfa1e71a0b18470568fd7e5b58f16ce6d92b0c",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n004.png",
+    "input_sha256": "7dcff979c21dec4ea8677648430bd655e480f529ec17c0816eb06844ac616c45",
+    "instructions": {
+      "en": "enahnce photo to be more vibrant",
+      "zh": "让照片色彩更鲜明。"
+    },
+    "expected_change": "让照片色彩更鲜明。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:010569",
+    "original_source_sha256": "6d042f76657a6f99e6f4332c12154eda1d7298bb41eded0f90829bcba0ad59c3",
+    "native_annotation": [
+      {
+        "metadata_index": 1808,
+        "field": "amateur_summary",
+        "item_index": 0,
+        "original_text": "enahnce photo to be more vibrant"
+      }
+    ],
+    "source_classification_evidence": "Wide golden field and blue sky with distant solitary person; global vibrance request. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n024",
+    "source_id": "train-native-024",
+    "group_id": "928a10e0a092760a31718f9c2ae3b8c9846870b350341c8c94e87a1645bcb281",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n024.png",
+    "input_sha256": "6433d3f447a49f23adfc2834d33ccbc10c074fecb8d0263db68a073d3e890a23",
+    "instructions": {
+      "en": "Enhance the brightness a little. Increase saturation a little.",
+      "zh": "略微提高亮度，也略微提高饱和度。"
+    },
+    "expected_change": "略微提高亮度，也略微提高饱和度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:012319",
+    "original_source_sha256": "c6d360f76b6f3e43ed9faa29842ef9b2debd420330a0f2971ec488d6cc191937",
+    "native_annotation": [
+      {
+        "metadata_index": 3173,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Enhance the brightness a little. Increase saturation a little."
+      }
+    ],
+    "source_classification_evidence": "Ferris wheel illuminated against dark night sky; slight brightness and saturation, preserve lamp colours. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n029",
+    "source_id": "train-native-029",
+    "group_id": "ecaa58419ddce2761b310a47a0649fd058abc2bdc9ef7805cac5aa04a711a785",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n029.png",
+    "input_sha256": "417cf784d9f1bb8a8afda9db8fa8063402d34f1a615c1377aed1773238bdaf61",
+    "instructions": {
+      "en": "fix overexposure and enhance colors",
+      "zh": "纠正过曝，并增强色彩。"
+    },
+    "expected_change": "纠正过曝，并增强色彩。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:001564",
+    "original_source_sha256": "302aa15818abc8d82bdb8bbec3d52fde6942440378ad9a7be0b539cc15aea0df",
+    "native_annotation": [
+      {
+        "metadata_index": 1736,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "fix overexposure and enhance colors"
+      }
+    ],
+    "source_classification_evidence": "Garden and squirrel in washed-out frame; correct overexposure and enhance colours globally. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n030",
+    "source_id": "train-native-030",
+    "group_id": "3fe38b3e376e3a43a382c0a7846ca3269df696874c8fa3b6e31f29f947d91ef7",
+    "domain": "landscape",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n030.png",
+    "input_sha256": "29017289d061e33bb8fb4f334aa08ad889afa904e57fe8c76dfaa7c75471def3",
+    "instructions": {
+      "en": "Lighten the entire image, please",
+      "zh": "请提亮整张照片。"
+    },
+    "expected_change": "请提亮整张照片。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:024969",
+    "original_source_sha256": "3a2dc03a17392fd44f87a6a24a551a372a402365a1fdae69a4dd5638901d5fbc",
+    "native_annotation": [
+      {
+        "metadata_index": 3001,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Lighten the entire image, please"
+      }
+    ],
+    "source_classification_evidence": "Long-exposure spinning sparks in dark cave; lighten whole image while retaining already bright spark trails. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n039",
+    "source_id": "train-native-039",
+    "group_id": "e788c745be12fafd54c3c87eacc09d34967cec0e94c216a553819fbc1f13b9cc",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n039.png",
+    "input_sha256": "5a56f833265d2d5e359a95d0133cdf4230f039a25d5993aeeb2b91d6341f00df",
+    "instructions": {
+      "en": "increase saturation",
+      "zh": "提高饱和度。"
+    },
+    "expected_change": "提高饱和度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:004759",
+    "original_source_sha256": "d7edbac2ffc25b6f5a4d7aa58ce658859692cd3fb1f718249d328766bf71a3cd",
+    "native_annotation": [
+      {
+        "metadata_index": 4792,
+        "field": "amateur_summary",
+        "item_index": 0,
+        "original_text": "increase saturation"
+      }
+    ],
+    "source_classification_evidence": "Foggy street with orange lamps and bare trees; saturation request, keep atmospheric fog and lamp detail. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n042",
+    "source_id": "train-native-042",
+    "group_id": "5d661352c061879730509a7b8fce40268b8258b4c9fe5bc324610e8e84b0eec0",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n042.png",
+    "input_sha256": "842a0a9ebc34eb15d1bfb843d2eb3112732f82ea2a5ac703883109347d05fd3c",
+    "instructions": {
+      "en": "brighten and the white balance to make it cooler",
+      "zh": "提亮照片，调整白平衡，让色调更冷。"
+    },
+    "expected_change": "提亮照片，调整白平衡，让色调更冷。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:024606",
+    "original_source_sha256": "9c1c1f54bff0d89ce545fcbbe199df8d2642bf6ee65a6b893f3172a3e707e4f8",
+    "native_annotation": [
+      {
+        "metadata_index": 5254,
+        "field": "amateur_summary",
+        "item_index": 3,
+        "original_text": "brighten and the white balance to make it cooler"
+      }
+    ],
+    "source_classification_evidence": "Architectural stairwell with windows and shadows; brighten and cool white balance globally. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n054",
+    "source_id": "train-native-054",
+    "group_id": "02125152beeeafd3940a3d7872e70846a4616d64fd75fe988f56c37536f7b3d4",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n054.png",
+    "input_sha256": "20eef1eb984a9add24b1bf1c4101009383b74171ec5ff26839a9f44ac5c35f87",
+    "instructions": {
+      "en": "Plz i want to make this picture more colorful and attractive",
+      "zh": "我想让这张照片色彩更丰富、更有吸引力。"
+    },
+    "expected_change": "我想让这张照片色彩更丰富、更有吸引力。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:009332",
+    "original_source_sha256": "63e494f6abd9a6acedf1f868a56b27e6cd0d55d6fe761819e5df87454cd9e9ee",
+    "native_annotation": [
+      {
+        "metadata_index": 1837,
+        "field": "request",
+        "item_index": null,
+        "original_text": "Plz i want to make this picture more colorful and attractive"
+      },
+      {
+        "metadata_index": 1837,
+        "field": "amateur_summary",
+        "item_index": 0,
+        "original_text": "Plz i want to make this picture more colorful and attractive"
+      }
+    ],
+    "source_classification_evidence": "Wide Mediterranean hills, village and olive trees under blue sky; more colourful globally requested. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n066",
+    "source_id": "train-native-066",
+    "group_id": "342faf540ef30dd6d994ed2809d36821e4352e26ea6dfbbecf4effeaf64e41a6",
+    "domain": "landscape",
+    "split": "train",
+    "family": "brown_tone",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n066.png",
+    "input_sha256": "81ec611cbf135a397ea6c32789e14ed2b8c9361e9c001f027f275eda6380c596",
+    "instructions": {
+      "en": "Give this photo a sepia look",
+      "zh": "让这张照片有棕褐色效果。"
+    },
+    "expected_change": "让这张照片有棕褐色效果。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:024727",
+    "original_source_sha256": "9c5766b7d20f549ddc27e624b86dc5abacb25c6dae967634133e9099508771c4",
+    "native_annotation": [
+      {
+        "metadata_index": 5106,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Give this photo a sepia look"
+      }
+    ],
+    "source_classification_evidence": "Shaded patio with roof beams, chairs and plants; sepia overall look requested. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n081",
+    "source_id": "train-native-081",
+    "group_id": "184711cc1ff86b618b34a83ee73bd0b278563955334dbedc5381eea5e629e61e",
+    "domain": "landscape",
+    "split": "train",
+    "family": "brown_tone",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n081.png",
+    "input_sha256": "5b1d5e3dadce6d817c525f417f34d93dd5ab1d802ce3547c45845e1f34d73a8d",
+    "instructions": {
+      "en": "add a light sepia tone",
+      "zh": "添加淡淡的棕褐色调。"
+    },
+    "expected_change": "添加淡淡的棕褐色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:013562",
+    "original_source_sha256": "682b7ea33b90ecc81ee0efcb4054e17766a7a097a16b569bd739ede8ba578299",
+    "native_annotation": [
+      {
+        "metadata_index": 2157,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "add a light sepia tone"
+      }
+    ],
+    "source_classification_evidence": "Snowy garden with bare trees, house and trampoline; light sepia tone requested. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n083",
+    "source_id": "train-native-083",
+    "group_id": "e6b17c522e7ffbcb2ff4b4dc91e656d7ea1641c616f5e93b0ab27d757aae11f8",
+    "domain": "landscape",
+    "split": "train",
+    "family": "contrast",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n083.png",
+    "input_sha256": "23229b33902b7ed70ed0e5d24a9fff06c58362e823f6a92e70c3b036502bd229",
+    "instructions": {
+      "en": "increase contrast",
+      "zh": "提高对比度。"
+    },
+    "expected_change": "提高对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:013122",
+    "original_source_sha256": "7a929a837f34112e250b5bdf37a5cb58d84480f07b5d81d0af61c431e734a8a0",
+    "native_annotation": [
+      {
+        "metadata_index": 2341,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "increase contrast"
+      }
+    ],
+    "source_classification_evidence": "View through dark metal stairs toward city and river; increased contrast, retain bright sky and dark beam structure. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n089",
+    "source_id": "train-native-089",
+    "group_id": "a385aa7872d92d9df5986e93ed1374538caaaf9d2046ef0680f366da2633b4f2",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n089.png",
+    "input_sha256": "24e380a313d89ceae8a3be7e7ae557bc8eff4bc206619aaa236e7df9d2bdbe21",
+    "instructions": {
+      "en": "Enhance colors and make them more vivid and powerful",
+      "zh": "增强色彩，让颜色更鲜明、更有表现力。"
+    },
+    "expected_change": "增强色彩，让颜色更鲜明、更有表现力。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:009237",
+    "original_source_sha256": "743c760cfdc243a21f9da79d6653609ba20a1a7fc48a02f3100b2fc66d416a68",
+    "native_annotation": [
+      {
+        "metadata_index": 3489,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Enhance colors and make them more vivid and powerful"
+      }
+    ],
+    "source_classification_evidence": "Tree branches and green leaves against sky; vivid stronger colours requested globally. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n093",
+    "source_id": "train-native-093",
+    "group_id": "edf82a4036779ba2a4990c98b115e5964563e42ad34bebdf8107210b6d37c63d",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n093.png",
+    "input_sha256": "4be06d53fcd4d47ece3dc656f2254b73329dbd533d53f938f1875689eaa98f93",
+    "instructions": {
+      "en": "increase contrast, brightness, make it more colorful, enhance colors",
+      "zh": "提高对比度和亮度，让色彩更丰富。"
+    },
+    "expected_change": "提高对比度和亮度，让色彩更丰富。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:001370",
+    "original_source_sha256": "d07171026ff575199048440edbfa3f51c16e2836479234c372f5a2c3cab0a211",
+    "native_annotation": [
+      {
+        "metadata_index": 3191,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "increase contrast, brightness, make it more colorful, enhance colors"
+      }
+    ],
+    "source_classification_evidence": "Underwater reef landscape with broad cyan haze; increase brightness/contrast/colour, water haze cannot be fully removed. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n101",
+    "source_id": "train-native-101",
+    "group_id": "0dfa26c4cf8a4607a73e0223e874d2655e2f71bbc4ddf02842b8268ae5b0dba8",
+    "domain": "landscape",
+    "split": "train",
+    "family": "brown_tone",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n101.png",
+    "input_sha256": "787f5281bafe0c7e025d0c4fe445f543bbc1da16e92b7eda351d2b0070c26090",
+    "instructions": {
+      "en": "Please, add brown tone to the image",
+      "zh": "请给照片添加棕色调。"
+    },
+    "expected_change": "请给照片添加棕色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:000066",
+    "original_source_sha256": "fcbc49af353c0d79090ccc14d1b74c6b9cdb2a4f0f11660337165848828c7936",
+    "native_annotation": [
+      {
+        "metadata_index": 4165,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please, add brown tone to the image"
+      }
+    ],
+    "source_classification_evidence": "Night city skyline viewed along glass balcony with distant figure; overall brown tone requested. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n107",
+    "source_id": "train-native-107",
+    "group_id": "3c91a9412a071d12015458c66415485110ec2973be0f9314be89aab9104f44e0",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n107.png",
+    "input_sha256": "177033df61bf13e2de2b3620b5bfc7a9bfd51c99cd6c7961781065d1e3030e75",
+    "instructions": {
+      "en": "Please make the photo slightly brighter and the colors warmer.",
+      "zh": "请把照片稍微提亮一点，并让颜色更暖。"
+    },
+    "expected_change": "请把照片稍微提亮一点，并让颜色更暖。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:015697",
+    "original_source_sha256": "2d99a84f18e34d8758ea429a9c9d654921acacfff8da9a3bd00bcc854bedada3",
+    "native_annotation": [
+      {
+        "metadata_index": 4237,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please make the photo slightly brighter and the colors warmer."
+      }
+    ],
+    "source_classification_evidence": "City square and reflective sculpture with fountains; slight brightening plus warmer colour. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n119",
+    "source_id": "train-native-119",
+    "group_id": "5eff766432c2b11671e5bca657b9ae4fd4f19ef6310e8803ea1a103ad2df0dcf",
+    "domain": "landscape",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n119.png",
+    "input_sha256": "5691961459dd2ed4e872f3ff35cea5e5706ab1d9b0b271f254c27fbb0545a51f",
+    "instructions": {
+      "en": "Lighten the entire image",
+      "zh": "提亮整张照片。"
+    },
+    "expected_change": "提亮整张照片。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:024555",
+    "original_source_sha256": "1392306280eac3739f52e803aca36c83ddcead25a09956af1367354b26855371",
+    "native_annotation": [
+      {
+        "metadata_index": 2034,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Lighten the entire image"
+      }
+    ],
+    "source_classification_evidence": "Dark storm clouds over treeline and small paved area; lighten entire frame, retain cloud structure. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n180",
+    "source_id": "train-native-180",
+    "group_id": "acf686e0c440bcf23c459451f047eabf9060e202e7cd305ef649f86ebbc33e00",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n180.png",
+    "input_sha256": "0ef34a03769801a9bc4f69ce77c4ef25971d00670a99d8799b2f12bdb5bbe56e",
+    "instructions": {
+      "en": "Please brighten the image and make the colors pop.",
+      "zh": "请提亮照片，让颜色更鲜明。"
+    },
+    "expected_change": "请提亮照片，让颜色更鲜明。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:018623",
+    "original_source_sha256": "0fda71eab7dd689984ec069495c9238e6055d43e1ec9cdf35921082cef954431",
+    "native_annotation": [
+      {
+        "metadata_index": 3336,
+        "field": "amateur_summary",
+        "item_index": 0,
+        "original_text": "Please brighten the image and make the colors pop."
+      }
+    ],
+    "source_classification_evidence": "Wide beach with couple walking away, sand/clouds dominant; brighten and popping colour globally. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n186",
+    "source_id": "train-native-186",
+    "group_id": "0bc229d336ceb10b48b274dbb7e4d415748ed3c24f13ad84017f8d6ef43dfcef",
+    "domain": "landscape",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n186.png",
+    "input_sha256": "34e3ab2e9f6500e92a20e2a15364c47991472f7e552b9154478b753f0f877f9a",
+    "instructions": {
+      "en": "Lighten the image enough to see the buildings.",
+      "zh": "提亮照片，使建筑物足够清楚。"
+    },
+    "expected_change": "提亮照片，使建筑物足够清楚。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:007732",
+    "original_source_sha256": "6d53c5ec2b4671c55d03fd8a40a88cd7359bdae7b16d0543275cb9c093932b32",
+    "native_annotation": [
+      {
+        "metadata_index": 3590,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Lighten the image enough to see the buildings."
+      }
+    ],
+    "source_classification_evidence": "Big Ben and Parliament silhouetted at sunset; lighten image enough to see buildings, preserve sun/sky. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n189",
+    "source_id": "train-native-189",
+    "group_id": "719c5b9bd7344247588f211dcc09998d60b300411b3516885371f4c30bb5be14",
+    "domain": "landscape",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n189.png",
+    "input_sha256": "fe09bd062a7fc893458a77e6ecda3aa5935029cecbcca9fe22d4809ed1d610c2",
+    "instructions": {
+      "en": "brighten the picture a bit",
+      "zh": "把照片提亮一点。"
+    },
+    "expected_change": "把照片提亮一点。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:024512",
+    "original_source_sha256": "f904c1b267e8a90fe47efd605b3de43aa128b3d7ea5ef4dcca8f2189d9d782ca",
+    "native_annotation": [
+      {
+        "metadata_index": 4466,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "brighten the picture a bit"
+      }
+    ],
+    "source_classification_evidence": "Painted boat on clear blue seashore with leafy tree; slight brightening, preserve sky. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n190",
+    "source_id": "train-native-190",
+    "group_id": "89f5a551118fa9d20d0ac9f1b9490bdd60cc958cbfb99a83fef63139fa0f4d14",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n190.png",
+    "input_sha256": "45981ce9a95460be520bf0033a83cdb9791c22ab7fd89e9b7e53de3532411bcf",
+    "instructions": {
+      "en": "Please add a lot of contrast and really enhance the colors.",
+      "zh": "请大幅提高对比度，并明显增强色彩。"
+    },
+    "expected_change": "请大幅提高对比度，并明显增强色彩。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:018413",
+    "original_source_sha256": "b147f80b39cd86936822bfbfd8756196e777b956c9059517ce9363c0b45b558e",
+    "native_annotation": [
+      {
+        "metadata_index": 3806,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please add a lot of contrast and really enhance the colors."
+      }
+    ],
+    "source_classification_evidence": "Rocky coast under dramatic clouds and white surf; strong contrast and enhanced colour requested. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n194",
+    "source_id": "train-native-194",
+    "group_id": "67d16b8592d81f803751944a70bd2bd9cedcf36d166a86817a2a4f2cd80c09f4",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n194.png",
+    "input_sha256": "d877fa90cca9032f123ffcad3122e708580555f69a8d614093f22847a5fd8ec8",
+    "instructions": {
+      "en": "Enhance the colors and make them more vivid",
+      "zh": "增强色彩，让颜色更鲜明。"
+    },
+    "expected_change": "增强色彩，让颜色更鲜明。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:024588",
+    "original_source_sha256": "21e7be71b5e3da229143b27217f0d1d844a819ef88416d5a0efec46a40f20a1b",
+    "native_annotation": [
+      {
+        "metadata_index": 694,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Enhance the colors and make them more vivid"
+      }
+    ],
+    "source_classification_evidence": "Shallow lake with sticks, distant shore and cloudy sky; vivid colour requested globally. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n215",
+    "source_id": "train-native-215",
+    "group_id": "3228efde51f9b83b8256050376f56c89cde35054eb01e7e9bda16c961c75a120",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n215.png",
+    "input_sha256": "80ef0110da66a2737c5c81c354eac0dad29df8ea731e901adfbfc6176854e8af",
+    "instructions": {
+      "en": "Increase the image saturation.",
+      "zh": "提高照片饱和度。"
+    },
+    "expected_change": "提高照片饱和度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:019600",
+    "original_source_sha256": "1944a5a9d65f3d051b8a4d212870716de2988614bad0b1cd12c2857c7d77e12d",
+    "native_annotation": [
+      {
+        "metadata_index": 4848,
+        "field": "amateur_summary",
+        "item_index": 2,
+        "original_text": "Increase the image saturation."
+      }
+    ],
+    "source_classification_evidence": "Night traffic light trails along avenue; increase saturation while retaining white light trails. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n224",
+    "source_id": "train-native-224",
+    "group_id": "1f34797bacd6802eb75b9624b7628f71e80eede1d156c9358f65a163a21434d4",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n224.png",
+    "input_sha256": "47c4dc3e6899e61d289bd4a02d86ab7002845e74b393e465d1fbae3ec84956cb",
+    "instructions": {
+      "en": "Increase the saturation a bit, please",
+      "zh": "请略微提高饱和度。"
+    },
+    "expected_change": "请略微提高饱和度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:014251",
+    "original_source_sha256": "ad96e833e027572c19ade35f83492422ab29ecfb5f3c820860dc4ae1bf61b619",
+    "native_annotation": [
+      {
+        "metadata_index": 721,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Increase the saturation a bit, please"
+      }
+    ],
+    "source_classification_evidence": "Wide pumpkin field with small walking child and birds in mist; slightly increase saturation. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n225",
+    "source_id": "train-native-225",
+    "group_id": "3748b41a2231f6f54692b718ceabb63260845f161cbda381fcb4d149a28e6c02",
+    "domain": "landscape",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n225.png",
+    "input_sha256": "ed8d778f481e0adecf97fb62e0acf5fa63ac69ff5795f9bb411c52389f6dca20",
+    "instructions": {
+      "en": "Please, reduce the brighten",
+      "zh": "请降低亮度。"
+    },
+    "expected_change": "请降低亮度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:018049",
+    "original_source_sha256": "3e86dbdcb6478c8d2999494995be16c22f175a44393db75b1178742a101ee06c",
+    "native_annotation": [
+      {
+        "metadata_index": 1486,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please, reduce the brighten"
+      }
+    ],
+    "source_classification_evidence": "Narrow rural lane with trees, power lines and rainbow; reduce brightness, keep rainbow. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n227",
+    "source_id": "train-native-227",
+    "group_id": "75c202becfb47e88e98a5aad29b8ef397277c6a3553b7d60fdde51597a801765",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n227.png",
+    "input_sha256": "2e9bfd8ce5234b54716b27bf7d931a11b9b23d2fb37c0dbfc87989f83df415b6",
+    "instructions": {
+      "en": "Enhance colors and make them more vivid and powerful",
+      "zh": "增强色彩，让颜色更鲜明、更有表现力。"
+    },
+    "expected_change": "增强色彩，让颜色更鲜明、更有表现力。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:011626",
+    "original_source_sha256": "fc940fb2ce53a3264dff3efc9809afe540775c9fc778edac5a42eb1a420e5e1a",
+    "native_annotation": [
+      {
+        "metadata_index": 2884,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Enhance colors and make them more vivid and powerful"
+      }
+    ],
+    "source_classification_evidence": "Wide seashore sunset with small running dog; more vivid/powerful colours globally, scenery dominates. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n232",
+    "source_id": "train-native-232",
+    "group_id": "1b9a9afd4acb7c921cbdbe61e24e8474f1d6c67d1a02a8e97c4326fcd53227aa",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n232.png",
+    "input_sha256": "d2eed2e7c6286dd59bc21e8427dc6e5042d7c7af6051b4c2bd867037b51479f7",
+    "instructions": {
+      "en": "increase contrast and brightness a bit",
+      "zh": "略微提高对比度和亮度。"
+    },
+    "expected_change": "略微提高对比度和亮度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:006578",
+    "original_source_sha256": "fe0bcd2126292aa6e8082e81054d2d4a2916aa606e790948b3d80f7242b9980e",
+    "native_annotation": [
+      {
+        "metadata_index": 758,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "increase contrast and brightness a bit"
+      }
+    ],
+    "source_classification_evidence": "Aurora and stars over snowy lake with small back-facing figure; slight brightness and contrast globally. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-n235",
+    "source_id": "train-native-235",
+    "group_id": "baa42064a66ba7e098713fb9ca401d1aa78d5fa4549e99727d919a268d73e0d5",
+    "domain": "landscape",
+    "split": "train",
+    "family": "contrast",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n235.png",
+    "input_sha256": "49cb80edf9f25b7a4da81bf0068a6b165d10cded72a8d022ffec5aefce798938",
+    "instructions": {
+      "en": "Can you boost the contrast between light and dark in this image?",
+      "zh": "能增强这张照片明暗之间的对比吗？"
+    },
+    "expected_change": "能增强这张照片明暗之间的对比吗？ 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:012393",
+    "original_source_sha256": "2ca183c9e768fc061ae4434c5b2c1d95f9f0d4dc537b838172074114d5b60baa",
+    "native_annotation": [
+      {
+        "metadata_index": 2125,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Can you boost the contrast between light and dark in this image?"
+      }
+    ],
+    "source_classification_evidence": "Monochrome broad tree with buildings visible through branches; boost light-dark contrast globally. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x020",
+    "source_id": "train-extension-020",
+    "group_id": "ca033d45e571f6ec6fdd556ee252b9a0e88daad6299db2e64c6265ec2b20ee3c",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x020.png",
+    "input_sha256": "c9fe4077964894aa4712b8b488cc048b248bdc7bb969656ecc46d59d7b256fc0",
+    "instructions": {
+      "en": "Please make the colours more vivid!",
+      "zh": "请让颜色更鲜明。"
+    },
+    "expected_change": "请让颜色更鲜明。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:012014",
+    "original_source_sha256": "35ee3b6d68e6d70cc7f83490bd6e04c687a62cb7c1858dcc5e461da5d1b32449",
+    "native_annotation": [
+      {
+        "metadata_index": 1619,
+        "field": "request",
+        "item_index": null,
+        "original_text": "Please make the colours more vivid!"
+      },
+      {
+        "metadata_index": 1619,
+        "field": "amateur_summary",
+        "item_index": 0,
+        "original_text": "Please make the colours more vivid!"
+      },
+      {
+        "metadata_index": 4242,
+        "field": "request",
+        "item_index": null,
+        "original_text": "Please make the colours more vivid!"
+      },
+      {
+        "metadata_index": 4242,
+        "field": "amateur_summary",
+        "item_index": 0,
+        "original_text": "Please make the colours more vivid!"
+      }
+    ],
+    "source_classification_evidence": "Mountain road and valley with small backpacker; more vivid colours, scenery dominates. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x030",
+    "source_id": "train-extension-030",
+    "group_id": "1b7f6acf0735b5fa3e0da71de5eb7401277eb44bc09068882c7c393bb12709b7",
+    "domain": "landscape",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x030.png",
+    "input_sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+    "instructions": {
+      "en": "Please brighten the photo a lot.",
+      "zh": "请把照片大幅提亮。"
+    },
+    "expected_change": "请把照片大幅提亮。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:023374",
+    "original_source_sha256": "45c3dab662fd89d08b7b56b1d89d28f2f45fa844e55182a3ce9a767f6e7de266",
+    "native_annotation": [
+      {
+        "metadata_index": 1319,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please brighten the photo a lot."
+      }
+    ],
+    "source_classification_evidence": "Dark alpine lake and silhouetted peaks at dusk; strong brightening requested, retain sky and reflection. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x035",
+    "source_id": "train-extension-035",
+    "group_id": "89bf8629eeb59aa932f8c8f2f41852009c1cfca280e32433792fe86a2d7b6bb2",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x035.png",
+    "input_sha256": "8cc45841e6394f524f88ad6621c1051be962e60b322e4e488f11867ec25c7c07",
+    "instructions": {
+      "en": "Please reduce the brightness and make the colors less vivid.",
+      "zh": "请降低亮度，并让颜色不那么鲜艳。"
+    },
+    "expected_change": "请降低亮度，并让颜色不那么鲜艳。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:010882",
+    "original_source_sha256": "d5e758edb15a7eb74d1d2b8f539c9df4bf14e340016f4b54dfa206521e29809c",
+    "native_annotation": [
+      {
+        "metadata_index": 2752,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please reduce the brightness and make the colors less vivid."
+      }
+    ],
+    "source_classification_evidence": "Very bright tropical beach and two chairs on deck; reduce brightness and vividness, existing clipped sky cannot be restored. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x038",
+    "source_id": "train-extension-038",
+    "group_id": "f1eabea579695fe1c20f23e7007e528d0ba1173d597e5d64baf90e9befa38ef7",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x038.png",
+    "input_sha256": "0c34eb32379337374a72bd76faddf6b37509c91074bcea0cbfedc65dbf2c1f18",
+    "instructions": {
+      "en": "Slightly increase saturation.",
+      "zh": "略微提高饱和度。"
+    },
+    "expected_change": "略微提高饱和度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:011300",
+    "original_source_sha256": "b3376fa315ad856ca0f43c7f93cdf519bea6b595e06bab63934d941aabeef2f0",
+    "native_annotation": [
+      {
+        "metadata_index": 1275,
+        "field": "amateur_summary",
+        "item_index": 2,
+        "original_text": "Slightly increase saturation."
+      }
+    ],
+    "source_classification_evidence": "Motorcycles on wide bend through grassland; slight saturation increase globally. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x053",
+    "source_id": "train-extension-053",
+    "group_id": "0a05cc00e8ea313bb413c1483b05d2747ac426076d2f6958d7da71cda7746a97",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x053.png",
+    "input_sha256": "af500b9720eab919b395815d609422f0e9b66e9c66582788ab63d1b0c435d7fa",
+    "instructions": {
+      "en": "make the picture more colorful and bright",
+      "zh": "让照片色彩更丰富、更明亮。"
+    },
+    "expected_change": "让照片色彩更丰富、更明亮。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:011244",
+    "original_source_sha256": "bb35f7b809a96b28841eef2802587023c8ba5c8dc96f170ef7505a3b9629dc48",
+    "native_annotation": [
+      {
+        "metadata_index": 99,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "make the picture more colorful and bright"
+      }
+    ],
+    "source_classification_evidence": "Boardwalk over river toward autumn trees; brighten and make more colourful globally. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x071",
+    "source_id": "train-extension-071",
+    "group_id": "c49940e3fbb2c8e15665a26da987f701bb65cb2c67ca08178ab5059549593c32",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x071.png",
+    "input_sha256": "b0ee3d1dc38d971fea382020c7a987f8dd6191e5f4a52b80dae2e7a45c27dcd1",
+    "instructions": {
+      "en": "Brighten the photo and make colors look more vibrant",
+      "zh": "提亮照片，让颜色更鲜明。"
+    },
+    "expected_change": "提亮照片，让颜色更鲜明。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:005437",
+    "original_source_sha256": "d890a3729fddbfc1d35ecf9d7ce7a9c7c94a09ceb28444af1c6328761abf9f70",
+    "native_annotation": [
+      {
+        "metadata_index": 5481,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Brighten the photo and make colors look more vibrant"
+      }
+    ],
+    "source_classification_evidence": "City road intersection and apartment blocks under blue sky; brighten plus vibrant colours. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x092",
+    "source_id": "train-extension-092",
+    "group_id": "3de4887447badb2595dc33879ffffc65df6b8afd2d48b1a2c0a01a070e929a03",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x092.png",
+    "input_sha256": "aea27b7aa7f0552451ddb9f806c95ddae869ab1370d412703886c613dc4040d3",
+    "instructions": {
+      "en": "Please reduce the brightness and enhance the colors of the photo.",
+      "zh": "请降低亮度，并增强照片色彩。"
+    },
+    "expected_change": "请降低亮度，并增强照片色彩。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:014740",
+    "original_source_sha256": "b3d614c3464fd6658814ec9333c5f0a20642c48d551f5e9ad8f12889f00b593b",
+    "native_annotation": [
+      {
+        "metadata_index": 581,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please reduce the brightness and enhance the colors of the photo."
+      }
+    ],
+    "source_classification_evidence": "Wide ridged badlands under pink/blue dusk sky; lower brightness and enhance colours. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x113",
+    "source_id": "train-extension-113",
+    "group_id": "2a2ae6f5f17bbe90f939fd01ebd90f2a785dd706bd9180efcad2a2973674cb18",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x113.png",
+    "input_sha256": "2637280c298a9350a07b6242855df8c245ab7702bd14e1371c01d983d03ce563",
+    "instructions": {
+      "en": "make the colors more vivid and increase saturnation a bit",
+      "zh": "让颜色更鲜明，并略微提高饱和度。"
+    },
+    "expected_change": "让颜色更鲜明，并略微提高饱和度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:022151",
+    "original_source_sha256": "3581c8468d693805b4b853d81826da5ec89468760d9b333184b75993ea67f972",
+    "native_annotation": [
+      {
+        "metadata_index": 1596,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "make the colors more vivid and increase saturnation a bit"
+      }
+    ],
+    "source_classification_evidence": "Tree-lined reflective canal with pale woodland; vivid colours and slight saturation increase. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x121",
+    "source_id": "train-extension-121",
+    "group_id": "a55e6950257e616d9e8ffaf145c8350a0c8cd6cb2c6270fda78556a7a0512ea5",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x121.png",
+    "input_sha256": "e7d19fa192bb8f8c0830842193550a4d551c4b5068bb30c92902634e7dad6cfa",
+    "instructions": {
+      "en": "Significantly increase the brightness and contrast",
+      "zh": "大幅提高亮度和对比度。"
+    },
+    "expected_change": "大幅提高亮度和对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:006151",
+    "original_source_sha256": "22089af399627ab29644191032e4b7eefb83fe0dd743f7b86729db3f47258a49",
+    "native_annotation": [
+      {
+        "metadata_index": 1444,
+        "field": "expert_summary",
+        "item_index": 2,
+        "original_text": "Significantly increase the brightness and contrast"
+      }
+    ],
+    "source_classification_evidence": "Cable car above snowy mountains and cloud layers; significant brightness and contrast, preserve cloud whites. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x137",
+    "source_id": "train-extension-137",
+    "group_id": "762a89046608dca4b7f1f05b2ac894f5dd68b50d4122db622486b46a167913f7",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x137.png",
+    "input_sha256": "cd301306b9059c3bd152f4e5b3aaa034e8352445ea87441b291bb211cd6fd716",
+    "instructions": {
+      "en": "Enhance colors and make them more vivid",
+      "zh": "增强色彩，让颜色更鲜明。"
+    },
+    "expected_change": "增强色彩，让颜色更鲜明。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:002624",
+    "original_source_sha256": "6d84a1206b28cec28fbb6cd6729fc17f063e8635a237ac68d0655bd6760c2582",
+    "native_annotation": [
+      {
+        "metadata_index": 1124,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Enhance colors and make them more vivid"
+      }
+    ],
+    "source_classification_evidence": "Aerial mountain ranges seen from aircraft with haze; enhance vivid colours, cannot remove haze automatically. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x151",
+    "source_id": "train-extension-151",
+    "group_id": "438568c0cfed3b1ef879dc65d8295140df23cbe43f885a4a8e1f3a951092eb66",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x151.png",
+    "input_sha256": "7489d3ce3c1eb1c2b693e2b67facebe21ebbe50a572152e43060e29479ee2bb3",
+    "instructions": {
+      "en": "brighten a bit, fix lightness, decrease contrast a bit",
+      "zh": "稍微提亮，改善光照，并略微降低对比度。"
+    },
+    "expected_change": "稍微提亮，改善光照，并略微降低对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:004504",
+    "original_source_sha256": "61d7e3d25aa54c2b671943074ea72340aa4fa65a51ab726ca73da2277d3ef3d1",
+    "native_annotation": [
+      {
+        "metadata_index": 2836,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "brighten a bit, fix lightness, decrease contrast a bit"
+      }
+    ],
+    "source_classification_evidence": "Underwater coral reef in strong shaft of light; slight brightening and lowered contrast, preserve lit coral detail. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x160",
+    "source_id": "train-extension-160",
+    "group_id": "fd862e0eadef11a180a0cb1bef60fe5dd5afcb59ab8e8b07638ef63e544fd9c2",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x160.png",
+    "input_sha256": "f63470d4c66dd645756f1aeaea44354398b08e034d75279f022e85b8064f1978",
+    "instructions": {
+      "en": "increase image contrast slightly. bring out blue tones in the image",
+      "zh": "略微提高对比度，并突出蓝色调。"
+    },
+    "expected_change": "略微提高对比度，并突出蓝色调。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:011093",
+    "original_source_sha256": "29bf05734315e36072b3692e96baadbd0510748720731e88f5b2a2af3c87cf49",
+    "native_annotation": [
+      {
+        "metadata_index": 237,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "increase image contrast slightly. bring out blue tones in the image"
+      }
+    ],
+    "source_classification_evidence": "Stormy seashore with small back-facing person at bottom; slight contrast increase and bluer tones globally. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x161",
+    "source_id": "train-extension-161",
+    "group_id": "609445084e2286043c6a265cbaebb2bfd71dcf0fa3fc127c81f35a622c0711f0",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x161.png",
+    "input_sha256": "7d14e799b728fc54b62c6cc621a2517cf8db0da77574f1babe9cb07ee8f7712e",
+    "instructions": {
+      "en": "Enhance the colors and make them more vivid and powerful",
+      "zh": "增强色彩，让颜色更鲜明、更有表现力。"
+    },
+    "expected_change": "增强色彩，让颜色更鲜明、更有表现力。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:020449",
+    "original_source_sha256": "f0888cbccc97e80ee4f14910ca1b86eab474d2d189923797057a1b817c0d82de",
+    "native_annotation": [
+      {
+        "metadata_index": 3462,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Enhance the colors and make them more vivid and powerful"
+      }
+    ],
+    "source_classification_evidence": "Modern bridge and buildings along water with broad blue sky; vivid powerful colours globally. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x186",
+    "source_id": "train-extension-186",
+    "group_id": "05021502ba2954adf0de4e930f6434150be5d90903575bddfafbf799b8ca54c0",
+    "domain": "landscape",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x186.png",
+    "input_sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+    "instructions": {
+      "en": "Please brighten the photo",
+      "zh": "请提亮照片。"
+    },
+    "expected_change": "请提亮照片。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:006852",
+    "original_source_sha256": "6b65edafbf21d9c86ad29e3007386e3cced0610142070ae26d2e6bc7f6b7593b",
+    "native_annotation": [
+      {
+        "metadata_index": 2679,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Please brighten the photo"
+      }
+    ],
+    "source_classification_evidence": "Coastal rock stack with trees and bright blue sky; brighten whole photo, preserve water detail. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x191",
+    "source_id": "train-extension-191",
+    "group_id": "4dbcb73b00ad70888765e5239081258771ec47fe4c2d194481e6518dda43583d",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x191.png",
+    "input_sha256": "f865b2a150ac3ad6ee7f3b757b6035bf3911201f086f65f8c0bc4dcd14632830",
+    "instructions": {
+      "en": "Brighten and saturate image.",
+      "zh": "提亮照片，并提高饱和度。"
+    },
+    "expected_change": "提亮照片，并提高饱和度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:015599",
+    "original_source_sha256": "d121ab6fe9ce1d0c3509b9801ad464714f443380da37e558089f4ce090554cfe",
+    "native_annotation": [
+      {
+        "metadata_index": 1710,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Brighten and saturate image."
+      }
+    ],
+    "source_classification_evidence": "Lake reflection and reeds under blue/pink sky; brighten and saturate globally. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x194",
+    "source_id": "train-extension-194",
+    "group_id": "6a59d281670e353ee54110eacdbc3c8a7b412598372db398c75aff79378249d0",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x194.png",
+    "input_sha256": "ec231b5fd3d9fb340f15a96500451f8c93e21a420a7f183e1e6610d1926eebe8",
+    "instructions": {
+      "en": "brighten up the image and make it more vivid",
+      "zh": "请提亮照片，让颜色更鲜明。"
+    },
+    "expected_change": "请提亮照片，让颜色更鲜明。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:014237",
+    "original_source_sha256": "ebd91d9336cbf6a83feda5554fb3468ed5cd7fe9b652d2b1cab767561b63a157",
+    "native_annotation": [
+      {
+        "metadata_index": 3162,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "brighten up the image and make it more vivid"
+      }
+    ],
+    "source_classification_evidence": "Tall palm trees against blue sky with sunlight filtering through; brighten and vivid colours. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x196",
+    "source_id": "train-extension-196",
+    "group_id": "3782089252365734c7e480f6749cddbe07c58d58805a3bd218fff5682884dea6",
+    "domain": "landscape",
+    "split": "train",
+    "family": "contrast",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x196.png",
+    "input_sha256": "bd960d42fe6ab2d767c74aba4c5edafcd4de68a24cd6f67b08f8596bf8b267e2",
+    "instructions": {
+      "en": "Add more contrast to the photo, please.",
+      "zh": "请给照片增加对比度。"
+    },
+    "expected_change": "请给照片增加对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:024218",
+    "original_source_sha256": "b6b70f8576fad0adcdf114556dcf4c93807a72c6e71e035ef6fe3258c996deab",
+    "native_annotation": [
+      {
+        "metadata_index": 1025,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Add more contrast to the photo, please."
+      }
+    ],
+    "source_classification_evidence": "Panoramic green hillside village; more contrast, no crop or local changes. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x202",
+    "source_id": "train-extension-202",
+    "group_id": "39399d0ebefed3f8eb2e8ad6c056fa8e838a49592558a4820aff3a65f8e8f7b6",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x202.png",
+    "input_sha256": "1f60516c4e229eafe4eaa5fc29019d6e69782e51c39dc40a5918f7bca3ca8401",
+    "instructions": {
+      "en": "Boost saturation and contrast.",
+      "zh": "提高饱和度和对比度。"
+    },
+    "expected_change": "提高饱和度和对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:017043",
+    "original_source_sha256": "9e3124473d33ad718391535765c829131ff7908dcd3ffce990ebc4cf63196be4",
+    "native_annotation": [
+      {
+        "metadata_index": 1847,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Boost saturation and contrast."
+      }
+    ],
+    "source_classification_evidence": "Distant Hollywood sign and broad blue sky; boost saturation and contrast globally. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x205",
+    "source_id": "train-extension-205",
+    "group_id": "726c53128a489597f80d6bcf075e396f92a551c49dce2a5ae45a5593b55950e0",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x205.png",
+    "input_sha256": "d05e4f9ab33be92b9aa9079f6aaf801701ab00146d1f02eb5eef15239967cfee",
+    "instructions": {
+      "en": "add blue tone, slightly increase brightness and contrast",
+      "zh": "添加蓝色调，略微提高亮度和对比度。"
+    },
+    "expected_change": "添加蓝色调，略微提高亮度和对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:017570",
+    "original_source_sha256": "da596631b732e6196371e702786e1d0f14f42428fb1fca356929e25e7af7b7e3",
+    "native_annotation": [
+      {
+        "metadata_index": 1061,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "add blue tone, slightly increase brightness and contrast"
+      }
+    ],
+    "source_classification_evidence": "Lake with boats and layered cloudy sky; blue tone plus slight brightness/contrast increase. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x206",
+    "source_id": "train-extension-206",
+    "group_id": "4de5ea49e2102156f18d7a19ac4e7a0fc27fd0876d84d6e7c12ca5c165913db1",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x206.png",
+    "input_sha256": "abca54f6295991179147f43048bc3e59bf7f76ec2cb51970dde1a93feb1bcef3",
+    "instructions": {
+      "en": "Enhance colors and make them more vivid and powerful",
+      "zh": "增强色彩，让颜色更鲜明、更有表现力。"
+    },
+    "expected_change": "增强色彩，让颜色更鲜明、更有表现力。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:015496",
+    "original_source_sha256": "28545ac07e0f076e3aeca4e5f63c0129d0641131dbb187716bd7680d1a5a0306",
+    "native_annotation": [
+      {
+        "metadata_index": 4863,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Enhance colors and make them more vivid and powerful"
+      }
+    ],
+    "source_classification_evidence": "Golden flower field, river and textured clouds; vivid powerful colours requested. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x231",
+    "source_id": "train-extension-231",
+    "group_id": "03208d61d5e6e3e4cf328f273628c7fd089b4682bb88465760d946e6f0a1fb69",
+    "domain": "landscape",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x231.png",
+    "input_sha256": "17128cc6cff211f54d907096d75ef248d1d6c1df0c3da05590eafff91fa69a51",
+    "instructions": {
+      "en": "Darken the entire image",
+      "zh": "调暗整张照片。"
+    },
+    "expected_change": "调暗整张照片。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:011699",
+    "original_source_sha256": "fc8b6ce3895eee5b0958751f94c2bf85f0d31ee69f91587390281896ed0562b2",
+    "native_annotation": [
+      {
+        "metadata_index": 2832,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Darken the entire image"
+      }
+    ],
+    "source_classification_evidence": "Bright aerial town and lakes under pale winter sky; darken entire image. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x246",
+    "source_id": "train-extension-246",
+    "group_id": "a4146b5d55ba670378c20b58eb0f0282876e86963cb643472f257e35e181453a",
+    "domain": "landscape",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x246.png",
+    "input_sha256": "cec7d929dc2d6da13baff58bcc62e60ced6f293122c32bcd5fea0d82f1a1cd1f",
+    "instructions": {
+      "en": "Please brighten the image.",
+      "zh": "请提亮照片。"
+    },
+    "expected_change": "请提亮照片。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:023685",
+    "original_source_sha256": "d8fb44458caec83c1db2c89a15c15534a09d32d55135a962dd2594f5f84f0764",
+    "native_annotation": [
+      {
+        "metadata_index": 4723,
+        "field": "amateur_summary",
+        "item_index": 2,
+        "original_text": "Please brighten the image."
+      }
+    ],
+    "source_classification_evidence": "Daylight rugged mountain valley with clouds; brighten whole image. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x250",
+    "source_id": "train-extension-250",
+    "group_id": "f1e1fc47c7b0dcd552de0e626c6999d6b8dba0fe80cdf7d720533f6c76eb5116",
+    "domain": "landscape",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+    "input_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+    "instructions": {
+      "en": "Brighten photo, increase contrast.",
+      "zh": "提亮照片，提高对比度。"
+    },
+    "expected_change": "提亮照片，提高对比度。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:017548",
+    "original_source_sha256": "bf394fcc79dcb3466f74f5c4b7452eb1d6f40ee38677ea194d2b4c6d6ba10e6f",
+    "native_annotation": [
+      {
+        "metadata_index": 3213,
+        "field": "amateur_summary",
+        "item_index": 1,
+        "original_text": "Brighten photo, increase contrast."
+      }
+    ],
+    "source_classification_evidence": "Pale lakeside mansion at dusk with dark bare trees; brighten plus increased contrast globally. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x351",
+    "source_id": "train-extension-351",
+    "group_id": "1d25bb07d59bca738971644a28c17a074a660a194455d67bd90d5d309092f3a6",
+    "domain": "landscape",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x351.png",
+    "input_sha256": "1e2c569dadb693800cb93c6f638138a8f4a6689f6813187f27bc3d88745e2c11",
+    "instructions": {
+      "en": "Brighten the entire image significantly",
+      "zh": "大幅提亮整张照片。"
+    },
+    "expected_change": "大幅提亮整张照片。 请求涉及多项时，每项都必须在图片上完成；力度以原始措辞及当前图像状态判断。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:016438",
+    "original_source_sha256": "d8f5530ff71bbe36a8682cd25128a2644b51d3b6d7dbad0c49f81343d0ad12a5",
+    "native_annotation": [
+      {
+        "metadata_index": 883,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Brighten the entire image significantly"
+      }
+    ],
+    "source_classification_evidence": "Night alpine lake and mountain reflection beneath visible stars; significant whole-image brightening. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "method": "Fixed arithmetic mean of all112 trainable LoRA A/B parameter tensors; same trajectory and basis, frozen base untouched. This is parameter averaging, not pixel/output mixing or exact average of network functions.",
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "sources": [
+    {
+      "path": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261104/checkpoint-512",
+      "adapter_sha256": "d7d8ec550fe67b1ca18b5fe03a689fa3220af91c127d9ff6d72c4cea0bbbf46a",
+      "config_sha256": "ba186bf52e4aef3cf2459ab8457a77e66f54962eab8c7b27602810a7fc29cc2f"
+    },
+    {
+      "path": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261104/checkpoint-1024",
+      "adapter_sha256": "69ece0a9ca63fa9aa0f2d6203d0adcd8db72c8b379e78e2c54a69617ac97c988",
+      "config_sha256": "ba186bf52e4aef3cf2459ab8457a77e66f54962eab8c7b27602810a7fc29cc2f"
+    }
+  ],
+  "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884",
+  "tensors": 112,
+  "saved_tensors_exact": true,
+  "dtype": "float32",
+  "training_state": "Raw checkpoints and optimizer/RNG remain separate; this derived inference adapter is not paired with the raw optimizer state."
+}

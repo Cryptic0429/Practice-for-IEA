@@ -1,0 +1,117 @@
+"""Matched pilots; requires every target to pass the recorded primary visual review."""
+from __future__ import annotations
+import argparse
+import collections
+import json
+import os
+from pathlib import Path
+import shutil
+import time
+import traceback
+from .common import ROOT, DATA, EXP, PARENT, GPUJob, read, write, append, sha, stamp, EDITOR_VERSION
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--route', choices=['control', 'curriculum'], required=True)
+    ap.add_argument('--gpu', choices=['0','2','3'], required=True)
+    ap.add_argument('--seed', type=int, default=20261106)
+    args = ap.parse_args()
+    acceptance = read(DATA/'label-acceptance.json')
+    assert acceptance['status'] == 'accepted_for_round2_pilot_training'
+    dataset = DATA/('control-accepted.json' if args.route=='control' else 'train-accepted.json')
+    assert acceptance['control_dataset_sha256' if args.route=='control' else 'dataset_sha256'] == sha(dataset)
+    rows = read(dataset)
+    assert len(rows) == 720
+    casepath = ROOT/'data/training/functional-v1-20261104/train-cases.json' if args.route=='control' else DATA/'train-final-cases.json'
+    assert sha(casepath)==(sha(ROOT/'data/training/functional-v1-20261104/train-cases.json') if args.route=='control' else acceptance['case_sha256'])
+    cases = {c['id']: c for c in read(casepath)}
+    if args.route=='curriculum':
+        assert all(r['parameters']==cases[r['case_id']]['parameters'] for r in rows)
+    else:
+        old={r['id']:r for r in read(ROOT/'data/training/functional-v1-20261104/train-accepted.json')}
+        assert all(r['parameters']==old[r['source_row_id']]['parameters'] and r['case_id']==old[r['source_row_id']]['case_id'] for r in rows)
+    assert len({r['case_id'] for r in rows}) == (220 if args.route=='control' else 360)
+    protocol = read(EXP/'protocol.json')
+    assert protocol['status']=='labels_reviewed_and_frozen_before_training'
+    for file,digest in protocol['core_code_hashes'].items(): assert sha(ROOT/file)==digest
+    assert sha(PARENT/'adapter_model.safetensors')==protocol['parent_sha256']
+    out = EXP/'runs'/f'{args.route}-seed-{args.seed}'
+    out.mkdir(parents=True, exist_ok=False)
+    source_dir = out/'source'
+    shutil.copytree(Path(__file__).parent, source_dir, ignore=shutil.ignore_patterns('__pycache__'))
+    settings = {'route': args.route, 'seed': args.seed, 'epochs': 4,
+                'learning_rate': 5e-5, 'effective_batch': 4, 'rank': 8, 'alpha': 16,
+                'tools_editor': EDITOR_VERSION, 'rows': 720, 'semantic_cases': len(cases),
+                'dataset_sha256': sha(dataset),
+                'parent_adapter_sha256': sha(PARENT/'adapter_model.safetensors'),
+                'selection': 'Development instruction completion and image quality; no L1 checkpoint selection.'}
+    write(out/'settings.json', settings)
+    status = {'status': 'starting', 'pid': os.getpid(), 'gpu': args.gpu, 'started_at': stamp()}
+    write(out/'status.json', status)
+    with GPUJob(args.gpu, 'train-'+out.name, max_seconds=7200) as budget:
+        import torch
+        from transformers import Trainer, TrainerCallback, TrainingArguments, set_seed
+        from functional_v1.runtime import load_model, processor, build_batch
+        torch.set_num_threads(4)
+        set_seed(args.seed)
+        p = processor()
+        prepared, audit = [], []
+        for row in rows:
+            batch = build_batch(p, cases[row['case_id']], row['language'], row['parameters'])
+            audit.append({'id': row['id'], 'input_tokens': int(batch['input_ids'].numel()),
+                          'supervised_tokens': int((batch['labels'] != -100).sum())})
+            prepared.append(batch)
+        write(out/'token-audit.json', audit)
+        budget.tick()
+        model = load_model(PARENT, train=True)
+        initial = {k: v.detach().cpu().clone() for k,v in model.named_parameters() if v.requires_grad}
+        write(out/'trainable-parameters.json', [{'name': n, 'dtype': str(v.dtype), 'shape': list(v.shape)}
+                                               for n,v in model.named_parameters() if v.requires_grad])
+        config = TrainingArguments(output_dir=str(out), num_train_epochs=4,
+            per_device_train_batch_size=1, gradient_accumulation_steps=4, learning_rate=5e-5,
+            warmup_ratio=.05, lr_scheduler_type='cosine', optim='adamw_torch', weight_decay=0.,
+            bf16=True, gradient_checkpointing=True, gradient_checkpointing_kwargs={'use_reentrant': False},
+            max_grad_norm=1., save_strategy='epoch', logging_steps=1, report_to='none',
+            remove_unused_columns=False, seed=args.seed, data_seed=args.seed,
+            dataloader_num_workers=0, disable_tqdm=True)
+        write(out/'training-arguments.json', config.to_dict())
+        class Audit(TrainerCallback):
+            def on_pre_optimizer_step(self, args, state, control, **kwargs):
+                active = [v for v in model.parameters() if v.requires_grad]
+                assert len(active) == 112 and all(v.dtype == torch.float32 for v in active)
+                assert all(v.grad is not None and torch.isfinite(v.grad).all() for v in active)
+
+            def on_step_end(self, args, state, control, **kwargs):
+                status.update(status='running', step=state.global_step, epoch=state.epoch, updated_at=stamp())
+                write(out/'status.json', status)
+                try:
+                    budget.tick()
+                except Exception:
+                    control.should_training_stop = True
+                    control.should_save = True
+                    status['budget_stop_requested'] = True
+
+            def on_log(self, args, state, control, logs=None, **kwargs):
+                append(out/'metrics.jsonl', {'step': state.global_step, **(logs or {})})
+        try:
+            trainer = Trainer(model=model, args=config, train_dataset=prepared,
+                              data_collator=lambda b: b[0], callbacks=[Audit()])
+            result = trainer.train()
+            trainer.save_model(str(out/'final'))
+            trainer.save_state()
+            changed = any(not torch.equal(initial[n], v.detach().cpu()) for n,v in model.named_parameters() if n in initial)
+            assert changed
+            completed = trainer.state.global_step == 720 and not status.get('budget_stop_requested')
+            status.update(status='completed' if completed else 'budget_stopped',
+                          step=trainer.state.global_step, metrics=result.metrics, weights_changed=changed,
+                          adapter_sha256=sha(out/'final/adapter_model.safetensors'), finished_at=stamp())
+            write(out/'status.json', status)
+        except BaseException as error:
+            status.update(status='failed', error=f'{type(error).__name__}: {error}', traceback=traceback.format_exc())
+            write(out/'status.json', status)
+            raise
+
+
+if __name__ == '__main__':
+    main()

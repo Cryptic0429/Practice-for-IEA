@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "at": "2026-11-04T15:24:04.033228+00:00",
+  "requests": [
+    {
+      "request_id": "6ce4059a21ba4293af24338010dd15c0",
+      "instruction": "整体暖一点，同时把颜色调得柔和、低饱和一些。",
+      "model_id": "functional-v2-curriculum-20261106",
+      "created_at": "2026-11-04T15:18:16.093563+00:00",
+      "training_use": false,
+      "status": "executed",
+      "parameters": {
+        "temperature": 15,
+        "saturation": -20
+      },
+      "identity": {
+        "model_id": "functional-v2-curriculum-20261106",
+        "display_name": "第二轮 · 人像／风景课程 · 第3轮",
+        "adapter_sha256": "4048de5078f4eda6b19621a2968718be50f4cd5ad35fd17dbf23614a885edb71",
+        "editor": "functional-editor-v1.2-sepia",
+        "runtime_sha256": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+        "editor_sha256": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+        "prompt_sha256": "06eb1e885b065f9d9b060b5924e15178b25e3cc15f6eba175cfa18f9512b27f7"
+      },
+      "output_sha256": "1611897937ce341d7c2def182e1364a96d2a5fb831fd9a59967173abb371b757",
+      "completed_at": "2026-11-04T15:18:38.559228+00:00",
+      "source": "agent_browser_smoke_test_not_user_feedback"
+    },
+    {
+      "request_id": "f4540c1b258f4bcb97d5426e1472915c",
+      "instruction": "整体暖一点，同时把颜色调得柔和、低饱和一些。",
+      "model_id": "functional-v2-control-20261106",
+      "created_at": "2026-11-04T15:21:15.915823+00:00",
+      "training_use": false,
+      "status": "executed",
+      "parameters": {
+        "temperature": 25,
+        "saturation": -25
+      },
+      "identity": {
+        "model_id": "functional-v2-control-20261106",
+        "display_name": "第二轮 · 旧数据等预算对照 · 第2轮",
+        "adapter_sha256": "50b9e3dee814e9eacf33cd0d7db468454034de876de21145f3aa17b8db93ba47",
+        "editor": "functional-editor-v1.2-sepia",
+        "runtime_sha256": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+        "editor_sha256": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+        "prompt_sha256": "06eb1e885b065f9d9b060b5924e15178b25e3cc15f6eba175cfa18f9512b27f7"
+      },
+      "output_sha256": "8ebc0758efecb22850c09b9c04e186d2bb1a6515bb180676de2059470489e324",
+      "completed_at": "2026-11-04T15:21:38.520155+00:00",
+      "source": "agent_browser_smoke_test_not_user_feedback"
+    }
+  ],
+  "actions": [
+    "native photo upload",
+    "select curriculum",
+    "execute compound request",
+    "download result through UI",
+    "save agent-labelled feedback",
+    "switch to control and execute same image/request"
+  ],
+  "human_feedback": false,
+  "download_path_on_mac": "/Users/cryptic/Downloads/output.png",
+  "source": "agent_browser_smoke_test_not_user_feedback",
+  "identity_switch_fix": {
+    "request_id": "388e096bcb324d25b5d20c9210237d6f",
+    "status": "Actual generation succeeded with model/image/instruction disabled during request; changing model subsequently hid result/download/feedback and displayed regenerate status.",
+    "source": "agent_browser_smoke_test_not_user_feedback"
+  }
+}

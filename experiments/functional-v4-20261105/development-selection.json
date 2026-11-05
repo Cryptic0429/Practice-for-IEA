@@ -1,0 +1,1093 @@
+{
+  "status": "input_pilot_failed_practical_goal_not_achieved",
+  "frozen_at": "2026-11-05T01:58:21.633968+00:00",
+  "development_results": {
+    "parent-plain": {
+      "model_id": "parent-plain",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 200,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 73,
+      "raw_individual_completed_both_languages": 73,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 20,
+      "all_tasks_complete_photo_groups": 2,
+      "major_quality_issues": 5,
+      "major_issue_cases": [
+        "development-022-restore-exposure-mild",
+        "development-031-restore-exposure-mild",
+        "development-055-restore-exposure-mild",
+        "development-055-restore-exposure-strong",
+        "development-106-restore-exposure-mild"
+      ],
+      "per_family": {
+        "brown_tone": {
+          "completed": 8,
+          "cases": 8
+        },
+        "compound": {
+          "completed": 10,
+          "cases": 10
+        },
+        "contrast": {
+          "completed": 12,
+          "cases": 20
+        },
+        "identity": {
+          "completed": 10,
+          "cases": 10
+        },
+        "lighting": {
+          "completed": 15,
+          "cases": 24
+        },
+        "saturation": {
+          "completed": 10,
+          "cases": 20
+        },
+        "white_balance": {
+          "completed": 8,
+          "cases": 8
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 84,
+          "partial": 14,
+          "uncertain": 2
+        },
+        "en": {
+          "completed": 82,
+          "partial": 17,
+          "uncertain": 1
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 35,
+          "cases": 50
+        },
+        "landscape": {
+          "completed": 38,
+          "cases": 50
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+      "review_sha256": "78fb0d5b4f17c12940a409b2bf08f8b3e826cf33446c12f8fdc6a98bd34a43e9"
+    },
+    "parent-measured": {
+      "model_id": "parent-measured",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 200,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 62,
+      "raw_individual_completed_both_languages": 62,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 20,
+      "all_tasks_complete_photo_groups": 0,
+      "major_quality_issues": 10,
+      "major_issue_cases": [
+        "development-001-compound",
+        "development-001-restore-exposure-mild",
+        "development-006-restore-exposure-mild",
+        "development-018-restore-exposure-mild",
+        "development-022-restore-exposure-mild",
+        "development-028-restore-saturation-mild",
+        "development-031-restore-exposure-mild",
+        "development-055-restore-exposure-mild",
+        "development-055-restore-exposure-strong",
+        "development-106-restore-exposure-mild"
+      ],
+      "per_family": {
+        "brown_tone": {
+          "completed": 8,
+          "cases": 8
+        },
+        "compound": {
+          "completed": 6,
+          "cases": 10
+        },
+        "contrast": {
+          "completed": 11,
+          "cases": 20
+        },
+        "identity": {
+          "completed": 10,
+          "cases": 10
+        },
+        "lighting": {
+          "completed": 12,
+          "cases": 24
+        },
+        "saturation": {
+          "completed": 8,
+          "cases": 20
+        },
+        "white_balance": {
+          "completed": 7,
+          "cases": 8
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 74,
+          "failed": 2,
+          "partial": 22,
+          "uncertain": 2
+        },
+        "en": {
+          "completed": 80,
+          "partial": 18,
+          "failed": 1,
+          "uncertain": 1
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 28,
+          "cases": 50
+        },
+        "landscape": {
+          "completed": 34,
+          "cases": 50
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+      "review_sha256": "78fb0d5b4f17c12940a409b2bf08f8b3e826cf33446c12f8fdc6a98bd34a43e9"
+    },
+    "plain-e1": {
+      "model_id": "plain-e1",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 200,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 79,
+      "raw_individual_completed_both_languages": 79,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 20,
+      "all_tasks_complete_photo_groups": 3,
+      "major_quality_issues": 2,
+      "major_issue_cases": [
+        "development-001-restore-exposure-strong",
+        "development-055-restore-exposure-strong"
+      ],
+      "per_family": {
+        "brown_tone": {
+          "completed": 8,
+          "cases": 8
+        },
+        "compound": {
+          "completed": 10,
+          "cases": 10
+        },
+        "contrast": {
+          "completed": 13,
+          "cases": 20
+        },
+        "identity": {
+          "completed": 10,
+          "cases": 10
+        },
+        "lighting": {
+          "completed": 17,
+          "cases": 24
+        },
+        "saturation": {
+          "completed": 13,
+          "cases": 20
+        },
+        "white_balance": {
+          "completed": 8,
+          "cases": 8
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 82,
+          "partial": 16,
+          "uncertain": 2
+        },
+        "en": {
+          "completed": 83,
+          "partial": 15,
+          "uncertain": 2
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 38,
+          "cases": 50
+        },
+        "landscape": {
+          "completed": 41,
+          "cases": 50
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+      "review_sha256": "78fb0d5b4f17c12940a409b2bf08f8b3e826cf33446c12f8fdc6a98bd34a43e9"
+    },
+    "plain-e2": {
+      "model_id": "plain-e2",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 200,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 75,
+      "raw_individual_completed_both_languages": 75,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 20,
+      "all_tasks_complete_photo_groups": 2,
+      "major_quality_issues": 2,
+      "major_issue_cases": [
+        "development-001-restore-exposure-strong",
+        "development-055-restore-exposure-strong"
+      ],
+      "per_family": {
+        "brown_tone": {
+          "completed": 8,
+          "cases": 8
+        },
+        "compound": {
+          "completed": 10,
+          "cases": 10
+        },
+        "contrast": {
+          "completed": 12,
+          "cases": 20
+        },
+        "identity": {
+          "completed": 10,
+          "cases": 10
+        },
+        "lighting": {
+          "completed": 17,
+          "cases": 24
+        },
+        "saturation": {
+          "completed": 12,
+          "cases": 20
+        },
+        "white_balance": {
+          "completed": 6,
+          "cases": 8
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 83,
+          "partial": 16,
+          "uncertain": 1
+        },
+        "en": {
+          "completed": 83,
+          "partial": 16,
+          "uncertain": 1
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 36,
+          "cases": 50
+        },
+        "landscape": {
+          "completed": 39,
+          "cases": 50
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+      "review_sha256": "78fb0d5b4f17c12940a409b2bf08f8b3e826cf33446c12f8fdc6a98bd34a43e9"
+    },
+    "measured-e1": {
+      "model_id": "measured-e1",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 200,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 80,
+      "raw_individual_completed_both_languages": 80,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 20,
+      "all_tasks_complete_photo_groups": 4,
+      "major_quality_issues": 2,
+      "major_issue_cases": [
+        "development-001-restore-exposure-strong",
+        "development-055-restore-exposure-strong"
+      ],
+      "per_family": {
+        "brown_tone": {
+          "completed": 8,
+          "cases": 8
+        },
+        "compound": {
+          "completed": 10,
+          "cases": 10
+        },
+        "contrast": {
+          "completed": 13,
+          "cases": 20
+        },
+        "identity": {
+          "completed": 10,
+          "cases": 10
+        },
+        "lighting": {
+          "completed": 18,
+          "cases": 24
+        },
+        "saturation": {
+          "completed": 13,
+          "cases": 20
+        },
+        "white_balance": {
+          "completed": 8,
+          "cases": 8
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 85,
+          "partial": 13,
+          "uncertain": 2
+        },
+        "en": {
+          "completed": 84,
+          "partial": 14,
+          "uncertain": 2
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 38,
+          "cases": 50
+        },
+        "landscape": {
+          "completed": 42,
+          "cases": 50
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+      "review_sha256": "78fb0d5b4f17c12940a409b2bf08f8b3e826cf33446c12f8fdc6a98bd34a43e9"
+    },
+    "measured-e2": {
+      "model_id": "measured-e2",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 200,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 78,
+      "raw_individual_completed_both_languages": 78,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 20,
+      "all_tasks_complete_photo_groups": 4,
+      "major_quality_issues": 1,
+      "major_issue_cases": [
+        "development-055-restore-exposure-strong"
+      ],
+      "per_family": {
+        "brown_tone": {
+          "completed": 8,
+          "cases": 8
+        },
+        "compound": {
+          "completed": 10,
+          "cases": 10
+        },
+        "contrast": {
+          "completed": 13,
+          "cases": 20
+        },
+        "identity": {
+          "completed": 10,
+          "cases": 10
+        },
+        "lighting": {
+          "completed": 19,
+          "cases": 24
+        },
+        "saturation": {
+          "completed": 12,
+          "cases": 20
+        },
+        "white_balance": {
+          "completed": 6,
+          "cases": 8
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 85,
+          "partial": 14,
+          "uncertain": 1
+        },
+        "en": {
+          "completed": 81,
+          "partial": 19
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 38,
+          "cases": 50
+        },
+        "landscape": {
+          "completed": 40,
+          "cases": 50
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+      "review_sha256": "78fb0d5b4f17c12940a409b2bf08f8b3e826cf33446c12f8fdc6a98bd34a43e9"
+    }
+  },
+  "natural_results": {
+    "parent-plain": {
+      "model_id": "parent-plain",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 12,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 3,
+      "raw_individual_completed_both_languages": 3,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 6,
+      "all_tasks_complete_photo_groups": 3,
+      "major_quality_issues": 1,
+      "major_issue_cases": [
+        "natural-028"
+      ],
+      "per_family": {
+        "compound": {
+          "completed": 1,
+          "cases": 2
+        },
+        "lighting": {
+          "completed": 0,
+          "cases": 2
+        },
+        "saturation": {
+          "completed": 2,
+          "cases": 2
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 4,
+          "partial": 2
+        },
+        "en": {
+          "partial": 3,
+          "completed": 3
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 2,
+          "cases": 3
+        },
+        "landscape": {
+          "completed": 1,
+          "cases": 3
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "review_sha256": "6ecb99cacc7ddb4c49f88b1f1099fb60d6031a0bf2924a13c617f827ab85de71"
+    },
+    "parent-measured": {
+      "model_id": "parent-measured",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 12,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 1,
+      "raw_individual_completed_both_languages": 1,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 6,
+      "all_tasks_complete_photo_groups": 1,
+      "major_quality_issues": 1,
+      "major_issue_cases": [
+        "natural-019"
+      ],
+      "per_family": {
+        "compound": {
+          "completed": 0,
+          "cases": 2
+        },
+        "lighting": {
+          "completed": 0,
+          "cases": 2
+        },
+        "saturation": {
+          "completed": 1,
+          "cases": 2
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 3,
+          "failed": 1,
+          "partial": 2
+        },
+        "en": {
+          "completed": 2,
+          "partial": 3,
+          "failed": 1
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 0,
+          "cases": 3
+        },
+        "landscape": {
+          "completed": 1,
+          "cases": 3
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "review_sha256": "6ecb99cacc7ddb4c49f88b1f1099fb60d6031a0bf2924a13c617f827ab85de71"
+    },
+    "plain-e1": {
+      "model_id": "plain-e1",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 12,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 2,
+      "raw_individual_completed_both_languages": 2,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 6,
+      "all_tasks_complete_photo_groups": 2,
+      "major_quality_issues": 0,
+      "major_issue_cases": [],
+      "per_family": {
+        "compound": {
+          "completed": 0,
+          "cases": 2
+        },
+        "lighting": {
+          "completed": 0,
+          "cases": 2
+        },
+        "saturation": {
+          "completed": 2,
+          "cases": 2
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 4,
+          "partial": 2
+        },
+        "en": {
+          "completed": 3,
+          "partial": 3
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 1,
+          "cases": 3
+        },
+        "landscape": {
+          "completed": 1,
+          "cases": 3
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "review_sha256": "6ecb99cacc7ddb4c49f88b1f1099fb60d6031a0bf2924a13c617f827ab85de71"
+    },
+    "plain-e2": {
+      "model_id": "plain-e2",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 12,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 2,
+      "raw_individual_completed_both_languages": 2,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 6,
+      "all_tasks_complete_photo_groups": 2,
+      "major_quality_issues": 0,
+      "major_issue_cases": [],
+      "per_family": {
+        "compound": {
+          "completed": 0,
+          "cases": 2
+        },
+        "lighting": {
+          "completed": 0,
+          "cases": 2
+        },
+        "saturation": {
+          "completed": 2,
+          "cases": 2
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 5,
+          "partial": 1
+        },
+        "en": {
+          "completed": 4,
+          "partial": 2
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 1,
+          "cases": 3
+        },
+        "landscape": {
+          "completed": 1,
+          "cases": 3
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "review_sha256": "6ecb99cacc7ddb4c49f88b1f1099fb60d6031a0bf2924a13c617f827ab85de71"
+    },
+    "measured-e1": {
+      "model_id": "measured-e1",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 12,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 3,
+      "raw_individual_completed_both_languages": 3,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 6,
+      "all_tasks_complete_photo_groups": 3,
+      "major_quality_issues": 0,
+      "major_issue_cases": [],
+      "per_family": {
+        "compound": {
+          "completed": 0,
+          "cases": 2
+        },
+        "lighting": {
+          "completed": 1,
+          "cases": 2
+        },
+        "saturation": {
+          "completed": 2,
+          "cases": 2
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 4,
+          "partial": 2
+        },
+        "en": {
+          "completed": 3,
+          "partial": 3
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 2,
+          "cases": 3
+        },
+        "landscape": {
+          "completed": 1,
+          "cases": 3
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "review_sha256": "6ecb99cacc7ddb4c49f88b1f1099fb60d6031a0bf2924a13c617f827ab85de71"
+    },
+    "measured-e2": {
+      "model_id": "measured-e2",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 12,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 2,
+      "raw_individual_completed_both_languages": 2,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 6,
+      "all_tasks_complete_photo_groups": 2,
+      "major_quality_issues": 0,
+      "major_issue_cases": [],
+      "per_family": {
+        "compound": {
+          "completed": 0,
+          "cases": 2
+        },
+        "lighting": {
+          "completed": 0,
+          "cases": 2
+        },
+        "saturation": {
+          "completed": 2,
+          "cases": 2
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 5,
+          "partial": 1
+        },
+        "en": {
+          "completed": 3,
+          "partial": 3
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 1,
+          "cases": 3
+        },
+        "landscape": {
+          "completed": 1,
+          "cases": 3
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "review_sha256": "6ecb99cacc7ddb4c49f88b1f1099fb60d6031a0bf2924a13c617f827ab85de71"
+    }
+  },
+  "promoted": false,
+  "acceptance_status": "closed_not_evaluated",
+  "models": {
+    "functional-v4-plain-20261108": {
+      "model_id": "functional-v4-plain-20261108",
+      "evaluation_id": "plain-e1",
+      "display_name": "第四轮 · 普通输入对照（未通过）",
+      "trial_status": "第四轮未通过升级门槛；仅供诊断试用，存在过曝和复合要求漏项。",
+      "adapter": "models/from-functional-v2/sft-input-plain/seed-01",
+      "adapter_sha256": "48c3af14acd5b7d628919ec018e40bf781fcf5e988113e96a7b75fa90d64d944",
+      "parent": "models/from-functional-v1/sft-curriculum/seed-01",
+      "parent_sha256": "4048de5078f4eda6b19621a2968718be50f4cd5ad35fd17dbf23614a885edb71",
+      "checkpoint": "experiments/functional-v4-20261105/runs/plain-seed-20261108/checkpoint-230",
+      "epoch": 1,
+      "step": 230,
+      "dataset_sha256": "4d7f1605238aa8dea095c0ab1e0b7dfc7e0333b7d52bbe6f7a72cae99c2428a6",
+      "input_route": "plain",
+      "runtime_family": "functional_v4",
+      "runtime_sha256": "da64f2cdeb94dca07cbfb7422fb716bac037a6793942e315a676cab7f142fb9c",
+      "status": "diagnostic_trial_only_not_promoted",
+      "diagnostic_choice": "No eligible winner exists. Epoch one of each route is exposed only as an early reference, not selected as a qualified champion. All four checkpoint results remain visible.",
+      "load_method": "Original Qwen base plus this one adapter; do not stack parent adapters.",
+      "development_summary": {
+        "model_id": "plain-e1",
+        "status": "completed",
+        "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+        "human_review": false,
+        "reviewed_outputs": 200,
+        "missing_unique_images": [],
+        "fully_completed_both_languages": 79,
+        "raw_individual_completed_both_languages": 79,
+        "identical_strength_pairs": [],
+        "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+        "photo_groups": 20,
+        "all_tasks_complete_photo_groups": 3,
+        "major_quality_issues": 2,
+        "major_issue_cases": [
+          "development-001-restore-exposure-strong",
+          "development-055-restore-exposure-strong"
+        ],
+        "per_family": {
+          "brown_tone": {
+            "completed": 8,
+            "cases": 8
+          },
+          "compound": {
+            "completed": 10,
+            "cases": 10
+          },
+          "contrast": {
+            "completed": 13,
+            "cases": 20
+          },
+          "identity": {
+            "completed": 10,
+            "cases": 10
+          },
+          "lighting": {
+            "completed": 17,
+            "cases": 24
+          },
+          "saturation": {
+            "completed": 13,
+            "cases": 20
+          },
+          "white_balance": {
+            "completed": 8,
+            "cases": 8
+          }
+        },
+        "per_language": {
+          "zh": {
+            "completed": 82,
+            "partial": 16,
+            "uncertain": 2
+          },
+          "en": {
+            "completed": 83,
+            "partial": 15,
+            "uncertain": 2
+          }
+        },
+        "per_domain": {
+          "portrait": {
+            "completed": 38,
+            "cases": 50
+          },
+          "landscape": {
+            "completed": 41,
+            "cases": 50
+          }
+        },
+        "selection_uses_L1": false,
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+        "review_sha256": "78fb0d5b4f17c12940a409b2bf08f8b3e826cf33446c12f8fdc6a98bd34a43e9"
+      },
+      "natural_summary": {
+        "model_id": "plain-e1",
+        "status": "completed",
+        "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+        "human_review": false,
+        "reviewed_outputs": 12,
+        "missing_unique_images": [],
+        "fully_completed_both_languages": 2,
+        "raw_individual_completed_both_languages": 2,
+        "identical_strength_pairs": [],
+        "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+        "photo_groups": 6,
+        "all_tasks_complete_photo_groups": 2,
+        "major_quality_issues": 0,
+        "major_issue_cases": [],
+        "per_family": {
+          "compound": {
+            "completed": 0,
+            "cases": 2
+          },
+          "lighting": {
+            "completed": 0,
+            "cases": 2
+          },
+          "saturation": {
+            "completed": 2,
+            "cases": 2
+          }
+        },
+        "per_language": {
+          "zh": {
+            "completed": 4,
+            "partial": 2
+          },
+          "en": {
+            "completed": 3,
+            "partial": 3
+          }
+        },
+        "per_domain": {
+          "portrait": {
+            "completed": 1,
+            "cases": 3
+          },
+          "landscape": {
+            "completed": 1,
+            "cases": 3
+          }
+        },
+        "selection_uses_L1": false,
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+        "review_sha256": "6ecb99cacc7ddb4c49f88b1f1099fb60d6031a0bf2924a13c617f827ab85de71"
+      },
+      "human_feedback": false,
+      "frozen_at": "2026-11-05T01:58:21.688395+00:00"
+    },
+    "functional-v4-measured-20261108": {
+      "model_id": "functional-v4-measured-20261108",
+      "evaluation_id": "measured-e1",
+      "display_name": "第四轮 · 图像观测输入（未通过）",
+      "trial_status": "第四轮未通过升级门槛；仅供诊断试用，存在过曝和复合要求漏项。",
+      "adapter": "models/from-functional-v2/sft-input-measured/seed-01",
+      "adapter_sha256": "4a26313de6a02a3c9e4fd68b44d80f05c848334c3e1b01161c0383f138ddc868",
+      "parent": "models/from-functional-v1/sft-curriculum/seed-01",
+      "parent_sha256": "4048de5078f4eda6b19621a2968718be50f4cd5ad35fd17dbf23614a885edb71",
+      "checkpoint": "experiments/functional-v4-20261105/runs/measured-seed-20261108/checkpoint-230",
+      "epoch": 1,
+      "step": 230,
+      "dataset_sha256": "4d7f1605238aa8dea095c0ab1e0b7dfc7e0333b7d52bbe6f7a72cae99c2428a6",
+      "input_route": "measured",
+      "runtime_family": "functional_v4",
+      "runtime_sha256": "da64f2cdeb94dca07cbfb7422fb716bac037a6793942e315a676cab7f142fb9c",
+      "status": "diagnostic_trial_only_not_promoted",
+      "diagnostic_choice": "No eligible winner exists. Epoch one of each route is exposed only as an early reference, not selected as a qualified champion. All four checkpoint results remain visible.",
+      "load_method": "Original Qwen base plus this one adapter; do not stack parent adapters.",
+      "development_summary": {
+        "model_id": "measured-e1",
+        "status": "completed",
+        "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+        "human_review": false,
+        "reviewed_outputs": 200,
+        "missing_unique_images": [],
+        "fully_completed_both_languages": 80,
+        "raw_individual_completed_both_languages": 80,
+        "identical_strength_pairs": [],
+        "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+        "photo_groups": 20,
+        "all_tasks_complete_photo_groups": 4,
+        "major_quality_issues": 2,
+        "major_issue_cases": [
+          "development-001-restore-exposure-strong",
+          "development-055-restore-exposure-strong"
+        ],
+        "per_family": {
+          "brown_tone": {
+            "completed": 8,
+            "cases": 8
+          },
+          "compound": {
+            "completed": 10,
+            "cases": 10
+          },
+          "contrast": {
+            "completed": 13,
+            "cases": 20
+          },
+          "identity": {
+            "completed": 10,
+            "cases": 10
+          },
+          "lighting": {
+            "completed": 18,
+            "cases": 24
+          },
+          "saturation": {
+            "completed": 13,
+            "cases": 20
+          },
+          "white_balance": {
+            "completed": 8,
+            "cases": 8
+          }
+        },
+        "per_language": {
+          "zh": {
+            "completed": 85,
+            "partial": 13,
+            "uncertain": 2
+          },
+          "en": {
+            "completed": 84,
+            "partial": 14,
+            "uncertain": 2
+          }
+        },
+        "per_domain": {
+          "portrait": {
+            "completed": 38,
+            "cases": 50
+          },
+          "landscape": {
+            "completed": 42,
+            "cases": 50
+          }
+        },
+        "selection_uses_L1": false,
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+        "review_sha256": "78fb0d5b4f17c12940a409b2bf08f8b3e826cf33446c12f8fdc6a98bd34a43e9"
+      },
+      "natural_summary": {
+        "model_id": "measured-e1",
+        "status": "completed",
+        "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+        "human_review": false,
+        "reviewed_outputs": 12,
+        "missing_unique_images": [],
+        "fully_completed_both_languages": 3,
+        "raw_individual_completed_both_languages": 3,
+        "identical_strength_pairs": [],
+        "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+        "photo_groups": 6,
+        "all_tasks_complete_photo_groups": 3,
+        "major_quality_issues": 0,
+        "major_issue_cases": [],
+        "per_family": {
+          "compound": {
+            "completed": 0,
+            "cases": 2
+          },
+          "lighting": {
+            "completed": 1,
+            "cases": 2
+          },
+          "saturation": {
+            "completed": 2,
+            "cases": 2
+          }
+        },
+        "per_language": {
+          "zh": {
+            "completed": 4,
+            "partial": 2
+          },
+          "en": {
+            "completed": 3,
+            "partial": 3
+          }
+        },
+        "per_domain": {
+          "portrait": {
+            "completed": 2,
+            "cases": 3
+          },
+          "landscape": {
+            "completed": 1,
+            "cases": 3
+          }
+        },
+        "selection_uses_L1": false,
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+        "review_sha256": "6ecb99cacc7ddb4c49f88b1f1099fb60d6031a0bf2924a13c617f827ab85de71"
+      },
+      "human_feedback": false,
+      "frozen_at": "2026-11-05T01:58:21.731371+00:00"
+    }
+  },
+  "seed_replication_started": false,
+  "trial_default_changed": false,
+  "reason": "No checkpoint passes the predeclared practical gate. Measured inputs do not improve the six original-request probes beyond 3/6, and every trained checkpoint retains severe exposure damage.",
+  "diagnostic_policy": "No eligible winner exists. Epoch one of each route is exposed only as an early reference, not selected as a qualified champion. All four checkpoint results remain visible."
+}

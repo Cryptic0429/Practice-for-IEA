@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-10-31T11:44:39.356762+00:00",
+  "model": "B",
+  "remote_adapter": "/mnt/sdc/zhc/IEA/outputs/stage1-B-image-edit-3k-v1",
+  "base_model_revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "best_checkpoint": "/mnt/sdc/zhc/IEA/outputs/stage1-B-image-edit-3k-v1/checkpoint-376",
+  "files": [
+    {
+      "file": "adapter_model.safetensors",
+      "bytes": 10107280,
+      "sha256": "1e8752c182dc40b86e5f974477b0ba83e3a674a5669fe9fd1fa8d2bc49082304"
+    },
+    {
+      "file": "adapter_config.json",
+      "bytes": 800,
+      "sha256": "35bab7526c80621359a288c274ccb21c9e19e554837e75b3a9a3ce4f4f60ea97"
+    }
+  ],
+  "requires_base_model": true,
+  "note": "These are LoRA adapter weights, not a standalone full Qwen model."
+}

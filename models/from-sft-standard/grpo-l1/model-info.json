@@ -1,0 +1,50 @@
+{
+  "schema": "iea-model-info-v1",
+  "id": "from-sft-standard/grpo-l1",
+  "display_name": "L1 奖励强化学习",
+  "legacy_id": "GRPO",
+  "canonical_path": "models/from-sft-standard/grpo-l1",
+  "kind": "lora_adapter",
+  "base_model": {
+    "id": "qwen2.5-vl-7b-instruct",
+    "upstream": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "server_path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct"
+  },
+  "adapter_sha256": "148c039763698694f30fe78efa63f71572a4c84d092374f222a4b19284f533d4",
+  "adapter_config_sha256": "ba186bf52e4aef3cf2459ab8457a77e66f54962eab8c7b27602810a7fc29cc2f",
+  "training_seed": 20261101,
+  "selected_for_current": false,
+  "evaluation_records": [
+    "experiments/quality-v2-20261103/metadata/final-models-lock.json",
+    "experiments/quality-v2-20261103/metadata/final-analysis-summary.json",
+    "experiments/quality-v2-20261103/review/visual-review-summary.json"
+  ],
+  "availability": {
+    "local": true,
+    "server": true
+  },
+  "name_changed_on": "2026-11-04",
+  "parent_model": {
+    "id": "from-base/sft-standard",
+    "legacy_id": "A",
+    "canonical_path": "models/from-base/sft-standard",
+    "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306"
+  },
+  "training": {
+    "method": "GRPO",
+    "rows": 512,
+    "source_groups": 414,
+    "optimizer_steps": 128,
+    "learning_rate": 1e-06,
+    "dataset_server_path": "/mnt/sdc/zhc/IEA/data/stage2/stage2-A-edit-grpo-v1/train.json",
+    "dataset_sha256": "de565c842980de3a1c0f66154cec602be42288f5574b35ae5f7d5d41e9ced5fc",
+    "evidence": "experiments/stage2/metadata/data-manifest.json",
+    "reward": "historical simplified pixel-L1 improvement reward",
+    "candidates_per_prompt": 4
+  },
+  "export": {
+    "method": "validation-selected checkpoint",
+    "checkpoint_step": 128
+  }
+}

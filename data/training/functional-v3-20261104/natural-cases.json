@@ -1,0 +1,452 @@
+[
+  {
+    "id": "natural-train-013",
+    "source_id": "train-013",
+    "domain": "portrait",
+    "group_id": "667c09557c19737f3e16035b44d76fa955900541b1e8721d3cf4facca8a4a61e",
+    "split": "train",
+    "image": "data/training/functional-v2-20261104/inputs/train-013/original.png",
+    "input_sha256": "f30d2dd30d8ba668d805ccc23248f061fdca7c1ada615c05ea331be3036a9a05",
+    "instructions": {
+      "zh": "请只稍微提亮一点，并把色温往冷色方向调整。",
+      "en": "Brighten the pic just a little bit and adjust color temperature towards cool."
+    },
+    "family": "original-natural-request",
+    "action": "original-natural-request",
+    "instruction_origin": "Untouched original GIER English request; AI Chinese translation; not actual present user feedback.",
+    "expected_change": "完整完成原始请求的方向、力度及所有组成；以可见图片判断，不能只调用正确工具。",
+    "must_preserve": "主体结构、未要求的颜色和明暗层次；避免过曝、暗部损失和非预期肤色变化。",
+    "proposals": [
+      {
+        "id": "proposal-1",
+        "parameters": {
+          "exposure": 3,
+          "temperature": -8
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-013-1.png",
+        "sha256": "6df092ffb5a764bf5e0c79003d42eacf28e415000cf068dfd6192e3ad323f3a4"
+      },
+      {
+        "id": "proposal-2",
+        "parameters": {
+          "exposure": 6,
+          "temperature": -12
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-013-2.png",
+        "sha256": "a58b70c969437fac50df848d3ef982ccb495acaa5c55545a4a5c19c2f12d6c92"
+      },
+      {
+        "id": "proposal-3",
+        "parameters": {
+          "brightness": 4,
+          "temperature": -8
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-013-3.png",
+        "sha256": "8c6d788a9bd588f5e121fc406317009f4b20ca522364661593a1697d568ecfca"
+      }
+    ]
+  },
+  {
+    "id": "natural-train-030",
+    "source_id": "train-030",
+    "domain": "portrait",
+    "group_id": "62ec9ccb9f528d8b10df93bec7cb5d59f661fc8d857080b1f279258c1f63f4d0",
+    "split": "train",
+    "image": "data/training/functional-v2-20261104/inputs/train-030/original.png",
+    "input_sha256": "c0791282c0d14d01d0adf6b3f3cf9dff8ec3666f8c0b089aee9240432ea18218",
+    "instructions": {
+      "zh": "增强色彩，让颜色更鲜明。",
+      "en": "Enhance the colors and make them more vivid"
+    },
+    "family": "original-natural-request",
+    "action": "original-natural-request",
+    "instruction_origin": "Untouched original GIER English request; AI Chinese translation; not actual present user feedback.",
+    "expected_change": "完整完成原始请求的方向、力度及所有组成；以可见图片判断，不能只调用正确工具。",
+    "must_preserve": "主体结构、未要求的颜色和明暗层次；避免过曝、暗部损失和非预期肤色变化。",
+    "proposals": [
+      {
+        "id": "proposal-1",
+        "parameters": {
+          "saturation": 12
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-030-1.png",
+        "sha256": "86fee57c36e38d12542696739074de2c679be2db18fac784926697a071f1fd82"
+      },
+      {
+        "id": "proposal-2",
+        "parameters": {
+          "saturation": 25
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-030-2.png",
+        "sha256": "384d1c8524476c3469db5ff0f0e035085ca2992bd1b8644137462f5ff1b41823"
+      },
+      {
+        "id": "proposal-3",
+        "parameters": {
+          "saturation": 40
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-030-3.png",
+        "sha256": "1a3e61dbaf854140e110f63878e875dfab59da1f3f1076b2ffb24d3cd7a66670"
+      }
+    ]
+  },
+  {
+    "id": "natural-train-035",
+    "source_id": "train-035",
+    "domain": "portrait",
+    "group_id": "30e20f51bfc634771cf08da5af4c999d60fb59e1a40cd4499cc1b766a2459ba0",
+    "split": "train",
+    "image": "data/training/functional-v2-20261104/inputs/train-035/original.png",
+    "input_sha256": "c1943a6c880369b3fb37212739a94431472982f82d4efa31c99d6f8d15a37a19",
+    "instructions": {
+      "zh": "把这张照片提亮。",
+      "en": "brighten the picture"
+    },
+    "family": "original-natural-request",
+    "action": "original-natural-request",
+    "instruction_origin": "Untouched original GIER English request; AI Chinese translation; not actual present user feedback.",
+    "expected_change": "完整完成原始请求的方向、力度及所有组成；以可见图片判断，不能只调用正确工具。",
+    "must_preserve": "主体结构、未要求的颜色和明暗层次；避免过曝、暗部损失和非预期肤色变化。",
+    "proposals": [
+      {
+        "id": "proposal-1",
+        "parameters": {
+          "exposure": 5
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-035-1.png",
+        "sha256": "b14b0c1d16da5c012ce164ac7178952f5ccbe9ee766de8f1a83237b0035704d0"
+      },
+      {
+        "id": "proposal-2",
+        "parameters": {
+          "exposure": 10
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-035-2.png",
+        "sha256": "b046f2ac9ee1e92043b4fab8b1998b84e742d75ae4bbe78a149f541ccf5750b0"
+      },
+      {
+        "id": "proposal-3",
+        "parameters": {
+          "shadows": 25
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-035-3.png",
+        "sha256": "6d701b3ac7279cdad9ad22d38c774b9489022376613b52ce30bf5fae47aef049"
+      }
+    ]
+  },
+  {
+    "id": "natural-train-053",
+    "source_id": "train-053",
+    "domain": "portrait",
+    "group_id": "b4c022d1994176dd75407559ed047567dc48c0b27e1cc9a653e3585601e23951",
+    "split": "train",
+    "image": "data/training/functional-v2-20261104/inputs/train-053/original.png",
+    "input_sha256": "975712a90d554dd521c27f3e9435bfd5d2e724493a03cdd8a420778f6dcfbc8a",
+    "instructions": {
+      "zh": "添加棕褐色色调。",
+      "en": "Add a sepia hue."
+    },
+    "family": "original-natural-request",
+    "action": "original-natural-request",
+    "instruction_origin": "Untouched original GIER English request; AI Chinese translation; not actual present user feedback.",
+    "expected_change": "完整完成原始请求的方向、力度及所有组成；以可见图片判断，不能只调用正确工具。",
+    "must_preserve": "主体结构、未要求的颜色和明暗层次；避免过曝、暗部损失和非预期肤色变化。",
+    "proposals": [
+      {
+        "id": "proposal-1",
+        "parameters": {
+          "sepia": 35
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-053-1.png",
+        "sha256": "04f2104f9fe58d1c704cec867e30ec96f187d4557126097a97bd2770b739ba22"
+      },
+      {
+        "id": "proposal-2",
+        "parameters": {
+          "sepia": 65
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-053-2.png",
+        "sha256": "587921390f3cd4cab43bfb0d562aa7aadbdbfeb8570f54dcb9436fcf743801f9"
+      },
+      {
+        "id": "proposal-3",
+        "parameters": {
+          "sepia": 95
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-053-3.png",
+        "sha256": "650add865f2085bf89c0cb95cf5e227c1b63dfdec4541848cfae2c5ca643fb82"
+      }
+    ]
+  },
+  {
+    "id": "natural-train-102",
+    "source_id": "train-102",
+    "domain": "portrait",
+    "group_id": "409dcd765725e137184973a9621f0c1bc07adb090c4a22822237f5d1d3f815b4",
+    "split": "train",
+    "image": "data/training/functional-v2-20261104/inputs/train-102/original.png",
+    "input_sha256": "4a58b4112535e3ddbc9244c48760b2226a09f339f7385aa82dbcdc8aa931ed68",
+    "instructions": {
+      "zh": "把照片稍微调暗一点。",
+      "en": "Darken the image a shade."
+    },
+    "family": "original-natural-request",
+    "action": "original-natural-request",
+    "instruction_origin": "Untouched original GIER English request; AI Chinese translation; not actual present user feedback.",
+    "expected_change": "完整完成原始请求的方向、力度及所有组成；以可见图片判断，不能只调用正确工具。",
+    "must_preserve": "主体结构、未要求的颜色和明暗层次；避免过曝、暗部损失和非预期肤色变化。",
+    "proposals": [
+      {
+        "id": "proposal-1",
+        "parameters": {
+          "exposure": -5
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-102-1.png",
+        "sha256": "f422253bb5f7879466322e741e54503838d1f5c67811aca094cf7b7bfacc30b9"
+      },
+      {
+        "id": "proposal-2",
+        "parameters": {
+          "exposure": -10
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-102-2.png",
+        "sha256": "7b79497958bf510989b4fd6b413f36fee82611561feb6d3d6603773153a5a58d"
+      },
+      {
+        "id": "proposal-3",
+        "parameters": {
+          "brightness": -8
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-102-3.png",
+        "sha256": "4770ab5b3cb62660b064dc4600cdc8097da55c37ab9b63027e9d17f094357317"
+      }
+    ]
+  },
+  {
+    "id": "natural-train-039",
+    "source_id": "train-039",
+    "domain": "landscape",
+    "group_id": "5694d36056c1a99187ad2ce759bb8cb16b2c2e03f468b79f327ce4ba5ec7ab53",
+    "split": "train",
+    "image": "data/training/functional-v2-20261104/inputs/train-039/original.png",
+    "input_sha256": "f4633141b3839f7abc9b236ea0c15a519e5a07464342707fd19142bad82cd0bc",
+    "instructions": {
+      "zh": "降低亮度。",
+      "en": "Reduce the brightness"
+    },
+    "family": "original-natural-request",
+    "action": "original-natural-request",
+    "instruction_origin": "Untouched original GIER English request; AI Chinese translation; not actual present user feedback.",
+    "expected_change": "完整完成原始请求的方向、力度及所有组成；以可见图片判断，不能只调用正确工具。",
+    "must_preserve": "主体结构、未要求的颜色和明暗层次；避免过曝、暗部损失和非预期肤色变化。",
+    "proposals": [
+      {
+        "id": "proposal-1",
+        "parameters": {
+          "exposure": -8
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-039-1.png",
+        "sha256": "7f69f6986228b0c3849fda7f4180b4f0112ce961f767901507e20b0309c32f80"
+      },
+      {
+        "id": "proposal-2",
+        "parameters": {
+          "exposure": -15
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-039-2.png",
+        "sha256": "d58b6835264085a392339f2d4e082449466eb63af2430759529a1daa2ddad23b"
+      },
+      {
+        "id": "proposal-3",
+        "parameters": {
+          "brightness": -12
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-039-3.png",
+        "sha256": "6d31f639114eebc24260e813ace7fc3a2865e184773d74d5ac9ee1bd52e8ada9"
+      }
+    ]
+  },
+  {
+    "id": "natural-train-220",
+    "source_id": "train-220",
+    "domain": "landscape",
+    "group_id": "f7a65790ed2a83d16eb7690fca98cc81221a9a929e1136aea45441556e6b8ba7",
+    "split": "train",
+    "image": "data/training/functional-v2-20261104/inputs/train-220/original.png",
+    "input_sha256": "d6c49db695f46098e57b3121a33d9a9927b08b967d68c93e75736afc923c98bc",
+    "instructions": {
+      "zh": "提亮整张照片，突出树木、岩石和衣服的色彩。",
+      "en": "Brighten the entire picture, emphasize colors of trees, rocks and clothes."
+    },
+    "family": "original-natural-request",
+    "action": "original-natural-request",
+    "instruction_origin": "Untouched original GIER English request; AI Chinese translation; not actual present user feedback.",
+    "expected_change": "完整完成原始请求的方向、力度及所有组成；以可见图片判断，不能只调用正确工具。",
+    "must_preserve": "主体结构、未要求的颜色和明暗层次；避免过曝、暗部损失和非预期肤色变化。",
+    "proposals": [
+      {
+        "id": "proposal-1",
+        "parameters": {
+          "exposure": 5,
+          "saturation": 10
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-220-1.png",
+        "sha256": "6a8fb931a76abfccd613900b96340f49a31364011eef1accb8aea6593fe17846"
+      },
+      {
+        "id": "proposal-2",
+        "parameters": {
+          "exposure": 10,
+          "saturation": 15
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-220-2.png",
+        "sha256": "b88f6f38a93402890a2d3106d148bc06087844e4b43c3499464bf8277e9d1be6"
+      },
+      {
+        "id": "proposal-3",
+        "parameters": {
+          "shadows": 30,
+          "saturation": 15
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-220-3.png",
+        "sha256": "94df9ccb232908a04a54681a01197c75c20c5c9d1c676b52ba63840053d4b589"
+      }
+    ]
+  },
+  {
+    "id": "natural-train-243",
+    "source_id": "train-243",
+    "domain": "landscape",
+    "group_id": "9a2ffb910de4b0c0868cc2cea9614a20c1ea4e17dde4896f7cdc007fc92b51ae",
+    "split": "train",
+    "image": "data/training/functional-v2-20261104/inputs/train-243/original.png",
+    "input_sha256": "6a37ddf29ecf781311f877d18bf74cde62ba5dd25a55de39b7d0fa8c41ac59c3",
+    "instructions": {
+      "zh": "把照片提亮。",
+      "en": "Brighten image."
+    },
+    "family": "original-natural-request",
+    "action": "original-natural-request",
+    "instruction_origin": "Untouched original GIER English request; AI Chinese translation; not actual present user feedback.",
+    "expected_change": "完整完成原始请求的方向、力度及所有组成；以可见图片判断，不能只调用正确工具。",
+    "must_preserve": "主体结构、未要求的颜色和明暗层次；避免过曝、暗部损失和非预期肤色变化。",
+    "proposals": [
+      {
+        "id": "proposal-1",
+        "parameters": {
+          "exposure": 5
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-243-1.png",
+        "sha256": "06fb8848bbb83181da3cfbb26f32f6120a658b110df54039737a626ce555a44d"
+      },
+      {
+        "id": "proposal-2",
+        "parameters": {
+          "exposure": 10
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-243-2.png",
+        "sha256": "e091b92f911140cb21bd869943590eb6eff65be2193ec1ab98771123bab281b0"
+      },
+      {
+        "id": "proposal-3",
+        "parameters": {
+          "shadows": 25
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-243-3.png",
+        "sha256": "5aed55e22c3f9840267666f95b8513a3abe1c3cd4ae697b2b6e2c07c89aea00c"
+      }
+    ]
+  },
+  {
+    "id": "natural-train-273",
+    "source_id": "train-273",
+    "domain": "landscape",
+    "group_id": "0b33ca81a63fe52de8fb6aada009a8d7433eadece324284c702c28850fd4e706",
+    "split": "train",
+    "image": "data/training/functional-v2-20261104/inputs/train-273/original.png",
+    "input_sha256": "4e0a5e8958bb50b06532d3ee80e2f46aeb8a72efea2200127428e840e86aaae9",
+    "instructions": {
+      "zh": "提亮照片并提高对比度。",
+      "en": "Brighten and increase the contrast of the image"
+    },
+    "family": "original-natural-request",
+    "action": "original-natural-request",
+    "instruction_origin": "Untouched original GIER English request; AI Chinese translation; not actual present user feedback.",
+    "expected_change": "完整完成原始请求的方向、力度及所有组成；以可见图片判断，不能只调用正确工具。",
+    "must_preserve": "主体结构、未要求的颜色和明暗层次；避免过曝、暗部损失和非预期肤色变化。",
+    "proposals": [
+      {
+        "id": "proposal-1",
+        "parameters": {
+          "exposure": 8,
+          "contrast": 6
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-273-1.png",
+        "sha256": "d9785167418c7a76db8e0963988606996b426b85d8be011e3dcbe4834152787f"
+      },
+      {
+        "id": "proposal-2",
+        "parameters": {
+          "exposure": 15,
+          "contrast": 10
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-273-2.png",
+        "sha256": "87ca97ee67c9de1cd2275779ea88e631fc89f007ba99440040362c822eb7e6a9"
+      },
+      {
+        "id": "proposal-3",
+        "parameters": {
+          "shadows": 30,
+          "contrast": 8
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-273-3.png",
+        "sha256": "cc2b95bf14ec027bc069080f8f07a2b0e04c20ff02aeeb3c3402c85ad9f7d495"
+      }
+    ]
+  },
+  {
+    "id": "natural-train-278",
+    "source_id": "train-278",
+    "domain": "landscape",
+    "group_id": "28c79bf1e101cd7ab57f55b70100249a6f979b8adea777a82341d4117e86d06c",
+    "split": "train",
+    "image": "data/training/functional-v2-20261104/inputs/train-278/original.png",
+    "input_sha256": "d0b9e00647eecacede563e6747eaa839ccc66501eaeb10dc182e1840f75cb126",
+    "instructions": {
+      "zh": "请大幅提高照片的明亮程度。",
+      "en": "Please, enhance the lightness a lot"
+    },
+    "family": "original-natural-request",
+    "action": "original-natural-request",
+    "instruction_origin": "Untouched original GIER English request; AI Chinese translation; not actual present user feedback.",
+    "expected_change": "完整完成原始请求的方向、力度及所有组成；以可见图片判断，不能只调用正确工具。",
+    "must_preserve": "主体结构、未要求的颜色和明暗层次；避免过曝、暗部损失和非预期肤色变化。",
+    "proposals": [
+      {
+        "id": "proposal-1",
+        "parameters": {
+          "exposure": 15
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-278-1.png",
+        "sha256": "fda4f1556037c0bb8838b4c2d006af621bdcda489a2022d17a0fa34cd2f7dec2"
+      },
+      {
+        "id": "proposal-2",
+        "parameters": {
+          "exposure": 25
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-278-2.png",
+        "sha256": "a5cb78467c1ad857db63b25934149e8b8959f8f1cbb0295cb2a6aff7af2ffc22"
+      },
+      {
+        "id": "proposal-3",
+        "parameters": {
+          "shadows": 55,
+          "exposure": 8
+        },
+        "image": "data/training/functional-v3-20261104/natural-proposals/natural-train-278-3.png",
+        "sha256": "5e7416d4b480bd2601c2cfb37e035b6f1697f8306c9f8037aed9e1f7f3231e35"
+      }
+    ]
+  }
+]

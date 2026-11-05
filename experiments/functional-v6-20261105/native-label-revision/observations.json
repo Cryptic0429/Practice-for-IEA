@@ -1,0 +1,684 @@
+[
+  {
+    "case_id": "native-train-n011",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C visibly lightens face and jacket while reducing their orange/brown cast; the original low-resolution scene remains intact."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "D brightens and reduces brown more strongly but introduces a slight purple/cool cast to skin."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "shadows": 50,
+        "temperature": -15,
+        "highlights": -8
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n011-C.png",
+      "sha256": "5ff191daa9b5e2c43efe5372679f60eed0c37a1231c188da0fe74a637c216638",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-001.jpg",
+    "sheet_sha256": "af01ee95536cfaa47754e1430f3e7b09897ca7926f6eb1842a3621d3ce8aaae1",
+    "at": "2026-11-05T06:01:37.942195+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n026",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C introduces a small visible brown tint to the stage and faces while preserving clothing and roof structure."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D gives a stronger brown tint and reduces the original blue cast; C better matches the small requested amount."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "sepia": 35,
+        "temperature": 5
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n026-C.png",
+      "sha256": "8f706f3e27085d83f0877c9f479ab0a7dfe75c09df56ce4f44a985eea208cc51",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "596aef2cb26da7ca6f72170b8bd7a6e7298e804c89a2adf84d2b2f7b5c3661f7",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-001.jpg",
+    "sheet_sha256": "af01ee95536cfaa47754e1430f3e7b09897ca7926f6eb1842a3621d3ce8aaae1",
+    "at": "2026-11-05T06:01:37.987182+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n041",
+    "selected_code": null,
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "partial",
+        "quality": "minor_issue",
+        "evidence": "C reduces yellow/brown partly but replaces it with a purple cast on people and the old photograph."
+      },
+      "D": {
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "D turns people and grass strongly purple/blue rather than producing a clean removal of brown cast."
+      }
+    },
+    "selected": null,
+    "input_sha256": "e672275ff1c957187ce8abe405b4cc7f46c514c129a124a8121892d084c7059b",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-001.jpg",
+    "sheet_sha256": "af01ee95536cfaa47754e1430f3e7b09897ca7926f6eb1842a3621d3ce8aaae1",
+    "at": "2026-11-05T06:01:37.992689+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n071",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C gives a clear sepia portrait and gently reveals the face while keeping blouse and hair structure."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D also gives a fully sepia portrait with a gently brighter face and the blouse texture retained."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "sepia": 80,
+        "saturation": -25,
+        "shadows": 35,
+        "highlights": -8
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n071-C.png",
+      "sha256": "53c7fdddcf4306fe4e0cbb6a69031cdf625173f5a19b3755d758ad909f9e2113",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "02d0fda90d6835a3e7bcb0c252798ec6efd1004ca32db01659e6c636b121e346",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-002.jpg",
+    "sheet_sha256": "7336091756abb501cef13436d033ce8914a86b97f1c44d39e22211b75a46a080",
+    "at": "2026-11-05T06:01:37.995877+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n165",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C increases room/people contrast and visibly reduces the yellow cast while retaining plausible skin and shirt tones."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "D reduces yellow further but makes faces and shirts overly pink/cool."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "contrast": 25,
+        "exposure": -12,
+        "temperature": -15,
+        "shadows": 20
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n165-C.png",
+      "sha256": "495caad596ce00ce71d0b40943f95d70d6abf0be302668d5b65b37b0efffe485",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "ab70c6337ec66269d2af984ab9f5375cca7413c8cc2fa89e341658628e788d53",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-002.jpg",
+    "sheet_sha256": "7336091756abb501cef13436d033ce8914a86b97f1c44d39e22211b75a46a080",
+    "at": "2026-11-05T06:01:38.000041+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n013",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C gives substantially stronger face/shirt contrast and richer colour without enlarging the already missing background detail."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D gives a stronger contrast edit while preserving the face and shirt structure; C is the gentler acceptable option."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "contrast": 65,
+        "exposure": -35,
+        "saturation": 15,
+        "shadows": 30
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n013-C.png",
+      "sha256": "e7a99fe0d0933828006195e540b0c66196d3eb4cc8a4ec1ba02bc283eaf4c446",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "15f4580496fcdc0a6462362004192996953921f3d09b3f8d362f8b548d05a5ae",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-002.jpg",
+    "sheet_sha256": "7336091756abb501cef13436d033ce8914a86b97f1c44d39e22211b75a46a080",
+    "at": "2026-11-05T06:01:38.005327+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n048",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C lightens the couple and adds contrast while retaining visible folds and lace in the bridal dress and groom shirt."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D also increases contrast/lightness with dress folds retained; C avoids unnecessary extra strength."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "contrast": 20,
+        "shadows": 65,
+        "highlights": -8
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n048-C.png",
+      "sha256": "9ba492a024a58923bf6310a123bcbece053a81be78912c89ac76d25d6e5b9293",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "48dcdd843cf679df909568be41ea46aa505be0130565270be87f98fa8964a696",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-003.jpg",
+    "sheet_sha256": "966f374a84015a750387b6ab918e9a3b4da404f3135e3041f9328984e5930fb9",
+    "at": "2026-11-05T06:01:38.013187+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n068",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C strongly improves separation in the faded bridge portrait and adds visible warm amber/peach tint to skin and railings."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D also gives stronger contrast and rose-gold warmth while keeping bridge and portrait structure."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "contrast": 60,
+        "exposure": -30,
+        "temperature": 16,
+        "tint": -5,
+        "shadows": 20
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n068-C.png",
+      "sha256": "cc55fa7a26335284f4a6a9f6a7e7f44aabbb5916d481e8a1dcae9d471b2778f3",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "be9a61f0b4e47e5d987ca13aab70a68d98686f33e754dc3fd861bad119440c2b",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-003.jpg",
+    "sheet_sha256": "966f374a84015a750387b6ab918e9a3b4da404f3135e3041f9328984e5930fb9",
+    "at": "2026-11-05T06:01:38.017234+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n127",
+    "selected_code": "D",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C substantially reveals the person and cave texture while keeping sky colour and water detail visible."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D gives the stronger requested lift to person/cave while preserving the coloured sky and water structure."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "shadows": 100,
+        "exposure": 24,
+        "highlights": -20
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n127-D.png",
+      "sha256": "2af16ebec886557dbadd350489f21a248bf05559f82f14636035866224fb6a06",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "791c0d7f8ea2f81d6c4c649d8dcf030aeca52eaee70aff806e576c8a13392278",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-003.jpg",
+    "sheet_sha256": "966f374a84015a750387b6ab918e9a3b4da404f3135e3041f9328984e5930fb9",
+    "at": "2026-11-05T06:01:38.043085+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n204",
+    "selected_code": "D",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C strongly reveals the dim room and face while keeping bow, sleeves and skirt structure visible."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D provides a stronger lift to the person and room with white blouse folds retained and no broad new white clipping."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "shadows": 100,
+        "exposure": 12,
+        "highlights": -20
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n204-D.png",
+      "sha256": "8a5b7045459c6ae75e6ef0b465d2d2608277ddede85af51fdf3cdd937a55520b",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-004.jpg",
+    "sheet_sha256": "6f702188e877063322d18aedf14bdac3de0106bb653af3ce1975b2582ca0813a",
+    "at": "2026-11-05T06:01:38.047875+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n030",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C reveals dark cave walls while retaining distinct yellow spark trails and the original bright core."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D gives a larger cave-wall lift while keeping spark structure; C is sufficient for the unqualified lighten request."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "shadows": 65,
+        "highlights": -6
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n030-C.png",
+      "sha256": "74c6b333ba575d1931017e50916c5bb436aa6255f95aaab925646946c6441077",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "29017289d061e33bb8fb4f334aa08ad889afa904e57fe8c76dfaa7c75471def3",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-004.jpg",
+    "sheet_sha256": "6f702188e877063322d18aedf14bdac3de0106bb653af3ce1975b2582ca0813a",
+    "at": "2026-11-05T06:01:38.054856+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n119",
+    "selected_code": "D",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C reveals foreground trees and road while retaining the storm-cloud opening and grey gradation."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D gives clearer foreground lightening while retaining cloud detail and a dark stormy atmosphere."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "shadows": 100,
+        "exposure": 8,
+        "highlights": -12
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n119-D.png",
+      "sha256": "ce66fbfe0b240e04d99be0b97392f96d68c67e71cf3655e309e4df6bf3fd857e",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "5691961459dd2ed4e872f3ff35cea5e5706ab1d9b0b271f254c27fbb0545a51f",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-004.jpg",
+    "sheet_sha256": "6f702188e877063322d18aedf14bdac3de0106bb653af3ce1975b2582ca0813a",
+    "at": "2026-11-05T06:01:38.058982+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n180",
+    "selected_code": "D",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C brightens sand and people and increases colour while keeping clouds and waves visible."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D more clearly brightens the foreground and strengthens colours without washing out the cloud band."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "shadows": 80,
+        "exposure": 4,
+        "saturation": 28,
+        "highlights": -8
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n180-D.png",
+      "sha256": "72912ac9cf6a7083fb0237241f995ffe92c288bd9762b36be1010f4bdbba492b",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "0ef34a03769801a9bc4f69ce77c4ef25971d00670a99d8799b2f12bdb5bbe56e",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-005.jpg",
+    "sheet_sha256": "fdec7b0f8c05719103b81391e378124ac17618057a78ef9bcb03da75523e72f7",
+    "at": "2026-11-05T06:01:38.064058+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n186",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C reveals building facades and clock-tower structure enough to read the architecture, with sunset cloud gradation retained."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "D reveals architecture but enlarges the pale sun halo and bright sky more than necessary."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "shadows": 100,
+        "exposure": 5,
+        "highlights": -8
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n186-C.png",
+      "sha256": "758a6244c8d10f6274da15ec86e1847ef36e984880483f8d58c32f4dac3093c9",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "34e3ab2e9f6500e92a20e2a15364c47991472f7e552b9154478b753f0f877f9a",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-005.jpg",
+    "sheet_sha256": "fdec7b0f8c05719103b81391e378124ac17618057a78ef9bcb03da75523e72f7",
+    "at": "2026-11-05T06:01:38.067840+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-n225",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C clearly reduces full-frame brightness while retaining rainbow, tree branches and road structure."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D gives a smaller but visible darkening with rainbow and tree detail retained."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "exposure": -22,
+        "shadows": 10
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-n225-C.png",
+      "sha256": "d64bc42bb073410a2fc484a429b6e201c1f466d08fed88e63f7fbae5e0ce8802",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "ed8d778f481e0adecf97fb62e0acf5fa63ac69ff5795f9bb411c52389f6dca20",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-005.jpg",
+    "sheet_sha256": "fdec7b0f8c05719103b81391e378124ac17618057a78ef9bcb03da75523e72f7",
+    "at": "2026-11-05T06:01:38.092479+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-x030",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C substantially reveals mountain foreground and vegetation while retaining blue sky gradation and lake structure."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "D gives stronger terrain brightening but the horizon becomes overly pale."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "shadows": 100,
+        "exposure": 12,
+        "highlights": -15
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-x030-C.png",
+      "sha256": "1a81a5258cf66ceb23d44bced25aab5ee0b105bd8832339e85fb8af1b0f4002c",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-006.jpg",
+    "sheet_sha256": "66a91e22703dbd8ae0b672629f085ffbf52c273790960f76160748d5e4b63dbf",
+    "at": "2026-11-05T06:01:38.096337+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-x053",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C brightens the boardwalk and foliage and strengthens autumn colours while retaining the blue sky."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D gives a larger brightness/colour change with the boardwalk and blue sky still preserved."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "shadows": 70,
+        "exposure": 4,
+        "saturation": 15,
+        "highlights": -8
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-x053-C.png",
+      "sha256": "3c47a7efa5c8d4838c25ed52b5acfb768aaca2181b910fec6a3f9ee43c8803e5",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "af500b9720eab919b395815d609422f0e9b66e9c66582788ab63d1b0c435d7fa",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-006.jpg",
+    "sheet_sha256": "66a91e22703dbd8ae0b672629f085ffbf52c273790960f76160748d5e4b63dbf",
+    "at": "2026-11-05T06:01:38.101314+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-x121",
+    "selected_code": null,
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "partial",
+        "quality": "minor_issue",
+        "evidence": "C preserves cloud detail and adds contrast but darkens the overall snow scene and loses dark-tree separation, missing brightening."
+      },
+      "D": {
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "D darkens the scene further and crushes the foreground tree band despite the requested significant brightening."
+      }
+    },
+    "selected": null,
+    "input_sha256": "e7d19fa192bb8f8c0830842193550a4d551c4b5068bb30c92902634e7dad6cfa",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-006.jpg",
+    "sheet_sha256": "66a91e22703dbd8ae0b672629f085ffbf52c273790960f76160748d5e4b63dbf",
+    "at": "2026-11-05T06:01:38.105787+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-x151",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C slightly reveals the darker underwater formation and softens the harsh light/dark transition while preserving texture."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D also gives a small lightness lift and lower contrast; no new broad highlight clipping is visible."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "contrast": -8,
+        "shadows": 30,
+        "highlights": -6
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-x151-C.png",
+      "sha256": "5cf703e6a757b2448bc5e22e6d8ceac2cb551721cc83c498154030888ee12c88",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "7489d3ce3c1eb1c2b693e2b67facebe21ebbe50a572152e43060e29479ee2bb3",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-007.jpg",
+    "sheet_sha256": "4ccc9b7da66e083cb81edfe280b35365e370f15d9c11062729d38ce0fcde8e57",
+    "at": "2026-11-05T06:01:38.157602+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-x186",
+    "selected_code": "C",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C visibly reveals shadowed trees and people while retaining sky/cloud and water detail."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D gives a somewhat stronger foreground lift with cloud and wave structure retained."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "shadows": 90,
+        "exposure": 3,
+        "highlights": -8
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-x186-C.png",
+      "sha256": "2c8f371d005c5a959e6d4eb0ba5b1394e1f788c59064f68878eb50f07beab4b5",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-007.jpg",
+    "sheet_sha256": "4ccc9b7da66e083cb81edfe280b35365e370f15d9c11062729d38ce0fcde8e57",
+    "at": "2026-11-05T06:01:38.164170+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-x250",
+    "selected_code": "D",
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "C slightly brightens the building and gives stronger tree/architecture separation while retaining grey/pink sky."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "D gives clearer building lightness and contrast with the original grey/pink sky retained rather than clipped white."
+      }
+    },
+    "selected": {
+      "parameters": {
+        "contrast": 28,
+        "exposure": -12,
+        "shadows": 90,
+        "highlights": -8
+      },
+      "image": "experiments/functional-v6-20261105/native-label-revision/images/native-train-x250-D.png",
+      "sha256": "7c1273091adf7722e9c4001deca1ab5c8b4d8be5bc4635be1d397120242a50b5",
+      "proposal_route": "root_authored_visual_repair"
+    },
+    "input_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-007.jpg",
+    "sheet_sha256": "4ccc9b7da66e083cb81edfe280b35365e370f15d9c11062729d38ce0fcde8e57",
+    "at": "2026-11-05T06:01:38.186617+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  },
+  {
+    "case_id": "native-train-x351",
+    "selected_code": null,
+    "language_equivalence_checked": true,
+    "candidates": {
+      "C": {
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "C reveals mountain and stars but strongly exposes coloured block noise/banding across the dark lake and forest."
+      },
+      "D": {
+        "completion": "completed",
+        "quality": "major_issue",
+        "evidence": "D further amplifies broad coloured block artifacts in the night scene; this is not an acceptable final target."
+      }
+    },
+    "selected": null,
+    "input_sha256": "1e2c569dadb693800cb93c6f638138a8f4a6689f6813187f27bc3d88745e2c11",
+    "sheet": "experiments/functional-v6-20261105/native-label-revision/sheet-008.jpg",
+    "sheet_sha256": "07329ccfa0ebbfe8d8704839f56b94a10f6572689cf8beed8ce80da15f16255a",
+    "at": "2026-11-05T06:01:38.189064+00:00",
+    "reviewer": "Codex direct visual review, AI assisted; author-aware repair, no user approval"
+  }
+]

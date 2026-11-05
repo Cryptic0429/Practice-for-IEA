@@ -1,0 +1,14 @@
+{
+  "model_id": "vlm-stats-e80",
+  "head_checkpoint": "experiments/functional-v5-20261105/runs/controller-vlm-stats-seed-20261109/checkpoint-80.pt",
+  "head_sha256": "04a9ca8f9d08335ff3cd73367cc40f27d894630ac4277f57eb1b2cb68a7060ae",
+  "backbone_adapter": "models/from-functional-v1/sft-curriculum/seed-01",
+  "backbone_adapter_sha256": "4048de5078f4eda6b19621a2968718be50f4cd5ad35fd17dbf23614a885edb71",
+  "input_route": "vlm-stats",
+  "editor": "functional-editor-v1.2-sepia",
+  "runtime_sha256": "2aa56a0340797194601f152dc17e9d126ff270a57b4f1bcc8f20b9863abd995a",
+  "feature_protocol_sha256": "1aef435b789b6cfee9546c0fe60893a8cdb4d8a6f916fea7ed70fa91e3b2cf10",
+  "case_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+  "cpu_cached_prediction": true,
+  "note": "Offline uses cached actual image/request prefill. Trial must recompute the identical feature and use this same normalized_features/decode path."
+}

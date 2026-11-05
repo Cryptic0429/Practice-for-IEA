@@ -1,0 +1,75 @@
+{
+  "version": "functional-v1-20261104",
+  "frozen_at": "2026-11-04T05:37:40.255225+00:00",
+  "status": "cases_frozen_labels_not_yet_accepted",
+  "editor": "functional-editor-v1-sepia",
+  "tools": [
+    "exposure",
+    "brightness",
+    "contrast",
+    "highlights",
+    "shadows",
+    "saturation",
+    "temperature",
+    "tint",
+    "sepia"
+  ],
+  "splits": {
+    "acceptance": {
+      "cases": 50,
+      "language_records": 100,
+      "source_groups": 50,
+      "cases_sha256": "1746f219ee9978f06bf3c1b742204cdc8f2d785753d7c0a9db2e46faa88f6a23",
+      "source": "data/stage1/splits/image-edit-3k-v1/test.json",
+      "source_sha256": "589d8ea8184292898509f9a7a9dba77c8334732316e410b4006bf39fb4dd0298",
+      "families": {
+        "lighting": 10,
+        "white_balance": 10,
+        "saturation": 10,
+        "contrast": 10,
+        "brown_tone": 10
+      }
+    },
+    "development": {
+      "cases": 50,
+      "language_records": 100,
+      "source_groups": 50,
+      "cases_sha256": "47b7dfa6af4de74a415db0943e58d52fa809059f688ecc477ce4f17336a97b46",
+      "source": "data/training/quality-v2-20261103/validation.json",
+      "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+      "families": {
+        "lighting": 10,
+        "white_balance": 10,
+        "saturation": 10,
+        "contrast": 10,
+        "brown_tone": 10
+      }
+    },
+    "train": {
+      "cases": 220,
+      "language_records": 440,
+      "source_groups": 160,
+      "cases_sha256": "c7d42edaf84f3d3c38642a24a57a0fad21fb97587d8c19b3f21b90bbbdc66763",
+      "source": "data/training/quality-v2-20261103/train3k.json",
+      "source_sha256": "439ebf726d7e01c913a9e85c0866240268edb3b5919bb583b4823270fe361104",
+      "families": {
+        "lighting": 40,
+        "white_balance": 40,
+        "saturation": 40,
+        "contrast": 40,
+        "brown_tone": 40,
+        "identity": 20
+      }
+    }
+  },
+  "cross_split_groups_disjoint": true,
+  "near_duplicate_exclusions": [],
+  "selection_rule": "Seeded stable group order; explicit brightness/saturation eligibility; pHash and grayscale correlation duplicate screen.",
+  "limits": [
+    "All new task requests are controlled bilingual tasks, not untouched natural GIER requests.",
+    "Development and acceptance source photographs were evaluated historically; these are not never-viewed tests.",
+    "Targets for rewritten tasks are independently verified tool renders; original GIER targets are not reused.",
+    "Perceptual duplicate screening is heuristic, not proof of complete semantic independence.",
+    "All review is AI-assisted, without human validation."
+  ]
+}

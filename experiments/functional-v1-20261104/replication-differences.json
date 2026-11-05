@@ -1,0 +1,48 @@
+{
+  "review_policy": "Preserve all first-seed and replication predictions; equal aggregate completion does not mean identical predictions.",
+  "human_review": false,
+  "splits": {
+    "development": {
+      "different_language_outputs": 2,
+      "total": 100,
+      "differences": [
+        {
+          "case_id": "development-005",
+          "language": "en",
+          "first_parameters": {
+            "highlights": 55
+          },
+          "replication_parameters": {
+            "shadows": 55
+          }
+        },
+        {
+          "case_id": "development-009",
+          "language": "en",
+          "first_parameters": {
+            "highlights": 55
+          },
+          "replication_parameters": {
+            "shadows": 55
+          }
+        }
+      ]
+    },
+    "acceptance": {
+      "different_language_outputs": 1,
+      "total": 100,
+      "differences": [
+        {
+          "case_id": "acceptance-001",
+          "language": "zh",
+          "first_parameters": {
+            "highlights": -40
+          },
+          "replication_parameters": {
+            "shadows": 55
+          }
+        }
+      ]
+    }
+  }
+}

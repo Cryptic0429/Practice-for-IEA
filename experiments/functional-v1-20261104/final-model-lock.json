@@ -1,0 +1,33 @@
+{
+  "locked_at": "2026-11-04T10:25:41.191407+00:00",
+  "editor": "functional-editor-v1.2-sepia",
+  "acceptance_cases_sha256": "1746f219ee9978f06bf3c1b742204cdc8f2d785753d7c0a9db2e46faa88f6a23",
+  "development_selection_sha256": "42c47350897801b856d987ccf836a2d3fc23f0162f29a796848a9529e936c968",
+  "code_hashes": {
+    "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+    "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+    "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277"
+  },
+  "models": {
+    "functional-base-20261104": {
+      "adapter_sha256": "e78e8b9c06fb2d097a849685148e2065d1dbbcdd56b7cf5cf1fa15a5b3a2b7bf",
+      "adapter": "experiments/functional-v1-20261104/runs/base-seed-20261104/checkpoint-330"
+    },
+    "functional-current-20261104": {
+      "adapter_sha256": "54161bd9c9f2e3aa518572be6cf1dad81f8bebe33d92d31107d64d1f3c4435b0",
+      "adapter": "experiments/functional-v1-20261104/runs/current-seed-20261104/checkpoint-110"
+    },
+    "functional-current-20261105": {
+      "adapter_sha256": "40e9070d8c5808f689de99a44aae5d0fd9aa7df9f909018a08cb90ca99836fb6",
+      "adapter": "experiments/functional-v1-20261104/runs/current-seed-20261105/checkpoint-110"
+    },
+    "current": {
+      "adapter": "models/from-sft-standard/sft-calibrated/seed-02",
+      "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884"
+    },
+    "base": {
+      "adapter": null,
+      "adapter_sha256": null
+    }
+  }
+}

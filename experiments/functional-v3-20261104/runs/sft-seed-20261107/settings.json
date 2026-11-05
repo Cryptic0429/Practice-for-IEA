@@ -1,0 +1,21 @@
+{
+  "route": "sft",
+  "seed": 20261107,
+  "routes": [
+    "DPO plus chosen SFT anchor",
+    "matched chosen-only SFT"
+  ],
+  "epochs": 2,
+  "learning_rate": 1e-05,
+  "effective_batch": 4,
+  "beta": 0.1,
+  "chosen_sft_weight_on_preference_rows": 0.1,
+  "anchor_sft_weight": 1.0,
+  "rank": 8,
+  "alpha": 16,
+  "quantization": "NF4",
+  "layers": "language q/v only; vision frozen",
+  "reference": "Frozen parent response log probabilities precomputed in identical train dtype and processor; no second live model",
+  "rows_each": 93,
+  "reference_cache_sha256": "90fc49462033976bfb34a1159ab744751e555c2fe6d7a7a224fb4fb18ce1aec4"
+}

@@ -1,0 +1,3196 @@
+{
+  "split": "acceptance",
+  "name": "frozen-first-three",
+  "created_at": "2026-11-04T10:33:04.669042+00:00",
+  "cases_sha256": "1746f219ee9978f06bf3c1b742204cdc8f2d785753d7c0a9db2e46faa88f6a23",
+  "models": {
+    "current": {
+      "model_id": "current",
+      "adapter": "/mnt/sdc/zhc/IEA/models/from-sft-standard/sft-calibrated/seed-02",
+      "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884",
+      "case_sha256": "1746f219ee9978f06bf3c1b742204cdc8f2d785753d7c0a9db2e46faa88f6a23",
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime_sha256": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+      "common_sha256": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+      "editor_sha256": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+      "inputs": "Original image, original bilingual request and fixed tool specification only."
+    },
+    "functional-base-20261104": {
+      "model_id": "functional-base-20261104",
+      "adapter": "/mnt/sdc/zhc/IEA/experiments/functional-v1-20261104/runs/base-seed-20261104/checkpoint-330",
+      "adapter_sha256": "e78e8b9c06fb2d097a849685148e2065d1dbbcdd56b7cf5cf1fa15a5b3a2b7bf",
+      "case_sha256": "1746f219ee9978f06bf3c1b742204cdc8f2d785753d7c0a9db2e46faa88f6a23",
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime_sha256": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+      "common_sha256": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+      "editor_sha256": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+      "inputs": "Original image, original bilingual request and fixed tool specification only."
+    },
+    "functional-current-20261104": {
+      "model_id": "functional-current-20261104",
+      "adapter": "/mnt/sdc/zhc/IEA/experiments/functional-v1-20261104/runs/current-seed-20261104/checkpoint-110",
+      "adapter_sha256": "54161bd9c9f2e3aa518572be6cf1dad81f8bebe33d92d31107d64d1f3c4435b0",
+      "case_sha256": "1746f219ee9978f06bf3c1b742204cdc8f2d785753d7c0a9db2e46faa88f6a23",
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime_sha256": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+      "common_sha256": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+      "editor_sha256": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+      "inputs": "Original image, original bilingual request and fixed tool specification only."
+    }
+  },
+  "mapping": [
+    {
+      "model_id": "current",
+      "case_id": "acceptance-001",
+      "language": "zh",
+      "item_id": "aae3cb96a1150505"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-001",
+      "language": "en",
+      "item_id": "1e8ad4c1139520d8"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-002",
+      "language": "zh",
+      "item_id": "756f0d57f15e4064"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-002",
+      "language": "en",
+      "item_id": "0e0cef14fa197b5d"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-003",
+      "language": "zh",
+      "item_id": "362add977954c59f"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-003",
+      "language": "en",
+      "item_id": "f615734244121b71"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-004",
+      "language": "zh",
+      "item_id": "f7b0a50104cf80a8"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-004",
+      "language": "en",
+      "item_id": "f6f4a402e23b36e9"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-005",
+      "language": "zh",
+      "item_id": "b7bd3c1ec198d69e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-005",
+      "language": "en",
+      "item_id": "b7bd3c1ec198d69e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-006",
+      "language": "zh",
+      "item_id": "929c8368a01dce10"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-006",
+      "language": "en",
+      "item_id": "a5822e6c9902ca3a"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-007",
+      "language": "zh",
+      "item_id": "c3fc336ac37c0c5d"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-007",
+      "language": "en",
+      "item_id": "c3fc336ac37c0c5d"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-008",
+      "language": "zh",
+      "item_id": "954c27cb1424b5a8"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-008",
+      "language": "en",
+      "item_id": "562fd2aa7bf41e20"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-009",
+      "language": "zh",
+      "item_id": "da34915b6cdb1581"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-009",
+      "language": "en",
+      "item_id": "e1837fc52a5a2b4c"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-010",
+      "language": "zh",
+      "item_id": "a7045f5658995f30"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-010",
+      "language": "en",
+      "item_id": "0e30f80fe65c36da"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-011",
+      "language": "zh",
+      "item_id": "85a482c1a9a14979"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-011",
+      "language": "en",
+      "item_id": "5021a405f8807a3a"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-012",
+      "language": "zh",
+      "item_id": "34e6740a99133176"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-012",
+      "language": "en",
+      "item_id": "452ea6ec42573276"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-013",
+      "language": "zh",
+      "item_id": "7d078ef884dc4a0b"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-013",
+      "language": "en",
+      "item_id": "cc5542a9d29cff14"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-014",
+      "language": "zh",
+      "item_id": "f4b765d2ea58b2b0"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-014",
+      "language": "en",
+      "item_id": "710465f94bbae258"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-015",
+      "language": "zh",
+      "item_id": "bd0faf2987aaad14"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-015",
+      "language": "en",
+      "item_id": "f0dcac68b1a01efe"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-016",
+      "language": "zh",
+      "item_id": "7ce7d508b32c6a01"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-016",
+      "language": "en",
+      "item_id": "8d6ebe9ddbc5dae6"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-017",
+      "language": "zh",
+      "item_id": "a251f5b71882e897"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-017",
+      "language": "en",
+      "item_id": "bcca35924855570d"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-018",
+      "language": "zh",
+      "item_id": "fab38a0c19338ac9"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-018",
+      "language": "en",
+      "item_id": "d14a2a5ca125600e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-019",
+      "language": "zh",
+      "item_id": "37bc9392b449c9ca"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-019",
+      "language": "en",
+      "item_id": "7851f179bb1bbd58"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-020",
+      "language": "zh",
+      "item_id": "cfa3861dc1671d21"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-020",
+      "language": "en",
+      "item_id": "02c3e221fc5d388e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-021",
+      "language": "zh",
+      "item_id": "37147d6ed36cf562"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-021",
+      "language": "en",
+      "item_id": "6b261794da293fc2"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-022",
+      "language": "zh",
+      "item_id": "7d307fe72077525f"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-023",
+      "language": "zh",
+      "item_id": "b183c7e94f677a49"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-023",
+      "language": "en",
+      "item_id": "89fb37084ab2b2a2"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-024",
+      "language": "zh",
+      "item_id": "0463a30eaf71d20a"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-024",
+      "language": "en",
+      "item_id": "3342df6de82c2793"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-025",
+      "language": "zh",
+      "item_id": "b9417022eecd4a97"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-025",
+      "language": "en",
+      "item_id": "5e7998c32fc591fa"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-026",
+      "language": "zh",
+      "item_id": "feb9682b1ceb81c6"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-026",
+      "language": "en",
+      "item_id": "feb9682b1ceb81c6"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-027",
+      "language": "zh",
+      "item_id": "5b8c73482202f3f5"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-027",
+      "language": "en",
+      "item_id": "62df23b91a4ec017"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-028",
+      "language": "zh",
+      "item_id": "20cf24028dafc064"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-028",
+      "language": "en",
+      "item_id": "80e7ee3ddaae962b"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-029",
+      "language": "zh",
+      "item_id": "5d566dbaa1eb85fc"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-029",
+      "language": "en",
+      "item_id": "e82fb6c9b13c777e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-030",
+      "language": "zh",
+      "item_id": "82a1fd095b411148"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-030",
+      "language": "en",
+      "item_id": "4aa95e6f6cd0eb9b"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-031",
+      "language": "zh",
+      "item_id": "98eb52729392886e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-031",
+      "language": "en",
+      "item_id": "887c87ffe1584e03"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-032",
+      "language": "zh",
+      "item_id": "89a5437f7a9d1d8f"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-032",
+      "language": "en",
+      "item_id": "89a5437f7a9d1d8f"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-033",
+      "language": "zh",
+      "item_id": "b9b62552f6d2e4c3"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-033",
+      "language": "en",
+      "item_id": "f20831bdaf5943fd"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-034",
+      "language": "zh",
+      "item_id": "8b95788e70347d35"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-034",
+      "language": "en",
+      "item_id": "8b95788e70347d35"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-035",
+      "language": "zh",
+      "item_id": "20c81eeb17185ba9"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-035",
+      "language": "en",
+      "item_id": "e453f3ae328ccb7b"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-036",
+      "language": "zh",
+      "item_id": "5f6c9deb631fce66"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-036",
+      "language": "en",
+      "item_id": "5f6c9deb631fce66"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-037",
+      "language": "zh",
+      "item_id": "681c38cc6a76e26a"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-037",
+      "language": "en",
+      "item_id": "032d997213af93e7"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-038",
+      "language": "zh",
+      "item_id": "903bc7e2770e626e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-038",
+      "language": "en",
+      "item_id": "903bc7e2770e626e"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-039",
+      "language": "zh",
+      "item_id": "3adbbe8cc4506260"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-039",
+      "language": "en",
+      "item_id": "93c28700cf6e309c"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-040",
+      "language": "zh",
+      "item_id": "653a71d95ac637a5"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-040",
+      "language": "en",
+      "item_id": "653a71d95ac637a5"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-041",
+      "language": "zh",
+      "item_id": "939efc0989d598a7"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-041",
+      "language": "en",
+      "item_id": "55f00575acee800d"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-042",
+      "language": "zh",
+      "item_id": "217b9de440597424"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-042",
+      "language": "en",
+      "item_id": "5fb5fd4eb28debf3"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-043",
+      "language": "zh",
+      "item_id": "85339f4fbe3f2491"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-043",
+      "language": "en",
+      "item_id": "8852191b1b11dcd5"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-044",
+      "language": "zh",
+      "item_id": "913214d74993d487"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-044",
+      "language": "en",
+      "item_id": "964be382b4b69371"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-045",
+      "language": "zh",
+      "item_id": "99947f05cf4e260f"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-045",
+      "language": "en",
+      "item_id": "3c42680e3643e29a"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-046",
+      "language": "zh",
+      "item_id": "653d6626e2b38f0c"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-046",
+      "language": "en",
+      "item_id": "dbad7026e37d32a4"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-047",
+      "language": "zh",
+      "item_id": "1ec7572916e5b9a2"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-047",
+      "language": "en",
+      "item_id": "756d39252a412b9c"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-048",
+      "language": "zh",
+      "item_id": "11ea469adee2bb25"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-048",
+      "language": "en",
+      "item_id": "e9e8552ab2beec54"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-049",
+      "language": "zh",
+      "item_id": "f0a0123a64342474"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-049",
+      "language": "en",
+      "item_id": "1dc714ecf8bd40b9"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-050",
+      "language": "zh",
+      "item_id": "579eb851334d7943"
+    },
+    {
+      "model_id": "current",
+      "case_id": "acceptance-050",
+      "language": "en",
+      "item_id": "602f070c1e31f98b"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-001",
+      "language": "zh",
+      "item_id": "2852c72a076e22c9"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-001",
+      "language": "en",
+      "item_id": "2852c72a076e22c9"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-002",
+      "language": "zh",
+      "item_id": "12f00d3afa5f71ee"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-002",
+      "language": "en",
+      "item_id": "12f00d3afa5f71ee"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-003",
+      "language": "zh",
+      "item_id": "f070939fab1dee45"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-003",
+      "language": "en",
+      "item_id": "f070939fab1dee45"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-004",
+      "language": "zh",
+      "item_id": "ed5fb6d2d4e4b1ce"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-004",
+      "language": "en",
+      "item_id": "ed5fb6d2d4e4b1ce"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-005",
+      "language": "zh",
+      "item_id": "410dd2c6f10fb6d6"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-005",
+      "language": "en",
+      "item_id": "410dd2c6f10fb6d6"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-006",
+      "language": "zh",
+      "item_id": "96d8266aac1c91cf"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-006",
+      "language": "en",
+      "item_id": "96d8266aac1c91cf"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-007",
+      "language": "zh",
+      "item_id": "42e0506ff9525750"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-007",
+      "language": "en",
+      "item_id": "42e0506ff9525750"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-008",
+      "language": "zh",
+      "item_id": "f5c85a9b81bc5595"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-008",
+      "language": "en",
+      "item_id": "f5c85a9b81bc5595"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-009",
+      "language": "zh",
+      "item_id": "13fa6c8f5515f192"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-009",
+      "language": "en",
+      "item_id": "13fa6c8f5515f192"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-010",
+      "language": "zh",
+      "item_id": "9a7496a82979902f"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-010",
+      "language": "en",
+      "item_id": "9a7496a82979902f"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-011",
+      "language": "zh",
+      "item_id": "93dbb7438aaf521a"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-011",
+      "language": "en",
+      "item_id": "93dbb7438aaf521a"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-012",
+      "language": "zh",
+      "item_id": "71f44ee183c6f3fe"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-012",
+      "language": "en",
+      "item_id": "71f44ee183c6f3fe"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-013",
+      "language": "zh",
+      "item_id": "f0501d1993f9f607"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-013",
+      "language": "en",
+      "item_id": "f0501d1993f9f607"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-014",
+      "language": "zh",
+      "item_id": "6e3f73b2850e0643"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-014",
+      "language": "en",
+      "item_id": "6e3f73b2850e0643"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-015",
+      "language": "zh",
+      "item_id": "746fc312c4ff0d1a"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-015",
+      "language": "en",
+      "item_id": "746fc312c4ff0d1a"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-016",
+      "language": "zh",
+      "item_id": "f6210634511f0c58"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-016",
+      "language": "en",
+      "item_id": "f6210634511f0c58"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-017",
+      "language": "zh",
+      "item_id": "0ea13efa53da276e"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-017",
+      "language": "en",
+      "item_id": "0ea13efa53da276e"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-018",
+      "language": "zh",
+      "item_id": "d5fd6562965d2317"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-018",
+      "language": "en",
+      "item_id": "d5fd6562965d2317"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-019",
+      "language": "zh",
+      "item_id": "f952006e27332d81"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-019",
+      "language": "en",
+      "item_id": "f952006e27332d81"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-020",
+      "language": "zh",
+      "item_id": "f92900b6225b3001"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-020",
+      "language": "en",
+      "item_id": "f92900b6225b3001"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-021",
+      "language": "zh",
+      "item_id": "be766e14bff0e9e3"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-021",
+      "language": "en",
+      "item_id": "be766e14bff0e9e3"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-022",
+      "language": "zh",
+      "item_id": "97b57e25f9f59d2b"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-022",
+      "language": "en",
+      "item_id": "97b57e25f9f59d2b"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-023",
+      "language": "zh",
+      "item_id": "a52de8113e001cd0"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-023",
+      "language": "en",
+      "item_id": "a52de8113e001cd0"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-024",
+      "language": "zh",
+      "item_id": "e37258fdaac97752"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-024",
+      "language": "en",
+      "item_id": "e37258fdaac97752"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-025",
+      "language": "zh",
+      "item_id": "b587307172d2bc65"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-025",
+      "language": "en",
+      "item_id": "b587307172d2bc65"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-026",
+      "language": "zh",
+      "item_id": "6e22aee36ee1f2ee"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-026",
+      "language": "en",
+      "item_id": "6e22aee36ee1f2ee"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-027",
+      "language": "zh",
+      "item_id": "fee6dae66cbb0fd3"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-027",
+      "language": "en",
+      "item_id": "fee6dae66cbb0fd3"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-028",
+      "language": "zh",
+      "item_id": "d90a6ffcd94c0a4c"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-028",
+      "language": "en",
+      "item_id": "d90a6ffcd94c0a4c"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-029",
+      "language": "zh",
+      "item_id": "0f22a00cc5077da0"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-029",
+      "language": "en",
+      "item_id": "0f22a00cc5077da0"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-030",
+      "language": "zh",
+      "item_id": "fdd3b73e1a494195"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-030",
+      "language": "en",
+      "item_id": "fdd3b73e1a494195"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-031",
+      "language": "zh",
+      "item_id": "73f6eef695735f72"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-031",
+      "language": "en",
+      "item_id": "73f6eef695735f72"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-032",
+      "language": "zh",
+      "item_id": "a0189d370a7de125"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-032",
+      "language": "en",
+      "item_id": "a0189d370a7de125"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-033",
+      "language": "zh",
+      "item_id": "e1c36cf342199416"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-033",
+      "language": "en",
+      "item_id": "e1c36cf342199416"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-034",
+      "language": "zh",
+      "item_id": "4c89bd262f068431"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-034",
+      "language": "en",
+      "item_id": "4c89bd262f068431"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-035",
+      "language": "zh",
+      "item_id": "640029db4225a538"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-035",
+      "language": "en",
+      "item_id": "640029db4225a538"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-036",
+      "language": "zh",
+      "item_id": "a969efaa72da317e"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-036",
+      "language": "en",
+      "item_id": "a969efaa72da317e"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-037",
+      "language": "zh",
+      "item_id": "1a8704b2cc719605"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-037",
+      "language": "en",
+      "item_id": "1a8704b2cc719605"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-038",
+      "language": "zh",
+      "item_id": "231e3d7cacb0d51b"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-038",
+      "language": "en",
+      "item_id": "231e3d7cacb0d51b"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-039",
+      "language": "zh",
+      "item_id": "e5fdac66861ba834"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-039",
+      "language": "en",
+      "item_id": "e5fdac66861ba834"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-040",
+      "language": "zh",
+      "item_id": "64a7b437ce214084"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-040",
+      "language": "en",
+      "item_id": "64a7b437ce214084"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-041",
+      "language": "zh",
+      "item_id": "c65ed63720bc0c37"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-041",
+      "language": "en",
+      "item_id": "c65ed63720bc0c37"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-042",
+      "language": "zh",
+      "item_id": "39d596b6f5fd19e9"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-042",
+      "language": "en",
+      "item_id": "39d596b6f5fd19e9"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-043",
+      "language": "zh",
+      "item_id": "41dc3ad38b1844c5"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-043",
+      "language": "en",
+      "item_id": "41dc3ad38b1844c5"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-044",
+      "language": "zh",
+      "item_id": "3a2afd4b6cccb242"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-044",
+      "language": "en",
+      "item_id": "3a2afd4b6cccb242"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-045",
+      "language": "zh",
+      "item_id": "dac05e5ff42ba181"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-045",
+      "language": "en",
+      "item_id": "dac05e5ff42ba181"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-046",
+      "language": "zh",
+      "item_id": "a440115d7c52255a"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-046",
+      "language": "en",
+      "item_id": "a440115d7c52255a"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-047",
+      "language": "zh",
+      "item_id": "eec05458649990a7"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-047",
+      "language": "en",
+      "item_id": "eec05458649990a7"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-048",
+      "language": "zh",
+      "item_id": "4b59ea6a5107ed70"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-048",
+      "language": "en",
+      "item_id": "4b59ea6a5107ed70"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-049",
+      "language": "zh",
+      "item_id": "c0f1bb6a5ea386a1"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-049",
+      "language": "en",
+      "item_id": "c0f1bb6a5ea386a1"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-050",
+      "language": "zh",
+      "item_id": "63d5680c567d05b7"
+    },
+    {
+      "model_id": "functional-base-20261104",
+      "case_id": "acceptance-050",
+      "language": "en",
+      "item_id": "63d5680c567d05b7"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-001",
+      "language": "zh",
+      "item_id": "317468be026aa887"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-001",
+      "language": "en",
+      "item_id": "2852c72a076e22c9"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-002",
+      "language": "zh",
+      "item_id": "12f00d3afa5f71ee"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-002",
+      "language": "en",
+      "item_id": "12f00d3afa5f71ee"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-003",
+      "language": "zh",
+      "item_id": "f070939fab1dee45"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-003",
+      "language": "en",
+      "item_id": "f070939fab1dee45"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-004",
+      "language": "zh",
+      "item_id": "ed5fb6d2d4e4b1ce"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-004",
+      "language": "en",
+      "item_id": "ed5fb6d2d4e4b1ce"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-005",
+      "language": "zh",
+      "item_id": "410dd2c6f10fb6d6"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-005",
+      "language": "en",
+      "item_id": "410dd2c6f10fb6d6"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-006",
+      "language": "zh",
+      "item_id": "96d8266aac1c91cf"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-006",
+      "language": "en",
+      "item_id": "96d8266aac1c91cf"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-007",
+      "language": "zh",
+      "item_id": "42e0506ff9525750"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-007",
+      "language": "en",
+      "item_id": "42e0506ff9525750"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-008",
+      "language": "zh",
+      "item_id": "f5c85a9b81bc5595"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-008",
+      "language": "en",
+      "item_id": "f5c85a9b81bc5595"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-009",
+      "language": "zh",
+      "item_id": "13fa6c8f5515f192"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-009",
+      "language": "en",
+      "item_id": "13fa6c8f5515f192"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-010",
+      "language": "zh",
+      "item_id": "9a7496a82979902f"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-010",
+      "language": "en",
+      "item_id": "9a7496a82979902f"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-011",
+      "language": "zh",
+      "item_id": "93dbb7438aaf521a"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-011",
+      "language": "en",
+      "item_id": "93dbb7438aaf521a"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-012",
+      "language": "zh",
+      "item_id": "71f44ee183c6f3fe"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-012",
+      "language": "en",
+      "item_id": "71f44ee183c6f3fe"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-013",
+      "language": "zh",
+      "item_id": "f0501d1993f9f607"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-013",
+      "language": "en",
+      "item_id": "f0501d1993f9f607"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-014",
+      "language": "zh",
+      "item_id": "6e3f73b2850e0643"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-014",
+      "language": "en",
+      "item_id": "6e3f73b2850e0643"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-015",
+      "language": "zh",
+      "item_id": "746fc312c4ff0d1a"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-015",
+      "language": "en",
+      "item_id": "746fc312c4ff0d1a"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-016",
+      "language": "zh",
+      "item_id": "f6210634511f0c58"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-016",
+      "language": "en",
+      "item_id": "f6210634511f0c58"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-017",
+      "language": "zh",
+      "item_id": "0ea13efa53da276e"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-017",
+      "language": "en",
+      "item_id": "0ea13efa53da276e"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-018",
+      "language": "zh",
+      "item_id": "d5fd6562965d2317"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-018",
+      "language": "en",
+      "item_id": "d5fd6562965d2317"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-019",
+      "language": "zh",
+      "item_id": "f952006e27332d81"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-019",
+      "language": "en",
+      "item_id": "f952006e27332d81"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-020",
+      "language": "zh",
+      "item_id": "f92900b6225b3001"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-020",
+      "language": "en",
+      "item_id": "f92900b6225b3001"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-021",
+      "language": "zh",
+      "item_id": "be766e14bff0e9e3"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-021",
+      "language": "en",
+      "item_id": "be766e14bff0e9e3"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-022",
+      "language": "zh",
+      "item_id": "97b57e25f9f59d2b"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-022",
+      "language": "en",
+      "item_id": "97b57e25f9f59d2b"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-023",
+      "language": "zh",
+      "item_id": "a52de8113e001cd0"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-023",
+      "language": "en",
+      "item_id": "a52de8113e001cd0"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-024",
+      "language": "zh",
+      "item_id": "e37258fdaac97752"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-024",
+      "language": "en",
+      "item_id": "e37258fdaac97752"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-025",
+      "language": "zh",
+      "item_id": "b587307172d2bc65"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-025",
+      "language": "en",
+      "item_id": "b587307172d2bc65"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-026",
+      "language": "zh",
+      "item_id": "6e22aee36ee1f2ee"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-026",
+      "language": "en",
+      "item_id": "6e22aee36ee1f2ee"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-027",
+      "language": "zh",
+      "item_id": "fee6dae66cbb0fd3"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-027",
+      "language": "en",
+      "item_id": "fee6dae66cbb0fd3"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-028",
+      "language": "zh",
+      "item_id": "d90a6ffcd94c0a4c"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-028",
+      "language": "en",
+      "item_id": "d90a6ffcd94c0a4c"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-029",
+      "language": "zh",
+      "item_id": "0f22a00cc5077da0"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-029",
+      "language": "en",
+      "item_id": "0f22a00cc5077da0"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-030",
+      "language": "zh",
+      "item_id": "fdd3b73e1a494195"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-030",
+      "language": "en",
+      "item_id": "fdd3b73e1a494195"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-031",
+      "language": "zh",
+      "item_id": "73f6eef695735f72"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-031",
+      "language": "en",
+      "item_id": "73f6eef695735f72"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-032",
+      "language": "zh",
+      "item_id": "a0189d370a7de125"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-032",
+      "language": "en",
+      "item_id": "a0189d370a7de125"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-033",
+      "language": "zh",
+      "item_id": "e1c36cf342199416"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-033",
+      "language": "en",
+      "item_id": "e1c36cf342199416"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-034",
+      "language": "zh",
+      "item_id": "4c89bd262f068431"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-034",
+      "language": "en",
+      "item_id": "4c89bd262f068431"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-035",
+      "language": "zh",
+      "item_id": "640029db4225a538"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-035",
+      "language": "en",
+      "item_id": "640029db4225a538"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-036",
+      "language": "zh",
+      "item_id": "a969efaa72da317e"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-036",
+      "language": "en",
+      "item_id": "a969efaa72da317e"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-037",
+      "language": "zh",
+      "item_id": "1a8704b2cc719605"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-037",
+      "language": "en",
+      "item_id": "1a8704b2cc719605"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-038",
+      "language": "zh",
+      "item_id": "231e3d7cacb0d51b"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-038",
+      "language": "en",
+      "item_id": "231e3d7cacb0d51b"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-039",
+      "language": "zh",
+      "item_id": "e5fdac66861ba834"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-039",
+      "language": "en",
+      "item_id": "e5fdac66861ba834"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-040",
+      "language": "zh",
+      "item_id": "64a7b437ce214084"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-040",
+      "language": "en",
+      "item_id": "64a7b437ce214084"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-041",
+      "language": "zh",
+      "item_id": "c65ed63720bc0c37"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-041",
+      "language": "en",
+      "item_id": "c65ed63720bc0c37"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-042",
+      "language": "zh",
+      "item_id": "39d596b6f5fd19e9"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-042",
+      "language": "en",
+      "item_id": "39d596b6f5fd19e9"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-043",
+      "language": "zh",
+      "item_id": "41dc3ad38b1844c5"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-043",
+      "language": "en",
+      "item_id": "41dc3ad38b1844c5"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-044",
+      "language": "zh",
+      "item_id": "3a2afd4b6cccb242"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-044",
+      "language": "en",
+      "item_id": "3a2afd4b6cccb242"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-045",
+      "language": "zh",
+      "item_id": "dac05e5ff42ba181"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-045",
+      "language": "en",
+      "item_id": "dac05e5ff42ba181"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-046",
+      "language": "zh",
+      "item_id": "a440115d7c52255a"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-046",
+      "language": "en",
+      "item_id": "a440115d7c52255a"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-047",
+      "language": "zh",
+      "item_id": "eec05458649990a7"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-047",
+      "language": "en",
+      "item_id": "eec05458649990a7"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-048",
+      "language": "zh",
+      "item_id": "4b59ea6a5107ed70"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-048",
+      "language": "en",
+      "item_id": "4b59ea6a5107ed70"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-049",
+      "language": "zh",
+      "item_id": "c0f1bb6a5ea386a1"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-049",
+      "language": "en",
+      "item_id": "c0f1bb6a5ea386a1"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-050",
+      "language": "zh",
+      "item_id": "63d5680c567d05b7"
+    },
+    {
+      "model_id": "functional-current-20261104",
+      "case_id": "acceptance-050",
+      "language": "en",
+      "item_id": "63d5680c567d05b7"
+    }
+  ],
+  "invalid": [
+    {
+      "model_id": "current",
+      "case_id": "acceptance-022",
+      "language": "en",
+      "reason": "ValueError: unsupported_parameter:tsepia"
+    }
+  ],
+  "items": [
+    {
+      "item_id": "aae3cb96a1150505",
+      "case_id": "acceptance-001",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-001-zh.png",
+      "image_sha256": "995b873927ac4311dccdbaf9c5b1ce7086764cae7fa37f8244f560da95185684"
+    },
+    {
+      "item_id": "1e8ad4c1139520d8",
+      "case_id": "acceptance-001",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-001-en.png",
+      "image_sha256": "bae2685110612c4f4010194de36873465c565d2e36f36dacf4dc1357abdfb79b"
+    },
+    {
+      "item_id": "756f0d57f15e4064",
+      "case_id": "acceptance-002",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-002-zh.png",
+      "image_sha256": "3475bf28aef06bc72a970d7cfcf1d3959f512e28b42339a3ff9fcd6d8684780e"
+    },
+    {
+      "item_id": "0e0cef14fa197b5d",
+      "case_id": "acceptance-002",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-002-en.png",
+      "image_sha256": "edf500882dbcdad1772b6b69584c32b22c31ee3d06c5119ca92f3b5382283d0b"
+    },
+    {
+      "item_id": "362add977954c59f",
+      "case_id": "acceptance-003",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-003-zh.png",
+      "image_sha256": "c0a2467c219dfe33df1f60bb19a341dc65555c15389a2d57617b36340ef6a528"
+    },
+    {
+      "item_id": "f615734244121b71",
+      "case_id": "acceptance-003",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-003-en.png",
+      "image_sha256": "163eea4136d3c5c783d9f8b3ae590702b8063b8b7a092292db13b7bfb46b0bd7"
+    },
+    {
+      "item_id": "f7b0a50104cf80a8",
+      "case_id": "acceptance-004",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-004-zh.png",
+      "image_sha256": "36de37d354f9485dc7a4094120c19563146d55587a4055374fc97034eb7d7ea9"
+    },
+    {
+      "item_id": "f6f4a402e23b36e9",
+      "case_id": "acceptance-004",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-004-en.png",
+      "image_sha256": "4614f49bd2841c9c8b8fd567ab4dfd97ee2f975cee306ddf5470963e2f42de0c"
+    },
+    {
+      "item_id": "b7bd3c1ec198d69e",
+      "case_id": "acceptance-005",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-005-zh.png",
+      "image_sha256": "1d7bfb009a05263b6647ec6c30a72307c1eadd3c99db946c9a0a2cf467975dd5"
+    },
+    {
+      "item_id": "929c8368a01dce10",
+      "case_id": "acceptance-006",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-006-zh.png",
+      "image_sha256": "69ef31d66fcde68fce3e685493aeb2a2f050f21e293c6c549eb91571066305e6"
+    },
+    {
+      "item_id": "a5822e6c9902ca3a",
+      "case_id": "acceptance-006",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-006-en.png",
+      "image_sha256": "72048edeada10039cb20d03f2a272aa65f496166f331be2caf0372a4dc27506c"
+    },
+    {
+      "item_id": "c3fc336ac37c0c5d",
+      "case_id": "acceptance-007",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-007-zh.png",
+      "image_sha256": "666779b959f89aad0614ae8eebcfda03cefe72043363a6b721f6579b457f7f31"
+    },
+    {
+      "item_id": "954c27cb1424b5a8",
+      "case_id": "acceptance-008",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-008-zh.png",
+      "image_sha256": "394bedc963240604ee3811ce7bad706f468a0486de7da47b165bbd8c3c475470"
+    },
+    {
+      "item_id": "562fd2aa7bf41e20",
+      "case_id": "acceptance-008",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-008-en.png",
+      "image_sha256": "0d317f61f0c8298e1b0bb5f4b0065c3076b344c328f831d8254341a869efad18"
+    },
+    {
+      "item_id": "da34915b6cdb1581",
+      "case_id": "acceptance-009",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-009-zh.png",
+      "image_sha256": "b12bff062e8f998250426f2978478ebb167de05c149af6ef6023a75ec95575a9"
+    },
+    {
+      "item_id": "e1837fc52a5a2b4c",
+      "case_id": "acceptance-009",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-009-en.png",
+      "image_sha256": "14a9f00788ca2536953cdf97b9bfabfeb1c23522eb332520801e0a49b0dd4c7b"
+    },
+    {
+      "item_id": "a7045f5658995f30",
+      "case_id": "acceptance-010",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-010-zh.png",
+      "image_sha256": "c08ff14fe53ba772f4e41a4606d2b4ca55e61e755488359c29f94290013faac2"
+    },
+    {
+      "item_id": "0e30f80fe65c36da",
+      "case_id": "acceptance-010",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-010-en.png",
+      "image_sha256": "9e61e0539f55fee47570d20b5326d873c8207b027f1bbd7b6f9773701d72eccf"
+    },
+    {
+      "item_id": "85a482c1a9a14979",
+      "case_id": "acceptance-011",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-011-zh.png",
+      "image_sha256": "fe18ec19e5a13e4ea7ea7731072cda6b9d0121bbee7555deee3e6f2667aa0d97"
+    },
+    {
+      "item_id": "5021a405f8807a3a",
+      "case_id": "acceptance-011",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-011-en.png",
+      "image_sha256": "d40b4a6a362ecc70b2dc89a0b24577014e9eaae890cc7c72bfc2a6df1e43ef26"
+    },
+    {
+      "item_id": "34e6740a99133176",
+      "case_id": "acceptance-012",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-012-zh.png",
+      "image_sha256": "82162888e83aeaa49851a52ef175f9b38aca31d91c67900654ea4409ecedba83"
+    },
+    {
+      "item_id": "452ea6ec42573276",
+      "case_id": "acceptance-012",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-012-en.png",
+      "image_sha256": "66385918a19f1437016095f9e846c8bf0693b672dc4d71d636624bc2194322f3"
+    },
+    {
+      "item_id": "7d078ef884dc4a0b",
+      "case_id": "acceptance-013",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-013-zh.png",
+      "image_sha256": "eb9a89716a6956b4e51a56ab1c68725f4cc572694119975d2454498490ba99e7"
+    },
+    {
+      "item_id": "cc5542a9d29cff14",
+      "case_id": "acceptance-013",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-013-en.png",
+      "image_sha256": "db87b358f54a89b6dd70e77c3c4eac47cabe3c306fe5253a40296ef8fb57c3b6"
+    },
+    {
+      "item_id": "f4b765d2ea58b2b0",
+      "case_id": "acceptance-014",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-014-zh.png",
+      "image_sha256": "bc7d13b0d982eb15f415c6e2858e49adc4d84f089004231a48ad882ba1143996"
+    },
+    {
+      "item_id": "710465f94bbae258",
+      "case_id": "acceptance-014",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-014-en.png",
+      "image_sha256": "bb9b692035729a4f30fb1cdbc68293a2cd2bc6a2451731c9bbba448b32fe1da2"
+    },
+    {
+      "item_id": "bd0faf2987aaad14",
+      "case_id": "acceptance-015",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-015-zh.png",
+      "image_sha256": "45514ec22e89465f98b1183b525b10d6571e461d73fa81c3f33809f04512b20c"
+    },
+    {
+      "item_id": "f0dcac68b1a01efe",
+      "case_id": "acceptance-015",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-015-en.png",
+      "image_sha256": "9326d1135f276d9eb3ee081c1ea7e3b78d44f516a6a26ad5f049cda2ccc5d027"
+    },
+    {
+      "item_id": "7ce7d508b32c6a01",
+      "case_id": "acceptance-016",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-016-zh.png",
+      "image_sha256": "ffae220c0529826f1806317eb9c9532eb9396448c67f65e09954e19abfcc67d1"
+    },
+    {
+      "item_id": "8d6ebe9ddbc5dae6",
+      "case_id": "acceptance-016",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-016-en.png",
+      "image_sha256": "9057dbae471fc53cca7a4e39eba756127a3f90535bd39f92d05acb317da78d75"
+    },
+    {
+      "item_id": "a251f5b71882e897",
+      "case_id": "acceptance-017",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-017-zh.png",
+      "image_sha256": "a70a44fa941f76dcb0d4fb08bbe63c5301f391c1759c3e87a7c71701528ac1a5"
+    },
+    {
+      "item_id": "bcca35924855570d",
+      "case_id": "acceptance-017",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-017-en.png",
+      "image_sha256": "386fa0d6ded6fb878ae0860c30827efc2c3d901e87d3b5c951a70c197a995031"
+    },
+    {
+      "item_id": "fab38a0c19338ac9",
+      "case_id": "acceptance-018",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-018-zh.png",
+      "image_sha256": "2ab44fe4e586fadad3c90246d72485c39bc74095823b2c60ede62815ee4f3a56"
+    },
+    {
+      "item_id": "d14a2a5ca125600e",
+      "case_id": "acceptance-018",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-018-en.png",
+      "image_sha256": "481b144700ba611ea89ea0224d78e27ba0945fc475c53683d37b1042d6fe9d52"
+    },
+    {
+      "item_id": "37bc9392b449c9ca",
+      "case_id": "acceptance-019",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-019-zh.png",
+      "image_sha256": "b274e23c3e34787310fe8968413edf4bcb69725b32a825cc8238c7597ee63d11"
+    },
+    {
+      "item_id": "7851f179bb1bbd58",
+      "case_id": "acceptance-019",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-019-en.png",
+      "image_sha256": "2f715a92d0cec3476a611adcd039e72980e8d6d15fd4440bd3d0950052c49321"
+    },
+    {
+      "item_id": "cfa3861dc1671d21",
+      "case_id": "acceptance-020",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-020-zh.png",
+      "image_sha256": "7d87aea6a12c805e5afe23fcc5b9216e57d03bd35bfb618e1a2fd7d290ebb456"
+    },
+    {
+      "item_id": "02c3e221fc5d388e",
+      "case_id": "acceptance-020",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-020-en.png",
+      "image_sha256": "729e59b0058f07f96d1da2a1684917963b2595e54c8103e0d4ebc50339a8b8f1"
+    },
+    {
+      "item_id": "37147d6ed36cf562",
+      "case_id": "acceptance-021",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-021-zh.png",
+      "image_sha256": "2e45d764c07202c512683707b1f7beb05c4d017bc4b5b869c312fc6659f61975"
+    },
+    {
+      "item_id": "6b261794da293fc2",
+      "case_id": "acceptance-021",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-021-en.png",
+      "image_sha256": "b9c5e86c0b39789827ed161fc5afc039711d0b93c73a3854ea7fd4cf60131e76"
+    },
+    {
+      "item_id": "7d307fe72077525f",
+      "case_id": "acceptance-022",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-022-zh.png",
+      "image_sha256": "1d263e904759b3cfdbab0f7916346d18881c5e7be830e49518da3b0d9c6786bc"
+    },
+    {
+      "item_id": "b183c7e94f677a49",
+      "case_id": "acceptance-023",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-023-zh.png",
+      "image_sha256": "37e68f0f0623e0c583dada31cb64deb554e87b3626f1c716ee4291e1b3501f50"
+    },
+    {
+      "item_id": "89fb37084ab2b2a2",
+      "case_id": "acceptance-023",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-023-en.png",
+      "image_sha256": "cfa7a4443123c534cbe64663b96a165d11d709db4c84cb1ede87a465fe8e4d72"
+    },
+    {
+      "item_id": "0463a30eaf71d20a",
+      "case_id": "acceptance-024",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-024-zh.png",
+      "image_sha256": "b4566797ee72a10a081abd961dd21430b1042a85bbdd5ca5f5820a6e79983cea"
+    },
+    {
+      "item_id": "3342df6de82c2793",
+      "case_id": "acceptance-024",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-024-en.png",
+      "image_sha256": "bb61b7dcf1325f3d518119946a2c3bcbedd187bba85ca50b870f3a0061e49753"
+    },
+    {
+      "item_id": "b9417022eecd4a97",
+      "case_id": "acceptance-025",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-025-zh.png",
+      "image_sha256": "87b2b52da7e5d2668cc053c062320a5d7fea9cc30b2819ce49dc72ab14245ed0"
+    },
+    {
+      "item_id": "5e7998c32fc591fa",
+      "case_id": "acceptance-025",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-025-en.png",
+      "image_sha256": "fcff8e94079c6be4e8a5dcd1d3e94081b55ee538ce7b86b88104c9e48d15d2cd"
+    },
+    {
+      "item_id": "feb9682b1ceb81c6",
+      "case_id": "acceptance-026",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-026-zh.png",
+      "image_sha256": "5be168df21e93f9fd7aa1b3c6e87b7a8a1ae3b7b093af3ab3f7857fd680ba1d0"
+    },
+    {
+      "item_id": "5b8c73482202f3f5",
+      "case_id": "acceptance-027",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-027-zh.png",
+      "image_sha256": "72c917723832ac60057f8a707e818171e3596d838e9ecbc62bdf19e7a385eb66"
+    },
+    {
+      "item_id": "62df23b91a4ec017",
+      "case_id": "acceptance-027",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-027-en.png",
+      "image_sha256": "16ff744ed001f0c9f01ee89882ab3b65e8cef3176baad14f693c2473300bf26d"
+    },
+    {
+      "item_id": "20cf24028dafc064",
+      "case_id": "acceptance-028",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-028-zh.png",
+      "image_sha256": "7dec168008dc76a3ace38e1ed4a4ca8106127e9d89a93e6255bf908da2020419"
+    },
+    {
+      "item_id": "80e7ee3ddaae962b",
+      "case_id": "acceptance-028",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-028-en.png",
+      "image_sha256": "356dabea701e5d1b455b8b3f2866fdac371233153a58b88bc119c2cbc230166a"
+    },
+    {
+      "item_id": "5d566dbaa1eb85fc",
+      "case_id": "acceptance-029",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-029-zh.png",
+      "image_sha256": "641c3e661c41e377c15864e07463858d914b57b2e86135a0ff53ad16c3859f30"
+    },
+    {
+      "item_id": "e82fb6c9b13c777e",
+      "case_id": "acceptance-029",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-029-en.png",
+      "image_sha256": "2773362abab100b17dbc6f6162d017d7bc7c127fe80386256547843a286d6c12"
+    },
+    {
+      "item_id": "82a1fd095b411148",
+      "case_id": "acceptance-030",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-030-zh.png",
+      "image_sha256": "c02dddc34da5df73f74d042530f4bdfbb9eb3a387d96dcf76386a0107e1399f9"
+    },
+    {
+      "item_id": "4aa95e6f6cd0eb9b",
+      "case_id": "acceptance-030",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-030-en.png",
+      "image_sha256": "b0897d3cf19a91aa401bc248394d0e6fe131e2023a6d9e9788cbfb6020babddb"
+    },
+    {
+      "item_id": "98eb52729392886e",
+      "case_id": "acceptance-031",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-031-zh.png",
+      "image_sha256": "ad534a803a032e55e2ff654b2eba78d6f07db90175c15f8d0e9be6115d81e597"
+    },
+    {
+      "item_id": "887c87ffe1584e03",
+      "case_id": "acceptance-031",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-031-en.png",
+      "image_sha256": "551ca8b7473cf820d7dabad3e8a22089966c5373d7bb54d45d53f5fc1bd2c869"
+    },
+    {
+      "item_id": "89a5437f7a9d1d8f",
+      "case_id": "acceptance-032",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-032-zh.png",
+      "image_sha256": "73ecb5cafc97e55ddbad00d8c7627f0da9d5175da21ad07d36cf9020345d0271"
+    },
+    {
+      "item_id": "b9b62552f6d2e4c3",
+      "case_id": "acceptance-033",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-033-zh.png",
+      "image_sha256": "4e94ce6fd9844e4512d801f831fc31abff60b35fd04643ca981f04cf26a2eb9b"
+    },
+    {
+      "item_id": "f20831bdaf5943fd",
+      "case_id": "acceptance-033",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-033-en.png",
+      "image_sha256": "19de5adf6904b1353c2f85a1f05de334100316ce7bf1b7382038eb2e13efa689"
+    },
+    {
+      "item_id": "8b95788e70347d35",
+      "case_id": "acceptance-034",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-034-zh.png",
+      "image_sha256": "dd5670a2cea95530c15a1015d2f1345fdfe9d8ea3853f61d1b9bebf713c73d9c"
+    },
+    {
+      "item_id": "20c81eeb17185ba9",
+      "case_id": "acceptance-035",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-035-zh.png",
+      "image_sha256": "fd532393f43ea80a7a3c8caeb8c924430fa63cbea196cd7edd0b43bf0b9024a3"
+    },
+    {
+      "item_id": "e453f3ae328ccb7b",
+      "case_id": "acceptance-035",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-035-en.png",
+      "image_sha256": "fcbaef563f851058c7205798f2c804a533b9be93490d1c3ccf4894be03e41aac"
+    },
+    {
+      "item_id": "5f6c9deb631fce66",
+      "case_id": "acceptance-036",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-036-zh.png",
+      "image_sha256": "ea9face235e83aee1e7f00c66ba13382b2022368d24fca8a1d7bfca0c16e88a7"
+    },
+    {
+      "item_id": "681c38cc6a76e26a",
+      "case_id": "acceptance-037",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-037-zh.png",
+      "image_sha256": "a727b81a1e8a96baa113eb6f5589e6414c58f24e79641eb531b681dfce662411"
+    },
+    {
+      "item_id": "032d997213af93e7",
+      "case_id": "acceptance-037",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-037-en.png",
+      "image_sha256": "b1324c20d103c8746735c9b31cddd169893a0fa8f44fa0dab4155e729213c6d3"
+    },
+    {
+      "item_id": "903bc7e2770e626e",
+      "case_id": "acceptance-038",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-038-zh.png",
+      "image_sha256": "1776a13d60cdd6f37f96e4c3a8f3d761582fba1180988abb7195dbc8aa65bea0"
+    },
+    {
+      "item_id": "3adbbe8cc4506260",
+      "case_id": "acceptance-039",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-039-zh.png",
+      "image_sha256": "04b4ee0c2f3538b3dedf5fb3b7c25f1131523eae6aa6e585b7545a43ecf98fdd"
+    },
+    {
+      "item_id": "93c28700cf6e309c",
+      "case_id": "acceptance-039",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-039-en.png",
+      "image_sha256": "4f1dbb6c3c92b8be4bd84906711f78ab1b47f7be7cab1c0d693e8bcf1f974fdb"
+    },
+    {
+      "item_id": "653a71d95ac637a5",
+      "case_id": "acceptance-040",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-040-zh.png",
+      "image_sha256": "1707fa7fdd8f8ca86de2b935a798a254c374886aa5823a81c10c764aa3e3bdd7"
+    },
+    {
+      "item_id": "939efc0989d598a7",
+      "case_id": "acceptance-041",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-041-zh.png",
+      "image_sha256": "2bb8f48e62172c0e8250eed09ac9cdcac710a3e6e109d7a649bd84dbc6d2b567"
+    },
+    {
+      "item_id": "55f00575acee800d",
+      "case_id": "acceptance-041",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-041-en.png",
+      "image_sha256": "a1c60c80b6617eaab948e49da7ba09b3f3c10e0fae41bedbfe3e817b96067580"
+    },
+    {
+      "item_id": "217b9de440597424",
+      "case_id": "acceptance-042",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-042-zh.png",
+      "image_sha256": "fc6929a876d91f7e5cdb4beac43613a51e603ec46d6bc4e082c624f674e56ff6"
+    },
+    {
+      "item_id": "5fb5fd4eb28debf3",
+      "case_id": "acceptance-042",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-042-en.png",
+      "image_sha256": "1728c0e0403d284b05256404bb97022d1bdccbe6514012c3197cd610e5de1f00"
+    },
+    {
+      "item_id": "85339f4fbe3f2491",
+      "case_id": "acceptance-043",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-043-zh.png",
+      "image_sha256": "6663e87e263d12c1787c4676ae7043ef0746b6209ac18e86eb911358dac351ea"
+    },
+    {
+      "item_id": "8852191b1b11dcd5",
+      "case_id": "acceptance-043",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-043-en.png",
+      "image_sha256": "5c54646535c8309d6ca0e597e6862395db7f04c0752a6f59175460ad07cfd5fe"
+    },
+    {
+      "item_id": "913214d74993d487",
+      "case_id": "acceptance-044",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-044-zh.png",
+      "image_sha256": "aac1daaff954e583fcbe3228e6bea8fe78867e50f70f65573719389be0c02634"
+    },
+    {
+      "item_id": "964be382b4b69371",
+      "case_id": "acceptance-044",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-044-en.png",
+      "image_sha256": "07df57c3ea5323c51d87cc92a660c2d775337fa5bdbfe9eddf523ff9262f8f84"
+    },
+    {
+      "item_id": "99947f05cf4e260f",
+      "case_id": "acceptance-045",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-045-zh.png",
+      "image_sha256": "776f4d71930f0f25d307bb9abeeaf0a6c69b4293bfb035d6b87d4e1fc11f5dc2"
+    },
+    {
+      "item_id": "3c42680e3643e29a",
+      "case_id": "acceptance-045",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-045-en.png",
+      "image_sha256": "50ff4953f6f7e5c32966291e5154b64add53c8c2344a255b88353620856b7cca"
+    },
+    {
+      "item_id": "653d6626e2b38f0c",
+      "case_id": "acceptance-046",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-046-zh.png",
+      "image_sha256": "584976dc6e281a214e45d47c6c089c78e0279ee5787df04a229f5c520b641b5d"
+    },
+    {
+      "item_id": "dbad7026e37d32a4",
+      "case_id": "acceptance-046",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-046-en.png",
+      "image_sha256": "d46614208965c3b90997311a5bdb84013494a2f2760345709b1baa5b8804cac2"
+    },
+    {
+      "item_id": "1ec7572916e5b9a2",
+      "case_id": "acceptance-047",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-047-zh.png",
+      "image_sha256": "60495fd1a6507c08d4bdbf9d9ab6fa37ddfa6906f093746182edef0109634b6d"
+    },
+    {
+      "item_id": "756d39252a412b9c",
+      "case_id": "acceptance-047",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-047-en.png",
+      "image_sha256": "6294b09051a5ec1d1b73de224381aba93a1fc528397affecdb31d14c7b481416"
+    },
+    {
+      "item_id": "11ea469adee2bb25",
+      "case_id": "acceptance-048",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-048-zh.png",
+      "image_sha256": "e77ff1e743a45832ee24c354fa7520349e6c649e0c707d62d625a27f5a35f11a"
+    },
+    {
+      "item_id": "e9e8552ab2beec54",
+      "case_id": "acceptance-048",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-048-en.png",
+      "image_sha256": "d076de3bc68f3e4cd26572063cae93f8c9ac4592b7b1510acfc63692c8cdcd68"
+    },
+    {
+      "item_id": "f0a0123a64342474",
+      "case_id": "acceptance-049",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-049-zh.png",
+      "image_sha256": "1e2483b3486ff265c9e66145cdd9fd3ac17da4f7642861184756576e40c5fabc"
+    },
+    {
+      "item_id": "1dc714ecf8bd40b9",
+      "case_id": "acceptance-049",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-049-en.png",
+      "image_sha256": "e712504d30785dbdb11654c104a9a7b9facf9bb63c11085d0e6a71868de19160"
+    },
+    {
+      "item_id": "579eb851334d7943",
+      "case_id": "acceptance-050",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-050-zh.png",
+      "image_sha256": "3ff96ef1ec416b0ce98a3999dc550ed9aacc1624ad0b437a7131c8cb912a6910"
+    },
+    {
+      "item_id": "602f070c1e31f98b",
+      "case_id": "acceptance-050",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/current/images/acceptance-050-en.png",
+      "image_sha256": "40001a376af31cc9e7ea22bc100449ca2c1691ed068f6133e4cde202224cab5c"
+    },
+    {
+      "item_id": "2852c72a076e22c9",
+      "case_id": "acceptance-001",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-001-zh.png",
+      "image_sha256": "64dd3829afa6b962f9daeb2a39327f93b703b3563d4d0943d104a5f2f5cb2a1b"
+    },
+    {
+      "item_id": "12f00d3afa5f71ee",
+      "case_id": "acceptance-002",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-002-zh.png",
+      "image_sha256": "f07f6e094c9fab0ca1ff2f22589c615e5fa5ded246dad9dbbe1437619d436c96"
+    },
+    {
+      "item_id": "f070939fab1dee45",
+      "case_id": "acceptance-003",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-003-zh.png",
+      "image_sha256": "b0784593850b9d99e94850ba570b509ad38050d9de336bef05696f8d0e15b42d"
+    },
+    {
+      "item_id": "ed5fb6d2d4e4b1ce",
+      "case_id": "acceptance-004",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-004-zh.png",
+      "image_sha256": "8d1c3011358fe1a35f200a50b870e1dc02eed6c55fa7fb880b623fc8e7cdaef2"
+    },
+    {
+      "item_id": "410dd2c6f10fb6d6",
+      "case_id": "acceptance-005",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-005-zh.png",
+      "image_sha256": "fbad586c096491a4c84dcf7a60b09546cd6b0d1dde7c46b59d1d8989242832f4"
+    },
+    {
+      "item_id": "96d8266aac1c91cf",
+      "case_id": "acceptance-006",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-006-zh.png",
+      "image_sha256": "d784e0885addfce4ed6a4bc2013994d87467c6d04910ff4f5b67bd73df9d9ba2"
+    },
+    {
+      "item_id": "42e0506ff9525750",
+      "case_id": "acceptance-007",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-007-zh.png",
+      "image_sha256": "8370ffb9a73906023d21e27c54ba415682a4222ab539affc304943a4276f0fe8"
+    },
+    {
+      "item_id": "f5c85a9b81bc5595",
+      "case_id": "acceptance-008",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-008-zh.png",
+      "image_sha256": "113720237e58f3defdcd82fd8da2b7f694b854e455c358b12f0975c051434677"
+    },
+    {
+      "item_id": "13fa6c8f5515f192",
+      "case_id": "acceptance-009",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-009-zh.png",
+      "image_sha256": "c83a468005c51fad1981bc680e9dbbdc2892675e54825a2c8c87daa3941958ad"
+    },
+    {
+      "item_id": "9a7496a82979902f",
+      "case_id": "acceptance-010",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-010-zh.png",
+      "image_sha256": "298f6a8c4a6e64ed55ae39363eb0b77cd3c6f54b6fabbcb779673443e39158ed"
+    },
+    {
+      "item_id": "93dbb7438aaf521a",
+      "case_id": "acceptance-011",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-011-zh.png",
+      "image_sha256": "ecc29bb6157f722dddcff90b2acf10cb7ef1a8b7194d791c7a12747727f93439"
+    },
+    {
+      "item_id": "71f44ee183c6f3fe",
+      "case_id": "acceptance-012",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-012-zh.png",
+      "image_sha256": "346fce29201652f73c68032e2295d099c11082c5c7eff10a6c4f677456d03770"
+    },
+    {
+      "item_id": "f0501d1993f9f607",
+      "case_id": "acceptance-013",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-013-zh.png",
+      "image_sha256": "bfa712d2123fe485356e29c5243cadb744f6d9163f5595a788419cc782e6d813"
+    },
+    {
+      "item_id": "6e3f73b2850e0643",
+      "case_id": "acceptance-014",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-014-zh.png",
+      "image_sha256": "5e21f73e559716e84e3f12dee1129e34582fd13124ae84f046ee88df114c8e37"
+    },
+    {
+      "item_id": "746fc312c4ff0d1a",
+      "case_id": "acceptance-015",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-015-zh.png",
+      "image_sha256": "ef27dde8ca533a5a4b0d5ef1374b00a19b78473b742bc19f4ecbe8d01a0e67bd"
+    },
+    {
+      "item_id": "f6210634511f0c58",
+      "case_id": "acceptance-016",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-016-zh.png",
+      "image_sha256": "af05b8c043797f7501467a89e36b75225a250529354c178cf7cea59fe0bb00d2"
+    },
+    {
+      "item_id": "0ea13efa53da276e",
+      "case_id": "acceptance-017",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-017-zh.png",
+      "image_sha256": "ce0162116d208c08e039dfea69996b6d6f2f3ce66421fb0cc6648b1f5ca26947"
+    },
+    {
+      "item_id": "d5fd6562965d2317",
+      "case_id": "acceptance-018",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-018-zh.png",
+      "image_sha256": "856eb45a7929c8c3ca6c5c23449934dc12a701f927f9bba6fc1b48a19ef415b8"
+    },
+    {
+      "item_id": "f952006e27332d81",
+      "case_id": "acceptance-019",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-019-zh.png",
+      "image_sha256": "991573a25ae48922dc2eaa5090a3fca3743c9ad5b52636eded75d7919a1b7cba"
+    },
+    {
+      "item_id": "f92900b6225b3001",
+      "case_id": "acceptance-020",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-020-zh.png",
+      "image_sha256": "8d8e34f82c32d94a619cf279667f393ac6009e63bbb4fcb865f38cc227d17ad1"
+    },
+    {
+      "item_id": "be766e14bff0e9e3",
+      "case_id": "acceptance-021",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-021-zh.png",
+      "image_sha256": "785561e3e17ea4fd4b5d8174a28fef7f0cd041d18f7348e576812895e7f7f954"
+    },
+    {
+      "item_id": "97b57e25f9f59d2b",
+      "case_id": "acceptance-022",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-022-zh.png",
+      "image_sha256": "5c0149ae9532f9bb71226da9e07231b22808dc473decc0d292e9cd1b7e2fb33f"
+    },
+    {
+      "item_id": "a52de8113e001cd0",
+      "case_id": "acceptance-023",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-023-zh.png",
+      "image_sha256": "81d948250abe63f1f38e64d006589649e13fbfe44da4ee1ba706fa0a02c822d9"
+    },
+    {
+      "item_id": "e37258fdaac97752",
+      "case_id": "acceptance-024",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-024-zh.png",
+      "image_sha256": "706e2aadefa344f421bce6f8ed1145a6317d530732f693329e6f8374ff3fce76"
+    },
+    {
+      "item_id": "b587307172d2bc65",
+      "case_id": "acceptance-025",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-025-zh.png",
+      "image_sha256": "484c230b27ad124c9f09bf4ca0171f0170dfc4b4637b510000f82c5333d6132c"
+    },
+    {
+      "item_id": "6e22aee36ee1f2ee",
+      "case_id": "acceptance-026",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-026-zh.png",
+      "image_sha256": "2c0f3949c9e4fd3dbaa5642b583c014506a0acb11ce394b6050a5a94b2761190"
+    },
+    {
+      "item_id": "fee6dae66cbb0fd3",
+      "case_id": "acceptance-027",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-027-zh.png",
+      "image_sha256": "8c9a6b44ea0c0eb2b6d270383f71dfcdfa43c65eaf07b02ed22332da6d62cb2a"
+    },
+    {
+      "item_id": "d90a6ffcd94c0a4c",
+      "case_id": "acceptance-028",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-028-zh.png",
+      "image_sha256": "8ae4ce3cd330df980dda7145a537ce41083a69e734708bbe6afd0b0d9aba7f10"
+    },
+    {
+      "item_id": "0f22a00cc5077da0",
+      "case_id": "acceptance-029",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-029-zh.png",
+      "image_sha256": "c64c4c2e7550b757d1db335bdb80a63eff4df31da231fd6d83b0c9f16411d7f3"
+    },
+    {
+      "item_id": "fdd3b73e1a494195",
+      "case_id": "acceptance-030",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-030-zh.png",
+      "image_sha256": "17d56141a39b1d99a7384996893343e3752dfe9eae558324ca112871ac3fa61e"
+    },
+    {
+      "item_id": "73f6eef695735f72",
+      "case_id": "acceptance-031",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-031-zh.png",
+      "image_sha256": "cb4808832e13ecd6f03d0cf25e38c2cf51af5fd6465fbf2091d22e92781d48ba"
+    },
+    {
+      "item_id": "a0189d370a7de125",
+      "case_id": "acceptance-032",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-032-zh.png",
+      "image_sha256": "97a32176a460e0d6328d19ed6d35fc784fc4c5819f58f2bc6494be2fdbac36cc"
+    },
+    {
+      "item_id": "e1c36cf342199416",
+      "case_id": "acceptance-033",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-033-zh.png",
+      "image_sha256": "4187296fca24565235645df2729ffdd973fff9b5d1227cb7de5a22914ab4f569"
+    },
+    {
+      "item_id": "4c89bd262f068431",
+      "case_id": "acceptance-034",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-034-zh.png",
+      "image_sha256": "cf3ac5b90439f60b6be104eea30f69cf542e799feeea830234995ce67cef3634"
+    },
+    {
+      "item_id": "640029db4225a538",
+      "case_id": "acceptance-035",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-035-zh.png",
+      "image_sha256": "4834e5f33c4afbf442ab2e67314a4236634c0237e1f8618909e208b20b47f2db"
+    },
+    {
+      "item_id": "a969efaa72da317e",
+      "case_id": "acceptance-036",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-036-zh.png",
+      "image_sha256": "c8ecde5c0faa31f6c9c33ad2d5880ca958ad346ae7a6ca4a2e86383af11e96df"
+    },
+    {
+      "item_id": "1a8704b2cc719605",
+      "case_id": "acceptance-037",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-037-zh.png",
+      "image_sha256": "dd568b0189b8c395b14a71c9d3e5649f59030bb368cda936b66d264d5d78d101"
+    },
+    {
+      "item_id": "231e3d7cacb0d51b",
+      "case_id": "acceptance-038",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-038-zh.png",
+      "image_sha256": "3f22d2aeaf59cdf56bac9235222a730aac528f28d4e8dbdfd7609c379e5ed4e1"
+    },
+    {
+      "item_id": "e5fdac66861ba834",
+      "case_id": "acceptance-039",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-039-zh.png",
+      "image_sha256": "38d21b27c70fac561866fe841ae15b967a714ca8e4fc9254352313a3fa6d671d"
+    },
+    {
+      "item_id": "64a7b437ce214084",
+      "case_id": "acceptance-040",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-040-zh.png",
+      "image_sha256": "c856a6b1e8b9f810010f537d1d606674142f0afa7baa2d6b9c34ee82fded94f5"
+    },
+    {
+      "item_id": "c65ed63720bc0c37",
+      "case_id": "acceptance-041",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-041-zh.png",
+      "image_sha256": "6dcf845a79e3c117b9095a4af8813bf2c11113bd5f799dffdbb60c446fc3028b"
+    },
+    {
+      "item_id": "39d596b6f5fd19e9",
+      "case_id": "acceptance-042",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-042-zh.png",
+      "image_sha256": "01e590e7a1d55ef85e0a14770376f68127bcac06ac6d455f05240dac9e0b14a1"
+    },
+    {
+      "item_id": "41dc3ad38b1844c5",
+      "case_id": "acceptance-043",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-043-zh.png",
+      "image_sha256": "1b115fd7e3434a226f15490679eaa3adf50c0bc9e0b7802e2383b33322572ced"
+    },
+    {
+      "item_id": "3a2afd4b6cccb242",
+      "case_id": "acceptance-044",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-044-zh.png",
+      "image_sha256": "32bfa8d98afad2931da47b4cf90f0ec0f15021999447c22cd48b49d9d076c198"
+    },
+    {
+      "item_id": "dac05e5ff42ba181",
+      "case_id": "acceptance-045",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-045-zh.png",
+      "image_sha256": "3efb4b3635a216cfbc0946a8b52eca00307d71943239de0385af03d5e8abdad6"
+    },
+    {
+      "item_id": "a440115d7c52255a",
+      "case_id": "acceptance-046",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-046-zh.png",
+      "image_sha256": "5be1b615cf8a61e49302aa0b1c8cb1e39750cebd7e95323b6c0cba54430b025a"
+    },
+    {
+      "item_id": "eec05458649990a7",
+      "case_id": "acceptance-047",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-047-zh.png",
+      "image_sha256": "3033b2126efd99c3c2a25d9681b2a25dfa086cc1f364eef40f40977779e7a066"
+    },
+    {
+      "item_id": "4b59ea6a5107ed70",
+      "case_id": "acceptance-048",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-048-zh.png",
+      "image_sha256": "23a57a83381f882f15a8b0028e313921846b77fb01047808a2a179cdf70929a9"
+    },
+    {
+      "item_id": "c0f1bb6a5ea386a1",
+      "case_id": "acceptance-049",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-049-zh.png",
+      "image_sha256": "597b94127b6913d5454727d1cd21f3eb75508e9c2beaa356deb1bda6056f25c2"
+    },
+    {
+      "item_id": "63d5680c567d05b7",
+      "case_id": "acceptance-050",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/images/acceptance-050-zh.png",
+      "image_sha256": "4f017d270a572f014ffb88b252fc60cd451d0458c3762472d5b82e03b212b089"
+    },
+    {
+      "item_id": "317468be026aa887",
+      "case_id": "acceptance-001",
+      "image": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-current-20261104/images/acceptance-001-zh.png",
+      "image_sha256": "10f64e039d89e52f082cc98ecb210d0d143700c23d7464716d924da4ef21f207"
+    }
+  ],
+  "sheets": [
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-001-01.jpg",
+      "sha256": "231edc40fcde4316f3a19145948765d5f50d3d7c83caa07d0a1dfdc11977bc4d",
+      "case_id": "acceptance-001",
+      "items": [
+        "1e8ad4c1139520d8",
+        "2852c72a076e22c9",
+        "317468be026aa887",
+        "aae3cb96a1150505"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-002-01.jpg",
+      "sha256": "ea2a43b7962cb20384a68c276122dfb845e68443dae9734ae0bc8f4ea3e5f46a",
+      "case_id": "acceptance-002",
+      "items": [
+        "0e0cef14fa197b5d",
+        "12f00d3afa5f71ee",
+        "756f0d57f15e4064"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-003-01.jpg",
+      "sha256": "6a77d2a28fc03e642240d1fdf19663f5b96da64d8f07a1d45309b5330a5aaf94",
+      "case_id": "acceptance-003",
+      "items": [
+        "362add977954c59f",
+        "f070939fab1dee45",
+        "f615734244121b71"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-004-01.jpg",
+      "sha256": "303cfb4a8863fa2624c69d3c872493e14cd3293e1cb8894d73cb252f58a4e9a6",
+      "case_id": "acceptance-004",
+      "items": [
+        "ed5fb6d2d4e4b1ce",
+        "f6f4a402e23b36e9",
+        "f7b0a50104cf80a8"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-005-01.jpg",
+      "sha256": "a9a4f1acf02805b46839acb3a75f07ac3ee63306b88c82ee5acc7fad8de58b7a",
+      "case_id": "acceptance-005",
+      "items": [
+        "410dd2c6f10fb6d6",
+        "b7bd3c1ec198d69e"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-006-01.jpg",
+      "sha256": "0f77adc2e111a5e6a4aa4f52dab5c3707f721eb390066e821b63cf0447aa9d6e",
+      "case_id": "acceptance-006",
+      "items": [
+        "929c8368a01dce10",
+        "96d8266aac1c91cf",
+        "a5822e6c9902ca3a"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-007-01.jpg",
+      "sha256": "5b855e8e1a594f853b21cf740bb09bab2d9a346e1a20ac31e6636841c36d9a42",
+      "case_id": "acceptance-007",
+      "items": [
+        "42e0506ff9525750",
+        "c3fc336ac37c0c5d"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-008-01.jpg",
+      "sha256": "cccea9e092855c613ca5e44a51112fb9576d9d1465edb1db080dc43f49804b70",
+      "case_id": "acceptance-008",
+      "items": [
+        "562fd2aa7bf41e20",
+        "954c27cb1424b5a8",
+        "f5c85a9b81bc5595"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-009-01.jpg",
+      "sha256": "1d44fde1cfa4889257b757d01ca250c9b3a69a0b1b639d53b740d2f2b7e38d9c",
+      "case_id": "acceptance-009",
+      "items": [
+        "13fa6c8f5515f192",
+        "da34915b6cdb1581",
+        "e1837fc52a5a2b4c"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-010-01.jpg",
+      "sha256": "386015bbb26235f96e647aa47e142a9bfb82f676ba50874b74eede351862cd88",
+      "case_id": "acceptance-010",
+      "items": [
+        "0e30f80fe65c36da",
+        "9a7496a82979902f",
+        "a7045f5658995f30"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-011-01.jpg",
+      "sha256": "045da7a0e57a8c8e01d96fad299ea77ac7864028c32587c55b012ca17cb21fe0",
+      "case_id": "acceptance-011",
+      "items": [
+        "5021a405f8807a3a",
+        "85a482c1a9a14979",
+        "93dbb7438aaf521a"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-012-01.jpg",
+      "sha256": "76c92732514188893b54f171da269f0d6b18b283505f14a4568b382bf0a17dde",
+      "case_id": "acceptance-012",
+      "items": [
+        "34e6740a99133176",
+        "452ea6ec42573276",
+        "71f44ee183c6f3fe"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-013-01.jpg",
+      "sha256": "d5db455877553c95473a4b3873ebaafad90b39ceb035a05c13ca1fb0cff32672",
+      "case_id": "acceptance-013",
+      "items": [
+        "7d078ef884dc4a0b",
+        "cc5542a9d29cff14",
+        "f0501d1993f9f607"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-014-01.jpg",
+      "sha256": "9f2c6483811a6cbb12698c84c5f82f3b51add236e7f66ae929324717aa0c4b88",
+      "case_id": "acceptance-014",
+      "items": [
+        "6e3f73b2850e0643",
+        "710465f94bbae258",
+        "f4b765d2ea58b2b0"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-015-01.jpg",
+      "sha256": "6cd97b5c35b7f1da99163d2773401bb75ff3f834b63368289f373bf3eb0d364f",
+      "case_id": "acceptance-015",
+      "items": [
+        "746fc312c4ff0d1a",
+        "bd0faf2987aaad14",
+        "f0dcac68b1a01efe"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-016-01.jpg",
+      "sha256": "461b631bf8b5696d0f56982c9cdaf24e51ca7b2b42ee01a4de7115c1c0c59a55",
+      "case_id": "acceptance-016",
+      "items": [
+        "7ce7d508b32c6a01",
+        "8d6ebe9ddbc5dae6",
+        "f6210634511f0c58"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-017-01.jpg",
+      "sha256": "850a8a458d5945c76dbfa99d016a32e812bd84c5de1b28e9eedd5b1f145d2c45",
+      "case_id": "acceptance-017",
+      "items": [
+        "0ea13efa53da276e",
+        "a251f5b71882e897",
+        "bcca35924855570d"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-018-01.jpg",
+      "sha256": "ca5fcfe60aa2d86fcef2d4c63ad075b0dd338931fa0908abfb03ca4e77032465",
+      "case_id": "acceptance-018",
+      "items": [
+        "d14a2a5ca125600e",
+        "d5fd6562965d2317",
+        "fab38a0c19338ac9"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-019-01.jpg",
+      "sha256": "674effa442d7f6fd399a5cc19792c0fe4483c44dbc2b754423bea03e1e697323",
+      "case_id": "acceptance-019",
+      "items": [
+        "37bc9392b449c9ca",
+        "7851f179bb1bbd58",
+        "f952006e27332d81"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-020-01.jpg",
+      "sha256": "1d81381f3b2245d39ec7b73be15c0baf933a05773bf823ec0f1ccd48b9e66290",
+      "case_id": "acceptance-020",
+      "items": [
+        "02c3e221fc5d388e",
+        "cfa3861dc1671d21",
+        "f92900b6225b3001"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-021-01.jpg",
+      "sha256": "afc5796826448a556894b555b6d73286c87bb324e7dbda647e177e80265d8314",
+      "case_id": "acceptance-021",
+      "items": [
+        "37147d6ed36cf562",
+        "6b261794da293fc2",
+        "be766e14bff0e9e3"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-022-01.jpg",
+      "sha256": "82d511a80006d4227936d1ab10677d3c394c49a17af9dabc6bdb51695f5b4680",
+      "case_id": "acceptance-022",
+      "items": [
+        "7d307fe72077525f",
+        "97b57e25f9f59d2b"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-023-01.jpg",
+      "sha256": "0bee55674a1d407bcaabe59a51c8a3b2813936afabc1b2678e129258b8f5ed8e",
+      "case_id": "acceptance-023",
+      "items": [
+        "89fb37084ab2b2a2",
+        "a52de8113e001cd0",
+        "b183c7e94f677a49"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-024-01.jpg",
+      "sha256": "65e5c20efff4f296735d9fb0fb0b21af89ac50eebd7035792ea1a4d35eac337f",
+      "case_id": "acceptance-024",
+      "items": [
+        "0463a30eaf71d20a",
+        "3342df6de82c2793",
+        "e37258fdaac97752"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-025-01.jpg",
+      "sha256": "35c387be082499f87c97b565c33d4f28de789bcc66845f2d656a64250ab0b557",
+      "case_id": "acceptance-025",
+      "items": [
+        "5e7998c32fc591fa",
+        "b587307172d2bc65",
+        "b9417022eecd4a97"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-026-01.jpg",
+      "sha256": "a97e77c2f28b20e969023a92db46560b602c354f7c5e776e95092fb261ed13d2",
+      "case_id": "acceptance-026",
+      "items": [
+        "6e22aee36ee1f2ee",
+        "feb9682b1ceb81c6"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-027-01.jpg",
+      "sha256": "c70a908776ed83be7d23cf0d85ebe4b1119a1c9a8aa9e66914266311470c8247",
+      "case_id": "acceptance-027",
+      "items": [
+        "5b8c73482202f3f5",
+        "62df23b91a4ec017",
+        "fee6dae66cbb0fd3"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-028-01.jpg",
+      "sha256": "88bdb3cc0a439468021e1659374517826fac5f4f1103c3fc03a2f8fde0be0f64",
+      "case_id": "acceptance-028",
+      "items": [
+        "20cf24028dafc064",
+        "80e7ee3ddaae962b",
+        "d90a6ffcd94c0a4c"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-029-01.jpg",
+      "sha256": "85ce3cc9150c4486fce5f13afd129b8fb987733241fbb7c94f555ef340cf8c09",
+      "case_id": "acceptance-029",
+      "items": [
+        "0f22a00cc5077da0",
+        "5d566dbaa1eb85fc",
+        "e82fb6c9b13c777e"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-030-01.jpg",
+      "sha256": "d7b813621a9cda6c94ac94204edd769af3d7ebf0f38668358097ba62e4f04785",
+      "case_id": "acceptance-030",
+      "items": [
+        "4aa95e6f6cd0eb9b",
+        "82a1fd095b411148",
+        "fdd3b73e1a494195"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-031-01.jpg",
+      "sha256": "220082e9268bcb98197631cf5b48b5c7b1ea4e4336ae7a840e10006ac2cbcb14",
+      "case_id": "acceptance-031",
+      "items": [
+        "73f6eef695735f72",
+        "887c87ffe1584e03",
+        "98eb52729392886e"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-032-01.jpg",
+      "sha256": "04a7b10efcfd49a2a82073d612b55392e219c5b6fe2ad9ca34d02c561e4b9420",
+      "case_id": "acceptance-032",
+      "items": [
+        "89a5437f7a9d1d8f",
+        "a0189d370a7de125"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-033-01.jpg",
+      "sha256": "8ade465f8268439eb2baa182ddd4db1e3fc8b02d2a878bb7e38c81fb16841ea8",
+      "case_id": "acceptance-033",
+      "items": [
+        "b9b62552f6d2e4c3",
+        "e1c36cf342199416",
+        "f20831bdaf5943fd"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-034-01.jpg",
+      "sha256": "7e802e0e43ebff507e83df3d80b90d8751a4feab9dec337078f4224e69f4760b",
+      "case_id": "acceptance-034",
+      "items": [
+        "4c89bd262f068431",
+        "8b95788e70347d35"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-035-01.jpg",
+      "sha256": "ab0d296fd23814320aabb41458afc03d562614ce05bf2bf576ec38cf3fee4725",
+      "case_id": "acceptance-035",
+      "items": [
+        "20c81eeb17185ba9",
+        "640029db4225a538",
+        "e453f3ae328ccb7b"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-036-01.jpg",
+      "sha256": "24091138622bad3e2139f7fa57bebec4a3592dbb35c4a22320e885a0213fec3b",
+      "case_id": "acceptance-036",
+      "items": [
+        "5f6c9deb631fce66",
+        "a969efaa72da317e"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-037-01.jpg",
+      "sha256": "dac0b52c1e5c1c366c188f6a2eb9e87817dd90a276b79b3a095c04cc4d9abfee",
+      "case_id": "acceptance-037",
+      "items": [
+        "032d997213af93e7",
+        "1a8704b2cc719605",
+        "681c38cc6a76e26a"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-038-01.jpg",
+      "sha256": "bf3f0d44a99161ee62eeb6cfb40a8afd2bcf80444e5c313de4c7b861130a1250",
+      "case_id": "acceptance-038",
+      "items": [
+        "231e3d7cacb0d51b",
+        "903bc7e2770e626e"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-039-01.jpg",
+      "sha256": "dd6897faf6c4227232a79ce846902b70809c53c12fda568f4693b01b7edf181e",
+      "case_id": "acceptance-039",
+      "items": [
+        "3adbbe8cc4506260",
+        "93c28700cf6e309c",
+        "e5fdac66861ba834"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-040-01.jpg",
+      "sha256": "b0ae9d49c589464c700b6e37076a2920254a150bab6de32df43b5ec38e863ee7",
+      "case_id": "acceptance-040",
+      "items": [
+        "64a7b437ce214084",
+        "653a71d95ac637a5"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-041-01.jpg",
+      "sha256": "6d16e379a9cf115becde35b56096f98f176ef893f8963e68a69f2b70cdaf66ae",
+      "case_id": "acceptance-041",
+      "items": [
+        "55f00575acee800d",
+        "939efc0989d598a7",
+        "c65ed63720bc0c37"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-042-01.jpg",
+      "sha256": "c65df82b111250b3bcf88416466bda970a7c5daffd5d2a32b524eb18b8519491",
+      "case_id": "acceptance-042",
+      "items": [
+        "217b9de440597424",
+        "39d596b6f5fd19e9",
+        "5fb5fd4eb28debf3"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-043-01.jpg",
+      "sha256": "69780f9474aeed7c0503410812e67021a9fd54b11d787a70e38e34aac1a84c1b",
+      "case_id": "acceptance-043",
+      "items": [
+        "41dc3ad38b1844c5",
+        "85339f4fbe3f2491",
+        "8852191b1b11dcd5"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-044-01.jpg",
+      "sha256": "6b4ad81be325eba2fa6a05d118c7870ef04a7683bec0420d4b8bb885b3d86ba8",
+      "case_id": "acceptance-044",
+      "items": [
+        "3a2afd4b6cccb242",
+        "913214d74993d487",
+        "964be382b4b69371"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-045-01.jpg",
+      "sha256": "b50213a9dab26dddf8224fd2f9ce6175a4a9a027385cda0cefaf41f7a65b924c",
+      "case_id": "acceptance-045",
+      "items": [
+        "3c42680e3643e29a",
+        "99947f05cf4e260f",
+        "dac05e5ff42ba181"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-046-01.jpg",
+      "sha256": "a4e8416171ec5d4bd937a10f07ac479a36130c66d585a537279bbc06e1cd66e2",
+      "case_id": "acceptance-046",
+      "items": [
+        "653d6626e2b38f0c",
+        "a440115d7c52255a",
+        "dbad7026e37d32a4"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-047-01.jpg",
+      "sha256": "782ef811a520ec8d040a481b144ecac70dfa4dce6115d1651739c22ae3738a6b",
+      "case_id": "acceptance-047",
+      "items": [
+        "1ec7572916e5b9a2",
+        "756d39252a412b9c",
+        "eec05458649990a7"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-048-01.jpg",
+      "sha256": "5c9386f1d1198aac0d876bc8326b1c10195517a15e68db16a5aea2bc47b76625",
+      "case_id": "acceptance-048",
+      "items": [
+        "11ea469adee2bb25",
+        "4b59ea6a5107ed70",
+        "e9e8552ab2beec54"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-049-01.jpg",
+      "sha256": "5cb13d9c3e189fcaa8577cf6add05b71808eb5dd77955f651183e20ce387a64c",
+      "case_id": "acceptance-049",
+      "items": [
+        "1dc714ecf8bd40b9",
+        "c0f1bb6a5ea386a1",
+        "f0a0123a64342474"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v1-20261104/review/acceptance/frozen-first-three/acceptance-050-01.jpg",
+      "sha256": "6244039411e3237234c5497d6bd8340bffe9870848a6e7847448e5ce622954f9",
+      "case_id": "acceptance-050",
+      "items": [
+        "579eb851334d7943",
+        "602f070c1e31f98b",
+        "63d5680c567d05b7"
+      ]
+    }
+  ],
+  "reused_exact_image_observations": [],
+  "review_policy": "Actual direct Codex observation. Exact same output for the same bilingual semantic case is reviewed once and mapped back; translations are not independent samples.",
+  "no_automatic_completion_ratings": true
+}

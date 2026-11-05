@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "missing_fields",
+      "http": 400,
+      "status": "failed",
+      "no_success_fallback": true
+    },
+    {
+      "check": "unknown_model",
+      "http": 400,
+      "status": "failed",
+      "no_success_fallback": true
+    },
+    {
+      "check": "local_removal",
+      "http": 422,
+      "status": "unsupported",
+      "no_success_fallback": true
+    },
+    {
+      "check": "invalid_image",
+      "http": 400,
+      "status": "failed",
+      "no_success_fallback": true
+    },
+    {
+      "check": "real_web_equals_offline",
+      "request_id": "168537aa9bd14090b646c2c48c1427b4",
+      "model_id": "functional-current-20261104",
+      "output_sha256": "05fb2a589a656f2dfff25c210d696c2b4531cfc0eac772a5e20934058a4c9559",
+      "adapter_sha256": "54161bd9c9f2e3aa518572be6cf1dad81f8bebe33d92d31107d64d1f3c4435b0"
+    },
+    {
+      "check": "real_web_equals_offline",
+      "request_id": "911ade3c074c43e1931c1f0310c21c9e",
+      "model_id": "functional-base-20261104",
+      "output_sha256": "05fb2a589a656f2dfff25c210d696c2b4531cfc0eac772a5e20934058a4c9559",
+      "adapter_sha256": "e78e8b9c06fb2d097a849685148e2065d1dbbcdd56b7cf5cf1fa15a5b3a2b7bf"
+    },
+    {
+      "check": "identity_both_languages_preserves_all_pixels",
+      "model_id": "functional-current-20261104"
+    },
+    {
+      "check": "identity_both_languages_preserves_all_pixels",
+      "model_id": "functional-base-20261104"
+    }
+  ],
+  "original_demo_http": 200,
+  "training_examples": 220,
+  "human_feedback_count": 0
+}

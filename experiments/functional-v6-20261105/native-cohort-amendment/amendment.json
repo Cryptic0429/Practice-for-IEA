@@ -1,0 +1,95 @@
+{
+  "at": "2026-11-05T06:03:50.851003+00:00",
+  "status": "training_sources_amended_before_any_round6_training",
+  "original_cases_sha256": "7edeccd489c313f47a2d1bee12588da1ec917ab01e032aab8e253cbf11accfe8",
+  "excluded": [
+    "native-train-n041",
+    "native-train-x121",
+    "native-train-x351"
+  ],
+  "reasons": {
+    "native-train-n041": "Both model proposals and two authored global corrections lacked clean brown-cast removal; do not supervise a purple or partially completed target.",
+    "native-train-x121": "Both models clipped clouds. Two authored preservation attempts darkened/crushed trees, missing significant brightening. No fully acceptable target established with frozen tools.",
+    "native-train-x351": "Strong global/shadow lifts expose extensive coloured block noise. No acceptable significant-brightening target established without unavailable denoising."
+  },
+  "excluded_targets_retained": true,
+  "excluded_may_not_enter_training": true,
+  "additions": [
+    "native-train-n034",
+    "native-train-x251",
+    "native-train-x348"
+  ],
+  "additions_sha256": "631e0b6f25d6855c4863e341f81e22e797413982cd261d822fe94b95850ffa7a",
+  "evidence": "Three original training-reserved, previously source-reviewed and isolation-audited groups. Source-only reinspection saved in sources.png. Original English retained with AI Chinese translation. These are purposively curated training data, not unbiased success estimates.",
+  "target_proposals": [
+    {
+      "case_id": "native-train-n034",
+      "input_sha256": "4c72f34a3907f7c1791bc0a01adcb776f229798faff6c0257ff418109fbf2b08",
+      "candidates": {
+        "E": {
+          "parameters": {
+            "shadows": 50,
+            "saturation": 12
+          },
+          "image": "experiments/functional-v6-20261105/native-cohort-amendment/images/native-train-n034-E.png",
+          "sha256": "f72a9dc0e6dcfcaae93165ac70a0ce31215ad963206b0e392e047aa08e5282dd"
+        },
+        "F": {
+          "parameters": {
+            "shadows": 70,
+            "saturation": 18
+          },
+          "image": "experiments/functional-v6-20261105/native-cohort-amendment/images/native-train-n034-F.png",
+          "sha256": "921c49ebad1c7e334855b8248c03165914ad44be9cb7ff836a346f473b629cea"
+        }
+      }
+    },
+    {
+      "case_id": "native-train-x251",
+      "input_sha256": "aa83e0efe47e1ba3046868e222e1aaac82003049adfc1f6a6fd43c341b5ca9b9",
+      "candidates": {
+        "E": {
+          "parameters": {
+            "saturation": 25
+          },
+          "image": "experiments/functional-v6-20261105/native-cohort-amendment/images/native-train-x251-E.png",
+          "sha256": "6d2b9a63f423cc772f9699c8697b658546080b4b11c92727aa1e8ce83d57372e"
+        },
+        "F": {
+          "parameters": {
+            "saturation": 40
+          },
+          "image": "experiments/functional-v6-20261105/native-cohort-amendment/images/native-train-x251-F.png",
+          "sha256": "f84ed3c82d47cd177c690f2f4568f0a7d6a4328961bbeee340d3b9068b551715"
+        }
+      }
+    },
+    {
+      "case_id": "native-train-x348",
+      "input_sha256": "825e7fc6a595fff5fde4e58c84e10a0b39d62ab1bf71e779117310efc7c24977",
+      "candidates": {
+        "E": {
+          "parameters": {
+            "exposure": 15
+          },
+          "image": "experiments/functional-v6-20261105/native-cohort-amendment/images/native-train-x348-E.png",
+          "sha256": "6b3d62c8040c3c0101e46ce089f3b5252f4081f045cdc56638bfeedf553200b5"
+        },
+        "F": {
+          "parameters": {
+            "exposure": 25
+          },
+          "image": "experiments/functional-v6-20261105/native-cohort-amendment/images/native-train-x348-F.png",
+          "sha256": "4214e3aed5a6d08886e93b8bfac981e6eaad617f04de7f6004ad1feb20832da3"
+        }
+      }
+    }
+  ],
+  "panel": "experiments/functional-v6-20261105/native-cohort-amendment/proposals.jpg",
+  "panel_sha256": "5ef3cd6513b0956381743a442c187efeb7167e7a2d7aa2c48f78a5615cc6049c",
+  "review_pending": true,
+  "heldout_cases_or_gates_changed": false,
+  "round6_training_started": false,
+  "source_isolation_sha256": "e497a52101767412ac21565cd8206ec241ab2d89947dc90733e549add31c2f28",
+  "implementation_sha256": "00771f27a92516baf9f59e1684a17136164da9f2da1c3e77ed6d1db22cb3b481"
+}

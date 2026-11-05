@@ -1,0 +1,113 @@
+[
+  {
+    "id": "native-train-n034",
+    "source_id": "train-native-034",
+    "group_id": "2b4d389815643d4a2e912dbd89315e1eae69f983bd8dcdd6073e6c538d0d504e",
+    "domain": "portrait",
+    "split": "train",
+    "family": "compound",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-n034.png",
+    "input_sha256": "4c72f34a3907f7c1791bc0a01adcb776f229798faff6c0257ff418109fbf2b08",
+    "instructions": {
+      "en": "increase brightness and enhance colors",
+      "zh": "提高亮度，并增强色彩。"
+    },
+    "expected_change": "提高亮度，并增强色彩。 所有请求项均须可见完成，并保持基本图像质量。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:006549",
+    "original_source_sha256": "dbe1977aa6691ac35f777f3e105f98746038378b0a21b5abb662a2f3f907225a",
+    "native_annotation": [
+      {
+        "metadata_index": 5001,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "increase brightness and enhance colors"
+      }
+    ],
+    "source_classification_evidence": "Woman seated under trees in sunlit grass; increase brightness and colours, preserve sunlit lawn. Source classification only; no editing label approved.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x251",
+    "source_id": "train-extension-251",
+    "group_id": "02c310d27a7142383b2854435f1a8bc8562909d3ab2965d93b3da8975af566a8",
+    "domain": "landscape",
+    "split": "train",
+    "family": "saturation",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x251.png",
+    "input_sha256": "aa83e0efe47e1ba3046868e222e1aaac82003049adfc1f6a6fd43c341b5ca9b9",
+    "instructions": {
+      "en": "Enhance the colors and make them more vivid",
+      "zh": "增强色彩，让颜色更鲜明。"
+    },
+    "expected_change": "增强色彩，让颜色更鲜明。 所有请求项均须可见完成，并保持基本图像质量。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:020252",
+    "original_source_sha256": "cccde4d1eafef15278ed04a1e36ead89642f809b9da7737352ebc4c52f2ab63f",
+    "native_annotation": [
+      {
+        "metadata_index": 736,
+        "field": "expert_summary",
+        "item_index": 0,
+        "original_text": "Enhance the colors and make them more vivid"
+      }
+    ],
+    "source_classification_evidence": "Stone church interior with small wedding figures at bottom; architecture/scene dominates, vivid colours globally. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  },
+  {
+    "id": "native-train-x348",
+    "source_id": "train-extension-348",
+    "group_id": "d0e2ec7bf79baac1387d9a5e0383441b785acc17dc2d9f9be69535f89207e9b6",
+    "domain": "landscape",
+    "split": "train",
+    "family": "lighting",
+    "action": "original-native-request",
+    "image": "data/training/functional-v6-20261105/inputs/native-train-x348.png",
+    "input_sha256": "825e7fc6a595fff5fde4e58c84e10a0b39d62ab1bf71e779117310efc7c24977",
+    "instructions": {
+      "en": "Brighten the image slightly",
+      "zh": "把照片稍微提亮一点。"
+    },
+    "expected_change": "把照片稍微提亮一点。 所有请求项均须可见完成，并保持基本图像质量。",
+    "must_preserve": "主体、构图、未要求的色相和主要明暗细节；保留自然肤色、天空及浅色衣物，不新增明显过曝、压黑、失真或无关效果。已有缺失细节不凭空恢复。",
+    "failure_conditions": [
+      "方向错误或无可见效果",
+      "复合要求漏项",
+      "力度不足或过强",
+      "重大过曝、压黑、偏色或额外编辑"
+    ],
+    "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+    "source_partition": "original training_pool",
+    "source_record_id": "GIER-Edit:train:017637",
+    "original_source_sha256": "569de1e55d3b67730d9af35df26b5ec6d4856ad2106fe5753c02a1ffa0cd637a",
+    "native_annotation": [
+      {
+        "metadata_index": 1058,
+        "field": "expert_summary",
+        "item_index": 1,
+        "original_text": "Brighten the image slightly"
+      }
+    ],
+    "source_classification_evidence": "Dark star field over low ridge silhouette; slight brightening, preserve stars and dark sky. Direct source/request review only; no target admitted.",
+    "target_status": "not_yet_proposed_or_visually_admitted"
+  }
+]

@@ -1,0 +1,157 @@
+{
+  "model_id": "functional-v6-continued-20261110",
+  "evaluation_id": "continued-e4",
+  "display_name": "第六轮 · 继续训练 · 第4轮（未通过）",
+  "trial_status": "实验模型，AI辅助评审；本轮功能门槛未通过，仍有高反差亮部损失、噪声放大和力度/复合要求失败。仅供实际试用和诊断。",
+  "adapter": "models/from-functional-v2/sft-native-coverage/seed-01",
+  "adapter_sha256": "39d0e3b91c321ee0abeca8f3260116c76405d371127ba118e04822701e09f66c",
+  "parent": "models/from-functional-v1/sft-curriculum/seed-01",
+  "initial_adapter_sha256": "4048de5078f4eda6b19621a2968718be50f4cd5ad35fd17dbf23614a885edb71",
+  "checkpoint": "experiments/functional-v6-20261105/runs/continued-seed-20261110/checkpoint-920",
+  "epoch": 4,
+  "step": 920,
+  "runtime_family": "functional_v1",
+  "runtime_sha256": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+  "editor": "functional-editor-v1.2-sepia",
+  "dataset_sha256": "a8c752ec8bd2ef5ca4e31173dd3973d7c72162be752a9aadb2623d385633014c",
+  "cases_sha256": "375c98f1f53730c0e926677e90bb18cdf630bcd00730aa4223f631be10c045a3",
+  "training_records": 920,
+  "semantic_cases": 460,
+  "original_photo_groups": 160,
+  "original_native_request_semantics": 100,
+  "AI_controlled_semantics": 360,
+  "photo_domains": {
+    "portrait": 80,
+    "landscape": 80
+  },
+  "source_directions": "Original English and paired AI Chinese translations grouped; no repeats, reference image, review or target leakage.",
+  "status": "diagnostic_trial_only_not_promoted",
+  "diagnostic_choice": "Each route final fourth epoch is offered as a reproducible end-of-training diagnostic, not a qualified winner or an optimistic checkpoint pick. All eight checkpoint results stay visible. Default remains unchanged.",
+  "load_method": "Original Qwen base plus this ONE adapter. Never stack historical parent adapters.",
+  "native_development_summary": {
+    "model_id": "continued-e4",
+    "status": "completed",
+    "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+    "human_review": false,
+    "reviewed_outputs": 40,
+    "missing_unique_images": [],
+    "fully_completed_both_languages": 15,
+    "raw_individual_completed_both_languages": 15,
+    "identical_strength_pairs": [],
+    "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+    "photo_groups": 20,
+    "all_tasks_complete_photo_groups": 15,
+    "major_quality_issues": 3,
+    "major_issue_cases": [
+      "native-dev-011",
+      "native-dev-070",
+      "native-dev-108"
+    ],
+    "per_family": {
+      "brown_tone": {
+        "completed": 1,
+        "cases": 1
+      },
+      "compound": {
+        "completed": 4,
+        "cases": 6
+      },
+      "contrast": {
+        "completed": 1,
+        "cases": 1
+      },
+      "lighting": {
+        "completed": 5,
+        "cases": 7
+      },
+      "saturation": {
+        "completed": 3,
+        "cases": 4
+      },
+      "white_balance": {
+        "completed": 1,
+        "cases": 1
+      }
+    },
+    "per_language": {
+      "zh": {
+        "completed": 17,
+        "partial": 3
+      },
+      "en": {
+        "completed": 16,
+        "partial": 4
+      }
+    },
+    "per_domain": {
+      "portrait": {
+        "completed": 9,
+        "cases": 10
+      },
+      "landscape": {
+        "completed": 6,
+        "cases": 10
+      }
+    },
+    "selection_uses_L1": false,
+    "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+    "review_sha256": "93345b46072d5ed5383722da37f6b178be46d7acb45cf9324c4ca35d2ed4d218"
+  },
+  "old_native_summary": {
+    "model_id": "continued-e4",
+    "status": "completed",
+    "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+    "human_review": false,
+    "reviewed_outputs": 12,
+    "missing_unique_images": [],
+    "fully_completed_both_languages": 3,
+    "raw_individual_completed_both_languages": 3,
+    "identical_strength_pairs": [],
+    "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+    "photo_groups": 6,
+    "all_tasks_complete_photo_groups": 3,
+    "major_quality_issues": 0,
+    "major_issue_cases": [],
+    "per_family": {
+      "compound": {
+        "completed": 1,
+        "cases": 2
+      },
+      "lighting": {
+        "completed": 0,
+        "cases": 2
+      },
+      "saturation": {
+        "completed": 2,
+        "cases": 2
+      }
+    },
+    "per_language": {
+      "zh": {
+        "completed": 4,
+        "uncertain": 1,
+        "partial": 1
+      },
+      "en": {
+        "completed": 4,
+        "uncertain": 1,
+        "failed": 1
+      }
+    },
+    "per_domain": {
+      "portrait": {
+        "completed": 2,
+        "cases": 3
+      },
+      "landscape": {
+        "completed": 1,
+        "cases": 3
+      }
+    },
+    "selection_uses_L1": false,
+    "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+    "review_sha256": "489237ac62a022f288a5eefe5a0a3e445ff13ecf13f84d5b60553cd48f51be76"
+  },
+  "user_approval": false,
+  "at": "2026-11-05T07:17:00.278227+00:00"
+}

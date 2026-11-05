@@ -1,0 +1,47 @@
+{
+  "semantic_cases": 220,
+  "nonzero_tool_case_counts": {
+    "shadows": 25,
+    "highlights": 21,
+    "temperature": 40,
+    "saturation": 40,
+    "contrast": 40,
+    "brightness": 1,
+    "exposure": 4,
+    "sepia": 40
+  },
+  "per_family_parameter_recipes": {
+    "lighting": {
+      "{\"shadows\": 55}": 18,
+      "{\"highlights\": -40}": 20,
+      "{\"shadows\": 65}": 2
+    },
+    "white_balance": {
+      "{\"temperature\": 25}": 20,
+      "{\"temperature\": -12}": 1,
+      "{\"temperature\": -25}": 19
+    },
+    "saturation": {
+      "{\"saturation\": 25}": 17,
+      "{\"saturation\": -25}": 20,
+      "{\"saturation\": 10}": 2,
+      "{\"saturation\": 12}": 1
+    },
+    "contrast": {
+      "{\"brightness\": 2, \"contrast\": 12, \"shadows\": 18}": 1,
+      "{\"contrast\": -20}": 20,
+      "{\"contrast\": 20}": 15,
+      "{\"contrast\": 15, \"exposure\": -10, \"shadows\": 15}": 1,
+      "{\"contrast\": 15, \"exposure\": -12, \"highlights\": -15, \"shadows\": 20}": 1,
+      "{\"contrast\": 10, \"exposure\": -5, \"shadows\": 20}": 1,
+      "{\"contrast\": 15, \"exposure\": -5, \"shadows\": 10}": 1
+    },
+    "brown_tone": {
+      "{\"sepia\": 95}": 40
+    },
+    "identity": {
+      "{}": 20
+    }
+  },
+  "diagnosis": "Exact distribution of accepted targets, not model performance. Exposed tools do not imply supervised coverage."
+}

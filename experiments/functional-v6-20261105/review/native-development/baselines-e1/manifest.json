@@ -1,0 +1,2244 @@
+{
+  "split": "native-development",
+  "name": "baselines-e1",
+  "created_at": "2026-11-05T06:31:29.267657+00:00",
+  "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+  "models": {
+    "raw-base": {
+      "model_id": "raw-base",
+      "adapter": null,
+      "adapter_sha256": null,
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime": "functional_v1.runtime",
+      "evaluator_sha256": "5ed28c21f0148b4a31d17ca970277042a579b7eec03868476d6c40a63d8e7d3c",
+      "core_code_hashes": {
+        "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+        "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+        "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277"
+      },
+      "inputs": "Only original input image, original single-language request, exact v1 tools. No note, statistics, target, reference, review or IDs.",
+      "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+      "split": "native-development"
+    },
+    "current-default": {
+      "model_id": "current-default",
+      "adapter": "models/from-sft-calibrated/sft-functional/seed-01",
+      "adapter_sha256": "54161bd9c9f2e3aa518572be6cf1dad81f8bebe33d92d31107d64d1f3c4435b0",
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime": "functional_v1.runtime",
+      "evaluator_sha256": "5ed28c21f0148b4a31d17ca970277042a579b7eec03868476d6c40a63d8e7d3c",
+      "core_code_hashes": {
+        "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+        "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+        "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277"
+      },
+      "inputs": "Only original input image, original single-language request, exact v1 tools. No note, statistics, target, reference, review or IDs.",
+      "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+      "split": "native-development"
+    },
+    "round2-parent": {
+      "model_id": "round2-parent",
+      "adapter": "models/from-functional-v1/sft-curriculum/seed-01",
+      "adapter_sha256": "4048de5078f4eda6b19621a2968718be50f4cd5ad35fd17dbf23614a885edb71",
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime": "functional_v1.runtime",
+      "evaluator_sha256": "5ed28c21f0148b4a31d17ca970277042a579b7eec03868476d6c40a63d8e7d3c",
+      "core_code_hashes": {
+        "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+        "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+        "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277"
+      },
+      "inputs": "Only original input image, original single-language request, exact v1 tools. No note, statistics, target, reference, review or IDs.",
+      "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+      "split": "native-development"
+    },
+    "base-e1": {
+      "model_id": "base-e1",
+      "adapter": "experiments/functional-v6-20261105/runs/base-seed-20261110/checkpoint-230",
+      "adapter_sha256": "6ad39e48fb5f473a6c0d20bc28eda87ee4dbc31b86531dc867b7852f90eb63dd",
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime": "functional_v1.runtime",
+      "evaluator_sha256": "5ed28c21f0148b4a31d17ca970277042a579b7eec03868476d6c40a63d8e7d3c",
+      "core_code_hashes": {
+        "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+        "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+        "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277"
+      },
+      "inputs": "Only original input image, original single-language request, exact v1 tools. No note, statistics, target, reference, review or IDs.",
+      "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+      "split": "native-development"
+    },
+    "continued-e1": {
+      "model_id": "continued-e1",
+      "adapter": "experiments/functional-v6-20261105/runs/continued-seed-20261110/checkpoint-230",
+      "adapter_sha256": "bf384cff40648ba34e3186364d35ac2920cfc1bd512aac999a5e9d6324a18d34",
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime": "functional_v1.runtime",
+      "evaluator_sha256": "5ed28c21f0148b4a31d17ca970277042a579b7eec03868476d6c40a63d8e7d3c",
+      "core_code_hashes": {
+        "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+        "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+        "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277"
+      },
+      "inputs": "Only original input image, original single-language request, exact v1 tools. No note, statistics, target, reference, review or IDs.",
+      "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+      "split": "native-development"
+    }
+  },
+  "mapping": [
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "item_id": "3bbbd9e3bc54632b"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-001",
+      "language": "en",
+      "item_id": "3bbbd9e3bc54632b"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-002",
+      "language": "zh",
+      "item_id": "1142f0b788cccf86"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-002",
+      "language": "en",
+      "item_id": "28a75c5ff75aff5e"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-003",
+      "language": "zh",
+      "item_id": "ed6b9a5e3aa1df89"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-003",
+      "language": "en",
+      "item_id": "ed6b9a5e3aa1df89"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-004",
+      "language": "zh",
+      "item_id": "66cba71444149c65"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-004",
+      "language": "en",
+      "item_id": "36db027cc29baac0"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-008",
+      "language": "zh",
+      "item_id": "5a6c702e1c269130"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-008",
+      "language": "en",
+      "item_id": "5a6c702e1c269130"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-011",
+      "language": "zh",
+      "item_id": "b54708456e50dc63"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-011",
+      "language": "en",
+      "item_id": "f6527f8ba73be37a"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-013",
+      "language": "zh",
+      "item_id": "6452e3cacc0a653d"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-013",
+      "language": "en",
+      "item_id": "6452e3cacc0a653d"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-016",
+      "language": "zh",
+      "item_id": "784f764b2fc916b6"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-016",
+      "language": "en",
+      "item_id": "0bb921629d940897"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-023",
+      "language": "zh",
+      "item_id": "b2e0e98acb20b6b1"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-023",
+      "language": "en",
+      "item_id": "b2e0e98acb20b6b1"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-029",
+      "language": "zh",
+      "item_id": "d35a714d7a440a3a"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-029",
+      "language": "en",
+      "item_id": "d35a714d7a440a3a"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-032",
+      "language": "zh",
+      "item_id": "2ef620fe25beb215"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-032",
+      "language": "en",
+      "item_id": "2ef620fe25beb215"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-040",
+      "language": "zh",
+      "item_id": "90f4a84817798228"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-040",
+      "language": "en",
+      "item_id": "90f4a84817798228"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-067",
+      "language": "zh",
+      "item_id": "4a60ee85b3788039"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-067",
+      "language": "en",
+      "item_id": "20996382520002cb"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-070",
+      "language": "zh",
+      "item_id": "ced3d59db710ab34"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-070",
+      "language": "en",
+      "item_id": "ced3d59db710ab34"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-100",
+      "language": "zh",
+      "item_id": "4410885c25409685"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-100",
+      "language": "en",
+      "item_id": "8eada182d3102ad9"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-106",
+      "language": "zh",
+      "item_id": "53978127e898654d"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-106",
+      "language": "en",
+      "item_id": "53978127e898654d"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-108",
+      "language": "zh",
+      "item_id": "fe8a1225b583b2cc"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-108",
+      "language": "en",
+      "item_id": "678ae3ceebea13e3"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-148",
+      "language": "zh",
+      "item_id": "0bfb2f738f5e09f7"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-148",
+      "language": "en",
+      "item_id": "61d2695acd9696d7"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-161",
+      "language": "zh",
+      "item_id": "ee351dad682b68cd"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-161",
+      "language": "en",
+      "item_id": "ee351dad682b68cd"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "item_id": "12b3e7c0b410efb9"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-001",
+      "language": "en",
+      "item_id": "12b3e7c0b410efb9"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-002",
+      "language": "zh",
+      "item_id": "34f3b5bbe38d35ce"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-002",
+      "language": "en",
+      "item_id": "55bf9ca451472cdf"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-003",
+      "language": "zh",
+      "item_id": "06955f4059032e5f"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-003",
+      "language": "en",
+      "item_id": "06955f4059032e5f"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-004",
+      "language": "zh",
+      "item_id": "ac7bddcabe432779"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-004",
+      "language": "en",
+      "item_id": "ac7bddcabe432779"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-008",
+      "language": "zh",
+      "item_id": "61186accb5d7749d"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-008",
+      "language": "en",
+      "item_id": "61186accb5d7749d"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-011",
+      "language": "zh",
+      "item_id": "1a68bb7c00148573"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-011",
+      "language": "en",
+      "item_id": "1a68bb7c00148573"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-013",
+      "language": "zh",
+      "item_id": "626f713a82f72948"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-013",
+      "language": "en",
+      "item_id": "626f713a82f72948"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-016",
+      "language": "zh",
+      "item_id": "3c6e66965c5d7d42"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-016",
+      "language": "en",
+      "item_id": "3c6e66965c5d7d42"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-023",
+      "language": "zh",
+      "item_id": "f67a0180f1729185"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-023",
+      "language": "en",
+      "item_id": "f67a0180f1729185"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-029",
+      "language": "zh",
+      "item_id": "e87b4bbe002f5799"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-029",
+      "language": "en",
+      "item_id": "e87b4bbe002f5799"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-032",
+      "language": "zh",
+      "item_id": "e8f8c74e2ba1d91a"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-032",
+      "language": "en",
+      "item_id": "e8f8c74e2ba1d91a"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-040",
+      "language": "zh",
+      "item_id": "70fd58104bba1f5a"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-040",
+      "language": "en",
+      "item_id": "70fd58104bba1f5a"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-067",
+      "language": "zh",
+      "item_id": "cd212b2f0886da95"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-067",
+      "language": "en",
+      "item_id": "cd212b2f0886da95"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-070",
+      "language": "zh",
+      "item_id": "79467566ad34cf95"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-070",
+      "language": "en",
+      "item_id": "79467566ad34cf95"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-100",
+      "language": "zh",
+      "item_id": "8bdff5cf918790ee"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-100",
+      "language": "en",
+      "item_id": "8bdff5cf918790ee"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-106",
+      "language": "zh",
+      "item_id": "6b210c9522e96b21"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-106",
+      "language": "en",
+      "item_id": "6b210c9522e96b21"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-108",
+      "language": "zh",
+      "item_id": "a7cc6d04102dbbb3"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-108",
+      "language": "en",
+      "item_id": "a7cc6d04102dbbb3"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-148",
+      "language": "zh",
+      "item_id": "16b8bda29593bae3"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-148",
+      "language": "en",
+      "item_id": "56cf68b9a95ae02c"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-161",
+      "language": "zh",
+      "item_id": "caf4020e723167e3"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-161",
+      "language": "en",
+      "item_id": "caf4020e723167e3"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "item_id": "12b3e7c0b410efb9"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-001",
+      "language": "en",
+      "item_id": "12b3e7c0b410efb9"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-002",
+      "language": "zh",
+      "item_id": "e408d4f30b1c87fc"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-002",
+      "language": "en",
+      "item_id": "738f04c3f7f5b909"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-003",
+      "language": "zh",
+      "item_id": "bf9464b995c3ba3b"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-003",
+      "language": "en",
+      "item_id": "ed6b9a5e3aa1df89"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-004",
+      "language": "zh",
+      "item_id": "587a522a31ed4ddd"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-004",
+      "language": "en",
+      "item_id": "587a522a31ed4ddd"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-008",
+      "language": "zh",
+      "item_id": "6035cb4d5933a47a"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-008",
+      "language": "en",
+      "item_id": "6035cb4d5933a47a"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-011",
+      "language": "zh",
+      "item_id": "14012809dbb4f53f"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-011",
+      "language": "en",
+      "item_id": "cdfdd0fe9e9333bf"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-013",
+      "language": "zh",
+      "item_id": "6452e3cacc0a653d"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-013",
+      "language": "en",
+      "item_id": "0773a998dc1cd07f"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-016",
+      "language": "zh",
+      "item_id": "7f1b1efae703ebe2"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-016",
+      "language": "en",
+      "item_id": "b4f0c716c4b90dcc"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-023",
+      "language": "zh",
+      "item_id": "f67a0180f1729185"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-023",
+      "language": "en",
+      "item_id": "f67a0180f1729185"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-029",
+      "language": "zh",
+      "item_id": "faf7e2b86821925a"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-029",
+      "language": "en",
+      "item_id": "bebc2836700d053c"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-032",
+      "language": "zh",
+      "item_id": "f1786083a73dbc57"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-032",
+      "language": "en",
+      "item_id": "e917f59d0423915a"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-040",
+      "language": "zh",
+      "item_id": "b90e5f95be965a6c"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-040",
+      "language": "en",
+      "item_id": "b90e5f95be965a6c"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-067",
+      "language": "zh",
+      "item_id": "31584aba951fd2e6"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-067",
+      "language": "en",
+      "item_id": "42357e50e26c4735"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-070",
+      "language": "zh",
+      "item_id": "e08b8d01c7747673"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-070",
+      "language": "en",
+      "item_id": "48fe126e7ff29043"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-100",
+      "language": "zh",
+      "item_id": "41b95899dd30f395"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-100",
+      "language": "en",
+      "item_id": "41b95899dd30f395"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-106",
+      "language": "zh",
+      "item_id": "6986c10de6bafd4d"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-106",
+      "language": "en",
+      "item_id": "6986c10de6bafd4d"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-108",
+      "language": "zh",
+      "item_id": "7ae748b1cdb58ced"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-108",
+      "language": "en",
+      "item_id": "1d4aeac27f353813"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-148",
+      "language": "zh",
+      "item_id": "69aa2ca580f01b9d"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-148",
+      "language": "en",
+      "item_id": "56cf68b9a95ae02c"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-161",
+      "language": "zh",
+      "item_id": "a4f7dafd37b3059b"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-161",
+      "language": "en",
+      "item_id": "ed5047d739b99de8"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "item_id": "12b3e7c0b410efb9"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-001",
+      "language": "en",
+      "item_id": "12b3e7c0b410efb9"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-002",
+      "language": "zh",
+      "item_id": "738f04c3f7f5b909"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-002",
+      "language": "en",
+      "item_id": "738f04c3f7f5b909"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-003",
+      "language": "zh",
+      "item_id": "7411b4e8e3254a0d"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-003",
+      "language": "en",
+      "item_id": "ed6b9a5e3aa1df89"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-004",
+      "language": "zh",
+      "item_id": "587a522a31ed4ddd"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-004",
+      "language": "en",
+      "item_id": "587a522a31ed4ddd"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-006",
+      "language": "en",
+      "item_id": "23d7ee309f6ecee2"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-008",
+      "language": "zh",
+      "item_id": "6035cb4d5933a47a"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-008",
+      "language": "en",
+      "item_id": "6035cb4d5933a47a"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-011",
+      "language": "zh",
+      "item_id": "1b4785b7a0fed74b"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-011",
+      "language": "en",
+      "item_id": "39c6175219e189c4"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-013",
+      "language": "zh",
+      "item_id": "6452e3cacc0a653d"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-013",
+      "language": "en",
+      "item_id": "0773a998dc1cd07f"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-016",
+      "language": "zh",
+      "item_id": "3af30f2ae1f56a2e"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-016",
+      "language": "en",
+      "item_id": "3af30f2ae1f56a2e"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-023",
+      "language": "zh",
+      "item_id": "f67a0180f1729185"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-023",
+      "language": "en",
+      "item_id": "f67a0180f1729185"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-029",
+      "language": "zh",
+      "item_id": "9adc54aafa2ab961"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-029",
+      "language": "en",
+      "item_id": "9adc54aafa2ab961"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-032",
+      "language": "zh",
+      "item_id": "88a643b0a1c73b1b"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-032",
+      "language": "en",
+      "item_id": "88a643b0a1c73b1b"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-040",
+      "language": "zh",
+      "item_id": "0eb4b9c6f02d5f08"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-040",
+      "language": "en",
+      "item_id": "0eb4b9c6f02d5f08"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-067",
+      "language": "zh",
+      "item_id": "a83b819f6295f5af"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-067",
+      "language": "en",
+      "item_id": "bdabfc5894c6f999"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-070",
+      "language": "en",
+      "item_id": "9214e235a710bd6e"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-100",
+      "language": "zh",
+      "item_id": "41b95899dd30f395"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-100",
+      "language": "en",
+      "item_id": "41b95899dd30f395"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-106",
+      "language": "zh",
+      "item_id": "6986c10de6bafd4d"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-106",
+      "language": "en",
+      "item_id": "6986c10de6bafd4d"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-108",
+      "language": "zh",
+      "item_id": "7ae748b1cdb58ced"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-108",
+      "language": "en",
+      "item_id": "c227a47390d2560c"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-148",
+      "language": "zh",
+      "item_id": "c997d3ceee443d01"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-148",
+      "language": "en",
+      "item_id": "5746d8df91c4c63e"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-161",
+      "language": "en",
+      "item_id": "e24a9b92acb80919"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "item_id": "12b3e7c0b410efb9"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-001",
+      "language": "en",
+      "item_id": "12b3e7c0b410efb9"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-002",
+      "language": "zh",
+      "item_id": "738f04c3f7f5b909"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-002",
+      "language": "en",
+      "item_id": "b18f9234640778c1"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-003",
+      "language": "zh",
+      "item_id": "f5bdbf08a66cf67b"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-003",
+      "language": "en",
+      "item_id": "ed6b9a5e3aa1df89"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-004",
+      "language": "zh",
+      "item_id": "587a522a31ed4ddd"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-004",
+      "language": "en",
+      "item_id": "587a522a31ed4ddd"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-008",
+      "language": "zh",
+      "item_id": "6035cb4d5933a47a"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-008",
+      "language": "en",
+      "item_id": "6035cb4d5933a47a"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-011",
+      "language": "zh",
+      "item_id": "1b4785b7a0fed74b"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-011",
+      "language": "en",
+      "item_id": "cdfdd0fe9e9333bf"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-013",
+      "language": "zh",
+      "item_id": "6452e3cacc0a653d"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-013",
+      "language": "en",
+      "item_id": "0773a998dc1cd07f"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-016",
+      "language": "zh",
+      "item_id": "ec335c3bd833d78e"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-016",
+      "language": "en",
+      "item_id": "0f38b1b7f9d8fa2d"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-023",
+      "language": "zh",
+      "item_id": "f67a0180f1729185"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-023",
+      "language": "en",
+      "item_id": "f67a0180f1729185"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-029",
+      "language": "zh",
+      "item_id": "0d8fed679f8c6e56"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-029",
+      "language": "en",
+      "item_id": "7f843f04e811f038"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-032",
+      "language": "zh",
+      "item_id": "172da631d9b6a8bf"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-032",
+      "language": "en",
+      "item_id": "172da631d9b6a8bf"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-040",
+      "language": "zh",
+      "item_id": "619ac6e3541cb52d"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-040",
+      "language": "en",
+      "item_id": "388c01e864317c7b"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-067",
+      "language": "zh",
+      "item_id": "a03b01ca0eb258a6"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-067",
+      "language": "en",
+      "item_id": "92b8f244b0808320"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-070",
+      "language": "zh",
+      "item_id": "9214e235a710bd6e"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-070",
+      "language": "en",
+      "item_id": "137173aae2e6ed52"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-100",
+      "language": "zh",
+      "item_id": "41b95899dd30f395"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-100",
+      "language": "en",
+      "item_id": "41b95899dd30f395"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-106",
+      "language": "zh",
+      "item_id": "6986c10de6bafd4d"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-106",
+      "language": "en",
+      "item_id": "6986c10de6bafd4d"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-108",
+      "language": "zh",
+      "item_id": "1d4aeac27f353813"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-108",
+      "language": "en",
+      "item_id": "c0caa46a3d93c566"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-148",
+      "language": "zh",
+      "item_id": "659742802dfc7193"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-148",
+      "language": "en",
+      "item_id": "5746d8df91c4c63e"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-161",
+      "language": "zh",
+      "item_id": "fbaf9ca3b846cb06"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-161",
+      "language": "en",
+      "item_id": "fbaf9ca3b846cb06"
+    }
+  ],
+  "invalid": [
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    },
+    {
+      "model_id": "raw-base",
+      "case_id": "native-dev-006",
+      "language": "en",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    },
+    {
+      "model_id": "current-default",
+      "case_id": "native-dev-006",
+      "language": "en",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    },
+    {
+      "model_id": "round2-parent",
+      "case_id": "native-dev-006",
+      "language": "en",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-070",
+      "language": "zh",
+      "reason": "ValueError: parameter_out_of_range:shadows"
+    },
+    {
+      "model_id": "base-e1",
+      "case_id": "native-dev-161",
+      "language": "zh",
+      "reason": "ValueError: parameter_out_of_range:shadows"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    },
+    {
+      "model_id": "continued-e1",
+      "case_id": "native-dev-006",
+      "language": "en",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    }
+  ],
+  "items": [
+    {
+      "item_id": "3bbbd9e3bc54632b",
+      "case_id": "native-dev-001",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-001-zh.png",
+      "image_sha256": "8cfa0a866d2e6ef473b0c59776d68428fdbd9c35d07b641cf76be44cfd25354b"
+    },
+    {
+      "item_id": "1142f0b788cccf86",
+      "case_id": "native-dev-002",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-002-zh.png",
+      "image_sha256": "8caa0fab0cb370db7eaab2328d14f812849dbc30efbd197dbd38f2869212d4ce"
+    },
+    {
+      "item_id": "28a75c5ff75aff5e",
+      "case_id": "native-dev-002",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-002-en.png",
+      "image_sha256": "45db219ee43874a05dacb93701f04e182923671e65e0e3780772cf7941d0ce31"
+    },
+    {
+      "item_id": "ed6b9a5e3aa1df89",
+      "case_id": "native-dev-003",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-003-zh.png",
+      "image_sha256": "c0b867115c8ebc5787d95a4c65c7570b1a0e924e14f1ef6e8e40772b9e18be00"
+    },
+    {
+      "item_id": "66cba71444149c65",
+      "case_id": "native-dev-004",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-004-zh.png",
+      "image_sha256": "a3ab360f9b0426d2ddabbd1596d3c4f0b8b18210b6399c0189cc8e8e6943e8dd"
+    },
+    {
+      "item_id": "36db027cc29baac0",
+      "case_id": "native-dev-004",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-004-en.png",
+      "image_sha256": "83a9a58e8da4bc6023cae53019e17449a5d6162666f0641a7e90ce42f5efa4d1"
+    },
+    {
+      "item_id": "5a6c702e1c269130",
+      "case_id": "native-dev-008",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-008-zh.png",
+      "image_sha256": "c58d9da758048d3aedee96de95c4cf2b0d73870b600f0543886846fa3ab19dca"
+    },
+    {
+      "item_id": "b54708456e50dc63",
+      "case_id": "native-dev-011",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-011-zh.png",
+      "image_sha256": "eb9a75abf3ed73931fab5c1558f3d8f8bad9bba60cc2ff8e1a95fae5c65c73e0"
+    },
+    {
+      "item_id": "f6527f8ba73be37a",
+      "case_id": "native-dev-011",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-011-en.png",
+      "image_sha256": "12f373beb0f5389c588425e79fa5821fce83ba199b2fa7106caa3133049be072"
+    },
+    {
+      "item_id": "6452e3cacc0a653d",
+      "case_id": "native-dev-013",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-013-zh.png",
+      "image_sha256": "63216eba0ef920edee4f3f10686fb1c84dc6a89be8f8ab8dfc77251fe075ff0d"
+    },
+    {
+      "item_id": "784f764b2fc916b6",
+      "case_id": "native-dev-016",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-016-zh.png",
+      "image_sha256": "6443a9b5313c936711b35137ba6331cf24c720fe47c39461f33d81adc3531f34"
+    },
+    {
+      "item_id": "0bb921629d940897",
+      "case_id": "native-dev-016",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-016-en.png",
+      "image_sha256": "c7e33719e353d5ba40e14d2b840a426c0b8de2e10dfdecb70125cd1bd5c5abca"
+    },
+    {
+      "item_id": "b2e0e98acb20b6b1",
+      "case_id": "native-dev-023",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-023-zh.png",
+      "image_sha256": "165307f660f14411e22a86eeaa29681dbe93d21fe9814401550ce92d1b98ab19"
+    },
+    {
+      "item_id": "d35a714d7a440a3a",
+      "case_id": "native-dev-029",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-029-zh.png",
+      "image_sha256": "29181b4c21184934b78d795801523d4d23a1f19efbe8828e65252c7f6422d863"
+    },
+    {
+      "item_id": "2ef620fe25beb215",
+      "case_id": "native-dev-032",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-032-zh.png",
+      "image_sha256": "88f9d7943b689b475be055e3c5f45b2f4b5792539b2c757acf424c9a9ae19328"
+    },
+    {
+      "item_id": "90f4a84817798228",
+      "case_id": "native-dev-040",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-040-zh.png",
+      "image_sha256": "0b367e5c16471820dfbdc01e94459b7dc0a67002b7b6fbc6bb8acdeb2cf0df57"
+    },
+    {
+      "item_id": "4a60ee85b3788039",
+      "case_id": "native-dev-067",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-067-zh.png",
+      "image_sha256": "927905088a779cb70e073d52fa65b1d183d371bd7022bb082fa70402a4c5aa75"
+    },
+    {
+      "item_id": "20996382520002cb",
+      "case_id": "native-dev-067",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-067-en.png",
+      "image_sha256": "4fd02e1a835eb8f43f9fcc51a405d5260edd976b85dbfda088a3517580b0852a"
+    },
+    {
+      "item_id": "ced3d59db710ab34",
+      "case_id": "native-dev-070",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-070-zh.png",
+      "image_sha256": "51c2ed58f3807e2dbe1ab8157cd5d1fa331df29681315dcfd525347b78cdf8d8"
+    },
+    {
+      "item_id": "4410885c25409685",
+      "case_id": "native-dev-100",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-100-zh.png",
+      "image_sha256": "ae115e19a398b5872a89a182373e7d087ea1fa6385338e590c58d9d6835e9baa"
+    },
+    {
+      "item_id": "8eada182d3102ad9",
+      "case_id": "native-dev-100",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-100-en.png",
+      "image_sha256": "1aefc8fd88bd02dc51788e4d28114e2bbd68d5f658ce212ad821206e4774fdd6"
+    },
+    {
+      "item_id": "53978127e898654d",
+      "case_id": "native-dev-106",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-106-zh.png",
+      "image_sha256": "405cb627bcee90a6569ee48c42c86aadf9d3c642250c9c9bcf520ad905ff2714"
+    },
+    {
+      "item_id": "fe8a1225b583b2cc",
+      "case_id": "native-dev-108",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-108-zh.png",
+      "image_sha256": "f8e7a45be72e3c6164a240fd4a15967071c22868c037f60dc533f8fff04d3bfe"
+    },
+    {
+      "item_id": "678ae3ceebea13e3",
+      "case_id": "native-dev-108",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-108-en.png",
+      "image_sha256": "e1613a79985466933cded69f52a816fbc9394e1b96fad3b3f59125562997e2d3"
+    },
+    {
+      "item_id": "0bfb2f738f5e09f7",
+      "case_id": "native-dev-148",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-148-zh.png",
+      "image_sha256": "54bf491bf72404db5ef21c1ee35b96b3971f8fc37c181e8108d169062e750db8"
+    },
+    {
+      "item_id": "61d2695acd9696d7",
+      "case_id": "native-dev-148",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-148-en.png",
+      "image_sha256": "2b9c404813c13a76427521abf38e50f02368501e034792f00aa3af16ced05dad"
+    },
+    {
+      "item_id": "ee351dad682b68cd",
+      "case_id": "native-dev-161",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/raw-base/images/native-dev-161-zh.png",
+      "image_sha256": "92f4d14851397a848fd136d508543b49b3cb344d9420ea94ee8b5a4829445e54"
+    },
+    {
+      "item_id": "12b3e7c0b410efb9",
+      "case_id": "native-dev-001",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-001-zh.png",
+      "image_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765"
+    },
+    {
+      "item_id": "34f3b5bbe38d35ce",
+      "case_id": "native-dev-002",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-002-zh.png",
+      "image_sha256": "ff7aef2661a292328a093c3fc2b1a842708ae6af65a61e7fd2305ae3f8d0ef16"
+    },
+    {
+      "item_id": "55bf9ca451472cdf",
+      "case_id": "native-dev-002",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-002-en.png",
+      "image_sha256": "9e7192528a5eea008e5416ba58717497e4b596026cfa24956409f715979d7218"
+    },
+    {
+      "item_id": "06955f4059032e5f",
+      "case_id": "native-dev-003",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-003-zh.png",
+      "image_sha256": "dcb9a32c3f4ee30361b0e88c8586d520fdf771fb7d7b4f94e64fb1b3f16d25d0"
+    },
+    {
+      "item_id": "ac7bddcabe432779",
+      "case_id": "native-dev-004",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-004-zh.png",
+      "image_sha256": "870211681c3dd6b21e095c3e16b89434c0aaba6d542641029ab71e29e569ac39"
+    },
+    {
+      "item_id": "61186accb5d7749d",
+      "case_id": "native-dev-008",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-008-zh.png",
+      "image_sha256": "abf7c37e4023e2eed3d20ee7c87b9db3682fccc5c9b339901aa8ed82cbaa6390"
+    },
+    {
+      "item_id": "1a68bb7c00148573",
+      "case_id": "native-dev-011",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-011-zh.png",
+      "image_sha256": "13c8932abf1ce252f211e807b1cb684c917adbf7493d16d6aafe85e7394d38e7"
+    },
+    {
+      "item_id": "626f713a82f72948",
+      "case_id": "native-dev-013",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-013-zh.png",
+      "image_sha256": "e394ab62b98825369917662a4738401ca79f5d85cd4ff467c9e93456e5dda41b"
+    },
+    {
+      "item_id": "3c6e66965c5d7d42",
+      "case_id": "native-dev-016",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-016-zh.png",
+      "image_sha256": "d4769956a7a808be7ba3319aa8421d7d47d3434baead5a640671f76a4f2ee519"
+    },
+    {
+      "item_id": "f67a0180f1729185",
+      "case_id": "native-dev-023",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-023-zh.png",
+      "image_sha256": "2219243d2cd8cddbda0ac94590200fad5ab2d8e7545ebce83857c4df25bd1d99"
+    },
+    {
+      "item_id": "e87b4bbe002f5799",
+      "case_id": "native-dev-029",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-029-zh.png",
+      "image_sha256": "4b53b9881f89bba43cd334685b3d2d2a594d5bc98d4a7d84d3a258dae3ba7fb8"
+    },
+    {
+      "item_id": "e8f8c74e2ba1d91a",
+      "case_id": "native-dev-032",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-032-zh.png",
+      "image_sha256": "c36ffddf87a5c981078ee2154f2f417578208054d802b6774909255505765760"
+    },
+    {
+      "item_id": "70fd58104bba1f5a",
+      "case_id": "native-dev-040",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-040-zh.png",
+      "image_sha256": "f38c2c9fa4bcc0cacd9bfc6729bb95c5d47a7924d0ce96df9fcef65ab13d43a4"
+    },
+    {
+      "item_id": "cd212b2f0886da95",
+      "case_id": "native-dev-067",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-067-zh.png",
+      "image_sha256": "f62d78526bd368ebe87a3dce709cca8fa19c16d5eb7950ddbf8915df5cd4610b"
+    },
+    {
+      "item_id": "79467566ad34cf95",
+      "case_id": "native-dev-070",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-070-zh.png",
+      "image_sha256": "1ff30eb0cbeeae5c5c49a9b088a115d702157b9d712e35bc39fc6b061963638c"
+    },
+    {
+      "item_id": "8bdff5cf918790ee",
+      "case_id": "native-dev-100",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-100-zh.png",
+      "image_sha256": "82f5bbcccfe86e58c13cc7b336d051b941b47e02c6ccd0cdcb81a200d5e34cff"
+    },
+    {
+      "item_id": "6b210c9522e96b21",
+      "case_id": "native-dev-106",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-106-zh.png",
+      "image_sha256": "af0723089d51108ac0116de2846d40059635bdaf0f7cf58c753d466848c366da"
+    },
+    {
+      "item_id": "a7cc6d04102dbbb3",
+      "case_id": "native-dev-108",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-108-zh.png",
+      "image_sha256": "9d09af11a3f0bf6cab03aee3f93e549a10ab9984f17c8c2058058c98010545a1"
+    },
+    {
+      "item_id": "16b8bda29593bae3",
+      "case_id": "native-dev-148",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-148-zh.png",
+      "image_sha256": "8a8b8dd49cd703de41fa9274477ba0dda7181e5b6cfbc1f6f2870054599b72ee"
+    },
+    {
+      "item_id": "56cf68b9a95ae02c",
+      "case_id": "native-dev-148",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-148-en.png",
+      "image_sha256": "16a999376bce014207fa6afb83f7abf3f0244bdeafa1fab9638ca429d006a7ab"
+    },
+    {
+      "item_id": "caf4020e723167e3",
+      "case_id": "native-dev-161",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/current-default/images/native-dev-161-zh.png",
+      "image_sha256": "acae169e226fd30f738d265ac90666aa8e626e825f65e2f64b03c51d3bd66128"
+    },
+    {
+      "item_id": "e408d4f30b1c87fc",
+      "case_id": "native-dev-002",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-002-zh.png",
+      "image_sha256": "cf3d3db079689c8730537b4393c558c9a1adee8f0c97f9121994bf0a293ba7da"
+    },
+    {
+      "item_id": "738f04c3f7f5b909",
+      "case_id": "native-dev-002",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-002-en.png",
+      "image_sha256": "a8ab4814f15301ad7a0da287cdc6af6db808f7e2876a95821890e7feb9f599c1"
+    },
+    {
+      "item_id": "bf9464b995c3ba3b",
+      "case_id": "native-dev-003",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-003-zh.png",
+      "image_sha256": "a471512a54017c5e17e2715cc58ecf72aa834f866481396d2948cf2e775fc3b0"
+    },
+    {
+      "item_id": "587a522a31ed4ddd",
+      "case_id": "native-dev-004",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-004-zh.png",
+      "image_sha256": "975e687b877da15695c55057e52468ade47068e84a49fd3b5fc80433ec657d20"
+    },
+    {
+      "item_id": "6035cb4d5933a47a",
+      "case_id": "native-dev-008",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-008-zh.png",
+      "image_sha256": "db7b7d3343d7c8ae15535796f8c4426861f66d9fe22626fca2563d022786a2f2"
+    },
+    {
+      "item_id": "14012809dbb4f53f",
+      "case_id": "native-dev-011",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-011-zh.png",
+      "image_sha256": "6687e22dbe88ac1d5b12ca7df3722e43c8c64a5cd41d55367a169d37ab1f63d5"
+    },
+    {
+      "item_id": "cdfdd0fe9e9333bf",
+      "case_id": "native-dev-011",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-011-en.png",
+      "image_sha256": "98bf1de1bf64d3be0ee4f985e9865a40b1a9e9033743f2158fa962369b2982dd"
+    },
+    {
+      "item_id": "0773a998dc1cd07f",
+      "case_id": "native-dev-013",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-013-en.png",
+      "image_sha256": "da35c5c68cd0d03a7acace6f270a2e0d9fcc3af07d874e9fd5f4d617f802ce8d"
+    },
+    {
+      "item_id": "7f1b1efae703ebe2",
+      "case_id": "native-dev-016",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-016-zh.png",
+      "image_sha256": "9fee9235bd192d75a0cf87ce51d8540fc96c69f37ca30e14447e37e514fb7b72"
+    },
+    {
+      "item_id": "b4f0c716c4b90dcc",
+      "case_id": "native-dev-016",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-016-en.png",
+      "image_sha256": "acc247e3b0fa13a913ef3f165205e13d7eb09f0da2b98ba6fbd0e2ca32f2bff0"
+    },
+    {
+      "item_id": "faf7e2b86821925a",
+      "case_id": "native-dev-029",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-029-zh.png",
+      "image_sha256": "20a0953ec6d814c497b7102db7f837f2cb818cc27531e572b8b23ac63746bd60"
+    },
+    {
+      "item_id": "bebc2836700d053c",
+      "case_id": "native-dev-029",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-029-en.png",
+      "image_sha256": "e4c1a21e5d6dc72edc5bcf51739c376a8459196f26b8abb227694ea5b217aab6"
+    },
+    {
+      "item_id": "f1786083a73dbc57",
+      "case_id": "native-dev-032",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-032-zh.png",
+      "image_sha256": "81602c51c37f907f7ccc5baffb51c57e3f3ef9a2b7774c30c47d03d756faf374"
+    },
+    {
+      "item_id": "e917f59d0423915a",
+      "case_id": "native-dev-032",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-032-en.png",
+      "image_sha256": "9328995ae519e53da7561e85df664c81c4cff2cbc975078228e189f1cbcb17f9"
+    },
+    {
+      "item_id": "b90e5f95be965a6c",
+      "case_id": "native-dev-040",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-040-zh.png",
+      "image_sha256": "02753d207d1c0283bdcaeacf72a930319d576aa6c3e61934afa8464240c0927b"
+    },
+    {
+      "item_id": "31584aba951fd2e6",
+      "case_id": "native-dev-067",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-067-zh.png",
+      "image_sha256": "3ccb2c01fc54932e89276d89d71f8a234aa5ebcdb3d761d92014c67783a32714"
+    },
+    {
+      "item_id": "42357e50e26c4735",
+      "case_id": "native-dev-067",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-067-en.png",
+      "image_sha256": "821bf0425b34ed46c5bccf6f83326ed1b14e2b0e34e035c676d85d541124975c"
+    },
+    {
+      "item_id": "e08b8d01c7747673",
+      "case_id": "native-dev-070",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-070-zh.png",
+      "image_sha256": "a6c9c43a1a537e566ccc83aa985880c26f6d218b266958630114b92ad760a591"
+    },
+    {
+      "item_id": "48fe126e7ff29043",
+      "case_id": "native-dev-070",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-070-en.png",
+      "image_sha256": "1424c9ae3b0013864e981378fd55b3dff98f45100a3e82fbce6c4d940f491078"
+    },
+    {
+      "item_id": "41b95899dd30f395",
+      "case_id": "native-dev-100",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-100-zh.png",
+      "image_sha256": "52d07450c5d278c26aac0ac13bf151dde6c93e1e3806185267c74c55198b3c67"
+    },
+    {
+      "item_id": "6986c10de6bafd4d",
+      "case_id": "native-dev-106",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-106-zh.png",
+      "image_sha256": "b01c97c5c85dcbdd29e5d24da78bf23a7cafc5f9614bfcbc1f7dd0c28a039491"
+    },
+    {
+      "item_id": "7ae748b1cdb58ced",
+      "case_id": "native-dev-108",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-108-zh.png",
+      "image_sha256": "7de0cb6ac4175e30d6a5c8f2844f58a81a864b0f09d60df739f0ae221736da0a"
+    },
+    {
+      "item_id": "1d4aeac27f353813",
+      "case_id": "native-dev-108",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-108-en.png",
+      "image_sha256": "035ae2a18b7d0386bf7a70f92aaa9af3dff0680dab19e0d502acfb7137cad021"
+    },
+    {
+      "item_id": "69aa2ca580f01b9d",
+      "case_id": "native-dev-148",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-148-zh.png",
+      "image_sha256": "568424c4bc55b70ce410a3fe39ed7199ec30bdcd8cbb30990201b439f4a5ef02"
+    },
+    {
+      "item_id": "a4f7dafd37b3059b",
+      "case_id": "native-dev-161",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-161-zh.png",
+      "image_sha256": "b26dd8dbcbbef2c65b1ec46eef4258c3786ef72ff3ba509b5759e50dab770962"
+    },
+    {
+      "item_id": "ed5047d739b99de8",
+      "case_id": "native-dev-161",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/round2-parent/images/native-dev-161-en.png",
+      "image_sha256": "2b3610580b2c07053d3eb94cfbe2d03f176b783533bf521955d3df3221be46c0"
+    },
+    {
+      "item_id": "7411b4e8e3254a0d",
+      "case_id": "native-dev-003",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-003-zh.png",
+      "image_sha256": "17105848b831871ca2011dbcbb84ede3ed91b09a5a27d731f916e3ae2bebef57"
+    },
+    {
+      "item_id": "23d7ee309f6ecee2",
+      "case_id": "native-dev-006",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-006-en.png",
+      "image_sha256": "90bbdd710e63f1219808304a38e06aaa4caf341cc7c45bdf3e7ebed73b400cdd"
+    },
+    {
+      "item_id": "1b4785b7a0fed74b",
+      "case_id": "native-dev-011",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-011-zh.png",
+      "image_sha256": "00967dea43a0c49da9ddfd1ec78bb50a953e177e9ccd77daa715480063736e03"
+    },
+    {
+      "item_id": "39c6175219e189c4",
+      "case_id": "native-dev-011",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-011-en.png",
+      "image_sha256": "af896154c4613293bc8da85634cf6cb86bd2b483ff573e86840339997c168e22"
+    },
+    {
+      "item_id": "3af30f2ae1f56a2e",
+      "case_id": "native-dev-016",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-016-zh.png",
+      "image_sha256": "460462d687483e463332ecf6cec130da1e0de8438b3f39da7583a87d440f946c"
+    },
+    {
+      "item_id": "9adc54aafa2ab961",
+      "case_id": "native-dev-029",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-029-zh.png",
+      "image_sha256": "860cb823c61bdd7f22075d49b21c42f2ecb473016dcd00fabfbd7b4210203636"
+    },
+    {
+      "item_id": "88a643b0a1c73b1b",
+      "case_id": "native-dev-032",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-032-zh.png",
+      "image_sha256": "d37c8aeb774433cf839d0a3bd9f446c0f79d0c5b0dbaa6002fd09fb0879ffcce"
+    },
+    {
+      "item_id": "0eb4b9c6f02d5f08",
+      "case_id": "native-dev-040",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-040-zh.png",
+      "image_sha256": "af5f271adf5fcea4ae433a10cf8f507a7629032ac54cccec1e813c077030a084"
+    },
+    {
+      "item_id": "a83b819f6295f5af",
+      "case_id": "native-dev-067",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-067-zh.png",
+      "image_sha256": "627fe0d144ff4a27fb040539a1ee0de3ff550bc269a4677ae47f12b6618ae966"
+    },
+    {
+      "item_id": "bdabfc5894c6f999",
+      "case_id": "native-dev-067",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-067-en.png",
+      "image_sha256": "6bcc82fa8cd31d4042fc920213d2beda0561be554fe67afd0c9fe0d62bc44031"
+    },
+    {
+      "item_id": "9214e235a710bd6e",
+      "case_id": "native-dev-070",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-070-en.png",
+      "image_sha256": "1e66916e4410e79e06570b34dee5afd0399effa9b3155bfa9266751687e6678e"
+    },
+    {
+      "item_id": "c227a47390d2560c",
+      "case_id": "native-dev-108",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-108-en.png",
+      "image_sha256": "f2c71def6c750c8156a8fd514236470020ead696933c67b7ed05a8bd1c36df05"
+    },
+    {
+      "item_id": "c997d3ceee443d01",
+      "case_id": "native-dev-148",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-148-zh.png",
+      "image_sha256": "d848f0c0e6975bc9d682bcd0b0fbf7a35011275b3d99442e189fad57eed77684"
+    },
+    {
+      "item_id": "5746d8df91c4c63e",
+      "case_id": "native-dev-148",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-148-en.png",
+      "image_sha256": "5496371ef5c777d9246b1c386fd42a105e9eb4026a0f94493f7b351f490f8b3d"
+    },
+    {
+      "item_id": "e24a9b92acb80919",
+      "case_id": "native-dev-161",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e1/images/native-dev-161-en.png",
+      "image_sha256": "6650dd149a0a5013552d2bbbd449ad5399bc45f6469de858662b66cd1f2d5688"
+    },
+    {
+      "item_id": "b18f9234640778c1",
+      "case_id": "native-dev-002",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-002-en.png",
+      "image_sha256": "05838d0a74e360e435189c25ba16337d8a8981a87b0a4b0c598299b036cbb6ab"
+    },
+    {
+      "item_id": "f5bdbf08a66cf67b",
+      "case_id": "native-dev-003",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-003-zh.png",
+      "image_sha256": "d369620975973225e88ce5ef8465115e5ec36100c07d8916e49555f1745aee6d"
+    },
+    {
+      "item_id": "ec335c3bd833d78e",
+      "case_id": "native-dev-016",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-016-zh.png",
+      "image_sha256": "1464621e5941178949770a0d0330748297c34cc5fe25f74f944a7a0e93afab5a"
+    },
+    {
+      "item_id": "0f38b1b7f9d8fa2d",
+      "case_id": "native-dev-016",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-016-en.png",
+      "image_sha256": "2dc1dcca48fd97c3638d5f3588ee1c33380fc904b6ce6bc99d194eef68d3f57d"
+    },
+    {
+      "item_id": "0d8fed679f8c6e56",
+      "case_id": "native-dev-029",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-029-zh.png",
+      "image_sha256": "0b24b2f73ddf530e8f7135baebba8a928856d3eb1e6f2a1833635c903c0adcfb"
+    },
+    {
+      "item_id": "7f843f04e811f038",
+      "case_id": "native-dev-029",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-029-en.png",
+      "image_sha256": "e9a6e95802e58d0781ee84c110ffcdd468b5d4d13834ece7236a40dd4845059e"
+    },
+    {
+      "item_id": "172da631d9b6a8bf",
+      "case_id": "native-dev-032",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-032-zh.png",
+      "image_sha256": "94fdd48a985ee10b91b6c343c3758569d82afd10e5b3d0dde91ecfd7aa779689"
+    },
+    {
+      "item_id": "619ac6e3541cb52d",
+      "case_id": "native-dev-040",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-040-zh.png",
+      "image_sha256": "d776e125140f10e16bab0e1a7beb0654b5cd3e8404531157fab55a0105fd63c0"
+    },
+    {
+      "item_id": "388c01e864317c7b",
+      "case_id": "native-dev-040",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-040-en.png",
+      "image_sha256": "7e1930d0b3772de172fec6efd0c139f6381a8edc5f8c1242b37b8caacfe6223d"
+    },
+    {
+      "item_id": "a03b01ca0eb258a6",
+      "case_id": "native-dev-067",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-067-zh.png",
+      "image_sha256": "620140e870523de9aa17dce7fda72694dc5e0bb7e26a7a7b22db92021d801011"
+    },
+    {
+      "item_id": "92b8f244b0808320",
+      "case_id": "native-dev-067",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-067-en.png",
+      "image_sha256": "b4cfb64d285b35e8faf06e96905f925872ccee62778590533fab92569002fa57"
+    },
+    {
+      "item_id": "137173aae2e6ed52",
+      "case_id": "native-dev-070",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-070-en.png",
+      "image_sha256": "d7cea5a4a38514257af956b3472cdb73dc0b0abfbc014fa7a40d40c0d411c4c0"
+    },
+    {
+      "item_id": "c0caa46a3d93c566",
+      "case_id": "native-dev-108",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-108-en.png",
+      "image_sha256": "1fd1ec789bf36bd2effc6dc61e196059415458d106852320d6524c3f6e3359aa"
+    },
+    {
+      "item_id": "659742802dfc7193",
+      "case_id": "native-dev-148",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-148-zh.png",
+      "image_sha256": "33cb9e922aab84c5aa8da3bab446eb27c7c5618537d33088c8b2110af4b97e8d"
+    },
+    {
+      "item_id": "fbaf9ca3b846cb06",
+      "case_id": "native-dev-161",
+      "image": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e1/images/native-dev-161-zh.png",
+      "image_sha256": "beae88aa8fe42641cb858fcb874d1401f2f0fdc3961adb42fe78c5090775de67"
+    }
+  ],
+  "sheets": [
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-001-01.jpg",
+      "sha256": "d0821684635eacd529d220d2ee3c9ff4343d88a750310faba76fd8652a16c699",
+      "case_id": "native-dev-001",
+      "items": [
+        "12b3e7c0b410efb9",
+        "3bbbd9e3bc54632b"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-002-01.jpg",
+      "sha256": "6d83d165a83f189b1b5ec386c2dd0c62bfaff36effbf9f7262e87b472bd0c89d",
+      "case_id": "native-dev-002",
+      "items": [
+        "1142f0b788cccf86",
+        "28a75c5ff75aff5e",
+        "34f3b5bbe38d35ce",
+        "55bf9ca451472cdf",
+        "738f04c3f7f5b909"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-002-02.jpg",
+      "sha256": "c4ea1ba8466024f93d2e6247fc0c6697aad86babdc6eeecddfe7f91a94c7ce9c",
+      "case_id": "native-dev-002",
+      "items": [
+        "b18f9234640778c1",
+        "e408d4f30b1c87fc"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-003-01.jpg",
+      "sha256": "140c911a37b5fdeaddf90f34737f938808ac0e2e7c9ed3cf2f8615dd564d21c5",
+      "case_id": "native-dev-003",
+      "items": [
+        "06955f4059032e5f",
+        "7411b4e8e3254a0d",
+        "bf9464b995c3ba3b",
+        "ed6b9a5e3aa1df89",
+        "f5bdbf08a66cf67b"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-004-01.jpg",
+      "sha256": "07568a5bb0915c74f9e3a48f529d5d33ce26d03e1f986a4567af6e9b84e6f794",
+      "case_id": "native-dev-004",
+      "items": [
+        "36db027cc29baac0",
+        "587a522a31ed4ddd",
+        "66cba71444149c65",
+        "ac7bddcabe432779"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-006-01.jpg",
+      "sha256": "e7800b49c714f114d882af5e0dc0845b53ddc6fd32cec376b3fb399aa8121a6b",
+      "case_id": "native-dev-006",
+      "items": [
+        "23d7ee309f6ecee2"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-008-01.jpg",
+      "sha256": "9c5a91843917d70d805355df5fe120ae465f9d4c812fcdbf5579a60e0da0e648",
+      "case_id": "native-dev-008",
+      "items": [
+        "5a6c702e1c269130",
+        "6035cb4d5933a47a",
+        "61186accb5d7749d"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-011-01.jpg",
+      "sha256": "402faa7cdb704f9dfa92daeea042aec2adc31651fe67c1a4c5a89cc4a7dca17d",
+      "case_id": "native-dev-011",
+      "items": [
+        "14012809dbb4f53f",
+        "1a68bb7c00148573",
+        "1b4785b7a0fed74b",
+        "39c6175219e189c4",
+        "b54708456e50dc63"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-011-02.jpg",
+      "sha256": "2072eef20208881ef62b376cbb0fef0f9e8044b0c4160731917bf95dac66e1ee",
+      "case_id": "native-dev-011",
+      "items": [
+        "cdfdd0fe9e9333bf",
+        "f6527f8ba73be37a"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-013-01.jpg",
+      "sha256": "f6ab3d557fc47f0c8d55eef625efe689d8d7fc95640085414e1ecbd1054fa2bf",
+      "case_id": "native-dev-013",
+      "items": [
+        "0773a998dc1cd07f",
+        "626f713a82f72948",
+        "6452e3cacc0a653d"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-016-01.jpg",
+      "sha256": "c3d30082683960b4bf6619cc86676b7e4849fbcc459e9a99ac36f093208810a6",
+      "case_id": "native-dev-016",
+      "items": [
+        "0bb921629d940897",
+        "0f38b1b7f9d8fa2d",
+        "3af30f2ae1f56a2e",
+        "3c6e66965c5d7d42",
+        "784f764b2fc916b6"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-016-02.jpg",
+      "sha256": "b271f7c2a4d9f8fe704d3f7b0f88a1edb4b5f753011161c9e431d64de4fcd5b2",
+      "case_id": "native-dev-016",
+      "items": [
+        "7f1b1efae703ebe2",
+        "b4f0c716c4b90dcc",
+        "ec335c3bd833d78e"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-023-01.jpg",
+      "sha256": "293697685b0e85c50774814f3212f86ff19a78d0b40f1a40480b2b9fef5258e7",
+      "case_id": "native-dev-023",
+      "items": [
+        "b2e0e98acb20b6b1",
+        "f67a0180f1729185"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-029-01.jpg",
+      "sha256": "8a0e15f53a2f3d4731745ea50cad637bfda17e868a494902fa892b1744d91519",
+      "case_id": "native-dev-029",
+      "items": [
+        "0d8fed679f8c6e56",
+        "7f843f04e811f038",
+        "9adc54aafa2ab961",
+        "bebc2836700d053c",
+        "d35a714d7a440a3a"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-029-02.jpg",
+      "sha256": "54bde691b19eeea67669531656d2ee8e1aa4d3eaea1c97d5771f53e219df7cf3",
+      "case_id": "native-dev-029",
+      "items": [
+        "e87b4bbe002f5799",
+        "faf7e2b86821925a"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-032-01.jpg",
+      "sha256": "856186479595620dbe649b3360115d269956130a3dc4fd77d5b2e05d4a502db6",
+      "case_id": "native-dev-032",
+      "items": [
+        "172da631d9b6a8bf",
+        "2ef620fe25beb215",
+        "88a643b0a1c73b1b",
+        "e8f8c74e2ba1d91a",
+        "e917f59d0423915a"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-032-02.jpg",
+      "sha256": "173ce089f6c72e9c2b2699d56451feffa8266678f17868044be284199747873c",
+      "case_id": "native-dev-032",
+      "items": [
+        "f1786083a73dbc57"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-040-01.jpg",
+      "sha256": "54572a65598b06b08c86d137731a107404a83612edfb5e8c79b020a2af829e11",
+      "case_id": "native-dev-040",
+      "items": [
+        "0eb4b9c6f02d5f08",
+        "388c01e864317c7b",
+        "619ac6e3541cb52d",
+        "70fd58104bba1f5a",
+        "90f4a84817798228"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-040-02.jpg",
+      "sha256": "30593771b9374cd7280be201a7c627f7775cc25332eff3a76041cfe4614a23bf",
+      "case_id": "native-dev-040",
+      "items": [
+        "b90e5f95be965a6c"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-067-01.jpg",
+      "sha256": "5219610e7fda60cb358f07762d6c81446f064692198dce5223214bf564e4e9b6",
+      "case_id": "native-dev-067",
+      "items": [
+        "20996382520002cb",
+        "31584aba951fd2e6",
+        "42357e50e26c4735",
+        "4a60ee85b3788039",
+        "92b8f244b0808320"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-067-02.jpg",
+      "sha256": "7e32009c162931a3427b113ddcef7cecf3fcc6243f1e5cb3c0fd8d8ae14c41a1",
+      "case_id": "native-dev-067",
+      "items": [
+        "a03b01ca0eb258a6",
+        "a83b819f6295f5af",
+        "bdabfc5894c6f999",
+        "cd212b2f0886da95"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-070-01.jpg",
+      "sha256": "e2cac1dbd24b1752dc8f5b8d4d97d897dd6b963d091584cc1faf340d879a51a6",
+      "case_id": "native-dev-070",
+      "items": [
+        "137173aae2e6ed52",
+        "48fe126e7ff29043",
+        "79467566ad34cf95",
+        "9214e235a710bd6e",
+        "ced3d59db710ab34"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-070-02.jpg",
+      "sha256": "02dac89e909a092d380ea1df768dc65fd86bc0e93690d40d51a6c01a77dbf616",
+      "case_id": "native-dev-070",
+      "items": [
+        "e08b8d01c7747673"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-100-01.jpg",
+      "sha256": "0c6ea1b593f416710b0fbe7cfce16ac7144ad5ac3d88ea941b9279042339c9ee",
+      "case_id": "native-dev-100",
+      "items": [
+        "41b95899dd30f395",
+        "4410885c25409685",
+        "8bdff5cf918790ee",
+        "8eada182d3102ad9"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-106-01.jpg",
+      "sha256": "70a1100337a72523b1f340ea01e7e9dc4039c9b8d1cad323efa78fe87f1fe6d2",
+      "case_id": "native-dev-106",
+      "items": [
+        "53978127e898654d",
+        "6986c10de6bafd4d",
+        "6b210c9522e96b21"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-108-01.jpg",
+      "sha256": "f3c115df664c89dd96b0bfc95210779b2ae53c093c6ed9f84f38fe8ad0757385",
+      "case_id": "native-dev-108",
+      "items": [
+        "1d4aeac27f353813",
+        "678ae3ceebea13e3",
+        "7ae748b1cdb58ced",
+        "a7cc6d04102dbbb3",
+        "c0caa46a3d93c566"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-108-02.jpg",
+      "sha256": "1dea459a50e1d8a020ad200dfd347ef0d534f9cbb4a8397192c9f3dc1aa673c3",
+      "case_id": "native-dev-108",
+      "items": [
+        "c227a47390d2560c",
+        "fe8a1225b583b2cc"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-148-01.jpg",
+      "sha256": "62d271909e02726f8efbccefdca11bc8900d4aa7119907284ef59e5781ff9f5f",
+      "case_id": "native-dev-148",
+      "items": [
+        "0bfb2f738f5e09f7",
+        "16b8bda29593bae3",
+        "56cf68b9a95ae02c",
+        "5746d8df91c4c63e",
+        "61d2695acd9696d7"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-148-02.jpg",
+      "sha256": "bc477022c60a6321e9caca2f911e4175ded96ba41ffd3b87ab85efcd5e084dc8",
+      "case_id": "native-dev-148",
+      "items": [
+        "659742802dfc7193",
+        "69aa2ca580f01b9d",
+        "c997d3ceee443d01"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-161-01.jpg",
+      "sha256": "29af434fb6d92e7dde58006f9429cb8eb4e679acabf10a43eeb0315dfafb63ff",
+      "case_id": "native-dev-161",
+      "items": [
+        "a4f7dafd37b3059b",
+        "caf4020e723167e3",
+        "e24a9b92acb80919",
+        "ed5047d739b99de8",
+        "ee351dad682b68cd"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-161-02.jpg",
+      "sha256": "f936c6cad3e6a6900f7105a163edfa3d4486d6d4c407817fe84d9862300de2bc",
+      "case_id": "native-dev-161",
+      "items": [
+        "fbaf9ca3b846cb06"
+      ]
+    }
+  ],
+  "reused_exact_image_observations": [],
+  "review_policy": "Actual direct Codex observation. Exact same output for the same bilingual semantic case is reviewed once and mapped back; translations are not independent samples.",
+  "no_automatic_completion_ratings": true
+}

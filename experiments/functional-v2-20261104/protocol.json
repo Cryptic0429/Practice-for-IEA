@@ -1,0 +1,72 @@
+{
+  "status": "labels_reviewed_and_frozen_before_training",
+  "at": "2026-11-04T13:11:50.742339+00:00",
+  "source_splits_sha256": "88b8a60caafad3877efbc7bcd15f3931b5e32a1aeaf6bf00f89dc8ef1463b525",
+  "case_hashes": {
+    "train": "1d3a86bd17444193d352249717a932d9556093c59b5f3af8bc458718cbe9f2fd",
+    "development": "bcef3d65fc934d0bfeac322610f5a51e62ca8c49b38b979bc5b8cd24b501445e",
+    "acceptance": "041e1662518243e8fd073a257d4a0f39d8e3a4475e1d4b6e437378c6e689e96a"
+  },
+  "parent": "models/from-sft-calibrated/sft-functional/seed-01",
+  "parent_sha256": "54161bd9c9f2e3aa518572be6cf1dad81f8bebe33d92d31107d64d1f3c4435b0",
+  "training": {
+    "routes": [
+      "old-data matched continued-SFT control",
+      "new image-conditioned curriculum"
+    ],
+    "epochs": 4,
+    "learning_rate": 5e-05,
+    "effective_batch": 4,
+    "seed": 20261106,
+    "quantization": "NF4 QLoRA",
+    "rank": 8,
+    "alpha": 16,
+    "layers": "language q/v only, frozen vision",
+    "rows_per_route": 720
+  },
+  "selection": "Development visible complete + acceptable, both languages per semantic case, then severe damage count, then paired blind preference, then earliest epoch. L1 excluded.",
+  "review": "Codex direct visual primary; original Qwen advisory only due round1 failed calibration. AI-assisted not user validation.",
+  "evaluation_history": "Fresh source groups for round2; original historical val/test pools previously evaluated. No claim of unseen real-user photos.",
+  "scope": "Five global task families plus compounds/no-op; controlled degradations and AI-authored instructions. Original natural-request candidates remain unadmitted.",
+  "resource_limit": "Shared original 16 occupied GPU-hour ledger, GPUs0/2/3, protect1; stop at cap.",
+  "input_allowlist": [
+    "input photo",
+    "ZH or EN request",
+    "same frozen v1.2 tool prompt"
+  ],
+  "core_code_hashes": {
+    "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+    "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+    "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc"
+  },
+  "freeze_at": "2026-11-04T13:50:48.812606+00:00",
+  "final_case_hashes": {
+    "train": "0e6baf0cf20db3fff8b81310f18e8517622b1c0ad070aa703ac3466e996a3b6c",
+    "development": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+    "acceptance": "43eebd663a04a4b9436b35c0ab40e1587cdad4e4dec8097dcf9235b62dd84404",
+    "natural-use": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+  },
+  "instruction_criteria_amendments": [
+    {
+      "split": "development",
+      "draft_sha256": "bcef3d65fc934d0bfeac322610f5a51e62ca8c49b38b979bc5b8cd24b501445e",
+      "frozen_final_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+    },
+    {
+      "split": "acceptance",
+      "draft_sha256": "041e1662518243e8fd073a257d4a0f39d8e3a4475e1d4b6e437378c6e689e96a",
+      "frozen_final_sha256": "43eebd663a04a4b9436b35c0ab40e1587cdad4e4dec8097dcf9235b62dd84404"
+    }
+  ],
+  "amendment_reason": "Before training or model inference: grammatical ZH prefixes; requested stylisation allowed, avoid contradictory preserve-natural-colour criteria. Original drafts retained.",
+  "train_dataset_sha256": "7a1392009df397b13e7f2bcedb8f9e0d3c7c8ef38b77846d3d078cccb2e6a472",
+  "control_dataset_sha256": "dd76ef6dbd7e0ff30959f8d4595263fa1552749dd2dce943160392303b49d1c1",
+  "system_prompt_sha256": "06eb1e885b065f9d9b060b5924e15178b25e3cc15f6eba175cfa18f9512b27f7",
+  "natural_use_probes": {
+    "frozen_at": "2026-11-04T14:50:36.605279+00:00",
+    "photo_groups": 6,
+    "portrait": 3,
+    "landscape": 3,
+    "selection": "Supplementary behaviour check, not checkpoint ranking; photos overlap development, original EN requests not training data; ZH AI translations."
+  }
+}

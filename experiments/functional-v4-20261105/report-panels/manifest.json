@@ -1,0 +1,628 @@
+[
+  {
+    "sheet": "experiments/functional-v4-20261105/report-panels/development-055-restore-exposure-strong.jpg",
+    "sha256": "6ddff1d234714277bb5a5f00901c24fffe44fd36b19a3809b3df5e3e9b4b3766",
+    "case_id": "development-055-restore-exposure-strong",
+    "actual_outputs": [
+      {
+        "case_id": "development-055-restore-exposure-strong",
+        "group_id": "4c861adab82398b3abdcf086f3f27f3f2a3c41a7bcba262e0df711103e786085",
+        "family": "lighting",
+        "action": "restore-exposure-strong",
+        "language": "zh",
+        "model_id": "plain-e1",
+        "instruction": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+        "input_sha256": "6ddf1d057fab8b8d26003099782db7878701b479cafa4bfa9574d907bc34c755",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-055/restore-exposure-strong.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"exposure\": 100\n}\n```",
+        "parameters": {
+          "exposure": 100
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/development/plain-e1/images/development-055-restore-exposure-strong-zh.png",
+        "output_sha256": "21b2a6105906a71d1eab13058141aa5bd4452e5b1e750bf34923887bfb7eba90",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.32337018847465515,
+          "luminance_std": 0.1466750204563141,
+          "saturation": 0.23718300461769104,
+          "warmth": 0.005458533298224211,
+          "white_clip_fraction": 0.0,
+          "black_clip_fraction": 0.0
+        },
+        "output_statistics": {
+          "mean_luminance": 0.6220337152481079,
+          "luminance_std": 0.25503695011138916,
+          "saturation": 0.22163039445877075,
+          "warmth": -0.007743006572127342,
+          "white_clip_fraction": 0.09441107975403817,
+          "black_clip_fraction": 0.0
+        },
+        "diagnostic_output_input_L1": 0.30009161257276346,
+        "completed_at": "2026-11-04T18:21:39.383902+00:00"
+      },
+      {
+        "case_id": "development-055-restore-exposure-strong",
+        "group_id": "4c861adab82398b3abdcf086f3f27f3f2a3c41a7bcba262e0df711103e786085",
+        "family": "lighting",
+        "action": "restore-exposure-strong",
+        "language": "en",
+        "model_id": "plain-e1",
+        "instruction": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours.",
+        "input_sha256": "6ddf1d057fab8b8d26003099782db7878701b479cafa4bfa9574d907bc34c755",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-055/restore-exposure-strong.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"exposure\": 100\n}\n```",
+        "parameters": {
+          "exposure": 100
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/development/plain-e1/images/development-055-restore-exposure-strong-en.png",
+        "output_sha256": "21b2a6105906a71d1eab13058141aa5bd4452e5b1e750bf34923887bfb7eba90",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.32337018847465515,
+          "luminance_std": 0.1466750204563141,
+          "saturation": 0.23718300461769104,
+          "warmth": 0.005458533298224211,
+          "white_clip_fraction": 0.0,
+          "black_clip_fraction": 0.0
+        },
+        "output_statistics": {
+          "mean_luminance": 0.6220337152481079,
+          "luminance_std": 0.25503695011138916,
+          "saturation": 0.22163039445877075,
+          "warmth": -0.007743006572127342,
+          "white_clip_fraction": 0.09441107975403817,
+          "black_clip_fraction": 0.0
+        },
+        "diagnostic_output_input_L1": 0.30009161257276346,
+        "completed_at": "2026-11-04T18:21:40.663603+00:00"
+      },
+      {
+        "case_id": "development-055-restore-exposure-strong",
+        "group_id": "4c861adab82398b3abdcf086f3f27f3f2a3c41a7bcba262e0df711103e786085",
+        "family": "lighting",
+        "action": "restore-exposure-strong",
+        "language": "zh",
+        "model_id": "measured-e1",
+        "instruction": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+        "input_sha256": "6ddf1d057fab8b8d26003099782db7878701b479cafa4bfa9574d907bc34c755",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-055/restore-exposure-strong.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"exposure\": 80\n}\n```",
+        "parameters": {
+          "exposure": 80
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/development/measured-e1/images/development-055-restore-exposure-strong-zh.png",
+        "output_sha256": "edc2f93db848ff4afc268b63e28c148ba0fc47136f5c27e35b2fd47f3c71f885",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.32337018847465515,
+          "luminance_std": 0.1466750204563141,
+          "saturation": 0.23718300461769104,
+          "warmth": 0.005458533298224211,
+          "white_clip_fraction": 0.0,
+          "black_clip_fraction": 0.0
+        },
+        "output_statistics": {
+          "mean_luminance": 0.5603971481323242,
+          "luminance_std": 0.2506963312625885,
+          "saturation": 0.23535306751728058,
+          "warmth": 0.0071253483183681965,
+          "white_clip_fraction": 0.050034129497063144,
+          "black_clip_fraction": 0.0
+        },
+        "diagnostic_output_input_L1": 0.23737791472790287,
+        "completed_at": "2026-11-04T18:23:10.972787+00:00"
+      },
+      {
+        "case_id": "development-055-restore-exposure-strong",
+        "group_id": "4c861adab82398b3abdcf086f3f27f3f2a3c41a7bcba262e0df711103e786085",
+        "family": "lighting",
+        "action": "restore-exposure-strong",
+        "language": "en",
+        "model_id": "measured-e1",
+        "instruction": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours.",
+        "input_sha256": "6ddf1d057fab8b8d26003099782db7878701b479cafa4bfa9574d907bc34c755",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-055/restore-exposure-strong.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"exposure\": 100\n}\n```",
+        "parameters": {
+          "exposure": 100
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/development/measured-e1/images/development-055-restore-exposure-strong-en.png",
+        "output_sha256": "21b2a6105906a71d1eab13058141aa5bd4452e5b1e750bf34923887bfb7eba90",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.32337018847465515,
+          "luminance_std": 0.1466750204563141,
+          "saturation": 0.23718300461769104,
+          "warmth": 0.005458533298224211,
+          "white_clip_fraction": 0.0,
+          "black_clip_fraction": 0.0
+        },
+        "output_statistics": {
+          "mean_luminance": 0.6220337152481079,
+          "luminance_std": 0.25503695011138916,
+          "saturation": 0.22163039445877075,
+          "warmth": -0.007743006572127342,
+          "white_clip_fraction": 0.09441107975403817,
+          "black_clip_fraction": 0.0
+        },
+        "diagnostic_output_input_L1": 0.30009161257276346,
+        "completed_at": "2026-11-04T18:23:12.286905+00:00"
+      }
+    ],
+    "presentation": "Full frames at identical scale; no exposure/color/crop change; model names revealed after direct assessment."
+  },
+  {
+    "sheet": "experiments/functional-v4-20261105/report-panels/development-040-style-sepia-strong.jpg",
+    "sha256": "122263ab5142590a52dee2d925910417e593e6f096af41fe42962508d25f07b3",
+    "case_id": "development-040-style-sepia-strong",
+    "actual_outputs": [
+      {
+        "case_id": "development-040-style-sepia-strong",
+        "group_id": "30b2709b5e67b3b236d41c2e23647fdc0b7b95915bd6428c599c797f3f85d264",
+        "family": "brown_tone",
+        "action": "style-sepia-strong",
+        "language": "zh",
+        "model_id": "plain-e1",
+        "instruction": "给照片添加明显的棕褐色复古效果，保留明暗层次。",
+        "input_sha256": "69c8e294162c282c570a6131bc6d68b7db30be1bac04fd4cf3e784f3b6c6f26e",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-040/original.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"sepia\": 95\n}\n```",
+        "parameters": {
+          "sepia": 95
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/development/plain-e1/images/development-040-style-sepia-strong-zh.png",
+        "output_sha256": "d6128eeda3e4bc077ecd7d1ebc63b1943f9fe2781d7db850aeeb8bdc4a8eca68",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.526375412940979,
+          "luminance_std": 0.244122713804245,
+          "saturation": 0.25235065817832947,
+          "warmth": 0.04675501212477684,
+          "white_clip_fraction": 0.0009448818897637795,
+          "black_clip_fraction": 0.00025426509186351706
+        },
+        "output_statistics": {
+          "mean_luminance": 0.5263762474060059,
+          "luminance_std": 0.24408967792987823,
+          "saturation": 0.28302478790283203,
+          "warmth": 0.15691640973091125,
+          "white_clip_fraction": 0.0015272309711286088,
+          "black_clip_fraction": 0.000969488188976378
+        },
+        "diagnostic_output_input_L1": 0.06323099323347503,
+        "completed_at": "2026-11-04T18:21:31.155816+00:00"
+      },
+      {
+        "case_id": "development-040-style-sepia-strong",
+        "group_id": "30b2709b5e67b3b236d41c2e23647fdc0b7b95915bd6428c599c797f3f85d264",
+        "family": "brown_tone",
+        "action": "style-sepia-strong",
+        "language": "en",
+        "model_id": "plain-e1",
+        "instruction": "Give the photo a strong brown sepia vintage look while retaining tonal detail.",
+        "input_sha256": "69c8e294162c282c570a6131bc6d68b7db30be1bac04fd4cf3e784f3b6c6f26e",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-040/original.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"sepia\": 95\n}\n```",
+        "parameters": {
+          "sepia": 95
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/development/plain-e1/images/development-040-style-sepia-strong-en.png",
+        "output_sha256": "d6128eeda3e4bc077ecd7d1ebc63b1943f9fe2781d7db850aeeb8bdc4a8eca68",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.526375412940979,
+          "luminance_std": 0.244122713804245,
+          "saturation": 0.25235065817832947,
+          "warmth": 0.04675501212477684,
+          "white_clip_fraction": 0.0009448818897637795,
+          "black_clip_fraction": 0.00025426509186351706
+        },
+        "output_statistics": {
+          "mean_luminance": 0.5263762474060059,
+          "luminance_std": 0.24408967792987823,
+          "saturation": 0.28302478790283203,
+          "warmth": 0.15691640973091125,
+          "white_clip_fraction": 0.0015272309711286088,
+          "black_clip_fraction": 0.000969488188976378
+        },
+        "diagnostic_output_input_L1": 0.06323099323347503,
+        "completed_at": "2026-11-04T18:21:32.365567+00:00"
+      },
+      {
+        "case_id": "development-040-style-sepia-strong",
+        "group_id": "30b2709b5e67b3b236d41c2e23647fdc0b7b95915bd6428c599c797f3f85d264",
+        "family": "brown_tone",
+        "action": "style-sepia-strong",
+        "language": "zh",
+        "model_id": "measured-e1",
+        "instruction": "给照片添加明显的棕褐色复古效果，保留明暗层次。",
+        "input_sha256": "69c8e294162c282c570a6131bc6d68b7db30be1bac04fd4cf3e784f3b6c6f26e",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-040/original.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"sepia\": 95\n}\n```",
+        "parameters": {
+          "sepia": 95
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/development/measured-e1/images/development-040-style-sepia-strong-zh.png",
+        "output_sha256": "d6128eeda3e4bc077ecd7d1ebc63b1943f9fe2781d7db850aeeb8bdc4a8eca68",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.526375412940979,
+          "luminance_std": 0.244122713804245,
+          "saturation": 0.25235065817832947,
+          "warmth": 0.04675501212477684,
+          "white_clip_fraction": 0.0009448818897637795,
+          "black_clip_fraction": 0.00025426509186351706
+        },
+        "output_statistics": {
+          "mean_luminance": 0.5263762474060059,
+          "luminance_std": 0.24408967792987823,
+          "saturation": 0.28302478790283203,
+          "warmth": 0.15691640973091125,
+          "white_clip_fraction": 0.0015272309711286088,
+          "black_clip_fraction": 0.000969488188976378
+        },
+        "diagnostic_output_input_L1": 0.06323099323347503,
+        "completed_at": "2026-11-04T18:23:02.607801+00:00"
+      },
+      {
+        "case_id": "development-040-style-sepia-strong",
+        "group_id": "30b2709b5e67b3b236d41c2e23647fdc0b7b95915bd6428c599c797f3f85d264",
+        "family": "brown_tone",
+        "action": "style-sepia-strong",
+        "language": "en",
+        "model_id": "measured-e1",
+        "instruction": "Give the photo a strong brown sepia vintage look while retaining tonal detail.",
+        "input_sha256": "69c8e294162c282c570a6131bc6d68b7db30be1bac04fd4cf3e784f3b6c6f26e",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-040/original.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"sepia\": 95\n}\n```",
+        "parameters": {
+          "sepia": 95
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/development/measured-e1/images/development-040-style-sepia-strong-en.png",
+        "output_sha256": "d6128eeda3e4bc077ecd7d1ebc63b1943f9fe2781d7db850aeeb8bdc4a8eca68",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.526375412940979,
+          "luminance_std": 0.244122713804245,
+          "saturation": 0.25235065817832947,
+          "warmth": 0.04675501212477684,
+          "white_clip_fraction": 0.0009448818897637795,
+          "black_clip_fraction": 0.00025426509186351706
+        },
+        "output_statistics": {
+          "mean_luminance": 0.5263762474060059,
+          "luminance_std": 0.24408967792987823,
+          "saturation": 0.28302478790283203,
+          "warmth": 0.15691640973091125,
+          "white_clip_fraction": 0.0015272309711286088,
+          "black_clip_fraction": 0.000969488188976378
+        },
+        "diagnostic_output_input_L1": 0.06323099323347503,
+        "completed_at": "2026-11-04T18:23:03.856744+00:00"
+      }
+    ],
+    "presentation": "Full frames at identical scale; no exposure/color/crop change; model names revealed after direct assessment."
+  },
+  {
+    "sheet": "experiments/functional-v4-20261105/report-panels/natural-019.jpg",
+    "sha256": "a4ecbd2afca4a0bdc72cdb421ad45de99d91cfeff2aa270796d1a32c95d46124",
+    "case_id": "natural-019",
+    "actual_outputs": [
+      {
+        "case_id": "natural-019",
+        "group_id": "7a2be2f5b565311f0bda22409f6ef58c75aef7b47993a66899516c5f49ea9176",
+        "family": "compound",
+        "action": "original-natural-request",
+        "language": "zh",
+        "model_id": "plain-e1",
+        "instruction": "希望照片明显更亮，整体色彩也更暖一些。",
+        "input_sha256": "a784ecfdaa611deb2a9f8b3aeeaaf87855f62d8ab124144d4ebddf7becf58d01",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"exposure\": 20,\n  \"temperature\": 25\n}\n```",
+        "parameters": {
+          "exposure": 20,
+          "temperature": 25
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/natural-use/plain-e1/images/natural-019-zh.png",
+        "output_sha256": "6b5a01bb099641d1c6d448aa0c1074efa0530e67395fa5bf00810b623a811515",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.4345204830169678,
+          "luminance_std": 0.311980664730072,
+          "saturation": 0.2498157024383545,
+          "warmth": 0.033512670546770096,
+          "white_clip_fraction": 5.787037037037037e-06,
+          "black_clip_fraction": 0.0
+        },
+        "output_statistics": {
+          "mean_luminance": 0.5183132290840149,
+          "luminance_std": 0.3464786410331726,
+          "saturation": 0.4052453637123108,
+          "warmth": 0.1110469251871109,
+          "white_clip_fraction": 0.0,
+          "black_clip_fraction": 0.0
+        },
+        "diagnostic_output_input_L1": 0.07422581092984068,
+        "completed_at": "2026-11-04T18:24:16.925347+00:00"
+      },
+      {
+        "case_id": "natural-019",
+        "group_id": "7a2be2f5b565311f0bda22409f6ef58c75aef7b47993a66899516c5f49ea9176",
+        "family": "compound",
+        "action": "original-natural-request",
+        "language": "en",
+        "model_id": "plain-e1",
+        "instruction": "The desired image is much brighter and provides better over all color warmth.",
+        "input_sha256": "a784ecfdaa611deb2a9f8b3aeeaaf87855f62d8ab124144d4ebddf7becf58d01",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"temperature\": 30\n}\n```",
+        "parameters": {
+          "temperature": 30
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/natural-use/plain-e1/images/natural-019-en.png",
+        "output_sha256": "f25464031152d68744e5fbc22afc82a72678ff8bb76fa015f038b27fe152c761",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.4345204830169678,
+          "luminance_std": 0.311980664730072,
+          "saturation": 0.2498157024383545,
+          "warmth": 0.033512670546770096,
+          "white_clip_fraction": 5.787037037037037e-06,
+          "black_clip_fraction": 0.0
+        },
+        "output_statistics": {
+          "mean_luminance": 0.4673960506916046,
+          "luminance_std": 0.31094151735305786,
+          "saturation": 0.4774053394794464,
+          "warmth": 0.14718025922775269,
+          "white_clip_fraction": 0.0,
+          "black_clip_fraction": 0.0
+        },
+        "diagnostic_output_input_L1": 0.04962615592806947,
+        "completed_at": "2026-11-04T18:24:18.039139+00:00"
+      },
+      {
+        "case_id": "natural-019",
+        "group_id": "7a2be2f5b565311f0bda22409f6ef58c75aef7b47993a66899516c5f49ea9176",
+        "family": "compound",
+        "action": "original-natural-request",
+        "language": "zh",
+        "model_id": "measured-e1",
+        "instruction": "希望照片明显更亮，整体色彩也更暖一些。",
+        "input_sha256": "a784ecfdaa611deb2a9f8b3aeeaaf87855f62d8ab124144d4ebddf7becf58d01",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"temperature\": 30,\n  \"saturation\": 15\n}\n```",
+        "parameters": {
+          "temperature": 30,
+          "saturation": 15
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/natural-use/measured-e1/images/natural-019-zh.png",
+        "output_sha256": "b85b43d165d8ef0cbeb8c30db42d19d86dafdcfd18921143abf77dea4dbbd087",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.4345204830169678,
+          "luminance_std": 0.311980664730072,
+          "saturation": 0.2498157024383545,
+          "warmth": 0.033512670546770096,
+          "white_clip_fraction": 5.787037037037037e-06,
+          "black_clip_fraction": 0.0
+        },
+        "output_statistics": {
+          "mean_luminance": 0.461334228515625,
+          "luminance_std": 0.3063925802707672,
+          "saturation": 0.5002145767211914,
+          "warmth": 0.15182015299797058,
+          "white_clip_fraction": 0.0,
+          "black_clip_fraction": 0.0
+        },
+        "diagnostic_output_input_L1": 0.04924912172205308,
+        "completed_at": "2026-11-04T18:25:56.552542+00:00"
+      },
+      {
+        "case_id": "natural-019",
+        "group_id": "7a2be2f5b565311f0bda22409f6ef58c75aef7b47993a66899516c5f49ea9176",
+        "family": "compound",
+        "action": "original-natural-request",
+        "language": "en",
+        "model_id": "measured-e1",
+        "instruction": "The desired image is much brighter and provides better over all color warmth.",
+        "input_sha256": "a784ecfdaa611deb2a9f8b3aeeaaf87855f62d8ab124144d4ebddf7becf58d01",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"temperature\": 15\n}\n```",
+        "parameters": {
+          "temperature": 15
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/natural-use/measured-e1/images/natural-019-en.png",
+        "output_sha256": "b0b03f7fe89f588469671e3f96aa39c2753417a09491f89bb7af54743c6b6619",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.4345204830169678,
+          "luminance_std": 0.311980664730072,
+          "saturation": 0.2498157024383545,
+          "warmth": 0.033512670546770096,
+          "white_clip_fraction": 5.787037037037037e-06,
+          "black_clip_fraction": 0.0
+        },
+        "output_statistics": {
+          "mean_luminance": 0.45089754462242126,
+          "luminance_std": 0.3134362995624542,
+          "saturation": 0.3725982904434204,
+          "warmth": 0.09230820834636688,
+          "white_clip_fraction": 0.0,
+          "black_clip_fraction": 0.0
+        },
+        "diagnostic_output_input_L1": 0.025437435449338425,
+        "completed_at": "2026-11-04T18:25:57.757026+00:00"
+      }
+    ],
+    "presentation": "Full frames at identical scale; no exposure/color/crop change; model names revealed after direct assessment."
+  },
+  {
+    "sheet": "experiments/functional-v4-20261105/report-panels/natural-022.jpg",
+    "sha256": "aede0f4d926fd2fb1d2a2a24ba7b0ee9ac8316678736bbc38f2f8a16dd298248",
+    "case_id": "natural-022",
+    "actual_outputs": [
+      {
+        "case_id": "natural-022",
+        "group_id": "e09cfede65453d9fc06d560f8872c225afed98845c63c157d84a7be5d4aced11",
+        "family": "saturation",
+        "action": "original-natural-request",
+        "language": "zh",
+        "model_id": "plain-e1",
+        "instruction": "让照片的颜色更丰富、更鲜明。",
+        "input_sha256": "0baac0766f8640e91aa7c446981c0ec2173e726fcf1ce59fa1f7e9f797288cea",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-022/original.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"saturation\": 25\n}\n```",
+        "parameters": {
+          "saturation": 25
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/natural-use/plain-e1/images/natural-022-zh.png",
+        "output_sha256": "b98ae82376a927c36030bac802e1b658372c683b0047ca1de1d4a46be8753126",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.49789103865623474,
+          "luminance_std": 0.18238283693790436,
+          "saturation": 0.3132738173007965,
+          "warmth": 0.11264880746603012,
+          "white_clip_fraction": 1.2715657552083333e-06,
+          "black_clip_fraction": 0.0
+        },
+        "output_statistics": {
+          "mean_luminance": 0.48512527346611023,
+          "luminance_std": 0.18248394131660461,
+          "saturation": 0.390534907579422,
+          "warmth": 0.14047913253307343,
+          "white_clip_fraction": 1.2715657552083333e-06,
+          "black_clip_fraction": 0.0
+        },
+        "diagnostic_output_input_L1": 0.016914315317191328,
+        "completed_at": "2026-11-04T18:24:19.283874+00:00"
+      },
+      {
+        "case_id": "natural-022",
+        "group_id": "e09cfede65453d9fc06d560f8872c225afed98845c63c157d84a7be5d4aced11",
+        "family": "saturation",
+        "action": "original-natural-request",
+        "language": "en",
+        "model_id": "plain-e1",
+        "instruction": "make the picture more colorful and vivid",
+        "input_sha256": "0baac0766f8640e91aa7c446981c0ec2173e726fcf1ce59fa1f7e9f797288cea",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-022/original.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"saturation\": 25\n}\n```",
+        "parameters": {
+          "saturation": 25
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/natural-use/plain-e1/images/natural-022-en.png",
+        "output_sha256": "b98ae82376a927c36030bac802e1b658372c683b0047ca1de1d4a46be8753126",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.49789103865623474,
+          "luminance_std": 0.18238283693790436,
+          "saturation": 0.3132738173007965,
+          "warmth": 0.11264880746603012,
+          "white_clip_fraction": 1.2715657552083333e-06,
+          "black_clip_fraction": 0.0
+        },
+        "output_statistics": {
+          "mean_luminance": 0.48512527346611023,
+          "luminance_std": 0.18248394131660461,
+          "saturation": 0.390534907579422,
+          "warmth": 0.14047913253307343,
+          "white_clip_fraction": 1.2715657552083333e-06,
+          "black_clip_fraction": 0.0
+        },
+        "diagnostic_output_input_L1": 0.016914315317191328,
+        "completed_at": "2026-11-04T18:24:20.524009+00:00"
+      },
+      {
+        "case_id": "natural-022",
+        "group_id": "e09cfede65453d9fc06d560f8872c225afed98845c63c157d84a7be5d4aced11",
+        "family": "saturation",
+        "action": "original-natural-request",
+        "language": "zh",
+        "model_id": "measured-e1",
+        "instruction": "让照片的颜色更丰富、更鲜明。",
+        "input_sha256": "0baac0766f8640e91aa7c446981c0ec2173e726fcf1ce59fa1f7e9f797288cea",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-022/original.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"saturation\": 20\n}\n```",
+        "parameters": {
+          "saturation": 20
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/natural-use/measured-e1/images/natural-022-zh.png",
+        "output_sha256": "2f7d648768b3d7f9f0582bb7b65e2669d75c7daf0d78ad6cdc5c0667c29e93ba",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.49789103865623474,
+          "luminance_std": 0.18238283693790436,
+          "saturation": 0.3132738173007965,
+          "warmth": 0.11264880746603012,
+          "white_clip_fraction": 1.2715657552083333e-06,
+          "black_clip_fraction": 0.0
+        },
+        "output_statistics": {
+          "mean_luminance": 0.48791635036468506,
+          "luminance_std": 0.18246158957481384,
+          "saturation": 0.37590762972831726,
+          "warmth": 0.1351889818906784,
+          "white_clip_fraction": 1.2715657552083333e-06,
+          "black_clip_fraction": 0.0
+        },
+        "diagnostic_output_input_L1": 0.013521060756608552,
+        "completed_at": "2026-11-04T18:25:59.093873+00:00"
+      },
+      {
+        "case_id": "natural-022",
+        "group_id": "e09cfede65453d9fc06d560f8872c225afed98845c63c157d84a7be5d4aced11",
+        "family": "saturation",
+        "action": "original-natural-request",
+        "language": "en",
+        "model_id": "measured-e1",
+        "instruction": "make the picture more colorful and vivid",
+        "input_sha256": "0baac0766f8640e91aa7c446981c0ec2173e726fcf1ce59fa1f7e9f797288cea",
+        "input_image": "data/training/functional-v2-20261104/inputs/development-022/original.png",
+        "status": "executed",
+        "response": "```json\n{\n  \"saturation\": 20\n}\n```",
+        "parameters": {
+          "saturation": 20
+        },
+        "output_image": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/natural-use/measured-e1/images/natural-022-en.png",
+        "output_sha256": "2f7d648768b3d7f9f0582bb7b65e2669d75c7daf0d78ad6cdc5c0667c29e93ba",
+        "input_output_identical": false,
+        "input_statistics": {
+          "mean_luminance": 0.49789103865623474,
+          "luminance_std": 0.18238283693790436,
+          "saturation": 0.3132738173007965,
+          "warmth": 0.11264880746603012,
+          "white_clip_fraction": 1.2715657552083333e-06,
+          "black_clip_fraction": 0.0
+        },
+        "output_statistics": {
+          "mean_luminance": 0.48791635036468506,
+          "luminance_std": 0.18246158957481384,
+          "saturation": 0.37590762972831726,
+          "warmth": 0.1351889818906784,
+          "white_clip_fraction": 1.2715657552083333e-06,
+          "black_clip_fraction": 0.0
+        },
+        "diagnostic_output_input_L1": 0.013521060756608552,
+        "completed_at": "2026-11-04T18:26:00.426314+00:00"
+      }
+    ],
+    "presentation": "Full frames at identical scale; no exposure/color/crop change; model names revealed after direct assessment."
+  }
+]

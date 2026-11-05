@@ -1,0 +1,240 @@
+{
+  "passed": true,
+  "preflight": "preflight-v8",
+  "evidence": {
+    "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v8/training-verification.json": "56c75752f6e62d323dc94f60e63d5a5fd1c7b7bf03e898c01b45fe27ead34022",
+    "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v8/reload-verification.json": "fe5ffcd8426733a5a1d427834e58c3598d4447d27a9f4a6482fe2b7f657fa1a1",
+    "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v8/initial-policy-check.json": "6466a5a7e2d562ba3583ba75292058d203bd46f02fcc7e8d7028e91eee636863",
+    "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v8/candidate-audit.json": "c70327fdd2c5cb797c7192721d8017700c78ecf4a03e241721fe25165bb9525a",
+    "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v8/checkpoint-audit.json": "61550ff22d66fea6adb0042dcd09fbaef19ca219ce74653b87c36e40924a6632",
+    "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/padding-diagnostic-fixed-all/result.json": "08d4e06e9659430ccb11f37da172f3749ac005d70a8f97982441f316d5dca410",
+    "/mnt/sdc/zhc/IEA/logs/stage2-A-edit-grpo-v1/input-parity.json": "44be32090a59d03c4ff0691e90b9396f902ea693fb856f03a2876f4a8d192726",
+    "/mnt/sdc/zhc/IEA/logs/stage2-A-edit-grpo-v1/reward-parity.json": "e735636bd9b0596ee83e428c7a49c7a9872bf58390c27a91f7800198844b8c1f",
+    "/mnt/sdc/zhc/IEA/logs/stage2-A-edit-grpo-v1/input-weight-verification.json": "cd4d2b89529fbab0db121a5542b226e369c223bb92e9b6ca2b14185f7b41763c",
+    "/mnt/sdc/zhc/IEA/logs/stage2-A-edit-grpo-v1/batch-input-parity.json": "19e4d4f323f5e74cd27c82ee3514d23d582638f736a856f341fb16e8029dc8a4",
+    "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/generation-resource-probe/result.json": "439df78ce49675c58a0118f1bb4bf3c83cabd8c2f7b6aeb1a02ee31f69e195bc",
+    "/mnt/sdc/zhc/IEA/data/stage2/stage2-A-edit-grpo-v1/manifest.json": "13c62880ab55f04746a712fc0918108d1c4543748a647293b72024d57d37db63",
+    "/mnt/sdc/zhc/IEA/configs/stage2-rl-installed.txt": "904b69b91d408e44ddec92b50306fd9991d41f44d722a574b807620dff9fd9a8",
+    "/mnt/sdc/zhc/IEA/configs/stage2-visual-plan.json": "837a4892268100297a948efd5d4a064e87e8c2812e2f1e84526311de69378d6e",
+    "/mnt/sdc/zhc/IEA/configs/evaluation-protocol-v1.json": "c8a24b374d35bad727a44a3c0119042d90fd1e3ce57d365e325704d5b6006970",
+    "/mnt/sdc/zhc/IEA/scripts/train_stage2_grpo.py": "f38669d57bfd1289e7dd288e45c90ed3a0c3127895c998687b77e4f2aebe4243",
+    "/mnt/sdc/zhc/IEA/scripts/stage2_runtime.py": "800a1be9796885aede578327a20cc4f96b59962cab9681e809372baa5e894150",
+    "/mnt/sdc/zhc/IEA/scripts/stage2_reward.py": "65bee4a7fe87ce3a27ae46bb75580ec3c521985b6d55162ac453c9ce35d7acc2",
+    "/mnt/sdc/zhc/IEA/scripts/evaluation_core.py": "13892e9d43f62a90863ec07416b29e0d24e47e34623910c4cfa9d8435c4ebd52",
+    "/mnt/sdc/zhc/IEA/scripts/evaluate_stage2.py": "669ab518a67e32f25d6e24b5ff5501e2838d3d4fa235c3a54b70c3f502ea315a",
+    "/mnt/sdc/zhc/IEA/scripts/train_stage2_sft_control.py": "5ba520ad70e7475974e6d2ca7a2ec78b2455eb0d5c14bbcb6a2ef782029271d9",
+    "/mnt/sdc/zhc/IEA/scripts/freeze_stage2_gate.py": "16b059336f0264ff161b507f1e6123835fcafced7b147be2bedaa25b9c2377ad",
+    "/mnt/sdc/zhc/IEA/scripts/run_stage2_experiment.py": "1e977343a5b1ba537e872a2c3c559d561da4268102d0509dd9a98f2d8d2b4a0f",
+    "/mnt/sdc/zhc/IEA/scripts/stage2_budget.py": "3cf34d9288cdad3d537547effc358758bbce1914dc9652cb9eb920d015f8ad96",
+    "/mnt/sdc/zhc/IEA/scripts/audit_stage2_training.py": "8d858cb070edf5259e22c0bcd9fd1fb74896975a1f51bb4be7f86c40a7815068",
+    "/mnt/sdc/zhc/IEA/scripts/verify_stage2_checkpoint.py": "12181a9407ccb39f3fd935154b1f2d64935d741c106e9d64ad010b53960f4be6",
+    "/mnt/sdc/zhc/IEA/scripts/verify_stage2_reload.py": "c8b0606bb70a87e08608d8cc550de55e42b370eaa79961cf2b515d54cbbe6687",
+    "/mnt/sdc/zhc/IEA/scripts/freeze_stage2_models.py": "8bfb0abdbbe47fe35908a4bdfbe049e958f311f1f4220d53e62de538627877ed",
+    "/mnt/sdc/zhc/IEA/scripts/summarize_stage2.py": "e3b534a10c60e3aed26049083c2712239d9d67880e0e5780a8c2f1175c748ea3",
+    "/mnt/sdc/zhc/IEA/scripts/export_stage2_visuals.py": "d2b928dce4d386b094ec136cd742749d698f985d91049064bbf7d4bcab9d01f5"
+  },
+  "projected_optimization_gpu_hours": 3.6105342779888048,
+  "projected_formal_reserved_gpu_hours": 5.285276636310838,
+  "measured_seconds_per_candidate_including_updates": 6.346642285527196,
+  "estimated_serial_seconds_per_example": 15.072681224898306,
+  "serial_evaluation_estimate": {
+    "preflight_mean_output_tokens": 203.7734375,
+    "measured_serial_tokens_per_second": 16.89923598027388,
+    "margin": 1.25,
+    "scope": "Single training-prompt speed extrapolated to full preflight mean length; runtime budgets still enforced"
+  },
+  "estimated_validation_wall_hours": 1.674742358322034,
+  "generation_resource_decision": {
+    "concurrency": 4,
+    "measured_token_throughput_speedup": 1.0,
+    "credited_speedup": 1.0,
+    "unchanged_runtime_fraction": 0.25,
+    "scope": "Resource-only change; one-prompt estimate,verify actual formal throughput"
+  },
+  "reserve_other_gpu_hours": 6.04291266454661,
+  "resources_at_freeze": {
+    "observed_at": "2026-11-01T09:09:36.627719+00:00",
+    "total_gpu_hours": 0.8190386021675334,
+    "remaining_gpu_hours": 15.180961397832467,
+    "unknown_intervals": [],
+    "budget_safe_to_launch": true,
+    "tasks": [
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/generation-resource-probe/status.json",
+        "status": "completed",
+        "pid": 3514012,
+        "process_alive": false,
+        "elapsed_seconds": 102.69138712435961,
+        "gpu_hours": 0.028525385312322113,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      },
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/padding-diagnostic/status.json",
+        "status": "completed",
+        "pid": 3516975,
+        "process_alive": false,
+        "elapsed_seconds": 42.50249224901199,
+        "gpu_hours": 0.011806247846947776,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      },
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/padding-diagnostic-fixed/status.json",
+        "status": "completed",
+        "pid": 3517858,
+        "process_alive": false,
+        "elapsed_seconds": 42.175483256578445,
+        "gpu_hours": 0.011715412015716235,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      },
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/padding-diagnostic-fixed-all/status.json",
+        "status": "completed",
+        "pid": 3518498,
+        "process_alive": false,
+        "elapsed_seconds": 125.38183426111937,
+        "gpu_hours": 0.03482828729475538,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      },
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v2/status.json",
+        "status": "failed",
+        "pid": 3506811,
+        "process_alive": false,
+        "elapsed_seconds": 16.23562828451395,
+        "gpu_hours": 0.004509896745698319,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      },
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v3/status.json",
+        "status": "failed",
+        "pid": 3507394,
+        "process_alive": false,
+        "elapsed_seconds": 16.657245315611362,
+        "gpu_hours": 0.004627012587669823,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      },
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v4/status.json",
+        "status": "failed",
+        "pid": 3508209,
+        "process_alive": false,
+        "elapsed_seconds": 24.544524684548378,
+        "gpu_hours": 0.00681792352348566,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      },
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v5/status.json",
+        "status": "failed",
+        "pid": 3508546,
+        "process_alive": false,
+        "elapsed_seconds": 227.34830352663994,
+        "gpu_hours": 0.06315230653517775,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      },
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v6/status.json",
+        "status": "failed",
+        "pid": 3510811,
+        "process_alive": false,
+        "elapsed_seconds": 18.676031664013863,
+        "gpu_hours": 0.005187786573337184,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      },
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v7/status.json",
+        "status": "awaiting_independent_reload",
+        "pid": 3511266,
+        "process_alive": false,
+        "elapsed_seconds": 1487.4878130033612,
+        "gpu_hours": 0.41319105916760035,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      },
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v8/reload-attempt-1/status.json",
+        "status": "failed",
+        "pid": 3522686,
+        "process_alive": false,
+        "elapsed_seconds": 15.860767923295498,
+        "gpu_hours": 0.004405768867582083,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      },
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v8/reload-attempt-2/status.json",
+        "status": "completed",
+        "pid": 3523130,
+        "process_alive": false,
+        "elapsed_seconds": 16.55622571706772,
+        "gpu_hours": 0.0045989515880743665,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      },
+      {
+        "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/preflight-v8/status.json",
+        "status": "awaiting_independent_reload",
+        "pid": 3519892,
+        "process_alive": false,
+        "elapsed_seconds": 812.4212307929993,
+        "gpu_hours": 0.22567256410916647,
+        "accounting": "Allocated wall time on one GPU, including setup and validation waits"
+      }
+    ]
+  },
+  "formal_settings": {
+    "train_prompts": 512,
+    "candidates_per_prompt": 4,
+    "updates": 128,
+    "base_model": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct",
+    "adapter_start": "/mnt/sdc/zhc/IEA/outputs/stage1-A-image-edit-3k-v1",
+    "quantization_bits": 4,
+    "quantization_type": "nf4",
+    "double_quantization": true,
+    "compute_dtype": "bfloat16",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "freeze_vision": true,
+    "image_max_pixels": 262144,
+    "candidate_microbatch": 1,
+    "gradient_accumulation": 16,
+    "learning_rate": 1e-06,
+    "warmup_ratio": 0.05,
+    "generation_concurrency": 4,
+    "warmup_steps": 7,
+    "scheduler": "cosine",
+    "optimizer": "adamw_torch",
+    "weight_decay": 0.0,
+    "temperature": 0.8,
+    "top_p": 0.9,
+    "top_k": 0,
+    "beta": 0.01,
+    "loss_type": "grpo",
+    "scale_rewards": "group",
+    "epsilon": 0.2,
+    "num_iterations": 1,
+    "max_grad_norm": 1.0,
+    "max_completion_length": 512,
+    "seed": 20261101,
+    "eval_save_steps": [
+      64,
+      128
+    ],
+    "selection": "full validation mean edited image L1",
+    "reference": "frozen original A adapter",
+    "generation_backend": "transformers",
+    "max_formal_gpu_hours": 12,
+    "total_experiment_gpu_hours": 16
+  },
+  "sft_control": {
+    "start": "A",
+    "rows": 512,
+    "microbatch": 1,
+    "gradient_accumulation": 4,
+    "updates": 128,
+    "repeats_per_row": 1,
+    "learning_rate": 1e-06,
+    "selection": "final step128; no test selection"
+  }
+}

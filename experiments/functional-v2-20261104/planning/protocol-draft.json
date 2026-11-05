@@ -1,0 +1,41 @@
+{
+  "status": "preparation_only_no_round2_training_started",
+  "reason": "Round1 fixed-amplitude targets and 31/50 selected-model acceptance do not establish high practical usefulness.",
+  "domain_assumption": "User confirmed balanced portraits and landscapes.",
+  "data_routes": [
+    "Original-pool natural-request candidates, each requiring new direct visual target review.",
+    "Known global degradations of curated training photos with inverse-tool targets at several strengths; direct visual admission still required.",
+    "Explicit two-clause requests and preserve/no-op cases, including counterfactual strength pairs."
+  ],
+  "comparisons": "Use a matched SFT control to isolate data-curriculum contribution; defer preference/RL until the visual reward is reliable.",
+  "evaluation": "Freeze fresh source groups and requirements before new training. Round1 acceptance is now regression/development evidence, never new independent acceptance.",
+  "shared_resource_ledger": "experiments/functional-v1-20261104/resources.json",
+  "remaining_first_campaign_gpu_hours_at_round1_report": 12.837687369121445,
+  "gpu_ids": [
+    0,
+    2,
+    3
+  ],
+  "protected_gpu": 1,
+  "no_unreviewed_candidate_admission": true,
+  "practical_goal_achieved": false,
+  "user_confirmed_domain": "人像和风景均衡",
+  "domain_acceptance": {
+    "portraits": [
+      "肤色自然",
+      "人脸明暗适当",
+      "主体结构保留"
+    ],
+    "landscapes": [
+      "天空层次",
+      "植被色彩",
+      "整体色调"
+    ],
+    "shared": [
+      "同图不同力度",
+      "反向要求",
+      "复合要求",
+      "保持原样"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-05T03:23:07.558624+00:00",
+  "manifest_sha256": "0eb115989d62c9dc1ee320c859f5535a847ad60b746cea7c32cd8c8513206823",
+  "observations_sha256": "c24f43abd10bff7399b32920bc706ea075d282a1fa61827a4dcd51030ebd2c2b",
+  "candidate_sources": 412,
+  "observed_sources": 172,
+  "inherited_training_groups": 1078,
+  "inherited_training_paths": 1080,
+  "prior_holdout_input_paths": 220,
+  "collisions": [],
+  "counts": {},
+  "method": "Original connected-component group IDs, plus pHash Hamming<=6 and grayscale correlation>.985 or MAE<.01. No claim to detect all crops or related shoots.",
+  "status": "candidate_audit_not_final_source_freeze",
+  "labels_admitted": false,
+  "rule": "Historical-training collisions cannot enter development. Prior-holdout collisions cannot enter training. Chosen source sets must be mutually disjoint after resolving cross-split and within-development collisions. No outcome or reference inspected here."
+}

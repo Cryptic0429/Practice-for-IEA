@@ -1,0 +1,53 @@
+{
+  "frozen_at": "2026-11-05T02:15:40.673772+00:00",
+  "status": "frozen_before_feature_extraction_or_controller_training",
+  "parent": "models/from-functional-v1/sft-curriculum/seed-01",
+  "parent_sha256": "4048de5078f4eda6b19621a2968718be50f4cd5ad35fd17dbf23614a885edb71",
+  "sources": {
+    "train": {
+      "path": "data/training/functional-v4-20261105/cases.json",
+      "sha256": "2b68d44479da3c1a4fd3a78f65104e166dbcdb1e0a7b76c83f45972faffb05e2"
+    },
+    "development": {
+      "path": "data/training/functional-v2-20261104/development-final-cases.json",
+      "sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+    },
+    "natural-use": {
+      "path": "data/training/functional-v2-20261104/natural-use-final-cases.json",
+      "sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+    }
+  },
+  "training_rows": {
+    "path": "data/training/functional-v4-20261105/train-accepted.json",
+    "sha256": "4d7f1605238aa8dea095c0ab1e0b7dfc7e0333b7d52bbe6f7a72cae99c2428a6"
+  },
+  "input_policy": "Exactly round-four plain photo/original-request/tool-note encoding. Last pre-generation hidden vector. Optional current-image statistics passed as numerical features, not target statistics. No labels, references, review or case IDs encoded.",
+  "routes": [
+    "vlm",
+    "vlm-stats"
+  ],
+  "architecture": "Frozen NF4 Qwen + frozen round2 curriculum adapter. Train a new 128-hidden GELU controller with 9 tool gates and 9 bounded continuous values. No new LoRA updates.",
+  "training": {
+    "epochs": 80,
+    "checkpoints": [
+      20,
+      80
+    ],
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "seed": 20261109,
+    "loss": "Tool BCE (sqrt imbalance positive weights capped5) +4*active-only SmoothL1(beta0.1) on parameter/100. No pixel L1. Fitted normalization uses training features only.",
+    "decoding": "Gate sigmoid>=0.5, tanh value*100 rounded to integer, zero omitted, sepia nonnegative. No image-specific rule or parameter repair."
+  },
+  "selection": "Same gate as round4: no severe damage in either development split, natural both-language complete>3/6, controlled>=81/100. Prioritize natural completion, then controlled, paired direct preference, earlier checkpoint. No L1 or training loss selection.",
+  "acceptance": "Closed. No acceptance input feature extraction or inference. No promotion without replication and final lock.",
+  "code_hashes": {
+    "scripts/functional_v5/feature_runtime.py": "2aa56a0340797194601f152dc17e9d126ff270a57b4f1bcc8f20b9863abd995a",
+    "scripts/functional_v4/runtime.py": "da64f2cdeb94dca07cbfb7422fb716bac037a6793942e315a676cab7f142fb9c",
+    "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+    "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+    "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a"
+  },
+  "budget": "Same original16 occupied GPU hours including cache construction, actual inference and trial. GPUs0/2/3 only; GPU1 protected."
+}

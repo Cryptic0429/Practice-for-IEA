@@ -1,0 +1,16 @@
+{
+  "model_id": "current-legacy",
+  "adapter": "/mnt/sdc/zhc/IEA/models/from-sft-standard/sft-calibrated/seed-02",
+  "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884",
+  "case_sha256": "47b7dfa6af4de74a415db0943e58d52fa809059f688ecc477ce4f17336a97b46",
+  "editor": "historical_upstream_editor",
+  "prompt": "Historical ImageEdit conversations plus goal_v2_json_runtime.SCHEMA",
+  "runtime": "stage2_runtime + original final inference casting and deterministic seed",
+  "scope": "Historical offline path; no external API translation. Bilingual request directly inserted.",
+  "code_hashes": {
+    "scripts/stage2_runtime.py": "800a1be9796885aede578327a20cc4f96b59962cab9681e809372baa5e894150",
+    "scripts/goal_v2_json_runtime.py": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67",
+    "scripts/evaluation_core.py": "13892e9d43f62a90863ec07416b29e0d24e47e34623910c4cfa9d8435c4ebd52",
+    "repo/src/image_editor.py": "1a18fb3b00207f0b667b2ef1d0677d8d71a5abdf21ad89e4c66adea152c05f3c"
+  }
+}
