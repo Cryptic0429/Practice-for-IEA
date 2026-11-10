@@ -1,0 +1,67 @@
+{
+  "at": "2026-11-06T11:00:56.152861+00:00",
+  "status": "passed",
+  "parent_sha256": "12243ea5f08ab9e2e75b082fd6e6a1e6e8b1efbd7eb4e102be3563ba084c4a56",
+  "records": [
+    {
+      "route": "matched_language_merger",
+      "source_id": "train-native-078",
+      "language": "en",
+      "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 65,\n    \"contrast\": 20,\n    \"shadows\": 65,\n    \"saturation\": 20\n  }\n}\n```",
+      "max_difference_from_control": 0.0,
+      "last_prefix_logits_sha256": "ea3d8b2a7740e9169ce475a83b867ceccd35a7800c133e77130cf6abcc99caf7",
+      "parent_tensors_copied_exactly": 116
+    },
+    {
+      "route": "matched_language_merger",
+      "source_id": "train-native-144",
+      "language": "en",
+      "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"sepia\": 0\n  }\n}\n```",
+      "max_difference_from_control": 0.0,
+      "last_prefix_logits_sha256": "ae8bed2522e09bc8b4896815b5f41c9ad04e6f9714b91c5c5951b07ade4abd05",
+      "parent_tensors_copied_exactly": 116
+    },
+    {
+      "route": "matched_language_merger",
+      "source_id": "train-extension-396",
+      "language": "en",
+      "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 20,\n    \"contrast\": 8\n  }\n}\n```",
+      "max_difference_from_control": 0.0,
+      "last_prefix_logits_sha256": "abaf2647260f10758a2f2ad06b1da254fb48cd570e02a35f8075a27aa14d738c",
+      "parent_tensors_copied_exactly": 116
+    },
+    {
+      "route": "visual_late4",
+      "source_id": "train-native-078",
+      "language": "en",
+      "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 65,\n    \"contrast\": 20,\n    \"shadows\": 65,\n    \"saturation\": 20\n  }\n}\n```",
+      "max_difference_from_control": 0.0,
+      "last_prefix_logits_sha256": "ea3d8b2a7740e9169ce475a83b867ceccd35a7800c133e77130cf6abcc99caf7",
+      "parent_tensors_copied_exactly": 116
+    },
+    {
+      "route": "visual_late4",
+      "source_id": "train-native-144",
+      "language": "en",
+      "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"sepia\": 0\n  }\n}\n```",
+      "max_difference_from_control": 0.0,
+      "last_prefix_logits_sha256": "ae8bed2522e09bc8b4896815b5f41c9ad04e6f9714b91c5c5951b07ade4abd05",
+      "parent_tensors_copied_exactly": 116
+    },
+    {
+      "route": "visual_late4",
+      "source_id": "train-extension-396",
+      "language": "en",
+      "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 20,\n    \"contrast\": 8\n  }\n}\n```",
+      "max_difference_from_control": 0.0,
+      "last_prefix_logits_sha256": "abaf2647260f10758a2f2ad06b1da254fb48cd570e02a35f8075a27aa14d738c",
+      "parent_tensors_copied_exactly": 116
+    }
+  ],
+  "both_prepared_kbit_and_eval": true,
+  "image_max_pixels": 262144,
+  "optimizer_steps": 0,
+  "training_targets_used": false,
+  "development_or_acceptance_inputs_used": false,
+  "limitation": "Three training-only English prefixes; exact initial function parity is implementation evidence, not editing-quality or generalization evidence."
+}

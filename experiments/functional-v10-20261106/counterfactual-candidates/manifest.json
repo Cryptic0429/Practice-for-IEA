@@ -1,0 +1,2561 @@
+{
+  "at": "2026-11-05T20:12:55.763999+00:00",
+  "status": "CPU_candidates_only_no_admission_no_training",
+  "source_cases_sha256": "1948fbe5e40cdeae1d3e37fefedd4c87d9ebb7a2cf1eec3ff830229e8b98353a",
+  "original_photo_groups": 20,
+  "domains": {
+    "portrait": 10,
+    "landscape": 10
+  },
+  "semantic_candidates": 60,
+  "bilingual_candidates": 120,
+  "requests": "100% AI-authored identical semantic request across changed photographic conditions; synthetic darkening/noise, NOT untouched real user requests.",
+  "editor": "functional-editor-v7-soft-rgb-candidate",
+  "cases": [
+    {
+      "id": "visual-risk-01",
+      "source_id": "train-002",
+      "group_id": "49b5a624b5e37b3680abfad1b6ec7b5c68a859c74d8645cde1d30300ae22d0cf",
+      "domain": "portrait",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-002/original.png",
+      "canonical_sha256": "917fe300083a38c1ca79aabb127e5d549c62c775622ff8a4313f8900a3902f69",
+      "original_source_sha256": "016063aaa0ca855c13878976c7ea9778ecf8d9f7962730d1a7edc9d911bb8790",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-01-canonical.png",
+          "sha256": "09b28cef04c047606a2658d620398076a945610f00055ded686054cd11c1b577",
+          "size": [
+            417,
+            627
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-01-deep-clean-input.png",
+          "sha256": "baa3af5999944bcd7dbb446a05f9a126bf7a2533c52c2b136d70695ffb4d6d09",
+          "size": [
+            417,
+            627
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-01-deep-clean-edit.png",
+          "sha256": "d1e85ddfff3244df15528b433aeaec9e24843af32a1776d33d1d3eda9d434fb2",
+          "size": [
+            417,
+            627
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-01-shallow-clean-input.png",
+          "sha256": "5909b090393fe1dbf6d6a6abec07e4d63b9d41170db2314eefff0d1ae75d5948",
+          "size": [
+            417,
+            627
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-01-shallow-clean-edit.png",
+          "sha256": "0f60dfe35de5a3e5ce40ff82cc4388e5012d6103201e1eafb1e28b3c7ab9b92a",
+          "size": [
+            417,
+            627
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-01-noisy-input.png",
+          "sha256": "b0560ca87485a3e5e74b0962d7edd7d832186c5e987daee7e6411a4575d8296e",
+          "size": [
+            417,
+            627
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-01-noisy-exposure65.png",
+          "sha256": "4d7e89f5ae3ac8a077d83ef61ba22dd49ec73fbfa1deaab3ee4eea1d72e6b1c9",
+          "size": [
+            417,
+            627
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-01-noisy-brightness35.png",
+          "sha256": "2efd06f8fc08215c805c024eff46cd2b1a93c5d78f1faf90cc29c82998337ad0",
+          "size": [
+            417,
+            627
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-01-noisy-exposure40-shadows50.png",
+          "sha256": "506b0e496a4dd38466b7fdf036d04bb8a744ce795a7feeb1ed1b98ca15180e90",
+          "size": [
+            417,
+            627
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261117,
+        "kind": "independent chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-01.jpg",
+      "sheet_sha256": "553ac842ce24952150a2475b2369e7ecf165733ced3ac65e5775effff6bf2c92"
+    },
+    {
+      "id": "visual-risk-02",
+      "source_id": "train-013",
+      "group_id": "667c09557c19737f3e16035b44d76fa955900541b1e8721d3cf4facca8a4a61e",
+      "domain": "portrait",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-013/original.png",
+      "canonical_sha256": "f30d2dd30d8ba668d805ccc23248f061fdca7c1ada615c05ea331be3036a9a05",
+      "original_source_sha256": "b746cb35e0d7657cab5c24ae7f2e2c9a41351f59185bc5a2ae1dec36dd5ab0d7",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-02-canonical.png",
+          "sha256": "602ab878da4e3b0991dbdba90b3cce15ad814966819fcda1f7e9ca6465e0eaa7",
+          "size": [
+            362,
+            724
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-02-deep-clean-input.png",
+          "sha256": "073458465149bbba7a3209968309e1982a113021a3488447bffaf53d896c4a5b",
+          "size": [
+            362,
+            724
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-02-deep-clean-edit.png",
+          "sha256": "7243f444a4e15afd1f030499752061b59c862575b6bfb88604e04b8e69316bcd",
+          "size": [
+            362,
+            724
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-02-shallow-clean-input.png",
+          "sha256": "e793910b2ef931ba9438df632d9451d6ef58acf0e7430a3db790cd75d973fab1",
+          "size": [
+            362,
+            724
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-02-shallow-clean-edit.png",
+          "sha256": "6645a2f46774fef9e9f89ce9302e5932c4dd1c6c66ad43cada85230b32cb32c5",
+          "size": [
+            362,
+            724
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-02-noisy-input.png",
+          "sha256": "93f571bbf4fa70b87f2e7a245f50ef1da1dd9bc070d5447fdaeb998f9bcdcf28",
+          "size": [
+            362,
+            724
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-02-noisy-exposure65.png",
+          "sha256": "9b97deb146755fe9152c510787447f2d64a24b7fadb8cdd9de5b00b0a96caa99",
+          "size": [
+            362,
+            724
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-02-noisy-brightness35.png",
+          "sha256": "9c3d2d7d645e6a499c52ed7d2aaaa79d11758ea8b4cd17bd6b45ebaf993c592a",
+          "size": [
+            362,
+            724
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-02-noisy-exposure40-shadows50.png",
+          "sha256": "a9bf34278e3c13add6716317e737c1a867faa8ea0ff7adfecb083d4db370d81c",
+          "size": [
+            362,
+            724
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261118,
+        "kind": "horizontal chroma banding plus coarse smooth chroma noise",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-02.jpg",
+      "sheet_sha256": "652d6b82f996a3b6eb719398c12a2b1c725e038186c1e940576f3f63e02e992a"
+    },
+    {
+      "id": "visual-risk-03",
+      "source_id": "train-020",
+      "group_id": "6ccdc621edf5c214e6a3db1c11bf85063370861ee9f75d66eecb94bd95cb5136",
+      "domain": "portrait",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-020/original.png",
+      "canonical_sha256": "8a983a14786758a8f2a4561caa8569cfb174be838355e28ab1b91cce447175d7",
+      "original_source_sha256": "1b2eaa61790b5268cc7c0b7c14833527c6a47ca7a4b3b5e32be196c86e6e66af",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-03-canonical.png",
+          "sha256": "deed3ee608a814dd73c792a1177fa8cc04bf9e50fe5d25627696dd3debcbbc38",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-03-deep-clean-input.png",
+          "sha256": "6775ab0bd7f0abc305ff1a6fb3c967b5d04f9813b866be670ff939b394fd53fe",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-03-deep-clean-edit.png",
+          "sha256": "09a33f39b067957c4dd561138eae93074e04ee58bf4a80a3c7d1d4629c3607df",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-03-shallow-clean-input.png",
+          "sha256": "17732d3da1f7e333d2b6727293f76284f5a2d84904bc853c27ac65d2faa54357",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-03-shallow-clean-edit.png",
+          "sha256": "9607a6486839d07261374e81f16e89b9aa6cef4dfd7682b5b5a1cfd636753586",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-03-noisy-input.png",
+          "sha256": "781899b66776750f130fdc1e75a2867ab4a86d324aa6d238e061a50b60698862",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-03-noisy-exposure65.png",
+          "sha256": "f3c1efd259ddfb5990c28a79a5b5c3fa0521788a893a6032966d9dda92e7d930",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-03-noisy-brightness35.png",
+          "sha256": "c0d8a1734726a5de9dbab6ebc011465e9ef9cd3e45b94750bbc92defaf4a8242",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-03-noisy-exposure40-shadows50.png",
+          "sha256": "1bc148f6687a787a7612ff04d1b96832e5898456b128a485878e69e25f6cfa84",
+          "size": [
+            627,
+            418
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261119,
+        "kind": "small chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-03.jpg",
+      "sheet_sha256": "e8f91d4373e2fe7cf0b5674b2ff9903457baf2f55e9cb9dfe3899dfe6debc593"
+    },
+    {
+      "id": "visual-risk-04",
+      "source_id": "train-031",
+      "group_id": "7581d2bd6ce05e003a182411f2e597c0656fdb6cbce93c29a46ee6facc874541",
+      "domain": "portrait",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-031/original.png",
+      "canonical_sha256": "0bb8629e4519c3eb834b4733c47c749688096b2ee7c5c4ea37656a0233221e0f",
+      "original_source_sha256": "37d54f965c112e637704e9ed3e8a6f5405ed211fa9bc221abcd8228b5fa4dcf2",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-04-canonical.png",
+          "sha256": "08d1b4731e3dbd85d6b862ae464a6738ad469402915587c871a3266335bc20ac",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-04-deep-clean-input.png",
+          "sha256": "b0f7b77c80e8362dfaa612dd0c433d3db3950bf61e1c52cee35d7df0910ba89a",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-04-deep-clean-edit.png",
+          "sha256": "007f930af71e5c519e369c3c1c0c9d94598a40e42a4e99249e5392d6f628e888",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-04-shallow-clean-input.png",
+          "sha256": "561352e1d7c1d75a7567576846390c13483e9893db3076715996745012ea647d",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-04-shallow-clean-edit.png",
+          "sha256": "2f514cc6775dfb12a45db907b40ef27604fcd8e02faf02c4a2d9d01f053a591a",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-04-noisy-input.png",
+          "sha256": "eccf9bd90ba2f54e83b11198baa2556cc73cd17689adc9427a83f08fbb96b073",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-04-noisy-exposure65.png",
+          "sha256": "f6b42b5a357e03896612c239de3c0ce2da91b8e3103b64097cdda88d96782db9",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-04-noisy-brightness35.png",
+          "sha256": "3da65456b81a897007d212d17ae3e9bac60451c0763081a591fb3b425b2e6abf",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-04-noisy-exposure40-shadows50.png",
+          "sha256": "7244baae31425bf998078b63305bc57e54875c66b36e70296ac8a1a33c4e00fa",
+          "size": [
+            626,
+            418
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261120,
+        "kind": "independent chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-04.jpg",
+      "sheet_sha256": "fa94ffb1db02d49051557e10376435dcd34f63b4aae3a79a84509477d0984a37"
+    },
+    {
+      "id": "visual-risk-05",
+      "source_id": "train-041",
+      "group_id": "45d5b1ddcfb619f9cf34a100fa155c5407b64ad08d179486b9cf795e07db2bbc",
+      "domain": "portrait",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-041/original.png",
+      "canonical_sha256": "f2cf35a32d0c257454d4c1a4dad282b9966adfb04e16d78ce2eba8879678571e",
+      "original_source_sha256": "002dd6be0c42e2d430ed6a1a9ab46564513a461c3082694cc8c90bec6bb49bf3",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-05-canonical.png",
+          "sha256": "c09c86a08ec9faae4f14093ee2b4251dbcee10f15c8c671c6b1ef2d60fac616e",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-05-deep-clean-input.png",
+          "sha256": "784240132c43e06eb27900d7f1f941f67f39a392081689fea40be7e98051784b",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-05-deep-clean-edit.png",
+          "sha256": "29e80eb3f4073d8ff3e7d68bc052e3980396e8859973a6c3798bd17d71b64348",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-05-shallow-clean-input.png",
+          "sha256": "d40b7a974f12762d1ff556c05ba7c701e172ef9fb1aa4c02a51302b58385a306",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-05-shallow-clean-edit.png",
+          "sha256": "9b25bba4d52ae3b9a24bf27eb9a1dc5a73ba4cbe35674433e5b0a32c3d5f8484",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-05-noisy-input.png",
+          "sha256": "aecab6fbbac08f741d3f31117306eb3032ff090ddc1c5461411469d629773a74",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-05-noisy-exposure65.png",
+          "sha256": "2919e2c02a6e878018a17aced8be4fa731c699f4a65be28877f6a3af48d04898",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-05-noisy-brightness35.png",
+          "sha256": "b11e6b4a907b2005540115e4554389e68cae75964f5a1fe129440f705c3140f2",
+          "size": [
+            627,
+            418
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-05-noisy-exposure40-shadows50.png",
+          "sha256": "24b9c6720d4fb4ba150868c294c02aa9d4ecbe17f689e8e1f7be1654b73834cf",
+          "size": [
+            627,
+            418
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261121,
+        "kind": "horizontal chroma banding plus coarse smooth chroma noise",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-05.jpg",
+      "sheet_sha256": "20e2f13b1dd8704949fbb6399b8e2375bdd0087a495537157b5154df46dadafa"
+    },
+    {
+      "id": "visual-risk-06",
+      "source_id": "train-045",
+      "group_id": "a4dfc6557bebf076aa3ec01ea76ad597c28bf70a59da944c9a101a357d02cb81",
+      "domain": "portrait",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-045/original.png",
+      "canonical_sha256": "a8a10244761a9b4e9b91d1041f2f6bde5d2ff51c5453a627810504c49809f345",
+      "original_source_sha256": "0b4dfff8227f29f67e4c3df2b2933b287546c041f74e188977799e773eb45c23",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-06-canonical.png",
+          "sha256": "892c9c9e4d36efc0c2b6bc750adff60ced9159d9bd59e6399aac45afcf92f2ed",
+          "size": [
+            627,
+            417
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-06-deep-clean-input.png",
+          "sha256": "bb3608d9577cf9f41759b0c596a2023c77dd676fd874b97fd036b3ea66833fa1",
+          "size": [
+            627,
+            417
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-06-deep-clean-edit.png",
+          "sha256": "5ef789dc611e70148647933bb0194a7c15ce1b284c5c0373eaed7c681443d737",
+          "size": [
+            627,
+            417
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-06-shallow-clean-input.png",
+          "sha256": "d74001267e88708dc755c6f7f21d7c259b38f164a445e5eaecc7376d1d49ef2c",
+          "size": [
+            627,
+            417
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-06-shallow-clean-edit.png",
+          "sha256": "f62411979d67a2204b3a7b02a4ad1f9bf5fcf7412c658b68a9f716b4bfe0ac62",
+          "size": [
+            627,
+            417
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-06-noisy-input.png",
+          "sha256": "1ca5734478115ef5f66a3396461da87018d5f1ff63b7e8493a1d67874a882635",
+          "size": [
+            627,
+            417
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-06-noisy-exposure65.png",
+          "sha256": "0673da6dae9a337d2e81e7737d17cabea9edb4fb6630c3609d0ed61f480cace2",
+          "size": [
+            627,
+            417
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-06-noisy-brightness35.png",
+          "sha256": "a9de5750844cc8d55ba2bdae2c62dff687db500270e300e53efc5f7fb283e169",
+          "size": [
+            627,
+            417
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-06-noisy-exposure40-shadows50.png",
+          "sha256": "2e739f6097594894225e3cd4418f3a86752dc8cc5b8b03693d7387020f4667d0",
+          "size": [
+            627,
+            417
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261122,
+        "kind": "small chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-06.jpg",
+      "sheet_sha256": "3d4ee873eebe1c297ce3696c30293893df1fa5e3570b1464447d44898c9099b5"
+    },
+    {
+      "id": "visual-risk-07",
+      "source_id": "train-057",
+      "group_id": "a47cd897e4aa70d1d8922678b59d7e1c61f5a6ba88cb9939a2d93ae37648c113",
+      "domain": "portrait",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-057/original.png",
+      "canonical_sha256": "1bc5ae65274aff6e2e051c17fae25d6a394064799f2134affcb3a84378c8cb34",
+      "original_source_sha256": "49c5cd4254791235a14917172d83e5d1360202f0960dcbd77a7ade7d51698cd7",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-07-canonical.png",
+          "sha256": "db89afd99e6409d1c436db43a36a6b8c833943b965e245ab0e296c08390e0707",
+          "size": [
+            483,
+            542
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-07-deep-clean-input.png",
+          "sha256": "f9ea20146f4b8216bd48fca5f9512246caefd8ae80199d5784bc2bf23e87e621",
+          "size": [
+            483,
+            542
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-07-deep-clean-edit.png",
+          "sha256": "bcf2c02be00cbd9e4589ff3cde3607ce33f45f23bc10bda1490c32ebfb28e69b",
+          "size": [
+            483,
+            542
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-07-shallow-clean-input.png",
+          "sha256": "55c85165f8d1bf28e5cdd0bbfb34ccff075a9e3f2994a85b5ef291b97d7bea70",
+          "size": [
+            483,
+            542
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-07-shallow-clean-edit.png",
+          "sha256": "3bbc5a11593915035e67f6ec65bbe58ec54ad530f50b1862b7624ccde688a9dd",
+          "size": [
+            483,
+            542
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-07-noisy-input.png",
+          "sha256": "815c3aa51c06b0a2b5c2088a5b406310c2db79b9edb3eb9b95bdf787946a03f7",
+          "size": [
+            483,
+            542
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-07-noisy-exposure65.png",
+          "sha256": "a1596c8feebd1c01ab9dcb4c7e9f558c693859cdfa3e373cea802a90eb8b1d65",
+          "size": [
+            483,
+            542
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-07-noisy-brightness35.png",
+          "sha256": "b0b6cf50c8f9d8a80c24acc0f92fffd31b4d7ac9b41f8105243eb5e2cedde5cc",
+          "size": [
+            483,
+            542
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-07-noisy-exposure40-shadows50.png",
+          "sha256": "7c08f848190c0c65004d00c0d1619b8b5d530253775c5a20f00ef2e4359f18ab",
+          "size": [
+            483,
+            542
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261123,
+        "kind": "independent chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-07.jpg",
+      "sheet_sha256": "45d0f971ca8fb0106be630cb831df2cc34694b603d08e5d27e7679a6496d176c"
+    },
+    {
+      "id": "visual-risk-08",
+      "source_id": "train-066",
+      "group_id": "b7caf29ebf5788b75f0397efc9a273104232facc03ffac25c05b5bd279a883d1",
+      "domain": "portrait",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-066/original.png",
+      "canonical_sha256": "f409405195f4feaa1f620fe4425a1c8c63ae0ed992d1c200c25cb28d607d815e",
+      "original_source_sha256": "145cd238c013051ee5a9cb9d70944d31540ef9986ccc0d8876fd3623b0558025",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-08-canonical.png",
+          "sha256": "592cb291de1d4d616c19298741393ad2ec89cec505fdcb72dcb6694a4a0c1db1",
+          "size": [
+            434,
+            603
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-08-deep-clean-input.png",
+          "sha256": "ff1cce95a766f80cd83385086f4791a58473d33c43128683a91b35e8e15c48b0",
+          "size": [
+            434,
+            603
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-08-deep-clean-edit.png",
+          "sha256": "a56c9a565fbcc03949b19d084e6681f09a74ddf476d346a0f4f857eb2b41c5b8",
+          "size": [
+            434,
+            603
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-08-shallow-clean-input.png",
+          "sha256": "bb08846321d50c3971315db6c7cd36e836b663547ef81fed43c34cbbe168936a",
+          "size": [
+            434,
+            603
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-08-shallow-clean-edit.png",
+          "sha256": "28f9da3d19f96e7e1247764c824d83beb783aa15928c994ef27a692e187b7917",
+          "size": [
+            434,
+            603
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-08-noisy-input.png",
+          "sha256": "4efae39714567e97aa995d97a0d774fc155cd68839e0b05c3b29b5f784602b64",
+          "size": [
+            434,
+            603
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-08-noisy-exposure65.png",
+          "sha256": "8ab263eedc9ee626c209f4ea22c50f8cadc8d193f6d4d71c5383524a11d5eb31",
+          "size": [
+            434,
+            603
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-08-noisy-brightness35.png",
+          "sha256": "91ffe160506cf3633c6da5946ae6a7c182c16574b806a2a4bc065617b90a7184",
+          "size": [
+            434,
+            603
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-08-noisy-exposure40-shadows50.png",
+          "sha256": "c646c0133c48c42fa9fc7a5c562823bbabebd0536dcf545bcb5692cdde2c84be",
+          "size": [
+            434,
+            603
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261124,
+        "kind": "horizontal chroma banding plus coarse smooth chroma noise",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-08.jpg",
+      "sheet_sha256": "9a77ba73a4163e10f5b78146da01e7c3747dad31d1c1ea56f41ebd3fd066eb81"
+    },
+    {
+      "id": "visual-risk-09",
+      "source_id": "train-096",
+      "group_id": "07c91b5456b77e45a05d7ec03fd6683aa6a53cd9b18ffeb77d5e398f30aed3fa",
+      "domain": "portrait",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-096/original.png",
+      "canonical_sha256": "cc52f94d06308ab9ca42bba8ba4f8e6a28e71d1e45f2372c7e65e74f723f21d2",
+      "original_source_sha256": "ba8b41a903d433709b6c003ca609aa53f87eca10389ee051c3db9c160d9f8140",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-09-canonical.png",
+          "sha256": "cc52f94d06308ab9ca42bba8ba4f8e6a28e71d1e45f2372c7e65e74f723f21d2",
+          "size": [
+            423,
+            503
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-09-deep-clean-input.png",
+          "sha256": "78a8a8defa15fa61e2ced4d1d335534f8d26f4a0991bd887e1e18972a6c95861",
+          "size": [
+            423,
+            503
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-09-deep-clean-edit.png",
+          "sha256": "6c1cc9ee9d2537dcf7dbcab799950bf2a4abc0652583462b767d2432ef2d4e72",
+          "size": [
+            423,
+            503
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-09-shallow-clean-input.png",
+          "sha256": "8c72cb303ced6247ecfbdf7516066f3e7cb91765002d0e2c86178ecdf087ff0c",
+          "size": [
+            423,
+            503
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-09-shallow-clean-edit.png",
+          "sha256": "89c797e42fa92342708c4dae5724f5773ab725e9ffdca4c7c0246b214e03dbef",
+          "size": [
+            423,
+            503
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-09-noisy-input.png",
+          "sha256": "3459ff0750f3c8c580775e9ded0363e1c4c66eabaff3d908304aa7f400bdd36f",
+          "size": [
+            423,
+            503
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-09-noisy-exposure65.png",
+          "sha256": "c7feb78f44d960081b337e7740753b7970ea3956b1ed36dceaa109275a211ad7",
+          "size": [
+            423,
+            503
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-09-noisy-brightness35.png",
+          "sha256": "0e21fe614dd9a4228ee00670d6e54d6c4a1e916ee10989d3a354d21b9c2b757b",
+          "size": [
+            423,
+            503
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-09-noisy-exposure40-shadows50.png",
+          "sha256": "7f4fa8f32d61b87d9787943c39a835fbd3b80e9a2d852e3d86f9f96c393c6035",
+          "size": [
+            423,
+            503
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261125,
+        "kind": "small chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-09.jpg",
+      "sheet_sha256": "d5dbd612dd0fb9671624beb49ef3622b00b1fa014ae88bb2345f88fda6553085"
+    },
+    {
+      "id": "visual-risk-10",
+      "source_id": "train-113",
+      "group_id": "717f5a4451b1acb247400f67ca7f4cf8859e75e0f46aa090210ab8413a0b8f75",
+      "domain": "portrait",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-113/original.png",
+      "canonical_sha256": "fad109508e12cd145e8718cbd0a3a8d278c0b8cbd0d6f29dce9994e690409f35",
+      "original_source_sha256": "4dae13c8bbfaa4045b3bf899a68e9dabc798c468d65d304b7de405c03abc6684",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-10-canonical.png",
+          "sha256": "61b1147bde340f9972eb54ef665b2aff2c4dda5dfa183ec68f0e48a5aa53a674",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-10-deep-clean-input.png",
+          "sha256": "b6991a646804b5939d34e4193fc2a24270173e93278fb0e4313f662e08ce6b36",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-10-deep-clean-edit.png",
+          "sha256": "9c53dab78b309f9a09fd81cedf1f49b3b2f9821b7be3056aaf2fdf7b4551c4b2",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-10-shallow-clean-input.png",
+          "sha256": "f0ed2593a30976fc27105df3c3682caeae9d95abc4c1dbdaaedbcf1a329396ef",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-10-shallow-clean-edit.png",
+          "sha256": "5d6ccde2dc66b7f0f95d655126e29ea666735231bbf4378134b1c1c1470f42f9",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-10-noisy-input.png",
+          "sha256": "06e7b76e804b816904437baa9fde706028cd8eb5113338a164d8bff59313c877",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-10-noisy-exposure65.png",
+          "sha256": "db8784d1f84fefb2b1abb5c6c026415869288133f4b2eb4f6ccfd998ef21d6e6",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-10-noisy-brightness35.png",
+          "sha256": "f354416f667d509a6432300ea59d631727178f0abc6b932a90606a5c532ecea5",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-10-noisy-exposure40-shadows50.png",
+          "sha256": "a32c9a3848e33962cd647941aa77d81efc5b434f854986a5a1406f885188e97a",
+          "size": [
+            591,
+            443
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261126,
+        "kind": "independent chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-10.jpg",
+      "sheet_sha256": "ee05796b0f05e318a7d4980d21e7284886565489596b3fa48b3e90650a4ef14c"
+    },
+    {
+      "id": "visual-risk-11",
+      "source_id": "train-021",
+      "group_id": "206a21d03934f7ea90c104142cdae141bf9829a862f36b2968e41318c33d50fe",
+      "domain": "landscape",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-021/original.png",
+      "canonical_sha256": "d3a3740e7c44c9da093394657cf454744f110108d23440c1155003fab8b2eacf",
+      "original_source_sha256": "2d1c2e857746d63b2dcbd3e5be55878f5bfa853f297d70273e1c71a3fe04e3da",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-11-canonical.png",
+          "sha256": "c71a8c4e34cec2e31975cb2de135e5e281538cb66345646136bdac00aff18978",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-11-deep-clean-input.png",
+          "sha256": "2abc836acd8b3867ce3517d668b65f9b92986b4c4c20255eb0050c785a5a37db",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-11-deep-clean-edit.png",
+          "sha256": "a25c4566ad38d8ebe72f3f5a9ac502140f6af96d387ce5e49ea75a12d56dc4b2",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-11-shallow-clean-input.png",
+          "sha256": "09fee7f6f443d30127d4b53eedd5e4927f151e0d668c6dad2a70713978995314",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-11-shallow-clean-edit.png",
+          "sha256": "4ad3213995fc5347a3a19c2902f5f543231a34190dbd467de810ae834b8d9ee4",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-11-noisy-input.png",
+          "sha256": "00d0c15801968f013c0397f3b6daa6cd0ed7649431f4776ff19b3512dc861348",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-11-noisy-exposure65.png",
+          "sha256": "cc76b15bac1f3f1368df472860d32c0fe849b53d6f9efae9ade9f02664c7e0f1",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-11-noisy-brightness35.png",
+          "sha256": "dcb10b0bba9717b9480497b22e6082f6f759488696244d0eae95cfb7743ba712",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-11-noisy-exposure40-shadows50.png",
+          "sha256": "fb6ff0bc018a5e85f0c5514ee26d549b40c436205fbb5d31993916670700df7f",
+          "size": [
+            683,
+            383
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261127,
+        "kind": "horizontal chroma banding plus coarse smooth chroma noise",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-11.jpg",
+      "sheet_sha256": "ec1ec94e2af129239cb4324c76c9021b8ad5022669cfbf9ab5cb7c0ae712f72b"
+    },
+    {
+      "id": "visual-risk-12",
+      "source_id": "train-043",
+      "group_id": "692cab1d6db15e5c67238549f2f69ca1c4affbe68cc83e2b3404def25a43e540",
+      "domain": "landscape",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-043/original.png",
+      "canonical_sha256": "ce468f911d37de90e27324f01a97436eab9365f1c1a936927815e9ef1ffac44d",
+      "original_source_sha256": "f544914e6bfafaae85f4fa0750e18d70ef8c39620f03e04916bae81f7e87b811",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-12-canonical.png",
+          "sha256": "f3e98762627b5cf8d7a17059d9ca1abb9e0100d4315e3874143040587c417e3f",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-12-deep-clean-input.png",
+          "sha256": "240d06e8459bfcad1d43ab02161e24b6c40c42d603ab8d4e0d6286204a497b02",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-12-deep-clean-edit.png",
+          "sha256": "457ce08f52f2ab703a757092b33a8e89c765f457eda3724329001aa73243ea02",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-12-shallow-clean-input.png",
+          "sha256": "107a76c166f2355d9f741cca2f4d5a28f71d2aac124acf6e5e07d988a562ebfe",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-12-shallow-clean-edit.png",
+          "sha256": "a8019b26ea5795fa43cfefbf099a1a421c5d971ac242c96d606d518aee6df1ad",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-12-noisy-input.png",
+          "sha256": "70272b3a954f93c8dbd0202a7df8afcb5029fea26f13cebede84fd2f1211aea6",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-12-noisy-exposure65.png",
+          "sha256": "ecfa8cb832326b5994076d7ac88d37ccc335f758c1b0553451474873072bec31",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-12-noisy-brightness35.png",
+          "sha256": "4728665ad7f9644515d2f97d0be8e23d7e91efdbc56173f56f7c5c111294247e",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-12-noisy-exposure40-shadows50.png",
+          "sha256": "e177c01eec59ef76e9d04a60ed074b66d168f257c8f2f1e6a031fca999cce3ff",
+          "size": [
+            591,
+            443
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261128,
+        "kind": "small chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-12.jpg",
+      "sheet_sha256": "4f81d6fa88b827aa87afddd09e3edbbb6b1167fd75d5f11b946f81c0ae0e92cb"
+    },
+    {
+      "id": "visual-risk-13",
+      "source_id": "train-086",
+      "group_id": "dfbffb87db40cd34005da83dab07c01911109060dc1f0058b4f644dbbb696245",
+      "domain": "landscape",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-086/original.png",
+      "canonical_sha256": "9e09ca600c401d4ad8ad8e9bb2bc219293cfd16144e254e9373e8f48684d01ef",
+      "original_source_sha256": "8be5a25bc2d7dc21cd5cfbc8fea5e92f2936e0d3a0f8dff80fad8cbbbed50aa0",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-13-canonical.png",
+          "sha256": "7583ff21bb1579f156cdf87b0a0848901b73eab7c2455acf333be0713e18fdfc",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-13-deep-clean-input.png",
+          "sha256": "946edeb57079c831f669fd737e1a9ecebcbd4a7937468c4330b583f63728629c",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-13-deep-clean-edit.png",
+          "sha256": "6406c165fdfea4049dad78ffa88e239a0dd02f62433cc157c2f20b4eabbf0494",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-13-shallow-clean-input.png",
+          "sha256": "ccc05ccdff2489950a99842284f7d273e734d5c2d385d0d3323e62379a272189",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-13-shallow-clean-edit.png",
+          "sha256": "3d2024ef807613787c379c8f0f3867e47e03af3d3e819e1415ea1b6df7182d00",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-13-noisy-input.png",
+          "sha256": "994812fcb6d47677125f140cbe673c2a3cd3f53903a9c4ffafc2e4713b3de6be",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-13-noisy-exposure65.png",
+          "sha256": "6e4e344ed75cc1a2dbdba5f0973db27dd25f4f0cda3959066ec8f52767a1130a",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-13-noisy-brightness35.png",
+          "sha256": "8e5d9a52bf616037dc2e1bc164da84401c772c5389a075ca5c3155a43102b094",
+          "size": [
+            683,
+            383
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-13-noisy-exposure40-shadows50.png",
+          "sha256": "1735e846ad2e83983248f24f87f971b3beb567e79ca9e1f1da971854df935476",
+          "size": [
+            683,
+            383
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261129,
+        "kind": "independent chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-13.jpg",
+      "sheet_sha256": "fc595d62921c30c0fb4d4971b42f346280ea3fb9a02e22e691eb5c4affec3106"
+    },
+    {
+      "id": "visual-risk-14",
+      "source_id": "train-114",
+      "group_id": "78d38068c95e7c233bd981140712440f3a0b44b4d9d9c9a8de77e1a669780f57",
+      "domain": "landscape",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-114/original.png",
+      "canonical_sha256": "fb84704295487447d5eb8c0444b1d45fcdfa9027f082494dcd34c68c9349a730",
+      "original_source_sha256": "c22f8651038473c600c1b5a46bc15a5d045e5a601c7e9eabe9c144b925f2030b",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-14-canonical.png",
+          "sha256": "8e41af09b4ab4a503daa672c0a45e259935b24e94d2a8bb3c5a340d59b42e8cf",
+          "size": [
+            443,
+            591
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-14-deep-clean-input.png",
+          "sha256": "1c8273eda5e144b5818f14f29823885b34454028e7940ebdd528fcf4fba5aa38",
+          "size": [
+            443,
+            591
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-14-deep-clean-edit.png",
+          "sha256": "2296ab976b554b451a3aa2779cd47b10e989681605efd2bd9cc86f7fb5bad032",
+          "size": [
+            443,
+            591
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-14-shallow-clean-input.png",
+          "sha256": "08e1241dca0985682a15d327de81c2b5d16c5c136320f4891b625a04f713ed2e",
+          "size": [
+            443,
+            591
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-14-shallow-clean-edit.png",
+          "sha256": "deff93b7bf704590bf0d7d4c865f6719b082e1b086e92a15a429e83087078e9c",
+          "size": [
+            443,
+            591
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-14-noisy-input.png",
+          "sha256": "c040db7683c0d8bab98b0ef1851b22f61875f366d1a0aaf489b64732fa3fbc70",
+          "size": [
+            443,
+            591
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-14-noisy-exposure65.png",
+          "sha256": "b8c6d205885f36b7e65c4da1f90aea7555657af353c073cf03e77735f6c1f00d",
+          "size": [
+            443,
+            591
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-14-noisy-brightness35.png",
+          "sha256": "a241e2f759144e66dfb86224233cbe892eccca25e66c715100ae79b4cb2df094",
+          "size": [
+            443,
+            591
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-14-noisy-exposure40-shadows50.png",
+          "sha256": "765b2e620750d07c02d119a92abe5a12592da61f9061d94b0d1a5c43679ad929",
+          "size": [
+            443,
+            591
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261130,
+        "kind": "horizontal chroma banding plus coarse smooth chroma noise",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-14.jpg",
+      "sheet_sha256": "33b194dc22d183df088059d6e8ce14d4524d23f3e5d1019edade077e1489aee6"
+    },
+    {
+      "id": "visual-risk-15",
+      "source_id": "train-149",
+      "group_id": "8ccef5f1a78d86b6131dad6c249e0f9d3f070e6c07e1659eecbe59149c78dee4",
+      "domain": "landscape",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-149/original.png",
+      "canonical_sha256": "eff5d7a3eebcb8237b6f46c00d9a6211be22a6ebd2c1907f9deb67e3ed0c0af5",
+      "original_source_sha256": "a714df0ccf93564f744d90f9c1248a03804419bb06c72ca205947535b557d993",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-15-canonical.png",
+          "sha256": "769c9e6866b077d90a18c287f034a0c7717232e98e50e6984e702a70f4cc7709",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-15-deep-clean-input.png",
+          "sha256": "bfcfae801b75d937ab89dc1feed4840c9fc6789a4d7f89f30fe7a8338bdbb698",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-15-deep-clean-edit.png",
+          "sha256": "1b058e558a373a8e53c7658f4ebe6cd23bb6abb48f29701fbc0afec6718ed4a4",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-15-shallow-clean-input.png",
+          "sha256": "280e064ca685dc39731acd878a37a008df51335dc62da6a1056369bb309402ae",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-15-shallow-clean-edit.png",
+          "sha256": "2560cf3707ed1d011b8bcb4e0e17ebb9edb4036aeb00e423ace048e160cbfa2b",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-15-noisy-input.png",
+          "sha256": "ce0f6e54deda1484c3f0e61736017f4ae605413b1d0298a98b9ded770010dfd3",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-15-noisy-exposure65.png",
+          "sha256": "e590e58057b7c3997843109fa20ef437b1ecdc0debea465c37b44ac1da05eab0",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-15-noisy-brightness35.png",
+          "sha256": "4bc1a84290b034299f10e4d3e3db4e57a1db0f0ac86c08540eca3cbed9c80e8f",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-15-noisy-exposure40-shadows50.png",
+          "sha256": "2498a967c2b194e642a4ad5f1bc7e1a97ee1ebc9da3a7922c3f5b088e3237982",
+          "size": [
+            682,
+            384
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261131,
+        "kind": "small chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-15.jpg",
+      "sheet_sha256": "0ca67ffc2a6a218b7cf23429a9054232cf84662c1959c32bf5e1d1b546ab45a6"
+    },
+    {
+      "id": "visual-risk-16",
+      "source_id": "train-191",
+      "group_id": "3ab215c7103db6925d0b1555c897d05c8e8c3c134dbc5b111de9c61c59689c5b",
+      "domain": "landscape",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-191/original.png",
+      "canonical_sha256": "f629655f69e33c1c8e77bacca87f8981bfaaf02ec6f547e503f0a4d608eb862b",
+      "original_source_sha256": "c03a1f9b4d4c2c0b2c4f19d007995142e2becb1f0fa18ee64e7c7d667447cbb0",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-16-canonical.png",
+          "sha256": "1a1993325c2c40eeaa9d838f764bba5fdd8643beba0362ecb60feefed5207145",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-16-deep-clean-input.png",
+          "sha256": "f771142ab79fcb0f1a3c939b7c21251d69f8954e907502a78bce7248e1ab5220",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-16-deep-clean-edit.png",
+          "sha256": "06c35ab42c286e24404d5b5454de76b98f92098ca7a5f0a1dca9ea1beb05582e",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-16-shallow-clean-input.png",
+          "sha256": "51a66ae5a9d1512bc4f7bd822c3a3825206489e155bf719bbf6a4cd2e1881e88",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-16-shallow-clean-edit.png",
+          "sha256": "f5d560ec2b28898fa27c6be0c20d7da453e6e3a68a191d037722356a71186331",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-16-noisy-input.png",
+          "sha256": "d95fb85040c974b50a821f28f7309fd95f9988830e0964a1a1b1f1ae098f3e80",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-16-noisy-exposure65.png",
+          "sha256": "fc743caccf6042f035c6c4fda4ba89ec46c44e87ae567251aef9bbbcc4a051bd",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-16-noisy-brightness35.png",
+          "sha256": "abbd875ed7b63660254ae557bfcf1eb1106bf3a8eaf53a5e801532e0aac02b7e",
+          "size": [
+            682,
+            384
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-16-noisy-exposure40-shadows50.png",
+          "sha256": "4e0651201b1b35b70f949dd89f884acd2ddf1f745bdb912e409989e161573e09",
+          "size": [
+            682,
+            384
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261132,
+        "kind": "independent chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-16.jpg",
+      "sheet_sha256": "5f721c7873625b31c56111d9165a5f846b00738a47304348693dbe10354a8ff8"
+    },
+    {
+      "id": "visual-risk-17",
+      "source_id": "train-201",
+      "group_id": "2fc703f934babe07c37bf2c6cc5a391da9be2013d19f5c19cf2806322f04458e",
+      "domain": "landscape",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-201/original.png",
+      "canonical_sha256": "52765ffff54e042623acf96d827081e05b6dcaa2c673ad40044173c13f65b940",
+      "original_source_sha256": "a32e8d092a4584f53ab5687cadd964b554830d536c6bee1a67132ef2276caf35",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-17-canonical.png",
+          "sha256": "b045070b150b0c76f42288cd301296694d546b9942cdb9398602d95fd44c305c",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-17-deep-clean-input.png",
+          "sha256": "84ab29240f54e7075bc2753d6beda1694f4d4caa87cbdb5b7516801029d4ef61",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-17-deep-clean-edit.png",
+          "sha256": "ec02b604f034d80ab7ec7773925e210d9ad3932e1826fa838b6d07b5e73e91ba",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-17-shallow-clean-input.png",
+          "sha256": "f8d91a4908191f0bdfddf540b70815662fece7476d6bddcd9b9320441eed4858",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-17-shallow-clean-edit.png",
+          "sha256": "c0dfdc2ccba70636c1d03b64545d2ca8e8ab2da177ddfc846d0540d10388fd00",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-17-noisy-input.png",
+          "sha256": "6b377e1f7c7625ccc230ce89b9e7d988c132b5d594b4344a2c75d1e9706e1ec1",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-17-noisy-exposure65.png",
+          "sha256": "fe37d91114eed920730f14e078a2b5e45a66ac61fb6cf853b50bb3fa13bf279b",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-17-noisy-brightness35.png",
+          "sha256": "84a5d7a4b0c659762dac4651180baff3cc6bb6ba02b2b8155f68875023b3dab5",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-17-noisy-exposure40-shadows50.png",
+          "sha256": "2569880bea9cf624a04ac9ac8c03ea383016ef25cef509ebb7c5bdcfbdd84fe9",
+          "size": [
+            591,
+            443
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261133,
+        "kind": "horizontal chroma banding plus coarse smooth chroma noise",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-17.jpg",
+      "sheet_sha256": "22a9325d245f1ec5a56410d31a999d0b0ab5d4a54b16df0add2d5a45621fcf84"
+    },
+    {
+      "id": "visual-risk-18",
+      "source_id": "train-210",
+      "group_id": "4e9ed855264e126376dcb6ba225f4b2b0871adb076ea6888ceb789455f0b6ff8",
+      "domain": "landscape",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-210/original.png",
+      "canonical_sha256": "6310ef3007d76d40697e844735b5175085e27df2b6aadbc30bf15e763709cfc7",
+      "original_source_sha256": "d2d3a995ddd8747909ef689183e4c849c57019fa0d524ee7f70042891b48b6d1",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-18-canonical.png",
+          "sha256": "4c126e66a363d7d18da5edfc568cb4edce7d6e86ff6c563327692c8ab86a9560",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-18-deep-clean-input.png",
+          "sha256": "dad8502d12d2330f34dadfe56c9e031ea36e39e38a40859b7ca1057bb19b5ed4",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-18-deep-clean-edit.png",
+          "sha256": "a18c52fac37c9abfa0176d5aba85d0cb61ab41df1abd9b95ea73385157fd3b0d",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-18-shallow-clean-input.png",
+          "sha256": "f35a0e2853e5494a3b886b7eae66aaba2cff67d054fdb8c57d7ba9d06f6b92dc",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-18-shallow-clean-edit.png",
+          "sha256": "52bea165ed70b679c2033fbca3199caf808a1807e8243521f4c301d102b44702",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-18-noisy-input.png",
+          "sha256": "8953d1204cee82ac458d95a4b95ee091e2153bd0e94f7d0730e1214fdd18009e",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-18-noisy-exposure65.png",
+          "sha256": "7a5d64b93feeaa150dfe91834a3be3f0ed8fda31def76f28a54d392a8baf2ac3",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-18-noisy-brightness35.png",
+          "sha256": "8adf66f1a23ce736b84d4c3e8ae408216e4f76facc411e92947ff9b05dd58deb",
+          "size": [
+            626,
+            418
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-18-noisy-exposure40-shadows50.png",
+          "sha256": "ae1e487cacd4a15dd6a5ce75e5fa91a267f3ef5b112d0349d43c77aaa989075d",
+          "size": [
+            626,
+            418
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261134,
+        "kind": "small chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-18.jpg",
+      "sheet_sha256": "091013401134b3d6823ec84873df7adfe256f20530a6c6292d128aad1635f697"
+    },
+    {
+      "id": "visual-risk-19",
+      "source_id": "train-243",
+      "group_id": "9a2ffb910de4b0c0868cc2cea9614a20c1ea4e17dde4896f7cdc007fc92b51ae",
+      "domain": "landscape",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-243/original.png",
+      "canonical_sha256": "6a37ddf29ecf781311f877d18bf74cde62ba5dd25a55de39b7d0fa8c41ac59c3",
+      "original_source_sha256": "cb3475bda3ca33e2f4a9bbca05f98fc1f228df27a18390a1b5ff5d0733634bb6",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-19-canonical.png",
+          "sha256": "d8cf1ceee65afcbbabcb146ce1bd3486d3487f4ee51a51f5584469d948649b26",
+          "size": [
+            639,
+            410
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-19-deep-clean-input.png",
+          "sha256": "e365b818287b25e8246db6633f05f6a2c4cae3a6553d020d9fa3df1d46b7e75e",
+          "size": [
+            639,
+            410
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-19-deep-clean-edit.png",
+          "sha256": "834ad29c5a6c8a129deaa620e6e1c4b309984992e6c55feb575818480260727f",
+          "size": [
+            639,
+            410
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-19-shallow-clean-input.png",
+          "sha256": "11fc952c5776db1eec9407e69462c79cc9fe1ec878f4dd1eec26928ab31bf8c3",
+          "size": [
+            639,
+            410
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-19-shallow-clean-edit.png",
+          "sha256": "4fb76da7e553958271649cf99264acad6ac363fcd0a13dfb55921ad756d57ba8",
+          "size": [
+            639,
+            410
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-19-noisy-input.png",
+          "sha256": "4111a8ec07ba15833c7c5cf344cd92546760d9cbdcfa6413526f336a68f35bc0",
+          "size": [
+            639,
+            410
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-19-noisy-exposure65.png",
+          "sha256": "279b66ca36489837546a63f95f9aa0456fc947c79d4cdb348ae1a7ad12ba4238",
+          "size": [
+            639,
+            410
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-19-noisy-brightness35.png",
+          "sha256": "497911d22ee17539a801e46fc22577283b3077fac7c707338d51022374f5f445",
+          "size": [
+            639,
+            410
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-19-noisy-exposure40-shadows50.png",
+          "sha256": "33af318997c8458f7bc5932a685e0fc7a574249991659d01d876f23ddbc48730",
+          "size": [
+            639,
+            410
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261135,
+        "kind": "independent chroma blocks plus fine grain",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-19.jpg",
+      "sheet_sha256": "2f6e82d44cca5cba9c21e8bf78abd5b724952cb879caa31b5d7923b17723194a"
+    },
+    {
+      "id": "visual-risk-20",
+      "source_id": "train-278",
+      "group_id": "28c79bf1e101cd7ab57f55b70100249a6f979b8adea777a82341d4117e86d06c",
+      "domain": "landscape",
+      "canonical_photo": "data/training/functional-v2-20261104/inputs/train-278/original.png",
+      "canonical_sha256": "d0b9e00647eecacede563e6747eaa839ccc66501eaeb10dc182e1840f75cb126",
+      "original_source_sha256": "0b64d2a3467d4a318cb7f56c656232574fa30e7af5c67320efacc183a580a232",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "input_policy": "Only one derived input image, the identical original-language request and frozen round7 tool system prompt. Canonical/target/noise metadata/expected decision never enter inference.",
+      "images": {
+        "canonical": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-20-canonical.png",
+          "sha256": "5d833cc5fcc7e86fc42039529c0bb88b9b45e3c28266245f22d71023b784c2ed",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "deep-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-20-deep-clean-input.png",
+          "sha256": "a7bed5a5fe95a168c5cbcf5541d5ebd1c174f8fd8be7385f69d5f0e9c93dc763",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "deep-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-20-deep-clean-edit.png",
+          "sha256": "488d3479ce85b98c5b9ba4a0f701f8a21e7c12b8701928d8f04d7f8c1b02a90a",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "shallow-clean-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-20-shallow-clean-input.png",
+          "sha256": "d2c0a2c5007daf71c0994e86408029ae45add46007a09b12e85cc5178d68837f",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "shallow-clean-edit": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-20-shallow-clean-edit.png",
+          "sha256": "00aadb615607c81cc100cfe38ac2f5d3506afdb3b02634d4b47fb7ae48ab5fbc",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-input": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-20-noisy-input.png",
+          "sha256": "bfe197947badf3f29f2621fb9c9fc933f486c8c1e9ec9e5a1d436233f2ca167e",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-exposure65": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-20-noisy-exposure65.png",
+          "sha256": "9b74ec04ecce9dee9f12a288bf685a017cd424a91f9c2367500aee621dc79e26",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-brightness35": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-20-noisy-brightness35.png",
+          "sha256": "b24b74af460db4e8df532e4a5f21e6aaefe7dc50829a99c3ac43c916d70f64c0",
+          "size": [
+            591,
+            443
+          ]
+        },
+        "noisy-exposure40-shadows50": {
+          "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-20-noisy-exposure40-shadows50.png",
+          "sha256": "3b67c8e2c1c27ac1a79046927d724d220870157621a084c1422f003faacbe158",
+          "size": [
+            591,
+            443
+          ]
+        }
+      },
+      "corruption": {
+        "seed": 20261136,
+        "kind": "horizontal chroma banding plus coarse smooth chroma noise",
+        "synthetic": true,
+        "not_real_sensor_capture": true
+      },
+      "candidate_parameters": {
+        "noisy-exposure65": {
+          "exposure": 65
+        },
+        "noisy-brightness35": {
+          "brightness": 35
+        },
+        "noisy-exposure40-shadows50": {
+          "exposure": 40,
+          "shadows": 50
+        }
+      },
+      "proposed_decisions": {
+        "deep-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65
+          }
+        },
+        "shallow-clean": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40
+          }
+        },
+        "noisy": {
+          "action": "decline",
+          "reason": "unreliable_quality"
+        }
+      },
+      "target_status": "CPU_candidate_only_NOT_admitted",
+      "sheet": "experiments/functional-v10-20261106/counterfactual-candidates/panels/visual-risk-20.jpg",
+      "sheet_sha256": "937fe3b61f4baf71793559935abe938cdeb27b2db7390cc189a23d9668819fb3"
+    }
+  ],
+  "all_groups_within_previous_training160": true,
+  "development_or_acceptance_photos_added": false,
+  "label_review_required": "Every proposed edit must be visually completed and acceptable. Proposed quality refusals require direct review of input and all three actual attempted outputs; disagreement stays uncertain and is not admitted. No L1-based selection.",
+  "limitation": "Synthetic corruption may create an easy shortcut; heldout real-photo functional judgment is still required. These candidates do not prove refusal reliability.",
+  "previous_round9_status": "Remaining prespecified checkpoints pending at CPU preparation; no round10 GPU work is authorized by this file alone. Requires separate final admission and frozen protocol within original16GPUh cap."
+}

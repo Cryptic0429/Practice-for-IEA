@@ -1,0 +1,1019 @@
+{
+  "at": "2026-11-07T07:16:43.023493+00:00",
+  "protocol_sha256": "83c1e01a827223cbfc72dfd8b8bfc19e0dd99b7938d7a1a2c887661dacb156de",
+  "parent_result_sha256": "3622bf1ef77ceb9af45df4a11f99147bb3435e9dc77fa82dca14a0a24065e181",
+  "cpu_threads": 16,
+  "device": "cpu",
+  "model": "models/Qwen2.5-VL-7B-Instruct",
+  "base_config_sha256": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+  "base_index_sha256": "73b333b0b16e5286ddba615d2caebcd495cf7e616f52eb217a81781393d79de9",
+  "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "correct_text_controls": 10,
+  "correct_held_intents": 30,
+  "summary": {
+    "qwen_preset": {
+      "language_rows": {
+        "complete": 28,
+        "uncertain": 2,
+        "partial": 2
+      },
+      "bilingual_completed_semantics": 13,
+      "bilingual_same_nonempty_choice": 14,
+      "both_requests_bilingually_completed": 5,
+      "successful_exclusive_strength_reversals": 5
+    },
+    "qwen_pixels": {
+      "language_rows": {
+        "complete": 28,
+        "uncertain": 2,
+        "partial": 2
+      },
+      "bilingual_completed_semantics": 13,
+      "bilingual_same_nonempty_choice": 14,
+      "both_requests_bilingually_completed": 5,
+      "successful_exclusive_strength_reversals": 5
+    }
+  },
+  "controls": [
+    {
+      "id": "keep",
+      "language": "zh",
+      "instruction": "请原样保留，不要编辑。",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 21.46112060546875,
+        "B": 20.381397247314453,
+        "C": 27.082839965820312
+      },
+      "selected": "C"
+    },
+    {
+      "id": "keep",
+      "language": "en",
+      "instruction": "Keep the picture unchanged.",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 22.936664581298828,
+        "B": 21.180091857910156,
+        "C": 28.671030044555664
+      },
+      "selected": "C"
+    },
+    {
+      "id": "remove",
+      "language": "zh",
+      "instruction": "请把背景里的路人移除。",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 20.742069244384766,
+        "B": 20.41623878479004,
+        "C": 25.42498779296875
+      },
+      "selected": "C"
+    },
+    {
+      "id": "remove",
+      "language": "en",
+      "instruction": "Remove the person in the background.",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 20.840187072753906,
+        "B": 20.681564331054688,
+        "C": 26.01049041748047
+      },
+      "selected": "C"
+    },
+    {
+      "id": "sepia",
+      "language": "zh",
+      "instruction": "加一点棕褐色的复古色调。",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 22.455955505371094,
+        "B": 22.519168853759766,
+        "C": 26.06324005126953
+      },
+      "selected": "C"
+    },
+    {
+      "id": "sepia",
+      "language": "en",
+      "instruction": "Add a subtle brown sepia tone.",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 22.012311935424805,
+        "B": 21.89543342590332,
+        "C": 25.937110900878906
+      },
+      "selected": "C"
+    },
+    {
+      "id": "whole",
+      "language": "zh",
+      "instruction": "把整张照片的曝光明显提高。",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 24.738670349121094,
+        "B": 26.715669631958008,
+        "C": 24.628957748413086
+      },
+      "selected": "B"
+    },
+    {
+      "id": "whole",
+      "language": "en",
+      "instruction": "Raise the exposure of the whole photograph noticeably.",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 23.532302856445312,
+        "B": 26.546234130859375,
+        "C": 23.901439666748047
+      },
+      "selected": "B"
+    },
+    {
+      "id": "darken",
+      "language": "zh",
+      "instruction": "显著压暗阴影，保持高光。",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 24.420459747314453,
+        "B": 26.433019638061523,
+        "C": 25.347530364990234
+      },
+      "selected": "B"
+    },
+    {
+      "id": "darken",
+      "language": "en",
+      "instruction": "Darken the shadows noticeably, preserving highlights.",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 23.856021881103516,
+        "B": 27.0394287109375,
+        "C": 24.286819458007812
+      },
+      "selected": "B"
+    },
+    {
+      "id": "unspecified",
+      "language": "zh",
+      "instruction": "把暗部提亮，亮部原样保留。",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 27.13164520263672,
+        "B": 26.989639282226562,
+        "C": 26.00804901123047
+      },
+      "selected": "A"
+    },
+    {
+      "id": "unspecified",
+      "language": "en",
+      "instruction": "Lift the shadows and keep the highlights unchanged.",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 27.957355499267578,
+        "B": 26.896080017089844,
+        "C": 26.313539505004883
+      },
+      "selected": "A"
+    },
+    {
+      "id": "conflict",
+      "language": "zh",
+      "instruction": "暗部只提一点点，但同一处暗部也要大幅提亮。",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 23.869922637939453,
+        "B": 24.196256637573242,
+        "C": 26.446258544921875
+      },
+      "selected": "C"
+    },
+    {
+      "id": "conflict",
+      "language": "en",
+      "instruction": "Lift the shadows a little, but also lift the same shadows substantially.",
+      "expected": "C",
+      "kind": "text_control",
+      "logits": {
+        "A": 22.306503295898438,
+        "B": 24.383697509765625,
+        "C": 24.51272201538086
+      },
+      "selected": "C"
+    },
+    {
+      "id": "keep_highlights",
+      "language": "zh",
+      "instruction": "明显提亮阴影，不要提亮高光。",
+      "expected": "B",
+      "kind": "text_control",
+      "logits": {
+        "A": 25.057687759399414,
+        "B": 27.30887222290039,
+        "C": 25.01264190673828
+      },
+      "selected": "B"
+    },
+    {
+      "id": "keep_highlights",
+      "language": "en",
+      "instruction": "Lift the shadows noticeably, but do not brighten the highlights.",
+      "expected": "B",
+      "kind": "text_control",
+      "logits": {
+        "A": 24.115131378173828,
+        "B": 27.67348289489746,
+        "C": 23.369272232055664
+      },
+      "selected": "B"
+    }
+  ],
+  "predictions": [
+    {
+      "id": "p346",
+      "request": "mild",
+      "language": "zh",
+      "instruction": "给暗侧一点点提亮。重点看面部暗侧与头发，保留原肤色和窗边亮部。",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 30.543182373046875,
+        "B": 28.452865600585938,
+        "C": 27.88678741455078
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p346",
+      "request": "mild",
+      "language": "en",
+      "instruction": "Open the shadows a touch around the shadow side of the face and the hair, preserving skin colour and the bright window area.",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 28.250511169433594,
+        "B": 27.759666442871094,
+        "C": 25.708789825439453
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p346",
+      "request": "strong",
+      "language": "zh",
+      "instruction": "把暗侧抬亮得明显一些。重点看面部暗侧与头发，保留原肤色和窗边亮部。",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 27.04618263244629,
+        "B": 30.16098976135254,
+        "C": 25.364416122436523
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p346",
+      "request": "strong",
+      "language": "en",
+      "instruction": "Raise the dark areas noticeably around the shadow side of the face and the hair, preserving skin colour and the bright window area.",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 25.9700927734375,
+        "B": 28.91202735900879,
+        "C": 23.7134952545166
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p377",
+      "request": "mild",
+      "language": "zh",
+      "instruction": "轻微打开阴影。重点看脸的暗侧与西装，保留受光侧的肤色和深色背景。",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 30.19556999206543,
+        "B": 28.958724975585938,
+        "C": 27.702634811401367
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p377",
+      "request": "mild",
+      "language": "en",
+      "instruction": "Give the shadows a subtle lift around the shadowed cheek and suit, retaining the lit skin tone and the dark backdrop.",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 28.13266944885254,
+        "B": 26.784828186035156,
+        "C": 26.964977264404297
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p377",
+      "request": "strong",
+      "language": "zh",
+      "instruction": "大幅抬亮阴影。重点看脸的暗侧与西装，保留受光侧的肤色和深色背景。",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 26.534717559814453,
+        "B": 30.34270477294922,
+        "C": 24.492870330810547
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "uncertain"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "uncertain"
+        }
+      }
+    },
+    {
+      "id": "p377",
+      "request": "strong",
+      "language": "en",
+      "instruction": "Give the shadows a pronounced lift around the shadowed cheek and suit, retaining the lit skin tone and the dark backdrop.",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 25.579151153564453,
+        "B": 28.096633911132812,
+        "C": 23.82654571533203
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "uncertain"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "uncertain"
+        }
+      }
+    },
+    {
+      "id": "p150",
+      "request": "mild",
+      "language": "zh",
+      "instruction": "微微抬亮暗处。重点看室内人像的脸和深色发丝，保留灯饰高光和白色衣服。",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 28.693336486816406,
+        "B": 27.95488929748535,
+        "C": 26.352460861206055
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p150",
+      "request": "mild",
+      "language": "en",
+      "instruction": "Brighten the dark parts by a hint around the face and dark hair, keeping the lamp highlights and the white clothing.",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 27.5133113861084,
+        "B": 26.684925079345703,
+        "C": 26.360027313232422
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p150",
+      "request": "strong",
+      "language": "zh",
+      "instruction": "暗处需要有看得出的提亮。重点看室内人像的脸和深色发丝，保留灯饰高光和白色衣服。",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 27.13675308227539,
+        "B": 29.62675666809082,
+        "C": 25.295551300048828
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p150",
+      "request": "strong",
+      "language": "en",
+      "instruction": "Lift the shadows until the dark detail stands out around the face and dark hair, keeping the lamp highlights and the white clothing.",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 27.383136749267578,
+        "B": 28.360424041748047,
+        "C": 24.9461669921875
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p358",
+      "request": "mild",
+      "language": "zh",
+      "instruction": "略微提亮暗部。重点看户外合照中几个人的脸和深色衣服，保留天空和白裙层次。",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 28.466909408569336,
+        "B": 27.798547744750977,
+        "C": 27.031707763671875
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p358",
+      "request": "mild",
+      "language": "en",
+      "instruction": "Slightly brighten the shadows around faces and dark clothing in the group, keeping the sky and white dress detail.",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 28.37741470336914,
+        "B": 28.025157928466797,
+        "C": 25.44671630859375
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p358",
+      "request": "strong",
+      "language": "zh",
+      "instruction": "明显打开暗部。重点看户外合照中几个人的脸和深色衣服，保留天空和白裙层次。",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 26.93508529663086,
+        "B": 28.874996185302734,
+        "C": 25.71402359008789
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p358",
+      "request": "strong",
+      "language": "en",
+      "instruction": "Give a marked lift to the shadows around faces and dark clothing in the group, keeping the sky and white dress detail.",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 26.630386352539062,
+        "B": 27.9453182220459,
+        "C": 24.35886001586914
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p357",
+      "request": "mild",
+      "language": "zh",
+      "instruction": "轻轻提亮暗部。重点看海滩前景和湿沙，保留海面及黄昏天色。",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 27.716819763183594,
+        "B": 27.622718811035156,
+        "C": 26.139142990112305
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p357",
+      "request": "mild",
+      "language": "en",
+      "instruction": "Gently brighten the dark tones around the foreground beach and wet sand, retaining the sea and evening sky colours.",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 27.347627639770508,
+        "B": 26.988121032714844,
+        "C": 25.871971130371094
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p357",
+      "request": "strong",
+      "language": "zh",
+      "instruction": "显著提亮暗部。重点看海滩前景和湿沙，保留海面及黄昏天色。",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 26.77153778076172,
+        "B": 29.158889770507812,
+        "C": 25.08523941040039
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p357",
+      "request": "strong",
+      "language": "en",
+      "instruction": "Give the dark areas a clear lift around the foreground beach and wet sand, retaining the sea and evening sky colours.",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 26.49728775024414,
+        "B": 26.82956314086914,
+        "C": 25.56073760986328
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p309",
+      "request": "mild",
+      "language": "zh",
+      "instruction": "小幅打开阴影。重点看积雪小路和树下前景，保留蓝天、白云和雪的细节。",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 29.759624481201172,
+        "B": 27.99603843688965,
+        "C": 27.142637252807617
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p309",
+      "request": "mild",
+      "language": "en",
+      "instruction": "Give a subtle lift to the shadows around the snowy path and foreground below the trees, retaining the blue sky, clouds and snow detail.",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 28.6134090423584,
+        "B": 27.315475463867188,
+        "C": 26.348278045654297
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p309",
+      "request": "strong",
+      "language": "zh",
+      "instruction": "阴影要大幅提亮。重点看积雪小路和树下前景，保留蓝天、白云和雪的细节。",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 25.957744598388672,
+        "B": 29.883853912353516,
+        "C": 24.502464294433594
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p309",
+      "request": "strong",
+      "language": "en",
+      "instruction": "Brighten the shadows substantially around the snowy path and foreground below the trees, retaining the blue sky, clouds and snow detail.",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 25.810394287109375,
+        "B": 28.225236892700195,
+        "C": 23.331335067749023
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p771",
+      "request": "mild",
+      "language": "zh",
+      "instruction": "暗处抬亮一点点。重点看湖边前景和树影，保留水面、亮云和夜色过渡。",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 30.277454376220703,
+        "B": 28.73483657836914,
+        "C": 28.253833770751953
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p771",
+      "request": "mild",
+      "language": "en",
+      "instruction": "Take the edge off the darkness by lifting the shadows around the lakeside foreground and tree shadows, keeping the water, bright clouds and dusk gradient.",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 27.727149963378906,
+        "B": 28.119409561157227,
+        "C": 24.874454498291016
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "partial"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "id": "p771",
+      "request": "strong",
+      "language": "zh",
+      "instruction": "明显抬高暗处亮度。重点看湖边前景和树影，保留水面、亮云和夜色过渡。",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 27.378843307495117,
+        "B": 29.68549346923828,
+        "C": 25.518699645996094
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p771",
+      "request": "strong",
+      "language": "en",
+      "instruction": "Significantly lift the shadows around the lakeside foreground and tree shadows, keeping the water, bright clouds and dusk gradient.",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 25.708824157714844,
+        "B": 29.278396606445312,
+        "C": 22.962921142578125
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p476",
+      "request": "mild",
+      "language": "zh",
+      "instruction": "稍微打开暗部。重点看林地前景、树枝和落叶，保留羽毛、叶色和明亮细节。",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 27.605602264404297,
+        "B": 27.643590927124023,
+        "C": 26.488819122314453
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "partial"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "id": "p476",
+      "request": "mild",
+      "language": "en",
+      "instruction": "Open the shadows a little around the woodland foreground, branches and leaf litter, retaining feather detail, leaf colour and bright texture.",
+      "expected": "A",
+      "kind": "held_edit",
+      "logits": {
+        "A": 27.919214248657227,
+        "B": 27.753952026367188,
+        "C": 25.673709869384766
+      },
+      "selected": "A",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v1",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v1",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p476",
+      "request": "strong",
+      "language": "zh",
+      "instruction": "暗部明显提亮。重点看林地前景、树枝和落叶，保留羽毛、叶色和明亮细节。",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 27.266294479370117,
+        "B": 30.120189666748047,
+        "C": 25.003366470336914
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    },
+    {
+      "id": "p476",
+      "request": "strong",
+      "language": "en",
+      "instruction": "Open the shadows noticeably around the woodland foreground, branches and leaf litter, retaining feather detail, leaf colour and bright texture.",
+      "expected": "B",
+      "kind": "held_edit",
+      "logits": {
+        "A": 26.04974365234375,
+        "B": 28.565732955932617,
+        "C": 23.935108184814453
+      },
+      "selected": "B",
+      "choices": {
+        "qwen_preset": {
+          "choice": "v2",
+          "verdict": "complete"
+        },
+        "qwen_pixels": {
+          "choice": "v2",
+          "verdict": "complete"
+        }
+      }
+    }
+  ],
+  "GPU_hours": 0,
+  "deployed": false
+}

@@ -1,0 +1,48 @@
+{
+  "at": "2026-11-06T07:44:46.062718+00:00",
+  "results": {
+    "parent-frozen": {
+      "native_completed": 15,
+      "native_major": 0,
+      "old_completed": 4,
+      "old_major": 0,
+      "decision_controls": 20,
+      "native_refusals": 1,
+      "old_refusals": 0,
+      "new_model_inference_performed": false,
+      "stage1_passed": false
+    },
+    "language-merger-e1": {
+      "native_completed": 16,
+      "native_major": 0,
+      "old_completed": 4,
+      "old_major": 0,
+      "decision_controls": 20,
+      "native_refusals": 1,
+      "old_refusals": 0,
+      "new_model_inference_performed": true,
+      "stage1_passed": true
+    },
+    "all-language-merger-e1": {
+      "native_completed": 16,
+      "native_major": 0,
+      "old_completed": 4,
+      "old_major": 0,
+      "decision_controls": 20,
+      "native_refusals": 1,
+      "old_refusals": 0,
+      "new_model_inference_performed": true,
+      "stage1_passed": true
+    }
+  },
+  "qualified_checkpoints": [
+    "language-merger-e1",
+    "all-language-merger-e1"
+  ],
+  "stage2_required_before_selection": true,
+  "evaluation_protocol_sha256": "0518a88556302652977ff224d25811654eb0d769edeee8f3480c7adc9aed7d37",
+  "training_protocol_sha256": "63a7b6a74dc67893b4d98c35f12a6cbb2bd614639c1e2f2062afd621517086f4",
+  "L1_used": false,
+  "independent_user_feedback": 0,
+  "final_acceptance_closed": true
+}

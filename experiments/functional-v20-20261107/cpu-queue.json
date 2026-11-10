@@ -1,0 +1,85 @@
+{
+  "status": "completed",
+  "jobs": [
+    {
+      "args": [
+        "functional_v20.train",
+        "--route",
+        "last"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v20.evaluate",
+        "--model",
+        "last-e20",
+        "--checkpoint",
+        "experiments/functional-v20-20261107/runs/last/checkpoint-20.pt"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v20.evaluate",
+        "--model",
+        "last-e80",
+        "--checkpoint",
+        "experiments/functional-v20-20261107/runs/last/checkpoint-80.pt"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v20.train",
+        "--route",
+        "request_mean"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v20.evaluate",
+        "--model",
+        "request-mean-e20",
+        "--checkpoint",
+        "experiments/functional-v20-20261107/runs/request_mean/checkpoint-20.pt"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v20.evaluate",
+        "--model",
+        "request-mean-e80",
+        "--checkpoint",
+        "experiments/functional-v20-20261107/runs/request_mean/checkpoint-80.pt"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v20.seed_reviews"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v20.visual_review",
+        "prepare",
+        "--split",
+        "old-native",
+        "--models",
+        "last-e20",
+        "last-e80",
+        "request-mean-e20",
+        "request-mean-e80",
+        "--name",
+        "joint-routes-epochs"
+      ],
+      "returncode": 0
+    }
+  ],
+  "at": "2026-11-07T00:50:41.818134+00:00",
+  "GPU_calls": 0
+}

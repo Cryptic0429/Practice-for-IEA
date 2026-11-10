@@ -1,0 +1,22 @@
+{
+  "at": "2026-11-06T20:48:36.482428+00:00",
+  "source": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/language-merger-e1/direct-review.json",
+  "source_sha256": "0e49a92717d0d007d3b9fcfa38088948fe6de995a9c7a9b504dbb66fd606bf06",
+  "original_cases": 100,
+  "both_languages_pass": 75,
+  "exactly_one_language_pass": 5,
+  "case_ids": [
+    "development-001-style-temperature-strong",
+    "development-028-restore-saturation-mild",
+    "development-028-restore-saturation-strong",
+    "development-055-restore-exposure-strong",
+    "development-029-style-temperature-strong"
+  ],
+  "hypothetical_repair_only_the_failed_language_in_these_cases": 80,
+  "frozen_controlled_gate": 81,
+  "gate_also_requires_zero_major": true,
+  "interpretation": "Only repairing existing one-language-only failures while every other result stays fixed would yield80/100, below81. This is an arithmetic diagnostic, not a new model result or an upper bound for all possible consistency training effects.",
+  "GPU_hours": 0,
+  "new_visual_grades": 0,
+  "training_launched": false
+}

@@ -1,0 +1,33 @@
+{
+  "at": "2026-11-06T12:16:24.940274+00:00",
+  "occupied_GPU_hours": 0.012524747053782145,
+  "job": {
+    "id": "18bada474d884235a8e0af2d9200895d",
+    "pid": 4085789,
+    "gpu": "3",
+    "stage": "v16-training-prefix-precision-audit",
+    "editor": "not_executed_precision_audit",
+    "started_at": "2026-11-06T12:06:47.544547+00:00",
+    "started_epoch": 1793966807.5410354,
+    "heartbeat_epoch": 1793966852.4463918,
+    "max_seconds": 600,
+    "status": "completed",
+    "ended_epoch": 1793966852.6301248,
+    "ended_at": "2026-11-06T12:07:32.630130+00:00",
+    "error": null,
+    "runtime": "functional_v13.runtime"
+  },
+  "cap": 24,
+  "total_occupied_GPU_hours_at_snapshot": 18.4752543299728,
+  "metadata_correction": {
+    "before": {
+      "editor": "functional-editor-v1.2-sepia",
+      "runtime": null
+    },
+    "after": {
+      "editor": "not_executed_precision_audit",
+      "runtime": "functional_v13.runtime"
+    },
+    "reason": "No image editor ran in this diagnostic; replace generic ledger editor default only. Time/status/limits untouched."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "at": "2026-11-06T19:01:44.969997+00:00",
+  "status": "passed_exact_loader_alias_inheritance",
+  "runtime_sha256": "bdc251ac0fe4820865a18fdc691f368b2de592f7049a97ef2a482c033657062f",
+  "parent_sha256": "12243ea5f08ab9e2e75b082fd6e6a1e6e8b1efbd7eb4e102be3563ba084c4a56",
+  "exact_aliases": [
+    "processor",
+    "build_batch",
+    "verify_origin",
+    "create_adapter",
+    "transfer_parent",
+    "set_trainable",
+    "expected_count"
+  ],
+  "underlying_runtime_sha256": "62a2199de58e8fb282008415737f7d1f6c33771301446bf1031f46bd77555327",
+  "prior_transfer": {
+    "path": "experiments/functional-v13-20261106/runtime-transfer-audit.json",
+    "sha256": "a5234a0ffd740b907d98414219659758b7cf52de893053aa255252709181b560",
+    "result": {
+      "route": "language_merger",
+      "parent_tensors_copied_exactly": 116,
+      "language_parent_tensors_copied_exactly": 112,
+      "visual_parent_tensors_copied_exactly": 4,
+      "added_language_tensors": 0,
+      "added_B_zero": true,
+      "inherited_visual_B_preserved": true,
+      "adapter_count": 1,
+      "stacked_adapters": false,
+      "trainable_tensors": 116,
+      "trainable_parameters": 2674688,
+      "all_base_parameters_meta": true,
+      "forward_or_gradient_test_performed": false
+    }
+  },
+  "prior_GPU_parity": {
+    "path": "experiments/functional-v13-20261106/initial-function-parity.json",
+    "sha256": "60b53ffe61b82ae7c2d5438f015a642ee1a63718bd51613f75ab3b1219031f3a",
+    "records": [
+      {
+        "route": "language_merger",
+        "source_id": "train-native-078",
+        "language": "en",
+        "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 65,\n    \"contrast\": 20,\n    \"shadows\": 65,\n    \"saturation\": 20\n  }\n}\n```",
+        "last_prefix_logits_sha256": "ea3d8b2a7740e9169ce475a83b867ceccd35a7800c133e77130cf6abcc99caf7",
+        "max_difference_from_thin": 0.0,
+        "parent_tensors_copied_exactly": 116
+      },
+      {
+        "route": "language_merger",
+        "source_id": "train-native-144",
+        "language": "en",
+        "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"sepia\": 0\n  }\n}\n```",
+        "last_prefix_logits_sha256": "ae8bed2522e09bc8b4896815b5f41c9ad04e6f9714b91c5c5951b07ade4abd05",
+        "max_difference_from_thin": 0.0,
+        "parent_tensors_copied_exactly": 116
+      },
+      {
+        "route": "language_merger",
+        "source_id": "train-extension-396",
+        "language": "en",
+        "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 20,\n    \"contrast\": 8\n  }\n}\n```",
+        "last_prefix_logits_sha256": "abaf2647260f10758a2f2ad06b1da254fb48cd570e02a35f8075a27aa14d738c",
+        "max_difference_from_thin": 0.0,
+        "parent_tensors_copied_exactly": 116
+      }
+    ]
+  },
+  "new_GPU_load": false,
+  "new_forward": false,
+  "GPU_hours": 0,
+  "limitation": "Transparent reuse of exact R13 loader, adapter construction, tensor transfer, processor and prompt audits. No new R15 parity measurement or quality proof. First actual R15 gradient/optimizer state is checked during training."
+}

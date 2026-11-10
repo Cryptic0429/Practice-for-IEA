@@ -1,0 +1,73 @@
+{
+  "at": "2026-11-06T17:15:35.468162+00:00",
+  "items": [
+    {
+      "id": "r13-train-native-073",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+        "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+        "size": [
+          531,
+          748
+        ]
+      },
+      "instructions": {
+        "en": "Significantly increase the brightness and contrast and overall colors of the image",
+        "zh": "显著提高照片的亮度、对比度和整体色彩。"
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 55,
+              "brightness": 8,
+              "contrast": 18,
+              "shadows": 8,
+              "highlights": -25,
+              "saturation": 4
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave3/r13-train-native-073/R1.png",
+          "image_sha256": "d1614b99b972417a1526167b6defc6c0e5eb1d4d53fc84b30022f881cec78c04",
+          "label_admitted": false
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 40,
+              "brightness": 15,
+              "contrast": 20,
+              "shadows": 15,
+              "highlights": -30,
+              "saturation": 4
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave3/r13-train-native-073/R2.png",
+          "image_sha256": "052235e9b7dbf48e9c8212c0365315d28bbc8261cd50cd54a643efb64c321f55",
+          "label_admitted": false
+        }
+      ],
+      "prior_candidate": {
+        "path": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-073.png",
+        "sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678"
+      },
+      "sheet": "experiments/functional-v15-20261106/label-repairs/wave3/r13-train-native-073/review.jpg",
+      "sheet_sha256": "c3e62032bf944aa2ddfea4ff409e5f8d37c959f5080b2487672c7778b750a198",
+      "label_admitted": false
+    }
+  ],
+  "source_manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+  "explicit_recipe_file": "experiments/functional-v15-20261106/label-repairs/wave3-recipes.json",
+  "explicit_recipe_sha256": "f71eae50c0a7ddf975978fabddbe402334d343fbfa8da8453016e9328db94ff8",
+  "failure_observations": "experiments/functional-v15-20261106/repair-observations.jsonl",
+  "failure_observations_sha256": "8b73812c7ad27ce10ba6798ec0d209313506c3b790ccb43a40b89bbe84613d08",
+  "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+  "editor_sha256": "53d058fa7173253548ebe2fe907f927039b28f78694192210487df847e60cfaf",
+  "executed_edits": 2,
+  "GPU_hours": 0,
+  "policy": "Explicit finite AI proposals for observed failures; unchanged requests. No automatic admission or L1 ranking."
+}

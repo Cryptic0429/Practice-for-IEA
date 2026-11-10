@@ -1,0 +1,101 @@
+{
+  "at": "2026-11-06T07:14:14.655333+00:00",
+  "pid": 4064369,
+  "status": "completed",
+  "jobs": [
+    {
+      "model": "language-merger-e1",
+      "epoch": 1,
+      "route": "language_merger",
+      "adapter_sha256": "66e30d88a277089c5d02079e8ac327b63fc69830647459b4b0e08a336e6ccae3",
+      "pid": 4064445,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-m",
+        "functional_v13.evaluate",
+        "--route",
+        "language_merger",
+        "--adapter",
+        "experiments/functional-v13-20261106/runs/language_merger-seed-20261127/checkpoint-463",
+        "--model",
+        "language-merger-e1",
+        "--gpu",
+        "2"
+      ],
+      "started_at": "2026-11-06T07:15:24.766609+00:00",
+      "returncode": 0,
+      "ended_at": "2026-11-06T07:19:49.364094+00:00"
+    },
+    {
+      "model": "all-language-merger-e1",
+      "epoch": 1,
+      "route": "all_language_merger",
+      "adapter_sha256": "ceb858fe6683ad7e92d46819f4ca75d42e7011b860be5d55c5063567befea4b3",
+      "pid": 4064823,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-m",
+        "functional_v13.evaluate",
+        "--route",
+        "all_language_merger",
+        "--adapter",
+        "experiments/functional-v13-20261106/runs/all_language_merger-seed-20261127/checkpoint-463",
+        "--model",
+        "all-language-merger-e1",
+        "--gpu",
+        "2"
+      ],
+      "started_at": "2026-11-06T07:22:04.653777+00:00",
+      "returncode": 0,
+      "ended_at": "2026-11-06T07:27:18.575973+00:00"
+    },
+    {
+      "model": "language-merger-e2",
+      "epoch": 2,
+      "route": "language_merger",
+      "adapter_sha256": "88d71a30bc688279d59265c3f311ff9b0ca431027c51d2705a2b4172b33c8168",
+      "pid": 4065655,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-m",
+        "functional_v13.evaluate",
+        "--route",
+        "language_merger",
+        "--adapter",
+        "experiments/functional-v13-20261106/runs/language_merger-seed-20261127/checkpoint-926",
+        "--model",
+        "language-merger-e2",
+        "--gpu",
+        "2"
+      ],
+      "started_at": "2026-11-06T07:35:18.921173+00:00",
+      "returncode": 0,
+      "ended_at": "2026-11-06T07:39:49.369687+00:00"
+    },
+    {
+      "model": "all-language-merger-e2",
+      "epoch": 2,
+      "route": "all_language_merger",
+      "adapter_sha256": "4a6e3b3b6d3a6eb42816cd0492f539160f96981cc975221146e16381c116e8e6",
+      "pid": 4067590,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-m",
+        "functional_v13.evaluate",
+        "--route",
+        "all_language_merger",
+        "--adapter",
+        "experiments/functional-v13-20261106/runs/all_language_merger-seed-20261127/checkpoint-926",
+        "--model",
+        "all-language-merger-e2",
+        "--gpu",
+        "2"
+      ],
+      "started_at": "2026-11-06T07:47:49.689662+00:00",
+      "returncode": 0,
+      "ended_at": "2026-11-06T07:53:06.559710+00:00"
+    }
+  ],
+  "current": null,
+  "finished_at": "2026-11-06T07:53:06.728352+00:00"
+}

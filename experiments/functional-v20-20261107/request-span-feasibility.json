@@ -1,0 +1,58 @@
+{
+  "at": "2026-11-06T23:32:41.060342+00:00",
+  "status": "CPU_literal_request_span_feasible_no_training",
+  "source_cases_sha256": "e6d8e902cecb1abeae21bb9eb7c5563e236f19cf32a110ee0531c153382a71bc",
+  "template_language_inputs_checked": 1850,
+  "actual_encoded_prefixes_checked": 6,
+  "actual_checks": [
+    {
+      "case_id": "train-020-restore-exposure-strong",
+      "language": "zh",
+      "literal_tokens": 17,
+      "prefix_tokens": 743,
+      "actual_prefix_expansion_exact": true
+    },
+    {
+      "case_id": "train-020-restore-exposure-strong",
+      "language": "en",
+      "literal_tokens": 16,
+      "prefix_tokens": 742,
+      "actual_prefix_expansion_exact": true
+    },
+    {
+      "case_id": "train-100-restore-contrast-strong",
+      "language": "zh",
+      "literal_tokens": 19,
+      "prefix_tokens": 727,
+      "actual_prefix_expansion_exact": true
+    },
+    {
+      "case_id": "train-100-restore-contrast-strong",
+      "language": "en",
+      "literal_tokens": 13,
+      "prefix_tokens": 721,
+      "actual_prefix_expansion_exact": true
+    },
+    {
+      "case_id": "train-064-restore-saturation-strong",
+      "language": "zh",
+      "literal_tokens": 17,
+      "prefix_tokens": 743,
+      "actual_prefix_expansion_exact": true
+    },
+    {
+      "case_id": "train-064-restore-saturation-strong",
+      "language": "en",
+      "literal_tokens": 13,
+      "prefix_tokens": 739,
+      "actual_prefix_expansion_exact": true
+    }
+  ],
+  "source_code_sha256": "e0bb5ceb98d821945e97abeba410e1b95386c1eebe4fac4580271778e442aac0",
+  "GPU_calls": 0,
+  "model_loaded": false,
+  "feature_cache_created": false,
+  "controller_trained": false,
+  "development_or_acceptance_images_read": false,
+  "limitation": "Tokenizer/prefix feasibility only. No claim of better representations, model functionality, image quality or route selection. R19 remains unchanged."
+}

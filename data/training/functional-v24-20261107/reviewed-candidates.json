@@ -1,0 +1,268 @@
+[
+  {
+    "id": "p127",
+    "group_id": "712d4810b08113cc29598a8e519505954a2571907be32883c0f1010abb0309aa",
+    "split": "train_candidate",
+    "domain": "portrait",
+    "image": "data/training/functional-v24-20261107/inputs/p127.jpg",
+    "image_sha256": "f240e2edef13e9525d55ada1b6301ee40596c8e882ff0b6877261756c0cbde5b",
+    "source": "repo/datasets/GIER/images/2s2rzm_2s2rzm.jpg",
+    "source_annotation_indices": [
+      3221,
+      4796,
+      5375
+    ],
+    "source_partition": "training_pool",
+    "instructions": {
+      "zh": "稍微提亮背光人像的暗部，让脸更容易看清，同时保留肤色和蓝天的层次。",
+      "en": "Gently lift the shadows in this backlit portrait so the face is easier to see, while keeping natural skin colour and the tonal detail in the blue sky."
+    },
+    "instruction_origin": "AI-authored paired requests; GIER TRAIN photographs",
+    "observation": "30档只略提嘴周。80档脸和胡茬更清楚，蓝天渐变和山线保留。全局曝光让受光一侧和山景都变亮，阴影的选择性较差。",
+    "panels": {
+      "p127.png": "ee23d41f4498eeb05e746c5d4d0f8a9ff8a7fe19d15801ed1fef7bd1a0d1b8ca"
+    },
+    "status": "visual_edit_candidate",
+    "decision": {
+      "action": "edit",
+      "parameters": {
+        "shadows": 80
+      }
+    },
+    "target": "experiments/functional-v24-20261107/candidates/p127-2.png",
+    "target_sha256": "422e5793db229665aba65f5d296ec69e4f10f31744ce7c66140cf3cde8e022d1"
+  },
+  {
+    "id": "p261",
+    "group_id": "674f83d703d5991be3e1722556501522eab16ea9bfc5ad35393d9db77081b16e",
+    "split": "train_candidate",
+    "domain": "portrait",
+    "image": "data/training/functional-v24-20261107/inputs/p261.jpg",
+    "image_sha256": "794459318b39ba703668d45d3ddab6f6686637dd8512a04d0b9d7103a16516bc",
+    "source": "repo/datasets/GIER/images/3s6od2_3s6od2.jpg",
+    "source_annotation_indices": [
+      2435,
+      2997
+    ],
+    "source_partition": "training_pool",
+    "instructions": {
+      "zh": "把人像的暗部提亮一些，让脸和深色西装的细节更清楚，保留自然肤色和背景的暗调。",
+      "en": "Lift the shadows in this portrait so the face and dark suit are easier to see, while keeping natural skin colour and the dark mood of the background."
+    },
+    "instruction_origin": "AI-authored paired requests; GIER TRAIN photographs",
+    "observation": "30档对脸有帮助，西装扣眼仍偏暗。80档能分辨扣眼和织纹，背景依然深暗，肤色保持自然。全局曝光也显示织纹，但背景和面部亮处的提升更明显。",
+    "panels": {
+      "p261.png": "5d099182d9704f8068dae1743257ac49100ebebbfa14b5be1390ce70e44f3d6f",
+      "p261-suit.png": "429aa00859a2d2c5483205e633c5f1f2212b3f00df6c3b75c1b0f8a2944ceb1f"
+    },
+    "status": "visual_edit_candidate",
+    "decision": {
+      "action": "edit",
+      "parameters": {
+        "shadows": 80
+      }
+    },
+    "target": "experiments/functional-v24-20261107/candidates/p261-2.png",
+    "target_sha256": "960fce37115ef9d9c22c6854ebaa04b33828c161388985581b4580f72292d49f"
+  },
+  {
+    "id": "p227",
+    "group_id": "198476297515cbd24a00775803da3126de99fdfe747b801eca23c02e0f32f127",
+    "split": "train_candidate",
+    "domain": "portrait",
+    "image": "data/training/functional-v24-20261107/inputs/p227.jpg",
+    "image_sha256": "991b8c118bec5f5830df1785502480d9bd74f7493e4c76a31f3ecdd7620409d8",
+    "source": "repo/datasets/GIER/images/3en39p_3en39p.jpg",
+    "source_annotation_indices": [
+      303,
+      311,
+      4144
+    ],
+    "source_partition": "training_pool",
+    "instructions": {
+      "zh": "轻轻提亮这张室内合照的暗部，保留肤色和发丝，别让颗粒变得显眼。",
+      "en": "Gently lift the shadows in this indoor portrait, keeping skin colour and hair detail without making grain stand out."
+    },
+    "instruction_origin": "AI-authored paired requests; GIER TRAIN photographs",
+    "observation": "30档轻微提亮发丝和面部暗侧，肤色基本保持。80档的深色发丝开始显出原有颗粒。65档全局曝光使颗粒在头发和面颊更明显，也抬亮浅色衬衫。",
+    "panels": {
+      "p227.png": "740dfd26245b3c170dc092840da039627768d7c876143a45815db5a91c82a91c"
+    },
+    "status": "visual_edit_candidate",
+    "decision": {
+      "action": "edit",
+      "parameters": {
+        "shadows": 30
+      }
+    },
+    "target": "experiments/functional-v24-20261107/candidates/p227-1.png",
+    "target_sha256": "a925b28f7b3eaa04f7a531e73de98270456a2b815567b1bd6104af18d3b9a266",
+    "preference_candidate": {
+      "chosen": {
+        "action": "edit",
+        "parameters": {
+          "shadows": 30
+        }
+      },
+      "rejected": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "rejected_result": "experiments/functional-v24-20261107/candidates/p227-3.png",
+      "rejected_result_sha256": "e84789faeee8488de387761211428c17253233351eb2afee528486988e044382"
+    }
+  },
+  {
+    "id": "p444",
+    "group_id": "52dad25d66ea6d93b08b5c8a601a839ad07f32ffe6d592fd5c0dc43167d2816c",
+    "split": "train_candidate",
+    "domain": "portrait",
+    "image": "data/training/functional-v24-20261107/inputs/p444.jpg",
+    "image_sha256": "fa74b35ebb136225f2b04b421b0229fcb7f5d783304d4361fbc830d95f3372b1",
+    "source": "repo/datasets/GIER/images/5rwlho_5rwlho.jpg",
+    "source_annotation_indices": [
+      4478,
+      4625
+    ],
+    "source_partition": "training_pool",
+    "instructions": {
+      "zh": "把霓虹灯旁的人像提亮到能清楚看见五官，保留霓虹灯颜色，暗处不要出现显眼色斑。",
+      "en": "Brighten the portrait next to the neon sign until the facial features are clear, while keeping the neon colours and avoiding obvious blotches in the shadows."
+    },
+    "instruction_origin": "AI-authored paired requests; GIER TRAIN photographs",
+    "observation": "低档轮廓仅稍清晰。两种中档可以辨认更多鼻部与嘴部轮廓，霓虹蓝红仍在，面部和手边的彩色颗粒更显眼。中档是否同时达到五官清楚和画质要求存在边界，强档出现很明显的彩色噪点。",
+    "panels": {
+      "p444.png": "5c11ed489fc868caaed7873a00e3e595ca4f7c7a480d970c38380c96bd3dc510",
+      "p444-face.png": "d4e648799ec538d8111a4b32bbbe864f9124d496ae58fcf3f9af2332a612a16f",
+      "refinements/p444.png": "7cbd8745fa96e3bf6b81b7b4ca02592881e59b096be55c81ef187c52fec46abd"
+    },
+    "status": "uncertain_no_supervision",
+    "decision": null,
+    "target": null
+  },
+  {
+    "id": "p038",
+    "group_id": "7975e3d7b3bcce9ded8a6672612ccdcf25c00f91512fbfa3215c8d6094bee4ad",
+    "split": "train_candidate",
+    "domain": "landscape",
+    "image": "data/training/functional-v24-20261107/inputs/p038.jpg",
+    "image_sha256": "100096fb6f6df5578fc04349c425c981122cf9da587ce8b1890fb44d7704650b",
+    "source": "repo/datasets/GIER/images/2bu3jw_2bu3jw.jpg",
+    "source_annotation_indices": [
+      3211,
+      4609
+    ],
+    "source_partition": "training_pool",
+    "instructions": {
+      "zh": "轻轻提亮草地和前景阴影，保留蓝天白云的层次。",
+      "en": "Gently lift the shadows in the field and foreground while keeping detail in the blue sky and white clouds."
+    },
+    "instruction_origin": "AI-authored paired requests; GIER TRAIN photographs",
+    "observation": "30档对前景提升过小。80档让草地阴影和狗的暗部更可见，蓝天和白云层次仍在。全局曝光使草地和天空整体明显变亮，超出轻提暗部的幅度。",
+    "panels": {
+      "p038.png": "1c4b0336084f0e115a214141cfdce136ccf2c45623021b3020aa409dfb8863d8"
+    },
+    "status": "visual_edit_candidate",
+    "decision": {
+      "action": "edit",
+      "parameters": {
+        "shadows": 80
+      }
+    },
+    "target": "experiments/functional-v24-20261107/candidates/p038-2.png",
+    "target_sha256": "044ce4b473402b0791485ad56c13f40048206342e1c3d069402e14bbbb8bc98d"
+  },
+  {
+    "id": "p749",
+    "group_id": "48311423571ce5bcc6ccd563b773b45957b1a2b6f496f87a2d42f0366cc5fd13",
+    "split": "train_candidate",
+    "domain": "landscape",
+    "image": "data/training/functional-v24-20261107/inputs/p749.jpg",
+    "image_sha256": "1c06ec1c86dc4707f9979f887ec4ffa2aaeccce4a0a0211728bf96ad06e2f861",
+    "source": "repo/datasets/GIER/images/sPh7H_sPh7H.jpg",
+    "source_annotation_indices": [
+      5277
+    ],
+    "source_partition": "training_pool",
+    "instructions": {
+      "zh": "提亮海边夜景的暗处，让前景的纹理更容易看清，保留火花的颜色和夜景氛围。",
+      "en": "Lift the shadows in this coastal night scene so the foreground texture is easier to see, while preserving the colour of the sparks and the nighttime mood."
+    },
+    "instruction_origin": "AI-authored paired requests; GIER TRAIN photographs",
+    "observation": "80档能更清楚看到墙缝和地面纹理，火花保持橙色，暗处仍有夜景氛围。30档改动太弱；全局曝光同时提亮云层和亮火花，夜色减弱。",
+    "panels": {
+      "p749.png": "0a54de62df38723192366988907642cd1a1d7f01222a571e6dbdee9b51caa018",
+      "p749-foreground.png": "5c2b12c5bc5ebae6906da0dc69ed84e64077d488253468db8a83e1b534a8ec87"
+    },
+    "status": "visual_edit_candidate",
+    "decision": {
+      "action": "edit",
+      "parameters": {
+        "shadows": 80
+      }
+    },
+    "target": "experiments/functional-v24-20261107/candidates/p749-2.png",
+    "target_sha256": "feb4878af0d2e72ae934ec28c39e0d4e2c7b7a3f966cbf42f8ca75141990ecaf"
+  },
+  {
+    "id": "p425",
+    "group_id": "13f375584d42cad13f22dfd12b6fa8822d954c1ba83824f9b56534288d1faa4a",
+    "split": "train_candidate",
+    "domain": "landscape",
+    "image": "data/training/functional-v24-20261107/inputs/p425.jpg",
+    "image_sha256": "06952f8e47838591a52d5252c2019996f0aee029e205a766d93c4f4d6c4d24b6",
+    "source": "repo/datasets/GIER/images/571rq2_571rq2.jpg",
+    "source_annotation_indices": [
+      3058
+    ],
+    "source_partition": "training_pool",
+    "instructions": {
+      "zh": "提亮树林夜景的暗部，让中下部的树干和地面可以清楚辨认，避免明显色斑。",
+      "en": "Lift the shadows of this woodland night scene so the trunks and ground in the lower half are clearly recognizable, without obvious colour blotches."
+    },
+    "instruction_origin": "AI-authored paired requests; GIER TRAIN photographs",
+    "observation": "轻提和单曝光仍看不清地面。高档、组合提亮都把原存档中的紫红及蓝绿色块抬了出来；降低饱和度后仍明显，树干和地面也未能清楚分辨。",
+    "panels": {
+      "p425.png": "8108833ed3025cd4f1ed25a698635de794dc3269c5b48fcca1ce65f11158a5ee",
+      "refinements/p425.png": "d76c7f3d28ebeff4b09654343cbaf221259b5549d650097d2293b585eefb297a"
+    },
+    "status": "provisional_decline_candidate",
+    "decision": {
+      "action": "decline",
+      "reason": "unreliable_quality"
+    },
+    "target": null
+  },
+  {
+    "id": "p389",
+    "group_id": "b106f111e9a21c5a86bab334050697640edc3e6450685243840e5d5a7e28d428",
+    "split": "train_candidate",
+    "domain": "landscape",
+    "image": "data/training/functional-v24-20261107/inputs/p389.jpg",
+    "image_sha256": "e8c3cce23c01a1d2d33494d03b3cbe96a2ca765430035fc53d772093b15b391f",
+    "source": "repo/datasets/GIER/images/4mqiji_4mqiji.jpg",
+    "source_annotation_indices": [
+      2492
+    ],
+    "source_partition": "training_pool",
+    "instructions": {
+      "zh": "提亮火光附近的夜景暗部，清楚显示周围地形，保留火光颜色且不出现明显色块。",
+      "en": "Lift the shadows near the fire until the surrounding terrain is clearly visible, while keeping the fire colour and avoiding obvious blotches."
+    },
+    "instruction_origin": "AI-authored paired requests; GIER TRAIN photographs",
+    "observation": "弱档只让火光边缘稍亮。强档能看到远处轮廓，却仍看不清火光附近地形，并显出大片块状层次。组合提亮与收高光也保住火光但没有恢复可辨地形。",
+    "panels": {
+      "p389.png": "597535397b65e53047956fb65fa4144c98e34bf027d86eb6b58214dd4748be0b",
+      "p389-fire-edge.png": "5892ab99cd8fdc3372ff72a4a9e5e01080c804fdaf71d4d3860e786e4a6f52d9",
+      "refinements/p389.png": "cd1124de9c33e5a006324926082331693ab87861e70a08464256fbe89c252731"
+    },
+    "status": "provisional_decline_candidate",
+    "decision": {
+      "action": "decline",
+      "reason": "unreliable_quality"
+    },
+    "target": null
+  }
+]

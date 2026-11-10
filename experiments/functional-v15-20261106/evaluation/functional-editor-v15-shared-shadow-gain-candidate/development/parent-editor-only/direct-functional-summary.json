@@ -1,0 +1,82 @@
+{
+  "model_id": "parent-editor-only",
+  "status": "completed",
+  "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+  "human_review": false,
+  "reviewed_outputs": 200,
+  "missing_unique_images": [],
+  "fully_completed_both_languages": 76,
+  "raw_individual_completed_both_languages": 76,
+  "identical_strength_pairs": [],
+  "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+  "photo_groups": 20,
+  "all_tasks_complete_photo_groups": 3,
+  "major_quality_issues": 1,
+  "major_issue_cases": [
+    "development-028-restore-saturation-mild"
+  ],
+  "per_family": {
+    "brown_tone": {
+      "completed": 8,
+      "cases": 8
+    },
+    "compound": {
+      "completed": 8,
+      "cases": 10
+    },
+    "contrast": {
+      "completed": 13,
+      "cases": 20
+    },
+    "identity": {
+      "completed": 10,
+      "cases": 10
+    },
+    "lighting": {
+      "completed": 17,
+      "cases": 24
+    },
+    "saturation": {
+      "completed": 15,
+      "cases": 20
+    },
+    "white_balance": {
+      "completed": 5,
+      "cases": 8
+    }
+  },
+  "per_language": {
+    "zh": {
+      "completed": 84,
+      "partial": 13,
+      "uncertain": 3
+    },
+    "en": {
+      "completed": 84,
+      "partial": 13,
+      "uncertain": 3
+    }
+  },
+  "per_domain": {
+    "portrait": {
+      "completed": 36,
+      "cases": 50
+    },
+    "landscape": {
+      "completed": 40,
+      "cases": 50
+    }
+  },
+  "selection_uses_L1": false,
+  "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+  "review_sha256": "4fe4adeffdc31c34149b02e2059ad37becae03c1b755ff7710a8fcc25535d610",
+  "inference_performed": false,
+  "GPU_hours": 0,
+  "model_forward_calls": 0,
+  "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+  "runtime": "Exact saved parent decisions; CPU editor replay only",
+  "declined_language_outputs": 0,
+  "declined_semantic_cases": 0,
+  "unchanged_reviews_inherited": true,
+  "AI_disputes_preserved": true
+}

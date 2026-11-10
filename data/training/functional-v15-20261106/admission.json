@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-06T18:12:29.249354+00:00",
+  "status": "direct_or_exact_inherited_AI_labels_admitted_not_human_or_user_approval",
+  "semantic_cases": 925,
+  "unique_language_rows": 1850,
+  "source_groups": 240,
+  "photo_domains": {
+    "portrait": 120,
+    "landscape": 120
+  },
+  "outcomes": {
+    "edit": 780,
+    "decline": 65,
+    "keep": 80
+  },
+  "original_English_cases": 154,
+  "AI_authored_cases": 771,
+  "new_photographs": 0,
+  "instruction_rewrites": 0,
+  "unchanged_R13_replays": 793,
+  "changed_shadow_targets": 132,
+  "reviewed_repairs": 11,
+  "executed_repair_proposals": 24,
+  "quality_refusals_revalidated": 44,
+  "quality_refusal_scope": "Existing conservative finite-bank reliability labels, not universal impossibility claims.",
+  "training_data_sha256": "923a45f1b53c8429b55fdbec9db5a75adb2139650af1a049eb5b6f4dd8fe1546",
+  "cases_sha256": "e6d8e902cecb1abeae21bb9eb7c5563e236f19cf32a110ee0531c153382a71bc",
+  "evidence_hashes": {
+    "experiments/functional-v15-20261106/label-candidates/manifest.json": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+    "experiments/functional-v15-20261106/quality-challenges/manifest.json": "c579557486636e8274ceb122b28e0958e6d61c19182bd6d4b34a184748591feb",
+    "experiments/functional-v15-20261106/repair-selection.json": "d2549ba327280bbdd3e5cfc47a4701dc13a32b36ac22245a5790618904024b69",
+    "experiments/functional-v15-20261106/functional-review-criteria.json": "f6331f5c7de23553828acce63a860b8cbb311d206f2dbe2179ce01df19619fb6",
+    "experiments/functional-v15-20261106/quality-native-observations.jsonl": "8ccc54fb2028d22dc430ee056dab5c76ad8fd979834e1beb04ad4c30bd47cd00",
+    "experiments/functional-v15-20261106/label-observations.jsonl": "bdce2b63f76708ccefd67d844d8317de9213cd0d822084f0d0f8f7bdc0f85e0d",
+    "experiments/functional-v15-20261106/quality-challenge-observations.jsonl": "d5a8afe4a7af5fc959cb58d4723aa780c6d88f56fbb02e14e488bce5445f027c",
+    "experiments/functional-v15-20261106/label-native-observations.jsonl": "f3ea69df7574695e4394d3450ddeb2ce0bd3e6b128f52c2c636af054a8a454a6",
+    "experiments/functional-v15-20261106/repair-observations.jsonl": "4984fb7516d9041bdfac45a9b39c44d5164550577b55509c3f86b022a671de08"
+  },
+  "frozen_Qwen_screening": "Not used as admission judge because frozen critic calibration failed in R8; explicit deviation from initial plan.",
+  "limitations": [
+    "AI visual review only; no independent human or user approval.",
+    "793 unchanged labels inherit exact old evidence and limitations, not 793 new image reviews.",
+    "925 cases are 240 underlying photo groups, with explicit AI/synthetic conditions; translations are not independent samples.",
+    "Large-image native QA covers listed critical regions, not every pixel.",
+    "No reliability or usefulness claim about unknown-photo model predictions follows from label acceptance."
+  ],
+  "no_trial_upload_or_feedback_in_training": true,
+  "no_GPU_backprop_started": true
+}

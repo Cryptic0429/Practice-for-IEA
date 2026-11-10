@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-06T01:17:37.228367+00:00",
+  "status": "initial_archive_byte_verified_but_scope_incomplete_not_final_delivery",
+  "initial_archive": "archives/functional-v11-20261106/functional-v11-20261106.tar.gz",
+  "initial_sha256": "7ab2049fa03e7743fbf5f0fc5e80dfd39edf566348f1e39b65676803dd538b7a",
+  "issue": "Agent source tags correctly selected round11, but a copied model-id prefix still tested functional-v10-. This omitted14 HTTP/browser request directories from the initial archive. All source records remain intact.",
+  "correction": "Preserve initial archive/snapshot/receipt bytes unchanged. Build a separate -complete archive and complete-receipt, requiring all14 explicit integration IDs/input/request metadata and all executed outputs in the manifest before compression.",
+  "GPU_hours": 0
+}

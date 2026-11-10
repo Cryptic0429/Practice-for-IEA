@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-06T01:05:08.932921+00:00",
+  "status": "actual_browser_upload_edit_switch_download_feedback_and_records_verified",
+  "requests": [
+    {
+      "request_id": "7bf7f222782842269e8aaee21fec8c7b",
+      "model_id": "functional-v11-negative-gain-20261123",
+      "case_id": "native-dev-001",
+      "status": "executed",
+      "offline_byte_identical": true,
+      "download_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765",
+      "local_download": "/Users/cryptic/Downloads/output (3).png"
+    },
+    {
+      "request_id": "aef2e3a29a9848f99e277bc2ba3ed6de",
+      "model_id": "functional-v11-negative-gain-20261123",
+      "case_id": "visual-risk-01-severe-light",
+      "status": "declined",
+      "no_result_image": true,
+      "image_route_status": 404,
+      "training_condition_probe_not_independent_generalization": true
+    }
+  ],
+  "screenshots": {
+    "experiments/functional-v11-20261106/demo/browser-quality-decline.png": "cf03545b2a03300acd86de28521ed06fd7e1954733d7d4c4a409b12f54b11322",
+    "experiments/functional-v11-20261106/demo/browser-edit-full.png": "703babb35e86f6a58aec8b2d9d5e733fd64d7b0ae966cceda76d36ea3fd0bb1e",
+    "experiments/functional-v11-20261106/demo/browser-records-failures.png": "3aa75e48b3aca9427f07c3effff6319cc1279c3556b6e730a09932b16efdb613"
+  },
+  "feedback_records": 2,
+  "independent_user_feedback": 0,
+  "records_filters": {
+    "pass_language_rows": 30,
+    "unqualified_language_rows": 8,
+    "uncertain_language_rows": 2,
+    "total_language_rows": 40,
+    "model": "language-merger-e1"
+  },
+  "final_page": "http://127.0.0.1:12346/v11?kind=evaluation&domain=all&action=all&judgment=fail&split=native-development&model=language-merger-e1",
+  "occupied_GPU_hours": 14.761292240023609,
+  "worker_unloaded": true,
+  "default_unchanged": true,
+  "actual_external_rewriting": false,
+  "limitations": [
+    "Quality refusal is checked on a seen synthetic training condition, not an unknown real-camera photograph.",
+    "All feedback records are explicitly agent integration checks; no independent user usability result.",
+    "Initial feedback field selector used a native accessibility fallback name that was not its DOM name; recovered from a fresh DOM snapshot using the visible placeholder/name, with one feedback submission only.",
+    "No page code changed during browser verification; actual editing, no-result refusal, download and filtered failure records were verified on the final service."
+  ]
+}

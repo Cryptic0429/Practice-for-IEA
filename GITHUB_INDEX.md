@@ -1,18 +1,37 @@
-# IEA 功能训练：当前可用部分与进度
+# IEA GitHub 内容索引
 
-这份仓库保存代码、实际训练清单、模型身份和可核对的实验记录。**截至2026-11-05，已跑通训练、逐图评审与本地试用；尚未得到经过验证的高实用性模型。** 后续实验仍在进行，本次提交是一个明确时间点的版本快照。
+本次更新日期：2026-11-10。仓库保存实验代码、文本数据清单、模型身份、逐轮结果和可复核证据，功能实验记录已补齐至 R33；新增 R1、R15、R23、R15 + R21 四候选交互对比台。
 
-先读 [进度总结](docs/PROJECT_STATUS.md)，再看 [目录与有效内容](docs/REPOSITORY_MAP.md)。三份完整主文档是 [README](README.md)、[实验记录与结论](实验记录与结论.md)、[原理与复用指南](原理与复用指南.md)。
+**当前结论：原 24 GPU 小时实验已结算，仍未达到稳定实用标准。** 新对比台用于个人交互体验，另设 2 GPU 小时验证及试用预算，不代表模型已升级或通过最终验收。
 
-| 最常用内容 | 入口 |
+| 需要查看的内容 | 入口 |
 |---|---|
-| 第六轮实际训练数据 | [920条记录](data/training/functional-v6-20261105/train-accepted.json)、[460个语义案例](data/training/functional-v6-20261105/cases.json)、[准入记录](data/training/functional-v6-20261105/admission.json) |
-| 第六轮结果和失败原因 | [报告](experiments/functional-v6-20261105/REPORT.md)、[未升级决定](experiments/functional-v6-20261105/development-selection.json) |
-| 当前试用服务 | [Flask页面与API](scripts/functional_v1/web.py)、[本地模型工作进程](scripts/functional_v1/worker.py)、[模型注册表](scripts/functional_v1/catalog.py) |
-| 固定模型输入与编辑器 | [runtime](scripts/functional_v1/runtime.py)、[提示与解析](scripts/functional_v1/common.py)、[v1.2编辑器](scripts/functional_v1/editor.py) |
-| 训练、评测和直接视觉评审 | [第六轮代码](scripts/functional_v6)、[协议](experiments/functional-v6-20261105/training-protocol.json) |
-| 权重和大文件在哪里 | [本地权重哈希及归档清单](docs/ARTIFACTS.json)、[恢复说明](docs/REPOSITORY_MAP.md) |
+| 项目总览与完整历史 | [README](README.md)、[实验记录与结论](实验记录与结论.md)、[原理与复用指南](原理与复用指南.md) |
+| 当前进展与目录范围 | [进度总结](docs/PROJECT_STATUS.md)、[目录与恢复说明](docs/REPOSITORY_MAP.md) |
+| 四模型交互体验与连接恢复 | [使用说明](scripts/comparison_studio/README.md)、[源码](scripts/comparison_studio/)、[验证结果](docs/COMPARISON_STUDIO.md) |
+| R1 默认候选 | [首轮报告](experiments/functional-v1-20261104/REPORT.md)、[首轮代码](scripts/functional_v1/) |
+| R15 阴影修正候选 | [第十五轮报告](experiments/functional-v15-20261106/REPORT.md)、[代码](scripts/functional_v15/) |
+| R15 + R21 辅助控制头 | [第二十一轮报告](experiments/functional-v21-20261107/REPORT.md)、[代码](scripts/functional_v21/) |
+| R23 直接 LoRA 候选 | [第二十三轮报告](experiments/functional-v23-20261107/REPORT.md)、[代码](scripts/functional_v23/) |
+| 预算结算与后续 CPU 诊断 | [训练预算结算](experiments/functional-v23-20261107/FINAL_SUMMARY.md)、[第三十三轮报告](experiments/functional-v33-20261107/REPORT.md) |
+| 最终交付与尚存差距 | [交付总结](experiments/functional-final-delivery-20261107/SUMMARY.md)、[归档说明](archives/functional-final-delivery-20261107/) |
+| 训练数据与准入证据 | [各轮文本数据](data/training/)、[后期实际训练池](data/training/functional-v22-20261107/README.md) |
+| 模型配置、身份与权重清单 | [模型说明](models/README.md)、[注册表](models/catalog.json)、[归档与权重信息](docs/ARTIFACTS.json) |
 
-实际试用入口是服务器的 `127.0.0.1:12346`，不是本仓库提供的公网网站。有服务器权限时，运行 `ssh -N -L 127.0.0.1:12346:127.0.0.1:12346 SJTU1`，浏览器访问 `http://127.0.0.1:12346/`。模型下拉框中的第六轮两个候选已标明“未通过”；默认仍是第一轮候选。
+## 打开交互对比台
 
-GitHub中不含原图、目标图片、权重、虚拟环境、完整压缩归档、上传及反馈记录。报告中的原图链接是本地证据路径，需要恢复对应产物后查看。**仅克隆此仓库不能直接启动7B模型，也不能凭文本评审代替实际看图。**
+在已配置现有实验服务器 SSH 访问权限的本机，从项目根目录运行：
+
+```bash
+bash scripts/comparison_studio/open_local.sh
+```
+
+然后访问 <http://127.0.0.1:12348/>。这会建立到现有实验服务器的 SSH 转发；网页不是 GitHub 上的公网部署。服务器启动和依赖恢复见[运行说明](scripts/comparison_studio/README.md)。
+
+六张历史开发图的 48 项固定比较记录为：42 项生成结果、4 项拒绝、2 项执行失败。生成结果数不是画质通过率；提示和编辑器存在历史差异，这次比较面向完整方案。详细口径见[验证说明](docs/COMPARISON_STUDIO.md)。
+
+## 仓库范围
+
+GitHub 不包含模型权重、原图、编辑结果图、虚拟环境、完整压缩归档以及个人上传和反馈。报告中的本地图片链接需恢复实验文件后才能查看；仅克隆此仓库不足以直接运行模型。
+
+`experiments/comparison-studio-20261110/` 是被 Git 忽略的运行目录；公开内容仅为源码与筛选后的汇总验证信息。历次报告和账本保留对应时点的结果，`docs/REPOSITORY_SNAPSHOT.json` 是 2026-11-05 的初始快照，不能当作本次更新清单。

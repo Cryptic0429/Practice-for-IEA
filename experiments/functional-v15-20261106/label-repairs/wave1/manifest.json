@@ -1,0 +1,1462 @@
+{
+  "at": "2026-11-06T15:12:59.359358+00:00",
+  "items": [
+    {
+      "id": "native-train-n011",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n011.png",
+        "sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+        "size": [
+          540,
+          960
+        ]
+      },
+      "instructions": {
+        "en": "Please brighten and reduce the brown tone from the photo.",
+        "zh": "请提亮照片，并减弱其中的棕色调。"
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 40,
+              "shadows": 15,
+              "saturation": -8,
+              "temperature": -4,
+              "tint": 4
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n011/R1.png",
+          "image_sha256": "e38ce4db73702a810e51c354a3abaa327ca38fb258419bedf72bc6b9785d5e56",
+          "label_admitted": false
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 55,
+              "shadows": 10,
+              "saturation": -12,
+              "temperature": -3,
+              "tint": 6
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n011/R2.png",
+          "image_sha256": "c4a088a4d062b355c27dd0439d0276a19d4966fd2f8a778afd73c9cf087cf424",
+          "label_admitted": false
+        }
+      ],
+      "prior_candidate": {
+        "path": "experiments/functional-v15-20261106/label-candidates/images/native-train-n011.png",
+        "sha256": "6646be85da47564e76e86f1c19e57618d8e93f5e1211e3ca1d87fb41e1470c58"
+      },
+      "failed_observation": {
+        "id": "native-train-n011",
+        "stage": "labels",
+        "input_sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+        "candidate_sha256": "6646be85da47564e76e86f1c19e57618d8e93f5e1211e3ca1d87fb41e1470c58",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/first12/native-train-n011-INPUT-whole.png",
+            "sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+            "size": [
+              540,
+              960
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-n011.png",
+            "source_sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+            "source_size": [
+              540,
+              960
+            ],
+            "box": [
+              0,
+              0,
+              540,
+              960
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/first12/native-train-n011-CANDIDATE-whole.png",
+            "sha256": "6646be85da47564e76e86f1c19e57618d8e93f5e1211e3ca1d87fb41e1470c58",
+            "size": [
+              540,
+              960
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-n011.png",
+            "source_sha256": "6646be85da47564e76e86f1c19e57618d8e93f5e1211e3ca1d87fb41e1470c58",
+            "source_size": [
+              540,
+              960
+            ],
+            "box": [
+              0,
+              0,
+              540,
+              960
+            ]
+          }
+        ],
+        "at": "2026-11-06T13:35:06.654174+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole540x960 input and candidate were directly viewed. The photograph is brighter and less yellow-brown, but skin/shaded areas have a noticeable red-purple/cool cast and the embedded black borders become faintly blue. Existing coarse grain and facial softness remain visible; they are not repaired. The unwanted colour shift is a minor quality issue, so this parameter replay is not admitted and needs a gentler colour/lift repair.",
+        "manifest_sha256": "9a810e787bf37223fd91e76b26a933277bad48e8e62d03b843241e3abeea2cbf",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      },
+      "sheet": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n011/review.jpg",
+      "sheet_sha256": "8d94641c08cba184e734f74c519f54b4d5425fb24dcc5008a7257a9795eb3f99",
+      "label_admitted": false
+    },
+    {
+      "id": "native-train-n204",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n204.png",
+        "sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+        "size": [
+          720,
+          960
+        ]
+      },
+      "instructions": {
+        "en": "Increase the brightness dramatically.",
+        "zh": "大幅提高亮度。"
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 100,
+              "saturation": -15,
+              "highlights": -10
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n204/R1.png",
+          "image_sha256": "0bb5f2039f763a3d3398e51ecdfbb88751e5fda6c42a8b2d276ebf4c13fa9811",
+          "label_admitted": false
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 70,
+              "brightness": 20,
+              "shadows": 10,
+              "highlights": -20,
+              "saturation": -18
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n204/R2.png",
+          "image_sha256": "8343e4cd4337d53f8c8b6574d789c4aa20d3086e79eef5f146469b091687a431",
+          "label_admitted": false
+        }
+      ],
+      "prior_candidate": {
+        "path": "experiments/functional-v15-20261106/label-candidates/images/native-train-n204.png",
+        "sha256": "87cecd92089d249be82ef7e8615d681d64daca3ddb9941e7c91576f19d93e7d4"
+      },
+      "failed_observation": {
+        "id": "native-train-n204",
+        "stage": "labels",
+        "input_sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+        "candidate_sha256": "87cecd92089d249be82ef7e8615d681d64daca3ddb9941e7c91576f19d93e7d4",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/first12/native-train-n204-INPUT-whole.png",
+            "sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+            "size": [
+              720,
+              960
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-n204.png",
+            "source_sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+            "source_size": [
+              720,
+              960
+            ],
+            "box": [
+              0,
+              0,
+              720,
+              960
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/first12/native-train-n204-CANDIDATE-whole.png",
+            "sha256": "87cecd92089d249be82ef7e8615d681d64daca3ddb9941e7c91576f19d93e7d4",
+            "size": [
+              720,
+              960
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-n204.png",
+            "source_sha256": "87cecd92089d249be82ef7e8615d681d64daca3ddb9941e7c91576f19d93e7d4",
+            "source_size": [
+              720,
+              960
+            ],
+            "box": [
+              0,
+              0,
+              720,
+              960
+            ]
+          }
+        ],
+        "at": "2026-11-06T13:44:54.572439+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole720x960 input and candidate were directly viewed. Brightening is substantial and bow/lace, skirt folds and facial features remain readable. However coarse coloured banding/blotches in the dim ceiling, wall and floor become conspicuous, with a stronger warm facial cast. The source already contains this low-light noise; the lift reveals/amplifies its visibility rather than creating a new grid. This is a minor basic-quality failure, so the replay is not admitted and needs repair before any edit label is adopted.",
+        "manifest_sha256": "9a810e787bf37223fd91e76b26a933277bad48e8e62d03b843241e3abeea2cbf",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      },
+      "sheet": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n204/review.jpg",
+      "sheet_sha256": "989cb1a6ab516567800f55f5cae109b23d67e1d439f0997332d89e4e8abe3b74",
+      "label_admitted": false
+    },
+    {
+      "id": "native-train-x030",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-x030.png",
+        "sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+        "size": [
+          960,
+          640
+        ]
+      },
+      "instructions": {
+        "en": "Please brighten the photo a lot.",
+        "zh": "请把照片大幅提亮。"
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 90,
+              "brightness": 20,
+              "shadows": 25,
+              "highlights": -10
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x030/R1.png",
+          "image_sha256": "2c2f7b49abe8a9195daf2973d6f8fd4511225f081728cd7c4ba4fa0a73a83c32",
+          "label_admitted": false
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 100,
+              "brightness": 10,
+              "shadows": 40,
+              "highlights": -12
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x030/R2.png",
+          "image_sha256": "0e2084edf466b3e35862835dc990ec2bada7f4289561df158ba000cb6a9cffdc",
+          "label_admitted": false
+        }
+      ],
+      "prior_candidate": {
+        "path": "experiments/functional-v15-20261106/label-candidates/images/native-train-x030.png",
+        "sha256": "a77011be4f4d321c09bd188ead565749d47a3d9b49e7682b0f68675c095f6f9a"
+      },
+      "failed_observation": {
+        "id": "native-train-x030",
+        "stage": "labels",
+        "input_sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+        "candidate_sha256": "a77011be4f4d321c09bd188ead565749d47a3d9b49e7682b0f68675c095f6f9a",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/first12/native-train-x030-INPUT-whole.png",
+            "sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+            "size": [
+              960,
+              640
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-x030.png",
+            "source_sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+            "source_size": [
+              960,
+              640
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              640
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/first12/native-train-x030-CANDIDATE-whole.png",
+            "sha256": "a77011be4f4d321c09bd188ead565749d47a3d9b49e7682b0f68675c095f6f9a",
+            "size": [
+              960,
+              640
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-x030.png",
+            "source_sha256": "a77011be4f4d321c09bd188ead565749d47a3d9b49e7682b0f68675c095f6f9a",
+            "source_size": [
+              960,
+              640
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              640
+            ]
+          }
+        ],
+        "at": "2026-11-06T13:52:22.639787+00:00",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole960x640 input and candidate were directly viewed. The meadow, tree line and mountain faces are more visible and water ripples/sky gradient remain readable, without obvious new clipping or blotchy noise. However the requested large brightening remains too weak: much of the meadow/tree foreground still looks very dark. This is partial completion rather than a good training edit label; stronger but controlled lift must be tried and reviewed.",
+        "manifest_sha256": "9a810e787bf37223fd91e76b26a933277bad48e8e62d03b843241e3abeea2cbf",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      },
+      "sheet": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x030/review.jpg",
+      "sheet_sha256": "4b1f64c3db219bd7ff5d86d93b3b52eaa2932967b4c621df038df9b9fcf3de2e",
+      "label_admitted": false
+    },
+    {
+      "id": "native-train-x186",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-x186.png",
+        "sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+        "size": [
+          960,
+          842
+        ]
+      },
+      "instructions": {
+        "en": "Please brighten the photo",
+        "zh": "请提亮照片。"
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 35,
+              "shadows": 25,
+              "highlights": -10,
+              "tint": -8,
+              "saturation": -5
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x186/R1.png",
+          "image_sha256": "c4fd1b0b9c941ec4d7194165aff8abbe338d72f800e33b62a7758ac6587c03ba",
+          "label_admitted": false
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 55,
+              "shadows": 10,
+              "highlights": -12,
+              "tint": -10,
+              "saturation": -10
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x186/R2.png",
+          "image_sha256": "6ef31965fc3ad718c43f77003e9f377e7cf05fc143c84c325562e329a2002e1d",
+          "label_admitted": false
+        }
+      ],
+      "prior_candidate": {
+        "path": "experiments/functional-v15-20261106/label-candidates/images/native-train-x186.png",
+        "sha256": "670dfad71f6d417e29781c8a7e04b10770de2d31ec3c19c1ffc5b9202abbd907"
+      },
+      "failed_observation": {
+        "id": "native-train-x186",
+        "stage": "labels",
+        "input_sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+        "candidate_sha256": "670dfad71f6d417e29781c8a7e04b10770de2d31ec3c19c1ffc5b9202abbd907",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x186-INPUT-whole.png",
+            "sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+            "size": [
+              960,
+              842
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-x186.png",
+            "source_sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+            "source_size": [
+              960,
+              842
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              842
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x186-CANDIDATE-whole.png",
+            "sha256": "670dfad71f6d417e29781c8a7e04b10770de2d31ec3c19c1ffc5b9202abbd907",
+            "size": [
+              960,
+              842
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-x186.png",
+            "source_sha256": "670dfad71f6d417e29781c8a7e04b10770de2d31ec3c19c1ffc5b9202abbd907",
+            "source_size": [
+              960,
+              842
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              842
+            ]
+          }
+        ],
+        "paired_native": [
+          {
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x186-PAIR-whole.png",
+            "sha256": "5833bb7326bac5fe6b68115e4a44ef4f9ee08a1666bc4e3f1f0c47fd938dd136",
+            "size": [
+              1920,
+              890
+            ],
+            "region": "whole",
+            "image_pixels_unscaled": true,
+            "header_height": 48,
+            "components": [
+              {
+                "role": "INPUT",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x186-INPUT-whole.png",
+                "sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+                "size": [
+                  960,
+                  842
+                ],
+                "source": "data/training/functional-v6-20261105/inputs/native-train-x186.png",
+                "source_sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+                "source_size": [
+                  960,
+                  842
+                ],
+                "box": [
+                  0,
+                  0,
+                  960,
+                  842
+                ]
+              },
+              {
+                "role": "CANDIDATE",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x186-CANDIDATE-whole.png",
+                "sha256": "670dfad71f6d417e29781c8a7e04b10770de2d31ec3c19c1ffc5b9202abbd907",
+                "size": [
+                  960,
+                  842
+                ],
+                "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-x186.png",
+                "source_sha256": "670dfad71f6d417e29781c8a7e04b10770de2d31ec3c19c1ffc5b9202abbd907",
+                "source_size": [
+                  960,
+                  842
+                ],
+                "box": [
+                  0,
+                  0,
+                  960,
+                  842
+                ]
+              }
+            ]
+          }
+        ],
+        "at": "2026-11-06T14:40:37.053464+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole960x842 input and candidate were directly viewed on an unscaled paired canvas. Brightening is visible and sea ripples, sky wisps and cliff edges remain readable, but deep foreground/cliff shadows have a conspicuous green veil/cast; it is present weakly in the source and much more visible after lifting. The edit is not admitted as acceptable basic quality and needs a revised recipe under the unchanged brighten request.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      },
+      "sheet": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x186/review.jpg",
+      "sheet_sha256": "d02c27209e1d23723e7b7e44ce2e414ff9f2e89007764827b6220c519371f87d",
+      "label_admitted": false
+    },
+    {
+      "id": "r13-train-extension-081",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-extension-081/input.png",
+        "sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+        "size": [
+          1439,
+          1080
+        ]
+      },
+      "instructions": {
+        "en": "Lighten the entire image, please",
+        "zh": "请提亮整张照片。"
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 30,
+              "shadows": 10,
+              "saturation": -10
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-081/R1.png",
+          "image_sha256": "1a02af4370f36b77e97935b0e82df80b87dc4c1869b31f0db8c59c185594e7ba",
+          "label_admitted": false
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 40,
+              "shadows": 5,
+              "temperature": -5,
+              "tint": -30,
+              "saturation": -10
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-081/R2.png",
+          "image_sha256": "17993d85c6b57b37e60b25701aefcc8e5e704e16266e30dfa6624353cbc3a345",
+          "label_admitted": false
+        }
+      ],
+      "prior_candidate": {
+        "path": "experiments/functional-v15-20261106/label-candidates/images/r13-train-extension-081.png",
+        "sha256": "b0ac7a0f0044df13d7884f83243589b47192d3cdf3a929062abbe3014e4ac127"
+      },
+      "failed_observation": {
+        "id": "r13-train-extension-081",
+        "stage": "labels",
+        "input_sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+        "candidate_sha256": "b0ac7a0f0044df13d7884f83243589b47192d3cdf3a929062abbe3014e4ac127",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-081-INPUT-whole.png",
+            "sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+            "size": [
+              1439,
+              1080
+            ],
+            "source": "experiments/functional-v13-20261106/primary-candidates/train-extension-081/input.png",
+            "source_sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+            "source_size": [
+              1439,
+              1080
+            ],
+            "box": [
+              0,
+              0,
+              1439,
+              1080
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-081-CANDIDATE-whole.png",
+            "sha256": "b0ac7a0f0044df13d7884f83243589b47192d3cdf3a929062abbe3014e4ac127",
+            "size": [
+              1439,
+              1080
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-extension-081.png",
+            "source_sha256": "b0ac7a0f0044df13d7884f83243589b47192d3cdf3a929062abbe3014e4ac127",
+            "source_size": [
+              1439,
+              1080
+            ],
+            "box": [
+              0,
+              0,
+              1439,
+              1080
+            ]
+          }
+        ],
+        "paired_native": [],
+        "at": "2026-11-06T14:43:20.461512+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole1439x1080 input and candidate were directly viewed separately. Global lightening is visible and source blur/scan specks are not repaired or worsened into new detail. However the source green/yellow cast becomes more conspicuous as an olive-green veil over the dark foreground/garage shadows, with blue-green pavement. This fails the conservative basic-colour-quality check for adoption; try a gentler or balanced recipe under the unchanged lightening request instead of admitting it automatically.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      },
+      "sheet": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-081/review.jpg",
+      "sheet_sha256": "f8542d0104268a3de93e6f2cb9356f934ee2d7c78b0722002546dc2639a2e6c6",
+      "label_admitted": false
+    },
+    {
+      "id": "r13-train-extension-538",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-extension-538/input.png",
+        "sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+        "size": [
+          640,
+          852
+        ]
+      },
+      "instructions": {
+        "en": "Make photo more orange and strenghten the contrast, please.",
+        "zh": "请让照片更偏橙色，并增强对比度。"
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "temperature": 18,
+              "tint": -20,
+              "saturation": 3,
+              "contrast": 14,
+              "shadows": 5
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-538/R1.png",
+          "image_sha256": "70dfd5e02e6b022765cb62cd2c6d711a8a8b4be6b7dbc400318efb96fb7686a5",
+          "label_admitted": false
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "temperature": 12,
+              "tint": -30,
+              "contrast": 16,
+              "shadows": 5
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-538/R2.png",
+          "image_sha256": "b0891d6e8247990a61a248d2344a20ac5390f88a8471a25b9d2de5a2a2017ddb",
+          "label_admitted": false
+        }
+      ],
+      "prior_candidate": {
+        "path": "experiments/functional-v15-20261106/label-candidates/images/r13-train-extension-538.png",
+        "sha256": "afe2111021f139aae109c4bc0ff05559b2983d3e7109b0e538785cacd7743be7"
+      },
+      "failed_observation": {
+        "id": "r13-train-extension-538",
+        "stage": "labels",
+        "input_sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+        "candidate_sha256": "afe2111021f139aae109c4bc0ff05559b2983d3e7109b0e538785cacd7743be7",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-538-INPUT-whole.png",
+            "sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+            "size": [
+              640,
+              852
+            ],
+            "source": "experiments/functional-v13-20261106/primary-candidates/train-extension-538/input.png",
+            "source_sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+            "source_size": [
+              640,
+              852
+            ],
+            "box": [
+              0,
+              0,
+              640,
+              852
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-538-CANDIDATE-whole.png",
+            "sha256": "afe2111021f139aae109c4bc0ff05559b2983d3e7109b0e538785cacd7743be7",
+            "size": [
+              640,
+              852
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-extension-538.png",
+            "source_sha256": "afe2111021f139aae109c4bc0ff05559b2983d3e7109b0e538785cacd7743be7",
+            "source_size": [
+              640,
+              852
+            ],
+            "box": [
+              0,
+              0,
+              640,
+              852
+            ]
+          }
+        ],
+        "paired_native": [
+          {
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-538-PAIR-whole.png",
+            "sha256": "6e9f5ba5cb9ad0c1ff0e3b6bb492bcdcdcc8dab6602bcb383d13d0d57a712244",
+            "size": [
+              1280,
+              900
+            ],
+            "region": "whole",
+            "image_pixels_unscaled": true,
+            "header_height": 48,
+            "components": [
+              {
+                "role": "INPUT",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-538-INPUT-whole.png",
+                "sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+                "size": [
+                  640,
+                  852
+                ],
+                "source": "experiments/functional-v13-20261106/primary-candidates/train-extension-538/input.png",
+                "source_sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+                "source_size": [
+                  640,
+                  852
+                ],
+                "box": [
+                  0,
+                  0,
+                  640,
+                  852
+                ]
+              },
+              {
+                "role": "CANDIDATE",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-538-CANDIDATE-whole.png",
+                "sha256": "afe2111021f139aae109c4bc0ff05559b2983d3e7109b0e538785cacd7743be7",
+                "size": [
+                  640,
+                  852
+                ],
+                "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-extension-538.png",
+                "source_sha256": "afe2111021f139aae109c4bc0ff05559b2983d3e7109b0e538785cacd7743be7",
+                "source_size": [
+                  640,
+                  852
+                ],
+                "box": [
+                  0,
+                  0,
+                  640,
+                  852
+                ]
+              }
+            ]
+          }
+        ],
+        "at": "2026-11-06T14:47:26.704043+00:00",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole640x852 input and candidate were directly compared on an unscaled canvas. Contrast is stronger and individual yellow leaves, paving blocks, bench slats/metalwork and dark foliage remain readable, with source-white sun gaps retained. However the colour shift is predominantly more yellow/golden, with too little clear orange character for the unchanged more-orange request. Keep partial completion and repair the tone recipe rather than admitting this target.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      },
+      "sheet": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-538/review.jpg",
+      "sheet_sha256": "4008e440e0a4a0ebb928da966c18b5010273de4d4a770632e478faaf67cf4e73",
+      "label_admitted": false
+    },
+    {
+      "id": "r13-train-native-073",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+        "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+        "size": [
+          531,
+          748
+        ]
+      },
+      "instructions": {
+        "en": "Significantly increase the brightness and contrast and overall colors of the image",
+        "zh": "显著提高照片的亮度、对比度和整体色彩。"
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 50,
+              "brightness": 35,
+              "contrast": 16,
+              "shadows": 10,
+              "highlights": -15,
+              "saturation": 12
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-073/R1.png",
+          "image_sha256": "4bedbd26cde30689e0d7e1ae3f9b2433555e10e54e4d79927c0e5621c1ccd7ea",
+          "label_admitted": false
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 70,
+              "brightness": 20,
+              "contrast": 20,
+              "shadows": 15,
+              "highlights": -20,
+              "saturation": 12
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-073/R2.png",
+          "image_sha256": "e4c7c0654d53eca2f73c85add635aa34072168270f8715cd166f356a4d41207d",
+          "label_admitted": false
+        }
+      ],
+      "prior_candidate": {
+        "path": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-073.png",
+        "sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678"
+      },
+      "failed_observation": {
+        "id": "r13-train-native-073",
+        "stage": "labels",
+        "input_sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+        "candidate_sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-073-INPUT-whole.png",
+            "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+            "size": [
+              531,
+              748
+            ],
+            "source": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+            "source_sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+            "source_size": [
+              531,
+              748
+            ],
+            "box": [
+              0,
+              0,
+              531,
+              748
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-073-CANDIDATE-whole.png",
+            "sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678",
+            "size": [
+              531,
+              748
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-073.png",
+            "source_sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678",
+            "source_size": [
+              531,
+              748
+            ],
+            "box": [
+              0,
+              0,
+              531,
+              748
+            ]
+          }
+        ],
+        "paired_native": [
+          {
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-073-PAIR-whole.png",
+            "sha256": "db1cc1e06d839640754c96d6991ef51a239a6fbb781399fcc1c52ac7b1b21ddd",
+            "size": [
+              1062,
+              796
+            ],
+            "region": "whole",
+            "image_pixels_unscaled": true,
+            "header_height": 48,
+            "components": [
+              {
+                "role": "INPUT",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-073-INPUT-whole.png",
+                "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+                "size": [
+                  531,
+                  748
+                ],
+                "source": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+                "source_sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+                "source_size": [
+                  531,
+                  748
+                ],
+                "box": [
+                  0,
+                  0,
+                  531,
+                  748
+                ]
+              },
+              {
+                "role": "CANDIDATE",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-073-CANDIDATE-whole.png",
+                "sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678",
+                "size": [
+                  531,
+                  748
+                ],
+                "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-073.png",
+                "source_sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678",
+                "source_size": [
+                  531,
+                  748
+                ],
+                "box": [
+                  0,
+                  0,
+                  531,
+                  748
+                ]
+              }
+            ]
+          }
+        ],
+        "at": "2026-11-06T14:50:50.844019+00:00",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole531x748 input and candidate were directly compared on an unscaled paired canvas. Hair/braids, freckles, eye detail and chainmail links remain readable; richer colour/contrast is evident with plausible warm skin. The brightness change remains modest, especially in the face/background, rather than clearly significant as required alongside contrast and colour. Preserve partial completion and try a stronger controlled lift without relaxing the original request.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      },
+      "sheet": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-073/review.jpg",
+      "sheet_sha256": "d4c71ac475b0662bf96068df7d4ab888ee80c87c0e4b7e1c1251ffa53c710ef0",
+      "label_admitted": false
+    },
+    {
+      "id": "r13-train-native-074",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-074/input.png",
+        "sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+        "size": [
+          1920,
+          1440
+        ]
+      },
+      "instructions": {
+        "en": "Please brighten up a lot and make the colors more vivid.",
+        "zh": "请大幅提亮，并让色彩更鲜明。"
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 80,
+              "brightness": 25,
+              "shadows": 20,
+              "highlights": -12,
+              "saturation": 8
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-074/R1.png",
+          "image_sha256": "444589010475f9400c1d73c2cbb9b9e80ea1d3e840204607f265b804f49c998a",
+          "label_admitted": false
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 100,
+              "brightness": 15,
+              "shadows": 10,
+              "highlights": -15,
+              "saturation": 10
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-074/R2.png",
+          "image_sha256": "ec018ff2dde4b5a846a7d982177c8123884c19ccb2d882c99186e40790607a22",
+          "label_admitted": false
+        }
+      ],
+      "prior_candidate": {
+        "path": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-074.png",
+        "sha256": "dcd69890fec295dad40db5abdb7a09512c36e2901d87d790dd6856142677680d"
+      },
+      "failed_observation": {
+        "id": "r13-train-native-074",
+        "stage": "labels",
+        "input_sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+        "candidate_sha256": "dcd69890fec295dad40db5abdb7a09512c36e2901d87d790dd6856142677680d",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-074-INPUT-whole.png",
+            "sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+            "size": [
+              1920,
+              1440
+            ],
+            "source": "experiments/functional-v13-20261106/primary-candidates/train-native-074/input.png",
+            "source_sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+            "source_size": [
+              1920,
+              1440
+            ],
+            "box": [
+              0,
+              0,
+              1920,
+              1440
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-074-CANDIDATE-whole.png",
+            "sha256": "dcd69890fec295dad40db5abdb7a09512c36e2901d87d790dd6856142677680d",
+            "size": [
+              1920,
+              1440
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-074.png",
+            "source_sha256": "dcd69890fec295dad40db5abdb7a09512c36e2901d87d790dd6856142677680d",
+            "source_size": [
+              1920,
+              1440
+            ],
+            "box": [
+              0,
+              0,
+              1920,
+              1440
+            ]
+          }
+        ],
+        "paired_native": [],
+        "at": "2026-11-06T14:52:06.386177+00:00",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole1920x1440 input and candidate were directly viewed separately. Fine hair, skin texture, blanket weave/printed dots and sofa texture remain visible, with plausible infant skin and no apparent new broad clipping or intrusive noisy patches. Colours are more vivid and brightness rises, but the lift is still moderate for the unchanged brighten-a-lot request. Keep partial completion; stronger controlled brightening needs an actually rendered and reviewed attempt.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      },
+      "sheet": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-074/review.jpg",
+      "sheet_sha256": "feefcbadee3ad5724e376ef0ca0853106b0baf7e72210808e50b3b18b3d5b5c2",
+      "label_admitted": false
+    },
+    {
+      "id": "r13-train-native-214",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-214/input.png",
+        "sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+        "size": [
+          960,
+          642
+        ]
+      },
+      "instructions": {
+        "en": "Significantly increase the brightness, contrast and overall colors of the image",
+        "zh": "显著提高照片的亮度、对比度和整体色彩。"
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 55,
+              "brightness": 5,
+              "shadows": 10,
+              "contrast": 14,
+              "saturation": 8,
+              "highlights": -15
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-214/R1.png",
+          "image_sha256": "2530ac803ceb23198ae3cabb5938c14e3b235e33fe59df53a69b6da02d62ca1d",
+          "label_admitted": false
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 65,
+              "contrast": 12,
+              "saturation": 8,
+              "highlights": -20
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-214/R2.png",
+          "image_sha256": "7b3b1e08227c747d8470a5e404b85d3687fb5661decbfd427aaf332ebcdf96ae",
+          "label_admitted": false
+        }
+      ],
+      "prior_candidate": {
+        "path": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-214.png",
+        "sha256": "5fba42fb09738e98facc2b6ca24510543cef5d0101c2fc25d78e4a2bddac2ed4"
+      },
+      "failed_observation": {
+        "id": "r13-train-native-214",
+        "stage": "labels",
+        "input_sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+        "candidate_sha256": "5fba42fb09738e98facc2b6ca24510543cef5d0101c2fc25d78e4a2bddac2ed4",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-214-INPUT-whole.png",
+            "sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+            "size": [
+              960,
+              642
+            ],
+            "source": "experiments/functional-v13-20261106/primary-candidates/train-native-214/input.png",
+            "source_sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+            "source_size": [
+              960,
+              642
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              642
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-214-CANDIDATE-whole.png",
+            "sha256": "5fba42fb09738e98facc2b6ca24510543cef5d0101c2fc25d78e4a2bddac2ed4",
+            "size": [
+              960,
+              642
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-214.png",
+            "source_sha256": "5fba42fb09738e98facc2b6ca24510543cef5d0101c2fc25d78e4a2bddac2ed4",
+            "source_size": [
+              960,
+              642
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              642
+            ]
+          }
+        ],
+        "paired_native": [
+          {
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-214-PAIR-whole.png",
+            "sha256": "6952e3666aa26c6bd542b10162b457a55766295345a094246a653c8c5589c47a",
+            "size": [
+              1920,
+              690
+            ],
+            "region": "whole",
+            "image_pixels_unscaled": true,
+            "header_height": 48,
+            "components": [
+              {
+                "role": "INPUT",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-214-INPUT-whole.png",
+                "sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+                "size": [
+                  960,
+                  642
+                ],
+                "source": "experiments/functional-v13-20261106/primary-candidates/train-native-214/input.png",
+                "source_sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+                "source_size": [
+                  960,
+                  642
+                ],
+                "box": [
+                  0,
+                  0,
+                  960,
+                  642
+                ]
+              },
+              {
+                "role": "CANDIDATE",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-214-CANDIDATE-whole.png",
+                "sha256": "5fba42fb09738e98facc2b6ca24510543cef5d0101c2fc25d78e4a2bddac2ed4",
+                "size": [
+                  960,
+                  642
+                ],
+                "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-214.png",
+                "source_sha256": "5fba42fb09738e98facc2b6ca24510543cef5d0101c2fc25d78e4a2bddac2ed4",
+                "source_size": [
+                  960,
+                  642
+                ],
+                "box": [
+                  0,
+                  0,
+                  960,
+                  642
+                ]
+              }
+            ]
+          }
+        ],
+        "at": "2026-11-06T14:58:39.448115+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole960x642 input and candidate were directly compared on an unscaled paired canvas. Brightness/colour/contrast increase substantially and white-shirt folds, faces, leaves and boots remain readable. However coarse blue-purple/brown patches and bands become conspicuous in back-row dark shirts and blue trousers, revealing/amplifying source low-light compression/chroma texture. This fails basic-quality adoption despite correct direction/strength; revise the recipe and recheck rather than admitting it.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      },
+      "sheet": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-214/review.jpg",
+      "sheet_sha256": "c3d06d444d04ffa5eeca7f2f5bb6a9b79729ba305895f7bc2629001d7179a20e",
+      "label_admitted": false
+    },
+    {
+      "id": "r13-train-native-234",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-234/input.png",
+        "sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+        "size": [
+          915,
+          1200
+        ]
+      },
+      "instructions": {
+        "en": "Lighten and brighten picture",
+        "zh": "提亮这张照片。"
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 35,
+              "shadows": 10,
+              "saturation": -8,
+              "highlights": -12
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-234/R1.png",
+          "image_sha256": "0fcc80c5782c5c8e93c527e34651fa38883c3b73e2aaaf2e70d439e4e0f795ec",
+          "label_admitted": false
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 50,
+              "shadows": 5,
+              "saturation": -12,
+              "highlights": -15
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-234/R2.png",
+          "image_sha256": "aa679279dc0e41a9d305068e077135c958c5363c8df2af9f671fc89a3ff73d61",
+          "label_admitted": false
+        }
+      ],
+      "prior_candidate": {
+        "path": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-234.png",
+        "sha256": "ededb8a0dbb2ca5114af028a2bd467a1e8b5a94a780aa970cfbc758fdd1e1b3b"
+      },
+      "failed_observation": {
+        "id": "r13-train-native-234",
+        "stage": "labels",
+        "input_sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+        "candidate_sha256": "ededb8a0dbb2ca5114af028a2bd467a1e8b5a94a780aa970cfbc758fdd1e1b3b",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-234-INPUT-whole.png",
+            "sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+            "size": [
+              915,
+              1200
+            ],
+            "source": "experiments/functional-v13-20261106/primary-candidates/train-native-234/input.png",
+            "source_sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+            "source_size": [
+              915,
+              1200
+            ],
+            "box": [
+              0,
+              0,
+              915,
+              1200
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-234-CANDIDATE-whole.png",
+            "sha256": "ededb8a0dbb2ca5114af028a2bd467a1e8b5a94a780aa970cfbc758fdd1e1b3b",
+            "size": [
+              915,
+              1200
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-234.png",
+            "source_sha256": "ededb8a0dbb2ca5114af028a2bd467a1e8b5a94a780aa970cfbc758fdd1e1b3b",
+            "source_size": [
+              915,
+              1200
+            ],
+            "box": [
+              0,
+              0,
+              915,
+              1200
+            ]
+          }
+        ],
+        "paired_native": [
+          {
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-234-PAIR-whole.png",
+            "sha256": "be7b47485103fd8a2a6a71a7532a8a407b03e4aee027c45e36d8391aaf5ddc3a",
+            "size": [
+              1830,
+              1248
+            ],
+            "region": "whole",
+            "image_pixels_unscaled": true,
+            "header_height": 48,
+            "components": [
+              {
+                "role": "INPUT",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-234-INPUT-whole.png",
+                "sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+                "size": [
+                  915,
+                  1200
+                ],
+                "source": "experiments/functional-v13-20261106/primary-candidates/train-native-234/input.png",
+                "source_sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+                "source_size": [
+                  915,
+                  1200
+                ],
+                "box": [
+                  0,
+                  0,
+                  915,
+                  1200
+                ]
+              },
+              {
+                "role": "CANDIDATE",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-234-CANDIDATE-whole.png",
+                "sha256": "ededb8a0dbb2ca5114af028a2bd467a1e8b5a94a780aa970cfbc758fdd1e1b3b",
+                "size": [
+                  915,
+                  1200
+                ],
+                "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-234.png",
+                "source_sha256": "ededb8a0dbb2ca5114af028a2bd467a1e8b5a94a780aa970cfbc758fdd1e1b3b",
+                "source_size": [
+                  915,
+                  1200
+                ],
+                "box": [
+                  0,
+                  0,
+                  915,
+                  1200
+                ]
+              }
+            ]
+          }
+        ],
+        "at": "2026-11-06T15:05:49.433020+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole915x1200 input and candidate were directly compared on an unscaled paired canvas. Both men and shirts brighten usefully; name patch, tie lines, shirt creases, ceiling folds and window structure remain readable. However low-light chroma grain/blotches become conspicuous in arms, faces and dark trousers, with coarse coloured bands in the shaded shirts. The source already contains grain; its amplified visibility fails basic-quality adoption. Try a cleaner gentler recipe under the same lightening request.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      },
+      "sheet": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-234/review.jpg",
+      "sheet_sha256": "983e2626a05802b25203eae85d120c745fc9900bbff964bd743c5a6c47fc92a4",
+      "label_admitted": false
+    }
+  ],
+  "source_manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+  "source_native_observations_sha256": "7dba9a6322b94e61fbf04323cba776a4cf2026571e88666e72ae97ad0d24c0bd",
+  "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+  "editor_sha256": "53d058fa7173253548ebe2fe907f927039b28f78694192210487df847e60cfaf",
+  "executed_edits": 20,
+  "GPU_hours": 0,
+  "policy": "Only actual observed failures; unchanged literal requests. Parameters are explicit AI proposals. Every adopted result requires direct overview and native quality review; no L1 ranking or automatic admission. All failed originals remain intact."
+}

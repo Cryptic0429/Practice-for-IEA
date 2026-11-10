@@ -1,0 +1,32 @@
+{
+  "at": "2026-11-07T05:52:38.901791+00:00",
+  "reviewer": "Codex direct visual AI observations",
+  "policy": "All five shown images were directly viewed. Illustrative observations only; no change to locked evaluations or historical exact-pixel uncertainty, no user approval.",
+  "records": [
+    {
+      "path": "report-panels/case12-http.jpg",
+      "sha256": "3f8b0212fe71c95d040780e4a1b6468ed1ca6f3d6432040e220e402d827a67a6",
+      "observation": "The two actual HTTP outputs have clearly shifted foliage and path to a brown/sepia rendering, with retained scene and visible cloud/road details. They are more desaturated and less orange than the historical reference. Historical regression illustration only."
+    },
+    {
+      "path": "report-panels/night-original-native-pixels.png",
+      "sha256": "dcc2ae1cbbf490a43107c440d4294855f809588fdfc2e8f8760a384a3fb927ee",
+      "observation": "Actual 960x640 input/output whole pixels copied without resampling. The sky is lighter, but red/green mottling and fine colour speckling are visibly more pronounced, while the bottom remains very dark. This observation illustrates the unresolved quality risk; do not replace the frozen uncertain grade or declare a new major adjudication."
+    },
+    {
+      "path": "export-robustness/witnesses/resize768_png-pair.png",
+      "sha256": "9bacc6cccfef012260daf07868a9617e541baf5e10cc7cbb2778a2fe26109614",
+      "observation": "Actual 768 PNG export pixels. The same exposure increases visible sky grain and color speckling; original stars remain visible. Both R22 variants refused/no result. Encoding changes do not make this an independent photo."
+    },
+    {
+      "path": "export-robustness/witnesses/resize768_jpeg75-pair.png",
+      "sha256": "d2cb86f1321641bb7083393908481987bc8b198279e1521c43c7051192cf9498",
+      "observation": "Actual 768 JPEG q75 export pixels. Exposure makes broad chroma variation and compression/grain patterns more visible; image remains dark in the foreground. No new quality grade or implication that all exposure strengths are impossible."
+    },
+    {
+      "path": "export-robustness/witnesses/resize512_png-pair.png",
+      "sha256": "99fc5372fed3fa45f05181b7c5f12113e384c13256c6b0cc55d5f22878f87634",
+      "observation": "Actual 512 PNG export pixels. Exposure again makes sky grain more prominent despite a different scale; foreground stays very dark. Compare only these fixed models and this known night source, not general camera noise."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "at": "2026-11-06T20:51:41.704721+00:00",
+  "before": {
+    "id": "1b654a8fb5c24c76bd00f37b348535f4",
+    "pid": 4116250,
+    "gpu": "3",
+    "stage": "v18-training-pair-specificity-diagnostic",
+    "editor": "functional-editor-v1.2-sepia",
+    "started_at": "2026-11-06T20:49:17.909812+00:00",
+    "started_epoch": 1793998157.9057448,
+    "heartbeat_epoch": 1793998245.9010231,
+    "max_seconds": 900,
+    "status": "completed",
+    "ended_epoch": 1793998245.905485,
+    "ended_at": "2026-11-06T20:50:45.905487+00:00",
+    "error": null
+  },
+  "after": {
+    "id": "1b654a8fb5c24c76bd00f37b348535f4",
+    "pid": 4116250,
+    "gpu": "3",
+    "stage": "v18-training-pair-specificity-diagnostic",
+    "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+    "started_at": "2026-11-06T20:49:17.909812+00:00",
+    "started_epoch": 1793998157.9057448,
+    "heartbeat_epoch": 1793998245.9010231,
+    "max_seconds": 900,
+    "status": "completed",
+    "ended_epoch": 1793998245.905485,
+    "ended_at": "2026-11-06T20:50:45.905487+00:00",
+    "error": null,
+    "runtime": "functional_v15.runtime",
+    "schema": "functional-outcome-v1"
+  },
+  "reason": "GPUJob defaults to historical editor identity unless overridden. Executed diagnostic imported exact frozen functional_v15 executor; correct identity only, billing/times/outputs unchanged.",
+  "GPU_calls": 0
+}

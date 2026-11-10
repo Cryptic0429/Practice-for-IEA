@@ -1,0 +1,2381 @@
+{
+  "at": "2026-11-07T06:36:05.303895+00:00",
+  "protocol_sha256": "c32d69021fe83d14a075a1fdf1d26039597017597e9ff79b82dc20c699badd31",
+  "data_sources": {
+    "data/training/functional-v22-20261107/admission.json": "d59104ed41113fdfc7275aa9a103125d747ea87be133a36c9e1d1cd45f961913",
+    "experiments/functional-v22-20261107/quality-native-notes.jsonl": "4b4f3c2e153361d1a24f922bd1041664de8c915af8a031d9989d58504cf4ee04",
+    "experiments/functional-v22-20261107/quality-candidates/manifest.json": "1ee0502d48ce0ccfda154313c37eb4b87675de4eafec0c0d4856bff753263c9d"
+  },
+  "examples": [
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-01-b",
+      "group_id": "5c3e4b710bb88e9d7f150e0a135acbb98c9aa5143149377c487ebd9c3412ad4e",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-01-b.png",
+      "input_sha256": "5ab4f0bece115f6d51cd05e4b3f76601c4bde4bd6f1e1aa6ede332e9a36c0dc1",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-01-b-1.png",
+      "output_sha256": "cb0fbf4365b1dfa9e1f63607a6a886f418539a7bafb2c1759e3772e5536305f8",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Full1024x683 comparison confirms that even the restrained witness exposes dense red/green stipple over baby skin, adult and wall, obscuring clean skin/fabric texture. Together with all3 visible attempts, a reliable clean lift is not supported; quality-refusal policy target justified, not a proof every parameter fails."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-02-a",
+      "group_id": "f4b7f9dbf92a18ce07c9580bad2c3e205989a92fa874e92f26b61b282b814714",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-02-a.png",
+      "input_sha256": "913a06869b56d9ad4a3618cc46f78716562873994d1e7d23c1341e8f6636e25f",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-02-a-2.png",
+      "output_sha256": "6c4fe4d76df5bf08a2cb568bb145a20cd03d5234ffd6899159766b26bbb59f11",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Full960x720 comparison shows faces, flowers, sea and column shadows visibly opened; hairline, bouquet edges, shirt/dress boundaries and cloud structure remain identifiable. Existing dark jacket and background grain remain, without a new conspicuous coloured-noise field or major cast. Selected moderate lift meets this request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-02-b",
+      "group_id": "f4b7f9dbf92a18ce07c9580bad2c3e205989a92fa874e92f26b61b282b814714",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-02-b.png",
+      "input_sha256": "9d047dea19e6622d1c5715d4d80c7fba7afb349777f947425ca9ad311eadb89f",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-02-b-1.png",
+      "output_sha256": "880aaf73e1c92ec7c0a20039b04997b4fb9466bb6b66565a0cd4dcf9f9ad5dd6",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Full960x720 witness confirms coloured grain dominates faces, pale pillars and sky after the restrained lift; the scene stays noisy with no reliable clean result among the3 viewed attempts. Refuse this quality-constrained edit rather than outputting a degraded image; not mathematical impossibility."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-03-b",
+      "group_id": "521f476c2b219708538cedcb6a4aa021d0d616c377c6eb2f49b861ec075cfa34",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-03-b.png",
+      "input_sha256": "87f41540d2e79e695c6cb819e434a45f43614d34f21a7fb0e42d4cbe96f48c68",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-03-b-1.png",
+      "output_sha256": "470652b416668f4358a3a536a4dce95487120c82269fba4b7fe607ee4377b8f7",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Full1024x773 restrained witness confirms dense coloured speckle across faces, wall and patterned shirts; lifting exposes the degraded texture. With all3 attempts already seen, reliable clean completion is unsupported; quality-refusal target accepted without an all-parameters impossibility claim."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-04-a",
+      "group_id": "d26be9a161eadd62df602f915e2e21cd79a0deaa103558e755318f191a59c0ac",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-04-a.png",
+      "input_sha256": "599a8e7095294d29083dd9a3e4d3a5636ceda31929e4efc33ddb41fd8a6cf5e3",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-04-a-2.png",
+      "output_sha256": "547a23b23539043250775a2b308bc2eae365537103b2840a3f93687efbd0c7e5",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Full1024x723 scan shows both face shadows, hair masses and floral dress opened, while the necklace, printed facial boundaries and dress motifs remain. Existing softness, grain and cyan scan cast are not repaired; no new conspicuous coloured-noise field or structural loss is introduced by this moderate lift."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-04-b",
+      "group_id": "d26be9a161eadd62df602f915e2e21cd79a0deaa103558e755318f191a59c0ac",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-04-b.png",
+      "input_sha256": "d1c13fc0dc8b359406b75adae30297ec012d873cbe535958d1c2513aec600447",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-04-b-1.png",
+      "output_sha256": "847b5e8c9635194b9cbbc24bffb64c420c426c40d04d1754add16deede740c08",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Full1024x723 comparison confirms conspicuous coloured grain across both skin areas and pale print backgrounds after the restrained lift, with fine printed texture obscured. No reliable clean attempt among the3 visible candidates; use a quality-refusal target, not an impossibility claim."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-05-a",
+      "group_id": "f2a8b695f8af218f8195287e17a155c2217b9ded9b14d8ff58906c6feceefa03",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-05-a.png",
+      "input_sha256": "5b5e2ab9efde5ef52f5b4bf726993346fb0792f5c0a221387188b0500a4258d3",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-05-a-2.png",
+      "output_sha256": "ee182d0bab91372a7a35b62a59044bc1d237329cdd112356a9011855fd62a8ff",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Full960x720 comparison confirms a visible restrained lift of shaded skin, top and hair, with skin surfaces, garment edges, clouds and surf intact. No conspicuous new colour-speckle field or clipped white area appears; tan skin and blue sea/sky remain recognizable and natural for this source."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-05-b",
+      "group_id": "f2a8b695f8af218f8195287e17a155c2217b9ded9b14d8ff58906c6feceefa03",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-05-b.png",
+      "input_sha256": "542486173b03a081a3a00c68afab0204eb824483f76921e04363707fa7e950a4",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-05-b-1.png",
+      "output_sha256": "b615319b39de2d3d27a7107fa8e21cdb9594b3d3d4012b512d865ca8c82e7194",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Full960x720 weak-lift witness exposes dense coloured grain across skin, sky and surf; stronger attempts seen earlier are harsher. It does not meet the explicit no-obvious-added-grain condition, so a reliable-quality refusal target is warranted without claiming exhaustive impossibility."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-06-a",
+      "group_id": "94f925b7c4ce4b000daf157b656907c2dd90c9e3fa5bcf29aeb5210ec33c982b",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-06-a.png",
+      "input_sha256": "a8c397f03674706941eced59ebe9a6704790c9945cef85a4bf2ff94080ca44ed",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-06-a-2.png",
+      "output_sha256": "d4ea2a577a37cd4b481be9f38318f5380c7c3cf4fb91ba885a3ca154bdaaeb54",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Full683x1024 comparison visibly opens shaded hair, faces and clothing, retaining fine hair strands, cardigan knit, dress motifs, skin and denim texture. Warm rock/skin colours remain plausible; no conspicuous noise amplification or texture collapse is introduced by the selected moderate lift."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-06-b",
+      "group_id": "94f925b7c4ce4b000daf157b656907c2dd90c9e3fa5bcf29aeb5210ec33c982b",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-06-b.png",
+      "input_sha256": "ea29ba4d8a1c3a17c62be14a3b6f3a01e8e077c76dfffb1ed45cd0d51e8b9c94",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-06-b-1.png",
+      "output_sha256": "597ac4ebe49212d3571836286f49c55aad8cc0749c3236a76a140f2a5196ee2e",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Full683x1024 witness confirms dense coloured grain overlays skin, cardigan knit and denim after even the restrained lift. All3 viewed attempts fail the clean-texture requirement; a quality-refusal target is justified rather than returning a degraded edit."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-07-b",
+      "group_id": "b3dad80b532865a826e294ff17fb4d5f6c43d6e4f7e7a7f8153fecbe17c3f5c4",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-07-b.png",
+      "input_sha256": "76e4f2a0e91a6ed57218706684e375c34efdf3f54b0ed9a9f9ef88d5a0658f6c",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-07-b-1.png",
+      "output_sha256": "33f2f891e05df9d938af7a7209abb6c620382929f93b1725b8a42fdfb8d2ad48",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Full720x960 witness confirms dense coloured stipple over faces, magenta coat, suit and pale wall after the restrained lift. All3 attempts seen earlier lack a clean-quality completion; quality-refusal target is justified, without an exhaustive impossibility claim."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-08-a",
+      "group_id": "7e209a64c8454e427bf225d8212bc6d90caa3eeefb0f7ea8d2347ca652588358",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-08-a.png",
+      "input_sha256": "7474efcad9d2815a2b20ca491c0e748c8077a61c93b3ecfae3cc2286da148cce",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-08-a-2.png",
+      "output_sha256": "9af0cc9f343ce0efc65b46fdda0918a544a401d7d4787aa7a9987bc51fa8304d",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Full576x1024 comparison opens hair, dark bedding and clothing while retaining separate hair strands, fingers, tile joints and fabric folds. Skin remains plausible and there is no new conspicuous colour-noise field or texture erasure. Moderate lift meets the shadow request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-08-b",
+      "group_id": "7e209a64c8454e427bf225d8212bc6d90caa3eeefb0f7ea8d2347ca652588358",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-08-b.png",
+      "input_sha256": "3366c27c973fa21eb6601c51a89fd4b06db4cb40728c784a9556ed98869f43e1",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-08-b-1.png",
+      "output_sha256": "be748f32a8a6208872e83b3cadd12a7aa0438ec1068bd7608ca0405a09e2bc0e",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Full576x1024 restrained witness exposes obvious coloured stipple across wall, skin and dark pillows, interfering with smooth skin and hair/fabric texture. Other stronger attempts were also seen; no reliable clean completion is supported, so admit a quality-refusal target."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-09-a",
+      "group_id": "a42416cc8f24b4bc1dab1597220ca23fc85255cd6768f0e248a354145f5957c6",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-09-a.png",
+      "input_sha256": "6d20d3b41eec1f857f280e731f431c8a06e1d768cdd493d3fb712c6a2f5dace2",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-09-a-2.png",
+      "output_sha256": "f9ac1b751085799880f53d6ec745dd9a1639f88dc3eb36894b2950151ff5d5b2",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Full1024x768 comparison visibly opens infant face and swaddle/cushion shadows while retaining eyelid, mouth, hair and pastel fabric motifs. Skin remains smooth/plausible, no new conspicuous colour-speckle field, clipping or texture loss appears. The selected moderate lift meets the request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-09-b",
+      "group_id": "a42416cc8f24b4bc1dab1597220ca23fc85255cd6768f0e248a354145f5957c6",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-09-b.png",
+      "input_sha256": "8b2e48e47eca7cb4c7589f3a275f5defd210d4389c9bc556694955bad93cd1f9",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-09-b-1.png",
+      "output_sha256": "aea9cfcc723f3423ebf841178cd3edaa467f5fb83752f6c4ab42104a6f06ff92",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Full1024x768 comparison confirms dense colour-speckle over infant skin and pale fabric after the restrained lift, degrading recognizable fine texture. Stronger alternatives were seen earlier; quality-constrained reliable completion is unsupported, so accept a refusal target."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-10-b",
+      "group_id": "bf04c83a1e8c0666890b1a4ed6961c3bbe24c6c02d6a77186d39f53f5c03cb4d",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-10-b.png",
+      "input_sha256": "6d0d51fea38fe722eaf72d80dd5cc23055386bcef65faf0c7faaf8f288563af0",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-10-b-1.png",
+      "output_sha256": "14bbaef395a0c13a2368413ebeb931095c72eb78b4f197b84e25b8e9aa929e89",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Full682x453 witness shows dense coloured grain over the already red-veiled faces, coats and building after the lift; the stronger candidates seen earlier are worse. No reliable clean completion from available attempts, supporting a quality-refusal policy label only."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-11-b",
+      "group_id": "4d4c7633b34dde39f8a88b11876a0df25c601493ce068bd91d4b9455690f4ddf",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-11-b.png",
+      "input_sha256": "ef5581ceb3454a04a7d02eafbe7c19faadef82d3508f18a5a3f3de75cdabd8ac",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-11-b-1.png",
+      "output_sha256": "804ea3ea39ee5202b446c50171dfd1c693013da939ea2b7785cdc719e6399a07",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native restrained witness exposes dense red/green stipple over hat, neck, shirt and bright face band, obscuring fine skin/fabric texture. All3 visible attempts lack a reliable clean lift; accept the quality-refusal target without claiming exhaustive impossibility."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-12-a",
+      "group_id": "09c0df0508474960740ba1627814989e3ad6dbcacfca9ed4aa50783efdf50c1b",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-12-a.png",
+      "input_sha256": "6e9c64c95d759e599aba77089094f57d5916f25aecf280589f832a10fbf547fb",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-12-a-2.png",
+      "output_sha256": "6e333b97f767ddea85a83807361a19a686b5c5148d8ded5918d736a0ed350039",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison visibly opens face, shirt, trousers and tree shadows, preserving distinct bark fissures, phone/finger outline, lettering and cloth folds. Existing photographic softness remains; no new conspicuous grain field, clipping or hue distortion appears. The selected moderate lift meets the request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-12-b",
+      "group_id": "09c0df0508474960740ba1627814989e3ad6dbcacfca9ed4aa50783efdf50c1b",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-12-b.png",
+      "input_sha256": "25fe311d77ff27180613723e7b00cfa69acdc7339a265229b10b89373a5df238",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-12-b-1.png",
+      "output_sha256": "15f6d443ede3ef856220fdb104f1b20fb99015ee89007c8c6a962b59dc1aa38b",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native weak-lift witness confirms coloured grain over face, pale shirt, trousers and background, degrading smooth skin/cloth texture. The stronger attempts were also seen and are harsher; no reliable clean completion among these attempts, supporting a refusal target."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-13-b",
+      "group_id": "60bda32ce76c9f0a4c7e29ccb13f4a48394207296e197f3e4f31525507362e20",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-13-b.png",
+      "input_sha256": "e7453b919a1eabd646f9bf589fbbd302c2869d8687bd8b45742fdbcced15b30b",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-13-b-1.png",
+      "output_sha256": "c7eda44ade87fc91920eaf68c66fb6e392d4229fc03525a1d29af3f8010f7dde",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native restrained witness confirms dense coloured stipple over faces, limbs, hair and pale background after lifting; recognizable fine skin/hair texture is impaired. Other attempts were seen earlier; no reliable clean completion supports returning an edit, so accept a quality-refusal target."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-14-a",
+      "group_id": "531ba90cb0eb25cf4c63a586fe6e0808f9ed98284d5c70c680696b762ffb4ade",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-14-a.png",
+      "input_sha256": "baf278e5058f1dc6d3d14d4f760746a0856f620a84e2d52e3d8908c290f99058",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-14-a-2.png",
+      "output_sha256": "ca927b8cc2c9929ebd8dc977df881352897c81d076b8530a297739c8b30f12dd",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison visibly opens faces, shirt, gown and diploma shadows while retaining hair/skin texture, shirt folds, embroidery/lettering and gown trim. Skin remains plausible, cloud/building detail remains, and no conspicuous new grain or clipping is introduced by the moderate lift."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-14-b",
+      "group_id": "531ba90cb0eb25cf4c63a586fe6e0808f9ed98284d5c70c680696b762ffb4ade",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-14-b.png",
+      "input_sha256": "399a01e2e14dfa70cef402537f842079ed768fb2edabe315fcccd22cb32fab38",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-14-b-1.png",
+      "output_sha256": "2cb05bdfc12addc9ed4c3159eb9e78fff8c64a47952cf6a7e9e13a4877c6af04",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native weak-lift witness confirms conspicuous red/green grain across skin, purple shirt, dark gown and sky, masking fine fabric/skin texture. All3 finite attempts were viewed and none is reliably clean; quality-refusal label accepted, not exhaustive impossibility."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-15-a",
+      "group_id": "811535dd016a4409f643511b8baa6255dbe34ad264a5147f7c02c9b14ad4b9fc",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-15-a.png",
+      "input_sha256": "9458f7725cba6088155b1cf1eee55eca46a15c8ab6b6613029d045547101fdd9",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-15-a-2.png",
+      "output_sha256": "7eba7428e024d3358d25c9a2a7bf9c0f290a234919efedcb9a0eee189938cae5",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison opens face, clothing, horse and paddock shadows with visible coat hair, rope, fence rails, cloth folds and mountain texture retained. The existing subdued/soft photographic rendering remains; no new conspicuous coloured grain or structural loss appears. Selected moderate lift meets the request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-15-b",
+      "group_id": "811535dd016a4409f643511b8baa6255dbe34ad264a5147f7c02c9b14ad4b9fc",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-15-b.png",
+      "input_sha256": "7201204e12635efafcc3d7d7b8f35b8c81ac7346d74876e54f5948e19eedca5c",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-15-b-1.png",
+      "output_sha256": "d3b2e053dcf309afa5dcda1a08343656137173ec11d70033daf19a0fbe8698da",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native restrained witness confirms coloured stipple across faces, horse coat, blue clothes and smooth sky after lifting; fine natural texture becomes difficult to separate from grain. All3 attempts lack reliable clean completion, supporting a quality-refusal target only."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-16-a",
+      "group_id": "4d3dd6d32257fea1cba591c688ce6d21524fc1a8ff52bf50f8b506ee4fb128b8",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-16-a.png",
+      "input_sha256": "6a23e09ce2aebe880d15fe8ab02013ecc9c733e48a93add8a32a9d92486d8aca",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-16-a-2.png",
+      "output_sha256": "297445f5a535cb02f9d822972adf653802196bcd84d6365caef42cb671dd2696",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison opens the suit, faces and foreground forest while preserving dress folds/lace, suit seams, hair, tree texture and distinct cloud modelling. Blue sky and plausible skin remain; no conspicuous new grain or clipping. The selected moderate lift meets the shadow request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-16-b",
+      "group_id": "4d3dd6d32257fea1cba591c688ce6d21524fc1a8ff52bf50f8b506ee4fb128b8",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-16-b.png",
+      "input_sha256": "d75128adac90a6260d6463d9e1e18d27147137df1ed49e84850599e7e696a0ae",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-16-b-1.png",
+      "output_sha256": "67e3b861c31c6367f0c4bc37c5c999ab281d2ba75995f0ef50b3dd26e8012412",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native weak-lift witness shows conspicuous colour-speckle over clouds, suit, dress and trees, degrading smooth/fine texture; stronger attempts were also viewed and are harsher. A reliable clean completion is unsupported, so accept a quality-refusal target without an impossibility claim."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-17-a",
+      "group_id": "173cb24e8c92b1877fcd172ecb3763a18980204dbc52ceefeb275a94d79d0ae2",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-17-a.png",
+      "input_sha256": "bcc163640ce83a34edabf75566db9d179c95e8fe88885275bfe8493e06b5a69e",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-17-a-2.png",
+      "output_sha256": "2d71281a011c4562aaeecb6bc5614b69673aa9122d5026d965125c5bb94e65de",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison visibly opens forest, bank and rock shadows, with leaf/branch texture, rock edges and river ripples retained. Existing blank grey sky is not claimed restored; no new conspicuous grain or cast. Moderate lift meets the shadow request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-17-b",
+      "group_id": "173cb24e8c92b1877fcd172ecb3763a18980204dbc52ceefeb275a94d79d0ae2",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-17-b.png",
+      "input_sha256": "5cac8f2433be473e66b9cb2f4ed2561cddbe1041bcb6b6f1437462470a90d77f",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-17-b-1.png",
+      "output_sha256": "dc0dea74f5c9b9ff7ea0444b82e7b36dad93b668c8f5af61b6a308aaf67fdbf2",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native restrained witness shows obvious multicolour stipple in sky, river and tree shadows, interfering with ripples and foliage texture after lifting. All3 finite attempts were seen; no reliable clean completion, so accept quality refusal without an impossibility claim."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-18-a",
+      "group_id": "e400632d04cdf370e7379a9a4e093134ba0c4a9b0bd1193d4c02e1dada0c4cc7",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-18-a.png",
+      "input_sha256": "cde1d677b0cfb374acb254946cc0e535bdb68394f1bb336f28c2b8c4faa8907c",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-18-a-1.png",
+      "output_sha256": "2bed99daf112967342695f7d8e20ba9ce99eef18a5e79223314f9eae03e727b4",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": false,
+      "evidence": "Native comparison opens the shaded roadside trees and asphalt while retaining marking edges, road aggregate texture and the source's foreground depth-of-field blur. Sky/greens remain plausible, with no new conspicuous grain field or detail loss from the moderate lift."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-18-b",
+      "group_id": "e400632d04cdf370e7379a9a4e093134ba0c4a9b0bd1193d4c02e1dada0c4cc7",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-18-b.png",
+      "input_sha256": "95682a58570227613d4ae8e924ed1075f106d2d94afe96641548b60dd0a69d0f",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-18-b-1.png",
+      "output_sha256": "69610b8cb51bf7b06c3ddfc660b83d72e40d3344828c187e49e829304bb17715",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native weak-lift witness confirms coloured grain over sky and road, mixed with and obscuring genuine aggregate/tree texture. Stronger attempts are also visibly degraded; no reliable clean completion from these attempts, supporting a quality-refusal policy target."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-19-b",
+      "group_id": "dbb2e2acb6a63112d2e5b13c463d19738d10c82322a4447dac0f098414958e2d",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-19-b.png",
+      "input_sha256": "3a29d6cd0af734263f3dbb51b5f64e80c5d0fe7bd172b7c6431bc9e63ad8b7ca",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-19-b-1.png",
+      "output_sha256": "1af93592113d10c5eb77ed98d8641f68ab91a91b31bf46b86c414783f3cce9a3",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native restrained witness confirms a dense coloured-noise field over sky, forest and ground after lifting, masking fine leaf/branch texture; stronger attempts were also viewed. No reliable clean completion among these attempts, supporting a quality-refusal target only."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-20-a",
+      "group_id": "2145277c51d9f27db6a2697afc9496251bd64fa5f672904e75dada4eb1ce0e4b",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-20-a.png",
+      "input_sha256": "9b53cf7b3089576a372dc787d2d59efd854bb9014234675f3c56aee16c2edaab",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-20-a-2.png",
+      "output_sha256": "26f00dbeee9c678fdb5c2475cd4737b7b3a985965ca15630dac5fd97e75ae40f",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison opens boat hulls, shaded trees and shoreline while retaining small rigging/wood details and distinct fine water ripples. Sky, lake and foliage remain plausible; no new conspicuous grain or texture erasure. Selected moderate lift meets the request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-20-b",
+      "group_id": "2145277c51d9f27db6a2697afc9496251bd64fa5f672904e75dada4eb1ce0e4b",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-20-b.png",
+      "input_sha256": "dff21910c1fd017b5863142d3c653431de8bb47a5c3e1ddc1c3a271a323a2453",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-20-b-1.png",
+      "output_sha256": "fa387dc6b8a8c0fbb8d725d74582a24cc664771e2571776b2fc7b856ea21c4d8",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native weak-lift witness confirms dense coloured speckle across lake/sky and boat surfaces, obscuring real fine ripples and wood texture. Stronger attempts are also visibly degraded; reliable clean completion is unsupported, so accept quality refusal without an impossibility claim."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-21-a",
+      "group_id": "27785c8960abbcca1eaf91d4972ea455faaf3538b31c36b56a859e9c7f70a02f",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-21-a.png",
+      "input_sha256": "e6dc5f19d1483f04556942a786893504623a3157e63f48f993559c4a54429393",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-21-a-2.png",
+      "output_sha256": "76398195004b8d221c96745deed57d1e8cb1f16c682a7c16437950a04850cd82",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison opens coat folds, snowboard and foreground shadows with snow texture, mountain contours, helmet detail and blue sky retained. No conspicuous added grain, highlight clipping or structural change. Moderate lift meets the request; inherited landscape category includes foreground people."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-21-b",
+      "group_id": "27785c8960abbcca1eaf91d4972ea455faaf3538b31c36b56a859e9c7f70a02f",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-21-b.png",
+      "input_sha256": "292adf22736a8b0d061c5f904118419dfb46f6140b3c37ff5e6381f85e04d0cf",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-21-b-1.png",
+      "output_sha256": "7d16fae59e6e550df248f5c6a8889d452e284f8cbb65167f368cc478362acc66",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native weak-lift witness confirms dense colour-speckle across smooth sky/snow and dark coats after lifting; other stronger attempts also degrade texture. A reliable clean completion is unsupported, so accept the quality-refusal target without claiming all parameter settings fail."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-22-a",
+      "group_id": "8503b4c82cd0bd5399635bab851abdddea751c15d9cf83fc0ae346b97833dfff",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-22-a.png",
+      "input_sha256": "795d8d330b8c38492cebd7d6f7a11bcfd25437e12d8beac5d10cb4807c96620b",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-22-a-2.png",
+      "output_sha256": "9403bac31d559c6caae5322d24fb200b06112596c3545e61a768fbafa8a66721",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison opens the dark sign and building/grass shadows while retaining lettering, reflective marks, stone blocks, roof lines and cloud structure. Blacks remain separated rather than a broad new grey veil; no conspicuous new grain. Selected moderate lift meets the request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-22-b",
+      "group_id": "8503b4c82cd0bd5399635bab851abdddea751c15d9cf83fc0ae346b97833dfff",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-22-b.png",
+      "input_sha256": "7fb1019dbf1c3776395680c81a7fcc7538d79dc72035e64cf5d7acc1f06c5de0",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-22-b-1.png",
+      "output_sha256": "305a51a5245038101d140f2af73e406093e36a27fab1b24a999d849a5f640b64",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native restrained witness shows dense coloured stipple over sky, sign reflection and pale stone, masking fine surface texture after lifting. All3 available attempts lack a reliably clean result; accept quality refusal, not an exhaustive impossibility claim."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-23-a",
+      "group_id": "2a33c7f887db5a1a06daeb5292b8c1b9236ea22625ee23f6d189c158752ccb83",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-23-a.png",
+      "input_sha256": "63c30e468ac83c5b35210e5ac7effa7c2574779ceaf543aa1e35296c6a6529b7",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-23-a-2.png",
+      "output_sha256": "fef6a34b51ceddc3c5af823a25f5b0aa985b197cd6c5c7ad185a90be7ccd2881",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison opens hedge, steps and entrance shadows with door carvings, railings, roof surface and dusk-sky gradient retained. Existing light sky is not washed out, no new conspicuous grain or colour cast. Selected moderate lift meets the shadow request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-23-b",
+      "group_id": "2a33c7f887db5a1a06daeb5292b8c1b9236ea22625ee23f6d189c158752ccb83",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-23-b.png",
+      "input_sha256": "459cf25808d7b136eab73be6ded6e10f6ecd1b5fcd34d55df3ea6fd0fa0fe805",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-23-b-1.png",
+      "output_sha256": "ebdf4f33e947d7befb36efe2d0d4d17780f19dbd45940fae21e1fbb5c26a5a5b",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native restrained witness confirms coloured grain across sky, roof surface and dark hedges after lifting, obscuring fine smooth/surface texture. Other attempts seen earlier are harsher; no reliable clean result, so accept quality refusal without exhaustive impossibility."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-24-a",
+      "group_id": "61e10bcd0100da92013ed5dd5facd396e9f241e9b7021bd2e9eac2ad3cf1a111",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-24-a.png",
+      "input_sha256": "db3bb0dd4650340cae506734a854c2df27a2ab09f643d5d0306c360da6493feb",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-24-a-2.png",
+      "output_sha256": "62e8bfddc8f94c8f5d3ee8ad8165fb0219dcbbc165559d79a4f9e9731e8585a3",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison opens trunks, woodland floor and grass shadows, retaining bark fissures, separate grass/needle structure and the white dog's face/body outline. Natural texture stays distinguishable from grain; no new conspicuous noise or detail erasure. Moderate lift meets the request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-24-b",
+      "group_id": "61e10bcd0100da92013ed5dd5facd396e9f241e9b7021bd2e9eac2ad3cf1a111",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-24-b.png",
+      "input_sha256": "e94e8e6506eb9b1322ac4cdb109e57c1b5aafef8d9e2e74c5c664f7060908404",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-24-b-1.png",
+      "output_sha256": "77c9ac28de52c24287269fc091bf14f9373634b8615c9f435caba88cb77424f2",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native weak-lift witness shows conspicuous red/green speckle over trunks, genuine pine/grass texture and the dog, masking fine structure. All3 attempts were seen and none reliably clean; accept a quality-refusal target rather than returning a degraded edit."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-25-a",
+      "group_id": "f1ff63ce6e58d942c7ed971df89cd1ef296a3ff225e1fad73d13c7f3765993d8",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-25-a.png",
+      "input_sha256": "8d7a9fa70686b3a8e835b15d23a11ce9f66f2ac52a8415b5c53698a87d3617f8",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-25-a-2.png",
+      "output_sha256": "d13ed9ab15809a80e6b2b4ee451304ebb05e2ad5edbf56765c7ba1c1694f3577",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison opens flower-bed, palm and statue-base shadows while retaining separate flower heads, palm fronds, lettering and blue-sky/cloud structure. Strong reds/yellows remain distinct rather than a clipped flat field; no conspicuous new grain. Moderate lift meets the request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-25-b",
+      "group_id": "f1ff63ce6e58d942c7ed971df89cd1ef296a3ff225e1fad73d13c7f3765993d8",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-25-b.png",
+      "input_sha256": "fad82814bfbe8003eaf1a1de7c7882beb62103ea97748d1296b59c51813e3aa1",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-25-b-1.png",
+      "output_sha256": "7cdc13719e410e1a8e49aaf0de181f9dccd97191e5c10527d68e017017d0d7cc",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native restrained witness confirms coloured stipple over smooth blue sky, palms and individual flower heads, mixed with real floral texture after lifting. All3 attempts were seen; reliable clean completion is unsupported, so accept quality refusal without an exhaustive impossibility claim."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-26-a",
+      "group_id": "5694d36056c1a99187ad2ce759bb8cb16b2c2e03f468b79f327ce4ba5ec7ab53",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-26-a.png",
+      "input_sha256": "7b772b2c20c79da08bb34f98380ffc2d37814423d6219790d6f69ebebb01cc31",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-26-a-2.png",
+      "output_sha256": "c7de04120405660bafc33ba96460b3f08c8c9c9e62e5dfc10b1d12e8699aa0b1",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison opens path, dry-grass and woodland shadows with fine twig structure, path aggregate, leaves and lamp edges retained. Existing grey haze remains atmospheric rather than newly invented detail; no conspicuous new colour-noise field. Moderate lift meets the request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-26-b",
+      "group_id": "5694d36056c1a99187ad2ce759bb8cb16b2c2e03f468b79f327ce4ba5ec7ab53",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-26-b.png",
+      "input_sha256": "f95cbe2d401ada88b76833142afd4c6ca19252ea7d53c10e6a30c1b05ad96c8a",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-26-b-1.png",
+      "output_sha256": "824e93c525ebca286a73d4a1fad353d50b30e731875249beee95b696890b4ae2",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native weak-lift witness shows a dense coloured-grain overlay across grey path, branches and dry grass after lifting, obscuring natural fine structures. Stronger attempts were also seen; no reliably clean result, supporting a quality-refusal label only."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-27-b",
+      "group_id": "b1aaea6877729b3ed220a396b66d0bb0f322c4b198befe8a4d643c35688956b9",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-27-b.png",
+      "input_sha256": "6e0f572020161321218dad965e1ae37592c0875239cb594acc650b9b93de17db",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-27-b-1.png",
+      "output_sha256": "13b3875e7861dd14e6a5d86b54cfeab680de4f972d224a9eaf78baa433903e48",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native restrained witness shows conspicuous colour-speckle over sky, silhouette, rocks and water after lifting, masking fine ripples/texture. All3 attempts were seen and none is reliably clean; accept a quality-refusal target without exhaustive impossibility."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-28-a",
+      "group_id": "f981a42b635642facebe53fc9a4a1299981f6500bb22451ba1d68485c6437c2b",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-28-a.png",
+      "input_sha256": "25c1d942e2ca9037626114684c0d98f2106156fd6608fcda09ad183047031d08",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-28-a-2.png",
+      "output_sha256": "07d168020fd85edc8b56e9405fa923e28ade65df20b4e7cea8b2ab08e3bc36c6",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison opens dark riverbanks and autumn canopy while retaining individual tree/branch patterns, bridge lines, road markings, river surface and cloud modelling. Colours remain plausible and distinct, with no conspicuous new grain or structural loss. Moderate lift meets the request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-28-b",
+      "group_id": "f981a42b635642facebe53fc9a4a1299981f6500bb22451ba1d68485c6437c2b",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-28-b.png",
+      "input_sha256": "0318ff7b3660ac9dcc041794cb0ad2c0644974eacbb689f8019642d105a089cd",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-28-b-1.png",
+      "output_sha256": "1de075ed002e8498a3ece095271c206803efe90a9f32281664ce17beb82aec59",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native weak-lift witness confirms dense coloured-grain overlay across sky, river and canopy, masking real foliage/branch texture. Stronger attempts are also degraded; no reliable clean completion among these attempts, so accept quality refusal only."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-29-a",
+      "group_id": "3762a34f637801b079eb03b5122e040344cedf4bfe3c6b6537126f2de4b21ede",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-29-a.png",
+      "input_sha256": "05edfd50c8ba1f484b673e8b1ff245e35e92229ec27dff8f6152e15e002f607f",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-29-a-2.png",
+      "output_sha256": "7718c5d08423974aa2492d4cd801b28d3f6cc0ee300eb54837c18e09c197b9b1",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison visibly opens shaded leaves, stems and mountain slopes while retaining separate lupine flower structures, leaf edges and cloud/snow boundaries. Blues/purples/greens remain plausible; no conspicuous new grain or detail erasure from the moderate lift. Meets the shadow request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-29-b",
+      "group_id": "3762a34f637801b079eb03b5122e040344cedf4bfe3c6b6537126f2de4b21ede",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-29-b.png",
+      "input_sha256": "6f462dcc15d135dd9ec9bc2fe31be1fb0008cbda445d656b1905bc20b7e1b7f2",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-29-b-1.png",
+      "output_sha256": "a3291ace7def68af141db8735bbdb1d6bd8b053c20e4fe98f7fde0e8a718f68f",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native restrained witness confirms conspicuous coloured stipple across smooth sky and fine lupine/leaf texture after lifting; stronger alternatives are harsher. No reliable clean completion among the3 viewed attempts, so accept quality refusal without exhaustive impossibility."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-30-b",
+      "group_id": "5a7713bfd5a93f53d8e6c3cfa4dc44c5ec02384d278260349208ae270038d13c",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-30-b.png",
+      "input_sha256": "eda38f257a5fad5ae9da882c6c62f2328ef7b2b33e4c0519117b2093d773f8dd",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-30-b-1.png",
+      "output_sha256": "e350958232ae1c83ede1296bc01d230f56d0a351255cb0d345e6694b47e24552",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native weak-lift witness exposes dense red/green grain over meadow, sky and the person, masking fine natural texture after lifting. All3 available attempts lack a reliably clean completion; accept quality refusal without claiming every parameter combination impossible."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-31-a",
+      "group_id": "a88f1c61e84972635482b950be08f9cee8b86fb7c2a614eab95cb7d1fb583312",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-31-a.png",
+      "input_sha256": "59ff138bd0118575c16d95888a283d56532eea90d46305a2b7a7a2b4d0c23ed3",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-31-a-2.png",
+      "output_sha256": "839611e0b77a9287951e0585a8dc21cce3f2a4e1bfce9c2cd019bb943966673a",
+      "parameters": {
+        "exposure": 35,
+        "shadows": 45
+      },
+      "artifact": false,
+      "evidence": "Native comparison visibly opens aircraft undersides and shaded mountain slopes while retaining wing lettering, the central person, mountain ridges and distinct cloud modelling. Blue/white/red details remain plausible; no conspicuous new grain or clipping. Selected moderate lift meets the request."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-31-b",
+      "group_id": "a88f1c61e84972635482b950be08f9cee8b86fb7c2a614eab95cb7d1fb583312",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-31-b.png",
+      "input_sha256": "f0f0f9010e9bcc75e5a1b1df680ba31285cf15bb6d7b25f7a3401415ddd93d34",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-31-b-1.png",
+      "output_sha256": "d7e7acf85452d9c30d8a33ede105b8e86fd1eb57f65e2b06eb39e2f1ab489e33",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native weak-lift witness confirms dense colour-speckle across clouds, wing surfaces and mountain texture after lifting; stronger attempts seen earlier are harsher. No reliable clean completion, supporting a quality-refusal target without exhaustive impossibility."
+    },
+    {
+      "cohort": "r22_synthetic",
+      "id": "quality-boundary-32-b",
+      "group_id": "c5e93c61826e89492e9b781c384249aefe4574b95540253dc72b0dc739183079",
+      "input": "data/training/functional-v22-20261107/candidate-inputs/quality-boundary-32-b.png",
+      "input_sha256": "16a5f7dd5827e12843aaa5afe3d2da249e0a92771ed710d248d571a9a104739f",
+      "output": "experiments/functional-v22-20261107/quality-candidates/images/quality-boundary-32-b-1.png",
+      "output_sha256": "1498b9042c5ce1e774697456400272fcfc9dd0f8f55547dafb9a8f31ad1c7707",
+      "parameters": {
+        "shadows": 55
+      },
+      "artifact": true,
+      "evidence": "Native restrained witness confirms dense coloured grain over dark sea/sky and city lights after lifting, interfering with fine light/surface texture. All3 attempts were viewed and none supports reliable clean completion; accept a quality-refusal target only."
+    }
+  ],
+  "feature_rows": [
+    [
+      0.20357626676559448,
+      0.35220569372177124,
+      0.8666666666666667,
+      0.1716359555721283,
+      0.17612105160951613,
+      0.026249361969530583,
+      0.09358645752072334,
+      0.2185097336769104,
+      0.2372634842991829,
+      0.03375877663493156,
+      0.1101468674838543,
+      0.07983929961919785,
+      0.010654709860682489,
+      0.0260927252471447,
+      1.4765411734580993,
+      0.024553571428571428
+    ],
+    [
+      0.20140470564365387,
+      0.3187623739242554,
+      0.8106060606060606,
+      0.0016988851130008698,
+      0.0033981165848672393,
+      0.007040760759264231,
+      0.007589835301041606,
+      0.0027195513248443604,
+      0.007071574032306672,
+      0.013451223634183423,
+      0.012574817799031742,
+      0.0037567203864455226,
+      0.006339806132018566,
+      0.0047861432656645785,
+      1.5914842844009403,
+      0.0125
+    ],
+    [
+      0.2019176483154297,
+      0.31763036251068116,
+      0.8106060606060606,
+      0.1296044886112213,
+      0.13168440461158754,
+      0.01844490431249142,
+      0.07030287086963653,
+      0.16419963538646698,
+      0.17988650500774384,
+      0.02517118826508522,
+      0.08094155490398407,
+      0.06772340536117555,
+      0.009031673148274423,
+      0.024809651821851738,
+      1.5861752033233645,
+      0.02728174603174604
+    ],
+    [
+      0.1283370554447174,
+      0.31893451511859894,
+      0.9444444444444444,
+      0.12626367807388306,
+      0.13081157207489014,
+      0.03042422980070114,
+      0.07334686070680618,
+      0.16694018244743347,
+      0.17638374865055084,
+      0.037443194538354874,
+      0.08803075179457664,
+      0.05907727777957916,
+      0.009618345648050308,
+      0.02425423078238964,
+      1.500255823135376,
+      0.026413690476190476
+    ],
+    [
+      0.234959214925766,
+      0.35333570241928103,
+      0.9015151515151515,
+      0.004117745440453291,
+      0.004620692133903504,
+      0.015263225324451924,
+      0.01910279393196106,
+      0.007065345533192158,
+      0.008360166847705842,
+      0.02409115731716156,
+      0.02121744379401207,
+      0.0038338561542332174,
+      0.009926470369100571,
+      0.0029478870332241064,
+      1.4650148153305054,
+      0.0
+    ],
+    [
+      0.23828157782554626,
+      0.3508039951324463,
+      0.9090909090909091,
+      0.0867844671010971,
+      0.08805876299738884,
+      0.019565653242170813,
+      0.05026399679481983,
+      0.10580650717020035,
+      0.11355941891670228,
+      0.024796297028660774,
+      0.0505922544747591,
+      0.02738361582159996,
+      0.005497726425528528,
+      0.001550136506557465,
+      1.3030137896537781,
+      0.007217261904761907
+    ],
+    [
+      0.26681196689605713,
+      0.3294564723968506,
+      0.6212121212121212,
+      0.002826410811394453,
+      0.0034522014437243344,
+      0.008722617942839862,
+      0.016611376218497755,
+      0.004877500236034393,
+      0.006885081343352796,
+      0.014416135940700769,
+      0.017772216722369193,
+      0.003318360820412636,
+      0.0056437312625348575,
+      0.002376281190663577,
+      1.477719807624817,
+      0.00022321428571428712
+    ],
+    [
+      0.26482194662094116,
+      0.32974919080734255,
+      0.6212121212121212,
+      0.1296740472316742,
+      0.1318473696708679,
+      0.01987004913389683,
+      0.07209749817848206,
+      0.15421423316001892,
+      0.18407683968544006,
+      0.025769028812646866,
+      0.08643099293112755,
+      0.05670034289360047,
+      0.007427844963967803,
+      0.01646389439702034,
+      1.4335769653320314,
+      0.022445436507936515
+    ],
+    [
+      0.30214744806289673,
+      0.3554346561431885,
+      0.49166666666666664,
+      0.006459026597440243,
+      0.012261525169014931,
+      0.04156473577022555,
+      0.027202241495251658,
+      0.009688537567853928,
+      0.016762930154800418,
+      0.05167727023363116,
+      0.02987581863999367,
+      0.005032417736947537,
+      0.011840094625949864,
+      0.003570052236318591,
+      1.4079488039016723,
+      0.002678571428571431
+    ],
+    [
+      0.2944713532924652,
+      0.36457577943801883,
+      0.49166666666666664,
+      0.1719866693019867,
+      0.17455621361732482,
+      0.04595403075218201,
+      0.09860197603702545,
+      0.19596996903419495,
+      0.2155121386051178,
+      0.050997884571552285,
+      0.10467699319124221,
+      0.049074858427047736,
+      0.006462675333023072,
+      0.01244826912879944,
+      1.2936893224716186,
+      0.01939484126984127
+    ],
+    [
+      0.20452705025672913,
+      0.3328700065612793,
+      0.42424242424242425,
+      0.17177468538284302,
+      0.17496592551469803,
+      0.03301818668842316,
+      0.09330135583877563,
+      0.19914624094963074,
+      0.21312645077705383,
+      0.03947418928146362,
+      0.10107868164777756,
+      0.044056735932826996,
+      0.007788725197315216,
+      0.012867394834756851,
+      1.2761937975883484,
+      0.02058531746031746
+    ],
+    [
+      0.22182588279247284,
+      0.3658285677433014,
+      0.6944444444444444,
+      0.003179603721946478,
+      0.004312640056014062,
+      0.01514788940548897,
+      0.016910862550139426,
+      0.006122015882283449,
+      0.008300424180924894,
+      0.01863479241728784,
+      0.019873527437448503,
+      0.004099066555500031,
+      0.004846750758588314,
+      0.0049839913845062265,
+      1.5493522882461548,
+      0.002628968253968256
+    ],
+    [
+      0.21762430667877197,
+      0.36433258056640627,
+      0.6944444444444444,
+      0.08649095147848129,
+      0.08749990165233612,
+      0.01932917274534703,
+      0.050231640040874485,
+      0.11152331531047821,
+      0.12923870086669922,
+      0.022447343915700912,
+      0.06154289394617081,
+      0.04347021281719211,
+      0.0062620636075735115,
+      0.011880448460578931,
+      1.4788732290267947,
+      0.015773809523809527
+    ],
+    [
+      0.3022841215133667,
+      0.3653687357902527,
+      0.6111111111111112,
+      0.002864707028493285,
+      0.0043683540076017375,
+      0.019560321234166622,
+      0.010646592918783426,
+      0.005846651270985603,
+      0.00703631592914462,
+      0.026393934339284896,
+      0.015266159269958734,
+      0.004134324193000793,
+      0.007190950214862823,
+      0.005126926116645335,
+      1.7049734711647033,
+      0.00974702380952381
+    ],
+    [
+      0.30299413204193115,
+      0.36405688524246216,
+      0.6319444444444444,
+      0.12920841574668884,
+      0.13172093033790588,
+      0.02859317511320114,
+      0.07032923400402069,
+      0.1576363444328308,
+      0.19418558478355408,
+      0.03239251673221588,
+      0.08937905728816986,
+      0.07124273478984833,
+      0.009228834882378578,
+      0.02254548668861389,
+      1.569096326828003,
+      0.019345238095238096
+    ],
+    [
+      0.2459823489189148,
+      0.34707350134849546,
+      0.8857142857142857,
+      0.1294264793395996,
+      0.13114408552646636,
+      0.026845634914934635,
+      0.07004915922880173,
+      0.14330118894577026,
+      0.14812398254871367,
+      0.031166580878198145,
+      0.07226825803518296,
+      0.018981724977493286,
+      0.005543971247971058,
+      0.004618089646100998,
+      1.1444462776184081,
+      0.007167658730158729
+    ],
+    [
+      0.07505843043327332,
+      0.13859133422374728,
+      0.9444444444444444,
+      0.15414060652256012,
+      0.1694040834903717,
+      0.02611781544983387,
+      0.089840367436409,
+      0.2275625318288803,
+      0.242884823679924,
+      0.03537467196583748,
+      0.11139164417982102,
+      0.09144382476806641,
+      0.011873277742415667,
+      0.037897638604044916,
+      1.741017723083496,
+      0.030208333333333337
+    ],
+    [
+      0.15648393332958221,
+      0.3461041808128356,
+      0.6287878787878788,
+      0.004380140453577042,
+      0.005066513735800982,
+      0.030202843621373175,
+      0.031880204379558554,
+      0.009013283997774124,
+      0.011026546359062195,
+      0.043861694633960724,
+      0.040615586936473845,
+      0.006398442201316357,
+      0.013404308632016181,
+      0.010686361044645307,
+      1.7923460721969604,
+      0.019146825396825395
+    ],
+    [
+      0.15802745521068573,
+      0.3180159449577333,
+      0.6212121212121212,
+      0.0858815461397171,
+      0.0870463453233242,
+      0.03235760368406773,
+      0.05773319527506829,
+      0.11833688616752625,
+      0.1355891078710556,
+      0.03810441344976426,
+      0.06865000873804093,
+      0.05564513728022576,
+      0.009293941035866737,
+      0.019159648939967158,
+      1.6703230142593384,
+      0.019816468253968253
+    ],
+    [
+      0.18373215198516846,
+      0.3220548093318939,
+      0.7833333333333333,
+      0.1281270980834961,
+      0.13096566498279572,
+      0.0249501820653677,
+      0.0718031071126461,
+      0.16854949295520782,
+      0.19690534770488738,
+      0.030515694059431553,
+      0.09078488498926163,
+      0.08035040721297264,
+      0.009995054453611374,
+      0.030100847035646444,
+      1.678681480884552,
+      0.02132936507936508
+    ],
+    [
+      0.13696080446243286,
+      0.29166368842124946,
+      0.7986111111111112,
+      0.0041298530995845795,
+      0.008203669078648093,
+      0.03287141472101212,
+      0.04356633648276329,
+      0.007978040724992752,
+      0.013455685786902904,
+      0.04523475989699365,
+      0.047636754810810096,
+      0.005727240443229676,
+      0.013975061476230621,
+      0.006125023216009143,
+      1.5762877702713014,
+      0.004216269841269841
+    ],
+    [
+      0.14116039872169495,
+      0.2851418018341065,
+      0.7916666666666666,
+      0.12843187153339386,
+      0.13167822659015654,
+      0.03733443431556225,
+      0.08631276115775109,
+      0.1761012077331543,
+      0.19219707399606706,
+      0.04554821997880936,
+      0.09475083276629448,
+      0.06522856056690217,
+      0.010234884358942509,
+      0.022762251645326616,
+      1.5035570740699769,
+      0.02242063492063492
+    ],
+    [
+      0.2852117717266083,
+      0.3453573614358902,
+      0.7,
+      0.010347362607717514,
+      0.014731578901410103,
+      0.038178173825144775,
+      0.03769928887486458,
+      0.01544204168021679,
+      0.02163775935769081,
+      0.05275387689471245,
+      0.03864206485450268,
+      0.007191577088087798,
+      0.015526194497942928,
+      0.002256768010556698,
+      1.4247163653373718,
+      0.00248015873015873
+    ],
+    [
+      0.2845851182937622,
+      0.36017616987228396,
+      0.7083333333333334,
+      0.1304788887500763,
+      0.13245937824249268,
+      0.04374725595116617,
+      0.07942374050617218,
+      0.15292683243751526,
+      0.16269944608211517,
+      0.049771243333816544,
+      0.07954303920269014,
+      0.03316354751586914,
+      0.00691189467906952,
+      0.0025132328271865846,
+      1.2484560251235963,
+      0.011210317460317464
+    ],
+    [
+      0.2457180619239807,
+      0.35470902025699613,
+      0.6666666666666666,
+      0.006445189937949181,
+      0.020926924794912358,
+      0.031545685231685654,
+      0.06500481441617034,
+      0.011547528207302094,
+      0.03693929091095926,
+      0.04771481677889825,
+      0.0804571293294431,
+      0.015570916235446933,
+      0.017194903641939163,
+      0.01793311461806298,
+      1.714912259578705,
+      0.029365079365079375
+    ],
+    [
+      0.24799802899360657,
+      0.3543262958526611,
+      0.6666666666666666,
+      0.0864352360367775,
+      0.08916960954666138,
+      0.034784710779786114,
+      0.08310510590672512,
+      0.10470912605524063,
+      0.12652225643396378,
+      0.040951000154018403,
+      0.0917996786534787,
+      0.04329551458358768,
+      0.010276021063327792,
+      0.014623035490512857,
+      1.4932790040969854,
+      0.019990079365079377
+    ],
+    [
+      0.20405805110931396,
+      0.3569772243499756,
+      0.7333333333333333,
+      0.004695654846727848,
+      0.005271041765809059,
+      0.023291430622339248,
+      0.05414231196045875,
+      0.009246151894330978,
+      0.010711254738271236,
+      0.03325789198279381,
+      0.05325761549174786,
+      0.005896189482882619,
+      0.011868873238563537,
+      0.00823675226420164,
+      1.6873674511909484,
+      0.0010664682539682532
+    ],
+    [
+      0.20301726460456848,
+      0.3357215642929079,
+      0.725,
+      0.08675532042980194,
+      0.0878101259469986,
+      0.026547051966190338,
+      0.07265231907367707,
+      0.11326716840267181,
+      0.1286730170249939,
+      0.031654732674360274,
+      0.06763053834438323,
+      0.04222550392150879,
+      0.007242902740836144,
+      0.00767107903957367,
+      1.4668169975280763,
+      0.009375000000000003
+    ],
+    [
+      0.25559020042419434,
+      0.34045059978961945,
+      0.6333333333333333,
+      0.004005945287644863,
+      0.0043949640821665525,
+      0.013654003385454416,
+      0.03943016938865185,
+      0.005971299950033426,
+      0.007642389740794897,
+      0.017311803065240383,
+      0.03414268046617508,
+      0.0036144547630101442,
+      0.0052960943430662155,
+      0.0015644121449440718,
+      1.4780219793319702,
+      0.0
+    ],
+    [
+      0.25229117274284363,
+      0.341638445854187,
+      0.6333333333333333,
+      0.08617790788412094,
+      0.08786295354366302,
+      0.01810358464717865,
+      0.062494903802871704,
+      0.10708770155906677,
+      0.14137574285268784,
+      0.024238857440650463,
+      0.06352630257606506,
+      0.0571502186357975,
+      0.008642098866403103,
+      0.017516326159238815,
+      1.646861732006073,
+      0.015376984126984126
+    ],
+    [
+      0.15558607876300812,
+      0.26319589018821715,
+      0.9833333333333333,
+      0.1702411025762558,
+      0.17435323148965837,
+      0.025259076431393624,
+      0.09701100364327431,
+      0.22711274027824402,
+      0.2441201001405716,
+      0.0332051694393158,
+      0.11296740621328354,
+      0.09097662419080735,
+      0.011367185972630978,
+      0.03376179337501526,
+      1.612290632724762,
+      0.022321428571428572
+    ],
+    [
+      0.3313984274864197,
+      0.370905739068985,
+      0.6916666666666667,
+      0.003085468430072069,
+      0.004631118010729551,
+      0.013573964871466157,
+      0.03812474161386489,
+      0.005468506366014481,
+      0.008621670864522457,
+      0.0210430733859539,
+      0.03950448110699654,
+      0.004470421001315117,
+      0.007849391549825668,
+      0.003937925770878791,
+      1.5558162927627563,
+      0.000496031746031746
+    ],
+    [
+      0.3304958939552307,
+      0.37244588434696196,
+      0.7,
+      0.12975814938545227,
+      0.13180285841226577,
+      0.0230256536975503,
+      0.08778782188892365,
+      0.14920613169670105,
+      0.18016554713249208,
+      0.028756672888994216,
+      0.08514574468135834,
+      0.05053535997867585,
+      0.0067952796816825875,
+      0.007435368001461032,
+      1.376318383216858,
+      0.011830357142857142
+    ],
+    [
+      0.35245609283447266,
+      0.3738409548997879,
+      0.4166666666666667,
+      0.0043575335294008255,
+      0.0050622143782675265,
+      0.01730331461876631,
+      0.039551053196191795,
+      0.007063617929816246,
+      0.009558750968426467,
+      0.025653950683772565,
+      0.04149754643440247,
+      0.005034492583945394,
+      0.00899548251181841,
+      0.00775559637695551,
+      1.6372698664665222,
+      0.006423611111111114
+    ],
+    [
+      0.3500666618347168,
+      0.37623608112335205,
+      0.3958333333333333,
+      0.08656903356313705,
+      0.08768238723278046,
+      0.020482346415519714,
+      0.06642113775014877,
+      0.0950029194355011,
+      0.12959266901016236,
+      0.0249506626278162,
+      0.06868548393249511,
+      0.04379135817289352,
+      0.0067802794277668,
+      0.014773808419704436,
+      1.4890126228332519,
+      0.01994047619047619
+    ],
+    [
+      0.16888706386089325,
+      0.2980511575937272,
+      0.8333333333333334,
+      0.0034993183799088,
+      0.004944459302350879,
+      0.012257454264909035,
+      0.015607285033911468,
+      0.007102161180227995,
+      0.009731628187000753,
+      0.02048177253454926,
+      0.018332465551793582,
+      0.005914497701451182,
+      0.009829581994563342,
+      0.007209082460030914,
+      1.7859583973884587,
+      0.08075396825396834
+    ],
+    [
+      0.17541667819023132,
+      0.2918408215045929,
+      0.8333333333333334,
+      0.12773264944553375,
+      0.13134199231863022,
+      0.02089601457118988,
+      0.07190280929207801,
+      0.1647685170173645,
+      0.18265660405158998,
+      0.026736942306160937,
+      0.08481027483940126,
+      0.07490461766719818,
+      0.009220407716929913,
+      0.03346039168536664,
+      1.7988605737686159,
+      0.030753968253968273
+    ],
+    [
+      0.12686274945735931,
+      0.3254784345626831,
+      0.4583333333333333,
+      0.0041788979433476925,
+      0.004695036448538303,
+      0.009108839090913534,
+      0.02400321513414383,
+      0.009016371332108974,
+      0.010589371901005507,
+      0.015299160033464432,
+      0.030232571996748447,
+      0.006124857114627957,
+      0.006854606093838811,
+      0.009074032306671143,
+      1.7408876419067383,
+      0.017609126984126984
+    ],
+    [
+      0.12982726097106934,
+      0.32049980759620667,
+      0.4583333333333333,
+      0.12667417526245117,
+      0.13125408440828323,
+      0.019808422774076462,
+      0.07623548805713654,
+      0.1815788745880127,
+      0.1948767900466919,
+      0.028288240544497967,
+      0.09334786981344223,
+      0.074476458132267,
+      0.00999875832349062,
+      0.024822194129228592,
+      1.5927280187606812,
+      0.020461309523809524
+    ],
+    [
+      0.20432746410369873,
+      0.2786030828952789,
+      1.0,
+      0.005075286142528057,
+      0.00600831382907927,
+      0.028858858533203604,
+      0.06853210926055908,
+      0.010080398060381413,
+      0.01226720865815878,
+      0.04235093519091607,
+      0.07745706290006638,
+      0.007030755374580622,
+      0.014667041413486005,
+      0.010935337468981744,
+      1.7809757947921754,
+      0.000496031746031746
+    ],
+    [
+      0.20841628313064575,
+      0.28518505692482,
+      1.0,
+      0.12972259521484375,
+      0.1318401038646698,
+      0.03342802301049232,
+      0.0988322414457798,
+      0.1634296178817749,
+      0.17516260147094728,
+      0.04155618287622929,
+      0.10086797773838044,
+      0.046531423926353455,
+      0.008235296420753003,
+      0.007408017665147782,
+      1.3513991594314576,
+      0.014632936507936508
+    ],
+    [
+      0.20944470167160034,
+      0.2942623734474184,
+      0.8333333333333334,
+      0.014835968613624573,
+      0.023420083522796634,
+      0.09405873864889144,
+      0.07031818702816964,
+      0.023160530254244804,
+      0.0330061823129654,
+      0.12639175504446032,
+      0.07865846902132036,
+      0.012691336125135422,
+      0.03699476644396782,
+      0.013392263650894166,
+      1.797774136066437,
+      0.007936507936507936
+    ],
+    [
+      0.21103724837303162,
+      0.2936368405818941,
+      0.8333333333333334,
+      0.08658669143915176,
+      0.08817387595772744,
+      0.09482511878013614,
+      0.08467411547899248,
+      0.10725300014019012,
+      0.12482070922851562,
+      0.10676666647195816,
+      0.0838970571756363,
+      0.04212482944130898,
+      0.01750229820609093,
+      0.012481251358985902,
+      1.4859893679618836,
+      0.012524801587301597
+    ],
+    [
+      0.26977020502090454,
+      0.3585927903652191,
+      0.9375,
+      0.0036122333258390427,
+      0.004583286866545678,
+      0.012536254897713664,
+      0.09057599306106569,
+      0.0072378069162368774,
+      0.010581811144948005,
+      0.01684710830450058,
+      0.09608123898506164,
+      0.0062114542350173,
+      0.0046469058841466905,
+      0.006515380740165711,
+      1.7654825925827027,
+      0.0
+    ],
+    [
+      0.2704423666000366,
+      0.3598484873771668,
+      0.9375,
+      0.13018757104873657,
+      0.13191359043121337,
+      0.021977124363183977,
+      0.1165031760931015,
+      0.1556728333234787,
+      0.16272346079349517,
+      0.02524867206811905,
+      0.11036024540662766,
+      0.03250666856765747,
+      0.004419424384832382,
+      -0.0019718930125236503,
+      1.2437194347381593,
+      0.009176587301587302
+    ],
+    [
+      0.10960627347230911,
+      0.3144888162612915,
+      0.8333333333333334,
+      0.08499997854232788,
+      0.08701595440506935,
+      0.017272135056555272,
+      0.06257105618715286,
+      0.1260920763015747,
+      0.14261209219694138,
+      0.022234542481601238,
+      0.07422649636864662,
+      0.06552399694919586,
+      0.008509432338178158,
+      0.02677200809121132,
+      1.8404191970825194,
+      0.03479662698412699
+    ],
+    [
+      0.15125608444213867,
+      0.23814691007137304,
+      0.8333333333333334,
+      0.004630057141184807,
+      0.006035146024078132,
+      0.027345153689384463,
+      0.04485303871333601,
+      0.01030968502163887,
+      0.014445664174854756,
+      0.03678570538759232,
+      0.05522134825587273,
+      0.008289451152086258,
+      0.011487919092178346,
+      0.011254509538412097,
+      1.8198701977729796,
+      0.005481150793650796
+    ],
+    [
+      0.1530199944972992,
+      0.2592608973383904,
+      0.8484848484848485,
+      0.16398455202579498,
+      0.17138777375221254,
+      0.0347073495388031,
+      0.10193493068218232,
+      0.21897545456886292,
+      0.23429535776376725,
+      0.04190369471907616,
+      0.11304212436079979,
+      0.0799987331032753,
+      0.010310553759336472,
+      0.028024621307849884,
+      1.5144348621368409,
+      0.023288690476190477
+    ],
+    [
+      0.17003686726093292,
+      0.27263343334198,
+      0.6833333333333333,
+      0.007486486341804266,
+      0.010554930847138166,
+      0.05587450079619885,
+      0.06267336383461952,
+      0.016120385378599167,
+      0.019436127692461013,
+      0.0899093396961689,
+      0.07060884684324265,
+      0.00957757830619812,
+      0.0350005116313696,
+      0.011464854516088963,
+      1.823564839363098,
+      0.01302083333333334
+    ],
+    [
+      0.17003412544727325,
+      0.27372009456157687,
+      0.6833333333333333,
+      0.1271750032901764,
+      0.13096273243427276,
+      0.0600590068846941,
+      0.0944972723722458,
+      0.16634424030780792,
+      0.17562248706817626,
+      0.07590558677911759,
+      0.09372280836105347,
+      0.06131422147154809,
+      0.01672988906502724,
+      0.018211808055639267,
+      1.5205589294433595,
+      0.010416666666666666
+    ],
+    [
+      0.1627819538116455,
+      0.28015669584274294,
+      0.8229166666666666,
+      0.16499868035316467,
+      0.17281644642353058,
+      0.030343458428978922,
+      0.1070624589920044,
+      0.2176450937986374,
+      0.22423852682113649,
+      0.03984809219837189,
+      0.11600323170423509,
+      0.06293984651565551,
+      0.010029999166727066,
+      0.013048115372657777,
+      1.3711214542388916,
+      0.013938492063492064
+    ],
+    [
+      0.24527333676815033,
+      0.3359607040882111,
+      0.8333333333333334,
+      0.003521555569022894,
+      0.004851312376558781,
+      0.016169353760778913,
+      0.036604445800185216,
+      0.006689671892672777,
+      0.008875441644340754,
+      0.025867192819714557,
+      0.03974835798144343,
+      0.004279579687863589,
+      0.009893787279725076,
+      0.004898658581078054,
+      1.5176132798194886,
+      0.000248015873015873
+    ],
+    [
+      0.2493760883808136,
+      0.3358883023262024,
+      0.8240740740740741,
+      0.17160716652870178,
+      0.1753489136695862,
+      0.028167701512575156,
+      0.10206085741519928,
+      0.20726275444030762,
+      0.2268906205892563,
+      0.03485326170921326,
+      0.11153997480869293,
+      0.058692228794097905,
+      0.008205484971404076,
+      0.01791490614414215,
+      1.340022087097168,
+      0.02366071428571429
+    ],
+    [
+      0.0922560840845108,
+      0.2497733235359192,
+      0.9666666666666667,
+      0.16291175782680511,
+      0.17315002530813217,
+      0.028612802736461163,
+      0.10342621058225632,
+      0.2306765615940094,
+      0.24410616606473923,
+      0.035543207079172134,
+      0.11379201710224152,
+      0.0920727327466011,
+      0.012093577533960342,
+      0.03764075040817261,
+      1.6918882131576538,
+      0.02554563492063492
+    ]
+  ],
+  "models": {
+    "input_only": {
+      "feature_names": [
+        "shadow_luma_median",
+        "shadow_luma_p90",
+        "shadow_patch_fraction",
+        "input_fine_chroma_p50",
+        "input_fine_chroma_p90",
+        "input_coarse_chroma_p90",
+        "input_fine_luma_p90"
+      ],
+      "threshold": 0.5470039309931256,
+      "mean": [
+        0.21592473804398818,
+        0.32303703777768,
+        0.7423447994049845,
+        0.07762705092749524,
+        0.08073416108791542,
+        0.028430200124987294,
+        0.06438939611048057
+      ],
+      "scale": [
+        0.06580384414122557,
+        0.04364905305886974,
+        0.157661637036105,
+        0.06466754835034481,
+        0.06564530956905111,
+        0.01683846590301137,
+        0.028157880898707414
+      ],
+      "coefficients": [
+        -0.11441400899419646,
+        0.13847655563690817,
+        -0.06323268352515718,
+        1.1088232265736548,
+        1.0724368200852663,
+        -0.011871490624170332,
+        0.5611172896605578
+      ],
+      "intercept": 0.40836992028983393,
+      "calibration_counts": {
+        "usable_blocked": {
+          "rows": 0,
+          "unique_groups": 0,
+          "distinct_render_pairs": 0
+        },
+        "usable_allowed": {
+          "rows": 22,
+          "unique_groups": 22,
+          "distinct_render_pairs": 22
+        },
+        "artifact_blocked": {
+          "rows": 32,
+          "unique_groups": 32,
+          "distinct_render_pairs": 32
+        },
+        "artifact_allowed": {
+          "rows": 0,
+          "unique_groups": 0,
+          "distinct_render_pairs": 0
+        },
+        "unscored_blocked": {
+          "rows": 0,
+          "unique_groups": 0,
+          "distinct_render_pairs": 0
+        },
+        "unscored_allowed": {
+          "rows": 0,
+          "unique_groups": 0,
+          "distinct_render_pairs": 0
+        }
+      },
+      "oof_rows": [
+        {
+          "id": "quality-boundary-01-b",
+          "probability": 0.9804519480794379
+        },
+        {
+          "id": "quality-boundary-02-a",
+          "probability": 0.04108203890929508
+        },
+        {
+          "id": "quality-boundary-02-b",
+          "probability": 0.8641836515976127
+        },
+        {
+          "id": "quality-boundary-03-b",
+          "probability": 0.8779610794208794
+        },
+        {
+          "id": "quality-boundary-04-a",
+          "probability": 0.05541112100199919
+        },
+        {
+          "id": "quality-boundary-04-b",
+          "probability": 0.5470039309931256
+        },
+        {
+          "id": "quality-boundary-05-a",
+          "probability": 0.05389711350392295
+        },
+        {
+          "id": "quality-boundary-05-b",
+          "probability": 0.8632916589702556
+        },
+        {
+          "id": "quality-boundary-06-a",
+          "probability": 0.08030167789015052
+        },
+        {
+          "id": "quality-boundary-06-b",
+          "probability": 0.9825699914159207
+        },
+        {
+          "id": "quality-boundary-07-b",
+          "probability": 0.9842671504937257
+        },
+        {
+          "id": "quality-boundary-08-a",
+          "probability": 0.06124458362923735
+        },
+        {
+          "id": "quality-boundary-08-b",
+          "probability": 0.6180284337404793
+        },
+        {
+          "id": "quality-boundary-09-a",
+          "probability": 0.04215389768593133
+        },
+        {
+          "id": "quality-boundary-09-b",
+          "probability": 0.8551888200028758
+        },
+        {
+          "id": "quality-boundary-10-b",
+          "probability": 0.8591123301247643
+        },
+        {
+          "id": "quality-boundary-11-b",
+          "probability": 0.9489149370900396
+        },
+        {
+          "id": "quality-boundary-12-a",
+          "probability": 0.08539464097174468
+        },
+        {
+          "id": "quality-boundary-12-b",
+          "probability": 0.6365967625970649
+        },
+        {
+          "id": "quality-boundary-13-b",
+          "probability": 0.8895986970633042
+        },
+        {
+          "id": "quality-boundary-14-a",
+          "probability": 0.09337443197906332
+        },
+        {
+          "id": "quality-boundary-14-b",
+          "probability": 0.9223448695811926
+        },
+        {
+          "id": "quality-boundary-15-a",
+          "probability": 0.10113463333120175
+        },
+        {
+          "id": "quality-boundary-15-b",
+          "probability": 0.9184296236289617
+        },
+        {
+          "id": "quality-boundary-16-a",
+          "probability": 0.1842356409824167
+        },
+        {
+          "id": "quality-boundary-16-b",
+          "probability": 0.7252004801871292
+        },
+        {
+          "id": "quality-boundary-17-a",
+          "probability": 0.12376040327997938
+        },
+        {
+          "id": "quality-boundary-17-b",
+          "probability": 0.6725380297862822
+        },
+        {
+          "id": "quality-boundary-18-a",
+          "probability": 0.08648759463469614
+        },
+        {
+          "id": "quality-boundary-18-b",
+          "probability": 0.6119667158038488
+        },
+        {
+          "id": "quality-boundary-19-b",
+          "probability": 0.9711851746102393
+        },
+        {
+          "id": "quality-boundary-20-a",
+          "probability": 0.07648228868896725
+        },
+        {
+          "id": "quality-boundary-20-b",
+          "probability": 0.8889861689046913
+        },
+        {
+          "id": "quality-boundary-21-a",
+          "probability": 0.07601159496331045
+        },
+        {
+          "id": "quality-boundary-21-b",
+          "probability": 0.6099029791414174
+        },
+        {
+          "id": "quality-boundary-22-a",
+          "probability": 0.055267803950920236
+        },
+        {
+          "id": "quality-boundary-22-b",
+          "probability": 0.8985608513092079
+        },
+        {
+          "id": "quality-boundary-23-a",
+          "probability": 0.07586042919597956
+        },
+        {
+          "id": "quality-boundary-23-b",
+          "probability": 0.9109540173753273
+        },
+        {
+          "id": "quality-boundary-24-a",
+          "probability": 0.11301134351542161
+        },
+        {
+          "id": "quality-boundary-24-b",
+          "probability": 0.9176466559310963
+        },
+        {
+          "id": "quality-boundary-25-a",
+          "probability": 0.2739048726431995
+        },
+        {
+          "id": "quality-boundary-25-b",
+          "probability": 0.774386213268475
+        },
+        {
+          "id": "quality-boundary-26-a",
+          "probability": 0.21286222396651774
+        },
+        {
+          "id": "quality-boundary-26-b",
+          "probability": 0.9454457322090083
+        },
+        {
+          "id": "quality-boundary-27-b",
+          "probability": 0.6698135223003463
+        },
+        {
+          "id": "quality-boundary-28-a",
+          "probability": 0.08380244154126384
+        },
+        {
+          "id": "quality-boundary-28-b",
+          "probability": 0.9800119736229822
+        },
+        {
+          "id": "quality-boundary-29-a",
+          "probability": 0.17539092719524307
+        },
+        {
+          "id": "quality-boundary-29-b",
+          "probability": 0.9224997120791301
+        },
+        {
+          "id": "quality-boundary-30-b",
+          "probability": 0.9741722219814817
+        },
+        {
+          "id": "quality-boundary-31-a",
+          "probability": 0.07666384098382864
+        },
+        {
+          "id": "quality-boundary-31-b",
+          "probability": 0.9842298979558831
+        },
+        {
+          "id": "quality-boundary-32-b",
+          "probability": 0.9808220376707831
+        }
+      ]
+    },
+    "paired": {
+      "feature_names": [
+        "shadow_luma_median",
+        "shadow_luma_p90",
+        "shadow_patch_fraction",
+        "input_fine_chroma_p50",
+        "input_fine_chroma_p90",
+        "input_coarse_chroma_p90",
+        "input_fine_luma_p90",
+        "output_fine_chroma_p50",
+        "output_fine_chroma_p90",
+        "output_coarse_chroma_p90",
+        "output_fine_luma_p90",
+        "fine_chroma_gain_p90",
+        "coarse_chroma_gain_p90",
+        "fine_luma_gain_p90",
+        "fine_chroma_ratio_p90",
+        "new_neighbour_jump_p90"
+      ],
+      "threshold": 0.5185059698695219,
+      "mean": [
+        0.21592473804398818,
+        0.32303703777768,
+        0.7423447994049845,
+        0.07762705092749524,
+        0.08073416108791542,
+        0.028430200124987294,
+        0.06438939611048057,
+        0.09989955917828613,
+        0.1120931607239914,
+        0.03694079218742748,
+        0.07100459541263128,
+        0.037048889109347435,
+        0.010397365653921888,
+        0.013714608929499435,
+        1.5524995611773593,
+        0.015365042621987068
+      ],
+      "scale": [
+        0.06580384414122557,
+        0.04364905305886974,
+        0.157661637036105,
+        0.06466754835034481,
+        0.06564530956905111,
+        0.01683846590301137,
+        0.028157880898707414,
+        0.08177099413782403,
+        0.08755878044321704,
+        0.02101206212074006,
+        0.030409653415879503,
+        0.029332236624233957,
+        0.005917921161370882,
+        0.009994986758993026,
+        0.1715959598570365,
+        0.013065294200648805
+      ],
+      "coefficients": [
+        -0.032660887278417254,
+        0.12376713378923765,
+        -0.02338824091397412,
+        0.5326925926146218,
+        0.5082943633775527,
+        0.1288219129641605,
+        0.29481201507570987,
+        0.51167178415652,
+        0.5513090002083166,
+        -0.015737817454100238,
+        0.2439018138862407,
+        0.547612241263185,
+        -0.29746043509073405,
+        0.1736739217699844,
+        -0.3443712316586817,
+        0.16336316950297428
+      ],
+      "intercept": 0.4518085584421067,
+      "calibration_counts": {
+        "usable_blocked": {
+          "rows": 0,
+          "unique_groups": 0,
+          "distinct_render_pairs": 0
+        },
+        "usable_allowed": {
+          "rows": 22,
+          "unique_groups": 22,
+          "distinct_render_pairs": 22
+        },
+        "artifact_blocked": {
+          "rows": 32,
+          "unique_groups": 32,
+          "distinct_render_pairs": 32
+        },
+        "artifact_allowed": {
+          "rows": 0,
+          "unique_groups": 0,
+          "distinct_render_pairs": 0
+        },
+        "unscored_blocked": {
+          "rows": 0,
+          "unique_groups": 0,
+          "distinct_render_pairs": 0
+        },
+        "unscored_allowed": {
+          "rows": 0,
+          "unique_groups": 0,
+          "distinct_render_pairs": 0
+        }
+      },
+      "oof_rows": [
+        {
+          "id": "quality-boundary-01-b",
+          "probability": 0.9944628363250381
+        },
+        {
+          "id": "quality-boundary-02-a",
+          "probability": 0.01914442470524775
+        },
+        {
+          "id": "quality-boundary-02-b",
+          "probability": 0.9360111364014383
+        },
+        {
+          "id": "quality-boundary-03-b",
+          "probability": 0.9406620708502882
+        },
+        {
+          "id": "quality-boundary-04-a",
+          "probability": 0.024386312968097873
+        },
+        {
+          "id": "quality-boundary-04-b",
+          "probability": 0.5185059698695219
+        },
+        {
+          "id": "quality-boundary-05-a",
+          "probability": 0.04238794039500354
+        },
+        {
+          "id": "quality-boundary-05-b",
+          "probability": 0.9365415859639019
+        },
+        {
+          "id": "quality-boundary-06-a",
+          "probability": 0.05302880478142961
+        },
+        {
+          "id": "quality-boundary-06-b",
+          "probability": 0.991936228466071
+        },
+        {
+          "id": "quality-boundary-07-b",
+          "probability": 0.9919085414178563
+        },
+        {
+          "id": "quality-boundary-08-a",
+          "probability": 0.03430852737044351
+        },
+        {
+          "id": "quality-boundary-08-b",
+          "probability": 0.7287694676942955
+        },
+        {
+          "id": "quality-boundary-09-a",
+          "probability": 0.020388150711621245
+        },
+        {
+          "id": "quality-boundary-09-b",
+          "probability": 0.9479987491459735
+        },
+        {
+          "id": "quality-boundary-10-b",
+          "probability": 0.8895092367487405
+        },
+        {
+          "id": "quality-boundary-11-b",
+          "probability": 0.9878276182130586
+        },
+        {
+          "id": "quality-boundary-12-a",
+          "probability": 0.03125141190948596
+        },
+        {
+          "id": "quality-boundary-12-b",
+          "probability": 0.7415908621809607
+        },
+        {
+          "id": "quality-boundary-13-b",
+          "probability": 0.9612967524102912
+        },
+        {
+          "id": "quality-boundary-14-a",
+          "probability": 0.04096960278745096
+        },
+        {
+          "id": "quality-boundary-14-b",
+          "probability": 0.9734803590246157
+        },
+        {
+          "id": "quality-boundary-15-a",
+          "probability": 0.05862982505854404
+        },
+        {
+          "id": "quality-boundary-15-b",
+          "probability": 0.9481832824622168
+        },
+        {
+          "id": "quality-boundary-16-a",
+          "probability": 0.058254877473285484
+        },
+        {
+          "id": "quality-boundary-16-b",
+          "probability": 0.7426494926401969
+        },
+        {
+          "id": "quality-boundary-17-a",
+          "probability": 0.0444634649477151
+        },
+        {
+          "id": "quality-boundary-17-b",
+          "probability": 0.6828719516905108
+        },
+        {
+          "id": "quality-boundary-18-a",
+          "probability": 0.06466957286807178
+        },
+        {
+          "id": "quality-boundary-18-b",
+          "probability": 0.6865466401513814
+        },
+        {
+          "id": "quality-boundary-19-b",
+          "probability": 0.9926526728172794
+        },
+        {
+          "id": "quality-boundary-20-a",
+          "probability": 0.0439460562252129
+        },
+        {
+          "id": "quality-boundary-20-b",
+          "probability": 0.9299595570600382
+        },
+        {
+          "id": "quality-boundary-21-a",
+          "probability": 0.038587208656267566
+        },
+        {
+          "id": "quality-boundary-21-b",
+          "probability": 0.7085588129800728
+        },
+        {
+          "id": "quality-boundary-22-a",
+          "probability": 0.10071271606891184
+        },
+        {
+          "id": "quality-boundary-22-b",
+          "probability": 0.95169547639302
+        },
+        {
+          "id": "quality-boundary-23-a",
+          "probability": 0.03150992248035497
+        },
+        {
+          "id": "quality-boundary-23-b",
+          "probability": 0.9657009315918489
+        },
+        {
+          "id": "quality-boundary-24-a",
+          "probability": 0.038539788452774795
+        },
+        {
+          "id": "quality-boundary-24-b",
+          "probability": 0.9522808667674315
+        },
+        {
+          "id": "quality-boundary-25-a",
+          "probability": 0.00408266798802751
+        },
+        {
+          "id": "quality-boundary-25-b",
+          "probability": 0.544184555737532
+        },
+        {
+          "id": "quality-boundary-26-a",
+          "probability": 0.10318027869094969
+        },
+        {
+          "id": "quality-boundary-26-b",
+          "probability": 0.9389816871795635
+        },
+        {
+          "id": "quality-boundary-27-b",
+          "probability": 0.8150789972133768
+        },
+        {
+          "id": "quality-boundary-28-a",
+          "probability": 0.027668713278240508
+        },
+        {
+          "id": "quality-boundary-28-b",
+          "probability": 0.9946678191254767
+        },
+        {
+          "id": "quality-boundary-29-a",
+          "probability": 0.002723787569148917
+        },
+        {
+          "id": "quality-boundary-29-b",
+          "probability": 0.8485557223249673
+        },
+        {
+          "id": "quality-boundary-30-b",
+          "probability": 0.982091975341492
+        },
+        {
+          "id": "quality-boundary-31-a",
+          "probability": 0.0373485112039806
+        },
+        {
+          "id": "quality-boundary-31-b",
+          "probability": 0.9948369602487881
+        },
+        {
+          "id": "quality-boundary-32-b",
+          "probability": 0.9946462055472826
+        }
+      ]
+    }
+  },
+  "GPU_hours": 0
+}

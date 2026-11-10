@@ -1,0 +1,69 @@
+{
+  "snapshot_date": "2026-11-10",
+  "purpose": "Public aggregate of agent verification; no personal uploads, job identifiers or feedback.",
+  "source": "agent_smoke_test",
+  "dataset": "Six historical development images; not an independent holdout.",
+  "demo_cases": 6,
+  "demo_records": 48,
+  "statuses": {
+    "edited": 42,
+    "declined": 4,
+    "failed": 2
+  },
+  "per_candidate": {
+    "r1": {
+      "edited": 10,
+      "failed": 2
+    },
+    "r15": {
+      "edited": 11,
+      "declined": 1
+    },
+    "r23": {
+      "edited": 11,
+      "declined": 1
+    },
+    "r21": {
+      "edited": 10,
+      "declined": 2
+    }
+  },
+  "sample_ids": [
+    "native-dev-001",
+    "native-dev-006",
+    "native-dev-011",
+    "native-dev-023",
+    "native-dev-070",
+    "native-dev-161"
+  ],
+  "downloaded_bytes_verified": 120061702,
+  "zip_png_hashes_match": true,
+  "no_result_image_http_status": 404,
+  "no_result_checks": 6,
+  "unchanged_upload_check": {
+    "records": 8,
+    "all_pixel_equal": true,
+    "source": "agent_smoke_test",
+    "training_use": false
+  },
+  "contract_tests": {
+    "date": "2026-11-10",
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=scripts envs/iea/bin/python -m unittest comparison_studio.test_app -v",
+    "tests": 3,
+    "passed": 3,
+    "gpu_used": false
+  },
+  "gpu_budget": {
+    "hours": 2,
+    "snapshot_used_hours": 0.05886,
+    "separate_from_closed_training_budget": true,
+    "live_usage_may_increase": true
+  },
+  "limitations": [
+    "Execution status is not a visual quality score.",
+    "R1 and the other candidates use different historical prompts and editors.",
+    "Agent verification does not establish independent user acceptance.",
+    "Initial failed adapter-loading task is retained locally but excluded from the six fixed demo tasks."
+  ],
+  "source_verification_sha256": "1e527d24ae025fd0199c175f6e9491495935092e40eca44ceebd91ea3ccee46a"
+}

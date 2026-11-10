@@ -1,0 +1,205 @@
+{
+  "at": "2026-11-07T03:03:58.038630+00:00",
+  "status": "failed_locked_seed_replication",
+  "qualified": false,
+  "promoted": false,
+  "selected_model_id": null,
+  "provisional_development_candidate": "functional-v21-quality-20261205",
+  "trial_default_changed": false,
+  "models": {
+    "functional-v21-magnitude-20261205": {
+      "model_id": "functional-v21-magnitude-20261205",
+      "evaluation_id": "magnitude-e20",
+      "seed": 20261205,
+      "policy": "magnitude",
+      "display_name": "第二十一轮 · 仅幅度对照 · 种子1（未通过复核）",
+      "trial_status": "实验模型，AI辅助评审；原始开发确认星空提亮重大噪声损伤；固定第20轮仅诊断试用，不保证可靠拒绝，默认未升级。",
+      "controller": "models/from-functional-v15/semantic-preserving-controller/seed-01/controller.pt",
+      "controller_sha256": "838342a2167038589a91b646ad98432ec4749e698d4b29ad7f2b520b366a26da",
+      "runtime_family": "functional_v21",
+      "parent": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "parent_sha256": "97c84f1799fb319799c86515402574b3b585593763e5388eb30d0df3e0d6ea90",
+      "parent_identity": "Actual frozen R15e1, earlier-start-named directory",
+      "kind": "frozen_parent_LM_semantics_plus_CPU_magnitude_quality_head",
+      "trainable_parameters": 463754,
+      "epoch": 20,
+      "step": 1160,
+      "protocol_sha256": "f6295ffef820a29d3812e3390618d8463f7aeb117e8447c69b8b650190596581",
+      "training_cases_sha256": "e6d8e902cecb1abeae21bb9eb7c5563e236f19cf32a110ee0531c153382a71bc",
+      "training_cases": "data/training/functional-v21-20261107/cases.json",
+      "semantic_cases": 925,
+      "language_records": 1850,
+      "original_groups": 240,
+      "checkpoint": "experiments/functional-v21-20261107/runs/seed-20261205/checkpoint-20.pt",
+      "policy_weight_sharing": "Seed1 magnitude andquality variants use byte-identical head weights. Seed2 is an independently trained locked replication.",
+      "evaluation_namespace": "experiments/functional-v21-20261107",
+      "inference": "Actual frozen R15 LM on literal original upload/request/tools, then same R21 magnitude/risk head and R15 editor. Parent keep/declines preserved; no external rewrite or translation.",
+      "acceptance_status": "closed_replication_failed",
+      "status": "diagnostic_trial_only_not_promoted",
+      "independent_user_feedback": 0
+    },
+    "functional-v21-quality-20261205": {
+      "model_id": "functional-v21-quality-20261205",
+      "evaluation_id": "magnitude-quality-e20",
+      "seed": 20261205,
+      "policy": "magnitude-quality",
+      "display_name": "第二十一轮 · 幅度＋质量拒绝 · 种子1（未通过复核）",
+      "trial_status": "实验模型，AI辅助评审；首种子原始16/20、旧5/6、受控82/100且重大0，但换种子未重复质量拒绝，路线未通过；固定第20轮仅诊断试用，不保证可靠拒绝，默认未升级。",
+      "controller": "models/from-functional-v15/semantic-preserving-controller/seed-01/controller.pt",
+      "controller_sha256": "838342a2167038589a91b646ad98432ec4749e698d4b29ad7f2b520b366a26da",
+      "runtime_family": "functional_v21",
+      "parent": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "parent_sha256": "97c84f1799fb319799c86515402574b3b585593763e5388eb30d0df3e0d6ea90",
+      "parent_identity": "Actual frozen R15e1, earlier-start-named directory",
+      "kind": "frozen_parent_LM_semantics_plus_CPU_magnitude_quality_head",
+      "trainable_parameters": 463754,
+      "epoch": 20,
+      "step": 1160,
+      "protocol_sha256": "f6295ffef820a29d3812e3390618d8463f7aeb117e8447c69b8b650190596581",
+      "training_cases_sha256": "e6d8e902cecb1abeae21bb9eb7c5563e236f19cf32a110ee0531c153382a71bc",
+      "training_cases": "data/training/functional-v21-20261107/cases.json",
+      "semantic_cases": 925,
+      "language_records": 1850,
+      "original_groups": 240,
+      "checkpoint": "experiments/functional-v21-20261107/runs/seed-20261205/checkpoint-20.pt",
+      "policy_weight_sharing": "Seed1 magnitude andquality variants use byte-identical head weights. Seed2 is an independently trained locked replication.",
+      "evaluation_namespace": "experiments/functional-v21-20261107",
+      "inference": "Actual frozen R15 LM on literal original upload/request/tools, then same R21 magnitude/risk head and R15 editor. Parent keep/declines preserved; no external rewrite or translation.",
+      "acceptance_status": "closed_replication_failed",
+      "status": "diagnostic_trial_only_not_promoted",
+      "independent_user_feedback": 0
+    },
+    "functional-v21-quality-20261206": {
+      "model_id": "functional-v21-quality-20261206",
+      "evaluation_id": "magnitude-quality-e20",
+      "seed": 20261206,
+      "policy": "magnitude-quality",
+      "display_name": "第二十一轮 · 幅度＋质量拒绝 · 种子2（未通过复核）",
+      "trial_status": "实验模型，AI辅助评审；原始开发确认星空提亮重大噪声损伤；固定第20轮仅诊断试用，不保证可靠拒绝，默认未升级。",
+      "controller": "models/from-functional-v15/semantic-preserving-controller/seed-02/controller.pt",
+      "controller_sha256": "2e97f749e4d87bd8de13b1f725eeb8d815497bd5866d854f46c9fe7125cbc316",
+      "runtime_family": "functional_v21",
+      "parent": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "parent_sha256": "97c84f1799fb319799c86515402574b3b585593763e5388eb30d0df3e0d6ea90",
+      "parent_identity": "Actual frozen R15e1, earlier-start-named directory",
+      "kind": "frozen_parent_LM_semantics_plus_CPU_magnitude_quality_head",
+      "trainable_parameters": 463754,
+      "epoch": 20,
+      "step": 1160,
+      "protocol_sha256": "f6295ffef820a29d3812e3390618d8463f7aeb117e8447c69b8b650190596581",
+      "training_cases_sha256": "e6d8e902cecb1abeae21bb9eb7c5563e236f19cf32a110ee0531c153382a71bc",
+      "training_cases": "data/training/functional-v21-20261107/cases.json",
+      "semantic_cases": 925,
+      "language_records": 1850,
+      "original_groups": 240,
+      "checkpoint": "experiments/functional-v21-20261107/runs/seed-20261206/checkpoint-20.pt",
+      "policy_weight_sharing": "Seed1 magnitude andquality variants use byte-identical head weights. Seed2 is an independently trained locked replication.",
+      "evaluation_namespace": "experiments/functional-v21-20261107/replication",
+      "inference": "Actual frozen R15 LM on literal original upload/request/tools, then same R21 magnitude/risk head and R15 editor. Parent keep/declines preserved; no external rewrite or translation.",
+      "acceptance_status": "closed_replication_failed",
+      "status": "diagnostic_trial_only_not_promoted",
+      "independent_user_feedback": 0
+    }
+  },
+  "checkpoint_results": {
+    "magnitude-e20": {
+      "old-native": {
+        "completed": 5,
+        "major": 0,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/magnitude-e20/direct-functional-summary.json",
+        "sha256": "21e471196ece9eff60b3a7c496e65e86a196992cd14caf885d977a43e8fd5843"
+      },
+      "native-development": {
+        "completed": 16,
+        "major": 1,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-e20/direct-functional-summary.json",
+        "sha256": "2184817d7f40e09b278beac0495dac5ff170b7f9b32d7ee18e894c85d04482b9"
+      },
+      "decision-development": {
+        "completed": 20,
+        "major": 0,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/decision-development/magnitude-e20/decision-summary.json",
+        "sha256": "4eceb2673ecc5a05fbc20504a168396661aed1474710e0bcd62bc8be53a8f865"
+      }
+    },
+    "magnitude-quality-e20": {
+      "old-native": {
+        "completed": 5,
+        "major": 0,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/magnitude-quality-e20/direct-functional-summary.json",
+        "sha256": "0aaa6ecf521bd3b51a7c3971a52aced75be99b55ca95dcdb9e247426670c97dc"
+      },
+      "native-development": {
+        "completed": 16,
+        "major": 0,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-quality-e20/direct-functional-summary.json",
+        "sha256": "435e80319f1da225a608d44bb806485c560f1fbf791075644294837ad8eed7d4"
+      },
+      "decision-development": {
+        "completed": 20,
+        "major": 0,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/decision-development/magnitude-quality-e20/decision-summary.json",
+        "sha256": "804e5ef594690cf9250343c0afdfb6e774d5c0a63e10246fffdef105418a8cb4"
+      },
+      "development": {
+        "completed": 82,
+        "major": 0,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/direct-functional-summary.json",
+        "sha256": "10d1676907ae97b36b46b372be9c7bb72320454afce47e889ffe116ef10169e2"
+      }
+    },
+    "magnitude-e80": {
+      "old-native": {
+        "completed": 6,
+        "major": 0,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/magnitude-e80/direct-functional-summary.json",
+        "sha256": "ed0a581b4f6cb321239eeae276881784e69c866de7a8d06fd1bcf59fb8aa96c8"
+      },
+      "native-development": {
+        "completed": 11,
+        "major": 1,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-e80/direct-functional-summary.json",
+        "sha256": "d4d033e9ed87baba62ebafa14b84eeece301afad000463b563aa1f9dabf10e1f"
+      },
+      "decision-development": {
+        "completed": 20,
+        "major": 0,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/decision-development/magnitude-e80/decision-summary.json",
+        "sha256": "2ee7ebab6f094aaecf1a08bcde8defc79bc1af6bf6f9a5a8dfb6f036f7f82875"
+      }
+    },
+    "magnitude-quality-e80": {
+      "old-native": {
+        "completed": 6,
+        "major": 0,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/magnitude-quality-e80/direct-functional-summary.json",
+        "sha256": "f8b7eab19f140af18c3d8799ea67b78febdc397e3cf4324fccc07be8703ce278"
+      },
+      "native-development": {
+        "completed": 11,
+        "major": 1,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-quality-e80/direct-functional-summary.json",
+        "sha256": "2626e643121b323adbf2545b4aa0ebbbcaf67da907d32cad57b00d3ee13b857a"
+      },
+      "decision-development": {
+        "completed": 20,
+        "major": 0,
+        "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/decision-development/magnitude-quality-e80/decision-summary.json",
+        "sha256": "f329411d30fa67869806b60ef5b6cbf6ac32d03dad44a2e20a5cc696cd2dc84d"
+      }
+    }
+  },
+  "replication_native": {
+    "completed_lower_bound": 11,
+    "major": 1,
+    "summary_sha256": "57a3f232e60e47393677640f23e2bfcb415325ec6c32f9b8e45281fb9b65cb61",
+    "unresolved_detail_scope": "Other native details stay uncertain after confirmed major failure; lower bound is not an equal-precision comparison with fully resolved initial16/20."
+  },
+  "public_conclusion": "第二十一轮首种子质量策略原始16/20、旧5/6、受控82/100且重大0，但锁定第20轮后换种子复核再次出现重大夜景噪声，质量拒绝不稳定，路线未通过。未开封最终验收，默认未升级。",
+  "acceptance_status": "closed_replication_failed",
+  "independent_user_feedback": 0,
+  "controlled_evaluation_started": true,
+  "seed_replication_started": true,
+  "seed_replication_passed": false,
+  "replicate_controlled_started": false
+}

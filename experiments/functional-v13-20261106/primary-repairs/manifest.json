@@ -1,0 +1,1176 @@
+{
+  "at": "2026-11-06T04:59:37.708787+00:00",
+  "items": [
+    {
+      "id": "train-native-088",
+      "domain": "portrait",
+      "group_id": "ff3dd68defcffc7f206e286f543115790b58bde460abea5b48646892edf90e7d",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/dySLG_dySLG.jpg",
+      "source_sha256": "b6db0c0b4c0da364cc875e9543321fb0e512a920bcdf9ed3cadc14fa599a9d1c",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-native-088/input.png",
+      "input_sha256": "9d9999aa8e35c6a3ce9f7ea4ad71a6cdb8f4f6f11a6ef6af9ec79f20c308aad4",
+      "instructions": {
+        "en": "Significantly increase the brightness and contrast of the entire image",
+        "zh": "显著提高整张照片的亮度和对比度。"
+      },
+      "instruction_origin": "original_GIER_English_AI_Chinese",
+      "original_instruction": "Significantly increase the brightness and contrast of the entire image",
+      "native_annotation": [
+        {
+          "metadata_index": 2457,
+          "field": "expert_summary",
+          "item_index": 0,
+          "original_text": "Significantly increase the brightness and contrast of the entire image"
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "original_GIER_English_AI_Chinese",
+        "en": "Significantly increase the brightness and contrast of the entire image",
+        "zh": "显著提高整张照片的亮度和对比度。",
+        "parameters": {
+          "exposure": 40,
+          "shadows": 70,
+          "highlights": -25,
+          "contrast": 8
+        },
+        "evidence": "Two backlit adults at beach have dark skin/clothes against a bright sea and sky. Shadow-heavy brightening with modest contrast is proposed; skin, hair and water need direct target review.",
+        "id": "train-native-088",
+        "domain": "portrait",
+        "source_sha256": "b6db0c0b4c0da364cc875e9543321fb0e512a920bcdf9ed3cadc14fa599a9d1c",
+        "original_instruction": "Significantly increase the brightness and contrast of the entire image",
+        "group_id": "ff3dd68defcffc7f206e286f543115790b58bde460abea5b48646892edf90e7d",
+        "sheet": "experiments/functional-v13-20261106/source-review/portrait-02.jpg",
+        "sheet_sha256": "1cdff4811783d471f36d6540cbaf69cc8641913afa20942445729200b42c30f0",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:07:46.227967+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 70,
+              "contrast": 12
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-088/R1.png",
+          "image_sha256": "979414a9c8b07620bf21f9409e42e21fbf59dcd9fa1b8a9449da12086b9e5799"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 85,
+              "contrast": 16,
+              "temperature": 3,
+              "tint": 5
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-088/R2.png",
+          "image_sha256": "52cfadb2feb2e0688c5ff1f3eaa898c5680449b6d8c9416bdeeffb9495446af4"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-native-088/review.jpg",
+      "sheet_sha256": "21dfa4443fb721f0942424299ed7a826c2ef82fa9bc6983b2d66e0a537ab59f2",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-native-078",
+      "domain": "portrait",
+      "group_id": "fd37a5c7be4a4795a4a348638936aa95e4a2c736f0760af1d9e4cfdbae70d920",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cv449_cv449.jpg",
+      "source_sha256": "691fb10b695f1dd13f39f2c799f55356638daaaf88fc7072f4bebdacdf45e23f",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-native-078/input.png",
+      "input_sha256": "679bc35cbf35928b96ee9aa3123336e0c71725809ddf9704bba89f46b727f5b4",
+      "instructions": {
+        "en": "Significantly increase the brightness and contrast and overall colors of the image",
+        "zh": "显著提高照片的亮度、对比度和整体色彩。"
+      },
+      "instruction_origin": "original_GIER_English_AI_Chinese",
+      "original_instruction": "Significantly increase the brightness and contrast and overall colors of the image",
+      "native_annotation": [
+        {
+          "metadata_index": 1883,
+          "field": "expert_summary",
+          "item_index": 0,
+          "original_text": "Significantly increase the brightness and contrast and overall colors of the image"
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "original_GIER_English_AI_Chinese",
+        "en": "Significantly increase the brightness and contrast and overall colors of the image",
+        "zh": "显著提高照片的亮度、对比度和整体色彩。",
+        "parameters": {
+          "exposure": 55,
+          "shadows": 65,
+          "contrast": 8,
+          "saturation": 10,
+          "highlights": -20
+        },
+        "evidence": "Backlit couple by waterfront railing beneath textured bright clouds. Large subject lift is requested, with modest contrast/colour and restrained highlights; all proposed parameters require executed-image verification.",
+        "id": "train-native-078",
+        "domain": "portrait",
+        "source_sha256": "691fb10b695f1dd13f39f2c799f55356638daaaf88fc7072f4bebdacdf45e23f",
+        "original_instruction": "Significantly increase the brightness and contrast and overall colors of the image",
+        "group_id": "fd37a5c7be4a4795a4a348638936aa95e4a2c736f0760af1d9e4cfdbae70d920",
+        "sheet": "experiments/functional-v13-20261106/source-review/portrait-02.jpg",
+        "sheet_sha256": "1cdff4811783d471f36d6540cbaf69cc8641913afa20942445729200b42c30f0",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:07:46.227974+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 80,
+              "contrast": 12,
+              "saturation": 8
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-078/R1.png",
+          "image_sha256": "6b05baaeff3b1a077ab62ed1edd6957ef4bc8be975401eedff33859931ee461d"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 95,
+              "contrast": 16,
+              "saturation": 8
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-078/R2.png",
+          "image_sha256": "adb4758ae7d3316a5f3c75c5483b15669b7c4849a49606cd978da1bf6fdd672c"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-native-078/review.jpg",
+      "sheet_sha256": "2b1498a644a4dc8c8a9bfd3ad4a35455bf562ad20a3cc68509525a2f2dbd7198",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-native-184",
+      "domain": "portrait",
+      "group_id": "45b95dda07140c659c503f0a3cd05ed50984b0ce00f82eb0ef026cedfeec9959",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/vhFDF_vhFDF.jpg",
+      "source_sha256": "23c64054dba8d8e1bf2b46ef72e23febd1fcec46cf61dedb334529dd8a8a1ed0",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-native-184/input.png",
+      "input_sha256": "070678f5318fba684fb4ee4346327bc6c56457a443bfa91bcd6657c8f334c430",
+      "instructions": {
+        "en": "Significantly increase the contrast of the entire image",
+        "zh": "显著提高整张照片的对比度。"
+      },
+      "instruction_origin": "original_GIER_English_AI_Chinese",
+      "original_instruction": "Significantly increase the contrast of the entire image",
+      "native_annotation": [
+        {
+          "metadata_index": 1781,
+          "field": "expert_summary",
+          "item_index": 0,
+          "original_text": "Significantly increase the contrast of the entire image"
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "original_GIER_English_AI_Chinese",
+        "en": "Significantly increase the contrast of the entire image",
+        "zh": "显著提高整张照片的对比度。",
+        "parameters": {
+          "contrast": 30,
+          "shadows": 20,
+          "highlights": -10
+        },
+        "evidence": "Two children in bright green shirts outdoors with strong black gate shadows. Increased contrast must preserve green-shirt folds and shaded faces; compensating shadow/highlight restraint proposed.",
+        "id": "train-native-184",
+        "domain": "portrait",
+        "source_sha256": "23c64054dba8d8e1bf2b46ef72e23febd1fcec46cf61dedb334529dd8a8a1ed0",
+        "original_instruction": "Significantly increase the contrast of the entire image",
+        "group_id": "45b95dda07140c659c503f0a3cd05ed50984b0ce00f82eb0ef026cedfeec9959",
+        "sheet": "experiments/functional-v13-20261106/source-review/portrait-03.jpg",
+        "sheet_sha256": "4d4221f9899fdc80cde20cc20a61577ba009d78565bcc2cce4ff0190106e23f8",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:15:52.213927+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 5,
+              "contrast": 20
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-184/R1.png",
+          "image_sha256": "885585fc41b938dabc5b1789a8b6e78cdd8f77f0a296a51e95a7c56159050d3f"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 12,
+              "contrast": 28
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-184/R2.png",
+          "image_sha256": "2d15f8ca12a9698ef5583d6418e1c4d5eb54ed54438c245009a4f3ce8dcd599e"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-native-184/review.jpg",
+      "sheet_sha256": "dc2cb5265cef11c50bffb9e7b60a0f4558e7fa77bf4d6d08e9932060fafc87bd",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-native-228",
+      "domain": "portrait",
+      "group_id": "94222b8f6665bcc542527325f6894ef5b40f9a1485e1bf5f267dd4eda7dea99e",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6RCNz_6RCNz.jpg",
+      "source_sha256": "cedfae6348c68a0714c67dc13e28f3d9341ff272b3c75490a5030c7c671eea4b",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-native-228/input.png",
+      "input_sha256": "33811348beae5085b21b661b7d37c1bd8f9ff9b01a19ea4915b467c495006268",
+      "instructions": {
+        "en": "brighten, just make it look better ",
+        "zh": "提亮照片，让它看起来更好。"
+      },
+      "instruction_origin": "original_GIER_English_AI_Chinese",
+      "original_instruction": "brighten, just make it look better ",
+      "native_annotation": [
+        {
+          "metadata_index": 1853,
+          "field": "request",
+          "item_index": null,
+          "original_text": "brighten, just make it look better "
+        },
+        {
+          "metadata_index": 1853,
+          "field": "amateur_summary",
+          "item_index": 0,
+          "original_text": "brighten, just make it look better "
+        },
+        {
+          "metadata_index": 2565,
+          "field": "request",
+          "item_index": null,
+          "original_text": "brighten, just make it look better "
+        },
+        {
+          "metadata_index": 2565,
+          "field": "amateur_summary",
+          "item_index": 0,
+          "original_text": "brighten, just make it look better "
+        },
+        {
+          "metadata_index": 4044,
+          "field": "request",
+          "item_index": null,
+          "original_text": "brighten, just make it look better "
+        },
+        {
+          "metadata_index": 4044,
+          "field": "amateur_summary",
+          "item_index": 0,
+          "original_text": "brighten, just make it look better "
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "original_GIER_English_AI_Chinese",
+        "en": "brighten, just make it look better ",
+        "zh": "提亮照片，让它看起来更好。",
+        "parameters": {
+          "exposure": 50,
+          "shadows": 70,
+          "highlights": -15
+        },
+        "evidence": "Three formally dressed people in dim room with bright light above. Lift faces/clothing while preserving patterns and avoiding amplified grain; request is original including its trailing space, candidate still requires direct review.",
+        "id": "train-native-228",
+        "domain": "portrait",
+        "source_sha256": "cedfae6348c68a0714c67dc13e28f3d9341ff272b3c75490a5030c7c671eea4b",
+        "original_instruction": "brighten, just make it look better ",
+        "group_id": "94222b8f6665bcc542527325f6894ef5b40f9a1485e1bf5f267dd4eda7dea99e",
+        "sheet": "experiments/functional-v13-20261106/source-review/portrait-04.jpg",
+        "sheet_sha256": "85aaff0a7292891d3d2e9fe83c32e41b92e86de7a3e04c044b365fced32b7f28",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:18:35.934888+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 55
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-228/R1.png",
+          "image_sha256": "751658f329b5af0fd6415fdfdfd8dd43292a358df0f9c37da59819a8a17e8afa"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 70,
+              "contrast": 4
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-228/R2.png",
+          "image_sha256": "c385faaa1a408d70655d03cea7e1ccce734b6e5e8ea16e022069bc7167f19ab0"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-native-228/review.jpg",
+      "sheet_sha256": "0646f581f2924438b6b5c1333077d68459376a05d84dd1613ac9bbbb58458544",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-native-151",
+      "domain": "portrait",
+      "group_id": "42dc5a4e524401e0cad33a56bf843ca7bcd7ffa04f5d778b1f84628cd7499d3b",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8MtS1_8MtS1.jpg",
+      "source_sha256": "b528927b3f13dcb15823819488439f47646e3edb830f1da138d446abf409ee3d",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-native-151/input.png",
+      "input_sha256": "753f4db6209df650b9030b6010006f013018d5c4f41e81a2b5e978a5530ee1e4",
+      "instructions": {
+        "en": "Enhanced the brightness a lot.",
+        "zh": "大幅提高亮度。"
+      },
+      "instruction_origin": "original_GIER_English_AI_Chinese",
+      "original_instruction": "Enhanced the brightness a lot.",
+      "native_annotation": [
+        {
+          "metadata_index": 2258,
+          "field": "amateur_summary",
+          "item_index": 1,
+          "original_text": "Enhanced the brightness a lot."
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "original_GIER_English_AI_Chinese",
+        "en": "Enhanced the brightness a lot.",
+        "zh": "大幅提高亮度。",
+        "parameters": {
+          "exposure": 60,
+          "shadows": 35,
+          "highlights": -15
+        },
+        "evidence": "Seated woman on marble floor is already moderately exposed, with black coat and pale floor. Strong gain candidate must retain floor veins, skin and white top rather than flatten them.",
+        "id": "train-native-151",
+        "domain": "portrait",
+        "source_sha256": "b528927b3f13dcb15823819488439f47646e3edb830f1da138d446abf409ee3d",
+        "original_instruction": "Enhanced the brightness a lot.",
+        "group_id": "42dc5a4e524401e0cad33a56bf843ca7bcd7ffa04f5d778b1f84628cd7499d3b",
+        "sheet": "experiments/functional-v13-20261106/source-review/portrait-05.jpg",
+        "sheet_sha256": "12619051a2c8ff24ee212b38135e3ea4324fd7c9d4557b150e0385b002fa9606",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:23:53.819574+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 65
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-151/R1.png",
+          "image_sha256": "915d60df91e6d982b6f8dd549c5231926e510c9d8da6530bdc2946708af87a2f"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 80,
+              "contrast": 5
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-151/R2.png",
+          "image_sha256": "279b19a65bad3cb7fdc251289f4a4ad22a2fb5d2ac2f20509e8d7c0e526af318"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-native-151/review.jpg",
+      "sheet_sha256": "25abf199707d1a88c5fd384871e07ea79266fe9d39d09223271252479ec824ae",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-native-040",
+      "domain": "portrait",
+      "group_id": "5c3e4b710bb88e9d7f150e0a135acbb98c9aa5143149377c487ebd9c3412ad4e",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/314vb4_314vb4.jpg",
+      "source_sha256": "03a8bf41b465527b6e9a73d7f34a96913e616092db3fbcbaddd5e5ee89803ffd",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-native-040/input.png",
+      "input_sha256": "3b39f6bb0cdfa323a32ab8c11fcaafc14f3f7a14d9e12e611dfce24a599c6261",
+      "instructions": {
+        "en": "I would just like this brightened! Thanks!",
+        "zh": "我只想把这张照片提亮，谢谢！"
+      },
+      "instruction_origin": "original_GIER_English_AI_Chinese",
+      "original_instruction": "I would just like this brightened! Thanks!",
+      "native_annotation": [
+        {
+          "metadata_index": 1852,
+          "field": "request",
+          "item_index": null,
+          "original_text": "I would just like this brightened! Thanks!"
+        },
+        {
+          "metadata_index": 1852,
+          "field": "amateur_summary",
+          "item_index": 0,
+          "original_text": "I would just like this brightened! Thanks!"
+        },
+        {
+          "metadata_index": 4128,
+          "field": "request",
+          "item_index": null,
+          "original_text": "I would just like this brightened! Thanks!"
+        },
+        {
+          "metadata_index": 4128,
+          "field": "amateur_summary",
+          "item_index": 0,
+          "original_text": "I would just like this brightened! Thanks!"
+        },
+        {
+          "metadata_index": 4798,
+          "field": "request",
+          "item_index": null,
+          "original_text": "I would just like this brightened! Thanks!"
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "original_GIER_English_AI_Chinese",
+        "en": "I would just like this brightened! Thanks!",
+        "zh": "我只想把这张照片提亮，谢谢！",
+        "parameters": {
+          "exposure": 35,
+          "shadows": 65,
+          "highlights": -20
+        },
+        "evidence": "Baby held against adult in indoor side light; baby face and sleeves are shaded. Shadow-oriented lift must keep fine skin and white fabric texture, no additional colour style.",
+        "id": "train-native-040",
+        "domain": "portrait",
+        "source_sha256": "03a8bf41b465527b6e9a73d7f34a96913e616092db3fbcbaddd5e5ee89803ffd",
+        "original_instruction": "I would just like this brightened! Thanks!",
+        "group_id": "5c3e4b710bb88e9d7f150e0a135acbb98c9aa5143149377c487ebd9c3412ad4e",
+        "sheet": "experiments/functional-v13-20261106/source-review/portrait-05.jpg",
+        "sheet_sha256": "12619051a2c8ff24ee212b38135e3ea4324fd7c9d4557b150e0385b002fa9606",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:23:53.819577+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 30
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-040/R1.png",
+          "image_sha256": "aedab18757d58f048111e2b0988453cdb551211798120330b7ae82afd73ba850"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 45,
+              "contrast": 3
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-040/R2.png",
+          "image_sha256": "03dabd411a722776372bf7677131cd6d3fabe0058f463656ccb95255f6dfc946"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-native-040/review.jpg",
+      "sheet_sha256": "c58d7184bc6fd3642f56ac0aeec8e0e2b0ab50d908f18e812d8312dc9daca62a",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-native-219",
+      "domain": "portrait",
+      "group_id": "a2664c756d942dc3e5eb61bcecb079ae62e20c50def774bc2eb80dd7b3c9cfb2",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/sd5TY_sd5TY.jpg",
+      "source_sha256": "cf87c7cc2251b1f9d46a222273edef27755c7d3cededd6f826f700b51f8a400e",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-native-219/input.png",
+      "input_sha256": "8cfc76b9522b4d2a659f305b1a0ada62b30ad6f8e0bd80623d5f1a117ce944f5",
+      "instructions": {
+        "en": "Brighten image a lot.",
+        "zh": "大幅提亮照片。"
+      },
+      "instruction_origin": "original_GIER_English_AI_Chinese",
+      "original_instruction": "Brighten image a lot.",
+      "native_annotation": [
+        {
+          "metadata_index": 2383,
+          "field": "amateur_summary",
+          "item_index": 0,
+          "original_text": "Brighten image a lot."
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "original_GIER_English_AI_Chinese",
+        "en": "Brighten image a lot.",
+        "zh": "大幅提亮照片。",
+        "parameters": {
+          "exposure": 60,
+          "shadows": 50,
+          "highlights": -20
+        },
+        "evidence": "Family below Eiffel Tower has dark foreground and textured grey metal against pale sky. Strong lift should reveal clothes/faces while retaining ironwork and sky outline.",
+        "id": "train-native-219",
+        "domain": "portrait",
+        "source_sha256": "cf87c7cc2251b1f9d46a222273edef27755c7d3cededd6f826f700b51f8a400e",
+        "original_instruction": "Brighten image a lot.",
+        "group_id": "a2664c756d942dc3e5eb61bcecb079ae62e20c50def774bc2eb80dd7b3c9cfb2",
+        "sheet": "experiments/functional-v13-20261106/source-review/portrait-05.jpg",
+        "sheet_sha256": "12619051a2c8ff24ee212b38135e3ea4324fd7c9d4557b150e0385b002fa9606",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:23:53.819582+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 65
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-219/R1.png",
+          "image_sha256": "5a120f504cd783ae0e746736f6f1714304e9ec94b9279c0f046fdae488312b70"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 80,
+              "contrast": 5
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-219/R2.png",
+          "image_sha256": "0b94ecbdb4a4d91ffebe266c832e1b10efad51ff187d88d7a2cf1ade86d99f56"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-native-219/review.jpg",
+      "sheet_sha256": "0a6b5d5f7527e5005e376ab989adfe0cbeacd7bf14b185111c40f223e2d75ec6",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-native-016",
+      "domain": "portrait",
+      "group_id": "521f476c2b219708538cedcb6a4aa021d0d616c377c6eb2f49b861ec075cfa34",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/24icpi_24icpi.jpg",
+      "source_sha256": "78d9040a81c7276a4a259a24f504b99d360eaf1f6c90a6fbb036d6a9398caae8",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-native-016/input.png",
+      "input_sha256": "f121ac2f61da392f7fafc4ddce249a7b765967862e57fcc55b531fbf988eed8f",
+      "instructions": {
+        "en": "Reduce the warm brown colour cast across this old photograph, keeping the remaining colours and visible detail. Do not invent missing historical colours.",
+        "zh": "减弱这张老照片整体的暖棕色偏色，保留已有颜色和可见细节，不要虚构缺失的历史颜色。"
+      },
+      "instruction_origin": "AI_new_global_request",
+      "original_instruction": "Normalize the colors and get rid of aged, sepia tint.",
+      "native_annotation": [
+        {
+          "metadata_index": 4269,
+          "field": "amateur_summary",
+          "item_index": 0,
+          "original_text": "Normalize the colors and get rid of aged, sepia tint."
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "AI_new_global_request",
+        "en": "Reduce the warm brown colour cast across this old photograph, keeping the remaining colours and visible detail. Do not invent missing historical colours.",
+        "zh": "减弱这张老照片整体的暖棕色偏色，保留已有颜色和可见细节，不要虚构缺失的历史颜色。",
+        "parameters": {
+          "temperature": -22,
+          "tint": 8,
+          "saturation": -8
+        },
+        "evidence": "Aged indoor scan of older woman and man retains multiple original colours but has warm red-brown cast. Cooling/green offset with slight desaturation is only a candidate cast correction, not a claim to recover unknown historic true colours.",
+        "id": "train-native-016",
+        "domain": "portrait",
+        "source_sha256": "78d9040a81c7276a4a259a24f504b99d360eaf1f6c90a6fbb036d6a9398caae8",
+        "original_instruction": "Normalize the colors and get rid of aged, sepia tint.",
+        "group_id": "521f476c2b219708538cedcb6a4aa021d0d616c377c6eb2f49b861ec075cfa34",
+        "sheet": "experiments/functional-v13-20261106/source-review/portrait-06.jpg",
+        "sheet_sha256": "f4b38e90625f9449d4a27dacbed1717896b178774e995342212a2dcb525b8bf1",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:39:30.302865+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false,
+        "reason": "Original normalize/get-rid task is stronger than the proposed reduce-cast target. Do not weaken its Chinese translation and still call it original. This explicitly new AI request replaces primary proposal only; original raw source note is preserved, original full restoration request is not admitted."
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "temperature": -16,
+              "tint": 30,
+              "saturation": -15
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-016/R1.png",
+          "image_sha256": "0870e2e8c4e2dd285217bf6fc329101dc3f7f7cd92ab1b7f05c5fd5df398e7f9"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "temperature": -22,
+              "tint": 45,
+              "saturation": -18
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-016/R2.png",
+          "image_sha256": "7789d5bfcb54cf26ac1546b7c201481c12ecc4b63a4bf82afa5977c0a2493b40"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-native-016/review.jpg",
+      "sheet_sha256": "06461aea18b84328a205167f32b4644a787426fa051106effce97527e370f21c",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-native-069",
+      "domain": "portrait",
+      "group_id": "fe8d030ffb889daa65c9151257ff56eaf5d4944b9dfe7cfa49ce77597e5c556f",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cxxvX_cxxvX.jpg",
+      "source_sha256": "14a34a5edb9849ce38f6e39eb388384c33c0c609e5506dc64b1a3871a40b35c1",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-native-069/input.png",
+      "input_sha256": "58ee663faa151bd0cdf4e4454bb0c4339cc547bbec6687626776f2914fd09f45",
+      "instructions": {
+        "en": "Reduce the purple colour cast while keeping the red shirt and a natural skin tone. Preserve the existing detail.",
+        "zh": "减弱整体紫色偏色，保留红色衣服和自然肤色，保持已有细节。"
+      },
+      "instruction_origin": "AI_new_global_request",
+      "original_instruction": "Enhance the colors and make them more vivid",
+      "native_annotation": [
+        {
+          "metadata_index": 518,
+          "field": "expert_summary",
+          "item_index": 0,
+          "original_text": "Enhance the colors and make them more vivid"
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "AI_new_global_request",
+        "en": "Reduce the purple colour cast while keeping the red shirt and a natural skin tone. Preserve the existing detail.",
+        "zh": "减弱整体紫色偏色，保留红色衣服和自然肤色，保持已有细节。",
+        "parameters": {
+          "temperature": 8,
+          "tint": 20,
+          "saturation": -5
+        },
+        "evidence": "Faded child portrait has conspicuous purple/magenta colour cast across skin and background. Original vivid-colour request is not adopted as this correction task; an explicitly AI-authored real-cast request is proposed and must be visually verified.",
+        "id": "train-native-069",
+        "domain": "portrait",
+        "source_sha256": "14a34a5edb9849ce38f6e39eb388384c33c0c609e5506dc64b1a3871a40b35c1",
+        "original_instruction": "Enhance the colors and make them more vivid",
+        "group_id": "fe8d030ffb889daa65c9151257ff56eaf5d4944b9dfe7cfa49ce77597e5c556f",
+        "sheet": "experiments/functional-v13-20261106/source-review/portrait-07.jpg",
+        "sheet_sha256": "62981927b2d93592cb54b3decccf9e1e818f4e6a307621fb9202b076d7836253",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:26:40.742791+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "temperature": 10,
+              "tint": 35,
+              "saturation": -8,
+              "contrast": 8
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-069/R1.png",
+          "image_sha256": "33b8f0cf64aec381f09b77e37cb8e9b9a90f666622cefd7b993191eeb8e78636"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "temperature": 12,
+              "tint": 45,
+              "saturation": -12,
+              "contrast": 12
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-069/R2.png",
+          "image_sha256": "5600645a2ce4ffb0eef42b79fadcedb4aa3376ba067b0b2387a5b327b02fc724"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-native-069/review.jpg",
+      "sheet_sha256": "f0a8f4c9a102d12799d73014c83afdc5d1227d224e152e01842cd352f74dcc26",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-native-092",
+      "domain": "portrait",
+      "group_id": "7b44f3b563693c28b87e65e3d323b5b0d0ba524b0c32e4acf39925175ffb0d9e",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9MFyp_9MFyp.jpg",
+      "source_sha256": "1acca1ceda893ad6dc99f51c9db761b77c6aa6be69d011bc59f1016aa79e9683",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-native-092/input.png",
+      "input_sha256": "6108fb9d10e6cce76e73fccdc5284ecc23911435ca0dd3af584f0072d4093623",
+      "instructions": {
+        "en": "Please a lot of brightness to the image and make it cooler.",
+        "zh": "请大幅提亮照片，并让色调更冷。"
+      },
+      "instruction_origin": "original_GIER_English_AI_Chinese",
+      "original_instruction": "Please a lot of brightness to the image and make it cooler.",
+      "native_annotation": [
+        {
+          "metadata_index": 5365,
+          "field": "amateur_summary",
+          "item_index": 2,
+          "original_text": "Please a lot of brightness to the image and make it cooler."
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "original_GIER_English_AI_Chinese",
+        "en": "Please a lot of brightness to the image and make it cooler.",
+        "zh": "请大幅提亮照片，并让色调更冷。",
+        "parameters": {
+          "exposure": 65,
+          "shadows": 25,
+          "highlights": -15,
+          "temperature": -14
+        },
+        "evidence": "Warm dim indoor couple has red/orange faces and pale scarf. Strong brightening plus cooling proposed; texture/noise, skin and scarf highlights require direct target review.",
+        "id": "train-native-092",
+        "domain": "portrait",
+        "source_sha256": "1acca1ceda893ad6dc99f51c9db761b77c6aa6be69d011bc59f1016aa79e9683",
+        "original_instruction": "Please a lot of brightness to the image and make it cooler.",
+        "group_id": "7b44f3b563693c28b87e65e3d323b5b0d0ba524b0c32e4acf39925175ffb0d9e",
+        "sheet": "experiments/functional-v13-20261106/source-review/portrait-03.jpg",
+        "sheet_sha256": "4d4221f9899fdc80cde20cc20a61577ba009d78565bcc2cce4ff0190106e23f8",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:15:52.213919+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 60,
+              "temperature": -12,
+              "tint": 12,
+              "saturation": -18
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-092/R1.png",
+          "image_sha256": "807bc11471001f8c0999a9d5734e3f9c0f9ace3cf9599dba7a44f0a63291d7cd"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 75,
+              "temperature": -10,
+              "tint": 15,
+              "saturation": -20
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-092/R2.png",
+          "image_sha256": "668e9cabba05eeb91de86bb37f54da14c162cf63051cb317329c9d2d6f909238"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-native-092/review.jpg",
+      "sheet_sha256": "ee085f20fa83d792882fae38cf6c64da2f59dd3206b04b00139212b2e03064d3",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-native-205",
+      "domain": "portrait",
+      "group_id": "1c28bdfbe78bfea9f7c9d190436135fb832af1b9a213e238e39364f9d9bb37db",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/wWq6C_wWq6C.jpg",
+      "source_sha256": "d956d12816cecfa2e2a76c3b0e3118071396070de8fdd8362695078f0d70f536",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-native-205/input.png",
+      "input_sha256": "27555d398c76e342058207617a78744dff673b7355a7e6a3cd81c0c320bba332",
+      "instructions": {
+        "en": "Significantly increase the brightness, contrast and overall colors of the image",
+        "zh": "显著提高照片的亮度、对比度和整体色彩。"
+      },
+      "instruction_origin": "original_GIER_English_AI_Chinese",
+      "original_instruction": "Significantly increase the brightness, contrast and overall colors of the image",
+      "native_annotation": [
+        {
+          "metadata_index": 2703,
+          "field": "expert_summary",
+          "item_index": 1,
+          "original_text": "Significantly increase the brightness, contrast and overall colors of the image"
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "original_GIER_English_AI_Chinese",
+        "en": "Significantly increase the brightness, contrast and overall colors of the image",
+        "zh": "显著提高照片的亮度、对比度和整体色彩。",
+        "parameters": {
+          "exposure": 45,
+          "shadows": 55,
+          "highlights": -25,
+          "contrast": 8,
+          "saturation": 8
+        },
+        "evidence": "Sunlit child beside tree has already bright face/forearms and dark sleeves. Strong whole-image request creates highlight risk; proposed shadow-heavy lift and restrained contrast/colour are not admitted until execution.",
+        "id": "train-native-205",
+        "domain": "portrait",
+        "source_sha256": "d956d12816cecfa2e2a76c3b0e3118071396070de8fdd8362695078f0d70f536",
+        "original_instruction": "Significantly increase the brightness, contrast and overall colors of the image",
+        "group_id": "1c28bdfbe78bfea9f7c9d190436135fb832af1b9a213e238e39364f9d9bb37db",
+        "sheet": "experiments/functional-v13-20261106/source-review/portrait-03.jpg",
+        "sheet_sha256": "4d4221f9899fdc80cde20cc20a61577ba009d78565bcc2cce4ff0190106e23f8",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:15:52.213928+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 60,
+              "contrast": 18,
+              "saturation": 8
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-205/R1.png",
+          "image_sha256": "83fec2c5d93f8ce60a9279c44a26d26b98f595c9ddbc3ff5b14eb668d987536e"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 75,
+              "contrast": 24,
+              "saturation": 8
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-native-205/R2.png",
+          "image_sha256": "88e9f6d3157a7ebb1842c6b5333ade3e40b393b57c26a7cda6d9f29d7f443650"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-native-205/review.jpg",
+      "sheet_sha256": "e23b5e234b4f15133ec361544cb9632c393eddd9ef9b5f3d51f0c55db30d278e",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-extension-396",
+      "domain": "landscape",
+      "group_id": "3762a34f637801b079eb03b5122e040344cedf4bfe3c6b6537126f2de4b21ede",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/fvtmW_fvtmW.jpg",
+      "source_sha256": "34bc2ec3e974f51a53016546bdf2aedabc6894570cad9b2acf7eb2b3e7858314",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-extension-396/input.png",
+      "input_sha256": "8c520c97be5214fc7e41dd0cd46b6a8f5d6353318048df0c82d7ea0d5256bd34",
+      "instructions": {
+        "en": "Brighten this mountain meadow photograph and gently increase global contrast, preserving the flowers and cloud detail.",
+        "zh": "提亮这张山间花甸照片，轻微增加整体对比度，保留花朵和云层细节。"
+      },
+      "instruction_origin": "AI_new_global_request",
+      "original_instruction": "Brighten the photo and add more definition.",
+      "native_annotation": [
+        {
+          "metadata_index": 1593,
+          "field": "amateur_summary",
+          "item_index": 3,
+          "original_text": "Brighten the photo and add more definition."
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "AI_new_global_request",
+        "en": "Brighten this mountain meadow photograph and gently increase global contrast, preserving the flowers and cloud detail.",
+        "zh": "提亮这张山间花甸照片，轻微增加整体对比度，保留花朵和云层细节。",
+        "parameters": {
+          "exposure": 25,
+          "shadows": 30,
+          "contrast": 10,
+          "highlights": -15
+        },
+        "evidence": "Purple flower meadow below mountains and pale clouds. Original more-definition wording might imply sharpening; new AI global tonal/contrast request does not promise detail reconstruction.",
+        "id": "train-extension-396",
+        "domain": "landscape",
+        "source_sha256": "34bc2ec3e974f51a53016546bdf2aedabc6894570cad9b2acf7eb2b3e7858314",
+        "original_instruction": "Brighten the photo and add more definition.",
+        "group_id": "3762a34f637801b079eb03b5122e040344cedf4bfe3c6b6537126f2de4b21ede",
+        "sheet": "experiments/functional-v13-20261106/source-review/landscape-03.jpg",
+        "sheet_sha256": "812f61d8e1469b0a6e8b737ce160fa747f9fd7faa0cdf8308a61cf5bfcb76812",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:34:01.079992+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 12,
+              "contrast": 8
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-extension-396/R1.png",
+          "image_sha256": "d200ea02ecc81986700ac5aa808e6bb8ad7920a01e9a1550292209c4f52ed8d4"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 20,
+              "contrast": 12
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-extension-396/R2.png",
+          "image_sha256": "3d32ee57c3a8fe3537202677077b15a2e9db0589e8e9651c01ac68e577987a7c"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-extension-396/review.jpg",
+      "sheet_sha256": "21200b0a0266a5957dc6775100c6331c288026cfee814b0592a10eb2b8b96fd1",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-extension-121",
+      "domain": "landscape",
+      "group_id": "a55e6950257e616d9e8ffaf145c8350a0c8cd6cb2c6270fda78556a7a0512ea5",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/pC04S_pC04S.jpg",
+      "source_sha256": "22089af399627ab29644191032e4b7eefb83fe0dd743f7b86729db3f47258a49",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-extension-121/input.png",
+      "input_sha256": "e7d19fa192bb8f8c0830842193550a4d551c4b5068bb30c92902634e7dad6cfa",
+      "instructions": {
+        "en": "Significantly increase the brightness and contrast",
+        "zh": "显著提高亮度和对比度。"
+      },
+      "instruction_origin": "original_GIER_English_AI_Chinese",
+      "original_instruction": "Significantly increase the brightness and contrast",
+      "native_annotation": [
+        {
+          "metadata_index": 1444,
+          "field": "expert_summary",
+          "item_index": 2,
+          "original_text": "Significantly increase the brightness and contrast"
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "original_GIER_English_AI_Chinese",
+        "en": "Significantly increase the brightness and contrast",
+        "zh": "显著提高亮度和对比度。",
+        "parameters": {
+          "exposure": 40,
+          "contrast": 12,
+          "shadows": 25,
+          "highlights": -25
+        },
+        "evidence": "Cable car above snow mountains and thick cloud layers. Native brightening/contrast request is global; snow/cloud strata and dark trees require direct output verification.",
+        "id": "train-extension-121",
+        "domain": "landscape",
+        "source_sha256": "22089af399627ab29644191032e4b7eefb83fe0dd743f7b86729db3f47258a49",
+        "original_instruction": "Significantly increase the brightness and contrast",
+        "group_id": "a55e6950257e616d9e8ffaf145c8350a0c8cd6cb2c6270fda78556a7a0512ea5",
+        "sheet": "experiments/functional-v13-20261106/source-review/landscape-03.jpg",
+        "sheet_sha256": "812f61d8e1469b0a6e8b737ce160fa747f9fd7faa0cdf8308a61cf5bfcb76812",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:34:01.080090+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 55,
+              "contrast": 25
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-extension-121/R1.png",
+          "image_sha256": "7b5b9b98ff4c07e1210d8285221fe10a586da293c7497b06a353ce3ffa44dab7"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 70,
+              "contrast": 32
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-extension-121/R2.png",
+          "image_sha256": "e71233e521e297eee2d6041dada4cc27df2901c6ea6bb04e57d39e4da154c5ac"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-extension-121/review.jpg",
+      "sheet_sha256": "4126af2685365174f71a3ae547b301ae7b9b8f8ac1e52504a2b40b51c00a2236",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    },
+    {
+      "id": "train-extension-339",
+      "domain": "landscape",
+      "group_id": "f5dcd7247129d5f46a33aab0627666e66c811b64ff5a2a1aa5de48e01d7cc0b1",
+      "source_image": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/x3dQf_x3dQf.jpg",
+      "source_sha256": "81a0629d7daa8540dd636bd38e82837d51e9ff51b0d166c2ab34c214b182ab6d",
+      "input_image": "experiments/functional-v13-20261106/primary-candidates/train-extension-339/input.png",
+      "input_sha256": "145e51a99b326d6700bc8c522280fb59774a82f267a5bb1cd0c9e718285ed9fc",
+      "instructions": {
+        "en": "Lift the shadows across the sunset hillside photograph, preserving the bright sun and clouds without changing their colours.",
+        "zh": "提亮整张日落山坡照片的暗部，保留明亮太阳和云层，不改变它们的颜色。"
+      },
+      "instruction_origin": "AI_new_global_request",
+      "original_instruction": "ehnance sky, make the people more bright",
+      "native_annotation": [
+        {
+          "metadata_index": 2939,
+          "field": "expert_summary",
+          "item_index": 1,
+          "original_text": "ehnance sky, make the people more bright"
+        }
+      ],
+      "source_note": {
+        "retain": true,
+        "primary_origin": "AI_new_global_request",
+        "en": "Lift the shadows across the sunset hillside photograph, preserving the bright sun and clouds without changing their colours.",
+        "zh": "提亮整张日落山坡照片的暗部，保留明亮太阳和云层，不改变它们的颜色。",
+        "parameters": {
+          "exposure": 20,
+          "shadows": 60,
+          "highlights": -20
+        },
+        "evidence": "Two small silhouettes on dark hill below bright sunset. Original people/sky-specific task is not adopted; AI whole-frame shadow lift must retain sun/cloud outline and foreground detail.",
+        "id": "train-extension-339",
+        "domain": "landscape",
+        "source_sha256": "81a0629d7daa8540dd636bd38e82837d51e9ff51b0d166c2ab34c214b182ab6d",
+        "original_instruction": "ehnance sky, make the people more bright",
+        "group_id": "f5dcd7247129d5f46a33aab0627666e66c811b64ff5a2a1aa5de48e01d7cc0b1",
+        "sheet": "experiments/functional-v13-20261106/source-review-extended/landscape-extra-01.jpg",
+        "sheet_sha256": "22686fed715933af86cf18b018350a33e54756288a7d577910450a88826df090",
+        "reviewer": "Codex direct source/request AI observation, not human",
+        "at": "2026-11-06T03:39:30.249211+00:00",
+        "parameter_status": "unadmitted_proposal_must_execute_and_visually_verify",
+        "training_label_admitted": false
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 20
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-extension-339/R1.png",
+          "image_sha256": "879ec7149402fefecdc264eb1c71f3765bd5e2f80ba238d79b239d2e50b846c5"
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 12,
+              "shadows": 12
+            }
+          },
+          "status": "edited",
+          "image": "experiments/functional-v13-20261106/primary-repairs/train-extension-339/R2.png",
+          "image_sha256": "327545c0449084b941d04300142c4bb759c8f781c6f01c2cf42de06c25e66d1b"
+        }
+      ],
+      "sheet": "experiments/functional-v13-20261106/primary-repairs/train-extension-339/review.jpg",
+      "sheet_sha256": "f32968800bc87d8a594bb329430af856263c4bb8a50f557030464a42faea5738",
+      "label_admitted": false,
+      "repair_of": "experiments/functional-v13-20261106/primary-candidates/manifest.json"
+    }
+  ],
+  "editor": "functional-editor-v11-negative-value-gain-candidate",
+  "GPU_hours": 0,
+  "executed_edits": 28,
+  "source_manifest_sha256": "806efc5d32edd3573da65a86397d7b419d2abf9f26bef4c8d78b4a108e4fd74e",
+  "policy": "Actual CPU execution, same input and unchanged requests. Manual repair proposals, not model predictions or admitted labels. Full-frame sheets with no colour changes; native-pixel followup required for noise/skin/highlight risks. Failed first candidates remain preserved."
+}

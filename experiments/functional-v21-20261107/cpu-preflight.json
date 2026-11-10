@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-07T01:43:59.684584+00:00",
+  "status": "passed",
+  "GPU_calls": 0,
+  "checks": [
+    "parent tool/sign preserved",
+    "keep and both parent refusals preserved",
+    "shared-weight risk veto on/off",
+    "zero-strength active tool is error",
+    "supervision mask excludes keep/unsupported risk labels",
+    "finite actual gradients/update",
+    "save/load exact logits",
+    "flat/noisy input residual numerical contracts"
+  ],
+  "source_sha256": {
+    "head.py": "36ee55aef5a71c60898bfc6e5bda56e561e5623b3b873649563665c6eeeb46c4",
+    "texture.py": "955c070cb0f22c97142635285ac101eccaeac8e0d1029fc0569948127606fc6e",
+    "test_head.py": "64181319af11b53f93584b588a1fda2fd7f99e2b61e041555b7268bc1dafc982"
+  },
+  "limitation": "Numerical and pipeline contracts, not perceptual quality or practical-use evidence."
+}

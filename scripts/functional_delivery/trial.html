@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IEA 自训模型试用</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<style>
+main{max-width:1050px;margin:auto;padding:1.5rem}form{display:grid;gap:.75rem;max-width:670px}
+textarea{width:100%;min-height:5rem}.views{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+figure{margin:0}figure img{width:100%;height:auto}figcaption{padding:.5rem 0}output{display:block;margin:1rem 0}
+section{margin:1.5rem 0}[hidden]{display:none!important}pre{white-space:pre-wrap}
+</style>
+<main>
+<h1>IEA 自训模型试用</h1>
+<p><strong>{{ model.display_name }}</strong> · 单轮全局修图 · CPU 推理</p>
+<p>此检查点的开发结果来自 AI 逐图评审。换种子复核未通过。CPU 使用同一自训权重，数值精度与历史 GPU 评估不同。</p>
+<p>输入中文或英文要求。支持整体光照、白平衡、饱和度、对比度和棕褐色。CPU 可能需要等待数十秒。上传和反馈单独保存。</p>
+<p><a href="http://127.0.0.1:12346/v21">已保存的实验结果</a> · <a href="http://127.0.0.1:12345/">原作者 IEA</a></p>
+<form id="edit">
+<label for="image">照片</label><input id="image" name="image" type="file" accept="image/*" required>
+<label for="instruction">修图要求</label><textarea id="instruction" name="instruction" maxlength="6000" required placeholder="例如：给整张照片加一点复古棕褐色，保留亮部细节。"></textarea>
+<button id="run">处理图片</button>
+</form>
+<output id="message" aria-live="polite"></output>
+<section class="views">
+<figure id="before-pane" hidden><figcaption>原图</figcaption><img id="before" alt="原图"></figure>
+<figure id="after-pane" hidden><figcaption>结果 <a id="download" download="IEA-result.png">下载 PNG</a></figcaption><img id="after" alt="编辑结果"></figure>
+</section>
+<details id="technical" hidden><summary>模型与参数</summary><pre id="details"></pre></details>
+<section id="feedback-section" hidden>
+<form id="feedback">
+<label for="verdict">这次修图是否符合要求</label>
+<select id="verdict" required><option value="">选择结果</option><option value="completed">完成</option><option value="partial">部分完成</option><option value="failed">失败</option><option value="uncertain">不确定</option></select>
+<label for="comment">备注</label><input id="comment" maxlength="2000"><button>保存反馈</button>
+</form>
+<output id="feedback-message" aria-live="polite"></output>
+</section>
+</main>
+<script>
+const element = id => document.getElementById(id);
+let currentRequest = null;
+let previewUrl = null;
+function clearResult() {
+  currentRequest = null;
+  for (const id of ['after-pane', 'technical', 'feedback-section']) element(id).hidden = true;
+  element('after').removeAttribute('src');
+  element('download').removeAttribute('href');
+  element('feedback').reset();
+  element('feedback-message').textContent = '';
+}
+element('image').addEventListener('change', () => {
+  clearResult();
+  if (previewUrl) URL.revokeObjectURL(previewUrl);
+  const file = element('image').files[0];
+  previewUrl = file ? URL.createObjectURL(file) : null;
+  element('before-pane').hidden = !file;
+  if (file) element('before').src = previewUrl;
+  element('message').textContent = '';
+});
+element('edit').addEventListener('submit', async event => {
+  event.preventDefault();
+  const form = new FormData(event.currentTarget);
+  clearResult();
+  element('message').textContent = '正在处理，请等待。';
+  element('run').disabled = element('image').disabled = true;
+  try {
+    const response = await fetch('/api/edit', {method:'POST', body:form});
+    const value = await response.json();
+    element('message').textContent = (value.message || value.error) + (value.seconds ? ' · ' + value.seconds + ' 秒' : '');
+    if (value.status === 'executed' && value.after) {
+      element('after').src = value.after;
+      element('download').href = value.after;
+      element('after-pane').hidden = false;
+    }
+    if (value.identity) {
+      element('details').textContent = JSON.stringify({identity:value.identity, decision:value.decision, parameters:value.parameters}, null, 2);
+      element('technical').hidden = false;
+    }
+    if (value.request_id) {
+      currentRequest = value.request_id;
+      element('feedback-section').hidden = false;
+    }
+  } catch (error) {
+    element('message').textContent = '试用服务暂时不可用。';
+  } finally {
+    element('run').disabled = element('image').disabled = false;
+  }
+});
+element('feedback').addEventListener('submit', async event => {
+  event.preventDefault();
+  if (!currentRequest) return;
+  try {
+    const response = await fetch('/api/feedback', {method:'POST', headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({request_id:currentRequest, verdict:element('verdict').value, comment:element('comment').value})});
+    const result = await response.json();
+    element('feedback-message').textContent = result.message || result.error;
+  } catch (error) {
+    element('feedback-message').textContent = '反馈暂时无法保存。';
+  }
+});
+</script>
+</html>

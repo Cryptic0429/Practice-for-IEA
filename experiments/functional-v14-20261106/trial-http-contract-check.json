@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-06T12:19:38.005348+00:00",
+  "status": "passed",
+  "checks": [
+    "decline_no_image_unreliable_quality",
+    "decline_no_image_unsupported_tools",
+    "keep_explicit_unchanged_exact_pixels",
+    "decline_with_stale_image_rejected_and_removed",
+    "invalid_model_output_not_fallback_success",
+    "legacy_unsupported_precheck_preserved"
+  ],
+  "actual_model_inference": false,
+  "browser_interaction": false,
+  "GPU_hours": 0,
+  "code_hashes": {
+    "scripts/functional_v1/web.py": "c88dab1ec913d0e8a494f633b8920219316423d9daf50b1aefc48bc1803f7310",
+    "scripts/functional_v14/test_trial_contract.py": "9cbaccef5e92033a83d517aaa32089ceadf9d46031d125f09da4c666c74fcfda"
+  },
+  "limitations": "Mocked worker transport verifies HTTP/no-output boundary only. Actual trained-model, browser, switching, download and feedback checks remain required."
+}

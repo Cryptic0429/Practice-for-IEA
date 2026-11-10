@@ -1,0 +1,2364 @@
+{
+  "at": "2026-11-06T13:11:43.398518+00:00",
+  "source_cases_sha256": "4d24be767daeb2ae523ab0988c7d2887d650a54e9f2de263e1b61211b832a39b",
+  "previous_attempts_sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+  "items": [
+    {
+      "id": "native-train-n070",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "fd251d29a693d5514b07e3c8c04c51e1c2a1cfb3bbd43fa6c1f0152944300651",
+      "instructions": {
+        "en": "Significantly lighten the entire image, please",
+        "zh": "请大幅提亮整张照片。"
+      },
+      "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n070.png",
+        "sha256": "d5455342aacf026a5bc6316b30f13d5d221bde78a2c023c4c05143cf31ff75ea",
+        "size": [
+          960,
+          720
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "native-train-n070-alt2",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 65,
+          "contrast": -10,
+          "shadows": 25,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 65,
+        "contrast": -10,
+        "shadows": 50,
+        "saturation": -10
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/native-train-n070/old.png",
+        "sha256": "3cffb11e74294378ef4c716bd251fd7de41f14e017742e89406a839552b2048f"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/native-train-n070/candidate.png",
+        "sha256": "ab8e7581af6877b430848c87ce8869c001a97460375da885d2a12bc7080a9437"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/native-train-n070/review.jpg",
+        "sha256": "9fc56292a043841d441fd9c6b59caa84f738b251d3f323aecff03ebdecfdc6ef"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "native-train-n127",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "23018628f248466dba47fb4d697044655322ca14c888f8bc8ffd6f815a58c171",
+      "instructions": {
+        "en": "Can you brighten this photo a lot?",
+        "zh": "能把这张照片大幅提亮吗？"
+      },
+      "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n127.png",
+        "sha256": "791c0d7f8ea2f81d6c4c649d8dcf030aeca52eaee70aff806e576c8a13392278",
+        "size": [
+          4608,
+          3072
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "native-train-n127-alt2",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 65,
+          "contrast": -10,
+          "shadows": 25,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 65,
+        "contrast": -10,
+        "shadows": 50,
+        "saturation": -10
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/native-train-n127/old.png",
+        "sha256": "5458f200399e6d7a2537fdf2918090c20ea49c85165bf46de3cfb7bf5e13630e"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/native-train-n127/candidate.png",
+        "sha256": "6fde42bed0e548d02c6840512a6d5df80c91cee0857668ba7bca34333da57f7d"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/native-train-n127/review.jpg",
+        "sha256": "fd51c7b0a3963bcfa16ad5a74ae2e0d52d9fd00a99af543862e7cccd039709e1"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "native-train-n190",
+      "domain": "landscape",
+      "family": "compound",
+      "group_id": "89f5a551118fa9d20d0ac9f1b9490bdd60cc958cbfb99a83fef63139fa0f4d14",
+      "instructions": {
+        "en": "Please add a lot of contrast and really enhance the colors.",
+        "zh": "请大幅提高对比度，并明显增强色彩。"
+      },
+      "instruction_origin": "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n190.png",
+        "sha256": "45981ce9a95460be520bf0033a83cdb9791c22ab7fd89e9b7e53de3532411bcf",
+        "size": [
+          4160,
+          2340
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "native-train-n190-alt1",
+        "parameters": {
+          "exposure": -40,
+          "contrast": 60,
+          "shadows": 35,
+          "saturation": 35
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "contrast": 60,
+        "shadows": 50,
+        "saturation": 35
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/native-train-n190/old.png",
+        "sha256": "9ff79bc74ab1f2770c2456c0b676b936a1f20cd4df53ece2fe690207d696ab5a"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/native-train-n190/candidate.png",
+        "sha256": "afc6e32429b2d804d381ee206a87f48797fb8d87f1aebd703ea7bd7b688c9c1a"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/native-train-n190/review.jpg",
+        "sha256": "e74071ecb5582c46054b9af40462fdb27ca8ed42794b0ef50699e6a4b158d402"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-01-severe-compound",
+      "domain": "portrait",
+      "family": "compound",
+      "group_id": "49b5a624b5e37b3680abfad1b6ec7b5c68a859c74d8645cde1d30300ae22d0cf",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-01-noisy-input.png",
+        "sha256": "b0560ca87485a3e5e74b0962d7edd7d832186c5e987daee7e6411a4575d8296e",
+        "size": [
+          417,
+          627
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-01-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-01-severe-compound/old.png",
+        "sha256": "53fe03687a828379121eee74c397938e3f5c90d21844f1a11b1942fd43767f0b"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-01-severe-compound/candidate.png",
+        "sha256": "3f88d8472ce9262eb26c4126cdc29d78f9c8aa39a0a8c369b0928ded1061b773"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-01-severe-compound/review.jpg",
+        "sha256": "9e59589cba72f94b64ee290461711de598cafe111f9c7c63d6c4a9baad868513"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-01-severe-light",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "49b5a624b5e37b3680abfad1b6ec7b5c68a859c74d8645cde1d30300ae22d0cf",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-01-noisy-input.png",
+        "sha256": "b0560ca87485a3e5e74b0962d7edd7d832186c5e987daee7e6411a4575d8296e",
+        "size": [
+          417,
+          627
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-01-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-01-severe-light/old.png",
+        "sha256": "3afa46e41a610cc94f2b2a2dfe1c8859a265104434e3631f4de226791eaa9f72"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-01-severe-light/candidate.png",
+        "sha256": "1e4e1811352bd2078b1568bf6147cf902bec367e0337764b2277959718b92faa"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-01-severe-light/review.jpg",
+        "sha256": "a12ebcee9609a551b70799deb7b4ae29a59e1266c231039f33db58c39eb225a0"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-02-severe-compound",
+      "domain": "portrait",
+      "family": "compound",
+      "group_id": "667c09557c19737f3e16035b44d76fa955900541b1e8721d3cf4facca8a4a61e",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-02-noisy-input.png",
+        "sha256": "93f571bbf4fa70b87f2e7a245f50ef1da1dd9bc070d5447fdaeb998f9bcdcf28",
+        "size": [
+          362,
+          724
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-02-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-02-severe-compound/old.png",
+        "sha256": "c269b5734bba7bd5ad9487bcbe120af9af16b0f0e81ad2541ca6fa06d03a7962"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-02-severe-compound/candidate.png",
+        "sha256": "f0a8ed25e9a5e6a05932ad578d470b140e3919c6be048a81b5fa061e1522f86f"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-02-severe-compound/review.jpg",
+        "sha256": "dbbd874620e4fc910f030aece67ff2ee22a4eaa00d2cb6a06652454e9f7de5b9"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-02-severe-light",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "667c09557c19737f3e16035b44d76fa955900541b1e8721d3cf4facca8a4a61e",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-02-noisy-input.png",
+        "sha256": "93f571bbf4fa70b87f2e7a245f50ef1da1dd9bc070d5447fdaeb998f9bcdcf28",
+        "size": [
+          362,
+          724
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-02-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-02-severe-light/old.png",
+        "sha256": "1aca4ccb15329bb406817fd18c20a071f8f9353205aedaa479081f9ad85bd452"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-02-severe-light/candidate.png",
+        "sha256": "6ea17fd690237ff5688f604bb32f25e578c9d3576a2e0512c6547f0c6f5c50ee"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-02-severe-light/review.jpg",
+        "sha256": "e7d21fbb980ba3994115fd881baa1c0892bfdd6f43a4d0830b2a4f3761b38897"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-03-severe-compound",
+      "domain": "portrait",
+      "family": "compound",
+      "group_id": "6ccdc621edf5c214e6a3db1c11bf85063370861ee9f75d66eecb94bd95cb5136",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-03-noisy-input.png",
+        "sha256": "781899b66776750f130fdc1e75a2867ab4a86d324aa6d238e061a50b60698862",
+        "size": [
+          627,
+          418
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-03-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-03-severe-compound/old.png",
+        "sha256": "fb4934a9e001a4d1f0e2b02d310113b13450fdce2863617fd07c8aca9cffb3e9"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-03-severe-compound/candidate.png",
+        "sha256": "e6df24e7fbef304148cc1dd03ada6b305c277e4a6e896352cf9422e34e506a1e"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-03-severe-compound/review.jpg",
+        "sha256": "d8bc991145f15c6e2f090d8d582b7e979d798d454c171f690b998d4dc4f055d2"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-03-severe-light",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "6ccdc621edf5c214e6a3db1c11bf85063370861ee9f75d66eecb94bd95cb5136",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-03-noisy-input.png",
+        "sha256": "781899b66776750f130fdc1e75a2867ab4a86d324aa6d238e061a50b60698862",
+        "size": [
+          627,
+          418
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-03-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-03-severe-light/old.png",
+        "sha256": "e0b9ac598d0c9c2706541ef95a0edbc88fd15094390b36069e49e3fac1c11161"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-03-severe-light/candidate.png",
+        "sha256": "77e43ffc0df3ae5bb4d9c03f228faa678570d4ea90770530bcb40ffbea3d039c"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-03-severe-light/review.jpg",
+        "sha256": "8ca47752c91d35dd0731e2cd30c32f9d6f5d75025c4a719468352d4429cd6fa0"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-04-severe-compound",
+      "domain": "portrait",
+      "family": "compound",
+      "group_id": "7581d2bd6ce05e003a182411f2e597c0656fdb6cbce93c29a46ee6facc874541",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-04-noisy-input.png",
+        "sha256": "eccf9bd90ba2f54e83b11198baa2556cc73cd17689adc9427a83f08fbb96b073",
+        "size": [
+          626,
+          418
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-04-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-04-severe-compound/old.png",
+        "sha256": "2ed04bbe789ca707b9ab82bd8c32ab4fa776c21385f7d5c9ff0dff0f572f1416"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-04-severe-compound/candidate.png",
+        "sha256": "c64f598e56bc46507d86de46e38b4d29c6f321f355998442dad476e3cf7c6a22"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-04-severe-compound/review.jpg",
+        "sha256": "9024f774f116e4e131320e4e15e93e64bbcbdb346b4827afe2de6dff0402ae05"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-04-severe-light",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "7581d2bd6ce05e003a182411f2e597c0656fdb6cbce93c29a46ee6facc874541",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-04-noisy-input.png",
+        "sha256": "eccf9bd90ba2f54e83b11198baa2556cc73cd17689adc9427a83f08fbb96b073",
+        "size": [
+          626,
+          418
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-04-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-04-severe-light/old.png",
+        "sha256": "445b338b9995ad5fb9b9fc44ff74fa4ea64f2bb8d5d83623fb36b22394cec482"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-04-severe-light/candidate.png",
+        "sha256": "2618ac907048ae19e60c79f7457ff601517261f399ee51af875bfad5995f2ae5"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-04-severe-light/review.jpg",
+        "sha256": "0636b42cec9ee8150b7eb043b53ee1137e21c2a8e0d0b6ebcf226ed0a81e3954"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-05-severe-compound",
+      "domain": "portrait",
+      "family": "compound",
+      "group_id": "45d5b1ddcfb619f9cf34a100fa155c5407b64ad08d179486b9cf795e07db2bbc",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-05-noisy-input.png",
+        "sha256": "aecab6fbbac08f741d3f31117306eb3032ff090ddc1c5461411469d629773a74",
+        "size": [
+          627,
+          418
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-05-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-05-severe-compound/old.png",
+        "sha256": "5795cf79a9052b28229434cfaee30f08518a4c6dc376bc992a28f43d9506fda3"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-05-severe-compound/candidate.png",
+        "sha256": "d20b2957300e5a546f23d88d2b9850883095e0695f9e0b9da8d5941abd287ec2"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-05-severe-compound/review.jpg",
+        "sha256": "bab074657292471a8989cecbb60a9afee9feb82f0fd7bd516567838d52769f71"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-05-severe-light",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "45d5b1ddcfb619f9cf34a100fa155c5407b64ad08d179486b9cf795e07db2bbc",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-05-noisy-input.png",
+        "sha256": "aecab6fbbac08f741d3f31117306eb3032ff090ddc1c5461411469d629773a74",
+        "size": [
+          627,
+          418
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-05-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-05-severe-light/old.png",
+        "sha256": "147dc149c7057eeba1414ed890f475f7b8e70f9a69b39da2d7013f3eebce7d21"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-05-severe-light/candidate.png",
+        "sha256": "ca7ed620bf23e721f548660be8683488ae38598407ae9e52300e1fc6312f7783"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-05-severe-light/review.jpg",
+        "sha256": "1a8863d340b504898019bbf3304ae5d8f9ed660cca852cc0fcb136f6fa08612c"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-06-severe-compound",
+      "domain": "portrait",
+      "family": "compound",
+      "group_id": "a4dfc6557bebf076aa3ec01ea76ad597c28bf70a59da944c9a101a357d02cb81",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-06-noisy-input.png",
+        "sha256": "1ca5734478115ef5f66a3396461da87018d5f1ff63b7e8493a1d67874a882635",
+        "size": [
+          627,
+          417
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-06-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-06-severe-compound/old.png",
+        "sha256": "2c2fabd2e6ee76ca7ccce7aee7661eb1bb932527900c951ff2eba43e38d43c63"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-06-severe-compound/candidate.png",
+        "sha256": "761cf53baf53f06d315c116ade399381d4d23c064aeb6fe84c54e81cb3569c4b"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-06-severe-compound/review.jpg",
+        "sha256": "09b915ddebea5bb9799efdc2932f8d65a2fe58ef5299e226d895e86524d95ca6"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-06-severe-light",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "a4dfc6557bebf076aa3ec01ea76ad597c28bf70a59da944c9a101a357d02cb81",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-06-noisy-input.png",
+        "sha256": "1ca5734478115ef5f66a3396461da87018d5f1ff63b7e8493a1d67874a882635",
+        "size": [
+          627,
+          417
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-06-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-06-severe-light/old.png",
+        "sha256": "4915e9c2a90d34fb9d5e5691f322ed57af97e436670741c97aa32d7ce394a8c4"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-06-severe-light/candidate.png",
+        "sha256": "3ff9e0d08301577d608a2ef59ff5fc578a45e85f95ebe9e00f02160b759cefaf"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-06-severe-light/review.jpg",
+        "sha256": "5c0e1644322a2039d13afd60acdcf5bef2cc76b93a1281df45e2f72c837bb08e"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-07-normal-light",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "a47cd897e4aa70d1d8922678b59d7e1c61f5a6ba88cb9939a2d93ae37648c113",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-07-canonical.png",
+        "sha256": "db89afd99e6409d1c436db43a36a6b8c833943b965e245ab0e296c08390e0707",
+        "size": [
+          483,
+          542
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-07-normal-light-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 45,
+          "contrast": 20,
+          "highlights": -15,
+          "shadows": 35
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 45,
+        "contrast": 20,
+        "highlights": -15,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-07-normal-light/old.png",
+        "sha256": "6ec206a213713a64e283bc5a21c918995e09320fa06514bd74ac14c6650ab633"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-07-normal-light/candidate.png",
+        "sha256": "aa7b6989b015486c217d98a285ee6677d6c6ec3099f2ef0ca0183857812d4210"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-07-normal-light/review.jpg",
+        "sha256": "e93ef8e441007891353e603b4e9a2807ff64d64b3d19f41b691f2e08439a40b9"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-07-severe-compound",
+      "domain": "portrait",
+      "family": "compound",
+      "group_id": "a47cd897e4aa70d1d8922678b59d7e1c61f5a6ba88cb9939a2d93ae37648c113",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-07-noisy-input.png",
+        "sha256": "815c3aa51c06b0a2b5c2088a5b406310c2db79b9edb3eb9b95bdf787946a03f7",
+        "size": [
+          483,
+          542
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-07-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-07-severe-compound/old.png",
+        "sha256": "dfcca5ce182af200c315202cd631ce850be99c4dc3aa35d764850424062d71c5"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-07-severe-compound/candidate.png",
+        "sha256": "e227f0c50104ae9ee32de62a0a603189a62f5ecbbbd001ffd282193f76d79d7b"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-07-severe-compound/review.jpg",
+        "sha256": "7f6718ef96b3bbd24ae5fc830e2877e5d5416162514f606252908fc01eea4f04"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-07-severe-light",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "a47cd897e4aa70d1d8922678b59d7e1c61f5a6ba88cb9939a2d93ae37648c113",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-07-noisy-input.png",
+        "sha256": "815c3aa51c06b0a2b5c2088a5b406310c2db79b9edb3eb9b95bdf787946a03f7",
+        "size": [
+          483,
+          542
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-07-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-07-severe-light/old.png",
+        "sha256": "0c04630d88af1f17aaa6cc530934732b705fd0c43f9c907fd30e135c6f17599c"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-07-severe-light/candidate.png",
+        "sha256": "db8dc70a450c52ddae6652aa98cd42b197babbd3078f22106edab7b6d1c02dba"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-07-severe-light/review.jpg",
+        "sha256": "a6fe9deec6977db6ac74da391b4495635e92918f52c3c8ca5f077b593981b0d4"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-08-severe-compound",
+      "domain": "portrait",
+      "family": "compound",
+      "group_id": "b7caf29ebf5788b75f0397efc9a273104232facc03ffac25c05b5bd279a883d1",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-08-noisy-input.png",
+        "sha256": "4efae39714567e97aa995d97a0d774fc155cd68839e0b05c3b29b5f784602b64",
+        "size": [
+          434,
+          603
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-08-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-08-severe-compound/old.png",
+        "sha256": "42a453602b4096d451fcd0fdab0aa013f8af587c2fc5ed4d2e3b8054135b53f1"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-08-severe-compound/candidate.png",
+        "sha256": "b277909db5ed928b7237fb80e6fc0dd5cfa48d4db3e0521c1324e9d45d2976b6"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-08-severe-compound/review.jpg",
+        "sha256": "e9d460e7fce384e89425b89e270f2f52d87dc6031f28e569370b963b8ead55c4"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-08-severe-light",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "b7caf29ebf5788b75f0397efc9a273104232facc03ffac25c05b5bd279a883d1",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-08-noisy-input.png",
+        "sha256": "4efae39714567e97aa995d97a0d774fc155cd68839e0b05c3b29b5f784602b64",
+        "size": [
+          434,
+          603
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-08-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-08-severe-light/old.png",
+        "sha256": "130953bb0eef0392f7a1bba1fae7ddc683810622c6856470f7dcf9583f33ce8e"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-08-severe-light/candidate.png",
+        "sha256": "ef7158ac92539b11dff61cd8e567ab9bdff598cfc4804bfaeb6ae38893ea9cd4"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-08-severe-light/review.jpg",
+        "sha256": "8493d1deb22130ff78f8bb7d91e8aafddc8cba3b285d129e7d90279f90857c89"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-09-severe-compound",
+      "domain": "portrait",
+      "family": "compound",
+      "group_id": "07c91b5456b77e45a05d7ec03fd6683aa6a53cd9b18ffeb77d5e398f30aed3fa",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-09-noisy-input.png",
+        "sha256": "3459ff0750f3c8c580775e9ded0363e1c4c66eabaff3d908304aa7f400bdd36f",
+        "size": [
+          423,
+          503
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-09-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-09-severe-compound/old.png",
+        "sha256": "3ae1162bc762b51e6ed8c05686f091a86c1267ca9ba9de64c0f13f1bd32343c0"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-09-severe-compound/candidate.png",
+        "sha256": "4d774e8960f86300e2b36b9cdaedeee90177aaa16f023b51bd8d869eceec6904"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-09-severe-compound/review.jpg",
+        "sha256": "07b902fc56159cf16df3109015f665e3412ebf8a075352b503baa60fc46fd039"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-09-severe-light",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "07c91b5456b77e45a05d7ec03fd6683aa6a53cd9b18ffeb77d5e398f30aed3fa",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-09-noisy-input.png",
+        "sha256": "3459ff0750f3c8c580775e9ded0363e1c4c66eabaff3d908304aa7f400bdd36f",
+        "size": [
+          423,
+          503
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-09-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-09-severe-light/old.png",
+        "sha256": "10f4222923dd2a71c8e6cf60f0a41f13447e68fc183df8b6fabbcbaedbb2c0f1"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-09-severe-light/candidate.png",
+        "sha256": "dbfd8a7400a7d7a2472da7d0f1556dc1a3157b8ceaae63c14728a245efb2b71f"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-09-severe-light/review.jpg",
+        "sha256": "48a6502214cec693b688277f9faa163fd522a12c4b6f010fc73ea2ba9b079d65"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-10-severe-compound",
+      "domain": "portrait",
+      "family": "compound",
+      "group_id": "717f5a4451b1acb247400f67ca7f4cf8859e75e0f46aa090210ab8413a0b8f75",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-10-noisy-input.png",
+        "sha256": "06e7b76e804b816904437baa9fde706028cd8eb5113338a164d8bff59313c877",
+        "size": [
+          591,
+          443
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-10-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-10-severe-compound/old.png",
+        "sha256": "2cdff5b2043fd1d3f3a7026fe95d5a486c6599e06e6e5ffb03c66e5f1b9384c6"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-10-severe-compound/candidate.png",
+        "sha256": "f4285f02931638240af6a147c4094240fc5c9f5c50e8956cfe468d6e786a0a25"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-10-severe-compound/review.jpg",
+        "sha256": "3dbb5ba2a13fdfc2c7da55a53b05cf71d72924257de460b516aadef36357f828"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-10-severe-light",
+      "domain": "portrait",
+      "family": "lighting",
+      "group_id": "717f5a4451b1acb247400f67ca7f4cf8859e75e0f46aa090210ab8413a0b8f75",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-10-noisy-input.png",
+        "sha256": "06e7b76e804b816904437baa9fde706028cd8eb5113338a164d8bff59313c877",
+        "size": [
+          591,
+          443
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-10-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-10-severe-light/old.png",
+        "sha256": "c6784d487fa378238eb1aafbdee1bb843d4eaebb5c426165be6036003c51423f"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-10-severe-light/candidate.png",
+        "sha256": "585798b8579ca6e3826488d27845f67bd174da03ac4509f5573b48762b100b18"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-10-severe-light/review.jpg",
+        "sha256": "df1fa0ddc0a560d16f623ac6ad41a95ef41dd154a20e3426bcd66043f8dc0ae0"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-11-severe-compound",
+      "domain": "landscape",
+      "family": "compound",
+      "group_id": "206a21d03934f7ea90c104142cdae141bf9829a862f36b2968e41318c33d50fe",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-11-noisy-input.png",
+        "sha256": "00d0c15801968f013c0397f3b6daa6cd0ed7649431f4776ff19b3512dc861348",
+        "size": [
+          683,
+          383
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-11-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-11-severe-compound/old.png",
+        "sha256": "91ff6ed637f6c945bd3bee8ffe7773b3670d36c27e635087f1739fedb1d9f23c"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-11-severe-compound/candidate.png",
+        "sha256": "e536fd1f665fce236abf9047140d27d0e82269feabe60ea74aa19706b30cc2b9"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-11-severe-compound/review.jpg",
+        "sha256": "25a68cd2153ab250cfec11b308db145261fd87be1fd7c3c0bde4b3a15acbab61"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-11-severe-light",
+      "domain": "landscape",
+      "family": "lighting",
+      "group_id": "206a21d03934f7ea90c104142cdae141bf9829a862f36b2968e41318c33d50fe",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-11-noisy-input.png",
+        "sha256": "00d0c15801968f013c0397f3b6daa6cd0ed7649431f4776ff19b3512dc861348",
+        "size": [
+          683,
+          383
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-11-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-11-severe-light/old.png",
+        "sha256": "ff1d107ec989fb085063d76fa0ef4c1194d6a2d387f48305a1f2077726c5becc"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-11-severe-light/candidate.png",
+        "sha256": "7f90ef6c86778b2e97df7439b9733f6096625ceb7e65ad00fb25c7cd37051026"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-11-severe-light/review.jpg",
+        "sha256": "9ecf20ef8a673cebc204c07fcd43b9218e90a912be9d319b09caec98d4373f46"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-12-severe-compound",
+      "domain": "landscape",
+      "family": "compound",
+      "group_id": "692cab1d6db15e5c67238549f2f69ca1c4affbe68cc83e2b3404def25a43e540",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-12-noisy-input.png",
+        "sha256": "70272b3a954f93c8dbd0202a7df8afcb5029fea26f13cebede84fd2f1211aea6",
+        "size": [
+          591,
+          443
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-12-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-12-severe-compound/old.png",
+        "sha256": "d3a678720f581082f61cb56a00b0ef7b2e144d2f1bee76fc5bb6eeead52c77a8"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-12-severe-compound/candidate.png",
+        "sha256": "87c4891025862850c089335e91943a7371db7d1fceba6e170f6e4dd54256b301"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-12-severe-compound/review.jpg",
+        "sha256": "0566651bc9e25f8cd030d61ca42f46947f2f76bc4b85ddfa5358c8a356f2a10d"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-12-severe-light",
+      "domain": "landscape",
+      "family": "lighting",
+      "group_id": "692cab1d6db15e5c67238549f2f69ca1c4affbe68cc83e2b3404def25a43e540",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-12-noisy-input.png",
+        "sha256": "70272b3a954f93c8dbd0202a7df8afcb5029fea26f13cebede84fd2f1211aea6",
+        "size": [
+          591,
+          443
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-12-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-12-severe-light/old.png",
+        "sha256": "4e0dfb957bcb8e6bdca589a15679ec12ef8b9340d7d6ee42f6b067da8da2a750"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-12-severe-light/candidate.png",
+        "sha256": "74f391139e16dfed935700cb2276e530dd57c860e84bfff15a6fdbaa45a371a7"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-12-severe-light/review.jpg",
+        "sha256": "9ba3f4ba1a743fc3f5b709725a37f502890ab8d5e96affe73dd2f1f75bad3717"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-13-severe-compound",
+      "domain": "landscape",
+      "family": "compound",
+      "group_id": "dfbffb87db40cd34005da83dab07c01911109060dc1f0058b4f644dbbb696245",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-13-noisy-input.png",
+        "sha256": "994812fcb6d47677125f140cbe673c2a3cd3f53903a9c4ffafc2e4713b3de6be",
+        "size": [
+          683,
+          383
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-13-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-13-severe-compound/old.png",
+        "sha256": "49a1dd33e5ddea3a50f5fab848fef79a9f16239560e2208a8cdb550dcd9d3e9a"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-13-severe-compound/candidate.png",
+        "sha256": "d5678aba8e4990ae6b1a0b1d604cd0d96e77552a5c3d198e2e20a6a8b65e654d"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-13-severe-compound/review.jpg",
+        "sha256": "df90b2bb18975d4d04f3f7e42a40185ba13cd7e47a339fd6a8c215f8b8c21c27"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-13-severe-light",
+      "domain": "landscape",
+      "family": "lighting",
+      "group_id": "dfbffb87db40cd34005da83dab07c01911109060dc1f0058b4f644dbbb696245",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-13-noisy-input.png",
+        "sha256": "994812fcb6d47677125f140cbe673c2a3cd3f53903a9c4ffafc2e4713b3de6be",
+        "size": [
+          683,
+          383
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-13-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-13-severe-light/old.png",
+        "sha256": "d02cd1c143e97869d472a82f6803dfa07308fb0c75348317e5a9e1da52fc84b9"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-13-severe-light/candidate.png",
+        "sha256": "e289e8e574596a1e15935a029f8a3d49f0537641c5e0cdae3166ba639f91e7eb"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-13-severe-light/review.jpg",
+        "sha256": "97095b74b500adaf75f67b570f4152aaa12ff27c53cbd17176a1335543e68b1f"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-14-severe-compound",
+      "domain": "landscape",
+      "family": "compound",
+      "group_id": "78d38068c95e7c233bd981140712440f3a0b44b4d9d9c9a8de77e1a669780f57",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-14-noisy-input.png",
+        "sha256": "c040db7683c0d8bab98b0ef1851b22f61875f366d1a0aaf489b64732fa3fbc70",
+        "size": [
+          443,
+          591
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-14-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-14-severe-compound/old.png",
+        "sha256": "7fdfc5e47807b5708d08ca91650b44403f5d2673b625915611f7be4770eefaf3"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-14-severe-compound/candidate.png",
+        "sha256": "97532ccd458bc3678c53c957270950d9f53311cfd8a81454683d94d91efd6d66"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-14-severe-compound/review.jpg",
+        "sha256": "73fe770570caa78833fcc05e2ad582c07c81495d99ba6dfa76c3ccdf6ee21bbc"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-14-severe-light",
+      "domain": "landscape",
+      "family": "lighting",
+      "group_id": "78d38068c95e7c233bd981140712440f3a0b44b4d9d9c9a8de77e1a669780f57",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-14-noisy-input.png",
+        "sha256": "c040db7683c0d8bab98b0ef1851b22f61875f366d1a0aaf489b64732fa3fbc70",
+        "size": [
+          443,
+          591
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-14-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-14-severe-light/old.png",
+        "sha256": "dd96396382c3956ebfaf74af443a90db31b86237a6642cd93d2e3906254a99cb"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-14-severe-light/candidate.png",
+        "sha256": "19d777ce2d26549d70ae16c9c242b85357cbcf37da3f1df130832b3e69142516"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-14-severe-light/review.jpg",
+        "sha256": "8bb906daf28f1b72e56477e9498b03fca3aeb15e8ad0243bee32519e14fd31c2"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-15-severe-compound",
+      "domain": "landscape",
+      "family": "compound",
+      "group_id": "8ccef5f1a78d86b6131dad6c249e0f9d3f070e6c07e1659eecbe59149c78dee4",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-15-noisy-input.png",
+        "sha256": "ce0f6e54deda1484c3f0e61736017f4ae605413b1d0298a98b9ded770010dfd3",
+        "size": [
+          682,
+          384
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-15-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-15-severe-compound/old.png",
+        "sha256": "9a04d634b35272976009d4cad3e4bc4de18a3dedc6c31515e73363798364da86"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-15-severe-compound/candidate.png",
+        "sha256": "bf58de90f38ad8f76f34d4ccc059ed1e39c6ab28acdf52e5f78052ae6a0dbd64"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-15-severe-compound/review.jpg",
+        "sha256": "bc598676c6dfdb515e4d8b7086e15184584c93c8b77c2593fb4284b370060e95"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-15-severe-light",
+      "domain": "landscape",
+      "family": "lighting",
+      "group_id": "8ccef5f1a78d86b6131dad6c249e0f9d3f070e6c07e1659eecbe59149c78dee4",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-15-noisy-input.png",
+        "sha256": "ce0f6e54deda1484c3f0e61736017f4ae605413b1d0298a98b9ded770010dfd3",
+        "size": [
+          682,
+          384
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-15-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-15-severe-light/old.png",
+        "sha256": "44b8c12fb177a577c5a0e9c14108a94616440d166be9020cc7f3d425fc70f8f3"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-15-severe-light/candidate.png",
+        "sha256": "a8a5ad178754fed86b21237c15305861a877b4a78e947733475f0c73ea3a3d52"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-15-severe-light/review.jpg",
+        "sha256": "94e967577edc4b297a715756ac4245b7430ba9e86e2daf00e5dcae1f952d3b1a"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-16-severe-compound",
+      "domain": "landscape",
+      "family": "compound",
+      "group_id": "3ab215c7103db6925d0b1555c897d05c8e8c3c134dbc5b111de9c61c59689c5b",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-16-noisy-input.png",
+        "sha256": "d95fb85040c974b50a821f28f7309fd95f9988830e0964a1a1b1f1ae098f3e80",
+        "size": [
+          682,
+          384
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-16-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-16-severe-compound/old.png",
+        "sha256": "68a69d67a6829036f076aa416ee8272c55ff633700f3478832e3aae0f1b147fd"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-16-severe-compound/candidate.png",
+        "sha256": "d259402f63dea3a28728f681c7665b24e1b25d2e9b74b243c2ab66b31bfa277a"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-16-severe-compound/review.jpg",
+        "sha256": "6400b2b1eb09fb73aa6ddac88cebb8a9e6c86706505931fdb074717f39c49b24"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-16-severe-light",
+      "domain": "landscape",
+      "family": "lighting",
+      "group_id": "3ab215c7103db6925d0b1555c897d05c8e8c3c134dbc5b111de9c61c59689c5b",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-16-noisy-input.png",
+        "sha256": "d95fb85040c974b50a821f28f7309fd95f9988830e0964a1a1b1f1ae098f3e80",
+        "size": [
+          682,
+          384
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-16-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-16-severe-light/old.png",
+        "sha256": "b9ef7f8e808b4ee74145ef873f08f872d8618b229f26cef0d8d86830f1419f2e"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-16-severe-light/candidate.png",
+        "sha256": "472be4dc0aeae3807bce438869172da8b424435a053287d24dd56e231f217750"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-16-severe-light/review.jpg",
+        "sha256": "c1aee80bf617fd69a6aaef870e09477408e708ff43ef8c8035306170c932b13b"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-17-severe-compound",
+      "domain": "landscape",
+      "family": "compound",
+      "group_id": "2fc703f934babe07c37bf2c6cc5a391da9be2013d19f5c19cf2806322f04458e",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-17-noisy-input.png",
+        "sha256": "6b377e1f7c7625ccc230ce89b9e7d988c132b5d594b4344a2c75d1e9706e1ec1",
+        "size": [
+          591,
+          443
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-17-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-17-severe-compound/old.png",
+        "sha256": "6bf171ce5b266ce8abe5545dc638a54d5ccea46f6fcb0b332363b176745bdf75"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-17-severe-compound/candidate.png",
+        "sha256": "80a65bcd84e7ae8510950f6baf5de864a04b860f92a9ae6137adf39dd8c6fa03"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-17-severe-compound/review.jpg",
+        "sha256": "e2dbf4c845d1203f4132f195966bce2a00b8d07c011dc36344636b1c325be136"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-17-severe-light",
+      "domain": "landscape",
+      "family": "lighting",
+      "group_id": "2fc703f934babe07c37bf2c6cc5a391da9be2013d19f5c19cf2806322f04458e",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-17-noisy-input.png",
+        "sha256": "6b377e1f7c7625ccc230ce89b9e7d988c132b5d594b4344a2c75d1e9706e1ec1",
+        "size": [
+          591,
+          443
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-17-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-17-severe-light/old.png",
+        "sha256": "1f2087ad26519f60360f8e6e561f8661d5c673672ac161bd93a4bacf56a67cb8"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-17-severe-light/candidate.png",
+        "sha256": "e39e26b1f5465eec5c4a99516fd8aeb74f6ffb65b5666f99abf45e448302eea2"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-17-severe-light/review.jpg",
+        "sha256": "69526094f67be9e4bbc9a253fba61949e832186dbce847a5d8d428d377068215"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-18-severe-compound",
+      "domain": "landscape",
+      "family": "compound",
+      "group_id": "4e9ed855264e126376dcb6ba225f4b2b0871adb076ea6888ceb789455f0b6ff8",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-18-noisy-input.png",
+        "sha256": "8953d1204cee82ac458d95a4b95ee091e2153bd0e94f7d0730e1214fdd18009e",
+        "size": [
+          626,
+          418
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-18-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-18-severe-compound/old.png",
+        "sha256": "e991be7d4bf964ae69dc6bb972c77dc16062696f40853f656e69e62aeb918667"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-18-severe-compound/candidate.png",
+        "sha256": "5ab6fa0e7842a063ee7adc39de1d67302558f5539f9a106c59b7e04d3a76207b"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-18-severe-compound/review.jpg",
+        "sha256": "fe428aabd2dc114bcb952ace7152acbe95d442ca5ceb6c67a738cb919c390485"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-18-severe-light",
+      "domain": "landscape",
+      "family": "lighting",
+      "group_id": "4e9ed855264e126376dcb6ba225f4b2b0871adb076ea6888ceb789455f0b6ff8",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-18-noisy-input.png",
+        "sha256": "8953d1204cee82ac458d95a4b95ee091e2153bd0e94f7d0730e1214fdd18009e",
+        "size": [
+          626,
+          418
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-18-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-18-severe-light/old.png",
+        "sha256": "5fa9fb47fb6877cbe3d874a7311982ff2c6c998407a53104e4de24bf8b3b1cea"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-18-severe-light/candidate.png",
+        "sha256": "7373a5658b8dbc99f89b9db6ea909d2339fd323f51caf9b6ae6d9c88dbcfa46f"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-18-severe-light/review.jpg",
+        "sha256": "35085e7493cb9b02269b34a3fe101f2013a032dadf7d75af22b4971302ed9670"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-19-severe-compound",
+      "domain": "landscape",
+      "family": "compound",
+      "group_id": "9a2ffb910de4b0c0868cc2cea9614a20c1ea4e17dde4896f7cdc007fc92b51ae",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-19-noisy-input.png",
+        "sha256": "4111a8ec07ba15833c7c5cf344cd92546760d9cbdcfa6413526f336a68f35bc0",
+        "size": [
+          639,
+          410
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-19-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-19-severe-compound/old.png",
+        "sha256": "1c452fd4087b92205d235f2100fc3089f5482343c8fe164f3e4c352cae67bc5b"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-19-severe-compound/candidate.png",
+        "sha256": "c864d0c7a1152e9e5fe22702c123796810800b59cdafa887ee763c5faa09a318"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-19-severe-compound/review.jpg",
+        "sha256": "d03402377d74a44eafedda77279b0e91f1dc6f36e27c07eeecbf49a30bd996be"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-19-severe-light",
+      "domain": "landscape",
+      "family": "lighting",
+      "group_id": "9a2ffb910de4b0c0868cc2cea9614a20c1ea4e17dde4896f7cdc007fc92b51ae",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-19-noisy-input.png",
+        "sha256": "4111a8ec07ba15833c7c5cf344cd92546760d9cbdcfa6413526f336a68f35bc0",
+        "size": [
+          639,
+          410
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-19-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-19-severe-light/old.png",
+        "sha256": "1e2720c48a9f0c1ff50973a3937dfd82d82d63b58ed7bcc236b207e5b8b3dd7f"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-19-severe-light/candidate.png",
+        "sha256": "339e4b1eca243a18c035f9c4d66a2345fb5ceedacf4ab19368b4251be3c8d9f7"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-19-severe-light/review.jpg",
+        "sha256": "cd5694a7b80b3893862b1e345173931e97c02feedd4ce354a86c1f2fdc58d01a"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-20-severe-compound",
+      "domain": "landscape",
+      "family": "compound",
+      "group_id": "28c79bf1e101cd7ab57f55b70100249a6f979b8adea777a82341d4117e86d06c",
+      "instructions": {
+        "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+        "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-20-noisy-input.png",
+        "sha256": "bfe197947badf3f29f2621fb9c9fc933f486c8c1e9ec9e5a1d436233f2ca167e",
+        "size": [
+          591,
+          443
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-20-severe-compound-alt1",
+        "parameters": {
+          "exposure": -20,
+          "brightness": 25,
+          "contrast": 10,
+          "shadows": 25,
+          "saturation": 15
+        }
+      },
+      "parameters": {
+        "exposure": -20,
+        "brightness": 25,
+        "contrast": 10,
+        "shadows": 50,
+        "saturation": 15
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-20-severe-compound/old.png",
+        "sha256": "da3f25078fa16110e28641caec81326498cd506fb033be49392a2612946485ad"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-20-severe-compound/candidate.png",
+        "sha256": "aab14604ce1d8af8a8c7a37a007b5dc90ede2fa3e8c00e6143fcaf51a0505f59"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-20-severe-compound/review.jpg",
+        "sha256": "3dc3467c518ae5b7a42e6523a106ecbd04a6b49d7600e7cc47e8179a90cc52b7"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    },
+    {
+      "id": "visual-risk-20-severe-light",
+      "domain": "landscape",
+      "family": "lighting",
+      "group_id": "28c79bf1e101cd7ab57f55b70100249a6f979b8adea777a82341d4117e86d06c",
+      "instructions": {
+        "zh": "请显著提亮这张照片，保留自然色彩和细节，不要明显放大噪声。",
+        "en": "Brighten this photograph substantially while preserving natural colour and detail, without markedly amplifying noise."
+      },
+      "instruction_origin": "AI-authored matched photographic-condition request in Chinese and English; not an untouched GIER request or user trial.",
+      "input": {
+        "path": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-20-noisy-input.png",
+        "sha256": "bfe197947badf3f29f2621fb9c9fc933f486c8c1e9ec9e5a1d436233f2ca167e",
+        "size": [
+          591,
+          443
+        ]
+      },
+      "previous_attempt_source": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/manifest.json",
+        "sha256": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+        "id": "visual-risk-20-severe-light-alt1",
+        "parameters": {
+          "exposure": -40,
+          "brightness": 80,
+          "contrast": -15,
+          "saturation": -10
+        }
+      },
+      "parameters": {
+        "exposure": -40,
+        "brightness": 80,
+        "contrast": -15,
+        "saturation": -10,
+        "shadows": 50
+      },
+      "challenge_rule": "First prior shadow-bearing attempt, otherwise first prior attempt; shadows raised to at least50, other values unchanged. Both tools actually execute identical new parameters.",
+      "old": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-20-severe-light/old.png",
+        "sha256": "8cef3da3d8be862391e5979b6855602fffc05294f5e0a822f53840db5de85020"
+      },
+      "candidate": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-20-severe-light/candidate.png",
+        "sha256": "a69225840677b6cfd973ae6a28a535d49a71012103b2cc1acbac696a913310d8"
+      },
+      "panel": {
+        "path": "experiments/functional-v15-20261106/quality-challenges/visual-risk-20-severe-light/review.jpg",
+        "sha256": "e623dcdf94f724aa56efb5ee341d267563b011ed3a4b600e65e550a351140eb4"
+      },
+      "status": "not_viewed_not_admitted",
+      "no_impossibility_claim": true,
+      "label_admitted": false
+    }
+  ],
+  "GPU_hours": 0,
+  "new_labels": 0,
+  "rule": "Direct AI functional/quality review required. A successful attempt can replace a refusal label; failed finite attempts do not prove all possible parameters impossible. All training-pool only; no development/acceptance inputs."
+}

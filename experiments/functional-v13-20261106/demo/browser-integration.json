@@ -1,0 +1,46 @@
+{
+  "at": "2026-11-06T10:46:31.727245+00:00",
+  "status": "actual_browser_upload_edit_switch_download_feedback_and_records_verified",
+  "requests": [
+    {
+      "request_id": "0b0a58e88ec0491b8fbcbdad6493ecd2",
+      "model_id": "functional-v13-real-coverage-wide-20261127",
+      "case_id": "native-dev-001",
+      "status": "executed",
+      "offline_byte_identical": true,
+      "download": {
+        "path": "/Users/cryptic/Downloads/output (5).png",
+        "sha256": "9b5d3cd438777e903149e2028664b123e732206592e19661e614c0fe56a34e44",
+        "bytes": 944050,
+        "status": "browser_download_verified_locally"
+      }
+    },
+    {
+      "request_id": "83e957a8c80b48e3b29aeb33b1e87e65",
+      "model_id": "functional-v13-real-coverage-narrow-20261127",
+      "case_id": "visual-risk-01-severe-light",
+      "status": "declined",
+      "no_result_image": true,
+      "image_route_status": 404,
+      "training_condition_probe_not_independent_generalization": true
+    }
+  ],
+  "screenshots": {
+    "experiments/functional-v13-20261106/demo/browser-decline-full.png": "76b58bd985f925904f9813bc433198471c797cf7e471f9806b7d557509686fe1",
+    "experiments/functional-v13-20261106/demo/browser-records.png": "874dd15ba5155f763d9c99e566bd464ebbfe0f5de8d79642c90c124b8281d293",
+    "experiments/functional-v13-20261106/demo/browser-edit.png": "2bf2c97059678376081fa270f6897aa144421585907bd48a80714fa576b4feaf"
+  },
+  "feedback_records": 3,
+  "independent_user_feedback": 0,
+  "worker_unloaded": true,
+  "records_page": "http://127.0.0.1:12346/v13",
+  "models_registered": 23,
+  "default_unchanged": true,
+  "occupied_GPU_hours": 17.437052395145095,
+  "actual_external_rewriting": false,
+  "limitations": [
+    "Quality refusal uses a seen synthetic training condition, not an unknown real-camera photograph.",
+    "All feedback is agent integration testing; no independent user usability result.",
+    "Native development and controlled development have been repeatedly used; acceptance remains closed."
+  ]
+}

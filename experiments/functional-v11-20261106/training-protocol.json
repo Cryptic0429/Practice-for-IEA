@@ -1,0 +1,223 @@
+{
+  "at": "2026-11-06T00:25:52.103607+00:00",
+  "status": "actual_data_runtime_optimizer_and_functional_gates_frozen_before_training",
+  "hypothesis": "Correct a negative-exposure tool response that fixed white, revalidate every affected target and prior quality decline, rehearse prior directions/keep/refusal, and add10 synthetic brown-yellow correction requests to test valid cooling instead of negative sepia.",
+  "routes": [
+    "language_merger"
+  ],
+  "origin": "base",
+  "origin_identity": {
+    "path": "models/Qwen2.5-VL-7B-Instruct",
+    "shards": [
+      {
+        "path": "models/Qwen2.5-VL-7B-Instruct/model-00001-of-00005.safetensors",
+        "sha256": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+        "bytes": 3900233256,
+        "mtime_ns": 1793432463546824622
+      },
+      {
+        "path": "models/Qwen2.5-VL-7B-Instruct/model-00002-of-00005.safetensors",
+        "sha256": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+        "bytes": 3864726320,
+        "mtime_ns": 1793432503644001111
+      },
+      {
+        "path": "models/Qwen2.5-VL-7B-Instruct/model-00003-of-00005.safetensors",
+        "sha256": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+        "bytes": 3864726424,
+        "mtime_ns": 1793432545341217818
+      },
+      {
+        "path": "models/Qwen2.5-VL-7B-Instruct/model-00004-of-00005.safetensors",
+        "sha256": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+        "bytes": 3864733680,
+        "mtime_ns": 1793432587834451242
+      },
+      {
+        "path": "models/Qwen2.5-VL-7B-Instruct/model-00005-of-00005.safetensors",
+        "sha256": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67",
+        "bytes": 1089994880,
+        "mtime_ns": 1793432599234781102
+      }
+    ],
+    "architecture": {
+      "hidden_size": 3584,
+      "intermediate_size": 18944,
+      "num_hidden_layers": 28,
+      "num_attention_heads": 28,
+      "num_key_value_heads": 4,
+      "vocab_size": 152064
+    },
+    "assets": {
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "chat_template.json": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+      "model-info.json": "3f375296723cbb910e9c3350730e3395342ead9cb7ac0ec355a25dcefe5bf532",
+      "tokenizer_config.json": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+      "config.json": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+      "generation_config.json": "0a3aea82869fe29f20dc95ccf3e2bcff380eca1f5ad6447a4a4b37110b08e43e",
+      "model.safetensors.index.json": "73b333b0b16e5286ddba615d2caebcd495cf7e616f52eb217a81781393d79de9",
+      "preprocessor_config.json": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    "prior_integrity_file": "configs/evaluation-weight-integrity-v1.json",
+    "prior_integrity_sha256": "43a0961e25db0e05dc92c69e4e7b520ac0fb8531420223dc6daf45f75257cbd1",
+    "source": "Pinned original Qwen revision cc594898137f460bfe9f0759e9844b3ce807cfb5"
+  },
+  "parent_adapter": "experiments/functional-v10-20261106/runs/language_merger-seed-20261121/final",
+  "parent_sha256": "772ead8e694bdf3d4fee2a189cc6e1222f7c2ebe539c7795364fbbfc7341ebbd",
+  "parent_status": "R10 failed research candidate14/20 native0 marked major; not a qualified champion",
+  "training": {
+    "rows": 1344,
+    "epochs": 1,
+    "steps_per_epoch": 336,
+    "steps": 336,
+    "learning_rate": 2e-05,
+    "effective_batch": 4,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.0,
+    "seed": 20261123,
+    "replicate_seed": 20261124,
+    "per_device_batch": 1,
+    "gradient_accumulation": 4,
+    "image_max_pixels": 262144,
+    "max_sequence_tokens": 2048,
+    "quantization": "NF4, double quantization, BF16 compute",
+    "optimizer": "adamw_torch",
+    "weight_decay": 0.0,
+    "scheduler": "cosine",
+    "warmup_ratio": 0.05,
+    "max_grad_norm": 1.0,
+    "save": "Final complete epoch1 only",
+    "assistant_only_decision_JSON_supervision": true,
+    "language_trainable_tensors": 112,
+    "merger_trainable_tensors": 116,
+    "exact_parent_copy": 116,
+    "trained_visual_merger_parent_copy": 4,
+    "stacked_adapters": false
+  },
+  "dataset_sha256": "fd998cd2bcf96a01f0312f17ba217e39ee593d04bdb1b73060cadc577f71328c",
+  "cases_sha256": "5604ab7aab492d3be0c0ca17f82c2329ec029a7b46174bee11a3d3e09fc6f359",
+  "admission_sha256": "ac2acdbaf69f186c7b64ff1bbc7a8e7b3e67face9f8f4deaf612e8d498f47d56",
+  "input_audit_path": "experiments/functional-v11-20261106/input-audit.json",
+  "input_audit_sha256": "599f36b708136a9ef4fb94feca4e83f8144ab32b880b5ab1e733ed3000c7dcf1",
+  "target_replay_path": "experiments/functional-v11-20261106/target-replay.json",
+  "target_replay_sha256": "636b6afd389e7d64d1c2008489e8a5c610cbec8c409a7c7e3bf699773bac3433",
+  "batch_cache_path": "experiments/functional-v11-20261106/batches.pt",
+  "batch_cache_sha256": "3154841b9ee3474e97ff82570243a5b276243aaa7dce70ff668330ff138f7229",
+  "evaluation_protocol_sha256": "1db41db3e2e011fb38c72c375c954766149c4e5ab83d59fa618dd85d25b62707",
+  "code_hashes": {
+    "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+    "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+    "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+    "scripts/functional_v7/editor_soft.py": "8c3b02c304d79bca9d547fe471afe4a0136c1813c2cf30a0c343dd5e174f2b50",
+    "scripts/functional_v7/outcomes.py": "4d46bb208b18dab750ee77e94c8f063ca1c3b5189ff1a6990ff9d3c4c1ce4286",
+    "scripts/functional_v7/runtime.py": "c6568cf1de61b8372abd2c21070070f2a4bca7f88e0f956541c07be330bfd5a7",
+    "scripts/functional_v9/runtime.py": "4d9de4b350c1e0284b4e032f08ae6f8298cede2e41de3e3a9153bb43dbc61d37",
+    "scripts/functional_v11/editor.py": "aff52a5b50587a41f442ffd0c9feb5fd71a9b8b2d02c7231dabafd2b350d8221",
+    "scripts/functional_v11/outcomes.py": "2d3161bbffb84ee9dfed6a3c2798a4af559d4c98f7faed77f2751f244a75f4b3",
+    "scripts/functional_v11/runtime.py": "e2f4f275ab2a9dcdfaba14c9ae0d6d84dc4a473ccc37b90989d9af54a74b26c8",
+    "scripts/functional_v11/train.py": "f1d42167bf24e54827c1ddd2be8411d2b2437bae1fe4197dbf6c087a4291292a",
+    "scripts/functional_v11/evaluate.py": "054a8e010bbbffa9120b85841851542f71052b2d1f8d36c5eb514e3bfe5a7f97",
+    "scripts/functional_v11/prepare_batches.py": "17c85f9d2e9c7485a81215a7d6e0ddf7e6213bb0b75f094162936a3ceefe1893",
+    "scripts/functional_v11/admit_training.py": "e5d47330f2b92abeb4c1029fc7326fab043d345988e0110621d247ae598fddb6",
+    "scripts/functional_v11/audit_runtime.py": "978b759887dd0306fa92132337b62822745b6a65ca5137d440066ab791d814f0",
+    "scripts/functional_v11/freeze_training.py": "36dd868e5dde14c016374519248dfc73c3fd5e5d2737b44378f4f98cfb96bd56",
+    "scripts/functional_v11/replay_parent.py": "8f5f29daf1b69838935b2741721c235dcb68daa2e9c1f4461cca517e09d6e262"
+  },
+  "editor": "functional-editor-v11-negative-value-gain-candidate",
+  "schema": "functional-outcome-v1",
+  "runtime": "functional_v11.runtime",
+  "system_prompt_sha256": "89a184150fb28fc3d63ab184fa5a4aaccca192f35991b2450ece55c166519d92",
+  "source_counts": {
+    "at": "2026-11-06T00:21:39.433768+00:00",
+    "status": "direct_AI_visual_admitted_not_human_or_user_approval",
+    "semantic_cases": 672,
+    "unique_language_rows": 1344,
+    "actual_rows_each_route": 1344,
+    "source_groups": 160,
+    "photo_domains": {
+      "portrait": 80,
+      "landscape": 80
+    },
+    "case_domain_counts": {
+      "portrait": 337,
+      "landscape": 335
+    },
+    "inherited_unchanged_edit_keep_and_unsupported": 567,
+    "changed_negative_labels": 51,
+    "changed_labels_repaired": 2,
+    "new_synthetic_cool_cast_cases": 10,
+    "quality_declines_revalidated": 44,
+    "new_photograph_groups_added": 0,
+    "outcome_counts": {
+      "edit": 548,
+      "decline": 64,
+      "keep": 60
+    },
+    "original_GIER_English_cases": 97,
+    "original_English_with_AI_Chinese_translation_rows": 194,
+    "AI_authored_cases": 575,
+    "AI_authored_rows": 1150,
+    "original_English_semantic_fraction": 0.14434523809523808,
+    "family_counts": {
+      "brown_tone": 35,
+      "compound": 154,
+      "saturation": 89,
+      "lighting": 205,
+      "contrast": 71,
+      "white_balance": 38,
+      "identity": 60,
+      "unsupported": 20
+    },
+    "training_data_sha256": "fd998cd2bcf96a01f0312f17ba217e39ee593d04bdb1b73060cadc577f71328c",
+    "cases_sha256": "5604ab7aab492d3be0c0ca17f82c2329ec029a7b46174bee11a3d3e09fc6f359",
+    "lineage_sha256": "6a8fd052e90216babc9ff7299ef4b8e9cd04e3ea9cb67f2ef9867822f77d4166",
+    "provenance_hashes": {
+      "experiments/functional-v11-20261106/candidate-cases.json": "63e33726fd2abcb6b927c6e0809f3888ce1a25e1e63ef3e0a418afe64fdc1d06",
+      "experiments/functional-v11-20261106/label-candidates/manifest.json": "ddf65b91bf5725086a80b5945161e02a6da3afd43d94b271cabe5e9fe68547a7",
+      "experiments/functional-v11-20261106/label-candidates/direct-observations.jsonl": "717cd434ef38bc57f7346779ba6dd5c6621a9ec3268921a4d246c3ef40179fbb",
+      "experiments/functional-v11-20261106/label-candidates/repairs/direct-observations.jsonl": "d4c8e8e56e5d3232d261f626fe5797f45da7f5475d0a70289a70b10f562409b0",
+      "experiments/functional-v11-20261106/quality-revalidation/direct-observations.jsonl": "91473d2a319e428e1ea3390cca9e78189a9ee1986c322e0af03c426ebaec18c3",
+      "experiments/functional-v11-20261106/quality-revalidation/repairs/direct-observations.jsonl": "a83fea983db2b55f76bc27cbb7d66bea18f54b3e8ec58f3e49a8d40ab49d4487",
+      "data/training/functional-v7-20261105/cases.json": "1948fbe5e40cdeae1d3e37fefedd4c87d9ebb7a2cf1eec3ff830229e8b98353a",
+      "data/training/functional-v7-20261105/admission.json": "d55420a7db81e29d1483f951de2db280375c447bba5d105e5e0c80202efa0d3b",
+      "data/training/functional-v10-20261106/cases.json": "54ba60c9fa722867283a24855b37872318dd96d2a3eb419b78bacf3978b07264",
+      "data/training/functional-v10-20261106/admission.json": "ad39fdfc69f4e333f561331088601b0653967a6ca8603b40a6899c83cb282cbf",
+      "experiments/functional-v11-20261106/label-candidates/repairs/wedding-detail/manifest.json": "cc0f084fd08031b95165215276ba9ee1890013fa9e8619873d9fe4b362a14ad4",
+      "experiments/functional-v11-20261106/label-candidates/repairs/lighten-contrast/manifest.json": "5a3c5342308a890561b2a47540ae2a36f3bffe230a4f4d990740c050f824965a",
+      "experiments/functional-v11-20261106/quality-revalidation/manifest.json": "f78f948167412f98334edc3da5a037980347ad6aedb692464f48b08b18f93845",
+      "experiments/functional-v11-20261106/quality-revalidation/details-rock/manifest.json": "513570f577b95b8239c07ba722fa0086a9ab5b01ea60c6ee804fdd02f7ce2e34",
+      "experiments/functional-v11-20261106/quality-revalidation/repairs/wave-shadow-detail/manifest.json": "c8911569e0a32da3a0e3fd4ac7d3b1b39cfce99ac51df32b5fd9b1db79400689",
+      "experiments/functional-v11-20261106/quality-revalidation/repairs/wave-natural-colour/manifest.json": "bbbd1c087df3336979a8fad242dfaf2210e008b714dbe6e2052f4202556ce2ab",
+      "experiments/functional-v11-20261106/quality-revalidation/repairs/details/manifest.json": "25defc0d91ef5bff8487c0e70001f637511ce9c058a06ca112fb313943566696",
+      "experiments/functional-v11-20261106/quality-revalidation/details/manifest.json": "50b329f2aadb22a4bdc97b584441c3620c904c47d16728ab96e6634a58775aa0"
+    },
+    "selection": "Visible completion plus basic quality, never L1 or reward score. Failed attempts preserved and excluded.",
+    "frozen_Qwen_screening": "Earlier critic calibration failed; direct Codex AI visual review is final, not human approval.",
+    "limitations": [
+      "160 original groups were already used by the parent; added conditions are not independent photographs.",
+      "567 records inherit unchanged prior evidence explicitly; all61 changed/new targets reviewed,2 replaced after failure.",
+      "44 quality declines rechecked with53 actual attempts; failure of finite attempts is not a universal impossibility proof.",
+      "Artificial warm cast, exposure and block noise are documented synthetic conditions, not real-camera generalization evidence.",
+      "No trial upload or user feedback enters training; independent user feedback remains zero."
+    ],
+    "no_GPU_training_started": true
+  },
+  "resource": {
+    "shared_cap_GPU_hours": 16,
+    "consumed_before_round11": 14.330370567109844,
+    "remaining_at_freeze": 1.6696294328901562,
+    "allowed_GPUs": [
+      0,
+      2,
+      3
+    ],
+    "preserve_GPU1": true,
+    "estimated_main_training": 0.3,
+    "estimated_stage1": 0.1,
+    "conditional_replication_and_evaluation_reserve": 0.9,
+    "trial_reserve": 0.15,
+    "on_limit": "Save state and stop owned jobs before original shared cap; never extend budget or touch GPU1."
+  }
+}

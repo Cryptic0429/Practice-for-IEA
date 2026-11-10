@@ -1,0 +1,472 @@
+{
+  "at": "2026-11-06T00:27:35.286336+00:00",
+  "finite": true,
+  "tensors": 116,
+  "optimizer_contains_only_adapter": true,
+  "gradients": {
+    "base_model.model.model.visual.merger.mlp.0.lora_A.default.weight": {
+      "norm": 0.0014230128144845366,
+      "nonzero": 40956
+    },
+    "base_model.model.model.visual.merger.mlp.0.lora_B.default.weight": {
+      "norm": 0.009511959739029408,
+      "nonzero": 40958
+    },
+    "base_model.model.model.visual.merger.mlp.2.lora_A.default.weight": {
+      "norm": 0.001706926617771387,
+      "nonzero": 40957
+    },
+    "base_model.model.model.visual.merger.mlp.2.lora_B.default.weight": {
+      "norm": 0.020824506878852844,
+      "nonzero": 28672
+    },
+    "base_model.model.model.language_model.layers.0.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.002418673364445567,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.0.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.00953684188425541,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.0.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.004343305714428425,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.0.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.05371037498116493,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.1.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.002510582795366645,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.1.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.0026467477437108755,
+      "nonzero": 28665
+    },
+    "base_model.model.model.language_model.layers.1.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.005827999673783779,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.1.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.05627395957708359,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.2.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.0025454002898186445,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.2.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.008367447182536125,
+      "nonzero": 28668
+    },
+    "base_model.model.model.language_model.layers.2.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.0032850541174411774,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.2.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.06160366162657738,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.3.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.003483888227492571,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.3.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.00921064056456089,
+      "nonzero": 28667
+    },
+    "base_model.model.model.language_model.layers.3.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.00528255570679903,
+      "nonzero": 28668
+    },
+    "base_model.model.model.language_model.layers.3.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.06224185228347778,
+      "nonzero": 4095
+    },
+    "base_model.model.model.language_model.layers.4.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.005348441656678915,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.4.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.011925957165658474,
+      "nonzero": 28668
+    },
+    "base_model.model.model.language_model.layers.4.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.0037205475382506847,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.4.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.0803147628903389,
+      "nonzero": 4095
+    },
+    "base_model.model.model.language_model.layers.5.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.008039578795433044,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.5.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.0284203439950943,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.5.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.005397010128945112,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.5.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.09451386332511902,
+      "nonzero": 4095
+    },
+    "base_model.model.model.language_model.layers.6.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.0064265611581504345,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.6.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.022001391276717186,
+      "nonzero": 28665
+    },
+    "base_model.model.model.language_model.layers.6.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.005393096711486578,
+      "nonzero": 28672
+    },
+    "base_model.model.model.language_model.layers.6.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.12084400653839111,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.7.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.0059285275638103485,
+      "nonzero": 28668
+    },
+    "base_model.model.model.language_model.layers.7.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.025816578418016434,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.7.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.0066385590471327305,
+      "nonzero": 28668
+    },
+    "base_model.model.model.language_model.layers.7.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.12146656960248947,
+      "nonzero": 4095
+    },
+    "base_model.model.model.language_model.layers.8.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.007350227329879999,
+      "nonzero": 28667
+    },
+    "base_model.model.model.language_model.layers.8.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.030452387407422066,
+      "nonzero": 28668
+    },
+    "base_model.model.model.language_model.layers.8.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.008541630581021309,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.8.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.13850529491901398,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.9.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.018376007676124573,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.9.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.04921840503811836,
+      "nonzero": 28666
+    },
+    "base_model.model.model.language_model.layers.9.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.014508003368973732,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.9.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.22097660601139069,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.10.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.007940060459077358,
+      "nonzero": 28667
+    },
+    "base_model.model.model.language_model.layers.10.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.04372752085328102,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.10.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.0063739256002008915,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.10.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.19123485684394836,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.11.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.014289164915680885,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.11.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.07878293842077255,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.11.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.008674174547195435,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.11.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.16644902527332306,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.12.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.008560928516089916,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.12.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.07610755413770676,
+      "nonzero": 28668
+    },
+    "base_model.model.model.language_model.layers.12.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.005665117409080267,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.12.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.14846792817115784,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.13.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.01172240637242794,
+      "nonzero": 28672
+    },
+    "base_model.model.model.language_model.layers.13.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.0810382291674614,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.13.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.007245576940476894,
+      "nonzero": 28668
+    },
+    "base_model.model.model.language_model.layers.13.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.2150438278913498,
+      "nonzero": 4095
+    },
+    "base_model.model.model.language_model.layers.14.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.013247152790427208,
+      "nonzero": 28667
+    },
+    "base_model.model.model.language_model.layers.14.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.10103762894868851,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.14.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.007869535125792027,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.14.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.21386221051216125,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.15.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.01266638282686472,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.15.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.1077897772192955,
+      "nonzero": 28666
+    },
+    "base_model.model.model.language_model.layers.15.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.005263208877295256,
+      "nonzero": 28667
+    },
+    "base_model.model.model.language_model.layers.15.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.1544518917798996,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.16.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.013438350521028042,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.16.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.11372202634811401,
+      "nonzero": 28668
+    },
+    "base_model.model.model.language_model.layers.16.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.009408926591277122,
+      "nonzero": 28666
+    },
+    "base_model.model.model.language_model.layers.16.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.2192130982875824,
+      "nonzero": 4095
+    },
+    "base_model.model.model.language_model.layers.17.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.01761564239859581,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.17.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.14325609803199768,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.17.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.007246098946779966,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.17.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.18526597321033478,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.18.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.021383004263043404,
+      "nonzero": 28672
+    },
+    "base_model.model.model.language_model.layers.18.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.11986278742551804,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.18.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.010522378608584404,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.18.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.15637177228927612,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.19.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.011652734130620956,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.19.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.28797778487205505,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.19.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.009765162132680416,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.19.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.18044547736644745,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.20.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.0057197497226297855,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.20.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.12652496993541718,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.20.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.006870562676340342,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.20.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.14545999467372894,
+      "nonzero": 4095
+    },
+    "base_model.model.model.language_model.layers.21.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.020968211814761162,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.21.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.1321554332971573,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.21.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.006637357175350189,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.21.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.17803682386875153,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.22.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.017544809728860855,
+      "nonzero": 28672
+    },
+    "base_model.model.model.language_model.layers.22.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.13292434811592102,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.22.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.0064933281391859055,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.22.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.1901019811630249,
+      "nonzero": 4095
+    },
+    "base_model.model.model.language_model.layers.23.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.045803505927324295,
+      "nonzero": 28672
+    },
+    "base_model.model.model.language_model.layers.23.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.20567631721496582,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.23.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.007459540851414204,
+      "nonzero": 28672
+    },
+    "base_model.model.model.language_model.layers.23.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.15445978939533234,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.24.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.011914780363440514,
+      "nonzero": 28667
+    },
+    "base_model.model.model.language_model.layers.24.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.13425198197364807,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.24.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.004272307734936476,
+      "nonzero": 28672
+    },
+    "base_model.model.model.language_model.layers.24.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.11761078983545303,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.25.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.005294416099786758,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.25.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.154680535197258,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.25.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.007206389680504799,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.25.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.13517089188098907,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.26.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.018297109752893448,
+      "nonzero": 28670
+    },
+    "base_model.model.model.language_model.layers.26.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.22051209211349487,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.26.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.004345647990703583,
+      "nonzero": 28669
+    },
+    "base_model.model.model.language_model.layers.26.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.07062416523694992,
+      "nonzero": 4096
+    },
+    "base_model.model.model.language_model.layers.27.self_attn.q_proj.lora_A.default.weight": {
+      "norm": 0.0358298234641552,
+      "nonzero": 28672
+    },
+    "base_model.model.model.language_model.layers.27.self_attn.q_proj.lora_B.default.weight": {
+      "norm": 0.09216431528329849,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.27.self_attn.v_proj.lora_A.default.weight": {
+      "norm": 0.004160440061241388,
+      "nonzero": 28671
+    },
+    "base_model.model.model.language_model.layers.27.self_attn.v_proj.lora_B.default.weight": {
+      "norm": 0.040593426674604416,
+      "nonzero": 4095
+    }
+  }
+}

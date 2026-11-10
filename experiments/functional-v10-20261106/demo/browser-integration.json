@@ -1,0 +1,51 @@
+{
+  "at": "2026-11-05T23:20:07.700564+00:00",
+  "status": "actual_browser_upload_edit_switch_download_feedback_and_records_verified",
+  "requests": [
+    {
+      "request_id": "a487f69d6813439b83ce9ce4738f9a0d",
+      "model_id": "functional-v10-language-20261121",
+      "case_id": "native-dev-001",
+      "status": "executed",
+      "offline_byte_identical": true,
+      "download_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765",
+      "local_download": "/Users/cryptic/Downloads/output (2).png"
+    },
+    {
+      "request_id": "9cc87fee2b0f422a8cfe67e7f08a2a3f",
+      "model_id": "functional-v10-language-merger-20261121",
+      "case_id": "visual-risk-01-severe-light",
+      "status": "declined",
+      "no_result_image": true,
+      "image_route_status": 404,
+      "training_condition_probe_not_independent_generalization": true
+    }
+  ],
+  "screenshots": {
+    "experiments/functional-v10-20261106/demo/browser-quality-decline.png": "4f8ae332c457767754dd29478054fb0307f80ae0e68727e91083cbcd25873944",
+    "experiments/functional-v10-20261106/demo/browser-edit-full.png": "f346b469a2f6ae4a5a1c4b4ec7140973fc71b852943a72aacc8fcd5b6361a69e",
+    "experiments/functional-v10-20261106/demo/browser-records.png": "59b9fac56098e7924a81f50726f5979bfd2ca5a3779fc0fe076553b95b43afad",
+    "experiments/functional-v10-20261106/demo/browser-records-failures.png": "0a16f6c9503031317b59c53c49894883a0431283e0f8ef5a07d4d79c2db13e8b",
+    "experiments/functional-v10-20261106/demo/browser-edit.png": "bc2fa5b9d089c0de567f925b5dc939f762ca7143b979a5a1fd152f886ef2388d"
+  },
+  "feedback_records": 3,
+  "independent_user_feedback": 0,
+  "records_filters": {
+    "pass_language_rows": 28,
+    "unqualified_language_rows": 10,
+    "uncertain_language_rows": 2,
+    "total_language_rows": 40,
+    "model": "language-merger-e2"
+  },
+  "final_page": "http://127.0.0.1:12346/v10?kind=evaluation&domain=all&action=all&judgment=all&split=native-development&model=language-merger-e2",
+  "occupied_GPU_hours": 14.330370567109844,
+  "worker_unloaded": true,
+  "default_unchanged": true,
+  "actual_external_rewriting": false,
+  "limitations": [
+    "Quality refusal is checked on a seen synthetic training condition, not an unknown real-camera photograph.",
+    "All feedback records are explicitly agent integration checks; no independent user usability result.",
+    "Initial exact-label browser selector did not resolve; recovered using the visible combobox role without submitting duplicate edits.",
+    "Header wrapping CSS was adjusted after edit screenshots; records proof and semantic UI checks were performed on the final service."
+  ]
+}

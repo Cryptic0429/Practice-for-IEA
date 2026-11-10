@@ -1,0 +1,185 @@
+{
+  "at": "2026-11-05T16:10:00.468834+00:00",
+  "status": "frozen_before_additional_quality_repair_outputs",
+  "source_cases_sha256": "375c98f1f53730c0e926677e90bb18cdf630bcd00730aa4223f631be10c045a3",
+  "source_full_observations_sha256": "f19ece94b36c5f2189d05210d1649b666846e787fac6ea7c3392767312d082c4",
+  "source_first_repairs_sha256": "5f5e2300fa5787a84a9f4b133c85785a125fc58f6f92fe003089c71d203ec34b",
+  "code_sha256": "c5eff5cf85418aeee474062f276846f1b98e2d0b062a1d9111d87dbbdcb86bf5",
+  "editor_sha256": "8c3b02c304d79bca9d547fe471afe4a0136c1813c2cf30a0c343dd5e174f2b50",
+  "proposals": {
+    "train-214-style-contrast-strong": [
+      {
+        "contrast": 28,
+        "shadows": 30,
+        "highlights": -15,
+        "saturation": -5
+      },
+      {
+        "contrast": 35,
+        "shadows": 35,
+        "highlights": -25,
+        "saturation": -8
+      }
+    ],
+    "native-train-n013": [
+      {
+        "contrast": 40,
+        "exposure": -30,
+        "saturation": 15,
+        "shadows": 25,
+        "highlights": -25
+      },
+      {
+        "contrast": 50,
+        "exposure": -35,
+        "saturation": 10,
+        "shadows": 35,
+        "highlights": -35
+      }
+    ],
+    "native-train-n028": [
+      {
+        "contrast": 15,
+        "shadows": 15,
+        "highlights": -10
+      },
+      {
+        "contrast": 20,
+        "shadows": 25,
+        "highlights": -15
+      }
+    ],
+    "native-train-n070": [
+      {
+        "exposure": 60,
+        "shadows": 20
+      },
+      {
+        "exposure": 45,
+        "shadows": 30,
+        "saturation": -8
+      }
+    ],
+    "native-train-n127": [
+      {
+        "exposure": 65,
+        "shadows": 35,
+        "highlights": -15,
+        "contrast": 8
+      },
+      {
+        "exposure": 80,
+        "shadows": 20,
+        "highlights": -10
+      }
+    ],
+    "native-train-n119": [
+      {
+        "exposure": 30,
+        "shadows": 35,
+        "highlights": -10
+      },
+      {
+        "exposure": 45,
+        "shadows": 20,
+        "highlights": -12
+      }
+    ],
+    "native-train-n186": [
+      {
+        "exposure": 20,
+        "shadows": 55,
+        "highlights": -15
+      },
+      {
+        "exposure": 30,
+        "shadows": 40,
+        "highlights": -20
+      }
+    ],
+    "native-train-n190": [
+      {
+        "contrast": 35,
+        "saturation": 25,
+        "highlights": -20,
+        "shadows": 10
+      },
+      {
+        "contrast": 45,
+        "saturation": 25,
+        "highlights": -30,
+        "shadows": 20
+      }
+    ],
+    "native-train-x030": [
+      {
+        "exposure": 55,
+        "shadows": 30,
+        "highlights": -15
+      },
+      {
+        "exposure": 70,
+        "shadows": 15,
+        "highlights": -20
+      }
+    ],
+    "native-train-n029": [
+      {
+        "exposure": -30,
+        "contrast": 65,
+        "saturation": 10,
+        "highlights": -25
+      },
+      {
+        "exposure": -35,
+        "contrast": 85,
+        "saturation": 5,
+        "highlights": -20
+      }
+    ],
+    "native-train-n093": [
+      {
+        "exposure": -10,
+        "brightness": 15,
+        "contrast": 65,
+        "saturation": -15,
+        "temperature": 35,
+        "tint": -15
+      },
+      {
+        "exposure": -15,
+        "brightness": 20,
+        "contrast": 80,
+        "saturation": -20,
+        "temperature": 45,
+        "tint": -20
+      }
+    ],
+    "native-train-n068": [
+      {
+        "exposure": -15,
+        "contrast": 45,
+        "sepia": 40,
+        "temperature": 10,
+        "tint": -5,
+        "highlights": -35
+      },
+      {
+        "exposure": -20,
+        "contrast": 55,
+        "sepia": 50,
+        "temperature": 10,
+        "tint": -10,
+        "highlights": -45
+      }
+    ]
+  },
+  "inputs_and_original_bilingual_requests_unchanged": true,
+  "rationale": "Visual followup found highlight/shadow compression and amplified source noise. Propose gentler shadow lifts or highlight protection. Earlier natural-request repairs for n029/n093 remain incomplete; try stronger tonal separation with less neon colour. This is not evidence that any candidate is usable.",
+  "selection": "Direct visual review before admission; uncertainties remain excluded. Do not use L1. Do not declare reliable impossibility merely because a tested edit failed.",
+  "new_training_admitted": false,
+  "new_training_started": false,
+  "live_tools_changed": false,
+  "heldout_access": false,
+  "GPU_hours": 0
+}

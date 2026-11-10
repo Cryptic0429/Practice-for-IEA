@@ -1,0 +1,119 @@
+{
+  "epochs": 80,
+  "checkpoints": [
+    20,
+    80
+  ],
+  "seed": 20261203,
+  "replicate_seed": 20261204,
+  "batch_semantics": 16,
+  "paired_language_inputs": 32,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "positive_presentations_per_epoch": 1850,
+  "steps_per_epoch": 58,
+  "objective": "4-action CE + per-tool3-direction weighted CE (TRAIN sqrt class weights cap5) +4 active unsigned SmoothL1(beta.1) +.25 paired ZH/EN JS(action/tool) and active magnitude MSE.",
+  "decoder": "Argmax action and off/negative/positive per tool; sigmoid magnitude*100 integer rounding; zero omitted. Sepia negative masked. Empty edit is failure, never keep/decline fallback.",
+  "normalization": "Per-record hidden RMS then TRAIN-only mean/std floor.1 on hidden+16 current-input RGB stats.",
+  "route": "request_mean",
+  "cpu_only": true,
+  "semantic_cases": 925,
+  "language_inputs": 1850,
+  "TRAIN_only_normalization": true,
+  "trainable_parameters": 466088,
+  "direction_counts": [
+    [
+      934,
+      158,
+      468
+    ],
+    [
+      1534,
+      6,
+      20
+    ],
+    [
+      1130,
+      78,
+      352
+    ],
+    [
+      1404,
+      154,
+      2
+    ],
+    [
+      1302,
+      26,
+      232
+    ],
+    [
+      1022,
+      138,
+      400
+    ],
+    [
+      1268,
+      148,
+      144
+    ],
+    [
+      1460,
+      52,
+      48
+    ],
+    [
+      1474,
+      0,
+      86
+    ]
+  ],
+  "direction_weights": [
+    [
+      1.292375922203064,
+      3.1421995162963867,
+      1.8257418870925903
+    ],
+    [
+      1.0084389448165894,
+      5.0,
+      5.0
+    ],
+    [
+      1.1749600172042847,
+      4.4721360206604,
+      2.1051883697509766
+    ],
+    [
+      1.054092526435852,
+      3.1827456951141357,
+      5.0
+    ],
+    [
+      1.094603419303894,
+      5.0,
+      2.5930943489074707
+    ],
+    [
+      1.235483169555664,
+      3.3621938228607178,
+      1.974841833114624
+    ],
+    [
+      1.1091816425323486,
+      3.246619939804077,
+      3.291402816772461
+    ],
+    [
+      1.0336793661117554,
+      5.0,
+      5.0
+    ],
+    [
+      1.0287587642669678,
+      5.0,
+      4.2590532302856445
+    ]
+  ],
+  "feature_manifest_sha256": "e60f90718a278307455e46b5dec1072261c1b4bf814a9def459961585a54d304"
+}

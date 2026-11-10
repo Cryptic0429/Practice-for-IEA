@@ -1,0 +1,39 @@
+{
+  "at": "2026-11-05T11:22:30.281909+00:00",
+  "status": "frozen_before_RGB_capacity_outputs",
+  "cases": [
+    "train-007-restore-contrast-mild",
+    "train-007-restore-contrast-strong",
+    "train-010-style-contrast-weak",
+    "train-010-style-contrast-strong",
+    "train-016-restore-contrast-mild",
+    "train-016-restore-contrast-strong",
+    "train-025-restore-contrast-strong",
+    "train-025-style-contrast-weak",
+    "train-025-style-contrast-strong",
+    "train-034-restore-contrast-strong",
+    "train-034-compound",
+    "native-train-n048"
+  ],
+  "source_cases_sha256": "375c98f1f53730c0e926677e90bb18cdf630bcd00730aa4223f631be10c045a3",
+  "source_screening_sha256": "b1d8390a34895cefcb4a5ccce85a335a610cc22d2fb9d01c0018ce89c34b426f",
+  "code_hashes": {
+    "scripts/functional_v7/probe_rgb_contrast.py": "475c941ba03b3c40bf094d8f986d0138826960c10ef244efdfc359a2c79ab1cf",
+    "scripts/functional_v7/editor.py": "18e498726d4dadeaa403574016c427c9ef324bb854e1adaed55f5083ec762600",
+    "scripts/functional_v7/editor_rgb.py": "0b49934def01e9f93d0932c8a5a0d6388d40a76e20ba5574513f6b0ac508e734"
+  },
+  "hypothesis": "Value-only contrast preserves per-pixel HSV saturation and cannot alone undo chroma lost under additive-grey RGB contrast degradation. Bounded per-channel contrast can change that chroma while keeping continuous0-1 transfer curves.",
+  "variants": [
+    "frozen old RGB linear/clipped editor",
+    "bounded value contrast",
+    "bounded RGB contrast"
+  ],
+  "controlled_variables": "Original training input/request and old parameter JSON fixed across all three; exposure/brightness and later tools unchanged between bounded candidates. No parameter fitting.",
+  "scope": "Twelve deliberately selected training tasks, five previously inspected source groups plus native bridal detail control. Not balanced validation or model improvement.",
+  "editor_exponent": "Same2^(contrast/100), zero neutral, signed direction unchanged; colour response differs.",
+  "new_labels_admitted": false,
+  "training_started": false,
+  "live_tools_changed": false,
+  "heldout_outputs_generated": false,
+  "GPU_hours": 0
+}

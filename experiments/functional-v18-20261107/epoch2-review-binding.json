@@ -1,0 +1,18 @@
+{
+  "at": "2026-11-06T22:15:57.634190+00:00",
+  "epoch": 2,
+  "models": {
+    "counterfactual-rank-e2": {
+      "adapter_sha256": "925134a655efd8a536c3957a783810f4ad25c2cfe99806011927227e548e67c8",
+      "checkpoint": "experiments/functional-v18-20261107/runs/counterfactual_rank-seed-20261129/checkpoint-1002"
+    },
+    "matched-sft-e2": {
+      "adapter_sha256": "bcb0a5a734fdf9930a77c4b028b77641b6dc6e0459945ece3e13ce4a96d2c87a",
+      "checkpoint": "experiments/functional-v18-20261107/runs/matched_sft-seed-20261129/checkpoint-1002"
+    }
+  },
+  "selection_performed": false,
+  "training_protocol_changed": false,
+  "all_four_checkpoints_still_required": true,
+  "policy": "Review completed epoch predictions only. Later fixed optimization continues; no learning-rate, data, loss or checkpoint-count change from interim observations. Final selection only after both routes and both epochs are reviewed."
+}

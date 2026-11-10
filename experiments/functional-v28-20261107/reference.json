@@ -1,0 +1,101 @@
+{
+  "reviewer": "Direct Codex visual review on anonymous boards before inference. Known cases also bind prior direct observations. Not independent human feedback.",
+  "protocol_sha256": "9219fc7df1fb7620d6d457a05ea51b4e09a71b9ab506204ff218aafef5ce488e",
+  "boards_sha256": "20be3950d326899d392e8ca0e3664e008e7ae9fc18a73aeb1d7941f3a508d87d",
+  "cases": [
+    {
+      "id": "grain-portrait",
+      "expected": "1",
+      "damaged": [
+        "2"
+      ],
+      "observation": "候选1温和打开面颊暗侧和头发，候选2让原有粗颗粒在发丝与肤色上更明显。",
+      "viewed_board_sha256": "833ef5244af6afe3a356688fee88b9a0ea9c2d8670a489296515d38236cd758e"
+    },
+    {
+      "id": "dinner-portrait",
+      "expected": "1",
+      "damaged": [
+        "2"
+      ],
+      "observation": "候选1让几张脸更容易辨认并保留暖灯；候选2在发际线与深色衣服的暗部出现更多粗彩点。",
+      "viewed_board_sha256": "e3674df1542933a0dc12e2ab55d0dad12b6fd568854351ec340a82181ca9d87b"
+    },
+    {
+      "id": "woodland-neither",
+      "expected": "C",
+      "damaged": [
+        "2"
+      ],
+      "observation": "候选1仍看不清树干和地面，候选2显出大块紫红和蓝绿色斑，仍不能可靠辨认所需细节。",
+      "viewed_board_sha256": "ef7397687221353345ab69008a65fe6ba8e7f1bd85968832524a01f731df4fd3"
+    },
+    {
+      "id": "campfire-neither",
+      "expected": "C",
+      "damaged": [
+        "2"
+      ],
+      "observation": "候选1火光附近地形仍太黑，候选2放大暗区的色块和台阶状色阶，却未显出要求的地形纹理。",
+      "viewed_board_sha256": "0427ede0e862d1cc695d5c7b0876e725dbae300c529eb6a9b3e29d690aee9484"
+    },
+    {
+      "id": "snow-mild",
+      "expected": "1",
+      "damaged": [],
+      "observation": "候选1轻抬雪路和草地暗面，候选2提升明显超过轻档要求，天空与雪仍保有细节。",
+      "viewed_board_sha256": "4ede373ae7737aeb08926b99d34a71d2b02ea5a4b35618cd1206080e0a0ffe00"
+    },
+    {
+      "id": "snow-strong",
+      "expected": "2",
+      "damaged": [],
+      "observation": "候选1改善太轻，候选2更清楚显示雪路及草纹并保留天空。",
+      "viewed_board_sha256": "4ede373ae7737aeb08926b99d34a71d2b02ea5a4b35618cd1206080e0a0ffe00"
+    },
+    {
+      "id": "shadow-direction",
+      "expected": "1",
+      "damaged": [],
+      "observation": "候选1让近处人物、枝叶与暗影变深，水面纹理仍在。候选2朝相反方向抬亮暗处。",
+      "viewed_board_sha256": "a3755744617ba16bbdf42b45afdb0a22e2ad154511d683595b77b3ae31aebdd8"
+    },
+    {
+      "id": "exposure-scope",
+      "expected": "1",
+      "damaged": [],
+      "observation": "候选1同时抬亮人物、水和天空，云纹及衣服纹理可辨；候选2主要抬阴影，整体亮区变化较小。",
+      "viewed_board_sha256": "cdf5e866365b7df3ae01c98e3d9b1f051360329391f791ef69cd6855bcfac08b"
+    },
+    {
+      "id": "brown-vs-warm",
+      "expected": "1",
+      "damaged": [],
+      "observation": "候选1将原绿植转为棕褐，仍有岩谷与植被层次；候选2主要偏暖，红衣及绿色仍鲜明。",
+      "viewed_board_sha256": "66d067e771dab602bab08b19e07ace36a0d431b5216f05fac381426f403ff84e"
+    },
+    {
+      "id": "white-balance-direction",
+      "expected": "1",
+      "damaged": [],
+      "observation": "候选1让白衣暖黄减轻，肤色仍可用；候选2强化原来的黄偏。",
+      "viewed_board_sha256": "f465dc9579554267d426c1974b3c80224aa86864d901e375ddb156c42e5f7f77"
+    },
+    {
+      "id": "saturation-direction",
+      "expected": "1",
+      "damaged": [],
+      "observation": "候选1弱化黄羽和绿叶的色彩强度，仍保有自然颜色；候选2增强了这两类颜色。",
+      "viewed_board_sha256": "0d12ff12c7a44f2ca998531140a72e71d4d40ec31b0d7c2e1b159dd31912b99f"
+    },
+    {
+      "id": "contrast-direction",
+      "expected": "1",
+      "damaged": [
+        "2"
+      ],
+      "observation": "候选1压低明暗反差且仍可见脸部和暗发层次；候选2增加反差并压暗了一部分发丝。",
+      "viewed_board_sha256": "cb0fa58d9c1c9614fb3664b8c30df7c5450789f9d2c6e36bda4562d4fe56c09b"
+    }
+  ]
+}

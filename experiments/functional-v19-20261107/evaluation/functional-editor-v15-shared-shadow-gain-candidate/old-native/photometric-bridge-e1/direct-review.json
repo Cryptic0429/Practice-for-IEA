@@ -1,0 +1,2646 @@
+[
+  {
+    "case_id": "natural-028",
+    "family": "lighting",
+    "language": "zh",
+    "item_id": "c87d56b3b3919803",
+    "assessment": {
+      "item_id": "c87d56b3b3919803",
+      "case_id": "natural-028",
+      "completion": "completed",
+      "quality": "uncertain",
+      "evidence": "Repeated direct AI observations of this identical input/request/result disagree on quality. All raw observations are preserved; disputed fields stay uncertain. No human adjudication.",
+      "image_sha256": "d0a770d4d80e1cadab6299a937346800004b84b42d60d07a923a166f7fd64904",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-028-01.jpg",
+      "sheet_sha256": "de684bb34e19e013d318f9b4076ae034ac017cae3dec3f8c5a773a97557699b9",
+      "bundle": "first-epoch-and-baselines",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T17:49:41.119388+00:00",
+      "original_size_supplement": {
+        "item_id": "c87d56b3b3919803",
+        "case_id": "natural-028",
+        "input_sha256": "a72c46469d9f2afb149b87aa00dbc09539cf394645e7652e64972483fe0a7f81",
+        "output_sha256": "d0a770d4d80e1cadab6299a937346800004b84b42d60d07a923a166f7fd64904",
+        "images": [
+          {
+            "role": "INPUT",
+            "path": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/full-resolution/natural-028-INPUT.png",
+            "sha256": "825a17566563e4f90beb49cfbb57b7352f7b6f47b4843256ea7457b29c54d5c9",
+            "size": [
+              960,
+              640
+            ],
+            "pixel_sha256": "ad3119c1eca7052637f013c1277f2afaa07cb3023b031c6d73166db0069b1b7e"
+          },
+          {
+            "role": "c87d56b3b3919803",
+            "path": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/full-resolution/natural-028-c87d56b3b3919803.png",
+            "sha256": "017ffc83bb8ec852bf6c90f2f187c84b393ec8bb294ef38f69fd9f1da1107af7",
+            "size": [
+              960,
+              640
+            ],
+            "pixel_sha256": "3f1c1eb0d64518f175b665a608ab6e164af3801b510730e58ffdf8be7ca0e24b"
+          }
+        ],
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "原尺寸中整体温和提亮，白衬衫竖纹与褶皱仍在，人物面部、头发和衣裙图案保持，未见大片新增高光细节损失。",
+        "reviewer": "Codex direct anonymous original-size AI review; not human",
+        "observed_at": "2026-11-05T17:57:30.277687+00:00",
+        "supplements_raw_contact_sheet": true,
+        "manifest_sha256": "a1224be14e4647c245d5a982d076d1252bcc3a165973f0f00fbaa619e6b8ac3a"
+      },
+      "raw_contact_sheet_assessment": {
+        "item_id": "c87d56b3b3919803",
+        "case_id": "natural-028",
+        "completion": "completed",
+        "quality": "uncertain",
+        "evidence": "整幅图温和提亮，人物面部仍清楚；白衬衫亮区细纹是否得到保留需要原尺寸核验。",
+        "image_sha256": "d0a770d4d80e1cadab6299a937346800004b84b42d60d07a923a166f7fd64904",
+        "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-028-01.jpg",
+        "sheet_sha256": "de684bb34e19e013d318f9b4076ae034ac017cae3dec3f8c5a773a97557699b9",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:49:41.119388+00:00"
+      },
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/old-native/codex-observations.jsonl",
+        "sha256": "198d190b2d17415e53d2c13e335c55921f9b6b6c2368e6787c125e578f480733"
+      },
+      "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained.",
+      "adjudication": "historical_exact_render_disagreement",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "e9c69c8d3373794c7e5fa0b7718aacd63dd8e632e38dd6c64aa79bbf226a49e0"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "e9c69c8d3373794c7e5fa0b7718aacd63dd8e632e38dd6c64aa79bbf226a49e0"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-editor-replay/direct-review.json",
+          "sha256": "715093428ca7a865e92cbf5211d7db1d87a2e78b0bc7a6911eb821c680f5a9a7"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-editor-replay/direct-review.json",
+          "sha256": "715093428ca7a865e92cbf5211d7db1d87a2e78b0bc7a6911eb821c680f5a9a7"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "d57351d6700bb2604d67544005ca551a2f68fcbc82f63eaabcb818d2a4fb82bd"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "d57351d6700bb2604d67544005ca551a2f68fcbc82f63eaabcb818d2a4fb82bd"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-new-manual/direct-review.json",
+          "sha256": "a6350469ff8dc7b8f081cdae1a434dfb909afa4dc2ae5156a36bebeeabab6cba"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-new-manual/direct-review.json",
+          "sha256": "a6350469ff8dc7b8f081cdae1a434dfb909afa4dc2ae5156a36bebeeabab6cba"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "3468116f178a3eaafb0450b59f7c309d3a69b3f57056b5abdd17c5cd1b5e8855"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "3468116f178a3eaafb0450b59f7c309d3a69b3f57056b5abdd17c5cd1b5e8855"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/parent-editor-only/direct-review.json",
+          "sha256": "629247e609310a64c1855435e654d2b43d3ebbb2002bc97c4cecbe472ea6b66b"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/parent-editor-only/direct-review.json",
+          "sha256": "629247e609310a64c1855435e654d2b43d3ebbb2002bc97c4cecbe472ea6b66b"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/current-default-new-runtime/direct-review.json",
+          "sha256": "a5b1bca3ff91ce7770cc6ffc81bd9370fd29df63b79819131fecb29050d3e149"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/editor-only-round6-parent/direct-review.json",
+          "sha256": "85658f5a2f5ad86f58cfcb4c7cb36daa775c9392a9dfd9d157af027208ddfb7a"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/editor-only-round6-parent/direct-review.json",
+          "sha256": "85658f5a2f5ad86f58cfcb4c7cb36daa775c9392a9dfd9d157af027208ddfb7a"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e1/direct-review.json",
+          "sha256": "915a0d042be46e8ce14b051e843c7c5442ec5d41ab53abe85e25ddbeb871edca"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e1/direct-review.json",
+          "sha256": "915a0d042be46e8ce14b051e843c7c5442ec5d41ab53abe85e25ddbeb871edca"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e3/direct-review.json",
+          "sha256": "dac7c66cef11ec5f26fc5761ed68cbc3ba304b782f34f676521a7cbc4689a5d0"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-review.json",
+          "sha256": "6f58530b5d17cb093656c5e0d9c1c961988712a5ed429c1a79f45d0ba77bafd2"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-review.json",
+          "sha256": "6f58530b5d17cb093656c5e0d9c1c961988712a5ed429c1a79f45d0ba77bafd2"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "757c7adc27edc603271c3ee258f5de3bdd3dca25b9abb1557b32ffa159265e7c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "757c7adc27edc603271c3ee258f5de3bdd3dca25b9abb1557b32ffa159265e7c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e3/direct-review.json",
+          "sha256": "195f85f999e7056c08b3df3d45e3d4b7756f8761e97fea32abebd6d4d267b26c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-review.json",
+          "sha256": "90f35389d8695b7aed6d88fd36c01ff813113def0431fba5b2aaaa8ce3fe5f27"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-review.json",
+          "sha256": "90f35389d8695b7aed6d88fd36c01ff813113def0431fba5b2aaaa8ce3fe5f27"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e1/direct-review.json",
+          "sha256": "0250fcf39dc5d2ef55d54481caa44cb7a9371794b4e97ebb54cce69eb654999f"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e1/direct-review.json",
+          "sha256": "0250fcf39dc5d2ef55d54481caa44cb7a9371794b4e97ebb54cce69eb654999f"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e2/direct-review.json",
+          "sha256": "e7beead8b810621c9c01bc7df62ab1554ef2bf3fdf2748060406ebce4fbff142"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e2/direct-review.json",
+          "sha256": "e7beead8b810621c9c01bc7df62ab1554ef2bf3fdf2748060406ebce4fbff142"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e3/direct-review.json",
+          "sha256": "17f90e9db44c69b852d741845856bce489d1253f1a6844495b013041ad19a269"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e3/direct-review.json",
+          "sha256": "17f90e9db44c69b852d741845856bce489d1253f1a6844495b013041ad19a269"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e4/direct-review.json",
+          "sha256": "b1808faa3900c055e303395c5fd20dbbcbb0f9c9ee6556de8341992907ac18df"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e4/direct-review.json",
+          "sha256": "b1808faa3900c055e303395c5fd20dbbcbb0f9c9ee6556de8341992907ac18df"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e1/direct-review.json",
+          "sha256": "26bd22a80a9dff9a8ab420ef90d0078c2fe0a3bbf157131e68744a3c2853d7c2"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e1/direct-review.json",
+          "sha256": "26bd22a80a9dff9a8ab420ef90d0078c2fe0a3bbf157131e68744a3c2853d7c2"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e2/direct-review.json",
+          "sha256": "bd2d22dda31f060fccde0413d3af4c997bbb6c2029b9f8f8cd42a278768cd6a1"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e2/direct-review.json",
+          "sha256": "bd2d22dda31f060fccde0413d3af4c997bbb6c2029b9f8f8cd42a278768cd6a1"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e3/direct-review.json",
+          "sha256": "096dde8d9d0fb4e0d5de692b42dc1fc77651ee55de3f0e28a0f15916d09c528c"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e3/direct-review.json",
+          "sha256": "096dde8d9d0fb4e0d5de692b42dc1fc77651ee55de3f0e28a0f15916d09c528c"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-review.json",
+          "sha256": "1f535a8559280967d5b4260c2ed7a759c8d956731da2419c703260bb8ac74c63"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-review.json",
+          "sha256": "1f535a8559280967d5b4260c2ed7a759c8d956731da2419c703260bb8ac74c63"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-init/direct-review.json",
+          "sha256": "e41484daf7e71874c474c4d49885b8300cc5fbc3d0324a1ac00666ae07caa142"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-init/direct-review.json",
+          "sha256": "e41484daf7e71874c474c4d49885b8300cc5fbc3d0324a1ac00666ae07caa142"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-028",
+    "family": "lighting",
+    "language": "en",
+    "item_id": "c87d56b3b3919803",
+    "assessment": {
+      "item_id": "c87d56b3b3919803",
+      "case_id": "natural-028",
+      "completion": "completed",
+      "quality": "uncertain",
+      "evidence": "Repeated direct AI observations of this identical input/request/result disagree on quality. All raw observations are preserved; disputed fields stay uncertain. No human adjudication.",
+      "image_sha256": "d0a770d4d80e1cadab6299a937346800004b84b42d60d07a923a166f7fd64904",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-028-01.jpg",
+      "sheet_sha256": "de684bb34e19e013d318f9b4076ae034ac017cae3dec3f8c5a773a97557699b9",
+      "bundle": "first-epoch-and-baselines",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T17:49:41.119388+00:00",
+      "original_size_supplement": {
+        "item_id": "c87d56b3b3919803",
+        "case_id": "natural-028",
+        "input_sha256": "a72c46469d9f2afb149b87aa00dbc09539cf394645e7652e64972483fe0a7f81",
+        "output_sha256": "d0a770d4d80e1cadab6299a937346800004b84b42d60d07a923a166f7fd64904",
+        "images": [
+          {
+            "role": "INPUT",
+            "path": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/full-resolution/natural-028-INPUT.png",
+            "sha256": "825a17566563e4f90beb49cfbb57b7352f7b6f47b4843256ea7457b29c54d5c9",
+            "size": [
+              960,
+              640
+            ],
+            "pixel_sha256": "ad3119c1eca7052637f013c1277f2afaa07cb3023b031c6d73166db0069b1b7e"
+          },
+          {
+            "role": "c87d56b3b3919803",
+            "path": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/full-resolution/natural-028-c87d56b3b3919803.png",
+            "sha256": "017ffc83bb8ec852bf6c90f2f187c84b393ec8bb294ef38f69fd9f1da1107af7",
+            "size": [
+              960,
+              640
+            ],
+            "pixel_sha256": "3f1c1eb0d64518f175b665a608ab6e164af3801b510730e58ffdf8be7ca0e24b"
+          }
+        ],
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "原尺寸中整体温和提亮，白衬衫竖纹与褶皱仍在，人物面部、头发和衣裙图案保持，未见大片新增高光细节损失。",
+        "reviewer": "Codex direct anonymous original-size AI review; not human",
+        "observed_at": "2026-11-05T17:57:30.277687+00:00",
+        "supplements_raw_contact_sheet": true,
+        "manifest_sha256": "a1224be14e4647c245d5a982d076d1252bcc3a165973f0f00fbaa619e6b8ac3a"
+      },
+      "raw_contact_sheet_assessment": {
+        "item_id": "c87d56b3b3919803",
+        "case_id": "natural-028",
+        "completion": "completed",
+        "quality": "uncertain",
+        "evidence": "整幅图温和提亮，人物面部仍清楚；白衬衫亮区细纹是否得到保留需要原尺寸核验。",
+        "image_sha256": "d0a770d4d80e1cadab6299a937346800004b84b42d60d07a923a166f7fd64904",
+        "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-028-01.jpg",
+        "sheet_sha256": "de684bb34e19e013d318f9b4076ae034ac017cae3dec3f8c5a773a97557699b9",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:49:41.119388+00:00"
+      },
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/old-native/codex-observations.jsonl",
+        "sha256": "198d190b2d17415e53d2c13e335c55921f9b6b6c2368e6787c125e578f480733"
+      },
+      "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained.",
+      "adjudication": "historical_exact_render_disagreement",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "e9c69c8d3373794c7e5fa0b7718aacd63dd8e632e38dd6c64aa79bbf226a49e0"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "e9c69c8d3373794c7e5fa0b7718aacd63dd8e632e38dd6c64aa79bbf226a49e0"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-editor-replay/direct-review.json",
+          "sha256": "715093428ca7a865e92cbf5211d7db1d87a2e78b0bc7a6911eb821c680f5a9a7"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-editor-replay/direct-review.json",
+          "sha256": "715093428ca7a865e92cbf5211d7db1d87a2e78b0bc7a6911eb821c680f5a9a7"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "d57351d6700bb2604d67544005ca551a2f68fcbc82f63eaabcb818d2a4fb82bd"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "d57351d6700bb2604d67544005ca551a2f68fcbc82f63eaabcb818d2a4fb82bd"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-new-manual/direct-review.json",
+          "sha256": "a6350469ff8dc7b8f081cdae1a434dfb909afa4dc2ae5156a36bebeeabab6cba"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-new-manual/direct-review.json",
+          "sha256": "a6350469ff8dc7b8f081cdae1a434dfb909afa4dc2ae5156a36bebeeabab6cba"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "3468116f178a3eaafb0450b59f7c309d3a69b3f57056b5abdd17c5cd1b5e8855"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "3468116f178a3eaafb0450b59f7c309d3a69b3f57056b5abdd17c5cd1b5e8855"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/parent-editor-only/direct-review.json",
+          "sha256": "629247e609310a64c1855435e654d2b43d3ebbb2002bc97c4cecbe472ea6b66b"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/parent-editor-only/direct-review.json",
+          "sha256": "629247e609310a64c1855435e654d2b43d3ebbb2002bc97c4cecbe472ea6b66b"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/current-default-new-runtime/direct-review.json",
+          "sha256": "a5b1bca3ff91ce7770cc6ffc81bd9370fd29df63b79819131fecb29050d3e149"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/editor-only-round6-parent/direct-review.json",
+          "sha256": "85658f5a2f5ad86f58cfcb4c7cb36daa775c9392a9dfd9d157af027208ddfb7a"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/editor-only-round6-parent/direct-review.json",
+          "sha256": "85658f5a2f5ad86f58cfcb4c7cb36daa775c9392a9dfd9d157af027208ddfb7a"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e1/direct-review.json",
+          "sha256": "915a0d042be46e8ce14b051e843c7c5442ec5d41ab53abe85e25ddbeb871edca"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e1/direct-review.json",
+          "sha256": "915a0d042be46e8ce14b051e843c7c5442ec5d41ab53abe85e25ddbeb871edca"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e3/direct-review.json",
+          "sha256": "dac7c66cef11ec5f26fc5761ed68cbc3ba304b782f34f676521a7cbc4689a5d0"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-review.json",
+          "sha256": "6f58530b5d17cb093656c5e0d9c1c961988712a5ed429c1a79f45d0ba77bafd2"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-review.json",
+          "sha256": "6f58530b5d17cb093656c5e0d9c1c961988712a5ed429c1a79f45d0ba77bafd2"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "757c7adc27edc603271c3ee258f5de3bdd3dca25b9abb1557b32ffa159265e7c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "757c7adc27edc603271c3ee258f5de3bdd3dca25b9abb1557b32ffa159265e7c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e3/direct-review.json",
+          "sha256": "195f85f999e7056c08b3df3d45e3d4b7756f8761e97fea32abebd6d4d267b26c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-review.json",
+          "sha256": "90f35389d8695b7aed6d88fd36c01ff813113def0431fba5b2aaaa8ce3fe5f27"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-review.json",
+          "sha256": "90f35389d8695b7aed6d88fd36c01ff813113def0431fba5b2aaaa8ce3fe5f27"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e1/direct-review.json",
+          "sha256": "0250fcf39dc5d2ef55d54481caa44cb7a9371794b4e97ebb54cce69eb654999f"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e1/direct-review.json",
+          "sha256": "0250fcf39dc5d2ef55d54481caa44cb7a9371794b4e97ebb54cce69eb654999f"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e2/direct-review.json",
+          "sha256": "e7beead8b810621c9c01bc7df62ab1554ef2bf3fdf2748060406ebce4fbff142"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e2/direct-review.json",
+          "sha256": "e7beead8b810621c9c01bc7df62ab1554ef2bf3fdf2748060406ebce4fbff142"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e3/direct-review.json",
+          "sha256": "17f90e9db44c69b852d741845856bce489d1253f1a6844495b013041ad19a269"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e3/direct-review.json",
+          "sha256": "17f90e9db44c69b852d741845856bce489d1253f1a6844495b013041ad19a269"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e4/direct-review.json",
+          "sha256": "b1808faa3900c055e303395c5fd20dbbcbb0f9c9ee6556de8341992907ac18df"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e4/direct-review.json",
+          "sha256": "b1808faa3900c055e303395c5fd20dbbcbb0f9c9ee6556de8341992907ac18df"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e1/direct-review.json",
+          "sha256": "26bd22a80a9dff9a8ab420ef90d0078c2fe0a3bbf157131e68744a3c2853d7c2"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e1/direct-review.json",
+          "sha256": "26bd22a80a9dff9a8ab420ef90d0078c2fe0a3bbf157131e68744a3c2853d7c2"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e2/direct-review.json",
+          "sha256": "bd2d22dda31f060fccde0413d3af4c997bbb6c2029b9f8f8cd42a278768cd6a1"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e2/direct-review.json",
+          "sha256": "bd2d22dda31f060fccde0413d3af4c997bbb6c2029b9f8f8cd42a278768cd6a1"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e3/direct-review.json",
+          "sha256": "096dde8d9d0fb4e0d5de692b42dc1fc77651ee55de3f0e28a0f15916d09c528c"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e3/direct-review.json",
+          "sha256": "096dde8d9d0fb4e0d5de692b42dc1fc77651ee55de3f0e28a0f15916d09c528c"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-review.json",
+          "sha256": "1f535a8559280967d5b4260c2ed7a759c8d956731da2419c703260bb8ac74c63"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-review.json",
+          "sha256": "1f535a8559280967d5b4260c2ed7a759c8d956731da2419c703260bb8ac74c63"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-init/direct-review.json",
+          "sha256": "e41484daf7e71874c474c4d49885b8300cc5fbc3d0324a1ac00666ae07caa142"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-init/direct-review.json",
+          "sha256": "e41484daf7e71874c474c4d49885b8300cc5fbc3d0324a1ac00666ae07caa142"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-033",
+    "family": "compound",
+    "language": "zh",
+    "item_id": "73e1ed3c6c97454e",
+    "assessment": {
+      "item_id": "73e1ed3c6c97454e",
+      "case_id": "natural-033",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "Whole 960x639 comparison shows mild brightening and colour enrichment with dress pattern, translucent pale skirt texture, facial edges, stone and fern detail retained. No conspicuous new cast or broad clipping appears.",
+      "image_sha256": "d38d9459ea01fc625e45190fc8d2e2d72ccc14035a952955a04e402e8e2eb2b0",
+      "sheet": "experiments/functional-v13-20261106/review/old-native/epoch2-narrow/natural-033-01.jpg",
+      "sheet_sha256": "1ab09a367b170536532ee4e45e9aba061971307bde957d439247b5c4445aabd1",
+      "bundle": "epoch2-narrow",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-06T07:58:04.794615+00:00",
+      "original_size_supplement": {
+        "item_id": "73e1ed3c6c97454e",
+        "case_id": "natural-033",
+        "input_sha256": "8ae5778ef6c4e27c227dd0585b94fd52e2b04975e0a7bc3d313a27f5e72e664a",
+        "output_sha256": "d38d9459ea01fc625e45190fc8d2e2d72ccc14035a952955a04e402e8e2eb2b0",
+        "images": [
+          {
+            "role": "INPUT",
+            "path": "experiments/functional-v13-20261106/review/old-native/epoch2-narrow/full-resolution/natural-033-INPUT.png",
+            "sha256": "ccd62abf7ecd3f5a61dd3bdc47e0d5f58bf38e88847c916a5be7222eb738aaec",
+            "size": [
+              960,
+              639
+            ],
+            "pixel_sha256": "44df34f1497aa24217b8c9a59b35b29938dd26af85bc426709e8c22b2a921a20"
+          },
+          {
+            "role": "73e1ed3c6c97454e",
+            "path": "experiments/functional-v13-20261106/review/old-native/epoch2-narrow/full-resolution/natural-033-73e1ed3c6c97454e.png",
+            "sha256": "66a01661fa1673a97bc7fa58fc4224ad26e5a9808d2ed37645cede1ee5ab17e4",
+            "size": [
+              960,
+              639
+            ],
+            "pixel_sha256": "ad1227c1c5e57e1e3f7b253bd39324b9bb493f052efe41b38863300d83155f6f"
+          }
+        ],
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "Whole 960x639 comparison shows mild brightening and colour enrichment with dress pattern, translucent pale skirt texture, facial edges, stone and fern detail retained. No conspicuous new cast or broad clipping appears.",
+        "reviewer": "Codex direct anonymous original-size AI review; not human",
+        "observed_at": "2026-11-06T08:32:04.287679+00:00",
+        "supplements_raw_contact_sheet": true,
+        "manifest_sha256": "d0007c427e8d7cb74a8456368c4a4253dfabf214033d25cebc000b54c4e2a941"
+      },
+      "raw_contact_sheet_assessment": {
+        "item_id": "73e1ed3c6c97454e",
+        "case_id": "natural-033",
+        "completion": "completed",
+        "quality": "uncertain",
+        "evidence": "Foliage and patterned dress become a little brighter and more vivid. Original-size skin and pale-skirt checks are required before accepting quality.",
+        "image_sha256": "d38d9459ea01fc625e45190fc8d2e2d72ccc14035a952955a04e402e8e2eb2b0",
+        "sheet": "experiments/functional-v13-20261106/review/old-native/epoch2-narrow/natural-033-01.jpg",
+        "sheet_sha256": "1ab09a367b170536532ee4e45e9aba061971307bde957d439247b5c4445aabd1",
+        "bundle": "epoch2-narrow",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-06T07:58:04.794615+00:00"
+      },
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        }
+      ],
+      "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained."
+    }
+  },
+  {
+    "case_id": "natural-033",
+    "family": "compound",
+    "language": "en",
+    "item_id": "82cc1e403c35dd01",
+    "assessment": {
+      "item_id": "82cc1e403c35dd01",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "Whole960x639 native input/output directly viewed. Woman, patterned dress and garden become mildly brighter and more vibrant, matching both slight directions. Skin/glasses, dress print, leaves and rock lines remain; bright sky gaps were already bright, without newly dominant broad clipping or coloured blocks. No face-detail recovery claimed; basic quality remains acceptable for the request.",
+      "case_id": "natural-033",
+      "image_sha256": "32d18ca97c3cecd42ae2c9a30dca05aba63ae3e55488c9c9c4151dab5b65762f",
+      "sheet": "experiments/functional-v15-20261106/review/old-native/second-epoch/natural-033-01.jpg",
+      "sheet_sha256": "c2b9f1b69228d5700af021f8a7a5a55499790dda8317b57ca52e9ecedcd3cf7f",
+      "bundle": "second-epoch",
+      "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+      "observed_at": "2026-11-06T19:53:50.365279+00:00",
+      "original_size_supplement": {
+        "item_id": "82cc1e403c35dd01",
+        "case_id": "natural-033",
+        "input_sha256": "8ae5778ef6c4e27c227dd0585b94fd52e2b04975e0a7bc3d313a27f5e72e664a",
+        "output_sha256": "32d18ca97c3cecd42ae2c9a30dca05aba63ae3e55488c9c9c4151dab5b65762f",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/review/old-native/second-epoch/native-pixels/natural-033-INPUT-whole.png",
+            "sha256": "ccd62abf7ecd3f5a61dd3bdc47e0d5f58bf38e88847c916a5be7222eb738aaec",
+            "size": [
+              960,
+              639
+            ],
+            "source": "data/training/functional-v2-20261104/inputs/development-033/original.png",
+            "source_sha256": "8ae5778ef6c4e27c227dd0585b94fd52e2b04975e0a7bc3d313a27f5e72e664a",
+            "source_size": [
+              960,
+              639
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              639
+            ]
+          },
+          {
+            "role": "82cc1e403c35dd01",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/review/old-native/second-epoch/native-pixels/natural-033-82cc1e403c35dd01-whole.png",
+            "sha256": "859fa89bc29379a51df4bf6e697a3a79f7bff16585af5bf9dd12240d409c8015",
+            "size": [
+              960,
+              639
+            ],
+            "source": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/images/natural-033-en.png",
+            "source_sha256": "32d18ca97c3cecd42ae2c9a30dca05aba63ae3e55488c9c9c4151dab5b65762f",
+            "source_size": [
+              960,
+              639
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              639
+            ]
+          }
+        ],
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "Whole960x639 native input/output directly viewed. Woman, patterned dress and garden become mildly brighter and more vibrant, matching both slight directions. Skin/glasses, dress print, leaves and rock lines remain; bright sky gaps were already bright, without newly dominant broad clipping or coloured blocks. No face-detail recovery claimed; basic quality remains acceptable for the request.",
+        "manifest_sha256": "66cece8b98acfdb0c435abc74eac95855363a637330d0b818ef6a42c03a5bfac",
+        "reviewer": "Codex direct anonymous native-pixel AI review; not human",
+        "observed_at": "2026-11-06T19:55:42.543722+00:00",
+        "supplements_raw_contact_sheet": true,
+        "scope": "Native-pixel whole image or explicit integer regions, as listed; whole-frame context from the sheet. No denoising or recovered detail claim."
+      },
+      "raw_contact_sheet_assessment": {
+        "item_id": "82cc1e403c35dd01",
+        "completion": "completed",
+        "quality": "uncertain",
+        "evidence": "Woman/dress and garden become a little brighter and colours richer, matching both requested changes. Native face/dress, leaves and bright sky gaps must be inspected for clipping or an added cast.",
+        "case_id": "natural-033",
+        "image_sha256": "32d18ca97c3cecd42ae2c9a30dca05aba63ae3e55488c9c9c4151dab5b65762f",
+        "sheet": "experiments/functional-v15-20261106/review/old-native/second-epoch/natural-033-01.jpg",
+        "sheet_sha256": "c2b9f1b69228d5700af021f8a7a5a55499790dda8317b57ca52e9ecedcd3cf7f",
+        "bundle": "second-epoch",
+        "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+        "observed_at": "2026-11-06T19:53:50.365279+00:00"
+      },
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        }
+      ],
+      "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained."
+    }
+  },
+  {
+    "case_id": "natural-055",
+    "family": "saturation",
+    "language": "zh",
+    "item_id": "a0a726890a3f8996",
+    "assessment": {
+      "item_id": "a0a726890a3f8996",
+      "case_id": "natural-055",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "红领带、黄色衣物和蓝色饰边略更鲜明，人物肤色和白衣层次保留，未见明显新增大片溢色。",
+      "image_sha256": "b57f05fc6dd3507f2f395a7374e77a68e070d05ededd659643929568cded5067",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/epochs2-4/natural-055-01.jpg",
+      "sheet_sha256": "a0618655c22e106073a4598ec55e63ea5cd3b815488e3e0ab596a029266d7431",
+      "bundle": "epochs2-4",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T18:03:29.907931+00:00",
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/old-native/codex-observations.jsonl",
+        "sha256": "198d190b2d17415e53d2c13e335c55921f9b6b6c2368e6787c125e578f480733"
+      },
+      "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained.",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "e9c69c8d3373794c7e5fa0b7718aacd63dd8e632e38dd6c64aa79bbf226a49e0"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "3468116f178a3eaafb0450b59f7c309d3a69b3f57056b5abdd17c5cd1b5e8855"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "3468116f178a3eaafb0450b59f7c309d3a69b3f57056b5abdd17c5cd1b5e8855"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/parent-editor-only/direct-review.json",
+          "sha256": "629247e609310a64c1855435e654d2b43d3ebbb2002bc97c4cecbe472ea6b66b"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e1/direct-review.json",
+          "sha256": "ae5ae20bfc66fb9104f8e94127d893ce52bfabbca352c8a1cbf0f243c8510e31"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e1/direct-review.json",
+          "sha256": "ae5ae20bfc66fb9104f8e94127d893ce52bfabbca352c8a1cbf0f243c8510e31"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e1/direct-review.json",
+          "sha256": "d7620285f903201122721234e737fc2e15e2d70936b31b23c0c1d562613714be"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e1/direct-review.json",
+          "sha256": "d7620285f903201122721234e737fc2e15e2d70936b31b23c0c1d562613714be"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/round2-parent/direct-review.json",
+          "sha256": "4d44f1a366ebf2609a4a6dd76ccf9f4bcbe920bd4120ff3c0b8b7bbab81def78"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/round2-parent/direct-review.json",
+          "sha256": "4d44f1a366ebf2609a4a6dd76ccf9f4bcbe920bd4120ff3c0b8b7bbab81def78"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e3/direct-review.json",
+          "sha256": "dac7c66cef11ec5f26fc5761ed68cbc3ba304b782f34f676521a7cbc4689a5d0"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e3/direct-review.json",
+          "sha256": "dac7c66cef11ec5f26fc5761ed68cbc3ba304b782f34f676521a7cbc4689a5d0"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-review.json",
+          "sha256": "6f58530b5d17cb093656c5e0d9c1c961988712a5ed429c1a79f45d0ba77bafd2"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-review.json",
+          "sha256": "6f58530b5d17cb093656c5e0d9c1c961988712a5ed429c1a79f45d0ba77bafd2"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e3/direct-review.json",
+          "sha256": "195f85f999e7056c08b3df3d45e3d4b7756f8761e97fea32abebd6d4d267b26c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e3/direct-review.json",
+          "sha256": "195f85f999e7056c08b3df3d45e3d4b7756f8761e97fea32abebd6d4d267b26c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-review.json",
+          "sha256": "90f35389d8695b7aed6d88fd36c01ff813113def0431fba5b2aaaa8ce3fe5f27"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-review.json",
+          "sha256": "90f35389d8695b7aed6d88fd36c01ff813113def0431fba5b2aaaa8ce3fe5f27"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e4/direct-review.json",
+          "sha256": "b1808faa3900c055e303395c5fd20dbbcbb0f9c9ee6556de8341992907ac18df"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e1/direct-review.json",
+          "sha256": "26bd22a80a9dff9a8ab420ef90d0078c2fe0a3bbf157131e68744a3c2853d7c2"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e2/direct-review.json",
+          "sha256": "bd2d22dda31f060fccde0413d3af4c997bbb6c2029b9f8f8cd42a278768cd6a1"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e2/direct-review.json",
+          "sha256": "bd2d22dda31f060fccde0413d3af4c997bbb6c2029b9f8f8cd42a278768cd6a1"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e3/direct-review.json",
+          "sha256": "096dde8d9d0fb4e0d5de692b42dc1fc77651ee55de3f0e28a0f15916d09c528c"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e3/direct-review.json",
+          "sha256": "096dde8d9d0fb4e0d5de692b42dc1fc77651ee55de3f0e28a0f15916d09c528c"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-review.json",
+          "sha256": "1f535a8559280967d5b4260c2ed7a759c8d956731da2419c703260bb8ac74c63"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-review.json",
+          "sha256": "1f535a8559280967d5b4260c2ed7a759c8d956731da2419c703260bb8ac74c63"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-055",
+    "family": "saturation",
+    "language": "en",
+    "item_id": "11f89a21acb63a66",
+    "assessment": {
+      "item_id": "11f89a21acb63a66",
+      "case_id": "natural-055",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "黄色衣服、蓝色饰边和红领带略更鲜明，面部和白色衣料层次保留，没有明显新增大块过曝。",
+      "image_sha256": "f8d84cb4f5b60f5ad169e197d70eddc637b83fbb1f0ddb2474e9a43cc61b2350",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-055-01.jpg",
+      "sheet_sha256": "fd978f9af0920be8493369a2305bbee78567802a1bb03a42c414c81db9eb65fa",
+      "bundle": "first-epoch-and-baselines",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T17:50:10.101823+00:00",
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/old-native/codex-observations.jsonl",
+        "sha256": "198d190b2d17415e53d2c13e335c55921f9b6b6c2368e6787c125e578f480733"
+      },
+      "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained.",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "e9c69c8d3373794c7e5fa0b7718aacd63dd8e632e38dd6c64aa79bbf226a49e0"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-editor-replay/direct-review.json",
+          "sha256": "715093428ca7a865e92cbf5211d7db1d87a2e78b0bc7a6911eb821c680f5a9a7"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-editor-replay/direct-review.json",
+          "sha256": "715093428ca7a865e92cbf5211d7db1d87a2e78b0bc7a6911eb821c680f5a9a7"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "d57351d6700bb2604d67544005ca551a2f68fcbc82f63eaabcb818d2a4fb82bd"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "d57351d6700bb2604d67544005ca551a2f68fcbc82f63eaabcb818d2a4fb82bd"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-new-manual/direct-review.json",
+          "sha256": "a6350469ff8dc7b8f081cdae1a434dfb909afa4dc2ae5156a36bebeeabab6cba"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-new-manual/direct-review.json",
+          "sha256": "a6350469ff8dc7b8f081cdae1a434dfb909afa4dc2ae5156a36bebeeabab6cba"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/parent-editor-only/direct-review.json",
+          "sha256": "629247e609310a64c1855435e654d2b43d3ebbb2002bc97c4cecbe472ea6b66b"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e2/direct-review.json",
+          "sha256": "9e7afeeea140845285264bffe2032a5d8a7f9ff65e474c2ff4560aa2e5a26286"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e3/direct-review.json",
+          "sha256": "c33cd928156431e7ec0d1472e819b6b214d954c2e71d53e659578fdd210f1782"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e4/direct-review.json",
+          "sha256": "43eebc9e2040de84028cab5218b89c1e54793dcc9cf2fef38d38963738e827ca"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e2/direct-review.json",
+          "sha256": "c1269cd417cb4f082d32638c0f08034a80ce34adfb2131fce65438b8a8c83dd1"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e2/direct-review.json",
+          "sha256": "c1269cd417cb4f082d32638c0f08034a80ce34adfb2131fce65438b8a8c83dd1"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e3/direct-review.json",
+          "sha256": "b9dc6f8a766ce1cdc0999a5e2eaf1037f261cc43fa207416538994a6216a2e8f"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e3/direct-review.json",
+          "sha256": "b9dc6f8a766ce1cdc0999a5e2eaf1037f261cc43fa207416538994a6216a2e8f"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e4/direct-review.json",
+          "sha256": "b9dc6f8a766ce1cdc0999a5e2eaf1037f261cc43fa207416538994a6216a2e8f"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e4/direct-review.json",
+          "sha256": "b9dc6f8a766ce1cdc0999a5e2eaf1037f261cc43fa207416538994a6216a2e8f"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/editor-only-round6-parent/direct-review.json",
+          "sha256": "85658f5a2f5ad86f58cfcb4c7cb36daa775c9392a9dfd9d157af027208ddfb7a"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/editor-only-round6-parent/direct-review.json",
+          "sha256": "85658f5a2f5ad86f58cfcb4c7cb36daa775c9392a9dfd9d157af027208ddfb7a"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e1/direct-review.json",
+          "sha256": "915a0d042be46e8ce14b051e843c7c5442ec5d41ab53abe85e25ddbeb871edca"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e1/direct-review.json",
+          "sha256": "915a0d042be46e8ce14b051e843c7c5442ec5d41ab53abe85e25ddbeb871edca"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "757c7adc27edc603271c3ee258f5de3bdd3dca25b9abb1557b32ffa159265e7c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "757c7adc27edc603271c3ee258f5de3bdd3dca25b9abb1557b32ffa159265e7c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e1/direct-review.json",
+          "sha256": "0250fcf39dc5d2ef55d54481caa44cb7a9371794b4e97ebb54cce69eb654999f"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e1/direct-review.json",
+          "sha256": "0250fcf39dc5d2ef55d54481caa44cb7a9371794b4e97ebb54cce69eb654999f"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e2/direct-review.json",
+          "sha256": "e7beead8b810621c9c01bc7df62ab1554ef2bf3fdf2748060406ebce4fbff142"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e2/direct-review.json",
+          "sha256": "e7beead8b810621c9c01bc7df62ab1554ef2bf3fdf2748060406ebce4fbff142"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e3/direct-review.json",
+          "sha256": "17f90e9db44c69b852d741845856bce489d1253f1a6844495b013041ad19a269"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e3/direct-review.json",
+          "sha256": "17f90e9db44c69b852d741845856bce489d1253f1a6844495b013041ad19a269"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e4/direct-review.json",
+          "sha256": "b1808faa3900c055e303395c5fd20dbbcbb0f9c9ee6556de8341992907ac18df"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-019",
+    "family": "compound",
+    "language": "zh",
+    "item_id": "2eef4a498d785381",
+    "assessment": {
+      "item_id": "2eef4a498d785381",
+      "completion": "completed",
+      "quality": "minor_issue",
+      "evidence": "Viewed whole960x720 input and result. The scene is substantially brighter and warmer, with cloud shapes, needles and field texture still present. However, lifted branches and grass acquire a grey-yellow/green veil and visibly flatter tonal separation, reducing naturalness. Both actions are present, but basic quality is not fully acceptable; a minor side effect, not recovered detail.",
+      "case_id": "natural-019",
+      "image_sha256": "350613bb3f3eb1e85e8ad61d49156996793e791087f95c55d5aca4b7511af207",
+      "sheet": "experiments/functional-v18-20261107/review/old-native/epoch1-routes/natural-019-01.jpg",
+      "sheet_sha256": "ffa5a4f0fd96655403833e7ea3535c9271c9b57f2e38a357d82fbe22aac1bb4b",
+      "bundle": "epoch1-routes",
+      "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+      "observed_at": "2026-11-06T21:59:23.986996+00:00",
+      "original_size_supplement": {
+        "item_id": "2eef4a498d785381",
+        "case_id": "natural-019",
+        "input_sha256": "a784ecfdaa611deb2a9f8b3aeeaaf87855f62d8ab124144d4ebddf7becf58d01",
+        "output_sha256": "350613bb3f3eb1e85e8ad61d49156996793e791087f95c55d5aca4b7511af207",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v18-20261107/review/old-native/epoch1-routes/native-pixels/natural-019-INPUT-whole.png",
+            "sha256": "17f5d218c6738e68f87d52a90b3fb660ef117494d35dd1a1ecebf6f1a45397b1",
+            "size": [
+              960,
+              720
+            ],
+            "source": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+            "source_sha256": "a784ecfdaa611deb2a9f8b3aeeaaf87855f62d8ab124144d4ebddf7becf58d01",
+            "source_size": [
+              960,
+              720
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              720
+            ]
+          },
+          {
+            "role": "2eef4a498d785381",
+            "region": "whole",
+            "path": "experiments/functional-v18-20261107/review/old-native/epoch1-routes/native-pixels/natural-019-2eef4a498d785381-whole.png",
+            "sha256": "381f8efcc215648f211582a7d83536d13997b5383f57e2d35a661d6029ad5a1e",
+            "size": [
+              960,
+              720
+            ],
+            "source": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/images/natural-019-zh.png",
+            "source_sha256": "350613bb3f3eb1e85e8ad61d49156996793e791087f95c55d5aca4b7511af207",
+            "source_size": [
+              960,
+              720
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              720
+            ]
+          }
+        ],
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "Viewed whole960x720 input and result. The scene is substantially brighter and warmer, with cloud shapes, needles and field texture still present. However, lifted branches and grass acquire a grey-yellow/green veil and visibly flatter tonal separation, reducing naturalness. Both actions are present, but basic quality is not fully acceptable; a minor side effect, not recovered detail.",
+        "manifest_sha256": "f08adc1d0e4f0d37f2bdd158bf61a524cb4c5ce582d1215e5ce1a6da3f7e5ae0",
+        "reviewer": "Codex direct anonymous native-pixel AI review; not human",
+        "observed_at": "2026-11-06T22:01:49.285221+00:00",
+        "supplements_raw_contact_sheet": true,
+        "scope": "Native-pixel whole image or explicit integer regions, as listed; whole-frame context from the sheet. No denoising or recovered detail claim."
+      },
+      "raw_contact_sheet_assessment": {
+        "item_id": "2eef4a498d785381",
+        "completion": "completed",
+        "quality": "uncertain",
+        "evidence": "The field, branches and evening sky are visibly brighter and warmer, so both requested directions appear. The lifted foreground also looks flatter and yellow-green; inspect native branch/field texture and bright-cloud gradation before final quality grading.",
+        "case_id": "natural-019",
+        "image_sha256": "350613bb3f3eb1e85e8ad61d49156996793e791087f95c55d5aca4b7511af207",
+        "sheet": "experiments/functional-v18-20261107/review/old-native/epoch1-routes/natural-019-01.jpg",
+        "sheet_sha256": "ffa5a4f0fd96655403833e7ea3535c9271c9b57f2e38a357d82fbe22aac1bb4b",
+        "bundle": "epoch1-routes",
+        "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+        "observed_at": "2026-11-06T21:59:23.986996+00:00"
+      },
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        }
+      ],
+      "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained."
+    }
+  },
+  {
+    "case_id": "natural-019",
+    "family": "compound",
+    "language": "en",
+    "item_id": "30ccb6529e91107e",
+    "assessment": {
+      "item_id": "30ccb6529e91107e",
+      "case_id": "natural-019",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "树枝和田野暗部明显更可见，整幅图更明亮且夕照暖色增强，天空云带和针叶轮廓仍保留。",
+      "image_sha256": "3ffde021680142ee179a3ebde1288a7de3b4e8155a7fffaec88bde8623b92d01",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-019-01.jpg",
+      "sheet_sha256": "1e816844911de6d1047945c2053def20e0aea3558dab301f0200d94e52d1561c",
+      "bundle": "first-epoch-and-baselines",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T17:50:25.646282+00:00",
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/old-native/codex-observations.jsonl",
+        "sha256": "198d190b2d17415e53d2c13e335c55921f9b6b6c2368e6787c125e578f480733"
+      },
+      "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained.",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-new-manual/direct-review.json",
+          "sha256": "a6350469ff8dc7b8f081cdae1a434dfb909afa4dc2ae5156a36bebeeabab6cba"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "3468116f178a3eaafb0450b59f7c309d3a69b3f57056b5abdd17c5cd1b5e8855"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/editor-only-round6-parent/direct-review.json",
+          "sha256": "85658f5a2f5ad86f58cfcb4c7cb36daa775c9392a9dfd9d157af027208ddfb7a"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/editor-only-round6-parent/direct-review.json",
+          "sha256": "85658f5a2f5ad86f58cfcb4c7cb36daa775c9392a9dfd9d157af027208ddfb7a"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e1/direct-review.json",
+          "sha256": "915a0d042be46e8ce14b051e843c7c5442ec5d41ab53abe85e25ddbeb871edca"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e1/direct-review.json",
+          "sha256": "915a0d042be46e8ce14b051e843c7c5442ec5d41ab53abe85e25ddbeb871edca"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e3/direct-review.json",
+          "sha256": "dac7c66cef11ec5f26fc5761ed68cbc3ba304b782f34f676521a7cbc4689a5d0"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-review.json",
+          "sha256": "6f58530b5d17cb093656c5e0d9c1c961988712a5ed429c1a79f45d0ba77bafd2"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "757c7adc27edc603271c3ee258f5de3bdd3dca25b9abb1557b32ffa159265e7c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "757c7adc27edc603271c3ee258f5de3bdd3dca25b9abb1557b32ffa159265e7c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e3/direct-review.json",
+          "sha256": "195f85f999e7056c08b3df3d45e3d4b7756f8761e97fea32abebd6d4d267b26c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e3/direct-review.json",
+          "sha256": "195f85f999e7056c08b3df3d45e3d4b7756f8761e97fea32abebd6d4d267b26c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-review.json",
+          "sha256": "90f35389d8695b7aed6d88fd36c01ff813113def0431fba5b2aaaa8ce3fe5f27"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-review.json",
+          "sha256": "90f35389d8695b7aed6d88fd36c01ff813113def0431fba5b2aaaa8ce3fe5f27"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e1/direct-review.json",
+          "sha256": "26bd22a80a9dff9a8ab420ef90d0078c2fe0a3bbf157131e68744a3c2853d7c2"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e1/direct-review.json",
+          "sha256": "26bd22a80a9dff9a8ab420ef90d0078c2fe0a3bbf157131e68744a3c2853d7c2"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e2/direct-review.json",
+          "sha256": "bd2d22dda31f060fccde0413d3af4c997bbb6c2029b9f8f8cd42a278768cd6a1"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e3/direct-review.json",
+          "sha256": "096dde8d9d0fb4e0d5de692b42dc1fc77651ee55de3f0e28a0f15916d09c528c"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e3/direct-review.json",
+          "sha256": "096dde8d9d0fb4e0d5de692b42dc1fc77651ee55de3f0e28a0f15916d09c528c"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-review.json",
+          "sha256": "1f535a8559280967d5b4260c2ed7a759c8d956731da2419c703260bb8ac74c63"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-review.json",
+          "sha256": "1f535a8559280967d5b4260c2ed7a759c8d956731da2419c703260bb8ac74c63"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-init/direct-review.json",
+          "sha256": "e41484daf7e71874c474c4d49885b8300cc5fbc3d0324a1ac00666ae07caa142"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-022",
+    "family": "saturation",
+    "language": "zh",
+    "item_id": "057fff2d6b8277a6",
+    "assessment": {
+      "item_id": "057fff2d6b8277a6",
+      "case_id": "natural-022",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "岩石暖色、绿色灌木和蓝灰天空颜色增强，岩层纹理、云层和前景白石仍有层次。",
+      "image_sha256": "2f7d648768b3d7f9f0582bb7b65e2669d75c7daf0d78ad6cdc5c0667c29e93ba",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-022-01.jpg",
+      "sheet_sha256": "6b7f9f5816ee8d5813880bdf031a942beff4749a467967a25b5740f0568378a2",
+      "bundle": "first-epoch-and-baselines",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T17:50:41.279192+00:00",
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/old-native/codex-observations.jsonl",
+        "sha256": "198d190b2d17415e53d2c13e335c55921f9b6b6c2368e6787c125e578f480733"
+      },
+      "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained.",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "e9c69c8d3373794c7e5fa0b7718aacd63dd8e632e38dd6c64aa79bbf226a49e0"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "e9c69c8d3373794c7e5fa0b7718aacd63dd8e632e38dd6c64aa79bbf226a49e0"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-editor-replay/direct-review.json",
+          "sha256": "715093428ca7a865e92cbf5211d7db1d87a2e78b0bc7a6911eb821c680f5a9a7"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-editor-replay/direct-review.json",
+          "sha256": "715093428ca7a865e92cbf5211d7db1d87a2e78b0bc7a6911eb821c680f5a9a7"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "d57351d6700bb2604d67544005ca551a2f68fcbc82f63eaabcb818d2a4fb82bd"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "d57351d6700bb2604d67544005ca551a2f68fcbc82f63eaabcb818d2a4fb82bd"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-new-manual/direct-review.json",
+          "sha256": "a6350469ff8dc7b8f081cdae1a434dfb909afa4dc2ae5156a36bebeeabab6cba"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-new-manual/direct-review.json",
+          "sha256": "a6350469ff8dc7b8f081cdae1a434dfb909afa4dc2ae5156a36bebeeabab6cba"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "3468116f178a3eaafb0450b59f7c309d3a69b3f57056b5abdd17c5cd1b5e8855"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "3468116f178a3eaafb0450b59f7c309d3a69b3f57056b5abdd17c5cd1b5e8855"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/parent-editor-only/direct-review.json",
+          "sha256": "629247e609310a64c1855435e654d2b43d3ebbb2002bc97c4cecbe472ea6b66b"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/parent-editor-only/direct-review.json",
+          "sha256": "629247e609310a64c1855435e654d2b43d3ebbb2002bc97c4cecbe472ea6b66b"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e1/direct-review.json",
+          "sha256": "ae5ae20bfc66fb9104f8e94127d893ce52bfabbca352c8a1cbf0f243c8510e31"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e1/direct-review.json",
+          "sha256": "ae5ae20bfc66fb9104f8e94127d893ce52bfabbca352c8a1cbf0f243c8510e31"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e2/direct-review.json",
+          "sha256": "9e7afeeea140845285264bffe2032a5d8a7f9ff65e474c2ff4560aa2e5a26286"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e2/direct-review.json",
+          "sha256": "9e7afeeea140845285264bffe2032a5d8a7f9ff65e474c2ff4560aa2e5a26286"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e3/direct-review.json",
+          "sha256": "c33cd928156431e7ec0d1472e819b6b214d954c2e71d53e659578fdd210f1782"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e3/direct-review.json",
+          "sha256": "c33cd928156431e7ec0d1472e819b6b214d954c2e71d53e659578fdd210f1782"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e4/direct-review.json",
+          "sha256": "43eebc9e2040de84028cab5218b89c1e54793dcc9cf2fef38d38963738e827ca"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e4/direct-review.json",
+          "sha256": "43eebc9e2040de84028cab5218b89c1e54793dcc9cf2fef38d38963738e827ca"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e1/direct-review.json",
+          "sha256": "d7620285f903201122721234e737fc2e15e2d70936b31b23c0c1d562613714be"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e1/direct-review.json",
+          "sha256": "d7620285f903201122721234e737fc2e15e2d70936b31b23c0c1d562613714be"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e2/direct-review.json",
+          "sha256": "c1269cd417cb4f082d32638c0f08034a80ce34adfb2131fce65438b8a8c83dd1"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e2/direct-review.json",
+          "sha256": "c1269cd417cb4f082d32638c0f08034a80ce34adfb2131fce65438b8a8c83dd1"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e3/direct-review.json",
+          "sha256": "b9dc6f8a766ce1cdc0999a5e2eaf1037f261cc43fa207416538994a6216a2e8f"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e3/direct-review.json",
+          "sha256": "b9dc6f8a766ce1cdc0999a5e2eaf1037f261cc43fa207416538994a6216a2e8f"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e4/direct-review.json",
+          "sha256": "b9dc6f8a766ce1cdc0999a5e2eaf1037f261cc43fa207416538994a6216a2e8f"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e4/direct-review.json",
+          "sha256": "b9dc6f8a766ce1cdc0999a5e2eaf1037f261cc43fa207416538994a6216a2e8f"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/round2-parent/direct-review.json",
+          "sha256": "4d44f1a366ebf2609a4a6dd76ccf9f4bcbe920bd4120ff3c0b8b7bbab81def78"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/round2-parent/direct-review.json",
+          "sha256": "4d44f1a366ebf2609a4a6dd76ccf9f4bcbe920bd4120ff3c0b8b7bbab81def78"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/editor-only-round6-parent/direct-review.json",
+          "sha256": "85658f5a2f5ad86f58cfcb4c7cb36daa775c9392a9dfd9d157af027208ddfb7a"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/editor-only-round6-parent/direct-review.json",
+          "sha256": "85658f5a2f5ad86f58cfcb4c7cb36daa775c9392a9dfd9d157af027208ddfb7a"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e1/direct-review.json",
+          "sha256": "915a0d042be46e8ce14b051e843c7c5442ec5d41ab53abe85e25ddbeb871edca"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e1/direct-review.json",
+          "sha256": "915a0d042be46e8ce14b051e843c7c5442ec5d41ab53abe85e25ddbeb871edca"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e3/direct-review.json",
+          "sha256": "dac7c66cef11ec5f26fc5761ed68cbc3ba304b782f34f676521a7cbc4689a5d0"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e3/direct-review.json",
+          "sha256": "dac7c66cef11ec5f26fc5761ed68cbc3ba304b782f34f676521a7cbc4689a5d0"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-review.json",
+          "sha256": "6f58530b5d17cb093656c5e0d9c1c961988712a5ed429c1a79f45d0ba77bafd2"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-review.json",
+          "sha256": "6f58530b5d17cb093656c5e0d9c1c961988712a5ed429c1a79f45d0ba77bafd2"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "757c7adc27edc603271c3ee258f5de3bdd3dca25b9abb1557b32ffa159265e7c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "757c7adc27edc603271c3ee258f5de3bdd3dca25b9abb1557b32ffa159265e7c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e3/direct-review.json",
+          "sha256": "195f85f999e7056c08b3df3d45e3d4b7756f8761e97fea32abebd6d4d267b26c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e3/direct-review.json",
+          "sha256": "195f85f999e7056c08b3df3d45e3d4b7756f8761e97fea32abebd6d4d267b26c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-review.json",
+          "sha256": "90f35389d8695b7aed6d88fd36c01ff813113def0431fba5b2aaaa8ce3fe5f27"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-review.json",
+          "sha256": "90f35389d8695b7aed6d88fd36c01ff813113def0431fba5b2aaaa8ce3fe5f27"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/round6-parent-new-runtime/direct-review.json",
+          "sha256": "7e4d602833dd3c0a9b1ecd4a126c93c1114407918abfeb9de00ba7d32210b028"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e1/direct-review.json",
+          "sha256": "0250fcf39dc5d2ef55d54481caa44cb7a9371794b4e97ebb54cce69eb654999f"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e1/direct-review.json",
+          "sha256": "0250fcf39dc5d2ef55d54481caa44cb7a9371794b4e97ebb54cce69eb654999f"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e2/direct-review.json",
+          "sha256": "e7beead8b810621c9c01bc7df62ab1554ef2bf3fdf2748060406ebce4fbff142"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e2/direct-review.json",
+          "sha256": "e7beead8b810621c9c01bc7df62ab1554ef2bf3fdf2748060406ebce4fbff142"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e3/direct-review.json",
+          "sha256": "17f90e9db44c69b852d741845856bce489d1253f1a6844495b013041ad19a269"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e3/direct-review.json",
+          "sha256": "17f90e9db44c69b852d741845856bce489d1253f1a6844495b013041ad19a269"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e4/direct-review.json",
+          "sha256": "b1808faa3900c055e303395c5fd20dbbcbb0f9c9ee6556de8341992907ac18df"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e4/direct-review.json",
+          "sha256": "b1808faa3900c055e303395c5fd20dbbcbb0f9c9ee6556de8341992907ac18df"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e1/direct-review.json",
+          "sha256": "26bd22a80a9dff9a8ab420ef90d0078c2fe0a3bbf157131e68744a3c2853d7c2"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e1/direct-review.json",
+          "sha256": "26bd22a80a9dff9a8ab420ef90d0078c2fe0a3bbf157131e68744a3c2853d7c2"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e2/direct-review.json",
+          "sha256": "bd2d22dda31f060fccde0413d3af4c997bbb6c2029b9f8f8cd42a278768cd6a1"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e2/direct-review.json",
+          "sha256": "bd2d22dda31f060fccde0413d3af4c997bbb6c2029b9f8f8cd42a278768cd6a1"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e3/direct-review.json",
+          "sha256": "096dde8d9d0fb4e0d5de692b42dc1fc77651ee55de3f0e28a0f15916d09c528c"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e3/direct-review.json",
+          "sha256": "096dde8d9d0fb4e0d5de692b42dc1fc77651ee55de3f0e28a0f15916d09c528c"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-review.json",
+          "sha256": "1f535a8559280967d5b4260c2ed7a759c8d956731da2419c703260bb8ac74c63"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-review.json",
+          "sha256": "1f535a8559280967d5b4260c2ed7a759c8d956731da2419c703260bb8ac74c63"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-022",
+    "family": "saturation",
+    "language": "en",
+    "item_id": "057fff2d6b8277a6",
+    "assessment": {
+      "item_id": "057fff2d6b8277a6",
+      "case_id": "natural-022",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "岩石暖色、绿色灌木和蓝灰天空颜色增强，岩层纹理、云层和前景白石仍有层次。",
+      "image_sha256": "2f7d648768b3d7f9f0582bb7b65e2669d75c7daf0d78ad6cdc5c0667c29e93ba",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-022-01.jpg",
+      "sheet_sha256": "6b7f9f5816ee8d5813880bdf031a942beff4749a467967a25b5740f0568378a2",
+      "bundle": "first-epoch-and-baselines",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T17:50:41.279192+00:00",
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/old-native/codex-observations.jsonl",
+        "sha256": "198d190b2d17415e53d2c13e335c55921f9b6b6c2368e6787c125e578f480733"
+      },
+      "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained.",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "d2bfcb606c308ff904245358de18975b56b49cde71ee687e6fac2161e89afd52"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "e9c69c8d3373794c7e5fa0b7718aacd63dd8e632e38dd6c64aa79bbf226a49e0"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "e9c69c8d3373794c7e5fa0b7718aacd63dd8e632e38dd6c64aa79bbf226a49e0"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-editor-replay/direct-review.json",
+          "sha256": "715093428ca7a865e92cbf5211d7db1d87a2e78b0bc7a6911eb821c680f5a9a7"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-editor-replay/direct-review.json",
+          "sha256": "715093428ca7a865e92cbf5211d7db1d87a2e78b0bc7a6911eb821c680f5a9a7"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "d57351d6700bb2604d67544005ca551a2f68fcbc82f63eaabcb818d2a4fb82bd"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "d57351d6700bb2604d67544005ca551a2f68fcbc82f63eaabcb818d2a4fb82bd"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-new-manual/direct-review.json",
+          "sha256": "a6350469ff8dc7b8f081cdae1a434dfb909afa4dc2ae5156a36bebeeabab6cba"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-new-manual/direct-review.json",
+          "sha256": "a6350469ff8dc7b8f081cdae1a434dfb909afa4dc2ae5156a36bebeeabab6cba"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "3468116f178a3eaafb0450b59f7c309d3a69b3f57056b5abdd17c5cd1b5e8855"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "3468116f178a3eaafb0450b59f7c309d3a69b3f57056b5abdd17c5cd1b5e8855"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/parent-editor-only/direct-review.json",
+          "sha256": "629247e609310a64c1855435e654d2b43d3ebbb2002bc97c4cecbe472ea6b66b"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/parent-editor-only/direct-review.json",
+          "sha256": "629247e609310a64c1855435e654d2b43d3ebbb2002bc97c4cecbe472ea6b66b"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e1/direct-review.json",
+          "sha256": "ae5ae20bfc66fb9104f8e94127d893ce52bfabbca352c8a1cbf0f243c8510e31"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e1/direct-review.json",
+          "sha256": "ae5ae20bfc66fb9104f8e94127d893ce52bfabbca352c8a1cbf0f243c8510e31"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e2/direct-review.json",
+          "sha256": "9e7afeeea140845285264bffe2032a5d8a7f9ff65e474c2ff4560aa2e5a26286"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e2/direct-review.json",
+          "sha256": "9e7afeeea140845285264bffe2032a5d8a7f9ff65e474c2ff4560aa2e5a26286"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e3/direct-review.json",
+          "sha256": "c33cd928156431e7ec0d1472e819b6b214d954c2e71d53e659578fdd210f1782"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e3/direct-review.json",
+          "sha256": "c33cd928156431e7ec0d1472e819b6b214d954c2e71d53e659578fdd210f1782"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e4/direct-review.json",
+          "sha256": "43eebc9e2040de84028cab5218b89c1e54793dcc9cf2fef38d38963738e827ca"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e4/direct-review.json",
+          "sha256": "43eebc9e2040de84028cab5218b89c1e54793dcc9cf2fef38d38963738e827ca"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e1/direct-review.json",
+          "sha256": "d7620285f903201122721234e737fc2e15e2d70936b31b23c0c1d562613714be"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e1/direct-review.json",
+          "sha256": "d7620285f903201122721234e737fc2e15e2d70936b31b23c0c1d562613714be"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e2/direct-review.json",
+          "sha256": "c1269cd417cb4f082d32638c0f08034a80ce34adfb2131fce65438b8a8c83dd1"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e2/direct-review.json",
+          "sha256": "c1269cd417cb4f082d32638c0f08034a80ce34adfb2131fce65438b8a8c83dd1"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e3/direct-review.json",
+          "sha256": "b9dc6f8a766ce1cdc0999a5e2eaf1037f261cc43fa207416538994a6216a2e8f"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e3/direct-review.json",
+          "sha256": "b9dc6f8a766ce1cdc0999a5e2eaf1037f261cc43fa207416538994a6216a2e8f"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e4/direct-review.json",
+          "sha256": "b9dc6f8a766ce1cdc0999a5e2eaf1037f261cc43fa207416538994a6216a2e8f"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e4/direct-review.json",
+          "sha256": "b9dc6f8a766ce1cdc0999a5e2eaf1037f261cc43fa207416538994a6216a2e8f"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/round2-parent/direct-review.json",
+          "sha256": "4d44f1a366ebf2609a4a6dd76ccf9f4bcbe920bd4120ff3c0b8b7bbab81def78"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/round2-parent/direct-review.json",
+          "sha256": "4d44f1a366ebf2609a4a6dd76ccf9f4bcbe920bd4120ff3c0b8b7bbab81def78"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/editor-only-round6-parent/direct-review.json",
+          "sha256": "85658f5a2f5ad86f58cfcb4c7cb36daa775c9392a9dfd9d157af027208ddfb7a"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/editor-only-round6-parent/direct-review.json",
+          "sha256": "85658f5a2f5ad86f58cfcb4c7cb36daa775c9392a9dfd9d157af027208ddfb7a"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e1/direct-review.json",
+          "sha256": "915a0d042be46e8ce14b051e843c7c5442ec5d41ab53abe85e25ddbeb871edca"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e1/direct-review.json",
+          "sha256": "915a0d042be46e8ce14b051e843c7c5442ec5d41ab53abe85e25ddbeb871edca"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e3/direct-review.json",
+          "sha256": "dac7c66cef11ec5f26fc5761ed68cbc3ba304b782f34f676521a7cbc4689a5d0"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e3/direct-review.json",
+          "sha256": "dac7c66cef11ec5f26fc5761ed68cbc3ba304b782f34f676521a7cbc4689a5d0"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-review.json",
+          "sha256": "6f58530b5d17cb093656c5e0d9c1c961988712a5ed429c1a79f45d0ba77bafd2"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-review.json",
+          "sha256": "6f58530b5d17cb093656c5e0d9c1c961988712a5ed429c1a79f45d0ba77bafd2"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "757c7adc27edc603271c3ee258f5de3bdd3dca25b9abb1557b32ffa159265e7c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "757c7adc27edc603271c3ee258f5de3bdd3dca25b9abb1557b32ffa159265e7c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "43053a54b12fab1e353898c51f7e212df4fca3dd1be4bf57d084c9a131b26969"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e3/direct-review.json",
+          "sha256": "195f85f999e7056c08b3df3d45e3d4b7756f8761e97fea32abebd6d4d267b26c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e3/direct-review.json",
+          "sha256": "195f85f999e7056c08b3df3d45e3d4b7756f8761e97fea32abebd6d4d267b26c"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-review.json",
+          "sha256": "90f35389d8695b7aed6d88fd36c01ff813113def0431fba5b2aaaa8ce3fe5f27"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-review.json",
+          "sha256": "90f35389d8695b7aed6d88fd36c01ff813113def0431fba5b2aaaa8ce3fe5f27"
+        },
+        {
+          "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/round6-parent-new-runtime/direct-review.json",
+          "sha256": "7e4d602833dd3c0a9b1ecd4a126c93c1114407918abfeb9de00ba7d32210b028"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e1/direct-review.json",
+          "sha256": "0250fcf39dc5d2ef55d54481caa44cb7a9371794b4e97ebb54cce69eb654999f"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e1/direct-review.json",
+          "sha256": "0250fcf39dc5d2ef55d54481caa44cb7a9371794b4e97ebb54cce69eb654999f"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e2/direct-review.json",
+          "sha256": "e7beead8b810621c9c01bc7df62ab1554ef2bf3fdf2748060406ebce4fbff142"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e2/direct-review.json",
+          "sha256": "e7beead8b810621c9c01bc7df62ab1554ef2bf3fdf2748060406ebce4fbff142"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e3/direct-review.json",
+          "sha256": "17f90e9db44c69b852d741845856bce489d1253f1a6844495b013041ad19a269"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e3/direct-review.json",
+          "sha256": "17f90e9db44c69b852d741845856bce489d1253f1a6844495b013041ad19a269"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e4/direct-review.json",
+          "sha256": "b1808faa3900c055e303395c5fd20dbbcbb0f9c9ee6556de8341992907ac18df"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e4/direct-review.json",
+          "sha256": "b1808faa3900c055e303395c5fd20dbbcbb0f9c9ee6556de8341992907ac18df"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e1/direct-review.json",
+          "sha256": "26bd22a80a9dff9a8ab420ef90d0078c2fe0a3bbf157131e68744a3c2853d7c2"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e1/direct-review.json",
+          "sha256": "26bd22a80a9dff9a8ab420ef90d0078c2fe0a3bbf157131e68744a3c2853d7c2"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e2/direct-review.json",
+          "sha256": "bd2d22dda31f060fccde0413d3af4c997bbb6c2029b9f8f8cd42a278768cd6a1"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e2/direct-review.json",
+          "sha256": "bd2d22dda31f060fccde0413d3af4c997bbb6c2029b9f8f8cd42a278768cd6a1"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e3/direct-review.json",
+          "sha256": "096dde8d9d0fb4e0d5de692b42dc1fc77651ee55de3f0e28a0f15916d09c528c"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e3/direct-review.json",
+          "sha256": "096dde8d9d0fb4e0d5de692b42dc1fc77651ee55de3f0e28a0f15916d09c528c"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-review.json",
+          "sha256": "1f535a8559280967d5b4260c2ed7a759c8d956731da2419c703260bb8ac74c63"
+        },
+        {
+          "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-review.json",
+          "sha256": "1f535a8559280967d5b4260c2ed7a759c8d956731da2419c703260bb8ac74c63"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-030",
+    "family": "lighting",
+    "language": "zh",
+    "item_id": "4b9606b4a69be465",
+    "assessment": {
+      "case_id": "natural-030",
+      "completion": "partial",
+      "quality": "acceptable",
+      "evidence": "The road and trees darken slightly but not by the requested large amount.",
+      "item_id": "4b9606b4a69be465",
+      "image_sha256": "10387b21c4f4c4f4bc1074680806f47425779ded74f11b66b4ba0b6598a6fb4a",
+      "sheet": "experiments/functional-v6-20261105/review/old-native/baselines-e1/natural-030-01.jpg",
+      "sheet_sha256": "605ac5035785f86a28af4f5631dada5544569780b11558f1334cefaf714e7701",
+      "bundle": "baselines-e1",
+      "reviewer": "Codex direct visual review; AI-assisted, not human",
+      "observed_at": "2026-11-05T06:50:26.931843+00:00",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e1/direct-review.json",
+          "sha256": "9d7e0a14b0339144d29cea5860a4ff16cd74cb574345b3713a5b085fbb600cb2"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/round2-parent/direct-review.json",
+          "sha256": "4d44f1a366ebf2609a4a6dd76ccf9f4bcbe920bd4120ff3c0b8b7bbab81def78"
+        }
+      ],
+      "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained."
+    }
+  },
+  {
+    "case_id": "natural-030",
+    "family": "lighting",
+    "language": "en",
+    "item_id": "969944634489fcfb",
+    "assessment": {
+      "item_id": "969944634489fcfb",
+      "case_id": "natural-030",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "The woodland road darkens substantially across bright sky gaps, road, trunks and leaf litter. Yellow lines, branches and moss remain distinguishable without an added hue change.",
+      "image_sha256": "17b02cd61e37450f190fdd77209de8dd143909b0e84179580a81d6dc1d0812af",
+      "sheet": "experiments/functional-v11-20261106/review/old-native/editor-control/natural-030-01.jpg",
+      "sheet_sha256": "694b9ec3499e0d31b4a77a9085a1f0480017ffeb5d194e66834fc3d8d5b3cd85",
+      "bundle": "editor-control",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-06T00:30:44.737824+00:00",
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/old-native/codex-observations.jsonl",
+        "sha256": "bd14fac32902037b607cd308b684578c2773d917c69a6de2357701c36bbb2aa3"
+      },
+      "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained.",
+      "reuse_source": {
+        "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+        "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+      },
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "e9c69c8d3373794c7e5fa0b7718aacd63dd8e632e38dd6c64aa79bbf226a49e0"
+        },
+        {
+          "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-editor-replay/direct-review.json",
+          "sha256": "715093428ca7a865e92cbf5211d7db1d87a2e78b0bc7a6911eb821c680f5a9a7"
+        },
+        {
+          "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "d57351d6700bb2604d67544005ca551a2f68fcbc82f63eaabcb818d2a4fb82bd"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/matched-narrow-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-review.json",
+          "sha256": "7e47acb1a903d4c8247f70f1fb8894e342440342b1c9f0f140bacb8f235fca05"
+        },
+        {
+          "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/direct-review.json",
+          "sha256": "11ba155568e7c19a91aaa1039d14588c835d4512311c8f7d1faa323fc131875c"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "3468116f178a3eaafb0450b59f7c309d3a69b3f57056b5abdd17c5cd1b5e8855"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e5af30187562e03838f3741c9256470f0e03d989372e41839b85cdb2d244e1b8"
+        },
+        {
+          "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/parent-editor-only/direct-review.json",
+          "sha256": "629247e609310a64c1855435e654d2b43d3ebbb2002bc97c4cecbe472ea6b66b"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-review.json",
+          "sha256": "9396f4b7cca9a74eb88146579149c88a585eff462fc47738cadd0621582f792f"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e1/direct-review.json",
+          "sha256": "1c66471cdde3c61803a2278629ca1429f34f4fd8db364d41b6651edb16fef829"
+        },
+        {
+          "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-review.json",
+          "sha256": "5b47bb06b82c534acdd0edb3270d22d4b44cfa207614f20f8044d0502895c5c7"
+        }
+      ]
+    }
+  }
+]

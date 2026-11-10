@@ -1,0 +1,96 @@
+{
+  "at": "2026-11-06T12:07:32.632912+00:00",
+  "status": "audit_completed_not_a_functional_result",
+  "parent_sha256": "12243ea5f08ab9e2e75b082fd6e6a1e6e8b1efbd7eb4e102be3563ba084c4a56",
+  "variants": {
+    "adapter_reloaded_inference": {
+      "selected": {
+        "base_model.model.model.visual.patch_embed.proj.weight": "torch.bfloat16",
+        "base_model.model.model.language_model.embed_tokens.weight": "torch.bfloat16",
+        "base_model.model.model.language_model.layers.0.input_layernorm.weight": "torch.bfloat16",
+        "base_model.model.model.language_model.norm.weight": "torch.bfloat16",
+        "base_model.model.lm_head.weight": "torch.bfloat16"
+      },
+      "all_parameter_dtypes": {
+        "torch.bfloat16": 371,
+        "torch.uint8": 358,
+        "torch.float32": 116
+      }
+    },
+    "training_prepared_eval": {
+      "selected": {
+        "base_model.model.model.visual.patch_embed.proj.weight": "torch.float32",
+        "base_model.model.model.language_model.embed_tokens.weight": "torch.float32",
+        "base_model.model.model.language_model.layers.0.input_layernorm.weight": "torch.float32",
+        "base_model.model.model.language_model.norm.weight": "torch.float32",
+        "base_model.model.lm_head.weight": "torch.float32"
+      },
+      "all_parameter_dtypes": {
+        "torch.float32": 487,
+        "torch.uint8": 358
+      }
+    }
+  },
+  "records": [
+    {
+      "variant": "adapter_reloaded_inference",
+      "case_id": "train-native-078",
+      "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 65,\n    \"contrast\": 20,\n    \"shadows\": 65,\n    \"saturation\": 20\n  }\n}\n```",
+      "last_logits_sha256": "15f70a96115d616146986157acbfafd1bd5d32d3d6565995e5fa86c9055f4299",
+      "max_last_logit_difference": 0.0,
+      "exact_logits_identical_to_reload": true,
+      "greedy_response_identical_to_reload": true
+    },
+    {
+      "variant": "adapter_reloaded_inference",
+      "case_id": "train-native-144",
+      "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"sepia\": 0\n  }\n}\n```",
+      "last_logits_sha256": "6346e5006e794d1fc7cde294c4cebd9c057556b4a50cd3be2fa733a3135c73bb",
+      "max_last_logit_difference": 0.0,
+      "exact_logits_identical_to_reload": true,
+      "greedy_response_identical_to_reload": true
+    },
+    {
+      "variant": "adapter_reloaded_inference",
+      "case_id": "train-extension-396",
+      "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 20,\n    \"contrast\": 8\n  }\n}\n```",
+      "last_logits_sha256": "89aa6fd27562660804fad49aeb5083681877a3ec539d9499f010f58429d2792a",
+      "max_last_logit_difference": 0.0,
+      "exact_logits_identical_to_reload": true,
+      "greedy_response_identical_to_reload": true
+    },
+    {
+      "variant": "training_prepared_eval",
+      "case_id": "train-native-078",
+      "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 65,\n    \"contrast\": 20,\n    \"shadows\": 65,\n    \"saturation\": 20\n  }\n}\n```",
+      "last_logits_sha256": "ea3d8b2a7740e9169ce475a83b867ceccd35a7800c133e77130cf6abcc99caf7",
+      "max_last_logit_difference": 0.46875,
+      "exact_logits_identical_to_reload": false,
+      "greedy_response_identical_to_reload": true
+    },
+    {
+      "variant": "training_prepared_eval",
+      "case_id": "train-native-144",
+      "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"sepia\": 0\n  }\n}\n```",
+      "last_logits_sha256": "ae8bed2522e09bc8b4896815b5f41c9ad04e6f9714b91c5c5951b07ade4abd05",
+      "max_last_logit_difference": 0.75,
+      "exact_logits_identical_to_reload": false,
+      "greedy_response_identical_to_reload": true
+    },
+    {
+      "variant": "training_prepared_eval",
+      "case_id": "train-extension-396",
+      "response": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 20,\n    \"contrast\": 8\n  }\n}\n```",
+      "last_logits_sha256": "abaf2647260f10758a2f2ad06b1da254fb48cd570e02a35f8075a27aa14d738c",
+      "max_last_logit_difference": 0.576171875,
+      "exact_logits_identical_to_reload": false,
+      "greedy_response_identical_to_reload": true
+    }
+  ],
+  "optimizer_steps": 0,
+  "model_parameters_changed": false,
+  "training_prefixes_only": true,
+  "development_or_acceptance_inputs_used": false,
+  "round14_runtime_changed": false,
+  "limitation": "3 training-pool English prefixes and one parent checkpoint only. Dtype/logit/response differences are implementation diagnostics, not evidence that either variant edits better. No policy training, new labels or image quality grades."
+}

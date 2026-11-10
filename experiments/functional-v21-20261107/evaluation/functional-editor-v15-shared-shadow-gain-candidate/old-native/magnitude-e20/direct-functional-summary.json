@@ -1,0 +1,61 @@
+{
+  "model_id": "magnitude-e20",
+  "status": "completed",
+  "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+  "human_review": false,
+  "reviewed_outputs": 12,
+  "missing_unique_images": [],
+  "fully_completed_both_languages": 5,
+  "raw_individual_completed_both_languages": 5,
+  "identical_strength_pairs": [],
+  "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+  "photo_groups": 6,
+  "all_tasks_complete_photo_groups": 5,
+  "major_quality_issues": 0,
+  "major_issue_cases": [],
+  "per_family": {
+    "compound": {
+      "completed": 1,
+      "cases": 2
+    },
+    "lighting": {
+      "completed": 2,
+      "cases": 2
+    },
+    "saturation": {
+      "completed": 2,
+      "cases": 2
+    }
+  },
+  "per_language": {
+    "zh": {
+      "completed": 5,
+      "partial": 1
+    },
+    "en": {
+      "completed": 6
+    }
+  },
+  "per_domain": {
+    "portrait": {
+      "completed": 3,
+      "cases": 3
+    },
+    "landscape": {
+      "completed": 2,
+      "cases": 3
+    }
+  },
+  "selection_uses_L1": false,
+  "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+  "review_sha256": "07e470f343a41e5e40e4c13cd27e9552617f7edffc1156a74c60c43769b09be1",
+  "declined_language_outputs": 0,
+  "declined_semantic_cases": 0,
+  "refusal_policy": "Declines count as uncompleted requested edits; refusal correctness is assessed separately; no result image returned.",
+  "original_size_supplement_count": 1,
+  "review_derivation": "experiments/functional-v21-20261107/review-derivation/old-screen-final/review/old-native/derivation.json",
+  "review_derivation_sha256": "d55bdbd32d90bbd3e5078d69607ac886dfa453427835be02b48881d01c2c912c",
+  "raw_visual_notes_immutable": true,
+  "inference_performed": true,
+  "runtime": "functional_v21.runtime"
+}

@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-06T19:35:03.227001+00:00",
+  "original_path": "experiments/functional-v15-20261106/epoch1-stage1-decision-before-parent-inference-metadata-correction.json",
+  "original_sha256": "695279f55474953ddde039ddadc87bfcf43f9da56b0fdb77cabb7f455ce1690d",
+  "corrected_sha256": "74bf7756010ef05593b8bf762ecb326455252b4d08d20814ee3141af4c1b6028",
+  "only_changed_field": "results.parent-editor-only.new_model_inference_performed",
+  "before": true,
+  "after": false,
+  "grades_gates_and_decisions_unchanged": true,
+  "reason": "Copied prior stage1 helper compared against the old parent-frozen identifier. R15 CPU replay is parent-editor-only, zero new model forwards. Comparator corrected for subsequent decisions."
+}

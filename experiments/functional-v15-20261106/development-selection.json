@@ -1,0 +1,847 @@
+{
+  "at": "2026-11-06T19:55:51.947783+00:00",
+  "status": "failed_practical_gate",
+  "qualified": false,
+  "promoted": false,
+  "selected_model_id": null,
+  "route": null,
+  "trial_default_changed": false,
+  "models": {
+    "functional-v15-shadow-correction-20261127": {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "evaluation_id": "language-merger-e1",
+      "display_name": "第十五轮 · 阴影标签修正 · 第1轮（未通过）",
+      "trial_status": "实验模型，AI辅助评审；原始开发16/20、受控75/100，未过功能门槛，仅供诊断试用。未知照片可能漏项、损伤画质或误拒绝；拒绝时不返回编辑结果。",
+      "adapter": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "adapter_sha256": "97c84f1799fb319799c86515402574b3b585593763e5388eb30d0df3e0d6ea90",
+      "origin": "base",
+      "full_weight_origin": {
+        "path": "models/Qwen2.5-VL-7B-Instruct",
+        "shards": [
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00001-of-00005.safetensors",
+            "sha256": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+            "bytes": 3900233256,
+            "mtime_ns": 1793432463546824622
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00002-of-00005.safetensors",
+            "sha256": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+            "bytes": 3864726320,
+            "mtime_ns": 1793432503644001111
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00003-of-00005.safetensors",
+            "sha256": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+            "bytes": 3864726424,
+            "mtime_ns": 1793432545341217818
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00004-of-00005.safetensors",
+            "sha256": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+            "bytes": 3864733680,
+            "mtime_ns": 1793432587834451242
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00005-of-00005.safetensors",
+            "sha256": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67",
+            "bytes": 1089994880,
+            "mtime_ns": 1793432599234781102
+          }
+        ],
+        "architecture": {
+          "hidden_size": 3584,
+          "intermediate_size": 18944,
+          "num_hidden_layers": 28,
+          "num_attention_heads": 28,
+          "num_key_value_heads": 4,
+          "vocab_size": 152064
+        },
+        "assets": {
+          "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "chat_template.json": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+          "model-info.json": "3f375296723cbb910e9c3350730e3395342ead9cb7ac0ec355a25dcefe5bf532",
+          "tokenizer_config.json": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+          "config.json": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+          "generation_config.json": "0a3aea82869fe29f20dc95ccf3e2bcff380eca1f5ad6447a4a4b37110b08e43e",
+          "model.safetensors.index.json": "73b333b0b16e5286ddba615d2caebcd495cf7e616f52eb217a81781393d79de9",
+          "preprocessor_config.json": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+          "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+        },
+        "prior_integrity_file": "configs/evaluation-weight-integrity-v1.json",
+        "prior_integrity_sha256": "43a0961e25db0e05dc92c69e4e7b520ac0fb8531420223dc6daf45f75257cbd1",
+        "source": "Pinned original Qwen revision cc594898137f460bfe9f0759e9844b3ce807cfb5"
+      },
+      "parent": "experiments/functional-v11-20261106/runs/language_merger-seed-20261123/final",
+      "parent_sha256": "12243ea5f08ab9e2e75b082fd6e6a1e6e8b1efbd7eb4e102be3563ba084c4a56",
+      "parent_status": "Failed R11 research candidate; identical parameters under editor15 separately reviewed before training.",
+      "initial_adapter": "One adapter;116 parent tensors exact including4 trained merger. Same narrow route as R13; no new vision blocks.",
+      "trainable_tensors": 116,
+      "trainable_parameters": 2674688,
+      "reviewed_shadow_targets": 132,
+      "repaired_decisions": 11,
+      "checkpoint": "experiments/functional-v15-20261106/runs/language_merger-seed-20261127/checkpoint-463",
+      "epoch": 1,
+      "step": 463,
+      "runtime_family": "functional_v15",
+      "training_route": "language_merger",
+      "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+      "schema": "functional-outcome-v1",
+      "dataset_sha256": "923a45f1b53c8429b55fdbec9db5a75adb2139650af1a049eb5b6f4dd8fe1546",
+      "cases_sha256": "e6d8e902cecb1abeae21bb9eb7c5563e236f19cf32a110ee0531c153382a71bc",
+      "actual_training_data": "data/training/functional-v15-20261106/train-accepted.json",
+      "semantic_cases": 925,
+      "training_records": 1850,
+      "original_photo_groups": 240,
+      "photo_domains": {
+        "portrait": 120,
+        "landscape": 120
+      },
+      "new_original_groups": 0,
+      "new_semantic_cases": 0,
+      "new_independent_label_reviews": 0,
+      "original_GIER_English_cases": 154,
+      "AI_authored_cases": 771,
+      "outcome_counts": {
+        "edit": 780,
+        "decline": 65,
+        "keep": 80
+      },
+      "status": "diagnostic_trial_only_not_promoted",
+      "diagnostic_choice": "Earliest stage1-eligible checkpoint, or epoch1 if neither eligible. All eligible checkpoints failed controlled gates; not a qualified champion or default recommendation.",
+      "load_method": "Audited original Qwen full weights plus this ONE adapter, exact frozen R11 prompt/parser, independent R15 editor and R15 runtime as offline.",
+      "native_development_summary": {
+        "model_id": "language-merger-e1",
+        "status": "completed",
+        "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+        "human_review": false,
+        "reviewed_outputs": 40,
+        "missing_unique_images": [],
+        "fully_completed_both_languages": 16,
+        "raw_individual_completed_both_languages": 16,
+        "identical_strength_pairs": [],
+        "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+        "photo_groups": 20,
+        "all_tasks_complete_photo_groups": 16,
+        "major_quality_issues": 0,
+        "major_issue_cases": [],
+        "per_family": {
+          "brown_tone": {
+            "completed": 1,
+            "cases": 1
+          },
+          "compound": {
+            "completed": 4,
+            "cases": 6
+          },
+          "contrast": {
+            "completed": 1,
+            "cases": 1
+          },
+          "lighting": {
+            "completed": 6,
+            "cases": 7
+          },
+          "saturation": {
+            "completed": 3,
+            "cases": 4
+          },
+          "white_balance": {
+            "completed": 1,
+            "cases": 1
+          }
+        },
+        "per_language": {
+          "zh": {
+            "completed": 17,
+            "partial": 2,
+            "uncertain": 1
+          },
+          "en": {
+            "completed": 17,
+            "uncertain": 2,
+            "failed": 1
+          }
+        },
+        "per_domain": {
+          "portrait": {
+            "completed": 9,
+            "cases": 10
+          },
+          "landscape": {
+            "completed": 7,
+            "cases": 10
+          }
+        },
+        "selection_uses_L1": false,
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+        "review_sha256": "39f282e7591d7681ac602d82de9ffb3c410fd95b826c27c26879d0b7077c0b3e",
+        "declined_language_outputs": 1,
+        "declined_semantic_cases": 1,
+        "refusal_policy": "Every decline on these feasible tasks is uncompleted; no result image is returned.",
+        "original_size_supplement_count": 1,
+        "review_derivation": "experiments/functional-v15-20261106/review-derivation/epoch1-final/review/native-development/derivation.json",
+        "review_derivation_sha256": "9117e0d0a24160bae9df85bc8d71c71624f2eb72d9cc79f19d828225b75ebf7d",
+        "raw_visual_notes_immutable": true,
+        "inference_performed": true,
+        "runtime": "functional_v15.runtime"
+      },
+      "old_native_summary": {
+        "model_id": "language-merger-e1",
+        "status": "completed",
+        "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+        "human_review": false,
+        "reviewed_outputs": 12,
+        "missing_unique_images": [],
+        "fully_completed_both_languages": 4,
+        "raw_individual_completed_both_languages": 4,
+        "identical_strength_pairs": [],
+        "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+        "photo_groups": 6,
+        "all_tasks_complete_photo_groups": 4,
+        "major_quality_issues": 0,
+        "major_issue_cases": [],
+        "per_family": {
+          "compound": {
+            "completed": 2,
+            "cases": 2
+          },
+          "lighting": {
+            "completed": 0,
+            "cases": 2
+          },
+          "saturation": {
+            "completed": 2,
+            "cases": 2
+          }
+        },
+        "per_language": {
+          "zh": {
+            "completed": 5,
+            "partial": 1
+          },
+          "en": {
+            "completed": 6
+          }
+        },
+        "per_domain": {
+          "portrait": {
+            "completed": 2,
+            "cases": 3
+          },
+          "landscape": {
+            "completed": 2,
+            "cases": 3
+          }
+        },
+        "selection_uses_L1": false,
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+        "review_sha256": "0ad6eb96d4bf4b21705f8ace4b542442a715511309049bd171c79071d9ba9862",
+        "declined_language_outputs": 0,
+        "declined_semantic_cases": 0,
+        "refusal_policy": "Every decline on these feasible tasks is uncompleted; no result image is returned.",
+        "original_size_supplement_count": 1,
+        "review_derivation": "experiments/functional-v15-20261106/review-derivation/epoch1-final/review/old-native/derivation.json",
+        "review_derivation_sha256": "88eab3525daff09c5f9c296c0eb6434743435232ec253dab8632d7558a35d3a5",
+        "raw_visual_notes_immutable": true,
+        "inference_performed": true,
+        "runtime": "functional_v15.runtime"
+      },
+      "decision_summary": {
+        "at": "2026-11-06T19:31:01.543069+00:00",
+        "model_id": "language-merger-e1",
+        "status": "completed",
+        "semantic_cases": 20,
+        "original_photo_groups": 10,
+        "passed_both_languages": 20,
+        "language_records": [
+          {
+            "case_id": "decision-dev-native-dev-001-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-001-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-001-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-001-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-067-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-067-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-067-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-067-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-016-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-016-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-016-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-016-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-006-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-006-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-006-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-006-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-011-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-011-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-011-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-011-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-161-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-161-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-161-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-161-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-100-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-100-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-100-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-100-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-002-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-002-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-002-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-002-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-148-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-148-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-148-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-148-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-004-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-004-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-004-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-004-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          }
+        ],
+        "assessment": "Deterministic decision-schema and exact-pixel/no-output contract checks; not a visual editing score or human judgment.",
+        "cases_sha256": "36684e39bab8e7d2365e21219b3823a2212546c62d620dd2a0b056d9d6438378"
+      },
+      "controlled_development_summary": {
+        "model_id": "language-merger-e1",
+        "status": "completed",
+        "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+        "human_review": false,
+        "reviewed_outputs": 200,
+        "missing_unique_images": [],
+        "fully_completed_both_languages": 75,
+        "raw_individual_completed_both_languages": 75,
+        "identical_strength_pairs": [],
+        "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+        "photo_groups": 20,
+        "all_tasks_complete_photo_groups": 1,
+        "major_quality_issues": 1,
+        "major_issue_cases": [
+          "development-028-restore-saturation-mild"
+        ],
+        "per_family": {
+          "brown_tone": {
+            "completed": 8,
+            "cases": 8
+          },
+          "compound": {
+            "completed": 8,
+            "cases": 10
+          },
+          "contrast": {
+            "completed": 13,
+            "cases": 20
+          },
+          "identity": {
+            "completed": 10,
+            "cases": 10
+          },
+          "lighting": {
+            "completed": 16,
+            "cases": 24
+          },
+          "saturation": {
+            "completed": 15,
+            "cases": 20
+          },
+          "white_balance": {
+            "completed": 5,
+            "cases": 8
+          }
+        },
+        "per_language": {
+          "zh": {
+            "completed": 79,
+            "partial": 20,
+            "uncertain": 1
+          },
+          "en": {
+            "completed": 79,
+            "partial": 20,
+            "uncertain": 1
+          }
+        },
+        "per_domain": {
+          "portrait": {
+            "completed": 36,
+            "cases": 50
+          },
+          "landscape": {
+            "completed": 39,
+            "cases": 50
+          }
+        },
+        "selection_uses_L1": false,
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+        "review_sha256": "f733f1b979f35a1ee9b63c0b353b9bfb581dcefd721866c4b3f2fb112f3e7e37",
+        "declined_language_outputs": 0,
+        "declined_semantic_cases": 0,
+        "refusal_policy": "Every decline on these feasible tasks is uncompleted; no result image is returned.",
+        "original_size_supplement_count": 6,
+        "review_derivation": "experiments/functional-v15-20261106/review-derivation/stage2-final/review/development/derivation.json",
+        "review_derivation_sha256": "a302f3f52cbf1d289e22a7fb98eadae095287d1ce726396a6ec8da7a4a8ea5bc",
+        "raw_visual_notes_immutable": true,
+        "inference_performed": true,
+        "runtime": "functional_v15.runtime"
+      },
+      "training_protocol_sha256": "850927ab7930df962ba1c5840a11ed50519f21e25f106c0b0ab121be4148f726",
+      "evaluation_protocol_sha256": "4ae5df9884f5244d873b35ed88a36ac70a7ba4e7c66161987fb856aa801e46a7",
+      "origin_audit_sha256": "c0270a4d29c17daf94d3eb5f4df86c1ae7e31f59067e20022feee5d232f7d65f"
+    }
+  },
+  "stage1": {
+    "at": "2026-11-06T19:55:50.064339+00:00",
+    "results": {
+      "parent-editor-only": {
+        "native_completed": 15,
+        "native_major": 0,
+        "old_completed": 4,
+        "old_major": 0,
+        "decision_controls": 20,
+        "native_refusals": 1,
+        "old_refusals": 0,
+        "new_model_inference_performed": false,
+        "stage1_passed": false
+      },
+      "language-merger-e1": {
+        "native_completed": 16,
+        "native_major": 0,
+        "old_completed": 4,
+        "old_major": 0,
+        "decision_controls": 20,
+        "native_refusals": 1,
+        "old_refusals": 0,
+        "new_model_inference_performed": true,
+        "stage1_passed": true
+      },
+      "language-merger-e2": {
+        "native_completed": 16,
+        "native_major": 0,
+        "old_completed": 3,
+        "old_major": 0,
+        "decision_controls": 20,
+        "native_refusals": 1,
+        "old_refusals": 0,
+        "new_model_inference_performed": true,
+        "stage1_passed": false
+      }
+    },
+    "qualified_checkpoints": [
+      "language-merger-e1"
+    ],
+    "stage2_required_before_selection": true,
+    "evaluation_protocol_sha256": "4ae5df9884f5244d873b35ed88a36ac70a7ba4e7c66161987fb856aa801e46a7",
+    "training_protocol_sha256": "850927ab7930df962ba1c5840a11ed50519f21e25f106c0b0ab121be4148f726",
+    "L1_used": false,
+    "independent_user_feedback": 0,
+    "final_acceptance_closed": true
+  },
+  "controlled_summaries": {
+    "language-merger-e1": {
+      "model_id": "language-merger-e1",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 200,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 75,
+      "raw_individual_completed_both_languages": 75,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 20,
+      "all_tasks_complete_photo_groups": 1,
+      "major_quality_issues": 1,
+      "major_issue_cases": [
+        "development-028-restore-saturation-mild"
+      ],
+      "per_family": {
+        "brown_tone": {
+          "completed": 8,
+          "cases": 8
+        },
+        "compound": {
+          "completed": 8,
+          "cases": 10
+        },
+        "contrast": {
+          "completed": 13,
+          "cases": 20
+        },
+        "identity": {
+          "completed": 10,
+          "cases": 10
+        },
+        "lighting": {
+          "completed": 16,
+          "cases": 24
+        },
+        "saturation": {
+          "completed": 15,
+          "cases": 20
+        },
+        "white_balance": {
+          "completed": 5,
+          "cases": 8
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 79,
+          "partial": 20,
+          "uncertain": 1
+        },
+        "en": {
+          "completed": 79,
+          "partial": 20,
+          "uncertain": 1
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 36,
+          "cases": 50
+        },
+        "landscape": {
+          "completed": 39,
+          "cases": 50
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+      "review_sha256": "f733f1b979f35a1ee9b63c0b353b9bfb581dcefd721866c4b3f2fb112f3e7e37",
+      "declined_language_outputs": 0,
+      "declined_semantic_cases": 0,
+      "refusal_policy": "Every decline on these feasible tasks is uncompleted; no result image is returned.",
+      "original_size_supplement_count": 6,
+      "review_derivation": "experiments/functional-v15-20261106/review-derivation/stage2-final/review/development/derivation.json",
+      "review_derivation_sha256": "a302f3f52cbf1d289e22a7fb98eadae095287d1ce726396a6ec8da7a4a8ea5bc",
+      "raw_visual_notes_immutable": true,
+      "inference_performed": true,
+      "runtime": "functional_v15.runtime"
+    }
+  },
+  "parent_controlled_summary": {
+    "model_id": "parent-editor-only",
+    "status": "completed",
+    "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+    "human_review": false,
+    "reviewed_outputs": 200,
+    "missing_unique_images": [],
+    "fully_completed_both_languages": 76,
+    "raw_individual_completed_both_languages": 76,
+    "identical_strength_pairs": [],
+    "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+    "photo_groups": 20,
+    "all_tasks_complete_photo_groups": 3,
+    "major_quality_issues": 1,
+    "major_issue_cases": [
+      "development-028-restore-saturation-mild"
+    ],
+    "per_family": {
+      "brown_tone": {
+        "completed": 8,
+        "cases": 8
+      },
+      "compound": {
+        "completed": 8,
+        "cases": 10
+      },
+      "contrast": {
+        "completed": 13,
+        "cases": 20
+      },
+      "identity": {
+        "completed": 10,
+        "cases": 10
+      },
+      "lighting": {
+        "completed": 17,
+        "cases": 24
+      },
+      "saturation": {
+        "completed": 15,
+        "cases": 20
+      },
+      "white_balance": {
+        "completed": 5,
+        "cases": 8
+      }
+    },
+    "per_language": {
+      "zh": {
+        "completed": 84,
+        "partial": 13,
+        "uncertain": 3
+      },
+      "en": {
+        "completed": 84,
+        "partial": 13,
+        "uncertain": 3
+      }
+    },
+    "per_domain": {
+      "portrait": {
+        "completed": 36,
+        "cases": 50
+      },
+      "landscape": {
+        "completed": 40,
+        "cases": 50
+      }
+    },
+    "selection_uses_L1": false,
+    "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+    "review_sha256": "4fe4adeffdc31c34149b02e2059ad37becae03c1b755ff7710a8fcc25535d610",
+    "inference_performed": false,
+    "GPU_hours": 0,
+    "model_forward_calls": 0,
+    "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+    "runtime": "Exact saved parent decisions; CPU editor replay only",
+    "declined_language_outputs": 0,
+    "declined_semantic_cases": 0,
+    "unchanged_reviews_inherited": true,
+    "AI_disputes_preserved": true
+  },
+  "seed_replication_started": false,
+  "acceptance_status": "closed_not_evaluated",
+  "independent_user_feedback": 0,
+  "public_conclusion": "第十五轮原始开发16/20、受控75/100；受控门槛未通过。未证实总体功能改善，仅供诊断试用；默认未升级，复核未启动，最终验收未开封。",
+  "occupied_gpu_hours_at_registration": 19.501483893262016
+}

@@ -1,0 +1,3247 @@
+[
+  {
+    "case_id": "train-002-restore-exposure-mild",
+    "source_case_id": "train-002-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "曝光不足有所纠正，人物、围栏和树木保留阴影层次；场景仍是自然阴影光照。"
+  },
+  {
+    "case_id": "train-002-restore-exposure-strong",
+    "source_case_id": "train-002-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "较强曝光不足得到修复，脸、衣服与背景均更清楚。"
+  },
+  {
+    "case_id": "train-002-style-temperature-weak",
+    "source_case_id": "train-002-style-temperature-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-002-style-temperature-strong",
+    "source_case_id": "train-002-style-temperature-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-002-compound",
+    "source_case_id": "train-002-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-002-identity",
+    "source_case_id": "train-002-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-007-restore-contrast-mild",
+    "source_case_id": "train-007-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度灰雾去除，颜色与黑位自然，场景结构保持。"
+  },
+  {
+    "case_id": "train-007-restore-contrast-strong",
+    "source_case_id": "train-007-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "强灰雾去除，服饰、道路和人物分离自然。"
+  },
+  {
+    "case_id": "train-007-style-saturation-weak",
+    "source_case_id": "train-007-style-saturation-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-007-style-saturation-strong",
+    "source_case_id": "train-007-style-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-007-identity",
+    "source_case_id": "train-007-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-010-restore-saturation-mild",
+    "source_case_id": "train-010-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-010-restore-saturation-strong",
+    "source_case_id": "train-010-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-010-style-contrast-weak",
+    "source_case_id": "train-010-style-contrast-weak",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "衣服与人物的对比度轻微增强，颜色与轮廓自然。"
+  },
+  {
+    "case_id": "train-010-style-contrast-strong",
+    "source_case_id": "train-010-style-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "对比度提升比轻微版本更明显，衣服、脸和背景仍有层次。"
+  },
+  {
+    "case_id": "train-010-compound",
+    "source_case_id": "train-010-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-010-identity",
+    "source_case_id": "train-010-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-013-restore-exposure-mild",
+    "source_case_id": "train-013-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "曝光不足被纠正，面部及枝叶变清楚，整体自然。"
+  },
+  {
+    "case_id": "train-013-restore-exposure-strong",
+    "source_case_id": "train-013-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "较强曝光不足得到修复，面部和背景均可辨，肤色稍暖。"
+  },
+  {
+    "case_id": "train-013-style-sepia-weak",
+    "source_case_id": "train-013-style-sepia-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-013-style-sepia-strong",
+    "source_case_id": "train-013-style-sepia-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-013-compound",
+    "source_case_id": "train-013-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-013-identity",
+    "source_case_id": "train-013-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-016-restore-contrast-mild",
+    "source_case_id": "train-016-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度灰雾去除，人脸、牛仔裤和草地层次自然。"
+  },
+  {
+    "case_id": "train-016-restore-contrast-strong",
+    "source_case_id": "train-016-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "较强灰雾得到纠正，人物与背景明暗分离恢复。"
+  },
+  {
+    "case_id": "train-016-style-shadows-weak",
+    "source_case_id": "train-016-style-shadows-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-016-style-shadows-strong",
+    "source_case_id": "train-016-style-shadows-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-016-identity",
+    "source_case_id": "train-016-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-018-restore-saturation-mild",
+    "source_case_id": "train-018-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-018-restore-saturation-strong",
+    "source_case_id": "train-018-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-018-style-temperature-weak",
+    "source_case_id": "train-018-style-temperature-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-018-style-temperature-strong",
+    "source_case_id": "train-018-style-temperature-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-018-compound",
+    "source_case_id": "train-018-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-018-identity",
+    "source_case_id": "train-018-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-020-restore-exposure-mild",
+    "source_case_id": "train-020-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "人物、摩托车和环境提亮，阴影衣纹仍可辨。"
+  },
+  {
+    "case_id": "train-020-restore-exposure-strong",
+    "source_case_id": "train-020-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "较强曝光不足显著改善，场景偏柔和，未见明显破坏。"
+  },
+  {
+    "case_id": "train-020-style-saturation-weak",
+    "source_case_id": "train-020-style-saturation-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-020-style-saturation-strong",
+    "source_case_id": "train-020-style-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-020-compound",
+    "source_case_id": "train-020-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-020-identity",
+    "source_case_id": "train-020-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-025-restore-contrast-mild",
+    "source_case_id": "train-025-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰可见，面部、卷发和衣服图案层次尚可辨。"
+  },
+  {
+    "case_id": "train-025-restore-contrast-strong",
+    "source_case_id": "train-025-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰完成，脸部、发丝和衣服图案仍可辨。"
+  },
+  {
+    "case_id": "train-025-style-contrast-weak",
+    "source_case_id": "train-025-style-contrast-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-025-style-contrast-strong",
+    "source_case_id": "train-025-style-contrast-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-025-identity",
+    "source_case_id": "train-025-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-030-restore-saturation-mild",
+    "source_case_id": "train-030-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-030-restore-saturation-strong",
+    "source_case_id": "train-030-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-030-style-sepia-weak",
+    "source_case_id": "train-030-style-sepia-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-030-style-sepia-strong",
+    "source_case_id": "train-030-style-sepia-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-030-compound",
+    "source_case_id": "train-030-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-030-identity",
+    "source_case_id": "train-030-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-031-restore-exposure-mild",
+    "source_case_id": "train-031-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度曝光不足被纠正，场景自然，没有明显额外偏色。"
+  },
+  {
+    "case_id": "train-031-restore-exposure-strong",
+    "source_case_id": "train-031-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "较强曝光不足改善，人物红裙和草木仍清楚，整体较柔和。"
+  },
+  {
+    "case_id": "train-031-style-shadows-weak",
+    "source_case_id": "train-031-style-shadows-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-031-style-shadows-strong",
+    "source_case_id": "train-031-style-shadows-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-031-compound",
+    "source_case_id": "train-031-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-031-identity",
+    "source_case_id": "train-031-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-034-restore-contrast-mild",
+    "source_case_id": "train-034-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "完整尺寸中去灰明确；原来较平的帽顶和肩部仍较平，T恤侧面褶皱、人物眼睛、头发及腿部明暗保留，未见新增重大损失。"
+  },
+  {
+    "case_id": "train-034-restore-contrast-strong",
+    "source_case_id": "train-034-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "全尺寸输出去灰并恢复明暗分离；白帽本身较平，T恤侧边褶皱、脸和腿部层次保留。"
+  },
+  {
+    "case_id": "train-034-style-temperature-weak",
+    "source_case_id": "train-034-style-temperature-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-034-style-temperature-strong",
+    "source_case_id": "train-034-style-temperature-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-034-identity",
+    "source_case_id": "train-034-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-035-restore-saturation-mild",
+    "source_case_id": "train-035-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-035-restore-saturation-strong",
+    "source_case_id": "train-035-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-035-style-saturation-weak",
+    "source_case_id": "train-035-style-saturation-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-035-style-saturation-strong",
+    "source_case_id": "train-035-style-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-035-compound",
+    "source_case_id": "train-035-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-035-identity",
+    "source_case_id": "train-035-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-041-restore-exposure-mild",
+    "source_case_id": "train-041-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度曝光不足改善，车身反射和衣纹仍可辨。"
+  },
+  {
+    "case_id": "train-041-restore-exposure-strong",
+    "source_case_id": "train-041-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "整体提亮充分，人物和白衣侧面阴影可辨，场景较柔和。"
+  },
+  {
+    "case_id": "train-041-style-contrast-weak",
+    "source_case_id": "train-041-style-contrast-weak",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻微增强明暗分离，人物衣纹及车身反射可辨。"
+  },
+  {
+    "case_id": "train-041-style-contrast-strong",
+    "source_case_id": "train-041-style-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "全尺寸对照中对比度确有提高；白衬衫胸口、袖口褶皱和车身反射仍可辨，脸与裤子暗部未见明显新增大片损失。"
+  },
+  {
+    "case_id": "train-041-compound",
+    "source_case_id": "train-041-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-041-identity",
+    "source_case_id": "train-041-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-042-restore-contrast-mild",
+    "source_case_id": "train-042-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "灰雾消退，砖墙色彩和明暗分离恢复。"
+  },
+  {
+    "case_id": "train-042-restore-contrast-strong",
+    "source_case_id": "train-042-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "强灰雾去除，砖墙明暗及人物轮廓分离恢复。"
+  },
+  {
+    "case_id": "train-042-style-sepia-weak",
+    "source_case_id": "train-042-style-sepia-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-042-style-sepia-strong",
+    "source_case_id": "train-042-style-sepia-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-042-identity",
+    "source_case_id": "train-042-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-044-restore-saturation-mild",
+    "source_case_id": "train-044-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-044-restore-saturation-strong",
+    "source_case_id": "train-044-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-044-style-shadows-weak",
+    "source_case_id": "train-044-style-shadows-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-044-style-shadows-strong",
+    "source_case_id": "train-044-style-shadows-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-044-compound",
+    "source_case_id": "train-044-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-044-identity",
+    "source_case_id": "train-044-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-045-restore-exposure-mild",
+    "source_case_id": "train-045-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "全尺寸中帽子、卫衣织纹和桥柱保留；海浪仍有细线，未见新增大片白亮损失；曝光不足有所纠正。"
+  },
+  {
+    "case_id": "train-045-style-temperature-weak",
+    "source_case_id": "train-045-style-temperature-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-045-style-temperature-strong",
+    "source_case_id": "train-045-style-temperature-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-045-compound",
+    "source_case_id": "train-045-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-045-identity",
+    "source_case_id": "train-045-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-048-restore-contrast-mild",
+    "source_case_id": "train-048-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度去灰完成，肤色、浅绿衣服与树干纹理可辨。"
+  },
+  {
+    "case_id": "train-048-restore-contrast-strong",
+    "source_case_id": "train-048-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰充分，人物颜色与树干纹理清楚。"
+  },
+  {
+    "case_id": "train-048-style-saturation-weak",
+    "source_case_id": "train-048-style-saturation-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-048-style-saturation-strong",
+    "source_case_id": "train-048-style-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-048-identity",
+    "source_case_id": "train-048-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-053-restore-saturation-mild",
+    "source_case_id": "train-053-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-053-restore-saturation-strong",
+    "source_case_id": "train-053-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-053-style-contrast-weak",
+    "source_case_id": "train-053-style-contrast-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-053-style-contrast-strong",
+    "source_case_id": "train-053-style-contrast-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-053-compound",
+    "source_case_id": "train-053-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-053-identity",
+    "source_case_id": "train-053-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-057-restore-exposure-mild",
+    "source_case_id": "train-057-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "三人的脸、衣服及背景提亮，观感自然。"
+  },
+  {
+    "case_id": "train-057-restore-exposure-strong",
+    "source_case_id": "train-057-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "完整尺寸中曝光修复明显，婴儿袖口花纹和薄纱边缘仍可辨，成人眼睛、白衣边缘及印花保持；原有低清晰度和闪光雾感未被解释为新纹理修复。"
+  },
+  {
+    "case_id": "train-057-style-sepia-weak",
+    "source_case_id": "train-057-style-sepia-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-057-style-sepia-strong",
+    "source_case_id": "train-057-style-sepia-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-057-compound",
+    "source_case_id": "train-057-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-057-identity",
+    "source_case_id": "train-057-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-059-restore-contrast-mild",
+    "source_case_id": "train-059-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度去灰完成，服装颜色和人物轮廓清楚。"
+  },
+  {
+    "case_id": "train-059-restore-contrast-strong",
+    "source_case_id": "train-059-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰充分，人物和场景保留自然阴天观感。"
+  },
+  {
+    "case_id": "train-059-style-shadows-weak",
+    "source_case_id": "train-059-style-shadows-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-059-style-shadows-strong",
+    "source_case_id": "train-059-style-shadows-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-059-identity",
+    "source_case_id": "train-059-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-064-restore-saturation-mild",
+    "source_case_id": "train-064-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-064-restore-saturation-strong",
+    "source_case_id": "train-064-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-064-style-temperature-weak",
+    "source_case_id": "train-064-style-temperature-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-064-style-temperature-strong",
+    "source_case_id": "train-064-style-temperature-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-064-compound",
+    "source_case_id": "train-064-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-064-identity",
+    "source_case_id": "train-064-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-066-restore-exposure-mild",
+    "source_case_id": "train-066-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度曝光不足改善，面部与发丝层次保留。"
+  },
+  {
+    "case_id": "train-066-restore-exposure-strong",
+    "source_case_id": "train-066-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "脸和背景明显提亮，肤色较柔和，未见新增大片高光损失。"
+  },
+  {
+    "case_id": "train-066-style-saturation-weak",
+    "source_case_id": "train-066-style-saturation-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-066-style-saturation-strong",
+    "source_case_id": "train-066-style-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-066-compound",
+    "source_case_id": "train-066-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-066-identity",
+    "source_case_id": "train-066-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-072-restore-contrast-mild",
+    "source_case_id": "train-072-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度灰雾去除，天空云层和山体仍有层次。"
+  },
+  {
+    "case_id": "train-072-restore-contrast-strong",
+    "source_case_id": "train-072-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰充分，天空云层和城墙明暗仍清楚。"
+  },
+  {
+    "case_id": "train-072-style-contrast-weak",
+    "source_case_id": "train-072-style-contrast-weak",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "略增强明暗分离，云和山体颜色自然。"
+  },
+  {
+    "case_id": "train-072-style-contrast-strong",
+    "source_case_id": "train-072-style-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "明显增加对比度，主体结构、天空与墙体仍自然。"
+  },
+  {
+    "case_id": "train-072-identity",
+    "source_case_id": "train-072-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-082-restore-saturation-mild",
+    "source_case_id": "train-082-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-082-restore-saturation-strong",
+    "source_case_id": "train-082-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-082-style-sepia-weak",
+    "source_case_id": "train-082-style-sepia-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-082-style-sepia-strong",
+    "source_case_id": "train-082-style-sepia-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-082-compound",
+    "source_case_id": "train-082-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-082-identity",
+    "source_case_id": "train-082-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-096-restore-exposure-mild",
+    "source_case_id": "train-096-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度曝光不足改善，脸和白衬衫褶皱仍有层次。"
+  },
+  {
+    "case_id": "train-096-restore-exposure-strong",
+    "source_case_id": "train-096-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "较强曝光不足改善，肤色仍暖，白衣褶皱及口袋可辨。"
+  },
+  {
+    "case_id": "train-096-style-shadows-weak",
+    "source_case_id": "train-096-style-shadows-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-096-style-shadows-strong",
+    "source_case_id": "train-096-style-shadows-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-096-compound",
+    "source_case_id": "train-096-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-096-identity",
+    "source_case_id": "train-096-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-102-restore-contrast-mild",
+    "source_case_id": "train-102-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "全尺寸中灰雾去除，四人眼睛、嘴和衣服纹理可辨；原有强日照高光较硬，但未见明显新增大片面部结构损失。"
+  },
+  {
+    "case_id": "train-102-restore-contrast-strong",
+    "source_case_id": "train-102-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "完整尺寸中灰雾明显去除，四人眼睛、嘴、衣纹和背景枝叶可辨；强日照高光仍较硬，但未见新增大片面部结构损失。"
+  },
+  {
+    "case_id": "train-102-style-temperature-weak",
+    "source_case_id": "train-102-style-temperature-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-102-style-temperature-strong",
+    "source_case_id": "train-102-style-temperature-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-102-identity",
+    "source_case_id": "train-102-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-110-restore-saturation-mild",
+    "source_case_id": "train-110-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-110-restore-saturation-strong",
+    "source_case_id": "train-110-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-110-style-saturation-weak",
+    "source_case_id": "train-110-style-saturation-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-110-style-saturation-strong",
+    "source_case_id": "train-110-style-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-110-compound",
+    "source_case_id": "train-110-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-110-identity",
+    "source_case_id": "train-110-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-113-restore-exposure-mild",
+    "source_case_id": "train-113-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度曝光不足改善，场景阴影仍自然。"
+  },
+  {
+    "case_id": "train-113-restore-exposure-strong",
+    "source_case_id": "train-113-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "整体提亮明显，阴影稍柔和，仍有树干、衣服和脸部层次。"
+  },
+  {
+    "case_id": "train-113-style-contrast-weak",
+    "source_case_id": "train-113-style-contrast-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-113-style-contrast-strong",
+    "source_case_id": "train-113-style-contrast-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-113-compound",
+    "source_case_id": "train-113-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-113-identity",
+    "source_case_id": "train-113-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-133-restore-contrast-mild",
+    "source_case_id": "train-133-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "面部明暗分离恢复，头发和眼窝细节可辨。"
+  },
+  {
+    "case_id": "train-133-restore-contrast-strong",
+    "source_case_id": "train-133-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰充分，肤色和面部结构仍自然。"
+  },
+  {
+    "case_id": "train-133-style-sepia-weak",
+    "source_case_id": "train-133-style-sepia-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-133-style-sepia-strong",
+    "source_case_id": "train-133-style-sepia-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-133-identity",
+    "source_case_id": "train-133-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-138-restore-saturation-mild",
+    "source_case_id": "train-138-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-138-restore-saturation-strong",
+    "source_case_id": "train-138-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-138-style-shadows-weak",
+    "source_case_id": "train-138-style-shadows-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-138-style-shadows-strong",
+    "source_case_id": "train-138-style-shadows-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-138-compound",
+    "source_case_id": "train-138-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-138-identity",
+    "source_case_id": "train-138-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-021-restore-exposure-mild",
+    "source_case_id": "train-021-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度曝光不足改善，天空及海面层次自然。"
+  },
+  {
+    "case_id": "train-021-restore-exposure-strong",
+    "source_case_id": "train-021-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "整体提亮充分，云层和海水没有明显新增大片损失。"
+  },
+  {
+    "case_id": "train-021-style-temperature-weak",
+    "source_case_id": "train-021-style-temperature-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-021-style-temperature-strong",
+    "source_case_id": "train-021-style-temperature-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-021-compound",
+    "source_case_id": "train-021-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-021-identity",
+    "source_case_id": "train-021-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-027-restore-contrast-mild",
+    "source_case_id": "train-027-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰可见，秋色与城市轮廓保留。"
+  },
+  {
+    "case_id": "train-027-restore-contrast-strong",
+    "source_case_id": "train-027-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "强去灰完成，桥梁、云层和树木层次清楚。"
+  },
+  {
+    "case_id": "train-027-style-saturation-weak",
+    "source_case_id": "train-027-style-saturation-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-027-style-saturation-strong",
+    "source_case_id": "train-027-style-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-027-identity",
+    "source_case_id": "train-027-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-039-restore-saturation-mild",
+    "source_case_id": "train-039-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-039-restore-saturation-strong",
+    "source_case_id": "train-039-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-039-style-contrast-weak",
+    "source_case_id": "train-039-style-contrast-weak",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻微增加对比度，道路和枝叶仍有层次。"
+  },
+  {
+    "case_id": "train-039-style-contrast-strong",
+    "source_case_id": "train-039-style-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "明暗分离明显增强，草木和路面自然。"
+  },
+  {
+    "case_id": "train-039-compound",
+    "source_case_id": "train-039-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-039-identity",
+    "source_case_id": "train-039-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-043-style-sepia-weak",
+    "source_case_id": "train-043-style-sepia-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-043-style-sepia-strong",
+    "source_case_id": "train-043-style-sepia-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-043-compound",
+    "source_case_id": "train-043-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-043-identity",
+    "source_case_id": "train-043-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-074-restore-contrast-mild",
+    "source_case_id": "train-074-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度去灰完成，树枝、谷仓及草卷明暗分离自然。"
+  },
+  {
+    "case_id": "train-074-restore-contrast-strong",
+    "source_case_id": "train-074-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰充分，屋顶、树枝及草地层次可辨。"
+  },
+  {
+    "case_id": "train-074-style-shadows-weak",
+    "source_case_id": "train-074-style-shadows-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-074-style-shadows-strong",
+    "source_case_id": "train-074-style-shadows-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-074-identity",
+    "source_case_id": "train-074-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-085-restore-saturation-mild",
+    "source_case_id": "train-085-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-085-restore-saturation-strong",
+    "source_case_id": "train-085-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-085-style-temperature-weak",
+    "source_case_id": "train-085-style-temperature-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-085-style-temperature-strong",
+    "source_case_id": "train-085-style-temperature-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-085-compound",
+    "source_case_id": "train-085-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-085-identity",
+    "source_case_id": "train-085-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-086-restore-exposure-mild",
+    "source_case_id": "train-086-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "海湾、沙滩和云层提亮，暮色仍自然。"
+  },
+  {
+    "case_id": "train-086-restore-exposure-strong",
+    "source_case_id": "train-086-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "较强曝光不足改善，海湾、沙滩和云层保留暮色层次。"
+  },
+  {
+    "case_id": "train-086-style-saturation-weak",
+    "source_case_id": "train-086-style-saturation-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-086-style-saturation-strong",
+    "source_case_id": "train-086-style-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-086-compound",
+    "source_case_id": "train-086-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-086-identity",
+    "source_case_id": "train-086-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-100-restore-contrast-mild",
+    "source_case_id": "train-100-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度灰雾消退，花坛、棕榈和雕像分离清楚。"
+  },
+  {
+    "case_id": "train-100-restore-contrast-strong",
+    "source_case_id": "train-100-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰充分，花朵和棕榈轮廓清楚。"
+  },
+  {
+    "case_id": "train-100-style-contrast-weak",
+    "source_case_id": "train-100-style-contrast-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-100-style-contrast-strong",
+    "source_case_id": "train-100-style-contrast-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-100-identity",
+    "source_case_id": "train-100-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-106-restore-saturation-mild",
+    "source_case_id": "train-106-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-106-restore-saturation-strong",
+    "source_case_id": "train-106-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-106-style-sepia-weak",
+    "source_case_id": "train-106-style-sepia-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-106-style-sepia-strong",
+    "source_case_id": "train-106-style-sepia-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-106-compound",
+    "source_case_id": "train-106-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-106-identity",
+    "source_case_id": "train-106-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-114-restore-exposure-mild",
+    "source_case_id": "train-114-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度曝光不足改善，天空渐变、划艇与水波仍有层次。"
+  },
+  {
+    "case_id": "train-114-style-shadows-weak",
+    "source_case_id": "train-114-style-shadows-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-114-style-shadows-strong",
+    "source_case_id": "train-114-style-shadows-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-114-compound",
+    "source_case_id": "train-114-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-114-identity",
+    "source_case_id": "train-114-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-120-restore-contrast-mild",
+    "source_case_id": "train-120-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "灰雾去除，路面纹理与树木阴影保留。"
+  },
+  {
+    "case_id": "train-120-restore-contrast-strong",
+    "source_case_id": "train-120-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰充分，天空渐变和路面仍自然。"
+  },
+  {
+    "case_id": "train-120-style-temperature-weak",
+    "source_case_id": "train-120-style-temperature-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-120-style-temperature-strong",
+    "source_case_id": "train-120-style-temperature-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-120-identity",
+    "source_case_id": "train-120-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-130-restore-saturation-mild",
+    "source_case_id": "train-130-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-130-restore-saturation-strong",
+    "source_case_id": "train-130-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-130-style-saturation-weak",
+    "source_case_id": "train-130-style-saturation-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-130-style-saturation-strong",
+    "source_case_id": "train-130-style-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-130-compound",
+    "source_case_id": "train-130-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-130-identity",
+    "source_case_id": "train-130-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-149-restore-exposure-mild",
+    "source_case_id": "train-149-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度曝光不足改善，日落云层、桥梁及水面明暗保留。"
+  },
+  {
+    "case_id": "train-149-restore-exposure-strong",
+    "source_case_id": "train-149-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "较强曝光不足修复，暗部和桥梁可辨，保留日落氛围。"
+  },
+  {
+    "case_id": "train-149-style-contrast-weak",
+    "source_case_id": "train-149-style-contrast-weak",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "明暗分离略增强，桥梁与水面结构保留。"
+  },
+  {
+    "case_id": "train-149-style-contrast-strong",
+    "source_case_id": "train-149-style-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "对比度比轻微版本明显增强，夕照云层和水面仍有层次。"
+  },
+  {
+    "case_id": "train-149-compound",
+    "source_case_id": "train-149-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-149-identity",
+    "source_case_id": "train-149-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-152-restore-contrast-mild",
+    "source_case_id": "train-152-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度去灰完成，天空、海水与飞机轮廓分离自然。"
+  },
+  {
+    "case_id": "train-152-restore-contrast-strong",
+    "source_case_id": "train-152-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰充分，海面波纹和天空渐变仍自然。"
+  },
+  {
+    "case_id": "train-152-style-sepia-weak",
+    "source_case_id": "train-152-style-sepia-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-152-style-sepia-strong",
+    "source_case_id": "train-152-style-sepia-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-152-identity",
+    "source_case_id": "train-152-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-164-restore-saturation-mild",
+    "source_case_id": "train-164-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-164-restore-saturation-strong",
+    "source_case_id": "train-164-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-164-style-shadows-weak",
+    "source_case_id": "train-164-style-shadows-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-164-style-shadows-strong",
+    "source_case_id": "train-164-style-shadows-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-164-compound",
+    "source_case_id": "train-164-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-164-identity",
+    "source_case_id": "train-164-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-191-restore-exposure-mild",
+    "source_case_id": "train-191-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度曝光不足修复，场地与远景层次自然。"
+  },
+  {
+    "case_id": "train-191-style-temperature-weak",
+    "source_case_id": "train-191-style-temperature-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-191-style-temperature-strong",
+    "source_case_id": "train-191-style-temperature-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-191-compound",
+    "source_case_id": "train-191-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-191-identity",
+    "source_case_id": "train-191-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-195-restore-contrast-mild",
+    "source_case_id": "train-195-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰可见，标牌反射和建筑层次保留。"
+  },
+  {
+    "case_id": "train-195-restore-contrast-strong",
+    "source_case_id": "train-195-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "强灰雾修复，标牌文字及建筑明暗恢复。"
+  },
+  {
+    "case_id": "train-195-style-saturation-weak",
+    "source_case_id": "train-195-style-saturation-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-195-style-saturation-strong",
+    "source_case_id": "train-195-style-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-195-identity",
+    "source_case_id": "train-195-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-200-restore-saturation-mild",
+    "source_case_id": "train-200-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-200-restore-saturation-strong",
+    "source_case_id": "train-200-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-200-style-contrast-weak",
+    "source_case_id": "train-200-style-contrast-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-200-style-contrast-strong",
+    "source_case_id": "train-200-style-contrast-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-200-compound",
+    "source_case_id": "train-200-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-200-identity",
+    "source_case_id": "train-200-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-201-restore-exposure-mild",
+    "source_case_id": "train-201-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "曝光不足改善，前景树干及湖面云层仍有层次。"
+  },
+  {
+    "case_id": "train-201-restore-exposure-strong",
+    "source_case_id": "train-201-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "较强曝光不足修复，前景纹理可辨，云层明暗仍保留。"
+  },
+  {
+    "case_id": "train-201-style-sepia-weak",
+    "source_case_id": "train-201-style-sepia-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-201-style-sepia-strong",
+    "source_case_id": "train-201-style-sepia-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-201-compound",
+    "source_case_id": "train-201-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-201-identity",
+    "source_case_id": "train-201-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-204-restore-contrast-mild",
+    "source_case_id": "train-204-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "以实际1024×206输入尺寸查看，去灰可见；山脊雪线、细树枝及树林层次保留。原图天空已经缺少纹理，没有把白天空称为恢复出的细节。"
+  },
+  {
+    "case_id": "train-204-restore-contrast-strong",
+    "source_case_id": "train-204-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "完整1024×206像素对照中强灰雾去除，雪线和树枝轮廓仍在，树林明暗层次恢复；无纹理天空属于原图限制。"
+  },
+  {
+    "case_id": "train-204-style-shadows-weak",
+    "source_case_id": "train-204-style-shadows-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-204-style-shadows-strong",
+    "source_case_id": "train-204-style-shadows-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-204-identity",
+    "source_case_id": "train-204-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-206-restore-saturation-mild",
+    "source_case_id": "train-206-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-206-restore-saturation-strong",
+    "source_case_id": "train-206-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-206-style-temperature-weak",
+    "source_case_id": "train-206-style-temperature-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-206-style-temperature-strong",
+    "source_case_id": "train-206-style-temperature-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-206-compound",
+    "source_case_id": "train-206-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-206-identity",
+    "source_case_id": "train-206-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-210-restore-exposure-mild",
+    "source_case_id": "train-210-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度曝光不足改善，山体、河流和草木层次自然。"
+  },
+  {
+    "case_id": "train-210-restore-exposure-strong",
+    "source_case_id": "train-210-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "较强曝光不足改善，山体和前景可辨，保留远山雾感。"
+  },
+  {
+    "case_id": "train-210-style-saturation-weak",
+    "source_case_id": "train-210-style-saturation-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-210-style-saturation-strong",
+    "source_case_id": "train-210-style-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-210-compound",
+    "source_case_id": "train-210-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-210-identity",
+    "source_case_id": "train-210-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-214-restore-contrast-mild",
+    "source_case_id": "train-214-restore-contrast-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-214-restore-contrast-strong",
+    "source_case_id": "train-214-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "全尺寸对照中去灰充分，云块边缘与原有较平的内部高亮保持；遗址石墙层级、山体阴影及前景细节仍可辨，未见新增大片结构损失。"
+  },
+  {
+    "case_id": "train-214-style-contrast-weak",
+    "source_case_id": "train-214-style-contrast-weak",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻微增强对比度，遗址和山体轮廓保留。"
+  },
+  {
+    "case_id": "train-214-identity",
+    "source_case_id": "train-214-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-220-restore-saturation-mild",
+    "source_case_id": "train-220-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-220-restore-saturation-strong",
+    "source_case_id": "train-220-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-220-style-sepia-weak",
+    "source_case_id": "train-220-style-sepia-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-220-style-sepia-strong",
+    "source_case_id": "train-220-style-sepia-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-220-compound",
+    "source_case_id": "train-220-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-220-identity",
+    "source_case_id": "train-220-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-243-restore-exposure-mild",
+    "source_case_id": "train-243-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "实际960×616尺寸下曝光有所恢复，雪峰暗纹、山脊及骑行者轮廓仍可辨，蓝天空渐变保留；原图本身色彩较浓。"
+  },
+  {
+    "case_id": "train-243-restore-exposure-strong",
+    "source_case_id": "train-243-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "完整尺寸下暗部和地面提亮，雪峰暗纹、山脊及骑行者仍可辨；天空的较浓蓝青色在输入中已存在，未见新增大片细节损失。"
+  },
+  {
+    "case_id": "train-243-style-shadows-weak",
+    "source_case_id": "train-243-style-shadows-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-243-style-shadows-strong",
+    "source_case_id": "train-243-style-shadows-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-243-compound",
+    "source_case_id": "train-243-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-243-identity",
+    "source_case_id": "train-243-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-263-restore-contrast-mild",
+    "source_case_id": "train-263-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度去灰完成，树林、河岸和水面层次恢复。"
+  },
+  {
+    "case_id": "train-263-restore-contrast-strong",
+    "source_case_id": "train-263-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "去灰充分，草木及岩石的明暗层次可辨。"
+  },
+  {
+    "case_id": "train-263-style-temperature-weak",
+    "source_case_id": "train-263-style-temperature-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-263-style-temperature-strong",
+    "source_case_id": "train-263-style-temperature-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-263-identity",
+    "source_case_id": "train-263-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-273-restore-saturation-mild",
+    "source_case_id": "train-273-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-273-restore-saturation-strong",
+    "source_case_id": "train-273-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-273-style-saturation-weak",
+    "source_case_id": "train-273-style-saturation-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-273-style-saturation-strong",
+    "source_case_id": "train-273-style-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-273-compound",
+    "source_case_id": "train-273-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-273-identity",
+    "source_case_id": "train-273-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-278-restore-exposure-mild",
+    "source_case_id": "train-278-restore-exposure-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "帆船和海面提亮，颜色与天空渐变自然。"
+  },
+  {
+    "case_id": "train-278-restore-exposure-strong",
+    "source_case_id": "train-278-restore-exposure-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "较强曝光不足修复，帆布、船身和海水层次清楚。"
+  },
+  {
+    "case_id": "train-278-style-contrast-weak",
+    "source_case_id": "train-278-style-contrast-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-278-style-contrast-strong",
+    "source_case_id": "train-278-style-contrast-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-278-compound",
+    "source_case_id": "train-278-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-278-identity",
+    "source_case_id": "train-278-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-285-restore-contrast-mild",
+    "source_case_id": "train-285-restore-contrast-mild",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻度灰雾去除，竹竿与树叶明暗分离恢复。"
+  },
+  {
+    "case_id": "train-285-restore-contrast-strong",
+    "source_case_id": "train-285-restore-contrast-strong",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "全尺寸竹林灰雾明显减轻，竹节、竹竿边缘和叶片分层仍在；原输入已存在天空透光白点和近处竹竿虚焦，未见新增大片结构损失。"
+  },
+  {
+    "case_id": "train-285-style-sepia-weak",
+    "source_case_id": "train-285-style-sepia-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-285-style-sepia-strong",
+    "source_case_id": "train-285-style-sepia-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-285-identity",
+    "source_case_id": "train-285-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-291-restore-saturation-mild",
+    "source_case_id": "train-291-restore-saturation-mild",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-291-restore-saturation-strong",
+    "source_case_id": "train-291-restore-saturation-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-291-style-shadows-weak",
+    "source_case_id": "train-291-style-shadows-weak",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-291-style-shadows-strong",
+    "source_case_id": "train-291-style-shadows-strong",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-291-compound",
+    "source_case_id": "train-291-compound",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "train-291-identity",
+    "source_case_id": "train-291-identity",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n001",
+    "source_case_id": "native-train-n001",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n011",
+    "source_case_id": "native-train-n011",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n021",
+    "source_case_id": "native-train-n021",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n022",
+    "source_case_id": "native-train-n022",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n026",
+    "source_case_id": "native-train-n026",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n031",
+    "source_case_id": "native-train-n031",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n036",
+    "source_case_id": "native-train-n036",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n071",
+    "source_case_id": "native-train-n071",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n164",
+    "source_case_id": "native-train-n164",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n012",
+    "source_case_id": "native-train-n012",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "冷色调与更清楚的明暗分离均可见，人物层次保留。"
+  },
+  {
+    "case_id": "native-train-n017",
+    "source_case_id": "native-train-n017",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "人物和室内环境提亮并变暖，肤色和黑衣轮廓可辨。"
+  },
+  {
+    "case_id": "native-train-n027",
+    "source_case_id": "native-train-n027",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n032",
+    "source_case_id": "native-train-n032",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n037",
+    "source_case_id": "native-train-n037",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n057",
+    "source_case_id": "native-train-n057",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "全尺寸下脸部、雪地和整体光照略有提亮并明显调暖；鼻眼结构、衣服折痕和雪地边缘保留，原有太阳眩光未扩大成新的大片平白。"
+  },
+  {
+    "case_id": "native-train-n062",
+    "source_case_id": "native-train-n062",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n165",
+    "source_case_id": "native-train-n165",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "画面较少偏黄，明暗分离提高，主体结构保留。"
+  },
+  {
+    "case_id": "native-train-n097",
+    "source_case_id": "native-train-n097",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n142",
+    "source_case_id": "native-train-n142",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n003",
+    "source_case_id": "native-train-n003",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "对比度与色彩鲜明程度提高，人物和衣服仍有层次。"
+  },
+  {
+    "case_id": "native-train-n018",
+    "source_case_id": "native-train-n018",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "黑白照片明暗分离略增强，人物和衣纹仍可辨，原有划痕未被当作新增损伤。"
+  },
+  {
+    "case_id": "native-train-n043",
+    "source_case_id": "native-train-n043",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "全尺寸中对比度适度增加，裙子花纹、脸部五官、栏杆锈纹和地面阴影保留；原先日照较平的扶手高光仍是原图局限，未见新增明显结构破坏。"
+  },
+  {
+    "case_id": "native-train-n048",
+    "source_case_id": "native-train-n048",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "与全尺寸原图对照，背景与主体层次提高，脸和衣物略亮；新娘裙摆褶皱、胸口和新郎袖口花纹仍可辨。"
+  },
+  {
+    "case_id": "native-train-n058",
+    "source_case_id": "native-train-n058",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "原尺寸对照中整体稍暗、色彩更浓且灰雾减弱；中央白衬衫折痕、几人的面部、右侧西服层次和屋顶瓦纹仍在。原左侧草丛已很暗，不把其当作恢复了细节。"
+  },
+  {
+    "case_id": "native-train-n063",
+    "source_case_id": "native-train-n063",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "亮度与明暗分离小幅提高，白护具和深色衣服仍有层次。"
+  },
+  {
+    "case_id": "native-train-n161",
+    "source_case_id": "native-train-n161",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "头发、面部和背景明暗分离增强，眼睛和肤色仍可辨。"
+  },
+  {
+    "case_id": "native-train-n064",
+    "source_case_id": "native-train-n064",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n087",
+    "source_case_id": "native-train-n087",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n150",
+    "source_case_id": "native-train-n150",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n179",
+    "source_case_id": "native-train-n179",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n185",
+    "source_case_id": "native-train-n185",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n188",
+    "source_case_id": "native-train-n188",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n191",
+    "source_case_id": "native-train-n191",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n206",
+    "source_case_id": "native-train-n206",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n209",
+    "source_case_id": "native-train-n209",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n238",
+    "source_case_id": "native-train-n238",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻微增强色彩对比，人物轮廓和衣服色条可辨。"
+  },
+  {
+    "case_id": "native-train-n005",
+    "source_case_id": "native-train-n005",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "整张照片轻微提亮，人物和衣服仍自然。"
+  },
+  {
+    "case_id": "native-train-n010",
+    "source_case_id": "native-train-n010",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "亮度增加可见，白裙轮廓和褶皱仍自然。"
+  },
+  {
+    "case_id": "native-train-n015",
+    "source_case_id": "native-train-n015",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "全家人物曝光略增，脸部和衣服层次保留。"
+  },
+  {
+    "case_id": "native-train-n019",
+    "source_case_id": "native-train-n019",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "画面调暗且衣服颜色更鲜明，人物和背景仍有层次。"
+  },
+  {
+    "case_id": "native-train-n020",
+    "source_case_id": "native-train-n020",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "人物、地面和墙面明显提亮，黑衣及裙子仍可辨。"
+  },
+  {
+    "case_id": "native-train-n025",
+    "source_case_id": "native-train-n025",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n143",
+    "source_case_id": "native-train-n143",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻微提亮可见，面部与衬衫轮廓保留。"
+  },
+  {
+    "case_id": "native-train-n204",
+    "source_case_id": "native-train-n204",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "完整720×960中暗背景和地板大幅提亮，白蝴蝶结的褶线、袖口细纹、红裙层级和五官保留；效果偏柔和，但未出现旧强曝光式的大片白衣细节消失。"
+  },
+  {
+    "case_id": "native-train-n004",
+    "source_case_id": "native-train-n004",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n024",
+    "source_case_id": "native-train-n024",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "亮度及色彩小幅增强，夜空和灯点结构保留。"
+  },
+  {
+    "case_id": "native-train-n030",
+    "source_case_id": "native-train-n030",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n039",
+    "source_case_id": "native-train-n039",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n042",
+    "source_case_id": "native-train-n042",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "楼梯间明显提亮并变冷，窗框与墙面层次可辨。"
+  },
+  {
+    "case_id": "native-train-n054",
+    "source_case_id": "native-train-n054",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n066",
+    "source_case_id": "native-train-n066",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n081",
+    "source_case_id": "native-train-n081",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n083",
+    "source_case_id": "native-train-n083",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "明暗分离提高，桥梁结构与背景保留。"
+  },
+  {
+    "case_id": "native-train-n089",
+    "source_case_id": "native-train-n089",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n101",
+    "source_case_id": "native-train-n101",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n107",
+    "source_case_id": "native-train-n107",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻微提亮与暖色变化可见，场景结构自然。"
+  },
+  {
+    "case_id": "native-train-n189",
+    "source_case_id": "native-train-n189",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "轻微提亮可见，木船与水面纹理保留。"
+  },
+  {
+    "case_id": "native-train-n194",
+    "source_case_id": "native-train-n194",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n215",
+    "source_case_id": "native-train-n215",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n224",
+    "source_case_id": "native-train-n224",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n225",
+    "source_case_id": "native-train-n225",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "亮度降低，彩虹、云层和树木结构保留。"
+  },
+  {
+    "case_id": "native-train-n227",
+    "source_case_id": "native-train-n227",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-n232",
+    "source_case_id": "native-train-n232",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "实际958×959中天空略亮且对比度略强，星点、极光层次、右侧细树枝与雪地分层保留；人物原先已有运动虚焦，未将其宣称为修复，未见明显新增副作用。"
+  },
+  {
+    "case_id": "native-train-n235",
+    "source_case_id": "native-train-n235",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "对比度提高，树干、枝叶和汽车轮廓保留。"
+  },
+  {
+    "case_id": "native-train-x020",
+    "source_case_id": "native-train-x020",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-x038",
+    "source_case_id": "native-train-x038",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-x053",
+    "source_case_id": "native-train-x053",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "桥梁和树林提亮，树木、水面颜色更鲜明。"
+  },
+  {
+    "case_id": "native-train-x071",
+    "source_case_id": "native-train-x071",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "亮度和色彩强度增强，建筑及道路结构保留。"
+  },
+  {
+    "case_id": "native-train-x092",
+    "source_case_id": "native-train-x092",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "画面调暗，日落粉色与地貌颜色略增强，山谷层次保留。"
+  },
+  {
+    "case_id": "native-train-x113",
+    "source_case_id": "native-train-x113",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-x137",
+    "source_case_id": "native-train-x137",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-x151",
+    "source_case_id": "native-train-x151",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-x160",
+    "source_case_id": "native-train-x160",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-x161",
+    "source_case_id": "native-train-x161",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-x186",
+    "source_case_id": "native-train-x186",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "整图更亮，岩石、树木和海水保持自然结构。"
+  },
+  {
+    "case_id": "native-train-x191",
+    "source_case_id": "native-train-x191",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "亮度和颜色略增强，草木、蓝天及倒影可辨。"
+  },
+  {
+    "case_id": "native-train-x194",
+    "source_case_id": "native-train-x194",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "整图略亮，蓝天和树木颜色更鲜明，棕榈结构保留。"
+  },
+  {
+    "case_id": "native-train-x196",
+    "source_case_id": "native-train-x196",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "实际960×181全景中建筑和林木对比度适度增强，屋顶、门窗及山坡纹理仍可辨，没有把本来低分辨率的微小建筑宣称为恢复出新细节。"
+  },
+  {
+    "case_id": "native-train-x202",
+    "source_case_id": "native-train-x202",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "饱和度及对比度增加，天空更蓝、山体分离清楚。"
+  },
+  {
+    "case_id": "native-train-x205",
+    "source_case_id": "native-train-x205",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "蓝调、略提亮及增加明暗分离均可见，云和码头结构保留。"
+  },
+  {
+    "case_id": "native-train-x206",
+    "source_case_id": "native-train-x206",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-x231",
+    "source_case_id": "native-train-x231",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "天空和前景整体更暗，城市与河流结构保留。"
+  },
+  {
+    "case_id": "native-train-x246",
+    "source_case_id": "native-train-x246",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "山体和草地提亮，保留远景雾感及云层轮廓。"
+  },
+  {
+    "case_id": "native-train-x250",
+    "source_case_id": "native-train-x250",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+    "review_evidence": "建筑略亮、与树木的分离增加，保留水面反射和黄昏色调。"
+  },
+  {
+    "case_id": "native-train-n034",
+    "source_case_id": "native-train-n034",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-x251",
+    "source_case_id": "native-train-x251",
+    "kind": "exact_prior_reviewed_pixels",
+    "previous_admission": "data/training/functional-v6-20261105/admission.json",
+    "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+  },
+  {
+    "case_id": "native-train-x348",
+    "source_case_id": "native-train-x348",
+    "kind": "new_direct_visual_review",
+    "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+    "review_evidence": "完整960×640中星空与地平线稍微提亮，星点、银河淡纹和树木剪影保留；亮度幅度符合稍微提亮，未出现强拉暗部后的明显块状噪声。"
+  },
+  {
+    "case_id": "train-045-restore-exposure-strong",
+    "source_case_id": "train-045-restore-exposure-strong",
+    "kind": "same_input_request_directly_reviewed_label_repair",
+    "review_file": "experiments/functional-v7-20261105/label-repairs/full-resolution-observations.json",
+    "label": "5e3bcb19f59b",
+    "review_evidence": "完整1024×682中新结果纠正曝光，帽衫织纹、脸部五官、木柱纹理和海面波线仍可辨；原先已有远景虚焦与平亮海面，未见新增大片细节损失。"
+  },
+  {
+    "case_id": "train-043-restore-exposure-mild",
+    "source_case_id": "train-043-restore-exposure-mild",
+    "kind": "same_input_request_directly_reviewed_label_repair",
+    "review_file": "experiments/functional-v7-20261105/label-repairs/direct-observations.json",
+    "label": "67dfe82ce52f",
+    "review_evidence": "房屋与屋瓦提亮，云层和前景草木仍在，阴天光照保留。"
+  },
+  {
+    "case_id": "train-043-restore-exposure-strong",
+    "source_case_id": "train-043-restore-exposure-strong",
+    "kind": "same_input_request_directly_reviewed_label_repair",
+    "review_file": "experiments/functional-v7-20261105/label-repairs/direct-observations.json",
+    "label": "ab341193fb4e",
+    "review_evidence": "照片较输入提亮，房屋和前景自然可辨，云层未变成大片平白。"
+  },
+  {
+    "case_id": "train-114-restore-exposure-strong",
+    "source_case_id": "train-114-restore-exposure-strong",
+    "kind": "same_input_request_directly_reviewed_label_repair",
+    "review_file": "experiments/functional-v7-20261105/label-repairs/direct-observations.json",
+    "label": "cd71bf7fe562",
+    "review_evidence": "曝光提升，人物和水面波纹可辨，暖夕照保留，较旧候选少灰雾。"
+  },
+  {
+    "case_id": "train-191-restore-exposure-strong",
+    "source_case_id": "train-191-restore-exposure-strong",
+    "kind": "same_input_request_directly_reviewed_label_repair",
+    "review_file": "experiments/functional-v7-20261105/label-repairs/direct-observations.json",
+    "label": "d14ec102753a",
+    "review_evidence": "光照恢复且灰雾较少，体育场边界与道路层次清楚，未见明显大面积细节破坏。"
+  },
+  {
+    "case_id": "native-train-n180",
+    "source_case_id": "native-train-n180",
+    "kind": "same_input_request_directly_reviewed_label_repair",
+    "review_file": "experiments/functional-v7-20261105/label-repairs/direct-observations.json",
+    "label": "67aa3238a3bd",
+    "review_evidence": "人物和沙滩提亮、海水和沙色比输入鲜明，沙纹、浪线与云层仍可见。"
+  },
+  {
+    "case_id": "native-train-x035",
+    "source_case_id": "native-train-x035",
+    "kind": "same_input_request_directly_reviewed_label_repair",
+    "review_file": "experiments/functional-v7-20261105/label-repairs/direct-observations.json",
+    "label": "8b3a8d91db39",
+    "review_evidence": "整图亮度降低、海水和木板颜色减淡，椅子与棕榈叶保持；原本已平白的天空未宣称恢复。"
+  },
+  {
+    "case_id": "native-train-n119",
+    "source_case_id": "native-train-n119",
+    "kind": "same_input_request_directly_reviewed_label_repair",
+    "review_file": "experiments/functional-v7-20261105/label-quality-repairs/full-resolution-observations.json",
+    "label": "be66ad10b85a",
+    "review_evidence": "完整960×720中整图提亮，树林、路面与云层仍有层次；暗部有原始颗粒，但较前版不再明显泛灰或呈大块不均，适合这一未要求强度的提亮请求。"
+  },
+  {
+    "case_id": "native-train-x030",
+    "source_case_id": "native-train-x030",
+    "kind": "same_input_request_directly_reviewed_label_repair",
+    "review_file": "experiments/functional-v7-20261105/label-quality-repairs/full-resolution-observations.json",
+    "label": "fe3620704f35",
+    "review_evidence": "完整960×640中前景和山体明显提亮，天空渐变、细树枝和水面纹理保留；仍有原始颗粒，但不再像前版一样大片灰平和块状不均，光照层次较自然。"
+  },
+  {
+    "case_id": "native-train-n029",
+    "source_case_id": "native-train-n029",
+    "kind": "same_input_request_directly_reviewed_label_repair",
+    "review_file": "experiments/functional-v7-20261105/label-quality-repairs/full-resolution-observations.json",
+    "label": "20b76a99f3ca",
+    "review_evidence": "完整960×1280输入和新结果对照：过亮灰白感减轻且草地颜色增强，松鼠毛发、枝条及喂鸟器原有线条保留；输入自身已有较粗的纹理和玻璃反光，不声称恢复丢失信息。"
+  },
+  {
+    "case_id": "native-train-n068",
+    "source_case_id": "native-train-n068",
+    "kind": "same_input_request_directly_reviewed_label_repair",
+    "review_file": "experiments/functional-v7-20261105/label-quality-repairs/full-resolution-observations.json",
+    "label": "7c1c066328a8",
+    "review_evidence": "实际640×427结果的琥珀暖色和对比度变化明确，网绳交叉、外套褶线和五官可辨；桥面原本亮且偏平，但没有出现上一候选那样进一步变成大片白光。"
+  },
+  {
+    "case_id": "unsupported-train-002-v7",
+    "source_case_id": "unsupported-train-002-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "人物移除及背景补全需要生成或局部修补，现有全局调色工具不可执行。"
+  },
+  {
+    "case_id": "unsupported-train-007-v7",
+    "source_case_id": "unsupported-train-007-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "把人物身后环境替换成雪山需要区域选择与生成，不能用全局色调伪代替。"
+  },
+  {
+    "case_id": "unsupported-train-010-v7",
+    "source_case_id": "unsupported-train-010-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "只将衣服改红而其他区域不变需要局部掩膜，现有工具不支持。"
+  },
+  {
+    "case_id": "unsupported-train-013-v7",
+    "source_case_id": "unsupported-train-013-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "人物抠图及透明背景导出需要分割与alpha通道，当前编辑器只支持整图RGB调整。"
+  },
+  {
+    "case_id": "unsupported-train-016-v7",
+    "source_case_id": "unsupported-train-016-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "移除坐在草地上的孩子并补全场景需要局部修补，工具不具备该操作。"
+  },
+  {
+    "case_id": "unsupported-train-020-v7",
+    "source_case_id": "unsupported-train-020-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "在人物身旁新增小狗需要图像生成，整图参数不能新增对象。"
+  },
+  {
+    "case_id": "unsupported-train-025-v7",
+    "source_case_id": "unsupported-train-025-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "只修脸部小瑕疵并保持发丝和背景需要局部修饰，工具不支持。"
+  },
+  {
+    "case_id": "unsupported-train-031-v7",
+    "source_case_id": "unsupported-train-031-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "把草地树木背景替换为摄影棚需要抠图与背景生成，不能用调色替代。"
+  },
+  {
+    "case_id": "unsupported-train-034-v7",
+    "source_case_id": "unsupported-train-034-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "只改白帽为红色且其他颜色不变需要物体掩膜，当前工具不可执行。"
+  },
+  {
+    "case_id": "unsupported-train-041-v7",
+    "source_case_id": "unsupported-train-041-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "人物移除后补全车与后景需要局部生成，不能用整图参数完成。"
+  },
+  {
+    "case_id": "unsupported-train-021-v7",
+    "source_case_id": "unsupported-train-021-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "给海岸前景添加行李箱是新增对象，现有工具不支持。"
+  },
+  {
+    "case_id": "unsupported-train-027-v7",
+    "source_case_id": "unsupported-train-027-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "仅替换天空而地面不变需要区域分割与生成，当前工具没有。"
+  },
+  {
+    "case_id": "unsupported-train-039-v7",
+    "source_case_id": "unsupported-train-039-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "指定上半幅区域改色需要空间掩膜，整图工具无法保证下半幅逐像素不变。"
+  },
+  {
+    "case_id": "unsupported-train-043-v7",
+    "source_case_id": "unsupported-train-043-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "移除房屋并补全环境需要修补生成，工具不可执行。"
+  },
+  {
+    "case_id": "unsupported-train-074-v7",
+    "source_case_id": "unsupported-train-074-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "只将谷仓屋顶改红而其他颜色不变需要局部选区，当前工具不支持。"
+  },
+  {
+    "case_id": "unsupported-train-086-v7",
+    "source_case_id": "unsupported-train-086-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "新增戴黄帽行人属于对象生成，不能以全图增强替代。"
+  },
+  {
+    "case_id": "unsupported-train-100-v7",
+    "source_case_id": "unsupported-train-100-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "新增黑猫需要对象生成，当前全局调色工具不支持。"
+  },
+  {
+    "case_id": "unsupported-train-114-v7",
+    "source_case_id": "unsupported-train-114-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "移除皮艇和人并修补水面需要局部修补，不能以全局参数完成。"
+  },
+  {
+    "case_id": "unsupported-train-120-v7",
+    "source_case_id": "unsupported-train-120-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "新增开花的树需要生成新物体，当前工具不能执行。"
+  },
+  {
+    "case_id": "unsupported-train-149-v7",
+    "source_case_id": "unsupported-train-149-v7",
+    "kind": "unsupported_decision_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "文字叠加不在现有全局图像参数工具中，不能伪称完成。"
+  },
+  {
+    "case_id": "native-train-n028-AI-soft-contrast-v7",
+    "source_case_id": "native-train-n028-AI-soft-contrast-v7",
+    "kind": "AI_feasible_counterrequest_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "明暗过渡变柔和，暗部可见性增加，人物五官和衣纹保留；这是一条新的减对比度请求，并非旧增对比度请求的成功结果。"
+  },
+  {
+    "case_id": "native-train-n093-AI-monochrome-v7",
+    "source_case_id": "native-train-n093-AI-monochrome-v7",
+    "kind": "AI_feasible_counterrequest_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "全图转为灰阶，海龟、珊瑚和水体结构保留；原水下浑浊仍在，不声称完成旧增强或去雾请求。"
+  },
+  {
+    "case_id": "native-train-n070-AI-mild-light-v7",
+    "source_case_id": "native-train-n070-AI-mild-light-v7",
+    "kind": "AI_feasible_counterrequest_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "整图略有提亮，脸部、桌面和墙面没有像强拉曝光候选那样显著泛灰；原始低照度和压缩痕迹仍在，满足新轻度请求。"
+  },
+  {
+    "case_id": "native-train-n127-AI-mild-light-v7",
+    "source_case_id": "native-train-n127-AI-mild-light-v7",
+    "kind": "AI_feasible_counterrequest_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "天空、水面及人物稍微提亮，海浪和衣服轮廓保留；没有把人物仍暗的结果当成大幅提亮的完成。"
+  },
+  {
+    "case_id": "native-train-n190-AI-muted-colour-v7",
+    "source_case_id": "native-train-n190-AI-muted-colour-v7",
+    "kind": "AI_feasible_counterrequest_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "海水蓝色和岩石苔色减淡，浪花与岩石纹理保留；这是新的减饱和度请求，不代表原强增强请求已完成。"
+  },
+  {
+    "case_id": "native-train-n070",
+    "source_case_id": "native-train-n070",
+    "kind": "quality_decline_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "原始大幅提亮请求保持不变。多组已查看候选及完整960×720复核仍放大肤色斑块和压缩噪声；按用户可靠性偏好，应说明当前工具下无法可靠完成并不返回结果。此为AI可靠性判断，不是任何方法都无法修复的证明。"
+  },
+  {
+    "case_id": "native-train-n127",
+    "source_case_id": "native-train-n127",
+    "kind": "quality_decline_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "保留原大幅提亮请求；多组结果和原比例脸部裁块仍有明显彩色噪声、脸部偏暗。当前工具未建立可靠结果，拒绝输出合理；不把轻度提亮替代为原请求成功。"
+  },
+  {
+    "case_id": "native-train-n190",
+    "source_case_id": "native-train-n190",
+    "kind": "quality_decline_candidate",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+    "review_evidence": "保留原强对比度、强色彩请求。已查看多组候选及原尺寸浪花后，仍存在亮部渐变损失或灰平块。当前工具未能可靠同时完成强度与细节保留，按用户偏好拒绝输出；不将温和减饱和度结果算作原请求完成。"
+  },
+  {
+    "case_id": "native-train-n186",
+    "source_case_id": "native-train-n186",
+    "kind": "same_input_highlight_artifact_repair",
+    "review_file": "experiments/functional-v7-20261105/decision-candidates/full-resolution-observations.json",
+    "review_evidence": "完整960×640中钟面和建筑墙面更清楚，日落太阳保持白亮中心而非前版灰心，细枝和天空渐变保留；车辆小范围仍受原图低照度和压缩所限，但未见前版那样明显的灰雾和大片异常。"
+  },
+  {
+    "case_id": "native-train-n013-AI-brown-v7-r2",
+    "source_case_id": "native-train-n013-AI-brown-v7",
+    "kind": "reviewed_repair_of_new_AI_counterrequest",
+    "review_file": "experiments/functional-v7-20261105/decision-brown-repair/direct-observation.json",
+    "review_evidence": "完整960×1280输入已查看，新结果明确变为棕色复古风格，原蓝色上衣转为棕灰；眼镜、五官和袖子织纹保留，原本平白天空属于输入限制。新AI棕色请求完成，原GIER强对比请求仍不算完成。"
+  }
+]

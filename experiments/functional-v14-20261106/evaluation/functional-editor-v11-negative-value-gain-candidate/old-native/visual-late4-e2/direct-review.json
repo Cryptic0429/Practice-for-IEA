@@ -1,0 +1,818 @@
+[
+  {
+    "case_id": "natural-028",
+    "family": "lighting",
+    "language": "zh",
+    "item_id": "c87d56b3b3919803",
+    "assessment": {
+      "item_id": "c87d56b3b3919803",
+      "case_id": "natural-028",
+      "completion": "completed",
+      "quality": "uncertain",
+      "evidence": "Repeated direct AI observations of this identical input/request/result disagree on quality. All raw observations are preserved; disputed fields stay uncertain. No human adjudication.",
+      "image_sha256": "d0a770d4d80e1cadab6299a937346800004b84b42d60d07a923a166f7fd64904",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-028-01.jpg",
+      "sheet_sha256": "de684bb34e19e013d318f9b4076ae034ac017cae3dec3f8c5a773a97557699b9",
+      "bundle": "first-epoch-and-baselines",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T17:49:41.119388+00:00",
+      "original_size_supplement": {
+        "item_id": "c87d56b3b3919803",
+        "case_id": "natural-028",
+        "input_sha256": "a72c46469d9f2afb149b87aa00dbc09539cf394645e7652e64972483fe0a7f81",
+        "output_sha256": "d0a770d4d80e1cadab6299a937346800004b84b42d60d07a923a166f7fd64904",
+        "images": [
+          {
+            "role": "INPUT",
+            "path": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/full-resolution/natural-028-INPUT.png",
+            "sha256": "825a17566563e4f90beb49cfbb57b7352f7b6f47b4843256ea7457b29c54d5c9",
+            "size": [
+              960,
+              640
+            ],
+            "pixel_sha256": "ad3119c1eca7052637f013c1277f2afaa07cb3023b031c6d73166db0069b1b7e"
+          },
+          {
+            "role": "c87d56b3b3919803",
+            "path": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/full-resolution/natural-028-c87d56b3b3919803.png",
+            "sha256": "017ffc83bb8ec852bf6c90f2f187c84b393ec8bb294ef38f69fd9f1da1107af7",
+            "size": [
+              960,
+              640
+            ],
+            "pixel_sha256": "3f1c1eb0d64518f175b665a608ab6e164af3801b510730e58ffdf8be7ca0e24b"
+          }
+        ],
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "原尺寸中整体温和提亮，白衬衫竖纹与褶皱仍在，人物面部、头发和衣裙图案保持，未见大片新增高光细节损失。",
+        "reviewer": "Codex direct anonymous original-size AI review; not human",
+        "observed_at": "2026-11-05T17:57:30.277687+00:00",
+        "supplements_raw_contact_sheet": true,
+        "manifest_sha256": "a1224be14e4647c245d5a982d076d1252bcc3a165973f0f00fbaa619e6b8ac3a"
+      },
+      "raw_contact_sheet_assessment": {
+        "item_id": "c87d56b3b3919803",
+        "case_id": "natural-028",
+        "completion": "completed",
+        "quality": "uncertain",
+        "evidence": "整幅图温和提亮，人物面部仍清楚；白衬衫亮区细纹是否得到保留需要原尺寸核验。",
+        "image_sha256": "d0a770d4d80e1cadab6299a937346800004b84b42d60d07a923a166f7fd64904",
+        "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-028-01.jpg",
+        "sheet_sha256": "de684bb34e19e013d318f9b4076ae034ac017cae3dec3f8c5a773a97557699b9",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:49:41.119388+00:00"
+      },
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/old-native/codex-observations.jsonl",
+        "sha256": "bd14fac32902037b607cd308b684578c2773d917c69a6de2357701c36bbb2aa3"
+      },
+      "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing.",
+      "adjudication": "historical_exact_render_disagreement",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-028",
+    "family": "lighting",
+    "language": "en",
+    "item_id": "c87d56b3b3919803",
+    "assessment": {
+      "item_id": "c87d56b3b3919803",
+      "case_id": "natural-028",
+      "completion": "completed",
+      "quality": "uncertain",
+      "evidence": "Repeated direct AI observations of this identical input/request/result disagree on quality. All raw observations are preserved; disputed fields stay uncertain. No human adjudication.",
+      "image_sha256": "d0a770d4d80e1cadab6299a937346800004b84b42d60d07a923a166f7fd64904",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-028-01.jpg",
+      "sheet_sha256": "de684bb34e19e013d318f9b4076ae034ac017cae3dec3f8c5a773a97557699b9",
+      "bundle": "first-epoch-and-baselines",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T17:49:41.119388+00:00",
+      "original_size_supplement": {
+        "item_id": "c87d56b3b3919803",
+        "case_id": "natural-028",
+        "input_sha256": "a72c46469d9f2afb149b87aa00dbc09539cf394645e7652e64972483fe0a7f81",
+        "output_sha256": "d0a770d4d80e1cadab6299a937346800004b84b42d60d07a923a166f7fd64904",
+        "images": [
+          {
+            "role": "INPUT",
+            "path": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/full-resolution/natural-028-INPUT.png",
+            "sha256": "825a17566563e4f90beb49cfbb57b7352f7b6f47b4843256ea7457b29c54d5c9",
+            "size": [
+              960,
+              640
+            ],
+            "pixel_sha256": "ad3119c1eca7052637f013c1277f2afaa07cb3023b031c6d73166db0069b1b7e"
+          },
+          {
+            "role": "c87d56b3b3919803",
+            "path": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/full-resolution/natural-028-c87d56b3b3919803.png",
+            "sha256": "017ffc83bb8ec852bf6c90f2f187c84b393ec8bb294ef38f69fd9f1da1107af7",
+            "size": [
+              960,
+              640
+            ],
+            "pixel_sha256": "3f1c1eb0d64518f175b665a608ab6e164af3801b510730e58ffdf8be7ca0e24b"
+          }
+        ],
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "原尺寸中整体温和提亮，白衬衫竖纹与褶皱仍在，人物面部、头发和衣裙图案保持，未见大片新增高光细节损失。",
+        "reviewer": "Codex direct anonymous original-size AI review; not human",
+        "observed_at": "2026-11-05T17:57:30.277687+00:00",
+        "supplements_raw_contact_sheet": true,
+        "manifest_sha256": "a1224be14e4647c245d5a982d076d1252bcc3a165973f0f00fbaa619e6b8ac3a"
+      },
+      "raw_contact_sheet_assessment": {
+        "item_id": "c87d56b3b3919803",
+        "case_id": "natural-028",
+        "completion": "completed",
+        "quality": "uncertain",
+        "evidence": "整幅图温和提亮，人物面部仍清楚；白衬衫亮区细纹是否得到保留需要原尺寸核验。",
+        "image_sha256": "d0a770d4d80e1cadab6299a937346800004b84b42d60d07a923a166f7fd64904",
+        "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-028-01.jpg",
+        "sheet_sha256": "de684bb34e19e013d318f9b4076ae034ac017cae3dec3f8c5a773a97557699b9",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:49:41.119388+00:00"
+      },
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/old-native/codex-observations.jsonl",
+        "sha256": "bd14fac32902037b607cd308b684578c2773d917c69a6de2357701c36bbb2aa3"
+      },
+      "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing.",
+      "adjudication": "historical_exact_render_disagreement",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-033",
+    "family": "compound",
+    "language": "zh",
+    "item_id": "73e1ed3c6c97454e",
+    "assessment": {
+      "item_id": "73e1ed3c6c97454e",
+      "case_id": "natural-033",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "Whole 960x639 comparison shows mild brightening and colour enrichment with dress pattern, translucent pale skirt texture, facial edges, stone and fern detail retained. No conspicuous new cast or broad clipping appears.",
+      "image_sha256": "d38d9459ea01fc625e45190fc8d2e2d72ccc14035a952955a04e402e8e2eb2b0",
+      "sheet": "experiments/functional-v13-20261106/review/old-native/epoch2-narrow/natural-033-01.jpg",
+      "sheet_sha256": "1ab09a367b170536532ee4e45e9aba061971307bde957d439247b5c4445aabd1",
+      "bundle": "epoch2-narrow",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-06T07:58:04.794615+00:00",
+      "original_size_supplement": {
+        "item_id": "73e1ed3c6c97454e",
+        "case_id": "natural-033",
+        "input_sha256": "8ae5778ef6c4e27c227dd0585b94fd52e2b04975e0a7bc3d313a27f5e72e664a",
+        "output_sha256": "d38d9459ea01fc625e45190fc8d2e2d72ccc14035a952955a04e402e8e2eb2b0",
+        "images": [
+          {
+            "role": "INPUT",
+            "path": "experiments/functional-v13-20261106/review/old-native/epoch2-narrow/full-resolution/natural-033-INPUT.png",
+            "sha256": "ccd62abf7ecd3f5a61dd3bdc47e0d5f58bf38e88847c916a5be7222eb738aaec",
+            "size": [
+              960,
+              639
+            ],
+            "pixel_sha256": "44df34f1497aa24217b8c9a59b35b29938dd26af85bc426709e8c22b2a921a20"
+          },
+          {
+            "role": "73e1ed3c6c97454e",
+            "path": "experiments/functional-v13-20261106/review/old-native/epoch2-narrow/full-resolution/natural-033-73e1ed3c6c97454e.png",
+            "sha256": "66a01661fa1673a97bc7fa58fc4224ad26e5a9808d2ed37645cede1ee5ab17e4",
+            "size": [
+              960,
+              639
+            ],
+            "pixel_sha256": "ad1227c1c5e57e1e3f7b253bd39324b9bb493f052efe41b38863300d83155f6f"
+          }
+        ],
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "Whole 960x639 comparison shows mild brightening and colour enrichment with dress pattern, translucent pale skirt texture, facial edges, stone and fern detail retained. No conspicuous new cast or broad clipping appears.",
+        "reviewer": "Codex direct anonymous original-size AI review; not human",
+        "observed_at": "2026-11-06T08:32:04.287679+00:00",
+        "supplements_raw_contact_sheet": true,
+        "manifest_sha256": "d0007c427e8d7cb74a8456368c4a4253dfabf214033d25cebc000b54c4e2a941"
+      },
+      "raw_contact_sheet_assessment": {
+        "item_id": "73e1ed3c6c97454e",
+        "case_id": "natural-033",
+        "completion": "completed",
+        "quality": "uncertain",
+        "evidence": "Foliage and patterned dress become a little brighter and more vivid. Original-size skin and pale-skirt checks are required before accepting quality.",
+        "image_sha256": "d38d9459ea01fc625e45190fc8d2e2d72ccc14035a952955a04e402e8e2eb2b0",
+        "sheet": "experiments/functional-v13-20261106/review/old-native/epoch2-narrow/natural-033-01.jpg",
+        "sheet_sha256": "1ab09a367b170536532ee4e45e9aba061971307bde957d439247b5c4445aabd1",
+        "bundle": "epoch2-narrow",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-06T07:58:04.794615+00:00"
+      },
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        }
+      ],
+      "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing."
+    }
+  },
+  {
+    "case_id": "natural-033",
+    "family": "compound",
+    "language": "en",
+    "item_id": "d0cefdb01a87cf9a",
+    "assessment": {
+      "item_id": "d0cefdb01a87cf9a",
+      "case_id": "natural-033",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "Whole960x639 input and output were directly viewed. Foliage and patterned dress are slightly more colourful and the subject/scene a little brighter. Face contours, glasses, hair, white lace-panel folds, leaves and stone edges remain readable without a new broad clipped patch or conspicuous skin cast. Existing white canopy gaps remain bright in both; no lost source detail is claimed recovered.",
+      "image_sha256": "7baa74f5a449de1b67cbfb33b85cca6bf792229e04384963ca0aeb17c051b905",
+      "sheet": "experiments/functional-v14-20261106/review/old-native/joint-epochs/natural-033-01.jpg",
+      "sheet_sha256": "02b0b44fd8e295753baa3e55568ec2ab50d79aa5e92819683d22dd3723c06b17",
+      "bundle": "joint-epochs",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-06T11:57:18.455094+00:00",
+      "original_size_supplement": {
+        "item_id": "d0cefdb01a87cf9a",
+        "case_id": "natural-033",
+        "input_sha256": "8ae5778ef6c4e27c227dd0585b94fd52e2b04975e0a7bc3d313a27f5e72e664a",
+        "output_sha256": "7baa74f5a449de1b67cbfb33b85cca6bf792229e04384963ca0aeb17c051b905",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v14-20261106/review/old-native/joint-epochs/native-pixels/natural-033-INPUT-whole.png",
+            "sha256": "ccd62abf7ecd3f5a61dd3bdc47e0d5f58bf38e88847c916a5be7222eb738aaec",
+            "size": [
+              960,
+              639
+            ],
+            "source": "data/training/functional-v2-20261104/inputs/development-033/original.png",
+            "source_sha256": "8ae5778ef6c4e27c227dd0585b94fd52e2b04975e0a7bc3d313a27f5e72e664a",
+            "source_size": [
+              960,
+              639
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              639
+            ]
+          },
+          {
+            "role": "d0cefdb01a87cf9a",
+            "region": "whole",
+            "path": "experiments/functional-v14-20261106/review/old-native/joint-epochs/native-pixels/natural-033-d0cefdb01a87cf9a-whole.png",
+            "sha256": "680b3897d2a95e8796554e84e5cb7389277b1d2debb093056afbebb1c9ef0664",
+            "size": [
+              960,
+              639
+            ],
+            "source": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e2/images/natural-033-en.png",
+            "source_sha256": "7baa74f5a449de1b67cbfb33b85cca6bf792229e04384963ca0aeb17c051b905",
+            "source_size": [
+              960,
+              639
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              639
+            ]
+          }
+        ],
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "Whole960x639 input and output were directly viewed. Foliage and patterned dress are slightly more colourful and the subject/scene a little brighter. Face contours, glasses, hair, white lace-panel folds, leaves and stone edges remain readable without a new broad clipped patch or conspicuous skin cast. Existing white canopy gaps remain bright in both; no lost source detail is claimed recovered.",
+        "manifest_sha256": "1982548a94d64dbdebf75d3e8eb7ffe71cff0a5db4f759ee2ba04bd3c64e13bc",
+        "reviewer": "Codex direct anonymous native-pixel AI review; not human",
+        "observed_at": "2026-11-06T11:58:39.422255+00:00",
+        "supplements_raw_contact_sheet": true,
+        "scope": "Native-pixel whole image or explicit integer regions, as listed; whole-frame context from the sheet. No denoising or recovered detail claim."
+      },
+      "raw_contact_sheet_assessment": {
+        "item_id": "d0cefdb01a87cf9a",
+        "case_id": "natural-033",
+        "completion": "completed",
+        "quality": "uncertain",
+        "evidence": "The foliage and dress colours become slightly more vivid and the image is a little brighter, matching both requested directions. Face, white dress panels and the bright canopy need original-pixel checking before judging added clipping or skin changes acceptable.",
+        "image_sha256": "7baa74f5a449de1b67cbfb33b85cca6bf792229e04384963ca0aeb17c051b905",
+        "sheet": "experiments/functional-v14-20261106/review/old-native/joint-epochs/natural-033-01.jpg",
+        "sheet_sha256": "02b0b44fd8e295753baa3e55568ec2ab50d79aa5e92819683d22dd3723c06b17",
+        "bundle": "joint-epochs",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-06T11:57:18.455094+00:00"
+      }
+    }
+  },
+  {
+    "case_id": "natural-055",
+    "family": "saturation",
+    "language": "zh",
+    "item_id": "a0a726890a3f8996",
+    "assessment": {
+      "item_id": "a0a726890a3f8996",
+      "case_id": "natural-055",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "红领带、黄色衣物和蓝色饰边略更鲜明，人物肤色和白衣层次保留，未见明显新增大片溢色。",
+      "image_sha256": "b57f05fc6dd3507f2f395a7374e77a68e070d05ededd659643929568cded5067",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/epochs2-4/natural-055-01.jpg",
+      "sheet_sha256": "a0618655c22e106073a4598ec55e63ea5cd3b815488e3e0ab596a029266d7431",
+      "bundle": "epochs2-4",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T18:03:29.907931+00:00",
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/old-native/codex-observations.jsonl",
+        "sha256": "bd14fac32902037b607cd308b684578c2773d917c69a6de2357701c36bbb2aa3"
+      },
+      "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing.",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-055",
+    "family": "saturation",
+    "language": "en",
+    "item_id": "11f89a21acb63a66",
+    "assessment": {
+      "item_id": "11f89a21acb63a66",
+      "case_id": "natural-055",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "黄色衣服、蓝色饰边和红领带略更鲜明，面部和白色衣料层次保留，没有明显新增大块过曝。",
+      "image_sha256": "f8d84cb4f5b60f5ad169e197d70eddc637b83fbb1f0ddb2474e9a43cc61b2350",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-055-01.jpg",
+      "sheet_sha256": "fd978f9af0920be8493369a2305bbee78567802a1bb03a42c414c81db9eb65fa",
+      "bundle": "first-epoch-and-baselines",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T17:50:10.101823+00:00",
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/old-native/codex-observations.jsonl",
+        "sha256": "bd14fac32902037b607cd308b684578c2773d917c69a6de2357701c36bbb2aa3"
+      },
+      "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing.",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-019",
+    "family": "compound",
+    "language": "zh",
+    "item_id": "d4f425b15313ad5a",
+    "assessment": {
+      "item_id": "d4f425b15313ad5a",
+      "case_id": "natural-019",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "Whole 960x720 comparison shows substantial field/branch brightening and warmer sunset. Needle silhouettes, field texture, moon and cloud streaks remain visible; dark branches are lifted in tone as requested, without a new broad blown sky patch.",
+      "image_sha256": "70034b2019e16a5efaa16bf825213d49576460ee4e39fb02a04d0729d13d2b15",
+      "sheet": "experiments/functional-v13-20261106/review/old-native/epoch2-narrow/natural-019-01.jpg",
+      "sheet_sha256": "7a3ecaf3346877f7aaa7fe8301a9e2bda42f9ce022fa27e28c9d0be407ce2d96",
+      "bundle": "epoch2-narrow",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-06T07:58:04.795585+00:00",
+      "original_size_supplement": {
+        "item_id": "d4f425b15313ad5a",
+        "case_id": "natural-019",
+        "input_sha256": "a784ecfdaa611deb2a9f8b3aeeaaf87855f62d8ab124144d4ebddf7becf58d01",
+        "output_sha256": "70034b2019e16a5efaa16bf825213d49576460ee4e39fb02a04d0729d13d2b15",
+        "images": [
+          {
+            "role": "INPUT",
+            "path": "experiments/functional-v13-20261106/review/old-native/epoch2-narrow/full-resolution/natural-019-INPUT.png",
+            "sha256": "17f5d218c6738e68f87d52a90b3fb660ef117494d35dd1a1ecebf6f1a45397b1",
+            "size": [
+              960,
+              720
+            ],
+            "pixel_sha256": "7fb9c7fe26444701f8f3e8ef69614d032c1dfeeb8289667e517dbaf48581559a"
+          },
+          {
+            "role": "d4f425b15313ad5a",
+            "path": "experiments/functional-v13-20261106/review/old-native/epoch2-narrow/full-resolution/natural-019-d4f425b15313ad5a.png",
+            "sha256": "11a6b051af6816544df05530346b5d0e306db3a0861ec5a2f43cb68b7bf85b57",
+            "size": [
+              960,
+              720
+            ],
+            "pixel_sha256": "d8ed5ef2309f95afd84bc30dc0788e35e87bec2572247031ba72dd96b96ea0ea"
+          }
+        ],
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "Whole 960x720 comparison shows substantial field/branch brightening and warmer sunset. Needle silhouettes, field texture, moon and cloud streaks remain visible; dark branches are lifted in tone as requested, without a new broad blown sky patch.",
+        "reviewer": "Codex direct anonymous original-size AI review; not human",
+        "observed_at": "2026-11-06T08:32:04.289355+00:00",
+        "supplements_raw_contact_sheet": true,
+        "manifest_sha256": "d0007c427e8d7cb74a8456368c4a4253dfabf214033d25cebc000b54c4e2a941"
+      },
+      "raw_contact_sheet_assessment": {
+        "item_id": "d4f425b15313ad5a",
+        "case_id": "natural-019",
+        "completion": "completed",
+        "quality": "uncertain",
+        "evidence": "Field and pine branches become substantially brighter and sunset warmth increases. Fine needles, shadow texture and cloud highlights require original-size inspection before quality acceptance.",
+        "image_sha256": "70034b2019e16a5efaa16bf825213d49576460ee4e39fb02a04d0729d13d2b15",
+        "sheet": "experiments/functional-v13-20261106/review/old-native/epoch2-narrow/natural-019-01.jpg",
+        "sheet_sha256": "7a3ecaf3346877f7aaa7fe8301a9e2bda42f9ce022fa27e28c9d0be407ce2d96",
+        "bundle": "epoch2-narrow",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-06T07:58:04.795585+00:00"
+      },
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        }
+      ],
+      "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing."
+    }
+  },
+  {
+    "case_id": "natural-019",
+    "family": "compound",
+    "language": "en",
+    "item_id": "30ccb6529e91107e",
+    "assessment": {
+      "item_id": "30ccb6529e91107e",
+      "case_id": "natural-019",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "树枝和田野暗部明显更可见，整幅图更明亮且夕照暖色增强，天空云带和针叶轮廓仍保留。",
+      "image_sha256": "3ffde021680142ee179a3ebde1288a7de3b4e8155a7fffaec88bde8623b92d01",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-019-01.jpg",
+      "sheet_sha256": "1e816844911de6d1047945c2053def20e0aea3558dab301f0200d94e52d1561c",
+      "bundle": "first-epoch-and-baselines",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T17:50:25.646282+00:00",
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/old-native/codex-observations.jsonl",
+        "sha256": "bd14fac32902037b607cd308b684578c2773d917c69a6de2357701c36bbb2aa3"
+      },
+      "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing.",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-022",
+    "family": "saturation",
+    "language": "zh",
+    "item_id": "057fff2d6b8277a6",
+    "assessment": {
+      "item_id": "057fff2d6b8277a6",
+      "case_id": "natural-022",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "岩石暖色、绿色灌木和蓝灰天空颜色增强，岩层纹理、云层和前景白石仍有层次。",
+      "image_sha256": "2f7d648768b3d7f9f0582bb7b65e2669d75c7daf0d78ad6cdc5c0667c29e93ba",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-022-01.jpg",
+      "sheet_sha256": "6b7f9f5816ee8d5813880bdf031a942beff4749a467967a25b5740f0568378a2",
+      "bundle": "first-epoch-and-baselines",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T17:50:41.279192+00:00",
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/old-native/codex-observations.jsonl",
+        "sha256": "bd14fac32902037b607cd308b684578c2773d917c69a6de2357701c36bbb2aa3"
+      },
+      "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing.",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-022",
+    "family": "saturation",
+    "language": "en",
+    "item_id": "057fff2d6b8277a6",
+    "assessment": {
+      "item_id": "057fff2d6b8277a6",
+      "case_id": "natural-022",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "岩石暖色、绿色灌木和蓝灰天空颜色增强，岩层纹理、云层和前景白石仍有层次。",
+      "image_sha256": "2f7d648768b3d7f9f0582bb7b65e2669d75c7daf0d78ad6cdc5c0667c29e93ba",
+      "sheet": "experiments/functional-v7-20261105/review/old-native/first-epoch-and-baselines/natural-022-01.jpg",
+      "sheet_sha256": "6b7f9f5816ee8d5813880bdf031a942beff4749a467967a25b5740f0568378a2",
+      "bundle": "first-epoch-and-baselines",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-05T17:50:41.279192+00:00",
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/old-native/codex-observations.jsonl",
+        "sha256": "bd14fac32902037b607cd308b684578c2773d917c69a6de2357701c36bbb2aa3"
+      },
+      "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing.",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "natural-030",
+    "family": "lighting",
+    "language": "zh",
+    "item_id": "1d622d3e91b5e970",
+    "assessment": {
+      "item_id": "1d622d3e91b5e970",
+      "case_id": "natural-030",
+      "completion": "partial",
+      "quality": "acceptable",
+      "evidence": "Road and woodland become only moderately darker. The request explicitly asks for a lot of darkening, and the image remains close in overall brightness; required strength is not completed, although road markings and branches remain intact.",
+      "image_sha256": "216e494e8ee79d8dde1cb879bbad1fafe980d8d1055507c78941bf47feb2e8c7",
+      "sheet": "experiments/functional-v13-20261106/review/old-native/epoch1/natural-030-01.jpg",
+      "sheet_sha256": "dd57eeae26c12c66f1f88b7010db0f57b28a81e548bed0c17122242fd54b5c66",
+      "bundle": "epoch1",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-06T07:36:52.411359+00:00",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e2/direct-review.json",
+          "sha256": "b07b525e5832f167eea66cdce9a82f8c27bea05aefcde8a5152919637332371b"
+        }
+      ],
+      "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing."
+    }
+  },
+  {
+    "case_id": "natural-030",
+    "family": "lighting",
+    "language": "en",
+    "item_id": "969944634489fcfb",
+    "assessment": {
+      "item_id": "969944634489fcfb",
+      "case_id": "natural-030",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "The woodland road darkens substantially across bright sky gaps, road, trunks and leaf litter. Yellow lines, branches and moss remain distinguishable without an added hue change.",
+      "image_sha256": "17b02cd61e37450f190fdd77209de8dd143909b0e84179580a81d6dc1d0812af",
+      "sheet": "experiments/functional-v11-20261106/review/old-native/editor-control/natural-030-01.jpg",
+      "sheet_sha256": "694b9ec3499e0d31b4a77a9085a1f0480017ffeb5d194e66834fc3d8d5b3cd85",
+      "bundle": "editor-control",
+      "reviewer": "Codex direct anonymous-image visual AI review; not human",
+      "observed_at": "2026-11-06T00:30:44.737824+00:00",
+      "prior_final_observation_source": {
+        "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/old-native/codex-observations.jsonl",
+        "sha256": "bd14fac32902037b607cd308b684578c2773d917c69a6de2357701c36bbb2aa3"
+      },
+      "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing.",
+      "prior_final_sources": [
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-review.json",
+          "sha256": "a41e3e1cbf10c54777b8187654d9a3b11aa8dfb085e93ab53f57b821615ef141"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-review.json",
+          "sha256": "80b51ef068f3e69507dd00b26e9eba61ec05295325bb7a9962e8d5fe7040b01e"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e2/direct-review.json",
+          "sha256": "e4bacd093b3baa24bb17030b5de3231d820486404d69cc31fa8bae5cf85145e8"
+        },
+        {
+          "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-review.json",
+          "sha256": "da24bf6b6258c0ffa1a01028d78320b27ac4de47768d204787084e71bae15f44"
+        }
+      ]
+    }
+  }
+]

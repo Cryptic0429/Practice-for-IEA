@@ -1,0 +1,111 @@
+{
+  "split": "native-development",
+  "bundle": "old-qualified-checkpoints",
+  "items": [
+    {
+      "item_id": "91ba127c6e699058",
+      "case_id": "native-dev-070",
+      "input_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+      "output_sha256": "1b37112723788a8b672687da73e1329da8adf5ecf5199fbfdbdefe8e7005c592",
+      "images": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v20-20261107/review/native-development/old-qualified-checkpoints/native-pixels/native-dev-070-INPUT-whole.png",
+          "sha256": "1494b2613cfb96315c279b86744089efd5474d9c4143d173864769d1edb34c6d",
+          "size": [
+            960,
+            640
+          ],
+          "source": "data/training/functional-v6-20261105/inputs/native-dev-070.png",
+          "source_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+          "source_size": [
+            960,
+            640
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            640
+          ]
+        },
+        {
+          "role": "91ba127c6e699058",
+          "region": "whole",
+          "path": "experiments/functional-v20-20261107/review/native-development/old-qualified-checkpoints/native-pixels/native-dev-070-91ba127c6e699058-whole.png",
+          "sha256": "08e115a26a4bd44f8d59b1805af0fb630c134f97da8e926bc26a0cc2e0729321",
+          "size": [
+            960,
+            640
+          ],
+          "source": "experiments/functional-v20-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/last-e20/images/native-dev-070-zh.png",
+          "source_sha256": "1b37112723788a8b672687da73e1329da8adf5ecf5199fbfdbdefe8e7005c592",
+          "source_size": [
+            960,
+            640
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            640
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "bd9f220eb7cf26cd",
+      "case_id": "native-dev-070",
+      "input_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+      "output_sha256": "906e3df5772fc05bb68ad9d364d344f4ed3f60d6eb57422eca4eebf0c984c841",
+      "images": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v20-20261107/review/native-development/old-qualified-checkpoints/native-pixels/native-dev-070-INPUT-whole.png",
+          "sha256": "1494b2613cfb96315c279b86744089efd5474d9c4143d173864769d1edb34c6d",
+          "size": [
+            960,
+            640
+          ],
+          "source": "data/training/functional-v6-20261105/inputs/native-dev-070.png",
+          "source_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+          "source_size": [
+            960,
+            640
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            640
+          ]
+        },
+        {
+          "role": "bd9f220eb7cf26cd",
+          "region": "whole",
+          "path": "experiments/functional-v20-20261107/review/native-development/old-qualified-checkpoints/native-pixels/native-dev-070-bd9f220eb7cf26cd-whole.png",
+          "sha256": "7ae34f58d04139e3f345986beffe44547fee91edbcece28b53606651bef7df89",
+          "size": [
+            960,
+            640
+          ],
+          "source": "experiments/functional-v20-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/last-e80/images/native-dev-070-zh.png",
+          "source_sha256": "906e3df5772fc05bb68ad9d364d344f4ed3f60d6eb57422eca4eebf0c984c841",
+          "source_size": [
+            960,
+            640
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            640
+          ]
+        }
+      ]
+    }
+  ],
+  "policy": "Integer-coordinate native pixels only, no resizing or colour change. Whole-frame context remains on the anonymous sheet. Whole-image QA only where region=whole; bounded regions do not claim complete native coverage of giant files."
+}

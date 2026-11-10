@@ -1,0 +1,51 @@
+{
+  "at": "2026-11-06T01:27:08.924323+00:00",
+  "status": "exact_prior_AI_reviewed_requests_and_targets_inherited",
+  "semantic_cases": 250,
+  "unique_language_rows": 500,
+  "actual_rows_each_route": 500,
+  "source_groups": 60,
+  "photo_domains": {
+    "portrait": 30,
+    "landscape": 30
+  },
+  "case_domain_counts": {
+    "portrait": 125,
+    "landscape": 125
+  },
+  "outcome_counts": {
+    "edit": 199,
+    "keep": 5,
+    "decline": 46
+  },
+  "original_GIER_English_cases": 27,
+  "original_English_with_AI_Chinese_translation_rows": 54,
+  "AI_authored_cases": 223,
+  "AI_authored_rows": 446,
+  "family_counts": {
+    "brown_tone": 6,
+    "saturation": 6,
+    "lighting": 126,
+    "contrast": 6,
+    "white_balance": 16,
+    "identity": 5,
+    "unsupported": 5,
+    "compound": 80
+  },
+  "new_original_groups": 0,
+  "parent_cumulative_original_groups": 160,
+  "source_selection": "Previous matched200-condition cases plus40 anchors, all taken from corrected R11 admission, plus10 existing cool-cast cases.250 distinct cases; no repetitions.",
+  "training_data_sha256": "f2dc433203fd14b0e0fb095010959e03a41a42196258948f53e3e6ebe9e79091",
+  "cases_sha256": "01a137ae2e1e805850d4642329e1c06bc5f1f43f08dfa4cc0f3da5eaac1a1c38",
+  "lineage_sha256": "6a978ac5ecb9c61552add45f0c2eb0ce2cf2f3dc84fa92ab7f6e31292c95d441",
+  "prior_cases_sha256": "5604ab7aab492d3be0c0ca17f82c2329ec029a7b46174bee11a3d3e09fc6f359",
+  "prior_admission_sha256": "ac2acdbaf69f186c7b64ff1bbc7a8e7b3e67face9f8f4deaf612e8d498f47d56",
+  "limitations": [
+    "Every target/request is an exact prior reviewed R11 case, not fresh independent assessment.",
+    "No new original photo, user upload, user feedback or heldout label enters training.",
+    "New system manual describes unchanged editor semantics generally; it contains no heldout image, case ID or reference parameter.",
+    "Synthetic conditions do not prove unknown real-camera reliability."
+  ],
+  "GPU_hours": 0,
+  "new_training_started": false
+}

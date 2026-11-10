@@ -1,0 +1,256 @@
+{
+  "at": "2026-11-05T19:32:50.918131+00:00",
+  "status": "actual_data_runtime_optimizer_and_functional_gates_frozen_before_training",
+  "hypothesis": "Test whether a fresh single language-only adapter avoids inherited enhancement habits. Compare original-Qwen and author-IEA full-weight origins using identical fresh adapter initialization, data, prompts, editor, optimizer and budget. No parent adapter transfer or stacking.",
+  "routes": [
+    "base",
+    "author"
+  ],
+  "origins": {
+    "base": {
+      "path": "models/Qwen2.5-VL-7B-Instruct",
+      "shards": [
+        {
+          "path": "models/Qwen2.5-VL-7B-Instruct/model-00001-of-00005.safetensors",
+          "sha256": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+          "bytes": 3900233256,
+          "mtime_ns": 1793432463546824622
+        },
+        {
+          "path": "models/Qwen2.5-VL-7B-Instruct/model-00002-of-00005.safetensors",
+          "sha256": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+          "bytes": 3864726320,
+          "mtime_ns": 1793432503644001111
+        },
+        {
+          "path": "models/Qwen2.5-VL-7B-Instruct/model-00003-of-00005.safetensors",
+          "sha256": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+          "bytes": 3864726424,
+          "mtime_ns": 1793432545341217818
+        },
+        {
+          "path": "models/Qwen2.5-VL-7B-Instruct/model-00004-of-00005.safetensors",
+          "sha256": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+          "bytes": 3864733680,
+          "mtime_ns": 1793432587834451242
+        },
+        {
+          "path": "models/Qwen2.5-VL-7B-Instruct/model-00005-of-00005.safetensors",
+          "sha256": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67",
+          "bytes": 1089994880,
+          "mtime_ns": 1793432599234781102
+        }
+      ],
+      "architecture": {
+        "hidden_size": 3584,
+        "intermediate_size": 18944,
+        "num_hidden_layers": 28,
+        "num_attention_heads": 28,
+        "num_key_value_heads": 4,
+        "vocab_size": 152064
+      },
+      "assets": {
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "chat_template.json": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+        "model-info.json": "3f375296723cbb910e9c3350730e3395342ead9cb7ac0ec355a25dcefe5bf532",
+        "tokenizer_config.json": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+        "config.json": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+        "generation_config.json": "0a3aea82869fe29f20dc95ccf3e2bcff380eca1f5ad6447a4a4b37110b08e43e",
+        "model.safetensors.index.json": "73b333b0b16e5286ddba615d2caebcd495cf7e616f52eb217a81781393d79de9",
+        "preprocessor_config.json": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+        "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+      },
+      "prior_integrity_file": "configs/evaluation-weight-integrity-v1.json",
+      "prior_integrity_sha256": "43a0961e25db0e05dc92c69e4e7b520ac0fb8531420223dc6daf45f75257cbd1",
+      "source": "Pinned original Qwen revision cc594898137f460bfe9f0759e9844b3ce807cfb5"
+    },
+    "author": {
+      "path": "models/Qwen2.5-VL-7B-IEA",
+      "shards": [
+        {
+          "path": "models/Qwen2.5-VL-7B-IEA/model-00001-of-00004.safetensors",
+          "sha256": "c5dd573200d60dd8fca38cb9e84359d79f24e9ff28121a71d6147641789052bd",
+          "bytes": 4968243304,
+          "mtime_ns": 1793365800063648170
+        },
+        {
+          "path": "models/Qwen2.5-VL-7B-IEA/model-00002-of-00004.safetensors",
+          "sha256": "8e084e0a7c23ae2621facf56fcf11ff594e51486662c338d1486672d5514f905",
+          "bytes": 4991495816,
+          "mtime_ns": 1793365444197819275
+        },
+        {
+          "path": "models/Qwen2.5-VL-7B-IEA/model-00003-of-00004.safetensors",
+          "sha256": "4928cca0b97406966fca452ded16017c6ff3d0e114d51c0d5ef219f401248304",
+          "bytes": 4932751040,
+          "mtime_ns": 1793365654274572388
+        },
+        {
+          "path": "models/Qwen2.5-VL-7B-IEA/model-00004-of-00004.safetensors",
+          "sha256": "c7dd717707e80ef5db65b49cc285ebd529b552f26f06f5ee93c6dd7c854932e6",
+          "bytes": 1691924384,
+          "mtime_ns": 1793365705894909968
+        }
+      ],
+      "architecture": {
+        "hidden_size": 3584,
+        "intermediate_size": 18944,
+        "num_hidden_layers": 28,
+        "num_attention_heads": 28,
+        "num_key_value_heads": 4,
+        "vocab_size": 152064
+      },
+      "assets": {
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "model-info.json": "85f61bd5b291d118bbbabea626f091be82919253638dc3c2e573dc12c9ef54bf",
+        "tokenizer_config.json": "37ab9b3df99c783a264eb7fd9847d17f2db28d9cc2f64b37e8bf4d60c81c8761",
+        "config.json": "53dc8e207b4b3433edc1da8549c45dc588f686d6160d6f36950bcfe577b2cf0d",
+        "generation_config.json": "74096ab8522ef854e06730ea689bc5f4a80f4c6fc78794c588a4071593e726c7",
+        "chat_template.jinja": "a0bc6f6fc7a29a80017a433e8f03a1cc1236e838a944a2d034295a60c4f2fddb",
+        "model.safetensors.index.json": "3067e9b0f35596ff3426a0d0ec8c982a51fa1e110c4fc30dcf3be9ea37409df6",
+        "preprocessor_config.json": "c1c9d43adb750cc52f317b130734fefa8edba78a5814066f6c10ecc1826e98af",
+        "tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "video_preprocessor_config.json": "4e7245236bbf2af8b304bbc3228519cccc3bf3601726f53b7a1b8d87a3043af9"
+      },
+      "prior_integrity_file": "configs/evaluation-weight-integrity-v1.json",
+      "prior_integrity_sha256": "43a0961e25db0e05dc92c69e4e7b520ac0fb8531420223dc6daf45f75257cbd1",
+      "source": "Existing author IEA full weights; publisher checksum not independently attested; exact content matches historical integrity receipt"
+    }
+  },
+  "origin_audit_sha256": "c0270a4d29c17daf94d3eb5f4df86c1ae7e31f59067e20022feee5d232f7d65f",
+  "origin_input_compatibility": "All924 serialized bilingual training examples have identical tokenizer IDs under shared original-Qwen template; eight input-image tensor probes also identical. Asset bytes differ and are not assumed interchangeable.",
+  "training": {
+    "rows": 924,
+    "epochs": 4,
+    "steps_per_epoch": 231,
+    "steps": 924,
+    "learning_rate": 0.0001,
+    "effective_batch": 4,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.0,
+    "seed": 20261115,
+    "replicate_seed": 20261116,
+    "per_device_batch": 1,
+    "gradient_accumulation": 4,
+    "image_max_pixels": 262144,
+    "max_sequence_tokens": 2048,
+    "quantization": "NF4, double quantization, BF16 compute",
+    "optimizer": "adamw_torch",
+    "weight_decay": 0.0,
+    "scheduler": "cosine",
+    "warmup_ratio": 0.05,
+    "max_grad_norm": 1.0,
+    "save": "every complete epoch",
+    "assistant_only_decision_JSON_supervision": true,
+    "trainable_tensors": 112,
+    "visual_parameters_frozen": true,
+    "fresh_adapter_random_seed_reset_before_creation": true
+  },
+  "dataset_sha256": "fe3f8e6479c5d74ea3783cc4edb643f1a2fc5a79ba50e826df5a5786ec8e068c",
+  "cases_sha256": "1948fbe5e40cdeae1d3e37fefedd4c87d9ebb7a2cf1eec3ff830229e8b98353a",
+  "admission_sha256": "d55420a7db81e29d1483f951de2db280375c447bba5d105e5e0c80202efa0d3b",
+  "input_audit_path": "experiments/functional-v7-20261105/input-audit.json",
+  "input_audit_sha256": "5b62a54ef44d03c52d17231a3b454a22d9aded16d99392981e54c2a36998e7af",
+  "target_replay_path": "experiments/functional-v7-20261105/target-replay.json",
+  "target_replay_sha256": "cda159ea098095315d50e204e37c233ba795cf2ae663279bae35daac2b4e239c",
+  "evaluation_protocol_sha256": "ec2c75bc7ed5648dcc83141536dd8185d996de5b32c181257024fc1522076521",
+  "code_hashes": {
+    "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+    "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+    "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+    "scripts/functional_v7/editor_soft.py": "8c3b02c304d79bca9d547fe471afe4a0136c1813c2cf30a0c343dd5e174f2b50",
+    "scripts/functional_v7/outcomes.py": "4d46bb208b18dab750ee77e94c8f063ca1c3b5189ff1a6990ff9d3c4c1ce4286",
+    "scripts/functional_v7/runtime.py": "c6568cf1de61b8372abd2c21070070f2a4bca7f88e0f956541c07be330bfd5a7",
+    "scripts/functional_v9/runtime.py": "4d9de4b350c1e0284b4e032f08ae6f8298cede2e41de3e3a9153bb43dbc61d37",
+    "scripts/functional_v9/train.py": "2fb42d0ca1cc55d21bdf86e6530c2d4039eeba54c70ce0987eb6e6e757db0b6e",
+    "scripts/functional_v9/evaluate.py": "508855963aacb720d71d846f296cbf6c5c266654fbe94a1f35b978623fc97bbb",
+    "scripts/functional_v9/freeze_training.py": "8ecf0febd5c058458a9f0df02abcec27224a42aa3b06796930c3925ba7d4619d"
+  },
+  "editor": "functional-editor-v7-soft-rgb-candidate",
+  "schema": "functional-outcome-v1",
+  "runtime": "functional_v9.runtime",
+  "system_prompt_sha256": "89a184150fb28fc3d63ab184fa5a4aaccca192f35991b2450ece55c166519d92",
+  "source_counts": {
+    "at": "2026-11-05T16:59:06.469839+00:00",
+    "status": "direct_AI_visual_admitted_not_human_or_user_approval",
+    "semantic_cases": 462,
+    "unique_language_rows": 924,
+    "actual_rows_each_route": 924,
+    "source_groups": 160,
+    "photo_domains": {
+      "portrait": 80,
+      "landscape": 80
+    },
+    "outcome_counts": {
+      "edit": 379,
+      "decline": 23,
+      "keep": 60
+    },
+    "original_GIER_English_cases": 97,
+    "original_English_with_AI_Chinese_translation_rows": 194,
+    "AI_authored_cases": 365,
+    "instruction_origins": {
+      "English untouched original GIER annotation; Chinese AI translation; no AI rewrite or synthetic reversal of the English request.": 97,
+      "AI-authored counterfactual request on unchanged native training photograph; original failed request remains recorded separately": 6,
+      "AI-authored two-clause request": 40,
+      "AI-authored explicit no-op, including visibly degraded photos": 60,
+      "AI-authored restoration request + known synthetic degradation, directly reviewed target required": 120,
+      "AI-authored counterfactual strength request": 119,
+      "AI-authored unsupported-operation request; original photograph unchanged": 20
+    },
+    "task_families": {
+      "brown_tone": 35,
+      "compound": 74,
+      "saturation": 89,
+      "lighting": 85,
+      "contrast": 71,
+      "white_balance": 28,
+      "identity": 60,
+      "unsupported": 20
+    },
+    "original_task_exclusions": 24,
+    "source_isolation": "Exactly the same 160 original photograph groups and only original input hashes or their previously registered canonical PNGs; inherits the round6 isolation audit. No new heldout data opened.",
+    "oversampling": false,
+    "cases_sha256": "1948fbe5e40cdeae1d3e37fefedd4c87d9ebb7a2cf1eec3ff830229e8b98353a",
+    "dataset_sha256": "fe3f8e6479c5d74ea3783cc4edb643f1a2fc5a79ba50e826df5a5786ec8e068c",
+    "lineage_sha256": "1e42fd4ab37ecd65eaa4c7332da98032959c165cd602839df1c25158615ecc56",
+    "evidence_files": {
+      "data/training/functional-v6-20261105/admission.json": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45",
+      "data/training/functional-v6-20261105/cases.json": "375c98f1f53730c0e926677e90bb18cdf630bcd00730aa4223f631be10c045a3",
+      "experiments/functional-v7-20261105/soft-label-candidates/manifest.json": "e3aa0cb7e99f511c2fa734df6b1f75d86f3aff8e3b1fc654539b45ac3b45664b",
+      "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json": "5bde0d97c3f32b4c7f1704a84c6508ed2747d4be99f58ea6eaa130635195548d",
+      "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json": "f19ece94b36c5f2189d05210d1649b666846e787fac6ea7c3392767312d082c4",
+      "experiments/functional-v7-20261105/label-repairs/direct-observations.json": "5f5e2300fa5787a84a9f4b133c85785a125fc58f6f92fe003089c71d203ec34b",
+      "experiments/functional-v7-20261105/label-repairs/full-resolution-observations.json": "eed413853c63a6b793768ab9167f626b89cf8970c41024b53a68f737de43dfff",
+      "experiments/functional-v7-20261105/label-quality-repairs/direct-observations.json": "7ec465b83d2e7dd907917b3e615c6825167a6986191210cf1f6bfa27169417d0",
+      "experiments/functional-v7-20261105/label-quality-repairs/full-resolution-observations.json": "3d3530b8c6b2218020a52257eba0892a82eeb127a27668f0db0bedcd6f40f959",
+      "experiments/functional-v7-20261105/decision-candidates/direct-observations.json": "24d451711f3addaf9c369ae05c9b701aef860ce33d0a7121bd3d88994208ada5",
+      "experiments/functional-v7-20261105/decision-candidates/full-resolution-observations.json": "66e7961ff028f5dedcb0bbc462b1efa02973210bf486b2ac16f5b279d6f80db2",
+      "experiments/functional-v7-20261105/decision-brown-repair/direct-observation.json": "cb4e0c4c55558ccc134800aa662630384753d0488c6cc0a757d445d658546dce"
+    },
+    "editor": "functional-editor-v7-soft-rgb-candidate",
+    "schema": "functional-outcome-v1",
+    "GPU_hours": 0,
+    "new_training_started": false,
+    "limitations": "All judgments are AI-assisted, with Codex direct visual verification. No human approval or actual user usability feedback. Frozen original Qwen visual screening previously failed directional calibration and is not treated as a second reliable reviewer. New AI counterrequests never count as original-request success. Quality declines reflect current tool reliability, not universal image impossibility."
+  },
+  "source_overlap_caveat": "Historical source audit confirmed original-image overlap in author train/test splits. Author may have seen heldout GIER sources. This origin is a practical reuse experiment, NOT a clean causal or independent generalization control.",
+  "resource": {
+    "shared_cap_GPU_hours": 16,
+    "consumed_before_round9": 11.58759250607755,
+    "remaining_at_freeze": 4.41240749392245,
+    "allowed_GPUs": [
+      0,
+      2,
+      3
+    ],
+    "preserve_GPU1": true,
+    "estimated_two_training_GPU_hours": 1.6,
+    "estimated_stage1_evaluation_GPU_hours": 0.7,
+    "conditional_replication_and_trial_reserve_GPU_hours": 1.5,
+    "on_limit": "Watchdog stops owned experiment jobs before cap; save state and report, never raise budget or continue unbounded."
+  }
+}

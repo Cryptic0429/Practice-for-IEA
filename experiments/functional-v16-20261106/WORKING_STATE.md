@@ -1,0 +1,5 @@
+# R16 precision audit FINISHED, not policy training
+
+SSH47041finished.3TRAINONLYprefixes078/144/ext396,sameR11parentPARENTSHA12243ea...runtime13, rawadapterreloadvs trainprepared+.eval. Actualselectedconv/embedding/norm/headBF16vsFP32; logitsmaxdiff.46875,.75,.576171875 butfullgreedyresponses3/3EXACTsame. Zerooptimizer,noimagesexecuted,nolabels,noheldout,notfunctionalresult. Do nottreatasprovenrootcause orbettervariant. R14runtime/frozenfilesunchanged;R15CPUtoolindependent.
+
+ActualGPU3occupied.012524747053782145h inclbothloads+inference, shared24ledger. resource-audit.json recordsmetadata-only genericeditorcorrection tonot_executed_precision_audit andruntime13, time/status/limitsunchanged. Needrsyncresource-auditlocal+REPORT/WORKINGserver. No16model/catalog/protocol, don'tregisteranything. ThisdiagnosticshouldnotbeincludedasR14trainingconsumption; overallbudgetincludesboth14+16. Preferseparatearchiveorthoroughlaterdeliverysnapshot, notrewriteR13archive.

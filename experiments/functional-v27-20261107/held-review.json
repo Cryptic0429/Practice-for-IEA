@@ -1,0 +1,169 @@
+{
+  "reviewer": "Direct Codex AI visual review of full frames and native crops. Reviewed after fit freeze and before held scoring.",
+  "plan_sha256": "b699739dc02f661f450b11568739b85604f01929e783b567f448d53ca12d3fbe",
+  "fit_preceding_review_sha256": "4c1fd7f93c5ebfbaecf98530b8ded117c4feddb1054acec176b0fe6abeebe115",
+  "isolation_sha256": "0a2ba8ff91dd479161ce3840e201e7cd748ac7c710b21cdfad7e6266bbbbabf3",
+  "replay_sha256": "54fbf6fa7b9d5a775d5cf941301ca38dd2412d30817e26a28205a7c4959d1946",
+  "cases": [
+    {
+      "id": "p346",
+      "labels": {
+        "mild": [
+          "complete",
+          "partial",
+          "failed"
+        ],
+        "strong": [
+          "partial",
+          "complete",
+          "failed"
+        ]
+      },
+      "evidence": "轻档打开眼侧和发丝，强档让脸暗侧更可读，原肤色和窗边亮部仍在。全局曝光使亮区纹理反差更弱、面部受光侧偏粉。",
+      "panels": {
+        "experiments/functional-v27-20261107/held/p346.png": "0fc87b548484f4bd88c027d9795ddb281e6e6e3eb6f38565f7eb5e8f6dd2b5ba",
+        "experiments/functional-v27-20261107/held/p346-window.png": "a075e3ef391b2c2fd0682c10cedb0d983c573d9df3e9a5064d15e64991045f7c"
+      }
+    },
+    {
+      "id": "p377",
+      "labels": {
+        "mild": [
+          "complete",
+          "partial",
+          "failed"
+        ],
+        "strong": [
+          "partial",
+          "uncertain",
+          "failed"
+        ]
+      },
+      "evidence": "轻档保住暗背景，西装纹理略清楚。强档能看见更多衣纹，但同一原像素裁图中紫色颗粒亦更明显，保留为不确定。全局曝光还明显改变已受光的肤色。",
+      "panels": {
+        "experiments/functional-v27-20261107/held/p377.png": "6c35378b3e8f2a6a5cebc4839e1e0c7ab55eb9d39e820b1eeea6715b8c78f8f7",
+        "experiments/functional-v27-20261107/held/p377-suit.png": "687bfe672c1b61e559847355ec9e9c538e798f8f4423ae6b526bbc4b19bbd8d7"
+      }
+    },
+    {
+      "id": "p150",
+      "labels": {
+        "mild": [
+          "complete",
+          "partial",
+          "failed"
+        ],
+        "strong": [
+          "partial",
+          "complete",
+          "failed"
+        ]
+      },
+      "evidence": "轻档温和打开脸暗面，明显档的眼周与深发更清楚，灯和白衣层次仍在。全局曝光明显抬高肩部与室内亮面，偏离保亮部要求。",
+      "panels": {
+        "experiments/functional-v27-20261107/held/p150.png": "efb24d71dfeb6bcfcc5d2cf04122229a353ad8b6854750e690a37e53ae317e32",
+        "experiments/functional-v27-20261107/held/p150-face.png": "9b9ccc8e3c2f19fae2914997ad251063af5109eb7aea8048ffc6475564aac280"
+      }
+    },
+    {
+      "id": "p358",
+      "labels": {
+        "mild": [
+          "complete",
+          "partial",
+          "failed"
+        ],
+        "strong": [
+          "partial",
+          "complete",
+          "partial"
+        ]
+      },
+      "evidence": "轻档暗面只略开，明显档西装与脸侧可辨且保天空和裙褶。全局曝光让草地、皮肤和天空亮区都变化，强档仍保有一部分衣纹和层次。",
+      "panels": {
+        "experiments/functional-v27-20261107/held/p358.png": "10529f2bd8b5f2ba2036a40b4397d9cb01ebc450d7dddb483d1d84d7bea2a6c4",
+        "experiments/functional-v27-20261107/held/p358-faces.png": "7c5fd68e55940163dea8924ff126fbf7a26436f9450e067491f93aa93d0ffed7"
+      }
+    },
+    {
+      "id": "p357",
+      "labels": {
+        "mild": [
+          "complete",
+          "partial",
+          "failed"
+        ],
+        "strong": [
+          "partial",
+          "complete",
+          "partial"
+        ]
+      },
+      "evidence": "轻档稍提湿沙；明显档脚印和沙纹更可读，黄昏灰粉层次保住。全局曝光虽提亮沙面，但天空与海面一同变亮，天空颜色层次减弱。",
+      "panels": {
+        "experiments/functional-v27-20261107/held/p357.png": "3f541f4843d0242b6679440cd3dc3c3e85e5f840f406a77b280fc3bac3bd6990",
+        "experiments/functional-v27-20261107/held/p357-sky.png": "5d23130bf49559bd563b05953252468f7b97474bcec57544e54d766a69d2aba9"
+      }
+    },
+    {
+      "id": "p309",
+      "labels": {
+        "mild": [
+          "complete",
+          "partial",
+          "failed"
+        ],
+        "strong": [
+          "partial",
+          "complete",
+          "partial"
+        ]
+      },
+      "evidence": "轻档略开树下草地和雪路，明显档草纹更容易辨认。全局曝光改变天色与雪面亮度，仍可看见雪地原纹理。",
+      "panels": {
+        "experiments/functional-v27-20261107/held/p309.png": "12b9cabbdea5b11f80e1ab3d48cfdbe4f5d081195beb167bcd9e7f15253e52a2",
+        "experiments/functional-v27-20261107/held/p309-sky.png": "193231ccefafbb0555a1cc29f9e79ead3106eabb01653bfa0de8cc7f5d374b5b"
+      }
+    },
+    {
+      "id": "p771",
+      "labels": {
+        "mild": [
+          "complete",
+          "partial",
+          "failed"
+        ],
+        "strong": [
+          "partial",
+          "complete",
+          "failed"
+        ]
+      },
+      "evidence": "明显档让树影、灌木与前景细节更可见，天空云纹和水面保持。全局曝光使亮云与亮水纹反差显著减弱。",
+      "panels": {
+        "experiments/functional-v27-20261107/held/p771.png": "90f2c20662c846f5afc4bf85e61f0cf52d2db916d4a823cb1945a0e817ae3302",
+        "experiments/functional-v27-20261107/held/p771-sky.png": "40a563176beab61fe1706fd617b0f631a4f47a432ddcab098b679c6b29671263"
+      }
+    },
+    {
+      "id": "p476",
+      "labels": {
+        "mild": [
+          "complete",
+          "partial",
+          "failed"
+        ],
+        "strong": [
+          "partial",
+          "complete",
+          "failed"
+        ]
+      },
+      "evidence": "轻档微提暗枝，明显档林地枝叶层次更清楚而羽毛仍有质感。全局曝光抬亮羽毛与整片叶色，改变本应保留的亮部。",
+      "panels": {
+        "experiments/functional-v27-20261107/held/p476.png": "c3e8755f8550329678b57acf764e10a524fb0d65426db83c34a1ca95c6450ca0",
+        "experiments/functional-v27-20261107/held/p476-foliage.png": "2de1ed90c6ad5a88a49099697478151d1e643f4db812cc4323c723ac1759dc4f"
+      }
+    }
+  ]
+}

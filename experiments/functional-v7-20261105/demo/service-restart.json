@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-05T17:30:36.443935+00:00",
+  "old_owned_pids": [
+    3936371,
+    3936372
+  ],
+  "new": [
+    {
+      "name": "worker-router",
+      "pid": 3983960,
+      "command": [
+        "-u",
+        "-m",
+        "functional_v1.worker",
+        "--gpu",
+        "2",
+        "--port",
+        "18282"
+      ]
+    },
+    {
+      "name": "web-server",
+      "pid": 3983961,
+      "command": [
+        "-u",
+        "-m",
+        "functional_v1.web",
+        "--port",
+        "12346"
+      ]
+    }
+  ],
+  "original_author_service_pid_preserved": 3378799,
+  "new_GPU_allocation": false
+}

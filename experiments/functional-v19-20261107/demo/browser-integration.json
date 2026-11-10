@@ -1,0 +1,53 @@
+{
+  "at": "2026-11-07T00:16:48.765770+00:00",
+  "status": "actual_browser_upload_edit_parent_switch_download_refusal_feedback_verified",
+  "requests": [
+    {
+      "request_id": "3b1ecd7a980f4bd29fbeca21262ee666",
+      "model_id": "functional-v19-photometric-bridge-20261129",
+      "case_id": "historical-case12-brown",
+      "language": "en",
+      "status": "executed",
+      "output_sha256": "d427c8bfdaeb5338b9ed9a2f6a6905597b88900f74e6c077a653cbba4a415c6b",
+      "historical_case12_not_independent": true
+    },
+    {
+      "request_id": "0ab973af88ed4dc4a35f452f2fd0e0ef",
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "case_id": "historical-case12-brown",
+      "language": "en",
+      "status": "executed",
+      "output_sha256": "d427c8bfdaeb5338b9ed9a2f6a6905597b88900f74e6c077a653cbba4a415c6b",
+      "historical_case12_not_independent": true
+    },
+    {
+      "request_id": "4d8c6f7bd62c41729616b2564d4d8b4a",
+      "model_id": "functional-v19-photometric-bridge-20261129",
+      "case_id": "native-dev-070",
+      "language": "en",
+      "status": "declined",
+      "no_result_image": true,
+      "image_route_status": 404,
+      "refusal_correctness_not_inferred_from_completion_count": true
+    }
+  ],
+  "model_switch_cleared_old_result": true,
+  "alternative_model_actually_inferred": true,
+  "screenshots": {
+    "experiments/functional-v19-20261107/demo/browser-case12-result.jpg": "0d2258bf6862ab968d23429c66964a9c076eacae0d431e439afc7b5e96f842cc",
+    "experiments/functional-v19-20261107/demo/browser-progress.jpg": "60be7022a405f9236682e8bd4d2bffccbe1dc3b0a651d890b97b3b825078993c",
+    "experiments/functional-v19-20261107/demo/browser-no-result-refusal.jpg": "435c9e5518d0ced8e53687717164b9fbee33ac2d5d8128045cae7a610ea13b40",
+    "experiments/functional-v19-20261107/demo/browser-parent-case12.jpg": "1dcfe2abf802189d257fc5a75c4530b4d5a98197ca1900f933feb1a3b7f1b9e6"
+  },
+  "independent_user_feedback": 0,
+  "agent_feedback_records": 2,
+  "worker_unloaded": true,
+  "default_unchanged": true,
+  "occupied_GPU_hours": 22.772163286076655,
+  "no_external_rewriting": true,
+  "limitations": [
+    "Known historical/dev inputs; agent UI checks are not independent user approval.",
+    "Chinese star-field result has major noise; English refusal is separate from requested-edit completion.",
+    "Both checkpoints failed; no controlled evaluation, replication or final acceptance."
+  ]
+}

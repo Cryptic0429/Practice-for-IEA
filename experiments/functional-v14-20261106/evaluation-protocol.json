@@ -1,0 +1,92 @@
+{
+  "at": "2026-11-06T11:02:43.519980+00:00",
+  "status": "round14_cases_gates_and_visual_hypothesis_frozen_before_optimization",
+  "case_files": {
+    "native_development": {
+      "path": "data/training/functional-v6-20261105/development-native-cases.json",
+      "sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+    },
+    "native_acceptance": {
+      "path": "data/training/functional-v6-20261105/acceptance-native-cases.json",
+      "sha256": "57e925135e2b7e076848aaa805b6a5ec6d167829f464ddf7d15c7889b7de0dca"
+    },
+    "controlled_development": {
+      "path": "data/training/functional-v2-20261104/development-final-cases.json",
+      "sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+    },
+    "controlled_acceptance": {
+      "path": "data/training/functional-v2-20261104/acceptance-final-cases.json",
+      "sha256": "43eebd663a04a4b9436b35c0ab40e1587cdad4e4dec8097dcf9235b62dd84404"
+    },
+    "old_native_regressions": {
+      "path": "data/training/functional-v2-20261104/natural-use-final-cases.json",
+      "sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+    },
+    "decision_development": {
+      "path": "experiments/functional-v7-20261105/evaluation/decision-development-cases.json",
+      "sha256": "36684e39bab8e7d2365e21219b3823a2212546c62d620dd2a0b056d9d6438378"
+    }
+  },
+  "unit": "Semantic cases grouped by original photograph; both ZH and EN must complete with acceptable quality. Translations are not independent cases.",
+  "stage1": {
+    "native_development_minimum": 16,
+    "native_development_total": 20,
+    "old_native_minimum": 4,
+    "old_native_total": 6,
+    "maximum_major_cases": 0,
+    "decision_controls_total": 20,
+    "decision_controls_required": 20,
+    "decisions": "Ten unsupported requests must decline with unsupported_tools and no result; ten explicit no-ops must keep the exact input pixels. Both languages required. Controls are on ten already reused developer photos, not an independent dataset."
+  },
+  "stage2": {
+    "controlled_development_minimum": 81,
+    "controlled_development_total": 100,
+    "maximum_major_cases": 0,
+    "run_only_after_stage1_passes": true
+  },
+  "assessment": "Codex direct executed-image AI review with model identity hidden during grading; all uncertainty and same-pixel conflicts preserved. Frozen raw7B visual screening previously failed directional calibration and is reference-only, not an independent reliable judge.",
+  "refusal_policy": "On feasible native/controlled tasks, every decline remains uncompleted and is separately reported as a refusal. No result image or input fallback is allowed for decline. Fewer outputs cannot inflate completion counts.",
+  "comparisons": [
+    "Exact R11 parent and R13 narrow checkpoints reused with explicit source identity; no new inference claimed.",
+    "Same R11 parent,925/1850 R13 data, seed,1850-row order,2epochs,LR5e-5,tools,prompt,pixels; add LoRA only in visual blocks28..31.",
+    "R13 narrow/wide results are existing controls, not newly retuned or rerun candidates."
+  ],
+  "selection": {
+    "checkpoint": "Epoch1 or2 of visual_late4,seed20261127.",
+    "eligibility": "Unchanged: native>=16/20,old>=4/6,controls20/20,zero marked major;then controlled>=81/100 and zero major. No feasible-task refusal counted complete.",
+    "rank": [
+      "More bilingual complete+acceptable native cases",
+      "Fewer severe side effects",
+      "Better anonymous paired visual outcome if needed",
+      "Earlier checkpoint"
+    ]
+  },
+  "acceptance": {
+    "open_after": "Select route/checkpoint on development, lock actual adapter/parser/prompt/editor, then seed replicate selected route only if developmental gates pass. Final acceptance outcomes never choose checkpoint or parameters.",
+    "native_cases": 20,
+    "controlled_cases": 100,
+    "qualitative_gate": "Native>=16/20 bilingual complete acceptable, zero major; controlled>=81/100 complete acceptable, zero major; report every task/domain/failure and compare current under identical inputs. Passing is AI evidence, not proof of high practical usefulness or user approval.",
+    "no_posthoc_checkpoint_changes": true,
+    "no_parameter_tuning_on_acceptance": true
+  },
+  "replicate_only_after_all_development_gates": true,
+  "preservation": "Existing native20 and controlled100 acceptance files unchanged and remain sealed for inference. Never choose a checkpoint or modify parameters after acceptance.",
+  "resource": {
+    "shared_gpu_hour_cap": 24,
+    "allowed_gpu_indices": [
+      0,
+      2,
+      3
+    ],
+    "gpu1_original_service_preserved": true,
+    "ledger": "experiments/functional-v1-20261104/resources.json"
+  },
+  "new_training_started": false,
+  "actual_user_feedback": 0,
+  "limitations": [
+    "Same repeatedly used development inputs, adaptive comparison; not an independent test.",
+    "All925 labels inherit R13 AI evidence; zero new photographs, zero new independent review.",
+    "Late-visual adaptation is a hypothesis; official PEFT support and initial parity do not imply quality gain."
+  ],
+  "seed_replication": "Only if all development gates pass without new major damage;seed20261128 on selected route, then freeze before acceptance."
+}

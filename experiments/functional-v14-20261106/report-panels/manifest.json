@@ -1,0 +1,1666 @@
+{
+  "at": "2026-11-06T12:30:53.474908+00:00",
+  "items": [
+    {
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "split": "native-development",
+      "family": "brown_tone",
+      "instruction": {
+        "en": "Add sepia tones.",
+        "zh": "添加棕褐色色调。"
+      },
+      "input": "data/training/functional-v6-20261105/inputs/native-dev-001.png",
+      "models": {
+        "parent-frozen": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "sepia": 95
+            }
+          },
+          "assessment": {
+            "item_id": "12b3e7c0b410efb9",
+            "case_id": "native-dev-001",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "整图明确变为棕褐色，人物五官、衣服折线和室内墙面仍可辨；原有窗边平亮区域保留为输入限制。",
+            "image_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-001-01.jpg",
+            "sheet_sha256": "6e063a17b57b6f6d44d9e6503e9e4c89182f6d099d2425bdc5085c8bf300e752",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:35:48.734940+00:00",
+            "prior_final_observation_source": {
+              "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/native-development/codex-observations.jsonl",
+              "sha256": "c35489473de72bdf8907682380bd1e906bf166af68f9bd3fbcb42910b06c326d"
+            },
+            "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+          },
+          "output": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/images/native-dev-001-zh.png",
+          "output_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765"
+        },
+        "matched-narrow-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "sepia": 95
+            }
+          },
+          "assessment": {
+            "item_id": "12b3e7c0b410efb9",
+            "case_id": "native-dev-001",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "整图明确变为棕褐色，人物五官、衣服折线和室内墙面仍可辨；原有窗边平亮区域保留为输入限制。",
+            "image_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-001-01.jpg",
+            "sheet_sha256": "6e063a17b57b6f6d44d9e6503e9e4c89182f6d099d2425bdc5085c8bf300e752",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:35:48.734940+00:00",
+            "prior_final_observation_source": {
+              "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/native-development/codex-observations.jsonl",
+              "sha256": "c35489473de72bdf8907682380bd1e906bf166af68f9bd3fbcb42910b06c326d"
+            },
+            "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+          },
+          "output": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/images/native-dev-001-zh.png",
+          "output_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765"
+        },
+        "visual-late4-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "sepia": 95
+            }
+          },
+          "assessment": {
+            "item_id": "12b3e7c0b410efb9",
+            "case_id": "native-dev-001",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "整图明确变为棕褐色，人物五官、衣服折线和室内墙面仍可辨；原有窗边平亮区域保留为输入限制。",
+            "image_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-001-01.jpg",
+            "sheet_sha256": "6e063a17b57b6f6d44d9e6503e9e4c89182f6d099d2425bdc5085c8bf300e752",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:35:48.734940+00:00",
+            "prior_final_observation_source": {
+              "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/native-development/codex-observations.jsonl",
+              "sha256": "c35489473de72bdf8907682380bd1e906bf166af68f9bd3fbcb42910b06c326d"
+            },
+            "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing.",
+            "prior_final_sources": [
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "0e69faa3c9eef000bcc697f166315f9c29bb9d2ffa075114579b58fa87f00b72"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "0e69faa3c9eef000bcc697f166315f9c29bb9d2ffa075114579b58fa87f00b72"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "6b9e4290122a1b8f17ba1c800c3109530341d0b8bf23d70e2fa620c9e7e772bb"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "6b9e4290122a1b8f17ba1c800c3109530341d0b8bf23d70e2fa620c9e7e772bb"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/direct-review.json",
+                "sha256": "48b7a4b9a4c2cb9e712758ed5cb484cbc34b5565f6fd80abe2e7681ee2922116"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/direct-review.json",
+                "sha256": "48b7a4b9a4c2cb9e712758ed5cb484cbc34b5565f6fd80abe2e7681ee2922116"
+              }
+            ]
+          },
+          "output": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/visual-late4-e1/images/native-dev-001-zh.png",
+          "output_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765"
+        }
+      },
+      "panel": "experiments/functional-v14-20261106/report-panels/native-dev-001.jpg",
+      "sha256": "835fb061245797338e8d48e4c28b6d3a94ff166e368f82d1c65c1a36c7603592"
+    },
+    {
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "split": "native-development",
+      "family": "white_balance",
+      "instruction": {
+        "en": "Decrease brown tone in the image, please",
+        "zh": "请减弱照片中的棕色调。"
+      },
+      "input": "data/training/functional-v6-20261105/inputs/native-dev-006.png",
+      "models": {
+        "parent-frozen": {
+          "status": "failed",
+          "decision": null,
+          "assessment": {
+            "completion": "failed",
+            "quality": "uncertain",
+            "evidence": "No executable edit was produced."
+          },
+          "output": null,
+          "output_sha256": null
+        },
+        "matched-narrow-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "temperature": -24
+            }
+          },
+          "assessment": {
+            "item_id": "031d11a150926a62",
+            "case_id": "native-dev-006",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "The original-size whole-frame comparison reduces brown-yellow cast in the wall, refrigerator and bedding. Faces remain varied rather than universally gray, and clothing/furniture structure remains. Source grain and flash streak persist; no restoration is claimed. This observation does not claim every fine pixel of the large frame was inspected.",
+            "image_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+            "sheet": "experiments/functional-v13-20261106/review/native-development/epoch1/native-dev-006-01.jpg",
+            "sheet_sha256": "446bdd9edb615a3a6b088bebef247a39c50212c2fa75e97532a6090b1b866622",
+            "bundle": "epoch1",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-06T07:36:52.399233+00:00",
+            "original_size_supplement": {
+              "item_id": "031d11a150926a62",
+              "case_id": "native-dev-006",
+              "input_sha256": "f0db39319b99f7c082dcd8aadfa146be979a9f774a2fe5b04bf7dc6f516e5ddb",
+              "output_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "path": "experiments/functional-v13-20261106/review/native-development/epoch1/full-resolution/native-dev-006-INPUT.png",
+                  "sha256": "9b30d3b143e9767ea47ec7a40e2468fcebe4adbb931e0bc1bd1a6d04559e2818",
+                  "size": [
+                    4032,
+                    2268
+                  ],
+                  "pixel_sha256": "fe564f2f034e0673ea9b7f62d4208c70827d3671352d96c22926ea33e891932a"
+                },
+                {
+                  "role": "031d11a150926a62",
+                  "path": "experiments/functional-v13-20261106/review/native-development/epoch1/full-resolution/native-dev-006-031d11a150926a62.png",
+                  "sha256": "19894ab3f60380758a6ae34638abab06fcd4ba9c8f75fda8909ea73f677882ed",
+                  "size": [
+                    4032,
+                    2268
+                  ],
+                  "pixel_sha256": "3a504ddcc0e641823bafc9b126358e09ec6182fb5b9adf04dd9ef8b4e078dc1a"
+                }
+              ],
+              "completion": "completed",
+              "quality": "acceptable",
+              "evidence": "The original-size whole-frame comparison reduces brown-yellow cast in the wall, refrigerator and bedding. Faces remain varied rather than universally gray, and clothing/furniture structure remains. Source grain and flash streak persist; no restoration is claimed. This observation does not claim every fine pixel of the large frame was inspected.",
+              "reviewer": "Codex direct anonymous original-size AI review; not human",
+              "observed_at": "2026-11-06T07:39:42.632416+00:00",
+              "supplements_raw_contact_sheet": true,
+              "manifest_sha256": "c89467696cee1f1ff02465069f02ce57d031d2ad942a9258267ade4dc8432eaf"
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "031d11a150926a62",
+              "case_id": "native-dev-006",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "Warm brown cast is reduced across walls and bedding, but faces look pinker and cooler. Original-size skin and fabric comparison is required before accepting colour quality.",
+              "image_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+              "sheet": "experiments/functional-v13-20261106/review/native-development/epoch1/native-dev-006-01.jpg",
+              "sheet_sha256": "446bdd9edb615a3a6b088bebef247a39c50212c2fa75e97532a6090b1b866622",
+              "bundle": "epoch1",
+              "reviewer": "Codex direct anonymous-image visual AI review; not human",
+              "observed_at": "2026-11-06T07:36:52.399233+00:00"
+            }
+          },
+          "output": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/images/native-dev-006-zh.png",
+          "output_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0"
+        },
+        "visual-late4-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "temperature": -24
+            }
+          },
+          "assessment": {
+            "item_id": "031d11a150926a62",
+            "case_id": "native-dev-006",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "The original-size whole-frame comparison reduces brown-yellow cast in the wall, refrigerator and bedding. Faces remain varied rather than universally gray, and clothing/furniture structure remains. Source grain and flash streak persist; no restoration is claimed. This observation does not claim every fine pixel of the large frame was inspected.",
+            "image_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+            "sheet": "experiments/functional-v13-20261106/review/native-development/epoch1/native-dev-006-01.jpg",
+            "sheet_sha256": "446bdd9edb615a3a6b088bebef247a39c50212c2fa75e97532a6090b1b866622",
+            "bundle": "epoch1",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-06T07:36:52.399233+00:00",
+            "original_size_supplement": {
+              "item_id": "031d11a150926a62",
+              "case_id": "native-dev-006",
+              "input_sha256": "f0db39319b99f7c082dcd8aadfa146be979a9f774a2fe5b04bf7dc6f516e5ddb",
+              "output_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "path": "experiments/functional-v13-20261106/review/native-development/epoch1/full-resolution/native-dev-006-INPUT.png",
+                  "sha256": "9b30d3b143e9767ea47ec7a40e2468fcebe4adbb931e0bc1bd1a6d04559e2818",
+                  "size": [
+                    4032,
+                    2268
+                  ],
+                  "pixel_sha256": "fe564f2f034e0673ea9b7f62d4208c70827d3671352d96c22926ea33e891932a"
+                },
+                {
+                  "role": "031d11a150926a62",
+                  "path": "experiments/functional-v13-20261106/review/native-development/epoch1/full-resolution/native-dev-006-031d11a150926a62.png",
+                  "sha256": "19894ab3f60380758a6ae34638abab06fcd4ba9c8f75fda8909ea73f677882ed",
+                  "size": [
+                    4032,
+                    2268
+                  ],
+                  "pixel_sha256": "3a504ddcc0e641823bafc9b126358e09ec6182fb5b9adf04dd9ef8b4e078dc1a"
+                }
+              ],
+              "completion": "completed",
+              "quality": "acceptable",
+              "evidence": "The original-size whole-frame comparison reduces brown-yellow cast in the wall, refrigerator and bedding. Faces remain varied rather than universally gray, and clothing/furniture structure remains. Source grain and flash streak persist; no restoration is claimed. This observation does not claim every fine pixel of the large frame was inspected.",
+              "reviewer": "Codex direct anonymous original-size AI review; not human",
+              "observed_at": "2026-11-06T07:39:42.632416+00:00",
+              "supplements_raw_contact_sheet": true,
+              "manifest_sha256": "c89467696cee1f1ff02465069f02ce57d031d2ad942a9258267ade4dc8432eaf"
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "031d11a150926a62",
+              "case_id": "native-dev-006",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "Warm brown cast is reduced across walls and bedding, but faces look pinker and cooler. Original-size skin and fabric comparison is required before accepting colour quality.",
+              "image_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+              "sheet": "experiments/functional-v13-20261106/review/native-development/epoch1/native-dev-006-01.jpg",
+              "sheet_sha256": "446bdd9edb615a3a6b088bebef247a39c50212c2fa75e97532a6090b1b866622",
+              "bundle": "epoch1",
+              "reviewer": "Codex direct anonymous-image visual AI review; not human",
+              "observed_at": "2026-11-06T07:36:52.399233+00:00"
+            },
+            "prior_final_sources": [
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "0e69faa3c9eef000bcc697f166315f9c29bb9d2ffa075114579b58fa87f00b72"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "0e69faa3c9eef000bcc697f166315f9c29bb9d2ffa075114579b58fa87f00b72"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e1/direct-review.json",
+                "sha256": "ab70f87bbc853eb67a6fa71cba7507556e1d9978367fc386b54d9851f9def722"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e1/direct-review.json",
+                "sha256": "ab70f87bbc853eb67a6fa71cba7507556e1d9978367fc386b54d9851f9def722"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e2/direct-review.json",
+                "sha256": "98f8445341457164bc41f99360850d1ced3ae6b03ab5efbf1818bae4efd5e6f2"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e2/direct-review.json",
+                "sha256": "98f8445341457164bc41f99360850d1ced3ae6b03ab5efbf1818bae4efd5e6f2"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "6b9e4290122a1b8f17ba1c800c3109530341d0b8bf23d70e2fa620c9e7e772bb"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "6b9e4290122a1b8f17ba1c800c3109530341d0b8bf23d70e2fa620c9e7e772bb"
+              }
+            ],
+            "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing."
+          },
+          "output": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/visual-late4-e1/images/native-dev-006-zh.png",
+          "output_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0"
+        }
+      },
+      "panel": "experiments/functional-v14-20261106/report-panels/native-dev-006.jpg",
+      "sha256": "cdb4afa5585a0f839f57df3c741dea93d30af8216bcfc8e529027e8bae3f7478"
+    },
+    {
+      "case_id": "native-dev-023",
+      "language": "zh",
+      "split": "native-development",
+      "family": "contrast",
+      "instruction": {
+        "en": "increase contrast",
+        "zh": "提高对比度。"
+      },
+      "input": "data/training/functional-v6-20261105/inputs/native-dev-023.png",
+      "models": {
+        "parent-frozen": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "contrast": 20
+            }
+          },
+          "assessment": {
+            "item_id": "8bdd538748b5fb66",
+            "case_id": "native-dev-023",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "明暗对比增强，头发和领带更深，脸部更明亮；眼睛、牙齿和衬衫纹理仍可辨，未见明显新增大片过曝。",
+            "image_sha256": "e4acff71327b829d3343b4424bca96e97f3eed41033379c4f02cc81b364874a6",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-023-01.jpg",
+            "sheet_sha256": "1b29ad0c4cee8d710888ca199504a8b690151d2d713a33e70985c9a1629b59cf",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:46:51.554556+00:00",
+            "prior_final_observation_source": {
+              "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/native-development/codex-observations.jsonl",
+              "sha256": "c35489473de72bdf8907682380bd1e906bf166af68f9bd3fbcb42910b06c326d"
+            },
+            "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+          },
+          "output": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/images/native-dev-023-zh.png",
+          "output_sha256": "e4acff71327b829d3343b4424bca96e97f3eed41033379c4f02cc81b364874a6"
+        },
+        "matched-narrow-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "contrast": 20
+            }
+          },
+          "assessment": {
+            "item_id": "8bdd538748b5fb66",
+            "case_id": "native-dev-023",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "明暗对比增强，头发和领带更深，脸部更明亮；眼睛、牙齿和衬衫纹理仍可辨，未见明显新增大片过曝。",
+            "image_sha256": "e4acff71327b829d3343b4424bca96e97f3eed41033379c4f02cc81b364874a6",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-023-01.jpg",
+            "sheet_sha256": "1b29ad0c4cee8d710888ca199504a8b690151d2d713a33e70985c9a1629b59cf",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:46:51.554556+00:00",
+            "prior_final_observation_source": {
+              "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/native-development/codex-observations.jsonl",
+              "sha256": "c35489473de72bdf8907682380bd1e906bf166af68f9bd3fbcb42910b06c326d"
+            },
+            "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+          },
+          "output": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/images/native-dev-023-zh.png",
+          "output_sha256": "e4acff71327b829d3343b4424bca96e97f3eed41033379c4f02cc81b364874a6"
+        },
+        "visual-late4-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "contrast": 20
+            }
+          },
+          "assessment": {
+            "item_id": "8bdd538748b5fb66",
+            "case_id": "native-dev-023",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "明暗对比增强，头发和领带更深，脸部更明亮；眼睛、牙齿和衬衫纹理仍可辨，未见明显新增大片过曝。",
+            "image_sha256": "e4acff71327b829d3343b4424bca96e97f3eed41033379c4f02cc81b364874a6",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-023-01.jpg",
+            "sheet_sha256": "1b29ad0c4cee8d710888ca199504a8b690151d2d713a33e70985c9a1629b59cf",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:46:51.554556+00:00",
+            "prior_final_observation_source": {
+              "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/native-development/codex-observations.jsonl",
+              "sha256": "c35489473de72bdf8907682380bd1e906bf166af68f9bd3fbcb42910b06c326d"
+            },
+            "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing.",
+            "prior_final_sources": [
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "0e69faa3c9eef000bcc697f166315f9c29bb9d2ffa075114579b58fa87f00b72"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "0e69faa3c9eef000bcc697f166315f9c29bb9d2ffa075114579b58fa87f00b72"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e1/direct-review.json",
+                "sha256": "ab70f87bbc853eb67a6fa71cba7507556e1d9978367fc386b54d9851f9def722"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e1/direct-review.json",
+                "sha256": "ab70f87bbc853eb67a6fa71cba7507556e1d9978367fc386b54d9851f9def722"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e2/direct-review.json",
+                "sha256": "98f8445341457164bc41f99360850d1ced3ae6b03ab5efbf1818bae4efd5e6f2"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e2/direct-review.json",
+                "sha256": "98f8445341457164bc41f99360850d1ced3ae6b03ab5efbf1818bae4efd5e6f2"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "6b9e4290122a1b8f17ba1c800c3109530341d0b8bf23d70e2fa620c9e7e772bb"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "6b9e4290122a1b8f17ba1c800c3109530341d0b8bf23d70e2fa620c9e7e772bb"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/direct-review.json",
+                "sha256": "48b7a4b9a4c2cb9e712758ed5cb484cbc34b5565f6fd80abe2e7681ee2922116"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/direct-review.json",
+                "sha256": "48b7a4b9a4c2cb9e712758ed5cb484cbc34b5565f6fd80abe2e7681ee2922116"
+              }
+            ]
+          },
+          "output": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/visual-late4-e1/images/native-dev-023-zh.png",
+          "output_sha256": "e4acff71327b829d3343b4424bca96e97f3eed41033379c4f02cc81b364874a6"
+        }
+      },
+      "panel": "experiments/functional-v14-20261106/report-panels/native-dev-023.jpg",
+      "sha256": "b15d11bb07ebc8a98358cd4d24b27db7caa967c1ea61ca958e9672fb83615b80"
+    },
+    {
+      "case_id": "native-dev-108",
+      "language": "zh",
+      "split": "native-development",
+      "family": "compound",
+      "instruction": {
+        "en": "brighten a little, add contrast and color",
+        "zh": "稍微提亮，增加对比度和色彩。"
+      },
+      "input": "data/training/functional-v6-20261105/inputs/native-dev-108.png",
+      "models": {
+        "parent-frozen": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 20,
+              "contrast": 10,
+              "saturation": 10
+            }
+          },
+          "assessment": {
+            "item_id": "2c131bb7a2f3cad9",
+            "case_id": "native-dev-108",
+            "completion": "completed",
+            "quality": "minor_issue",
+            "evidence": "At actual1024x1024, water/dock-top brightness, contrast and colour increase, but the white glare surrounding the sun expands beyond the source core and flattens part of the adjacent sky gradient. The dock underside also deepens. The scene/person remain readable, so this is a minor added highlight/shadow side effect; it fails the explicit requirement to preserve the bright-sky region without added broad whitening.",
+            "image_sha256": "4ec91fc0544a962c65669cbc2419fecf66ec9b2a884b1e212223ca4610f5cb26",
+            "sheet": "experiments/functional-v10-20261106/review/native-development/final-e2/native-dev-108-01.jpg",
+            "sheet_sha256": "c89309af8ee61a61333bdfd13a83d7f38f13adbc0c35c629a4fc07ece50583d8",
+            "bundle": "final-e2",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T23:05:10.579930+00:00",
+            "original_size_supplement": {
+              "item_id": "2c131bb7a2f3cad9",
+              "case_id": "native-dev-108",
+              "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+              "output_sha256": "4ec91fc0544a962c65669cbc2419fecf66ec9b2a884b1e212223ca4610f5cb26",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "path": "experiments/functional-v10-20261106/review/native-development/final-e2/full-resolution/native-dev-108-INPUT.png",
+                  "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+                  "size": [
+                    1024,
+                    1024
+                  ],
+                  "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+                },
+                {
+                  "role": "2c131bb7a2f3cad9",
+                  "path": "experiments/functional-v10-20261106/review/native-development/final-e2/full-resolution/native-dev-108-2c131bb7a2f3cad9.png",
+                  "sha256": "572c4578394f9c6460024daf5d32a3dfcb8b8e63d3f7ebbcf3ec00897d33090a",
+                  "size": [
+                    1024,
+                    1024
+                  ],
+                  "pixel_sha256": "dc221c94c2bfbe2b374657df00b77d5e42eb90881a276876bfba73b69e59f3c5"
+                }
+              ],
+              "completion": "completed",
+              "quality": "minor_issue",
+              "evidence": "At actual1024x1024, water/dock-top brightness, contrast and colour increase, but the white glare surrounding the sun expands beyond the source core and flattens part of the adjacent sky gradient. The dock underside also deepens. The scene/person remain readable, so this is a minor added highlight/shadow side effect; it fails the explicit requirement to preserve the bright-sky region without added broad whitening.",
+              "reviewer": "Codex direct anonymous original-size AI review; not human",
+              "observed_at": "2026-11-05T23:06:24.085057+00:00",
+              "supplements_raw_contact_sheet": true,
+              "manifest_sha256": "ac01ec201f2b8716e6452abdb06b45a6a33140b487fc3951a4196fa867faa44b"
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "2c131bb7a2f3cad9",
+              "case_id": "native-dev-108",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "The picture has stronger colour/contrast and brighter lighter areas, but the sun halo expands and the dock underside deepens. Inspect original-size sky gradients and shaded dock detail before assigning quality severity.",
+              "image_sha256": "4ec91fc0544a962c65669cbc2419fecf66ec9b2a884b1e212223ca4610f5cb26",
+              "sheet": "experiments/functional-v10-20261106/review/native-development/final-e2/native-dev-108-01.jpg",
+              "sheet_sha256": "c89309af8ee61a61333bdfd13a83d7f38f13adbc0c35c629a4fc07ece50583d8",
+              "bundle": "final-e2",
+              "reviewer": "Codex direct anonymous-image visual AI review; not human",
+              "observed_at": "2026-11-05T23:05:10.579930+00:00"
+            },
+            "prior_final_observation_source": {
+              "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/native-development/codex-observations.jsonl",
+              "sha256": "c35489473de72bdf8907682380bd1e906bf166af68f9bd3fbcb42910b06c326d"
+            },
+            "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+          },
+          "output": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/images/native-dev-108-zh.png",
+          "output_sha256": "4ec91fc0544a962c65669cbc2419fecf66ec9b2a884b1e212223ca4610f5cb26"
+        },
+        "matched-narrow-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 20,
+              "contrast": 10,
+              "saturation": 10
+            }
+          },
+          "assessment": {
+            "item_id": "2c131bb7a2f3cad9",
+            "case_id": "native-dev-108",
+            "completion": "completed",
+            "quality": "minor_issue",
+            "evidence": "At actual1024x1024, water/dock-top brightness, contrast and colour increase, but the white glare surrounding the sun expands beyond the source core and flattens part of the adjacent sky gradient. The dock underside also deepens. The scene/person remain readable, so this is a minor added highlight/shadow side effect; it fails the explicit requirement to preserve the bright-sky region without added broad whitening.",
+            "image_sha256": "4ec91fc0544a962c65669cbc2419fecf66ec9b2a884b1e212223ca4610f5cb26",
+            "sheet": "experiments/functional-v10-20261106/review/native-development/final-e2/native-dev-108-01.jpg",
+            "sheet_sha256": "c89309af8ee61a61333bdfd13a83d7f38f13adbc0c35c629a4fc07ece50583d8",
+            "bundle": "final-e2",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T23:05:10.579930+00:00",
+            "original_size_supplement": {
+              "item_id": "2c131bb7a2f3cad9",
+              "case_id": "native-dev-108",
+              "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+              "output_sha256": "4ec91fc0544a962c65669cbc2419fecf66ec9b2a884b1e212223ca4610f5cb26",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "path": "experiments/functional-v10-20261106/review/native-development/final-e2/full-resolution/native-dev-108-INPUT.png",
+                  "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+                  "size": [
+                    1024,
+                    1024
+                  ],
+                  "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+                },
+                {
+                  "role": "2c131bb7a2f3cad9",
+                  "path": "experiments/functional-v10-20261106/review/native-development/final-e2/full-resolution/native-dev-108-2c131bb7a2f3cad9.png",
+                  "sha256": "572c4578394f9c6460024daf5d32a3dfcb8b8e63d3f7ebbcf3ec00897d33090a",
+                  "size": [
+                    1024,
+                    1024
+                  ],
+                  "pixel_sha256": "dc221c94c2bfbe2b374657df00b77d5e42eb90881a276876bfba73b69e59f3c5"
+                }
+              ],
+              "completion": "completed",
+              "quality": "minor_issue",
+              "evidence": "At actual1024x1024, water/dock-top brightness, contrast and colour increase, but the white glare surrounding the sun expands beyond the source core and flattens part of the adjacent sky gradient. The dock underside also deepens. The scene/person remain readable, so this is a minor added highlight/shadow side effect; it fails the explicit requirement to preserve the bright-sky region without added broad whitening.",
+              "reviewer": "Codex direct anonymous original-size AI review; not human",
+              "observed_at": "2026-11-05T23:06:24.085057+00:00",
+              "supplements_raw_contact_sheet": true,
+              "manifest_sha256": "ac01ec201f2b8716e6452abdb06b45a6a33140b487fc3951a4196fa867faa44b"
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "2c131bb7a2f3cad9",
+              "case_id": "native-dev-108",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "The picture has stronger colour/contrast and brighter lighter areas, but the sun halo expands and the dock underside deepens. Inspect original-size sky gradients and shaded dock detail before assigning quality severity.",
+              "image_sha256": "4ec91fc0544a962c65669cbc2419fecf66ec9b2a884b1e212223ca4610f5cb26",
+              "sheet": "experiments/functional-v10-20261106/review/native-development/final-e2/native-dev-108-01.jpg",
+              "sheet_sha256": "c89309af8ee61a61333bdfd13a83d7f38f13adbc0c35c629a4fc07ece50583d8",
+              "bundle": "final-e2",
+              "reviewer": "Codex direct anonymous-image visual AI review; not human",
+              "observed_at": "2026-11-05T23:05:10.579930+00:00"
+            },
+            "prior_final_observation_source": {
+              "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/native-development/codex-observations.jsonl",
+              "sha256": "c35489473de72bdf8907682380bd1e906bf166af68f9bd3fbcb42910b06c326d"
+            },
+            "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+          },
+          "output": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/images/native-dev-108-zh.png",
+          "output_sha256": "4ec91fc0544a962c65669cbc2419fecf66ec9b2a884b1e212223ca4610f5cb26"
+        },
+        "visual-late4-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 20,
+              "contrast": 10,
+              "saturation": 10
+            }
+          },
+          "assessment": {
+            "item_id": "2c131bb7a2f3cad9",
+            "case_id": "native-dev-108",
+            "completion": "completed",
+            "quality": "minor_issue",
+            "evidence": "At actual1024x1024, water/dock-top brightness, contrast and colour increase, but the white glare surrounding the sun expands beyond the source core and flattens part of the adjacent sky gradient. The dock underside also deepens. The scene/person remain readable, so this is a minor added highlight/shadow side effect; it fails the explicit requirement to preserve the bright-sky region without added broad whitening.",
+            "image_sha256": "4ec91fc0544a962c65669cbc2419fecf66ec9b2a884b1e212223ca4610f5cb26",
+            "sheet": "experiments/functional-v10-20261106/review/native-development/final-e2/native-dev-108-01.jpg",
+            "sheet_sha256": "c89309af8ee61a61333bdfd13a83d7f38f13adbc0c35c629a4fc07ece50583d8",
+            "bundle": "final-e2",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T23:05:10.579930+00:00",
+            "original_size_supplement": {
+              "item_id": "2c131bb7a2f3cad9",
+              "case_id": "native-dev-108",
+              "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+              "output_sha256": "4ec91fc0544a962c65669cbc2419fecf66ec9b2a884b1e212223ca4610f5cb26",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "path": "experiments/functional-v10-20261106/review/native-development/final-e2/full-resolution/native-dev-108-INPUT.png",
+                  "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+                  "size": [
+                    1024,
+                    1024
+                  ],
+                  "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+                },
+                {
+                  "role": "2c131bb7a2f3cad9",
+                  "path": "experiments/functional-v10-20261106/review/native-development/final-e2/full-resolution/native-dev-108-2c131bb7a2f3cad9.png",
+                  "sha256": "572c4578394f9c6460024daf5d32a3dfcb8b8e63d3f7ebbcf3ec00897d33090a",
+                  "size": [
+                    1024,
+                    1024
+                  ],
+                  "pixel_sha256": "dc221c94c2bfbe2b374657df00b77d5e42eb90881a276876bfba73b69e59f3c5"
+                }
+              ],
+              "completion": "completed",
+              "quality": "minor_issue",
+              "evidence": "At actual1024x1024, water/dock-top brightness, contrast and colour increase, but the white glare surrounding the sun expands beyond the source core and flattens part of the adjacent sky gradient. The dock underside also deepens. The scene/person remain readable, so this is a minor added highlight/shadow side effect; it fails the explicit requirement to preserve the bright-sky region without added broad whitening.",
+              "reviewer": "Codex direct anonymous original-size AI review; not human",
+              "observed_at": "2026-11-05T23:06:24.085057+00:00",
+              "supplements_raw_contact_sheet": true,
+              "manifest_sha256": "ac01ec201f2b8716e6452abdb06b45a6a33140b487fc3951a4196fa867faa44b"
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "2c131bb7a2f3cad9",
+              "case_id": "native-dev-108",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "The picture has stronger colour/contrast and brighter lighter areas, but the sun halo expands and the dock underside deepens. Inspect original-size sky gradients and shaded dock detail before assigning quality severity.",
+              "image_sha256": "4ec91fc0544a962c65669cbc2419fecf66ec9b2a884b1e212223ca4610f5cb26",
+              "sheet": "experiments/functional-v10-20261106/review/native-development/final-e2/native-dev-108-01.jpg",
+              "sheet_sha256": "c89309af8ee61a61333bdfd13a83d7f38f13adbc0c35c629a4fc07ece50583d8",
+              "bundle": "final-e2",
+              "reviewer": "Codex direct anonymous-image visual AI review; not human",
+              "observed_at": "2026-11-05T23:05:10.579930+00:00"
+            },
+            "prior_final_observation_source": {
+              "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/native-development/codex-observations.jsonl",
+              "sha256": "c35489473de72bdf8907682380bd1e906bf166af68f9bd3fbcb42910b06c326d"
+            },
+            "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing.",
+            "prior_final_sources": [
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "0e69faa3c9eef000bcc697f166315f9c29bb9d2ffa075114579b58fa87f00b72"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "0e69faa3c9eef000bcc697f166315f9c29bb9d2ffa075114579b58fa87f00b72"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e1/direct-review.json",
+                "sha256": "ab70f87bbc853eb67a6fa71cba7507556e1d9978367fc386b54d9851f9def722"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e1/direct-review.json",
+                "sha256": "ab70f87bbc853eb67a6fa71cba7507556e1d9978367fc386b54d9851f9def722"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e2/direct-review.json",
+                "sha256": "98f8445341457164bc41f99360850d1ced3ae6b03ab5efbf1818bae4efd5e6f2"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e2/direct-review.json",
+                "sha256": "98f8445341457164bc41f99360850d1ced3ae6b03ab5efbf1818bae4efd5e6f2"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "6b9e4290122a1b8f17ba1c800c3109530341d0b8bf23d70e2fa620c9e7e772bb"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "6b9e4290122a1b8f17ba1c800c3109530341d0b8bf23d70e2fa620c9e7e772bb"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/direct-review.json",
+                "sha256": "48b7a4b9a4c2cb9e712758ed5cb484cbc34b5565f6fd80abe2e7681ee2922116"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/direct-review.json",
+                "sha256": "48b7a4b9a4c2cb9e712758ed5cb484cbc34b5565f6fd80abe2e7681ee2922116"
+              }
+            ]
+          },
+          "output": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/visual-late4-e1/images/native-dev-108-zh.png",
+          "output_sha256": "4ec91fc0544a962c65669cbc2419fecf66ec9b2a884b1e212223ca4610f5cb26"
+        }
+      },
+      "panel": "experiments/functional-v14-20261106/report-panels/native-dev-108.jpg",
+      "sha256": "a7487d8be16343f7c703b515fc16ce3079529372bcda9099e9bc7c042fd3e661"
+    },
+    {
+      "case_id": "development-006-restore-exposure-strong",
+      "language": "zh",
+      "split": "development",
+      "family": "lighting",
+      "instruction": {
+        "zh": "这张照片曝光不足，请恢复合适的整体亮度，保持自然色彩。",
+        "en": "This photograph is underexposed. Restore appropriate overall brightness and keep natural colours."
+      },
+      "input": "data/training/functional-v2-20261104/inputs/development-006/restore-exposure-strong.png",
+      "models": {
+        "parent-frozen": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 65
+            }
+          },
+          "assessment": {
+            "item_id": "56a1fdffc92ade0b",
+            "case_id": "development-006-restore-exposure-strong",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "Whole960x719 image restores the stronger darkening with river foam, rock surfaces and foliage still readable. No new large whitewater patch erases the visible foam structure; source sky remains featureless.",
+            "image_sha256": "a65e198278d45f0e06661ebbd5b5448ad8674c07de5491511f31d493d5f5ee5e",
+            "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-006-restore-exposure-strong-01.jpg",
+            "sheet_sha256": "394d5ec530762befff59c6de5ae4cadf929248f22d3380f73240a9f84bf9f1e3",
+            "bundle": "stage2",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-06T09:33:56.436943+00:00",
+            "original_size_supplement": {
+              "item_id": "56a1fdffc92ade0b",
+              "case_id": "development-006-restore-exposure-strong",
+              "input_sha256": "fa0bc2973c8aadc599080d0a4e4e0f13809cdfde41f7a7a077e98f8a49a5c150",
+              "output_sha256": "a65e198278d45f0e06661ebbd5b5448ad8674c07de5491511f31d493d5f5ee5e",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-006-restore-exposure-strong-INPUT.png",
+                  "sha256": "601d7a53e4aa40cc99b393f4ff5c99c217ca1da002bfa7b89c6cabd5c29790c2",
+                  "size": [
+                    960,
+                    719
+                  ],
+                  "pixel_sha256": "c079a6af7a16d1c3cfe9ed59659e081e91748118d28a59c9982c49c5b0b5221f"
+                },
+                {
+                  "role": "56a1fdffc92ade0b",
+                  "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-006-restore-exposure-strong-56a1fdffc92ade0b.png",
+                  "sha256": "6c0e7b6017337d3cb4cbc84c1d90e3ba8a322947a58412774e0ad05cddd4a33c",
+                  "size": [
+                    960,
+                    719
+                  ],
+                  "pixel_sha256": "da98d6145b057614ac5612027baccda9cdf4a2306ae6dddfca943c575aea3848"
+                }
+              ],
+              "completion": "completed",
+              "quality": "acceptable",
+              "evidence": "Whole960x719 image restores the stronger darkening with river foam, rock surfaces and foliage still readable. No new large whitewater patch erases the visible foam structure; source sky remains featureless.",
+              "reviewer": "Codex direct anonymous original-size AI review; not human",
+              "observed_at": "2026-11-06T09:43:45.026633+00:00",
+              "supplements_raw_contact_sheet": true,
+              "manifest_sha256": "14ab1b42c9f52917c606505f451e5bb97689d9f5217fb970b6e2dd05194315b3"
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "56a1fdffc92ade0b",
+              "case_id": "development-006-restore-exposure-strong",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "The strongly darkened river and forest become substantially more readable. Native whitewater, rock and sky checks remain necessary before accepting highlight quality.",
+              "image_sha256": "a65e198278d45f0e06661ebbd5b5448ad8674c07de5491511f31d493d5f5ee5e",
+              "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-006-restore-exposure-strong-01.jpg",
+              "sheet_sha256": "394d5ec530762befff59c6de5ae4cadf929248f22d3380f73240a9f84bf9f1e3",
+              "bundle": "stage2",
+              "reviewer": "Codex direct anonymous-image visual AI review; not human",
+              "observed_at": "2026-11-06T09:33:56.436943+00:00"
+            }
+          },
+          "output": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/images/development-006-restore-exposure-strong-zh.png",
+          "output_sha256": "a65e198278d45f0e06661ebbd5b5448ad8674c07de5491511f31d493d5f5ee5e"
+        },
+        "matched-narrow-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 20
+            }
+          },
+          "assessment": {
+            "item_id": "63202fec98c289c7",
+            "case_id": "development-006-restore-exposure-strong",
+            "completion": "partial",
+            "quality": "acceptable",
+            "evidence": "Only a small lift occurs and the forest/river remain dark for the restoration request. Structure is retained, but the main brightness correction is insufficient.",
+            "image_sha256": "8eb87e36501115e72186887899cebc503fa88b55d0bb251cda9b97e4e7f67b11",
+            "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-006-restore-exposure-strong-01.jpg",
+            "sheet_sha256": "394d5ec530762befff59c6de5ae4cadf929248f22d3380f73240a9f84bf9f1e3",
+            "bundle": "stage2",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-06T09:33:56.436945+00:00"
+          },
+          "output": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/language-merger-e1/images/development-006-restore-exposure-strong-zh.png",
+          "output_sha256": "8eb87e36501115e72186887899cebc503fa88b55d0bb251cda9b97e4e7f67b11"
+        },
+        "visual-late4-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 20
+            }
+          },
+          "assessment": {
+            "item_id": "63202fec98c289c7",
+            "case_id": "development-006-restore-exposure-strong",
+            "completion": "partial",
+            "quality": "acceptable",
+            "evidence": "Only a small lift occurs and the forest/river remain dark for the restoration request. Structure is retained, but the main brightness correction is insufficient.",
+            "image_sha256": "8eb87e36501115e72186887899cebc503fa88b55d0bb251cda9b97e4e7f67b11",
+            "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-006-restore-exposure-strong-01.jpg",
+            "sheet_sha256": "394d5ec530762befff59c6de5ae4cadf929248f22d3380f73240a9f84bf9f1e3",
+            "bundle": "stage2",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-06T09:33:56.436945+00:00",
+            "prior_final_sources": [
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/language-merger-e1/direct-review.json",
+                "sha256": "491fa21b92a1330506a0d34fac79211cac0e6874ccdcf4986ed5b3f038db7b8a"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/language-merger-e1/direct-review.json",
+                "sha256": "491fa21b92a1330506a0d34fac79211cac0e6874ccdcf4986ed5b3f038db7b8a"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/all-language-merger-e1/direct-review.json",
+                "sha256": "5d2acfe4d06dbc2fcedc15ea650b602f62e3615e216d6107a08ed808203496a2"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/all-language-merger-e1/direct-review.json",
+                "sha256": "5d2acfe4d06dbc2fcedc15ea650b602f62e3615e216d6107a08ed808203496a2"
+              }
+            ],
+            "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing."
+          },
+          "output": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/visual-late4-e1/images/development-006-restore-exposure-strong-zh.png",
+          "output_sha256": "8eb87e36501115e72186887899cebc503fa88b55d0bb251cda9b97e4e7f67b11"
+        }
+      },
+      "panel": "experiments/functional-v14-20261106/report-panels/development-006-restore-exposure-strong.jpg",
+      "sha256": "a88485c9c756ac51dfbbe269d1a1af60ace02dcf79e8f565b3fb16c255107db8"
+    },
+    {
+      "case_id": "development-020-compound",
+      "language": "zh",
+      "split": "development",
+      "family": "compound",
+      "instruction": {
+        "zh": "提亮暗部，同时轻微增强对比度，亮处不要过曝。",
+        "en": "Lift the shadows and slightly increase contrast without blowing out the highlights."
+      },
+      "input": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+      "models": {
+        "parent-frozen": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "shadows": 65,
+              "contrast": 8,
+              "highlights": -22
+            }
+          },
+          "assessment": {
+            "item_id": "98bae97bb2e3cac4",
+            "case_id": "development-020-compound",
+            "completion": "completed",
+            "quality": "minor_issue",
+            "evidence": "Whole771x1024 image shows lifted facial/jacket shadows but gray-purple/pale skin and a broad flatter rendering across dark fabric. Clothing patterns remain, but the quality side effect prevents a compound-task pass.",
+            "image_sha256": "0e64540de0bc6d03f9055cf04a7d3feceb80093e1e0f8f7dd3c31205ed9092a4",
+            "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-020-compound-01.jpg",
+            "sheet_sha256": "5c4870268ddf1fb13208cbaa593ba8cd1f64e88b44d267a98106069af28dffa9",
+            "bundle": "stage2",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-06T09:32:37.351616+00:00",
+            "original_size_supplement": {
+              "item_id": "98bae97bb2e3cac4",
+              "case_id": "development-020-compound",
+              "input_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+              "output_sha256": "0e64540de0bc6d03f9055cf04a7d3feceb80093e1e0f8f7dd3c31205ed9092a4",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-020-compound-INPUT.png",
+                  "sha256": "42db1457fae0b7d050d0f2601fa6d3f9a313aa693cdec6d8d395ca620dcf97b7",
+                  "size": [
+                    771,
+                    1024
+                  ],
+                  "pixel_sha256": "2b18491b8befd426df200933402c91d8d85c7c3bd8c164756b7f024cc5248ed5"
+                },
+                {
+                  "role": "98bae97bb2e3cac4",
+                  "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-020-compound-98bae97bb2e3cac4.png",
+                  "sha256": "2b58ae6db72ab19f1fa41655c61102205721e6f3af3b8708b25173af69ecc0e7",
+                  "size": [
+                    771,
+                    1024
+                  ],
+                  "pixel_sha256": "9ab20734fe8c3bed94b23bbd2c07df9301d51981240d2c0a2ed07b08ef9c2f9e"
+                }
+              ],
+              "completion": "completed",
+              "quality": "minor_issue",
+              "evidence": "Whole771x1024 image shows lifted facial/jacket shadows but gray-purple/pale skin and a broad flatter rendering across dark fabric. Clothing patterns remain, but the quality side effect prevents a compound-task pass.",
+              "reviewer": "Codex direct anonymous original-size AI review; not human",
+              "observed_at": "2026-11-06T09:41:46.024747+00:00",
+              "supplements_raw_contact_sheet": true,
+              "manifest_sha256": "14ab1b42c9f52917c606505f451e5bb97689d9f5217fb970b6e2dd05194315b3"
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "98bae97bb2e3cac4",
+              "case_id": "development-020-compound",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "Faces and dark clothing become lighter with visible stripes and contours, but native skin/fabric inspection is needed to check whether the lift has flattened local contrast.",
+              "image_sha256": "0e64540de0bc6d03f9055cf04a7d3feceb80093e1e0f8f7dd3c31205ed9092a4",
+              "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-020-compound-01.jpg",
+              "sheet_sha256": "5c4870268ddf1fb13208cbaa593ba8cd1f64e88b44d267a98106069af28dffa9",
+              "bundle": "stage2",
+              "reviewer": "Codex direct anonymous-image visual AI review; not human",
+              "observed_at": "2026-11-06T09:32:37.351616+00:00"
+            }
+          },
+          "output": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/images/development-020-compound-zh.png",
+          "output_sha256": "0e64540de0bc6d03f9055cf04a7d3feceb80093e1e0f8f7dd3c31205ed9092a4"
+        },
+        "matched-narrow-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "shadows": 40,
+              "highlights": -12,
+              "contrast": 8
+            }
+          },
+          "assessment": {
+            "item_id": "3713d1423be7ec51",
+            "case_id": "development-020-compound",
+            "completion": "completed",
+            "quality": "minor_issue",
+            "evidence": "Whole771x1024 comparison shows a restrained shadow lift, yet male skin and dark jacket become grayer and flatter. Fine patterns survive, but natural skin/local separation is weakened rather than reliably improved.",
+            "image_sha256": "aed543b554e66f7cdf1c64f320f6cdc4966a0b6476607e0e9e8be3e5f865d520",
+            "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-020-compound-01.jpg",
+            "sheet_sha256": "5c4870268ddf1fb13208cbaa593ba8cd1f64e88b44d267a98106069af28dffa9",
+            "bundle": "stage2",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-06T09:32:37.351612+00:00",
+            "original_size_supplement": {
+              "item_id": "3713d1423be7ec51",
+              "case_id": "development-020-compound",
+              "input_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+              "output_sha256": "aed543b554e66f7cdf1c64f320f6cdc4966a0b6476607e0e9e8be3e5f865d520",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-020-compound-INPUT.png",
+                  "sha256": "42db1457fae0b7d050d0f2601fa6d3f9a313aa693cdec6d8d395ca620dcf97b7",
+                  "size": [
+                    771,
+                    1024
+                  ],
+                  "pixel_sha256": "2b18491b8befd426df200933402c91d8d85c7c3bd8c164756b7f024cc5248ed5"
+                },
+                {
+                  "role": "3713d1423be7ec51",
+                  "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-020-compound-3713d1423be7ec51.png",
+                  "sha256": "09f4a8abfa0739e47d472147889b86e7f7498f89d7782264a1360b026f2a1b79",
+                  "size": [
+                    771,
+                    1024
+                  ],
+                  "pixel_sha256": "9892d8e2e3771eb04f1f5255c15cef79190b177c9e652ac8f8b839d6a5bc6a20"
+                }
+              ],
+              "completion": "completed",
+              "quality": "minor_issue",
+              "evidence": "Whole771x1024 comparison shows a restrained shadow lift, yet male skin and dark jacket become grayer and flatter. Fine patterns survive, but natural skin/local separation is weakened rather than reliably improved.",
+              "reviewer": "Codex direct anonymous original-size AI review; not human",
+              "observed_at": "2026-11-06T09:41:46.026117+00:00",
+              "supplements_raw_contact_sheet": true,
+              "manifest_sha256": "14ab1b42c9f52917c606505f451e5bb97689d9f5217fb970b6e2dd05194315b3"
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "3713d1423be7ec51",
+              "case_id": "development-020-compound",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "A restrained shadow lift is visible in faces and dark clothing with some tonal separation retained. Native skin, dark fabric and white-collar checks remain required for the compound request.",
+              "image_sha256": "aed543b554e66f7cdf1c64f320f6cdc4966a0b6476607e0e9e8be3e5f865d520",
+              "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-020-compound-01.jpg",
+              "sheet_sha256": "5c4870268ddf1fb13208cbaa593ba8cd1f64e88b44d267a98106069af28dffa9",
+              "bundle": "stage2",
+              "reviewer": "Codex direct anonymous-image visual AI review; not human",
+              "observed_at": "2026-11-06T09:32:37.351612+00:00"
+            }
+          },
+          "output": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/language-merger-e1/images/development-020-compound-zh.png",
+          "output_sha256": "aed543b554e66f7cdf1c64f320f6cdc4966a0b6476607e0e9e8be3e5f865d520"
+        },
+        "visual-late4-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "shadows": 40,
+              "highlights": -12,
+              "exposure": 8,
+              "contrast": 8
+            }
+          },
+          "assessment": {
+            "item_id": "3aa459790aca2da0",
+            "case_id": "development-020-compound",
+            "completion": "partial",
+            "quality": "minor_issue",
+            "evidence": "Whole771x1024 input and output were directly viewed. Shadows in faces, cardigan and blue clothing lift, but the result is paler and slightly veiled, with weaker dark-light separation rather than a convincing simultaneous contrast increase. Facial features, hair and fabric remain readable, so this is a minor haze/tonal side effect, not major face destruction. The compound requirement is only partly completed.",
+            "image_sha256": "b4a96d8bf8b2e63e9a4f96506d808840696a0d6c3a6d2f4ad95d0abcc6568043",
+            "sheet": "experiments/functional-v14-20261106/review/development/stage2/development-020-compound-01.jpg",
+            "sheet_sha256": "c92eb7966deb64a41bf9bde1ef5f0fd1ffc3eaa0a6d266b5cc31bfbe8b912779",
+            "bundle": "stage2",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-06T12:14:15.022421+00:00",
+            "original_size_supplement": {
+              "item_id": "3aa459790aca2da0",
+              "case_id": "development-020-compound",
+              "input_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+              "output_sha256": "b4a96d8bf8b2e63e9a4f96506d808840696a0d6c3a6d2f4ad95d0abcc6568043",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "region": "whole",
+                  "path": "experiments/functional-v14-20261106/review/development/stage2/native-pixels/development-020-compound-INPUT-whole.png",
+                  "sha256": "42db1457fae0b7d050d0f2601fa6d3f9a313aa693cdec6d8d395ca620dcf97b7",
+                  "size": [
+                    771,
+                    1024
+                  ],
+                  "source": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+                  "source_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+                  "source_size": [
+                    771,
+                    1024
+                  ],
+                  "box": [
+                    0,
+                    0,
+                    771,
+                    1024
+                  ]
+                },
+                {
+                  "role": "3aa459790aca2da0",
+                  "region": "whole",
+                  "path": "experiments/functional-v14-20261106/review/development/stage2/native-pixels/development-020-compound-3aa459790aca2da0-whole.png",
+                  "sha256": "6ba7ce8dbc8614079d00643f84b53d7569eeeefd51587a405f936c61070f4f8e",
+                  "size": [
+                    771,
+                    1024
+                  ],
+                  "source": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/visual-late4-e1/images/development-020-compound-zh.png",
+                  "source_sha256": "b4a96d8bf8b2e63e9a4f96506d808840696a0d6c3a6d2f4ad95d0abcc6568043",
+                  "source_size": [
+                    771,
+                    1024
+                  ],
+                  "box": [
+                    0,
+                    0,
+                    771,
+                    1024
+                  ]
+                }
+              ],
+              "completion": "partial",
+              "quality": "minor_issue",
+              "evidence": "Whole771x1024 input and output were directly viewed. Shadows in faces, cardigan and blue clothing lift, but the result is paler and slightly veiled, with weaker dark-light separation rather than a convincing simultaneous contrast increase. Facial features, hair and fabric remain readable, so this is a minor haze/tonal side effect, not major face destruction. The compound requirement is only partly completed.",
+              "manifest_sha256": "bd061175366bbf7e061e5b047303cbfc57a663f111221bec96810ade58544782",
+              "reviewer": "Codex direct anonymous native-pixel AI review; not human",
+              "observed_at": "2026-11-06T12:16:01.807388+00:00",
+              "supplements_raw_contact_sheet": true,
+              "scope": "Native-pixel whole image or explicit integer regions, as listed; whole-frame context from the sheet. No denoising or recovered detail claim."
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "3aa459790aca2da0",
+              "case_id": "development-020-compound",
+              "completion": "partial",
+              "quality": "uncertain",
+              "evidence": "Shaded faces and clothing are brighter, but the image looks paler and the dark jacket/cardigan less separated. The requested simultaneous slight contrast increase is not clearly met; native-pixel checks are needed for skin cast and fabric detail.",
+              "image_sha256": "b4a96d8bf8b2e63e9a4f96506d808840696a0d6c3a6d2f4ad95d0abcc6568043",
+              "sheet": "experiments/functional-v14-20261106/review/development/stage2/development-020-compound-01.jpg",
+              "sheet_sha256": "c92eb7966deb64a41bf9bde1ef5f0fd1ffc3eaa0a6d266b5cc31bfbe8b912779",
+              "bundle": "stage2",
+              "reviewer": "Codex direct anonymous-image visual AI review; not human",
+              "observed_at": "2026-11-06T12:14:15.022421+00:00"
+            }
+          },
+          "output": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/visual-late4-e1/images/development-020-compound-zh.png",
+          "output_sha256": "b4a96d8bf8b2e63e9a4f96506d808840696a0d6c3a6d2f4ad95d0abcc6568043"
+        }
+      },
+      "panel": "experiments/functional-v14-20261106/report-panels/development-020-compound.jpg",
+      "sha256": "3ace9bbf593b2780debf58e806b014b78d4549fde0e4c0d01e046c043a478388"
+    },
+    {
+      "case_id": "development-027-compound",
+      "language": "zh",
+      "split": "development",
+      "family": "compound",
+      "instruction": {
+        "zh": "提亮暗部，同时轻微增强对比度，亮处不要过曝。",
+        "en": "Lift the shadows and slightly increase contrast without blowing out the highlights."
+      },
+      "input": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+      "models": {
+        "parent-frozen": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "shadows": 40,
+              "contrast": 8,
+              "highlights": -22
+            }
+          },
+          "assessment": {
+            "item_id": "3c0a4523636e9017",
+            "case_id": "development-027-compound",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "Whole960x610 comparison shows a restrained shadow lift in bench and steps while curl relief, paving lines and bright leaf structure remain. Warm autumn light is retained without a broad gray veil.",
+            "image_sha256": "9c564304e91d45c7fb560a413ad4d49566dfbf2d52a9ea268515e6ff55c30427",
+            "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-027-compound-01.jpg",
+            "sheet_sha256": "87a4a107b46397a20bf0fbcf8c740ac7008ed9c9464afe6147dfcc91b492ce90",
+            "bundle": "stage2",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-06T09:36:20.072419+00:00",
+            "original_size_supplement": {
+              "item_id": "3c0a4523636e9017",
+              "case_id": "development-027-compound",
+              "input_sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+              "output_sha256": "9c564304e91d45c7fb560a413ad4d49566dfbf2d52a9ea268515e6ff55c30427",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-027-compound-INPUT.png",
+                  "sha256": "a97245ec066148dd46d0ebcf78c4b5d786f4c82b2be7cb3693d11ee09ca9da8b",
+                  "size": [
+                    960,
+                    610
+                  ],
+                  "pixel_sha256": "3c05c677c9619b4ccf70be33f3270061b1d009601da1c053d8b774e8d77a2c33"
+                },
+                {
+                  "role": "3c0a4523636e9017",
+                  "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-027-compound-3c0a4523636e9017.png",
+                  "sha256": "9be4c9a874424bfd212fd0dd780cc5d539e45fd9d1377dc5938ed9058d9babc3",
+                  "size": [
+                    960,
+                    610
+                  ],
+                  "pixel_sha256": "facdf815f929240e076807aac852844b2b9e998fcaf2c0c36384db1b14d88421"
+                }
+              ],
+              "completion": "completed",
+              "quality": "acceptable",
+              "evidence": "Whole960x610 comparison shows a restrained shadow lift in bench and steps while curl relief, paving lines and bright leaf structure remain. Warm autumn light is retained without a broad gray veil.",
+              "reviewer": "Codex direct anonymous original-size AI review; not human",
+              "observed_at": "2026-11-06T09:44:52.239784+00:00",
+              "supplements_raw_contact_sheet": true,
+              "manifest_sha256": "14ab1b42c9f52917c606505f451e5bb97689d9f5217fb970b6e2dd05194315b3"
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "3c0a4523636e9017",
+              "case_id": "development-027-compound",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "Bench and paving shadows brighten, but local tonal separation and bright leaf texture require native-size inspection before quality acceptance.",
+              "image_sha256": "9c564304e91d45c7fb560a413ad4d49566dfbf2d52a9ea268515e6ff55c30427",
+              "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-027-compound-01.jpg",
+              "sheet_sha256": "87a4a107b46397a20bf0fbcf8c740ac7008ed9c9464afe6147dfcc91b492ce90",
+              "bundle": "stage2",
+              "reviewer": "Codex direct anonymous-image visual AI review; not human",
+              "observed_at": "2026-11-06T09:36:20.072419+00:00"
+            }
+          },
+          "output": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/images/development-027-compound-zh.png",
+          "output_sha256": "9c564304e91d45c7fb560a413ad4d49566dfbf2d52a9ea268515e6ff55c30427"
+        },
+        "matched-narrow-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 20,
+              "highlights": -25
+            }
+          },
+          "assessment": {
+            "item_id": "cda6df3fcacab0a9",
+            "case_id": "development-027-compound",
+            "completion": "completed",
+            "quality": "minor_issue",
+            "evidence": "Against the hash-identical native input, the bench and paving become paler and more matte, with weaker local dark/light modeling. Shadow lift occurs but a gray veil undermines the requested contrast improvement.",
+            "image_sha256": "22fffd7d518b7edefce49a92f68a373d22609164d67f682dd2196d52d0e5b12f",
+            "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-027-compound-02.jpg",
+            "sheet_sha256": "cdab190458424f4eadeb5aad08fa177e270b29b58b7553043ddf41f959d5a216",
+            "bundle": "stage2",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-06T09:36:20.080859+00:00",
+            "original_size_supplement": {
+              "item_id": "cda6df3fcacab0a9",
+              "case_id": "development-027-compound",
+              "input_sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+              "output_sha256": "22fffd7d518b7edefce49a92f68a373d22609164d67f682dd2196d52d0e5b12f",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-027-compound-INPUT.png",
+                  "sha256": "a97245ec066148dd46d0ebcf78c4b5d786f4c82b2be7cb3693d11ee09ca9da8b",
+                  "size": [
+                    960,
+                    610
+                  ],
+                  "pixel_sha256": "3c05c677c9619b4ccf70be33f3270061b1d009601da1c053d8b774e8d77a2c33"
+                },
+                {
+                  "role": "cda6df3fcacab0a9",
+                  "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-027-compound-cda6df3fcacab0a9.png",
+                  "sha256": "8ad2c5ceab9feb12509a80011a7bc60ee2bd2bd25a2a43e0d5444074796b4339",
+                  "size": [
+                    960,
+                    610
+                  ],
+                  "pixel_sha256": "ffb25383f9348b3036b48841cb73dbf2e901239cf56455e582dbb3a4c87baa75"
+                }
+              ],
+              "completion": "completed",
+              "quality": "minor_issue",
+              "evidence": "Against the hash-identical native input, the bench and paving become paler and more matte, with weaker local dark/light modeling. Shadow lift occurs but a gray veil undermines the requested contrast improvement.",
+              "reviewer": "Codex direct anonymous original-size AI review; not human",
+              "observed_at": "2026-11-06T09:44:52.249076+00:00",
+              "supplements_raw_contact_sheet": true,
+              "manifest_sha256": "14ab1b42c9f52917c606505f451e5bb97689d9f5217fb970b6e2dd05194315b3"
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "cda6df3fcacab0a9",
+              "case_id": "development-027-compound",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "Dark bench and paving are a little lighter, with curl outlines still readable. Native-size review is required to check for a gray veil and retained leaf highlights.",
+              "image_sha256": "22fffd7d518b7edefce49a92f68a373d22609164d67f682dd2196d52d0e5b12f",
+              "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-027-compound-02.jpg",
+              "sheet_sha256": "cdab190458424f4eadeb5aad08fa177e270b29b58b7553043ddf41f959d5a216",
+              "bundle": "stage2",
+              "reviewer": "Codex direct anonymous-image visual AI review; not human",
+              "observed_at": "2026-11-06T09:36:20.080859+00:00"
+            }
+          },
+          "output": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/language-merger-e1/images/development-027-compound-zh.png",
+          "output_sha256": "22fffd7d518b7edefce49a92f68a373d22609164d67f682dd2196d52d0e5b12f"
+        },
+        "visual-late4-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 20,
+              "highlights": -25
+            }
+          },
+          "assessment": {
+            "item_id": "cda6df3fcacab0a9",
+            "case_id": "development-027-compound",
+            "completion": "completed",
+            "quality": "minor_issue",
+            "evidence": "Against the hash-identical native input, the bench and paving become paler and more matte, with weaker local dark/light modeling. Shadow lift occurs but a gray veil undermines the requested contrast improvement.",
+            "image_sha256": "22fffd7d518b7edefce49a92f68a373d22609164d67f682dd2196d52d0e5b12f",
+            "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-027-compound-02.jpg",
+            "sheet_sha256": "cdab190458424f4eadeb5aad08fa177e270b29b58b7553043ddf41f959d5a216",
+            "bundle": "stage2",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-06T09:36:20.080859+00:00",
+            "original_size_supplement": {
+              "item_id": "cda6df3fcacab0a9",
+              "case_id": "development-027-compound",
+              "input_sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+              "output_sha256": "22fffd7d518b7edefce49a92f68a373d22609164d67f682dd2196d52d0e5b12f",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-027-compound-INPUT.png",
+                  "sha256": "a97245ec066148dd46d0ebcf78c4b5d786f4c82b2be7cb3693d11ee09ca9da8b",
+                  "size": [
+                    960,
+                    610
+                  ],
+                  "pixel_sha256": "3c05c677c9619b4ccf70be33f3270061b1d009601da1c053d8b774e8d77a2c33"
+                },
+                {
+                  "role": "cda6df3fcacab0a9",
+                  "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-027-compound-cda6df3fcacab0a9.png",
+                  "sha256": "8ad2c5ceab9feb12509a80011a7bc60ee2bd2bd25a2a43e0d5444074796b4339",
+                  "size": [
+                    960,
+                    610
+                  ],
+                  "pixel_sha256": "ffb25383f9348b3036b48841cb73dbf2e901239cf56455e582dbb3a4c87baa75"
+                }
+              ],
+              "completion": "completed",
+              "quality": "minor_issue",
+              "evidence": "Against the hash-identical native input, the bench and paving become paler and more matte, with weaker local dark/light modeling. Shadow lift occurs but a gray veil undermines the requested contrast improvement.",
+              "reviewer": "Codex direct anonymous original-size AI review; not human",
+              "observed_at": "2026-11-06T09:44:52.249076+00:00",
+              "supplements_raw_contact_sheet": true,
+              "manifest_sha256": "14ab1b42c9f52917c606505f451e5bb97689d9f5217fb970b6e2dd05194315b3"
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "cda6df3fcacab0a9",
+              "case_id": "development-027-compound",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "Dark bench and paving are a little lighter, with curl outlines still readable. Native-size review is required to check for a gray veil and retained leaf highlights.",
+              "image_sha256": "22fffd7d518b7edefce49a92f68a373d22609164d67f682dd2196d52d0e5b12f",
+              "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-027-compound-02.jpg",
+              "sheet_sha256": "cdab190458424f4eadeb5aad08fa177e270b29b58b7553043ddf41f959d5a216",
+              "bundle": "stage2",
+              "reviewer": "Codex direct anonymous-image visual AI review; not human",
+              "observed_at": "2026-11-06T09:36:20.080859+00:00"
+            },
+            "prior_final_sources": [
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/language-merger-e1/direct-review.json",
+                "sha256": "491fa21b92a1330506a0d34fac79211cac0e6874ccdcf4986ed5b3f038db7b8a"
+              }
+            ],
+            "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing."
+          },
+          "output": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/visual-late4-e1/images/development-027-compound-zh.png",
+          "output_sha256": "22fffd7d518b7edefce49a92f68a373d22609164d67f682dd2196d52d0e5b12f"
+        }
+      },
+      "panel": "experiments/functional-v14-20261106/report-panels/development-027-compound.jpg",
+      "sha256": "72c222f5f97e7fe7aa48a780356454c713334dab4899c00cba593406fadff508"
+    },
+    {
+      "case_id": "development-040-restore-saturation-mild",
+      "language": "zh",
+      "split": "development",
+      "family": "saturation",
+      "instruction": {
+        "zh": "颜色显得褪淡，请恢复真实自然的色彩浓度。",
+        "en": "The colours look faded. Restore realistic, natural colour intensity."
+      },
+      "input": "data/training/functional-v2-20261104/inputs/development-040/restore-saturation-mild.png",
+      "models": {
+        "parent-frozen": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "saturation": 100
+            }
+          },
+          "assessment": {
+            "case_id": "development-040-restore-saturation-mild",
+            "completion": "partial",
+            "quality": "minor_issue",
+            "evidence": "肤色明显过红、红裙和格衫增艳过量，超出自然颜色恢复。",
+            "item_id": "249bffc25a77dd4e",
+            "image_sha256": "791b087f0531b3b8f14ac7c5f57bb7924a970f825daaa5d0ba55a21f9027bd9b",
+            "sheet": "experiments/functional-v2-20261104/review/development/early-checkpoints/development-040-restore-saturation-mild-01.jpg",
+            "sheet_sha256": "f089a34ae1c4f2e9853186c7787a55c69b38cfd224666fba932ed98b2df0a5fb",
+            "bundle": "early-checkpoints",
+            "reviewer": "Codex direct visual review; AI-assisted, not human",
+            "observed_at": "2026-11-04T14:48:53.390363+00:00",
+            "prior_final_observation_source": [
+              {
+                "path": "experiments/functional-v2-20261104/review/development/codex-observations.jsonl",
+                "sha256": "d45054fab3bc4d8158b5d91a46c2d6cb810572575e6f9efa905511637d8939b8",
+                "assessment": {
+                  "case_id": "development-040-restore-saturation-mild",
+                  "completion": "partial",
+                  "quality": "minor_issue",
+                  "evidence": "肤色明显过红、红裙和格衫增艳过量，超出自然颜色恢复。",
+                  "item_id": "249bffc25a77dd4e",
+                  "image_sha256": "791b087f0531b3b8f14ac7c5f57bb7924a970f825daaa5d0ba55a21f9027bd9b",
+                  "sheet": "experiments/functional-v2-20261104/review/development/early-checkpoints/development-040-restore-saturation-mild-01.jpg",
+                  "sheet_sha256": "f089a34ae1c4f2e9853186c7787a55c69b38cfd224666fba932ed98b2df0a5fb",
+                  "bundle": "early-checkpoints",
+                  "reviewer": "Codex direct visual review; AI-assisted, not human",
+                  "observed_at": "2026-11-04T14:48:53.390363+00:00"
+                }
+              },
+              {
+                "path": "experiments/functional-v3-20261104/review/development/codex-observations.jsonl",
+                "sha256": "552076b689de14f4a5effa4a27c562328b171cfc1403a05a711733bb4e59adcb",
+                "assessment": {
+                  "case_id": "development-040-restore-saturation-mild",
+                  "completion": "partial",
+                  "quality": "minor_issue",
+                  "evidence": "肤色明显过红、红裙和格衫增艳过量，超出自然颜色恢复。",
+                  "item_id": "249bffc25a77dd4e",
+                  "image_sha256": "791b087f0531b3b8f14ac7c5f57bb7924a970f825daaa5d0ba55a21f9027bd9b",
+                  "sheet": "experiments/functional-v2-20261104/review/development/early-checkpoints/development-040-restore-saturation-mild-01.jpg",
+                  "sheet_sha256": "f089a34ae1c4f2e9853186c7787a55c69b38cfd224666fba932ed98b2df0a5fb",
+                  "bundle": "early-checkpoints",
+                  "reviewer": "Codex direct visual review; AI-assisted, not human",
+                  "observed_at": "2026-11-04T14:48:53.390363+00:00"
+                }
+              },
+              {
+                "path": "experiments/functional-v4-20261105/review/development/codex-observations.jsonl",
+                "sha256": "78fb0d5b4f17c12940a409b2bf08f8b3e826cf33446c12f8fdc6a98bd34a43e9",
+                "assessment": {
+                  "case_id": "development-040-restore-saturation-mild",
+                  "completion": "partial",
+                  "quality": "minor_issue",
+                  "evidence": "肤色明显过红、红裙和格衫增艳过量，超出自然颜色恢复。",
+                  "item_id": "249bffc25a77dd4e",
+                  "image_sha256": "791b087f0531b3b8f14ac7c5f57bb7924a970f825daaa5d0ba55a21f9027bd9b",
+                  "sheet": "experiments/functional-v2-20261104/review/development/early-checkpoints/development-040-restore-saturation-mild-01.jpg",
+                  "sheet_sha256": "f089a34ae1c4f2e9853186c7787a55c69b38cfd224666fba932ed98b2df0a5fb",
+                  "bundle": "early-checkpoints",
+                  "reviewer": "Codex direct visual review; AI-assisted, not human",
+                  "observed_at": "2026-11-04T14:48:53.390363+00:00"
+                }
+              }
+            ],
+            "reuse_policy": "Exact input/request/criteria/output key only; inherited AI evidence, never a new independent image review or user approval."
+          },
+          "output": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/images/development-040-restore-saturation-mild-zh.png",
+          "output_sha256": "791b087f0531b3b8f14ac7c5f57bb7924a970f825daaa5d0ba55a21f9027bd9b"
+        },
+        "matched-narrow-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "saturation": 20
+            }
+          },
+          "assessment": {
+            "case_id": "development-040-restore-saturation-mild",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "红格衫、裙子和肤色适度恢复颜色，白柱和明暗结构保留；肤色仍在可接受范围，没有明显新增偏色。",
+            "item_id": "239d232d7607338d",
+            "image_sha256": "6a0773c697492adc1ce8a3052982cb07ff2cbe79ca91bade1a27412cfeceae74",
+            "sheet": "experiments/functional-v3-20261104/review/development/correction-epoch2/development-040-restore-saturation-mild-01.jpg",
+            "sheet_sha256": "d6be88e6867c0a3864a4d03779a1b7935b24d66dc5409689418936bc26ccb4de",
+            "bundle": "correction-epoch2",
+            "reviewer": "Codex direct visual review; AI-assisted, not human",
+            "observed_at": "2026-11-04T17:45:59.672488+00:00",
+            "prior_final_observation_source": [
+              {
+                "path": "experiments/functional-v3-20261104/review/development/codex-observations.jsonl",
+                "sha256": "552076b689de14f4a5effa4a27c562328b171cfc1403a05a711733bb4e59adcb",
+                "assessment": {
+                  "case_id": "development-040-restore-saturation-mild",
+                  "completion": "completed",
+                  "quality": "acceptable",
+                  "evidence": "红格衫、裙子和肤色适度恢复颜色，白柱和明暗结构保留；肤色仍在可接受范围，没有明显新增偏色。",
+                  "item_id": "239d232d7607338d",
+                  "image_sha256": "6a0773c697492adc1ce8a3052982cb07ff2cbe79ca91bade1a27412cfeceae74",
+                  "sheet": "experiments/functional-v3-20261104/review/development/correction-epoch2/development-040-restore-saturation-mild-01.jpg",
+                  "sheet_sha256": "d6be88e6867c0a3864a4d03779a1b7935b24d66dc5409689418936bc26ccb4de",
+                  "bundle": "correction-epoch2",
+                  "reviewer": "Codex direct visual review; AI-assisted, not human",
+                  "observed_at": "2026-11-04T17:45:59.672488+00:00"
+                }
+              },
+              {
+                "path": "experiments/functional-v4-20261105/review/development/codex-observations.jsonl",
+                "sha256": "78fb0d5b4f17c12940a409b2bf08f8b3e826cf33446c12f8fdc6a98bd34a43e9",
+                "assessment": {
+                  "case_id": "development-040-restore-saturation-mild",
+                  "completion": "completed",
+                  "quality": "acceptable",
+                  "evidence": "红格衫、裙子和肤色适度恢复颜色，白柱和明暗结构保留；肤色仍在可接受范围，没有明显新增偏色。",
+                  "item_id": "239d232d7607338d",
+                  "image_sha256": "6a0773c697492adc1ce8a3052982cb07ff2cbe79ca91bade1a27412cfeceae74",
+                  "sheet": "experiments/functional-v3-20261104/review/development/correction-epoch2/development-040-restore-saturation-mild-01.jpg",
+                  "sheet_sha256": "d6be88e6867c0a3864a4d03779a1b7935b24d66dc5409689418936bc26ccb4de",
+                  "bundle": "correction-epoch2",
+                  "reviewer": "Codex direct visual review; AI-assisted, not human",
+                  "observed_at": "2026-11-04T17:45:59.672488+00:00"
+                }
+              }
+            ],
+            "reuse_policy": "Exact input/request/criteria/output key only; inherited AI evidence, never a new independent image review or user approval."
+          },
+          "output": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/language-merger-e1/images/development-040-restore-saturation-mild-zh.png",
+          "output_sha256": "6a0773c697492adc1ce8a3052982cb07ff2cbe79ca91bade1a27412cfeceae74"
+        },
+        "visual-late4-e1": {
+          "status": "executed",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "saturation": 20
+            }
+          },
+          "assessment": {
+            "case_id": "development-040-restore-saturation-mild",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "红格衫、裙子和肤色适度恢复颜色，白柱和明暗结构保留；肤色仍在可接受范围，没有明显新增偏色。",
+            "item_id": "239d232d7607338d",
+            "image_sha256": "6a0773c697492adc1ce8a3052982cb07ff2cbe79ca91bade1a27412cfeceae74",
+            "sheet": "experiments/functional-v3-20261104/review/development/correction-epoch2/development-040-restore-saturation-mild-01.jpg",
+            "sheet_sha256": "d6be88e6867c0a3864a4d03779a1b7935b24d66dc5409689418936bc26ccb4de",
+            "bundle": "correction-epoch2",
+            "reviewer": "Codex direct visual review; AI-assisted, not human",
+            "observed_at": "2026-11-04T17:45:59.672488+00:00",
+            "prior_final_observation_source": [
+              {
+                "path": "experiments/functional-v3-20261104/review/development/codex-observations.jsonl",
+                "sha256": "552076b689de14f4a5effa4a27c562328b171cfc1403a05a711733bb4e59adcb",
+                "assessment": {
+                  "case_id": "development-040-restore-saturation-mild",
+                  "completion": "completed",
+                  "quality": "acceptable",
+                  "evidence": "红格衫、裙子和肤色适度恢复颜色，白柱和明暗结构保留；肤色仍在可接受范围，没有明显新增偏色。",
+                  "item_id": "239d232d7607338d",
+                  "image_sha256": "6a0773c697492adc1ce8a3052982cb07ff2cbe79ca91bade1a27412cfeceae74",
+                  "sheet": "experiments/functional-v3-20261104/review/development/correction-epoch2/development-040-restore-saturation-mild-01.jpg",
+                  "sheet_sha256": "d6be88e6867c0a3864a4d03779a1b7935b24d66dc5409689418936bc26ccb4de",
+                  "bundle": "correction-epoch2",
+                  "reviewer": "Codex direct visual review; AI-assisted, not human",
+                  "observed_at": "2026-11-04T17:45:59.672488+00:00"
+                }
+              },
+              {
+                "path": "experiments/functional-v4-20261105/review/development/codex-observations.jsonl",
+                "sha256": "78fb0d5b4f17c12940a409b2bf08f8b3e826cf33446c12f8fdc6a98bd34a43e9",
+                "assessment": {
+                  "case_id": "development-040-restore-saturation-mild",
+                  "completion": "completed",
+                  "quality": "acceptable",
+                  "evidence": "红格衫、裙子和肤色适度恢复颜色，白柱和明暗结构保留；肤色仍在可接受范围，没有明显新增偏色。",
+                  "item_id": "239d232d7607338d",
+                  "image_sha256": "6a0773c697492adc1ce8a3052982cb07ff2cbe79ca91bade1a27412cfeceae74",
+                  "sheet": "experiments/functional-v3-20261104/review/development/correction-epoch2/development-040-restore-saturation-mild-01.jpg",
+                  "sheet_sha256": "d6be88e6867c0a3864a4d03779a1b7935b24d66dc5409689418936bc26ccb4de",
+                  "bundle": "correction-epoch2",
+                  "reviewer": "Codex direct visual review; AI-assisted, not human",
+                  "observed_at": "2026-11-04T17:45:59.672488+00:00"
+                }
+              }
+            ],
+            "reuse_policy": "Exact item key only; prior final AI evidence and unresolved uncertainty, not new viewing.",
+            "prior_final_sources": [
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/language-merger-e1/direct-review.json",
+                "sha256": "491fa21b92a1330506a0d34fac79211cac0e6874ccdcf4986ed5b3f038db7b8a"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/all-language-merger-e1/direct-review.json",
+                "sha256": "5d2acfe4d06dbc2fcedc15ea650b602f62e3615e216d6107a08ed808203496a2"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/all-language-merger-e1/direct-review.json",
+                "sha256": "5d2acfe4d06dbc2fcedc15ea650b602f62e3615e216d6107a08ed808203496a2"
+              }
+            ]
+          },
+          "output": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/visual-late4-e1/images/development-040-restore-saturation-mild-zh.png",
+          "output_sha256": "6a0773c697492adc1ce8a3052982cb07ff2cbe79ca91bade1a27412cfeceae74"
+        }
+      },
+      "panel": "experiments/functional-v14-20261106/report-panels/development-040-restore-saturation-mild.jpg",
+      "sha256": "a03974689674caf8bed9677af241a5d03725663e105069b5a4d74b21d06ced9d"
+    }
+  ],
+  "rule": "Actual frozen predictions and existing direct AI assessments; Chinese outputs displayed, bilingual completion reported separately. No new assessment or retouching.",
+  "GPU_hours": 0
+}

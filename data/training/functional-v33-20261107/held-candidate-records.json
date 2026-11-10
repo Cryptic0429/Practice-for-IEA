@@ -1,0 +1,5280 @@
+{
+  "sources": {
+    "experiments/functional-v33-20261107/replay.json": "7c5772198df7c073d55ce57ccc18408b74a2ed84c33cd64dfa817a37db7c715f",
+    "experiments/functional-v33-20261107/visual-held.json": "6de30bf1645996b01b5c45d7d106228f33f622ef1f89c8647f725e830a0ebb5d"
+  },
+  "global_feature_names": [
+    "original_median",
+    "original_luma_span",
+    "original_dark_share",
+    "original_bright_share",
+    "signed_span_change",
+    "signed_middle_span_change",
+    "absolute_median_change",
+    "shadow_spread_loss",
+    "highlight_spread_loss",
+    "new_black",
+    "new_white",
+    "mean_chroma_change"
+  ],
+  "spatial_feature_names": [
+    "worst_shadow_texture_loss",
+    "worst_highlight_texture_loss",
+    "new_black_worst_tile",
+    "new_white_worst_tile",
+    "detected_face_present",
+    "face_dark_tail_loss",
+    "face_highlight_tail_increase",
+    "face_texture_loss"
+  ],
+  "rows": [
+    {
+      "case_id": "p213-increase",
+      "group_id": "9ca5167bec0e72e7fea6cad1aa6fa182196ad1b0157d147e7cfa08498fa81e22",
+      "photo_id": "p213",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留孩子的五官和浅色布纹。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the child’s facial features and the pale fabric texture."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p213.jpg",
+      "source_sha256": "66828548b3e244d738a25df59f856b1f37060dece3a4c9936f415d5e33b883b3",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p213-increase-r15_20.png",
+        "sha256": "62413c427dfcc18f3c513b0260fb4b929aafecd6acff2232565aca14e252b4d7"
+      },
+      "recipe": "r15_20",
+      "outcome": "partial",
+      "reason": "孩子与背景的层次只略有变化",
+      "features": [
+        0.4322109818458557,
+        0.27964237332344055,
+        0.0013928008587270016,
+        0.0003070247417969035,
+        0.04011213779449463,
+        0.022381126880645752,
+        0.009299606084823608,
+        -0.02171766757965088,
+        -0.018375754356384277,
+        0.0001236736491892898,
+        0.00011464350972467498,
+        0.012103317305445671
+      ],
+      "spatial": [
+        -0.1381925404071808,
+        0.0,
+        0.005520833656191826,
+        0.0006249999860301614,
+        1.0,
+        0.036401578783988975,
+        0.02237647771835327,
+        -0.000894834753125906
+      ],
+      "face_boxes": [
+        [
+          1123,
+          578,
+          1486,
+          941
+        ],
+        [
+          1304,
+          1040,
+          1507,
+          1243
+        ],
+        [
+          1201,
+          1196,
+          1330,
+          1325
+        ]
+      ]
+    },
+    {
+      "case_id": "p213-increase",
+      "group_id": "9ca5167bec0e72e7fea6cad1aa6fa182196ad1b0157d147e7cfa08498fa81e22",
+      "photo_id": "p213",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留孩子的五官和浅色布纹。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the child’s facial features and the pale fabric texture."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p213.jpg",
+      "source_sha256": "66828548b3e244d738a25df59f856b1f37060dece3a4c9936f415d5e33b883b3",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p213-increase-protected_strong.png",
+        "sha256": "a6cb55bfbe0e7b141f94990e751056a69c8fe17b8bffe472eb3c3fe1330d83dc"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "布面和孩子轮廓的反差更明确，肤色与布纹保留",
+      "features": [
+        0.4322109818458557,
+        0.27964237332344055,
+        0.0013928008587270016,
+        0.0003070247417969035,
+        0.09019608795642853,
+        0.0627451241016388,
+        0.04313725233078003,
+        0.02272079885005951,
+        -0.05490201711654663,
+        0.0,
+        0.0,
+        1.141632401413517e-05
+      ],
+      "spatial": [
+        0.2949215978384018,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.06666667461395259,
+        0.0627450942993164,
+        -0.001529900822788477
+      ],
+      "face_boxes": [
+        [
+          1123,
+          578,
+          1486,
+          941
+        ],
+        [
+          1304,
+          1040,
+          1507,
+          1243
+        ],
+        [
+          1201,
+          1196,
+          1330,
+          1325
+        ]
+      ]
+    },
+    {
+      "case_id": "p213-increase",
+      "group_id": "9ca5167bec0e72e7fea6cad1aa6fa182196ad1b0157d147e7cfa08498fa81e22",
+      "photo_id": "p213",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留孩子的五官和浅色布纹。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the child’s facial features and the pale fabric texture."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p213.jpg",
+      "source_sha256": "66828548b3e244d738a25df59f856b1f37060dece3a4c9936f415d5e33b883b3",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p213-increase-r15_40.png",
+        "sha256": "12e738db9c1ff9150e136079a5a54bf176cdfe8183d618740069c6fe8c7523ba"
+      },
+      "recipe": "r15_40",
+      "outcome": "complete",
+      "reason": "对比明显增强，浅色织物纹理与五官仍清楚",
+      "features": [
+        0.4322109818458557,
+        0.27964237332344055,
+        0.0013928008587270016,
+        0.0003070247417969035,
+        0.08837571740150452,
+        0.050530970096588135,
+        0.021306663751602173,
+        -0.0448925644159317,
+        -0.035221219062805176,
+        0.0003433416070350283,
+        0.00020730059292680954,
+        0.02486325055360794
+      ],
+      "spatial": [
+        -0.25186209231615064,
+        0.0,
+        0.010937499813735485,
+        0.001770833390764892,
+        1.0,
+        0.07820157110691073,
+        0.0492250919342041,
+        -0.0017757415771484375
+      ],
+      "face_boxes": [
+        [
+          1123,
+          578,
+          1486,
+          941
+        ],
+        [
+          1304,
+          1040,
+          1507,
+          1243
+        ],
+        [
+          1201,
+          1196,
+          1330,
+          1325
+        ]
+      ]
+    },
+    {
+      "case_id": "p213-increase",
+      "group_id": "9ca5167bec0e72e7fea6cad1aa6fa182196ad1b0157d147e7cfa08498fa81e22",
+      "photo_id": "p213",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留孩子的五官和浅色布纹。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the child’s facial features and the pale fabric texture."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p213.jpg",
+      "source_sha256": "66828548b3e244d738a25df59f856b1f37060dece3a4c9936f415d5e33b883b3",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p213-increase-protected_soft.png",
+        "sha256": "df91f68cfb24d3a06fe01eb2908fa64c9f4f3913b00b04c8c3702f395ab5d4c3"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "织物和肤色保持，整图变化较弱",
+      "features": [
+        0.4322109818458557,
+        0.27964237332344055,
+        0.0013928008587270016,
+        0.0003070247417969035,
+        0.047058820724487305,
+        0.0313725471496582,
+        0.01960781216621399,
+        0.012335658073425293,
+        -0.0313725471496582,
+        0.0,
+        0.0,
+        2.9189488941483432e-06
+      ],
+      "spatial": [
+        0.15531880632042885,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.03529411554336548,
+        0.0313725471496582,
+        -0.0007776110433042049
+      ],
+      "face_boxes": [
+        [
+          1123,
+          578,
+          1486,
+          941
+        ],
+        [
+          1304,
+          1040,
+          1507,
+          1243
+        ],
+        [
+          1201,
+          1196,
+          1330,
+          1325
+        ]
+      ]
+    },
+    {
+      "case_id": "p213-decrease",
+      "group_id": "9ca5167bec0e72e7fea6cad1aa6fa182196ad1b0157d147e7cfa08498fa81e22",
+      "photo_id": "p213",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留孩子的五官和浅色布纹。",
+        "en": "Soften the overall tonal contrast while preserving the child’s facial features and the pale fabric texture."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p213.jpg",
+      "source_sha256": "66828548b3e244d738a25df59f856b1f37060dece3a4c9936f415d5e33b883b3",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p213-decrease-protected_strong.png",
+        "sha256": "90af449db75eb7172f348ecd5681bddfaad32682b9e08d2e3eb24c8a945d2917"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "孩子和背景的层次放软，布纹与表情仍清楚",
+      "features": [
+        0.4322109818458557,
+        0.27964237332344055,
+        0.0013928008587270016,
+        0.0003070247417969035,
+        0.09133332967758179,
+        0.06204783916473389,
+        0.042770981788635254,
+        -0.023529425263404846,
+        0.055599212646484375,
+        0.0,
+        0.0,
+        9.742318951566631e-09
+      ],
+      "spatial": [
+        -0.09597416445612907,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.035905253887176525,
+        -0.012634515762329102,
+        0.002671167254447937
+      ],
+      "face_boxes": [
+        [
+          1123,
+          578,
+          1486,
+          941
+        ],
+        [
+          1304,
+          1040,
+          1507,
+          1243
+        ],
+        [
+          1201,
+          1196,
+          1330,
+          1325
+        ]
+      ]
+    },
+    {
+      "case_id": "p213-decrease",
+      "group_id": "9ca5167bec0e72e7fea6cad1aa6fa182196ad1b0157d147e7cfa08498fa81e22",
+      "photo_id": "p213",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留孩子的五官和浅色布纹。",
+        "en": "Soften the overall tonal contrast while preserving the child’s facial features and the pale fabric texture."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p213.jpg",
+      "source_sha256": "66828548b3e244d738a25df59f856b1f37060dece3a4c9936f415d5e33b883b3",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p213-decrease-r15_40.png",
+        "sha256": "0ad24af1ea723dc7261b4fea1c20bd58fbc9e23690454ee29632367674e4a8cb"
+      },
+      "recipe": "r15_40",
+      "outcome": "partial",
+      "reason": "阴影抬灰，整图显得平淡",
+      "features": [
+        0.4322109818458557,
+        0.27964237332344055,
+        0.0013928008587270016,
+        0.0003070247417969035,
+        0.06746429204940796,
+        0.037930190563201904,
+        0.016236871480941772,
+        0.03636392951011658,
+        0.026763856410980225,
+        0.0,
+        0.0,
+        0.01979338750243187
+      ],
+      "spatial": [
+        0.23774420768022536,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.01250429153442384,
+        -0.009191393852233887,
+        0.0025329766795039177
+      ],
+      "face_boxes": [
+        [
+          1123,
+          578,
+          1486,
+          941
+        ],
+        [
+          1304,
+          1040,
+          1507,
+          1243
+        ],
+        [
+          1201,
+          1196,
+          1330,
+          1325
+        ]
+      ]
+    },
+    {
+      "case_id": "p213-decrease",
+      "group_id": "9ca5167bec0e72e7fea6cad1aa6fa182196ad1b0157d147e7cfa08498fa81e22",
+      "photo_id": "p213",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留孩子的五官和浅色布纹。",
+        "en": "Soften the overall tonal contrast while preserving the child’s facial features and the pale fabric texture."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p213.jpg",
+      "source_sha256": "66828548b3e244d738a25df59f856b1f37060dece3a4c9936f415d5e33b883b3",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p213-decrease-r15_20.png",
+        "sha256": "a8eb4d2f0d9f54ce8ceae314b001ef064942ab47fda5ea18f634138a98e49cd7"
+      },
+      "recipe": "r15_20",
+      "outcome": "partial",
+      "reason": "浅色和孩子的反差仅小幅减弱",
+      "features": [
+        0.4322109818458557,
+        0.27964237332344055,
+        0.0013928008587270016,
+        0.0003070247417969035,
+        0.03562435507774353,
+        0.019443929195404053,
+        0.008146673440933228,
+        0.01917409896850586,
+        0.015581130981445312,
+        0.0,
+        0.0,
+        0.010607702657580376
+      ],
+      "spatial": [
+        0.12989151179790498,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.006429016590118408,
+        -0.005310654640197754,
+        0.0013338923454284668
+      ],
+      "face_boxes": [
+        [
+          1123,
+          578,
+          1486,
+          941
+        ],
+        [
+          1304,
+          1040,
+          1507,
+          1243
+        ],
+        [
+          1201,
+          1196,
+          1330,
+          1325
+        ]
+      ]
+    },
+    {
+      "case_id": "p213-decrease",
+      "group_id": "9ca5167bec0e72e7fea6cad1aa6fa182196ad1b0157d147e7cfa08498fa81e22",
+      "photo_id": "p213",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留孩子的五官和浅色布纹。",
+        "en": "Soften the overall tonal contrast while preserving the child’s facial features and the pale fabric texture."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p213.jpg",
+      "source_sha256": "66828548b3e244d738a25df59f856b1f37060dece3a4c9936f415d5e33b883b3",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p213-decrease-protected_soft.png",
+        "sha256": "e7ce4d61d6e55fb94a1be3bdd112434bf08bddf56e9bb7219054c503f0d7fea9"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "柔化幅度很小",
+      "features": [
+        0.4322109818458557,
+        0.27964237332344055,
+        0.0013928008587270016,
+        0.0003070247417969035,
+        0.047058820724487305,
+        0.03241962194442749,
+        0.02096077799797058,
+        -0.011600807309150696,
+        0.02893960475921631,
+        0.0,
+        0.0,
+        2.9876632279268733e-09
+      ],
+      "spatial": [
+        -0.05194859206676483,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.018946522474288963,
+        -0.00674670934677124,
+        0.0013716565445065498
+      ],
+      "face_boxes": [
+        [
+          1123,
+          578,
+          1486,
+          941
+        ],
+        [
+          1304,
+          1040,
+          1507,
+          1243
+        ],
+        [
+          1201,
+          1196,
+          1330,
+          1325
+        ]
+      ]
+    },
+    {
+      "case_id": "p036-increase",
+      "group_id": "6f8e780de9fa28fe1b65afa366412bdd0e016ac560cf5cd0b9eaff452683cdc2",
+      "photo_id": "p036",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留两个孩子的脸和树荫细节。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving both children’s faces and detail in the wooded shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p036.jpg",
+      "source_sha256": "d2c2074b7910344afd4aa7e6ba674390503dd8e426a76412cbc6cee0fc86b008",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p036-increase-r15_20.png",
+        "sha256": "a115b007b0b70edc1566198075e92ef41f39e46fa9cfb09b89bd5abd08ed5b03"
+      },
+      "recipe": "r15_20",
+      "outcome": "partial",
+      "reason": "阴影和衣服反差较强，局部白衣发硬且树荫暗纹损失",
+      "features": [
+        0.12738902866840363,
+        0.6344931960105913,
+        0.3796263897179251,
+        0.0008938889166595607,
+        0.08599546672776448,
+        0.027126306667923927,
+        0.05488628149032593,
+        0.0069890255108475685,
+        -0.08406193554401398,
+        0.022508946240226764,
+        0.0,
+        0.008656769059598446
+      ],
+      "spatial": [
+        -0.03114587441086769,
+        -0.14803212583065034,
+        0.4370177388191223,
+        0.0,
+        1.0,
+        0.04798729717731476,
+        0.04789245128631592,
+        -0.004080977290868759
+      ],
+      "face_boxes": [
+        [
+          422,
+          178,
+          503,
+          258
+        ],
+        [
+          204,
+          244,
+          302,
+          342
+        ],
+        [
+          228,
+          207,
+          285,
+          264
+        ]
+      ]
+    },
+    {
+      "case_id": "p036-increase",
+      "group_id": "6f8e780de9fa28fe1b65afa366412bdd0e016ac560cf5cd0b9eaff452683cdc2",
+      "photo_id": "p036",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留两个孩子的脸和树荫细节。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving both children’s faces and detail in the wooded shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p036.jpg",
+      "source_sha256": "d2c2074b7910344afd4aa7e6ba674390503dd8e426a76412cbc6cee0fc86b008",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p036-increase-protected_soft.png",
+        "sha256": "266dc2d1f730b759e6cd03397fa1b401b130844f3b40415f7c68a4f2b5406b94"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "脸部与树荫仍清楚，整图变化很小",
+      "features": [
+        0.12738902866840363,
+        0.6344931960105913,
+        0.3796263897179251,
+        0.0008938889166595607,
+        0.035294091701507546,
+        -0.03529411554336548,
+        0.00669020414352417,
+        0.0,
+        -0.05098038911819458,
+        0.0,
+        0.0,
+        3.4742367915896466e-07
+      ],
+      "spatial": [
+        0.13414261341094968,
+        -0.04900780059397221,
+        0.0,
+        0.0,
+        1.0,
+        0.035294100642204285,
+        0.03137252330780038,
+        -0.0034590493887662888
+      ],
+      "face_boxes": [
+        [
+          422,
+          178,
+          503,
+          258
+        ],
+        [
+          204,
+          244,
+          302,
+          342
+        ],
+        [
+          228,
+          207,
+          285,
+          264
+        ]
+      ]
+    },
+    {
+      "case_id": "p036-increase",
+      "group_id": "6f8e780de9fa28fe1b65afa366412bdd0e016ac560cf5cd0b9eaff452683cdc2",
+      "photo_id": "p036",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留两个孩子的脸和树荫细节。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving both children’s faces and detail in the wooded shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p036.jpg",
+      "source_sha256": "d2c2074b7910344afd4aa7e6ba674390503dd8e426a76412cbc6cee0fc86b008",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p036-increase-protected_strong.png",
+        "sha256": "6cc2d038e3c2fa131b4333a046b82513f6cb3cf048d5a4572e3d6f23cdb5cbef"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "明暗层次可见增强，两个孩子和树荫仍有细节",
+      "features": [
+        0.12738902866840363,
+        0.6344931960105913,
+        0.3796263897179251,
+        0.0008938889166595607,
+        0.07058823108673096,
+        -0.06666822731494904,
+        0.011991381645202637,
+        0.0,
+        -0.09804077446460724,
+        0.0,
+        0.0,
+        1.0633301599227707e-06
+      ],
+      "spatial": [
+        0.26610928773880005,
+        -0.1031895712018013,
+        0.0,
+        0.0,
+        1.0,
+        0.06666666269302368,
+        0.06117644309997616,
+        -0.007047297433018684
+      ],
+      "face_boxes": [
+        [
+          422,
+          178,
+          503,
+          258
+        ],
+        [
+          204,
+          244,
+          302,
+          342
+        ],
+        [
+          228,
+          207,
+          285,
+          264
+        ]
+      ]
+    },
+    {
+      "case_id": "p036-increase",
+      "group_id": "6f8e780de9fa28fe1b65afa366412bdd0e016ac560cf5cd0b9eaff452683cdc2",
+      "photo_id": "p036",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留两个孩子的脸和树荫细节。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving both children’s faces and detail in the wooded shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p036.jpg",
+      "source_sha256": "d2c2074b7910344afd4aa7e6ba674390503dd8e426a76412cbc6cee0fc86b008",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p036-increase-r15_40.png",
+        "sha256": "e437c9fff92f6d629864eaab6003f08c65d14b39f5f1101376c6266367655350"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "阴影大块发黑，肤色和白衣显得偏硬",
+      "features": [
+        0.12738902866840363,
+        0.6344931960105913,
+        0.3796263897179251,
+        0.0008938889166595607,
+        0.12710020542144707,
+        0.009601583238691092,
+        0.10393177345395088,
+        0.02210902562364936,
+        -0.17103073000907798,
+        0.320638542490598,
+        5.880848135918162e-06,
+        0.018740152940154076
+      ],
+      "spatial": [
+        0.2972682178020477,
+        -0.27094567120075225,
+        0.893133819103241,
+        0.0025170031003654003,
+        1.0,
+        0.09374047368764876,
+        0.10279446840286255,
+        -0.008488405495882034
+      ],
+      "face_boxes": [
+        [
+          422,
+          178,
+          503,
+          258
+        ],
+        [
+          204,
+          244,
+          302,
+          342
+        ],
+        [
+          228,
+          207,
+          285,
+          264
+        ]
+      ]
+    },
+    {
+      "case_id": "p036-decrease",
+      "group_id": "6f8e780de9fa28fe1b65afa366412bdd0e016ac560cf5cd0b9eaff452683cdc2",
+      "photo_id": "p036",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留两个孩子的脸和树荫细节。",
+        "en": "Soften the overall tonal contrast while preserving both children’s faces and detail in the wooded shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p036.jpg",
+      "source_sha256": "d2c2074b7910344afd4aa7e6ba674390503dd8e426a76412cbc6cee0fc86b008",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p036-decrease-r15_20.png",
+        "sha256": "3294bbfbc1bbbd067f9fe1be53e7a7e3c23102f669e459fd1300bb00f3614cf4"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "树荫和人物反差放柔，脸和树荫结构都还在",
+      "features": [
+        0.12738902866840363,
+        0.6344931960105913,
+        0.3796263897179251,
+        0.0008938889166595607,
+        0.08148062378168275,
+        0.0272180438041687,
+        0.047130972146987915,
+        0.00392155721783638,
+        0.07384971678257235,
+        0.0,
+        0.0,
+        0.006819062400609255
+      ],
+      "spatial": [
+        0.13015256226062774,
+        0.1276815116405487,
+        0.0,
+        0.0,
+        1.0,
+        -0.027914035320282027,
+        -0.020109832286834717,
+        0.004980400204658508
+      ],
+      "face_boxes": [
+        [
+          422,
+          178,
+          503,
+          258
+        ],
+        [
+          204,
+          244,
+          302,
+          342
+        ],
+        [
+          228,
+          207,
+          285,
+          264
+        ]
+      ]
+    },
+    {
+      "case_id": "p036-decrease",
+      "group_id": "6f8e780de9fa28fe1b65afa366412bdd0e016ac560cf5cd0b9eaff452683cdc2",
+      "photo_id": "p036",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留两个孩子的脸和树荫细节。",
+        "en": "Soften the overall tonal contrast while preserving both children’s faces and detail in the wooded shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p036.jpg",
+      "source_sha256": "d2c2074b7910344afd4aa7e6ba674390503dd8e426a76412cbc6cee0fc86b008",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p036-decrease-protected_strong.png",
+        "sha256": "75768d20cf67b5e26b81cc4031d1f52af08648c21f78189992877d9639e67eb3"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "两张脸和衣服反差变柔，阴影层次保留",
+      "features": [
+        0.12738902866840363,
+        0.6344931960105913,
+        0.3796263897179251,
+        0.0008938889166595607,
+        0.07058825492858889,
+        -0.06666669249534607,
+        0.011764705181121826,
+        0.0,
+        0.09803923964500427,
+        0.0,
+        0.0,
+        1.4081489752015841e-08
+      ],
+      "spatial": [
+        -0.014622956141829496,
+        0.07663096822798252,
+        0.0,
+        0.0,
+        1.0,
+        -0.03529411554336548,
+        -0.04313725233078003,
+        0.0068975090980529785
+      ],
+      "face_boxes": [
+        [
+          422,
+          178,
+          503,
+          258
+        ],
+        [
+          204,
+          244,
+          302,
+          342
+        ],
+        [
+          228,
+          207,
+          285,
+          264
+        ]
+      ]
+    },
+    {
+      "case_id": "p036-decrease",
+      "group_id": "6f8e780de9fa28fe1b65afa366412bdd0e016ac560cf5cd0b9eaff452683cdc2",
+      "photo_id": "p036",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留两个孩子的脸和树荫细节。",
+        "en": "Soften the overall tonal contrast while preserving both children’s faces and detail in the wooded shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p036.jpg",
+      "source_sha256": "d2c2074b7910344afd4aa7e6ba674390503dd8e426a76412cbc6cee0fc86b008",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p036-decrease-protected_soft.png",
+        "sha256": "3d025186bad860a6840ea23f1c2061558491049a736cc1933bc9ee84821389c0"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "人物和树荫反差基本维持",
+      "features": [
+        0.12738902866840363,
+        0.6344931960105913,
+        0.3796263897179251,
+        0.0008938889166595607,
+        0.03529411554336548,
+        -0.035294145345687866,
+        0.00784313678741455,
+        0.0,
+        0.05098041892051697,
+        0.0,
+        0.0,
+        1.4683966265138793e-09
+      ],
+      "spatial": [
+        -0.0022745487280190035,
+        0.044750414416193963,
+        0.0,
+        0.0,
+        1.0,
+        -0.0156862735748291,
+        -0.023529410362243652,
+        0.0036103371530771255
+      ],
+      "face_boxes": [
+        [
+          422,
+          178,
+          503,
+          258
+        ],
+        [
+          204,
+          244,
+          302,
+          342
+        ],
+        [
+          228,
+          207,
+          285,
+          264
+        ]
+      ]
+    },
+    {
+      "case_id": "p036-decrease",
+      "group_id": "6f8e780de9fa28fe1b65afa366412bdd0e016ac560cf5cd0b9eaff452683cdc2",
+      "photo_id": "p036",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留两个孩子的脸和树荫细节。",
+        "en": "Soften the overall tonal contrast while preserving both children’s faces and detail in the wooded shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p036.jpg",
+      "source_sha256": "d2c2074b7910344afd4aa7e6ba674390503dd8e426a76412cbc6cee0fc86b008",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p036-decrease-r15_40.png",
+        "sha256": "3f057060212ff735e0fe0a3f54f0d44bd598424884ec24244b6cb9a91634b17d"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "暗部大幅蒙灰，原有阴影纹理减弱",
+      "features": [
+        0.12738902866840363,
+        0.6344931960105913,
+        0.3796263897179251,
+        0.0008938889166595607,
+        0.154817113280298,
+        0.05021961033344269,
+        0.09024783968925476,
+        0.004755306988954544,
+        0.13808785378932953,
+        0.0,
+        0.0,
+        0.01247057132422924
+      ],
+      "spatial": [
+        0.2424465835094452,
+        0.24073087722063063,
+        0.0,
+        0.0,
+        1.0,
+        -0.051880329847335815,
+        -0.03633261919021602,
+        0.009289085865020752
+      ],
+      "face_boxes": [
+        [
+          422,
+          178,
+          503,
+          258
+        ],
+        [
+          204,
+          244,
+          302,
+          342
+        ],
+        [
+          228,
+          207,
+          285,
+          264
+        ]
+      ]
+    },
+    {
+      "case_id": "p785-increase",
+      "group_id": "f32b9e1f1f3daf185bad0d264c5284fbe7b3fe37a202df335962645a3cc22dc5",
+      "photo_id": "p785",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留人物的五官和街灯颜色。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the facial features and colours of the street lights."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p785.jpg",
+      "source_sha256": "be3cb864a01dd9b7b71d0e3bf4ee63b11bcfd56cd3a67d5e7be1e4875a57f64c",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p785-increase-r15_40.png",
+        "sha256": "e6c54215794274098cc899d91f3df5073e31b896b3c69d418ba3e3fb1b1032df"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "牙齿和脸的亮部发白，街灯及红衣被推得过艳",
+      "features": [
+        0.2932039201259613,
+        0.5564964711666107,
+        0.07720558449074075,
+        0.01810546875,
+        0.12429249808192322,
+        0.0641658641397953,
+        0.062163904309272766,
+        0.025655490346252918,
+        -0.09736490994691849,
+        0.0009403935185185185,
+        0.009241898148148148,
+        0.07334732264280319
+      ],
+      "spatial": [
+        0.04151353985071183,
+        0.0,
+        0.02708333358168602,
+        0.08614583313465118,
+        1.0,
+        0.02715730369091035,
+        0.08421590328216555,
+        -0.0017886664718389511
+      ],
+      "face_boxes": [
+        [
+          465,
+          486,
+          603,
+          623
+        ],
+        [
+          81,
+          466,
+          243,
+          628
+        ],
+        [
+          364,
+          619,
+          499,
+          754
+        ]
+      ]
+    },
+    {
+      "case_id": "p785-increase",
+      "group_id": "f32b9e1f1f3daf185bad0d264c5284fbe7b3fe37a202df335962645a3cc22dc5",
+      "photo_id": "p785",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留人物的五官和街灯颜色。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the facial features and colours of the street lights."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p785.jpg",
+      "source_sha256": "be3cb864a01dd9b7b71d0e3bf4ee63b11bcfd56cd3a67d5e7be1e4875a57f64c",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p785-increase-r15_20.png",
+        "sha256": "dd2778054b33df65709b5b467a9a4378329fa7b6c88ae3028a246ed80090b1f5"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "脸和衣服更立体，街灯仍是原来的暖色",
+      "features": [
+        0.2932039201259613,
+        0.5564964711666107,
+        0.07720558449074075,
+        0.01810546875,
+        0.07477258890867233,
+        0.03304745629429817,
+        0.030159205198287964,
+        -0.004899024963378906,
+        -0.05692247301340103,
+        0.00020616319444444444,
+        0.007565104166666667,
+        0.03986569866538048
+      ],
+      "spatial": [
+        -0.03506879508495326,
+        0.0,
+        0.008854166604578495,
+        0.0742708370089531,
+        1.0,
+        0.013846617937088024,
+        0.0415310263633728,
+        -0.0009551588445901871
+      ],
+      "face_boxes": [
+        [
+          465,
+          486,
+          603,
+          623
+        ],
+        [
+          81,
+          466,
+          243,
+          628
+        ],
+        [
+          364,
+          619,
+          499,
+          754
+        ]
+      ]
+    },
+    {
+      "case_id": "p785-increase",
+      "group_id": "f32b9e1f1f3daf185bad0d264c5284fbe7b3fe37a202df335962645a3cc22dc5",
+      "photo_id": "p785",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留人物的五官和街灯颜色。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the facial features and colours of the street lights."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p785.jpg",
+      "source_sha256": "be3cb864a01dd9b7b71d0e3bf4ee63b11bcfd56cd3a67d5e7be1e4875a57f64c",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p785-increase-protected_soft.png",
+        "sha256": "7a5ec48686b42e2300de69158579e96fa713410ba235ce03c4225105f4d3959b"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "五官保住，整图层次增强有限",
+      "features": [
+        0.2932039201259613,
+        0.5564964711666107,
+        0.07720558449074075,
+        0.01810546875,
+        0.03545085787773261,
+        -0.01166781410574913,
+        0.03525960445404053,
+        0.015769224613904953,
+        -0.03831542283296585,
+        0.0,
+        0.0,
+        0.0030434050131589174
+      ],
+      "spatial": [
+        0.12948902249336244,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.027451035380363475,
+        0.01934099793434141,
+        -0.0002905018627643585
+      ],
+      "face_boxes": [
+        [
+          465,
+          486,
+          603,
+          623
+        ],
+        [
+          81,
+          466,
+          243,
+          628
+        ],
+        [
+          364,
+          619,
+          499,
+          754
+        ]
+      ]
+    },
+    {
+      "case_id": "p785-increase",
+      "group_id": "f32b9e1f1f3daf185bad0d264c5284fbe7b3fe37a202df335962645a3cc22dc5",
+      "photo_id": "p785",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留人物的五官和街灯颜色。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the facial features and colours of the street lights."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p785.jpg",
+      "source_sha256": "be3cb864a01dd9b7b71d0e3bf4ee63b11bcfd56cd3a67d5e7be1e4875a57f64c",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p785-increase-protected_strong.png",
+        "sha256": "cce30b499f081ca16c3c2ca46407c034eec0806c5fdfa3ad0afc3718b17bfec1"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "脸与衣料亮暗更明确，街灯仍有过渡",
+      "features": [
+        0.2932039201259613,
+        0.5564964711666107,
+        0.07720558449074075,
+        0.01810546875,
+        0.07323605567216873,
+        -0.017652910202741623,
+        0.06970274448394775,
+        0.033612366765737534,
+        -0.07229343801736832,
+        0.0,
+        0.0,
+        0.012153608724474907
+      ],
+      "spatial": [
+        0.25881012678146365,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.05129558145999913,
+        0.03899367451667779,
+        -0.0008095595985651016
+      ],
+      "face_boxes": [
+        [
+          465,
+          486,
+          603,
+          623
+        ],
+        [
+          81,
+          466,
+          243,
+          628
+        ],
+        [
+          364,
+          619,
+          499,
+          754
+        ]
+      ]
+    },
+    {
+      "case_id": "p785-decrease",
+      "group_id": "f32b9e1f1f3daf185bad0d264c5284fbe7b3fe37a202df335962645a3cc22dc5",
+      "photo_id": "p785",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留人物的五官和街灯颜色。",
+        "en": "Soften the overall tonal contrast while preserving the facial features and colours of the street lights."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p785.jpg",
+      "source_sha256": "be3cb864a01dd9b7b71d0e3bf4ee63b11bcfd56cd3a67d5e7be1e4875a57f64c",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p785-decrease-protected_soft.png",
+        "sha256": "c90e784a6a5cb5883a6f2874815de1f6075238224c3f06a9ea93247b5b21efc5"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "人物与灯光对比只微弱减小",
+      "features": [
+        0.2932039201259613,
+        0.5564964711666107,
+        0.07720558449074075,
+        0.01810546875,
+        0.03529411554336548,
+        -0.011731557548046112,
+        0.035294145345687866,
+        -0.0156862735748291,
+        0.039182595908641815,
+        0.0,
+        0.0,
+        0.0001016790556604974
+      ],
+      "spatial": [
+        -0.005185844236984841,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.027450978755950928,
+        0.0,
+        0.0007768180221319199
+      ],
+      "face_boxes": [
+        [
+          465,
+          486,
+          603,
+          623
+        ],
+        [
+          81,
+          466,
+          243,
+          628
+        ],
+        [
+          364,
+          619,
+          499,
+          754
+        ]
+      ]
+    },
+    {
+      "case_id": "p785-decrease",
+      "group_id": "f32b9e1f1f3daf185bad0d264c5284fbe7b3fe37a202df335962645a3cc22dc5",
+      "photo_id": "p785",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留人物的五官和街灯颜色。",
+        "en": "Soften the overall tonal contrast while preserving the facial features and colours of the street lights."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p785.jpg",
+      "source_sha256": "be3cb864a01dd9b7b71d0e3bf4ee63b11bcfd56cd3a67d5e7be1e4875a57f64c",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p785-decrease-r15_20.png",
+        "sha256": "7828aa8df5be7fe4d62c5423303c7420158944934267c349f6ecbde5106c9343"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "脸上闪光反差变柔，街灯与原来的暖色保留",
+      "features": [
+        0.2932039201259613,
+        0.5564964711666107,
+        0.07720558449074075,
+        0.01810546875,
+        0.0718912363052363,
+        0.030273329466581345,
+        0.02698826789855957,
+        0.013788823038339615,
+        0.06127427786588657,
+        0.0,
+        0.0,
+        0.04595977067947388
+      ],
+      "spatial": [
+        0.1348252534866333,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.017097413539886475,
+        -0.044212603569030784,
+        0.0025215093046426773
+      ],
+      "face_boxes": [
+        [
+          465,
+          486,
+          603,
+          623
+        ],
+        [
+          81,
+          466,
+          243,
+          628
+        ],
+        [
+          364,
+          619,
+          499,
+          754
+        ]
+      ]
+    },
+    {
+      "case_id": "p785-decrease",
+      "group_id": "f32b9e1f1f3daf185bad0d264c5284fbe7b3fe37a202df335962645a3cc22dc5",
+      "photo_id": "p785",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留人物的五官和街灯颜色。",
+        "en": "Soften the overall tonal contrast while preserving the facial features and colours of the street lights."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p785.jpg",
+      "source_sha256": "be3cb864a01dd9b7b71d0e3bf4ee63b11bcfd56cd3a67d5e7be1e4875a57f64c",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p785-decrease-r15_40.png",
+        "sha256": "44fe19c4373cc8c5c1df02dd6a1568da32584e22e3a2baa7674a936f7a4c1cc6"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "大面积发灰，两个脸和灯光失去原有层次",
+      "features": [
+        0.2932039201259613,
+        0.5564964711666107,
+        0.07720558449074075,
+        0.01810546875,
+        0.1351129710674286,
+        0.05580549314618111,
+        0.05000314116477966,
+        0.023211587220430374,
+        0.11453905701637268,
+        0.0,
+        0.0,
+        0.08581949025392532
+      ],
+      "spatial": [
+        0.23928789794445038,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0318881750106812,
+        -0.0828424513339997,
+        0.0047497740015387535
+      ],
+      "face_boxes": [
+        [
+          465,
+          486,
+          603,
+          623
+        ],
+        [
+          81,
+          466,
+          243,
+          628
+        ],
+        [
+          364,
+          619,
+          499,
+          754
+        ]
+      ]
+    },
+    {
+      "case_id": "p785-decrease",
+      "group_id": "f32b9e1f1f3daf185bad0d264c5284fbe7b3fe37a202df335962645a3cc22dc5",
+      "photo_id": "p785",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留人物的五官和街灯颜色。",
+        "en": "Soften the overall tonal contrast while preserving the facial features and colours of the street lights."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p785.jpg",
+      "source_sha256": "be3cb864a01dd9b7b71d0e3bf4ee63b11bcfd56cd3a67d5e7be1e4875a57f64c",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p785-decrease-protected_strong.png",
+        "sha256": "01782a597ae0d35670a282132b92ca202fd98e403adef09f7d62e76209d6b165"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "反差放柔但夜景气氛、五官和暖色保留",
+      "features": [
+        0.2932039201259613,
+        0.5564964711666107,
+        0.07720558449074075,
+        0.01810546875,
+        0.07350903749465942,
+        -0.01708921045064926,
+        0.07058823108673096,
+        -0.03529411554336548,
+        0.07199122756719589,
+        0.0,
+        0.0,
+        0.0003171437419950962
+      ],
+      "spatial": [
+        -0.02499479092657566,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.055505442619323775,
+        0.0,
+        0.0013943333178758621
+      ],
+      "face_boxes": [
+        [
+          465,
+          486,
+          603,
+          623
+        ],
+        [
+          81,
+          466,
+          243,
+          628
+        ],
+        [
+          364,
+          619,
+          499,
+          754
+        ]
+      ]
+    },
+    {
+      "case_id": "p721-increase",
+      "group_id": "b93e3f7e6356d9bafe65271a5918eecfb4a80627121f3f7fc40711357d5afc89",
+      "photo_id": "p721",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留逆光人物的五官和窗外细节。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the backlit subject’s facial features and detail outside the window."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p721.jpg",
+      "source_sha256": "6c6ef57753c81c1c41d130e81b9590c04b1cd492562a8c83cadb92e5e2612104",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p721-increase-r15_40.png",
+        "sha256": "d7ae47fabd8e0b637d0062cdaeb8c47767fd1b63eb7675cf5161205c99a69734"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "窗外部分亮面变白，暗侧面部和头发变得难辨",
+      "features": [
+        0.5092424154281616,
+        0.8644282445311546,
+        0.0715236131934033,
+        0.17048350824587707,
+        0.11831057816743851,
+        0.17771492898464203,
+        0.002932131290435791,
+        0.03833490610122681,
+        0.0827745646238327,
+        0.04651268115942029,
+        0.1333473888055972,
+        0.018975619226694107
+      ],
+      "spatial": [
+        0.19900821745395664,
+        0.31343559920787833,
+        0.3794478178024292,
+        0.7474633455276489,
+        1.0,
+        0.09885253757238388,
+        0.08206981420516968,
+        -0.0013389317318797112
+      ],
+      "face_boxes": [
+        [
+          852,
+          297,
+          924,
+          369
+        ],
+        [
+          514,
+          115,
+          690,
+          291
+        ]
+      ]
+    },
+    {
+      "case_id": "p721-increase",
+      "group_id": "b93e3f7e6356d9bafe65271a5918eecfb4a80627121f3f7fc40711357d5afc89",
+      "photo_id": "p721",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留逆光人物的五官和窗外细节。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the backlit subject’s facial features and detail outside the window."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p721.jpg",
+      "source_sha256": "6c6ef57753c81c1c41d130e81b9590c04b1cd492562a8c83cadb92e5e2612104",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p721-increase-protected_strong.png",
+        "sha256": "4b28436cca11d0db800dc08a030447763ea4336031169f70ef76a9f98d1b9886"
+      },
+      "recipe": "protected_strong",
+      "outcome": "partial",
+      "reason": "窗外和五官保住，对比增强幅度偏小",
+      "features": [
+        0.5092424154281616,
+        0.8644282445311546,
+        0.0715236131934033,
+        0.17048350824587707,
+        0.00784313678741455,
+        0.1122121810913086,
+        0.003921627998352051,
+        0.050980404019355774,
+        0.06123177707195282,
+        0.0,
+        0.0,
+        3.733028643182479e-05
+      ],
+      "spatial": [
+        0.27245464324951174,
+        0.2475113660097122,
+        0.0,
+        0.0,
+        1.0,
+        0.03891214728355408,
+        0.06666666269302368,
+        0.0005897830706089735
+      ],
+      "face_boxes": [
+        [
+          852,
+          297,
+          924,
+          369
+        ],
+        [
+          514,
+          115,
+          690,
+          291
+        ]
+      ]
+    },
+    {
+      "case_id": "p721-increase",
+      "group_id": "b93e3f7e6356d9bafe65271a5918eecfb4a80627121f3f7fc40711357d5afc89",
+      "photo_id": "p721",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留逆光人物的五官和窗外细节。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the backlit subject’s facial features and detail outside the window."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p721.jpg",
+      "source_sha256": "6c6ef57753c81c1c41d130e81b9590c04b1cd492562a8c83cadb92e5e2612104",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p721-increase-r15_20.png",
+        "sha256": "5a180321d996e8caeedcc9aaf0b300b9c6a277f2cc3fe795dfc52ccdfeac4c79"
+      },
+      "recipe": "r15_20",
+      "outcome": "partial",
+      "reason": "明暗差拉开，但阴影侧五官和头发更难分辨",
+      "features": [
+        0.5092424154281616,
+        0.8644282445311546,
+        0.0715236131934033,
+        0.17048350824587707,
+        0.07886822521686554,
+        0.08345293998718262,
+        0.0012627243995666504,
+        -0.005076869856566191,
+        0.03584592044353485,
+        0.019074837581209394,
+        0.1135073088455772,
+        0.010099213570356369
+      ],
+      "spatial": [
+        0.031313174962997445,
+        0.16473855674266824,
+        0.26188158988952637,
+        0.6778606176376343,
+        1.0,
+        0.04622510075569153,
+        0.03866976499557495,
+        -0.0006322269327938557
+      ],
+      "face_boxes": [
+        [
+          852,
+          297,
+          924,
+          369
+        ],
+        [
+          514,
+          115,
+          690,
+          291
+        ]
+      ]
+    },
+    {
+      "case_id": "p721-increase",
+      "group_id": "b93e3f7e6356d9bafe65271a5918eecfb4a80627121f3f7fc40711357d5afc89",
+      "photo_id": "p721",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留逆光人物的五官和窗外细节。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the backlit subject’s facial features and detail outside the window."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p721.jpg",
+      "source_sha256": "6c6ef57753c81c1c41d130e81b9590c04b1cd492562a8c83cadb92e5e2612104",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p721-increase-protected_soft.png",
+        "sha256": "88399dd81c3b4e6a65c8e18e8ece2ce1cb630bb3325c5a25e2667c3e90f8f1d0"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "人脸和窗外几乎维持原层次",
+      "features": [
+        0.5092424154281616,
+        0.8644282445311546,
+        0.0715236131934033,
+        0.17048350824587707,
+        0.003921568393707275,
+        0.0571717768907547,
+        0.0,
+        0.025799229741096497,
+        0.0313725471496582,
+        0.0,
+        0.0,
+        1.2323595001362264e-05
+      ],
+      "spatial": [
+        0.13548722267150878,
+        0.12542152106761933,
+        0.0,
+        0.0,
+        1.0,
+        0.019607841968536377,
+        0.0313725471496582,
+        0.00028392253443598747
+      ],
+      "face_boxes": [
+        [
+          852,
+          297,
+          924,
+          369
+        ],
+        [
+          514,
+          115,
+          690,
+          291
+        ]
+      ]
+    },
+    {
+      "case_id": "p721-decrease",
+      "group_id": "b93e3f7e6356d9bafe65271a5918eecfb4a80627121f3f7fc40711357d5afc89",
+      "photo_id": "p721",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留逆光人物的五官和窗外细节。",
+        "en": "Soften the overall tonal contrast while preserving the backlit subject’s facial features and detail outside the window."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p721.jpg",
+      "source_sha256": "6c6ef57753c81c1c41d130e81b9590c04b1cd492562a8c83cadb92e5e2612104",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p721-decrease-r15_40.png",
+        "sha256": "98563791869a804cd42af419dc1ab10cd1af7c2de603288a835291bd785a7834"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "大块灰雾削弱原有脸部和建筑轮廓",
+      "features": [
+        0.5092424154281616,
+        0.8644282445311546,
+        0.0715236131934033,
+        0.17048350824587707,
+        0.20977333933115005,
+        0.13559101521968842,
+        0.0025984644889831543,
+        0.04108075797557831,
+        0.0518600195646286,
+        0.0,
+        0.0,
+        0.01319919154047966
+      ],
+      "spatial": [
+        0.23909166157245637,
+        0.24197067320346832,
+        0.0,
+        0.0,
+        1.0,
+        -0.0008336901664733887,
+        0.04062088727951052,
+        0.004676022566854954
+      ],
+      "face_boxes": [
+        [
+          852,
+          297,
+          924,
+          369
+        ],
+        [
+          514,
+          115,
+          690,
+          291
+        ]
+      ]
+    },
+    {
+      "case_id": "p721-decrease",
+      "group_id": "b93e3f7e6356d9bafe65271a5918eecfb4a80627121f3f7fc40711357d5afc89",
+      "photo_id": "p721",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留逆光人物的五官和窗外细节。",
+        "en": "Soften the overall tonal contrast while preserving the backlit subject’s facial features and detail outside the window."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p721.jpg",
+      "source_sha256": "6c6ef57753c81c1c41d130e81b9590c04b1cd492562a8c83cadb92e5e2612104",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p721-decrease-protected_soft.png",
+        "sha256": "6be19c14468aad20aac7666255cb98f2d0a8a547dc0fc4497bb3d1610779c102"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "逆光反差柔化不明显",
+      "features": [
+        0.5092424154281616,
+        0.8644282445311546,
+        0.0715236131934033,
+        0.17048350824587707,
+        0.003921568393707275,
+        0.05490198731422424,
+        0.001399993896484375,
+        -0.023529410362243652,
+        -0.03137257695198059,
+        0.0,
+        0.0,
+        1.3446813662554291e-09
+      ],
+      "spatial": [
+        -0.03134272471070289,
+        0.015190775133669392,
+        0.0,
+        0.0,
+        1.0,
+        -0.003921568393707275,
+        0.035294175148010254,
+        0.002674352377653122
+      ],
+      "face_boxes": [
+        [
+          852,
+          297,
+          924,
+          369
+        ],
+        [
+          514,
+          115,
+          690,
+          291
+        ]
+      ]
+    },
+    {
+      "case_id": "p721-decrease",
+      "group_id": "b93e3f7e6356d9bafe65271a5918eecfb4a80627121f3f7fc40711357d5afc89",
+      "photo_id": "p721",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留逆光人物的五官和窗外细节。",
+        "en": "Soften the overall tonal contrast while preserving the backlit subject’s facial features and detail outside the window."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p721.jpg",
+      "source_sha256": "6c6ef57753c81c1c41d130e81b9590c04b1cd492562a8c83cadb92e5e2612104",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p721-decrease-protected_strong.png",
+        "sha256": "0e7934920e52fe7f9ab422f2ad0583d986830cc119f8b4db57b22e6133ffacef"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "脸上和窗外的过渡柔化，眼睛与窗外纹理仍可辨",
+      "features": [
+        0.5092424154281616,
+        0.8644282445311546,
+        0.0715236131934033,
+        0.17048350824587707,
+        0.00784313678741455,
+        0.11372551321983337,
+        0.002945840358734131,
+        -0.05098038911819458,
+        -0.0627451241016388,
+        0.0,
+        0.0,
+        1.4868796860412203e-08
+      ],
+      "spatial": [
+        -0.06768934428691863,
+        0.015176222659647493,
+        0.0,
+        0.0,
+        1.0,
+        -0.00784313678741455,
+        0.07058826088905334,
+        0.005218361504375935
+      ],
+      "face_boxes": [
+        [
+          852,
+          297,
+          924,
+          369
+        ],
+        [
+          514,
+          115,
+          690,
+          291
+        ]
+      ]
+    },
+    {
+      "case_id": "p721-decrease",
+      "group_id": "b93e3f7e6356d9bafe65271a5918eecfb4a80627121f3f7fc40711357d5afc89",
+      "photo_id": "p721",
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留逆光人物的五官和窗外细节。",
+        "en": "Soften the overall tonal contrast while preserving the backlit subject’s facial features and detail outside the window."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p721.jpg",
+      "source_sha256": "6c6ef57753c81c1c41d130e81b9590c04b1cd492562a8c83cadb92e5e2612104",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p721-decrease-r15_20.png",
+        "sha256": "d6f9d96f58535b4378a792d3ee4f2189bcac671fb54be3b47997e556bae673cf"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "反差减弱，面部和窗外原有细节保持",
+      "features": [
+        0.5092424154281616,
+        0.8644282445311546,
+        0.0715236131934033,
+        0.17048350824587707,
+        0.11236705631017685,
+        0.07171966135501862,
+        0.000530242919921875,
+        0.022774100303649902,
+        0.028438791632652283,
+        0.0,
+        0.0,
+        0.007089255377650261
+      ],
+      "spatial": [
+        0.12790802419185637,
+        0.1296278491616249,
+        0.0,
+        0.0,
+        1.0,
+        -0.0008336901664733887,
+        0.022129446268081665,
+        0.0024973489344120026
+      ],
+      "face_boxes": [
+        [
+          852,
+          297,
+          924,
+          369
+        ],
+        [
+          514,
+          115,
+          690,
+          291
+        ]
+      ]
+    },
+    {
+      "case_id": "p300-increase",
+      "group_id": "04054bc2152bc606e02692878bd1cf00f95f0b5a0929138ffa535081158743db",
+      "photo_id": "p300",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留三个人的五官和黑色西装纹理。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the three faces and detail in the dark suits."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p300.jpg",
+      "source_sha256": "f97730008a521b99b36811cbabc5ef67d7786877f5936c6b98f0696bcaa35279",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p300-increase-r15_40.png",
+        "sha256": "dccabfef02fd81d31331f2cd86a06aa873239e53517b373861199a8055d75140"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "多处西装暗纹被压成一片，亮衬衫更硬",
+      "features": [
+        0.18374745547771454,
+        0.70194511115551,
+        0.1623304039469627,
+        0.06746967828142666,
+        0.1700478340499103,
+        0.12016861513257027,
+        0.0994345098733902,
+        0.05996454514563081,
+        0.009510576725006104,
+        0.11529961969369924,
+        0.056066913351834724,
+        0.006674758158624172
+      ],
+      "spatial": [
+        0.39509572684764865,
+        -0.12285439372062683,
+        0.679302990436554,
+        0.34130147099494934,
+        1.0,
+        0.09271765500307083,
+        0.08095294237136841,
+        -0.0037916451692581177
+      ],
+      "face_boxes": [
+        [
+          140,
+          71,
+          311,
+          242
+        ],
+        [
+          696,
+          30,
+          963,
+          297
+        ]
+      ]
+    },
+    {
+      "case_id": "p300-increase",
+      "group_id": "04054bc2152bc606e02692878bd1cf00f95f0b5a0929138ffa535081158743db",
+      "photo_id": "p300",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留三个人的五官和黑色西装纹理。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the three faces and detail in the dark suits."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p300.jpg",
+      "source_sha256": "f97730008a521b99b36811cbabc5ef67d7786877f5936c6b98f0696bcaa35279",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p300-increase-r15_20.png",
+        "sha256": "1dac2bfd60b095822eb1bdd6d94c4d165177c4d339fefe989e5b985a60e9b854"
+      },
+      "recipe": "r15_20",
+      "outcome": "partial",
+      "reason": "变化有可见效果，但西装最暗纹理已有减少",
+      "features": [
+        0.18374745547771454,
+        0.70194511115551,
+        0.1623304039469627,
+        0.06746967828142666,
+        0.10167760588228703,
+        0.06386195123195648,
+        0.04733724892139435,
+        0.014588851876324013,
+        -0.0011372566223144531,
+        0.030653201767910372,
+        0.04375706650220989,
+        0.0031242510303854942
+      ],
+      "spatial": [
+        0.016767894476652154,
+        -0.06613966003060341,
+        0.2815728187561035,
+        0.26481467485427856,
+        1.0,
+        0.042020395398139954,
+        0.038098812103271484,
+        -0.001969166100025177
+      ],
+      "face_boxes": [
+        [
+          140,
+          71,
+          311,
+          242
+        ],
+        [
+          696,
+          30,
+          963,
+          297
+        ]
+      ]
+    },
+    {
+      "case_id": "p300-increase",
+      "group_id": "04054bc2152bc606e02692878bd1cf00f95f0b5a0929138ffa535081158743db",
+      "photo_id": "p300",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留三个人的五官和黑色西装纹理。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the three faces and detail in the dark suits."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p300.jpg",
+      "source_sha256": "f97730008a521b99b36811cbabc5ef67d7786877f5936c6b98f0696bcaa35279",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p300-increase-protected_strong.png",
+        "sha256": "f775b024aa2e35b0c00c8dd1d1a58aa7a71dc9522f8565d9699d018f8485658a"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "西装与衬衫分离加强，五官和西装明暗仍可辨",
+      "features": [
+        0.18374745547771454,
+        0.70194511115551,
+        0.1623304039469627,
+        0.06746967828142666,
+        0.05882352590560913,
+        0.027450978755950928,
+        0.03667841851711273,
+        0.00784313678741455,
+        0.019607841968536377,
+        0.0,
+        0.0,
+        1.5919786600093744e-09
+      ],
+      "spatial": [
+        0.3359382450580597,
+        -0.06528860032558441,
+        0.00020865937403868884,
+        0.0005216484423726797,
+        1.0,
+        0.047058820724487305,
+        0.06666672229766846,
+        -0.0017679370939731598
+      ],
+      "face_boxes": [
+        [
+          140,
+          71,
+          311,
+          242
+        ],
+        [
+          696,
+          30,
+          963,
+          297
+        ]
+      ]
+    },
+    {
+      "case_id": "p300-increase",
+      "group_id": "04054bc2152bc606e02692878bd1cf00f95f0b5a0929138ffa535081158743db",
+      "photo_id": "p300",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留三个人的五官和黑色西装纹理。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the three faces and detail in the dark suits."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p300.jpg",
+      "source_sha256": "f97730008a521b99b36811cbabc5ef67d7786877f5936c6b98f0696bcaa35279",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p300-increase-protected_soft.png",
+        "sha256": "354bc429fbabbddc19ca7389bc6b93f530493f26d2ec15d8500444e930ec1d7f"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "原有纹理保留，整体反差只略增",
+      "features": [
+        0.18374745547771454,
+        0.70194511115551,
+        0.1623304039469627,
+        0.06746967828142666,
+        0.02941727638244629,
+        0.0156862735748291,
+        0.01960313320159912,
+        0.003921568393707275,
+        0.011764705181121826,
+        0.0,
+        0.0,
+        9.280774482256504e-10
+      ],
+      "spatial": [
+        0.16869989037513733,
+        -0.03043387122452259,
+        0.0,
+        0.00010432968701934442,
+        1.0,
+        0.023529425263404846,
+        0.0313725471496582,
+        -0.000810377299785614
+      ],
+      "face_boxes": [
+        [
+          140,
+          71,
+          311,
+          242
+        ],
+        [
+          696,
+          30,
+          963,
+          297
+        ]
+      ]
+    },
+    {
+      "case_id": "p300-decrease",
+      "group_id": "04054bc2152bc606e02692878bd1cf00f95f0b5a0929138ffa535081158743db",
+      "photo_id": "p300",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留三个人的五官和黑色西装纹理。",
+        "en": "Soften the overall tonal contrast while preserving the three faces and detail in the dark suits."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p300.jpg",
+      "source_sha256": "f97730008a521b99b36811cbabc5ef67d7786877f5936c6b98f0696bcaa35279",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p300-decrease-protected_soft.png",
+        "sha256": "608f6cba31835c7d4335296e8791e4a1830908e33d7cd75a4444b85fca108760"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "衣服与脸部明暗关系变化不大",
+      "features": [
+        0.18374745547771454,
+        0.70194511115551,
+        0.1623304039469627,
+        0.06746967828142666,
+        0.0313725471496582,
+        0.01541883498430252,
+        0.019607841968536377,
+        -0.003921575844287872,
+        -0.011497259140014648,
+        0.0,
+        0.0,
+        8.297089681974512e-10
+      ],
+      "spatial": [
+        -0.03573884330689907,
+        0.02668531835079193,
+        0.0,
+        0.0,
+        1.0,
+        -0.019607841968536377,
+        -0.003921568393707275,
+        0.0025007110089063644
+      ],
+      "face_boxes": [
+        [
+          140,
+          71,
+          311,
+          242
+        ],
+        [
+          696,
+          30,
+          963,
+          297
+        ]
+      ]
+    },
+    {
+      "case_id": "p300-decrease",
+      "group_id": "04054bc2152bc606e02692878bd1cf00f95f0b5a0929138ffa535081158743db",
+      "photo_id": "p300",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留三个人的五官和黑色西装纹理。",
+        "en": "Soften the overall tonal contrast while preserving the three faces and detail in the dark suits."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p300.jpg",
+      "source_sha256": "f97730008a521b99b36811cbabc5ef67d7786877f5936c6b98f0696bcaa35279",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p300-decrease-r15_40.png",
+        "sha256": "8585f3145619beaa4b6360bc0456534f1b7ec900546aa21b90f2dadd9aea6298"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "黑衣与白衬衫蒙灰，脸部细节随之减弱",
+      "features": [
+        0.18374745547771454,
+        0.70194511115551,
+        0.1623304039469627,
+        0.06746967828142666,
+        0.17172002792358398,
+        0.10559920221567154,
+        0.07561098039150238,
+        0.01796455316245553,
+        0.10502821207046509,
+        0.0,
+        0.0,
+        0.004080393351614475
+      ],
+      "spatial": [
+        0.24377101063728332,
+        0.24172241389751434,
+        0.0,
+        0.0,
+        1.0,
+        -0.0156862735748291,
+        -0.006155252456665039,
+        0.005724065005779266
+      ],
+      "face_boxes": [
+        [
+          140,
+          71,
+          311,
+          242
+        ],
+        [
+          696,
+          30,
+          963,
+          297
+        ]
+      ]
+    },
+    {
+      "case_id": "p300-decrease",
+      "group_id": "04054bc2152bc606e02692878bd1cf00f95f0b5a0929138ffa535081158743db",
+      "photo_id": "p300",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留三个人的五官和黑色西装纹理。",
+        "en": "Soften the overall tonal contrast while preserving the three faces and detail in the dark suits."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p300.jpg",
+      "source_sha256": "f97730008a521b99b36811cbabc5ef67d7786877f5936c6b98f0696bcaa35279",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p300-decrease-r15_20.png",
+        "sha256": "63b12082a00ec6740f5fab6eddc57b5ca3ac176995aac7ace1320408f8560385"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "面部与衣服反差柔和，领口与深衣纹理保留",
+      "features": [
+        0.18374745547771454,
+        0.70194511115551,
+        0.1623304039469627,
+        0.06746967828142666,
+        0.09215141832828522,
+        0.05656943470239639,
+        0.0400337278842926,
+        0.010368462726473779,
+        0.056018829345703125,
+        0.0,
+        0.0,
+        0.002207560930401087
+      ],
+      "spatial": [
+        0.13047995269298554,
+        0.12950119078159333,
+        0.0,
+        0.0,
+        1.0,
+        -0.00784313678741455,
+        -0.003921568393707275,
+        0.003056848421692848
+      ],
+      "face_boxes": [
+        [
+          140,
+          71,
+          311,
+          242
+        ],
+        [
+          696,
+          30,
+          963,
+          297
+        ]
+      ]
+    },
+    {
+      "case_id": "p300-decrease",
+      "group_id": "04054bc2152bc606e02692878bd1cf00f95f0b5a0929138ffa535081158743db",
+      "photo_id": "p300",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留三个人的五官和黑色西装纹理。",
+        "en": "Soften the overall tonal contrast while preserving the three faces and detail in the dark suits."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p300.jpg",
+      "source_sha256": "f97730008a521b99b36811cbabc5ef67d7786877f5936c6b98f0696bcaa35279",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p300-decrease-protected_strong.png",
+        "sha256": "d1cc7174806a4206d6e54a25163bb01bc812d72e01d184b0075e591124571e9b"
+      },
+      "recipe": "protected_strong",
+      "outcome": "partial",
+      "reason": "变化偏弱",
+      "features": [
+        0.18374745547771454,
+        0.70194511115551,
+        0.1623304039469627,
+        0.06746967828142666,
+        0.05882352590560913,
+        0.02941722422838211,
+        0.03529411554336548,
+        -0.007843144237995148,
+        -0.021574079990386963,
+        0.0,
+        0.0,
+        1.3765175665980678e-09
+      ],
+      "spatial": [
+        -0.07501606494188308,
+        0.04484734795987606,
+        0.0,
+        0.0,
+        1.0,
+        -0.04117095470428467,
+        -0.00784313678741455,
+        0.004765134304761887
+      ],
+      "face_boxes": [
+        [
+          140,
+          71,
+          311,
+          242
+        ],
+        [
+          696,
+          30,
+          963,
+          297
+        ]
+      ]
+    },
+    {
+      "case_id": "p118-increase",
+      "group_id": "7cdf4d24579fc69e94a42bc23eb2148e40fedbca3bf8fff0b9ee5a2ea137670d",
+      "photo_id": "p118",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留两张脸、帽檐暗纹和浅色衣料。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving both faces, detail under the hat brim and the pale clothing."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p118.jpg",
+      "source_sha256": "2439a97737c6a0bcdb78d03b49d31fe2f01d5d36717e5644bd8fb7b4a401a947",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p118-increase-protected_strong.png",
+        "sha256": "51d8108ab9af8cbe40522b44546f5a3da3e069ffcfcc95bf90bfb9893e924b58"
+      },
+      "recipe": "protected_strong",
+      "outcome": "partial",
+      "reason": "帽檐暗侧肤色加重，浅衣亮面发硬",
+      "features": [
+        0.31535136699676514,
+        0.7564133666455746,
+        0.19265263920373166,
+        0.030331328388485092,
+        0.04787336587905999,
+        0.04920463263988495,
+        0.07058823108673096,
+        0.013910576701164246,
+        0.03410977125167847,
+        0.0,
+        0.0,
+        0.0021218995098024607
+      ],
+      "spatial": [
+        0.1916162520647049,
+        0.0982120007276535,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.05490198731422424,
+        0.0008658762089908123
+      ],
+      "face_boxes": [
+        [
+          1892,
+          496,
+          2884,
+          1488
+        ]
+      ]
+    },
+    {
+      "case_id": "p118-increase",
+      "group_id": "7cdf4d24579fc69e94a42bc23eb2148e40fedbca3bf8fff0b9ee5a2ea137670d",
+      "photo_id": "p118",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留两张脸、帽檐暗纹和浅色衣料。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving both faces, detail under the hat brim and the pale clothing."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p118.jpg",
+      "source_sha256": "2439a97737c6a0bcdb78d03b49d31fe2f01d5d36717e5644bd8fb7b4a401a947",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p118-increase-r15_40.png",
+        "sha256": "d81ec282a12b5841059df648d4ac0c3d8cf4fb758c1962485b18fc745d4e691b"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "两个脸的阴影和帽檐暗部被压黑，肤色明显变红",
+      "features": [
+        0.31535136699676514,
+        0.7564133666455746,
+        0.19265263920373166,
+        0.030331328388485092,
+        0.15214580117026344,
+        0.1251976080238819,
+        0.05883452296257019,
+        0.07081959955394268,
+        -0.03302907943725586,
+        0.13043190513788325,
+        0.012370673766069951,
+        0.04291372001171112
+      ],
+      "spatial": [
+        0.5341064780950546,
+        -0.14557991027832032,
+        0.8731085062026978,
+        0.13171623647212982,
+        1.0,
+        0.032448627054691315,
+        -0.032618045806884766,
+        0.0009753578342497349
+      ],
+      "face_boxes": [
+        [
+          1892,
+          496,
+          2884,
+          1488
+        ]
+      ]
+    },
+    {
+      "case_id": "p118-increase",
+      "group_id": "7cdf4d24579fc69e94a42bc23eb2148e40fedbca3bf8fff0b9ee5a2ea137670d",
+      "photo_id": "p118",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留两张脸、帽檐暗纹和浅色衣料。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving both faces, detail under the hat brim and the pale clothing."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p118.jpg",
+      "source_sha256": "2439a97737c6a0bcdb78d03b49d31fe2f01d5d36717e5644bd8fb7b4a401a947",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p118-increase-protected_soft.png",
+        "sha256": "5309a1b5da278ce3a46b7991bd506d03c21c627efbe68a167dafa9b57c0b2a21"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "浅衣和帽檐保留，增强幅度偏弱",
+      "features": [
+        0.31535136699676514,
+        0.7564133666455746,
+        0.19265263920373166,
+        0.030331328388485092,
+        0.023612499237060547,
+        0.02351449429988861,
+        0.03529411554336548,
+        0.00782822072505951,
+        0.0156862735748291,
+        0.0,
+        0.0,
+        0.0004850506375078112
+      ],
+      "spatial": [
+        0.09677056595683098,
+        0.053142467886209487,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.027451038360595703,
+        0.0004321392625570297
+      ],
+      "face_boxes": [
+        [
+          1892,
+          496,
+          2884,
+          1488
+        ]
+      ]
+    },
+    {
+      "case_id": "p118-increase",
+      "group_id": "7cdf4d24579fc69e94a42bc23eb2148e40fedbca3bf8fff0b9ee5a2ea137670d",
+      "photo_id": "p118",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留两张脸、帽檐暗纹和浅色衣料。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving both faces, detail under the hat brim and the pale clothing."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p118.jpg",
+      "source_sha256": "2439a97737c6a0bcdb78d03b49d31fe2f01d5d36717e5644bd8fb7b4a401a947",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p118-increase-r15_20.png",
+        "sha256": "8736c8ff8f93b9dee3ec03819727da2ae5b557654eff40d4d32a1da549631b7c"
+      },
+      "recipe": "r15_20",
+      "outcome": "failed",
+      "reason": "帽檐和面部暗侧层次丢失，白衣部分发白",
+      "features": [
+        0.31535136699676514,
+        0.7564133666455746,
+        0.19265263920373166,
+        0.030331328388485092,
+        0.09813018143177032,
+        0.06617799401283264,
+        0.027826637029647827,
+        0.025834495201706886,
+        -0.03950357437133789,
+        0.06032179231609339,
+        0.00755314141444309,
+        0.020810114219784737
+      ],
+      "spatial": [
+        0.21480588614940643,
+        -0.09173779115080834,
+        0.5839982628822327,
+        0.10637719184160233,
+        1.0,
+        0.03161490161437541,
+        -0.015514135360717773,
+        0.0001970045268535614
+      ],
+      "face_boxes": [
+        [
+          1892,
+          496,
+          2884,
+          1488
+        ]
+      ]
+    },
+    {
+      "case_id": "p118-decrease",
+      "group_id": "7cdf4d24579fc69e94a42bc23eb2148e40fedbca3bf8fff0b9ee5a2ea137670d",
+      "photo_id": "p118",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留两张脸、帽檐暗纹和浅色衣料。",
+        "en": "Soften the overall tonal contrast while preserving both faces, detail under the hat brim and the pale clothing."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p118.jpg",
+      "source_sha256": "2439a97737c6a0bcdb78d03b49d31fe2f01d5d36717e5644bd8fb7b4a401a947",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p118-decrease-protected_strong.png",
+        "sha256": "f061a96c3db7a57c1ef08623e965e9864b01e20d9e964ff6430177df8e80c23b"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "暗脸与浅衣反差收敛，帽檐纹理仍在",
+      "features": [
+        0.31535136699676514,
+        0.7564133666455746,
+        0.19265263920373166,
+        0.030331328388485092,
+        0.047058820724487305,
+        0.04921334981918335,
+        0.07058823108673096,
+        -0.0156862735748291,
+        -0.03352707624435425,
+        0.0,
+        0.0,
+        6.503339733399116e-08
+      ],
+      "spatial": [
+        0.021348556503653526,
+        -0.062454544752836225,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.05512312054634094,
+        -0.0010426291264593601
+      ],
+      "face_boxes": [
+        [
+          1892,
+          496,
+          2884,
+          1488
+        ]
+      ]
+    },
+    {
+      "case_id": "p118-decrease",
+      "group_id": "7cdf4d24579fc69e94a42bc23eb2148e40fedbca3bf8fff0b9ee5a2ea137670d",
+      "photo_id": "p118",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留两张脸、帽檐暗纹和浅色衣料。",
+        "en": "Soften the overall tonal contrast while preserving both faces, detail under the hat brim and the pale clothing."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p118.jpg",
+      "source_sha256": "2439a97737c6a0bcdb78d03b49d31fe2f01d5d36717e5644bd8fb7b4a401a947",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p118-decrease-protected_soft.png",
+        "sha256": "a923fd6f8393b9f423f31d48386a4469a9863e6ff7fa9183b5ccf28cf737f581"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "反差变化幅度偏小",
+      "features": [
+        0.31535136699676514,
+        0.7564133666455746,
+        0.19265263920373166,
+        0.030331328388485092,
+        0.023529469966888428,
+        0.023832976818084717,
+        0.035294145345687866,
+        -0.00784313678741455,
+        -0.015989840030670166,
+        0.0,
+        0.0,
+        1.3335107240664001e-08
+      ],
+      "spatial": [
+        0.015483397990465164,
+        -0.027165033295750617,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.027450978755950928,
+        -0.0005299453623592854
+      ],
+      "face_boxes": [
+        [
+          1892,
+          496,
+          2884,
+          1488
+        ]
+      ]
+    },
+    {
+      "case_id": "p118-decrease",
+      "group_id": "7cdf4d24579fc69e94a42bc23eb2148e40fedbca3bf8fff0b9ee5a2ea137670d",
+      "photo_id": "p118",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留两张脸、帽檐暗纹和浅色衣料。",
+        "en": "Soften the overall tonal contrast while preserving both faces, detail under the hat brim and the pale clothing."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p118.jpg",
+      "source_sha256": "2439a97737c6a0bcdb78d03b49d31fe2f01d5d36717e5644bd8fb7b4a401a947",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p118-decrease-r15_40.png",
+        "sha256": "e71facf10f4872a118c2dc2f8a79ab7ab0456208582ea354dd274731b68153b3"
+      },
+      "recipe": "r15_40",
+      "outcome": "partial",
+      "reason": "整图灰雾盖过柔化，浅衣偏灰",
+      "features": [
+        0.31535136699676514,
+        0.7564133666455746,
+        0.19265263920373166,
+        0.030331328388485092,
+        0.1824321560561657,
+        0.10830553621053696,
+        0.044584304094314575,
+        0.02425687201321125,
+        0.08736467361450195,
+        0.0,
+        0.0,
+        0.034925609827041626
+      ],
+      "spatial": [
+        0.241620235145092,
+        0.2396313026547432,
+        0.0,
+        0.0,
+        1.0,
+        -0.11289646476507187,
+        0.024527788162231445,
+        0.001667478121817112
+      ],
+      "face_boxes": [
+        [
+          1892,
+          496,
+          2884,
+          1488
+        ]
+      ]
+    },
+    {
+      "case_id": "p118-decrease",
+      "group_id": "7cdf4d24579fc69e94a42bc23eb2148e40fedbca3bf8fff0b9ee5a2ea137670d",
+      "photo_id": "p118",
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留两张脸、帽檐暗纹和浅色衣料。",
+        "en": "Soften the overall tonal contrast while preserving both faces, detail under the hat brim and the pale clothing."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p118.jpg",
+      "source_sha256": "2439a97737c6a0bcdb78d03b49d31fe2f01d5d36717e5644bd8fb7b4a401a947",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p118-decrease-r15_20.png",
+        "sha256": "5a19be65b790b2be394093adef207ab13e366cc5be3d777c6d2f921eec4c1102"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "脸上光影变柔，帽檐与浅衣保留",
+      "features": [
+        0.31535136699676514,
+        0.7564133666455746,
+        0.19265263920373166,
+        0.030331328388485092,
+        0.09859615191817284,
+        0.05785103142261505,
+        0.024028241634368896,
+        0.014476852491497993,
+        0.04690349102020264,
+        0.0,
+        0.0,
+        0.01866898685693741
+      ],
+      "spatial": [
+        0.12964903563261032,
+        0.12861984819173813,
+        0.0,
+        0.0,
+        1.0,
+        -0.06083058565855026,
+        0.01340627670288086,
+        0.0008862055838108063
+      ],
+      "face_boxes": [
+        [
+          1892,
+          496,
+          2884,
+          1488
+        ]
+      ]
+    },
+    {
+      "case_id": "p154-increase",
+      "group_id": "2cb0471c3fde74e299149ebec4e83972d566f28080c6a77fb27f0f2540595bc0",
+      "photo_id": "p154",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留云层和远近山体的纹理。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving cloud layers and details in the nearer and distant mountains."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p154.jpg",
+      "source_sha256": "ce1260035916ce03403c324f94cab0c3908d5ed696e8573cab9f53cf5e8b85f5",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p154-increase-protected_strong.png",
+        "sha256": "ae9f469a6263b28a86f5c8fe6bab16f0d61aa4c8c675337ee7d161a4ce5a698a"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "近坡与谷地分离增强，云边和坡纹仍有层次",
+      "features": [
+        0.44907766580581665,
+        0.6196172386407852,
+        0.011684027777777778,
+        0.028084852430555557,
+        0.08997152000665665,
+        0.13146589696407318,
+        0.035294145345687866,
+        0.051881588995456696,
+        0.06665111184120187,
+        0.0,
+        0.0,
+        0.00014836496848147362
+      ],
+      "spatial": [
+        0.3160190671682358,
+        0.28498491644859314,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p154-increase",
+      "group_id": "2cb0471c3fde74e299149ebec4e83972d566f28080c6a77fb27f0f2540595bc0",
+      "photo_id": "p154",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留云层和远近山体的纹理。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving cloud layers and details in the nearer and distant mountains."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p154.jpg",
+      "source_sha256": "ce1260035916ce03403c324f94cab0c3908d5ed696e8573cab9f53cf5e8b85f5",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p154-increase-r15_40.png",
+        "sha256": "980fa88b7cd04c56de3ab0db07fbcdb3cf438fc5ecefecb94cbb3ac8e054f9e7"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "近坡暗面纹理损失，天空变青且亮云更硬",
+      "features": [
+        0.44907766580581665,
+        0.6196172386407852,
+        0.011684027777777778,
+        0.028084852430555557,
+        0.19369179010391235,
+        0.14120690897107124,
+        0.016446292400360107,
+        -0.020373506471514702,
+        -0.006079787015914828,
+        0.006703559027777778,
+        0.010056423611111111,
+        0.028634365648031235
+      ],
+      "spatial": [
+        -0.19429379999637603,
+        0.2288546144962311,
+        0.23567907512187958,
+        0.2812961935997009,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p154-increase",
+      "group_id": "2cb0471c3fde74e299149ebec4e83972d566f28080c6a77fb27f0f2540595bc0",
+      "photo_id": "p154",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留云层和远近山体的纹理。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving cloud layers and details in the nearer and distant mountains."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p154.jpg",
+      "source_sha256": "ce1260035916ce03403c324f94cab0c3908d5ed696e8573cab9f53cf5e8b85f5",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p154-increase-r15_20.png",
+        "sha256": "422e80ee533fc53eb286dfc008203b1d3ddb02a8833780feb5bf6bbaa069c6cc"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "山脊和谷地层次分开，云和暗坡仍可辨",
+      "features": [
+        0.44907766580581665,
+        0.6196172386407852,
+        0.011684027777777778,
+        0.028084852430555557,
+        0.092270627617836,
+        0.06570513546466827,
+        0.007551401853561401,
+        -0.018371738493442535,
+        -0.023395949602126986,
+        0.0017122395833333334,
+        0.0006098090277777778,
+        0.014042947441339493
+      ],
+      "spatial": [
+        -0.13465412110090255,
+        0.0767526835203171,
+        0.08833330869674683,
+        0.0497530922293663,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p154-increase",
+      "group_id": "2cb0471c3fde74e299149ebec4e83972d566f28080c6a77fb27f0f2540595bc0",
+      "photo_id": "p154",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留云层和远近山体的纹理。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving cloud layers and details in the nearer and distant mountains."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p154.jpg",
+      "source_sha256": "ce1260035916ce03403c324f94cab0c3908d5ed696e8573cab9f53cf5e8b85f5",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p154-increase-protected_soft.png",
+        "sha256": "c11e4607f921527dd31786f1b53a39f2574dc2f542259eed72909971c36e8f01"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "山谷的明暗变化偏小",
+      "features": [
+        0.44907766580581665,
+        0.6196172386407852,
+        0.011684027777777778,
+        0.028084852430555557,
+        0.04452157020568848,
+        0.06666669249534607,
+        0.0156862735748291,
+        0.02744629979133606,
+        0.03276169896125802,
+        0.0,
+        0.0,
+        5.1545503083616495e-05
+      ],
+      "spatial": [
+        0.1600974038243294,
+        0.14657370150089263,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p154-decrease",
+      "group_id": "2cb0471c3fde74e299149ebec4e83972d566f28080c6a77fb27f0f2540595bc0",
+      "photo_id": "p154",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留云层和远近山体的纹理。",
+        "en": "Soften the overall tonal contrast while preserving cloud layers and details in the nearer and distant mountains."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p154.jpg",
+      "source_sha256": "ce1260035916ce03403c324f94cab0c3908d5ed696e8573cab9f53cf5e8b85f5",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p154-decrease-r15_20.png",
+        "sha256": "7f7e0fa45e02e144601810e9240cc24e8971be76bb3bac3998e7e1181e310c37"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "暗坡与谷地反差收敛，云和坡纹保留",
+      "features": [
+        0.44907766580581665,
+        0.6196172386407852,
+        0.011684027777777778,
+        0.028084852430555557,
+        0.07970112562179565,
+        0.05746746063232422,
+        0.0064650774002075195,
+        0.01685021072626114,
+        0.03029344081878671,
+        0.0,
+        0.0,
+        0.011830491945147514
+      ],
+      "spatial": [
+        0.12930648028850555,
+        0.1255349963903427,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p154-decrease",
+      "group_id": "2cb0471c3fde74e299149ebec4e83972d566f28080c6a77fb27f0f2540595bc0",
+      "photo_id": "p154",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留云层和远近山体的纹理。",
+        "en": "Soften the overall tonal contrast while preserving cloud layers and details in the nearer and distant mountains."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p154.jpg",
+      "source_sha256": "ce1260035916ce03403c324f94cab0c3908d5ed696e8573cab9f53cf5e8b85f5",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p154-decrease-r15_40.png",
+        "sha256": "3584c1f757aa6c53a96d955df5c9a7eb6a36b0324cec08a364b6c5312628a21b"
+      },
+      "recipe": "r15_40",
+      "outcome": "partial",
+      "reason": "山谷反差变平，整体灰雾偏重",
+      "features": [
+        0.44907766580581665,
+        0.6196172386407852,
+        0.011684027777777778,
+        0.028084852430555557,
+        0.14896784722805023,
+        0.10647997260093689,
+        0.012658804655075073,
+        0.03227374702692032,
+        0.05716531515121437,
+        0.0,
+        0.0,
+        0.022077590227127075
+      ],
+      "spatial": [
+        0.24233027249574662,
+        0.2343340516090393,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p154-decrease",
+      "group_id": "2cb0471c3fde74e299149ebec4e83972d566f28080c6a77fb27f0f2540595bc0",
+      "photo_id": "p154",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留云层和远近山体的纹理。",
+        "en": "Soften the overall tonal contrast while preserving cloud layers and details in the nearer and distant mountains."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p154.jpg",
+      "source_sha256": "ce1260035916ce03403c324f94cab0c3908d5ed696e8573cab9f53cf5e8b85f5",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p154-decrease-protected_soft.png",
+        "sha256": "c8221841f6ce3a093513e903bcf90230fd8c43fd1e7e665ceabf27d041c224a4"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "原有纹理保留，云与山坡反差变化小",
+      "features": [
+        0.44907766580581665,
+        0.6196172386407852,
+        0.011684027777777778,
+        0.028084852430555557,
+        0.04313725233078003,
+        0.0666666328907013,
+        0.017007052898406982,
+        -0.027450941503047943,
+        -0.0313724887371063,
+        0.0,
+        0.0,
+        2.6777342565509343e-09
+      ],
+      "spatial": [
+        0.025995046645402912,
+        -0.02632686793804167,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p154-decrease",
+      "group_id": "2cb0471c3fde74e299149ebec4e83972d566f28080c6a77fb27f0f2540595bc0",
+      "photo_id": "p154",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留云层和远近山体的纹理。",
+        "en": "Soften the overall tonal contrast while preserving cloud layers and details in the nearer and distant mountains."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p154.jpg",
+      "source_sha256": "ce1260035916ce03403c324f94cab0c3908d5ed696e8573cab9f53cf5e8b85f5",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p154-decrease-protected_strong.png",
+        "sha256": "712b3421e9eb9b2577179914e5be1cad91d29adf178e8ec0acba58ebe0fff04f"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "暗坡与山谷层次变柔，云边与山坡纹理仍在",
+      "features": [
+        0.44907766580581665,
+        0.6196172386407852,
+        0.011684027777777778,
+        0.028084852430555557,
+        0.09019605815410614,
+        0.1326187551021576,
+        0.034819602966308594,
+        -0.05490192025899887,
+        -0.06595206379890439,
+        0.0,
+        0.0,
+        1.3672512011453364e-07
+      ],
+      "spatial": [
+        0.052567686140537265,
+        -0.03791703432798382,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p311-increase",
+      "group_id": "5deff473098b6345060c773ecc65c2d888d5ee25dce9db229cfc7ab1b6ceeb15",
+      "photo_id": "p311",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留前景地面纹理和远处山色。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving ground texture in the foreground and the colours of the distant hills."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p311.jpg",
+      "source_sha256": "5520b422a0c0ab691bf5a61466909357de0e3b23bd0816829c3ae98e306e6871",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p311-increase-r15_40.png",
+        "sha256": "4ffcc8121a28732714ff159d4884f0ef155c36b85a619a9737c4340e8921aa1b"
+      },
+      "recipe": "r15_40",
+      "outcome": "partial",
+      "reason": "草地和远山颜色偏浓，白色屋面亮区发硬",
+      "features": [
+        0.42853647470474243,
+        0.43995606899261475,
+        0.0005902777777777778,
+        0.010419560185185184,
+        0.13961417973041534,
+        0.09073802083730698,
+        0.023261964321136475,
+        -0.054159216582775116,
+        -0.0381506085395813,
+        1.736111111111111e-05,
+        0.00986255787037037,
+        0.03036048263311386
+      ],
+      "spatial": [
+        -0.2521174132823944,
+        0.0,
+        0.004074073862284422,
+        0.3913888931274414,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p311-increase",
+      "group_id": "5deff473098b6345060c773ecc65c2d888d5ee25dce9db229cfc7ab1b6ceeb15",
+      "photo_id": "p311",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留前景地面纹理和远处山色。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving ground texture in the foreground and the colours of the distant hills."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p311.jpg",
+      "source_sha256": "5520b422a0c0ab691bf5a61466909357de0e3b23bd0816829c3ae98e306e6871",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p311-increase-r15_20.png",
+        "sha256": "19735426fbcdcf133c10bfa962e69e03271b64d5829bb599eaf0fd110613f340"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "草地和地面的对比增强，远山颜色和地面纹理保留",
+      "features": [
+        0.42853647470474243,
+        0.43995606899261475,
+        0.0005902777777777778,
+        0.010419560185185184,
+        0.06486289948225021,
+        0.042003318667411804,
+        0.010930955410003662,
+        -0.026592620760202412,
+        -0.018512770533561707,
+        0.0,
+        0.004616608796296297,
+        0.014700239524245262
+      ],
+      "spatial": [
+        -0.14796482026576996,
+        0.0,
+        0.0,
+        0.3401851952075958,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p311-increase",
+      "group_id": "5deff473098b6345060c773ecc65c2d888d5ee25dce9db229cfc7ab1b6ceeb15",
+      "photo_id": "p311",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留前景地面纹理和远处山色。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving ground texture in the foreground and the colours of the distant hills."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p311.jpg",
+      "source_sha256": "5520b422a0c0ab691bf5a61466909357de0e3b23bd0816829c3ae98e306e6871",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p311-increase-protected_strong.png",
+        "sha256": "fa55c7c11e7641c630b3c7f9c3b7267d15f6d5016c32d5049ae598089f6ad446"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "树线与地面分离更明显，远山蓝和地面纹理保留",
+      "features": [
+        0.42853647470474243,
+        0.43995606899261475,
+        0.0005902777777777778,
+        0.010419560185185184,
+        0.13725489377975464,
+        0.12156859040260315,
+        0.04313725233078003,
+        0.03684316575527191,
+        -0.011764764785766602,
+        0.0,
+        0.0,
+        2.4099711026792647e-06
+      ],
+      "spatial": [
+        0.05585523992776871,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p311-increase",
+      "group_id": "5deff473098b6345060c773ecc65c2d888d5ee25dce9db229cfc7ab1b6ceeb15",
+      "photo_id": "p311",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留前景地面纹理和远处山色。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving ground texture in the foreground and the colours of the distant hills."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p311.jpg",
+      "source_sha256": "5520b422a0c0ab691bf5a61466909357de0e3b23bd0816829c3ae98e306e6871",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p311-increase-protected_soft.png",
+        "sha256": "f916ef8b2ce9989ef7dc1b986d27aa671089d5dec877db4c6f7df246bc28ff1f"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "近景层次只略增",
+      "features": [
+        0.42853647470474243,
+        0.43995606899261475,
+        0.0005902777777777778,
+        0.010419560185185184,
+        0.06749887764453888,
+        0.06274506449699402,
+        0.023529410362243652,
+        0.019607871770858765,
+        -0.006811797618865967,
+        0.0,
+        0.0,
+        8.756636304951826e-08
+      ],
+      "spatial": [
+        0.02878410816192627,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p311-decrease",
+      "group_id": "5deff473098b6345060c773ecc65c2d888d5ee25dce9db229cfc7ab1b6ceeb15",
+      "photo_id": "p311",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留前景地面纹理和远处山色。",
+        "en": "Soften the overall tonal contrast while preserving ground texture in the foreground and the colours of the distant hills."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p311.jpg",
+      "source_sha256": "5520b422a0c0ab691bf5a61466909357de0e3b23bd0816829c3ae98e306e6871",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p311-decrease-r15_40.png",
+        "sha256": "67cc8ab158a74c2f6d1b3d782bab3975d1e40286b4514f260f42cd639216e930"
+      },
+      "recipe": "r15_40",
+      "outcome": "partial",
+      "reason": "暗处与远山蒙灰，画面过平",
+      "features": [
+        0.42853647470474243,
+        0.43995606899261475,
+        0.0005902777777777778,
+        0.010419560185185184,
+        0.10655689239501953,
+        0.06878513097763062,
+        0.017086267471313477,
+        0.04297018051147461,
+        0.0289992094039917,
+        0.0,
+        0.0,
+        0.02375788614153862
+      ],
+      "spatial": [
+        0.24185573160648347,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p311-decrease",
+      "group_id": "5deff473098b6345060c773ecc65c2d888d5ee25dce9db229cfc7ab1b6ceeb15",
+      "photo_id": "p311",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留前景地面纹理和远处山色。",
+        "en": "Soften the overall tonal contrast while preserving ground texture in the foreground and the colours of the distant hills."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p311.jpg",
+      "source_sha256": "5520b422a0c0ab691bf5a61466909357de0e3b23bd0816829c3ae98e306e6871",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p311-decrease-protected_strong.png",
+        "sha256": "29deff787f9e8382e5755742b49fe5db6368c4102ce2dd08df88649e0cedb1a5"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "前景与树线反差减弱，远山色和地面纹理仍在",
+      "features": [
+        0.42853647470474243,
+        0.43995606899261475,
+        0.0005902777777777778,
+        0.010419560185185184,
+        0.13725486397743225,
+        0.12156867980957031,
+        0.04395058751106262,
+        -0.03529411554336548,
+        0.011764705181121826,
+        0.0,
+        0.0,
+        2.3082129985141364e-08
+      ],
+      "spatial": [
+        0.006158901192247869,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p311-decrease",
+      "group_id": "5deff473098b6345060c773ecc65c2d888d5ee25dce9db229cfc7ab1b6ceeb15",
+      "photo_id": "p311",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留前景地面纹理和远处山色。",
+        "en": "Soften the overall tonal contrast while preserving ground texture in the foreground and the colours of the distant hills."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p311.jpg",
+      "source_sha256": "5520b422a0c0ab691bf5a61466909357de0e3b23bd0816829c3ae98e306e6871",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p311-decrease-protected_soft.png",
+        "sha256": "1ddcd4195c80585329ebb0c8aaa7108f9bd0854229b804214a67075696d51667"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "柔化偏轻，地面和远山基本维持",
+      "features": [
+        0.42853647470474243,
+        0.43995606899261475,
+        0.0005902777777777778,
+        0.010419560185185184,
+        0.06666666269302368,
+        0.0627451241016388,
+        0.022963136434555054,
+        -0.01960781216621399,
+        0.00784313678741455,
+        0.0,
+        0.0,
+        2.650453412300635e-09
+      ],
+      "spatial": [
+        0.006006982736289502,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p311-decrease",
+      "group_id": "5deff473098b6345060c773ecc65c2d888d5ee25dce9db229cfc7ab1b6ceeb15",
+      "photo_id": "p311",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留前景地面纹理和远处山色。",
+        "en": "Soften the overall tonal contrast while preserving ground texture in the foreground and the colours of the distant hills."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p311.jpg",
+      "source_sha256": "5520b422a0c0ab691bf5a61466909357de0e3b23bd0816829c3ae98e306e6871",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p311-decrease-r15_20.png",
+        "sha256": "53dec6082260000d54dc67f59fad244146fdaeed18f2872a8e00151301d7f638"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "草地与树线反差放软，仍可辨地面颗粒",
+      "features": [
+        0.42853647470474243,
+        0.43995606899261475,
+        0.0005902777777777778,
+        0.010419560185185184,
+        0.05631452798843384,
+        0.03711923956871033,
+        0.009510576725006104,
+        0.02352079749107361,
+        0.014996051788330078,
+        0.0,
+        0.0,
+        0.012671815231442451
+      ],
+      "spatial": [
+        0.1287470281124115,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p110-increase",
+      "group_id": "3829cc6e4f060acb60b04ca67da432806fbff504add82632034bc8318ca7f13a",
+      "photo_id": "p110",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留低光下岩壁纹理和天空的渐变。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving rock texture and the gradient in the low-light sky."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p110.jpg",
+      "source_sha256": "a933b212690d76da7c231a26535d4b343f1f1e6d4d9a3e9b0a4c3da52dfa2ed7",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p110-increase-r15_40.png",
+        "sha256": "ce9c510db83dc0cf9c2075311b0fe98a77ec670d6aaf70bb2d2337069534dfe5"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "岩壁低处和前景压黑，天空颗粒与颜色变化较重",
+      "features": [
+        0.11469176411628723,
+        0.2840094305574894,
+        0.47153468969555035,
+        4.025175644028103e-05,
+        -0.016557667404413223,
+        -0.030626650899648666,
+        0.09657646901905537,
+        0.04087216034531593,
+        -0.08742585778236389,
+        0.4260941159250585,
+        4.025175644028103e-05,
+        0.03359870985150337
+      ],
+      "spatial": [
+        0.47603878080844886,
+        0.0,
+        0.9999992847442627,
+        0.0016393442638218403,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p110-increase",
+      "group_id": "3829cc6e4f060acb60b04ca67da432806fbff504add82632034bc8318ca7f13a",
+      "photo_id": "p110",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留低光下岩壁纹理和天空的渐变。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving rock texture and the gradient in the low-light sky."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p110.jpg",
+      "source_sha256": "a933b212690d76da7c231a26535d4b343f1f1e6d4d9a3e9b0a4c3da52dfa2ed7",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p110-increase-protected_soft.png",
+        "sha256": "35d9d53a40236b295eccaecb7e1d83351642cbc0d4ba63a06b94a01a5a9e7f5a"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "岩壁和天色保持，增强幅度不足",
+      "features": [
+        0.11469176411628723,
+        0.2840094305574894,
+        0.47153468969555035,
+        4.025175644028103e-05,
+        -0.03529411554336548,
+        -0.024742722511291504,
+        0.003921568393707275,
+        0.0,
+        -0.016899585723876953,
+        0.0,
+        0.0,
+        1.8843664292944595e-05
+      ],
+      "spatial": [
+        0.17756908982992173,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p110-increase",
+      "group_id": "3829cc6e4f060acb60b04ca67da432806fbff504add82632034bc8318ca7f13a",
+      "photo_id": "p110",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留低光下岩壁纹理和天空的渐变。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving rock texture and the gradient in the low-light sky."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p110.jpg",
+      "source_sha256": "a933b212690d76da7c231a26535d4b343f1f1e6d4d9a3e9b0a4c3da52dfa2ed7",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p110-increase-r15_20.png",
+        "sha256": "0bacbfe3f0845ef8d1c33563a060d5e2a2f877febe5d0efec272f6c20a0264fb"
+      },
+      "recipe": "r15_20",
+      "outcome": "failed",
+      "reason": "前景暗部层次明显丢失",
+      "features": [
+        0.11469176411628723,
+        0.2840094305574894,
+        0.47153468969555035,
+        4.025175644028103e-05,
+        0.014558430761098862,
+        0.011326286476105452,
+        0.055436860769987106,
+        0.033595297019928694,
+        -0.03992846131324718,
+        0.21780957259953163,
+        2.1955503512880562e-05,
+        0.019398720934987068
+      ],
+      "spatial": [
+        0.1311869233846665,
+        0.0,
+        0.9889922142028809,
+        0.000936768134124577,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p110-increase",
+      "group_id": "3829cc6e4f060acb60b04ca67da432806fbff504add82632034bc8318ca7f13a",
+      "photo_id": "p110",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留低光下岩壁纹理和天空的渐变。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving rock texture and the gradient in the low-light sky."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p110.jpg",
+      "source_sha256": "a933b212690d76da7c231a26535d4b343f1f1e6d4d9a3e9b0a4c3da52dfa2ed7",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p110-increase-protected_strong.png",
+        "sha256": "7d83604358b8d1a34e2f3910afea6974ae18097c36b88512b2b8f5e823052224"
+      },
+      "recipe": "protected_strong",
+      "outcome": "partial",
+      "reason": "岩壁纹理和天色保留，整体变化很弱",
+      "features": [
+        0.11469176411628723,
+        0.2840094305574894,
+        0.47153468969555035,
+        4.025175644028103e-05,
+        -0.07058826088905334,
+        -0.05024312436580658,
+        0.00784313678741455,
+        0.0,
+        -0.03455685079097748,
+        0.0,
+        0.0,
+        7.902896322775632e-05
+      ],
+      "spatial": [
+        0.35922107696533206,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p110-decrease",
+      "group_id": "3829cc6e4f060acb60b04ca67da432806fbff504add82632034bc8318ca7f13a",
+      "photo_id": "p110",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留低光下岩壁纹理和天空的渐变。",
+        "en": "Soften the overall tonal contrast while preserving rock texture and the gradient in the low-light sky."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p110.jpg",
+      "source_sha256": "a933b212690d76da7c231a26535d4b343f1f1e6d4d9a3e9b0a4c3da52dfa2ed7",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p110-decrease-r15_20.png",
+        "sha256": "e69581e19a01dacb63dec36083c3c863528fbabe1d2b91d29fa898b35fefcde8"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "天空和岩壁反差收敛，岩壁纹理仍可辨",
+      "features": [
+        0.11469176411628723,
+        0.2840094305574894,
+        0.47153468969555035,
+        4.025175644028103e-05,
+        0.03556158021092415,
+        0.019436825066804886,
+        0.050146669149398804,
+        0.006993729621171951,
+        0.035465121269226074,
+        0.0,
+        0.0,
+        0.009594626724720001
+      ],
+      "spatial": [
+        0.13084404915571213,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p110-decrease",
+      "group_id": "3829cc6e4f060acb60b04ca67da432806fbff504add82632034bc8318ca7f13a",
+      "photo_id": "p110",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留低光下岩壁纹理和天空的渐变。",
+        "en": "Soften the overall tonal contrast while preserving rock texture and the gradient in the low-light sky."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p110.jpg",
+      "source_sha256": "a933b212690d76da7c231a26535d4b343f1f1e6d4d9a3e9b0a4c3da52dfa2ed7",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p110-decrease-r15_40.png",
+        "sha256": "6cd9fc82f07a97b0deef5361d8c816cd0d321ad81c9fee396a8c997b0d872809"
+      },
+      "recipe": "r15_40",
+      "outcome": "partial",
+      "reason": "暗地和岩壁整体发灰",
+      "features": [
+        0.11469176411628723,
+        0.2840094305574894,
+        0.47153468969555035,
+        4.025175644028103e-05,
+        0.06721727922558784,
+        0.038083117455244064,
+        0.0929851084947586,
+        0.01008157804608345,
+        0.06610041856765747,
+        0.0,
+        0.0,
+        0.01805521734058857
+      ],
+      "spatial": [
+        0.24191325157880783,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p110-decrease",
+      "group_id": "3829cc6e4f060acb60b04ca67da432806fbff504add82632034bc8318ca7f13a",
+      "photo_id": "p110",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留低光下岩壁纹理和天空的渐变。",
+        "en": "Soften the overall tonal contrast while preserving rock texture and the gradient in the low-light sky."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p110.jpg",
+      "source_sha256": "a933b212690d76da7c231a26535d4b343f1f1e6d4d9a3e9b0a4c3da52dfa2ed7",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p110-decrease-protected_strong.png",
+        "sha256": "8f70d9b13ccbb23045fe3e95249a8d4dd75a44aa37cd7a37b626142957ee49d5"
+      },
+      "recipe": "protected_strong",
+      "outcome": "partial",
+      "reason": "天空和岩壁反差变动很小",
+      "features": [
+        0.11469176411628723,
+        0.2840094305574894,
+        0.47153468969555035,
+        4.025175644028103e-05,
+        -0.07058823108673096,
+        -0.05098041892051697,
+        0.007843144237995148,
+        0.0,
+        0.03639531135559082,
+        0.0,
+        0.0,
+        4.290722444011408e-09
+      ],
+      "spatial": [
+        -0.1118025183677673,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p110-decrease",
+      "group_id": "3829cc6e4f060acb60b04ca67da432806fbff504add82632034bc8318ca7f13a",
+      "photo_id": "p110",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留低光下岩壁纹理和天空的渐变。",
+        "en": "Soften the overall tonal contrast while preserving rock texture and the gradient in the low-light sky."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p110.jpg",
+      "source_sha256": "a933b212690d76da7c231a26535d4b343f1f1e6d4d9a3e9b0a4c3da52dfa2ed7",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p110-decrease-protected_soft.png",
+        "sha256": "914094ee78a0edf477a24eacd49f0f67fdc68165364d970413116f71c57dfe6b"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "原纹理还在，柔化太弱",
+      "features": [
+        0.11469176411628723,
+        0.2840094305574894,
+        0.47153468969555035,
+        4.025175644028103e-05,
+        -0.03529408574104309,
+        -0.023529425263404846,
+        0.003921568393707275,
+        0.0,
+        0.015686258673667908,
+        0.0,
+        0.0,
+        2.2709030211842673e-09
+      ],
+      "spatial": [
+        -0.05572532080113886,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p045-increase",
+      "group_id": "0de085ec43b6913587e3c6fed2948acc5cadd14cf7f73bc2f5922cffd9e82caf",
+      "photo_id": "p045",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留夜间建筑亮部和周围暗部原有细节。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the existing detail in the illuminated architecture and surrounding shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p045.jpg",
+      "source_sha256": "e55894674e833c8ae59d27e74bf35e11a9c84755cbf220bc4d342b76964212cf",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p045-increase-r15_40.png",
+        "sha256": "426cd6d096fb3cb314249f65fd83dd70eb3920105549ba59beae4882aea6acd2"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "塔下暗部发黑，塔身的高光边缘发硬",
+      "features": [
+        0.12440471351146698,
+        0.3235419914126396,
+        0.18459716796875,
+        0.0223388671875,
+        0.06447016345337347,
+        -0.00643687229603529,
+        0.10338118299841881,
+        0.010632156394422054,
+        -0.16249103039502955,
+        2.9296875e-05,
+        0.0059619140625,
+        0.01674662157893181
+      ],
+      "spatial": [
+        0.47853524386882784,
+        0.0,
+        0.004218749701976776,
+        0.043281249701976776,
+        1.0,
+        -0.06954087018966681,
+        0.009002387523651123,
+        0.008221440017223358
+      ],
+      "face_boxes": [
+        [
+          156,
+          139,
+          204,
+          187
+        ]
+      ]
+    },
+    {
+      "case_id": "p045-increase",
+      "group_id": "0de085ec43b6913587e3c6fed2948acc5cadd14cf7f73bc2f5922cffd9e82caf",
+      "photo_id": "p045",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留夜间建筑亮部和周围暗部原有细节。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the existing detail in the illuminated architecture and surrounding shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p045.jpg",
+      "source_sha256": "e55894674e833c8ae59d27e74bf35e11a9c84755cbf220bc4d342b76964212cf",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p045-increase-protected_soft.png",
+        "sha256": "217b2b3fbf80392885eb6b780c590fc580e6f8650a8bfcadd107fabd874fb039"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "塔身和暗部保留，整体变化偏小",
+      "features": [
+        0.12440471351146698,
+        0.3235419914126396,
+        0.18459716796875,
+        0.0223388671875,
+        -0.02352944016456604,
+        -0.01179608702659607,
+        0.005321577191352844,
+        0.003921568393707275,
+        -0.019639282226562527,
+        0.0,
+        0.0,
+        1.389690055475512e-06
+      ],
+      "spatial": [
+        0.18863074779510497,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.03529410958290102,
+        0.0,
+        0.0031077880412340164
+      ],
+      "face_boxes": [
+        [
+          156,
+          139,
+          204,
+          187
+        ]
+      ]
+    },
+    {
+      "case_id": "p045-increase",
+      "group_id": "0de085ec43b6913587e3c6fed2948acc5cadd14cf7f73bc2f5922cffd9e82caf",
+      "photo_id": "p045",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留夜间建筑亮部和周围暗部原有细节。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the existing detail in the illuminated architecture and surrounding shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p045.jpg",
+      "source_sha256": "e55894674e833c8ae59d27e74bf35e11a9c84755cbf220bc4d342b76964212cf",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p045-increase-r15_20.png",
+        "sha256": "58924230fa1750aff70a51fda73d08f8c3f357343851b5756a1909601e07d10f"
+      },
+      "recipe": "r15_20",
+      "outcome": "partial",
+      "reason": "塔下暗处更难辨，增强局部代价偏高",
+      "features": [
+        0.12440471351146698,
+        0.3235419914126396,
+        0.18459716796875,
+        0.0223388671875,
+        0.04695558920502674,
+        0.010865077376365662,
+        0.05492235720157623,
+        -1.862645149230957e-09,
+        -0.09975539088249064,
+        0.0,
+        0.0035791015625,
+        0.008122395724058151
+      ],
+      "spatial": [
+        -0.08236011043190955,
+        0.0,
+        0.0,
+        0.032343748956918716,
+        1.0,
+        -0.03226573467254645,
+        0.007048779726028465,
+        0.003980234265327454
+      ],
+      "face_boxes": [
+        [
+          156,
+          139,
+          204,
+          187
+        ]
+      ]
+    },
+    {
+      "case_id": "p045-increase",
+      "group_id": "0de085ec43b6913587e3c6fed2948acc5cadd14cf7f73bc2f5922cffd9e82caf",
+      "photo_id": "p045",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留夜间建筑亮部和周围暗部原有细节。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the existing detail in the illuminated architecture and surrounding shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p045.jpg",
+      "source_sha256": "e55894674e833c8ae59d27e74bf35e11a9c84755cbf220bc4d342b76964212cf",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p045-increase-protected_strong.png",
+        "sha256": "1250d452aa50a6f84b242d75ee74e331da3cbcf39f042a51c2a4db65df3c3112"
+      },
+      "recipe": "protected_strong",
+      "outcome": "partial",
+      "reason": "灯与暗部的分离几乎不变",
+      "features": [
+        0.12440471351146698,
+        0.3235419914126396,
+        0.18459716796875,
+        0.0223388671875,
+        -0.04313725233078003,
+        -0.029709801077842712,
+        0.011764712631702423,
+        0.0033552944660186768,
+        -0.04072712719440463,
+        0.0,
+        0.0,
+        4.3017062125727534e-06
+      ],
+      "spatial": [
+        0.36705511808395386,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0705882251262665,
+        0.0,
+        0.006057651713490486
+      ],
+      "face_boxes": [
+        [
+          156,
+          139,
+          204,
+          187
+        ]
+      ]
+    },
+    {
+      "case_id": "p045-decrease",
+      "group_id": "0de085ec43b6913587e3c6fed2948acc5cadd14cf7f73bc2f5922cffd9e82caf",
+      "photo_id": "p045",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留夜间建筑亮部和周围暗部原有细节。",
+        "en": "Soften the overall tonal contrast while preserving the existing detail in the illuminated architecture and surrounding shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p045.jpg",
+      "source_sha256": "e55894674e833c8ae59d27e74bf35e11a9c84755cbf220bc4d342b76964212cf",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p045-decrease-r15_20.png",
+        "sha256": "be9abe75567c05fd8d298db4396f536563b88b1c01e536060ae5c83e71b66e54"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "塔的亮部与地面反差放软，塔架纹理和暗部可辨",
+      "features": [
+        0.12440471351146698,
+        0.3235419914126396,
+        0.18459716796875,
+        0.0223388671875,
+        0.04105650633573532,
+        0.00869257003068924,
+        0.04789254069328308,
+        0.003638431429862976,
+        0.09601634800434256,
+        0.0,
+        0.0,
+        0.007401274051517248
+      ],
+      "spatial": [
+        0.14698880016803745,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.02892292737960811,
+        -0.06442821025848389,
+        0.0039014872163534164
+      ],
+      "face_boxes": [
+        [
+          156,
+          139,
+          204,
+          187
+        ]
+      ]
+    },
+    {
+      "case_id": "p045-decrease",
+      "group_id": "0de085ec43b6913587e3c6fed2948acc5cadd14cf7f73bc2f5922cffd9e82caf",
+      "photo_id": "p045",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留夜间建筑亮部和周围暗部原有细节。",
+        "en": "Soften the overall tonal contrast while preserving the existing detail in the illuminated architecture and surrounding shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p045.jpg",
+      "source_sha256": "e55894674e833c8ae59d27e74bf35e11a9c84755cbf220bc4d342b76964212cf",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p045-decrease-r15_40.png",
+        "sha256": "1943997e22a7d8e0f67f4a6436a8bf213c671595716fc09fc09a5edd64852be4"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "暗部和塔身均蒙灰，原有高光结构被压平",
+      "features": [
+        0.12440471351146698,
+        0.3235419914126396,
+        0.18459716796875,
+        0.0223388671875,
+        0.07819611579179764,
+        0.019098035991191864,
+        0.09074194729328156,
+        0.004204705357551575,
+        0.17971757113933706,
+        0.0,
+        0.0,
+        0.013962548226118088
+      ],
+      "spatial": [
+        0.2460423842072487,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.05337422490119936,
+        -0.11957395672798155,
+        0.007220122963190079
+      ],
+      "face_boxes": [
+        [
+          156,
+          139,
+          204,
+          187
+        ]
+      ]
+    },
+    {
+      "case_id": "p045-decrease",
+      "group_id": "0de085ec43b6913587e3c6fed2948acc5cadd14cf7f73bc2f5922cffd9e82caf",
+      "photo_id": "p045",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留夜间建筑亮部和周围暗部原有细节。",
+        "en": "Soften the overall tonal contrast while preserving the existing detail in the illuminated architecture and surrounding shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p045.jpg",
+      "source_sha256": "e55894674e833c8ae59d27e74bf35e11a9c84755cbf220bc4d342b76964212cf",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p045-decrease-protected_strong.png",
+        "sha256": "34f501c4bdc7180b99956e922ca15e02d9232aa4b2b4023a9699ca6d29df5a55"
+      },
+      "recipe": "protected_strong",
+      "outcome": "partial",
+      "reason": "两处保留，柔化很弱",
+      "features": [
+        0.12440471351146698,
+        0.3235419914126396,
+        0.18459716796875,
+        0.0223388671875,
+        -0.04333016276359558,
+        -0.03137253224849701,
+        0.011764705181121826,
+        -0.003921568393707275,
+        0.043137237429618835,
+        0.0,
+        0.0,
+        2.5039843531970973e-09
+      ],
+      "spatial": [
+        -0.10691775903105735,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.07058823704719541,
+        0.0,
+        -0.006616774946451187
+      ],
+      "face_boxes": [
+        [
+          156,
+          139,
+          204,
+          187
+        ]
+      ]
+    },
+    {
+      "case_id": "p045-decrease",
+      "group_id": "0de085ec43b6913587e3c6fed2948acc5cadd14cf7f73bc2f5922cffd9e82caf",
+      "photo_id": "p045",
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留夜间建筑亮部和周围暗部原有细节。",
+        "en": "Soften the overall tonal contrast while preserving the existing detail in the illuminated architecture and surrounding shadows."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p045.jpg",
+      "source_sha256": "e55894674e833c8ae59d27e74bf35e11a9c84755cbf220bc4d342b76964212cf",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p045-decrease-protected_soft.png",
+        "sha256": "e4976e9c1e70dc54fc39998cb99d5627f1ee2e59943ab5e1a75308e9dfd44293"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "画面变化太小",
+      "features": [
+        0.12440471351146698,
+        0.3235419914126396,
+        0.18459716796875,
+        0.0223388671875,
+        -0.023529410362243652,
+        -0.011764705181121826,
+        0.003921568393707275,
+        -0.003921568393707275,
+        0.019607840776443508,
+        0.0,
+        0.0,
+        1.3234239260029312e-09
+      ],
+      "spatial": [
+        -0.04704086668789387,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.035294175148010254,
+        0.0,
+        -0.0032658651471138
+      ],
+      "face_boxes": [
+        [
+          156,
+          139,
+          204,
+          187
+        ]
+      ]
+    },
+    {
+      "case_id": "p231-increase",
+      "group_id": "c8c7a66cc8c0f03ab2d4c0df1681f94d2b1d7a851238e92b703845352c2507ed",
+      "photo_id": "p231",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留山谷纹理、天空颜色和前景人物轮廓。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving texture in the valley, the colour of the sky and the outlines of the people in the foreground."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p231.jpg",
+      "source_sha256": "b60c795d8d20ad7069c33c4584516e29c5987dc1b6b6a3ef8814bef2c03fd3e8",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p231-increase-r15_20.png",
+        "sha256": "3f59d1ff39265dd039498b43ab9cd1e1b19839133935a6d12c1d8c4f2cfe3018"
+      },
+      "recipe": "r15_20",
+      "outcome": "partial",
+      "reason": "天空偏青，前景几个人的阴影层次减少",
+      "features": [
+        0.43994981050491333,
+        0.6507764831185341,
+        0.15454752604166666,
+        0.008489583333333333,
+        0.08372864499688148,
+        0.06135690212249756,
+        0.009233713150024414,
+        0.01710745901800692,
+        -0.03441333770751953,
+        0.014612630208333333,
+        6.998697916666667e-05,
+        0.02437555231153965
+      ],
+      "spatial": [
+        0.06482998877763749,
+        -0.06886298954486847,
+        0.33114585280418396,
+        0.0027083333116024733,
+        1.0,
+        0.02241256833076477,
+        0.019227707386016757,
+        -0.006976813077926636
+      ],
+      "face_boxes": [
+        [
+          27,
+          529,
+          129,
+          631
+        ]
+      ]
+    },
+    {
+      "case_id": "p231-increase",
+      "group_id": "c8c7a66cc8c0f03ab2d4c0df1681f94d2b1d7a851238e92b703845352c2507ed",
+      "photo_id": "p231",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留山谷纹理、天空颜色和前景人物轮廓。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving texture in the valley, the colour of the sky and the outlines of the people in the foreground."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p231.jpg",
+      "source_sha256": "b60c795d8d20ad7069c33c4584516e29c5987dc1b6b6a3ef8814bef2c03fd3e8",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p231-increase-protected_strong.png",
+        "sha256": "646619aa519aa81989012a6138241b709a6f5237c376bc643b6df6aed7b1e70f"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "山谷层次可见增强，天空颜色和人物轮廓保留",
+      "features": [
+        0.43994981050491333,
+        0.6507764831185341,
+        0.15454752604166666,
+        0.008489583333333333,
+        0.0691678524017334,
+        0.08674199879169464,
+        0.039215683937072754,
+        0.0313725620508194,
+        0.02046668529510498,
+        0.0,
+        0.0,
+        0.026723258197307587
+      ],
+      "spatial": [
+        0.2603169620037079,
+        -0.020342666655778885,
+        0.0,
+        0.0,
+        1.0,
+        0.06666666269302368,
+        0.052156895399094294,
+        -0.018287628889083862
+      ],
+      "face_boxes": [
+        [
+          27,
+          529,
+          129,
+          631
+        ]
+      ]
+    },
+    {
+      "case_id": "p231-increase",
+      "group_id": "c8c7a66cc8c0f03ab2d4c0df1681f94d2b1d7a851238e92b703845352c2507ed",
+      "photo_id": "p231",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留山谷纹理、天空颜色和前景人物轮廓。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving texture in the valley, the colour of the sky and the outlines of the people in the foreground."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p231.jpg",
+      "source_sha256": "b60c795d8d20ad7069c33c4584516e29c5987dc1b6b6a3ef8814bef2c03fd3e8",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p231-increase-protected_soft.png",
+        "sha256": "5f0341693cc291d2e8f8ef2b4a357ecbf4567cdb4604129c60e32a5f8f43c9d6"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "天空和人物维持，山谷变化较轻",
+      "features": [
+        0.43994981050491333,
+        0.6507764831185341,
+        0.15454752604166666,
+        0.008489583333333333,
+        0.035078465938568115,
+        0.04141809046268463,
+        0.019607841968536377,
+        0.015686288475990295,
+        0.008697271347045898,
+        0.0,
+        0.0,
+        0.011608700267970562
+      ],
+      "spatial": [
+        0.13205677568912505,
+        -0.006932886783033609,
+        0.0,
+        0.0,
+        1.0,
+        0.0313725471496582,
+        0.027450978755950928,
+        -0.009081289172172546
+      ],
+      "face_boxes": [
+        [
+          27,
+          529,
+          129,
+          631
+        ]
+      ]
+    },
+    {
+      "case_id": "p231-increase",
+      "group_id": "c8c7a66cc8c0f03ab2d4c0df1681f94d2b1d7a851238e92b703845352c2507ed",
+      "photo_id": "p231",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留山谷纹理、天空颜色和前景人物轮廓。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving texture in the valley, the colour of the sky and the outlines of the people in the foreground."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p231.jpg",
+      "source_sha256": "b60c795d8d20ad7069c33c4584516e29c5987dc1b6b6a3ef8814bef2c03fd3e8",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p231-increase-r15_40.png",
+        "sha256": "7eb807e7aee322fc87be48860e43a497a0c434b4ac102cad75c4007912e0ad76"
+      },
+      "recipe": "r15_40",
+      "outcome": "failed",
+      "reason": "暗衣和谷地阴影压黑，天空颜色明显改变",
+      "features": [
+        0.43994981050491333,
+        0.6507764831185341,
+        0.15454752604166666,
+        0.008489583333333333,
+        0.1325568868778646,
+        0.12721101194620132,
+        0.02000550925731659,
+        0.06638040021061897,
+        -0.0631403923034668,
+        0.053629557291666664,
+        0.0005419921875,
+        0.046926941722631454
+      ],
+      "spatial": [
+        0.23839339315891273,
+        -0.11333247274160385,
+        0.5026041865348816,
+        0.03187499940395355,
+        1.0,
+        0.046225130558013916,
+        0.03948126435279842,
+        -0.01473933830857277
+      ],
+      "face_boxes": [
+        [
+          27,
+          529,
+          129,
+          631
+        ]
+      ]
+    },
+    {
+      "case_id": "p231-decrease",
+      "group_id": "c8c7a66cc8c0f03ab2d4c0df1681f94d2b1d7a851238e92b703845352c2507ed",
+      "photo_id": "p231",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留山谷纹理、天空颜色和前景人物轮廓。",
+        "en": "Soften the overall tonal contrast while preserving texture in the valley, the colour of the sky and the outlines of the people in the foreground."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p231.jpg",
+      "source_sha256": "b60c795d8d20ad7069c33c4584516e29c5987dc1b6b6a3ef8814bef2c03fd3e8",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p231-decrease-protected_soft.png",
+        "sha256": "609048fb02fe257ca460a9e95a7f22a6388ff50071f108129d305817ba2162b5"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "颜色和轮廓保留，柔化幅度偏小",
+      "features": [
+        0.43994981050491333,
+        0.6507764831185341,
+        0.15454752604166666,
+        0.008489583333333333,
+        0.03529411554336548,
+        0.043137192726135254,
+        0.019607841968536377,
+        -0.0156862735748291,
+        -0.01176464557647705,
+        0.0,
+        0.0,
+        2.2931392340552748e-09
+      ],
+      "spatial": [
+        0.012230475246906302,
+        -0.01771516725420952,
+        0.0,
+        0.0,
+        1.0,
+        -0.03194352984428406,
+        -0.02745096087455756,
+        0.008904170244932175
+      ],
+      "face_boxes": [
+        [
+          27,
+          529,
+          129,
+          631
+        ]
+      ]
+    },
+    {
+      "case_id": "p231-decrease",
+      "group_id": "c8c7a66cc8c0f03ab2d4c0df1681f94d2b1d7a851238e92b703845352c2507ed",
+      "photo_id": "p231",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留山谷纹理、天空颜色和前景人物轮廓。",
+        "en": "Soften the overall tonal contrast while preserving texture in the valley, the colour of the sky and the outlines of the people in the foreground."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p231.jpg",
+      "source_sha256": "b60c795d8d20ad7069c33c4584516e29c5987dc1b6b6a3ef8814bef2c03fd3e8",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p231-decrease-r15_20.png",
+        "sha256": "8027e50c00915c0bfe63f6c2ae257ae19f5ce21aff3e8ed19062e57cb46a25d5"
+      },
+      "recipe": "r15_20",
+      "outcome": "complete",
+      "reason": "山谷和前景反差放柔，蓝天与人形轮廓仍在",
+      "features": [
+        0.43994981050491333,
+        0.6507764831185341,
+        0.15454752604166666,
+        0.008489583333333333,
+        0.08419327288866041,
+        0.057585060596466064,
+        0.0070164501667022705,
+        0.018237654119729996,
+        0.029709815979003906,
+        0.0,
+        0.0,
+        0.038846418261528015
+      ],
+      "spatial": [
+        0.12951012551784516,
+        0.12417666614055634,
+        0.0,
+        0.0,
+        1.0,
+        -0.0187741219997406,
+        -0.01599018573761002,
+        0.006116811186075211
+      ],
+      "face_boxes": [
+        [
+          27,
+          529,
+          129,
+          631
+        ]
+      ]
+    },
+    {
+      "case_id": "p231-decrease",
+      "group_id": "c8c7a66cc8c0f03ab2d4c0df1681f94d2b1d7a851238e92b703845352c2507ed",
+      "photo_id": "p231",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留山谷纹理、天空颜色和前景人物轮廓。",
+        "en": "Soften the overall tonal contrast while preserving texture in the valley, the colour of the sky and the outlines of the people in the foreground."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p231.jpg",
+      "source_sha256": "b60c795d8d20ad7069c33c4584516e29c5987dc1b6b6a3ef8814bef2c03fd3e8",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p231-decrease-protected_strong.png",
+        "sha256": "e154dc61c5eb7e29083a20d2d3136873a635339b932dc84b9bfe6f05fdf14105"
+      },
+      "recipe": "protected_strong",
+      "outcome": "complete",
+      "reason": "山谷层次变柔，人形与天空仍清楚",
+      "features": [
+        0.43994981050491333,
+        0.6507764831185341,
+        0.15454752604166666,
+        0.008489583333333333,
+        0.07058823108673096,
+        0.08599132299423218,
+        0.03902393579483032,
+        -0.0313725471496582,
+        -0.019324660301208496,
+        0.0,
+        0.0,
+        1.7662685536379286e-07
+      ],
+      "spatial": [
+        0.01504419110715393,
+        -0.03570738434791565,
+        0.0,
+        0.0,
+        1.0,
+        -0.06666666269302368,
+        -0.052281403541565075,
+        0.017445800825953484
+      ],
+      "face_boxes": [
+        [
+          27,
+          529,
+          129,
+          631
+        ]
+      ]
+    },
+    {
+      "case_id": "p231-decrease",
+      "group_id": "c8c7a66cc8c0f03ab2d4c0df1681f94d2b1d7a851238e92b703845352c2507ed",
+      "photo_id": "p231",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留山谷纹理、天空颜色和前景人物轮廓。",
+        "en": "Soften the overall tonal contrast while preserving texture in the valley, the colour of the sky and the outlines of the people in the foreground."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p231.jpg",
+      "source_sha256": "b60c795d8d20ad7069c33c4584516e29c5987dc1b6b6a3ef8814bef2c03fd3e8",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p231-decrease-r15_40.png",
+        "sha256": "d7e6c1ec6b9a0696849d59b1a6d9f4c2330692ed089f4f29eb3f1c04ab7f5e7d"
+      },
+      "recipe": "r15_40",
+      "outcome": "partial",
+      "reason": "抬黑蒙灰，山谷的层次被压得较平",
+      "features": [
+        0.43994981050491333,
+        0.6507764831185341,
+        0.15454752604166666,
+        0.008489583333333333,
+        0.1576603576540947,
+        0.1093771904706955,
+        0.01424628496170044,
+        0.034523140639066696,
+        0.054025888442993164,
+        0.0,
+        0.0,
+        0.07269608229398727
+      ],
+      "spatial": [
+        0.24150206744670868,
+        0.23231278359889984,
+        0.0,
+        0.0,
+        1.0,
+        -0.0344603955745697,
+        -0.02938277721405047,
+        0.01145506277680397
+      ],
+      "face_boxes": [
+        [
+          27,
+          529,
+          129,
+          631
+        ]
+      ]
+    },
+    {
+      "case_id": "p390-increase",
+      "group_id": "62933be42cae9f513d8299eec7634f366f1a146a66bd09dedad4bd5cebc8f988",
+      "photo_id": "p390",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留街景里原有的建筑轮廓和旧照片色调。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the existing building outlines and the vintage colour palette."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p390.jpg",
+      "source_sha256": "369396fb60ddc4d3160c71920734cc6267854bcd9986a102be3a3d34288b2cfb",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p390-increase-r15_40.png",
+        "sha256": "cc6ac8817dd49cb6549e1d2b3c93ad7dd9fc2d7d6503c8460867559ef3ea0fbe"
+      },
+      "recipe": "r15_40",
+      "outcome": "partial",
+      "reason": "建筑轮廓稍强，但偏色增强盖过旧照色调",
+      "features": [
+        0.5561035871505737,
+        0.3064870834350586,
+        0.0,
+        0.01526641845703125,
+        0.09747296571731567,
+        0.050345927476882935,
+        0.017616450786590576,
+        -0.024103522300720215,
+        -0.0366382944583894,
+        0.0,
+        1.1444091796875e-05,
+        0.04401273652911186
+      ],
+      "spatial": [
+        0.0,
+        -0.03569773584604263,
+        0.0,
+        0.038055554032325745,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p390-increase",
+      "group_id": "62933be42cae9f513d8299eec7634f366f1a146a66bd09dedad4bd5cebc8f988",
+      "photo_id": "p390",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留街景里原有的建筑轮廓和旧照片色调。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the existing building outlines and the vintage colour palette."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p390.jpg",
+      "source_sha256": "369396fb60ddc4d3160c71920734cc6267854bcd9986a102be3a3d34288b2cfb",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p390-increase-r15_20.png",
+        "sha256": "70fbb33fab44fdb02993339975a228100350bfc7d7752ecd8866eaa906d3820e"
+      },
+      "recipe": "r15_20",
+      "outcome": "partial",
+      "reason": "房屋轮廓仅略增，整体变化偏小",
+      "features": [
+        0.5561035871505737,
+        0.3064870834350586,
+        0.0,
+        0.01526641845703125,
+        0.04534277319908142,
+        0.022935688495635986,
+        0.008421927690505981,
+        -0.012038439512252808,
+        -0.0332721471786499,
+        0.0,
+        0.0,
+        0.02044503577053547
+      ],
+      "spatial": [
+        0.0,
+        -0.08155548945069313,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p390-increase",
+      "group_id": "62933be42cae9f513d8299eec7634f366f1a146a66bd09dedad4bd5cebc8f988",
+      "photo_id": "p390",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留街景里原有的建筑轮廓和旧照片色调。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the existing building outlines and the vintage colour palette."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p390.jpg",
+      "source_sha256": "369396fb60ddc4d3160c71920734cc6267854bcd9986a102be3a3d34288b2cfb",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p390-increase-protected_soft.png",
+        "sha256": "b233f81d64bdda790aec56beafce1073a707bcc836bcaa474d3138d67422ec36"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "纹理与色调保留，整体反差变化很小",
+      "features": [
+        0.5561035871505737,
+        0.3064870834350586,
+        0.0,
+        0.01526641845703125,
+        0.04313725233078003,
+        0.035294145345687866,
+        0.01176464557647705,
+        -0.01960781216621399,
+        0.023529410362243652,
+        0.0,
+        0.0,
+        5.997778202981863e-07
+      ],
+      "spatial": [
+        0.0,
+        0.12104002013802528,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p390-increase",
+      "group_id": "62933be42cae9f513d8299eec7634f366f1a146a66bd09dedad4bd5cebc8f988",
+      "photo_id": "p390",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "requests": {
+        "zh": "把全图的明暗层次拉开一些，变化要看得出来，同时保留街景里原有的建筑轮廓和旧照片色调。",
+        "en": "Make the overall tonal contrast noticeably stronger while preserving the existing building outlines and the vintage colour palette."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p390.jpg",
+      "source_sha256": "369396fb60ddc4d3160c71920734cc6267854bcd9986a102be3a3d34288b2cfb",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p390-increase-protected_strong.png",
+        "sha256": "745ec216707e10dde4360dbc782efaf3af379564b841c544293f4355b4783f63"
+      },
+      "recipe": "protected_strong",
+      "outcome": "partial",
+      "reason": "建筑边缘稍明显，整图变化依旧不明显",
+      "features": [
+        0.5561035871505737,
+        0.3064870834350586,
+        0.0,
+        0.01526641845703125,
+        0.08488029837608346,
+        0.07058823108673096,
+        0.023529350757598877,
+        -0.039215683937072754,
+        0.04652392864227295,
+        0.0,
+        0.0,
+        4.395859377837041e-06
+      ],
+      "spatial": [
+        0.0,
+        0.2408078908920288,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p390-decrease",
+      "group_id": "62933be42cae9f513d8299eec7634f366f1a146a66bd09dedad4bd5cebc8f988",
+      "photo_id": "p390",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留街景里原有的建筑轮廓和旧照片色调。",
+        "en": "Soften the overall tonal contrast while preserving the existing building outlines and the vintage colour palette."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p390.jpg",
+      "source_sha256": "369396fb60ddc4d3160c71920734cc6267854bcd9986a102be3a3d34288b2cfb",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p390-decrease-protected_strong.png",
+        "sha256": "565b55b14a317d79aebbbc9bc130c3dc6ad5a6227d1d69c68a29a76a553d2b6d"
+      },
+      "recipe": "protected_strong",
+      "outcome": "failed",
+      "reason": "建筑原有细线进一步被灰雾盖住",
+      "features": [
+        0.5561035871505737,
+        0.3064870834350586,
+        0.0,
+        0.01526641845703125,
+        0.0857035219669342,
+        0.071107417345047,
+        0.022102773189544678,
+        0.038130223751068115,
+        -0.047058820724487305,
+        0.0,
+        0.0,
+        2.2915667141631957e-09
+      ],
+      "spatial": [
+        0.0,
+        -0.014650080353021622,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p390-decrease",
+      "group_id": "62933be42cae9f513d8299eec7634f366f1a146a66bd09dedad4bd5cebc8f988",
+      "photo_id": "p390",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留街景里原有的建筑轮廓和旧照片色调。",
+        "en": "Soften the overall tonal contrast while preserving the existing building outlines and the vintage colour palette."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p390.jpg",
+      "source_sha256": "369396fb60ddc4d3160c71920734cc6267854bcd9986a102be3a3d34288b2cfb",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p390-decrease-protected_soft.png",
+        "sha256": "fb62312929c5e0e0c1fd87c2019fba3b8fa11d56c96371d8c8348ebf3adf912c"
+      },
+      "recipe": "protected_soft",
+      "outcome": "partial",
+      "reason": "反差略柔，但本已微弱的建筑轮廓也变淡",
+      "features": [
+        0.5561035871505737,
+        0.3064870834350586,
+        0.0,
+        0.01526641845703125,
+        0.04313725233078003,
+        0.03529408574104309,
+        0.011764705181121826,
+        0.019607871770858765,
+        -0.023529410362243652,
+        0.0,
+        0.0,
+        1.1533719534995157e-09
+      ],
+      "spatial": [
+        0.0,
+        -0.008447427302598953,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p390-decrease",
+      "group_id": "62933be42cae9f513d8299eec7634f366f1a146a66bd09dedad4bd5cebc8f988",
+      "photo_id": "p390",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留街景里原有的建筑轮廓和旧照片色调。",
+        "en": "Soften the overall tonal contrast while preserving the existing building outlines and the vintage colour palette."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p390.jpg",
+      "source_sha256": "369396fb60ddc4d3160c71920734cc6267854bcd9986a102be3a3d34288b2cfb",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p390-decrease-r15_20.png",
+        "sha256": "d8e6c6ce196dd679b3e05493d7964df2cf729922be1f302802a93c089ca1edf1"
+      },
+      "recipe": "r15_20",
+      "outcome": "partial",
+      "reason": "全图的柔化非常微弱",
+      "features": [
+        0.5561035871505737,
+        0.3064870834350586,
+        0.0,
+        0.01526641845703125,
+        0.03959763050079346,
+        0.019740372896194458,
+        0.007261216640472412,
+        0.009562373161315918,
+        0.03001093864440918,
+        0.0,
+        0.0,
+        0.01798539236187935
+      ],
+      "spatial": [
+        0.0,
+        0.12725386768579483,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    },
+    {
+      "case_id": "p390-decrease",
+      "group_id": "62933be42cae9f513d8299eec7634f366f1a146a66bd09dedad4bd5cebc8f988",
+      "photo_id": "p390",
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗反差放柔，保留街景里原有的建筑轮廓和旧照片色调。",
+        "en": "Soften the overall tonal contrast while preserving the existing building outlines and the vintage colour palette."
+      },
+      "source": "data/training/functional-v33-20261107/held-inputs/p390.jpg",
+      "source_sha256": "369396fb60ddc4d3160c71920734cc6267854bcd9986a102be3a3d34288b2cfb",
+      "output": {
+        "path": "experiments/functional-v33-20261107/images/p390-decrease-r15_40.png",
+        "sha256": "aa8011d7afb53f3821e8a561f61c0e769685f304e57b785ab322f4d4c695610e"
+      },
+      "recipe": "r15_40",
+      "outcome": "uncertain",
+      "reason": "整体效果接近原图，低反差旧照上的轻微软化难以确认",
+      "features": [
+        0.5561035871505737,
+        0.3064870834350586,
+        0.0,
+        0.01526641845703125,
+        0.0754784345626831,
+        0.03828310966491699,
+        0.013672947883605957,
+        0.01800781488418579,
+        0.056859612464904785,
+        0.0,
+        0.0,
+        0.03362143412232399
+      ],
+      "spatial": [
+        0.0,
+        0.23465046286582947,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "face_boxes": []
+    }
+  ]
+}

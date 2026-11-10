@@ -1,0 +1,22 @@
+{
+  "model_id": "language-merger-e2",
+  "adapter": "experiments/functional-v7-20261105/runs/language_merger-seed-20261112/checkpoint-462",
+  "adapter_sha256": "0ada27f54ae729507c5403125c920b94c2d48a4a67819030ae59d35763aa56c2",
+  "runtime": "functional_v7.runtime",
+  "schema": "functional-outcome-v1",
+  "editor": "functional-editor-v7-soft-rgb-candidate",
+  "split": "native-development",
+  "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+  "input_policy": "Only original input photograph, one original-language request and frozen tools. No targets, references, reviewer notes, statistics or expected action.",
+  "code_hashes": {
+    "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+    "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+    "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+    "scripts/functional_v7/editor_soft.py": "8c3b02c304d79bca9d547fe471afe4a0136c1813c2cf30a0c343dd5e174f2b50",
+    "scripts/functional_v7/outcomes.py": "4d46bb208b18dab750ee77e94c8f063ca1c3b5189ff1a6990ff9d3c4c1ce4286",
+    "scripts/functional_v7/runtime.py": "c6568cf1de61b8372abd2c21070070f2a4bca7f88e0f956541c07be330bfd5a7",
+    "scripts/functional_v7/train.py": "26a34a65287b24f32cc84a972f8087fde77209369a9588c1d33b443f809dc54b",
+    "scripts/functional_v7/evaluate.py": "350b3ec13c3571f641426e154014c74cbb7faca3c27f3f717511d399a33b3250",
+    "scripts/functional_v7/freeze_training.py": "f22bb018f2610e379ea60c7c047664e13d0ad6a98ee36b728591be0df7e58788"
+  }
+}

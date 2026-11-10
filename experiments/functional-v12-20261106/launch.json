@@ -1,0 +1,42 @@
+{
+  "at": "2026-11-06T01:38:19.297891+00:00",
+  "jobs": [
+    {
+      "name": "train",
+      "gpu": "0",
+      "pid": 4044729,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-u",
+        "-m",
+        "functional_v12.train",
+        "--route",
+        "language_merger",
+        "--gpu",
+        "0"
+      ],
+      "log": "experiments/functional-v12-20261106/train.log"
+    },
+    {
+      "name": "parent-new-manual",
+      "gpu": "3",
+      "pid": 4044730,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-u",
+        "-m",
+        "functional_v12.evaluate",
+        "--route",
+        "language_merger",
+        "--adapter",
+        "experiments/functional-v11-20261106/runs/language_merger-seed-20261123/final",
+        "--model",
+        "parent-new-manual",
+        "--gpu",
+        "3"
+      ],
+      "log": "experiments/functional-v12-20261106/parent-new-manual.log"
+    }
+  ],
+  "original_GPU1_untouched": true
+}

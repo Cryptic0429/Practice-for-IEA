@@ -1,0 +1,986 @@
+{
+  "at": "2026-11-07T08:46:17.264924+00:00",
+  "fit_sha256": "a4ef7e1603a5f73ff0711aced293d37aff4e2bad8982e9e9e70cc411fd621971",
+  "route_sha256": "96d7ccca85e706dd11dbb0a21efa1b3bd5481fe2ce090aead0be42d70be93c94",
+  "candidate_records_sha256": "7c548fca1d88885b16ec0b4b1fa4825f0c1b7a1a06152f8f7acc04d3f7929f9e",
+  "held_groups": 8,
+  "oracle_completed": 7,
+  "summary": {
+    "r30": {
+      "verdicts": {
+        "complete": 4,
+        "deferred": 2,
+        "partial": 1,
+        "failed": 1
+      },
+      "correct_no_output": 0,
+      "missed_feasible": 2
+    },
+    "global": {
+      "verdicts": {
+        "complete": 3,
+        "deferred": 5
+      },
+      "correct_no_output": 1,
+      "missed_feasible": 4
+    },
+    "region": {
+      "verdicts": {
+        "complete": 5,
+        "deferred": 3
+      },
+      "correct_no_output": 1,
+      "missed_feasible": 2
+    },
+    "region_require_detection": {
+      "verdicts": {
+        "complete": 5,
+        "deferred": 3
+      },
+      "correct_no_output": 1,
+      "missed_feasible": 2
+    },
+    "guarded_region": {
+      "verdicts": {
+        "complete": 5,
+        "deferred": 3
+      },
+      "correct_no_output": 1,
+      "missed_feasible": 2
+    }
+  },
+  "cases": [
+    {
+      "id": "p635",
+      "cohort": "held",
+      "domain": "portrait",
+      "grades": {
+        "linear30": "partial",
+        "linear12": "complete",
+        "shoulder30": "partial",
+        "shoulder12": "complete"
+      },
+      "face": {
+        "face_required": true,
+        "boxes": [
+          [
+            56,
+            96,
+            127,
+            167
+          ],
+          [
+            261,
+            57,
+            350,
+            146
+          ],
+          [
+            127,
+            262,
+            332,
+            467
+          ]
+        ]
+      },
+      "face_features": [
+        [
+          1.0,
+          0.0,
+          0.16354744136333466,
+          0.13303372263908386,
+          0.1067921593785286,
+          0.05559134483337402
+        ],
+        [
+          1.0,
+          0.0,
+          0.16354744136333466,
+          0.1496305912733078,
+          0.12135027498006822,
+          0.023745089769363403
+        ],
+        [
+          1.0,
+          0.0,
+          0.16354744136333466,
+          0.13303372263908386,
+          0.1067921593785286,
+          0.05559134483337402
+        ],
+        [
+          1.0,
+          0.0,
+          0.16354744136333466,
+          0.1496305912733078,
+          0.12135027498006822,
+          0.023745089769363403
+        ]
+      ],
+      "overlay": {
+        "path": "experiments/functional-v31-20261107/face-locations/p635.jpg",
+        "sha256": "c000985663ea39c3922ea809e1b4e4e987ba8a3362ee9505e8c7c51630c72cb3"
+      },
+      "scores": {
+        "r30": [
+          0.16240443372825752,
+          0.8946929132175648,
+          0.21227762613813467,
+          0.9219249875808209
+        ],
+        "global": [
+          0.12449900628446894,
+          0.8809859886060382,
+          0.15457921828798282,
+          0.9049235600517108
+        ],
+        "region": [
+          0.16412166859278143,
+          0.915157258417852,
+          0.20500606996098464,
+          0.9340648900949526
+        ]
+      },
+      "chosen": {
+        "r30": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p635-shoulder12.png"
+        },
+        "global": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p635-shoulder12.png"
+        },
+        "region": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p635-shoulder12.png"
+        },
+        "region_require_detection": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p635-shoulder12.png"
+        },
+        "guarded_region": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p635-shoulder12.png"
+        }
+      }
+    },
+    {
+      "id": "p234",
+      "cohort": "held",
+      "domain": "portrait",
+      "grades": {
+        "linear30": "complete",
+        "linear12": "partial",
+        "shoulder30": "complete",
+        "shoulder12": "partial"
+      },
+      "face": {
+        "face_required": true,
+        "boxes": [
+          [
+            534,
+            355,
+            1222,
+            1043
+          ]
+        ]
+      },
+      "face_features": [
+        [
+          1.0,
+          0.0,
+          0.5081043243408203,
+          0.4129215478897095,
+          0.3406972587108612,
+          0.09518277645111084
+        ],
+        [
+          1.0,
+          0.0,
+          0.5081043243408203,
+          0.46695375442504883,
+          0.38656705617904663,
+          0.041150569915771484
+        ],
+        [
+          1.0,
+          0.0,
+          0.5081043243408203,
+          0.4129215478897095,
+          0.3406972587108612,
+          0.09518277645111084
+        ],
+        [
+          1.0,
+          0.0,
+          0.5081043243408203,
+          0.46695375442504883,
+          0.38656705617904663,
+          0.041150569915771484
+        ]
+      ],
+      "overlay": {
+        "path": "experiments/functional-v31-20261107/face-locations/p234.jpg",
+        "sha256": "73db33af76247a10de886d4c84de645e2ca17fdedb103c7a793365c7da35596f"
+      },
+      "scores": {
+        "r30": [
+          0.5657999867135537,
+          0.27870648012494775,
+          0.6442928535930619,
+          0.3494025110361383
+        ],
+        "global": [
+          0.29475558310903976,
+          0.1617776891261305,
+          0.3496043217975083,
+          0.19882815018578073
+        ],
+        "region": [
+          0.8292296433261894,
+          0.7490940233787381,
+          0.8644763633660957,
+          0.7968003384817937
+        ]
+      },
+      "chosen": {
+        "r30": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "global": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "region": {
+          "recipe": "shoulder30",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p234-shoulder30.png"
+        },
+        "region_require_detection": {
+          "recipe": "shoulder30",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p234-shoulder30.png"
+        },
+        "guarded_region": {
+          "recipe": "shoulder30",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p234-shoulder30.png"
+        }
+      }
+    },
+    {
+      "id": "p619",
+      "cohort": "held",
+      "domain": "portrait",
+      "grades": {
+        "linear30": "complete",
+        "linear12": "partial",
+        "shoulder30": "partial",
+        "shoulder12": "partial"
+      },
+      "face": {
+        "face_required": true,
+        "boxes": [
+          [
+            441,
+            121,
+            543,
+            223
+          ],
+          [
+            406,
+            19,
+            508,
+            121
+          ]
+        ]
+      },
+      "face_features": [
+        [
+          1.0,
+          0.0,
+          0.16489176452159882,
+          0.13358038663864136,
+          0.09860549122095108,
+          0.042083144187927246
+        ],
+        [
+          1.0,
+          0.0,
+          0.16489176452159882,
+          0.15231843292713165,
+          0.11327247172594072,
+          0.016886264085769653
+        ],
+        [
+          1.0,
+          0.0,
+          0.16489176452159882,
+          0.13358038663864136,
+          0.09860549122095108,
+          0.042083144187927246
+        ],
+        [
+          1.0,
+          0.0,
+          0.16489176452159882,
+          0.15231843292713165,
+          0.11327247172594072,
+          0.016886264085769653
+        ]
+      ],
+      "overlay": {
+        "path": "experiments/functional-v31-20261107/face-locations/p619.jpg",
+        "sha256": "2e6faa5829c9f8ee8d9b3d05a06dd40709a7c6ed2a6ce332e4bae3b75822df7e"
+      },
+      "scores": {
+        "r30": [
+          0.735070490378387,
+          0.26968741326438966,
+          0.7949944125604498,
+          0.3396955454925182
+        ],
+        "global": [
+          0.6750028572437271,
+          0.2598680331100082,
+          0.7287303155573094,
+          0.31157579698793203
+        ],
+        "region": [
+          0.748883989886415,
+          0.3554429255592344,
+          0.7974831734175288,
+          0.42059670642442176
+        ]
+      },
+      "chosen": {
+        "r30": {
+          "recipe": "shoulder30",
+          "verdict": "partial",
+          "output": "experiments/functional-v31-20261107/images/p619-shoulder30.png"
+        },
+        "global": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "region": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "region_require_detection": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "guarded_region": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        }
+      }
+    },
+    {
+      "id": "p277",
+      "cohort": "held",
+      "domain": "portrait",
+      "grades": {
+        "linear30": "failed",
+        "linear12": "complete",
+        "shoulder30": "partial",
+        "shoulder12": "complete"
+      },
+      "face": {
+        "face_required": true,
+        "boxes": []
+      },
+      "face_features": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "overlay": {
+        "path": "experiments/functional-v31-20261107/face-locations/p277.jpg",
+        "sha256": "eda43828b5c374b3ce42c8890eba20641f501fa8dbc6d0227fdb087fdf289461"
+      },
+      "scores": {
+        "r30": [
+          0.0027687366191636704,
+          0.3639479050860354,
+          0.0728093561004299,
+          0.7363150645365797
+        ],
+        "global": [
+          0.02159225436127134,
+          0.6829380393569489,
+          0.08602233998724862,
+          0.8203136731759971
+        ],
+        "region": [
+          0.006953559822450101,
+          0.36443018994718296,
+          0.029079211472223677,
+          0.5519523892709532
+        ]
+      },
+      "chosen": {
+        "r30": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "global": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "region": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "region_require_detection": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "guarded_region": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        }
+      }
+    },
+    {
+      "id": "p458",
+      "cohort": "held",
+      "domain": "landscape",
+      "grades": {
+        "linear30": "partial",
+        "linear12": "complete",
+        "shoulder30": "partial",
+        "shoulder12": "complete"
+      },
+      "face": {
+        "face_required": false,
+        "boxes": []
+      },
+      "face_features": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "overlay": null,
+      "scores": {
+        "r30": [
+          0.15409458194614267,
+          0.8472534509863485,
+          0.20378757120798047,
+          0.8857224644878219
+        ],
+        "global": [
+          0.22581459393221792,
+          0.9272854659932832,
+          0.2773946041445347,
+          0.9431385835935908
+        ],
+        "region": [
+          0.20268867418821096,
+          0.9060123345200384,
+          0.2542051258620048,
+          0.9274848892075263
+        ]
+      },
+      "chosen": {
+        "r30": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p458-shoulder12.png"
+        },
+        "global": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p458-shoulder12.png"
+        },
+        "region": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p458-shoulder12.png"
+        },
+        "region_require_detection": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p458-shoulder12.png"
+        },
+        "guarded_region": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p458-shoulder12.png"
+        }
+      }
+    },
+    {
+      "id": "p475",
+      "cohort": "held",
+      "domain": "landscape",
+      "grades": {
+        "linear30": "failed",
+        "linear12": "partial",
+        "shoulder30": "complete",
+        "shoulder12": "partial"
+      },
+      "face": {
+        "face_required": false,
+        "boxes": []
+      },
+      "face_features": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "overlay": null,
+      "scores": {
+        "r30": [
+          0.7000283142803867,
+          0.17319306266559234,
+          0.8126377864138417,
+          0.247409635594995
+        ],
+        "global": [
+          0.808761901893871,
+          0.36551707986733073,
+          0.8609827443257418,
+          0.43889407481762255
+        ],
+        "region": [
+          0.7832209668357496,
+          0.31752640928777903,
+          0.8433707285318222,
+          0.39181964231924393
+        ]
+      },
+      "chosen": {
+        "r30": {
+          "recipe": "shoulder30",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p475-shoulder30.png"
+        },
+        "global": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "region": {
+          "recipe": "shoulder30",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p475-shoulder30.png"
+        },
+        "region_require_detection": {
+          "recipe": "shoulder30",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p475-shoulder30.png"
+        },
+        "guarded_region": {
+          "recipe": "shoulder30",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p475-shoulder30.png"
+        }
+      }
+    },
+    {
+      "id": "p196",
+      "cohort": "held",
+      "domain": "landscape",
+      "grades": {
+        "linear30": "failed",
+        "linear12": "partial",
+        "shoulder30": "failed",
+        "shoulder12": "partial"
+      },
+      "face": {
+        "face_required": false,
+        "boxes": []
+      },
+      "face_features": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "overlay": null,
+      "scores": {
+        "r30": [
+          0.8448626616513377,
+          0.380114239074415,
+          0.8838170222043076,
+          0.4606067852343833
+        ],
+        "global": [
+          0.47779151374190104,
+          0.12994671664678092,
+          0.5430802623602982,
+          0.16164293800434212
+        ],
+        "region": [
+          0.5138405241863832,
+          0.13374852140557264,
+          0.5834821106883833,
+          0.1690922762528631
+        ]
+      },
+      "chosen": {
+        "r30": {
+          "recipe": "shoulder30",
+          "verdict": "failed",
+          "output": "experiments/functional-v31-20261107/images/p196-shoulder30.png"
+        },
+        "global": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "region": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "region_require_detection": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "guarded_region": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        }
+      }
+    },
+    {
+      "id": "p265",
+      "cohort": "held",
+      "domain": "landscape",
+      "grades": {
+        "linear30": "partial",
+        "linear12": "complete",
+        "shoulder30": "partial",
+        "shoulder12": "complete"
+      },
+      "face": {
+        "face_required": false,
+        "boxes": []
+      },
+      "face_features": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "overlay": null,
+      "scores": {
+        "r30": [
+          0.18421182637152173,
+          0.8656841252211305,
+          0.2533264527361816,
+          0.9024816327106
+        ],
+        "global": [
+          0.2824821820012019,
+          0.9338347865566035,
+          0.34396420517426557,
+          0.9484986167240209
+        ],
+        "region": [
+          0.23737296731763205,
+          0.9084373571268787,
+          0.29724520445502683,
+          0.9296679850428469
+        ]
+      },
+      "chosen": {
+        "r30": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p265-shoulder12.png"
+        },
+        "global": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p265-shoulder12.png"
+        },
+        "region": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p265-shoulder12.png"
+        },
+        "region_require_detection": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p265-shoulder12.png"
+        },
+        "guarded_region": {
+          "recipe": "shoulder12",
+          "verdict": "complete",
+          "output": "experiments/functional-v31-20261107/images/p265-shoulder12.png"
+        }
+      }
+    },
+    {
+      "id": "p162",
+      "cohort": "regression",
+      "domain": "portrait",
+      "grades": {
+        "linear30": "failed",
+        "linear12": "partial",
+        "shoulder30": "failed",
+        "shoulder12": "partial"
+      },
+      "face": {
+        "face_required": true,
+        "boxes": [
+          [
+            286,
+            1245,
+            865,
+            1824
+          ]
+        ]
+      },
+      "face_features": [
+        [
+          1.0,
+          0.0,
+          0.0759458914399147,
+          0.06109333410859108,
+          0.04963215813040733,
+          0.014852557331323624
+        ],
+        [
+          1.0,
+          0.0,
+          0.0759458914399147,
+          0.06893646717071533,
+          0.05711999908089638,
+          0.007009424269199371
+        ],
+        [
+          1.0,
+          0.0,
+          0.0759458914399147,
+          0.06109333410859108,
+          0.04963215813040733,
+          0.014852557331323624
+        ],
+        [
+          1.0,
+          0.0,
+          0.0759458914399147,
+          0.06893646717071533,
+          0.05711999908089638,
+          0.007009424269199371
+        ]
+      ],
+      "overlay": {
+        "path": "experiments/functional-v31-20261107/face-locations/p162.jpg",
+        "sha256": "3730367ffdc97f8fe4693fcbbf79642d53d3e8c734129a241d86a99eb8b82306"
+      },
+      "scores": {
+        "r30": [
+          0.6892665045687474,
+          0.22026863573907643,
+          0.7698125973810724,
+          0.2889311579865876
+        ],
+        "global": [
+          0.5476167367641747,
+          0.2029754578196719,
+          0.6382759394681532,
+          0.2566869879371487
+        ],
+        "region": [
+          0.5695873873035149,
+          0.20889824482257235,
+          0.6604286023969965,
+          0.26671531481235927
+        ]
+      },
+      "chosen": {
+        "r30": {
+          "recipe": "shoulder30",
+          "verdict": "failed",
+          "output": "experiments/functional-v30-20261107/images/p162-shoulder30.png"
+        },
+        "global": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "region": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        },
+        "region_require_detection": {
+          "recipe": null,
+          "verdict": "deferred",
+          "output": null
+        }
+      }
+    }
+  ],
+  "GPU_hours": 0,
+  "deployed": false,
+  "final_acceptance_opened": false
+}

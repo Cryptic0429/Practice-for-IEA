@@ -1,0 +1,59 @@
+{
+  "split": "old-native",
+  "bundle": "shared-head-policies",
+  "items": [
+    {
+      "item_id": "b2473c4f453d77e5",
+      "case_id": "natural-055",
+      "input_sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+      "output_sha256": "d9c7a17c7b2db2aefad950863f8264135d12be35ec4e088b74900f0e9b19c229",
+      "images": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v21-20261107/review/old-native/shared-head-policies/native-pixels/natural-055-INPUT-whole.png",
+          "sha256": "f5c8e562b8afbd07a9d4ff4ba0b6f19a02e95a4e6d45effe2fa0ab5371b5f645",
+          "size": [
+            1024,
+            681
+          ],
+          "source": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+          "source_sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+          "source_size": [
+            1024,
+            681
+          ],
+          "box": [
+            0,
+            0,
+            1024,
+            681
+          ]
+        },
+        {
+          "role": "b2473c4f453d77e5",
+          "region": "whole",
+          "path": "experiments/functional-v21-20261107/review/old-native/shared-head-policies/native-pixels/natural-055-b2473c4f453d77e5-whole.png",
+          "sha256": "2c15acba8d645a04517bbec3b43753bd644192f3037011ff2200ca0772e6252f",
+          "size": [
+            1024,
+            681
+          ],
+          "source": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/magnitude-e20/images/natural-055-en.png",
+          "source_sha256": "d9c7a17c7b2db2aefad950863f8264135d12be35ec4e088b74900f0e9b19c229",
+          "source_size": [
+            1024,
+            681
+          ],
+          "box": [
+            0,
+            0,
+            1024,
+            681
+          ]
+        }
+      ]
+    }
+  ],
+  "policy": "Integer-coordinate native pixels only, no resizing or colour change. Whole-frame context remains on the anonymous sheet. Whole-image QA only where region=whole; bounded regions do not claim complete native coverage of giant files."
+}

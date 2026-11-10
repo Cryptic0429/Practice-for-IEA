@@ -1,0 +1,76 @@
+{
+  "at": "2026-11-05T22:40:27.137902+00:00",
+  "status": "direct_AI_visual_admitted_not_human_or_user_approval",
+  "semantic_cases": 240,
+  "unique_language_rows": 480,
+  "actual_rows_each_route": 480,
+  "source_groups": 60,
+  "photo_domains": {
+    "portrait": 30,
+    "landscape": 30
+  },
+  "cumulative_parent_source_groups": 160,
+  "new_photograph_groups_added": 0,
+  "new_AI_semantic_cases": 200,
+  "unchanged_anchor_cases": 40,
+  "outcome_counts": {
+    "edit": 189,
+    "decline": 46,
+    "keep": 5
+  },
+  "new_quality_declines": 41,
+  "unsupported_control_declines": 5,
+  "original_GIER_English_cases": 27,
+  "original_English_with_AI_Chinese_translation_rows": 54,
+  "AI_authored_cases": 213,
+  "AI_authored_rows": 426,
+  "original_English_semantic_fraction": 0.1125,
+  "family_counts": {
+    "lighting": 126,
+    "compound": 80,
+    "unsupported": 5,
+    "white_balance": 6,
+    "saturation": 6,
+    "contrast": 6,
+    "brown_tone": 6,
+    "identity": 5
+  },
+  "case_domain_counts": {
+    "portrait": 120,
+    "landscape": 120
+  },
+  "same_exact_requests_with_both_edit_and_quality_decline": 2,
+  "synthetic_noise_is_not_real_camera_noise": true,
+  "training_data_sha256": "f5d8257728c7351cada3d313cdaccf6888c2fe2abf42350ee155ab54b4bb74d7",
+  "cases_sha256": "54ba60c9fa722867283a24855b37872318dd96d2a3eb419b78bacf3978b07264",
+  "lineage_sha256": "bf2a5323c1a8788fb9c2eac92f4c928fe9fd9f99e3c1c5054b64727dd51fbf21",
+  "provenance_hashes": {
+    "data/training/functional-v7-20261105/admission.json": "d55420a7db81e29d1483f951de2db280375c447bba5d105e5e0c80202efa0d3b",
+    "data/training/functional-v7-20261105/cases.json": "1948fbe5e40cdeae1d3e37fefedd4c87d9ebb7a2cf1eec3ff830229e8b98353a",
+    "experiments/functional-v10-20261106/anchor-candidates.json": "2c7a1c0da037ef898f4f45ba6aa9751e896b98d44667afbb7b6cf963bfd49590",
+    "experiments/functional-v10-20261106/counterfactual-candidates/manifest.json": "94ea3d651e246ffc266bd644c15fb91f8e290e256d62555de6799423f0618639",
+    "experiments/functional-v10-20261106/extended-candidates/manifest.json": "89493dd7b2e375fc0196f941ef4149811848e9977452c7c722480bce19b02ee2",
+    "experiments/functional-v10-20261106/style-candidates/manifest.json": "f149de2376aa59221f99044c4c82f51b6959d0bf527e32e1047c97fd6f353359",
+    "experiments/functional-v10-20261106/darkening-candidates/manifest.json": "025ff1b19862af233109b1bddca5afda7467b0d24d06edb3839b74da85788624",
+    "experiments/functional-v10-20261106/counterfactual-candidates/direct-observations.jsonl": "77e017726e79219080c5fc9324fb861fdfa47ce7dee5552f2721a1f1e7cd2bbf",
+    "experiments/functional-v10-20261106/candidate-stage-observations.jsonl": "c037efc31dc45dbe4e347128fbd3fcbb7ab4f958e4b6815be412e4a6f7508948",
+    "experiments/functional-v10-20261106/candidate-full-resolution-observations.jsonl": "96c47fafb347864f63a666816931312bbd3a2923427951a947387c5523a34a7f",
+    "experiments/functional-v10-20261106/repairs/reviewed-portrait-batch-03-07-08-09/manifest.json": "e943b34facb570294551184a0a52dce5fb7e3b04009c27a36fe9144414495277",
+    "experiments/functional-v10-20261106/repairs/reviewed-portrait-batch-03-07-08-09/direct-review.json": "495f721738576e8f67371a714a2eb384c200905458d563f90ab5add621379465",
+    "experiments/functional-v10-20261106/repairs/reviewed-landscape-batch-12-15-17-18-20/manifest.json": "e4e1ee4c15838325b873add1a90db047a8d6cc5cb26038f7ad675a9c97161fa7",
+    "experiments/functional-v10-20261106/repairs/reviewed-landscape-batch-12-15-17-18-20/direct-review.json": "7a13bcbe280e2ca2a44acb18595c0aa9deb324f6e082f81d856b5c3cc74b6b55",
+    "experiments/functional-v10-20261106/repairs/portrait-normal-compound-02/manifest.json": "ab64ea7c04b343aae2053bc7cb98517c0eceec1217a07ecc053f200923a01e1e",
+    "experiments/functional-v10-20261106/repairs/portrait-normal-compound-02/direct-review.json": "1dadaca2f439da7622698a223afe28560ce6502ba851c1be8ea953405005248a",
+    "experiments/functional-v10-20261106/repairs/portrait-white-detail-07/manifest.json": "1435c60ab8bbd5725d2c1d8d4b8e3a31423fab9400aa65be08267ba5f1fdfb7b",
+    "experiments/functional-v10-20261106/repairs/portrait-white-detail-07/direct-review.json": "267ce4927b91678e1137b1057c8214d0b4c840638fe44c498fb71fff240c8c66"
+  },
+  "selection": "Direct viewed completion plus basic image quality, explicit repair choices and no L1/reward ranking. Bad/uncertain old pixels excluded and preserved.",
+  "frozen_Qwen_screening": "Earlier directional calibration failed; not trusted to admit these labels. Codex direct visual AI review is the final source, not human approval.",
+  "limitations": [
+    "200 new semantic cases use only20 existing original groups and3 AI request templates with recorded synthetic conditions; not independent photos.",
+    "40 anchors inherit exact prior direct review, including27 original-English requests and3 AI white-balance landscape edits; controls10AI.",
+    "Quality declines reflect current global tools and tried alternatives, not exhaustive impossibility proofs or a guarantee of real-photo refusal calibration.",
+    "No user-uploaded photograph or feedback enters training; independent user feedback remains zero."
+  ],
+  "no_GPU_training_started": true
+}

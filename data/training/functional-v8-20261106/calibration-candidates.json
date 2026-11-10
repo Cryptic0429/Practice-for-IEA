@@ -1,0 +1,570 @@
+{
+  "direction": [
+    {
+      "id": "direction-train-041-restore-exposure-strong",
+      "case_id": "train-041-restore-exposure-strong",
+      "group_id": "45d5b1ddcfb619f9cf34a100fa155c5407b64ad08d179486b9cf795e07db2bbc",
+      "family": "lighting",
+      "domain": "portrait",
+      "instructions": {
+        "zh": "请纠正照片曝光不足的问题，让整体光照恢复自然，保留原有颜色。",
+        "en": "Correct the underexposure to restore natural overall lighting while retaining the original colours."
+      },
+      "input_image": "data/training/functional-v2-20261104/inputs/train-041/restore-exposure-strong.png",
+      "input_sha256": "c10d3f07746abb1c7b69dd12b14406689e15471b187491ae914c342c32d0000e",
+      "good_image": "experiments/functional-v7-20261105/soft-label-candidates/images/train-041-restore-exposure-strong.png",
+      "good_sha256": "5ff2e38706195053092b400edbd676575b2f272b77b6cc64f86b30bd60cc28e7",
+      "bad_image": "experiments/functional-v8-20261106/calibration-candidates/train-041-restore-exposure-strong-opposite.png",
+      "bad_sha256": "3cf71eb9deed30bee10c60f478733bf94d96b9928b6843073ccd4d5588ae2acd",
+      "bad_parameters": {
+        "exposure": -60
+      },
+      "good_label_evidence": {
+        "kind": "new_direct_visual_review",
+        "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+        "review_evidence": "整体提亮充分，人物和白衣侧面阴影可辨，场景较柔和。"
+      },
+      "new_bad_render_direct_review": "pending"
+    },
+    {
+      "id": "direction-native-train-x348",
+      "case_id": "native-train-x348",
+      "group_id": "d0e2ec7bf79baac1387d9a5e0383441b785acc17dc2d9f9be69535f89207e9b6",
+      "family": "lighting",
+      "domain": "landscape",
+      "instructions": {
+        "en": "Brighten the image slightly",
+        "zh": "把照片稍微提亮一点。"
+      },
+      "input_image": "data/training/functional-v6-20261105/inputs/native-train-x348.png",
+      "input_sha256": "825e7fc6a595fff5fde4e58c84e10a0b39d62ab1bf71e779117310efc7c24977",
+      "good_image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-x348.png",
+      "good_sha256": "c07f14e5262b9b8a257243724f7583f1e9e8c1a376cfd4c95f5108fabab029f5",
+      "bad_image": "experiments/functional-v8-20261106/calibration-candidates/native-train-x348-opposite.png",
+      "bad_sha256": "7873fa7f821bc176a41876193b316e86df4aa95333fd4f046e74961869e0358c",
+      "bad_parameters": {
+        "exposure": -60
+      },
+      "good_label_evidence": {
+        "kind": "new_direct_visual_review",
+        "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+        "review_evidence": "完整960×640中星空与地平线稍微提亮，星点、银河淡纹和树木剪影保留；亮度幅度符合稍微提亮，未出现强拉暗部后的明显块状噪声。"
+      },
+      "new_bad_render_direct_review": "pending"
+    },
+    {
+      "id": "direction-train-034-style-temperature-strong",
+      "case_id": "train-034-style-temperature-strong",
+      "group_id": "6c37d47cb2be759ec4e060ae12736c5814b094726b2cbf50492037b4a1b87096",
+      "family": "white_balance",
+      "domain": "portrait",
+      "instructions": {
+        "zh": "请明显调暖整体色调，保留主体和细节，其他效果保持自然。",
+        "en": "Please noticeably warm the overall tone while preserving the subject and detail; keep other aspects natural."
+      },
+      "input_image": "data/training/functional-v2-20261104/inputs/train-034/original.png",
+      "input_sha256": "10ba1e9e624c3a1cd354739639f47fd47726f55368ebffcb7303eedc96363185",
+      "good_image": "experiments/functional-v7-20261105/soft-label-candidates/images/train-034-style-temperature-strong.png",
+      "good_sha256": "08abc715870bd74c5378659df8b16e7ffa7362de318df419186c9cbbdd83bccb",
+      "bad_image": "experiments/functional-v8-20261106/calibration-candidates/train-034-style-temperature-strong-opposite.png",
+      "bad_sha256": "f708861a7a070b99d47107e103a8d4722e0a4b394738e60ea5508754beaeee26",
+      "bad_parameters": {
+        "temperature": -60
+      },
+      "good_label_evidence": {
+        "kind": "exact_prior_reviewed_pixels",
+        "previous_admission": "data/training/functional-v6-20261105/admission.json",
+        "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+      },
+      "new_bad_render_direct_review": "pending"
+    },
+    {
+      "id": "direction-train-120-style-temperature-strong",
+      "case_id": "train-120-style-temperature-strong",
+      "group_id": "e400632d04cdf370e7379a9a4e093134ba0c4a9b0bd1193d4c02e1dada0c4cc7",
+      "family": "white_balance",
+      "domain": "landscape",
+      "instructions": {
+        "zh": "请明显调暖整体色调，保留主体和细节，其他效果保持自然。",
+        "en": "Please noticeably warm the overall tone while preserving the subject and detail; keep other aspects natural."
+      },
+      "input_image": "data/training/functional-v2-20261104/inputs/train-120/original.png",
+      "input_sha256": "7a807326f043431d810995800e399cc438f81d8fdd08230a37525f89e2fe3b42",
+      "good_image": "experiments/functional-v7-20261105/soft-label-candidates/images/train-120-style-temperature-strong.png",
+      "good_sha256": "7e7541d2a53aa8bf18d624e49a07b029ed41518f6813e70099463e28b4f6dab9",
+      "bad_image": "experiments/functional-v8-20261106/calibration-candidates/train-120-style-temperature-strong-opposite.png",
+      "bad_sha256": "cb2360a34faab8ccda99d90d17e3180b526bd9d8ee968d3cdfd16dda11959402",
+      "bad_parameters": {
+        "temperature": -60
+      },
+      "good_label_evidence": {
+        "kind": "exact_prior_reviewed_pixels",
+        "previous_admission": "data/training/functional-v6-20261105/admission.json",
+        "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+      },
+      "new_bad_render_direct_review": "pending"
+    },
+    {
+      "id": "direction-train-138-restore-saturation-strong",
+      "case_id": "train-138-restore-saturation-strong",
+      "group_id": "df80e1a833e495be9e72bb37caf1770f5d93f8f6b02fa7cd5c1ff23c24697a1b",
+      "family": "saturation",
+      "domain": "portrait",
+      "instructions": {
+        "zh": "请修复颜色褪淡的问题，使色彩恢复自然，不要夸张增艳。",
+        "en": "Correct the faded colours to restore natural saturation without exaggerated vibrancy."
+      },
+      "input_image": "data/training/functional-v2-20261104/inputs/train-138/restore-saturation-strong.png",
+      "input_sha256": "c3a172622ff509ed76dd08bf731aec1e514f9cc9340644220a414cfa01a920c4",
+      "good_image": "experiments/functional-v7-20261105/soft-label-candidates/images/train-138-restore-saturation-strong.png",
+      "good_sha256": "a657128b597ca251abaaec4c84208a02163a5ee8a2a33efbe2813628a55bb691",
+      "bad_image": "experiments/functional-v8-20261106/calibration-candidates/train-138-restore-saturation-strong-opposite.png",
+      "bad_sha256": "f889b26986c2f66d7bb44f1cf4228799586a7abadd581313fa69916951f62fae",
+      "bad_parameters": {
+        "saturation": -60
+      },
+      "good_label_evidence": {
+        "kind": "exact_prior_reviewed_pixels",
+        "previous_admission": "data/training/functional-v6-20261105/admission.json",
+        "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+      },
+      "new_bad_render_direct_review": "pending"
+    },
+    {
+      "id": "direction-train-220-restore-saturation-mild",
+      "case_id": "train-220-restore-saturation-mild",
+      "group_id": "f7a65790ed2a83d16eb7690fca98cc81221a9a929e1136aea45441556e6b8ba7",
+      "family": "saturation",
+      "domain": "landscape",
+      "instructions": {
+        "zh": "请修复颜色褪淡的问题，使色彩恢复自然，不要夸张增艳。",
+        "en": "Correct the faded colours to restore natural saturation without exaggerated vibrancy."
+      },
+      "input_image": "data/training/functional-v2-20261104/inputs/train-220/restore-saturation-mild.png",
+      "input_sha256": "e689b6061b315cb4fa1fe170da307f6a51bee1b53a2f788a7522fa2f1f042f2c",
+      "good_image": "experiments/functional-v7-20261105/soft-label-candidates/images/train-220-restore-saturation-mild.png",
+      "good_sha256": "ccae1a17029cb472844bb051c06d94ee25ce0f83d267406c224eb73523642409",
+      "bad_image": "experiments/functional-v8-20261106/calibration-candidates/train-220-restore-saturation-mild-opposite.png",
+      "bad_sha256": "f06400d6c2e409080686a96c67d9dcfa69d2127f1fd51026013332f3c5c4838f",
+      "bad_parameters": {
+        "saturation": -60
+      },
+      "good_label_evidence": {
+        "kind": "exact_prior_reviewed_pixels",
+        "previous_admission": "data/training/functional-v6-20261105/admission.json",
+        "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+      },
+      "new_bad_render_direct_review": "pending"
+    },
+    {
+      "id": "direction-train-042-restore-contrast-strong",
+      "case_id": "train-042-restore-contrast-strong",
+      "group_id": "3b365586124edaa4f94005fd330df04e1a344cf413dee97b86fcd3e54d85ca01",
+      "family": "contrast",
+      "domain": "portrait",
+      "instructions": {
+        "zh": "请修复灰蒙蒙的低对比度，使画面恢复自然的明暗层次。",
+        "en": "Correct the washed-out low contrast to restore natural tonal separation."
+      },
+      "input_image": "data/training/functional-v2-20261104/inputs/train-042/restore-contrast-strong.png",
+      "input_sha256": "4f8d5a5d84f2c71bf121033627565bc45c0fe5059f77d59c40337fcc4e9f8523",
+      "good_image": "experiments/functional-v7-20261105/soft-label-candidates/images/train-042-restore-contrast-strong.png",
+      "good_sha256": "9e349dc1909e0ed8cc788706c0e868d3f23018ab1825bd81713ed0117442665f",
+      "bad_image": "experiments/functional-v8-20261106/calibration-candidates/train-042-restore-contrast-strong-opposite.png",
+      "bad_sha256": "4972c847d9b91d5c6dd8dd995919f15b4d28f04d5f85cf56c82b3aa6bd4ac9e8",
+      "bad_parameters": {
+        "contrast": -60
+      },
+      "good_label_evidence": {
+        "kind": "new_direct_visual_review",
+        "review_file": "experiments/functional-v7-20261105/soft-label-candidates/direct-label-observations.json",
+        "review_evidence": "强灰雾去除，砖墙明暗及人物轮廓分离恢复。"
+      },
+      "new_bad_render_direct_review": "pending"
+    },
+    {
+      "id": "direction-train-285-restore-contrast-strong",
+      "case_id": "train-285-restore-contrast-strong",
+      "group_id": "4aa6952d3242888d083cf8d0ad206abd4e05b96737960701a7ee1a39d5964ed8",
+      "family": "contrast",
+      "domain": "landscape",
+      "instructions": {
+        "zh": "请修复灰蒙蒙的低对比度，使画面恢复自然的明暗层次。",
+        "en": "Correct the washed-out low contrast to restore natural tonal separation."
+      },
+      "input_image": "data/training/functional-v2-20261104/inputs/train-285/restore-contrast-strong.png",
+      "input_sha256": "74e2ad9df1ecc0b859a306b07f20c8f5d978ccaba5901866ccce65249cc0959d",
+      "good_image": "experiments/functional-v7-20261105/soft-label-candidates/images/train-285-restore-contrast-strong.png",
+      "good_sha256": "a5c50a6ebb68dac29fabb31519730ced5eed5b46638c05945528d87e21da719e",
+      "bad_image": "experiments/functional-v8-20261106/calibration-candidates/train-285-restore-contrast-strong-opposite.png",
+      "bad_sha256": "7ef2cefdb8d4d7680defe9082c2fa1dd623668f23e0cf3528cf69dd8929b4f75",
+      "bad_parameters": {
+        "contrast": -60
+      },
+      "good_label_evidence": {
+        "kind": "new_direct_visual_review",
+        "review_file": "experiments/functional-v7-20261105/soft-label-candidates/full-resolution-observations.json",
+        "review_evidence": "全尺寸竹林灰雾明显减轻，竹节、竹竿边缘和叶片分层仍在；原输入已存在天空透光白点和近处竹竿虚焦，未见新增大片结构损失。"
+      },
+      "new_bad_render_direct_review": "pending"
+    },
+    {
+      "id": "direction-train-057-style-sepia-strong",
+      "case_id": "train-057-style-sepia-strong",
+      "group_id": "a47cd897e4aa70d1d8922678b59d7e1c61f5a6ba88cb9939a2d93ae37648c113",
+      "family": "brown_tone",
+      "domain": "portrait",
+      "instructions": {
+        "zh": "给照片添加明显的棕褐色复古效果，保留明暗层次。",
+        "en": "Give the photo a strong brown sepia vintage look while retaining tonal detail."
+      },
+      "input_image": "data/training/functional-v2-20261104/inputs/train-057/original.png",
+      "input_sha256": "1bc5ae65274aff6e2e051c17fae25d6a394064799f2134affcb3a84378c8cb34",
+      "good_image": "experiments/functional-v7-20261105/soft-label-candidates/images/train-057-style-sepia-strong.png",
+      "good_sha256": "28ec384da90650a9f7ced4a9ecfc02d35acbb8a43dbe98fdba7e85188a4469c8",
+      "bad_image": "experiments/functional-v8-20261106/calibration-candidates/train-057-style-sepia-strong-opposite.png",
+      "bad_sha256": "75a885a73bb51db2746361803b75e690129cc20ce8c2eeb6c8349ddcfeacd25b",
+      "bad_parameters": {
+        "temperature": -40,
+        "saturation": 25
+      },
+      "good_label_evidence": {
+        "kind": "exact_prior_reviewed_pixels",
+        "previous_admission": "data/training/functional-v6-20261105/admission.json",
+        "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+      },
+      "new_bad_render_direct_review": "pending"
+    },
+    {
+      "id": "direction-train-201-style-sepia-strong",
+      "case_id": "train-201-style-sepia-strong",
+      "group_id": "2fc703f934babe07c37bf2c6cc5a391da9be2013d19f5c19cf2806322f04458e",
+      "family": "brown_tone",
+      "domain": "landscape",
+      "instructions": {
+        "zh": "给照片添加明显的棕褐色复古效果，保留明暗层次。",
+        "en": "Give the photo a strong brown sepia vintage look while retaining tonal detail."
+      },
+      "input_image": "data/training/functional-v2-20261104/inputs/train-201/original.png",
+      "input_sha256": "52765ffff54e042623acf96d827081e05b6dcaa2c673ad40044173c13f65b940",
+      "good_image": "experiments/functional-v7-20261105/soft-label-candidates/images/train-201-style-sepia-strong.png",
+      "good_sha256": "1c2a951a9ea94c1ccc5b93005b41aecdb78272f0191598674483e9b65bf0032e",
+      "bad_image": "experiments/functional-v8-20261106/calibration-candidates/train-201-style-sepia-strong-opposite.png",
+      "bad_sha256": "8376bd9ed8d60c898d3a3f16b138fa47bb3a4a88a2b432b36647e6f471456a03",
+      "bad_parameters": {
+        "temperature": -40,
+        "saturation": 25
+      },
+      "good_label_evidence": {
+        "kind": "exact_prior_reviewed_pixels",
+        "previous_admission": "data/training/functional-v6-20261105/admission.json",
+        "previous_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45"
+      },
+      "new_bad_render_direct_review": "pending"
+    }
+  ],
+  "quality": [
+    {
+      "id": "quality-native-train-n013",
+      "group_id": "dda8b501ad3c3a36712025bb9a08bba6d582e925df0d9f3860c5ca5bbfc40161",
+      "domain": "portrait",
+      "input_image": "data/training/functional-v6-20261105/inputs/native-train-n013.png",
+      "input_sha256": "15f4580496fcdc0a6462362004192996953921f3d09b3f8d362f8b548d05a5ae",
+      "good_image": "experiments/functional-v7-20261105/decision-brown-repair/image.png",
+      "good_sha256": "6d5bcc4069693b92734968e45f52a54f41a519c4c3e323c4c29f6d6d1fd1e400",
+      "bad_image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n013.png",
+      "bad_sha256": "31fc981d53d1218ca228a5b65b872a0760f88ef04937be65e7b6b72e763ebbe0",
+      "good_label_evidence": {
+        "kind": "reviewed_repair_of_new_AI_counterrequest",
+        "review_file": "experiments/functional-v7-20261105/decision-brown-repair/direct-observation.json",
+        "review_evidence": "完整960×1280输入已查看，新结果明确变为棕色复古风格，原蓝色上衣转为棕灰；眼镜、五官和袖子织纹保留，原本平白天空属于输入限制。新AI棕色请求完成，原GIER强对比请求仍不算完成。"
+      },
+      "bad_label_evidence": {
+        "case_id": "native-train-n013",
+        "at": "2026-11-05T15:36:17.424764+00:00",
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "脸部和蓝色衣服的对比、色彩增强明确，衣纹仍在；但右侧原本浅色地面的亮部更接近平白，较输入损失了一些明暗渐变，不直接准入为高质量标签。",
+        "image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n013.png",
+        "image_sha256": "31fc981d53d1218ca228a5b65b872a0760f88ef04937be65e7b6b72e763ebbe0",
+        "input_image": "data/training/functional-v6-20261105/inputs/native-train-n013.png",
+        "input_sha256": "15f4580496fcdc0a6462362004192996953921f3d09b3f8d362f8b548d05a5ae",
+        "reviewer": "Codex direct full-resolution input and result visual AI review after role lookup; not human or blinded",
+        "new_training_admission": false
+      },
+      "scope": "Image-quality-only pair; official PQ prompt has no instruction. Some images answer different requests. This never counts the failed original request as completed.",
+      "bad_severity": "minor_issue_from_original_size_direct_AI_review_not_human"
+    },
+    {
+      "id": "quality-native-train-n028",
+      "group_id": "0b7d3987f8f028ae3e3ef2070c6cfc794ae50e8275001a6ff257da57f693bed4",
+      "domain": "portrait",
+      "input_image": "data/training/functional-v6-20261105/inputs/native-train-n028.png",
+      "input_sha256": "c7b8698410b5e86b358733fc522820248567f265b09b456500d00389bea3a58c",
+      "good_image": "experiments/functional-v7-20261105/decision-candidates/images/native-train-n028-AI-soft-contrast-v7.png",
+      "good_sha256": "9a9961fbfcc3c9d680715e02ee07e8262f0b24f758dd7b45a40a0544a1fe55ad",
+      "bad_image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n028.png",
+      "bad_sha256": "87e3e8665bde763e9e11c2a9b73117035832c0955832df8436e744b697f9ea09",
+      "good_label_evidence": {
+        "kind": "AI_feasible_counterrequest_candidate",
+        "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+        "review_evidence": "明暗过渡变柔和，暗部可见性增加，人物五官和衣纹保留；这是一条新的减对比度请求，并非旧增对比度请求的成功结果。"
+      },
+      "bad_label_evidence": {
+        "case_id": "native-train-n028",
+        "at": "2026-11-05T15:36:38.110657+00:00",
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "提高对比度可见，但全尺寸中上方天花板原有较弱的梁结构及手套、裤子暗部层次被进一步压暗；不作为无副作用的优质标签准入。",
+        "image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n028.png",
+        "image_sha256": "87e3e8665bde763e9e11c2a9b73117035832c0955832df8436e744b697f9ea09",
+        "input_image": "data/training/functional-v6-20261105/inputs/native-train-n028.png",
+        "input_sha256": "c7b8698410b5e86b358733fc522820248567f265b09b456500d00389bea3a58c",
+        "reviewer": "Codex direct full-resolution input and result visual AI review after role lookup; not human or blinded",
+        "new_training_admission": false
+      },
+      "scope": "Image-quality-only pair; official PQ prompt has no instruction. Some images answer different requests. This never counts the failed original request as completed.",
+      "bad_severity": "minor_issue_from_original_size_direct_AI_review_not_human"
+    },
+    {
+      "id": "quality-native-train-n070",
+      "group_id": "fd251d29a693d5514b07e3c8c04c51e1c2a1cfb3bbd43fa6c1f0152944300651",
+      "domain": "portrait",
+      "input_image": "data/training/functional-v6-20261105/inputs/native-train-n070.png",
+      "input_sha256": "d5455342aacf026a5bc6316b30f13d5d221bde78a2c023c4c05143cf31ff75ea",
+      "good_image": "experiments/functional-v7-20261105/decision-candidates/images/native-train-n070-AI-mild-light-v7.png",
+      "good_sha256": "bf9b8134d8c974ab9832b2539d47f5c42b7df9b9775976501841e0fe3d646a73",
+      "bad_image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n070.png",
+      "bad_sha256": "64b745d5156b8f4f0da8c107883e6a56bf366800afdc21181182c1610803d4ef",
+      "good_label_evidence": {
+        "kind": "AI_feasible_counterrequest_candidate",
+        "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+        "review_evidence": "整图略有提亮，脸部、桌面和墙面没有像强拉曝光候选那样显著泛灰；原始低照度和压缩痕迹仍在，满足新轻度请求。"
+      },
+      "bad_label_evidence": {
+        "case_id": "native-train-n070",
+        "at": "2026-11-05T15:38:02.582618+00:00",
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "整张照片确实大幅提亮，人物轮廓与桌面可辨；但全尺寸中脸部和墙面原有压缩噪声、斑块变得明显，肤色不够干净，不将其直接准入为高质量强提亮标签。",
+        "image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n070.png",
+        "image_sha256": "64b745d5156b8f4f0da8c107883e6a56bf366800afdc21181182c1610803d4ef",
+        "input_image": "data/training/functional-v6-20261105/inputs/native-train-n070.png",
+        "input_sha256": "d5455342aacf026a5bc6316b30f13d5d221bde78a2c023c4c05143cf31ff75ea",
+        "reviewer": "Codex direct full-resolution input and result visual AI review after role lookup; not human or blinded",
+        "new_training_admission": false
+      },
+      "scope": "Image-quality-only pair; official PQ prompt has no instruction. Some images answer different requests. This never counts the failed original request as completed.",
+      "bad_severity": "minor_issue_from_original_size_direct_AI_review_not_human"
+    },
+    {
+      "id": "quality-native-train-n127",
+      "group_id": "23018628f248466dba47fb4d697044655322ca14c888f8bc8ffd6f815a58c171",
+      "domain": "portrait",
+      "input_image": "data/training/functional-v6-20261105/inputs/native-train-n127.png",
+      "input_sha256": "791c0d7f8ea2f81d6c4c649d8dcf030aeca52eaee70aff806e576c8a13392278",
+      "good_image": "experiments/functional-v7-20261105/decision-candidates/images/native-train-n127-AI-mild-light-v7.png",
+      "good_sha256": "d071456580ed6249231316101a43a9bf53e3e6f0c5d05675ca70fcbb42c6ef5d",
+      "bad_image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n127.png",
+      "bad_sha256": "9bcb0280afbafe045990c0b155e166d7eb4de9c53d5a73cc73d7e2be925c7b34",
+      "good_label_evidence": {
+        "kind": "AI_feasible_counterrequest_candidate",
+        "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+        "review_evidence": "天空、水面及人物稍微提亮，海浪和衣服轮廓保留；没有把人物仍暗的结果当成大幅提亮的完成。"
+      },
+      "bad_label_evidence": {
+        "case_id": "native-train-n127",
+        "at": "2026-11-05T15:53:18.558602+00:00",
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "整体明显提亮；全图显示被工具缩为3888×2592，因此另看原始4608×3072中的750×750脸部原比例裁块。脸部和发丝仍有灰雾、彩色压缩斑块，人物依然偏暗，不直接准入为优质标签。",
+        "image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n127.png",
+        "image_sha256": "9bcb0280afbafe045990c0b155e166d7eb4de9c53d5a73cc73d7e2be925c7b34",
+        "input_image": "data/training/functional-v6-20261105/inputs/native-train-n127.png",
+        "input_sha256": "791c0d7f8ea2f81d6c4c649d8dcf030aeca52eaee70aff806e576c8a13392278",
+        "reviewer": "Codex direct full-resolution input and result visual AI review after role lookup; not human or blinded",
+        "new_training_admission": false
+      },
+      "scope": "Image-quality-only pair; official PQ prompt has no instruction. Some images answer different requests. This never counts the failed original request as completed.",
+      "bad_severity": "minor_issue_from_original_size_direct_AI_review_not_human"
+    },
+    {
+      "id": "quality-native-train-n119",
+      "group_id": "5eff766432c2b11671e5bca657b9ae4fd4f19ef6310e8803ea1a103ad2df0dcf",
+      "domain": "landscape",
+      "input_image": "data/training/functional-v6-20261105/inputs/native-train-n119.png",
+      "input_sha256": "5691961459dd2ed4e872f3ff35cea5e5706ab1d9b0b271f254c27fbb0545a51f",
+      "good_image": "experiments/functional-v7-20261105/label-quality-repairs/images/native-train-n119-be66ad10b85a.png",
+      "good_sha256": "d26bbfc42bfaf4918245c7c935db1e47f6c76b4a65c0ba7caaf8754c0831bcad",
+      "bad_image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n119.png",
+      "bad_sha256": "ae7e5dbf61d980c58a18c0b46abf1b3e69795dfaedac2c0298cfde981c6ca09c",
+      "good_label_evidence": {
+        "kind": "same_input_request_directly_reviewed_label_repair",
+        "review_file": "experiments/functional-v7-20261105/label-quality-repairs/full-resolution-observations.json",
+        "label": "be66ad10b85a",
+        "review_evidence": "完整960×720中整图提亮，树林、路面与云层仍有层次；暗部有原始颗粒，但较前版不再明显泛灰或呈大块不均，适合这一未要求强度的提亮请求。"
+      },
+      "bad_label_evidence": {
+        "case_id": "native-train-n119",
+        "at": "2026-11-05T15:54:21.215710+00:00",
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "提亮后树林和前景可见，天空云层渐变没有明显被抹平；但全尺寸树林和地面出现明显的彩色噪声、颗粒与块状不均，暂不准入为高质量标签。",
+        "image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n119.png",
+        "image_sha256": "ae7e5dbf61d980c58a18c0b46abf1b3e69795dfaedac2c0298cfde981c6ca09c",
+        "input_image": "data/training/functional-v6-20261105/inputs/native-train-n119.png",
+        "input_sha256": "5691961459dd2ed4e872f3ff35cea5e5706ab1d9b0b271f254c27fbb0545a51f",
+        "reviewer": "Codex direct full-resolution input and result visual AI review after role lookup; not human or blinded",
+        "new_training_admission": false
+      },
+      "scope": "Image-quality-only pair; official PQ prompt has no instruction. Some images answer different requests. This never counts the failed original request as completed.",
+      "bad_severity": "minor_issue_from_original_size_direct_AI_review_not_human"
+    },
+    {
+      "id": "quality-native-train-n186",
+      "group_id": "0bc229d336ceb10b48b274dbb7e4d415748ed3c24f13ad84017f8d6ef43dfcef",
+      "domain": "landscape",
+      "input_image": "data/training/functional-v6-20261105/inputs/native-train-n186.png",
+      "input_sha256": "34e3ab2e9f6500e92a20e2a15364c47991472f7e552b9154478b753f0f877f9a",
+      "good_image": "experiments/functional-v7-20261105/decision-candidates/images/native-train-n186.png",
+      "good_sha256": "7a385af0c5e3ba908af6dd5a0dad77816f4db8091e8415378a0299bc316df728",
+      "bad_image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n186.png",
+      "bad_sha256": "6166760a09c7936a2ff5b2e8daa8adf57694b4ed3e23df89678171e02b029c82",
+      "good_label_evidence": {
+        "kind": "same_input_highlight_artifact_repair",
+        "review_file": "experiments/functional-v7-20261105/decision-candidates/full-resolution-observations.json",
+        "review_evidence": "完整960×640中钟面和建筑墙面更清楚，日落太阳保持白亮中心而非前版灰心，细枝和天空渐变保留；车辆小范围仍受原图低照度和压缩所限，但未见前版那样明显的灰雾和大片异常。"
+      },
+      "bad_label_evidence": {
+        "case_id": "native-train-n186",
+        "at": "2026-11-05T15:54:48.908945+00:00",
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "建筑物与钟面确实更清楚，日落天空层次大体保留；但建筑暗部和车、人边缘出现显眼的颗粒、彩色斑块与轮廓不均，暂不直接准入优质标签。",
+        "image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n186.png",
+        "image_sha256": "6166760a09c7936a2ff5b2e8daa8adf57694b4ed3e23df89678171e02b029c82",
+        "input_image": "data/training/functional-v6-20261105/inputs/native-train-n186.png",
+        "input_sha256": "34e3ab2e9f6500e92a20e2a15364c47991472f7e552b9154478b753f0f877f9a",
+        "reviewer": "Codex direct full-resolution input and result visual AI review after role lookup; not human or blinded",
+        "new_training_admission": false
+      },
+      "scope": "Image-quality-only pair; official PQ prompt has no instruction. Some images answer different requests. This never counts the failed original request as completed.",
+      "bad_severity": "minor_issue_from_original_size_direct_AI_review_not_human"
+    },
+    {
+      "id": "quality-native-train-x030",
+      "group_id": "1b7f6acf0735b5fa3e0da71de5eb7401277eb44bc09068882c7c393bb12709b7",
+      "domain": "landscape",
+      "input_image": "data/training/functional-v6-20261105/inputs/native-train-x030.png",
+      "input_sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+      "good_image": "experiments/functional-v7-20261105/label-quality-repairs/images/native-train-x030-fe3620704f35.png",
+      "good_sha256": "ba4c06d1947bd6c1aec986478a92adb06ae62ab604c4db84e3e856d9b14682ae",
+      "bad_image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-x030.png",
+      "bad_sha256": "e7de91278f1402b7e925013972f06cdf802204242e8d7ab18c24049cb2dfdcb7",
+      "good_label_evidence": {
+        "kind": "same_input_request_directly_reviewed_label_repair",
+        "review_file": "experiments/functional-v7-20261105/label-quality-repairs/full-resolution-observations.json",
+        "label": "fe3620704f35",
+        "review_evidence": "完整960×640中前景和山体明显提亮，天空渐变、细树枝和水面纹理保留；仍有原始颗粒，但不再像前版一样大片灰平和块状不均，光照层次较自然。"
+      },
+      "bad_label_evidence": {
+        "case_id": "native-train-x030",
+        "at": "2026-11-05T15:57:24.731348+00:00",
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "前景草木与山体显著提亮，天空渐变和水面纹理仍在；但完整960×640中树林边缘和倒影暗部的色块、颗粒明显增多，不直接作为高质量强提亮标签。",
+        "image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-x030.png",
+        "image_sha256": "e7de91278f1402b7e925013972f06cdf802204242e8d7ab18c24049cb2dfdcb7",
+        "input_image": "data/training/functional-v6-20261105/inputs/native-train-x030.png",
+        "input_sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+        "reviewer": "Codex direct full-resolution input and result visual AI review after role lookup; not human or blinded",
+        "new_training_admission": false
+      },
+      "scope": "Image-quality-only pair; official PQ prompt has no instruction. Some images answer different requests. This never counts the failed original request as completed.",
+      "bad_severity": "minor_issue_from_original_size_direct_AI_review_not_human"
+    },
+    {
+      "id": "quality-native-train-n190",
+      "group_id": "89f5a551118fa9d20d0ac9f1b9490bdd60cc958cbfb99a83fef63139fa0f4d14",
+      "domain": "landscape",
+      "input_image": "data/training/functional-v6-20261105/inputs/native-train-n190.png",
+      "input_sha256": "45981ce9a95460be520bf0033a83cdb9791c22ab7fd89e9b7e53de3532411bcf",
+      "good_image": "experiments/functional-v7-20261105/decision-candidates/images/native-train-n190-AI-muted-colour-v7.png",
+      "good_sha256": "ae9eb94f79b4393fba3bf00fe1298e01484579d01a84bed73f3d031e6c68ef3b",
+      "bad_image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n190.png",
+      "bad_sha256": "75a9b61d7d48d406b5b3e093ea4d12e769565d77a38d013b62d85114554b10dd",
+      "good_label_evidence": {
+        "kind": "AI_feasible_counterrequest_candidate",
+        "review_file": "experiments/functional-v7-20261105/decision-candidates/direct-observations.json",
+        "review_evidence": "海水蓝色和岩石苔色减淡，浪花与岩石纹理保留；这是新的减饱和度请求，不代表原强增强请求已完成。"
+      },
+      "bad_label_evidence": {
+        "case_id": "native-train-n190",
+        "at": "2026-11-05T15:56:02.920143+00:00",
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "增强对比度和蓝色海水很明确；但原尺寸可见中央浪花部分较输入更接近平白，岩石最暗凹面层次减少。保留要求完成记录，同时不把此副作用标签直接准入。",
+        "image": "experiments/functional-v7-20261105/soft-label-candidates/images/native-train-n190.png",
+        "image_sha256": "75a9b61d7d48d406b5b3e093ea4d12e769565d77a38d013b62d85114554b10dd",
+        "input_image": "data/training/functional-v6-20261105/inputs/native-train-n190.png",
+        "input_sha256": "45981ce9a95460be520bf0033a83cdb9791c22ab7fd89e9b7e53de3532411bcf",
+        "reviewer": "Codex direct full-resolution input and result visual AI review after role lookup; not human or blinded",
+        "new_training_admission": false
+      },
+      "scope": "Image-quality-only pair; official PQ prompt has no instruction. Some images answer different requests. This never counts the failed original request as completed.",
+      "bad_severity": "minor_issue_from_original_size_direct_AI_review_not_human"
+    }
+  ],
+  "sheets": [
+    {
+      "id": "direction-train-041-restore-exposure-strong",
+      "sheet": "experiments/functional-v8-20261106/calibration-candidates/direction-train-041-restore-exposure-strong.jpg",
+      "sha256": "374e1aab9a58369389b461d7c586d5754eefba14b1ab8a1bc6461a741571ec33"
+    },
+    {
+      "id": "direction-native-train-x348",
+      "sheet": "experiments/functional-v8-20261106/calibration-candidates/direction-native-train-x348.jpg",
+      "sha256": "84a8ab9ba08cb46a5c2736050f41b8b6dfe2943ffd36e38872492da400b3aa46"
+    },
+    {
+      "id": "direction-train-034-style-temperature-strong",
+      "sheet": "experiments/functional-v8-20261106/calibration-candidates/direction-train-034-style-temperature-strong.jpg",
+      "sha256": "6edbb01375540c64368aa5388cc10f2d75cb8ea1208a3d30be2123278125359e"
+    },
+    {
+      "id": "direction-train-120-style-temperature-strong",
+      "sheet": "experiments/functional-v8-20261106/calibration-candidates/direction-train-120-style-temperature-strong.jpg",
+      "sha256": "87c4e3c41bfd32ffdc1f0c6e31bd34790068ab14f3b26200ae88b5a048e33dab"
+    },
+    {
+      "id": "direction-train-138-restore-saturation-strong",
+      "sheet": "experiments/functional-v8-20261106/calibration-candidates/direction-train-138-restore-saturation-strong.jpg",
+      "sha256": "27f41372fea79d348a156a67535652486674fd663559fbc89c267e5d974bd855"
+    },
+    {
+      "id": "direction-train-220-restore-saturation-mild",
+      "sheet": "experiments/functional-v8-20261106/calibration-candidates/direction-train-220-restore-saturation-mild.jpg",
+      "sha256": "d72e3d3a880aabadfaa2a99096fb022648ebd0f9495a1c0fb1e9f5f8b47e4817"
+    },
+    {
+      "id": "direction-train-042-restore-contrast-strong",
+      "sheet": "experiments/functional-v8-20261106/calibration-candidates/direction-train-042-restore-contrast-strong.jpg",
+      "sha256": "8d60a9b6e5a1eb62a89df084b5f845c07dac4824b16d65ed7762d504c2ec088c"
+    },
+    {
+      "id": "direction-train-285-restore-contrast-strong",
+      "sheet": "experiments/functional-v8-20261106/calibration-candidates/direction-train-285-restore-contrast-strong.jpg",
+      "sha256": "ae8d6120293e925aae042e897d55a3bcdaa384b45276e9ab3c7e84686c6487f8"
+    },
+    {
+      "id": "direction-train-057-style-sepia-strong",
+      "sheet": "experiments/functional-v8-20261106/calibration-candidates/direction-train-057-style-sepia-strong.jpg",
+      "sha256": "6f232cb29d1296687dbc62df09de122103e82ef109817508bcaeda202dbbbe83"
+    },
+    {
+      "id": "direction-train-201-style-sepia-strong",
+      "sheet": "experiments/functional-v8-20261106/calibration-candidates/direction-train-201-style-sepia-strong.jpg",
+      "sha256": "37afcc3e23a8329458f11717c95b9aa77927bf495f20584db176144cd222e450"
+    }
+  ]
+}

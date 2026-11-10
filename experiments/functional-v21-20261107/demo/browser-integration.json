@@ -1,0 +1,72 @@
+{
+  "at": "2026-11-07T03:30:15.708566+00:00",
+  "status": "actual_browser_upload_edit_switch_download_refusal_feedback_verified",
+  "requests": [
+    {
+      "request_id": "b9a4490ba1fa4bab96d55b767e9b52f5",
+      "model_id": "functional-v21-quality-20261205",
+      "case_id": "historical-case12-brown",
+      "language": "en",
+      "status": "executed",
+      "historical_not_independent": true,
+      "visual_quality_newly_scored": false,
+      "output_sha256": "0be266dd99904e0feb2fdb525e8bcbb565c1211781481fe2736a23261c9e96bc",
+      "HTTP_exact": true
+    },
+    {
+      "request_id": "0ca5ad6bde6f4443a7bcc688e7704d59",
+      "model_id": "functional-v21-magnitude-20261205",
+      "case_id": "historical-case12-brown",
+      "language": "en",
+      "status": "executed",
+      "historical_not_independent": true,
+      "visual_quality_newly_scored": false,
+      "output_sha256": "0be266dd99904e0feb2fdb525e8bcbb565c1211781481fe2736a23261c9e96bc",
+      "HTTP_exact": true
+    },
+    {
+      "request_id": "c23ceecd44c84e48ac7ca6481666b711",
+      "model_id": "functional-v21-quality-20261206",
+      "case_id": "native-dev-070",
+      "language": "zh",
+      "status": "executed",
+      "historical_not_independent": false,
+      "visual_quality_newly_scored": false,
+      "output_sha256": "5b69f0286d28d5d7b7aa6aab95ce518654ffa689e45f992aa09c587433c84692",
+      "HTTP_exact": true
+    },
+    {
+      "request_id": "d6ba01a1b14b4b38a65d5f63be224b9e",
+      "model_id": "functional-v21-quality-20261205",
+      "case_id": "native-dev-070",
+      "language": "zh",
+      "status": "declined",
+      "historical_not_independent": false,
+      "visual_quality_newly_scored": false,
+      "no_result_image": true,
+      "image_route_status": 404
+    }
+  ],
+  "model_switch_cleared_old_result": true,
+  "all_three_registered_variants_actually_called": true,
+  "two_independent_heads": true,
+  "screenshots": {
+    "experiments/functional-v21-20261107/demo/browser-case12-result.jpg": "bbf5502a3bc1a8cda3a82c0ec9157816d770da52cedf70205a32094ed08480c5",
+    "experiments/functional-v21-20261107/demo/browser-data-overview.jpg": "9c0221f81ed4efd9459b224719f43b8587077e1b62ea52357f7254f45c6ece5e",
+    "experiments/functional-v21-20261107/demo/browser-no-result-refusal.jpg": "a841f9407d431dee077f1a4771f00584026fe2cf4d0c54e67584b328455e1653",
+    "experiments/functional-v21-20261107/demo/browser-replica-noise.jpg": "6d4b573ade88b495f353f2a7d49e6a9aefec82a1702db26c9a4b8abf3e0d172e",
+    "experiments/functional-v21-20261107/demo/browser-magnitude-result.jpg": "487f9551884e6fa500a7a97f46b0a2c33b1686363a8d19c3ace31c7c3699abe8"
+  },
+  "independent_user_feedback": 0,
+  "agent_feedback_records": 4,
+  "worker_unloaded": true,
+  "default_unchanged": true,
+  "occupied_GPU_hours": 23.26515351692836,
+  "no_external_rewriting": true,
+  "limitations": [
+    "Historical/development photos, not independent user approval.",
+    "Seed2 night result is a confirmed major-quality failure; seed1 refusal is not an edit completion.",
+    "Seed1 magnitude/quality share exact weights; policies are not independent training runs.",
+    "Locked seed replication failed; acceptance remains sealed."
+  ]
+}

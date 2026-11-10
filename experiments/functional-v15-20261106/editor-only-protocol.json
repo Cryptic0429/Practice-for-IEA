@@ -1,0 +1,59 @@
+{
+  "at": "2026-11-06T18:12:05.013067+00:00",
+  "status": "frozen_before_editor_only_outputs",
+  "sources": {
+    "native-development": {
+      "identity": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/identity.json",
+      "identity_sha256": "a8234137bfcee45cbcc9e98825dbae46d5f7fdc06b47b5f88d32178bfc4a273c",
+      "predictions": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/predictions.jsonl",
+      "predictions_sha256": "fcd064c6b4c3dec1684ddd4c59dd9d813ef3db141f91ff413ba1da2448f0b0c4",
+      "cases": {
+        "path": "data/training/functional-v6-20261105/development-native-cases.json",
+        "sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      }
+    },
+    "old-native": {
+      "identity": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/identity.json",
+      "identity_sha256": "b8bc364936c856d01f2e35122eb2e6428767aac717750f7eda8db3159219ffee",
+      "predictions": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/predictions.jsonl",
+      "predictions_sha256": "53a19843e12a508f86078e2e34d9cf0cc716c9300d7a9e2d9c62717eddde02c2",
+      "cases": {
+        "path": "data/training/functional-v2-20261104/natural-use-final-cases.json",
+        "sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    "decision-development": {
+      "identity": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/decision-development/parent-frozen/identity.json",
+      "identity_sha256": "ea2de44121abfcd2c3e005b2c1bd1f09e2786ad7659768c5a3e3fc7652a6df12",
+      "predictions": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/decision-development/parent-frozen/predictions.jsonl",
+      "predictions_sha256": "202aec1f0560eb44ac79c1725b2492d164df20e6ee2b4ad2e3d698205f55169d",
+      "cases": {
+        "path": "experiments/functional-v7-20261105/evaluation/decision-development-cases.json",
+        "sha256": "36684e39bab8e7d2365e21219b3823a2212546c62d620dd2a0b056d9d6438378"
+      }
+    },
+    "development": {
+      "identity": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/identity.json",
+      "identity_sha256": "9e695d682f6866997f88aed6280cb914f6d82e905736ae6a11490604da821eda",
+      "predictions": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/predictions.jsonl",
+      "predictions_sha256": "0a1d5a46e05d7aee33b5d3e3e92da6d56c4aae19cb544d2c690c141fb13d2fbd",
+      "cases": {
+        "path": "data/training/functional-v2-20261104/development-final-cases.json",
+        "sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+      }
+    }
+  },
+  "parent_adapter_sha256": "12243ea5f08ab9e2e75b082fd6e6a1e6e8b1efbd7eb4e102be3563ba084c4a56",
+  "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+  "schema": "functional-outcome-v1",
+  "code_hashes": {
+    "scripts/functional_v15/replay_parent.py": "c6eb9e5d898bede74d9ca09e89e022b6b592d5ed5cc396c037edcd49df0ba147",
+    "scripts/functional_v15/editor.py": "53d058fa7173253548ebe2fe907f927039b28f78694192210487df847e60cfaf",
+    "scripts/functional_v15/outcomes.py": "a6abc697ae110754ed2d115e1f6eaed24592f40ee1b1852dd5f54411bd5d8585",
+    "scripts/functional_v11/editor.py": "aff52a5b50587a41f442ffd0c9feb5fd71a9b8b2d02c7231dabafd2b350d8221",
+    "scripts/functional_v11/outcomes.py": "2d3161bbffb84ee9dfed6a3c2798a4af559d4c98f7faed77f2751f244a75f4b3"
+  },
+  "GPU_hours": 0,
+  "model_forward_calls": 0,
+  "policy": "Execute exactly saved parent decisions; no parameter/prompt/checkpoint changes. Compare actual pixels and directly review changed images; exact unchanged pixels may inherit old AI reviews. All development sets have been used adaptively before; acceptance remains unopened. Any measured change is editor contribution only, never new learning evidence."
+}

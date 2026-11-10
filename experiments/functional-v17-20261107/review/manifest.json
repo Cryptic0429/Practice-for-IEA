@@ -1,0 +1,555 @@
+{
+  "at": "2026-11-06T19:18:46.269465+00:00",
+  "items": [
+    {
+      "case_id": "native-train-n127",
+      "instructions": {
+        "en": "Can you brighten this photo a lot?",
+        "zh": "能把这张照片大幅提亮吗？"
+      },
+      "sheet": "experiments/functional-v17-20261107/review/native-train-n127.jpg",
+      "sheet_sha256": "16e06685bdd5f1ded57478fa68d274ea442be3772a9dc138684fb0eca4cfcf52",
+      "native": [
+        {
+          "label": "INPUT",
+          "region": "face-shirt",
+          "path": "experiments/functional-v17-20261107/review/native-train-n127-INPUT-face-shirt.png",
+          "sha256": "0b12a67901cbdeb32e0d3a947d053d157211bb40376fed17509034b674f4ea81",
+          "source": "data/training/functional-v6-20261105/inputs/native-train-n127.png",
+          "source_sha256": "791c0d7f8ea2f81d6c4c649d8dcf030aeca52eaee70aff806e576c8a13392278",
+          "source_size": [
+            4608,
+            3072
+          ],
+          "box": [
+            2200,
+            700,
+            3400,
+            1900
+          ]
+        },
+        {
+          "label": "INPUT",
+          "region": "cave-shadow",
+          "path": "experiments/functional-v17-20261107/review/native-train-n127-INPUT-cave-shadow.png",
+          "sha256": "38cd7e5145b35410dc4b2c472fc0f27fa4e2805b26d375636bed21da778bb425",
+          "source": "data/training/functional-v6-20261105/inputs/native-train-n127.png",
+          "source_sha256": "791c0d7f8ea2f81d6c4c649d8dcf030aeca52eaee70aff806e576c8a13392278",
+          "source_size": [
+            4608,
+            3072
+          ],
+          "box": [
+            0,
+            700,
+            1200,
+            1900
+          ]
+        },
+        {
+          "label": "INPUT",
+          "region": "sea",
+          "path": "experiments/functional-v17-20261107/review/native-train-n127-INPUT-sea.png",
+          "sha256": "0d3a4b57e65a2b7c564f1056ffc952eb9e3a379ee52538de270cbb019b6d1bf0",
+          "source": "data/training/functional-v6-20261105/inputs/native-train-n127.png",
+          "source_sha256": "791c0d7f8ea2f81d6c4c649d8dcf030aeca52eaee70aff806e576c8a13392278",
+          "source_size": [
+            4608,
+            3072
+          ],
+          "box": [
+            1400,
+            1872,
+            2600,
+            3072
+          ]
+        },
+        {
+          "label": "A",
+          "region": "face-shirt",
+          "path": "experiments/functional-v17-20261107/review/native-train-n127-A-face-shirt.png",
+          "sha256": "d2beca4707b52dcb19c0411f17886cb9bbf2a74d724746e93205c7b89397e0f6",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-n127-1048576.png",
+          "source_sha256": "82443338547ad0bccb109b65fec52fa13e0b2d589e778f1514fed7e9642ee2a1",
+          "source_size": [
+            4608,
+            3072
+          ],
+          "box": [
+            2200,
+            700,
+            3400,
+            1900
+          ]
+        },
+        {
+          "label": "A",
+          "region": "cave-shadow",
+          "path": "experiments/functional-v17-20261107/review/native-train-n127-A-cave-shadow.png",
+          "sha256": "98328947726da2d70316fceb2c02d00f7bf1d4dda8eaf57191224ca7ff649e2f",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-n127-1048576.png",
+          "source_sha256": "82443338547ad0bccb109b65fec52fa13e0b2d589e778f1514fed7e9642ee2a1",
+          "source_size": [
+            4608,
+            3072
+          ],
+          "box": [
+            0,
+            700,
+            1200,
+            1900
+          ]
+        },
+        {
+          "label": "A",
+          "region": "sea",
+          "path": "experiments/functional-v17-20261107/review/native-train-n127-A-sea.png",
+          "sha256": "007cd513bdeaf363d9705d518dac13a705d22fe359ee383cfb946360d0726cf4",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-n127-1048576.png",
+          "source_sha256": "82443338547ad0bccb109b65fec52fa13e0b2d589e778f1514fed7e9642ee2a1",
+          "source_size": [
+            4608,
+            3072
+          ],
+          "box": [
+            1400,
+            1872,
+            2600,
+            3072
+          ]
+        }
+      ],
+      "anonymous_mapping": {
+        "A": 1048576,
+        "B": 262144
+      },
+      "decisions": {
+        "A": "edited",
+        "B": "declined"
+      },
+      "outputs_identical": false
+    },
+    {
+      "case_id": "r13-train-native-073",
+      "instructions": {
+        "en": "Significantly increase the brightness and contrast and overall colors of the image",
+        "zh": "显著提高照片的亮度、对比度和整体色彩。"
+      },
+      "sheet": "experiments/functional-v17-20261107/review/r13-train-native-073.jpg",
+      "sheet_sha256": "82be8a2b37e6dfe9331ef3e6d7d934fddf427aafd4d865099a27016a58c2ec0f",
+      "native": [
+        {
+          "label": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v17-20261107/review/r13-train-native-073-INPUT-whole.png",
+          "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+          "source": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+          "source_sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+          "source_size": [
+            531,
+            748
+          ],
+          "box": [
+            0,
+            0,
+            531,
+            748
+          ]
+        },
+        {
+          "label": "B",
+          "region": "whole",
+          "path": "experiments/functional-v17-20261107/review/r13-train-native-073-B-whole.png",
+          "sha256": "36b997a9ce8a778fc74617d9ad2e31352fadf571c2b9d1dcee15e75ccfea817e",
+          "source": "experiments/functional-v17-20261107/outputs/r13-train-native-073-1048576.png",
+          "source_sha256": "36b997a9ce8a778fc74617d9ad2e31352fadf571c2b9d1dcee15e75ccfea817e",
+          "source_size": [
+            531,
+            748
+          ],
+          "box": [
+            0,
+            0,
+            531,
+            748
+          ]
+        }
+      ],
+      "anonymous_mapping": {
+        "A": 262144,
+        "B": 1048576
+      },
+      "decisions": {
+        "A": "declined",
+        "B": "edited"
+      },
+      "outputs_identical": false
+    },
+    {
+      "case_id": "native-train-x250",
+      "instructions": {
+        "en": "Brighten photo, increase contrast.",
+        "zh": "提亮照片，提高对比度。"
+      },
+      "sheet": "experiments/functional-v17-20261107/review/native-train-x250.jpg",
+      "sheet_sha256": "ad2d81420f2bdc1d7da3eba20df4bce0f8453c626dc2d1cabd4721e5f06b8565",
+      "native": [
+        {
+          "label": "INPUT",
+          "region": "facade",
+          "path": "experiments/functional-v17-20261107/review/native-train-x250-INPUT-facade.png",
+          "sha256": "1a735bbfb80e03890752b9080e260f3a8512dca474e8628a7018342fc595679b",
+          "source": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+          "source_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+          "source_size": [
+            2916,
+            1944
+          ],
+          "box": [
+            800,
+            400,
+            2000,
+            1600
+          ]
+        },
+        {
+          "label": "INPUT",
+          "region": "trees-sky",
+          "path": "experiments/functional-v17-20261107/review/native-train-x250-INPUT-trees-sky.png",
+          "sha256": "2d36b3b9daa88d7e454efd453c6d4a6590de4867d3dcd8e241b5ad2134170cfc",
+          "source": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+          "source_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+          "source_size": [
+            2916,
+            1944
+          ],
+          "box": [
+            0,
+            0,
+            1200,
+            1200
+          ]
+        },
+        {
+          "label": "INPUT",
+          "region": "water",
+          "path": "experiments/functional-v17-20261107/review/native-train-x250-INPUT-water.png",
+          "sha256": "9b2f8771babc0eeb47b6d916fdfa0b72e5e24826592c92c9b533eb4b64a51874",
+          "source": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+          "source_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+          "source_size": [
+            2916,
+            1944
+          ],
+          "box": [
+            1600,
+            1100,
+            2800,
+            1944
+          ]
+        },
+        {
+          "label": "A",
+          "region": "facade",
+          "path": "experiments/functional-v17-20261107/review/native-train-x250-A-facade.png",
+          "sha256": "6b9a43971578c4e1cd96654046f0ccfb9cd64e31e5e48b1406c7a693ce9ccc56",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-x250-1048576.png",
+          "source_sha256": "fbf97c6eeffa79469d050d01dd92d79f3fada23a2dee2f41e98e0bfffd9f7d52",
+          "source_size": [
+            2916,
+            1944
+          ],
+          "box": [
+            800,
+            400,
+            2000,
+            1600
+          ]
+        },
+        {
+          "label": "A",
+          "region": "trees-sky",
+          "path": "experiments/functional-v17-20261107/review/native-train-x250-A-trees-sky.png",
+          "sha256": "518104fbc36709ad2d1a197055438f354dc520604128f114d47527363bc165af",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-x250-1048576.png",
+          "source_sha256": "fbf97c6eeffa79469d050d01dd92d79f3fada23a2dee2f41e98e0bfffd9f7d52",
+          "source_size": [
+            2916,
+            1944
+          ],
+          "box": [
+            0,
+            0,
+            1200,
+            1200
+          ]
+        },
+        {
+          "label": "A",
+          "region": "water",
+          "path": "experiments/functional-v17-20261107/review/native-train-x250-A-water.png",
+          "sha256": "d3acc3af4be312e95491a1021f11ae3065686aaa28b7845d5f905aafd7f7429a",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-x250-1048576.png",
+          "source_sha256": "fbf97c6eeffa79469d050d01dd92d79f3fada23a2dee2f41e98e0bfffd9f7d52",
+          "source_size": [
+            2916,
+            1944
+          ],
+          "box": [
+            1600,
+            1100,
+            2800,
+            1944
+          ]
+        },
+        {
+          "label": "B",
+          "region": "facade",
+          "path": "experiments/functional-v17-20261107/review/native-train-x250-B-facade.png",
+          "sha256": "6b9a43971578c4e1cd96654046f0ccfb9cd64e31e5e48b1406c7a693ce9ccc56",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-x250-262144.png",
+          "source_sha256": "fbf97c6eeffa79469d050d01dd92d79f3fada23a2dee2f41e98e0bfffd9f7d52",
+          "source_size": [
+            2916,
+            1944
+          ],
+          "box": [
+            800,
+            400,
+            2000,
+            1600
+          ]
+        },
+        {
+          "label": "B",
+          "region": "trees-sky",
+          "path": "experiments/functional-v17-20261107/review/native-train-x250-B-trees-sky.png",
+          "sha256": "518104fbc36709ad2d1a197055438f354dc520604128f114d47527363bc165af",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-x250-262144.png",
+          "source_sha256": "fbf97c6eeffa79469d050d01dd92d79f3fada23a2dee2f41e98e0bfffd9f7d52",
+          "source_size": [
+            2916,
+            1944
+          ],
+          "box": [
+            0,
+            0,
+            1200,
+            1200
+          ]
+        },
+        {
+          "label": "B",
+          "region": "water",
+          "path": "experiments/functional-v17-20261107/review/native-train-x250-B-water.png",
+          "sha256": "d3acc3af4be312e95491a1021f11ae3065686aaa28b7845d5f905aafd7f7429a",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-x250-262144.png",
+          "source_sha256": "fbf97c6eeffa79469d050d01dd92d79f3fada23a2dee2f41e98e0bfffd9f7d52",
+          "source_size": [
+            2916,
+            1944
+          ],
+          "box": [
+            1600,
+            1100,
+            2800,
+            1944
+          ]
+        }
+      ],
+      "anonymous_mapping": {
+        "A": 1048576,
+        "B": 262144
+      },
+      "decisions": {
+        "A": "edited",
+        "B": "edited"
+      },
+      "outputs_identical": true
+    },
+    {
+      "case_id": "native-train-x151",
+      "instructions": {
+        "en": "brighten a bit, fix lightness, decrease contrast a bit",
+        "zh": "稍微提亮，改善光照，并略微降低对比度。"
+      },
+      "sheet": "experiments/functional-v17-20261107/review/native-train-x151.jpg",
+      "sheet_sha256": "42350e0e0fc4373e21185a8ba9cbd519ff45403c0da47db1660390d78d6643e1",
+      "native": [
+        {
+          "label": "INPUT",
+          "region": "subject",
+          "path": "experiments/functional-v17-20261107/review/native-train-x151-INPUT-subject.png",
+          "sha256": "14de04c625cc7abfd7f23fd086afbf2557cfea12c971361a65c834263d0de44c",
+          "source": "data/training/functional-v6-20261105/inputs/native-train-x151.png",
+          "source_sha256": "7489d3ce3c1eb1c2b693e2b67facebe21ebbe50a572152e43060e29479ee2bb3",
+          "source_size": [
+            3680,
+            2760
+          ],
+          "box": [
+            1000,
+            1200,
+            2200,
+            2400
+          ]
+        },
+        {
+          "label": "INPUT",
+          "region": "bright-rock",
+          "path": "experiments/functional-v17-20261107/review/native-train-x151-INPUT-bright-rock.png",
+          "sha256": "3a8ca5d8782afdfe221541ac4a2f0c49529cf362fcb15c011c32e624ca0d5fce",
+          "source": "data/training/functional-v6-20261105/inputs/native-train-x151.png",
+          "source_sha256": "7489d3ce3c1eb1c2b693e2b67facebe21ebbe50a572152e43060e29479ee2bb3",
+          "source_size": [
+            3680,
+            2760
+          ],
+          "box": [
+            2300,
+            300,
+            3500,
+            1500
+          ]
+        },
+        {
+          "label": "INPUT",
+          "region": "deep-water",
+          "path": "experiments/functional-v17-20261107/review/native-train-x151-INPUT-deep-water.png",
+          "sha256": "f0dcb789c67bdb471fedcb05a3438f2baa55b322ca6f05ba3590329367a914f2",
+          "source": "data/training/functional-v6-20261105/inputs/native-train-x151.png",
+          "source_sha256": "7489d3ce3c1eb1c2b693e2b67facebe21ebbe50a572152e43060e29479ee2bb3",
+          "source_size": [
+            3680,
+            2760
+          ],
+          "box": [
+            0,
+            0,
+            1200,
+            1200
+          ]
+        },
+        {
+          "label": "A",
+          "region": "subject",
+          "path": "experiments/functional-v17-20261107/review/native-train-x151-A-subject.png",
+          "sha256": "33f836ef8ca96d9489f10279b8b418b8f711f25362ab2917bdcd8b92eb65143b",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-x151-1048576.png",
+          "source_sha256": "bc8904c52fae15d54888af77e08b3bff6601eb2b6aeafb9c7362b0f6e144b503",
+          "source_size": [
+            3680,
+            2760
+          ],
+          "box": [
+            1000,
+            1200,
+            2200,
+            2400
+          ]
+        },
+        {
+          "label": "A",
+          "region": "bright-rock",
+          "path": "experiments/functional-v17-20261107/review/native-train-x151-A-bright-rock.png",
+          "sha256": "bc973e1c78efc88652556609285db628e92cb29e2dd1c0f8afe01e0371b62c46",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-x151-1048576.png",
+          "source_sha256": "bc8904c52fae15d54888af77e08b3bff6601eb2b6aeafb9c7362b0f6e144b503",
+          "source_size": [
+            3680,
+            2760
+          ],
+          "box": [
+            2300,
+            300,
+            3500,
+            1500
+          ]
+        },
+        {
+          "label": "A",
+          "region": "deep-water",
+          "path": "experiments/functional-v17-20261107/review/native-train-x151-A-deep-water.png",
+          "sha256": "8e7882043f4e57b73f0d3e63ebeb3224c47205a8f3f1205f49ba5feb6e6b1ef3",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-x151-1048576.png",
+          "source_sha256": "bc8904c52fae15d54888af77e08b3bff6601eb2b6aeafb9c7362b0f6e144b503",
+          "source_size": [
+            3680,
+            2760
+          ],
+          "box": [
+            0,
+            0,
+            1200,
+            1200
+          ]
+        },
+        {
+          "label": "B",
+          "region": "subject",
+          "path": "experiments/functional-v17-20261107/review/native-train-x151-B-subject.png",
+          "sha256": "0b1ed0291369af04b0c9c47179b7f370b0db284066f2f33acb88dfa02039a56d",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-x151-262144.png",
+          "source_sha256": "af6fb19c7c9501d7bfbe186925484d5b177d822a17ab2c7bf0954a6971607523",
+          "source_size": [
+            3680,
+            2760
+          ],
+          "box": [
+            1000,
+            1200,
+            2200,
+            2400
+          ]
+        },
+        {
+          "label": "B",
+          "region": "bright-rock",
+          "path": "experiments/functional-v17-20261107/review/native-train-x151-B-bright-rock.png",
+          "sha256": "c6df52faecf7ed2f162b05dddd00ca98c215e01fedc208dcfad885227bb3400c",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-x151-262144.png",
+          "source_sha256": "af6fb19c7c9501d7bfbe186925484d5b177d822a17ab2c7bf0954a6971607523",
+          "source_size": [
+            3680,
+            2760
+          ],
+          "box": [
+            2300,
+            300,
+            3500,
+            1500
+          ]
+        },
+        {
+          "label": "B",
+          "region": "deep-water",
+          "path": "experiments/functional-v17-20261107/review/native-train-x151-B-deep-water.png",
+          "sha256": "7ad19cbd2b94e2e5abf5dde51c40961df90a19290c60fe867fe055ee96cf28ec",
+          "source": "experiments/functional-v17-20261107/outputs/native-train-x151-262144.png",
+          "source_sha256": "af6fb19c7c9501d7bfbe186925484d5b177d822a17ab2c7bf0954a6971607523",
+          "source_size": [
+            3680,
+            2760
+          ],
+          "box": [
+            0,
+            0,
+            1200,
+            1200
+          ]
+        }
+      ],
+      "anonymous_mapping": {
+        "A": 1048576,
+        "B": 262144
+      },
+      "decisions": {
+        "A": "edited",
+        "B": "edited"
+      },
+      "outputs_identical": false
+    }
+  ],
+  "protocol_sha256": "01e49e6a78aa260c532c70f6fd7980ae316424e392388caacac66a8cfc68bca7",
+  "scope": "TRAIN-only reused sources; anonymous direct review. Decline is no result, never input fallback. Native integer crops unscaled; large-photo quality limited to listed regions. No model training or heldout claim."
+}

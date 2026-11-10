@@ -1,0 +1,951 @@
+{
+  "at": "2026-11-07T06:54:57.370155+00:00",
+  "protocol_sha256": "c080fa4f5aa1e586078a70c68f658b9d12caddfe9092d32040e824d687ba277a",
+  "cases_sha256": "f7e29dc6fd8e50fc652e25194b41ba636541cc0d8dcbd490bdc5f146ae16da1d",
+  "pairs_sha256": "ccfe95504233a481f5e50196b85f2324e4998ba77671fa57c98cca98951c6c91",
+  "historical_r24_source_sha256": "46766283a70422cf3c37fe6aad8a5fd361b4965a08a7fcd72940ebe56b607693",
+  "summary": {
+    "fixed_shadows38": {
+      "selected": {
+        "complete": 6,
+        "partial": 9,
+        "uncertain": 1
+      },
+      "with_completed_available": {
+        "complete": 6,
+        "partial": 4,
+        "uncertain": 1
+      },
+      "held_pairs": {}
+    },
+    "fixed_shadows77": {
+      "selected": {
+        "partial": 4,
+        "complete": 5,
+        "uncertain": 1,
+        "failed": 6
+      },
+      "with_completed_available": {
+        "partial": 4,
+        "complete": 5,
+        "failed": 2
+      },
+      "held_pairs": {}
+    },
+    "fixed_exposure60": {
+      "selected": {
+        "failed": 10,
+        "complete": 2,
+        "partial": 4
+      },
+      "with_completed_available": {
+        "failed": 7,
+        "complete": 2,
+        "partial": 2
+      },
+      "held_pairs": {}
+    },
+    "parameters": {
+      "selected": {
+        "partial": 4,
+        "complete": 5,
+        "uncertain": 1,
+        "failed": 6
+      },
+      "with_completed_available": {
+        "partial": 4,
+        "complete": 5,
+        "failed": 2
+      },
+      "held_pairs": {
+        "correct": 8,
+        "wrong": 2
+      }
+    },
+    "parameters_and_pixels": {
+      "selected": {
+        "complete": 6,
+        "partial": 9,
+        "uncertain": 1
+      },
+      "with_completed_available": {
+        "complete": 6,
+        "partial": 4,
+        "uncertain": 1
+      },
+      "held_pairs": {
+        "correct": 10
+      }
+    }
+  },
+  "cases": [
+    {
+      "case_id": "p345",
+      "group_id": "d91885b80db1c63aaa173f44ce1c17eaee302e0c60329595e572b1e974afea28",
+      "domain": "portrait",
+      "available_completed": 1,
+      "candidates": 3,
+      "scores": {
+        "parameters": {
+          "initial-1": 0.20197277062248023,
+          "initial-2": 0.40926061415607834,
+          "initial-3": -0.9408692627583259
+        },
+        "parameters_and_pixels": {
+          "initial-1": -4.084089397777554,
+          "initial-2": -4.542569238179905,
+          "initial-3": -6.673516716023455
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-1",
+          "verdict": "complete"
+        },
+        "fixed_shadows77": {
+          "id": "initial-2",
+          "verdict": "partial"
+        },
+        "fixed_exposure60": {
+          "id": "initial-3",
+          "verdict": "failed"
+        },
+        "parameters": {
+          "id": "initial-2",
+          "verdict": "partial"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-1",
+          "verdict": "complete"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [
+          {
+            "pair_id": "p345/initial-1>initial-3",
+            "verdict": "correct"
+          }
+        ],
+        "parameters_and_pixels": [
+          {
+            "pair_id": "p345/initial-1>initial-3",
+            "verdict": "correct"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p606",
+      "group_id": "64ad14912eedd36f737b6c52abbf8ab1520794bccf4b026ad174a8a15e9e56b2",
+      "domain": "portrait",
+      "available_completed": 2,
+      "candidates": 3,
+      "scores": {
+        "parameters": {
+          "initial-1": -1.0045872540163887,
+          "initial-2": 0.2373099998084087,
+          "initial-3": 0.48086499961177553
+        },
+        "parameters_and_pixels": {
+          "initial-1": -9.479727794859127,
+          "initial-2": -5.989001303105465,
+          "initial-3": -8.767762715678106
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-2",
+          "verdict": "partial"
+        },
+        "fixed_shadows77": {
+          "id": "initial-3",
+          "verdict": "complete"
+        },
+        "fixed_exposure60": {
+          "id": "initial-1",
+          "verdict": "complete"
+        },
+        "parameters": {
+          "id": "initial-3",
+          "verdict": "complete"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-2",
+          "verdict": "partial"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [],
+        "parameters_and_pixels": []
+      }
+    },
+    {
+      "case_id": "p112",
+      "group_id": "7132258bf877747aa7aeaced6cbd36c8a42b7b361e07be4a339198e0e3ac1273",
+      "domain": "portrait",
+      "available_completed": 0,
+      "candidates": 5,
+      "scores": {
+        "parameters": {
+          "initial-1": 0.48086499961177553,
+          "initial-2": -1.0045872540163887,
+          "initial-3": 0.2373099998084087,
+          "refined-1": 0.34347499972269685,
+          "refined-2": -0.2184686599270142
+        },
+        "parameters_and_pixels": {
+          "initial-1": -4.646373765932324,
+          "initial-2": -5.984884847509482,
+          "initial-3": -3.932768439568929,
+          "refined-1": -4.2067890204784755,
+          "refined-2": -4.608777509457895
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-3",
+          "verdict": "partial"
+        },
+        "fixed_shadows77": {
+          "id": "initial-1",
+          "verdict": "uncertain"
+        },
+        "fixed_exposure60": {
+          "id": "initial-2",
+          "verdict": "failed"
+        },
+        "parameters": {
+          "id": "initial-1",
+          "verdict": "uncertain"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-3",
+          "verdict": "partial"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [],
+        "parameters_and_pixels": []
+      }
+    },
+    {
+      "case_id": "p189",
+      "group_id": "d6e84f9bd1a0269809fcf6fe19152d2e7e697f8f0f9f4ac6d00d702192db9a67",
+      "domain": "portrait",
+      "available_completed": 1,
+      "candidates": 3,
+      "scores": {
+        "parameters": {
+          "initial-1": 0.20197277062248023,
+          "initial-2": 0.40926061415607834,
+          "initial-3": -0.9408692627583259
+        },
+        "parameters_and_pixels": {
+          "initial-1": -3.28591010600301,
+          "initial-2": -3.893268751047184,
+          "initial-3": -5.048613576672875
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-1",
+          "verdict": "complete"
+        },
+        "fixed_shadows77": {
+          "id": "initial-2",
+          "verdict": "partial"
+        },
+        "fixed_exposure60": {
+          "id": "initial-3",
+          "verdict": "failed"
+        },
+        "parameters": {
+          "id": "initial-2",
+          "verdict": "partial"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-1",
+          "verdict": "complete"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [
+          {
+            "pair_id": "p189/initial-1>initial-3",
+            "verdict": "correct"
+          }
+        ],
+        "parameters_and_pixels": [
+          {
+            "pair_id": "p189/initial-1>initial-3",
+            "verdict": "correct"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p292",
+      "group_id": "a874b67d23b2d10b1227794aef2a5833bded8b8d3485d8c51b984df5b3e4ffe0",
+      "domain": "portrait",
+      "available_completed": 0,
+      "candidates": 5,
+      "scores": {
+        "parameters": {
+          "initial-1": -1.0045872540163887,
+          "initial-2": 0.2373099998084087,
+          "initial-3": 0.48086499961177553,
+          "refined-1": 0.34347499972269685,
+          "refined-2": -0.5022936270081944
+        },
+        "parameters_and_pixels": {
+          "initial-1": -5.873624910677671,
+          "initial-2": -3.847699892386842,
+          "initial-3": -4.920951989048329,
+          "refined-1": -4.226875492036586,
+          "refined-2": -4.451366714159046
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-2",
+          "verdict": "partial"
+        },
+        "fixed_shadows77": {
+          "id": "initial-3",
+          "verdict": "failed"
+        },
+        "fixed_exposure60": {
+          "id": "initial-1",
+          "verdict": "failed"
+        },
+        "parameters": {
+          "id": "initial-3",
+          "verdict": "failed"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-2",
+          "verdict": "partial"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [],
+        "parameters_and_pixels": []
+      }
+    },
+    {
+      "case_id": "p067",
+      "group_id": "c026aa45014f6a38b4d05045d1bf814178ea8b28916302c994e460b6483f25a1",
+      "domain": "portrait",
+      "available_completed": 0,
+      "candidates": 5,
+      "scores": {
+        "parameters": {
+          "initial-1": 0.48086499961177553,
+          "initial-2": -1.0045872540163887,
+          "initial-3": 0.2373099998084087,
+          "refined-1": 0.34347499972269685,
+          "refined-2": -0.22896678083232927
+        },
+        "parameters_and_pixels": {
+          "initial-1": -4.278246948634009,
+          "initial-2": -4.862767852871942,
+          "initial-3": -3.108487554651097,
+          "refined-1": -3.584829598450876,
+          "refined-2": -3.8590186654144647
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-3",
+          "verdict": "partial"
+        },
+        "fixed_shadows77": {
+          "id": "initial-1",
+          "verdict": "failed"
+        },
+        "fixed_exposure60": {
+          "id": "initial-2",
+          "verdict": "partial"
+        },
+        "parameters": {
+          "id": "initial-1",
+          "verdict": "failed"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-3",
+          "verdict": "partial"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [],
+        "parameters_and_pixels": []
+      }
+    },
+    {
+      "case_id": "p325",
+      "group_id": "5b5a90fb203a64f6d037f5c03be1e2668f21db2d0f5b89cb536463ee07c2ff79",
+      "domain": "portrait",
+      "available_completed": 1,
+      "candidates": 5,
+      "scores": {
+        "parameters": {
+          "initial-1": 0.325302415150853,
+          "initial-2": 0.659165420174097,
+          "initial-3": -0.8877051680505282,
+          "refined-1": 0.44515067336432523,
+          "refined-2": -0.10291655826969777
+        },
+        "parameters_and_pixels": {
+          "initial-1": -4.798645946132611,
+          "initial-2": -8.098577477109753,
+          "initial-3": -7.097289755520869,
+          "refined-1": -5.823441205709714,
+          "refined-2": -5.526298558997413
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-1",
+          "verdict": "uncertain"
+        },
+        "fixed_shadows77": {
+          "id": "initial-2",
+          "verdict": "failed"
+        },
+        "fixed_exposure60": {
+          "id": "initial-3",
+          "verdict": "failed"
+        },
+        "parameters": {
+          "id": "initial-2",
+          "verdict": "failed"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-1",
+          "verdict": "uncertain"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [
+          {
+            "pair_id": "p325/refined-2>initial-2",
+            "verdict": "wrong"
+          },
+          {
+            "pair_id": "p325/refined-2>initial-3",
+            "verdict": "correct"
+          }
+        ],
+        "parameters_and_pixels": [
+          {
+            "pair_id": "p325/refined-2>initial-2",
+            "verdict": "correct"
+          },
+          {
+            "pair_id": "p325/refined-2>initial-3",
+            "verdict": "correct"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p761",
+      "group_id": "2af4e1494f5fdf9500e0152ce8a9972a32b9818c25e3fa9d44134ed1dfed5785",
+      "domain": "portrait",
+      "available_completed": 2,
+      "candidates": 3,
+      "scores": {
+        "parameters": {
+          "initial-1": -1.0045872540163887,
+          "initial-2": 0.2373099998084087,
+          "initial-3": 0.48086499961177553
+        },
+        "parameters_and_pixels": {
+          "initial-1": -13.447601989788316,
+          "initial-2": -8.309386652518114,
+          "initial-3": -10.005667932882375
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-2",
+          "verdict": "partial"
+        },
+        "fixed_shadows77": {
+          "id": "initial-3",
+          "verdict": "complete"
+        },
+        "fixed_exposure60": {
+          "id": "initial-1",
+          "verdict": "complete"
+        },
+        "parameters": {
+          "id": "initial-3",
+          "verdict": "complete"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-2",
+          "verdict": "partial"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [],
+        "parameters_and_pixels": []
+      }
+    },
+    {
+      "case_id": "p129",
+      "group_id": "0a188f57236674848a4e33c479d954d7fef4255529aa9dbd6f19280eb7d7ba15",
+      "domain": "landscape",
+      "available_completed": 1,
+      "candidates": 3,
+      "scores": {
+        "parameters": {
+          "initial-1": 0.40926061415607834,
+          "initial-2": -0.9408692627583259,
+          "initial-3": 0.20197277062248023
+        },
+        "parameters_and_pixels": {
+          "initial-1": -8.937765646004678,
+          "initial-2": -11.005636207367324,
+          "initial-3": -6.928356496279329
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-3",
+          "verdict": "complete"
+        },
+        "fixed_shadows77": {
+          "id": "initial-1",
+          "verdict": "partial"
+        },
+        "fixed_exposure60": {
+          "id": "initial-2",
+          "verdict": "failed"
+        },
+        "parameters": {
+          "id": "initial-1",
+          "verdict": "partial"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-3",
+          "verdict": "complete"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [
+          {
+            "pair_id": "p129/initial-3>initial-2",
+            "verdict": "correct"
+          }
+        ],
+        "parameters_and_pixels": [
+          {
+            "pair_id": "p129/initial-3>initial-2",
+            "verdict": "correct"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p489",
+      "group_id": "232833005f8f7b0f2be63ac008d60ee3ea0938207a299f4b8f3137c26156f9b4",
+      "domain": "landscape",
+      "available_completed": 1,
+      "candidates": 3,
+      "scores": {
+        "parameters": {
+          "initial-1": 0.2373099998084087,
+          "initial-2": 0.48086499961177553,
+          "initial-3": -1.0045872540163887
+        },
+        "parameters_and_pixels": {
+          "initial-1": -5.810123716626923,
+          "initial-2": -6.874122588902635,
+          "initial-3": -9.344776840291733
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-1",
+          "verdict": "partial"
+        },
+        "fixed_shadows77": {
+          "id": "initial-2",
+          "verdict": "complete"
+        },
+        "fixed_exposure60": {
+          "id": "initial-3",
+          "verdict": "partial"
+        },
+        "parameters": {
+          "id": "initial-2",
+          "verdict": "complete"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-1",
+          "verdict": "partial"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [],
+        "parameters_and_pixels": []
+      }
+    },
+    {
+      "case_id": "p456",
+      "group_id": "1d25bb07d59bca738971644a28c17a074a660a194455d67bd90d5d309092f3a6",
+      "domain": "landscape",
+      "available_completed": 0,
+      "candidates": 3,
+      "scores": {
+        "parameters": {
+          "initial-1": -1.0045872540163887,
+          "initial-2": 0.2373099998084087,
+          "initial-3": 0.48086499961177553
+        },
+        "parameters_and_pixels": {
+          "initial-1": -5.065567652101428,
+          "initial-2": -3.1803386455404365,
+          "initial-3": -4.582176794547723
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-2",
+          "verdict": "partial"
+        },
+        "fixed_shadows77": {
+          "id": "initial-3",
+          "verdict": "failed"
+        },
+        "fixed_exposure60": {
+          "id": "initial-1",
+          "verdict": "failed"
+        },
+        "parameters": {
+          "id": "initial-3",
+          "verdict": "failed"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-2",
+          "verdict": "partial"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [],
+        "parameters_and_pixels": []
+      }
+    },
+    {
+      "case_id": "p526",
+      "group_id": "b523ba8f415c468696f5f21320b96d5a5bf23578582e38d5fdf1b998c5e98a9e",
+      "domain": "landscape",
+      "available_completed": 0,
+      "candidates": 3,
+      "scores": {
+        "parameters": {
+          "initial-1": 0.48086499961177553,
+          "initial-2": -1.0045872540163887,
+          "initial-3": 0.2373099998084087
+        },
+        "parameters_and_pixels": {
+          "initial-1": -4.1308045380863625,
+          "initial-2": -4.619585869678973,
+          "initial-3": -2.957961248250833
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-3",
+          "verdict": "partial"
+        },
+        "fixed_shadows77": {
+          "id": "initial-1",
+          "verdict": "failed"
+        },
+        "fixed_exposure60": {
+          "id": "initial-2",
+          "verdict": "partial"
+        },
+        "parameters": {
+          "id": "initial-1",
+          "verdict": "failed"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-3",
+          "verdict": "partial"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [],
+        "parameters_and_pixels": []
+      }
+    },
+    {
+      "case_id": "p665",
+      "group_id": "45a33a7720c26a5224fafccd18c201f7b7b642bde8c0d2b0de6f3d3121bcf065",
+      "domain": "landscape",
+      "available_completed": 1,
+      "candidates": 3,
+      "scores": {
+        "parameters": {
+          "initial-1": 0.3909082662407029,
+          "initial-2": 0.792103592119319,
+          "initial-3": -0.8648401819407171
+        },
+        "parameters_and_pixels": {
+          "initial-1": -3.0409150126587825,
+          "initial-2": -4.565962410063978,
+          "initial-3": -4.865662916976398
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-1",
+          "verdict": "complete"
+        },
+        "fixed_shadows77": {
+          "id": "initial-2",
+          "verdict": "failed"
+        },
+        "fixed_exposure60": {
+          "id": "initial-3",
+          "verdict": "partial"
+        },
+        "parameters": {
+          "id": "initial-2",
+          "verdict": "failed"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-1",
+          "verdict": "complete"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [
+          {
+            "pair_id": "p665/initial-1>initial-2",
+            "verdict": "wrong"
+          }
+        ],
+        "parameters_and_pixels": [
+          {
+            "pair_id": "p665/initial-1>initial-2",
+            "verdict": "correct"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p508",
+      "group_id": "af8c994937bcf4c00458c4eb64c92aaf5ecc3d56b0c41da77e25a23874596ac3",
+      "domain": "landscape",
+      "available_completed": 2,
+      "candidates": 3,
+      "scores": {
+        "parameters": {
+          "initial-1": -0.9790383434196085,
+          "initial-2": 0.19456636990048357,
+          "initial-3": 0.39425290742992725
+        },
+        "parameters_and_pixels": {
+          "initial-1": -6.220234273758585,
+          "initial-2": -4.055719796327014,
+          "initial-3": -4.469090763698747
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-2",
+          "verdict": "complete"
+        },
+        "fixed_shadows77": {
+          "id": "initial-3",
+          "verdict": "complete"
+        },
+        "fixed_exposure60": {
+          "id": "initial-1",
+          "verdict": "failed"
+        },
+        "parameters": {
+          "id": "initial-3",
+          "verdict": "complete"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-2",
+          "verdict": "complete"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [
+          {
+            "pair_id": "p508/initial-2>initial-1",
+            "verdict": "correct"
+          },
+          {
+            "pair_id": "p508/initial-3>initial-1",
+            "verdict": "correct"
+          }
+        ],
+        "parameters_and_pixels": [
+          {
+            "pair_id": "p508/initial-2>initial-1",
+            "verdict": "correct"
+          },
+          {
+            "pair_id": "p508/initial-3>initial-1",
+            "verdict": "correct"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p278",
+      "group_id": "6d57480420153ce17ac567237c2f595fbc7a8817f340bb08d397153d4c89dffa",
+      "domain": "landscape",
+      "available_completed": 1,
+      "candidates": 3,
+      "scores": {
+        "parameters": {
+          "initial-1": 0.36364609423293454,
+          "initial-2": -0.9687131495984849,
+          "initial-3": 0.17946170884222742
+        },
+        "parameters_and_pixels": {
+          "initial-1": -3.283507860706286,
+          "initial-2": -4.50822440142283,
+          "initial-3": -2.959663939215717
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-3",
+          "verdict": "partial"
+        },
+        "fixed_shadows77": {
+          "id": "initial-1",
+          "verdict": "complete"
+        },
+        "fixed_exposure60": {
+          "id": "initial-2",
+          "verdict": "failed"
+        },
+        "parameters": {
+          "id": "initial-1",
+          "verdict": "complete"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-3",
+          "verdict": "partial"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [
+          {
+            "pair_id": "p278/initial-1>initial-2",
+            "verdict": "correct"
+          }
+        ],
+        "parameters_and_pixels": [
+          {
+            "pair_id": "p278/initial-1>initial-2",
+            "verdict": "correct"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "p493",
+      "group_id": "423db27d20a813dc420301fccac446c16e6339d1d1f1272e0002a53d8597d7f3",
+      "domain": "landscape",
+      "available_completed": 1,
+      "candidates": 3,
+      "scores": {
+        "parameters": {
+          "initial-1": 0.20197277062248023,
+          "initial-2": 0.40926061415607834,
+          "initial-3": -0.9408692627583259
+        },
+        "parameters_and_pixels": {
+          "initial-1": -8.514821497612013,
+          "initial-2": -11.072895713509341,
+          "initial-3": -13.576205614781179
+        }
+      },
+      "selected": {
+        "fixed_shadows38": {
+          "id": "initial-1",
+          "verdict": "complete"
+        },
+        "fixed_shadows77": {
+          "id": "initial-2",
+          "verdict": "partial"
+        },
+        "fixed_exposure60": {
+          "id": "initial-3",
+          "verdict": "failed"
+        },
+        "parameters": {
+          "id": "initial-2",
+          "verdict": "partial"
+        },
+        "parameters_and_pixels": {
+          "id": "initial-1",
+          "verdict": "complete"
+        }
+      },
+      "pair_verdicts": {
+        "parameters": [
+          {
+            "pair_id": "p493/initial-1>initial-3",
+            "verdict": "correct"
+          }
+        ],
+        "parameters_and_pixels": [
+          {
+            "pair_id": "p493/initial-1>initial-3",
+            "verdict": "correct"
+          }
+        ]
+      }
+    }
+  ],
+  "training_pairs": 10,
+  "fit_pair_groups": 8,
+  "historical_p227": {
+    "parameters": {
+      "chosen": 0.1873499998487437,
+      "rejected": -1.0883028585177545,
+      "verdict": "correct"
+    },
+    "parameters_and_pixels": {
+      "chosen": -5.340466460488023,
+      "rejected": -9.631383679856839,
+      "verdict": "correct"
+    }
+  },
+  "full_fit_weights": {
+    "parameters": [
+      -1.6743120900273145,
+      0.6244999994958124
+    ],
+    "parameters_and_pixels": [
+      -0.745110785074564,
+      0.623938597492431,
+      -151.68967191137446,
+      -95.74479597970856,
+      -29.192333293198615,
+      -31.717156743597442,
+      -101.97137752584135,
+      -31.71816986154105,
+      -31.805999313645934,
+      -1.039781381097999,
+      -5.705446187384507
+    ]
+  },
+  "GPU_hours": 0,
+  "deployed": false,
+  "final_acceptance_opened": false
+}

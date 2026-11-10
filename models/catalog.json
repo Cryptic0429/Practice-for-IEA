@@ -1,6 +1,6 @@
 {
   "schema": "iea-model-catalog-v1",
-  "changed_on": "2026-11-05",
+  "changed_on": "2026-11-07",
   "current": "from-sft-standard/sft-calibrated/seed-02",
   "lineage": {
     "qwen2.5-vl-7b-instruct": [
@@ -640,6 +640,383 @@
         "local": true,
         "server": true
       }
+    },
+    {
+      "id": "functional-v6-base-20261110",
+      "display_name": "第六轮 · 基础起点 · 第4轮（未通过）",
+      "canonical_path": "models/from-base/sft-native-coverage/seed-01",
+      "kind": "lora_adapter",
+      "adapter_sha256": "4a3d5feb5443c867eadd8426aa47ee2f033f9b1e0e643db8d1ada1da06e013b0",
+      "parent_model": {
+        "canonical_path": "models/Qwen2.5-VL-7B-Instruct",
+        "adapter_sha256": null
+      },
+      "selected_for_current": false,
+      "status": "diagnostic_trial_only_not_promoted",
+      "runtime_family": "functional_v1",
+      "training_route": null,
+      "training": {
+        "rows": 920,
+        "semantic_cases": 460,
+        "source_groups": 160,
+        "dataset_sha256": "a8c752ec8bd2ef5ca4e31173dd3973d7c72162be752a9aadb2623d385633014c"
+      },
+      "evaluation_records": [
+        "experiments/functional-v6-20261105/development-selection.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      }
+    },
+    {
+      "id": "functional-v6-continued-20261110",
+      "display_name": "第六轮 · 继续训练 · 第4轮（未通过）",
+      "canonical_path": "models/from-functional-v2/sft-native-coverage/seed-01",
+      "kind": "lora_adapter",
+      "adapter_sha256": "39d0e3b91c321ee0abeca8f3260116c76405d371127ba118e04822701e09f66c",
+      "parent_model": {
+        "canonical_path": "models/from-functional-v1/sft-curriculum/seed-01",
+        "adapter_sha256": "4048de5078f4eda6b19621a2968718be50f4cd5ad35fd17dbf23614a885edb71"
+      },
+      "selected_for_current": false,
+      "status": "diagnostic_trial_only_not_promoted",
+      "runtime_family": "functional_v1",
+      "training_route": null,
+      "training": {
+        "rows": 920,
+        "semantic_cases": 460,
+        "source_groups": 160,
+        "dataset_sha256": "a8c752ec8bd2ef5ca4e31173dd3973d7c72162be752a9aadb2623d385633014c"
+      },
+      "evaluation_records": [
+        "experiments/functional-v6-20261105/development-selection.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      }
+    },
+    {
+      "id": "functional-v7-language-20261112",
+      "display_name": "第七轮 · 语言层 · 第4轮（未通过）",
+      "canonical_path": "models/from-functional-v6/sft-outcome-language/seed-01",
+      "kind": "lora_adapter",
+      "adapter_sha256": "8ba48c589c11d7be0d0dfc0c70ca0c369658e1c4749c27d568e894cd828b6bdc",
+      "parent_model": {
+        "canonical_path": "models/from-functional-v2/sft-native-coverage/seed-01",
+        "adapter_sha256": "39d0e3b91c321ee0abeca8f3260116c76405d371127ba118e04822701e09f66c"
+      },
+      "selected_for_current": false,
+      "status": "diagnostic_trial_only_not_promoted",
+      "runtime_family": "functional_v7",
+      "training_route": "language",
+      "training": {
+        "rows": 924,
+        "semantic_cases": 462,
+        "source_groups": 160,
+        "dataset_sha256": "fe3f8e6479c5d74ea3783cc4edb643f1a2fc5a79ba50e826df5a5786ec8e068c"
+      },
+      "evaluation_records": [
+        "experiments/functional-v7-20261105/development-selection.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      }
+    },
+    {
+      "id": "functional-v7-language-merger-20261112",
+      "display_name": "第七轮 · 语言＋视觉连接层 · 第4轮（未通过）",
+      "canonical_path": "models/from-functional-v6/sft-outcome-language-merger/seed-01",
+      "kind": "lora_adapter",
+      "adapter_sha256": "f0c977b77158ecf8b9eab9d9f1aba7a4efb5f766382c3cb37ef26a01aaac3b94",
+      "parent_model": {
+        "canonical_path": "models/from-functional-v2/sft-native-coverage/seed-01",
+        "adapter_sha256": "39d0e3b91c321ee0abeca8f3260116c76405d371127ba118e04822701e09f66c"
+      },
+      "selected_for_current": false,
+      "status": "diagnostic_trial_only_not_promoted",
+      "runtime_family": "functional_v7",
+      "training_route": "language_merger",
+      "training": {
+        "rows": 924,
+        "semantic_cases": 462,
+        "source_groups": 160,
+        "dataset_sha256": "fe3f8e6479c5d74ea3783cc4edb643f1a2fc5a79ba50e826df5a5786ec8e068c"
+      },
+      "evaluation_records": [
+        "experiments/functional-v7-20261105/development-selection.json"
+      ],
+      "availability": {
+        "local": true,
+        "server": true
+      }
+    },
+    {
+      "id": "from-base/sft-fresh-outcome/seed-01",
+      "trial_id": "functional-v9-base-20261115",
+      "canonical_path": "models/from-base/sft-fresh-outcome/seed-01",
+      "display_name": "第九轮 · 原始Qwen起点 · 第4轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "models/Qwen2.5-VL-7B-Instruct",
+      "runtime_family": "functional_v9",
+      "origin": "base",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-base/sft-fresh-outcome/seed-01/metadata.json",
+      "adapter_sha256": "d52166fea0abcf048a101c80e896a8de74f6ce386f09101c72cc772a37d9f902"
+    },
+    {
+      "id": "from-author-iea/sft-fresh-outcome/seed-01",
+      "trial_id": "functional-v9-author-20261115",
+      "canonical_path": "models/from-author-iea/sft-fresh-outcome/seed-01",
+      "display_name": "第九轮 · 作者IEA起点 · 第4轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "models/Qwen2.5-VL-7B-IEA",
+      "runtime_family": "functional_v9",
+      "origin": "author",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-author-iea/sft-fresh-outcome/seed-01/metadata.json",
+      "adapter_sha256": "c4e1c2d5054ea5f1decb6ac0d60dbd8aa41509730360d58f1461a7525a7ca988"
+    },
+    {
+      "id": "from-functional-v9/sft-condition-language/seed-01",
+      "trial_id": "functional-v10-language-20261121",
+      "canonical_path": "models/from-functional-v9/sft-condition-language/seed-01",
+      "display_name": "第十轮 · 语言层 · 第2轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "experiments/functional-v9-20261106/runs/base-seed-20261115/checkpoint-231",
+      "runtime_family": "functional_v10",
+      "origin": "base",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v9/sft-condition-language/seed-01/metadata.json",
+      "adapter_sha256": "c3218a6c1d8ffd45e0f377712dc4611678d8da2b1fc6f07f34dfe3c8ac63725d"
+    },
+    {
+      "id": "from-functional-v9/sft-condition-language-merger/seed-01",
+      "trial_id": "functional-v10-language-merger-20261121",
+      "canonical_path": "models/from-functional-v9/sft-condition-language-merger/seed-01",
+      "display_name": "第十轮 · 语言层＋视觉连接层 · 第2轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "experiments/functional-v9-20261106/runs/base-seed-20261115/checkpoint-231",
+      "runtime_family": "functional_v10",
+      "origin": "base",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v9/sft-condition-language-merger/seed-01/metadata.json",
+      "adapter_sha256": "772ead8e694bdf3d4fee2a189cc6e1222f7c2ebe539c7795364fbbfc7341ebbd"
+    },
+    {
+      "id": "from-functional-v10/sft-negative-gain-correction/seed-01",
+      "trial_id": "functional-v11-negative-gain-20261123",
+      "canonical_path": "models/from-functional-v10/sft-negative-gain-correction/seed-01",
+      "display_name": "第十一轮 · 负曝光与指令纠错 · 第1轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "experiments/functional-v10-20261106/runs/language_merger-seed-20261121/final",
+      "runtime_family": "functional_v11",
+      "origin": "base",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v10/sft-negative-gain-correction/seed-01/metadata.json",
+      "adapter_sha256": "12243ea5f08ab9e2e75b082fd6e6a1e6e8b1efbd7eb4e102be3563ba084c4a56"
+    },
+    {
+      "id": "from-functional-v11/sft-manual-calibration/seed-01",
+      "trial_id": "functional-v12-manual-calibration-20261125",
+      "canonical_path": "models/from-functional-v11/sft-manual-calibration/seed-01",
+      "display_name": "第十二轮 · 工具说明与短训练 · 第1轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "experiments/functional-v11-20261106/runs/language_merger-seed-20261123/final",
+      "runtime_family": "functional_v12",
+      "origin": "base",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v11/sft-manual-calibration/seed-01/metadata.json",
+      "adapter_sha256": "6342f7a2af74a31bf84331426ada1c4a11109ab50b88f8af8bcb7bd3e2b0f7ab"
+    },
+    {
+      "id": "from-functional-v11/sft-real-coverage/language_merger/seed-01",
+      "trial_id": "functional-v13-real-coverage-narrow-20261127",
+      "canonical_path": "models/from-functional-v11/sft-real-coverage/language_merger/seed-01",
+      "display_name": "第十三轮 · 原微调范围 · 第1轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "experiments/functional-v11-20261106/runs/language_merger-seed-20261123/final",
+      "runtime_family": "functional_v13",
+      "origin": "base",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v11/sft-real-coverage/language_merger/seed-01/metadata.json",
+      "adapter_sha256": "66e30d88a277089c5d02079e8ac327b63fc69830647459b4b0e08a336e6ccae3"
+    },
+    {
+      "id": "from-functional-v11/sft-real-coverage/all_language_merger/seed-01",
+      "trial_id": "functional-v13-real-coverage-wide-20261127",
+      "canonical_path": "models/from-functional-v11/sft-real-coverage/all_language_merger/seed-01",
+      "display_name": "第十三轮 · 扩展语言投影 · 第1轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "experiments/functional-v11-20261106/runs/language_merger-seed-20261123/final",
+      "runtime_family": "functional_v13",
+      "origin": "base",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v11/sft-real-coverage/all_language_merger/seed-01/metadata.json",
+      "adapter_sha256": "ceb858fe6683ad7e92d46819f4ca75d42e7011b860be5d55c5063567befea4b3"
+    },
+    {
+      "id": "from-functional-v11/sft-visual-late4/seed-01",
+      "trial_id": "functional-v14-visual-late4-20261127",
+      "canonical_path": "models/from-functional-v11/sft-visual-late4/seed-01",
+      "display_name": "第十四轮 · 视觉末四层 · 第1轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "experiments/functional-v11-20261106/runs/language_merger-seed-20261123/final",
+      "runtime_family": "functional_v14",
+      "origin": "base",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v11/sft-visual-late4/seed-01/metadata.json",
+      "adapter_sha256": "04804b0ff29e3d9f23f32cddc395dd833c6447b4579f31735a20482a47c7fa47"
+    },
+    {
+      "id": "from-functional-v11/sft-shadow-correction/seed-01",
+      "trial_id": "functional-v15-shadow-correction-20261127",
+      "canonical_path": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "display_name": "第十五轮 · 阴影标签修正 · 第1轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "experiments/functional-v11-20261106/runs/language_merger-seed-20261123/final",
+      "runtime_family": "functional_v15",
+      "origin": "base",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v11/sft-shadow-correction/seed-01/metadata.json",
+      "adapter_sha256": "97c84f1799fb319799c86515402574b3b585593763e5388eb30d0df3e0d6ea90"
+    },
+    {
+      "id": "from-functional-v15/sft-counterfactual-ranking/seed-01",
+      "trial_id": "functional-v18-counterfactual-ranking-20261129",
+      "canonical_path": "models/from-functional-v15/sft-counterfactual-ranking/seed-01",
+      "display_name": "第十八轮 · 图像偏好排序 · 第2轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "runtime_family": "functional_v18",
+      "origin": "base",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v15/sft-counterfactual-ranking/seed-01/metadata.json",
+      "adapter_sha256": "925134a655efd8a536c3957a783810f4ad25c2cfe99806011927227e548e67c8"
+    },
+    {
+      "id": "from-functional-v15/sft-repeated-positive-control/seed-01",
+      "trial_id": "functional-v18-matched-sft-20261129",
+      "canonical_path": "models/from-functional-v15/sft-repeated-positive-control/seed-01",
+      "display_name": "第十八轮 · 同预算正例对照 · 第2轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "runtime_family": "functional_v18",
+      "origin": "base",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v15/sft-repeated-positive-control/seed-01/metadata.json",
+      "adapter_sha256": "bcb0a5a734fdf9930a77c4b028b77641b6dc6e0459945ece3e13ce4a96d2c87a"
+    },
+    {
+      "id": "from-functional-v15/sft-photometric-bridge/seed-01",
+      "trial_id": "functional-v19-photometric-bridge-20261129",
+      "canonical_path": "models/from-functional-v15/sft-photometric-bridge/seed-01",
+      "display_name": "第十九轮 · 明暗与色彩输入分支 · 第2轮（未通过）",
+      "kind": "lora_adapter",
+      "parent": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "runtime_family": "functional_v19",
+      "origin": "base",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v15/sft-photometric-bridge/seed-01/metadata.json",
+      "adapter_sha256": "9be16f1e8e42ca54dd356c59052ea487c291878b2f128925eb8227c40a05b78d"
+    },
+    {
+      "id": "from-functional-v15/continuous-controller-last/seed-01",
+      "trial_id": "functional-v20-last-20261203",
+      "canonical_path": "models/from-functional-v15/continuous-controller-last/seed-01",
+      "display_name": "第二十轮 · 最后位置预测头 · 第80轮（未通过）",
+      "kind": "frozen_VLM_plus_learned_controller",
+      "parent": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "runtime_family": "functional_v20",
+      "status": "diagnostic_trial_only_not_promoted",
+      "controller_sha256": "24184a36443d4ba0a69ae8a9bfeb108d0a9d01c8f884f3eddfe3118a0f7fa0df",
+      "metadata": "models/from-functional-v15/continuous-controller-last/seed-01/metadata.json"
+    },
+    {
+      "id": "from-functional-v15/continuous-controller-request-mean/seed-01",
+      "trial_id": "functional-v20-request-mean-20261203",
+      "canonical_path": "models/from-functional-v15/continuous-controller-request-mean/seed-01",
+      "display_name": "第二十轮 · 原始请求均值预测头 · 第80轮（未通过）",
+      "kind": "frozen_VLM_plus_learned_controller",
+      "parent": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "runtime_family": "functional_v20",
+      "status": "diagnostic_trial_only_not_promoted",
+      "controller_sha256": "57c79e7f3a907103ee1c00f134d8e4a38b5ad4eccad422ba6b1f2725e545ad50",
+      "metadata": "models/from-functional-v15/continuous-controller-request-mean/seed-01/metadata.json"
+    },
+    {
+      "id": "from-functional-v15/semantic-preserving-controller/seed-01/magnitude",
+      "trial_id": "functional-v21-magnitude-20261205",
+      "canonical_path": "models/from-functional-v15/semantic-preserving-controller/seed-01",
+      "display_name": "第二十一轮 · 仅幅度对照 · 种子1（未通过复核）",
+      "kind": "frozen_parent_LM_semantics_plus_CPU_magnitude_quality_head",
+      "parent": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "runtime_family": "functional_v21",
+      "status": "diagnostic_trial_only_not_promoted",
+      "controller_sha256": "838342a2167038589a91b646ad98432ec4749e698d4b29ad7f2b520b366a26da",
+      "metadata": "models/from-functional-v15/semantic-preserving-controller/seed-01/metadata.json"
+    },
+    {
+      "id": "from-functional-v15/semantic-preserving-controller/seed-01/quality",
+      "trial_id": "functional-v21-quality-20261205",
+      "canonical_path": "models/from-functional-v15/semantic-preserving-controller/seed-01",
+      "display_name": "第二十一轮 · 幅度＋质量拒绝 · 种子1（未通过复核）",
+      "kind": "frozen_parent_LM_semantics_plus_CPU_magnitude_quality_head",
+      "parent": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "runtime_family": "functional_v21",
+      "status": "diagnostic_trial_only_not_promoted",
+      "controller_sha256": "838342a2167038589a91b646ad98432ec4749e698d4b29ad7f2b520b366a26da",
+      "metadata": "models/from-functional-v15/semantic-preserving-controller/seed-01/metadata.json"
+    },
+    {
+      "id": "from-functional-v15/semantic-preserving-controller/seed-02/quality",
+      "trial_id": "functional-v21-quality-20261206",
+      "canonical_path": "models/from-functional-v15/semantic-preserving-controller/seed-02",
+      "display_name": "第二十一轮 · 幅度＋质量拒绝 · 种子2（未通过复核）",
+      "kind": "frozen_parent_LM_semantics_plus_CPU_magnitude_quality_head",
+      "parent": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "runtime_family": "functional_v21",
+      "status": "diagnostic_trial_only_not_promoted",
+      "controller_sha256": "2e97f749e4d87bd8de13b1f725eeb8d815497bd5866d854f46c9fe7125cbc316",
+      "metadata": "models/from-functional-v15/semantic-preserving-controller/seed-02/metadata.json"
+    },
+    {
+      "id": "models/from-functional-v15/quality-coverage-controller/seed-20261205/controller.pt",
+      "trial_id": "functional-v22-quality-20261205",
+      "canonical_path": "models/from-functional-v15/quality-coverage-controller/seed-20261205",
+      "display_name": "第二十二轮 · 质量覆盖 · 种子1（未通过）",
+      "runtime_family": "functional_v22",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v15/quality-coverage-controller/seed-20261205/metadata.json"
+    },
+    {
+      "id": "models/from-functional-v15/quality-coverage-controller/seed-20261206/controller.pt",
+      "trial_id": "functional-v22-quality-20261206",
+      "canonical_path": "models/from-functional-v15/quality-coverage-controller/seed-20261206",
+      "display_name": "第二十二轮 · 质量覆盖 · 种子2（未通过）",
+      "runtime_family": "functional_v22",
+      "status": "diagnostic_trial_only_not_promoted",
+      "metadata": "models/from-functional-v15/quality-coverage-controller/seed-20261206/metadata.json"
+    },
+    {
+      "id": "models/from-functional-v15/sft-quality-coverage/seed-20261207",
+      "trial_id": "functional-v23-quality-20261207",
+      "canonical_path": "models/from-functional-v15/sft-quality-coverage/seed-20261207",
+      "runtime_family": "functional_v23",
+      "display_name": "第二十三轮 · 直接微调 · 种子1（未验收）",
+      "status": "diagnostic_only_budget_closed",
+      "metadata": "models/from-functional-v15/sft-quality-coverage/seed-20261207/metadata.json"
+    },
+    {
+      "id": "models/from-functional-v15/sft-quality-coverage/seed-20261208",
+      "trial_id": "functional-v23-quality-20261208",
+      "canonical_path": "models/from-functional-v15/sft-quality-coverage/seed-20261208",
+      "runtime_family": "functional_v23",
+      "display_name": "第二十三轮 · 直接微调 · 种子2（未验收）",
+      "status": "diagnostic_only_budget_closed",
+      "metadata": "models/from-functional-v15/sft-quality-coverage/seed-20261208/metadata.json"
     }
   ],
   "full_models": [

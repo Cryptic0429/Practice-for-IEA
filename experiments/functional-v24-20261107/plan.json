@@ -1,0 +1,193 @@
+{
+  "scan_sha256": "79bf30a4819d931c8a143728fced699fedf685612d35c0e172d00fad97298e5e",
+  "intent": "Frozen before candidate execution. Original stored GIER TRAIN images, no synthetic corruption. Four portraits and four outdoor scenes chosen from visually checked source tiles. Paired English and Chinese requests were AI-authored before any edit render. Full-frame review and same-coordinate native crop. Target admission requires visible execution and source isolation. Rejected edits are restricted to actual substantial defects; visibly incomplete variants can be scored partial. If no tested edit works, record tested-range failure separately from any decline label.",
+  "cases": [
+    {
+      "id": "p127",
+      "domain": "portrait",
+      "instructions": {
+        "zh": "稍微提亮背光人像的暗部，让脸更容易看清，同时保留肤色和蓝天的层次。",
+        "en": "Gently lift the shadows in this backlit portrait so the face is easier to see, while keeping natural skin colour and the tonal detail in the blue sky."
+      },
+      "crop_center_fraction": [
+        0.52,
+        0.57
+      ],
+      "edits": [
+        {
+          "shadows": 30
+        },
+        {
+          "shadows": 80
+        },
+        {
+          "exposure": 65
+        }
+      ]
+    },
+    {
+      "id": "p261",
+      "domain": "portrait",
+      "instructions": {
+        "zh": "把人像的暗部提亮一些，让脸和深色西装的细节更清楚，保留自然肤色和背景的暗调。",
+        "en": "Lift the shadows in this portrait so the face and dark suit are easier to see, while keeping natural skin colour and the dark mood of the background."
+      },
+      "crop_center_fraction": [
+        0.54,
+        0.49
+      ],
+      "edits": [
+        {
+          "shadows": 30
+        },
+        {
+          "shadows": 80
+        },
+        {
+          "exposure": 65
+        }
+      ]
+    },
+    {
+      "id": "p227",
+      "domain": "portrait",
+      "instructions": {
+        "zh": "轻轻提亮这张室内合照的暗部，保留肤色和发丝，别让颗粒变得显眼。",
+        "en": "Gently lift the shadows in this indoor portrait, keeping skin colour and hair detail without making grain stand out."
+      },
+      "crop_center_fraction": [
+        0.33,
+        0.41
+      ],
+      "edits": [
+        {
+          "shadows": 30
+        },
+        {
+          "shadows": 80
+        },
+        {
+          "exposure": 65
+        }
+      ]
+    },
+    {
+      "id": "p444",
+      "domain": "portrait",
+      "instructions": {
+        "zh": "把霓虹灯旁的人像提亮到能清楚看见五官，保留霓虹灯颜色，暗处不要出现显眼色斑。",
+        "en": "Brighten the portrait next to the neon sign until the facial features are clear, while keeping the neon colours and avoiding obvious blotches in the shadows."
+      },
+      "crop_center_fraction": [
+        0.66,
+        0.42
+      ],
+      "edits": [
+        {
+          "shadows": 45
+        },
+        {
+          "exposure": 65
+        },
+        {
+          "exposure": 100,
+          "shadows": 100
+        }
+      ]
+    },
+    {
+      "id": "p038",
+      "domain": "landscape",
+      "instructions": {
+        "zh": "轻轻提亮草地和前景阴影，保留蓝天白云的层次。",
+        "en": "Gently lift the shadows in the field and foreground while keeping detail in the blue sky and white clouds."
+      },
+      "crop_center_fraction": [
+        0.46,
+        0.57
+      ],
+      "edits": [
+        {
+          "shadows": 30
+        },
+        {
+          "shadows": 80
+        },
+        {
+          "exposure": 65
+        }
+      ]
+    },
+    {
+      "id": "p749",
+      "domain": "landscape",
+      "instructions": {
+        "zh": "提亮海边夜景的暗处，让前景的纹理更容易看清，保留火花的颜色和夜景氛围。",
+        "en": "Lift the shadows in this coastal night scene so the foreground texture is easier to see, while preserving the colour of the sparks and the nighttime mood."
+      },
+      "crop_center_fraction": [
+        0.51,
+        0.73
+      ],
+      "edits": [
+        {
+          "shadows": 30
+        },
+        {
+          "shadows": 80
+        },
+        {
+          "exposure": 65
+        }
+      ]
+    },
+    {
+      "id": "p425",
+      "domain": "landscape",
+      "instructions": {
+        "zh": "提亮树林夜景的暗部，让中下部的树干和地面可以清楚辨认，避免明显色斑。",
+        "en": "Lift the shadows of this woodland night scene so the trunks and ground in the lower half are clearly recognizable, without obvious colour blotches."
+      },
+      "crop_center_fraction": [
+        0.52,
+        0.56
+      ],
+      "edits": [
+        {
+          "shadows": 45
+        },
+        {
+          "exposure": 65
+        },
+        {
+          "exposure": 100,
+          "shadows": 100
+        }
+      ]
+    },
+    {
+      "id": "p389",
+      "domain": "landscape",
+      "instructions": {
+        "zh": "提亮火光附近的夜景暗部，清楚显示周围地形，保留火光颜色且不出现明显色块。",
+        "en": "Lift the shadows near the fire until the surrounding terrain is clearly visible, while keeping the fire colour and avoiding obvious blotches."
+      },
+      "crop_center_fraction": [
+        0.58,
+        0.73
+      ],
+      "edits": [
+        {
+          "shadows": 45
+        },
+        {
+          "exposure": 65
+        },
+        {
+          "exposure": 100,
+          "shadows": 100
+        }
+      ]
+    }
+  ]
+}

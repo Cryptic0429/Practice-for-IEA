@@ -1,0 +1,495 @@
+{
+  "reviewer": "Codex direct AI review. Full frames and matching native crop; no independent Qwen or user judgment.",
+  "replay_sha256": "a8aac4777788c65dcc3ef0393cf93051a956712abbc9b57610cb0669ab4ad057",
+  "detail_sha256": "a7dd8dc94136d10a27888ec6352d95ff7c33fb73999409f14cd3f55ebd493fa4",
+  "cases": [
+    {
+      "id": "p345",
+      "panels": {
+        "p345.png": "c6a6cb42dcb1a62049573c4587f38d759e0902b80f8cfc2085c2244e3e430469",
+        "p345-bright_trees.png": "49cee98d72da2672e4e57c241ce9f01f61ffdeb644908276fdf9b6f4e67da83a"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "眼周和胡须暗侧温和打开，背景高光过渡和背光轮廓保持。"
+        },
+        {
+          "index": 2,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "脸更亮，但暗发和眼窝反差削弱，比要求的小幅提亮更明显。"
+        },
+        {
+          "index": 3,
+          "verdict": "failed",
+          "cause": "scope_or_preservation",
+          "evidence": "整体曝光改变背景叶片亮斑的颜色和亮度，脸部受光区也明显抬亮，偏离仅轻提暗部。"
+        }
+      ]
+    },
+    {
+      "id": "p606",
+      "panels": {
+        "p606.png": "417342b901aab1f84aec59da09a2ab63146398c3769083de7fc4e0c1e96dc54b"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "眼周、面部和发丝更清楚，肤色仍自然，背景仍柔和。"
+        },
+        {
+          "index": 2,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "头发暗处和眼周变化很小，提升未达到适度。"
+        },
+        {
+          "index": 3,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "脸和头发局部均可见改善，保持了背景和自然肤色。"
+        }
+      ]
+    },
+    {
+      "id": "p112",
+      "panels": {
+        "p112.png": "debff16e7be2ade29a23d314b7f5969a8542eb4fa23afeda0fb0296a6d81b461",
+        "refinements/p112.png": "77013996eaffe9fc0d8ebf65d8173449bdcef86a58f5245fdb31815de3d1f8f5"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "uncertain",
+          "cause": null,
+          "evidence": "两张脸稍更可辨，但蓝紫色颗粒在脸上更明显，清晰度和颗粒要求能否同时达到仍不确定。"
+        },
+        {
+          "index": 2,
+          "verdict": "failed",
+          "cause": "artifact",
+          "evidence": "全局提亮放大两张脸上原有的蓝紫颗粒，背景灯也更强。"
+        },
+        {
+          "index": 3,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "保住大体冷暖关系，暗侧五官仍不清楚。"
+        }
+      ],
+      "refined_candidates": [
+        {
+          "index": 1,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "低档让轮廓更清楚一点，但暗处五官仍不易辨认。"
+        },
+        {
+          "index": 2,
+          "verdict": "uncertain",
+          "cause": null,
+          "evidence": "鼻与嘴轮廓稍清楚，蓝紫颗粒仍显眼，是否满足两处要求有疑义。"
+        }
+      ]
+    },
+    {
+      "id": "p189",
+      "panels": {
+        "p189.png": "a5674b0a458c803d2ee9c7d67723e527913ae6fd54f320b1fcd959d6e2fd0d26",
+        "p189-white_fabric.png": "d9ea887030c82f0aeb39fe44e7c1c4318668654fb68fa8e9d3d9d1791c5b4ee4"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "轻微提亮两人脸部暗侧和发丝，白衣褶皱基本保持。"
+        },
+        {
+          "index": 2,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "发丝和脸部更亮，但背景也明显打开，效果比小幅更强。"
+        },
+        {
+          "index": 3,
+          "verdict": "failed",
+          "cause": "scope_or_preservation",
+          "evidence": "原本已受光的面部和白衣也明显变亮，暗部选择性不足，白衣褶皱的明暗反差减小。"
+        }
+      ]
+    },
+    {
+      "id": "p292",
+      "panels": {
+        "p292.png": "0af2c09fe2e82d9597efccbed0497cde72c4e31f421d7a489d580411ae87aa62",
+        "p292-left_face.png": "379efccabec9a2e0587ad61782dede7b857933a06b90a1c0febc2d8994992798",
+        "refinements/p292.png": "e5188905bfef29364a692e727edd7f071c9a078263ba87fc6e8c6a2b5440df2d"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "failed",
+          "cause": "artifact",
+          "evidence": "右侧脸的暗处出现更明显红紫颗粒和色斑，左侧肤色也更粗糙。"
+        },
+        {
+          "index": 2,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "前面两个人的眼周和脸部仍太暗，未达到明显提亮。"
+        },
+        {
+          "index": 3,
+          "verdict": "failed",
+          "cause": "artifact",
+          "evidence": "肤色暗侧抬亮后原有块状红紫斑点更显眼，皮肤细节没有随亮度一同恢复。"
+        }
+      ],
+      "refined_candidates": [
+        {
+          "index": 1,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "面部比原图更亮，左脸眼周仍很暗，右脸有红色粗纹。"
+        },
+        {
+          "index": 2,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "原来的室内气氛保留，前景两张脸改善有限。"
+        }
+      ]
+    },
+    {
+      "id": "p067",
+      "panels": {
+        "p067.png": "de4fad467c38fa6a116ff4fe112b892abec2cdacf735c9f83b04e4d3711d66f1",
+        "refinements/p067.png": "06c73d87f662516f8b9547626a00d7404b86e6c0d3321f2d43af7210eb3b97ab"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "failed",
+          "cause": "artifact",
+          "evidence": "侧脸暗侧抬亮后，原像素看见红绿块状斑点。"
+        },
+        {
+          "index": 2,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "衬衫条纹略清楚，脸侧暗处仍难辨认。"
+        },
+        {
+          "index": 3,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "背景暗调保持，侧脸和衬衫的改善较小。"
+        }
+      ],
+      "refined_candidates": [
+        {
+          "index": 1,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "衣纹更可见，侧脸暗处仍然较黑，原像素出现一些块状变化。"
+        },
+        {
+          "index": 2,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "衣纹和亮侧轮廓略有改善，脸暗侧仍不易辨认。"
+        }
+      ]
+    },
+    {
+      "id": "p325",
+      "panels": {
+        "p325.png": "b93fd121bc84f45c42ab3c23dcb0d8af9a6cfb38df8060207b817f73371c38bc",
+        "p325-two_faces.png": "04f00a8ad54eeee7f3ad7f25c7aecda94090cd4e0c89a9d4322224ad9d42ac74",
+        "refinements/p325.png": "08245698cc94f2a169897d338db363a06ffe18e75fc710a22c7afd2db1534dc5"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "uncertain",
+          "cause": null,
+          "evidence": "桌灯和整体夜间气氛保持，人物略更清楚，但自然原有颗粒和完成幅度仍有疑义。"
+        },
+        {
+          "index": 2,
+          "verdict": "failed",
+          "cause": "artifact",
+          "evidence": "深色西装和头发的红绿颗粒明显放大。"
+        },
+        {
+          "index": 3,
+          "verdict": "failed",
+          "cause": "artifact",
+          "evidence": "人物更亮，但头发、阴影和西装内出现明显彩色粗点。"
+        }
+      ],
+      "refined_candidates": [
+        {
+          "index": 1,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "暖灯和整体氛围保留，人物提升可见但较小。"
+        },
+        {
+          "index": 2,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "整图中靠左和靠右的面部均比原图可辨，保留暖灯与夜色；原像素有原来的细粒，未见强档那样明显的斑点增幅。"
+        }
+      ]
+    },
+    {
+      "id": "p761",
+      "panels": {
+        "p761.png": "f73760a0be11778915cb7e542515781ba84685a8843028ef60b31df4b4f7698e"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "衣服暗处和肤色更易辨认，蕾丝纹理和水面云层保留。"
+        },
+        {
+          "index": 2,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "暗侧小幅打开，改善弱于适度要求。"
+        },
+        {
+          "index": 3,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "两人面部暗侧和衣服变清楚，水面和天空保留原层次。"
+        }
+      ]
+    },
+    {
+      "id": "p129",
+      "panels": {
+        "p129.png": "7aff3b23b57641e13c9842b597cf9a05bfd9d452014a55c206bf710a5588f8db",
+        "p129-sky.png": "3c562a5f647e2636abfb545400870d94348ce45e96a9b94c06eb4031e6aa7a8e"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "浪纹稍更可见，部分前景原有块状纹理也更明显。"
+        },
+        {
+          "index": 2,
+          "verdict": "failed",
+          "cause": "artifact",
+          "evidence": "天空原像素出现更显眼的块状纹理，整体天空亮度也被抬高。"
+        },
+        {
+          "index": 3,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "水纹有轻微提升，地平线暖色与太阳外的亮度过渡保持。"
+        }
+      ]
+    },
+    {
+      "id": "p489",
+      "panels": {
+        "p489.png": "d39f7d6e89c596bcdf22ec9a3c0229fb7bdb319f7d9337811759478eb77a4e31"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "前景植被暗部只稍微变亮，适度提亮的可见变化不足。"
+        },
+        {
+          "index": 2,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "山谷前景有可见改善，天空粉色和暖岩层保留。"
+        },
+        {
+          "index": 3,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "前景更亮，但粉色天空和远岩层次比原图更浅。"
+        }
+      ]
+    },
+    {
+      "id": "p456",
+      "panels": {
+        "p456.png": "5fa62c3ffb2903ad4c1e416a250b030ba963102b794964109fb3e10526a27edb",
+        "p456-stars.png": "7f609193f60063ef55c32de87cf2067254d2555ed4fa7e038ce0923440ee9710"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "failed",
+          "cause": "artifact",
+          "evidence": "山脚和近处暗纹出现更明显的红绿块状带，天空星点周围颗粒也增强。"
+        },
+        {
+          "index": 2,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "基本保留星空，前景细节的改善有限。"
+        },
+        {
+          "index": 3,
+          "verdict": "failed",
+          "cause": "artifact",
+          "evidence": "山脚暗处显示原有的横向色带及红绿色块，提升未满足避免明显色块。"
+        }
+      ]
+    },
+    {
+      "id": "p526",
+      "panels": {
+        "p526.png": "8a896512efb8c4bf63a3d66654c30999ce454f67f08cd00fc53049301b27dd1b",
+        "p526-reflection.png": "6fa33e16468c2f0a041fd13a14b0a47837c1348d1be4249add6a3572517b92bc"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "failed",
+          "cause": "artifact",
+          "evidence": "树线黑区和倒影边缘出现更明显的方形层次。"
+        },
+        {
+          "index": 2,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "水面和天空明显亮，树线内部仍基本不可辨。"
+        },
+        {
+          "index": 3,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "水面反射稍打开，树线暗处变化有限。"
+        }
+      ]
+    },
+    {
+      "id": "p665",
+      "panels": {
+        "p665.png": "b34a575fb0bad6e7caebcbac5ef91a91ec436709b4e85cbd96209ee07331a050",
+        "p665-stars.png": "d47c45b1e48a7e884f5be90d35e39becfdc09ec886d2142434018cb0c01fb770"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "轮圈和前景近处有可辨改善，星空仍暗，轮胎旁色块增幅较小。"
+        },
+        {
+          "index": 2,
+          "verdict": "failed",
+          "cause": "artifact",
+          "evidence": "轮胎下方和草地原像素显示更明显紫绿色块。"
+        },
+        {
+          "index": 3,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "轮圈更清楚，但全局曝光同时抬亮星空和原有噪声，夜景氛围有减弱。"
+        }
+      ]
+    },
+    {
+      "id": "p508",
+      "panels": {
+        "p508.png": "5676071f0499a9eedf8171df664b3a0aeb23e5efe5526baa79ae64e0df239016"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "failed",
+          "cause": "scope_or_preservation",
+          "evidence": "全局曝光明显改变蓝天和积雪亮度，皮毛以外的区域改动超过要求。"
+        },
+        {
+          "index": 2,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "毛发纹理适度打开，蓝天和积雪层次保持。"
+        },
+        {
+          "index": 3,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "深色皮毛局部更可辨，天空基本保持，近处暗毛反差稍软但细节仍在。"
+        }
+      ]
+    },
+    {
+      "id": "p278",
+      "panels": {
+        "p278.png": "3d2a0546b26ab4b48cdd3e183137a38bf685b6a1eda2c38cc7d0ed97a3136dd4",
+        "p278-rock.png": "bb75611731a5c3e856f0b7117cf097eba793480b5daea0ab7bc3058f9b2d6a10",
+        "p278-clouds.png": "31a80037578cda03e27dc1390a60154957df075c50eb26b0f98e1f44e056cb53"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "岩石轮廓与阴影更可辨，原像素云纹和远山层次保持。"
+        },
+        {
+          "index": 2,
+          "verdict": "failed",
+          "cause": "scope_or_preservation",
+          "evidence": "岩石也提亮，但亮云原像素更接近一片白，云层细纹反差明显下降。"
+        },
+        {
+          "index": 3,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "云层保持，前景岩石只小幅打开。"
+        }
+      ]
+    },
+    {
+      "id": "p493",
+      "panels": {
+        "p493.png": "67144e62b26c905ed5d9631de5ab3a22e6b09eb5e3468b321c80d0822a612d82",
+        "p493-sun.png": "b5f6377d7bfbd7efdd5cacbbe8250462ae2d628b829e5c8ca9525556b7cb739f"
+      },
+      "candidates": [
+        {
+          "index": 1,
+          "verdict": "complete",
+          "cause": null,
+          "evidence": "前景植物和椅缘稍可辨，人物仍以剪影为主，日落暖色保持。"
+        },
+        {
+          "index": 2,
+          "verdict": "partial",
+          "cause": null,
+          "evidence": "前景更清楚，原有红色眩光也更明显。"
+        },
+        {
+          "index": 3,
+          "verdict": "failed",
+          "cause": "scope_or_preservation",
+          "evidence": "人物暗面整体被提亮、红色眩光增强，太阳周围暖色和白亮过渡减弱。"
+        }
+      ]
+    }
+  ],
+  "refined_replay_sha256": "dbd65d8841b165ae815f70f95306a070b42a91ac6dca108583a9db7b9a185fcf"
+}

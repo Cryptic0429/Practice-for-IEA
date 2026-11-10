@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-05T22:42:48.043688+00:00",
+  "status": "CPU_preflight_failed_then_parser_corrected",
+  "error": "AssertionError ('visual-risk-02','mild-noise-light','full-size concern')",
+  "cause": "Historical full-resolution notes used explicit completion/quality dictionaries while the new admission reader expected two-element lists.",
+  "fix": "Read both representations and preserve effective_quality uncertainty overrides. No observations or grades changed; the original normal-compound remains excluded and a separately viewed repair is used.",
+  "GPU_hours": 0,
+  "admitted_before_fix": false
+}

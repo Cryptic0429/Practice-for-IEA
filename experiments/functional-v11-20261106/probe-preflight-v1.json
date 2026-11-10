@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-05T23:26:38.376166+00:00",
+  "status": "CPU_preflight_failed_before_images_written",
+  "error": "KeyError: canonical",
+  "cause": "Style-output manifest references its input roles, while canonical input paths live in the counterfactual source manifest.",
+  "fix": "Read and SHA-check the canonical input from the source manifest; no parameter or review changed.",
+  "GPU_hours": 0,
+  "training_started": false
+}

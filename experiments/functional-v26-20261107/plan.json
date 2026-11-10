@@ -1,0 +1,378 @@
+{
+  "scan_sha256": "79bf30a4819d931c8a143728fced699fedf685612d35c0e172d00fad97298e5e",
+  "preview_lists": {
+    "shortlist.json": "6851d530cbcb6ec4dcdd6dc0883a0294af3a6b804c6d2f709080a02e5e239b23",
+    "outdoor-shortlist.json": "f2995b84ee1cb1acfc30c543deeea0f34005504e70f8a9432bdb7f1c6d4afdc2"
+  },
+  "scope": "Original stored TRAIN photos, no synthetic condition. Match the same authored literal requirement and source across all three executed edits. Order rotates. Record full-frame and matching native crops. Admit only direct complete vs concrete failure pairs; keep partial or uncertain observations out of paired supervision. Separate noise/quantization, wrong strength/scope and highlight/colour preservation failures.",
+  "cases": [
+    {
+      "id": "p345",
+      "domain": "portrait",
+      "crop_center_fraction": [
+        0.64,
+        0.5
+      ],
+      "instructions": {
+        "zh": "略微打开人物脸和胡须的暗部，保留背光和树林亮斑的层次。",
+        "en": "Slightly lift the shadows on the face and beard, keeping the backlit look and the bright detail in the trees."
+      },
+      "edits": [
+        {
+          "shadows": 38
+        },
+        {
+          "shadows": 77
+        },
+        {
+          "exposure": 60
+        }
+      ]
+    },
+    {
+      "id": "p606",
+      "domain": "portrait",
+      "crop_center_fraction": [
+        0.47,
+        0.54
+      ],
+      "instructions": {
+        "zh": "适度提亮人像暗部，让眼睛和深色头发更清楚，保持自然肤色和柔和背景。",
+        "en": "Moderately lift the portrait shadows so the eyes and dark hair read clearly, keeping natural skin tones and the soft background."
+      },
+      "edits": [
+        {
+          "exposure": 60
+        },
+        {
+          "shadows": 38
+        },
+        {
+          "shadows": 77
+        }
+      ]
+    },
+    {
+      "id": "p112",
+      "domain": "portrait",
+      "crop_center_fraction": [
+        0.53,
+        0.57
+      ],
+      "instructions": {
+        "zh": "提亮两个人脸上的暗部，让五官更容易辨认，保留原来的冷暖关系，避免显眼彩色颗粒。",
+        "en": "Lift the shadows on both faces until the features are easier to recognize, preserving the existing warm and cool colours without conspicuous colour speckle."
+      },
+      "edits": [
+        {
+          "shadows": 77
+        },
+        {
+          "exposure": 60
+        },
+        {
+          "shadows": 38
+        }
+      ]
+    },
+    {
+      "id": "p189",
+      "domain": "portrait",
+      "crop_center_fraction": [
+        0.59,
+        0.32
+      ],
+      "instructions": {
+        "zh": "小幅提亮合照里的脸和头发暗部，保留肤色和白衣纹理，避免颗粒明显增加。",
+        "en": "Slightly lift shadows on the faces and hair, keeping skin tones and the white fabric detail without a conspicuous increase in grain."
+      },
+      "edits": [
+        {
+          "shadows": 38
+        },
+        {
+          "shadows": 77
+        },
+        {
+          "exposure": 60
+        }
+      ]
+    },
+    {
+      "id": "p292",
+      "domain": "portrait",
+      "crop_center_fraction": [
+        0.6,
+        0.55
+      ],
+      "instructions": {
+        "zh": "明显提亮前面两个人的脸，能看清五官，同时保留室内氛围，避免肤色出现明显斑点。",
+        "en": "Make the two foreground faces noticeably brighter and easy to recognize, preserving the indoor mood and avoiding obvious speckle on skin."
+      },
+      "edits": [
+        {
+          "exposure": 60
+        },
+        {
+          "shadows": 38
+        },
+        {
+          "shadows": 77
+        }
+      ]
+    },
+    {
+      "id": "p067",
+      "domain": "portrait",
+      "crop_center_fraction": [
+        0.52,
+        0.46
+      ],
+      "instructions": {
+        "zh": "把侧脸和深色衬衫的暗部提亮到更好辨认，保留背景昏暗的气氛，避免彩色斑点。",
+        "en": "Lift the shadows so the profile and dark shirt are easier to recognize, preserving the dim background and avoiding coloured blotches."
+      },
+      "edits": [
+        {
+          "shadows": 77
+        },
+        {
+          "exposure": 60
+        },
+        {
+          "shadows": 38
+        }
+      ]
+    },
+    {
+      "id": "p325",
+      "domain": "portrait",
+      "crop_center_fraction": [
+        0.42,
+        0.57
+      ],
+      "instructions": {
+        "zh": "适度打开餐桌周围人物的暗部，让脸更好辨认，同时保留桌灯暖色和夜间气氛。",
+        "en": "Moderately lift shadows around the people at the table to make faces easier to recognize while retaining the warm lamps and evening mood."
+      },
+      "edits": [
+        {
+          "shadows": 38
+        },
+        {
+          "shadows": 77
+        },
+        {
+          "exposure": 60
+        }
+      ]
+    },
+    {
+      "id": "p761",
+      "domain": "portrait",
+      "crop_center_fraction": [
+        0.36,
+        0.51
+      ],
+      "instructions": {
+        "zh": "适度提亮两人的暗部，保留衣服纹理、自然肤色和水面天空的层次。",
+        "en": "Moderately lift shadows on the couple, keeping clothing detail, natural skin tones and the layers in the water and sky."
+      },
+      "edits": [
+        {
+          "exposure": 60
+        },
+        {
+          "shadows": 38
+        },
+        {
+          "shadows": 77
+        }
+      ]
+    },
+    {
+      "id": "p129",
+      "domain": "landscape",
+      "crop_center_fraction": [
+        0.58,
+        0.71
+      ],
+      "instructions": {
+        "zh": "轻轻提亮海边日出景色的暗部，让前景水纹更容易看见，保留暖色天空和太阳周围的过渡。",
+        "en": "Gently lift shadows in this coastal sunrise to reveal more foreground water texture, keeping the warm sky and the gradients around the sun."
+      },
+      "edits": [
+        {
+          "shadows": 77
+        },
+        {
+          "exposure": 60
+        },
+        {
+          "shadows": 38
+        }
+      ]
+    },
+    {
+      "id": "p489",
+      "domain": "landscape",
+      "crop_center_fraction": [
+        0.52,
+        0.66
+      ],
+      "instructions": {
+        "zh": "适度提亮山谷前景的暗部，保留峡谷和天空的暖色层次，不要让粉色天空整体变浅太多。",
+        "en": "Moderately lift foreground shadows in the valley, preserving warm layers in the canyon and sky without washing out the pink sky."
+      },
+      "edits": [
+        {
+          "shadows": 38
+        },
+        {
+          "shadows": 77
+        },
+        {
+          "exposure": 60
+        }
+      ]
+    },
+    {
+      "id": "p456",
+      "domain": "landscape",
+      "crop_center_fraction": [
+        0.46,
+        0.69
+      ],
+      "instructions": {
+        "zh": "让夜景山脊和前景细节更清楚，保留星空的深蓝色，避免暗部出现显眼色块。",
+        "en": "Reveal more detail in the night ridgeline and foreground while retaining the deep blue starry sky and avoiding obvious blotches in the shadows."
+      },
+      "edits": [
+        {
+          "exposure": 60
+        },
+        {
+          "shadows": 38
+        },
+        {
+          "shadows": 77
+        }
+      ]
+    },
+    {
+      "id": "p526",
+      "domain": "landscape",
+      "crop_center_fraction": [
+        0.45,
+        0.48
+      ],
+      "instructions": {
+        "zh": "略微提亮远处树线和水面倒影中的暗部，保留黄昏轮廓与天空渐变，避免暗处色块。",
+        "en": "Gently lift the distant tree line and its reflection, keeping the dusk silhouettes and sky gradient without obvious shadow blotches."
+      },
+      "edits": [
+        {
+          "shadows": 77
+        },
+        {
+          "exposure": 60
+        },
+        {
+          "shadows": 38
+        }
+      ]
+    },
+    {
+      "id": "p665",
+      "domain": "landscape",
+      "crop_center_fraction": [
+        0.49,
+        0.71
+      ],
+      "instructions": {
+        "zh": "提亮星空下的前景，让车和地面纹理更容易看清，同时保留星空和夜景氛围，避免显眼色斑。",
+        "en": "Lift the foreground under the stars so the truck and ground texture read more clearly, keeping the star field and night mood without conspicuous colour blotches."
+      },
+      "edits": [
+        {
+          "shadows": 38
+        },
+        {
+          "shadows": 77
+        },
+        {
+          "exposure": 60
+        }
+      ]
+    },
+    {
+      "id": "p508",
+      "domain": "landscape",
+      "crop_center_fraction": [
+        0.6,
+        0.54
+      ],
+      "instructions": {
+        "zh": "略微提亮雪地风景中深色动物的暗部，保留皮毛纹理、原来的蓝天和雪地层次。",
+        "en": "Gently lift shadows on the dark animal in the snowy landscape, keeping fur detail, the original blue sky and snow detail."
+      },
+      "edits": [
+        {
+          "exposure": 60
+        },
+        {
+          "shadows": 38
+        },
+        {
+          "shadows": 77
+        }
+      ]
+    },
+    {
+      "id": "p278",
+      "domain": "landscape",
+      "crop_center_fraction": [
+        0.53,
+        0.67
+      ],
+      "instructions": {
+        "zh": "适度提亮观景处前景的暗部，让岩石轮廓更容易看清，保留云层和远山的层次。",
+        "en": "Moderately lift the shadows in the overlook foreground so rock contours are easier to read, preserving the layers in the clouds and distant mountains."
+      },
+      "edits": [
+        {
+          "shadows": 77
+        },
+        {
+          "exposure": 60
+        },
+        {
+          "shadows": 38
+        }
+      ]
+    },
+    {
+      "id": "p493",
+      "domain": "landscape",
+      "crop_center_fraction": [
+        0.58,
+        0.64
+      ],
+      "instructions": {
+        "zh": "略微提亮日落前景的暗部，保留人物剪影和太阳周边暖色，避免整片天空变得发白。",
+        "en": "Gently lift the sunset foreground while keeping the figures silhouetted and preserving warm colour around the sun without washing out the sky."
+      },
+      "edits": [
+        {
+          "shadows": 38
+        },
+        {
+          "shadows": 77
+        },
+        {
+          "exposure": 60
+        }
+      ]
+    }
+  ]
+}

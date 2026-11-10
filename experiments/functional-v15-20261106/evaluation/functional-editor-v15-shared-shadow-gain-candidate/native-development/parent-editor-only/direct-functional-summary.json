@@ -1,0 +1,76 @@
+{
+  "model_id": "parent-editor-only",
+  "status": "completed",
+  "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+  "human_review": false,
+  "reviewed_outputs": 40,
+  "missing_unique_images": [],
+  "fully_completed_both_languages": 15,
+  "raw_individual_completed_both_languages": 15,
+  "identical_strength_pairs": [],
+  "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+  "photo_groups": 20,
+  "all_tasks_complete_photo_groups": 15,
+  "major_quality_issues": 0,
+  "major_issue_cases": [],
+  "per_family": {
+    "brown_tone": {
+      "completed": 1,
+      "cases": 1
+    },
+    "compound": {
+      "completed": 4,
+      "cases": 6
+    },
+    "contrast": {
+      "completed": 1,
+      "cases": 1
+    },
+    "lighting": {
+      "completed": 6,
+      "cases": 7
+    },
+    "saturation": {
+      "completed": 3,
+      "cases": 4
+    },
+    "white_balance": {
+      "completed": 0,
+      "cases": 1
+    }
+  },
+  "per_language": {
+    "zh": {
+      "completed": 16,
+      "failed": 2,
+      "uncertain": 2
+    },
+    "en": {
+      "completed": 16,
+      "failed": 2,
+      "uncertain": 2
+    }
+  },
+  "per_domain": {
+    "portrait": {
+      "completed": 8,
+      "cases": 10
+    },
+    "landscape": {
+      "completed": 7,
+      "cases": 10
+    }
+  },
+  "selection_uses_L1": false,
+  "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+  "review_sha256": "e25398e24b3e3ebf6ff3091f1e721177ef2f883a44f6d7701dce72a9f6a1df50",
+  "inference_performed": false,
+  "GPU_hours": 0,
+  "model_forward_calls": 0,
+  "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+  "runtime": "Exact saved parent decisions; CPU editor replay only",
+  "declined_language_outputs": 2,
+  "declined_semantic_cases": 1,
+  "unchanged_reviews_inherited": true,
+  "AI_disputes_preserved": true
+}

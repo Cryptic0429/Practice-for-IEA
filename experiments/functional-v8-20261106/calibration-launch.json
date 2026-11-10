@@ -1,0 +1,39 @@
+{
+  "at": "2026-11-05T19:12:42.707093+00:00",
+  "runs": [
+    {
+      "route": "base",
+      "gpu": "0",
+      "pid": 3994544,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-u",
+        "-m",
+        "functional_v8.calibrate_reward",
+        "--route",
+        "base",
+        "--gpu",
+        "0"
+      ],
+      "log": "experiments/functional-v8-20261106/calibrate-base.log"
+    },
+    {
+      "route": "editscore",
+      "gpu": "3",
+      "pid": 3994545,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-u",
+        "-m",
+        "functional_v8.calibrate_reward",
+        "--route",
+        "editscore",
+        "--gpu",
+        "3"
+      ],
+      "log": "experiments/functional-v8-20261106/calibrate-editscore.log"
+    }
+  ],
+  "own_policy_training": false,
+  "acceptance_opened": false
+}

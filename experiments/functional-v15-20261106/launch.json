@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-06T19:03:26.117016+00:00",
+  "jobs": [
+    {
+      "name": "train",
+      "pid": 4102137,
+      "command": [
+        "envs/iea-rl/bin/python",
+        "-m",
+        "functional_v15.train",
+        "--route",
+        "language_merger",
+        "--gpu",
+        "0",
+        "--seed",
+        "20261127"
+      ],
+      "at": "2026-11-06T19:03:26.116146+00:00",
+      "log": "experiments/functional-v15-20261106/train-launch.log"
+    },
+    {
+      "name": "evaluation-queue",
+      "pid": 4102138,
+      "command": [
+        "envs/iea-rl/bin/python",
+        "-m",
+        "functional_v15.evaluation_queue"
+      ],
+      "at": "2026-11-06T19:03:26.116982+00:00",
+      "log": "experiments/functional-v15-20261106/evaluation-queue-launch.log"
+    }
+  ],
+  "original_GPU1_PID": 3378799,
+  "preserved_watchdog_PID": 3879191
+}

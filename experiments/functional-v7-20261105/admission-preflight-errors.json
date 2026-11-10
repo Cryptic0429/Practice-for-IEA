@@ -1,0 +1,11 @@
+[
+  {
+    "at": "2026-11-05T16:57:21.298721+00:00",
+    "phase": "before any admitted dataset output",
+    "error": "KeyError: canonical_photo",
+    "cause": "Native source rows store the original input without a separate canonical_photo field; the admission audit incorrectly assumed that field existed on every prior row.",
+    "resolution": "Register canonical PNG hashes only for records that explicitly contain the canonical_photo field; original native input hashes remain mandatory.",
+    "code_before_fix_sha256": "46560ad894c0992a67964349bc0624be81e079e435bf36450b552bfc7cab10a9",
+    "GPU_hours": 0
+  }
+]

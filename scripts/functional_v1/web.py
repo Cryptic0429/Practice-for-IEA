@@ -22,6 +22,32 @@ from functional_v4.web_records import bp as round4_records
 app.register_blueprint(round4_records)
 from functional_v6.web_records import bp as round6_records
 app.register_blueprint(round6_records)
+from functional_v7.web_records import bp as round7_records
+app.register_blueprint(round7_records)
+from functional_v9.web_records import bp as round9_records
+app.register_blueprint(round9_records)
+from functional_v10.web_records import bp as round10_records
+app.register_blueprint(round10_records)
+from functional_v11.web_records import bp as round11_records
+app.register_blueprint(round11_records)
+from functional_v12.web_records import bp as round12_records
+app.register_blueprint(round12_records)
+from functional_v13.web_records import bp as round13_records
+app.register_blueprint(round13_records)
+from functional_v14.web_records import bp as round14_records
+app.register_blueprint(round14_records)
+from functional_v15.web_records import bp as round15_records
+app.register_blueprint(round15_records)
+from functional_v18.web_records import bp as round18_records
+app.register_blueprint(round18_records)
+from functional_v19.web_records import bp as round19_records
+from functional_v20.web_records import bp as round20_records
+from functional_v21.web_records import bp as round21_records
+app.register_blueprint(round19_records)
+app.register_blueprint(round20_records)
+app.register_blueprint(round21_records)
+from functional_v22.web_records import bp as current_records
+app.register_blueprint(current_records)
 WORKER = 'http://127.0.0.1:18282'
 REQUESTS = EXP/'demo/requests'
 LOCAL = re.compile(r'(?:remove|erase|delete|replace).*(?:outlet|person|people|object|background)|(?:移除|去掉|删除|替换).*(?:插座|人物|物体|背景)|(?:只|单独).*(?:脸|裙|衣服).*(?:颜色|变红|变蓝)|sharpen|锐化', re.I)
@@ -29,7 +55,7 @@ LOCAL = re.compile(r'(?:remove|erase|delete|replace).*(?:outlet|person|people|ob
 
 @app.get('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', inference_paused=(EXP/'BUDGET_STOP.json').is_file())
 
 
 @app.get('/api/models')
@@ -37,7 +63,7 @@ def get_models():
     items = models()
     public = [{k: v for k,v in item.items() if k != 'adapter'} for item in items]
     default = next((item['id'] for item in items if item.get('default')), 'current')
-    return jsonify(models=public, default=default)
+    return jsonify(models=public, default=default, inference_available=not (EXP/'BUDGET_STOP.json').is_file())
 
 
 @app.post('/api/edit')
@@ -46,12 +72,14 @@ def edit_image():
     model_id = request.form.get('model_id', '')
     if not instruction or 'image' not in request.files:
         return jsonify(status='failed', error='请选择图片并填写修图要求。'), 400
-    if LOCAL.search(instruction):
-        return jsonify(status='unsupported', error='这条要求需要局部编辑或锐化工具。当前试验版支持整体光照和调色，尚未提供这项能力。'), 422
     try:
-        resolve(model_id)
+        spec = resolve(model_id)
     except ValueError:
         return jsonify(status='failed', error='所选模型目前不可用。'), 400
+    if spec.get('runtime_family') not in ('functional_v7', 'functional_v9', 'functional_v10', 'functional_v11', 'functional_v12', 'functional_v13', 'functional_v14', 'functional_v15', 'functional_v18', 'functional_v19', 'functional_v20', 'functional_v21', 'functional_v22', 'functional_v23') and LOCAL.search(instruction):
+        return jsonify(status='unsupported', error='这条要求需要局部编辑或锐化工具。当前试验版支持整体光照和调色，尚未提供这项能力。'), 422
+    if (EXP/'BUDGET_STOP.json').is_file():
+        return jsonify(status='failed', code='budget_exhausted', error='24 GPU 小时实验预算已结算，暂不接收新的修图请求。已保存结果可继续查看和下载。', after=None, parameters=None), 503
     request_id = uuid.uuid4().hex
     directory = REQUESTS/request_id
     directory.mkdir(parents=True, exist_ok=False)
@@ -66,18 +94,37 @@ def edit_image():
         response = requests.post(WORKER+'/infer', json={'image': str(directory/'input.png'),
                                   'instruction': instruction, 'model_id': model_id}, timeout=180)
         result = response.json()
+        if result.get('status') == 'declined':
+            if spec.get('runtime_family') not in ('functional_v7', 'functional_v9', 'functional_v10', 'functional_v11', 'functional_v12', 'functional_v13', 'functional_v14', 'functional_v15', 'functional_v18', 'functional_v19', 'functional_v20', 'functional_v21', 'functional_v22', 'functional_v23'):
+                raise ValueError('所选旧模型未声明拒绝输出协议。')
+            if result.get('output') or result.get('output_sha256') or (directory/'output.png').exists():
+                (directory/'output.png').unlink(missing_ok=True)
+                raise ValueError('拒绝输出状态附带结果图，已阻止返回。')
+            reason = result.get('reason_code')
+            if reason not in ('unreliable_quality', 'unsupported_tools'):
+                raise ValueError('模型未提供有效的无法完成原因。')
+            message = ('当前工具无法在保留基本画质的同时可靠完成这条要求，因此未生成编辑结果。'
+                       if reason == 'unreliable_quality' else '这条要求需要当前模型尚不支持的操作，因此未生成编辑结果。')
+            record.update(status='declined', decision=result['decision'], parameters=None,
+                          reason_code=reason, identity=result['identity'], completed_at=stamp())
+            write(directory/'request.json', record)
+            return jsonify(status='declined', request_id=request_id, before=f'/files/{request_id}/input.png',
+                           after=None, parameters=None, decision=result['decision'], reason_code=reason,
+                           identity=result['identity'], message=message)
         if result.get('status') != 'executed':
-            record.update(status='failed', error=result.get('error', '模型推理失败。'))
+            record.update(status='failed', error=result.get('error', '模型推理失败。'), identity=result.get('identity'))
             write(directory/'request.json', record)
             return jsonify(status='failed', request_id=request_id,
-                           error='未能生成可执行的编辑结果。', detail=record['error']), 422
-        record.update(status='executed', parameters=result['parameters'], identity=result['identity'],
+                           error='未能生成可执行的编辑结果。', detail=record['error'], identity=record.get('identity'), after=None, parameters=None), 422
+        record.update(status='executed', execution_status=result.get('execution_status', 'edited'),
+                      decision=result.get('decision'), parameters=result['parameters'], identity=result['identity'],
                       output_sha256=result['output_sha256'], completed_at=stamp())
         write(directory/'request.json', record)
         return jsonify(status='executed', request_id=request_id,
                        before=f'/files/{request_id}/input.png', after=f'/files/{request_id}/output.png',
                        parameters=result['parameters'], identity=result['identity'],
-                       message='已生成编辑结果，请检查是否符合要求。')
+                       execution_status=result.get('execution_status', 'edited'), decision=result.get('decision'),
+                       message='已按要求保持原图不变。' if result.get('execution_status') == 'unchanged' else '已生成编辑结果，请检查是否符合要求。')
     except (UnidentifiedImageError, ValueError) as error:
         return jsonify(status='failed', error=str(error)), 400
     except requests.RequestException:

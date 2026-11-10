@@ -1,0 +1,39 @@
+{
+  "at": "2026-11-07T05:23:52.097873+00:00",
+  "fixed_models": {
+    "functional-v23-quality-20261207": "ed69c6d862b3e2dd595df8cfb161308a4f2bd2045ad17e1d1d738482f490a7d3",
+    "functional-v23-quality-20261208": "043489c53d6cc50625887665bf18edbe0f62c9aeb0fb16c0f481f3ead37af838"
+  },
+  "tasks": [
+    {
+      "split": "historical-case12-not-independent",
+      "case_id": "historical-case12-brown",
+      "language": "en",
+      "input_sha256": "ddaad7fef7d08ddef197579b74ee86b7a08cdb5845d6e254fad2f6295e5d6195",
+      "instruction": "Please, add brown tone"
+    },
+    {
+      "split": "native-development",
+      "case_id": "native-dev-070",
+      "language": "zh",
+      "input_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+      "instruction": "大幅提高亮度。"
+    },
+    {
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "en",
+      "input_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522",
+      "instruction": "Leave this photograph completely unchanged and return the original."
+    },
+    {
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "en",
+      "input_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522",
+      "instruction": "Add a small white dog in the lower-right corner of the photograph."
+    }
+  ],
+  "purpose": "Live literal offline-runtime identity and no-result/keep contract, not independent functional scoring.",
+  "independent_user_feedback": 0
+}

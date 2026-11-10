@@ -1,0 +1,241 @@
+{
+  "at": "2026-11-06T19:59:12.249279+00:00",
+  "checks": [
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "request_id": "74d79d5a9d524488a5728a8962c7ce6c",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "temperature": -24
+        }
+      },
+      "status": "executed",
+      "output_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-006",
+      "language": "en",
+      "request_id": "58ab5452e1984ea9bd34e2a24ad28bfe",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "temperature": -24
+        }
+      },
+      "status": "executed",
+      "output_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "request_id": "efc16428587545eabe77808560460b9f",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 95
+        }
+      },
+      "status": "executed",
+      "output_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-001",
+      "language": "en",
+      "request_id": "232d6c44ca1247238c550e4a01feb6e3",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 85
+        }
+      },
+      "status": "executed",
+      "output_sha256": "9b5d3cd438777e903149e2028664b123e732206592e19661e614c0fe56a34e44",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "zh",
+      "request_id": "e3c4c6c8ea8d4e379f2a07ea92a105e3",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unsupported_tools"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unsupported_tools",
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "en",
+      "request_id": "a20ebbe56496439e966661ab95a2b31a",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unsupported_tools"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unsupported_tools",
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "zh",
+      "request_id": "323bccb29a32403da5e451a56c2fd35e",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "keep"
+      },
+      "status": "executed",
+      "output_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522",
+      "execution_status": "unchanged",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "en",
+      "request_id": "04b906cb678b47f6aeccebd864ae61c7",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "keep"
+      },
+      "status": "executed",
+      "output_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522",
+      "execution_status": "unchanged",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-severe-light",
+      "language": "zh",
+      "request_id": "15cb788d85874a33854128c7054cd613",
+      "training_label_action": "decline",
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unreliable_quality"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unreliable_quality",
+      "quality_decline_obeyed": true
+    },
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-deep-light",
+      "language": "zh",
+      "request_id": "997b25bd646444f0a9459a1edbe5fe6d",
+      "training_label_action": "edit",
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "status": "executed",
+      "output_sha256": "d1e85ddfff3244df15528b433aeaec9e24843af32a1776d33d1d3eda9d434fb2",
+      "execution_status": "edited",
+      "offline_byte_identical": false,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-mild-noise-light",
+      "language": "zh",
+      "request_id": "55ff10e960074b689431c9b57ce10c02",
+      "training_label_action": "edit",
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "status": "executed",
+      "output_sha256": "c6413be536171d0eed9fb4489679f7621969e6613e5612096c0ac603d6c178fc",
+      "execution_status": "edited",
+      "offline_byte_identical": false,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "historical-case12-regression-not-independent",
+      "case_id": "historical-case12-brown",
+      "language": "zh",
+      "request_id": "7c00ce65278b415285ea5677ba159d94",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 95
+        }
+      },
+      "status": "executed",
+      "output_sha256": "05fb2a589a656f2dfff25c210d696c2b4531cfc0eac772a5e20934058a4c9559",
+      "execution_status": "edited",
+      "offline_byte_identical": false,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v15-shadow-correction-20261127",
+      "split": "historical-case12-regression-not-independent",
+      "case_id": "historical-case12-brown",
+      "language": "en",
+      "request_id": "a1725a9ee10a40efae270d947bce7396",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 85
+        }
+      },
+      "status": "executed",
+      "output_sha256": "d427c8bfdaeb5338b9ed9a2f6a6905597b88900f74e6c077a653cbba4a415c6b",
+      "execution_status": "edited",
+      "offline_byte_identical": false,
+      "quality_decline_obeyed": null
+    }
+  ],
+  "user_feedback": false
+}

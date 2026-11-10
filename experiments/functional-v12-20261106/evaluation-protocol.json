@@ -1,0 +1,89 @@
+{
+  "at": "2026-11-06T01:36:13.471158+00:00",
+  "status": "round12_cases_gates_and_general_manual_frozen_before_GPU_forward",
+  "case_files": {
+    "native_development": {
+      "path": "data/training/functional-v6-20261105/development-native-cases.json",
+      "sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+    },
+    "native_acceptance": {
+      "path": "data/training/functional-v6-20261105/acceptance-native-cases.json",
+      "sha256": "57e925135e2b7e076848aaa805b6a5ec6d167829f464ddf7d15c7889b7de0dca"
+    },
+    "controlled_development": {
+      "path": "data/training/functional-v2-20261104/development-final-cases.json",
+      "sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+    },
+    "controlled_acceptance": {
+      "path": "data/training/functional-v2-20261104/acceptance-final-cases.json",
+      "sha256": "43eebd663a04a4b9436b35c0ab40e1587cdad4e4dec8097dcf9235b62dd84404"
+    },
+    "old_native_regressions": {
+      "path": "data/training/functional-v2-20261104/natural-use-final-cases.json",
+      "sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+    },
+    "decision_development": {
+      "path": "experiments/functional-v7-20261105/evaluation/decision-development-cases.json",
+      "sha256": "36684e39bab8e7d2365e21219b3823a2212546c62d620dd2a0b056d9d6438378"
+    }
+  },
+  "unit": "Semantic cases grouped by original photograph; both ZH and EN must complete with acceptable quality. Translations are not independent cases.",
+  "stage1": {
+    "native_development_minimum": 16,
+    "native_development_total": 20,
+    "old_native_minimum": 4,
+    "old_native_total": 6,
+    "maximum_major_cases": 0,
+    "decision_controls_total": 20,
+    "decision_controls_required": 20,
+    "decisions": "Ten unsupported requests must decline with unsupported_tools and no result; ten explicit no-ops must keep the exact input pixels. Both languages required. Controls are on ten already reused developer photos, not an independent dataset."
+  },
+  "stage2": {
+    "controlled_development_minimum": 81,
+    "controlled_development_total": 100,
+    "maximum_major_cases": 0,
+    "run_only_after_stage1_passes": true
+  },
+  "assessment": "Codex direct executed-image AI review with model identity hidden during grading; all uncertainty and same-pixel conflicts preserved. Frozen raw7B visual screening previously failed directional calibration and is reference-only, not an independent reliable judge.",
+  "refusal_policy": "On feasible native/controlled tasks, every decline remains uncompleted and is separately reported as a refusal. No result image or input fallback is allowed for decline. Fewer outputs cannot inflate completion counts.",
+  "comparisons": [
+    "Frozen R11 weights with the new manual: parent-new-manual, actual model inference, no new training.",
+    "Same exact R11 parent after one250-case new-manual epoch, evaluated with that identical manual.",
+    "Frozen R11 original-manual15/20, old4/6, controls20/20 retained to distinguish prompt and training contributions."
+  ],
+  "selection": {
+    "checkpoint": "Only final epoch1 step125 eligible; fixed before training. No loss or epoch search.",
+    "eligibility": "Native>=16/20 and old>=4/6 and controls20/20 with0 marked major, then controlled>=81/100 with0 marked major. A feasible-task refusal or illegal output is uncompleted. New trained candidate must not worsen functional completion or severe effects versus the same-parent new-manual control.",
+    "rank": [
+      "Single predefined trained route. Report prompt-only contribution separately; no false training-gain claim."
+    ]
+  },
+  "acceptance": {
+    "open_after": "Select route/checkpoint on development, lock actual adapter/parser/prompt/editor, then seed replicate selected route only if developmental gates pass. Final acceptance outcomes never choose checkpoint or parameters.",
+    "native_cases": 20,
+    "controlled_cases": 100,
+    "qualitative_gate": "Native>=16/20 bilingual complete acceptable, zero major; controlled>=81/100 complete acceptable, zero major; report every task/domain/failure and compare current under identical inputs. Passing is AI evidence, not proof of high practical usefulness or user approval.",
+    "no_posthoc_checkpoint_changes": true,
+    "no_parameter_tuning_on_acceptance": true
+  },
+  "replicate_only_after_all_development_gates": true,
+  "preservation": "Existing native20 and controlled100 acceptance files unchanged and remain sealed for inference. Never choose a checkpoint or modify parameters after acceptance.",
+  "resource": {
+    "shared_original_gpu_hour_cap": 16,
+    "allowed_gpu_indices": [
+      0,
+      2,
+      3
+    ],
+    "gpu1_original_service_preserved": true,
+    "ledger": "experiments/functional-v1-20261104/resources.json",
+    "includes": "All occupied model load, label proposals/screening, training, evaluation, replication and trial time"
+  },
+  "new_training_started": false,
+  "actual_user_feedback": 0,
+  "limitations": [
+    "Development images repeatedly viewed; general manual designed after observed error classes, not a pristine heldout prompt test.",
+    "All image quality/completion assessments AI-assisted, not user approval. Historical unresolved U retained.",
+    "No heldout image, reference parameter, original-image statistic, user upload or feedback enters training/manual."
+  ]
+}

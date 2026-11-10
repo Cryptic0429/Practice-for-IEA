@@ -1,0 +1,131 @@
+{
+  "at": "2026-11-07T07:34:54.212398+00:00",
+  "source": {
+    "path": "data/training/functional-v22-20261107/cases.json",
+    "sha256": "696ef49934123f26ff27ed207b3440798c1971abd7fe4c521e23d8cab985c18e"
+  },
+  "source_cases": 979,
+  "single_tool_cases": 538,
+  "routes": {
+    "brightness+": {
+      "semantic_cases": 1,
+      "original_groups": 1,
+      "unique_literal_requests": {
+        "zh": 1,
+        "en": 1
+      },
+      "unique_bilingual_request_pairs": 1
+    },
+    "contrast+": {
+      "semantic_cases": 72,
+      "original_groups": 47,
+      "unique_literal_requests": {
+        "zh": 10,
+        "en": 10
+      },
+      "unique_bilingual_request_pairs": 11
+    },
+    "contrast-": {
+      "semantic_cases": 34,
+      "original_groups": 28,
+      "unique_literal_requests": {
+        "zh": 5,
+        "en": 5
+      },
+      "unique_bilingual_request_pairs": 5
+    },
+    "exposure+": {
+      "semantic_cases": 126,
+      "original_groups": 52,
+      "unique_literal_requests": {
+        "zh": 13,
+        "en": 14
+      },
+      "unique_bilingual_request_pairs": 14
+    },
+    "exposure-": {
+      "semantic_cases": 62,
+      "original_groups": 41,
+      "unique_literal_requests": {
+        "zh": 5,
+        "en": 5
+      },
+      "unique_bilingual_request_pairs": 5
+    },
+    "highlights+": {
+      "semantic_cases": 1,
+      "original_groups": 1,
+      "unique_literal_requests": {
+        "zh": 1,
+        "en": 1
+      },
+      "unique_bilingual_request_pairs": 1
+    },
+    "saturation+": {
+      "semantic_cases": 97,
+      "original_groups": 68,
+      "unique_literal_requests": {
+        "zh": 18,
+        "en": 20
+      },
+      "unique_bilingual_request_pairs": 21
+    },
+    "saturation-": {
+      "semantic_cases": 38,
+      "original_groups": 31,
+      "unique_literal_requests": {
+        "zh": 8,
+        "en": 8
+      },
+      "unique_bilingual_request_pairs": 8
+    },
+    "sepia+": {
+      "semantic_cases": 40,
+      "original_groups": 28,
+      "unique_literal_requests": {
+        "zh": 16,
+        "en": 18
+      },
+      "unique_bilingual_request_pairs": 18
+    },
+    "shadows+": {
+      "semantic_cases": 13,
+      "original_groups": 7,
+      "unique_literal_requests": {
+        "zh": 3,
+        "en": 3
+      },
+      "unique_bilingual_request_pairs": 3
+    },
+    "shadows-": {
+      "semantic_cases": 12,
+      "original_groups": 6,
+      "unique_literal_requests": {
+        "zh": 2,
+        "en": 2
+      },
+      "unique_bilingual_request_pairs": 2
+    },
+    "temperature+": {
+      "semantic_cases": 18,
+      "original_groups": 12,
+      "unique_literal_requests": {
+        "zh": 8,
+        "en": 8
+      },
+      "unique_bilingual_request_pairs": 8
+    },
+    "temperature-": {
+      "semantic_cases": 24,
+      "original_groups": 18,
+      "unique_literal_requests": {
+        "zh": 14,
+        "en": 14
+      },
+      "unique_bilingual_request_pairs": 14
+    }
+  },
+  "exact_same_text_with_opposite_tool_sign": [],
+  "policy": "Exact normalized matching only; no inferred semantic labels. Same text can legitimately need different signs on different images. This audit measures corpus diversity and the limit of text-only direction from these labels.",
+  "GPU_hours": 0
+}

@@ -1,0 +1,48 @@
+{
+  "at": "2026-11-06T12:29:37.363951+00:00",
+  "status": "actual_browser_upload_edit_switch_download_feedback_and_records_verified",
+  "requests": [
+    {
+      "request_id": "5155ab9b36a74964bcc0ac28453db099",
+      "model_id": "functional-v14-visual-late4-20261127",
+      "case_id": "native-dev-001",
+      "status": "executed",
+      "offline_byte_identical": true,
+      "download": {
+        "path": "/Users/cryptic/Downloads/output.png",
+        "sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765",
+        "bytes": 938362,
+        "status": "browser_download_verified_locally"
+      }
+    },
+    {
+      "request_id": "3ec9728cdb0f4dfda4cba849e400f14c",
+      "model_id": "functional-v14-visual-late4-20261127",
+      "case_id": "visual-risk-01-severe-light",
+      "status": "declined",
+      "no_result_image": true,
+      "image_route_status": 404,
+      "training_condition_probe_not_independent_generalization": true
+    }
+  ],
+  "model_switch_cleared_old_result": true,
+  "alternative_model_not_inferred_in_this_browser_phase": true,
+  "screenshots": {
+    "experiments/functional-v14-20261106/demo/browser-edit-full.png": "93a64b6fccaf29adeaa78ddcd0c47320d34ad38275b7ffec5cb6ef33fce89ddc",
+    "experiments/functional-v14-20261106/demo/browser-decline-full.png": "b3fdc421b09d56d4a3414741429503ac97d0be0ca16d50ea936bf5da763248c1",
+    "experiments/functional-v14-20261106/demo/browser-records.png": "324da6a9eab2db5a614719a50d1fa06604043c43bb95570d1f61e94b161b9dfa"
+  },
+  "feedback_records": 2,
+  "independent_user_feedback": 0,
+  "worker_unloaded": true,
+  "records_page": "http://127.0.0.1:12346/v14",
+  "models_registered": 24,
+  "default_unchanged": true,
+  "occupied_GPU_hours": 18.565750220285523,
+  "actual_external_rewriting": false,
+  "limitations": [
+    "Quality refusal uses a seen synthetic training condition, not an unknown real-camera photograph.",
+    "All feedback is agent integration testing; no independent user usability result.",
+    "Native development and controlled development have been repeatedly used; acceptance remains closed."
+  ]
+}

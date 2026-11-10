@@ -1,0 +1,371 @@
+{
+  "cases": [
+    {
+      "id": "grain-portrait",
+      "origin": "R24 p227",
+      "group_id": "198476297515cbd24a00775803da3126de99fdfe747b801eca23c02e0f32f127",
+      "source": {
+        "path": "data/training/functional-v24-20261107/inputs/p227.jpg",
+        "sha256": "991b8c118bec5f5830df1785502480d9bd74f7493e4c76a31f3ecdd7620409d8"
+      },
+      "crop": [
+        0.33,
+        0.41
+      ],
+      "candidates": [
+        {
+          "path": "experiments/functional-v24-20261107/candidates/p227-1.png",
+          "sha256": "a925b28f7b3eaa04f7a531e73de98270456a2b815567b1bd6104af18d3b9a266"
+        },
+        {
+          "path": "experiments/functional-v24-20261107/candidates/p227-3.png",
+          "sha256": "e84789faeee8488de387761211428c17253233351eb2afee528486988e044382"
+        }
+      ],
+      "requests": {
+        "zh": "轻轻提亮这张室内合照的暗部，保留肤色和发丝，别让颗粒变得显眼。",
+        "en": "Gently lift the shadows in this indoor portrait, keeping skin colour and hair detail without making grain stand out."
+      },
+      "kind": "prior_good_vs_damage",
+      "prior_visual_reference": "experiments/functional-v24-20261107/p227.png"
+    },
+    {
+      "id": "dinner-portrait",
+      "origin": "R26 p325",
+      "group_id": "5b5a90fb203a64f6d037f5c03be1e2668f21db2d0f5b89cb536463ee07c2ff79",
+      "source": {
+        "path": "data/training/functional-v26-20261107/inputs/p325.jpg",
+        "sha256": "a8e80e1adbfc7acc168544acf137a25b8ecfd6447783ec325884c83b10f4f57f"
+      },
+      "crop": [
+        0.35,
+        0.44
+      ],
+      "candidates": [
+        {
+          "path": "experiments/functional-v26-20261107/refinements/candidates/p325-2.png",
+          "sha256": "63752dd00787012fee024306826b698be91e7249a8ca19bb102838d1b337ceb5"
+        },
+        {
+          "path": "experiments/functional-v26-20261107/candidates/p325-2.png",
+          "sha256": "cf2704bd0c24230dbdeae951604a35eb4a20a564739cc138847e7d852fab8d7b"
+        }
+      ],
+      "requests": {
+        "zh": "适度打开餐桌周围人物的暗部，让脸更好辨认，同时保留桌灯暖色和夜间气氛。",
+        "en": "Moderately lift shadows around the people at the table to make faces easier to recognize while retaining the warm lamps and evening mood."
+      },
+      "kind": "prior_good_vs_damage",
+      "prior_visual_reference": "experiments/functional-v26-20261107/p325-two_faces.png"
+    },
+    {
+      "id": "woodland-neither",
+      "origin": "R24 p425",
+      "group_id": "13f375584d42cad13f22dfd12b6fa8822d954c1ba83824f9b56534288d1faa4a",
+      "source": {
+        "path": "data/training/functional-v24-20261107/inputs/p425.jpg",
+        "sha256": "06952f8e47838591a52d5252c2019996f0aee029e205a766d93c4f4d6c4d24b6"
+      },
+      "crop": [
+        0.52,
+        0.56
+      ],
+      "candidates": [
+        {
+          "path": "experiments/functional-v24-20261107/candidates/p425-1.png",
+          "sha256": "29b735f844200bde7c22194d2ed8357078b996eb81a4fc374bbb0fafb9b50598"
+        },
+        {
+          "path": "experiments/functional-v24-20261107/refinements/candidates/p425-2.png",
+          "sha256": "9352ca682600b6c597827d514500263daa8677261cfbf2f6608b1d89a75b60ea"
+        }
+      ],
+      "requests": {
+        "zh": "提亮树林夜景的暗部，让中下部的树干和地面可以清楚辨认，避免明显色斑。",
+        "en": "Lift the shadows of this woodland night scene so the trunks and ground in the lower half are clearly recognizable, without obvious colour blotches."
+      },
+      "kind": "prior_neither",
+      "prior_visual_reference": "experiments/functional-v24-20261107/refinements/p425.png"
+    },
+    {
+      "id": "campfire-neither",
+      "origin": "R24 p389",
+      "group_id": "b106f111e9a21c5a86bab334050697640edc3e6450685243840e5d5a7e28d428",
+      "source": {
+        "path": "data/training/functional-v24-20261107/inputs/p389.jpg",
+        "sha256": "e8c3cce23c01a1d2d33494d03b3cbe96a2ca765430035fc53d772093b15b391f"
+      },
+      "crop": [
+        0.58,
+        0.73
+      ],
+      "candidates": [
+        {
+          "path": "experiments/functional-v24-20261107/candidates/p389-1.png",
+          "sha256": "41728489a8d733aefeb54a8adceaabb7ed8b439d5b50b64ad6ba2273174e84e7"
+        },
+        {
+          "path": "experiments/functional-v24-20261107/refinements/candidates/p389-2.png",
+          "sha256": "d82a29c38b109010dd3189fefd97c62c2dbf2a106dc3a6dc86c9e00fae3dbf02"
+        }
+      ],
+      "requests": {
+        "zh": "提亮火光附近的夜景暗部，清楚显示周围地形，保留火光颜色且不出现明显色块。",
+        "en": "Lift the shadows near the fire until the surrounding terrain is clearly visible, while keeping the fire colour and avoiding obvious blotches."
+      },
+      "kind": "prior_neither",
+      "prior_visual_reference": "experiments/functional-v24-20261107/refinements/p389.png"
+    },
+    {
+      "id": "snow-mild",
+      "origin": "R27 p309",
+      "group_id": "c1a379c55c84ec0bd0f8eb1105bfa02d4df967a8a9b0be9feca2fd0943d245eb",
+      "source": {
+        "path": "data/training/functional-v27-20261107/held-inputs/p309.jpg",
+        "sha256": "fcae2d803d4563a208c371a902aa8383d24628b562274586ef72689bd3c76100"
+      },
+      "crop": [
+        0.33,
+        0.71
+      ],
+      "candidates": [
+        {
+          "path": "experiments/functional-v27-20261107/held/candidates/p309-1.png",
+          "sha256": "56db7306c0c6301d9a117b38d19d1a763fc426b00fc546084a7b5035b06b3a47"
+        },
+        {
+          "path": "experiments/functional-v27-20261107/held/candidates/p309-2.png",
+          "sha256": "619fd46b213733d69b00e1300cd4c52ae526e553519b3a3c00cc10e02bbaf3be"
+        }
+      ],
+      "requests": {
+        "zh": "小幅打开阴影。重点看积雪小路和树下前景，保留蓝天、白云和雪的细节。",
+        "en": "Give a subtle lift to the shadows around the snowy path and foreground below the trees, retaining the blue sky, clouds and snow detail."
+      },
+      "kind": "prior_strength",
+      "prior_visual_reference": "experiments/functional-v27-20261107/held/p309.png"
+    },
+    {
+      "id": "snow-strong",
+      "origin": "R27 p309",
+      "group_id": "c1a379c55c84ec0bd0f8eb1105bfa02d4df967a8a9b0be9feca2fd0943d245eb",
+      "source": {
+        "path": "data/training/functional-v27-20261107/held-inputs/p309.jpg",
+        "sha256": "fcae2d803d4563a208c371a902aa8383d24628b562274586ef72689bd3c76100"
+      },
+      "crop": [
+        0.33,
+        0.71
+      ],
+      "candidates": [
+        {
+          "path": "experiments/functional-v27-20261107/held/candidates/p309-1.png",
+          "sha256": "56db7306c0c6301d9a117b38d19d1a763fc426b00fc546084a7b5035b06b3a47"
+        },
+        {
+          "path": "experiments/functional-v27-20261107/held/candidates/p309-2.png",
+          "sha256": "619fd46b213733d69b00e1300cd4c52ae526e553519b3a3c00cc10e02bbaf3be"
+        }
+      ],
+      "requests": {
+        "zh": "阴影要大幅提亮。重点看积雪小路和树下前景，保留蓝天、白云和雪的细节。",
+        "en": "Brighten the shadows substantially around the snowy path and foreground below the trees, retaining the blue sky, clouds and snow detail."
+      },
+      "kind": "prior_strength",
+      "prior_visual_reference": "experiments/functional-v27-20261107/held/p309.png"
+    },
+    {
+      "id": "shadow-direction",
+      "origin": "R27 p771",
+      "group_id": "683620218cf5683208249cea9fe88ce218f262d1f1ac55065fc6055abf518acb",
+      "source": {
+        "path": "data/training/functional-v27-20261107/held-inputs/p771.jpg",
+        "sha256": "d7f6f351b5b73a39839f2b3b3e8190500e5437b4ee213406a27a5973b31ff588"
+      },
+      "crop": [
+        0.57,
+        0.53
+      ],
+      "candidates": [
+        {
+          "parameters": {
+            "shadows": -50
+          }
+        },
+        {
+          "parameters": {
+            "shadows": 50
+          }
+        }
+      ],
+      "requests": {
+        "zh": "把湖边前景的阴影明显压暗，保留水面和天空的亮部细节。",
+        "en": "Noticeably darken the shadows in the lakeside foreground, retaining detail in the bright water and sky."
+      },
+      "kind": "new_direction",
+      "prior_visual_reference": null
+    },
+    {
+      "id": "exposure-scope",
+      "origin": "R26 p761",
+      "group_id": "2af4e1494f5fdf9500e0152ce8a9972a32b9818c25e3fa9d44134ed1dfed5785",
+      "source": {
+        "path": "data/training/functional-v26-20261107/inputs/p761.jpg",
+        "sha256": "e440eed33dcb041bdd2febdb965d9bb8edacdc3f639098ab78c612c965b845d5"
+      },
+      "crop": [
+        0.36,
+        0.51
+      ],
+      "candidates": [
+        {
+          "parameters": {
+            "exposure": 52
+          }
+        },
+        {
+          "parameters": {
+            "shadows": 77
+          }
+        }
+      ],
+      "requests": {
+        "zh": "让整张照片明显明亮一些，包括人物、水面和天空，同时保留云层与衣服纹理。",
+        "en": "Make the whole photograph noticeably brighter, including the people, water and sky, while retaining cloud and clothing detail."
+      },
+      "kind": "new_scope",
+      "prior_visual_reference": null
+    },
+    {
+      "id": "brown-vs-warm",
+      "origin": "R26 p489",
+      "group_id": "232833005f8f7b0f2be63ac008d60ee3ea0938207a299f4b8f3137c26156f9b4",
+      "source": {
+        "path": "data/training/functional-v26-20261107/inputs/p489.jpg",
+        "sha256": "5c930b6867579a1da1c54252a9f26456fd50aa2da4e6c882eb6bcd65a815a513"
+      },
+      "crop": [
+        0.52,
+        0.66
+      ],
+      "candidates": [
+        {
+          "parameters": {
+            "sepia": 80
+          }
+        },
+        {
+          "parameters": {
+            "temperature": 42
+          }
+        }
+      ],
+      "requests": {
+        "zh": "给整张照片加明显的棕褐复古色调，保留山谷和植被层次。",
+        "en": "Apply a noticeable vintage brown sepia tone to the whole photo while keeping the valley and vegetation detail."
+      },
+      "kind": "new_color",
+      "prior_visual_reference": null
+    },
+    {
+      "id": "white-balance-direction",
+      "origin": "R26 p189",
+      "group_id": "d6e84f9bd1a0269809fcf6fe19152d2e7e697f8f0f9f4ac6d00d702192db9a67",
+      "source": {
+        "path": "data/training/functional-v26-20261107/inputs/p189.jpg",
+        "sha256": "4c7345e77943d63ac1aab431a4e152b34db80149c3010a8bb912c6912e32e7c1"
+      },
+      "crop": [
+        0.36,
+        0.51
+      ],
+      "candidates": [
+        {
+          "parameters": {
+            "temperature": -22
+          }
+        },
+        {
+          "parameters": {
+            "temperature": 26
+          }
+        }
+      ],
+      "requests": {
+        "zh": "让白衣的暖黄颜色稍微中性一些，保留自然肤色。",
+        "en": "Make the warm yellow cast on the white clothing slightly more neutral while keeping natural skin tones."
+      },
+      "kind": "new_direction",
+      "prior_visual_reference": null
+    },
+    {
+      "id": "saturation-direction",
+      "origin": "R27 p476",
+      "group_id": "eb6f94b314275d50c8318e08d2ae68ade05ef45bcf632a5a4c4eee1d14f3f62f",
+      "source": {
+        "path": "data/training/functional-v27-20261107/held-inputs/p476.jpg",
+        "sha256": "188695022ff09d63f0b8556fd94f48bb29611395fb5dbec9aec9c0b270947926"
+      },
+      "crop": [
+        0.42,
+        0.66
+      ],
+      "candidates": [
+        {
+          "parameters": {
+            "saturation": -35
+          }
+        },
+        {
+          "parameters": {
+            "saturation": 35
+          }
+        }
+      ],
+      "requests": {
+        "zh": "适度降低叶子和羽毛的整体饱和度，仍保留自然颜色。",
+        "en": "Moderately reduce saturation in the leaves and feathers while retaining natural colour."
+      },
+      "kind": "new_direction",
+      "prior_visual_reference": null
+    },
+    {
+      "id": "contrast-direction",
+      "origin": "R26 p606",
+      "group_id": "64ad14912eedd36f737b6c52abbf8ab1520794bccf4b026ad174a8a15e9e56b2",
+      "source": {
+        "path": "data/training/functional-v26-20261107/inputs/p606.jpg",
+        "sha256": "2b7c8df49f3ab3385a33754c2f6e308e56dc8b46906c83c47298bedc864e8a72"
+      },
+      "crop": [
+        0.47,
+        0.54
+      ],
+      "candidates": [
+        {
+          "parameters": {
+            "contrast": -25
+          }
+        },
+        {
+          "parameters": {
+            "contrast": 38
+          }
+        }
+      ],
+      "requests": {
+        "zh": "适度降低人像的对比度，仍保留眼睛和暗发纹理。",
+        "en": "Moderately reduce contrast in this portrait while retaining detail in the eyes and dark hair."
+      },
+      "kind": "new_direction",
+      "prior_visual_reference": null
+    }
+  ],
+  "system_prompt": "Judge the two photo edits against the exact request. The image shows the original, edit A and edit B with matched detail crops. Choose A or B only if that result carries out the requested change, in the requested direction, scope and strength, and preserves the stated details without serious visual damage. If neither reliably meets the request, or the evidence is too ambiguous, choose C. Do not reward unrelated brightening or sharpening. Answer with exactly A, B, or C.",
+  "scope": "Offline known-image diagnostic with 12 bilingual semantic pairs over 11 original groups. Six pairs reuse stored outputs, six execute R15 edits from prior stored TRAIN originals. Exact same literal request in each order, each language. Hidden visual reference labels frozen before model scoring. Case C means neither displayed candidate is confirmed suitable, never a claim that all editors must fail. No formal training admission or final acceptance.",
+  "display": "Three columns labeled ORIGINAL/A/B. Same native crop box for all three, no additional colour transform. Run both A/B orders with each literal language. Model sees the board and literal request, no paths, parameters, source IDs, prior labels or scores.",
+  "scoring": "Freeze existing Qwen2.5-VL-7B, CPU float32, constrained next-token A/B/C from one image and the literal request. Report correctness in all four views per semantic pair, per-language and order stability, refused bad-only and selected damaged alternatives. No threshold tuning, no deployment.",
+  "cpu_threads": 16,
+  "batch_size": 3,
+  "GPU_hours": 0
+}

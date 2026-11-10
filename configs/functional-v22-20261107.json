@@ -1,0 +1,25 @@
+{
+  "description": "Index only; frozen training-protocol.json is authoritative",
+  "protocol": "experiments/functional-v22-20261107/training-protocol.json",
+  "data": "data/training/functional-v22-20261107/cases.json",
+  "status": "failed_fixed_two_seed_native_gate",
+  "total_GPU_cap_hours": 24,
+  "seeds": [
+    20261205,
+    20261206
+  ],
+  "CPU_updates_per_seed": 1160,
+  "independent_user_feedback": 0,
+  "report": "experiments/functional-v22-20261107/REPORT.md",
+  "selection": "experiments/functional-v22-20261107/development-selection.json",
+  "training_protocol": "experiments/functional-v22-20261107/training-protocol.json",
+  "models": [
+    "functional-v22-quality-20261205",
+    "functional-v22-quality-20261206"
+  ],
+  "qualified": false,
+  "promoted": false,
+  "acceptance_opened": false,
+  "actual_gpu_hours_at_final": 23.99923538698091,
+  "budget_limit_gpu_hours": 24
+}

@@ -1,0 +1,3349 @@
+{
+  "initial_failed_labels": [
+    {
+      "id": "native-train-n011",
+      "raw": {
+        "id": "native-train-n011",
+        "at": "2026-11-06T13:28:26.641769+00:00",
+        "stage": "labels",
+        "completion": "C",
+        "quality": "U",
+        "evidence": "The face and jacket are brighter and the yellow-brown cast is reduced, satisfying both visible directions. Existing softness/grain and the red-purple shaded skin need native-pixel checking before judging the new lift acceptable; this panel does not establish restored detail.",
+        "previous_tool_observation": "",
+        "panel": {
+          "path": "experiments/functional-v15-20261106/label-candidates/panels/native-train-n011.jpg",
+          "sha256": "7e55796c3da9b5ff1d7321b28476d61c1f685755c5bf218de4d4cf1640f8a552"
+        },
+        "source_input_sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+        "candidate_image_sha256": "6646be85da47564e76e86f1c19e57618d8e93f5e1211e3ca1d87fb41e1470c58",
+        "manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+        "criteria_sha256": "f6331f5c7de23553828acce63a860b8cbb311d206f2dbe2179ce01df19619fb6",
+        "parameters": {
+          "shadows": 50,
+          "temperature": -15,
+          "highlights": -8
+        },
+        "reviewer": "Codex direct candidate-image AI review; not human or user approval",
+        "original_size_followup_required": true,
+        "training_label_admitted": false
+      },
+      "native": {
+        "id": "native-train-n011",
+        "stage": "labels",
+        "input_sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+        "candidate_sha256": "6646be85da47564e76e86f1c19e57618d8e93f5e1211e3ca1d87fb41e1470c58",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/first12/native-train-n011-INPUT-whole.png",
+            "sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+            "size": [
+              540,
+              960
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-n011.png",
+            "source_sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+            "source_size": [
+              540,
+              960
+            ],
+            "box": [
+              0,
+              0,
+              540,
+              960
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/first12/native-train-n011-CANDIDATE-whole.png",
+            "sha256": "6646be85da47564e76e86f1c19e57618d8e93f5e1211e3ca1d87fb41e1470c58",
+            "size": [
+              540,
+              960
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-n011.png",
+            "source_sha256": "6646be85da47564e76e86f1c19e57618d8e93f5e1211e3ca1d87fb41e1470c58",
+            "source_size": [
+              540,
+              960
+            ],
+            "box": [
+              0,
+              0,
+              540,
+              960
+            ]
+          }
+        ],
+        "at": "2026-11-06T13:35:06.654174+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole540x960 input and candidate were directly viewed. The photograph is brighter and less yellow-brown, but skin/shaded areas have a noticeable red-purple/cool cast and the embedded black borders become faintly blue. Existing coarse grain and facial softness remain visible; they are not repaired. The unwanted colour shift is a minor quality issue, so this parameter replay is not admitted and needs a gentler colour/lift repair.",
+        "manifest_sha256": "9a810e787bf37223fd91e76b26a933277bad48e8e62d03b843241e3abeea2cbf",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      }
+    },
+    {
+      "id": "native-train-n204",
+      "raw": {
+        "id": "native-train-n204",
+        "at": "2026-11-06T13:32:47.563733+00:00",
+        "stage": "labels",
+        "completion": "C",
+        "quality": "U",
+        "evidence": "The dim room, floor and subject are substantially lighter while the red skirt and white blouse remain distinct. Native-pixel checks are needed for the face, bow/lace, skirt detail and any amplification of source noise before accepting this stronger brightening.",
+        "previous_tool_observation": "",
+        "panel": {
+          "path": "experiments/functional-v15-20261106/label-candidates/panels/native-train-n204.jpg",
+          "sha256": "ebfd0c7d792120ce0057de071ee6be16da89f14bfb4e7b1c2086c7fa5813a6b0"
+        },
+        "source_input_sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+        "candidate_image_sha256": "87cecd92089d249be82ef7e8615d681d64daca3ddb9941e7c91576f19d93e7d4",
+        "manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+        "criteria_sha256": "f6331f5c7de23553828acce63a860b8cbb311d206f2dbe2179ce01df19619fb6",
+        "parameters": {
+          "shadows": 100,
+          "exposure": 12,
+          "highlights": -20
+        },
+        "reviewer": "Codex direct candidate-image AI review; not human or user approval",
+        "original_size_followup_required": true,
+        "training_label_admitted": false
+      },
+      "native": {
+        "id": "native-train-n204",
+        "stage": "labels",
+        "input_sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+        "candidate_sha256": "87cecd92089d249be82ef7e8615d681d64daca3ddb9941e7c91576f19d93e7d4",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/first12/native-train-n204-INPUT-whole.png",
+            "sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+            "size": [
+              720,
+              960
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-n204.png",
+            "source_sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+            "source_size": [
+              720,
+              960
+            ],
+            "box": [
+              0,
+              0,
+              720,
+              960
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/first12/native-train-n204-CANDIDATE-whole.png",
+            "sha256": "87cecd92089d249be82ef7e8615d681d64daca3ddb9941e7c91576f19d93e7d4",
+            "size": [
+              720,
+              960
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-n204.png",
+            "source_sha256": "87cecd92089d249be82ef7e8615d681d64daca3ddb9941e7c91576f19d93e7d4",
+            "source_size": [
+              720,
+              960
+            ],
+            "box": [
+              0,
+              0,
+              720,
+              960
+            ]
+          }
+        ],
+        "at": "2026-11-06T13:44:54.572439+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole720x960 input and candidate were directly viewed. Brightening is substantial and bow/lace, skirt folds and facial features remain readable. However coarse coloured banding/blotches in the dim ceiling, wall and floor become conspicuous, with a stronger warm facial cast. The source already contains this low-light noise; the lift reveals/amplifies its visibility rather than creating a new grid. This is a minor basic-quality failure, so the replay is not admitted and needs repair before any edit label is adopted.",
+        "manifest_sha256": "9a810e787bf37223fd91e76b26a933277bad48e8e62d03b843241e3abeea2cbf",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      }
+    },
+    {
+      "id": "native-train-x030",
+      "raw": {
+        "id": "native-train-x030",
+        "at": "2026-11-06T13:32:47.584704+00:00",
+        "stage": "labels",
+        "completion": "P",
+        "quality": "U",
+        "evidence": "A visible shadow lift reveals more of the meadow and forest, but the foreground still looks very dark for a request to brighten a lot. The new result is less grey than the previous label. Native-pixel inspection is needed before deciding whether the useful lift is sufficient and fine shadow/reflection detail remains acceptable.",
+        "previous_tool_observation": "",
+        "panel": {
+          "path": "experiments/functional-v15-20261106/label-candidates/panels/native-train-x030.jpg",
+          "sha256": "a528101d6324ee4068c82c5caa241ab01706e5467f74482d9e7e0f0e5aafb9af"
+        },
+        "source_input_sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+        "candidate_image_sha256": "a77011be4f4d321c09bd188ead565749d47a3d9b49e7682b0f68675c095f6f9a",
+        "manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+        "criteria_sha256": "f6331f5c7de23553828acce63a860b8cbb311d206f2dbe2179ce01df19619fb6",
+        "parameters": {
+          "exposure": 55,
+          "shadows": 30,
+          "highlights": -15
+        },
+        "reviewer": "Codex direct candidate-image AI review; not human or user approval",
+        "original_size_followup_required": true,
+        "training_label_admitted": false
+      },
+      "native": {
+        "id": "native-train-x030",
+        "stage": "labels",
+        "input_sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+        "candidate_sha256": "a77011be4f4d321c09bd188ead565749d47a3d9b49e7682b0f68675c095f6f9a",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/first12/native-train-x030-INPUT-whole.png",
+            "sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+            "size": [
+              960,
+              640
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-x030.png",
+            "source_sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+            "source_size": [
+              960,
+              640
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              640
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/first12/native-train-x030-CANDIDATE-whole.png",
+            "sha256": "a77011be4f4d321c09bd188ead565749d47a3d9b49e7682b0f68675c095f6f9a",
+            "size": [
+              960,
+              640
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-x030.png",
+            "source_sha256": "a77011be4f4d321c09bd188ead565749d47a3d9b49e7682b0f68675c095f6f9a",
+            "source_size": [
+              960,
+              640
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              640
+            ]
+          }
+        ],
+        "at": "2026-11-06T13:52:22.639787+00:00",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole960x640 input and candidate were directly viewed. The meadow, tree line and mountain faces are more visible and water ripples/sky gradient remain readable, without obvious new clipping or blotchy noise. However the requested large brightening remains too weak: much of the meadow/tree foreground still looks very dark. This is partial completion rather than a good training edit label; stronger but controlled lift must be tried and reviewed.",
+        "manifest_sha256": "9a810e787bf37223fd91e76b26a933277bad48e8e62d03b843241e3abeea2cbf",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      }
+    },
+    {
+      "id": "native-train-x186",
+      "raw": {
+        "id": "native-train-x186",
+        "at": "2026-11-06T13:53:11.111199+00:00",
+        "stage": "labels",
+        "completion": "C",
+        "quality": "U",
+        "evidence": "Panel shows a visible whole-photo lift, with sea ripples, sky wisps and cliff outline retained. Very dark foreground/person and greenish shadow colours need native inspection before admitting the label.",
+        "previous_tool_observation": "",
+        "panel": {
+          "path": "experiments/functional-v15-20261106/label-candidates/panels/native-train-x186.jpg",
+          "sha256": "c643095bc849ab3035d5bbaccb189f3ee3f4765d559f140e032c1959739fdded"
+        },
+        "source_input_sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+        "candidate_image_sha256": "670dfad71f6d417e29781c8a7e04b10770de2d31ec3c19c1ffc5b9202abbd907",
+        "manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+        "criteria_sha256": "f6331f5c7de23553828acce63a860b8cbb311d206f2dbe2179ce01df19619fb6",
+        "parameters": {
+          "shadows": 90,
+          "exposure": 3,
+          "highlights": -8
+        },
+        "reviewer": "Codex direct candidate-image AI review; not human or user approval",
+        "original_size_followup_required": true,
+        "training_label_admitted": false
+      },
+      "native": {
+        "id": "native-train-x186",
+        "stage": "labels",
+        "input_sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+        "candidate_sha256": "670dfad71f6d417e29781c8a7e04b10770de2d31ec3c19c1ffc5b9202abbd907",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x186-INPUT-whole.png",
+            "sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+            "size": [
+              960,
+              842
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-x186.png",
+            "source_sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+            "source_size": [
+              960,
+              842
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              842
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x186-CANDIDATE-whole.png",
+            "sha256": "670dfad71f6d417e29781c8a7e04b10770de2d31ec3c19c1ffc5b9202abbd907",
+            "size": [
+              960,
+              842
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-x186.png",
+            "source_sha256": "670dfad71f6d417e29781c8a7e04b10770de2d31ec3c19c1ffc5b9202abbd907",
+            "source_size": [
+              960,
+              842
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              842
+            ]
+          }
+        ],
+        "paired_native": [
+          {
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x186-PAIR-whole.png",
+            "sha256": "5833bb7326bac5fe6b68115e4a44ef4f9ee08a1666bc4e3f1f0c47fd938dd136",
+            "size": [
+              1920,
+              890
+            ],
+            "region": "whole",
+            "image_pixels_unscaled": true,
+            "header_height": 48,
+            "components": [
+              {
+                "role": "INPUT",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x186-INPUT-whole.png",
+                "sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+                "size": [
+                  960,
+                  842
+                ],
+                "source": "data/training/functional-v6-20261105/inputs/native-train-x186.png",
+                "source_sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+                "source_size": [
+                  960,
+                  842
+                ],
+                "box": [
+                  0,
+                  0,
+                  960,
+                  842
+                ]
+              },
+              {
+                "role": "CANDIDATE",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x186-CANDIDATE-whole.png",
+                "sha256": "670dfad71f6d417e29781c8a7e04b10770de2d31ec3c19c1ffc5b9202abbd907",
+                "size": [
+                  960,
+                  842
+                ],
+                "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-x186.png",
+                "source_sha256": "670dfad71f6d417e29781c8a7e04b10770de2d31ec3c19c1ffc5b9202abbd907",
+                "source_size": [
+                  960,
+                  842
+                ],
+                "box": [
+                  0,
+                  0,
+                  960,
+                  842
+                ]
+              }
+            ]
+          }
+        ],
+        "at": "2026-11-06T14:40:37.053464+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole960x842 input and candidate were directly viewed on an unscaled paired canvas. Brightening is visible and sea ripples, sky wisps and cliff edges remain readable, but deep foreground/cliff shadows have a conspicuous green veil/cast; it is present weakly in the source and much more visible after lifting. The edit is not admitted as acceptable basic quality and needs a revised recipe under the unchanged brighten request.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      }
+    },
+    {
+      "id": "native-train-x250",
+      "raw": {
+        "id": "native-train-x250",
+        "at": "2026-11-06T13:53:11.125833+00:00",
+        "stage": "labels",
+        "completion": "C",
+        "quality": "U",
+        "evidence": "Panel shows brighter building/water and somewhat stronger facade contrast. Tree silhouettes and reflected lamps remain distinct, with no apparent new broad white area. Large-source native facade/trees/water inspection is required.",
+        "previous_tool_observation": "",
+        "panel": {
+          "path": "experiments/functional-v15-20261106/label-candidates/panels/native-train-x250.jpg",
+          "sha256": "8a9f1b433a819ff4b1a913c6672ebac4c2eb0580ffd425aa157ea63af74c055c"
+        },
+        "source_input_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+        "candidate_image_sha256": "158327654839e6ed683ccbbc842144bd9508e2bd534f92cada092e4b7f239524",
+        "manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+        "criteria_sha256": "f6331f5c7de23553828acce63a860b8cbb311d206f2dbe2179ce01df19619fb6",
+        "parameters": {
+          "exposure": 10,
+          "contrast": 20,
+          "shadows": 65,
+          "highlights": -8
+        },
+        "reviewer": "Codex direct candidate-image AI review; not human or user approval",
+        "original_size_followup_required": true,
+        "training_label_admitted": false
+      },
+      "native": {
+        "id": "native-train-x250",
+        "stage": "labels",
+        "input_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+        "candidate_sha256": "158327654839e6ed683ccbbc842144bd9508e2bd534f92cada092e4b7f239524",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "facade",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x250-INPUT-facade.png",
+            "sha256": "1a735bbfb80e03890752b9080e260f3a8512dca474e8628a7018342fc595679b",
+            "size": [
+              1200,
+              1200
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+            "source_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+            "source_size": [
+              2916,
+              1944
+            ],
+            "box": [
+              800,
+              400,
+              2000,
+              1600
+            ]
+          },
+          {
+            "role": "INPUT",
+            "region": "trees-sky",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x250-INPUT-trees-sky.png",
+            "sha256": "2d36b3b9daa88d7e454efd453c6d4a6590de4867d3dcd8e241b5ad2134170cfc",
+            "size": [
+              1200,
+              1200
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+            "source_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+            "source_size": [
+              2916,
+              1944
+            ],
+            "box": [
+              0,
+              0,
+              1200,
+              1200
+            ]
+          },
+          {
+            "role": "INPUT",
+            "region": "water",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x250-INPUT-water.png",
+            "sha256": "9b2f8771babc0eeb47b6d916fdfa0b72e5e24826592c92c9b533eb4b64a51874",
+            "size": [
+              1200,
+              844
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+            "source_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+            "source_size": [
+              2916,
+              1944
+            ],
+            "box": [
+              1600,
+              1100,
+              2800,
+              1944
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "facade",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x250-CANDIDATE-facade.png",
+            "sha256": "3be36b7956e7e10f9e3c1a083152e0e7795d221981efb9b6cf3283f7cbcbaea4",
+            "size": [
+              1200,
+              1200
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-x250.png",
+            "source_sha256": "158327654839e6ed683ccbbc842144bd9508e2bd534f92cada092e4b7f239524",
+            "source_size": [
+              2916,
+              1944
+            ],
+            "box": [
+              800,
+              400,
+              2000,
+              1600
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "trees-sky",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x250-CANDIDATE-trees-sky.png",
+            "sha256": "782f50e9afd287d3a720e356732b533d280b71d2c41b23df154e5c00e01d53be",
+            "size": [
+              1200,
+              1200
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-x250.png",
+            "source_sha256": "158327654839e6ed683ccbbc842144bd9508e2bd534f92cada092e4b7f239524",
+            "source_size": [
+              2916,
+              1944
+            ],
+            "box": [
+              0,
+              0,
+              1200,
+              1200
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "water",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x250-CANDIDATE-water.png",
+            "sha256": "26ac757e98a8c6ced0941673f51e5ee2f0eafa0c41fdf2997e5d8bb691b2da15",
+            "size": [
+              1200,
+              844
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-x250.png",
+            "source_sha256": "158327654839e6ed683ccbbc842144bd9508e2bd534f92cada092e4b7f239524",
+            "source_size": [
+              2916,
+              1944
+            ],
+            "box": [
+              1600,
+              1100,
+              2800,
+              1944
+            ]
+          }
+        ],
+        "paired_native": [],
+        "at": "2026-11-06T16:29:46.164256+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole-frame context and all six native facade/trees-sky/water input/candidate crops were directly viewed. Brightening and stronger contrast are visible and facade windows/railings and reflected lamps remain. However native shadow water at the right and dark bushes show conspicuous red/blue chroma blotches/rectangular compression texture after the lift, more intrusive than in the source. This is a quality failure requiring a different balance of exposure/contrast/shadow lift, not an accepted label or a denoising claim. Coverage is listed critical regions only.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      }
+    },
+    {
+      "id": "r13-train-extension-081",
+      "raw": {
+        "id": "r13-train-extension-081",
+        "at": "2026-11-06T13:53:53.642705+00:00",
+        "stage": "labels",
+        "completion": "C",
+        "quality": "U",
+        "evidence": "Panel shows a visible global lift of the old scanned street photograph, preserving the existing greenish film cast and blur rather than repairing them. Native walls, cars and dark foreground need inspection for banding and blotchy quality.",
+        "previous_tool_observation": "",
+        "panel": {
+          "path": "experiments/functional-v15-20261106/label-candidates/panels/r13-train-extension-081.jpg",
+          "sha256": "9308f2099239eb01b64d89c218836fc40a251e5e42c57f662dd1b04df1097412"
+        },
+        "source_input_sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+        "candidate_image_sha256": "b0ac7a0f0044df13d7884f83243589b47192d3cdf3a929062abbe3014e4ac127",
+        "manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+        "criteria_sha256": "f6331f5c7de23553828acce63a860b8cbb311d206f2dbe2179ce01df19619fb6",
+        "parameters": {
+          "exposure": 40,
+          "shadows": 25,
+          "highlights": -12
+        },
+        "reviewer": "Codex direct candidate-image AI review; not human or user approval",
+        "original_size_followup_required": true,
+        "training_label_admitted": false
+      },
+      "native": {
+        "id": "r13-train-extension-081",
+        "stage": "labels",
+        "input_sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+        "candidate_sha256": "b0ac7a0f0044df13d7884f83243589b47192d3cdf3a929062abbe3014e4ac127",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-081-INPUT-whole.png",
+            "sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+            "size": [
+              1439,
+              1080
+            ],
+            "source": "experiments/functional-v13-20261106/primary-candidates/train-extension-081/input.png",
+            "source_sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+            "source_size": [
+              1439,
+              1080
+            ],
+            "box": [
+              0,
+              0,
+              1439,
+              1080
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-081-CANDIDATE-whole.png",
+            "sha256": "b0ac7a0f0044df13d7884f83243589b47192d3cdf3a929062abbe3014e4ac127",
+            "size": [
+              1439,
+              1080
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-extension-081.png",
+            "source_sha256": "b0ac7a0f0044df13d7884f83243589b47192d3cdf3a929062abbe3014e4ac127",
+            "source_size": [
+              1439,
+              1080
+            ],
+            "box": [
+              0,
+              0,
+              1439,
+              1080
+            ]
+          }
+        ],
+        "paired_native": [],
+        "at": "2026-11-06T14:43:20.461512+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole1439x1080 input and candidate were directly viewed separately. Global lightening is visible and source blur/scan specks are not repaired or worsened into new detail. However the source green/yellow cast becomes more conspicuous as an olive-green veil over the dark foreground/garage shadows, with blue-green pavement. This fails the conservative basic-colour-quality check for adoption; try a gentler or balanced recipe under the unchanged lightening request instead of admitting it automatically.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      }
+    },
+    {
+      "id": "r13-train-extension-538",
+      "raw": {
+        "id": "r13-train-extension-538",
+        "at": "2026-11-06T13:54:58.737869+00:00",
+        "stage": "labels",
+        "completion": "P",
+        "quality": "U",
+        "evidence": "Panel shows stronger contrast and a warmer/yellower autumn scene, but a clearly more orange tone is weak and ambiguous compared with the original already-yellow leaves. Treat as provisional partial completion pending native colour/detail inspection and possible recipe repair.",
+        "previous_tool_observation": "",
+        "panel": {
+          "path": "experiments/functional-v15-20261106/label-candidates/panels/r13-train-extension-538.jpg",
+          "sha256": "bf5c5e32d5013b54bed5fe7d083797f9e1a89ac43c434e5e654febe23280fd39"
+        },
+        "source_input_sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+        "candidate_image_sha256": "afe2111021f139aae109c4bc0ff05559b2983d3e7109b0e538785cacd7743be7",
+        "manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+        "criteria_sha256": "f6331f5c7de23553828acce63a860b8cbb311d206f2dbe2179ce01df19619fb6",
+        "parameters": {
+          "temperature": 8,
+          "contrast": 11,
+          "shadows": 8
+        },
+        "reviewer": "Codex direct candidate-image AI review; not human or user approval",
+        "original_size_followup_required": true,
+        "training_label_admitted": false
+      },
+      "native": {
+        "id": "r13-train-extension-538",
+        "stage": "labels",
+        "input_sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+        "candidate_sha256": "afe2111021f139aae109c4bc0ff05559b2983d3e7109b0e538785cacd7743be7",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-538-INPUT-whole.png",
+            "sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+            "size": [
+              640,
+              852
+            ],
+            "source": "experiments/functional-v13-20261106/primary-candidates/train-extension-538/input.png",
+            "source_sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+            "source_size": [
+              640,
+              852
+            ],
+            "box": [
+              0,
+              0,
+              640,
+              852
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-538-CANDIDATE-whole.png",
+            "sha256": "afe2111021f139aae109c4bc0ff05559b2983d3e7109b0e538785cacd7743be7",
+            "size": [
+              640,
+              852
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-extension-538.png",
+            "source_sha256": "afe2111021f139aae109c4bc0ff05559b2983d3e7109b0e538785cacd7743be7",
+            "source_size": [
+              640,
+              852
+            ],
+            "box": [
+              0,
+              0,
+              640,
+              852
+            ]
+          }
+        ],
+        "paired_native": [
+          {
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-538-PAIR-whole.png",
+            "sha256": "6e9f5ba5cb9ad0c1ff0e3b6bb492bcdcdcc8dab6602bcb383d13d0d57a712244",
+            "size": [
+              1280,
+              900
+            ],
+            "region": "whole",
+            "image_pixels_unscaled": true,
+            "header_height": 48,
+            "components": [
+              {
+                "role": "INPUT",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-538-INPUT-whole.png",
+                "sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+                "size": [
+                  640,
+                  852
+                ],
+                "source": "experiments/functional-v13-20261106/primary-candidates/train-extension-538/input.png",
+                "source_sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+                "source_size": [
+                  640,
+                  852
+                ],
+                "box": [
+                  0,
+                  0,
+                  640,
+                  852
+                ]
+              },
+              {
+                "role": "CANDIDATE",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-extension-538-CANDIDATE-whole.png",
+                "sha256": "afe2111021f139aae109c4bc0ff05559b2983d3e7109b0e538785cacd7743be7",
+                "size": [
+                  640,
+                  852
+                ],
+                "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-extension-538.png",
+                "source_sha256": "afe2111021f139aae109c4bc0ff05559b2983d3e7109b0e538785cacd7743be7",
+                "source_size": [
+                  640,
+                  852
+                ],
+                "box": [
+                  0,
+                  0,
+                  640,
+                  852
+                ]
+              }
+            ]
+          }
+        ],
+        "at": "2026-11-06T14:47:26.704043+00:00",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole640x852 input and candidate were directly compared on an unscaled canvas. Contrast is stronger and individual yellow leaves, paving blocks, bench slats/metalwork and dark foliage remain readable, with source-white sun gaps retained. However the colour shift is predominantly more yellow/golden, with too little clear orange character for the unchanged more-orange request. Keep partial completion and repair the tone recipe rather than admitting this target.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      }
+    },
+    {
+      "id": "r13-train-native-073",
+      "raw": {
+        "id": "r13-train-native-073",
+        "at": "2026-11-06T13:56:00.901787+00:00",
+        "stage": "labels",
+        "completion": "P",
+        "quality": "U",
+        "evidence": "Panel shows richer skin/hair/background colours and stronger chainmail contrast, but brightness lift appears modest for a request to significantly increase brightness as well as contrast/colour. Native face, hair and chainmail inspection and potentially stronger controlled brightening are needed.",
+        "previous_tool_observation": "",
+        "panel": {
+          "path": "experiments/functional-v15-20261106/label-candidates/panels/r13-train-native-073.jpg",
+          "sha256": "814b502622b8d60f98322aafefd8d6d04701ac5da2d557cff8dd05e0670c6718"
+        },
+        "source_input_sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+        "candidate_image_sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678",
+        "manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+        "criteria_sha256": "f6331f5c7de23553828acce63a860b8cbb311d206f2dbe2179ce01df19619fb6",
+        "parameters": {
+          "exposure": 30,
+          "contrast": 12,
+          "shadows": 20,
+          "highlights": -20,
+          "saturation": 10
+        },
+        "reviewer": "Codex direct candidate-image AI review; not human or user approval",
+        "original_size_followup_required": true,
+        "training_label_admitted": false
+      },
+      "native": {
+        "id": "r13-train-native-073",
+        "stage": "labels",
+        "input_sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+        "candidate_sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-073-INPUT-whole.png",
+            "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+            "size": [
+              531,
+              748
+            ],
+            "source": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+            "source_sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+            "source_size": [
+              531,
+              748
+            ],
+            "box": [
+              0,
+              0,
+              531,
+              748
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-073-CANDIDATE-whole.png",
+            "sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678",
+            "size": [
+              531,
+              748
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-073.png",
+            "source_sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678",
+            "source_size": [
+              531,
+              748
+            ],
+            "box": [
+              0,
+              0,
+              531,
+              748
+            ]
+          }
+        ],
+        "paired_native": [
+          {
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-073-PAIR-whole.png",
+            "sha256": "db1cc1e06d839640754c96d6991ef51a239a6fbb781399fcc1c52ac7b1b21ddd",
+            "size": [
+              1062,
+              796
+            ],
+            "region": "whole",
+            "image_pixels_unscaled": true,
+            "header_height": 48,
+            "components": [
+              {
+                "role": "INPUT",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-073-INPUT-whole.png",
+                "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+                "size": [
+                  531,
+                  748
+                ],
+                "source": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+                "source_sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+                "source_size": [
+                  531,
+                  748
+                ],
+                "box": [
+                  0,
+                  0,
+                  531,
+                  748
+                ]
+              },
+              {
+                "role": "CANDIDATE",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-073-CANDIDATE-whole.png",
+                "sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678",
+                "size": [
+                  531,
+                  748
+                ],
+                "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-073.png",
+                "source_sha256": "9e87ea0bb51e5e9d34b087980e3bd774a85f29854736d536bca957caa826c678",
+                "source_size": [
+                  531,
+                  748
+                ],
+                "box": [
+                  0,
+                  0,
+                  531,
+                  748
+                ]
+              }
+            ]
+          }
+        ],
+        "at": "2026-11-06T14:50:50.844019+00:00",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole531x748 input and candidate were directly compared on an unscaled paired canvas. Hair/braids, freckles, eye detail and chainmail links remain readable; richer colour/contrast is evident with plausible warm skin. The brightness change remains modest, especially in the face/background, rather than clearly significant as required alongside contrast and colour. Preserve partial completion and try a stronger controlled lift without relaxing the original request.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      }
+    },
+    {
+      "id": "r13-train-native-074",
+      "raw": {
+        "id": "r13-train-native-074",
+        "at": "2026-11-06T13:56:00.910427+00:00",
+        "stage": "labels",
+        "completion": "P",
+        "quality": "U",
+        "evidence": "Panel shows brighter blanket/skin and more vivid printed colours, but the global lift is moderate rather than clearly a lot. The large baby photograph also requires native skin/blanket/sofa texture inspection; do not admit solely because the direction is right.",
+        "previous_tool_observation": "",
+        "panel": {
+          "path": "experiments/functional-v15-20261106/label-candidates/panels/r13-train-native-074.jpg",
+          "sha256": "19a36d34cf22610879e5b3be745c53c3699f1fc606b2ee15892a3934e7658d59"
+        },
+        "source_input_sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+        "candidate_image_sha256": "dcd69890fec295dad40db5abdb7a09512c36e2901d87d790dd6856142677680d",
+        "manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+        "criteria_sha256": "f6331f5c7de23553828acce63a860b8cbb311d206f2dbe2179ce01df19619fb6",
+        "parameters": {
+          "exposure": 50,
+          "shadows": 30,
+          "highlights": -20,
+          "saturation": 8
+        },
+        "reviewer": "Codex direct candidate-image AI review; not human or user approval",
+        "original_size_followup_required": true,
+        "training_label_admitted": false
+      },
+      "native": {
+        "id": "r13-train-native-074",
+        "stage": "labels",
+        "input_sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+        "candidate_sha256": "dcd69890fec295dad40db5abdb7a09512c36e2901d87d790dd6856142677680d",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-074-INPUT-whole.png",
+            "sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+            "size": [
+              1920,
+              1440
+            ],
+            "source": "experiments/functional-v13-20261106/primary-candidates/train-native-074/input.png",
+            "source_sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+            "source_size": [
+              1920,
+              1440
+            ],
+            "box": [
+              0,
+              0,
+              1920,
+              1440
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-074-CANDIDATE-whole.png",
+            "sha256": "dcd69890fec295dad40db5abdb7a09512c36e2901d87d790dd6856142677680d",
+            "size": [
+              1920,
+              1440
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-074.png",
+            "source_sha256": "dcd69890fec295dad40db5abdb7a09512c36e2901d87d790dd6856142677680d",
+            "source_size": [
+              1920,
+              1440
+            ],
+            "box": [
+              0,
+              0,
+              1920,
+              1440
+            ]
+          }
+        ],
+        "paired_native": [],
+        "at": "2026-11-06T14:52:06.386177+00:00",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole1920x1440 input and candidate were directly viewed separately. Fine hair, skin texture, blanket weave/printed dots and sofa texture remain visible, with plausible infant skin and no apparent new broad clipping or intrusive noisy patches. Colours are more vivid and brightness rises, but the lift is still moderate for the unchanged brighten-a-lot request. Keep partial completion; stronger controlled brightening needs an actually rendered and reviewed attempt.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      }
+    },
+    {
+      "id": "r13-train-native-214",
+      "raw": {
+        "id": "r13-train-native-214",
+        "at": "2026-11-06T13:57:44.719098+00:00",
+        "stage": "labels",
+        "completion": "C",
+        "quality": "U",
+        "evidence": "Panel shows substantial brightening and stronger colours/contrast in the family and autumn foliage. Faces and white clothes remain distinguishable in context; native faces, dark clothing, white shirts and leaf texture need inspection.",
+        "previous_tool_observation": "",
+        "panel": {
+          "path": "experiments/functional-v15-20261106/label-candidates/panels/r13-train-native-214.jpg",
+          "sha256": "aa72a6ff7a59ddd1c76d5a5ef253163b8338d1f9c46bc3b7835412c0283a501f"
+        },
+        "source_input_sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+        "candidate_image_sha256": "5fba42fb09738e98facc2b6ca24510543cef5d0101c2fc25d78e4a2bddac2ed4",
+        "manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+        "criteria_sha256": "f6331f5c7de23553828acce63a860b8cbb311d206f2dbe2179ce01df19619fb6",
+        "parameters": {
+          "exposure": 45,
+          "shadows": 45,
+          "contrast": 10,
+          "saturation": 10,
+          "highlights": -25
+        },
+        "reviewer": "Codex direct candidate-image AI review; not human or user approval",
+        "original_size_followup_required": true,
+        "training_label_admitted": false
+      },
+      "native": {
+        "id": "r13-train-native-214",
+        "stage": "labels",
+        "input_sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+        "candidate_sha256": "5fba42fb09738e98facc2b6ca24510543cef5d0101c2fc25d78e4a2bddac2ed4",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-214-INPUT-whole.png",
+            "sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+            "size": [
+              960,
+              642
+            ],
+            "source": "experiments/functional-v13-20261106/primary-candidates/train-native-214/input.png",
+            "source_sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+            "source_size": [
+              960,
+              642
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              642
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-214-CANDIDATE-whole.png",
+            "sha256": "5fba42fb09738e98facc2b6ca24510543cef5d0101c2fc25d78e4a2bddac2ed4",
+            "size": [
+              960,
+              642
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-214.png",
+            "source_sha256": "5fba42fb09738e98facc2b6ca24510543cef5d0101c2fc25d78e4a2bddac2ed4",
+            "source_size": [
+              960,
+              642
+            ],
+            "box": [
+              0,
+              0,
+              960,
+              642
+            ]
+          }
+        ],
+        "paired_native": [
+          {
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-214-PAIR-whole.png",
+            "sha256": "6952e3666aa26c6bd542b10162b457a55766295345a094246a653c8c5589c47a",
+            "size": [
+              1920,
+              690
+            ],
+            "region": "whole",
+            "image_pixels_unscaled": true,
+            "header_height": 48,
+            "components": [
+              {
+                "role": "INPUT",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-214-INPUT-whole.png",
+                "sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+                "size": [
+                  960,
+                  642
+                ],
+                "source": "experiments/functional-v13-20261106/primary-candidates/train-native-214/input.png",
+                "source_sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+                "source_size": [
+                  960,
+                  642
+                ],
+                "box": [
+                  0,
+                  0,
+                  960,
+                  642
+                ]
+              },
+              {
+                "role": "CANDIDATE",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-214-CANDIDATE-whole.png",
+                "sha256": "5fba42fb09738e98facc2b6ca24510543cef5d0101c2fc25d78e4a2bddac2ed4",
+                "size": [
+                  960,
+                  642
+                ],
+                "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-214.png",
+                "source_sha256": "5fba42fb09738e98facc2b6ca24510543cef5d0101c2fc25d78e4a2bddac2ed4",
+                "source_size": [
+                  960,
+                  642
+                ],
+                "box": [
+                  0,
+                  0,
+                  960,
+                  642
+                ]
+              }
+            ]
+          }
+        ],
+        "at": "2026-11-06T14:58:39.448115+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole960x642 input and candidate were directly compared on an unscaled paired canvas. Brightness/colour/contrast increase substantially and white-shirt folds, faces, leaves and boots remain readable. However coarse blue-purple/brown patches and bands become conspicuous in back-row dark shirts and blue trousers, revealing/amplifying source low-light compression/chroma texture. This fails basic-quality adoption despite correct direction/strength; revise the recipe and recheck rather than admitting it.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      }
+    },
+    {
+      "id": "r13-train-native-234",
+      "raw": {
+        "id": "r13-train-native-234",
+        "at": "2026-11-06T13:57:44.734835+00:00",
+        "stage": "labels",
+        "completion": "C",
+        "quality": "U",
+        "evidence": "Panel shows a useful overall lift of both men and clothing, while ceiling folds and window greenery remain visible. Low-light chroma noise is visible in dark clothing and requires native judgment before acceptance.",
+        "previous_tool_observation": "",
+        "panel": {
+          "path": "experiments/functional-v15-20261106/label-candidates/panels/r13-train-native-234.jpg",
+          "sha256": "9141023acc2b04a2825cff66fb9212af46b6cc41a8a61270b5dbe8739200365e"
+        },
+        "source_input_sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+        "candidate_image_sha256": "ededb8a0dbb2ca5114af028a2bd467a1e8b5a94a780aa970cfbc758fdd1e1b3b",
+        "manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+        "criteria_sha256": "f6331f5c7de23553828acce63a860b8cbb311d206f2dbe2179ce01df19619fb6",
+        "parameters": {
+          "exposure": 35,
+          "shadows": 55,
+          "highlights": -10
+        },
+        "reviewer": "Codex direct candidate-image AI review; not human or user approval",
+        "original_size_followup_required": true,
+        "training_label_admitted": false
+      },
+      "native": {
+        "id": "r13-train-native-234",
+        "stage": "labels",
+        "input_sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+        "candidate_sha256": "ededb8a0dbb2ca5114af028a2bd467a1e8b5a94a780aa970cfbc758fdd1e1b3b",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-234-INPUT-whole.png",
+            "sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+            "size": [
+              915,
+              1200
+            ],
+            "source": "experiments/functional-v13-20261106/primary-candidates/train-native-234/input.png",
+            "source_sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+            "source_size": [
+              915,
+              1200
+            ],
+            "box": [
+              0,
+              0,
+              915,
+              1200
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "whole",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-234-CANDIDATE-whole.png",
+            "sha256": "ededb8a0dbb2ca5114af028a2bd467a1e8b5a94a780aa970cfbc758fdd1e1b3b",
+            "size": [
+              915,
+              1200
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-234.png",
+            "source_sha256": "ededb8a0dbb2ca5114af028a2bd467a1e8b5a94a780aa970cfbc758fdd1e1b3b",
+            "source_size": [
+              915,
+              1200
+            ],
+            "box": [
+              0,
+              0,
+              915,
+              1200
+            ]
+          }
+        ],
+        "paired_native": [
+          {
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-234-PAIR-whole.png",
+            "sha256": "be7b47485103fd8a2a6a71a7532a8a407b03e4aee027c45e36d8391aaf5ddc3a",
+            "size": [
+              1830,
+              1248
+            ],
+            "region": "whole",
+            "image_pixels_unscaled": true,
+            "header_height": 48,
+            "components": [
+              {
+                "role": "INPUT",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-234-INPUT-whole.png",
+                "sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+                "size": [
+                  915,
+                  1200
+                ],
+                "source": "experiments/functional-v13-20261106/primary-candidates/train-native-234/input.png",
+                "source_sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+                "source_size": [
+                  915,
+                  1200
+                ],
+                "box": [
+                  0,
+                  0,
+                  915,
+                  1200
+                ]
+              },
+              {
+                "role": "CANDIDATE",
+                "region": "whole",
+                "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/r13-train-native-234-CANDIDATE-whole.png",
+                "sha256": "ededb8a0dbb2ca5114af028a2bd467a1e8b5a94a780aa970cfbc758fdd1e1b3b",
+                "size": [
+                  915,
+                  1200
+                ],
+                "source": "experiments/functional-v15-20261106/label-candidates/images/r13-train-native-234.png",
+                "source_sha256": "ededb8a0dbb2ca5114af028a2bd467a1e8b5a94a780aa970cfbc758fdd1e1b3b",
+                "source_size": [
+                  915,
+                  1200
+                ],
+                "box": [
+                  0,
+                  0,
+                  915,
+                  1200
+                ]
+              }
+            ]
+          }
+        ],
+        "at": "2026-11-06T15:05:49.433020+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole915x1200 input and candidate were directly compared on an unscaled paired canvas. Both men and shirts brighten usefully; name patch, tie lines, shirt creases, ceiling folds and window structure remain readable. However low-light chroma grain/blotches become conspicuous in arms, faces and dark trousers, with coarse coloured bands in the shaded shirts. The source already contains grain; its amplified visibility fails basic-quality adoption. Try a cleaner gentler recipe under the same lightening request.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      }
+    }
+  ],
+  "all_repair_observations": [
+    {
+      "bundle": "wave1",
+      "id": "native-train-n011",
+      "candidate": "R1",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "The man and jacket are brighter and the brown/yellow cast is reduced modestly while the red sash and blue shirt stay distinct. The whole frame and black border are visible, but source grain, skin and edge colour require native inspection before quality acceptance.",
+      "at": "2026-11-06T16:52:32.420215+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n011.png",
+        "sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+        "size": [
+          540,
+          960
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40,
+            "shadows": 15,
+            "saturation": -8,
+            "temperature": -4,
+            "tint": 4
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n011/R1.png",
+        "image_sha256": "e38ce4db73702a810e51c354a3abaa327ca38fb258419bedf72bc6b9785d5e56",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "native-train-n011",
+      "candidate": "R2",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "The stronger lift and modest desaturation reduce the brown cast without the earlier conspicuous cool-purple shift in the overview. The whole frame and black border are visible, but source grain, skin and edge colour require native inspection before quality acceptance.",
+      "at": "2026-11-06T16:52:32.421794+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n011.png",
+        "sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+        "size": [
+          540,
+          960
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 55,
+            "shadows": 10,
+            "saturation": -12,
+            "temperature": -3,
+            "tint": 6
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n011/R2.png",
+        "image_sha256": "c4a088a4d062b355c27dd0439d0276a19d4966fd2f8a778afd73c9cf087cf424",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "native-train-n204",
+      "candidate": "R1",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: strong brightness increase in subject, ceiling and floor satisfies the dramatic lift direction; white blouse folds and skirt layers stay differentiated. Coloured floor/ceiling banding is still suspect and requires native comparison; no quality acceptance from this overview.",
+      "at": "2026-11-06T16:52:59.892912+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n204.png",
+        "sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+        "size": [
+          720,
+          960
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 100,
+            "saturation": -15,
+            "highlights": -10
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n204/R1.png",
+        "image_sha256": "0bb5f2039f763a3d3398e51ecdfbb88751e5fda6c42a8b2d276ebf4c13fa9811",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "native-train-n204",
+      "candidate": "R2",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: strong brightness increase in subject, ceiling and floor satisfies the dramatic lift direction; white blouse folds and skirt layers stay differentiated. Coloured floor/ceiling banding is still suspect and requires native comparison; no quality acceptance from this overview.",
+      "at": "2026-11-06T16:52:59.894845+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n204.png",
+        "sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+        "size": [
+          720,
+          960
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 70,
+            "brightness": 20,
+            "shadows": 10,
+            "highlights": -20,
+            "saturation": -18
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n204/R2.png",
+        "image_sha256": "8343e4cd4337d53f8c8b6574d789c4aa20d3086e79eef5f146469b091687a431",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "native-train-x030",
+      "candidate": "R1",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: substantial brightening reveals grass/trees and lifts mountains, water and sky, satisfying the large-lift wording unlike the weak prior target. Sky gradient and reflections remain visible, but dark foreground colour/noise and bright sky integrity need native comparison before accepting quality.",
+      "at": "2026-11-06T16:53:31.506794+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-x030.png",
+        "sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+        "size": [
+          960,
+          640
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 90,
+            "brightness": 20,
+            "shadows": 25,
+            "highlights": -10
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x030/R1.png",
+        "image_sha256": "2c2f7b49abe8a9195daf2973d6f8fd4511225f081728cd7c4ba4fa0a73a83c32",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "native-train-x030",
+      "candidate": "R2",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: substantial brightening reveals grass/trees and lifts mountains, water and sky, satisfying the large-lift wording unlike the weak prior target. Sky gradient and reflections remain visible, but dark foreground colour/noise and bright sky integrity need native comparison before accepting quality.",
+      "at": "2026-11-06T16:53:31.508609+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-x030.png",
+        "sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+        "size": [
+          960,
+          640
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 100,
+            "brightness": 10,
+            "shadows": 40,
+            "highlights": -12
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x030/R2.png",
+        "image_sha256": "0e2084edf466b3e35862835dc990ec2bada7f4289561df158ba000cb6a9cffdc",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "native-train-x186",
+      "candidate": "R1",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: the seascape is brighter and water/cloud detail remains, with less severe shadow lift than the previous proposal. Dark foreground/cliff still look green and need native source comparison before deciding whether this is acceptable or a retained veil/cast failure.",
+      "at": "2026-11-06T16:54:16.051419+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-x186.png",
+        "sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+        "size": [
+          960,
+          842
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 35,
+            "shadows": 25,
+            "highlights": -10,
+            "tint": -8,
+            "saturation": -5
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x186/R1.png",
+        "image_sha256": "c4fd1b0b9c941ec4d7194165aff8abbe338d72f800e33b62a7758ac6587c03ba",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "native-train-x186",
+      "candidate": "R2",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: the seascape is brighter and water/cloud detail remains, with less severe shadow lift than the previous proposal. Dark foreground/cliff still look green and need native source comparison before deciding whether this is acceptable or a retained veil/cast failure.",
+      "at": "2026-11-06T16:54:16.053990+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-x186.png",
+        "sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+        "size": [
+          960,
+          842
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 55,
+            "shadows": 10,
+            "highlights": -12,
+            "tint": -10,
+            "saturation": -10
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x186/R2.png",
+        "image_sha256": "6ef31965fc3ad718c43f77003e9f377e7cf05fc143c84c325562e329a2002e1d",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-extension-081",
+      "candidate": "R1",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: whole scan brightens and garage/pavement remain differentiated, but foreground still has an olive lift. Native inspection is needed to judge the strong source green/yellow cast versus introduced veil/noise.",
+      "at": "2026-11-06T16:56:04.004490+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-extension-081/input.png",
+        "sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+        "size": [
+          1439,
+          1080
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 30,
+            "shadows": 10,
+            "saturation": -10
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-081/R1.png",
+        "image_sha256": "1a02af4370f36b77e97935b0e82df80b87dc4c1869b31f0db8c59c185594e7ba",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-extension-081",
+      "candidate": "R2",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: whole scan brightens with less green/olive cast than R1; pavement and facade appear cooler. Need native comparison to decide whether this reduces the previous defect without introducing excessive blue/purple colour or noise.",
+      "at": "2026-11-06T16:56:04.006925+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-extension-081/input.png",
+        "sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+        "size": [
+          1439,
+          1080
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40,
+            "shadows": 5,
+            "temperature": -5,
+            "tint": -30,
+            "saturation": -10
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-081/R2.png",
+        "image_sha256": "17993d85c6b57b37e60b25701aefcc8e5e704e16266e30dfa6624353cbc3a345",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-extension-538",
+      "candidate": "R1",
+      "stage": "overview",
+      "completion": "U",
+      "quality": "U",
+      "evidence": "Overview directly viewed: warmer leaves/pavement and stronger tree/bench contrast are visible, but whether the change is sufficiently orange rather than yellow remains uncertain. Inspect native colour/bright leaves and shadows before completion or quality acceptance.",
+      "at": "2026-11-06T16:56:04.009840+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-extension-538/input.png",
+        "sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+        "size": [
+          640,
+          852
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "temperature": 18,
+            "tint": -20,
+            "saturation": 3,
+            "contrast": 14,
+            "shadows": 5
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-538/R1.png",
+        "image_sha256": "70dfd5e02e6b022765cb62cd2c6d711a8a8b4be6b7dbc400318efb96fb7686a5",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-extension-538",
+      "candidate": "R2",
+      "stage": "overview",
+      "completion": "U",
+      "quality": "U",
+      "evidence": "Overview directly viewed: warmer leaves/pavement and stronger tree/bench contrast are visible, but whether the change is sufficiently orange rather than yellow remains uncertain. Inspect native colour/bright leaves and shadows before completion or quality acceptance.",
+      "at": "2026-11-06T16:56:04.012245+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-extension-538/input.png",
+        "sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+        "size": [
+          640,
+          852
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "temperature": 12,
+            "tint": -30,
+            "contrast": 16,
+            "shadows": 5
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-538/R2.png",
+        "image_sha256": "b0891d6e8247990a61a248d2344a20ac5390f88a8471a25b9d2de5a2a2017ddb",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-native-073",
+      "candidate": "R1",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: face/hair and armour are significantly brighter, more colourful and more contrasty. Skin now looks quite orange and forehead/hair are very pale; native comparison is needed for colour damage/clipping before quality judgment.",
+      "at": "2026-11-06T16:56:04.014401+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+        "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+        "size": [
+          531,
+          748
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 50,
+            "brightness": 35,
+            "contrast": 16,
+            "shadows": 10,
+            "highlights": -15,
+            "saturation": 12
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-073/R1.png",
+        "image_sha256": "4bedbd26cde30689e0d7e1ae3f9b2433555e10e54e4d79927c0e5621c1ccd7ea",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-native-073",
+      "candidate": "R2",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: face/hair and armour are significantly brighter, more colourful and more contrasty. Skin now looks quite orange and forehead/hair are very pale; native comparison is needed for colour damage/clipping before quality judgment.",
+      "at": "2026-11-06T16:56:04.016063+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+        "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+        "size": [
+          531,
+          748
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 70,
+            "brightness": 20,
+            "contrast": 20,
+            "shadows": 15,
+            "highlights": -20,
+            "saturation": 12
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-073/R2.png",
+        "image_sha256": "e4c7c0654d53eca2f73c85add635aa34072168270f8715cd166f356a4d41207d",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-native-074",
+      "candidate": "R1",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: large global brightness increase and more vivid blanket colours are visible; baby face and pale cushion motifs remain differentiated. Skin warmth, fine fabric and any bright-detail loss/noise need native inspection before quality acceptance.",
+      "at": "2026-11-06T16:56:51.430604+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-074/input.png",
+        "sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+        "size": [
+          1920,
+          1440
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 80,
+            "brightness": 25,
+            "shadows": 20,
+            "highlights": -12,
+            "saturation": 8
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-074/R1.png",
+        "image_sha256": "444589010475f9400c1d73c2cbb9b9e80ea1d3e840204607f265b804f49c998a",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-native-074",
+      "candidate": "R2",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: large global brightness increase and more vivid blanket colours are visible; baby face and pale cushion motifs remain differentiated. Skin warmth, fine fabric and any bright-detail loss/noise need native inspection before quality acceptance.",
+      "at": "2026-11-06T16:56:51.434309+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-074/input.png",
+        "sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+        "size": [
+          1920,
+          1440
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 100,
+            "brightness": 15,
+            "shadows": 10,
+            "highlights": -15,
+            "saturation": 10
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-074/R2.png",
+        "image_sha256": "ec018ff2dde4b5a846a7d982177c8123884c19ccb2d882c99186e40790607a22",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-native-214",
+      "candidate": "R1",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: group/fall foliage brighten significantly with stronger contrast and richer colours. White clothing and faces remain differentiated in this overview; dark back-row shirts and trousers need native inspection for the source chroma/banding failure found in the prior candidate.",
+      "at": "2026-11-06T16:57:17.826060+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-214/input.png",
+        "sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+        "size": [
+          960,
+          642
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 55,
+            "brightness": 5,
+            "shadows": 10,
+            "contrast": 14,
+            "saturation": 8,
+            "highlights": -15
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-214/R1.png",
+        "image_sha256": "2530ac803ceb23198ae3cabb5938c14e3b235e33fe59df53a69b6da02d62ca1d",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-native-214",
+      "candidate": "R2",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: group/fall foliage brighten significantly with stronger contrast and richer colours. White clothing and faces remain differentiated in this overview; dark back-row shirts and trousers need native inspection for the source chroma/banding failure found in the prior candidate.",
+      "at": "2026-11-06T16:57:17.828997+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-214/input.png",
+        "sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+        "size": [
+          960,
+          642
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65,
+            "contrast": 12,
+            "saturation": 8,
+            "highlights": -20
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-214/R2.png",
+        "image_sha256": "7b3b1e08227c747d8470a5e404b85d3687fb5661decbfd427aaf332ebcdf96ae",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-native-234",
+      "candidate": "R1",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: the two people and tent brighten visibly, with shirt folds/window grid retained. Faces remain shaded but the request has no recovery/large-lift qualifier. Need native comparison of arms/faces/shirts/trousers for intrusive grain/chroma before quality acceptance.",
+      "at": "2026-11-06T16:57:56.930471+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-234/input.png",
+        "sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+        "size": [
+          915,
+          1200
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 35,
+            "shadows": 10,
+            "saturation": -8,
+            "highlights": -12
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-234/R1.png",
+        "image_sha256": "0fcc80c5782c5c8e93c527e34651fa38883c3b73e2aaaf2e70d439e4e0f795ec",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-native-234",
+      "candidate": "R2",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: the two people and tent brighten visibly, with shirt folds/window grid retained. Faces remain shaded but the request has no recovery/large-lift qualifier. Need native comparison of arms/faces/shirts/trousers for intrusive grain/chroma before quality acceptance.",
+      "at": "2026-11-06T16:57:56.933213+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-234/input.png",
+        "sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+        "size": [
+          915,
+          1200
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 50,
+            "shadows": 5,
+            "saturation": -12,
+            "highlights": -15
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-234/R2.png",
+        "image_sha256": "aa679279dc0e41a9d305068e077135c958c5363c8df2af9f671fc89a3ff73d61",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave2",
+      "id": "native-train-x250",
+      "candidate": "R1",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: facade/water brighten with somewhat stronger contrast, while tree silhouettes and reflected lamps remain. Lower/absent shadow gain may reduce the chroma defect, but native water and bushes must be checked; no quality acceptance from this overview.",
+      "at": "2026-11-06T16:58:39.389338+00:00",
+      "manifest_sha256": "1734b4d9b3a09a21bb52205a10af273c5f73a5f25d16f8e5bfda91a5fc3e30f5",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+        "sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+        "size": [
+          2916,
+          1944
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 35,
+            "contrast": 14,
+            "shadows": 10,
+            "highlights": -10
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave2/native-train-x250/R1.png",
+        "image_sha256": "b4ab4306a834ec1883de85a79790c04f4ce465f1a5d4473a04d0d19c2cc2e7fa",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave2",
+      "id": "native-train-x250",
+      "candidate": "R2",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: facade/water brighten with somewhat stronger contrast, while tree silhouettes and reflected lamps remain. Lower/absent shadow gain may reduce the chroma defect, but native water and bushes must be checked; no quality acceptance from this overview.",
+      "at": "2026-11-06T16:58:39.397007+00:00",
+      "manifest_sha256": "1734b4d9b3a09a21bb52205a10af273c5f73a5f25d16f8e5bfda91a5fc3e30f5",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+        "sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+        "size": [
+          2916,
+          1944
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 45,
+            "contrast": 12,
+            "highlights": -15
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave2/native-train-x250/R2.png",
+        "image_sha256": "b2b6d77ca14bbf21a5fedf4fc49183e1133ca7dc3988ad9f86a4f75c5092d06a",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "native-train-n011",
+      "candidate": "R1",
+      "stage": "native",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole 540x960 native input and R1 were directly viewed in addition to the overview. The man/jacket are brighter and less brown/yellow; skin, red sash and blue shirt remain distinguishable, and black letterboxes stay black rather than blue. Existing coarse grain/softness remain without newly dominant chroma blotches or broad clipping. This moderate correction meets the literal request; it is not denoising, face-detail recovery or user approval.",
+      "at": "2026-11-06T16:59:37.450600+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n011.png",
+        "sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+        "size": [
+          540,
+          960
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40,
+            "shadows": 15,
+            "saturation": -8,
+            "temperature": -4,
+            "tint": 4
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n011/R1.png",
+        "image_sha256": "e38ce4db73702a810e51c354a3abaa327ca38fb258419bedf72bc6b9785d5e56",
+        "label_admitted": false
+      },
+      "regions": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/native-train-n011-INPUT-whole.png",
+          "sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+          "size": [
+            540,
+            960
+          ],
+          "box": [
+            0,
+            0,
+            540,
+            960
+          ],
+          "source": "data/training/functional-v6-20261105/inputs/native-train-n011.png",
+          "source_sha256": "41aaa50423f550cb90074551a235f2793e250a222570878466789b8315c8d819",
+          "source_size": [
+            540,
+            960
+          ]
+        },
+        {
+          "role": "R1",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/native-train-n011-R1-whole.png",
+          "sha256": "e38ce4db73702a810e51c354a3abaa327ca38fb258419bedf72bc6b9785d5e56",
+          "size": [
+            540,
+            960
+          ],
+          "box": [
+            0,
+            0,
+            540,
+            960
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n011/R1.png",
+          "source_sha256": "e38ce4db73702a810e51c354a3abaa327ca38fb258419bedf72bc6b9785d5e56",
+          "source_size": [
+            540,
+            960
+          ]
+        }
+      ],
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "native-train-n204",
+      "candidate": "R1",
+      "stage": "native",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole 720x960 native input and R1 were directly compared. Strong lift is clear on face, ceiling and wooden floor; blouse folds, bodice and layered skirt remain differentiated. Source horizontal floor/compression texture and mild ceiling colour unevenness remain visible, but are not newly dominant blotches at this exposure-only lift as in the earlier high-shadow candidate. Skin remains warm with readable features; no broad new white clipping. This is a global exposure correction, not denoising or texture recovery.",
+      "at": "2026-11-06T17:00:48.745031+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n204.png",
+        "sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+        "size": [
+          720,
+          960
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 100,
+            "saturation": -15,
+            "highlights": -10
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n204/R1.png",
+        "image_sha256": "0bb5f2039f763a3d3398e51ecdfbb88751e5fda6c42a8b2d276ebf4c13fa9811",
+        "label_admitted": false
+      },
+      "regions": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/native-train-n204-INPUT-whole.png",
+          "sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+          "size": [
+            720,
+            960
+          ],
+          "box": [
+            0,
+            0,
+            720,
+            960
+          ],
+          "source": "data/training/functional-v6-20261105/inputs/native-train-n204.png",
+          "source_sha256": "9cd8ef96f76b40c2467eaf0e1867526aa405a55f253ffd37c399a04e386d1aff",
+          "source_size": [
+            720,
+            960
+          ]
+        },
+        {
+          "role": "R1",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/native-train-n204-R1-whole.png",
+          "sha256": "0bb5f2039f763a3d3398e51ecdfbb88751e5fda6c42a8b2d276ebf4c13fa9811",
+          "size": [
+            720,
+            960
+          ],
+          "box": [
+            0,
+            0,
+            720,
+            960
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-n204/R1.png",
+          "source_sha256": "0bb5f2039f763a3d3398e51ecdfbb88751e5fda6c42a8b2d276ebf4c13fa9811",
+          "source_size": [
+            720,
+            960
+          ]
+        }
+      ],
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "native-train-x030",
+      "candidate": "R1",
+      "stage": "native",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole 960x640 native input and R1 were directly compared. The large brightening now lifts grass, trees, mountains and water substantially; sky gradient, rock silhouettes, reeds and reflections remain. Source dark softness remains, but no conspicuous new chroma blocks, intrusive noise or broad white clipping is visible. The lifted tree line is softer/lower contrast as shadows emerge; it does not form the dominant grey veil that would fail basic quality here.",
+      "at": "2026-11-06T17:01:55.496464+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-x030.png",
+        "sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+        "size": [
+          960,
+          640
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 90,
+            "brightness": 20,
+            "shadows": 25,
+            "highlights": -10
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x030/R1.png",
+        "image_sha256": "2c2f7b49abe8a9195daf2973d6f8fd4511225f081728cd7c4ba4fa0a73a83c32",
+        "label_admitted": false
+      },
+      "regions": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/native-train-x030-INPUT-whole.png",
+          "sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+          "size": [
+            960,
+            640
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            640
+          ],
+          "source": "data/training/functional-v6-20261105/inputs/native-train-x030.png",
+          "source_sha256": "d4c98540ebc26be45533a195119b4aade0dc11c7c38674fe618e7889ba8adcf0",
+          "source_size": [
+            960,
+            640
+          ]
+        },
+        {
+          "role": "R1",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/native-train-x030-R1-whole.png",
+          "sha256": "2c2f7b49abe8a9195daf2973d6f8fd4511225f081728cd7c4ba4fa0a73a83c32",
+          "size": [
+            960,
+            640
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            640
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x030/R1.png",
+          "source_sha256": "2c2f7b49abe8a9195daf2973d6f8fd4511225f081728cd7c4ba4fa0a73a83c32",
+          "source_size": [
+            960,
+            640
+          ]
+        }
+      ],
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "native-train-x186",
+      "candidate": "R2",
+      "stage": "native",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole 960x842 native input and R2 were directly compared. Global brightening is visible in water, clouds, cliff and foreground; ripples, cloud shapes and rock/tree silhouettes remain. The very green deep shade is already present in the source and remains dark rather than being broadly raised into the conspicuous green veil of the earlier candidate. The modest tint/desaturation does not create an unrelated magenta scene or dominant noise, and no broad new clipping is visible. No claim of recovering the shaded person face.",
+      "at": "2026-11-06T17:02:56.210829+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-x186.png",
+        "sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+        "size": [
+          960,
+          842
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 55,
+            "shadows": 10,
+            "highlights": -12,
+            "tint": -10,
+            "saturation": -10
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x186/R2.png",
+        "image_sha256": "6ef31965fc3ad718c43f77003e9f377e7cf05fc143c84c325562e329a2002e1d",
+        "label_admitted": false
+      },
+      "regions": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/native-train-x186-INPUT-whole.png",
+          "sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+          "size": [
+            960,
+            842
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            842
+          ],
+          "source": "data/training/functional-v6-20261105/inputs/native-train-x186.png",
+          "source_sha256": "53659eec0079fc8cf9efbe36819c84cc6fa49e29477c37d4258cf7ef36348b1c",
+          "source_size": [
+            960,
+            842
+          ]
+        },
+        {
+          "role": "R2",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/native-train-x186-R2-whole.png",
+          "sha256": "6ef31965fc3ad718c43f77003e9f377e7cf05fc143c84c325562e329a2002e1d",
+          "size": [
+            960,
+            842
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            842
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave1/native-train-x186/R2.png",
+          "source_sha256": "6ef31965fc3ad718c43f77003e9f377e7cf05fc143c84c325562e329a2002e1d",
+          "source_size": [
+            960,
+            842
+          ]
+        }
+      ],
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-extension-081",
+      "candidate": "R2",
+      "stage": "native",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole 1439x1080 input and R2 were directly compared. Entire scene is lighter and the source heavy green cast is moderated; facade/pavement become less green without an excessive new purple shift. The dark foreground remains dark rather than a broad olive veil, while garage openings/vehicles remain differentiated. Original scan blur, marks and low detail persist; no newly dominant noise/broad clipping is visible. Acceptance is only for lightening this poor scan, not restoration or a naturally white-balanced result.",
+      "at": "2026-11-06T17:04:16.959293+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-extension-081/input.png",
+        "sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+        "size": [
+          1439,
+          1080
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40,
+            "shadows": 5,
+            "temperature": -5,
+            "tint": -30,
+            "saturation": -10
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-081/R2.png",
+        "image_sha256": "17993d85c6b57b37e60b25701aefcc8e5e704e16266e30dfa6624353cbc3a345",
+        "label_admitted": false
+      },
+      "regions": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/r13-train-extension-081-INPUT-whole.png",
+          "sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+          "size": [
+            1439,
+            1080
+          ],
+          "box": [
+            0,
+            0,
+            1439,
+            1080
+          ],
+          "source": "experiments/functional-v13-20261106/primary-candidates/train-extension-081/input.png",
+          "source_sha256": "3567f859c0aaedca6ce1bf202c2d05d6c1cd15d524d278f8e42b45e5232c5963",
+          "source_size": [
+            1439,
+            1080
+          ]
+        },
+        {
+          "role": "R2",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/r13-train-extension-081-R2-whole.png",
+          "sha256": "17993d85c6b57b37e60b25701aefcc8e5e704e16266e30dfa6624353cbc3a345",
+          "size": [
+            1439,
+            1080
+          ],
+          "box": [
+            0,
+            0,
+            1439,
+            1080
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-081/R2.png",
+          "source_sha256": "17993d85c6b57b37e60b25701aefcc8e5e704e16266e30dfa6624353cbc3a345",
+          "source_size": [
+            1439,
+            1080
+          ]
+        }
+      ],
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-extension-538",
+      "candidate": "R2",
+      "stage": "native",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole 640x852 native input and R2 were directly compared after the uncertain overview. Leaves/path change from greenish yellow toward warmer orange/gold-brown; neutral paving and bench take a warmer brown tone rather than merely a uniform stronger yellow. Tree/bench contrast increases. Leaf boundaries, paving pattern and bench slats remain with no broad new clipping or intrusive noise. The source already has very dark trunks and white sky holes; these are not claimed recovered. Completion is a visible relative orange shift, not a fully orange/sepia scene.",
+      "at": "2026-11-06T17:05:34.241986+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-extension-538/input.png",
+        "sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+        "size": [
+          640,
+          852
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "temperature": 12,
+            "tint": -30,
+            "contrast": 16,
+            "shadows": 5
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-538/R2.png",
+        "image_sha256": "b0891d6e8247990a61a248d2344a20ac5390f88a8471a25b9d2de5a2a2017ddb",
+        "label_admitted": false
+      },
+      "regions": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/r13-train-extension-538-INPUT-whole.png",
+          "sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+          "size": [
+            640,
+            852
+          ],
+          "box": [
+            0,
+            0,
+            640,
+            852
+          ],
+          "source": "experiments/functional-v13-20261106/primary-candidates/train-extension-538/input.png",
+          "source_sha256": "ac1d849a999decee46a1f00f9b4d3c3e14a680c8878d9533fea9efbed7cdf679",
+          "source_size": [
+            640,
+            852
+          ]
+        },
+        {
+          "role": "R2",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/r13-train-extension-538-R2-whole.png",
+          "sha256": "b0891d6e8247990a61a248d2344a20ac5390f88a8471a25b9d2de5a2a2017ddb",
+          "size": [
+            640,
+            852
+          ],
+          "box": [
+            0,
+            0,
+            640,
+            852
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-extension-538/R2.png",
+          "source_sha256": "b0891d6e8247990a61a248d2344a20ac5390f88a8471a25b9d2de5a2a2017ddb",
+          "source_size": [
+            640,
+            852
+          ]
+        }
+      ],
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-native-073",
+      "candidate": "R2",
+      "stage": "native",
+      "completion": "C",
+      "quality": "m",
+      "evidence": "Whole 531x748 native input and R2 were directly compared. Significant brightness/contrast/colour increase is evident, but pale forehead/nose/hair now lose tonal differentiation and skin shifts conspicuously orange compared with the natural source. This fails basic portrait quality despite complying with brightness direction; do not admit or turn this single failed recipe into universal inability.",
+      "at": "2026-11-06T17:07:14.993621+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+        "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+        "size": [
+          531,
+          748
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 70,
+            "brightness": 20,
+            "contrast": 20,
+            "shadows": 15,
+            "highlights": -20,
+            "saturation": 12
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-073/R2.png",
+        "image_sha256": "e4c7c0654d53eca2f73c85add635aa34072168270f8715cd166f356a4d41207d",
+        "label_admitted": false
+      },
+      "regions": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/r13-train-native-073-INPUT-whole.png",
+          "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+          "size": [
+            531,
+            748
+          ],
+          "box": [
+            0,
+            0,
+            531,
+            748
+          ],
+          "source": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+          "source_sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+          "source_size": [
+            531,
+            748
+          ]
+        },
+        {
+          "role": "R2",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/r13-train-native-073-R2-whole.png",
+          "sha256": "e4c7c0654d53eca2f73c85add635aa34072168270f8715cd166f356a4d41207d",
+          "size": [
+            531,
+            748
+          ],
+          "box": [
+            0,
+            0,
+            531,
+            748
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-073/R2.png",
+          "source_sha256": "e4c7c0654d53eca2f73c85add635aa34072168270f8715cd166f356a4d41207d",
+          "source_size": [
+            531,
+            748
+          ]
+        }
+      ],
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-native-074",
+      "candidate": "R1",
+      "stage": "native",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole 1920x1440 input and R1 were directly viewed separately. Large global brightening now meets the wording; blanket colours are more vivid while face contours/eyelids, hair strands, blanket weave/dots and cushion motifs remain differentiated. Skin is warmer but stays plausible rather than garish orange. No broad new white clipping or intrusive grain/chroma blocks is visible; fine source softness remains. This is an exposure/colour edit, not detail restoration.",
+      "at": "2026-11-06T17:08:28.474052+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-074/input.png",
+        "sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+        "size": [
+          1920,
+          1440
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 80,
+            "brightness": 25,
+            "shadows": 20,
+            "highlights": -12,
+            "saturation": 8
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-074/R1.png",
+        "image_sha256": "444589010475f9400c1d73c2cbb9b9e80ea1d3e840204607f265b804f49c998a",
+        "label_admitted": false
+      },
+      "regions": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/r13-train-native-074-INPUT-whole.png",
+          "sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+          "size": [
+            1920,
+            1440
+          ],
+          "box": [
+            0,
+            0,
+            1920,
+            1440
+          ],
+          "source": "experiments/functional-v13-20261106/primary-candidates/train-native-074/input.png",
+          "source_sha256": "55fd7762f715140bb806d89581231f955063b85f59410fd7a2361499638e0f5e",
+          "source_size": [
+            1920,
+            1440
+          ]
+        },
+        {
+          "role": "R1",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/r13-train-native-074-R1-whole.png",
+          "sha256": "444589010475f9400c1d73c2cbb9b9e80ea1d3e840204607f265b804f49c998a",
+          "size": [
+            1920,
+            1440
+          ],
+          "box": [
+            0,
+            0,
+            1920,
+            1440
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-074/R1.png",
+          "source_sha256": "444589010475f9400c1d73c2cbb9b9e80ea1d3e840204607f265b804f49c998a",
+          "source_size": [
+            1920,
+            1440
+          ]
+        }
+      ],
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-native-214",
+      "candidate": "R2",
+      "stage": "native",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole 960x642 native input and R2 were directly compared. The group and autumn foliage are significantly brighter with stronger contrast and richer colour. The back-row plaid, dark shirts and trousers retain folds/stripes without the earlier conspicuous lifted chroma/banding; source texture is still visible but not newly dominant. Skin remains plausible, white shirts retain folds, and original bright face patches are not claimed recovered. No broad new clipping/intrusive noise is seen at this exposure-only, highlight-protected setting.",
+      "at": "2026-11-06T17:09:47.092934+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-214/input.png",
+        "sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+        "size": [
+          960,
+          642
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 65,
+            "contrast": 12,
+            "saturation": 8,
+            "highlights": -20
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-214/R2.png",
+        "image_sha256": "7b3b1e08227c747d8470a5e404b85d3687fb5661decbfd427aaf332ebcdf96ae",
+        "label_admitted": false
+      },
+      "regions": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/r13-train-native-214-INPUT-whole.png",
+          "sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+          "size": [
+            960,
+            642
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            642
+          ],
+          "source": "experiments/functional-v13-20261106/primary-candidates/train-native-214/input.png",
+          "source_sha256": "bc2ccd2a511e80485bcfdc116a0c92285a7d77366439fd39003a16e4f72389e2",
+          "source_size": [
+            960,
+            642
+          ]
+        },
+        {
+          "role": "R2",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/r13-train-native-214-R2-whole.png",
+          "sha256": "7b3b1e08227c747d8470a5e404b85d3687fb5661decbfd427aaf332ebcdf96ae",
+          "size": [
+            960,
+            642
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            642
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-214/R2.png",
+          "source_sha256": "7b3b1e08227c747d8470a5e404b85d3687fb5661decbfd427aaf332ebcdf96ae",
+          "source_size": [
+            960,
+            642
+          ]
+        }
+      ],
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave1",
+      "id": "r13-train-native-234",
+      "candidate": "R1",
+      "stage": "native",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole 915x1200 native input and R1 were directly compared. People/shirts/tent brighten visibly while the source shaded faces remain shaded; there is no strong-lift or face-recovery qualifier. Shirt folds, tent seams, window grid and trouser texture remain. Fine source grain persists but the modest lift/desaturation avoids the prior conspicuous chroma/banding amplification; no broad new clipping or false skin hue is seen. This is not noise removal or recovered face detail.",
+      "at": "2026-11-06T17:11:43.143959+00:00",
+      "manifest_sha256": "6d1c81fb07a1a6cca457e255ca5ebd58b2a0ac7cfd2072dc1d84ce0151bf8976",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-234/input.png",
+        "sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+        "size": [
+          915,
+          1200
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 35,
+            "shadows": 10,
+            "saturation": -8,
+            "highlights": -12
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-234/R1.png",
+        "image_sha256": "0fcc80c5782c5c8e93c527e34651fa38883c3b73e2aaaf2e70d439e4e0f795ec",
+        "label_admitted": false
+      },
+      "regions": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/r13-train-native-234-INPUT-whole.png",
+          "sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+          "size": [
+            915,
+            1200
+          ],
+          "box": [
+            0,
+            0,
+            915,
+            1200
+          ],
+          "source": "experiments/functional-v13-20261106/primary-candidates/train-native-234/input.png",
+          "source_sha256": "418fa1afba876a9069a78be197756b000a86bc6194637cdd113ebac9e705107f",
+          "source_size": [
+            915,
+            1200
+          ]
+        },
+        {
+          "role": "R1",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave1/r13-train-native-234-R1-whole.png",
+          "sha256": "0fcc80c5782c5c8e93c527e34651fa38883c3b73e2aaaf2e70d439e4e0f795ec",
+          "size": [
+            915,
+            1200
+          ],
+          "box": [
+            0,
+            0,
+            915,
+            1200
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave1/r13-train-native-234/R1.png",
+          "source_sha256": "0fcc80c5782c5c8e93c527e34651fa38883c3b73e2aaaf2e70d439e4e0f795ec",
+          "source_size": [
+            915,
+            1200
+          ]
+        }
+      ],
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave2",
+      "id": "native-train-x250",
+      "candidate": "R2",
+      "stage": "native",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole-frame repair overview and all three native R2 facade/trees-sky/water crops were directly viewed. Their exact input crops were viewed earlier in this review and checked byte/hash-identical across bundles. Facade/water brighten and contrast increases while windows, railings, branches and reflections remain. Dark right water/bush source texture remains but lacks the conspicuous red/blue rectangular chroma lift of the prior Sh65 proposal; no dominant new noise or broad clipping is visible at this exposure-only setting. Native coverage is the three critical regions, not the entire large frame.",
+      "at": "2026-11-06T17:14:00.590014+00:00",
+      "manifest_sha256": "1734b4d9b3a09a21bb52205a10af273c5f73a5f25d16f8e5bfda91a5fc3e30f5",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+        "sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+        "size": [
+          2916,
+          1944
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 45,
+            "contrast": 12,
+            "highlights": -15
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave2/native-train-x250/R2.png",
+        "image_sha256": "b2b6d77ca14bbf21a5fedf4fc49183e1133ca7dc3988ad9f86a4f75c5092d06a",
+        "label_admitted": false
+      },
+      "regions": [
+        {
+          "role": "INPUT",
+          "region": "facade",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave2/native-train-x250-INPUT-facade.png",
+          "sha256": "1a735bbfb80e03890752b9080e260f3a8512dca474e8628a7018342fc595679b",
+          "size": [
+            1200,
+            1200
+          ],
+          "box": [
+            800,
+            400,
+            2000,
+            1600
+          ],
+          "source": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+          "source_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+          "source_size": [
+            2916,
+            1944
+          ]
+        },
+        {
+          "role": "INPUT",
+          "region": "trees-sky",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave2/native-train-x250-INPUT-trees-sky.png",
+          "sha256": "2d36b3b9daa88d7e454efd453c6d4a6590de4867d3dcd8e241b5ad2134170cfc",
+          "size": [
+            1200,
+            1200
+          ],
+          "box": [
+            0,
+            0,
+            1200,
+            1200
+          ],
+          "source": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+          "source_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+          "source_size": [
+            2916,
+            1944
+          ]
+        },
+        {
+          "role": "INPUT",
+          "region": "water",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave2/native-train-x250-INPUT-water.png",
+          "sha256": "9b2f8771babc0eeb47b6d916fdfa0b72e5e24826592c92c9b533eb4b64a51874",
+          "size": [
+            1200,
+            844
+          ],
+          "box": [
+            1600,
+            1100,
+            2800,
+            1944
+          ],
+          "source": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+          "source_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+          "source_size": [
+            2916,
+            1944
+          ]
+        },
+        {
+          "role": "R2",
+          "region": "facade",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave2/native-train-x250-R2-facade.png",
+          "sha256": "573ad85d4ea257a08e6a753ec4f5341a4eff70a769598ff2f70ee6b7e34c1143",
+          "size": [
+            1200,
+            1200
+          ],
+          "box": [
+            800,
+            400,
+            2000,
+            1600
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave2/native-train-x250/R2.png",
+          "source_sha256": "b2b6d77ca14bbf21a5fedf4fc49183e1133ca7dc3988ad9f86a4f75c5092d06a",
+          "source_size": [
+            2916,
+            1944
+          ]
+        },
+        {
+          "role": "R2",
+          "region": "trees-sky",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave2/native-train-x250-R2-trees-sky.png",
+          "sha256": "dce9b0f021a11aa2ad01a7c9d48584bcd87e9c06611631e24b4bb2d520913666",
+          "size": [
+            1200,
+            1200
+          ],
+          "box": [
+            0,
+            0,
+            1200,
+            1200
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave2/native-train-x250/R2.png",
+          "source_sha256": "b2b6d77ca14bbf21a5fedf4fc49183e1133ca7dc3988ad9f86a4f75c5092d06a",
+          "source_size": [
+            2916,
+            1944
+          ]
+        },
+        {
+          "role": "R2",
+          "region": "water",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave2/native-train-x250-R2-water.png",
+          "sha256": "4b2d53e3bcc275f53a2d27a6e26bc53e3b34ef854705416d8a25b14874e7498e",
+          "size": [
+            1200,
+            844
+          ],
+          "box": [
+            1600,
+            1100,
+            2800,
+            1944
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave2/native-train-x250/R2.png",
+          "source_sha256": "b2b6d77ca14bbf21a5fedf4fc49183e1133ca7dc3988ad9f86a4f75c5092d06a",
+          "source_size": [
+            2916,
+            1944
+          ]
+        }
+      ],
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave3",
+      "id": "r13-train-native-073",
+      "candidate": "R1",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: stronger whole-image brightness, armour/hair contrast and richer background/hair colour are visible than input. Skin is less orange and forehead is more differentiated than the failed wave1 strong lift; native skin/hair/mail inspection remains required before quality acceptance.",
+      "at": "2026-11-06T17:19:56.471557+00:00",
+      "manifest_sha256": "13aa9e3177f9293116dae55553c0432feb94e2dfe4be309a871d1d881546deb4",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+        "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+        "size": [
+          531,
+          748
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 55,
+            "brightness": 8,
+            "contrast": 18,
+            "shadows": 8,
+            "highlights": -25,
+            "saturation": 4
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave3/r13-train-native-073/R1.png",
+        "image_sha256": "d1614b99b972417a1526167b6defc6c0e5eb1d4d53fc84b30022f881cec78c04",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave3",
+      "id": "r13-train-native-073",
+      "candidate": "R2",
+      "stage": "overview",
+      "completion": "C",
+      "quality": "U",
+      "evidence": "Overview directly viewed: stronger whole-image brightness, armour/hair contrast and richer background/hair colour are visible than input. Skin is less orange and forehead is more differentiated than the failed wave1 strong lift; native skin/hair/mail inspection remains required before quality acceptance.",
+      "at": "2026-11-06T17:19:56.473608+00:00",
+      "manifest_sha256": "13aa9e3177f9293116dae55553c0432feb94e2dfe4be309a871d1d881546deb4",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+        "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+        "size": [
+          531,
+          748
+        ]
+      },
+      "result": {
+        "candidate": "R2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 40,
+            "brightness": 15,
+            "contrast": 20,
+            "shadows": 15,
+            "highlights": -30,
+            "saturation": 4
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave3/r13-train-native-073/R2.png",
+        "image_sha256": "052235e9b7dbf48e9c8212c0365315d28bbc8261cd50cd54a643efb64c321f55",
+        "label_admitted": false
+      },
+      "regions": null,
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    },
+    {
+      "bundle": "wave3",
+      "id": "r13-train-native-073",
+      "candidate": "R1",
+      "stage": "native",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole 531x748 native R1 was directly viewed and compared with the already viewed byte-identical input (input hash checked across wave1/wave3). Stronger brightness/contrast and richer hair/background colour are visible; forehead freckles/tonal gradation, nose/cheek contours, braid strands and mail rings remain. Skin stays plausible with less orange than failed wave1, and pale hair/forehead are differentiated rather than flattened white. No dominant noise/broad new clipping is visible. Existing background softness remains; no restored detail claim.",
+      "at": "2026-11-06T17:20:46.520547+00:00",
+      "manifest_sha256": "13aa9e3177f9293116dae55553c0432feb94e2dfe4be309a871d1d881546deb4",
+      "input": {
+        "path": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+        "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+        "size": [
+          531,
+          748
+        ]
+      },
+      "result": {
+        "candidate": "R1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 55,
+            "brightness": 8,
+            "contrast": 18,
+            "shadows": 8,
+            "highlights": -25,
+            "saturation": 4
+          }
+        },
+        "image": "experiments/functional-v15-20261106/label-repairs/wave3/r13-train-native-073/R1.png",
+        "image_sha256": "d1614b99b972417a1526167b6defc6c0e5eb1d4d53fc84b30022f881cec78c04",
+        "label_admitted": false
+      },
+      "regions": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave3/r13-train-native-073-INPUT-whole.png",
+          "sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+          "size": [
+            531,
+            748
+          ],
+          "box": [
+            0,
+            0,
+            531,
+            748
+          ],
+          "source": "experiments/functional-v13-20261106/primary-candidates/train-native-073/input.png",
+          "source_sha256": "06d83c82678c1f039327de1899665d63e04322eaa5302b0ec9b5340c42ecc22e",
+          "source_size": [
+            531,
+            748
+          ]
+        },
+        {
+          "role": "R1",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/native-review/repairs/wave3/r13-train-native-073-R1-whole.png",
+          "sha256": "d1614b99b972417a1526167b6defc6c0e5eb1d4d53fc84b30022f881cec78c04",
+          "size": [
+            531,
+            748
+          ],
+          "box": [
+            0,
+            0,
+            531,
+            748
+          ],
+          "source": "experiments/functional-v15-20261106/label-repairs/wave3/r13-train-native-073/R1.png",
+          "source_sha256": "d1614b99b972417a1526167b6defc6c0e5eb1d4d53fc84b30022f881cec78c04",
+          "source_size": [
+            531,
+            748
+          ]
+        }
+      ],
+      "reviewer": "Codex direct AI review, not human/user approval",
+      "label_admitted": false
+    }
+  ],
+  "policy": "All failures and unselected proposals preserved; quality-U is not accepted."
+}

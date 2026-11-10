@@ -1,0 +1,31 @@
+{
+  "at": "2026-11-07T02:50:51.976537+00:00",
+  "seed": 20261206,
+  "status": "actual_CPU_training_verified",
+  "checkpoints": [
+    {
+      "epoch": 20,
+      "step": 1160,
+      "trainable_parameters": 463754,
+      "head_sha256": "2e97f749e4d87bd8de13b1f725eeb8d815497bd5866d854f46c9fe7125cbc316",
+      "optimizer_RNG_sha256": "d02b033c5725de71f1541a0db73a420b239ab2f3cfee54d4c53b03ff9f6eaa55",
+      "finite_and_changed_4tensors": true,
+      "exact_TRAIN_only_normalization": true
+    },
+    {
+      "epoch": 80,
+      "step": 4640,
+      "trainable_parameters": 463754,
+      "head_sha256": "fe7581bf107c8a77a8049210647b44529a73fd58b241e4209d705d898e457381",
+      "optimizer_RNG_sha256": "815688fd9e7f8d5bcd150ef249a2c42aa1f362a532b93373b96bf866b15c78a0",
+      "finite_and_changed_4tensors": true,
+      "exact_TRAIN_only_normalization": true
+    }
+  ],
+  "independently_trained_heads": 1,
+  "decoding_policies": 2,
+  "policies_share_weights": true,
+  "language_presentations": 148000,
+  "GPU_calls": 0,
+  "quality_or_practical_usefulness_inferred": false
+}

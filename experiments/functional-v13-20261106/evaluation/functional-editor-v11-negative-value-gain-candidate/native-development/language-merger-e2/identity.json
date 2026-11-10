@@ -1,0 +1,116 @@
+{
+  "model_id": "language-merger-e2",
+  "route": "language_merger",
+  "origin_identity": {
+    "path": "models/Qwen2.5-VL-7B-Instruct",
+    "shards": [
+      {
+        "path": "models/Qwen2.5-VL-7B-Instruct/model-00001-of-00005.safetensors",
+        "sha256": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+        "bytes": 3900233256,
+        "mtime_ns": 1793432463546824622
+      },
+      {
+        "path": "models/Qwen2.5-VL-7B-Instruct/model-00002-of-00005.safetensors",
+        "sha256": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+        "bytes": 3864726320,
+        "mtime_ns": 1793432503644001111
+      },
+      {
+        "path": "models/Qwen2.5-VL-7B-Instruct/model-00003-of-00005.safetensors",
+        "sha256": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+        "bytes": 3864726424,
+        "mtime_ns": 1793432545341217818
+      },
+      {
+        "path": "models/Qwen2.5-VL-7B-Instruct/model-00004-of-00005.safetensors",
+        "sha256": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+        "bytes": 3864733680,
+        "mtime_ns": 1793432587834451242
+      },
+      {
+        "path": "models/Qwen2.5-VL-7B-Instruct/model-00005-of-00005.safetensors",
+        "sha256": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67",
+        "bytes": 1089994880,
+        "mtime_ns": 1793432599234781102
+      }
+    ],
+    "architecture": {
+      "hidden_size": 3584,
+      "intermediate_size": 18944,
+      "num_hidden_layers": 28,
+      "num_attention_heads": 28,
+      "num_key_value_heads": 4,
+      "vocab_size": 152064
+    },
+    "assets": {
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "chat_template.json": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+      "model-info.json": "3f375296723cbb910e9c3350730e3395342ead9cb7ac0ec355a25dcefe5bf532",
+      "tokenizer_config.json": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+      "config.json": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+      "generation_config.json": "0a3aea82869fe29f20dc95ccf3e2bcff380eca1f5ad6447a4a4b37110b08e43e",
+      "model.safetensors.index.json": "73b333b0b16e5286ddba615d2caebcd495cf7e616f52eb217a81781393d79de9",
+      "preprocessor_config.json": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    "prior_integrity_file": "configs/evaluation-weight-integrity-v1.json",
+    "prior_integrity_sha256": "43a0961e25db0e05dc92c69e4e7b520ac0fb8531420223dc6daf45f75257cbd1",
+    "source": "Pinned original Qwen revision cc594898137f460bfe9f0759e9844b3ce807cfb5"
+  },
+  "adapter": "experiments/functional-v13-20261106/runs/language_merger-seed-20261127/checkpoint-926",
+  "adapter_sha256": "88d71a30bc688279d59265c3f311ff9b0ca431027c51d2705a2b4172b33c8168",
+  "runtime": "functional_v13.runtime",
+  "schema": "functional-outcome-v1",
+  "editor": "functional-editor-v11-negative-value-gain-candidate",
+  "split": "native-development",
+  "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+  "input_policy": "Only original input photograph, one original-language request and frozen tools. No targets, references, reviewer notes, statistics or expected action.",
+  "code_hashes": {
+    "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+    "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+    "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+    "scripts/functional_v11/admit_training.py": "e5d47330f2b92abeb4c1029fc7326fab043d345988e0110621d247ae598fddb6",
+    "scripts/functional_v11/audit_runtime.py": "978b759887dd0306fa92132337b62822745b6a65ca5137d440066ab791d814f0",
+    "scripts/functional_v11/editor.py": "aff52a5b50587a41f442ffd0c9feb5fd71a9b8b2d02c7231dabafd2b350d8221",
+    "scripts/functional_v11/evaluate.py": "054a8e010bbbffa9120b85841851542f71052b2d1f8d36c5eb514e3bfe5a7f97",
+    "scripts/functional_v11/freeze_training.py": "36dd868e5dde14c016374519248dfc73c3fd5e5d2737b44378f4f98cfb96bd56",
+    "scripts/functional_v11/outcomes.py": "2d3161bbffb84ee9dfed6a3c2798a4af559d4c98f7faed77f2751f244a75f4b3",
+    "scripts/functional_v11/prepare_batches.py": "17c85f9d2e9c7485a81215a7d6e0ddf7e6213bb0b75f094162936a3ceefe1893",
+    "scripts/functional_v11/replay_parent.py": "8f5f29daf1b69838935b2741721c235dcb68daa2e9c1f4461cca517e09d6e262",
+    "scripts/functional_v11/runtime.py": "e2f4f275ab2a9dcdfaba14c9ae0d6d84dc4a473ccc37b90989d9af54a74b26c8",
+    "scripts/functional_v11/train.py": "f1d42167bf24e54827c1ddd2be8411d2b2437bae1fe4197dbf6c087a4291292a",
+    "scripts/functional_v13/__init__.py": "cb5fb56f291edbf59f23c5a5c3b7db69a8513e9ea5e3c4eb1e5ac49dc2393434",
+    "scripts/functional_v13/admit_training.py": "948f995d179c6a0a0443a593503a54b9954e4d4d4096c0ae1196e2fdd8001b33",
+    "scripts/functional_v13/audit_initial_function.py": "844af3c31cb490afdc0917922de1aebb74590b5067c0fddb00828d038a1a7a66",
+    "scripts/functional_v13/audit_runtime.py": "d43ba601b0bc7ef69f0f2557777cdb861c53ec810cf3cc7c59f28eb78941a010",
+    "scripts/functional_v13/development_full_review.py": "e00389ad5fdaa5484b682137a5f352ba71ef0b6b952d4db2552594e1b8a24a53",
+    "scripts/functional_v13/evaluate.py": "cfb7b47cddf55f35e5bbab3cffb22ab7d9d8af327c6998852529b09d5fd45067",
+    "scripts/functional_v13/extend_sources.py": "faa66492cb0904682ef1b570d330b802dd01f9c19f7740aca2d58e8c86dc0008",
+    "scripts/functional_v13/finalize_review.py": "ebbb889b133ead6b8aca3e8b0f35f825b9c0ef859c456f9575477e0305e5086c",
+    "scripts/functional_v13/freeze_training.py": "3c7c57e9c6af2f77a82ba5ebfe8459706320ea7dc30c17b8c12a8d2c93e5aa71",
+    "scripts/functional_v13/prepare_additions.py": "1b9ed884af40e3f5199951cb861ed4976bf92330244146f55ea4f1ce04d989c2",
+    "scripts/functional_v13/prepare_batches.py": "74dfbe66cffebfec005549a8ee645cf3c6504b1abc15bc84c32bdc94ea9e3caa",
+    "scripts/functional_v13/prepare_primary.py": "bf053e94ba345d73977dd901cc2c5d3933bb73a3d1df0ed9b5b909a4a015475a",
+    "scripts/functional_v13/prepare_primary_qa.py": "4e48efc07a4fceed1c9b9fb8a5360788725c56d07d0eb3987667ee5bd1db4621",
+    "scripts/functional_v13/prepare_repairs.py": "d48c4ba29d32e4407f0cca426f39094832fc16f4e7bb047a8f58c316fd20f64b",
+    "scripts/functional_v13/record_development_notes.py": "4593efd1172c14ae83c324737335cb4604596e1d80785061679b28d0d0d3a083",
+    "scripts/functional_v13/record_full_notes.py": "87f8e32a9d1aff269596f6e84979d3154d08e945035040f1a1dc3d95a2647e3a",
+    "scripts/functional_v13/record_paired.py": "4ae8c2abcc73b85caf1035b5c8d93e7117288cb33ffc00c8e397fce00ed4ee62",
+    "scripts/functional_v13/record_primary.py": "5653aae86e6162b2ef9542a3f343386f650c48d439f89d11322386b419ed4c8b",
+    "scripts/functional_v13/record_primary_qa.py": "9ab7c391e85c48ea1da4acd1940da696f9a8f0f3d52a51c3a42e04609f4698ef",
+    "scripts/functional_v13/record_source.py": "e4c73bfcaca9b2c84d41f9af54d60e9d91f13e61dba40e3854d466ec3c19c1a5",
+    "scripts/functional_v13/reuse_reviews.py": "bebcecd5736984f0806a3de52603da095d1ff77b3795a9d4f6013f180a796dc1",
+    "scripts/functional_v13/runtime.py": "62a2199de58e8fb282008415737f7d1f6c33771301446bf1031f46bd77555327",
+    "scripts/functional_v13/source_candidates.py": "efb4c96c619261da3fbb151d0dbe6e7c7b73fedac04db5a095502735aa5b9d93",
+    "scripts/functional_v13/source_isolation.py": "eb5481ff0bd5e5f4da669bb8132d9e1bfb315767ab4483d600ead02d26f3c0fc",
+    "scripts/functional_v13/test_editor.py": "7be8a3b3ad663673647723d34293ce03eb1d06c269d0de2583a22f603068939d",
+    "scripts/functional_v13/test_outcomes.py": "63d1f24b7bf844dd7736c11a42aa68579371163bb8cc195fae6ad9399d0fca72",
+    "scripts/functional_v13/train.py": "e857283e96fe33828fea7b98abaea1ec1df84f49d9df946917732d08f289b7c5",
+    "scripts/functional_v13/visual_review.py": "2ddc5c0274cc72e88736eb2910293af639cf8bd9acacbb51449f67a83d1bbf52",
+    "scripts/functional_v7/editor_soft.py": "8c3b02c304d79bca9d547fe471afe4a0136c1813c2cf30a0c343dd5e174f2b50",
+    "scripts/functional_v7/outcomes.py": "4d46bb208b18dab750ee77e94c8f063ca1c3b5189ff1a6990ff9d3c4c1ce4286",
+    "scripts/functional_v7/runtime.py": "c6568cf1de61b8372abd2c21070070f2a4bca7f88e0f956541c07be330bfd5a7",
+    "scripts/functional_v9/runtime.py": "4d9de4b350c1e0284b4e032f08ae6f8298cede2e41de3e3a9153bb43dbc61d37"
+  }
+}

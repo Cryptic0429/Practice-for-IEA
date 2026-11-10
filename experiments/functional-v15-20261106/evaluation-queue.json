@@ -1,0 +1,55 @@
+{
+  "at": "2026-11-06T19:03:27.673555+00:00",
+  "pid": 4102138,
+  "status": "completed",
+  "jobs": [
+    {
+      "model": "language-merger-e1",
+      "epoch": 1,
+      "route": "language_merger",
+      "adapter_sha256": "97c84f1799fb319799c86515402574b3b585593763e5388eb30d0df3e0d6ea90",
+      "pid": 4104622,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-m",
+        "functional_v15.evaluate",
+        "--route",
+        "language_merger",
+        "--adapter",
+        "experiments/functional-v15-20261106/runs/language_merger-seed-20261127/checkpoint-463",
+        "--model",
+        "language-merger-e1",
+        "--gpu",
+        "2"
+      ],
+      "started_at": "2026-11-06T19:24:02.951522+00:00",
+      "returncode": 0,
+      "ended_at": "2026-11-06T19:28:28.329115+00:00"
+    },
+    {
+      "model": "language-merger-e2",
+      "epoch": 2,
+      "route": "language_merger",
+      "adapter_sha256": "ed66e021dd626e114d985112feb5ede490ccf03b494caef65659e310b17d67c0",
+      "pid": 4108644,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-m",
+        "functional_v15.evaluate",
+        "--route",
+        "language_merger",
+        "--adapter",
+        "experiments/functional-v15-20261106/runs/language_merger-seed-20261127/checkpoint-926",
+        "--model",
+        "language-merger-e2",
+        "--gpu",
+        "2"
+      ],
+      "started_at": "2026-11-06T19:44:03.552610+00:00",
+      "returncode": 0,
+      "ended_at": "2026-11-06T19:48:32.590705+00:00"
+    }
+  ],
+  "current": null,
+  "finished_at": "2026-11-06T19:48:32.619781+00:00"
+}

@@ -1,0 +1,212 @@
+{
+  "at": "2026-11-06T00:53:39.283459+00:00",
+  "status": "passed_integration_checks",
+  "checks": [
+    {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "split": "native-development",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "request_id": "4da03a06a48f4245916ca8b0f1871455",
+      "training_label_action": null,
+      "observed_decision": null,
+      "status": "failed",
+      "offline_error_identical": true,
+      "image_route_status": 404,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "split": "native-development",
+      "case_id": "native-dev-006",
+      "language": "en",
+      "request_id": "dafced9a2ad44dbc82fda6ded1d5920e",
+      "training_label_action": null,
+      "observed_decision": null,
+      "status": "failed",
+      "offline_error_identical": true,
+      "image_route_status": 404,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "split": "native-development",
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "request_id": "c6859af31c904ee087304844577f029d",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 95
+        }
+      },
+      "status": "executed",
+      "output_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "split": "native-development",
+      "case_id": "native-dev-001",
+      "language": "en",
+      "request_id": "bc061b887fb640e6949ca665113b3810",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 95
+        }
+      },
+      "status": "executed",
+      "output_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "zh",
+      "request_id": "a5bf52af43dd4756821c420d9fa35d62",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unsupported_tools"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unsupported_tools",
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "en",
+      "request_id": "f4108daae35e4e4d9182bcce5ed4ef69",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unsupported_tools"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unsupported_tools",
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "zh",
+      "request_id": "8e81cffca7be49caa2406016fbcc8dad",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "keep"
+      },
+      "status": "executed",
+      "output_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522",
+      "execution_status": "unchanged",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "en",
+      "request_id": "b643be958eb441efb8ae1c932158d1a9",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "keep"
+      },
+      "status": "executed",
+      "output_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522",
+      "execution_status": "unchanged",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "split": "native-development",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "request_id": "e7dec30f2aff431cba2abdcfb1244953",
+      "training_label_action": null,
+      "observed_decision": null,
+      "status": "failed",
+      "offline_error_identical": true,
+      "image_route_status": 404,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-severe-light",
+      "language": "zh",
+      "request_id": "1f567f556d5b4a9184eb650ab8090db0",
+      "training_label_action": "decline",
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unreliable_quality"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unreliable_quality",
+      "quality_decline_obeyed": true
+    },
+    {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-deep-light",
+      "language": "zh",
+      "request_id": "4c45e1a53271473f9db188161cd2b1bb",
+      "training_label_action": "edit",
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "status": "executed",
+      "output_sha256": "d1e85ddfff3244df15528b433aeaec9e24843af32a1776d33d1d3eda9d434fb2",
+      "execution_status": "edited",
+      "offline_byte_identical": false,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-mild-noise-light",
+      "language": "zh",
+      "request_id": "83e00937bdcb4e32988e84134c1f80c2",
+      "training_label_action": "edit",
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "status": "executed",
+      "output_sha256": "c6413be536171d0eed9fb4489679f7621969e6613e5612096c0ac603d6c178fc",
+      "execution_status": "edited",
+      "offline_byte_identical": false,
+      "quality_decline_obeyed": null
+    }
+  ],
+  "models_registered": 20,
+  "default_unchanged": true,
+  "no_external_rewriting": true,
+  "agent_feedback_only": true,
+  "quality_checks_are_training_examples_not_generalization": true,
+  "quality_decline_checks_passed": 1,
+  "acceptance_routes_closed": true,
+  "worker_unloaded": true
+}

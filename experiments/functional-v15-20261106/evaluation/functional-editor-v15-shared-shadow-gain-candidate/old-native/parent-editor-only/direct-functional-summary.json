@@ -1,0 +1,61 @@
+{
+  "model_id": "parent-editor-only",
+  "status": "completed",
+  "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+  "human_review": false,
+  "reviewed_outputs": 12,
+  "missing_unique_images": [],
+  "fully_completed_both_languages": 4,
+  "raw_individual_completed_both_languages": 4,
+  "identical_strength_pairs": [],
+  "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+  "photo_groups": 6,
+  "all_tasks_complete_photo_groups": 4,
+  "major_quality_issues": 0,
+  "major_issue_cases": [],
+  "per_family": {
+    "compound": {
+      "completed": 2,
+      "cases": 2
+    },
+    "lighting": {
+      "completed": 0,
+      "cases": 2
+    },
+    "saturation": {
+      "completed": 2,
+      "cases": 2
+    }
+  },
+  "per_language": {
+    "zh": {
+      "completed": 5,
+      "partial": 1
+    },
+    "en": {
+      "completed": 6
+    }
+  },
+  "per_domain": {
+    "portrait": {
+      "completed": 2,
+      "cases": 3
+    },
+    "landscape": {
+      "completed": 2,
+      "cases": 3
+    }
+  },
+  "selection_uses_L1": false,
+  "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+  "review_sha256": "bfd18e8708e898bd786c8fcb84b79b94cce1494d9a046bc3e1bd6d3a05cd8beb",
+  "inference_performed": false,
+  "GPU_hours": 0,
+  "model_forward_calls": 0,
+  "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+  "runtime": "Exact saved parent decisions; CPU editor replay only",
+  "declined_language_outputs": 0,
+  "declined_semantic_cases": 0,
+  "unchanged_reviews_inherited": true,
+  "AI_disputes_preserved": true
+}

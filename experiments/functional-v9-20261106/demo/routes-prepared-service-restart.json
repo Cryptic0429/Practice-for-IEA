@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-05T19:55:17.426415+00:00",
+  "old_owned_pids": [
+    3988978,
+    3988979
+  ],
+  "new": [
+    {
+      "module": "functional_v1.worker",
+      "pid": 4002698
+    },
+    {
+      "module": "functional_v1.web",
+      "pid": 4002699
+    }
+  ],
+  "worker_health": {
+    "status": "ready",
+    "loaded_model": null,
+    "gpu": "2",
+    "idle_unload_seconds": 120
+  },
+  "registered_models": 15,
+  "default_unchanged": "functional-current-20261104",
+  "original_author_service_pid_preserved": 3378799,
+  "previous_receipt": "experiments/functional-v7-20261105/demo/registered-service-restart.json",
+  "previous_receipt_sha256": "b80572fcee88315956ad8e0e4358facfadeb4aa0c726755311805aeb7aabf936",
+  "post_restart_guard_correction": "Initial post-restart command-name guard assumed a spawned GPU worker command contained vllm and rejected. The already-running new services were checked without another restart; reserved GPU1 ownership confirmed by nvidia-smi, original PID unchanged. Restart script now records launch IDs before final validation and checks GPU ownership."
+}

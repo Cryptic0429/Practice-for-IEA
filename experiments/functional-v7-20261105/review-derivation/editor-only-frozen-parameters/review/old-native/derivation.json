@@ -1,0 +1,206 @@
+{
+  "at": "2026-11-05T18:45:28.764030+00:00",
+  "split": "old-native",
+  "name": "editor-only-frozen-parameters",
+  "models": [
+    "editor-only-current-default",
+    "editor-only-round6-parent"
+  ],
+  "raw_observations": {
+    "path": "experiments/functional-v7-20261105/review/old-native/codex-observations.jsonl",
+    "sha256": "f396a7fdef831994580ef9ccecfc73cdef3323130db3b442b8e2dfcd266c41b6",
+    "count": 36
+  },
+  "original_size_observations": {
+    "path": "experiments/functional-v7-20261105/review/old-native/codex-full-resolution-observations.jsonl",
+    "sha256": "cbdeee9f02b6c77750280bfd0fcb6e22f28af6d1bd4a55ef06ba097a02b487a0",
+    "count": 5
+  },
+  "historical_sources": {
+    "experiments/functional-v2-20261104/review/natural-use/codex-observations.jsonl": "8dcd52f113d8cf7c2f48d10692918e619d54bb93c5452da30b8361bbafdea460",
+    "experiments/functional-v3-20261104/review/natural-use/codex-observations.jsonl": "79bd8dfd38bb2fbbdf219ef567a91b522e1f75d2d66f12b8ea257c17e4620d86",
+    "experiments/functional-v4-20261105/review/natural-use/codex-observations.jsonl": "6ecb99cacc7ddb4c49f88b1f1099fb60d6031a0bf2924a13c617f827ab85de71",
+    "experiments/functional-v5-20261105/review/natural-use/codex-observations.jsonl": "8cdfb75f6ed45417205ac10cf9b7031d586f58718a5017ce030a9de6e41d4d73",
+    "experiments/functional-v6-20261105/review/native-development/codex-observations.jsonl": "93345b46072d5ed5383722da37f6b178be46d7acb45cf9324c4ca35d2ed4d218",
+    "experiments/functional-v6-20261105/review/old-native/codex-observations.jsonl": "489237ac62a022f288a5eefe5a0a3e445ff13ecf13f84d5b60553cd48f51be76"
+  },
+  "disagreements": [
+    {
+      "item_id": "25f4c96299238fb8",
+      "case_id": "natural-028",
+      "current": {
+        "item_id": "25f4c96299238fb8",
+        "case_id": "natural-028",
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "原尺寸中整图提亮，白衬衫竖纹和褶皱仍清楚，面部、头发与衣裙纹理保留，没有大片新增细节损失。",
+        "image_sha256": "651551e2a89e7d479c7e94f9a206d81ad51b6701c9918e69cf3282bcf0fd22ba",
+        "sheet": "experiments/functional-v7-20261105/review/old-native/editor-only-frozen-parameters/natural-028-01.jpg",
+        "sheet_sha256": "81b1fa08eb734f8036edcfbf89142e65353786346fd81a47ad87e35d8614064b",
+        "bundle": "editor-only-frozen-parameters",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:40:20.841584+00:00",
+        "original_size_supplement": {
+          "item_id": "25f4c96299238fb8",
+          "case_id": "natural-028",
+          "input_sha256": "a72c46469d9f2afb149b87aa00dbc09539cf394645e7652e64972483fe0a7f81",
+          "output_sha256": "651551e2a89e7d479c7e94f9a206d81ad51b6701c9918e69cf3282bcf0fd22ba",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/old-native/editor-only-frozen-parameters/full-resolution/natural-028-INPUT.png",
+              "sha256": "825a17566563e4f90beb49cfbb57b7352f7b6f47b4843256ea7457b29c54d5c9",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "ad3119c1eca7052637f013c1277f2afaa07cb3023b031c6d73166db0069b1b7e"
+            },
+            {
+              "role": "25f4c96299238fb8",
+              "path": "experiments/functional-v7-20261105/review/old-native/editor-only-frozen-parameters/full-resolution/natural-028-25f4c96299238fb8.png",
+              "sha256": "a95f17ee48d14f15d8b5c6724fcab935fe5a55c1acfc922e3f04555833c5ae07",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "ae56b2f2473b227670d09e5d2350d501cbd05bafbb448b353571c91614709f01"
+            }
+          ],
+          "completion": "completed",
+          "quality": "acceptable",
+          "evidence": "原尺寸中整图提亮，白衬衫竖纹和褶皱仍清楚，面部、头发与衣裙纹理保留，没有大片新增细节损失。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:45:01.361357+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "d89e80eb1531a75baa6629ca887ca58fed119a1ec457e6ceb52c847c06eb3631"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "25f4c96299238fb8",
+          "case_id": "natural-028",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "人物与背景整体有所提亮，白衬衫亮部变白，细竖纹和褶皱保留情况需要原尺寸核验。",
+          "image_sha256": "651551e2a89e7d479c7e94f9a206d81ad51b6701c9918e69cf3282bcf0fd22ba",
+          "sheet": "experiments/functional-v7-20261105/review/old-native/editor-only-frozen-parameters/natural-028-01.jpg",
+          "sheet_sha256": "81b1fa08eb734f8036edcfbf89142e65353786346fd81a47ad87e35d8614064b",
+          "bundle": "editor-only-frozen-parameters",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:40:20.841584+00:00"
+        }
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v2-20261104/review/natural-use/codex-observations.jsonl",
+          "assessment": {
+            "case_id": "natural-028",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "面部、衣物和背景均有所提亮，没有额外明显偏色或大面积泛白。",
+            "item_id": "25f4c96299238fb8",
+            "image_sha256": "651551e2a89e7d479c7e94f9a206d81ad51b6701c9918e69cf3282bcf0fd22ba",
+            "sheet": "experiments/functional-v2-20261104/review/natural-use/selected-natural-probes/natural-028-01.jpg",
+            "sheet_sha256": "548e97dd9bc3e0ff9d83d50238441132c176d044474da5e2b73cf4941a124c08",
+            "bundle": "selected-natural-probes",
+            "reviewer": "Codex direct visual review; AI-assisted, not human",
+            "observed_at": "2026-11-04T15:07:10.794366+00:00"
+          }
+        },
+        {
+          "file": "experiments/functional-v3-20261104/review/natural-use/codex-observations.jsonl",
+          "assessment": {
+            "case_id": "natural-028",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "面部、衣物和背景均有所提亮，没有额外明显偏色或大面积泛白。",
+            "item_id": "25f4c96299238fb8",
+            "image_sha256": "651551e2a89e7d479c7e94f9a206d81ad51b6701c9918e69cf3282bcf0fd22ba",
+            "sheet": "experiments/functional-v2-20261104/review/natural-use/selected-natural-probes/natural-028-01.jpg",
+            "sheet_sha256": "548e97dd9bc3e0ff9d83d50238441132c176d044474da5e2b73cf4941a124c08",
+            "bundle": "selected-natural-probes",
+            "reviewer": "Codex direct visual review; AI-assisted, not human",
+            "observed_at": "2026-11-04T15:07:10.794366+00:00"
+          }
+        },
+        {
+          "file": "experiments/functional-v4-20261105/review/natural-use/codex-observations.jsonl",
+          "assessment": {
+            "case_id": "natural-028",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "面部、衣物和背景均有所提亮，没有额外明显偏色或大面积泛白。",
+            "item_id": "25f4c96299238fb8",
+            "image_sha256": "651551e2a89e7d479c7e94f9a206d81ad51b6701c9918e69cf3282bcf0fd22ba",
+            "sheet": "experiments/functional-v2-20261104/review/natural-use/selected-natural-probes/natural-028-01.jpg",
+            "sheet_sha256": "548e97dd9bc3e0ff9d83d50238441132c176d044474da5e2b73cf4941a124c08",
+            "bundle": "selected-natural-probes",
+            "reviewer": "Codex direct visual review; AI-assisted, not human",
+            "observed_at": "2026-11-04T15:07:10.794366+00:00"
+          }
+        },
+        {
+          "file": "experiments/functional-v6-20261105/review/old-native/codex-observations.jsonl",
+          "assessment": {
+            "case_id": "natural-028",
+            "completion": "uncertain",
+            "quality": "acceptable",
+            "evidence": "Repeated direct AI reviews of this exact semantic request/render disagree on completion. Both original observations are retained in the consistency audit; disputed fields remain uncertain and are not counted as qualified. No user adjudication.",
+            "item_id": "25f4c96299238fb8",
+            "image_sha256": "651551e2a89e7d479c7e94f9a206d81ad51b6701c9918e69cf3282bcf0fd22ba",
+            "sheet": "experiments/functional-v6-20261105/review/old-native/baselines-e1/natural-028-01.jpg",
+            "sheet_sha256": "ead28d1bdd9ea79f000b67d0332af35e3839bdedf1cea8b537b5f61bbefa1cd5",
+            "bundle": "baselines-e1",
+            "reviewer": "Codex direct visual review; AI-assisted, not human",
+            "observed_at": "2026-11-05T06:57:30.697809+00:00",
+            "adjudication": "historical_exact_render_disagreement",
+            "previous_current_assessment_sha256": "15dc1c46f5c7efcd79daeff18f897bb50d0369375bbe3f276875510deaf7d99c",
+            "consistency_audit": "baselines-e1"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "completion"
+      ]
+    },
+    {
+      "item_id": "2440413d7a0f1920",
+      "case_id": "natural-030",
+      "current": {
+        "item_id": "2440413d7a0f1920",
+        "case_id": "natural-030",
+        "completion": "partial",
+        "quality": "acceptable",
+        "evidence": "树林和路面有所压暗，但整体幅度偏温和，未达到明确要求的大幅压暗，道路与枝干内容保持。",
+        "image_sha256": "d03fe1857bae1bcf87985cd42cc64ca302a56791fe84e468e6c608cb5c4cba9f",
+        "sheet": "experiments/functional-v7-20261105/review/old-native/editor-only-frozen-parameters/natural-030-01.jpg",
+        "sheet_sha256": "ff05952cffd498dad0e4a00b4af7fd46617a3ef13e462ce9fa6a60f2d2808b86",
+        "bundle": "editor-only-frozen-parameters",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:41:33.703483+00:00"
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v6-20261105/review/old-native/codex-observations.jsonl",
+          "assessment": {
+            "case_id": "natural-030",
+            "completion": "failed",
+            "quality": "minor_issue",
+            "evidence": "The forest and road become brighter and flatter instead of substantially darker.",
+            "item_id": "2440413d7a0f1920",
+            "image_sha256": "d03fe1857bae1bcf87985cd42cc64ca302a56791fe84e468e6c608cb5c4cba9f",
+            "sheet": "experiments/functional-v6-20261105/review/old-native/epochs2-4/natural-030-01.jpg",
+            "sheet_sha256": "2af9ac998f9f75ab7a90c5cc1a704c654f18175fe6c62af141f32c3813877641",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct visual review; AI-assisted, not human",
+            "observed_at": "2026-11-05T07:10:56.298480+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "completion",
+        "quality"
+      ]
+    }
+  ],
+  "policy": "Original-size direct AI notes supplement raw sheet uncertainty; exact input/request/output disagreements remain uncertain. No historical or current raw observation is overwritten. No L1, automatic visual rating or human approval."
+}

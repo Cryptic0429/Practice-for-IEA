@@ -1,0 +1,77 @@
+{
+  "model_id": "last-e20",
+  "status": "completed",
+  "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+  "human_review": false,
+  "reviewed_outputs": 40,
+  "missing_unique_images": [],
+  "fully_completed_both_languages": 10,
+  "raw_individual_completed_both_languages": 10,
+  "identical_strength_pairs": [],
+  "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+  "photo_groups": 20,
+  "all_tasks_complete_photo_groups": 10,
+  "major_quality_issues": 1,
+  "major_issue_cases": [
+    "native-dev-070"
+  ],
+  "per_family": {
+    "brown_tone": {
+      "completed": 1,
+      "cases": 1
+    },
+    "compound": {
+      "completed": 2,
+      "cases": 6
+    },
+    "contrast": {
+      "completed": 0,
+      "cases": 1
+    },
+    "lighting": {
+      "completed": 2,
+      "cases": 7
+    },
+    "saturation": {
+      "completed": 4,
+      "cases": 4
+    },
+    "white_balance": {
+      "completed": 1,
+      "cases": 1
+    }
+  },
+  "per_language": {
+    "zh": {
+      "completed": 19,
+      "uncertain": 1
+    },
+    "en": {
+      "completed": 17,
+      "uncertain": 2,
+      "failed": 1
+    }
+  },
+  "per_domain": {
+    "portrait": {
+      "completed": 5,
+      "cases": 10
+    },
+    "landscape": {
+      "completed": 5,
+      "cases": 10
+    }
+  },
+  "selection_uses_L1": false,
+  "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+  "review_sha256": "fdecc4933dd1630ec500744f09bb4313b5bdafb361770ee8999ab2c20c368e79",
+  "declined_language_outputs": 1,
+  "declined_semantic_cases": 1,
+  "refusal_policy": "Declines count as uncompleted requested edits; refusal correctness is assessed separately; no result image returned.",
+  "original_size_supplement_count": 2,
+  "review_derivation": "experiments/functional-v20-20261107/review-derivation/native-screen-major-stop/review/native-development/derivation.json",
+  "review_derivation_sha256": "09295c288713245bf7b7b8603a69e9937dc0f19a22bec595defd47638456e813",
+  "raw_visual_notes_immutable": true,
+  "inference_performed": true,
+  "runtime": "functional_v20.runtime"
+}

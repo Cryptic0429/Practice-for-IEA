@@ -1,0 +1,424 @@
+[
+  {
+    "id": "p345/initial-1>initial-3",
+    "case_id": "p345",
+    "group_id": "d91885b80db1c63aaa173f44ce1c17eaee302e0c60329595e572b1e974afea28",
+    "domain": "portrait",
+    "image": "data/training/functional-v26-20261107/inputs/p345.jpg",
+    "image_sha256": "b77de5526214024bfc505a77661508923e537e97dcc22e164556df0615801bd7",
+    "instructions": {
+      "zh": "略微打开人物脸和胡须的暗部，保留背光和树林亮斑的层次。",
+      "en": "Slightly lift the shadows on the face and beard, keeping the backlit look and the bright detail in the trees."
+    },
+    "chosen": {
+      "index": 1,
+      "path": "experiments/functional-v26-20261107/candidates/p345-1.png",
+      "sha256": "d6aa52c82f780e3917effb5e38265a5b527cb75572f896f85544b5df29bb6ecf",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "shadows": 38
+        }
+      },
+      "verdict": "complete",
+      "cause": null,
+      "evidence": "眼周和胡须暗侧温和打开，背景高光过渡和背光轮廓保持。",
+      "id": "initial-1"
+    },
+    "rejected": {
+      "index": 3,
+      "path": "experiments/functional-v26-20261107/candidates/p345-3.png",
+      "sha256": "3d25acf47eedaa3aa797c2230f2b44a66e1b5261eb931d64bc995b118a120342",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 60
+        }
+      },
+      "verdict": "failed",
+      "cause": "scope_or_preservation",
+      "evidence": "整体曝光改变背景叶片亮斑的颜色和亮度，脸部受光区也明显抬亮，偏离仅轻提暗部。",
+      "id": "initial-3"
+    }
+  },
+  {
+    "id": "p189/initial-1>initial-3",
+    "case_id": "p189",
+    "group_id": "d6e84f9bd1a0269809fcf6fe19152d2e7e697f8f0f9f4ac6d00d702192db9a67",
+    "domain": "portrait",
+    "image": "data/training/functional-v26-20261107/inputs/p189.jpg",
+    "image_sha256": "4c7345e77943d63ac1aab431a4e152b34db80149c3010a8bb912c6912e32e7c1",
+    "instructions": {
+      "zh": "小幅提亮合照里的脸和头发暗部，保留肤色和白衣纹理，避免颗粒明显增加。",
+      "en": "Slightly lift shadows on the faces and hair, keeping skin tones and the white fabric detail without a conspicuous increase in grain."
+    },
+    "chosen": {
+      "index": 1,
+      "path": "experiments/functional-v26-20261107/candidates/p189-1.png",
+      "sha256": "ba5bacaa89d0c57431ec47f84bdc79d08e72e1d4c273aeaa56e703d017aa59f7",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "shadows": 38
+        }
+      },
+      "verdict": "complete",
+      "cause": null,
+      "evidence": "轻微提亮两人脸部暗侧和发丝，白衣褶皱基本保持。",
+      "id": "initial-1"
+    },
+    "rejected": {
+      "index": 3,
+      "path": "experiments/functional-v26-20261107/candidates/p189-3.png",
+      "sha256": "bcbd1f0d643558b37e6bc5a1a5c08d99175049288b1abec24b1dd7d0655deaa3",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 60
+        }
+      },
+      "verdict": "failed",
+      "cause": "scope_or_preservation",
+      "evidence": "原本已受光的面部和白衣也明显变亮，暗部选择性不足，白衣褶皱的明暗反差减小。",
+      "id": "initial-3"
+    }
+  },
+  {
+    "id": "p325/refined-2>initial-2",
+    "case_id": "p325",
+    "group_id": "5b5a90fb203a64f6d037f5c03be1e2668f21db2d0f5b89cb536463ee07c2ff79",
+    "domain": "portrait",
+    "image": "data/training/functional-v26-20261107/inputs/p325.jpg",
+    "image_sha256": "a8e80e1adbfc7acc168544acf137a25b8ecfd6447783ec325884c83b10f4f57f",
+    "instructions": {
+      "zh": "适度打开餐桌周围人物的暗部，让脸更好辨认，同时保留桌灯暖色和夜间气氛。",
+      "en": "Moderately lift shadows around the people at the table to make faces easier to recognize while retaining the warm lamps and evening mood."
+    },
+    "chosen": {
+      "index": 2,
+      "path": "experiments/functional-v26-20261107/refinements/candidates/p325-2.png",
+      "sha256": "63752dd00787012fee024306826b698be91e7249a8ca19bb102838d1b337ceb5",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 22,
+          "shadows": 26
+        }
+      },
+      "verdict": "complete",
+      "cause": null,
+      "evidence": "整图中靠左和靠右的面部均比原图可辨，保留暖灯与夜色；原像素有原来的细粒，未见强档那样明显的斑点增幅。",
+      "id": "refined-2"
+    },
+    "rejected": {
+      "index": 2,
+      "path": "experiments/functional-v26-20261107/candidates/p325-2.png",
+      "sha256": "cf2704bd0c24230dbdeae951604a35eb4a20a564739cc138847e7d852fab8d7b",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "shadows": 77
+        }
+      },
+      "verdict": "failed",
+      "cause": "artifact",
+      "evidence": "深色西装和头发的红绿颗粒明显放大。",
+      "id": "initial-2"
+    }
+  },
+  {
+    "id": "p325/refined-2>initial-3",
+    "case_id": "p325",
+    "group_id": "5b5a90fb203a64f6d037f5c03be1e2668f21db2d0f5b89cb536463ee07c2ff79",
+    "domain": "portrait",
+    "image": "data/training/functional-v26-20261107/inputs/p325.jpg",
+    "image_sha256": "a8e80e1adbfc7acc168544acf137a25b8ecfd6447783ec325884c83b10f4f57f",
+    "instructions": {
+      "zh": "适度打开餐桌周围人物的暗部，让脸更好辨认，同时保留桌灯暖色和夜间气氛。",
+      "en": "Moderately lift shadows around the people at the table to make faces easier to recognize while retaining the warm lamps and evening mood."
+    },
+    "chosen": {
+      "index": 2,
+      "path": "experiments/functional-v26-20261107/refinements/candidates/p325-2.png",
+      "sha256": "63752dd00787012fee024306826b698be91e7249a8ca19bb102838d1b337ceb5",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 22,
+          "shadows": 26
+        }
+      },
+      "verdict": "complete",
+      "cause": null,
+      "evidence": "整图中靠左和靠右的面部均比原图可辨，保留暖灯与夜色；原像素有原来的细粒，未见强档那样明显的斑点增幅。",
+      "id": "refined-2"
+    },
+    "rejected": {
+      "index": 3,
+      "path": "experiments/functional-v26-20261107/candidates/p325-3.png",
+      "sha256": "0739a0f3d219de8558bea671d2464ae40309a3a481aaec24c8c47372ed0022cf",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 60
+        }
+      },
+      "verdict": "failed",
+      "cause": "artifact",
+      "evidence": "人物更亮，但头发、阴影和西装内出现明显彩色粗点。",
+      "id": "initial-3"
+    }
+  },
+  {
+    "id": "p129/initial-3>initial-2",
+    "case_id": "p129",
+    "group_id": "0a188f57236674848a4e33c479d954d7fef4255529aa9dbd6f19280eb7d7ba15",
+    "domain": "landscape",
+    "image": "data/training/functional-v26-20261107/inputs/p129.jpg",
+    "image_sha256": "d8e8a441ee590a77c7d46009f73dde74a06da5373ed3442afce640b0a8be0480",
+    "instructions": {
+      "zh": "轻轻提亮海边日出景色的暗部，让前景水纹更容易看见，保留暖色天空和太阳周围的过渡。",
+      "en": "Gently lift shadows in this coastal sunrise to reveal more foreground water texture, keeping the warm sky and the gradients around the sun."
+    },
+    "chosen": {
+      "index": 3,
+      "path": "experiments/functional-v26-20261107/candidates/p129-3.png",
+      "sha256": "225b37521688207fd0a7938866bbbdc16b006395e7a636c5a5db4791bc290ea3",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "shadows": 38
+        }
+      },
+      "verdict": "complete",
+      "cause": null,
+      "evidence": "水纹有轻微提升，地平线暖色与太阳外的亮度过渡保持。",
+      "id": "initial-3"
+    },
+    "rejected": {
+      "index": 2,
+      "path": "experiments/functional-v26-20261107/candidates/p129-2.png",
+      "sha256": "bf608f56c3b0cee20c1bd4b0ea359197b3215775a12cebaa6d59bd597ceace08",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 60
+        }
+      },
+      "verdict": "failed",
+      "cause": "artifact",
+      "evidence": "天空原像素出现更显眼的块状纹理，整体天空亮度也被抬高。",
+      "id": "initial-2"
+    }
+  },
+  {
+    "id": "p665/initial-1>initial-2",
+    "case_id": "p665",
+    "group_id": "45a33a7720c26a5224fafccd18c201f7b7b642bde8c0d2b0de6f3d3121bcf065",
+    "domain": "landscape",
+    "image": "data/training/functional-v26-20261107/inputs/p665.jpg",
+    "image_sha256": "12b9401fb314a25ea1583feaa3ac41ffaf5ca9494d838c414d145faa3b0ea51c",
+    "instructions": {
+      "zh": "提亮星空下的前景，让车和地面纹理更容易看清，同时保留星空和夜景氛围，避免显眼色斑。",
+      "en": "Lift the foreground under the stars so the truck and ground texture read more clearly, keeping the star field and night mood without conspicuous colour blotches."
+    },
+    "chosen": {
+      "index": 1,
+      "path": "experiments/functional-v26-20261107/candidates/p665-1.png",
+      "sha256": "0e59110b8bff5b1497bf34fc23e381d2a1bfb9610569c7b9c0da9e9872246846",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "shadows": 38
+        }
+      },
+      "verdict": "complete",
+      "cause": null,
+      "evidence": "轮圈和前景近处有可辨改善，星空仍暗，轮胎旁色块增幅较小。",
+      "id": "initial-1"
+    },
+    "rejected": {
+      "index": 2,
+      "path": "experiments/functional-v26-20261107/candidates/p665-2.png",
+      "sha256": "ac9e4520ec7ec404238fee84cd346d58a020ded11accd899da169fd2e782a03c",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "shadows": 77
+        }
+      },
+      "verdict": "failed",
+      "cause": "artifact",
+      "evidence": "轮胎下方和草地原像素显示更明显紫绿色块。",
+      "id": "initial-2"
+    }
+  },
+  {
+    "id": "p508/initial-2>initial-1",
+    "case_id": "p508",
+    "group_id": "af8c994937bcf4c00458c4eb64c92aaf5ecc3d56b0c41da77e25a23874596ac3",
+    "domain": "landscape",
+    "image": "data/training/functional-v26-20261107/inputs/p508.jpg",
+    "image_sha256": "9cbe9ca6ca2428dd2452cda15291e83d201eb800efad1f4f6f09e8ea7d6e3b75",
+    "instructions": {
+      "zh": "略微提亮雪地风景中深色动物的暗部，保留皮毛纹理、原来的蓝天和雪地层次。",
+      "en": "Gently lift shadows on the dark animal in the snowy landscape, keeping fur detail, the original blue sky and snow detail."
+    },
+    "chosen": {
+      "index": 2,
+      "path": "experiments/functional-v26-20261107/candidates/p508-2.png",
+      "sha256": "e348bcd4d4bac3b0a55dfba92d9cdcec9d0abd34ec7352ab6c1eeec418342e0c",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "shadows": 38
+        }
+      },
+      "verdict": "complete",
+      "cause": null,
+      "evidence": "毛发纹理适度打开，蓝天和积雪层次保持。",
+      "id": "initial-2"
+    },
+    "rejected": {
+      "index": 1,
+      "path": "experiments/functional-v26-20261107/candidates/p508-1.png",
+      "sha256": "6c10576ea8bd00131c58f8930ad0b640dd760ef693937afa4ef63572e72f419d",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 60
+        }
+      },
+      "verdict": "failed",
+      "cause": "scope_or_preservation",
+      "evidence": "全局曝光明显改变蓝天和积雪亮度，皮毛以外的区域改动超过要求。",
+      "id": "initial-1"
+    }
+  },
+  {
+    "id": "p508/initial-3>initial-1",
+    "case_id": "p508",
+    "group_id": "af8c994937bcf4c00458c4eb64c92aaf5ecc3d56b0c41da77e25a23874596ac3",
+    "domain": "landscape",
+    "image": "data/training/functional-v26-20261107/inputs/p508.jpg",
+    "image_sha256": "9cbe9ca6ca2428dd2452cda15291e83d201eb800efad1f4f6f09e8ea7d6e3b75",
+    "instructions": {
+      "zh": "略微提亮雪地风景中深色动物的暗部，保留皮毛纹理、原来的蓝天和雪地层次。",
+      "en": "Gently lift shadows on the dark animal in the snowy landscape, keeping fur detail, the original blue sky and snow detail."
+    },
+    "chosen": {
+      "index": 3,
+      "path": "experiments/functional-v26-20261107/candidates/p508-3.png",
+      "sha256": "d5f94e4afe685ce851591d32a92a2e5c6127b9bbb1687ab8775e600c202c9743",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "shadows": 77
+        }
+      },
+      "verdict": "complete",
+      "cause": null,
+      "evidence": "深色皮毛局部更可辨，天空基本保持，近处暗毛反差稍软但细节仍在。",
+      "id": "initial-3"
+    },
+    "rejected": {
+      "index": 1,
+      "path": "experiments/functional-v26-20261107/candidates/p508-1.png",
+      "sha256": "6c10576ea8bd00131c58f8930ad0b640dd760ef693937afa4ef63572e72f419d",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 60
+        }
+      },
+      "verdict": "failed",
+      "cause": "scope_or_preservation",
+      "evidence": "全局曝光明显改变蓝天和积雪亮度，皮毛以外的区域改动超过要求。",
+      "id": "initial-1"
+    }
+  },
+  {
+    "id": "p278/initial-1>initial-2",
+    "case_id": "p278",
+    "group_id": "6d57480420153ce17ac567237c2f595fbc7a8817f340bb08d397153d4c89dffa",
+    "domain": "landscape",
+    "image": "data/training/functional-v26-20261107/inputs/p278.jpg",
+    "image_sha256": "86fcb5af3eed474cfe39ef0160f95ce17101c9e34899ae09c286df4d1f1a2648",
+    "instructions": {
+      "zh": "适度提亮观景处前景的暗部，让岩石轮廓更容易看清，保留云层和远山的层次。",
+      "en": "Moderately lift the shadows in the overlook foreground so rock contours are easier to read, preserving the layers in the clouds and distant mountains."
+    },
+    "chosen": {
+      "index": 1,
+      "path": "experiments/functional-v26-20261107/candidates/p278-1.png",
+      "sha256": "06661a65fcf3832cc0218823634f4a28fd09ca2a79404489b2c7b02b247f80c0",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "shadows": 77
+        }
+      },
+      "verdict": "complete",
+      "cause": null,
+      "evidence": "岩石轮廓与阴影更可辨，原像素云纹和远山层次保持。",
+      "id": "initial-1"
+    },
+    "rejected": {
+      "index": 2,
+      "path": "experiments/functional-v26-20261107/candidates/p278-2.png",
+      "sha256": "21fdfa6f8b33821f99fcea34e2385e44d255935014f9ea2102ca730b9595f087",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 60
+        }
+      },
+      "verdict": "failed",
+      "cause": "scope_or_preservation",
+      "evidence": "岩石也提亮，但亮云原像素更接近一片白，云层细纹反差明显下降。",
+      "id": "initial-2"
+    }
+  },
+  {
+    "id": "p493/initial-1>initial-3",
+    "case_id": "p493",
+    "group_id": "423db27d20a813dc420301fccac446c16e6339d1d1f1272e0002a53d8597d7f3",
+    "domain": "landscape",
+    "image": "data/training/functional-v26-20261107/inputs/p493.jpg",
+    "image_sha256": "db7e786ea21bc4ce6763602723da9671e60ab2d871a38c79092a3e80863fb43b",
+    "instructions": {
+      "zh": "略微提亮日落前景的暗部，保留人物剪影和太阳周边暖色，避免整片天空变得发白。",
+      "en": "Gently lift the sunset foreground while keeping the figures silhouetted and preserving warm colour around the sun without washing out the sky."
+    },
+    "chosen": {
+      "index": 1,
+      "path": "experiments/functional-v26-20261107/candidates/p493-1.png",
+      "sha256": "8e4c51cc1c73434476eb78041ce31bd909c90e8f6ed48999b246721f6dc15156",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "shadows": 38
+        }
+      },
+      "verdict": "complete",
+      "cause": null,
+      "evidence": "前景植物和椅缘稍可辨，人物仍以剪影为主，日落暖色保持。",
+      "id": "initial-1"
+    },
+    "rejected": {
+      "index": 3,
+      "path": "experiments/functional-v26-20261107/candidates/p493-3.png",
+      "sha256": "b0af0c475b8268c6962415f04ae4f4e5d4e278c655f1ad997b836cb14b26293b",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 60
+        }
+      },
+      "verdict": "failed",
+      "cause": "scope_or_preservation",
+      "evidence": "人物暗面整体被提亮、红色眩光增强，太阳周围暖色和白亮过渡减弱。",
+      "id": "initial-3"
+    }
+  }
+]

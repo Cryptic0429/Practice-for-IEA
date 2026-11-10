@@ -1,0 +1,911 @@
+{
+  "split": "native-development",
+  "name": "second-epoch",
+  "created_at": "2026-11-05T20:06:03.347881+00:00",
+  "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+  "models": {
+    "base-e2": {
+      "model_id": "base-e2",
+      "origin": "base",
+      "origin_identity": {
+        "path": "models/Qwen2.5-VL-7B-Instruct",
+        "shards": [
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00001-of-00005.safetensors",
+            "sha256": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+            "bytes": 3900233256,
+            "mtime_ns": 1793432463546824622
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00002-of-00005.safetensors",
+            "sha256": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+            "bytes": 3864726320,
+            "mtime_ns": 1793432503644001111
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00003-of-00005.safetensors",
+            "sha256": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+            "bytes": 3864726424,
+            "mtime_ns": 1793432545341217818
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00004-of-00005.safetensors",
+            "sha256": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+            "bytes": 3864733680,
+            "mtime_ns": 1793432587834451242
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00005-of-00005.safetensors",
+            "sha256": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67",
+            "bytes": 1089994880,
+            "mtime_ns": 1793432599234781102
+          }
+        ],
+        "architecture": {
+          "hidden_size": 3584,
+          "intermediate_size": 18944,
+          "num_hidden_layers": 28,
+          "num_attention_heads": 28,
+          "num_key_value_heads": 4,
+          "vocab_size": 152064
+        },
+        "assets": {
+          "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "chat_template.json": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+          "model-info.json": "3f375296723cbb910e9c3350730e3395342ead9cb7ac0ec355a25dcefe5bf532",
+          "tokenizer_config.json": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+          "config.json": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+          "generation_config.json": "0a3aea82869fe29f20dc95ccf3e2bcff380eca1f5ad6447a4a4b37110b08e43e",
+          "model.safetensors.index.json": "73b333b0b16e5286ddba615d2caebcd495cf7e616f52eb217a81781393d79de9",
+          "preprocessor_config.json": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+          "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+        },
+        "prior_integrity_file": "configs/evaluation-weight-integrity-v1.json",
+        "prior_integrity_sha256": "43a0961e25db0e05dc92c69e4e7b520ac0fb8531420223dc6daf45f75257cbd1",
+        "source": "Pinned original Qwen revision cc594898137f460bfe9f0759e9844b3ce807cfb5"
+      },
+      "adapter": "experiments/functional-v9-20261106/runs/base-seed-20261115/checkpoint-462",
+      "adapter_sha256": "9a70351e1d449b9c04471e1556c27cc9e53bfa992598d5ba10bd7a4512f23cd8",
+      "runtime": "functional_v9.runtime",
+      "schema": "functional-outcome-v1",
+      "editor": "functional-editor-v7-soft-rgb-candidate",
+      "split": "native-development",
+      "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+      "input_policy": "Only original input photograph, one original-language request and frozen tools. No targets, references, reviewer notes, statistics or expected action.",
+      "code_hashes": {
+        "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+        "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+        "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+        "scripts/functional_v7/editor_soft.py": "8c3b02c304d79bca9d547fe471afe4a0136c1813c2cf30a0c343dd5e174f2b50",
+        "scripts/functional_v7/outcomes.py": "4d46bb208b18dab750ee77e94c8f063ca1c3b5189ff1a6990ff9d3c4c1ce4286",
+        "scripts/functional_v7/runtime.py": "c6568cf1de61b8372abd2c21070070f2a4bca7f88e0f956541c07be330bfd5a7",
+        "scripts/functional_v9/runtime.py": "4d9de4b350c1e0284b4e032f08ae6f8298cede2e41de3e3a9153bb43dbc61d37",
+        "scripts/functional_v9/train.py": "2fb42d0ca1cc55d21bdf86e6530c2d4039eeba54c70ce0987eb6e6e757db0b6e",
+        "scripts/functional_v9/evaluate.py": "508855963aacb720d71d846f296cbf6c5c266654fbe94a1f35b978623fc97bbb",
+        "scripts/functional_v9/freeze_training.py": "8ecf0febd5c058458a9f0df02abcec27224a42aa3b06796930c3925ba7d4619d"
+      }
+    },
+    "author-e2": {
+      "model_id": "author-e2",
+      "origin": "author",
+      "origin_identity": {
+        "path": "models/Qwen2.5-VL-7B-IEA",
+        "shards": [
+          {
+            "path": "models/Qwen2.5-VL-7B-IEA/model-00001-of-00004.safetensors",
+            "sha256": "c5dd573200d60dd8fca38cb9e84359d79f24e9ff28121a71d6147641789052bd",
+            "bytes": 4968243304,
+            "mtime_ns": 1793365800063648170
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-IEA/model-00002-of-00004.safetensors",
+            "sha256": "8e084e0a7c23ae2621facf56fcf11ff594e51486662c338d1486672d5514f905",
+            "bytes": 4991495816,
+            "mtime_ns": 1793365444197819275
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-IEA/model-00003-of-00004.safetensors",
+            "sha256": "4928cca0b97406966fca452ded16017c6ff3d0e114d51c0d5ef219f401248304",
+            "bytes": 4932751040,
+            "mtime_ns": 1793365654274572388
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-IEA/model-00004-of-00004.safetensors",
+            "sha256": "c7dd717707e80ef5db65b49cc285ebd529b552f26f06f5ee93c6dd7c854932e6",
+            "bytes": 1691924384,
+            "mtime_ns": 1793365705894909968
+          }
+        ],
+        "architecture": {
+          "hidden_size": 3584,
+          "intermediate_size": 18944,
+          "num_hidden_layers": 28,
+          "num_attention_heads": 28,
+          "num_key_value_heads": 4,
+          "vocab_size": 152064
+        },
+        "assets": {
+          "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+          "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+          "model-info.json": "85f61bd5b291d118bbbabea626f091be82919253638dc3c2e573dc12c9ef54bf",
+          "tokenizer_config.json": "37ab9b3df99c783a264eb7fd9847d17f2db28d9cc2f64b37e8bf4d60c81c8761",
+          "config.json": "53dc8e207b4b3433edc1da8549c45dc588f686d6160d6f36950bcfe577b2cf0d",
+          "generation_config.json": "74096ab8522ef854e06730ea689bc5f4a80f4c6fc78794c588a4071593e726c7",
+          "chat_template.jinja": "a0bc6f6fc7a29a80017a433e8f03a1cc1236e838a944a2d034295a60c4f2fddb",
+          "model.safetensors.index.json": "3067e9b0f35596ff3426a0d0ec8c982a51fa1e110c4fc30dcf3be9ea37409df6",
+          "preprocessor_config.json": "c1c9d43adb750cc52f317b130734fefa8edba78a5814066f6c10ecc1826e98af",
+          "tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+          "video_preprocessor_config.json": "4e7245236bbf2af8b304bbc3228519cccc3bf3601726f53b7a1b8d87a3043af9"
+        },
+        "prior_integrity_file": "configs/evaluation-weight-integrity-v1.json",
+        "prior_integrity_sha256": "43a0961e25db0e05dc92c69e4e7b520ac0fb8531420223dc6daf45f75257cbd1",
+        "source": "Existing author IEA full weights; publisher checksum not independently attested; exact content matches historical integrity receipt"
+      },
+      "adapter": "experiments/functional-v9-20261106/runs/author-seed-20261115/checkpoint-462",
+      "adapter_sha256": "096ace13547a0a4f95ae1b0024914c291e96d00bcb3b97600603a148a409c494",
+      "runtime": "functional_v9.runtime",
+      "schema": "functional-outcome-v1",
+      "editor": "functional-editor-v7-soft-rgb-candidate",
+      "split": "native-development",
+      "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+      "input_policy": "Only original input photograph, one original-language request and frozen tools. No targets, references, reviewer notes, statistics or expected action.",
+      "code_hashes": {
+        "scripts/functional_v1/common.py": "1e4f254fe9e04629c11d098fc3662d359746056156cccae3704d1483719f1e8a",
+        "scripts/functional_v1/editor.py": "b0504eacad63ab211cf63381ef502b5bf3da10222b17ded77a0553e79e66d277",
+        "scripts/functional_v1/runtime.py": "35ef3be175bc56ae35a0e05049e3c0632e57eb37490c20cf85c285381d8a14bc",
+        "scripts/functional_v7/editor_soft.py": "8c3b02c304d79bca9d547fe471afe4a0136c1813c2cf30a0c343dd5e174f2b50",
+        "scripts/functional_v7/outcomes.py": "4d46bb208b18dab750ee77e94c8f063ca1c3b5189ff1a6990ff9d3c4c1ce4286",
+        "scripts/functional_v7/runtime.py": "c6568cf1de61b8372abd2c21070070f2a4bca7f88e0f956541c07be330bfd5a7",
+        "scripts/functional_v9/runtime.py": "4d9de4b350c1e0284b4e032f08ae6f8298cede2e41de3e3a9153bb43dbc61d37",
+        "scripts/functional_v9/train.py": "2fb42d0ca1cc55d21bdf86e6530c2d4039eeba54c70ce0987eb6e6e757db0b6e",
+        "scripts/functional_v9/evaluate.py": "508855963aacb720d71d846f296cbf6c5c266654fbe94a1f35b978623fc97bbb",
+        "scripts/functional_v9/freeze_training.py": "8ecf0febd5c058458a9f0df02abcec27224a42aa3b06796930c3925ba7d4619d"
+      }
+    }
+  },
+  "mapping": [
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "item_id": "12b3e7c0b410efb9"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-001",
+      "language": "en",
+      "item_id": "12b3e7c0b410efb9"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-002",
+      "language": "zh",
+      "item_id": "738f04c3f7f5b909"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-002",
+      "language": "en",
+      "item_id": "738f04c3f7f5b909"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-003",
+      "language": "zh",
+      "item_id": "2bdffad948b809d0"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-003",
+      "language": "en",
+      "item_id": "2bdffad948b809d0"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-004",
+      "language": "zh",
+      "item_id": "587a522a31ed4ddd"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-004",
+      "language": "en",
+      "item_id": "587a522a31ed4ddd"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-008",
+      "language": "zh",
+      "item_id": "6035cb4d5933a47a"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-008",
+      "language": "en",
+      "item_id": "6035cb4d5933a47a"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-011",
+      "language": "zh",
+      "item_id": "390d9feb2ad37901"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-011",
+      "language": "en",
+      "item_id": "21a002e45be4420e"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-013",
+      "language": "zh",
+      "item_id": "6452e3cacc0a653d"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-013",
+      "language": "en",
+      "item_id": "6452e3cacc0a653d"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-016",
+      "language": "zh",
+      "item_id": "4bfe628b61a57144"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-016",
+      "language": "en",
+      "item_id": "4bfe628b61a57144"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-023",
+      "language": "zh",
+      "item_id": "8bdd538748b5fb66"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-023",
+      "language": "en",
+      "item_id": "8bdd538748b5fb66"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-029",
+      "language": "zh",
+      "item_id": "63cc7b435d37de1e"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-029",
+      "language": "en",
+      "item_id": "63cc7b435d37de1e"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-032",
+      "language": "zh",
+      "item_id": "4d07358466bcf537"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-032",
+      "language": "en",
+      "item_id": "4d07358466bcf537"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-040",
+      "language": "zh",
+      "item_id": "af4bba687547385b"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-040",
+      "language": "en",
+      "item_id": "f4e128687d239537"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-067",
+      "language": "zh",
+      "item_id": "cc169350cb4adf16"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-067",
+      "language": "en",
+      "item_id": "cc169350cb4adf16"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-100",
+      "language": "zh",
+      "item_id": "41b95899dd30f395"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-100",
+      "language": "en",
+      "item_id": "41b95899dd30f395"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-106",
+      "language": "zh",
+      "item_id": "6986c10de6bafd4d"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-106",
+      "language": "en",
+      "item_id": "6986c10de6bafd4d"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-108",
+      "language": "zh",
+      "item_id": "a07c71be09e2da4e"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-108",
+      "language": "en",
+      "item_id": "a07c71be09e2da4e"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-148",
+      "language": "zh",
+      "item_id": "c6bdbadaf1466611"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-148",
+      "language": "en",
+      "item_id": "c6bdbadaf1466611"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-161",
+      "language": "zh",
+      "item_id": "790857c8ec647662"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-161",
+      "language": "en",
+      "item_id": "9fd008de55c21818"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "item_id": "12b3e7c0b410efb9"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-001",
+      "language": "en",
+      "item_id": "12b3e7c0b410efb9"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-002",
+      "language": "zh",
+      "item_id": "738f04c3f7f5b909"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-002",
+      "language": "en",
+      "item_id": "738f04c3f7f5b909"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-003",
+      "language": "zh",
+      "item_id": "2bdffad948b809d0"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-003",
+      "language": "en",
+      "item_id": "b1901370b365645c"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-004",
+      "language": "zh",
+      "item_id": "587a522a31ed4ddd"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-004",
+      "language": "en",
+      "item_id": "587a522a31ed4ddd"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-008",
+      "language": "zh",
+      "item_id": "6035cb4d5933a47a"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-008",
+      "language": "en",
+      "item_id": "6035cb4d5933a47a"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-011",
+      "language": "zh",
+      "item_id": "45d65a73e5b7214d"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-011",
+      "language": "en",
+      "item_id": "0db19ba4c76e6939"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-013",
+      "language": "zh",
+      "item_id": "1dec9fc786baf02d"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-013",
+      "language": "en",
+      "item_id": "6452e3cacc0a653d"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-016",
+      "language": "zh",
+      "item_id": "4bfe628b61a57144"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-016",
+      "language": "en",
+      "item_id": "4bfe628b61a57144"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-023",
+      "language": "zh",
+      "item_id": "8bdd538748b5fb66"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-023",
+      "language": "en",
+      "item_id": "8bdd538748b5fb66"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-029",
+      "language": "zh",
+      "item_id": "ef8d9650f6a071d9"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-029",
+      "language": "en",
+      "item_id": "ef8d9650f6a071d9"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-032",
+      "language": "zh",
+      "item_id": "0de0f256f2532c8c"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-032",
+      "language": "en",
+      "item_id": "4d07358466bcf537"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-040",
+      "language": "zh",
+      "item_id": "7b1d4b1d324aaa34"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-040",
+      "language": "en",
+      "item_id": "7b1d4b1d324aaa34"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-067",
+      "language": "zh",
+      "item_id": "cc169350cb4adf16"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-067",
+      "language": "en",
+      "item_id": "cc169350cb4adf16"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-070",
+      "language": "zh",
+      "item_id": "3b22a2ce470eed15"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-070",
+      "language": "en",
+      "item_id": "1ac76281df46aa80"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-100",
+      "language": "zh",
+      "item_id": "41b95899dd30f395"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-100",
+      "language": "en",
+      "item_id": "41b95899dd30f395"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-106",
+      "language": "zh",
+      "item_id": "6986c10de6bafd4d"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-106",
+      "language": "en",
+      "item_id": "6986c10de6bafd4d"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-108",
+      "language": "zh",
+      "item_id": "a07c71be09e2da4e"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-108",
+      "language": "en",
+      "item_id": "a07c71be09e2da4e"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-148",
+      "language": "zh",
+      "item_id": "c6bdbadaf1466611"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-148",
+      "language": "en",
+      "item_id": "c6bdbadaf1466611"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-161",
+      "language": "zh",
+      "item_id": "790857c8ec647662"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-161",
+      "language": "en",
+      "item_id": "9b958febfdb778be"
+    }
+  ],
+  "invalid": [
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-006",
+      "language": "en",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-070",
+      "language": "zh",
+      "reason": null
+    },
+    {
+      "model_id": "base-e2",
+      "case_id": "native-dev-070",
+      "language": "en",
+      "reason": null
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    },
+    {
+      "model_id": "author-e2",
+      "case_id": "native-dev-006",
+      "language": "en",
+      "reason": "ValueError: sepia_strength_must_be_between_0_and_100"
+    }
+  ],
+  "items": [
+    {
+      "item_id": "12b3e7c0b410efb9",
+      "case_id": "native-dev-001",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-001-zh.png",
+      "image_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765"
+    },
+    {
+      "item_id": "738f04c3f7f5b909",
+      "case_id": "native-dev-002",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-002-zh.png",
+      "image_sha256": "a8ab4814f15301ad7a0da287cdc6af6db808f7e2876a95821890e7feb9f599c1"
+    },
+    {
+      "item_id": "2bdffad948b809d0",
+      "case_id": "native-dev-003",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-003-zh.png",
+      "image_sha256": "df10fa7522bdd2cc5f2f7fae619d374da6cbcf815fb96519193a0717da35708e"
+    },
+    {
+      "item_id": "587a522a31ed4ddd",
+      "case_id": "native-dev-004",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-004-zh.png",
+      "image_sha256": "975e687b877da15695c55057e52468ade47068e84a49fd3b5fc80433ec657d20"
+    },
+    {
+      "item_id": "6035cb4d5933a47a",
+      "case_id": "native-dev-008",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-008-zh.png",
+      "image_sha256": "db7b7d3343d7c8ae15535796f8c4426861f66d9fe22626fca2563d022786a2f2"
+    },
+    {
+      "item_id": "390d9feb2ad37901",
+      "case_id": "native-dev-011",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-011-zh.png",
+      "image_sha256": "4250b7c142aebe935ad17ec310008141653a63b26eada36481e93a1c644ce528"
+    },
+    {
+      "item_id": "21a002e45be4420e",
+      "case_id": "native-dev-011",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-011-en.png",
+      "image_sha256": "6cb48b4a3feeb6e88bad59bf22079c3dc728d2365f432a5de71c50e096ff8481"
+    },
+    {
+      "item_id": "6452e3cacc0a653d",
+      "case_id": "native-dev-013",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-013-zh.png",
+      "image_sha256": "63216eba0ef920edee4f3f10686fb1c84dc6a89be8f8ab8dfc77251fe075ff0d"
+    },
+    {
+      "item_id": "4bfe628b61a57144",
+      "case_id": "native-dev-016",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-016-zh.png",
+      "image_sha256": "8a6107bb0a8302ab75d8fc3c6af489f2cb82732aac01a66a764dbb18dd36802c"
+    },
+    {
+      "item_id": "8bdd538748b5fb66",
+      "case_id": "native-dev-023",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-023-zh.png",
+      "image_sha256": "e4acff71327b829d3343b4424bca96e97f3eed41033379c4f02cc81b364874a6"
+    },
+    {
+      "item_id": "63cc7b435d37de1e",
+      "case_id": "native-dev-029",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-029-zh.png",
+      "image_sha256": "c4d6427c8dff6124db0c34cd5b111d0d7dd9fae981231c433fb55365dad8edc3"
+    },
+    {
+      "item_id": "4d07358466bcf537",
+      "case_id": "native-dev-032",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-032-zh.png",
+      "image_sha256": "42a7af83ec89af24ab135c3b5171388fd5d12cc7d2a500b8d5cd82221992fda0"
+    },
+    {
+      "item_id": "af4bba687547385b",
+      "case_id": "native-dev-040",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-040-zh.png",
+      "image_sha256": "fcdcdcac7298e8b8404ebf0ac56d9533568a72652e9bb00c93d9e460fd5f09a1"
+    },
+    {
+      "item_id": "f4e128687d239537",
+      "case_id": "native-dev-040",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-040-en.png",
+      "image_sha256": "03d3385598afddf005a9ad9f7c87c7ae448ea26093cf5346d461043c982d6775"
+    },
+    {
+      "item_id": "cc169350cb4adf16",
+      "case_id": "native-dev-067",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-067-zh.png",
+      "image_sha256": "950b68e4a81bf6f34f58a387299b9687287045dc1a1e2515b5bcab8770a981f5"
+    },
+    {
+      "item_id": "41b95899dd30f395",
+      "case_id": "native-dev-100",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-100-zh.png",
+      "image_sha256": "52d07450c5d278c26aac0ac13bf151dde6c93e1e3806185267c74c55198b3c67"
+    },
+    {
+      "item_id": "6986c10de6bafd4d",
+      "case_id": "native-dev-106",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-106-zh.png",
+      "image_sha256": "b01c97c5c85dcbdd29e5d24da78bf23a7cafc5f9614bfcbc1f7dd0c28a039491"
+    },
+    {
+      "item_id": "a07c71be09e2da4e",
+      "case_id": "native-dev-108",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-108-zh.png",
+      "image_sha256": "08c514df8344eb898e1fe695b5f89c86a8ef0569255a1ae58df6c1b91d42e57d"
+    },
+    {
+      "item_id": "c6bdbadaf1466611",
+      "case_id": "native-dev-148",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-148-zh.png",
+      "image_sha256": "e77c83e84dd7751dfd80cbce62c06d23f901d59180772b451131edd11fa76372"
+    },
+    {
+      "item_id": "790857c8ec647662",
+      "case_id": "native-dev-161",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-161-zh.png",
+      "image_sha256": "add652a21d64436a35c1931f854ec8c1887d1e75beb585987ac4572a06e50953"
+    },
+    {
+      "item_id": "9fd008de55c21818",
+      "case_id": "native-dev-161",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/images/native-dev-161-en.png",
+      "image_sha256": "a0a63169f75f626dc36390a9c6871ac4855435054394574a49b54bcb9bc9d973"
+    },
+    {
+      "item_id": "b1901370b365645c",
+      "case_id": "native-dev-003",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e2/images/native-dev-003-en.png",
+      "image_sha256": "985f06cf6d3d82f5959bd2566ca3fdbfd5d393b82a7ddb28a758fb65d5ef23dd"
+    },
+    {
+      "item_id": "45d65a73e5b7214d",
+      "case_id": "native-dev-011",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e2/images/native-dev-011-zh.png",
+      "image_sha256": "aed6b0bcb8fb54ce464661f4ae15a0d4606c4e93bcbfb4bce719d475c1751cae"
+    },
+    {
+      "item_id": "0db19ba4c76e6939",
+      "case_id": "native-dev-011",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e2/images/native-dev-011-en.png",
+      "image_sha256": "e8ca021f429e784256e3c720b9bd275e15a86a7531fcf2f58e0188c1ee2be865"
+    },
+    {
+      "item_id": "1dec9fc786baf02d",
+      "case_id": "native-dev-013",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e2/images/native-dev-013-zh.png",
+      "image_sha256": "c9358d42e6d55ff6bf7028f856f4390c679b4090ff6e7a5d81ac96ddeb85758f"
+    },
+    {
+      "item_id": "ef8d9650f6a071d9",
+      "case_id": "native-dev-029",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e2/images/native-dev-029-zh.png",
+      "image_sha256": "a0e81144f263c095a06363c89153c531d640ab7bf29405b9536faa6325083387"
+    },
+    {
+      "item_id": "0de0f256f2532c8c",
+      "case_id": "native-dev-032",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e2/images/native-dev-032-zh.png",
+      "image_sha256": "a40fa181199f6eeff092454dce8102da8b6534902fcef315cd9d3441d4957c4e"
+    },
+    {
+      "item_id": "7b1d4b1d324aaa34",
+      "case_id": "native-dev-040",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e2/images/native-dev-040-zh.png",
+      "image_sha256": "b03dbde0babdd9325098f28222b4d05652ed57a7e9fc14286dfc92c5317b7a18"
+    },
+    {
+      "item_id": "3b22a2ce470eed15",
+      "case_id": "native-dev-070",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e2/images/native-dev-070-zh.png",
+      "image_sha256": "45cfa7367e10f602fb0199ca71ffb60f6774a950f401c85a26a0b24443453bac"
+    },
+    {
+      "item_id": "1ac76281df46aa80",
+      "case_id": "native-dev-070",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e2/images/native-dev-070-en.png",
+      "image_sha256": "ccf328df1a0ef390bc16b17aa79fe0d3dbacfd52fbc2e8f19ed2c9aa8df667ba"
+    },
+    {
+      "item_id": "9b958febfdb778be",
+      "case_id": "native-dev-161",
+      "image": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e2/images/native-dev-161-en.png",
+      "image_sha256": "1703d53fb196ad1f84fc0636eee401f143f387d2182ea36bc06898a7a938be9b"
+    }
+  ],
+  "sheets": [
+    {
+      "sheet": "experiments/functional-v9-20261106/review/native-development/second-epoch/native-dev-011-01.jpg",
+      "sha256": "8742e881cc8dc3e05b7462f744cc989c341aab96967e6e2b2f54d214678b52c8",
+      "case_id": "native-dev-011",
+      "items": [
+        "390d9feb2ad37901"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v9-20261106/review/native-development/second-epoch/native-dev-032-01.jpg",
+      "sha256": "e4a61420233ba21c9202410ae1ac870351410caf4a6c166b664a51f72ead29da",
+      "case_id": "native-dev-032",
+      "items": [
+        "0de0f256f2532c8c"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v9-20261106/review/native-development/second-epoch/native-dev-040-01.jpg",
+      "sha256": "0e909543d128b3864964c58ad0229c840e50f4a07ddc8e679f0295f880ce460e",
+      "case_id": "native-dev-040",
+      "items": [
+        "f4e128687d239537"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v9-20261106/review/native-development/second-epoch/native-dev-070-01.jpg",
+      "sha256": "ee2523cd1102271206f06d6020c85da9750dd4dee29c4889e9b9e139b8c2beab",
+      "case_id": "native-dev-070",
+      "items": [
+        "3b22a2ce470eed15"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v9-20261106/review/native-development/second-epoch/native-dev-161-01.jpg",
+      "sha256": "098e89762926fe3352cf5caf900d4739a522b5ef72dda26615f5bf0dd3f39ad1",
+      "case_id": "native-dev-161",
+      "items": [
+        "9fd008de55c21818"
+      ]
+    }
+  ],
+  "reused_exact_image_observations": [
+    "0db19ba4c76e6939",
+    "12b3e7c0b410efb9",
+    "1ac76281df46aa80",
+    "1dec9fc786baf02d",
+    "21a002e45be4420e",
+    "2bdffad948b809d0",
+    "41b95899dd30f395",
+    "45d65a73e5b7214d",
+    "4bfe628b61a57144",
+    "4d07358466bcf537",
+    "587a522a31ed4ddd",
+    "6035cb4d5933a47a",
+    "63cc7b435d37de1e",
+    "6452e3cacc0a653d",
+    "6986c10de6bafd4d",
+    "738f04c3f7f5b909",
+    "790857c8ec647662",
+    "7b1d4b1d324aaa34",
+    "8bdd538748b5fb66",
+    "9b958febfdb778be",
+    "a07c71be09e2da4e",
+    "af4bba687547385b",
+    "b1901370b365645c",
+    "c6bdbadaf1466611",
+    "cc169350cb4adf16",
+    "ef8d9650f6a071d9"
+  ],
+  "review_policy": "Actual direct Codex observation. Exact same output for the same bilingual semantic case is reviewed once and mapped back; translations are not independent samples.",
+  "no_automatic_completion_ratings": true
+}

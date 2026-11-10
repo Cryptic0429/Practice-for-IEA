@@ -1,0 +1,139 @@
+{
+  "reviewer": "Codex direct AI visual review of full-frame overviews and matching native-pixel crop regions",
+  "reviewed_without_model_identity": "All results are explicit editor replays. No model candidates, no independent second reviewer.",
+  "initial_replay_sha256": "3c4964b7ce3097eb6063f23949bbd13510f0a4205d7e9b597732505b932d1221",
+  "refined_replay_sha256": "40d319f856fec433f52d28ee115ea5d8409ea2cc73aa881eb557c88becc89213",
+  "notes": [
+    {
+      "id": "p127",
+      "initial_edit_verdicts": [
+        "partial",
+        "complete",
+        "partial"
+      ],
+      "observation": "30档只略提嘴周。80档脸和胡茬更清楚，蓝天渐变和山线保留。全局曝光让受光一侧和山景都变亮，阴影的选择性较差。",
+      "decision_candidate": 2,
+      "rejected_for_preference": null,
+      "reviewed_panels": {
+        "p127.png": "ee23d41f4498eeb05e746c5d4d0f8a9ff8a7fe19d15801ed1fef7bd1a0d1b8ca"
+      }
+    },
+    {
+      "id": "p261",
+      "initial_edit_verdicts": [
+        "partial",
+        "complete",
+        "partial"
+      ],
+      "observation": "30档对脸有帮助，西装扣眼仍偏暗。80档能分辨扣眼和织纹，背景依然深暗，肤色保持自然。全局曝光也显示织纹，但背景和面部亮处的提升更明显。",
+      "decision_candidate": 2,
+      "rejected_for_preference": null,
+      "reviewed_panels": {
+        "p261.png": "5d099182d9704f8068dae1743257ac49100ebebbfa14b5be1390ce70e44f3d6f",
+        "p261-suit.png": "429aa00859a2d2c5483205e633c5f1f2212b3f00df6c3b75c1b0f8a2944ceb1f"
+      }
+    },
+    {
+      "id": "p227",
+      "initial_edit_verdicts": [
+        "complete",
+        "partial",
+        "failed"
+      ],
+      "observation": "30档轻微提亮发丝和面部暗侧，肤色基本保持。80档的深色发丝开始显出原有颗粒。65档全局曝光使颗粒在头发和面颊更明显，也抬亮浅色衬衫。",
+      "decision_candidate": 1,
+      "rejected_for_preference": 3,
+      "reviewed_panels": {
+        "p227.png": "740dfd26245b3c170dc092840da039627768d7c876143a45815db5a91c82a91c"
+      }
+    },
+    {
+      "id": "p444",
+      "initial_edit_verdicts": [
+        "partial",
+        "uncertain",
+        "failed"
+      ],
+      "observation": "低档轮廓仅稍清晰。两种中档可以辨认更多鼻部与嘴部轮廓，霓虹蓝红仍在，面部和手边的彩色颗粒更显眼。中档是否同时达到五官清楚和画质要求存在边界，强档出现很明显的彩色噪点。",
+      "decision_candidate": null,
+      "rejected_for_preference": null,
+      "refined_edit_verdicts": [
+        "uncertain",
+        "uncertain"
+      ],
+      "reviewed_panels": {
+        "p444.png": "5c11ed489fc868caaed7873a00e3e595ca4f7c7a480d970c38380c96bd3dc510",
+        "p444-face.png": "d4e648799ec538d8111a4b32bbbe864f9124d496ae58fcf3f9af2332a612a16f",
+        "refinements/p444.png": "7cbd8745fa96e3bf6b81b7b4ca02592881e59b096be55c81ef187c52fec46abd"
+      }
+    },
+    {
+      "id": "p038",
+      "initial_edit_verdicts": [
+        "partial",
+        "complete",
+        "partial"
+      ],
+      "observation": "30档对前景提升过小。80档让草地阴影和狗的暗部更可见，蓝天和白云层次仍在。全局曝光使草地和天空整体明显变亮，超出轻提暗部的幅度。",
+      "decision_candidate": 2,
+      "rejected_for_preference": null,
+      "reviewed_panels": {
+        "p038.png": "1c4b0336084f0e115a214141cfdce136ccf2c45623021b3020aa409dfb8863d8"
+      }
+    },
+    {
+      "id": "p749",
+      "initial_edit_verdicts": [
+        "partial",
+        "complete",
+        "partial"
+      ],
+      "observation": "80档能更清楚看到墙缝和地面纹理，火花保持橙色，暗处仍有夜景氛围。30档改动太弱；全局曝光同时提亮云层和亮火花，夜色减弱。",
+      "decision_candidate": 2,
+      "rejected_for_preference": null,
+      "reviewed_panels": {
+        "p749.png": "0a54de62df38723192366988907642cd1a1d7f01222a571e6dbdee9b51caa018",
+        "p749-foreground.png": "5c2b12c5bc5ebae6906da0dc69ed84e64077d488253468db8a83e1b534a8ec87"
+      }
+    },
+    {
+      "id": "p425",
+      "initial_edit_verdicts": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "observation": "轻提和单曝光仍看不清地面。高档、组合提亮都把原存档中的紫红及蓝绿色块抬了出来；降低饱和度后仍明显，树干和地面也未能清楚分辨。",
+      "decision_candidate": "decline_candidate",
+      "rejected_for_preference": null,
+      "refined_edit_verdicts": [
+        "failed",
+        "failed"
+      ],
+      "reviewed_panels": {
+        "p425.png": "8108833ed3025cd4f1ed25a698635de794dc3269c5b48fcca1ce65f11158a5ee",
+        "refinements/p425.png": "d76c7f3d28ebeff4b09654343cbaf221259b5549d650097d2293b585eefb297a"
+      }
+    },
+    {
+      "id": "p389",
+      "initial_edit_verdicts": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "observation": "弱档只让火光边缘稍亮。强档能看到远处轮廓，却仍看不清火光附近地形，并显出大片块状层次。组合提亮与收高光也保住火光但没有恢复可辨地形。",
+      "decision_candidate": "decline_candidate",
+      "rejected_for_preference": null,
+      "refined_edit_verdicts": [
+        "failed",
+        "failed"
+      ],
+      "reviewed_panels": {
+        "p389.png": "597535397b65e53047956fb65fa4144c98e34bf027d86eb6b58214dd4748be0b",
+        "p389-fire-edge.png": "5892ab99cd8fdc3372ff72a4a9e5e01080c804fdaf71d4d3860e786e4a6f52d9",
+        "refinements/p389.png": "cd1124de9c33e5a006324926082331693ab87861e70a08464256fbe89c252731"
+      }
+    }
+  ]
+}

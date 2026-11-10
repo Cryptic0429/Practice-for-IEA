@@ -1,0 +1,1479 @@
+{
+  "at": "2026-11-07T09:01:06.856368+00:00",
+  "protocol_sha256": "98fbf53fc0b51ae452bcf03561125daca36d35d07d2c40d0446f5a377d7af4f6",
+  "cases": [
+    {
+      "id": "p162-increase",
+      "photo_id": "p162",
+      "group_id": "7133aec7b1488c884f997cab91ba44b56a64ef936deea60285ff145c483adfb8",
+      "cohort": "fit",
+      "domain": "portrait",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留逆光人物的脸与树干。",
+        "en": "Noticeably increase overall tonal contrast while preserving the backlit face and tree trunks."
+      },
+      "candidate_order": [
+        "r15_20",
+        "protected_strong",
+        "r15_40",
+        "protected_soft"
+      ],
+      "source": "repo/datasets/GIER/images/30bbny_30bbny.jpg",
+      "source_sha256": "764be4d8ad8b9409d78ff8295ffa08b11840ff4c3ebe6f5fca95198051911200",
+      "images": {
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p162-increase-r15_20.png",
+          "sha256": "37aaed8c229e0e77ac221e3f26ce1d2917fd2973b6c41d18a808730fc7f6f9bc"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p162-increase-protected_strong.png",
+          "sha256": "77e6a1956cd3ede04e5183c1014f4bb6ca89e6ee9b62c7db49a11758169a9425"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p162-increase-r15_40.png",
+          "sha256": "5a92ae10558705a9482f7aa541f76905d2b88fcc94848e919cf1d8911c9e1cf9"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p162-increase-protected_soft.png",
+          "sha256": "6679a36fcde3067cac9be17334453f7f6ae0157907adfc35d74e8f5913e0d1df"
+        }
+      },
+      "native_crop": [
+        950,
+        1601,
+        1156,
+        1745
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p162-increase.png",
+      "board_sha256": "ae61a48326f5e8d298764177df8719d84dca22dd6df8ce0e5da6185bf6dc1a0a"
+    },
+    {
+      "id": "p162-decrease",
+      "photo_id": "p162",
+      "group_id": "7133aec7b1488c884f997cab91ba44b56a64ef936deea60285ff145c483adfb8",
+      "cohort": "fit",
+      "domain": "portrait",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留逆光人物的脸与树干。",
+        "en": "Soften the overall tonal contrast while preserving the backlit face and tree trunks."
+      },
+      "candidate_order": [
+        "protected_strong",
+        "protected_soft",
+        "r15_20",
+        "r15_40"
+      ],
+      "source": "repo/datasets/GIER/images/30bbny_30bbny.jpg",
+      "source_sha256": "764be4d8ad8b9409d78ff8295ffa08b11840ff4c3ebe6f5fca95198051911200",
+      "images": {
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p162-decrease-protected_strong.png",
+          "sha256": "506798c14cb35b156ac611591f0d5871b28103788b5b5ed711c0af51f3671e34"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p162-decrease-protected_soft.png",
+          "sha256": "06a01dde695ddafec8a9c3b4b5a93be6168ba71695a2c02f7a97d0207e7cc052"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p162-decrease-r15_20.png",
+          "sha256": "6e43a891fb6a2a8feff878244ae112492a1b2a2bfc294440dbb0ade9f1d53a63"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p162-decrease-r15_40.png",
+          "sha256": "0e1ef1987d1cab20ab437b861b8246b0a3595f000b4fdd8e2072e5ec24f72ce7"
+        }
+      },
+      "native_crop": [
+        950,
+        1601,
+        1156,
+        1745
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p162-decrease.png",
+      "board_sha256": "b8b4449c2406950acc516e6687c4143c01b62f8ce4980a7c10437250a2cb2226"
+    },
+    {
+      "id": "p234-increase",
+      "photo_id": "p234",
+      "group_id": "565554edc0d33a9ee84cd45e2ea9ad96c5a2c2747c5823134939b1a51d056a1e",
+      "cohort": "fit",
+      "domain": "portrait",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留肤色与暗蓝背景的细节。",
+        "en": "Noticeably increase overall tonal contrast while preserving skin tone and detail in the dark blue background."
+      },
+      "candidate_order": [
+        "protected_strong",
+        "r15_40",
+        "r15_20",
+        "protected_soft"
+      ],
+      "source": "repo/datasets/GIER/images/3jmppu_3jmppu.jpg",
+      "source_sha256": "546b4973b384b9147bd1538c569b242de97fbd0ca77c875961dd56ac4e2ac6cc",
+      "images": {
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p234-increase-protected_strong.png",
+          "sha256": "6e56767e0e5cad2ebfd7fe4cb5b4e1b450b20cd94f8f30d64598e2f9fb179df8"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p234-increase-r15_40.png",
+          "sha256": "b459bce50039e4c8395f0429b1a5228a93d24a34608e0b4c13684dbbc5bdfbbf"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p234-increase-r15_20.png",
+          "sha256": "c33a9ab7426ab987c7873081070656abc4358ff6dcf529ef5b9754b9f68b541b"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p234-increase-protected_soft.png",
+          "sha256": "879557ed404dca91e5b661e2f5475f9f65f96cf93fe3d66db3359e05d636cd27"
+        }
+      },
+      "native_crop": [
+        880,
+        458,
+        1086,
+        602
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p234-increase.png",
+      "board_sha256": "c604eddcd9aaf80b8008d4ab64c236bcd41340c64d12daff20993cc32bce3c6a"
+    },
+    {
+      "id": "p234-decrease",
+      "photo_id": "p234",
+      "group_id": "565554edc0d33a9ee84cd45e2ea9ad96c5a2c2747c5823134939b1a51d056a1e",
+      "cohort": "fit",
+      "domain": "portrait",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留肤色与暗蓝背景的细节。",
+        "en": "Soften the overall tonal contrast while preserving skin tone and detail in the dark blue background."
+      },
+      "candidate_order": [
+        "r15_20",
+        "protected_strong",
+        "r15_40",
+        "protected_soft"
+      ],
+      "source": "repo/datasets/GIER/images/3jmppu_3jmppu.jpg",
+      "source_sha256": "546b4973b384b9147bd1538c569b242de97fbd0ca77c875961dd56ac4e2ac6cc",
+      "images": {
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p234-decrease-r15_20.png",
+          "sha256": "f77bb29554c39d8634a2f3f520b26919eff8a11f4e91e7b79a4234ea4bd33958"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p234-decrease-protected_strong.png",
+          "sha256": "77d2d766708dcf64a5c40252478ad882a8ee1a136899dd12431654287f26acd8"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p234-decrease-r15_40.png",
+          "sha256": "2ce14fab25e91c63449c46435b096abae00cd8545430b2bd70323c9acfbf346a"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p234-decrease-protected_soft.png",
+          "sha256": "9573c36be5a38e92ce789ca7416977e9c3ef9dc1aedd8292f41b7c6cae850be5"
+        }
+      },
+      "native_crop": [
+        880,
+        458,
+        1086,
+        602
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p234-decrease.png",
+      "board_sha256": "3a80baf0c04bf493ab4b47dc40b04f7fbad4186cb0d1b3f33cad5e2dc4b85072"
+    },
+    {
+      "id": "p297-increase",
+      "photo_id": "p297",
+      "group_id": "e840fc757c86525a62ae3fecd7efa4f61af7b24dbfb3bedd4a38bbb456fcfaf9",
+      "cohort": "fit",
+      "domain": "portrait",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留面部和街道的细节。",
+        "en": "Noticeably increase overall tonal contrast while preserving details in the face and street."
+      },
+      "candidate_order": [
+        "r15_20",
+        "protected_soft",
+        "r15_40",
+        "protected_strong"
+      ],
+      "source": "repo/datasets/GIER/images/41Swc_41Swc.jpg",
+      "source_sha256": "9468b54a83d6ad18313f8b8a275f0e6b1ed89ca4fd01d7284574ddbac021e3bd",
+      "images": {
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p297-increase-r15_20.png",
+          "sha256": "f23c20390765a4045e05eebfe9432fddb2323b1525a9e2f3377f6caf47beba11"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p297-increase-protected_soft.png",
+          "sha256": "64d9dfbd20c792a064fd84252026efcfe35e91a1cff600cf5ad004e806af4c45"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p297-increase-r15_40.png",
+          "sha256": "66d5bb23986b528769936ab7c09a511d60d299e5c15c37d6df072f1cd704e9e0"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p297-increase-protected_strong.png",
+          "sha256": "7495e8d731a057a1b38b1cd58061aba3e4814b6742441e44a6d7d00837a5391f"
+        }
+      },
+      "native_crop": [
+        319,
+        798,
+        525,
+        942
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p297-increase.png",
+      "board_sha256": "d159bde529a171dbc820e026fc0ce2d04e6bd2d0aabd6f4f093bb5e0bf5a86a6"
+    },
+    {
+      "id": "p297-decrease",
+      "photo_id": "p297",
+      "group_id": "e840fc757c86525a62ae3fecd7efa4f61af7b24dbfb3bedd4a38bbb456fcfaf9",
+      "cohort": "fit",
+      "domain": "portrait",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留面部和街道的细节。",
+        "en": "Soften the overall tonal contrast while preserving details in the face and street."
+      },
+      "candidate_order": [
+        "r15_40",
+        "r15_20",
+        "protected_strong",
+        "protected_soft"
+      ],
+      "source": "repo/datasets/GIER/images/41Swc_41Swc.jpg",
+      "source_sha256": "9468b54a83d6ad18313f8b8a275f0e6b1ed89ca4fd01d7284574ddbac021e3bd",
+      "images": {
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p297-decrease-r15_40.png",
+          "sha256": "9b86deb22592cab9798bd30e9bad94458a3bd6f4c6146e4807b9bd353e729559"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p297-decrease-r15_20.png",
+          "sha256": "f3e391301a42a0ab6b80ebbb127c9e74b9c831e6a47906a31de95b8fc766d96b"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p297-decrease-protected_strong.png",
+          "sha256": "122312c9520f61bd4677855f1a258e25751ef1e10ee5af8e8afb654b3dc3e8e7"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p297-decrease-protected_soft.png",
+          "sha256": "da9037f2aa59f2fcdd7b26762453e2e709f7833f04e92b21e16315f122f54afb"
+        }
+      },
+      "native_crop": [
+        319,
+        798,
+        525,
+        942
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p297-decrease.png",
+      "board_sha256": "d6a9f663e3917a3536486abc886ab2bb42192a070fa7b879ed766228430a2630"
+    },
+    {
+      "id": "p444-increase",
+      "photo_id": "p444",
+      "group_id": "52dad25d66ea6d93b08b5c8a601a839ad07f32ffe6d592fd5c0dc43167d2816c",
+      "cohort": "fit",
+      "domain": "portrait",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留五官和霓虹的颜色。",
+        "en": "Noticeably increase overall tonal contrast while preserving facial features and the neon colours."
+      },
+      "candidate_order": [
+        "r15_40",
+        "protected_soft",
+        "r15_20",
+        "protected_strong"
+      ],
+      "source": "repo/datasets/GIER/images/5rwlho_5rwlho.jpg",
+      "source_sha256": "fa74b35ebb136225f2b04b421b0229fcb7f5d783304d4361fbc830d95f3372b1",
+      "images": {
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p444-increase-r15_40.png",
+          "sha256": "110f635acfcba343297acd7e01fcbaa323d407f9539885231db13e8e7bc51987"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p444-increase-protected_soft.png",
+          "sha256": "8fbde70340e8a8dbc05024753fc3e63c2fd5672431b10c456d0d9e7c97a6f8c4"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p444-increase-r15_20.png",
+          "sha256": "c6397290d36142956b4e28c954c97c0cf1094e1973781179c203cf250edf5845"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p444-increase-protected_strong.png",
+          "sha256": "c62c624fa35c0d2d9c9445b1c1e1060b31d6cd43b54408e471cc2d12c93a1fc1"
+        }
+      },
+      "native_crop": [
+        921,
+        747,
+        1127,
+        891
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p444-increase.png",
+      "board_sha256": "4ffbf5161bf1590264a8ddd9f01449442ee82d74840bb706b50ddeb97b71613a"
+    },
+    {
+      "id": "p444-decrease",
+      "photo_id": "p444",
+      "group_id": "52dad25d66ea6d93b08b5c8a601a839ad07f32ffe6d592fd5c0dc43167d2816c",
+      "cohort": "fit",
+      "domain": "portrait",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留五官和霓虹的颜色。",
+        "en": "Soften the overall tonal contrast while preserving facial features and the neon colours."
+      },
+      "candidate_order": [
+        "r15_20",
+        "r15_40",
+        "protected_strong",
+        "protected_soft"
+      ],
+      "source": "repo/datasets/GIER/images/5rwlho_5rwlho.jpg",
+      "source_sha256": "fa74b35ebb136225f2b04b421b0229fcb7f5d783304d4361fbc830d95f3372b1",
+      "images": {
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p444-decrease-r15_20.png",
+          "sha256": "5a40ff0df8aa9df52c00fd7c8c52282ce4dc76b57ee4a1fb985370e68f7f25ed"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p444-decrease-r15_40.png",
+          "sha256": "122507cad437f0f06760d1e0e5fa8dc65baaf9bd38b03e4981feb1269bc5b93b"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p444-decrease-protected_strong.png",
+          "sha256": "04bc5180cb8190af2f8991d72724cf9faea8505290429c59c0d1f26c46e0a477"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p444-decrease-protected_soft.png",
+          "sha256": "6115ed8760875af7e25ba8cee650825d235cd4165161923fb7d34acd7ec579a9"
+        }
+      },
+      "native_crop": [
+        921,
+        747,
+        1127,
+        891
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p444-decrease.png",
+      "board_sha256": "6e8c9ad08152a41b0cda8b5303406185ab97d803f6e15c0bea5a9dcedc3fe87e"
+    },
+    {
+      "id": "p065-increase",
+      "photo_id": "p065",
+      "group_id": "9d2922b202b8252f5cd14c11d7a07297b45ba188c97376fb73b6e49ecf3cde87",
+      "cohort": "fit",
+      "domain": "landscape",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留天空和草坡的细节。",
+        "en": "Noticeably increase overall tonal contrast while preserving details in the sky and grassy slopes."
+      },
+      "candidate_order": [
+        "protected_soft",
+        "r15_40",
+        "protected_strong",
+        "r15_20"
+      ],
+      "source": "repo/datasets/GIER/images/2go8wy_2go8wy.jpg",
+      "source_sha256": "78143b9127d15404a3bc3165194568988530b1fa9ac6a8c16182a3db1602ee5f",
+      "images": {
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p065-increase-protected_soft.png",
+          "sha256": "51eb04a0b606f224025904c7d3156b08c8cf470387f2fe410e16376275a3dfaf"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p065-increase-r15_40.png",
+          "sha256": "7fd521cfc31648829e2d0fae8cdcd2284fda54782a285d34960a1561fca7aada"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p065-increase-protected_strong.png",
+          "sha256": "2b2f4f78653330e257b0db0071e035eee7ce661ab4e74d317b44953871b08b26"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p065-increase-r15_20.png",
+          "sha256": "3399ce728e66a735f19757c6f59779e2c41da8068e23a6c5981fa2d980308de2"
+        }
+      },
+      "native_crop": [
+        1297,
+        549,
+        1503,
+        693
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p065-increase.png",
+      "board_sha256": "abeffa50b75648e3c0d57d2c681d903570510da3ca484537cb863e8ee7b39350"
+    },
+    {
+      "id": "p065-decrease",
+      "photo_id": "p065",
+      "group_id": "9d2922b202b8252f5cd14c11d7a07297b45ba188c97376fb73b6e49ecf3cde87",
+      "cohort": "fit",
+      "domain": "landscape",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留天空和草坡的细节。",
+        "en": "Soften the overall tonal contrast while preserving details in the sky and grassy slopes."
+      },
+      "candidate_order": [
+        "r15_20",
+        "r15_40",
+        "protected_soft",
+        "protected_strong"
+      ],
+      "source": "repo/datasets/GIER/images/2go8wy_2go8wy.jpg",
+      "source_sha256": "78143b9127d15404a3bc3165194568988530b1fa9ac6a8c16182a3db1602ee5f",
+      "images": {
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p065-decrease-r15_20.png",
+          "sha256": "11079d1d53728335ce7021cf1a67805ad2f747ad18ae684bbcc8357ddb441854"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p065-decrease-r15_40.png",
+          "sha256": "e456053b23a68c2e510092e6263accc9891d57036f52f2089c2954fa3ea66106"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p065-decrease-protected_soft.png",
+          "sha256": "f202859447cf06609e3183e3319220715d97f6a6d8ebea540a2022b239d315ed"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p065-decrease-protected_strong.png",
+          "sha256": "12fb74e4d2c1fcd97c6e115d1c70ef4af615fc9a8ce008dae3b89363dfa5ca17"
+        }
+      },
+      "native_crop": [
+        1297,
+        549,
+        1503,
+        693
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p065-decrease.png",
+      "board_sha256": "53894ce617146cd4ce814f1c3ccfdf8af4326b9c686ae32e24f12113b6c4d2af"
+    },
+    {
+      "id": "p634-increase",
+      "photo_id": "p634",
+      "group_id": "1643b11f23c358d8243aa8c686af6d1eb8b439e950de9af51704c3edea722cee",
+      "cohort": "fit",
+      "domain": "landscape",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留霞光的过渡和海面波纹。",
+        "en": "Noticeably increase overall tonal contrast while preserving the sunset gradient and ripples on the water."
+      },
+      "candidate_order": [
+        "r15_40",
+        "r15_20",
+        "protected_strong",
+        "protected_soft"
+      ],
+      "source": "repo/datasets/GIER/images/dhnDy_dhnDy.jpg",
+      "source_sha256": "2b740187eaa49635e4b650c91fa213c7127132f9fad81c714c030b8f81aa16a2",
+      "images": {
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p634-increase-r15_40.png",
+          "sha256": "2bfa8f1e3d0ac733fdd4aad29e4e256acf3e0254ec69216b6f75d2b85daaeeae"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p634-increase-r15_20.png",
+          "sha256": "5127c3c30b98977861a0fc6e6f6c083da7efac6fcbcde172fdb5d9551e0943f6"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p634-increase-protected_strong.png",
+          "sha256": "66b2036f41423aa572837cb07715a2d82e0849ac85915b2a48402baae81b10cb"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p634-increase-protected_soft.png",
+          "sha256": "689e522b1fe859e1f8d3b7709d17378a5f392d44c6f48b2983370dec10da56a1"
+        }
+      },
+      "native_crop": [
+        540,
+        293,
+        746,
+        437
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p634-increase.png",
+      "board_sha256": "351e367e511feb751172b5efc01f42447b91388eb65b9f5e17a248ae109bd9f5"
+    },
+    {
+      "id": "p634-decrease",
+      "photo_id": "p634",
+      "group_id": "1643b11f23c358d8243aa8c686af6d1eb8b439e950de9af51704c3edea722cee",
+      "cohort": "fit",
+      "domain": "landscape",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留霞光的过渡和海面波纹。",
+        "en": "Soften the overall tonal contrast while preserving the sunset gradient and ripples on the water."
+      },
+      "candidate_order": [
+        "protected_soft",
+        "r15_40",
+        "r15_20",
+        "protected_strong"
+      ],
+      "source": "repo/datasets/GIER/images/dhnDy_dhnDy.jpg",
+      "source_sha256": "2b740187eaa49635e4b650c91fa213c7127132f9fad81c714c030b8f81aa16a2",
+      "images": {
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p634-decrease-protected_soft.png",
+          "sha256": "c1848c12afbd6f3bc155d0523edd76fe01de15666ff23381176d40a2137d48a3"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p634-decrease-r15_40.png",
+          "sha256": "4d93c2aa2c643942a9482b9fb8f34c1194cc8ae01c6ed5f9b49cebb193da8194"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p634-decrease-r15_20.png",
+          "sha256": "0958f2bf947e4b5a4ebda67ae9868f55c73b0d93ef579f1eea87e21297827f83"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p634-decrease-protected_strong.png",
+          "sha256": "75bc888f5e635865f0c3766c6cb436341bc2e8d3ed2ef035ea023ff0587c36a3"
+        }
+      },
+      "native_crop": [
+        540,
+        293,
+        746,
+        437
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p634-decrease.png",
+      "board_sha256": "9a54d4f506d276f0f8ccda42f3c75b691ab8b10a81a0bb43b730615277ea732a"
+    },
+    {
+      "id": "p196-increase",
+      "photo_id": "p196",
+      "group_id": "98978e65fa401112e0f6b0c36c9964b577a53804e0c281551d6152fa89009512",
+      "cohort": "fit",
+      "domain": "landscape",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留树的轮廓和夜空颜色。",
+        "en": "Noticeably increase overall tonal contrast while preserving the tree silhouettes and the colour of the night sky."
+      },
+      "candidate_order": [
+        "protected_soft",
+        "protected_strong",
+        "r15_40",
+        "r15_20"
+      ],
+      "source": "repo/datasets/GIER/images/37ao2x_37ao2x.jpg",
+      "source_sha256": "c1ebed05f12d9acd24b109a2376f004792c8a73858a2765d7207e683c1f3be61",
+      "images": {
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p196-increase-protected_soft.png",
+          "sha256": "8a3ec4f0127b59c96856ff31211b5cc10e9189d12cbb98971aa5e661ab02a918"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p196-increase-protected_strong.png",
+          "sha256": "cdc5bcf480835f2c1bea01880bbad883ea3eef7c82b4f0311a8791d55aea0793"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p196-increase-r15_40.png",
+          "sha256": "26de80c074f9ae2679133b044a884630b6e08a5ac517341d5d238ab0d34fd8e9"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p196-increase-r15_20.png",
+          "sha256": "94c741434bcec36520248dc0cc82df5d2fbd92f4bcebd9cb013a7b520a8868ef"
+        }
+      },
+      "native_crop": [
+        425,
+        182,
+        631,
+        326
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p196-increase.png",
+      "board_sha256": "6296058851ece93681e925950075ab9bc8a72003f98abcca5e2159d5692dbfeb"
+    },
+    {
+      "id": "p196-decrease",
+      "photo_id": "p196",
+      "group_id": "98978e65fa401112e0f6b0c36c9964b577a53804e0c281551d6152fa89009512",
+      "cohort": "fit",
+      "domain": "landscape",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留树的轮廓和夜空颜色。",
+        "en": "Soften the overall tonal contrast while preserving the tree silhouettes and the colour of the night sky."
+      },
+      "candidate_order": [
+        "r15_20",
+        "protected_strong",
+        "r15_40",
+        "protected_soft"
+      ],
+      "source": "repo/datasets/GIER/images/37ao2x_37ao2x.jpg",
+      "source_sha256": "c1ebed05f12d9acd24b109a2376f004792c8a73858a2765d7207e683c1f3be61",
+      "images": {
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p196-decrease-r15_20.png",
+          "sha256": "b428792a0330e7e6022985156a5ec8ed3cbe5d8ab148f93916fe60babd3e8099"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p196-decrease-protected_strong.png",
+          "sha256": "aeaa66cafa8c0459b14f3d57af77ecdcef119b8a9d997f17731e9a8075e34568"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p196-decrease-r15_40.png",
+          "sha256": "78a80a2a308fc3d948e525401bdedd23c2c6f3ddfabd6d75ccd5003f519aad03"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p196-decrease-protected_soft.png",
+          "sha256": "6a337890b75aafdbd1936efb8515680424ceb92e3b9c3ef04412344f41429a6f"
+        }
+      },
+      "native_crop": [
+        425,
+        182,
+        631,
+        326
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p196-decrease.png",
+      "board_sha256": "427c0ed2af32aca3bb6bc898b36b51031a6176ad177be8568bb208f511e7884c"
+    },
+    {
+      "id": "p458-increase",
+      "photo_id": "p458",
+      "group_id": "9e95e37a99dad5aa2c1307c25380936395c1c526f1ecfe14d37f792a4b984679",
+      "cohort": "fit",
+      "domain": "landscape",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留草地纹理与天空过渡。",
+        "en": "Noticeably increase overall tonal contrast while preserving texture in the grass and gradients in the sky."
+      },
+      "candidate_order": [
+        "r15_40",
+        "r15_20",
+        "protected_soft",
+        "protected_strong"
+      ],
+      "source": "repo/datasets/GIER/images/6amslk_6amslk.jpg",
+      "source_sha256": "63a16d2a05b3d2bd1536a69498d16db7f33c8e30d77aee105d71a8269135a6db",
+      "images": {
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p458-increase-r15_40.png",
+          "sha256": "d2bb2960258175df08a18d5115a8aaddc0025a6047d164a0c177953313f5a4f2"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p458-increase-r15_20.png",
+          "sha256": "f7ae6c8c9533fe648863bd7e6419602fc98db3b6689d426b7091ff72c2c7b23f"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p458-increase-protected_soft.png",
+          "sha256": "7ff0e6c06bf080c47de5932bf05c12308924f45faf1e6030dc9cc45c57a8163f"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p458-increase-protected_strong.png",
+          "sha256": "26d603d4b17f9e95dcb216a5e3d04129a25fb63235eeb045640ab216a6b5b456"
+        }
+      },
+      "native_crop": [
+        470,
+        317,
+        676,
+        461
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p458-increase.png",
+      "board_sha256": "71a15c0cec9ee770414b4002c8dd9ce7afe17e75d86780c4517299b9b15bbf3d"
+    },
+    {
+      "id": "p458-decrease",
+      "photo_id": "p458",
+      "group_id": "9e95e37a99dad5aa2c1307c25380936395c1c526f1ecfe14d37f792a4b984679",
+      "cohort": "fit",
+      "domain": "landscape",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留草地纹理与天空过渡。",
+        "en": "Soften the overall tonal contrast while preserving texture in the grass and gradients in the sky."
+      },
+      "candidate_order": [
+        "protected_soft",
+        "r15_40",
+        "r15_20",
+        "protected_strong"
+      ],
+      "source": "repo/datasets/GIER/images/6amslk_6amslk.jpg",
+      "source_sha256": "63a16d2a05b3d2bd1536a69498d16db7f33c8e30d77aee105d71a8269135a6db",
+      "images": {
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p458-decrease-protected_soft.png",
+          "sha256": "bae550adac5aab2efcb740d82da2872a44c39ab6812e08452d4d68aec3035896"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p458-decrease-r15_40.png",
+          "sha256": "7052188e9695812d69d077799c67a13669f5722f968e755055009a497916d11b"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p458-decrease-r15_20.png",
+          "sha256": "91883fe2a273c902bbab3ec67c0def096314d739d5abdff3001c85c4505aaf6b"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p458-decrease-protected_strong.png",
+          "sha256": "0f5fc1185c382b3629f9f0d3e1193f35cf6c29b1b9997253b8adc58f5d5fb569"
+        }
+      },
+      "native_crop": [
+        470,
+        317,
+        676,
+        461
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p458-decrease.png",
+      "board_sha256": "1a1f756a245c7ad108abc851a96bb68fef925e1bff7954acb64db40867a27c34"
+    },
+    {
+      "id": "p103-increase",
+      "photo_id": "p103",
+      "group_id": "8b4f86f6709901be7927531717ce57026695345ddbfec45a3c716a4e87f33e31",
+      "cohort": "held",
+      "domain": "portrait",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留孩子的眼睛和白色栏杆的细节。",
+        "en": "Noticeably increase overall tonal contrast while preserving the child’s eyes and detail in the white rail."
+      },
+      "candidate_order": [
+        "r15_20",
+        "protected_soft",
+        "protected_strong",
+        "r15_40"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p103.jpg",
+      "source_sha256": "0483af376cf91a9c3680463fba481db69863112cedac1fad44d0d5d2a3884b7a",
+      "images": {
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p103-increase-r15_20.png",
+          "sha256": "ed7a48905fa8067ab05da39305f101a4e33084a42e3b8a4593065691ae057fe3"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p103-increase-protected_soft.png",
+          "sha256": "33ed84b757c12c511d08ed89c61494686547ef4bc0fc465d382151c4172ffa6e"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p103-increase-protected_strong.png",
+          "sha256": "ae317272883164ce94730be522a2b1c24adb38337cc457c9941a8edf0eb121b4"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p103-increase-r15_40.png",
+          "sha256": "6675683b542754eb132ad127a0ff4052b1cbaf2bb05cc76b229d1f019d43ccaa"
+        }
+      },
+      "native_crop": [
+        2017,
+        1395,
+        2223,
+        1539
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p103-increase.png",
+      "board_sha256": "39e92c9a999b3221e539e7246cfb69ba72aeff058a76bc3bcf8b03e0a2e17329"
+    },
+    {
+      "id": "p103-decrease",
+      "photo_id": "p103",
+      "group_id": "8b4f86f6709901be7927531717ce57026695345ddbfec45a3c716a4e87f33e31",
+      "cohort": "held",
+      "domain": "portrait",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留孩子的眼睛和白色栏杆的细节。",
+        "en": "Soften the overall tonal contrast while preserving the child’s eyes and detail in the white rail."
+      },
+      "candidate_order": [
+        "protected_strong",
+        "r15_20",
+        "r15_40",
+        "protected_soft"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p103.jpg",
+      "source_sha256": "0483af376cf91a9c3680463fba481db69863112cedac1fad44d0d5d2a3884b7a",
+      "images": {
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p103-decrease-protected_strong.png",
+          "sha256": "054912683c0b9985247481c8926427533b3abe7689ff5508216daf66612f8ab1"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p103-decrease-r15_20.png",
+          "sha256": "967ae15a87782acdd348f76d17b7fc84b3bb667416d84f1a566b09d1c6dbf3e0"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p103-decrease-r15_40.png",
+          "sha256": "c40ed9b4401dcfe6dd6d6ba543d3cb58679c7ac1076494513dd93a25743926ca"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p103-decrease-protected_soft.png",
+          "sha256": "3df59bbae667f5a8e194e0352d2af9f82f445adf3260cabdcffea8c7ed2b8470"
+        }
+      },
+      "native_crop": [
+        2017,
+        1395,
+        2223,
+        1539
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p103-decrease.png",
+      "board_sha256": "87bba6f9ca9d2c07d668d08d2f096c6073445e90e45fa2ac01fa76b89caf348f"
+    },
+    {
+      "id": "p184-increase",
+      "photo_id": "p184",
+      "group_id": "ed179f9566a10353239ae403673f24789be9099238f944e9e67f6333b8cf103f",
+      "cohort": "held",
+      "domain": "portrait",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留人物的脸、衣物和旧照片的色调。",
+        "en": "Noticeably increase overall tonal contrast while preserving faces, clothing detail and the old photo’s colour palette."
+      },
+      "candidate_order": [
+        "r15_20",
+        "protected_soft",
+        "protected_strong",
+        "r15_40"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p184.jpg",
+      "source_sha256": "eb5c4b064b2d68cada75225a44dd70e7918c23d4f27872b38038c22080ec43ba",
+      "images": {
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p184-increase-r15_20.png",
+          "sha256": "2d40668ff0895448b2e1e8dd2535f9784b76419e72bd8d25194e3db694a9a76b"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p184-increase-protected_soft.png",
+          "sha256": "530b7e64a7b543dd5665e6ae243a8f329b59fdd2c68b57043cb7cff880ff1108"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p184-increase-protected_strong.png",
+          "sha256": "c8fe504beb36bafb2e65857550a21a700bf1f513a49b34fd282398ca743d43da"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p184-increase-r15_40.png",
+          "sha256": "b59fae0f26f2ee80028b31b3caaa8b0ff6dbcffe93f6332865c30c72217633b4"
+        }
+      },
+      "native_crop": [
+        450,
+        204,
+        656,
+        348
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p184-increase.png",
+      "board_sha256": "b4b5cf3a772182aae5eafa325453c5fc2881b8119b981297f33a34f6f57dc19a"
+    },
+    {
+      "id": "p184-decrease",
+      "photo_id": "p184",
+      "group_id": "ed179f9566a10353239ae403673f24789be9099238f944e9e67f6333b8cf103f",
+      "cohort": "held",
+      "domain": "portrait",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留人物的脸、衣物和旧照片的色调。",
+        "en": "Soften the overall tonal contrast while preserving faces, clothing detail and the old photo’s colour palette."
+      },
+      "candidate_order": [
+        "protected_strong",
+        "protected_soft",
+        "r15_40",
+        "r15_20"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p184.jpg",
+      "source_sha256": "eb5c4b064b2d68cada75225a44dd70e7918c23d4f27872b38038c22080ec43ba",
+      "images": {
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p184-decrease-protected_strong.png",
+          "sha256": "81aad8203a9fb67b1c3c82d14701f42d3259281fb29026145d4d3dac84fc928d"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p184-decrease-protected_soft.png",
+          "sha256": "bffb1a25ec56dc63a4de180ab39c2bd256143405f0c17c742e210be58eb9a121"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p184-decrease-r15_40.png",
+          "sha256": "afcd2b5488d8b56148e347141edbdde0a6d082e905991b07a29186890b9a2d04"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p184-decrease-r15_20.png",
+          "sha256": "bf8794e8a00fe75658569a873eafee94911bd02f29d591fb1b9bfb57018e7460"
+        }
+      },
+      "native_crop": [
+        450,
+        204,
+        656,
+        348
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p184-decrease.png",
+      "board_sha256": "53cf0a219379e3ca9dbc88fee42f96db7def9356965a7aa033308deea56ed01e"
+    },
+    {
+      "id": "p190-increase",
+      "photo_id": "p190",
+      "group_id": "61a97e406f7d1656e2fa7badad3c30e7436be100ff5d4411c11440b0f38ba252",
+      "cohort": "held",
+      "domain": "portrait",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留夜景里两个人的脸和灯光颜色。",
+        "en": "Noticeably increase overall tonal contrast while preserving both faces in the night scene and the colour of the lights."
+      },
+      "candidate_order": [
+        "protected_strong",
+        "protected_soft",
+        "r15_20",
+        "r15_40"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p190.jpg",
+      "source_sha256": "4e8f5646d0961492171ca3a189f6073aa7599b4c30e49da814d3b98ff134c26c",
+      "images": {
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p190-increase-protected_strong.png",
+          "sha256": "350bd6d8e8cf305b230e6ec6aacdabd59a7e9af068efe97cc250f034dd61717d"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p190-increase-protected_soft.png",
+          "sha256": "fe9b7de671b11b6ee73a983a5311d3464109f8cb804cf58130793fa460e01b9f"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p190-increase-r15_20.png",
+          "sha256": "7126c38a58c6f25201e7b45dab79372a4c4b201be04b7d0eaa2fe32a265a1c08"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p190-increase-r15_40.png",
+          "sha256": "7fc4671039a37bb4147191a4094718e06959b4b83ed203b69af2c570a8a71ffc"
+        }
+      },
+      "native_crop": [
+        396,
+        568,
+        602,
+        712
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p190-increase.png",
+      "board_sha256": "3fc3ae3a326a179747c73d8ad622e2cdad22a6d6abd0bcdfaee57997ac976010"
+    },
+    {
+      "id": "p190-decrease",
+      "photo_id": "p190",
+      "group_id": "61a97e406f7d1656e2fa7badad3c30e7436be100ff5d4411c11440b0f38ba252",
+      "cohort": "held",
+      "domain": "portrait",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留夜景里两个人的脸和灯光颜色。",
+        "en": "Soften the overall tonal contrast while preserving both faces in the night scene and the colour of the lights."
+      },
+      "candidate_order": [
+        "r15_40",
+        "r15_20",
+        "protected_soft",
+        "protected_strong"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p190.jpg",
+      "source_sha256": "4e8f5646d0961492171ca3a189f6073aa7599b4c30e49da814d3b98ff134c26c",
+      "images": {
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p190-decrease-r15_40.png",
+          "sha256": "9c9c8e950df6c0028236e06d0159d4ad8429612b0c07b09cf5fd6b9f3ecc9cd9"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p190-decrease-r15_20.png",
+          "sha256": "cc6ab280c3408732a8d7d2b26a7db60e0fb7b24bdd65e8d9a200f137cfd9a9df"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p190-decrease-protected_soft.png",
+          "sha256": "6c0990751ddc2839855c904116602b4eb61f5c207eb0e31e1dcd0841d5c4ed13"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p190-decrease-protected_strong.png",
+          "sha256": "f499098f1d01672b77edcfcf0153065bcdf390aa824aa9a97d554687b91f457d"
+        }
+      },
+      "native_crop": [
+        396,
+        568,
+        602,
+        712
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p190-decrease.png",
+      "board_sha256": "637f70ee45e121e671c8f6eeef5c557483fb370ac8cf0ff9cce19fcdf4cf2106"
+    },
+    {
+      "id": "p329-increase",
+      "photo_id": "p329",
+      "group_id": "b6e6dcf6b6fe2be5952236331e5e483e80713723faf9160250d26f6c8d0537ab",
+      "cohort": "held",
+      "domain": "portrait",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留发丝、胡须和肤色。",
+        "en": "Noticeably increase overall tonal contrast while preserving hair, beard detail and skin tone."
+      },
+      "candidate_order": [
+        "r15_40",
+        "protected_strong",
+        "protected_soft",
+        "r15_20"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p329.jpg",
+      "source_sha256": "839ea6cb3cf38cfc6cc9384e12578bd786affc3a98796a53cea317709281a383",
+      "images": {
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p329-increase-r15_40.png",
+          "sha256": "e1047a46e549a5179d3534f6fdeecfab6b8f1a2b8b9e51ca6747ef59dee5e282"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p329-increase-protected_strong.png",
+          "sha256": "48d3375abf18156ca964d09913bba57f9fab2489e5040b3db3304993dcd3b457"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p329-increase-protected_soft.png",
+          "sha256": "21997c8814f3170d757d6bd4523eed4113a32f94fdb34afc29623a999ae7a564"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p329-increase-r15_20.png",
+          "sha256": "6b91a40c1f63451c35e3ca69d8d0edf1e3926d4cdb8fc81707e4aa7232a1171d"
+        }
+      },
+      "native_crop": [
+        85,
+        179,
+        291,
+        323
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p329-increase.png",
+      "board_sha256": "7dc46751acf52117b9bd2729d82f694e71db64dd26b477dd613fc869cd113c45"
+    },
+    {
+      "id": "p329-decrease",
+      "photo_id": "p329",
+      "group_id": "b6e6dcf6b6fe2be5952236331e5e483e80713723faf9160250d26f6c8d0537ab",
+      "cohort": "held",
+      "domain": "portrait",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留发丝、胡须和肤色。",
+        "en": "Soften the overall tonal contrast while preserving hair, beard detail and skin tone."
+      },
+      "candidate_order": [
+        "r15_40",
+        "r15_20",
+        "protected_soft",
+        "protected_strong"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p329.jpg",
+      "source_sha256": "839ea6cb3cf38cfc6cc9384e12578bd786affc3a98796a53cea317709281a383",
+      "images": {
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p329-decrease-r15_40.png",
+          "sha256": "f377313ce525a040b5e778ac28492713d2735619df4695aeec359cae8e9d5c5c"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p329-decrease-r15_20.png",
+          "sha256": "5ef7e13fa04324594e17d9d1852ff3bdee3c8682679e80e5844be9038c759d73"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p329-decrease-protected_soft.png",
+          "sha256": "2af679ba8a02c6eabbd0c0561b6293815492fdfbaec9c4a7fac24d80b4f50757"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p329-decrease-protected_strong.png",
+          "sha256": "dbba69f716b0b2132cd7afd7ae190686d34083c3a53161c83a7cf8ada3e18553"
+        }
+      },
+      "native_crop": [
+        85,
+        179,
+        291,
+        323
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p329-decrease.png",
+      "board_sha256": "5818935493184bd6c169a56b7a107ef17d95afb7340e680fe30c5e205d9b4e63"
+    },
+    {
+      "id": "p270-increase",
+      "photo_id": "p270",
+      "group_id": "9447f3d8df87ab92ac8937e86a49d665168f6d05c37c8c342db57beaf6111d09",
+      "cohort": "held",
+      "domain": "landscape",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留灯串与树篱里已经看得到的细节。",
+        "en": "Noticeably increase overall tonal contrast while preserving the string lights and already visible detail in the hedges."
+      },
+      "candidate_order": [
+        "r15_20",
+        "protected_soft",
+        "r15_40",
+        "protected_strong"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p270.jpg",
+      "source_sha256": "45a1ea30a66fbcc5035e860e4bac13cb7d68d27832ec3fef4d995fc17eaa83d6",
+      "images": {
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p270-increase-r15_20.png",
+          "sha256": "09e8c4a8f4dac3876e0f2b7dba0aad46df4cfdd21d14da08893ce4b159474bcb"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p270-increase-protected_soft.png",
+          "sha256": "cf92e326ec2a46ba43f2804fec1b45cd61e9cddaebb293844800149d5c98f113"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p270-increase-r15_40.png",
+          "sha256": "3b6230c98c330739e936b6258bf852fb37a80552c7365ca5b30a9d1f7b567620"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p270-increase-protected_strong.png",
+          "sha256": "95e8ec3e22d77b4a27cf6900b1663d11d723c6d45a4b03f281235c4991e7e975"
+        }
+      },
+      "native_crop": [
+        1594,
+        1410,
+        1800,
+        1554
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p270-increase.png",
+      "board_sha256": "47e3ae2d9d885c0075b53fdeb61a60619d659ec5465085d2413e8913af4cc2e9"
+    },
+    {
+      "id": "p270-decrease",
+      "photo_id": "p270",
+      "group_id": "9447f3d8df87ab92ac8937e86a49d665168f6d05c37c8c342db57beaf6111d09",
+      "cohort": "held",
+      "domain": "landscape",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留灯串与树篱里已经看得到的细节。",
+        "en": "Soften the overall tonal contrast while preserving the string lights and already visible detail in the hedges."
+      },
+      "candidate_order": [
+        "r15_40",
+        "protected_strong",
+        "protected_soft",
+        "r15_20"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p270.jpg",
+      "source_sha256": "45a1ea30a66fbcc5035e860e4bac13cb7d68d27832ec3fef4d995fc17eaa83d6",
+      "images": {
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p270-decrease-r15_40.png",
+          "sha256": "8e7c1f487bb09176b23e30c57b767aaf7db71d4ebb3e8a2c076a30d501706adb"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p270-decrease-protected_strong.png",
+          "sha256": "6c32b224275f69a0c608ef1fefa794b75ee98454cf30ff4594759d1fc9fa7e4d"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p270-decrease-protected_soft.png",
+          "sha256": "2e5db64ae04e7c07302bdd4ee9d28e8fe74957c0f563c802e1f2f8942c40c96c"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p270-decrease-r15_20.png",
+          "sha256": "9dc2aa7ef5f8c38401f09d3376687951fe55ba6fff11d7837f8b89ac13255d82"
+        }
+      },
+      "native_crop": [
+        1594,
+        1410,
+        1800,
+        1554
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p270-decrease.png",
+      "board_sha256": "c949be42d62138d972eb54109d0644660aa6099bac5c4d3cbfb306623092154b"
+    },
+    {
+      "id": "p759-increase",
+      "photo_id": "p759",
+      "group_id": "9dbabcf311c992115af959af2c38918ab26f10b3f75e22e35382ccfe91c2dd1b",
+      "cohort": "held",
+      "domain": "landscape",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留云层和山坡暗部的层次。",
+        "en": "Noticeably increase overall tonal contrast while preserving cloud layers and shaded detail on the hillside."
+      },
+      "candidate_order": [
+        "protected_strong",
+        "protected_soft",
+        "r15_40",
+        "r15_20"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p759.jpg",
+      "source_sha256": "03f2015689042d3d2b57dd2da175002453d5d1417bfd8ce176cf6626f43ee487",
+      "images": {
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p759-increase-protected_strong.png",
+          "sha256": "6865a7bedbfd62b6c120b8453df789bbe9edaa3c56d4f43dd3fc0c03bbac9ba8"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p759-increase-protected_soft.png",
+          "sha256": "26cbf77d61b10ee10c5155fd1db32eb70d55b08657c5ddeb3a68c85bba5e8992"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p759-increase-r15_40.png",
+          "sha256": "bb945fe7525833f83bfbfc9f730e6c19220eeaa8def15f2c9fe3d75bbd662e52"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p759-increase-r15_20.png",
+          "sha256": "72e144f179e5a843de8ecb57be4bea48c6128c5bd149c0836794c40a784706b5"
+        }
+      },
+      "native_crop": [
+        444,
+        267,
+        650,
+        411
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p759-increase.png",
+      "board_sha256": "9e457acaf7ceb922e2e491714e4a949b8a873956228c0773ba34fbd1b5bf3c65"
+    },
+    {
+      "id": "p759-decrease",
+      "photo_id": "p759",
+      "group_id": "9dbabcf311c992115af959af2c38918ab26f10b3f75e22e35382ccfe91c2dd1b",
+      "cohort": "held",
+      "domain": "landscape",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留云层和山坡暗部的层次。",
+        "en": "Soften the overall tonal contrast while preserving cloud layers and shaded detail on the hillside."
+      },
+      "candidate_order": [
+        "protected_strong",
+        "r15_20",
+        "r15_40",
+        "protected_soft"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p759.jpg",
+      "source_sha256": "03f2015689042d3d2b57dd2da175002453d5d1417bfd8ce176cf6626f43ee487",
+      "images": {
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p759-decrease-protected_strong.png",
+          "sha256": "1d4cd5914d9b121236dc5663f3a48830330d0ac80ac195771439c1aa94a6e3de"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p759-decrease-r15_20.png",
+          "sha256": "841b16a48d0d82ced6eadf2b1d7123619f1dfc70358192f9be124b6829b0c0c9"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p759-decrease-r15_40.png",
+          "sha256": "7fa3c6e3bcb1ed3f525d4fa7483c112b7170d310fdea2d2e81eb5e5af375dc18"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p759-decrease-protected_soft.png",
+          "sha256": "c57e1315c9ef850892571259a261e2c326b9b7c923820bbe036e92ba85d96f1f"
+        }
+      },
+      "native_crop": [
+        444,
+        267,
+        650,
+        411
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p759-decrease.png",
+      "board_sha256": "bb991591e654e580e8ebe98247f62ceb78536a2d52181e2aa72880a0e788a534"
+    },
+    {
+      "id": "p669-increase",
+      "photo_id": "p669",
+      "group_id": "baa4bd3721e93d35ca98592c1b6b8423557deecbaacb928de711949116947051",
+      "cohort": "held",
+      "domain": "landscape",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留建筑的亮部纹理和夜空。",
+        "en": "Noticeably increase overall tonal contrast while preserving texture in the illuminated building and the night sky."
+      },
+      "candidate_order": [
+        "r15_40",
+        "protected_strong",
+        "protected_soft",
+        "r15_20"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p669.jpg",
+      "source_sha256": "e343e81e15b69e778ee80b99f6325b029d63b047388e4215b39ced68d510b2c5",
+      "images": {
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p669-increase-r15_40.png",
+          "sha256": "5b8e2d4b83fd3cbb728affd97e009c475e67f152ff0ae6b3ab95c49c3603b0e2"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p669-increase-protected_strong.png",
+          "sha256": "7783abf140a46c55570220baa990f1a5c378580a3073ecded2b17e5c2dad7e8d"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p669-increase-protected_soft.png",
+          "sha256": "071158058ced1d1c691a8d1c27fb33a97fdb224fda81fa74c92ba8838650742c"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p669-increase-r15_20.png",
+          "sha256": "eb764c519a2ebf22a937c0487ac2a11b23ad09d34865e1700cd2937d71e45843"
+        }
+      },
+      "native_crop": [
+        377,
+        248,
+        583,
+        392
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p669-increase.png",
+      "board_sha256": "de9e146388021fec7f2c59855f6364c709144c027e3513de371b5bd7257cde06"
+    },
+    {
+      "id": "p669-decrease",
+      "photo_id": "p669",
+      "group_id": "baa4bd3721e93d35ca98592c1b6b8423557deecbaacb928de711949116947051",
+      "cohort": "held",
+      "domain": "landscape",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留建筑的亮部纹理和夜空。",
+        "en": "Soften the overall tonal contrast while preserving texture in the illuminated building and the night sky."
+      },
+      "candidate_order": [
+        "r15_40",
+        "r15_20",
+        "protected_soft",
+        "protected_strong"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p669.jpg",
+      "source_sha256": "e343e81e15b69e778ee80b99f6325b029d63b047388e4215b39ced68d510b2c5",
+      "images": {
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p669-decrease-r15_40.png",
+          "sha256": "77bf0e74e1f84af4db46b454f122069f8b28955bb4fbf2009eb0f10933a25f37"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p669-decrease-r15_20.png",
+          "sha256": "c393d99260299474b332d1e32dce4fe021affbffe91f8febfa19a0ddfc1c0de7"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p669-decrease-protected_soft.png",
+          "sha256": "3d6fc5c24dc1b64737b601eb9898591a17ae32915881bb7c0ff2fa0fdf1ec22d"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p669-decrease-protected_strong.png",
+          "sha256": "c0e5d98842ea6186bbce7a063178142b134b0f8574bd3edcaef0d008cd911b36"
+        }
+      },
+      "native_crop": [
+        377,
+        248,
+        583,
+        392
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p669-decrease.png",
+      "board_sha256": "a790b81c13c3a05440a3d46869e110adc4c295cf1be32d2a080cf2dc56c49337"
+    },
+    {
+      "id": "p613-increase",
+      "photo_id": "p613",
+      "group_id": "4abbe3f87adcb8a8a242300db78095b217c6ae19c6aac1a3da32753848cba38c",
+      "cohort": "held",
+      "domain": "landscape",
+      "direction": "increase",
+      "requests": {
+        "zh": "明显增强整张照片的明暗对比，保留洞口亮边与附近岩壁的纹理。",
+        "en": "Noticeably increase overall tonal contrast while preserving the bright opening and visible texture in the nearby rock walls."
+      },
+      "candidate_order": [
+        "r15_20",
+        "r15_40",
+        "protected_strong",
+        "protected_soft"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p613.jpg",
+      "source_sha256": "6209ecb8c4d6080e63aa475d6ee11dc5a31810fad7558e16ae0bafe6f081f762",
+      "images": {
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p613-increase-r15_20.png",
+          "sha256": "97df4128475a0ca2f7b1c3a1ee5d2850fb809e612e47fb481a375fc283ab19a3"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p613-increase-r15_40.png",
+          "sha256": "a88c27391ca934e709e1a1b7bec3af5dbbaf2c43d06fc6e1fd05b27d40c73d5d"
+        },
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p613-increase-protected_strong.png",
+          "sha256": "e7d2700c8ea5c0239f4ce5b019092693fcc1def3bb441a61cebe020827f3ce1b"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p613-increase-protected_soft.png",
+          "sha256": "981391564e775d909864b94dfbb824bb963dfddbe4be1dfbf15c5fb7c35f2dbe"
+        }
+      },
+      "native_crop": [
+        348,
+        267,
+        554,
+        411
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p613-increase.png",
+      "board_sha256": "1ca686b9cc79435f535726f8d31f98a4888488c9004e213b408233b75c90e1b8"
+    },
+    {
+      "id": "p613-decrease",
+      "photo_id": "p613",
+      "group_id": "4abbe3f87adcb8a8a242300db78095b217c6ae19c6aac1a3da32753848cba38c",
+      "cohort": "held",
+      "domain": "landscape",
+      "direction": "decrease",
+      "requests": {
+        "zh": "把整张照片的明暗对比柔和一些，保留洞口亮边与附近岩壁的纹理。",
+        "en": "Soften the overall tonal contrast while preserving the bright opening and visible texture in the nearby rock walls."
+      },
+      "candidate_order": [
+        "protected_strong",
+        "r15_20",
+        "r15_40",
+        "protected_soft"
+      ],
+      "source": "data/training/functional-v32-20261107/held-inputs/p613.jpg",
+      "source_sha256": "6209ecb8c4d6080e63aa475d6ee11dc5a31810fad7558e16ae0bafe6f081f762",
+      "images": {
+        "protected_strong": {
+          "path": "experiments/functional-v32-20261107/images/p613-decrease-protected_strong.png",
+          "sha256": "300af0f4352c29ee3ec1e291846176e3faaf1a59378946a2b8bb92cb484690bb"
+        },
+        "r15_20": {
+          "path": "experiments/functional-v32-20261107/images/p613-decrease-r15_20.png",
+          "sha256": "4880820857e99b7e51c9b5b9219823d6d45de0d5c71b3f54ec00b17a95d5a912"
+        },
+        "r15_40": {
+          "path": "experiments/functional-v32-20261107/images/p613-decrease-r15_40.png",
+          "sha256": "bd2a9a13446ed8c331d2751d1979bda4bd5f704d6743d9f5cdb9a4d779a76768"
+        },
+        "protected_soft": {
+          "path": "experiments/functional-v32-20261107/images/p613-decrease-protected_soft.png",
+          "sha256": "6967cdef54af57e307f37d5226897b67e269dac313674c9c6f0bdbd6e4bb2ff8"
+        }
+      },
+      "native_crop": [
+        348,
+        267,
+        554,
+        411
+      ],
+      "board": "experiments/functional-v32-20261107/boards/p613-decrease.png",
+      "board_sha256": "cc3170a4edc95a51d88eb3b971ee44ea1143b4fdedd320b9d91b90e5ffa3603a"
+    }
+  ],
+  "GPU_hours": 0
+}

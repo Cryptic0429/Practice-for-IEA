@@ -1,0 +1,2461 @@
+{
+  "at": "2026-11-07T09:15:45.364686+00:00",
+  "fit_sha256": "02700dfb1f95eade6bc6d04b1bd1768e230485838f3348e3ada360f7829c0508",
+  "held_sha256": "dc830ec2bccb1635d2d44bc7ff8d8a3c7773f29a030c440b771526033c047d4a",
+  "held_cases": 24,
+  "held_originals": 12,
+  "totals": {
+    "fixed20": {
+      "partial": 9,
+      "complete": 13,
+      "failed": 2
+    },
+    "fixed_split": {
+      "complete": 17,
+      "partial": 7
+    },
+    "r32_frozen": {
+      "missed": 16,
+      "complete": 2,
+      "defer": 6
+    },
+    "pool_refit": {
+      "missed": 18,
+      "defer": 6
+    },
+    "split_global": {
+      "missed": 17,
+      "failed": 1,
+      "defer": 6
+    },
+    "split_spatial": {
+      "missed": 16,
+      "complete": 2,
+      "defer": 6
+    },
+    "split_pair": {
+      "missed": 16,
+      "complete": 1,
+      "defer": 6,
+      "partial": 1
+    }
+  },
+  "raw_tops": {
+    "fixed20": {
+      "partial": 9,
+      "complete": 13,
+      "failed": 2
+    },
+    "fixed_split": {
+      "complete": 17,
+      "partial": 7
+    },
+    "r32_frozen": {
+      "complete": 6,
+      "partial": 8,
+      "failed": 9,
+      "uncertain": 1
+    },
+    "pool_refit": {
+      "partial": 14,
+      "complete": 9,
+      "failed": 1
+    },
+    "split_global": {
+      "complete": 5,
+      "partial": 16,
+      "failed": 2,
+      "uncertain": 1
+    },
+    "split_spatial": {
+      "complete": 9,
+      "partial": 11,
+      "failed": 3,
+      "uncertain": 1
+    },
+    "split_pair": {
+      "complete": 7,
+      "partial": 12,
+      "failed": 4,
+      "uncertain": 1
+    }
+  },
+  "by_direction": {
+    "fixed20": {
+      "increase:partial": 7,
+      "decrease:partial": 2,
+      "decrease:complete": 10,
+      "increase:complete": 3,
+      "increase:failed": 2
+    },
+    "fixed_split": {
+      "increase:complete": 7,
+      "decrease:partial": 2,
+      "decrease:complete": 10,
+      "increase:partial": 5
+    },
+    "r32_frozen": {
+      "increase:missed": 6,
+      "decrease:missed": 10,
+      "decrease:complete": 1,
+      "increase:complete": 1,
+      "increase:defer": 5,
+      "decrease:defer": 1
+    },
+    "pool_refit": {
+      "increase:missed": 7,
+      "decrease:missed": 11,
+      "increase:defer": 5,
+      "decrease:defer": 1
+    },
+    "split_global": {
+      "increase:missed": 7,
+      "decrease:missed": 10,
+      "decrease:failed": 1,
+      "increase:defer": 5,
+      "decrease:defer": 1
+    },
+    "split_spatial": {
+      "increase:missed": 5,
+      "decrease:missed": 11,
+      "increase:complete": 2,
+      "increase:defer": 5,
+      "decrease:defer": 1
+    },
+    "split_pair": {
+      "increase:missed": 5,
+      "decrease:missed": 11,
+      "increase:complete": 1,
+      "increase:defer": 5,
+      "increase:partial": 1,
+      "decrease:defer": 1
+    }
+  },
+  "oracle_complete": 18,
+  "both_directions_complete": {
+    "fixed20": 3,
+    "fixed_split": 6,
+    "r32_frozen": 0,
+    "pool_refit": 0,
+    "split_global": 0,
+    "split_spatial": 0,
+    "split_pair": 0
+  },
+  "results": {
+    "p213-increase": {
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "孩子与背景的层次只略有变化",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "布面和孩子轮廓的反差更明确，肤色与布纹保留",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "布面和孩子轮廓的反差更明确，肤色与布纹保留",
+          "score": 0.41323023848128393,
+          "rank": 0.41323023848128393,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "织物和肤色保持，整图变化较弱",
+          "score": 0.5617000389104158,
+          "rank": 0.5617000389104158,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "布面和孩子轮廓的反差更明确，肤色与布纹保留",
+          "score": 1.0522427335928393,
+          "rank": 1.0522427335928393,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "布面和孩子轮廓的反差更明确，肤色与布纹保留",
+          "score": 1.183530030489488,
+          "rank": 1.183530030489488,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "布面和孩子轮廓的反差更明确，肤色与布纹保留",
+          "score": 1.183530030489488,
+          "rank": 1.5330381583625825,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "孩子与背景的层次只略有变化",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "布面和孩子轮廓的反差更明确，肤色与布纹保留",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "complete",
+          "reason": "对比明显增强，浅色织物纹理与五官仍清楚",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "织物和肤色保持，整图变化较弱",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p213-decrease": {
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "浅色和孩子的反差仅小幅减弱",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "浅色和孩子的反差仅小幅减弱",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "阴影抬灰，整图显得平淡",
+          "score": 0.8185690386973,
+          "rank": 0.8185690386973002,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "浅色和孩子的反差仅小幅减弱",
+          "score": 0.6662918840823249,
+          "rank": 0.666291884082325,
+          "top_recipe": "r15_20",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "阴影抬灰，整图显得平淡",
+          "score": 0.3929066239422967,
+          "rank": 0.39290662394229675,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "阴影抬灰，整图显得平淡",
+          "score": 0.32105244246642073,
+          "rank": 0.32105244246642073,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "阴影抬灰，整图显得平淡",
+          "score": 0.32105244246642073,
+          "rank": 0.17591359513067864,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "孩子和背景的层次放软，布纹与表情仍清楚",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "partial",
+          "reason": "阴影抬灰，整图显得平淡",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "浅色和孩子的反差仅小幅减弱",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "柔化幅度很小",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p036-increase": {
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "阴影和衣服反差较强，局部白衣发硬且树荫暗纹损失",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "明暗层次可见增强，两个孩子和树荫仍有细节",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "明暗层次可见增强，两个孩子和树荫仍有细节",
+          "score": 0.9164212701710107,
+          "rank": 0.9164212701710107,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "明暗层次可见增强，两个孩子和树荫仍有细节",
+          "score": 0.055492343330952126,
+          "rank": 0.055492343330952015,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "明暗层次可见增强，两个孩子和树荫仍有细节",
+          "score": 0.4692440940834503,
+          "rank": 0.4692440940834504,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_spatial": {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "明暗层次可见增强，两个孩子和树荫仍有细节",
+          "score": 2.253892231224972,
+          "rank": 2.2538922312249725
+        },
+        "split_pair": {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "明暗层次可见增强，两个孩子和树荫仍有细节",
+          "score": 2.253892231224972,
+          "rank": 2.195271554390128
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "阴影和衣服反差较强，局部白衣发硬且树荫暗纹损失",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "脸部与树荫仍清楚，整图变化很小",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "明暗层次可见增强，两个孩子和树荫仍有细节",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "阴影大块发黑，肤色和白衣显得偏硬",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p036-decrease": {
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "树荫和人物反差放柔，脸和树荫结构都还在",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "树荫和人物反差放柔，脸和树荫结构都还在",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "两张脸和衣服反差变柔，阴影层次保留",
+          "score": 1.2300847718569674,
+          "rank": 1.2300847718569674
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "两张脸和衣服反差变柔，阴影层次保留",
+          "score": 0.6175858294357238,
+          "rank": 0.6175858294357239,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "两张脸和衣服反差变柔，阴影层次保留",
+          "score": 0.3847762359687641,
+          "rank": 0.3847762359687641,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "两张脸和衣服反差变柔，阴影层次保留",
+          "score": 0.9624947481529478,
+          "rank": 0.9624947481529476,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "暗部大幅蒙灰，原有阴影纹理减弱",
+          "score": 0.8606475846332527,
+          "rank": 1.5948783014952757,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "树荫和人物反差放柔，脸和树荫结构都还在",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "两张脸和衣服反差变柔，阴影层次保留",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "人物和树荫反差基本维持",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "暗部大幅蒙灰，原有阴影纹理减弱",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p785-increase": {
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "脸和衣服更立体，街灯仍是原来的暖色",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "脸与衣料亮暗更明确，街灯仍有过渡",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "脸与衣料亮暗更明确，街灯仍有过渡",
+          "score": 1.2205946515085908,
+          "rank": 1.2205946515085913
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "脸与衣料亮暗更明确，街灯仍有过渡",
+          "score": 0.7474639752064715,
+          "rank": 0.7474639752064713,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "五官保住，整图层次增强有限",
+          "score": 0.7855991705169114,
+          "rank": 0.7855991705169112,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "脸与衣料亮暗更明确，街灯仍有过渡",
+          "score": 0.9705831394749753,
+          "rank": 0.9705831394749749,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "脸与衣料亮暗更明确，街灯仍有过渡",
+          "score": 0.9705831394749753,
+          "rank": 1.6612838382882007,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "牙齿和脸的亮部发白，街灯及红衣被推得过艳",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "脸和衣服更立体，街灯仍是原来的暖色",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "五官保住，整图层次增强有限",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "脸与衣料亮暗更明确，街灯仍有过渡",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p785-decrease": {
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "脸上闪光反差变柔，街灯与原来的暖色保留",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "脸上闪光反差变柔，街灯与原来的暖色保留",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "大面积发灰，两个脸和灯光失去原有层次",
+          "score": 0.7772402046606625,
+          "rank": 0.7772402046606627,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "反差放柔但夜景气氛、五官和暖色保留",
+          "score": 0.9316862379198546,
+          "rank": 0.9316862379198544,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_global": {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "大面积发灰，两个脸和灯光失去原有层次",
+          "score": 0.8594378701850703,
+          "rank": 0.8594378701850703
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "大面积发灰，两个脸和灯光失去原有层次",
+          "score": 0.4610136669142345,
+          "rank": 0.4610136669142344,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "脸上闪光反差变柔，街灯与原来的暖色保留",
+          "score": 0.3198377333855966,
+          "rank": -0.341948084768665,
+          "top_recipe": "r15_20",
+          "top_outcome": "complete"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "人物与灯光对比只微弱减小",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "脸上闪光反差变柔，街灯与原来的暖色保留",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "大面积发灰，两个脸和灯光失去原有层次",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "反差放柔但夜景气氛、五官和暖色保留",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p721-increase": {
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "oracle_complete": false,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "明暗差拉开，但阴影侧五官和头发更难分辨",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "窗外和五官保住，对比增强幅度偏小",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "窗外部分亮面变白，暗侧面部和头发变得难辨",
+          "score": 0.4652392720025009,
+          "rank": 0.4652392720025008,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "人脸和窗外几乎维持原层次",
+          "score": 0.5904197954012087,
+          "rank": 0.5904197954012088,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "人脸和窗外几乎维持原层次",
+          "score": 0.8995875966796576,
+          "rank": 0.8995875966796576,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "人脸和窗外几乎维持原层次",
+          "score": 0.6091753829075177,
+          "rank": 0.6091753829075175,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "人脸和窗外几乎维持原层次",
+          "score": 0.6091753829075177,
+          "rank": -0.006783973117624382,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "窗外部分亮面变白，暗侧面部和头发变得难辨",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "窗外和五官保住，对比增强幅度偏小",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "明暗差拉开，但阴影侧五官和头发更难分辨",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "人脸和窗外几乎维持原层次",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p721-decrease": {
+      "domain": "portrait",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "反差减弱，面部和窗外原有细节保持",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "反差减弱，面部和窗外原有细节保持",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "大块灰雾削弱原有脸部和建筑轮廓",
+          "score": 0.9423939696535447,
+          "rank": 0.9423939696535449,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "反差减弱，面部和窗外原有细节保持",
+          "score": 0.3810150392447984,
+          "rank": 0.3810150392447984,
+          "top_recipe": "r15_20",
+          "top_outcome": "complete"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "反差减弱，面部和窗外原有细节保持",
+          "score": 0.2167485265895931,
+          "rank": 0.2167485265895931,
+          "top_recipe": "r15_20",
+          "top_outcome": "complete"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "反差减弱，面部和窗外原有细节保持",
+          "score": -0.2697704123091394,
+          "rank": -0.2697704123091394,
+          "top_recipe": "r15_20",
+          "top_outcome": "complete"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "大块灰雾削弱原有脸部和建筑轮廓",
+          "score": -0.4218807985681289,
+          "rank": 0.083536878720992,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "大块灰雾削弱原有脸部和建筑轮廓",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "逆光反差柔化不明显",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "脸上和窗外的过渡柔化，眼睛与窗外纹理仍可辨",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "反差减弱，面部和窗外原有细节保持",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p300-increase": {
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "变化有可见效果，但西装最暗纹理已有减少",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "西装与衬衫分离加强，五官和西装明暗仍可辨",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "多处西装暗纹被压成一片，亮衬衫更硬",
+          "score": 0.8268494168133281,
+          "rank": 0.8268494168133281,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "西装与衬衫分离加强，五官和西装明暗仍可辨",
+          "score": 0.4771549961438345,
+          "rank": 0.4771549961438345,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "原有纹理保留，整体反差只略增",
+          "score": 0.49221133085705565,
+          "rank": 0.49221133085705576,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "西装与衬衫分离加强，五官和西装明暗仍可辨",
+          "score": 0.6628600616586431,
+          "rank": 0.6628600616586433,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "变化有可见效果，但西装最暗纹理已有减少",
+          "score": 0.42259158116609186,
+          "rank": 1.1083675955853156,
+          "top_recipe": "r15_20",
+          "top_outcome": "partial"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "多处西装暗纹被压成一片，亮衬衫更硬",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "变化有可见效果，但西装最暗纹理已有减少",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "西装与衬衫分离加强，五官和西装明暗仍可辨",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "原有纹理保留，整体反差只略增",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p300-decrease": {
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "面部与衣服反差柔和，领口与深衣纹理保留",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "面部与衣服反差柔和，领口与深衣纹理保留",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "黑衣与白衬衫蒙灰，脸部细节随之减弱",
+          "score": 0.6750446342627408,
+          "rank": 0.6750446342627406,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "面部与衣服反差柔和，领口与深衣纹理保留",
+          "score": 0.4000150979514727,
+          "rank": 0.40001509795147283,
+          "top_recipe": "r15_20",
+          "top_outcome": "complete"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "面部与衣服反差柔和，领口与深衣纹理保留",
+          "score": 0.1207096038933342,
+          "rank": 0.1207096038933342,
+          "top_recipe": "r15_20",
+          "top_outcome": "complete"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "黑衣与白衬衫蒙灰，脸部细节随之减弱",
+          "score": 0.1971228863995871,
+          "rank": 0.19712288639958706,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "黑衣与白衬衫蒙灰，脸部细节随之减弱",
+          "score": 0.1971228863995871,
+          "rank": 0.6944780586393433,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "衣服与脸部明暗关系变化不大",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "黑衣与白衬衫蒙灰，脸部细节随之减弱",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "面部与衣服反差柔和，领口与深衣纹理保留",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "变化偏弱",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p118-increase": {
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "oracle_complete": false,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "failed",
+          "reason": "帽檐和面部暗侧层次丢失，白衣部分发白",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "帽檐暗侧肤色加重，浅衣亮面发硬",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "两个脸的阴影和帽檐暗部被压黑，肤色明显变红",
+          "score": 0.3689949808531149,
+          "rank": 0.3689949808531149,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "帽檐暗侧肤色加重，浅衣亮面发硬",
+          "score": 0.43284294848908933,
+          "rank": 0.43284294848908944,
+          "top_recipe": "protected_strong",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "浅衣和帽檐保留，增强幅度偏弱",
+          "score": 0.346899570154025,
+          "rank": 0.346899570154025,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "浅衣和帽檐保留，增强幅度偏弱",
+          "score": 0.08048209802461648,
+          "rank": 0.08048209802461637,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "帽檐暗侧肤色加重，浅衣亮面发硬",
+          "score": -0.19028406845923979,
+          "rank": 1.289113116658435,
+          "top_recipe": "protected_strong",
+          "top_outcome": "partial"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "帽檐暗侧肤色加重，浅衣亮面发硬",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "两个脸的阴影和帽檐暗部被压黑，肤色明显变红",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "浅衣和帽檐保留，增强幅度偏弱",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "failed",
+          "reason": "帽檐和面部暗侧层次丢失，白衣部分发白",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p118-decrease": {
+      "domain": "portrait",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "脸上光影变柔，帽檐与浅衣保留",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "脸上光影变柔，帽檐与浅衣保留",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "整图灰雾盖过柔化，浅衣偏灰",
+          "score": 0.6300419757082673,
+          "rank": 0.6300419757082674,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "反差变化幅度偏小",
+          "score": 0.2466824782385518,
+          "rank": 0.24668247823855174,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "整图灰雾盖过柔化，浅衣偏灰",
+          "score": 0.17797780863258905,
+          "rank": 0.177977808632589,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "整图灰雾盖过柔化，浅衣偏灰",
+          "score": 1.2573356089311964,
+          "rank": 1.2573356089311964,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "整图灰雾盖过柔化，浅衣偏灰",
+          "score": 1.2573356089311964,
+          "rank": 1.1261248662748138,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "暗脸与浅衣反差收敛，帽檐纹理仍在",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "反差变化幅度偏小",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "partial",
+          "reason": "整图灰雾盖过柔化，浅衣偏灰",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "脸上光影变柔，帽檐与浅衣保留",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p154-increase": {
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "山脊和谷地层次分开，云和暗坡仍可辨",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "近坡与谷地分离增强，云边和坡纹仍有层次",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "近坡与谷地分离增强，云边和坡纹仍有层次",
+          "score": 0.553461316845474,
+          "rank": 0.553461316845474,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "山谷的明暗变化偏小",
+          "score": 0.6260801014513134,
+          "rank": 0.6260801014513134,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "山谷的明暗变化偏小",
+          "score": 0.6987619328813772,
+          "rank": 0.6987619328813772,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "山谷的明暗变化偏小",
+          "score": 0.5693665965678938,
+          "rank": 0.5693665965678938,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "山脊和谷地层次分开，云和暗坡仍可辨",
+          "score": 0.4715802340086759,
+          "rank": 0.40806635296898697,
+          "top_recipe": "r15_20",
+          "top_outcome": "complete"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "近坡与谷地分离增强，云边和坡纹仍有层次",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "近坡暗面纹理损失，天空变青且亮云更硬",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "山脊和谷地层次分开，云和暗坡仍可辨",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "山谷的明暗变化偏小",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p154-decrease": {
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "暗坡与谷地反差收敛，云和坡纹保留",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "暗坡与谷地反差收敛，云和坡纹保留",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "山谷反差变平，整体灰雾偏重",
+          "score": 0.7673884673433377,
+          "rank": 0.7673884673433379,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "暗坡与谷地反差收敛，云和坡纹保留",
+          "score": 0.4674906836689704,
+          "rank": 0.4674906836689704,
+          "top_recipe": "r15_20",
+          "top_outcome": "complete"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "山谷反差变平，整体灰雾偏重",
+          "score": 0.27859933801969405,
+          "rank": 0.2785993380196941,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "山谷反差变平，整体灰雾偏重",
+          "score": 0.47875003568292385,
+          "rank": 0.47875003568292396,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "山谷反差变平，整体灰雾偏重",
+          "score": 0.47875003568292385,
+          "rank": 0.47724198437052445,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "暗坡与谷地反差收敛，云和坡纹保留",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "partial",
+          "reason": "山谷反差变平，整体灰雾偏重",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "原有纹理保留，云与山坡反差变化小",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "暗坡与山谷层次变柔，云边与山坡纹理仍在",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p311-increase": {
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "草地和地面的对比增强，远山颜色和地面纹理保留",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "树线与地面分离更明显，远山蓝和地面纹理保留",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "树线与地面分离更明显，远山蓝和地面纹理保留",
+          "score": 0.4948309291003691,
+          "rank": 0.4948309291003692,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "近景层次只略增",
+          "score": 0.5121267827874201,
+          "rank": 0.5121267827874203,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "近景层次只略增",
+          "score": 0.8726323003718293,
+          "rank": 0.872632300371829,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "树线与地面分离更明显，远山蓝和地面纹理保留",
+          "score": 0.8242749780767931,
+          "rank": 0.8242749780767933,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "树线与地面分离更明显，远山蓝和地面纹理保留",
+          "score": 0.8242749780767931,
+          "rank": 1.6274982442691317,
+          "top_recipe": "protected_strong",
+          "top_outcome": "complete"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_40",
+          "outcome": "partial",
+          "reason": "草地和远山颜色偏浓，白色屋面亮区发硬",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "草地和地面的对比增强，远山颜色和地面纹理保留",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "树线与地面分离更明显，远山蓝和地面纹理保留",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "近景层次只略增",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p311-decrease": {
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "草地与树线反差放软，仍可辨地面颗粒",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "草地与树线反差放软，仍可辨地面颗粒",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "暗处与远山蒙灰，画面过平",
+          "score": 0.9231541099022328,
+          "rank": 0.923154109902233,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "草地与树线反差放软，仍可辨地面颗粒",
+          "score": 0.5834884500658277,
+          "rank": 0.583488450065828,
+          "top_recipe": "r15_20",
+          "top_outcome": "complete"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "暗处与远山蒙灰，画面过平",
+          "score": 0.39759289632418865,
+          "rank": 0.39759289632418854,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "草地与树线反差放软，仍可辨地面颗粒",
+          "score": -0.0005529477300844909,
+          "rank": -0.0005529477300844632,
+          "top_recipe": "r15_20",
+          "top_outcome": "complete"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "草地与树线反差放软，仍可辨地面颗粒",
+          "score": -0.0005529477300844909,
+          "rank": -0.26747840904692965,
+          "top_recipe": "r15_20",
+          "top_outcome": "complete"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_40",
+          "outcome": "partial",
+          "reason": "暗处与远山蒙灰，画面过平",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "前景与树线反差减弱，远山色和地面纹理仍在",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "柔化偏轻，地面和远山基本维持",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "草地与树线反差放软，仍可辨地面颗粒",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p110-increase": {
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "oracle_complete": false,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "failed",
+          "reason": "前景暗部层次明显丢失",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "岩壁纹理和天色保留，整体变化很弱",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "岩壁纹理和天色保留，整体变化很弱",
+          "score": -0.26575983124771113,
+          "rank": -0.2657598312477113,
+          "top_recipe": "protected_strong",
+          "top_outcome": "partial"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "岩壁纹理和天色保留，整体变化很弱",
+          "score": -0.07731119854522941,
+          "rank": -0.07731119854522947,
+          "top_recipe": "protected_strong",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "岩壁纹理和天色保留，整体变化很弱",
+          "score": -0.36020574891552826,
+          "rank": -0.3602057489155282,
+          "top_recipe": "protected_strong",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "岩壁和天色保持，增强幅度不足",
+          "score": -0.5775356990129189,
+          "rank": -0.577535699012919,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "岩壁和天色保持，增强幅度不足",
+          "score": -0.5775356990129189,
+          "rank": 0.8523064705149686,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "岩壁低处和前景压黑，天空颗粒与颜色变化较重",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "岩壁和天色保持，增强幅度不足",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "failed",
+          "reason": "前景暗部层次明显丢失",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "岩壁纹理和天色保留，整体变化很弱",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p110-decrease": {
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "天空和岩壁反差收敛，岩壁纹理仍可辨",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "天空和岩壁反差收敛，岩壁纹理仍可辨",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "天空和岩壁反差变动很小",
+          "score": -0.1451576147760097,
+          "rank": -0.14515761477600997,
+          "top_recipe": "protected_strong",
+          "top_outcome": "partial"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "天空和岩壁反差变动很小",
+          "score": 0.13150523331959899,
+          "rank": 0.13150523331959887,
+          "top_recipe": "protected_strong",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "天空和岩壁反差变动很小",
+          "score": 0.15679453997706688,
+          "rank": 0.15679453997706683,
+          "top_recipe": "protected_strong",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "天空和岩壁反差变动很小",
+          "score": 0.3506750374538429,
+          "rank": 0.3506750374538429,
+          "top_recipe": "protected_strong",
+          "top_outcome": "partial"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "天空和岩壁反差变动很小",
+          "score": 0.3506750374538429,
+          "rank": 1.2470808811480676,
+          "top_recipe": "protected_strong",
+          "top_outcome": "partial"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "天空和岩壁反差收敛，岩壁纹理仍可辨",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "partial",
+          "reason": "暗地和岩壁整体发灰",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "天空和岩壁反差变动很小",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "原纹理还在，柔化太弱",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p045-increase": {
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "increase",
+      "oracle_complete": false,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "塔下暗处更难辨，增强局部代价偏高",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "灯与暗部的分离几乎不变",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "塔下暗部发黑，塔身的高光边缘发硬",
+          "score": 0.3311528535590912,
+          "rank": 0.3311528535590911,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "灯与暗部的分离几乎不变",
+          "score": 0.46059134450168815,
+          "rank": 0.4605913445016879,
+          "top_recipe": "protected_strong",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "塔下暗处更难辨，增强局部代价偏高",
+          "score": 0.4885231712615706,
+          "rank": 0.4885231712615706,
+          "top_recipe": "r15_20",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "塔下暗处更难辨，增强局部代价偏高",
+          "score": -0.6976842122072591,
+          "rank": -0.6976842122072593,
+          "top_recipe": "r15_20",
+          "top_outcome": "partial"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "塔下暗处更难辨，增强局部代价偏高",
+          "score": -0.6976842122072591,
+          "rank": 2.0772345005146584,
+          "top_recipe": "r15_20",
+          "top_outcome": "partial"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "塔下暗部发黑，塔身的高光边缘发硬",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "塔身和暗部保留，整体变化偏小",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "塔下暗处更难辨，增强局部代价偏高",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "灯与暗部的分离几乎不变",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p045-decrease": {
+      "domain": "landscape",
+      "light": "dark_or_backlit",
+      "direction": "decrease",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "塔的亮部与地面反差放软，塔架纹理和暗部可辨",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "塔的亮部与地面反差放软，塔架纹理和暗部可辨",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "暗部和塔身均蒙灰，原有高光结构被压平",
+          "score": 0.6229645522162813,
+          "rank": 0.6229645522162812,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "暗部和塔身均蒙灰，原有高光结构被压平",
+          "score": 0.8885002176422029,
+          "rank": 0.8885002176422029,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "暗部和塔身均蒙灰，原有高光结构被压平",
+          "score": 0.7621784782463624,
+          "rank": 0.7621784782463624,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "暗部和塔身均蒙灰，原有高光结构被压平",
+          "score": 0.27209627631146815,
+          "rank": 0.27209627631146804,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "暗部和塔身均蒙灰，原有高光结构被压平",
+          "score": 0.27209627631146815,
+          "rank": 0.35365540925407135,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "塔的亮部与地面反差放软，塔架纹理和暗部可辨",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "暗部和塔身均蒙灰，原有高光结构被压平",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "两处保留，柔化很弱",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "画面变化太小",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p231-increase": {
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "天空偏青，前景几个人的阴影层次减少",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "山谷层次可见增强，天空颜色和人物轮廓保留",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "暗衣和谷地阴影压黑，天空颜色明显改变",
+          "score": 0.3155142035780737,
+          "rank": 0.3155142035780737,
+          "top_recipe": "r15_40",
+          "top_outcome": "failed"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "天空和人物维持，山谷变化较轻",
+          "score": 0.2282582850634877,
+          "rank": 0.2282582850634877,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "天空和人物维持，山谷变化较轻",
+          "score": 0.03395845338489706,
+          "rank": 0.03395845338489706,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "山谷层次可见增强，天空颜色和人物轮廓保留",
+          "score": 4.376762157183041,
+          "rank": 4.37676215718304
+        },
+        "split_pair": {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "天空和人物维持，山谷变化较轻",
+          "score": 2.3902917033498827,
+          "rank": 0.6734683735541446
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "天空偏青，前景几个人的阴影层次减少",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "山谷层次可见增强，天空颜色和人物轮廓保留",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "天空和人物维持，山谷变化较轻",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "failed",
+          "reason": "暗衣和谷地阴影压黑，天空颜色明显改变",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p231-decrease": {
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "oracle_complete": true,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "山谷和前景反差放柔，蓝天与人形轮廓仍在",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "山谷和前景反差放柔，蓝天与人形轮廓仍在",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "抬黑蒙灰，山谷的层次被压得较平",
+          "score": 0.42541309813677475,
+          "rank": 0.42541309813677475,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "颜色和轮廓保留，柔化幅度偏小",
+          "score": 0.1146974168546592,
+          "rank": 0.1146974168546592,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "抬黑蒙灰，山谷的层次被压得较平",
+          "score": 0.32996191774095224,
+          "rank": 0.32996191774095224,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "抬黑蒙灰，山谷的层次被压得较平",
+          "score": 0.9078561840999488,
+          "rank": 0.9078561840999491,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "missed",
+          "reason": "抬黑蒙灰，山谷的层次被压得较平",
+          "score": 0.9078561840999488,
+          "rank": 1.2285368862834551,
+          "top_recipe": "r15_40",
+          "top_outcome": "partial"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "颜色和轮廓保留，柔化幅度偏小",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "complete",
+          "reason": "山谷和前景反差放柔，蓝天与人形轮廓仍在",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "complete",
+          "reason": "山谷层次变柔，人形与天空仍清楚",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "partial",
+          "reason": "抬黑蒙灰，山谷的层次被压得较平",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p390-increase": {
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "increase",
+      "oracle_complete": false,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "房屋轮廓仅略增，整体变化偏小",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "建筑边缘稍明显，整图变化依旧不明显",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "房屋轮廓仅略增，整体变化偏小",
+          "score": -0.04164255633505029,
+          "rank": -0.04164255633505018,
+          "top_recipe": "r15_20",
+          "top_outcome": "partial"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "纹理与色调保留，整体反差变化很小",
+          "score": 0.525989932280584,
+          "rank": 0.5259899322805839,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "纹理与色调保留，整体反差变化很小",
+          "score": 0.8330279745928155,
+          "rank": 0.8330279745928153,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "纹理与色调保留，整体反差变化很小",
+          "score": 0.5483545384209676,
+          "rank": 0.5483545384209674,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "纹理与色调保留，整体反差变化很小",
+          "score": 0.5483545384209676,
+          "rank": 0.7280269196194556,
+          "top_recipe": "protected_soft",
+          "top_outcome": "partial"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "r15_40",
+          "outcome": "partial",
+          "reason": "建筑轮廓稍强，但偏色增强盖过旧照色调",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "房屋轮廓仅略增，整体变化偏小",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "纹理与色调保留，整体反差变化很小",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_strong",
+          "outcome": "partial",
+          "reason": "建筑边缘稍明显，整图变化依旧不明显",
+          "score": null,
+          "rank": null
+        }
+      ]
+    },
+    "p390-decrease": {
+      "domain": "landscape",
+      "light": "day_or_lit",
+      "direction": "decrease",
+      "oracle_complete": false,
+      "methods": {
+        "fixed20": {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "全图的柔化非常微弱",
+          "score": null,
+          "rank": null
+        },
+        "fixed_split": {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "全图的柔化非常微弱",
+          "score": null,
+          "rank": null
+        },
+        "r32_frozen": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "整体效果接近原图，低反差旧照上的轻微软化难以确认",
+          "score": 0.5220844675044521,
+          "rank": 0.5220844675044521,
+          "top_recipe": "r15_40",
+          "top_outcome": "uncertain"
+        },
+        "pool_refit": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "全图的柔化非常微弱",
+          "score": 0.5961367979681798,
+          "rank": 0.5961367979681796,
+          "top_recipe": "r15_20",
+          "top_outcome": "partial"
+        },
+        "split_global": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "整体效果接近原图，低反差旧照上的轻微软化难以确认",
+          "score": 0.3717688791769411,
+          "rank": 0.3717688791769412,
+          "top_recipe": "r15_40",
+          "top_outcome": "uncertain"
+        },
+        "split_spatial": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "整体效果接近原图，低反差旧照上的轻微软化难以确认",
+          "score": 0.9239521937744781,
+          "rank": 0.9239521937744777,
+          "top_recipe": "r15_40",
+          "top_outcome": "uncertain"
+        },
+        "split_pair": {
+          "recipe": null,
+          "outcome": "defer",
+          "reason": "整体效果接近原图，低反差旧照上的轻微软化难以确认",
+          "score": 0.9239521937744781,
+          "rank": 1.2260203329919173,
+          "top_recipe": "r15_40",
+          "top_outcome": "uncertain"
+        }
+      },
+      "candidates": [
+        {
+          "recipe": "protected_strong",
+          "outcome": "failed",
+          "reason": "建筑原有细线进一步被灰雾盖住",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "protected_soft",
+          "outcome": "partial",
+          "reason": "反差略柔，但本已微弱的建筑轮廓也变淡",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_20",
+          "outcome": "partial",
+          "reason": "全图的柔化非常微弱",
+          "score": null,
+          "rank": null
+        },
+        {
+          "recipe": "r15_40",
+          "outcome": "uncertain",
+          "reason": "整体效果接近原图，低反差旧照上的轻微软化难以确认",
+          "score": null,
+          "rank": null
+        }
+      ]
+    }
+  },
+  "GPU_hours": 0
+}

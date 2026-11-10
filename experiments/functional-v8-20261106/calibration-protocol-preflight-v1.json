@@ -1,0 +1,57 @@
+{
+  "at": "2026-11-05T19:09:45.947921+00:00",
+  "status": "frozen_before_any_reward_inference",
+  "dataset_sha256": "f3b240ba000a759f1bde547a102694e6382e9cc7784d2c8eb4b85ca466548ab2",
+  "direct_review_sha256": "ca90c2cdb0f7e4a7ac90bf34e30ad1f2ef32c5b577ffa78802eb01e884c036f0",
+  "token_audit_sha256": "5039b04e10cbd94b70648e51d17b0c9cc6ab86489a2f927587b9543de7d99af3",
+  "code_hashes": {
+    "scripts/functional_v8/prepare_calibration.py": "296346b1db88dbe30a3c4dd484604aaacff452e6abf785d1d15753b1d9a0effe",
+    "scripts/functional_v8/calibrate_reward.py": "a30f75cda78baea3b26f68713206eef19346995513c7cdd1fc4290fbc1093dbe",
+    "scripts/functional_v8/freeze_calibration.py": "29fb97f00da69a6c79bf6f6954a70894fda90f3e12738f15ec3e64959646e648",
+    "third_party/EditScore/editscore/vie_prompts.py": "14dee0ac57433f096ee3c44aa84577576f546c41df56e19b8d85ac44c175aa29",
+    "models/external/EditScore-7B/adapter_config.json": "590b86568b1d732d2c00bec889f6a79b3d1c90669848c692ed2e75cb0be0fded"
+  },
+  "external_model": {
+    "repository": "EditScore/EditScore-7B",
+    "revision": "dcce052accfc75f2d48279c889a71755ecdf737b",
+    "adapter_sha256": "b78dc22fea2ebedfa17780a71ece05cec7062e6b738eeb3e2d21740cd44d7297",
+    "source_commit": "4609c5d2ebb62fdebf665d3c924686d896ef1f74",
+    "base_revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5"
+  },
+  "compared_routes": [
+    "base",
+    "editscore"
+  ],
+  "precision": "Full BF16, adapter merged after exact tensor verification",
+  "sampling": {
+    "seed": 20261114,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 20,
+    "passes": 1,
+    "max_new_tokens": 512
+  },
+  "official_prompt_unchanged": true,
+  "official_manual_img_tag_template": true,
+  "implementation_differences": [
+    "262144 pixel limit per image",
+    "sdpa attention",
+    "No JSON repair, retries, guessed scores or default values; invalid outputs fail calibration"
+  ],
+  "gates": {
+    "direction_semantic_tasks_required": 9,
+    "direction_semantic_tasks_total": 10,
+    "each_task": "Admitted result must beat both no-edit and opposite-direction candidates in BOTH languages; any tie/invalid counts as failure.",
+    "quality_pairs_required": 8,
+    "quality_pairs_total": 8,
+    "quality_rule": "Admitted quality must strictly beat known damaged render under min(naturalness,artifacts); ties/invalid fail. These are minor defects, not a major-damage detection certification."
+  },
+  "GPU_limit_seconds_each": 1800,
+  "shared_original_GPU_hour_cap": 16,
+  "scope": "Only the already used round7 training160 photo groups. No developer or acceptance photos are loaded. Not an independent test; external model training overlap with GIER is unknown.",
+  "limitations": "Small AI-labelled calibration, not human endorsement or proof of reward reliability. Official prompt assumes generated images although these are photographs; domain transfer explicitly tested.",
+  "quality_calibration": "Eight minor-defect comparisons only, not certification for major-damage detection; some PQ images answer different requests, and PQ has no instruction input.",
+  "own_policy_training_started": false,
+  "acceptance_opened": false,
+  "posthoc_policy": "Do not modify threshold, cases, prompt or parsing after seeing results. A failure stops use of this configuration as a training reward. Report all errors and ties."
+}

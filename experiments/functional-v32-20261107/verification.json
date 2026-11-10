@@ -1,0 +1,37 @@
+{
+  "at": "2026-11-07T09:05:33.997056+00:00",
+  "GPU_hours": 0,
+  "source_files": 16,
+  "boards": 32,
+  "full_candidates": 128,
+  "verified_file_hashes": 176,
+  "curve_checks": [
+    {
+      "recipe": "protected_soft",
+      "direction": "increase",
+      "minimum_ramp_step": 1.190203709178217e-05
+    },
+    {
+      "recipe": "protected_strong",
+      "direction": "increase",
+      "minimum_ramp_step": 8.545052286867971e-06
+    },
+    {
+      "recipe": "protected_soft",
+      "direction": "decrease",
+      "minimum_ramp_step": 1.1062790877591766e-05
+    },
+    {
+      "recipe": "protected_strong",
+      "direction": "decrease",
+      "minimum_ramp_step": 6.8665598584871645e-06
+    }
+  ],
+  "random_pixels_tested": 129500,
+  "exact_neutral_ramp": true,
+  "endpoint_intervals_unchanged": true,
+  "zero_curve_unchanged": true,
+  "fit_and_held_groups_disjoint": true,
+  "fit_sha256": "f6cd19bdef8d6cb74839a8da2619bc1435964c3d54c59764c7529df1b03d1505",
+  "held_sha256": "668d14b87ab2cf71840cae5557ff47bd6c8f4a9a58c165f3434bce982f81b443"
+}

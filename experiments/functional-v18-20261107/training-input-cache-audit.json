@@ -1,0 +1,511 @@
+{
+  "at": "2026-11-06T21:10:26.371156+00:00",
+  "status": "CPU_prefix_pixel_mask_and_exact_replay_checks_passed",
+  "base_cache_path": "experiments/functional-v15-20261106/batches.pt",
+  "base_cache_sha256": "b883064fea77a3eb39fff426c4bdcab0b5d9610c08f4ad526c80d8e5492e0340",
+  "base_cache_rows": 1850,
+  "negative_cache_path": "experiments/functional-v18-20261107/negative-batches.pt",
+  "negative_cache_sha256": "b09c773df3ac3cd75f3edeb200f36f1c57442ce3328105ef268a91f6bcb13a2b",
+  "negative_cache_rows": 38,
+  "checks": [
+    {
+      "id": "train-020-restore-exposure-mild-zh",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 32,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 40\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 100\n  }\n}\n```"
+    },
+    {
+      "id": "train-020-restore-exposure-mild-en",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 32,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 40\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 100\n  }\n}\n```"
+    },
+    {
+      "id": "train-020-restore-exposure-strong-zh",
+      "assistant_tokens": 32,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 100\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 40\n  }\n}\n```"
+    },
+    {
+      "id": "train-020-restore-exposure-strong-en",
+      "assistant_tokens": 32,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 100\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 40\n  }\n}\n```"
+    },
+    {
+      "id": "train-066-restore-exposure-mild-zh",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 30\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 80\n  }\n}\n```"
+    },
+    {
+      "id": "train-066-restore-exposure-mild-en",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 30\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 80\n  }\n}\n```"
+    },
+    {
+      "id": "train-066-restore-exposure-strong-zh",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 80\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 30\n  }\n}\n```"
+    },
+    {
+      "id": "train-066-restore-exposure-strong-en",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 80\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 30\n  }\n}\n```"
+    },
+    {
+      "id": "train-210-restore-exposure-mild-zh",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 30\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 65\n  }\n}\n```"
+    },
+    {
+      "id": "train-210-restore-exposure-mild-en",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 30\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 65\n  }\n}\n```"
+    },
+    {
+      "id": "train-210-restore-exposure-strong-zh",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 65\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 30\n  }\n}\n```"
+    },
+    {
+      "id": "train-210-restore-exposure-strong-en",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 65\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 30\n  }\n}\n```"
+    },
+    {
+      "id": "train-021-restore-exposure-strong-zh",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 65\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 20\n  }\n}\n```"
+    },
+    {
+      "id": "train-021-restore-exposure-strong-en",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 65\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"exposure\": 20\n  }\n}\n```"
+    },
+    {
+      "id": "train-048-restore-contrast-mild-zh",
+      "assistant_tokens": 30,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 40\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 100\n  }\n}\n```"
+    },
+    {
+      "id": "train-048-restore-contrast-mild-en",
+      "assistant_tokens": 30,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 40\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 100\n  }\n}\n```"
+    },
+    {
+      "id": "train-048-restore-contrast-strong-zh",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 30,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 100\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 40\n  }\n}\n```"
+    },
+    {
+      "id": "train-048-restore-contrast-strong-en",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 30,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 100\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 40\n  }\n}\n```"
+    },
+    {
+      "id": "train-042-restore-contrast-mild-zh",
+      "assistant_tokens": 30,
+      "crossed_assistant_tokens": 30,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 30\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 80\n  }\n}\n```"
+    },
+    {
+      "id": "train-042-restore-contrast-mild-en",
+      "assistant_tokens": 30,
+      "crossed_assistant_tokens": 30,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 30\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 80\n  }\n}\n```"
+    },
+    {
+      "id": "train-042-restore-contrast-strong-zh",
+      "assistant_tokens": 30,
+      "crossed_assistant_tokens": 30,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 80\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 30\n  }\n}\n```"
+    },
+    {
+      "id": "train-042-restore-contrast-strong-en",
+      "assistant_tokens": 30,
+      "crossed_assistant_tokens": 30,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 80\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 30\n  }\n}\n```"
+    },
+    {
+      "id": "train-100-restore-contrast-mild-zh",
+      "assistant_tokens": 30,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 40\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 100\n  }\n}\n```"
+    },
+    {
+      "id": "train-100-restore-contrast-mild-en",
+      "assistant_tokens": 30,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 40\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 100\n  }\n}\n```"
+    },
+    {
+      "id": "train-100-restore-contrast-strong-zh",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 30,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 100\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 40\n  }\n}\n```"
+    },
+    {
+      "id": "train-100-restore-contrast-strong-en",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 30,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 100\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 40\n  }\n}\n```"
+    },
+    {
+      "id": "train-120-restore-contrast-mild-zh",
+      "assistant_tokens": 30,
+      "crossed_assistant_tokens": 30,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 20\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 65\n  }\n}\n```"
+    },
+    {
+      "id": "train-120-restore-contrast-mild-en",
+      "assistant_tokens": 30,
+      "crossed_assistant_tokens": 30,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 20\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 65\n  }\n}\n```"
+    },
+    {
+      "id": "train-120-restore-contrast-strong-zh",
+      "assistant_tokens": 30,
+      "crossed_assistant_tokens": 30,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 65\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 20\n  }\n}\n```"
+    },
+    {
+      "id": "train-120-restore-contrast-strong-en",
+      "assistant_tokens": 30,
+      "crossed_assistant_tokens": 30,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 65\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"contrast\": 20\n  }\n}\n```"
+    },
+    {
+      "id": "train-110-restore-saturation-mild-zh",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 32,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 40\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 100\n  }\n}\n```"
+    },
+    {
+      "id": "train-110-restore-saturation-mild-en",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 32,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 40\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 100\n  }\n}\n```"
+    },
+    {
+      "id": "train-110-restore-saturation-strong-zh",
+      "assistant_tokens": 32,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 100\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 40\n  }\n}\n```"
+    },
+    {
+      "id": "train-110-restore-saturation-strong-en",
+      "assistant_tokens": 32,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 100\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 40\n  }\n}\n```"
+    },
+    {
+      "id": "train-064-restore-saturation-mild-zh",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 20\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 65\n  }\n}\n```"
+    },
+    {
+      "id": "train-064-restore-saturation-mild-en",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 20\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 65\n  }\n}\n```"
+    },
+    {
+      "id": "train-064-restore-saturation-strong-zh",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 65\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 20\n  }\n}\n```"
+    },
+    {
+      "id": "train-064-restore-saturation-strong-en",
+      "assistant_tokens": 31,
+      "crossed_assistant_tokens": 31,
+      "exact_image_and_input_prefix_equal": true,
+      "input_keys": [
+        "images",
+        "extra_info",
+        "conversations"
+      ],
+      "chosen_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 65\n  }\n}\n```",
+      "crossed_text": "```json\n{\n  \"action\": \"edit\",\n  \"parameters\": {\n    \"saturation\": 20\n  }\n}\n```"
+    }
+  ],
+  "GPU_calls": 0,
+  "model_forward_calls": 0,
+  "unequal_assistant_lengths": 16,
+  "ranking_score_policy": "Mean assistant-token logp for each candidate, then fixed scale32. Raw sum-logp training is forbidden in this pilot; different numeric digit counts cannot be assumed equal length.",
+  "inference_input_policy": "Exactly source image, one literal-language request, unchanged tool prompt. Candidate answers appear only in supervised assistant scoring, never in greedy input prefixes."
+}

@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-06T09:39:16.918688+00:00",
+  "scope": "Only native/old parent inference metadata; no visual judgment, output, completion count or controlled-parent actual inference changed.",
+  "cause": "Copied frozen summarizer recognises only the older CPU replay kind; the new exact-prediction reuse kind was incorrectly flagged as inference.",
+  "records": [
+    {
+      "split": "native-development",
+      "before": "/mnt/sdc/zhc/IEA/experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/summary-before-inference-metadata-correction.json",
+      "before_sha256": "160721a44945cad7ad08baca988b5728b33b97b3bac091c80be0af1bcbf43ee0",
+      "after": "/mnt/sdc/zhc/IEA/experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/direct-functional-summary.json",
+      "after_sha256": "83651e0b7c380aa2c0720d455387c9ef866846222227a7b22d26f71343463f1b"
+    },
+    {
+      "split": "old-native",
+      "before": "/mnt/sdc/zhc/IEA/experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/summary-before-inference-metadata-correction.json",
+      "before_sha256": "760b75af1172f33af20ebe7c5f984b51d24b6929f42b73457af10af947c71e94",
+      "after": "/mnt/sdc/zhc/IEA/experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/parent-frozen/direct-functional-summary.json",
+      "after_sha256": "672658dfb55583cf2ca93814f6abed32c9ed99159190b52279215cac686845b9"
+    }
+  ]
+}

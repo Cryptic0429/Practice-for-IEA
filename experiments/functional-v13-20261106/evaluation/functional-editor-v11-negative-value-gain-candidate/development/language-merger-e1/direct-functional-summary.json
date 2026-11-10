@@ -1,0 +1,81 @@
+{
+  "model_id": "language-merger-e1",
+  "status": "completed",
+  "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+  "human_review": false,
+  "reviewed_outputs": 200,
+  "missing_unique_images": [],
+  "fully_completed_both_languages": 73,
+  "raw_individual_completed_both_languages": 73,
+  "identical_strength_pairs": [],
+  "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+  "photo_groups": 20,
+  "all_tasks_complete_photo_groups": 1,
+  "major_quality_issues": 1,
+  "major_issue_cases": [
+    "development-028-restore-saturation-mild"
+  ],
+  "per_family": {
+    "brown_tone": {
+      "completed": 8,
+      "cases": 8
+    },
+    "compound": {
+      "completed": 8,
+      "cases": 10
+    },
+    "contrast": {
+      "completed": 13,
+      "cases": 20
+    },
+    "identity": {
+      "completed": 10,
+      "cases": 10
+    },
+    "lighting": {
+      "completed": 14,
+      "cases": 24
+    },
+    "saturation": {
+      "completed": 15,
+      "cases": 20
+    },
+    "white_balance": {
+      "completed": 5,
+      "cases": 8
+    }
+  },
+  "per_language": {
+    "zh": {
+      "completed": 79,
+      "partial": 20,
+      "uncertain": 1
+    },
+    "en": {
+      "completed": 80,
+      "partial": 20
+    }
+  },
+  "per_domain": {
+    "portrait": {
+      "completed": 35,
+      "cases": 50
+    },
+    "landscape": {
+      "completed": 38,
+      "cases": 50
+    }
+  },
+  "selection_uses_L1": false,
+  "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+  "review_sha256": "d57dbde5fbd20e209ebdc49b102d9ee94a7f11eab3205f605b0f5e0e22f6f4ac",
+  "declined_language_outputs": 0,
+  "declined_semantic_cases": 0,
+  "refusal_policy": "Every decline on these feasible tasks is uncompleted; no result image is returned.",
+  "original_size_supplement_count": 22,
+  "review_derivation": "experiments/functional-v13-20261106/review-derivation/stage2-final/review/development/derivation.json",
+  "review_derivation_sha256": "e3441de3ebdba43bafc2ab3a8569480f543c53f6733ae0ef803c24240e73809b",
+  "raw_visual_notes_immutable": true,
+  "inference_performed": true,
+  "runtime": "functional_v13.runtime"
+}

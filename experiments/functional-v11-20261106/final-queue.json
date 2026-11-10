@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-06T00:40:13.724753+00:00",
+  "pid": 4037046,
+  "status": "completed",
+  "jobs": [
+    {
+      "model": "language-merger-e1",
+      "pid": 4037577,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-m",
+        "functional_v11.evaluate",
+        "--route",
+        "language_merger",
+        "--adapter",
+        "experiments/functional-v11-20261106/runs/language_merger-seed-20261123/checkpoint-336",
+        "--model",
+        "language-merger-e1",
+        "--gpu",
+        "3"
+      ],
+      "started_at": "2026-11-06T00:43:18.748033+00:00",
+      "returncode": 0,
+      "ended_at": "2026-11-06T00:47:40.219699+00:00"
+    }
+  ],
+  "current": null,
+  "finished_at": "2026-11-06T00:47:40.220611+00:00"
+}

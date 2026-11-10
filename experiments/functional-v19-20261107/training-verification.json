@@ -1,0 +1,117 @@
+{
+  "at": "2026-11-06T23:42:55.429939+00:00",
+  "status": "actual_completed_training_artifacts_verified_CPU",
+  "checkpoints": [
+    {
+      "step": 501,
+      "saved_tensors": 120,
+      "parameters": 3139200,
+      "changed_since_parent_initialization": 120,
+      "optimizer_groups": [
+        {
+          "tensors": 116,
+          "initial_lr": 1e-05,
+          "actual_lr": 5.420693485453893e-06
+        },
+        {
+          "tensors": 4,
+          "initial_lr": 0.001,
+          "actual_lr": 0.0005420693485453892
+        }
+      ],
+      "optimizer_tensors_finite": true,
+      "scheduler_step": 501,
+      "RNG_keys": [
+        "cpu",
+        "cuda",
+        "numpy",
+        "python"
+      ],
+      "files": {
+        "adapter_model.safetensors": {
+          "bytes": 12574216,
+          "sha256": "3dadb8a033d48d8790963ab4a691142f85f6672f471f076010ee57b0d48c619b"
+        },
+        "adapter_config.json": {
+          "bytes": 969,
+          "sha256": "4466afd66fa973295537732cfa42ba0d561bfcf2cead86acd7f9f545fc7768b2"
+        },
+        "optimizer.pt": {
+          "bytes": 25214522,
+          "sha256": "e5122e9af38a9a59faec17fecd9d111e2d2e17654c2c76ceaaf225db44d9a571"
+        },
+        "scheduler.pt": {
+          "bytes": 1064,
+          "sha256": "4b7f37cd87bd47b3d1258bd214256ccc8e4f94030a9684ecf9c89f583c02d773"
+        },
+        "rng_state.pth": {
+          "bytes": 14308,
+          "sha256": "a53af8ad395a07926f7d0265fdf4fe4f3fd64cb7d81af61832a7dd5827da257f"
+        },
+        "trainer_state.json": {
+          "bytes": 87290,
+          "sha256": "c4c625e0c353e9c478d3736b379a88dd819bb7efe66fbfb1e7b13d659c3d1518"
+        }
+      }
+    },
+    {
+      "step": 1002,
+      "saved_tensors": 120,
+      "parameters": 3139200,
+      "changed_since_parent_initialization": 120,
+      "optimizer_groups": [
+        {
+          "tensors": 116,
+          "initial_lr": 1e-05,
+          "actual_lr": 0.0
+        },
+        {
+          "tensors": 4,
+          "initial_lr": 0.001,
+          "actual_lr": 0.0
+        }
+      ],
+      "optimizer_tensors_finite": true,
+      "scheduler_step": 1002,
+      "RNG_keys": [
+        "cpu",
+        "cuda",
+        "numpy",
+        "python"
+      ],
+      "files": {
+        "adapter_model.safetensors": {
+          "bytes": 12574216,
+          "sha256": "9be16f1e8e42ca54dd356c59052ea487c291878b2f128925eb8227c40a05b78d"
+        },
+        "adapter_config.json": {
+          "bytes": 969,
+          "sha256": "4466afd66fa973295537732cfa42ba0d561bfcf2cead86acd7f9f545fc7768b2"
+        },
+        "optimizer.pt": {
+          "bytes": 25214522,
+          "sha256": "bd4b7d1089719d7f4023ffb3008585c7e2a62902c74673785d7781c702e02173"
+        },
+        "scheduler.pt": {
+          "bytes": 1064,
+          "sha256": "c5a7149056f639b0ba9bc0b266391fee861437f5666c22b56e6bc9d4059bd36b"
+        },
+        "rng_state.pth": {
+          "bytes": 14308,
+          "sha256": "b69a4ce6cca0c6328570724021fcc37a57cec106722c68e5f14684f1879a3dc8"
+        },
+        "trainer_state.json": {
+          "bytes": 173869,
+          "sha256": "92ecedc93994ca523ff59c83e7b4b57cf7154f063968f786420d1e3fafaf9638"
+        }
+      }
+    }
+  ],
+  "training_protocol_sha256": "0f7a22b341664cab662299c7c2aece5f9a2e776a6175e31e9ce970544a28428d",
+  "optimizer_steps": 1002,
+  "positive_presentations": 4004,
+  "rejected_forwards": 0,
+  "one_adapter_including_bridge": true,
+  "GPU_calls": 0,
+  "model_functional_success_inferred": false
+}

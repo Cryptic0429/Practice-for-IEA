@@ -1,0 +1,214 @@
+{
+  "at": "2026-11-06T16:52:02.098720+00:00",
+  "items": [
+    {
+      "id": "native-train-x250",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+        "sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+        "size": [
+          2916,
+          1944
+        ]
+      },
+      "instructions": {
+        "en": "Brighten photo, increase contrast.",
+        "zh": "提亮照片，提高对比度。"
+      },
+      "results": [
+        {
+          "candidate": "R1",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 35,
+              "contrast": 14,
+              "shadows": 10,
+              "highlights": -10
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave2/native-train-x250/R1.png",
+          "image_sha256": "b4ab4306a834ec1883de85a79790c04f4ce465f1a5d4473a04d0d19c2cc2e7fa",
+          "label_admitted": false
+        },
+        {
+          "candidate": "R2",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 45,
+              "contrast": 12,
+              "highlights": -15
+            }
+          },
+          "image": "experiments/functional-v15-20261106/label-repairs/wave2/native-train-x250/R2.png",
+          "image_sha256": "b2b6d77ca14bbf21a5fedf4fc49183e1133ca7dc3988ad9f86a4f75c5092d06a",
+          "label_admitted": false
+        }
+      ],
+      "prior_candidate": {
+        "path": "experiments/functional-v15-20261106/label-candidates/images/native-train-x250.png",
+        "sha256": "158327654839e6ed683ccbbc842144bd9508e2bd534f92cada092e4b7f239524"
+      },
+      "failed_observation": {
+        "id": "native-train-x250",
+        "stage": "labels",
+        "input_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+        "candidate_sha256": "158327654839e6ed683ccbbc842144bd9508e2bd534f92cada092e4b7f239524",
+        "images": [
+          {
+            "role": "INPUT",
+            "region": "facade",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x250-INPUT-facade.png",
+            "sha256": "1a735bbfb80e03890752b9080e260f3a8512dca474e8628a7018342fc595679b",
+            "size": [
+              1200,
+              1200
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+            "source_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+            "source_size": [
+              2916,
+              1944
+            ],
+            "box": [
+              800,
+              400,
+              2000,
+              1600
+            ]
+          },
+          {
+            "role": "INPUT",
+            "region": "trees-sky",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x250-INPUT-trees-sky.png",
+            "sha256": "2d36b3b9daa88d7e454efd453c6d4a6590de4867d3dcd8e241b5ad2134170cfc",
+            "size": [
+              1200,
+              1200
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+            "source_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+            "source_size": [
+              2916,
+              1944
+            ],
+            "box": [
+              0,
+              0,
+              1200,
+              1200
+            ]
+          },
+          {
+            "role": "INPUT",
+            "region": "water",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x250-INPUT-water.png",
+            "sha256": "9b2f8771babc0eeb47b6d916fdfa0b72e5e24826592c92c9b533eb4b64a51874",
+            "size": [
+              1200,
+              844
+            ],
+            "source": "data/training/functional-v6-20261105/inputs/native-train-x250.png",
+            "source_sha256": "a236523cd654251201343a49f99da0fac4c2bad303ce3dacdeabd4abcb95e8c6",
+            "source_size": [
+              2916,
+              1944
+            ],
+            "box": [
+              1600,
+              1100,
+              2800,
+              1944
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "facade",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x250-CANDIDATE-facade.png",
+            "sha256": "3be36b7956e7e10f9e3c1a083152e0e7795d221981efb9b6cf3283f7cbcbaea4",
+            "size": [
+              1200,
+              1200
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-x250.png",
+            "source_sha256": "158327654839e6ed683ccbbc842144bd9508e2bd534f92cada092e4b7f239524",
+            "source_size": [
+              2916,
+              1944
+            ],
+            "box": [
+              800,
+              400,
+              2000,
+              1600
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "trees-sky",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x250-CANDIDATE-trees-sky.png",
+            "sha256": "782f50e9afd287d3a720e356732b533d280b71d2c41b23df154e5c00e01d53be",
+            "size": [
+              1200,
+              1200
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-x250.png",
+            "source_sha256": "158327654839e6ed683ccbbc842144bd9508e2bd534f92cada092e4b7f239524",
+            "source_size": [
+              2916,
+              1944
+            ],
+            "box": [
+              0,
+              0,
+              1200,
+              1200
+            ]
+          },
+          {
+            "role": "CANDIDATE",
+            "region": "water",
+            "path": "experiments/functional-v15-20261106/native-review/labels/remainder106/native-train-x250-CANDIDATE-water.png",
+            "sha256": "26ac757e98a8c6ced0941673f51e5ee2f0eafa0c41fdf2997e5d8bb691b2da15",
+            "size": [
+              1200,
+              844
+            ],
+            "source": "experiments/functional-v15-20261106/label-candidates/images/native-train-x250.png",
+            "source_sha256": "158327654839e6ed683ccbbc842144bd9508e2bd534f92cada092e4b7f239524",
+            "source_size": [
+              2916,
+              1944
+            ],
+            "box": [
+              1600,
+              1100,
+              2800,
+              1944
+            ]
+          }
+        ],
+        "paired_native": [],
+        "at": "2026-11-06T16:29:46.164256+00:00",
+        "completion": "C",
+        "quality": "m",
+        "evidence": "Whole-frame context and all six native facade/trees-sky/water input/candidate crops were directly viewed. Brightening and stronger contrast are visible and facade windows/railings and reflected lamps remain. However native shadow water at the right and dark bushes show conspicuous red/blue chroma blotches/rectangular compression texture after the lift, more intrusive than in the source. This is a quality failure requiring a different balance of exposure/contrast/shadow lift, not an accepted label or a denoising claim. Coverage is listed critical regions only.",
+        "manifest_sha256": "6a4f35e82655fed8a0df4802f9937832fa74062d46595992c8db84cf1f2f46b7",
+        "reviewer": "Codex direct native-pixel AI review, not human",
+        "supplements_raw_panel": true,
+        "training_label_admitted": false
+      },
+      "sheet": "experiments/functional-v15-20261106/label-repairs/wave2/native-train-x250/review.jpg",
+      "sheet_sha256": "023e714d8eadb88e2f4ba6f47b087e5aa17ae97cdc836fb1d2c7d76611b22825",
+      "label_admitted": false
+    }
+  ],
+  "source_manifest_sha256": "db61d38bfdef2bb8dca9f33628ca0dc24bd5255c0e6b08ff5e26d83e52f77095",
+  "source_native_observations_sha256": "f3ea69df7574695e4394d3450ddeb2ce0bd3e6b128f52c2c636af054a8a454a6",
+  "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+  "editor_sha256": "53d058fa7173253548ebe2fe907f927039b28f78694192210487df847e60cfaf",
+  "executed_edits": 2,
+  "GPU_hours": 0,
+  "policy": "Unchanged literal request; explicit AI proposals for observed shadow chroma failure. No automatic admission; direct overview and native quality inspection required."
+}

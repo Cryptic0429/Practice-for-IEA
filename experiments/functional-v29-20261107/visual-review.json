@@ -1,0 +1,133 @@
+{
+  "reviewer": "Codex direct AI visual judgments on full previews and matched native-pixel crops. Reviewed before reading any fitted predictions.",
+  "protocol_sha256": "5e53a02dacfc1439f52925c9f8dad3ada32e084addddd7d6f739551d8ec60225",
+  "replay_sha256": "647e8ce2366d9d40834fb22987a1b6fe89d7e04578e1246470ce8147d4dc7363",
+  "isolation_sha256": "fc885f6d17de9efa824641dc50f3c195f907bc5c5ef66f9ff46a98b01293c9bc",
+  "details_sha256": "010e24591459e831faf2a94edeba417b3a1c8a7b8ffbafe276883fd56349d36c",
+  "cases": [
+    {
+      "id": "p021",
+      "panels": {
+        "experiments/functional-v29-20261107/images/p021-shadow-panel.png": "6a72cca341ccb6ed22a3230f75b8e23b1974d85a00da3b9404562029acc56557",
+        "experiments/functional-v29-20261107/images/p021-global-panel.png": "e9e14acfa9013b46dfe33586a4e373648f0cdd513cd02c93692e74d4f4a33333",
+        "experiments/functional-v29-20261107/images/p021-shadow-detail.png": "a94a46fd0c132c981fa1d6393a4f113cda7b52b3861769f5e04161c75d138fd1",
+        "experiments/functional-v29-20261107/images/p021-global-detail.png": "d4b25d5fe50a61038eaab30c9ce5e846f4551f1f283b8c2a37027288ea07b7c8"
+      },
+      "observations": {
+        "shadow_up": {
+          "verdict": "complete",
+          "evidence": "脸暗侧轻提且保留现有天空，脸与衣服仍自然。",
+          "result_sha256": "e67a7c2f32a045c29ff9259b29d38c4bdc1f048f072496b8297ec6c76b9d1c20"
+        },
+        "shadow_down": {
+          "verdict": "complete",
+          "evidence": "前排脸暗侧和衣服暗面加深，天空与已受光的纹理基本保留。",
+          "result_sha256": "22280f74f713abe621ebbeab0dc6e30369fe4cdedd1a44a03f0db8442aa987b2"
+        },
+        "global_up": {
+          "verdict": "partial",
+          "evidence": "脸和近处整体变亮，但原天空大块已白，要求的天空变化有限，局部原有眩光也更显眼。",
+          "result_sha256": "ae2d73906c7a24c71f09c4b1e456ce87447dea2a457288cdd0efe6c401fdf2fa"
+        },
+        "global_down": {
+          "verdict": "failed",
+          "evidence": "全图确实变暗，却把原已发白的天空变成大面积均匀灰块，影响成片观感。",
+          "result_sha256": "97bf5a4071dbc718996d44ad06eb985a8612ef6dc4c01960342feeaa72a5c31e"
+        }
+      }
+    },
+    {
+      "id": "p457",
+      "panels": {
+        "experiments/functional-v29-20261107/images/p457-shadow-panel.png": "8d67478e0d9b42c38f0c0c73fa48e62d118c17e1ccadfd49fa5a6a551fd9d16a",
+        "experiments/functional-v29-20261107/images/p457-global-panel.png": "dd7b795ef1a271d4cd94e047682afd27a1fab664b41d4fe743c7de448b1aa8f9",
+        "experiments/functional-v29-20261107/images/p457-shadow-detail.png": "cadc6963115b6bd5db7aeb7650bac35569d723d0f0c959b992c485c821624eba",
+        "experiments/functional-v29-20261107/images/p457-global-detail.png": "55932339062a464656e8f7bfe1f8ccc093cae1381545f1605ed8836b8770224d"
+      },
+      "observations": {
+        "shadow_up": {
+          "verdict": "complete",
+          "evidence": "衣服与脸暗面更容易辨认，墙上灯和亮面保留。",
+          "result_sha256": "a14a2b790b2696cb0a36fe49aecf156fc813af282c62cceb916b863263b013c0"
+        },
+        "shadow_down": {
+          "verdict": "partial",
+          "evidence": "阴影方向正确，灯保持，但人脸暗侧和黑衣层次明显更难辨。",
+          "result_sha256": "ef483545e94d70a6281f660a1fdeacbcbbfc95c71eb62cc18c6ec74e1a32d53b"
+        },
+        "global_up": {
+          "verdict": "complete",
+          "evidence": "人、墙和灯附近的中间调一起变亮，面部比原图更可辨。",
+          "result_sha256": "ae4e861fde40633810280598f3b65e662d555b758f59283b2cbfb2e1ba3769b1"
+        },
+        "global_down": {
+          "verdict": "partial",
+          "evidence": "人和墙一起变暗，原本已经很暗的脸、衣服细节又下降。",
+          "result_sha256": "4cc5b6939eab2d114c4febceb191e5f4452cfdc9f32fafffa6472522ba1f7646"
+        }
+      }
+    },
+    {
+      "id": "p165",
+      "panels": {
+        "experiments/functional-v29-20261107/images/p165-shadow-panel.png": "8f136056b0414edb1599939c141c205107ab630e708b098e8a4c2f9cec6bcc91",
+        "experiments/functional-v29-20261107/images/p165-global-panel.png": "0b877bc597447a68c5e6aa544030b91bac50203ab68b32f848eaa80870507b2e",
+        "experiments/functional-v29-20261107/images/p165-shadow-detail.png": "593d6d5c43843947d69d83b56139545b8e24f60f652133d54ba5a0de346e03c9",
+        "experiments/functional-v29-20261107/images/p165-global-detail.png": "025f4eddfac225f20de213b56965ea1a9a57955ad0ddf16d71b1d14191bdb964"
+      },
+      "observations": {
+        "shadow_up": {
+          "verdict": "complete",
+          "evidence": "车下和前景暗面更易看清，车漆亮斑与天空仍保细节。",
+          "result_sha256": "ce0baf571906ec12d2b927c70771db77dcabbbd18fa48cbb9621b41eb9fcc7eb"
+        },
+        "shadow_down": {
+          "verdict": "complete",
+          "evidence": "赛车暗区压深，车身高光和云层基本保持。",
+          "result_sha256": "68a280093834be3dcb4bf80ea8b671b2f11151fdf2f365a7b6b50259e3df4fd3"
+        },
+        "global_up": {
+          "verdict": "complete",
+          "evidence": "场地、车和天整体抬亮，车身贴纸和云纹仍可辨。",
+          "result_sha256": "2c3e7f6e13930863937c04b592388b5da754a9b6bd72d5ced8c3f59a0600fc94"
+        },
+        "global_down": {
+          "verdict": "complete",
+          "evidence": "整体变暗，车身颜色与云层、格栅仍有细节。",
+          "result_sha256": "0c7ac94705c2bc32e2a197e98131da242b7e63c22223d01a1f835818faf04cf7"
+        }
+      }
+    },
+    {
+      "id": "p102",
+      "panels": {
+        "experiments/functional-v29-20261107/images/p102-shadow-panel.png": "cf39213601d6cc48f0a13e6680fe9e08e8ee473f6b7e946e060ae69d952673df",
+        "experiments/functional-v29-20261107/images/p102-global-panel.png": "42d61bde73e65753dd4ee677d4ccbfd77dae7d0246cb37df345d2825b26ec0d8",
+        "experiments/functional-v29-20261107/images/p102-shadow-detail.png": "519d3d5fc1bd14d7ac978f93e45a226c1818f3217a1bc0a6c56f838fd0428d7e",
+        "experiments/functional-v29-20261107/images/p102-global-detail.png": "0ca2c50008eecb870ecdecaa076d65798e62d380af874b4ef6d11f3d7c002f74"
+      },
+      "observations": {
+        "shadow_up": {
+          "verdict": "complete",
+          "evidence": "近处岩石裂纹更清楚，晚霞亮部保留。",
+          "result_sha256": "f70d8650f78e5ff4dd6d16e7b8f495f4b375d6f7566921655f49ce0e35e3faa7"
+        },
+        "shadow_down": {
+          "verdict": "complete",
+          "evidence": "前景岩石和树影更深，天空暖色过渡基本保留。",
+          "result_sha256": "ceb3d0ac10963394410d0ea8a23336ff84ac53f97e2b8bceb7791d1fe4916ee6"
+        },
+        "global_up": {
+          "verdict": "complete",
+          "evidence": "近处岩石、人和远山都抬亮，天空暖色层次仍可辨。",
+          "result_sha256": "6e8b5010dc9805c76efb6e8ce7694ff8887086a5ced0b53e4ee10c99b4486d5b"
+        },
+        "global_down": {
+          "verdict": "partial",
+          "evidence": "远山和天空亮度按要求降低，但原图已暗的前景和人物进一步变黑。",
+          "result_sha256": "07b2755eeeb8a20a545fde6ccf971b7ebb9d89cb98d598d07e41aca280ddb3f3"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "at": "2026-11-06T21:05:29.924805+00:00",
+  "status": "explicit_Codex_visual_choice_after_overview_and_whole_native_followup_not_human",
+  "selected_case_ids": [
+    "train-020-restore-exposure-mild",
+    "train-020-restore-exposure-strong",
+    "train-066-restore-exposure-mild",
+    "train-066-restore-exposure-strong",
+    "train-210-restore-exposure-mild",
+    "train-210-restore-exposure-strong",
+    "train-021-restore-exposure-strong",
+    "train-048-restore-contrast-mild",
+    "train-048-restore-contrast-strong",
+    "train-042-restore-contrast-mild",
+    "train-042-restore-contrast-strong",
+    "train-100-restore-contrast-mild",
+    "train-100-restore-contrast-strong",
+    "train-120-restore-contrast-mild",
+    "train-120-restore-contrast-strong",
+    "train-110-restore-saturation-mild",
+    "train-110-restore-saturation-strong",
+    "train-064-restore-saturation-mild",
+    "train-064-restore-saturation-strong"
+  ],
+  "chosen_origin": "own_label",
+  "rejected_origin": "crossed_label",
+  "evidence": "overview-observations.jsonl plus native-observations.jsonl. All19 selected input/own/crossed triplets actually viewed as whole unscaled RGB.11 pairs/22triplets/66 images were followed up; selection is not all visually inspected records.",
+  "excluded": [
+    {
+      "case_id": "train-021-restore-exposure-mild",
+      "reason": "Native larger exposure also natural; overview minor-quality concern not confirmed. Preserve conflict as uncertain, no forced preference."
+    },
+    {
+      "case_id": "train-206-restore-saturation-mild",
+      "reason": "Native colour-strength naturalness ambiguous; retain overview/native disagreement."
+    },
+    {
+      "case_id": "train-206-restore-saturation-strong",
+      "reason": "Boundary between modest and sufficient colour restoration ambiguous at native size."
+    },
+    {
+      "case_id": "train-220-restore-saturation-mild",
+      "reason": "Near-monochrome scene unclear in overview. No native preference followup/admission."
+    },
+    {
+      "case_id": "train-220-restore-saturation-strong",
+      "reason": "Near-monochrome scene unclear in overview. No native preference followup/admission."
+    }
+  ],
+  "prior_numeric_diagnostic_exposure": true,
+  "candidate_mapping_known_during_native_followup": true,
+  "fully_blind_independent_review": false,
+  "new_positive_parameters": 0,
+  "new_photos": 0,
+  "new_original_requests": 0,
+  "training_launched": false
+}

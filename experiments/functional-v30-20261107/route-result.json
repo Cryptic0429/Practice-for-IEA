@@ -1,0 +1,620 @@
+{
+  "at": "2026-11-07T08:28:10.460424+00:00",
+  "protocol_sha256": "b95f1f0615c6c2c06cf019b5df418ad3f00f76e46993f973aea28648acb9f10a",
+  "guard_code_sha256": "c7f69112727334996a191a80711938c8779f6bd25f6ec303cd5c3fa554c3af71",
+  "rows": [
+    {
+      "id": "p215",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "zh",
+      "instruction": "整体收暗一点，保留肤色和背景亮处的过渡，不要让高光发灰。",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -1.3418034315109253,
+        "shadow_down": 0.09246174991130829,
+        "global_up": -1.8663450479507446,
+        "global_down": 5.456320762634277,
+        "defer": -2.339615821838379
+      }
+    },
+    {
+      "id": "p215",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "en",
+      "instruction": "Bring the whole portrait down a little, keeping natural skin and bright-background gradients without turning the highlights grey.",
+      "head": "defer",
+      "explicit": "global_down",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": 1.3177515268325806,
+        "shadow_down": -3.7484753131866455,
+        "global_up": -1.098115086555481,
+        "global_down": -2.1660096645355225,
+        "defer": 5.694602012634277
+      }
+    },
+    {
+      "id": "p355",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "zh",
+      "instruction": "整张照片稍微压暗，保留肤色、衣服亮处和草地颜色。",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -3.2762200832366943,
+        "shadow_down": 0.23295143246650696,
+        "global_up": -1.5046442747116089,
+        "global_down": 7.561661720275879,
+        "defer": -3.012871742248535
+      }
+    },
+    {
+      "id": "p355",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "en",
+      "instruction": "Slightly darken the whole photograph, retaining skin, bright clothing and the grass colours.",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -4.697169303894043,
+        "shadow_down": -0.40313616394996643,
+        "global_up": -0.3435589075088501,
+        "global_down": 9.029831886291504,
+        "defer": -3.586712121963501
+      }
+    },
+    {
+      "id": "p297",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "zh",
+      "instruction": "整幅照片轻轻调暗，人物的脸和建筑纹理仍能看清。",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -3.6429688930511475,
+        "shadow_down": -0.4811864197254181,
+        "global_up": -0.6891204714775085,
+        "global_down": 9.392097473144531,
+        "defer": -4.578144073486328
+      }
+    },
+    {
+      "id": "p297",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "en",
+      "instruction": "Gently darken the entire photograph, keeping the face and building texture readable.",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -3.947564125061035,
+        "shadow_down": -0.3352019488811493,
+        "global_up": -0.09856434166431427,
+        "global_down": 9.462899208068848,
+        "defer": -5.082223415374756
+      }
+    },
+    {
+      "id": "p162",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "zh",
+      "instruction": "整张照片明显压暗，受光背景和人物都要暗下来，五官仍能辨认。",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -2.205599784851074,
+        "shadow_down": -0.3534519374370575,
+        "global_up": -0.6838928461074829,
+        "global_down": 7.380855083465576,
+        "defer": -4.137009620666504
+      }
+    },
+    {
+      "id": "p162",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "en",
+      "instruction": "Noticeably darken the whole photograph, including the lit background and the person, while keeping facial features recognizable.",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -5.704466819763184,
+        "shadow_down": -0.03037816286087036,
+        "global_up": 1.2508471012115479,
+        "global_down": 11.57153034210205,
+        "defer": -7.088588714599609
+      }
+    },
+    {
+      "id": "p065",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "zh",
+      "instruction": "整张山丘风景稍微压暗，保住草纹和自然天空过渡。",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -2.2897284030914307,
+        "shadow_down": 0.49102023243904114,
+        "global_up": -1.8836686611175537,
+        "global_down": 7.02264404296875,
+        "defer": -3.3395004272460938
+      }
+    },
+    {
+      "id": "p065",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "en",
+      "instruction": "Darken the whole hillside scene slightly, preserving grass texture and a natural sky gradient.",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -1.9174138307571411,
+        "shadow_down": 0.4121910631656647,
+        "global_up": -0.9221324920654297,
+        "global_down": 7.845787525177002,
+        "defer": -5.419000625610352
+      }
+    },
+    {
+      "id": "p479",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "zh",
+      "instruction": "整体曝光明显降低，天空和林冠一起压暗，不能出现均匀灰块。",
+      "head": "global_down",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": -0.10808395594358444,
+        "shadow_down": -0.4264587461948395,
+        "global_up": -2.108062505722046,
+        "global_down": 3.710801362991333,
+        "defer": -1.067046046257019
+      }
+    },
+    {
+      "id": "p479",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "en",
+      "instruction": "Noticeably reduce the exposure of the entire scene, darkening the sky and forest together without a uniform grey block.",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -5.135905742645264,
+        "shadow_down": 0.9908230304718018,
+        "global_up": -0.07194653153419495,
+        "global_down": 9.883988380432129,
+        "defer": -5.667865753173828
+      }
+    },
+    {
+      "id": "p328",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "zh",
+      "instruction": "整张城市晚霞明显压暗，保留建筑轮廓和橙色云层的层次。",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": 1.7778114080429077,
+        "shadow_down": -1.3005332946777344,
+        "global_up": -0.9626669883728027,
+        "global_down": 3.8074989318847656,
+        "defer": -3.3209104537963867
+      }
+    },
+    {
+      "id": "p328",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "en",
+      "instruction": "Noticeably darken the whole city sunset, retaining the building shapes and layers in the orange clouds.",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -4.811121940612793,
+        "shadow_down": -0.3231333792209625,
+        "global_up": 1.0617961883544922,
+        "global_down": 11.22468376159668,
+        "defer": -7.15327262878418
+      }
+    },
+    {
+      "id": "p634",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "zh",
+      "instruction": "整张海面日落稍微压暗，保留太阳附近的亮度渐变和水纹。",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -0.7303348779678345,
+        "shadow_down": 0.27110353112220764,
+        "global_up": -2.3172850608825684,
+        "global_down": 5.533408164978027,
+        "defer": -2.7560832500457764
+      }
+    },
+    {
+      "id": "p634",
+      "cohort": "held_photo",
+      "expected": "global_down",
+      "language": "en",
+      "instruction": "Darken the whole sunset seascape slightly, preserving the gradient near the sun and the water texture.",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -0.8961526155471802,
+        "shadow_down": 0.755048930644989,
+        "global_up": -1.513366937637329,
+        "global_down": 6.267422676086426,
+        "defer": -4.61340856552124
+      }
+    },
+    {
+      "id": "highlight-only",
+      "cohort": "held_control",
+      "expected": "defer",
+      "language": "zh",
+      "instruction": "只压暗阳光照到的地方，树荫原样。",
+      "head": "shadow_down",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": 3.5950334072113037,
+        "shadow_down": 4.737176895141602,
+        "global_up": -4.314897060394287,
+        "global_down": -2.3039653301239014,
+        "defer": -1.7122766971588135
+      }
+    },
+    {
+      "id": "highlight-only",
+      "cohort": "held_control",
+      "expected": "defer",
+      "language": "en",
+      "instruction": "Only darken the sunlit areas; leave the shade unchanged.",
+      "head": "defer",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": 2.6543891429901123,
+        "shadow_down": 0.07565420866012573,
+        "global_up": -4.127903938293457,
+        "global_down": -2.354187250137329,
+        "defer": 3.7520322799682617
+      }
+    },
+    {
+      "id": "highlight-only-new",
+      "cohort": "held_control",
+      "expected": "defer",
+      "language": "zh",
+      "instruction": "最亮的部分亮度降一点，阴影别动。",
+      "head": "shadow_up",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": 2.250274658203125,
+        "shadow_down": -1.2235900163650513,
+        "global_up": -1.0997272729873657,
+        "global_down": -0.9347135424613953,
+        "defer": 1.0096217393875122
+      }
+    },
+    {
+      "id": "highlight-only-new",
+      "cohort": "held_control",
+      "expected": "defer",
+      "language": "en",
+      "instruction": "Lower only the brightest highlights without changing the shadows.",
+      "head": "defer",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": 0.5848758220672607,
+        "shadow_down": -3.3314313888549805,
+        "global_up": -1.7914212942123413,
+        "global_down": -3.636056423187256,
+        "defer": 8.17401123046875
+      }
+    },
+    {
+      "id": "darken-with-color",
+      "cohort": "held_control",
+      "expected": "defer",
+      "language": "zh",
+      "instruction": "整体压暗一点，再给画面加棕褐色。",
+      "head": "global_down",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": -8.095608711242676,
+        "shadow_down": 0.9053946733474731,
+        "global_up": -0.18495821952819824,
+        "global_down": 5.3587422370910645,
+        "defer": 2.0172107219696045
+      }
+    },
+    {
+      "id": "darken-with-color",
+      "cohort": "held_control",
+      "expected": "defer",
+      "language": "en",
+      "instruction": "Slightly darken the whole image and then add a sepia tone.",
+      "head": "defer",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": -9.870656967163086,
+        "shadow_down": 0.9916927218437195,
+        "global_up": 0.19630150496959686,
+        "global_down": 3.8736014366149902,
+        "defer": 4.8081793785095215
+      }
+    },
+    {
+      "id": "no-edit",
+      "cohort": "held_control",
+      "expected": "defer",
+      "language": "zh",
+      "instruction": "整张照片保持原样，曝光不用改。",
+      "head": "defer",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": -3.583383798599243,
+        "shadow_down": -0.8861588835716248,
+        "global_up": -3.6054911613464355,
+        "global_down": 0.00021716952323913574,
+        "defer": 8.074423789978027
+      }
+    },
+    {
+      "id": "no-edit",
+      "cohort": "held_control",
+      "expected": "defer",
+      "language": "en",
+      "instruction": "Leave the entire photo as it is, with no exposure change.",
+      "head": "defer",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": -3.1759896278381348,
+        "shadow_down": -0.3016635775566101,
+        "global_up": -3.991807460784912,
+        "global_down": 0.007515564560890198,
+        "defer": 7.459836483001709
+      }
+    },
+    {
+      "id": "global-up",
+      "cohort": "held_control",
+      "expected": "global_up",
+      "language": "zh",
+      "instruction": "整张图提高些亮度，保留阴影里的层次。",
+      "head": "shadow_up",
+      "explicit": "global_up",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": 4.776164531707764,
+        "shadow_down": -2.656559944152832,
+        "global_up": 3.248983144760132,
+        "global_down": -2.8731353282928467,
+        "defer": -2.4936869144439697
+      }
+    },
+    {
+      "id": "global-up",
+      "cohort": "held_control",
+      "expected": "global_up",
+      "language": "en",
+      "instruction": "Brighten the entire image while retaining detail in the shadows.",
+      "head": "shadow_up",
+      "explicit": "global_up",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": 4.732239723205566,
+        "shadow_down": -3.062959671020508,
+        "global_up": 3.901658773422241,
+        "global_down": -3.3245956897735596,
+        "defer": -2.2459616661071777
+      }
+    },
+    {
+      "id": "shadow-down",
+      "cohort": "held_control",
+      "expected": "shadow_down",
+      "language": "zh",
+      "instruction": "只把树下阴影压暗，亮天空不动。",
+      "head": "shadow_down",
+      "explicit": "shadow_down",
+      "guarded": "shadow_down",
+      "logits": {
+        "shadow_up": 2.003498077392578,
+        "shadow_down": 4.840219497680664,
+        "global_up": -5.037413120269775,
+        "global_down": -2.302715539932251,
+        "defer": 0.4979860782623291
+      }
+    },
+    {
+      "id": "shadow-down",
+      "cohort": "held_control",
+      "expected": "shadow_down",
+      "language": "en",
+      "instruction": "Darken only the shadows below the trees, leaving the bright sky alone.",
+      "head": "shadow_down",
+      "explicit": "shadow_down",
+      "guarded": "shadow_down",
+      "logits": {
+        "shadow_up": 3.5461466312408447,
+        "shadow_down": 8.83687686920166,
+        "global_up": -5.140789985656738,
+        "global_down": -2.1380863189697266,
+        "defer": -5.104921817779541
+      }
+    },
+    {
+      "id": "scope-conflict",
+      "cohort": "held_control",
+      "expected": "defer",
+      "language": "zh",
+      "instruction": "把阴影提亮，同时把整张照片调暗一些。",
+      "head": "defer",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": -3.5766725540161133,
+        "shadow_down": 1.308825969696045,
+        "global_up": -2.185251474380493,
+        "global_down": -2.3893659114837646,
+        "defer": 6.843654632568359
+      }
+    },
+    {
+      "id": "scope-conflict",
+      "cohort": "held_control",
+      "expected": "defer",
+      "language": "en",
+      "instruction": "Lift the shadows and also darken the whole photo a little.",
+      "head": "shadow_down",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": -5.2853593826293945,
+        "shadow_down": 5.300909519195557,
+        "global_up": -1.0691641569137573,
+        "global_down": -3.143810749053955,
+        "defer": 4.196691989898682
+      }
+    },
+    {
+      "id": "question",
+      "cohort": "held_control",
+      "expected": "defer",
+      "language": "zh",
+      "instruction": "要不要把全图曝光收一点？先告诉我你的看法。",
+      "head": "global_up",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": -1.5172204971313477,
+        "shadow_down": -4.4600090980529785,
+        "global_up": 3.2036447525024414,
+        "global_down": 0.31321924924850464,
+        "defer": 2.462679386138916
+      }
+    },
+    {
+      "id": "question",
+      "cohort": "held_control",
+      "expected": "defer",
+      "language": "en",
+      "instruction": "Should the exposure come down across the frame? Tell me what you think first.",
+      "head": "global_down",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": -1.100936770439148,
+        "shadow_down": 1.2481228113174438,
+        "global_up": -1.451283574104309,
+        "global_down": 4.160898208618164,
+        "defer": -2.8573338985443115
+      }
+    },
+    {
+      "id": "p021-global_down",
+      "cohort": "r29_regression",
+      "expected": "global_down",
+      "language": "zh",
+      "instruction": "整张毕业照偏亮，收一点整体曝光，别压没衣服纹理。",
+      "head": "global_up",
+      "explicit": "global_down",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": -1.8359284400939941,
+        "shadow_down": -1.7071261405944824,
+        "global_up": 3.6111063957214355,
+        "global_down": 2.1641006469726562,
+        "defer": -2.230496406555176
+      }
+    },
+    {
+      "id": "p021-global_down",
+      "cohort": "r29_regression",
+      "expected": "global_down",
+      "language": "en",
+      "instruction": "Take the entire graduation photo down a little in exposure, preserving clothing texture.",
+      "head": "global_down",
+      "explicit": "global_down",
+      "guarded": "global_down",
+      "logits": {
+        "shadow_up": -2.1298274993896484,
+        "shadow_down": 2.3338441848754883,
+        "global_up": -1.7666449546813965,
+        "global_down": 6.091882228851318,
+        "defer": -4.529670715332031
+      }
+    },
+    {
+      "id": "held-text-11",
+      "cohort": "r29_regression",
+      "expected": "defer",
+      "language": "zh",
+      "instruction": "只把阳光照到的地方压一点，树荫不用变。",
+      "head": "shadow_up",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": 3.8786182403564453,
+        "shadow_down": 0.593545138835907,
+        "global_up": -4.428776741027832,
+        "global_down": -2.652845621109009,
+        "defer": 2.6110453605651855
+      }
+    },
+    {
+      "id": "held-text-11",
+      "cohort": "r29_regression",
+      "expected": "defer",
+      "language": "en",
+      "instruction": "Tone down the sunlit areas only; keep the shade unchanged.",
+      "head": "shadow_up",
+      "explicit": "defer",
+      "guarded": "defer",
+      "logits": {
+        "shadow_up": 4.43904972076416,
+        "shadow_down": -1.9149953126907349,
+        "global_up": -2.2338054180145264,
+        "global_down": -2.7943882942199707,
+        "defer": 2.5041332244873047
+      }
+    }
+  ],
+  "GPU_hours": 0
+}

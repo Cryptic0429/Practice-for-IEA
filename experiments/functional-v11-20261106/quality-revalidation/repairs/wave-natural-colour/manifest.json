@@ -1,0 +1,59 @@
+{
+  "at": "2026-11-05T23:59:58.051546+00:00",
+  "case_id": "native-train-n190",
+  "instructions": {
+    "en": "Please add a lot of contrast and really enhance the colors.",
+    "zh": "请大幅提高对比度，并明显增强色彩。"
+  },
+  "candidates": [
+    {
+      "id": "native-train-n190-alt6",
+      "case_id": "native-train-n190",
+      "parameters": {
+        "exposure": -45,
+        "brightness": 45,
+        "contrast": 60,
+        "highlights": -20,
+        "shadows": 20,
+        "saturation": 5
+      },
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n190.png",
+        "sha256": "45981ce9a95460be520bf0033a83cdb9791c22ab7fd89e9b7e53de3532411bcf"
+      },
+      "output": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/repairs/wave-natural-colour/alt6.png",
+        "sha256": "7527bb49070fc49e9c87a68bc8e49a239772622863dfce296b3d426932e7cf77"
+      },
+      "status": "CPU_executed_not_viewed_not_admitted"
+    },
+    {
+      "id": "native-train-n190-alt7",
+      "case_id": "native-train-n190",
+      "parameters": {
+        "exposure": -50,
+        "brightness": 50,
+        "contrast": 55,
+        "highlights": -15,
+        "shadows": 35,
+        "saturation": 5
+      },
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n190.png",
+        "sha256": "45981ce9a95460be520bf0033a83cdb9791c22ab7fd89e9b7e53de3532411bcf"
+      },
+      "output": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/repairs/wave-natural-colour/alt7.png",
+        "sha256": "2668ae373f141c7094763bf0c2950602e6f2407545229ae43b7c16e86e1a7058"
+      },
+      "status": "CPU_executed_not_viewed_not_admitted"
+    }
+  ],
+  "panel": {
+    "path": "experiments/functional-v11-20261106/quality-revalidation/repairs/wave-natural-colour/panel.jpg",
+    "sha256": "3880d282b8e48126e8f2af116294c5f69b6c0ec246a1e08d874d503b62cf33ba"
+  },
+  "reason": "Compare lower extra saturation with the same strong tonal-contrast compensation. Earlier candidates and their original-pixel evidence remain separate; no new candidate is admitted before full review.",
+  "GPU_hours": 0,
+  "training_started": false
+}

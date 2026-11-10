@@ -1,0 +1,1020 @@
+{
+  "at": "2026-11-07T03:22:48.698002+00:00",
+  "selection_rule": "One case per native family, prioritizing nonacceptable final outcomes; lexicographic case ID breaks ties. Show both languages, never cherry-pick one language. Report only, not checkpoint selection.",
+  "model_id": "functional-v21-quality-20261205",
+  "controller_sha256": "838342a2167038589a91b646ad98432ec4749e698d4b29ad7f2b520b366a26da",
+  "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+  "records": [
+    {
+      "family": "brown_tone",
+      "case_id": "native-dev-001",
+      "instructions": {
+        "en": "Add sepia tones.",
+        "zh": "添加棕褐色色调。"
+      },
+      "panel": "experiments/functional-v21-20261107/report-panels/brown_tone.jpg",
+      "panel_sha256": "22323bb7162b50941327ab992b6aa3a8499b8cc150f2272423f830bb76f9271c",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-dev-001.png",
+        "sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522"
+      },
+      "results": {
+        "zh": {
+          "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-quality-e20/images/native-dev-001-zh.png",
+          "sha256": "0e3d70c726a9925f0de3febfa4f64bf03a29c75ebca9a56aae641bce0d14d299",
+          "status": "executed",
+          "assessment": {
+            "item_id": "837f4369a16010e3",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "An unmistakable overall brown/sepia rendering replaces the blue clothing/wall tones while the person, folds and overall light/dark layout remain. Existing bright curtain loss is not claimed restored.",
+            "case_id": "native-dev-001",
+            "image_sha256": "0e3d70c726a9925f0de3febfa4f64bf03a29c75ebca9a56aae641bce0d14d299",
+            "sheet": "experiments/functional-v20-20261107/review/native-development/old-qualified-checkpoints/native-dev-001-01.jpg",
+            "sheet_sha256": "2d133f3aaa82ec05ede8d5364e23ed0e0ebffc5fb00a408231ebf58f22a9a096",
+            "bundle": "old-qualified-checkpoints",
+            "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+            "observed_at": "2026-11-07T01:06:12.166142+00:00",
+            "prior_final_sources": [
+              {
+                "path": "experiments/functional-v20-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/last-e80/direct-review.json",
+                "sha256": "358fd4a09ee477bbafbdb7c75974034f65693f6d2b2d38effffbe17d72a60cca"
+              }
+            ],
+            "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained."
+          }
+        },
+        "en": {
+          "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-quality-e20/images/native-dev-001-en.png",
+          "sha256": "0f7a8490f92626f86bea05c3eeb95442740d2e973db017db7c9939085c70ce05",
+          "status": "executed",
+          "assessment": {
+            "item_id": "ca241270fa38b986",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "A clear brown/sepia treatment is visible while the person, folds and light/dark structure remain. Existing curtain whites are not claimed recovered.",
+            "case_id": "native-dev-001",
+            "image_sha256": "0f7a8490f92626f86bea05c3eeb95442740d2e973db017db7c9939085c70ce05",
+            "sheet": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/native-dev-001-01.jpg",
+            "sheet_sha256": "314c91d9f964af4fffcf08f77e4f0b878cff40759c97196132dc63e1fffcc776",
+            "bundle": "old-qualified-policies",
+            "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+            "observed_at": "2026-11-07T02:08:44.210870+00:00"
+          }
+        }
+      }
+    },
+    {
+      "family": "compound",
+      "case_id": "native-dev-011",
+      "instructions": {
+        "en": "increase contrast and brighten a bit, enhance colors",
+        "zh": "稍微提高对比度和亮度，并增强色彩。"
+      },
+      "panel": "experiments/functional-v21-20261107/report-panels/compound.jpg",
+      "panel_sha256": "e3c315c0a1de1a2826f0a996b39f90ac87e500a03b25045ac05cbd5011a18500",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-dev-011.png",
+        "sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35"
+      },
+      "results": {
+        "zh": {
+          "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-quality-e20/images/native-dev-011-zh.png",
+          "sha256": "051fed3d6fb2e93cbc2028ea0df4b77be5b6eaac30f5186b75b72ee8b522d2af",
+          "status": "executed",
+          "assessment": {
+            "item_id": "df799e1849fa2952",
+            "completion": "completed",
+            "quality": "minor_issue",
+            "evidence": "The whole960x1280 image has visible contrast, slight lightening and stronger colour, retaining sky and shirt texture. The already reddish facial shadows become more magenta/red and greens become quite strong; this is a minor colour-quality issue rather than a clean pass.",
+            "case_id": "native-dev-011",
+            "image_sha256": "051fed3d6fb2e93cbc2028ea0df4b77be5b6eaac30f5186b75b72ee8b522d2af",
+            "sheet": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/native-dev-011-01.jpg",
+            "sheet_sha256": "7149ea799bd6761b28b18b78dd998956f71bc71b4e5e6f72ad8076a919bb7a82",
+            "bundle": "old-qualified-policies",
+            "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+            "observed_at": "2026-11-07T02:08:44.212327+00:00",
+            "original_size_supplement": {
+              "item_id": "df799e1849fa2952",
+              "case_id": "native-dev-011",
+              "input_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+              "output_sha256": "051fed3d6fb2e93cbc2028ea0df4b77be5b6eaac30f5186b75b72ee8b522d2af",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "region": "whole",
+                  "path": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/candidate-e20-native-pixels/native-dev-011-INPUT-whole.png",
+                  "sha256": "d46474800c9103fe8f2534046860260a707cd0448bf5e757a76cd01b3994ccd4",
+                  "size": [
+                    960,
+                    1280
+                  ],
+                  "source": "data/training/functional-v6-20261105/inputs/native-dev-011.png",
+                  "source_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+                  "source_size": [
+                    960,
+                    1280
+                  ],
+                  "box": [
+                    0,
+                    0,
+                    960,
+                    1280
+                  ]
+                },
+                {
+                  "role": "df799e1849fa2952",
+                  "region": "whole",
+                  "path": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/candidate-e20-native-pixels/native-dev-011-df799e1849fa2952-whole.png",
+                  "sha256": "c1d410000487c3e0d7d23c188aa6d1d98c48f929f0ed01984b0eb46c18dac9fa",
+                  "size": [
+                    960,
+                    1280
+                  ],
+                  "source": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-e20/images/native-dev-011-zh.png",
+                  "source_sha256": "051fed3d6fb2e93cbc2028ea0df4b77be5b6eaac30f5186b75b72ee8b522d2af",
+                  "source_size": [
+                    960,
+                    1280
+                  ],
+                  "box": [
+                    0,
+                    0,
+                    960,
+                    1280
+                  ]
+                }
+              ],
+              "completion": "completed",
+              "quality": "minor_issue",
+              "evidence": "The whole960x1280 image has visible contrast, slight lightening and stronger colour, retaining sky and shirt texture. The already reddish facial shadows become more magenta/red and greens become quite strong; this is a minor colour-quality issue rather than a clean pass.",
+              "manifest_sha256": "aa766f2175cb2fbc7f26047527bdd39c19e3132f76b31dd772be7f22e8f864c0",
+              "reviewer": "Codex direct anonymous native-pixel AI review; not human",
+              "observed_at": "2026-11-07T02:14:23.616430+00:00",
+              "supplements_raw_contact_sheet": true,
+              "scope": "Native-pixel whole image or explicit integer regions, as listed; whole-frame context from the sheet. No denoising or recovered detail claim."
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "df799e1849fa2952",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "Lightening, contrast and stronger colour are visible. Strong green foliage and deep reddish facial shadows require native inspection before a clean quality pass.",
+              "case_id": "native-dev-011",
+              "image_sha256": "051fed3d6fb2e93cbc2028ea0df4b77be5b6eaac30f5186b75b72ee8b522d2af",
+              "sheet": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/native-dev-011-01.jpg",
+              "sheet_sha256": "7149ea799bd6761b28b18b78dd998956f71bc71b4e5e6f72ad8076a919bb7a82",
+              "bundle": "old-qualified-policies",
+              "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+              "observed_at": "2026-11-07T02:08:44.212327+00:00"
+            }
+          }
+        },
+        "en": {
+          "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-quality-e20/images/native-dev-011-en.png",
+          "sha256": "a1207d21202ca748b69fadc1ef971e14344fd1cfa5d9519095310bf7af987420",
+          "status": "executed",
+          "assessment": {
+            "item_id": "27713fb7cef0f5e5",
+            "completion": "completed",
+            "quality": "minor_issue",
+            "evidence": "Native whole-image comparison retains shirt texture and sky while slightly lightening and adding contrast/colour. The existing reddish facial shadows become more pronounced and foliage more intense; this minor colour issue prevents a clean quality pass.",
+            "case_id": "native-dev-011",
+            "image_sha256": "a1207d21202ca748b69fadc1ef971e14344fd1cfa5d9519095310bf7af987420",
+            "sheet": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/native-dev-011-01.jpg",
+            "sheet_sha256": "7149ea799bd6761b28b18b78dd998956f71bc71b4e5e6f72ad8076a919bb7a82",
+            "bundle": "old-qualified-policies",
+            "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+            "observed_at": "2026-11-07T02:08:44.212191+00:00",
+            "original_size_supplement": {
+              "item_id": "27713fb7cef0f5e5",
+              "case_id": "native-dev-011",
+              "input_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+              "output_sha256": "a1207d21202ca748b69fadc1ef971e14344fd1cfa5d9519095310bf7af987420",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "region": "whole",
+                  "path": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/candidate-e20-native-pixels/native-dev-011-INPUT-whole.png",
+                  "sha256": "d46474800c9103fe8f2534046860260a707cd0448bf5e757a76cd01b3994ccd4",
+                  "size": [
+                    960,
+                    1280
+                  ],
+                  "source": "data/training/functional-v6-20261105/inputs/native-dev-011.png",
+                  "source_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+                  "source_size": [
+                    960,
+                    1280
+                  ],
+                  "box": [
+                    0,
+                    0,
+                    960,
+                    1280
+                  ]
+                },
+                {
+                  "role": "27713fb7cef0f5e5",
+                  "region": "whole",
+                  "path": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/candidate-e20-native-pixels/native-dev-011-27713fb7cef0f5e5-whole.png",
+                  "sha256": "6862fffa766546d67a4caa6798a1da4da127af3e0e3883d0bbb23fb1abe919a7",
+                  "size": [
+                    960,
+                    1280
+                  ],
+                  "source": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-e20/images/native-dev-011-en.png",
+                  "source_sha256": "a1207d21202ca748b69fadc1ef971e14344fd1cfa5d9519095310bf7af987420",
+                  "source_size": [
+                    960,
+                    1280
+                  ],
+                  "box": [
+                    0,
+                    0,
+                    960,
+                    1280
+                  ]
+                }
+              ],
+              "completion": "completed",
+              "quality": "minor_issue",
+              "evidence": "Native whole-image comparison retains shirt texture and sky while slightly lightening and adding contrast/colour. The existing reddish facial shadows become more pronounced and foliage more intense; this minor colour issue prevents a clean quality pass.",
+              "manifest_sha256": "aa766f2175cb2fbc7f26047527bdd39c19e3132f76b31dd772be7f22e8f864c0",
+              "reviewer": "Codex direct anonymous native-pixel AI review; not human",
+              "observed_at": "2026-11-07T02:14:23.622328+00:00",
+              "supplements_raw_contact_sheet": true,
+              "scope": "Native-pixel whole image or explicit integer regions, as listed; whole-frame context from the sheet. No denoising or recovered detail claim."
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "27713fb7cef0f5e5",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "Lightening, contrast and stronger colour are visible. Strong green foliage and deep reddish facial shadows require native inspection before a clean quality pass.",
+              "case_id": "native-dev-011",
+              "image_sha256": "a1207d21202ca748b69fadc1ef971e14344fd1cfa5d9519095310bf7af987420",
+              "sheet": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/native-dev-011-01.jpg",
+              "sheet_sha256": "7149ea799bd6761b28b18b78dd998956f71bc71b4e5e6f72ad8076a919bb7a82",
+              "bundle": "old-qualified-policies",
+              "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+              "observed_at": "2026-11-07T02:08:44.212191+00:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "family": "contrast",
+      "case_id": "native-dev-023",
+      "instructions": {
+        "en": "increase contrast",
+        "zh": "提高对比度。"
+      },
+      "panel": "experiments/functional-v21-20261107/report-panels/contrast.jpg",
+      "panel_sha256": "4926a44a1b754bc69fd3901814d9b90feed38e81b0f1d7605c7467812bb1c93c",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-dev-023.png",
+        "sha256": "6087fd1bf1b7ccce9007289167fc9f26f42a4b8cef4dfe0a1e0eaf5fd2ce81d6"
+      },
+      "results": {
+        "zh": {
+          "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-quality-e20/images/native-dev-023-zh.png",
+          "sha256": "a90bb77ca6aa836dbd85545c6eb5c30ac5435e69f9b6d26dbc0d2e53693dc092",
+          "status": "executed",
+          "assessment": {
+            "item_id": "aa1fa5feba0cd744",
+            "completion": "completed",
+            "quality": "minor_issue",
+            "evidence": "All four overlapping native tiles covering1780x2046 were compared with the original. Face/shirt separation increases and skin/shirt texture remains. Dark hair loses some fine separation and the warm left cheek becomes more orange/red; this minor side effect prevents a clean quality pass.",
+            "case_id": "native-dev-023",
+            "image_sha256": "a90bb77ca6aa836dbd85545c6eb5c30ac5435e69f9b6d26dbc0d2e53693dc092",
+            "sheet": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/native-dev-023-01.jpg",
+            "sheet_sha256": "624970cf32d8e4794edfc05095125eff30675f707384286945d783047c52b1ec",
+            "bundle": "old-qualified-policies",
+            "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+            "observed_at": "2026-11-07T02:08:44.212934+00:00",
+            "original_size_supplement": {
+              "item_id": "aa1fa5feba0cd744",
+              "case_id": "native-dev-023",
+              "input_sha256": "6087fd1bf1b7ccce9007289167fc9f26f42a4b8cef4dfe0a1e0eaf5fd2ce81d6",
+              "output_sha256": "a90bb77ca6aa836dbd85545c6eb5c30ac5435e69f9b6d26dbc0d2e53693dc092",
+              "images": [
+                {
+                  "role": "INPUT",
+                  "region": "upper-left",
+                  "path": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/candidate-e20-native-pixels/native-dev-023-INPUT-upper-left.png",
+                  "sha256": "f040c9c74d0a5b2cb8074b7919e82d8c118bd7100a16498a3002849e2528cc8f",
+                  "size": [
+                    1000,
+                    1100
+                  ],
+                  "source": "data/training/functional-v6-20261105/inputs/native-dev-023.png",
+                  "source_sha256": "6087fd1bf1b7ccce9007289167fc9f26f42a4b8cef4dfe0a1e0eaf5fd2ce81d6",
+                  "source_size": [
+                    1780,
+                    2046
+                  ],
+                  "box": [
+                    0,
+                    0,
+                    1000,
+                    1100
+                  ]
+                },
+                {
+                  "role": "INPUT",
+                  "region": "upper-right",
+                  "path": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/candidate-e20-native-pixels/native-dev-023-INPUT-upper-right.png",
+                  "sha256": "a1dff183dd6005194f69b343cc81da8293834a3744f268ea60503cbb878db3a9",
+                  "size": [
+                    1000,
+                    1100
+                  ],
+                  "source": "data/training/functional-v6-20261105/inputs/native-dev-023.png",
+                  "source_sha256": "6087fd1bf1b7ccce9007289167fc9f26f42a4b8cef4dfe0a1e0eaf5fd2ce81d6",
+                  "source_size": [
+                    1780,
+                    2046
+                  ],
+                  "box": [
+                    780,
+                    0,
+                    1780,
+                    1100
+                  ]
+                },
+                {
+                  "role": "INPUT",
+                  "region": "lower-left",
+                  "path": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/candidate-e20-native-pixels/native-dev-023-INPUT-lower-left.png",
+                  "sha256": "64b72500daea4af96de2e4f86323e9b39ee57e1f2d7ab1b6a1229dea4846f3f5",
+                  "size": [
+                    1000,
+                    1100
+                  ],
+                  "source": "data/training/functional-v6-20261105/inputs/native-dev-023.png",
+                  "source_sha256": "6087fd1bf1b7ccce9007289167fc9f26f42a4b8cef4dfe0a1e0eaf5fd2ce81d6",
+                  "source_size": [
+                    1780,
+                    2046
+                  ],
+                  "box": [
+                    0,
+                    946,
+                    1000,
+                    2046
+                  ]
+                },
+                {
+                  "role": "INPUT",
+                  "region": "lower-right",
+                  "path": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/candidate-e20-native-pixels/native-dev-023-INPUT-lower-right.png",
+                  "sha256": "b4ec6a5389677b26e177e114f6d5d1a6a061b22bb32a8708f677a9cc014b2ed4",
+                  "size": [
+                    1000,
+                    1100
+                  ],
+                  "source": "data/training/functional-v6-20261105/inputs/native-dev-023.png",
+                  "source_sha256": "6087fd1bf1b7ccce9007289167fc9f26f42a4b8cef4dfe0a1e0eaf5fd2ce81d6",
+                  "source_size": [
+                    1780,
+                    2046
+                  ],
+                  "box": [
+                    780,
+                    946,
+                    1780,
+                    2046
+                  ]
+                },
+                {
+                  "role": "aa1fa5feba0cd744",
+                  "region": "upper-left",
+                  "path": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/candidate-e20-native-pixels/native-dev-023-aa1fa5feba0cd744-upper-left.png",
+                  "sha256": "f5d84e5818340c1ab89b64b36aa80b6b4f46461f854891ecd69083d1d7de9aae",
+                  "size": [
+                    1000,
+                    1100
+                  ],
+                  "source": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-e20/images/native-dev-023-zh.png",
+                  "source_sha256": "a90bb77ca6aa836dbd85545c6eb5c30ac5435e69f9b6d26dbc0d2e53693dc092",
+                  "source_size": [
+                    1780,
+                    2046
+                  ],
+                  "box": [
+                    0,
+                    0,
+                    1000,
+                    1100
+                  ]
+                },
+                {
+                  "role": "aa1fa5feba0cd744",
+                  "region": "upper-right",
+                  "path": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/candidate-e20-native-pixels/native-dev-023-aa1fa5feba0cd744-upper-right.png",
+                  "sha256": "fce19841637edff698ee6a051c25c91a3217705ebccf17c545c2bbed98b432b6",
+                  "size": [
+                    1000,
+                    1100
+                  ],
+                  "source": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-e20/images/native-dev-023-zh.png",
+                  "source_sha256": "a90bb77ca6aa836dbd85545c6eb5c30ac5435e69f9b6d26dbc0d2e53693dc092",
+                  "source_size": [
+                    1780,
+                    2046
+                  ],
+                  "box": [
+                    780,
+                    0,
+                    1780,
+                    1100
+                  ]
+                },
+                {
+                  "role": "aa1fa5feba0cd744",
+                  "region": "lower-left",
+                  "path": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/candidate-e20-native-pixels/native-dev-023-aa1fa5feba0cd744-lower-left.png",
+                  "sha256": "7d262220472b1e3b92d3df310cdd3d8de7abf3066bb864eee3c6ad7b3918fea7",
+                  "size": [
+                    1000,
+                    1100
+                  ],
+                  "source": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-e20/images/native-dev-023-zh.png",
+                  "source_sha256": "a90bb77ca6aa836dbd85545c6eb5c30ac5435e69f9b6d26dbc0d2e53693dc092",
+                  "source_size": [
+                    1780,
+                    2046
+                  ],
+                  "box": [
+                    0,
+                    946,
+                    1000,
+                    2046
+                  ]
+                },
+                {
+                  "role": "aa1fa5feba0cd744",
+                  "region": "lower-right",
+                  "path": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/candidate-e20-native-pixels/native-dev-023-aa1fa5feba0cd744-lower-right.png",
+                  "sha256": "d3adeade4a2ce948d1a1d7ba0dbfaad3fef3255b2b909e5b1d630f29b08b9a32",
+                  "size": [
+                    1000,
+                    1100
+                  ],
+                  "source": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-e20/images/native-dev-023-zh.png",
+                  "source_sha256": "a90bb77ca6aa836dbd85545c6eb5c30ac5435e69f9b6d26dbc0d2e53693dc092",
+                  "source_size": [
+                    1780,
+                    2046
+                  ],
+                  "box": [
+                    780,
+                    946,
+                    1780,
+                    2046
+                  ]
+                }
+              ],
+              "completion": "completed",
+              "quality": "minor_issue",
+              "evidence": "All four overlapping native tiles covering1780x2046 were compared with the original. Face/shirt separation increases and skin/shirt texture remains. Dark hair loses some fine separation and the warm left cheek becomes more orange/red; this minor side effect prevents a clean quality pass.",
+              "manifest_sha256": "aa766f2175cb2fbc7f26047527bdd39c19e3132f76b31dd772be7f22e8f864c0",
+              "reviewer": "Codex direct anonymous native-pixel AI review; not human",
+              "observed_at": "2026-11-07T02:17:38.660051+00:00",
+              "supplements_raw_contact_sheet": true,
+              "scope": "Native-pixel whole image or explicit integer regions, as listed; whole-frame context from the sheet. No denoising or recovered detail claim."
+            },
+            "raw_contact_sheet_assessment": {
+              "item_id": "aa1fa5feba0cd744",
+              "completion": "completed",
+              "quality": "uncertain",
+              "evidence": "The face and hair have stronger contrast. Orange/pink skin colour and darker hair require native inspection for added cast or crushed structure.",
+              "case_id": "native-dev-023",
+              "image_sha256": "a90bb77ca6aa836dbd85545c6eb5c30ac5435e69f9b6d26dbc0d2e53693dc092",
+              "sheet": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/native-dev-023-01.jpg",
+              "sheet_sha256": "624970cf32d8e4794edfc05095125eff30675f707384286945d783047c52b1ec",
+              "bundle": "old-qualified-policies",
+              "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+              "observed_at": "2026-11-07T02:08:44.212934+00:00"
+            }
+          }
+        },
+        "en": {
+          "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-quality-e20/images/native-dev-023-en.png",
+          "sha256": "e4acff71327b829d3343b4424bca96e97f3eed41033379c4f02cc81b364874a6",
+          "status": "executed",
+          "assessment": {
+            "item_id": "8bdd538748b5fb66",
+            "case_id": "native-dev-023",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "明暗对比增强，头发和领带更深，脸部更明亮；眼睛、牙齿和衬衫纹理仍可辨，未见明显新增大片过曝。",
+            "image_sha256": "e4acff71327b829d3343b4424bca96e97f3eed41033379c4f02cc81b364874a6",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-023-01.jpg",
+            "sheet_sha256": "1b29ad0c4cee8d710888ca199504a8b690151d2d713a33e70985c9a1629b59cf",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:46:51.554556+00:00",
+            "prior_final_observation_source": {
+              "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+              "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+            },
+            "reuse_policy": "Exact semantic/input/output key only. No new viewing or independent user approval; all final same-render disagreements retained.",
+            "prior_final_sources": [
+              {
+                "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e2/direct-review.json",
+                "sha256": "b32c4f1acba865c1db8a8471009abf7cbb81e09084db3fb0526a3b882cec89d2"
+              },
+              {
+                "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e2/direct-review.json",
+                "sha256": "b32c4f1acba865c1db8a8471009abf7cbb81e09084db3fb0526a3b882cec89d2"
+              },
+              {
+                "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "0363b6d160084489cca6cb21b6aafc0bd2dbd326c8c4149dea27aac6d65bcbee"
+              },
+              {
+                "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "0363b6d160084489cca6cb21b6aafc0bd2dbd326c8c4149dea27aac6d65bcbee"
+              },
+              {
+                "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "d0da4ab3d75ee9fafa0e391f1465967a6c1b4a4be0ac0ff88d37615677e185d9"
+              },
+              {
+                "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "d0da4ab3d75ee9fafa0e391f1465967a6c1b4a4be0ac0ff88d37615677e185d9"
+              },
+              {
+                "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-editor-replay/direct-review.json",
+                "sha256": "72db6467a71bdab72952d4a9a93adb287d9632cfa20337731a81f482c328e037"
+              },
+              {
+                "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-editor-replay/direct-review.json",
+                "sha256": "72db6467a71bdab72952d4a9a93adb287d9632cfa20337731a81f482c328e037"
+              },
+              {
+                "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "1be3ffd70c5180218aadae9eb69176d4b55c95551682cf5897d40c132ef3ff8e"
+              },
+              {
+                "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "1be3ffd70c5180218aadae9eb69176d4b55c95551682cf5897d40c132ef3ff8e"
+              },
+              {
+                "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-new-manual/direct-review.json",
+                "sha256": "8e830064e29c41295862b2c2eed6247a2b30e846f9f2db2068358f9a4fecc24e"
+              },
+              {
+                "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-new-manual/direct-review.json",
+                "sha256": "8e830064e29c41295862b2c2eed6247a2b30e846f9f2db2068358f9a4fecc24e"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e1/direct-review.json",
+                "sha256": "ab70f87bbc853eb67a6fa71cba7507556e1d9978367fc386b54d9851f9def722"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e1/direct-review.json",
+                "sha256": "ab70f87bbc853eb67a6fa71cba7507556e1d9978367fc386b54d9851f9def722"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e2/direct-review.json",
+                "sha256": "98f8445341457164bc41f99360850d1ced3ae6b03ab5efbf1818bae4efd5e6f2"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e2/direct-review.json",
+                "sha256": "98f8445341457164bc41f99360850d1ced3ae6b03ab5efbf1818bae4efd5e6f2"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "0e69faa3c9eef000bcc697f166315f9c29bb9d2ffa075114579b58fa87f00b72"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "0e69faa3c9eef000bcc697f166315f9c29bb9d2ffa075114579b58fa87f00b72"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "6b9e4290122a1b8f17ba1c800c3109530341d0b8bf23d70e2fa620c9e7e772bb"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "6b9e4290122a1b8f17ba1c800c3109530341d0b8bf23d70e2fa620c9e7e772bb"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/direct-review.json",
+                "sha256": "48b7a4b9a4c2cb9e712758ed5cb484cbc34b5565f6fd80abe2e7681ee2922116"
+              },
+              {
+                "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/direct-review.json",
+                "sha256": "48b7a4b9a4c2cb9e712758ed5cb484cbc34b5565f6fd80abe2e7681ee2922116"
+              },
+              {
+                "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/matched-narrow-e1/direct-review.json",
+                "sha256": "0e69faa3c9eef000bcc697f166315f9c29bb9d2ffa075114579b58fa87f00b72"
+              },
+              {
+                "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/matched-narrow-e1/direct-review.json",
+                "sha256": "0e69faa3c9eef000bcc697f166315f9c29bb9d2ffa075114579b58fa87f00b72"
+              },
+              {
+                "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/direct-review.json",
+                "sha256": "48b7a4b9a4c2cb9e712758ed5cb484cbc34b5565f6fd80abe2e7681ee2922116"
+              },
+              {
+                "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/parent-frozen/direct-review.json",
+                "sha256": "48b7a4b9a4c2cb9e712758ed5cb484cbc34b5565f6fd80abe2e7681ee2922116"
+              },
+              {
+                "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/visual-late4-e1/direct-review.json",
+                "sha256": "365fbadd1de080171b31f6e84186cc864cb8b6d20c83d0becf8076d843d0ef51"
+              },
+              {
+                "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/visual-late4-e1/direct-review.json",
+                "sha256": "365fbadd1de080171b31f6e84186cc864cb8b6d20c83d0becf8076d843d0ef51"
+              },
+              {
+                "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/visual-late4-e2/direct-review.json",
+                "sha256": "c4524efb56287dfaf3f3347d9cfb752b02f8e3045dbd2fb3d4d2dd678eee8b9d"
+              },
+              {
+                "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/visual-late4-e2/direct-review.json",
+                "sha256": "c4524efb56287dfaf3f3347d9cfb752b02f8e3045dbd2fb3d4d2dd678eee8b9d"
+              },
+              {
+                "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "4e714002d9bbf64e6496e96da27811b2b9d7cc3c26b7ddebb86668da6815222e"
+              },
+              {
+                "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "4e714002d9bbf64e6496e96da27811b2b9d7cc3c26b7ddebb86668da6815222e"
+              },
+              {
+                "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "c1ef8454e81931eb74e9a4a2bed5e51a5edec5274eea9fec38e2153989dd3655"
+              },
+              {
+                "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "c1ef8454e81931eb74e9a4a2bed5e51a5edec5274eea9fec38e2153989dd3655"
+              },
+              {
+                "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/parent-editor-only/direct-review.json",
+                "sha256": "b92423f23b54bdbda66b8202df86e2c8d14e61d7218399ca7436ba088ade882e"
+              },
+              {
+                "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/parent-editor-only/direct-review.json",
+                "sha256": "b92423f23b54bdbda66b8202df86e2c8d14e61d7218399ca7436ba088ade882e"
+              },
+              {
+                "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/counterfactual-rank-e1/direct-review.json",
+                "sha256": "932aebf7d54a93d151bd653e2738edc268aee4d6cf85915f2810aa4f9dc3b736"
+              },
+              {
+                "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/counterfactual-rank-e1/direct-review.json",
+                "sha256": "932aebf7d54a93d151bd653e2738edc268aee4d6cf85915f2810aa4f9dc3b736"
+              },
+              {
+                "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/counterfactual-rank-e2/direct-review.json",
+                "sha256": "932aebf7d54a93d151bd653e2738edc268aee4d6cf85915f2810aa4f9dc3b736"
+              },
+              {
+                "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/counterfactual-rank-e2/direct-review.json",
+                "sha256": "932aebf7d54a93d151bd653e2738edc268aee4d6cf85915f2810aa4f9dc3b736"
+              },
+              {
+                "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/matched-sft-e1/direct-review.json",
+                "sha256": "2fefc8f63b82dc766f1ca8b56b8da98ae3f24fd7f7e740b736f8d6239a58fdd6"
+              },
+              {
+                "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/matched-sft-e1/direct-review.json",
+                "sha256": "2fefc8f63b82dc766f1ca8b56b8da98ae3f24fd7f7e740b736f8d6239a58fdd6"
+              },
+              {
+                "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/matched-sft-e2/direct-review.json",
+                "sha256": "ba9888f0fd2350f54d928a05eee68c2fad6798dcd22d64c3166741910489477f"
+              },
+              {
+                "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/matched-sft-e2/direct-review.json",
+                "sha256": "ba9888f0fd2350f54d928a05eee68c2fad6798dcd22d64c3166741910489477f"
+              },
+              {
+                "path": "experiments/functional-v19-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/photometric-bridge-e1/direct-review.json",
+                "sha256": "646f11479d5c73743dde6cff4727f3021d24075cf7a6aa80c2c187f0be1d9f06"
+              },
+              {
+                "path": "experiments/functional-v19-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/photometric-bridge-e1/direct-review.json",
+                "sha256": "646f11479d5c73743dde6cff4727f3021d24075cf7a6aa80c2c187f0be1d9f06"
+              },
+              {
+                "path": "experiments/functional-v19-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/photometric-bridge-e2/direct-review.json",
+                "sha256": "46209bc4aadb90711f558cca93c7f2f09803ab1e044e3d401e03490bca154ba5"
+              },
+              {
+                "path": "experiments/functional-v19-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/photometric-bridge-e2/direct-review.json",
+                "sha256": "46209bc4aadb90711f558cca93c7f2f09803ab1e044e3d401e03490bca154ba5"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/current-default-new-runtime/direct-review.json",
+                "sha256": "34b3bca10a02ef966c61f827c90afd5872d7a569f965166db2d9f6cb4280e87b"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/current-default-new-runtime/direct-review.json",
+                "sha256": "34b3bca10a02ef966c61f827c90afd5872d7a569f965166db2d9f6cb4280e87b"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/editor-only-current-default/direct-review.json",
+                "sha256": "b92b7af4101ff5903adc6fc02d7536a9ffd6d232e98961ee8b997a6e164bfeb9"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/editor-only-current-default/direct-review.json",
+                "sha256": "b92b7af4101ff5903adc6fc02d7536a9ffd6d232e98961ee8b997a6e164bfeb9"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/editor-only-round6-parent/direct-review.json",
+                "sha256": "efb1c0fe671ce2968b3a35a1103aed707dc2c7e3821e2a76c8df39a492f99a32"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/editor-only-round6-parent/direct-review.json",
+                "sha256": "efb1c0fe671ce2968b3a35a1103aed707dc2c7e3821e2a76c8df39a492f99a32"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e1/direct-review.json",
+                "sha256": "e64dff254cb982516f3ce765b6fa912386df997f8df010f9886b777da0ec8dc2"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e1/direct-review.json",
+                "sha256": "e64dff254cb982516f3ce765b6fa912386df997f8df010f9886b777da0ec8dc2"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e2/direct-review.json",
+                "sha256": "19b00bc4c4bd093234cb543e3f5361124e65d78745f532769617b7be7d689aac"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e2/direct-review.json",
+                "sha256": "19b00bc4c4bd093234cb543e3f5361124e65d78745f532769617b7be7d689aac"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e3/direct-review.json",
+                "sha256": "6da04f2cc97fe13d8d3270eba79ff6ec07a346534749f3478506106b6c2a373f"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e3/direct-review.json",
+                "sha256": "6da04f2cc97fe13d8d3270eba79ff6ec07a346534749f3478506106b6c2a373f"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e4/direct-review.json",
+                "sha256": "191ac855e99359e2b0afb673c51a651018c3200b4cbbbdd2af90751f73b9b50e"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e4/direct-review.json",
+                "sha256": "191ac855e99359e2b0afb673c51a651018c3200b4cbbbdd2af90751f73b9b50e"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "bf562d2f568a39752a85126bdd12c84ffa717566fd30d100875360346cf27cc6"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e1/direct-review.json",
+                "sha256": "bf562d2f568a39752a85126bdd12c84ffa717566fd30d100875360346cf27cc6"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "61cd36ac9f3e300253e32c2aecb9b51ac773b5e678954e4d4174c7ad98209c78"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e2/direct-review.json",
+                "sha256": "61cd36ac9f3e300253e32c2aecb9b51ac773b5e678954e4d4174c7ad98209c78"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e3/direct-review.json",
+                "sha256": "d99173142207e387d9f21d4377b4c42aff63c9f63993b2f2305130a74a0b33f7"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e3/direct-review.json",
+                "sha256": "d99173142207e387d9f21d4377b4c42aff63c9f63993b2f2305130a74a0b33f7"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e4/direct-review.json",
+                "sha256": "353dc90db9ce6bea5197382a648c4bc53feb4623bba9a267feb5c5a334805b0f"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e4/direct-review.json",
+                "sha256": "353dc90db9ce6bea5197382a648c4bc53feb4623bba9a267feb5c5a334805b0f"
+              },
+              {
+                "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/round6-parent-new-runtime/direct-review.json",
+                "sha256": "565b20260b00b1dbedd54bc37651b61cb0092a2f8c6ef9ce940110f9f24265b4"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e1/direct-review.json",
+                "sha256": "6344490853ccb61277837f5b609f0ae7d194d8ae9202f726f61f306783f1be3b"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e1/direct-review.json",
+                "sha256": "6344490853ccb61277837f5b609f0ae7d194d8ae9202f726f61f306783f1be3b"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e2/direct-review.json",
+                "sha256": "1581487f2404341c209f2257eb597551e8e06742fbd12ed68cf19264881fcc02"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e2/direct-review.json",
+                "sha256": "1581487f2404341c209f2257eb597551e8e06742fbd12ed68cf19264881fcc02"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e3/direct-review.json",
+                "sha256": "136fa189f7facb733f2eafc68cd54384fa5b8d1a7709581c2f38cd68493fc5c6"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e3/direct-review.json",
+                "sha256": "136fa189f7facb733f2eafc68cd54384fa5b8d1a7709581c2f38cd68493fc5c6"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e4/direct-review.json",
+                "sha256": "e4a7c215ba05b3c7d74a7335ca303d10819ea211bd558b18a39570c704955f1c"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e4/direct-review.json",
+                "sha256": "e4a7c215ba05b3c7d74a7335ca303d10819ea211bd558b18a39570c704955f1c"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e1/direct-review.json",
+                "sha256": "4ca127cb31a0728240a270374b9564cfc96a475bb76fb20c9e147017b513ce54"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e1/direct-review.json",
+                "sha256": "4ca127cb31a0728240a270374b9564cfc96a475bb76fb20c9e147017b513ce54"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/direct-review.json",
+                "sha256": "e842eabd355ca5f170382ccdcf7e70fa21ce439551c1f8ff67f23b2edbe0e81d"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e2/direct-review.json",
+                "sha256": "e842eabd355ca5f170382ccdcf7e70fa21ce439551c1f8ff67f23b2edbe0e81d"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e3/direct-review.json",
+                "sha256": "714b90e53f8a781d0fa2f4189ba432f198a66ecebb3686a071d9cba104821401"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e3/direct-review.json",
+                "sha256": "714b90e53f8a781d0fa2f4189ba432f198a66ecebb3686a071d9cba104821401"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e4/direct-review.json",
+                "sha256": "e656c4488491636743b027c46e5921a04ea32cdb6f7a5c05efef61582bfb9946"
+              },
+              {
+                "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e4/direct-review.json",
+                "sha256": "e656c4488491636743b027c46e5921a04ea32cdb6f7a5c05efef61582bfb9946"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "family": "lighting",
+      "case_id": "native-dev-070",
+      "instructions": {
+        "en": "increase the brightness a lot",
+        "zh": "大幅提高亮度。"
+      },
+      "panel": "experiments/functional-v21-20261107/report-panels/lighting.jpg",
+      "panel_sha256": "d79ec4d31e1e4fb7e485af1ef6189bb6782b50b34239e20b6cf22744a41b45a0",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-dev-070.png",
+        "sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a"
+      },
+      "results": {
+        "zh": {
+          "path": null,
+          "sha256": null,
+          "status": "declined",
+          "assessment": {
+            "completion": "failed",
+            "quality": "uncertain",
+            "evidence": "No executable edit was produced."
+          }
+        },
+        "en": {
+          "path": null,
+          "sha256": null,
+          "status": "declined",
+          "assessment": {
+            "completion": "failed",
+            "quality": "uncertain",
+            "evidence": "No executable edit was produced."
+          }
+        }
+      }
+    },
+    {
+      "family": "saturation",
+      "case_id": "native-dev-004",
+      "instructions": {
+        "en": "Enhance the colors and make them more vivid and powerful",
+        "zh": "增强色彩，让颜色更鲜明、更有表现力。"
+      },
+      "panel": "experiments/functional-v21-20261107/report-panels/saturation.jpg",
+      "panel_sha256": "26d36d6dcdfc0daa26827cbfe5d4396a14e27ffbae952ce8b51158f306d3a0c9",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-dev-004.png",
+        "sha256": "e6cfe40c8db2b706255ac92b158c9bce2aee1ef901b263149c943c9259a2208b"
+      },
+      "results": {
+        "zh": {
+          "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-quality-e20/images/native-dev-004-zh.png",
+          "sha256": "e3d22e7792daa64604e2b255021c0e555f7305ce6c66c003e8865b659011d0c8",
+          "status": "executed",
+          "assessment": {
+            "item_id": "ed37789bc76bb6ae",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "Foliage and sky gain visible colour while clouds, mountain shapes and the entire frame remain without obvious fluorescent colour.",
+            "case_id": "native-dev-004",
+            "image_sha256": "e3d22e7792daa64604e2b255021c0e555f7305ce6c66c003e8865b659011d0c8",
+            "sheet": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/native-dev-004-01.jpg",
+            "sheet_sha256": "09250d8e06d95cbeaf39a257e17489c4551b845da306b82f40e41e6559e22ed6",
+            "bundle": "old-qualified-policies",
+            "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+            "observed_at": "2026-11-07T02:08:44.211639+00:00"
+          }
+        },
+        "en": {
+          "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-quality-e20/images/native-dev-004-en.png",
+          "sha256": "fa11bb660e569aaf5147766d942296640ba509d496adec63a75332d681c6de0e",
+          "status": "executed",
+          "assessment": {
+            "item_id": "1f4d07fff23bb4bc",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "Foliage and sky gain visible colour while clouds, mountain shapes and the entire frame remain without obvious fluorescent colour.",
+            "case_id": "native-dev-004",
+            "image_sha256": "fa11bb660e569aaf5147766d942296640ba509d496adec63a75332d681c6de0e",
+            "sheet": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/native-dev-004-01.jpg",
+            "sheet_sha256": "09250d8e06d95cbeaf39a257e17489c4551b845da306b82f40e41e6559e22ed6",
+            "bundle": "old-qualified-policies",
+            "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+            "observed_at": "2026-11-07T02:08:44.211511+00:00"
+          }
+        }
+      }
+    },
+    {
+      "family": "white_balance",
+      "case_id": "native-dev-006",
+      "instructions": {
+        "en": "Decrease brown tone in the image, please",
+        "zh": "请减弱照片中的棕色调。"
+      },
+      "panel": "experiments/functional-v21-20261107/report-panels/white_balance.jpg",
+      "panel_sha256": "1d4990a940ca14627958edcc382d785bcfe68cf834fc4d0aa92391173c28ba68",
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-dev-006.png",
+        "sha256": "f0db39319b99f7c082dcd8aadfa146be979a9f774a2fe5b04bf7dc6f516e5ddb"
+      },
+      "results": {
+        "zh": {
+          "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-quality-e20/images/native-dev-006-zh.png",
+          "sha256": "baff32232266513eed5ba305f745478e1971ae60619178890f88252dbd739ae4",
+          "status": "executed",
+          "assessment": {
+            "item_id": "c560c0044516c0ac",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "The warm brown cast is visibly reduced; refrigerator and walls look more neutral while faces remain plausible without an excessive cyan cast.",
+            "case_id": "native-dev-006",
+            "image_sha256": "baff32232266513eed5ba305f745478e1971ae60619178890f88252dbd739ae4",
+            "sheet": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/native-dev-006-01.jpg",
+            "sheet_sha256": "d1d39a831d383078ac0e6bc82cad01e0bb77b72510fed73f47f8d174ae527eb5",
+            "bundle": "old-qualified-policies",
+            "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+            "observed_at": "2026-11-07T02:08:44.211824+00:00"
+          }
+        },
+        "en": {
+          "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/magnitude-quality-e20/images/native-dev-006-en.png",
+          "sha256": "674a1787273d1851d3963c17c38c26b2390576c57ab08e1282149f3e5828bc76",
+          "status": "executed",
+          "assessment": {
+            "item_id": "d8f234f70722405d",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "The warm brown cast is visibly reduced; refrigerator and walls look more neutral while faces remain plausible without an excessive cyan cast.",
+            "case_id": "native-dev-006",
+            "image_sha256": "674a1787273d1851d3963c17c38c26b2390576c57ab08e1282149f3e5828bc76",
+            "sheet": "experiments/functional-v21-20261107/review/native-development/old-qualified-policies/native-dev-006-01.jpg",
+            "sheet_sha256": "d1d39a831d383078ac0e6bc82cad01e0bb77b72510fed73f47f8d174ae527eb5",
+            "bundle": "old-qualified-policies",
+            "reviewer": "Codex direct anonymous visual AI review; not human/user feedback",
+            "observed_at": "2026-11-07T02:08:44.211882+00:00"
+          }
+        }
+      }
+    }
+  ],
+  "new_assessments": 0,
+  "GPU_calls": 0
+}

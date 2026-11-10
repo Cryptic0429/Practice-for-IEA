@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-06T21:16:43.094696+00:00",
+  "status": "passed",
+  "source": "Observed remote exec session56311 exit0",
+  "command": "PYTHONPATH=scripts CUDA_VISIBLE_DEVICES= envs/iea-rl/bin/python -m functional_v18.test_objective",
+  "checks": [
+    "independent causal assistant masking",
+    "independent CE identity",
+    "chosen/rejected gradient signs",
+    "equal mean score invariant for unequal candidate lengths",
+    "finite objective"
+  ],
+  "code_hashes": {
+    "scripts/functional_v18/test_objective.py": "a6c82f8de8de7cd62c065a8971ad79fcaa439d712525c906b302ff4980a45e79",
+    "scripts/functional_v18/objective.py": "be265ffa602ada33b2888bb9dcaca2064b90cceb590b6690916aee640cf6a458"
+  },
+  "GPU_calls": 0,
+  "optimizer_steps": 0
+}

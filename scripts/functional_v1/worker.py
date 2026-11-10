@@ -73,7 +73,8 @@ class Engine:
                     '--query-gpu=memory.used','--format=csv,noheader,nounits'],text=True).strip())
                 if used >= 512:
                     raise RuntimeError('GPU正在运行本轮实验，当前任务结束后可以继续试用。')
-                self.process = subprocess.Popen([sys.executable, '-u', '-m', 'functional_v1.gpu_child',
+                child_module = {'functional_v7': 'functional_v7.gpu_child', 'functional_v9': 'functional_v9.gpu_child', 'functional_v10': 'functional_v10.gpu_child', 'functional_v11': 'functional_v11.gpu_child', 'functional_v12': 'functional_v12.gpu_child', 'functional_v13': 'functional_v13.gpu_child', 'functional_v14': 'functional_v14.gpu_child', 'functional_v15': 'functional_v15.gpu_child', 'functional_v18': 'functional_v18.gpu_child', 'functional_v19': 'functional_v19.gpu_child', 'functional_v20': 'functional_v20.gpu_child', 'functional_v21': 'functional_v21.gpu_child', 'functional_v22': 'functional_v22.gpu_child', 'functional_v23': 'functional_v23.gpu_child'}.get(spec.get('runtime_family'), 'functional_v1.gpu_child')
+                self.process = subprocess.Popen([sys.executable, '-u', '-m', child_module,
                     '--gpu', self.gpu, '--model', spec['id']], stdin=subprocess.PIPE, stdout=subprocess.PIPE,
                     text=True, bufsize=1)
                 try:

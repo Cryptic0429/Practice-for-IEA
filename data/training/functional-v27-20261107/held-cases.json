@@ -1,0 +1,626 @@
+[
+  {
+    "id": "p346",
+    "domain": "portrait",
+    "cohort": "new_source_test",
+    "requests": {
+      "mild": {
+        "zh": "给暗侧一点点提亮。重点看面部暗侧与头发，保留原肤色和窗边亮部。",
+        "en": "Open the shadows a touch around the shadow side of the face and the hair, preserving skin colour and the bright window area."
+      },
+      "strong": {
+        "zh": "把暗侧抬亮得明显一些。重点看面部暗侧与头发，保留原肤色和窗边亮部。",
+        "en": "Raise the dark areas noticeably around the shadow side of the face and the hair, preserving skin colour and the bright window area."
+      }
+    },
+    "focus": {
+      "zh": "面部暗侧与头发，保留原肤色和窗边亮部",
+      "en": "the shadow side of the face and the hair, preserving skin colour and the bright window area"
+    },
+    "crop_center_fraction": [
+      0.46,
+      0.28
+    ],
+    "image": "data/training/functional-v27-20261107/held-inputs/p346.jpg",
+    "image_sha256": "b6f3a67f1de9a422a832d233802788a32cad8f0960ba32259ddf94af4d8aaede",
+    "group_id": "c5986dc5d95acc8168e39e6b73c709557c1ade443a721ec7331edfa4cb3ddf43",
+    "variants": [
+      {
+        "id": "v1",
+        "path": "experiments/functional-v27-20261107/held/candidates/p346-1.png",
+        "sha256": "c035fab3599adc2f7a0c2eeb39988eb427f5491d2f08d07ba89584624543d4ae",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 38
+          }
+        }
+      },
+      {
+        "id": "v2",
+        "path": "experiments/functional-v27-20261107/held/candidates/p346-2.png",
+        "sha256": "d41f7e114da9469818ed1e7600d97b324798686df923bdc3bbbebf84cd033147",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 77
+          }
+        }
+      },
+      {
+        "id": "v3",
+        "path": "experiments/functional-v27-20261107/held/candidates/p346-3.png",
+        "sha256": "f5a64963e4454a5f3e81d1b35f34cdede39934d2b890b02dc2e446409d5d8a4e",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 60
+          }
+        }
+      }
+    ],
+    "labels": {
+      "mild": [
+        "complete",
+        "partial",
+        "failed"
+      ],
+      "strong": [
+        "partial",
+        "complete",
+        "failed"
+      ]
+    },
+    "evidence": "轻档打开眼侧和发丝，强档让脸暗侧更可读，原肤色和窗边亮部仍在。全局曝光使亮区纹理反差更弱、面部受光侧偏粉。",
+    "panels": {
+      "experiments/functional-v27-20261107/held/p346.png": "0fc87b548484f4bd88c027d9795ddb281e6e6e3eb6f38565f7eb5e8f6dd2b5ba",
+      "experiments/functional-v27-20261107/held/p346-window.png": "a075e3ef391b2c2fd0682c10cedb0d983c573d9df3e9a5064d15e64991045f7c"
+    }
+  },
+  {
+    "id": "p377",
+    "domain": "portrait",
+    "cohort": "new_source_test",
+    "requests": {
+      "mild": {
+        "zh": "轻微打开阴影。重点看脸的暗侧与西装，保留受光侧的肤色和深色背景。",
+        "en": "Give the shadows a subtle lift around the shadowed cheek and suit, retaining the lit skin tone and the dark backdrop."
+      },
+      "strong": {
+        "zh": "大幅抬亮阴影。重点看脸的暗侧与西装，保留受光侧的肤色和深色背景。",
+        "en": "Give the shadows a pronounced lift around the shadowed cheek and suit, retaining the lit skin tone and the dark backdrop."
+      }
+    },
+    "focus": {
+      "zh": "脸的暗侧与西装，保留受光侧的肤色和深色背景",
+      "en": "the shadowed cheek and suit, retaining the lit skin tone and the dark backdrop"
+    },
+    "crop_center_fraction": [
+      0.59,
+      0.36
+    ],
+    "image": "data/training/functional-v27-20261107/held-inputs/p377.jpg",
+    "image_sha256": "bb7bd24e49cb153d204fd5f25c5e9dfd23980ff9ec2eef6e5acdc64dd1ab1334",
+    "group_id": "42ae4f43e52bacd555ee62193b28b58362368493d83d804205d96ef32d3be867",
+    "variants": [
+      {
+        "id": "v1",
+        "path": "experiments/functional-v27-20261107/held/candidates/p377-1.png",
+        "sha256": "982c47de25304984fdea7bf73ce715aad9ef3458aeb3de382f0e70a0341a8f36",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 38
+          }
+        }
+      },
+      {
+        "id": "v2",
+        "path": "experiments/functional-v27-20261107/held/candidates/p377-2.png",
+        "sha256": "2a6ec71e3770162fa7908438cabfcfe9a8a2f33f58be40cb33958e1174feb17c",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 77
+          }
+        }
+      },
+      {
+        "id": "v3",
+        "path": "experiments/functional-v27-20261107/held/candidates/p377-3.png",
+        "sha256": "a49fcf6153469493490144018aab4bf1d0784150d86b9c70eda0d21fa19bd35d",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 60
+          }
+        }
+      }
+    ],
+    "labels": {
+      "mild": [
+        "complete",
+        "partial",
+        "failed"
+      ],
+      "strong": [
+        "partial",
+        "uncertain",
+        "failed"
+      ]
+    },
+    "evidence": "轻档保住暗背景，西装纹理略清楚。强档能看见更多衣纹，但同一原像素裁图中紫色颗粒亦更明显，保留为不确定。全局曝光还明显改变已受光的肤色。",
+    "panels": {
+      "experiments/functional-v27-20261107/held/p377.png": "6c35378b3e8f2a6a5cebc4839e1e0c7ab55eb9d39e820b1eeea6715b8c78f8f7",
+      "experiments/functional-v27-20261107/held/p377-suit.png": "687bfe672c1b61e559847355ec9e9c538e798f8f4423ae6b526bbc4b19bbd8d7"
+    }
+  },
+  {
+    "id": "p150",
+    "domain": "portrait",
+    "cohort": "new_source_test",
+    "requests": {
+      "mild": {
+        "zh": "微微抬亮暗处。重点看室内人像的脸和深色发丝，保留灯饰高光和白色衣服。",
+        "en": "Brighten the dark parts by a hint around the face and dark hair, keeping the lamp highlights and the white clothing."
+      },
+      "strong": {
+        "zh": "暗处需要有看得出的提亮。重点看室内人像的脸和深色发丝，保留灯饰高光和白色衣服。",
+        "en": "Lift the shadows until the dark detail stands out around the face and dark hair, keeping the lamp highlights and the white clothing."
+      }
+    },
+    "focus": {
+      "zh": "室内人像的脸和深色发丝，保留灯饰高光和白色衣服",
+      "en": "the face and dark hair, keeping the lamp highlights and the white clothing"
+    },
+    "crop_center_fraction": [
+      0.6,
+      0.4
+    ],
+    "image": "data/training/functional-v27-20261107/held-inputs/p150.jpg",
+    "image_sha256": "c6053df129957bbfbf90752f7e83326a1a7bff44ee8e08f90adbf46492e1a71e",
+    "group_id": "cfb60024a15560a22334719005cc6938fb40e866f5e92b041606c561c23d1a21",
+    "variants": [
+      {
+        "id": "v1",
+        "path": "experiments/functional-v27-20261107/held/candidates/p150-1.png",
+        "sha256": "9b6d3157aafadf7dd5913355e96fc0a6609a3a2d1045edd3bf8a72ba6b24fcc2",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 38
+          }
+        }
+      },
+      {
+        "id": "v2",
+        "path": "experiments/functional-v27-20261107/held/candidates/p150-2.png",
+        "sha256": "1d626e2573a510e8f8c34ca733fb32083931f1f5d259cc3a9fb29fa66ead1a07",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 77
+          }
+        }
+      },
+      {
+        "id": "v3",
+        "path": "experiments/functional-v27-20261107/held/candidates/p150-3.png",
+        "sha256": "9837f18ee84ee770d44daafe22c3611cf8e846d3f71cf606e73241fa5206adc8",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 60
+          }
+        }
+      }
+    ],
+    "labels": {
+      "mild": [
+        "complete",
+        "partial",
+        "failed"
+      ],
+      "strong": [
+        "partial",
+        "complete",
+        "failed"
+      ]
+    },
+    "evidence": "轻档温和打开脸暗面，明显档的眼周与深发更清楚，灯和白衣层次仍在。全局曝光明显抬高肩部与室内亮面，偏离保亮部要求。",
+    "panels": {
+      "experiments/functional-v27-20261107/held/p150.png": "efb24d71dfeb6bcfcc5d2cf04122229a353ad8b6854750e690a37e53ae317e32",
+      "experiments/functional-v27-20261107/held/p150-face.png": "9b9ccc8e3c2f19fae2914997ad251063af5109eb7aea8048ffc6475564aac280"
+    }
+  },
+  {
+    "id": "p358",
+    "domain": "portrait",
+    "cohort": "new_source_test",
+    "requests": {
+      "mild": {
+        "zh": "略微提亮暗部。重点看户外合照中几个人的脸和深色衣服，保留天空和白裙层次。",
+        "en": "Slightly brighten the shadows around faces and dark clothing in the group, keeping the sky and white dress detail."
+      },
+      "strong": {
+        "zh": "明显打开暗部。重点看户外合照中几个人的脸和深色衣服，保留天空和白裙层次。",
+        "en": "Give a marked lift to the shadows around faces and dark clothing in the group, keeping the sky and white dress detail."
+      }
+    },
+    "focus": {
+      "zh": "户外合照中几个人的脸和深色衣服，保留天空和白裙层次",
+      "en": "faces and dark clothing in the group, keeping the sky and white dress detail"
+    },
+    "crop_center_fraction": [
+      0.62,
+      0.54
+    ],
+    "image": "data/training/functional-v27-20261107/held-inputs/p358.jpg",
+    "image_sha256": "9790b3049121165f3d7b0625b7dd54f0dba0a0b5596140793bbfed73b701f5b1",
+    "group_id": "0507a029d5eb2e894cd2b0952a721c83f34c3be232f793cc3207d0ce68145048",
+    "variants": [
+      {
+        "id": "v1",
+        "path": "experiments/functional-v27-20261107/held/candidates/p358-1.png",
+        "sha256": "e4b6e5dca0a09d4991d5a74097054b769a5f8ff6b0e2d76da1e1e84bb3cddcd4",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 38
+          }
+        }
+      },
+      {
+        "id": "v2",
+        "path": "experiments/functional-v27-20261107/held/candidates/p358-2.png",
+        "sha256": "7f4221731f97131c7d407eba30c55750f0355ebdc52c19552e8d296c9533aa1f",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 77
+          }
+        }
+      },
+      {
+        "id": "v3",
+        "path": "experiments/functional-v27-20261107/held/candidates/p358-3.png",
+        "sha256": "b3deff2c324f2140a184763531b12fc1539474c75f925a4bceb37d0ec081e988",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 60
+          }
+        }
+      }
+    ],
+    "labels": {
+      "mild": [
+        "complete",
+        "partial",
+        "failed"
+      ],
+      "strong": [
+        "partial",
+        "complete",
+        "partial"
+      ]
+    },
+    "evidence": "轻档暗面只略开，明显档西装与脸侧可辨且保天空和裙褶。全局曝光让草地、皮肤和天空亮区都变化，强档仍保有一部分衣纹和层次。",
+    "panels": {
+      "experiments/functional-v27-20261107/held/p358.png": "10529f2bd8b5f2ba2036a40b4397d9cb01ebc450d7dddb483d1d84d7bea2a6c4",
+      "experiments/functional-v27-20261107/held/p358-faces.png": "7c5fd68e55940163dea8924ff126fbf7a26436f9450e067491f93aa93d0ffed7"
+    }
+  },
+  {
+    "id": "p357",
+    "domain": "landscape",
+    "cohort": "new_source_test",
+    "requests": {
+      "mild": {
+        "zh": "轻轻提亮暗部。重点看海滩前景和湿沙，保留海面及黄昏天色。",
+        "en": "Gently brighten the dark tones around the foreground beach and wet sand, retaining the sea and evening sky colours."
+      },
+      "strong": {
+        "zh": "显著提亮暗部。重点看海滩前景和湿沙，保留海面及黄昏天色。",
+        "en": "Give the dark areas a clear lift around the foreground beach and wet sand, retaining the sea and evening sky colours."
+      }
+    },
+    "focus": {
+      "zh": "海滩前景和湿沙，保留海面及黄昏天色",
+      "en": "the foreground beach and wet sand, retaining the sea and evening sky colours"
+    },
+    "crop_center_fraction": [
+      0.65,
+      0.68
+    ],
+    "image": "data/training/functional-v27-20261107/held-inputs/p357.jpg",
+    "image_sha256": "02ce53095ca969bd5036300cafabff88996b247602bc0183a7e9fc580a9dd5ec",
+    "group_id": "79c5597cb20c3d578a5657b25941ba466c7a3677432c207fbd0f710e6a58663d",
+    "variants": [
+      {
+        "id": "v1",
+        "path": "experiments/functional-v27-20261107/held/candidates/p357-1.png",
+        "sha256": "93fcaaf30510aea5035a925a9aa243fe6d1079d74485b3c2c3fca0b2da10ae36",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 38
+          }
+        }
+      },
+      {
+        "id": "v2",
+        "path": "experiments/functional-v27-20261107/held/candidates/p357-2.png",
+        "sha256": "a9d0ceb9285ee370f094c84ffe246aee10fd8938dd1af0d3364266c7ecdad9ac",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 77
+          }
+        }
+      },
+      {
+        "id": "v3",
+        "path": "experiments/functional-v27-20261107/held/candidates/p357-3.png",
+        "sha256": "ae1b71af4491bb0c596feb89bc2b78f3315ba86816c80d5bad67c985e79f8e22",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 60
+          }
+        }
+      }
+    ],
+    "labels": {
+      "mild": [
+        "complete",
+        "partial",
+        "failed"
+      ],
+      "strong": [
+        "partial",
+        "complete",
+        "partial"
+      ]
+    },
+    "evidence": "轻档稍提湿沙；明显档脚印和沙纹更可读，黄昏灰粉层次保住。全局曝光虽提亮沙面，但天空与海面一同变亮，天空颜色层次减弱。",
+    "panels": {
+      "experiments/functional-v27-20261107/held/p357.png": "3f541f4843d0242b6679440cd3dc3c3e85e5f840f406a77b280fc3bac3bd6990",
+      "experiments/functional-v27-20261107/held/p357-sky.png": "5d23130bf49559bd563b05953252468f7b97474bcec57544e54d766a69d2aba9"
+    }
+  },
+  {
+    "id": "p309",
+    "domain": "landscape",
+    "cohort": "new_source_test",
+    "requests": {
+      "mild": {
+        "zh": "小幅打开阴影。重点看积雪小路和树下前景，保留蓝天、白云和雪的细节。",
+        "en": "Give a subtle lift to the shadows around the snowy path and foreground below the trees, retaining the blue sky, clouds and snow detail."
+      },
+      "strong": {
+        "zh": "阴影要大幅提亮。重点看积雪小路和树下前景，保留蓝天、白云和雪的细节。",
+        "en": "Brighten the shadows substantially around the snowy path and foreground below the trees, retaining the blue sky, clouds and snow detail."
+      }
+    },
+    "focus": {
+      "zh": "积雪小路和树下前景，保留蓝天、白云和雪的细节",
+      "en": "the snowy path and foreground below the trees, retaining the blue sky, clouds and snow detail"
+    },
+    "crop_center_fraction": [
+      0.33,
+      0.71
+    ],
+    "image": "data/training/functional-v27-20261107/held-inputs/p309.jpg",
+    "image_sha256": "fcae2d803d4563a208c371a902aa8383d24628b562274586ef72689bd3c76100",
+    "group_id": "c1a379c55c84ec0bd0f8eb1105bfa02d4df967a8a9b0be9feca2fd0943d245eb",
+    "variants": [
+      {
+        "id": "v1",
+        "path": "experiments/functional-v27-20261107/held/candidates/p309-1.png",
+        "sha256": "56db7306c0c6301d9a117b38d19d1a763fc426b00fc546084a7b5035b06b3a47",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 38
+          }
+        }
+      },
+      {
+        "id": "v2",
+        "path": "experiments/functional-v27-20261107/held/candidates/p309-2.png",
+        "sha256": "619fd46b213733d69b00e1300cd4c52ae526e553519b3a3c00cc10e02bbaf3be",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 77
+          }
+        }
+      },
+      {
+        "id": "v3",
+        "path": "experiments/functional-v27-20261107/held/candidates/p309-3.png",
+        "sha256": "7cba2de27d072dac4ca3b97c6755f8ee3fe1f3b44a440bb2b13bc726c9df0914",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 60
+          }
+        }
+      }
+    ],
+    "labels": {
+      "mild": [
+        "complete",
+        "partial",
+        "failed"
+      ],
+      "strong": [
+        "partial",
+        "complete",
+        "partial"
+      ]
+    },
+    "evidence": "轻档略开树下草地和雪路，明显档草纹更容易辨认。全局曝光改变天色与雪面亮度，仍可看见雪地原纹理。",
+    "panels": {
+      "experiments/functional-v27-20261107/held/p309.png": "12b9cabbdea5b11f80e1ab3d48cfdbe4f5d081195beb167bcd9e7f15253e52a2",
+      "experiments/functional-v27-20261107/held/p309-sky.png": "193231ccefafbb0555a1cc29f9e79ead3106eabb01653bfa0de8cc7f5d374b5b"
+    }
+  },
+  {
+    "id": "p771",
+    "domain": "landscape",
+    "cohort": "new_source_test",
+    "requests": {
+      "mild": {
+        "zh": "暗处抬亮一点点。重点看湖边前景和树影，保留水面、亮云和夜色过渡。",
+        "en": "Take the edge off the darkness by lifting the shadows around the lakeside foreground and tree shadows, keeping the water, bright clouds and dusk gradient."
+      },
+      "strong": {
+        "zh": "明显抬高暗处亮度。重点看湖边前景和树影，保留水面、亮云和夜色过渡。",
+        "en": "Significantly lift the shadows around the lakeside foreground and tree shadows, keeping the water, bright clouds and dusk gradient."
+      }
+    },
+    "focus": {
+      "zh": "湖边前景和树影，保留水面、亮云和夜色过渡",
+      "en": "the lakeside foreground and tree shadows, keeping the water, bright clouds and dusk gradient"
+    },
+    "crop_center_fraction": [
+      0.57,
+      0.53
+    ],
+    "image": "data/training/functional-v27-20261107/held-inputs/p771.jpg",
+    "image_sha256": "d7f6f351b5b73a39839f2b3b3e8190500e5437b4ee213406a27a5973b31ff588",
+    "group_id": "683620218cf5683208249cea9fe88ce218f262d1f1ac55065fc6055abf518acb",
+    "variants": [
+      {
+        "id": "v1",
+        "path": "experiments/functional-v27-20261107/held/candidates/p771-1.png",
+        "sha256": "00d602328fb614f120fb0cd7e4ffbf84910d40217c001c9ff8256eed70c70a49",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 38
+          }
+        }
+      },
+      {
+        "id": "v2",
+        "path": "experiments/functional-v27-20261107/held/candidates/p771-2.png",
+        "sha256": "ede031237e0735c8b3d9021490d233c58d03626da09a50ca36f768057020400a",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 77
+          }
+        }
+      },
+      {
+        "id": "v3",
+        "path": "experiments/functional-v27-20261107/held/candidates/p771-3.png",
+        "sha256": "89150187f7f2ab6f07bb89107ae00803b19867813527a9c9fffeca7f01425b61",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 60
+          }
+        }
+      }
+    ],
+    "labels": {
+      "mild": [
+        "complete",
+        "partial",
+        "failed"
+      ],
+      "strong": [
+        "partial",
+        "complete",
+        "failed"
+      ]
+    },
+    "evidence": "明显档让树影、灌木与前景细节更可见，天空云纹和水面保持。全局曝光使亮云与亮水纹反差显著减弱。",
+    "panels": {
+      "experiments/functional-v27-20261107/held/p771.png": "90f2c20662c846f5afc4bf85e61f0cf52d2db916d4a823cb1945a0e817ae3302",
+      "experiments/functional-v27-20261107/held/p771-sky.png": "40a563176beab61fe1706fd617b0f631a4f47a432ddcab098b679c6b29671263"
+    }
+  },
+  {
+    "id": "p476",
+    "domain": "landscape",
+    "cohort": "new_source_test",
+    "requests": {
+      "mild": {
+        "zh": "稍微打开暗部。重点看林地前景、树枝和落叶，保留羽毛、叶色和明亮细节。",
+        "en": "Open the shadows a little around the woodland foreground, branches and leaf litter, retaining feather detail, leaf colour and bright texture."
+      },
+      "strong": {
+        "zh": "暗部明显提亮。重点看林地前景、树枝和落叶，保留羽毛、叶色和明亮细节。",
+        "en": "Open the shadows noticeably around the woodland foreground, branches and leaf litter, retaining feather detail, leaf colour and bright texture."
+      }
+    },
+    "focus": {
+      "zh": "林地前景、树枝和落叶，保留羽毛、叶色和明亮细节",
+      "en": "the woodland foreground, branches and leaf litter, retaining feather detail, leaf colour and bright texture"
+    },
+    "crop_center_fraction": [
+      0.42,
+      0.66
+    ],
+    "image": "data/training/functional-v27-20261107/held-inputs/p476.jpg",
+    "image_sha256": "188695022ff09d63f0b8556fd94f48bb29611395fb5dbec9aec9c0b270947926",
+    "group_id": "eb6f94b314275d50c8318e08d2ae68ade05ef45bcf632a5a4c4eee1d14f3f62f",
+    "variants": [
+      {
+        "id": "v1",
+        "path": "experiments/functional-v27-20261107/held/candidates/p476-1.png",
+        "sha256": "9fb23b1e12fb82cebe63e920c41d4a2e767a416f823cc2672ba7325a165a52aa",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 38
+          }
+        }
+      },
+      {
+        "id": "v2",
+        "path": "experiments/functional-v27-20261107/held/candidates/p476-2.png",
+        "sha256": "242613784acae0f770008948746e2ab371fb75ed002210dbeb352a128e72a8c1",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "shadows": 77
+          }
+        }
+      },
+      {
+        "id": "v3",
+        "path": "experiments/functional-v27-20261107/held/candidates/p476-3.png",
+        "sha256": "38ed14911cbb262515108ab40a1ed6b6de5c219edc00d93d71c31a7ee7208929",
+        "decision": {
+          "action": "edit",
+          "parameters": {
+            "exposure": 60
+          }
+        }
+      }
+    ],
+    "labels": {
+      "mild": [
+        "complete",
+        "partial",
+        "failed"
+      ],
+      "strong": [
+        "partial",
+        "complete",
+        "failed"
+      ]
+    },
+    "evidence": "轻档微提暗枝，明显档林地枝叶层次更清楚而羽毛仍有质感。全局曝光抬亮羽毛与整片叶色，改变本应保留的亮部。",
+    "panels": {
+      "experiments/functional-v27-20261107/held/p476.png": "c3e8755f8550329678b57acf764e10a524fb0d65426db83c34a1ca95c6450ca0",
+      "experiments/functional-v27-20261107/held/p476-foliage.png": "2de1ed90c6ad5a88a49099697478151d1e643f4db812cc4323c723ac1759dc4f"
+    }
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "model_id": "language-merger-e3",
+  "status": "completed",
+  "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+  "human_review": false,
+  "reviewed_outputs": 12,
+  "missing_unique_images": [],
+  "fully_completed_both_languages": 5,
+  "raw_individual_completed_both_languages": 5,
+  "identical_strength_pairs": [],
+  "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+  "photo_groups": 6,
+  "all_tasks_complete_photo_groups": 5,
+  "major_quality_issues": 0,
+  "major_issue_cases": [],
+  "per_family": {
+    "compound": {
+      "completed": 2,
+      "cases": 2
+    },
+    "lighting": {
+      "completed": 1,
+      "cases": 2
+    },
+    "saturation": {
+      "completed": 2,
+      "cases": 2
+    }
+  },
+  "per_language": {
+    "zh": {
+      "completed": 5,
+      "partial": 1
+    },
+    "en": {
+      "completed": 5,
+      "partial": 1
+    }
+  },
+  "per_domain": {
+    "portrait": {
+      "completed": 3,
+      "cases": 3
+    },
+    "landscape": {
+      "completed": 2,
+      "cases": 3
+    }
+  },
+  "selection_uses_L1": false,
+  "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+  "review_sha256": "198d190b2d17415e53d2c13e335c55921f9b6b6c2368e6787c125e578f480733",
+  "declined_language_outputs": 0,
+  "declined_semantic_cases": 0,
+  "refusal_policy": "Every decline on these feasible tasks is uncompleted; no result image is returned.",
+  "original_size_supplement_count": 3,
+  "review_derivation": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/old-native/derivation.json",
+  "review_derivation_sha256": "f1c1afc8d96cdf3a4db3c66189b74d7750cc262ae0e86470615715e2ac7a5944",
+  "raw_visual_notes_immutable": true,
+  "runtime": "functional_v7.runtime"
+}

@@ -1,0 +1,31 @@
+{
+  "at": "2026-11-06T20:18:14.552174+00:00",
+  "status": "known_historical_regression_direct_AI_review_complete",
+  "records": [
+    {
+      "language": "en",
+      "request_id": "a1725a9ee10a40efae270d947bce7396",
+      "status": "executed",
+      "label": "A",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole960x720 native INPUT and output directly viewed. Foliage, ground and road now share an overall brown/sepia tone; this is a visible colour-style change rather than green foliage with higher exposure. Tree/road texture, hills, clouds and highlight-shadow structure remain. Source softness/motion blur is retained, no newly dominant broad clipping, object change or sharpening claimed. Meets the literal brown-tone request for this known historical photo; not independent user approval or generalization."
+    },
+    {
+      "language": "zh",
+      "request_id": "7c00ce65278b415285ea5677ba159d94",
+      "status": "executed",
+      "label": "B",
+      "completion": "C",
+      "quality": "A",
+      "evidence": "Whole960x720 native INPUT and output directly viewed. Foliage, ground and road now share an overall brown/sepia tone; this is a visible colour-style change rather than green foliage with higher exposure. Tree/road texture, hills, clouds and highlight-shadow structure remain. Source softness/motion blur is retained, no newly dominant broad clipping, object change or sharpening claimed. Meets the literal brown-tone request for this known historical photo; not independent user approval or generalization."
+    }
+  ],
+  "completed_both_languages": true,
+  "independent_acceptance": false,
+  "checkpoint_selection_use": false,
+  "training_use": false,
+  "user_feedback": 0,
+  "raw_notes_sha256": "9c44ffdcc9deb8b92f58dcf6dbd83b9323740b2aba032bd597ea0d7b59607b7b",
+  "limitation": "Known source repeatedly viewed since initial user screenshot; cannot attribute this isolated success to new R15 learning or declare the model generally useful."
+}

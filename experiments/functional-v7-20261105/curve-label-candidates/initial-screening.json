@@ -1,0 +1,70 @@
+{
+  "at": "2026-11-05T11:22:28.582591+00:00",
+  "sheets_directly_viewed": [
+    "experiments/functional-v7-20261105/curve-label-candidates/sheet-001.jpg",
+    "experiments/functional-v7-20261105/curve-label-candidates/sheet-002.jpg",
+    "experiments/functional-v7-20261105/curve-label-candidates/sheet-003.jpg",
+    "experiments/functional-v7-20261105/curve-label-candidates/sheet-004.jpg",
+    "experiments/functional-v7-20261105/curve-label-candidates/sheet-005.jpg",
+    "experiments/functional-v7-20261105/curve-label-candidates/sheet-006.jpg",
+    "experiments/functional-v7-20261105/curve-label-candidates/sheet-007.jpg",
+    "experiments/functional-v7-20261105/curve-label-candidates/sheet-008.jpg"
+  ],
+  "semantic_cases_viewed": 24,
+  "screening_only": true,
+  "final_review_complete": false,
+  "new_labels_admitted": 0,
+  "first_two_sheets_roles_previously_visible": true,
+  "remaining_sheets_model_and_renderer_labels_hidden_during_observation": true,
+  "findings": [
+    {
+      "case_id": "train-007-restore-contrast-mild",
+      "visible_label": "a6f27b3bfd2d",
+      "evidence": "Contrast improves only mildly; costume and sky remain grey compared with the more naturally separated alternative. Requires repair or further inspection before label admission.",
+      "status": "not_admitted_needs_repair_or_further_review",
+      "sheet": "experiments/functional-v7-20261105/curve-label-candidates/sheet-001.jpg",
+      "sheet_sha256": "9ac69c5743a280b9037c1d8263aa55e0b7bc4d42944470f6e4a547aca6c286d8"
+    },
+    {
+      "case_id": "train-007-restore-contrast-strong",
+      "visible_label": "dc8b899e4997",
+      "evidence": "Broad grey veil and weak costume colour separation remain after the strong contrast degradation. The restoration request is not clearly completed.",
+      "status": "not_admitted_needs_repair_or_further_review",
+      "sheet": "experiments/functional-v7-20261105/curve-label-candidates/sheet-002.jpg",
+      "sheet_sha256": "922ff0fddfee3225dd6400e69702707ae80ffc9f5aa17601207d085a7fd858be"
+    },
+    {
+      "case_id": "train-010-style-contrast-strong",
+      "visible_label": "cfd2aa54f663",
+      "evidence": "The visible increase is modest and close to the weak-strength appearance, rather than a convincing noticeable contrast increase. Do not admit until strength is resolved.",
+      "status": "not_admitted_needs_repair_or_further_review",
+      "sheet": "experiments/functional-v7-20261105/curve-label-candidates/sheet-003.jpg",
+      "sheet_sha256": "0681728e2d1f49bee6c7d335694086d608ff509b0b74997d35b7b7fcbb9e06bb"
+    },
+    {
+      "case_id": "train-016-restore-contrast-strong",
+      "visible_label": "4459e4d28978",
+      "evidence": "The pale upper background and low-separation clothing still look washed out; contrast restoration is incomplete at this inspection scale.",
+      "status": "not_admitted_needs_repair_or_further_review",
+      "sheet": "experiments/functional-v7-20261105/curve-label-candidates/sheet-004.jpg",
+      "sheet_sha256": "c1a3ad4a38d897f8cf6329ec9f6abf457ee47593d791107db82ba0c628288d00"
+    },
+    {
+      "case_id": "train-025-restore-contrast-strong",
+      "visible_label": "b4f4357ab3b7",
+      "evidence": "Face and hair retain a broad grey veil compared with the naturally separated alternative; the strong wash-out has not been clearly corrected.",
+      "status": "not_admitted_needs_repair_or_further_review",
+      "sheet": "experiments/functional-v7-20261105/curve-label-candidates/sheet-006.jpg",
+      "sheet_sha256": "71b4c73ba1bb0f8e39df30e8b742a5707acbb176fabc1786898fa6393807b66d"
+    },
+    {
+      "case_id": "train-034-restore-contrast-strong",
+      "visible_label": "cdb4ae348088",
+      "evidence": "Grass, shirt and hat retain the grey low-contrast appearance; correction is too weak for a fully accepted restoration label.",
+      "status": "not_admitted_needs_repair_or_further_review",
+      "sheet": "experiments/functional-v7-20261105/curve-label-candidates/sheet-008.jpg",
+      "sheet_sha256": "f8ea7b8df2e0fd088e3f952b7802d8357d9cf43a8ea6dfdecfd6f741c8ef8213"
+    }
+  ],
+  "decision": "Do not continue bulk admission under an unresolved contrast capacity issue. Test a separate per-channel bounded contrast hypothesis on training-only sources; all460 candidates, old labels and frozen results remain unchanged."
+}

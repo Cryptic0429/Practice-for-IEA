@@ -1,0 +1,400 @@
+{
+  "at": "2026-11-06T10:17:05.235996+00:00",
+  "checks": [
+    {
+      "model_id": "functional-v13-real-coverage-narrow-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "request_id": "685cb01e5a524cc8a202c8b53272c71f",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "temperature": -24
+        }
+      },
+      "status": "executed",
+      "output_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-narrow-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-006",
+      "language": "en",
+      "request_id": "ada57ca582694280b9e97691913013e3",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "temperature": -24
+        }
+      },
+      "status": "executed",
+      "output_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-narrow-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "request_id": "7f7a74f5951a4f2193d338dff30c3ed1",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 95
+        }
+      },
+      "status": "executed",
+      "output_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-narrow-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-001",
+      "language": "en",
+      "request_id": "0056d1e3a25440f0a2088e685b393ccd",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 95
+        }
+      },
+      "status": "executed",
+      "output_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-narrow-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "zh",
+      "request_id": "2fd9e0a304034528bfddd651478a1bb4",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unsupported_tools"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unsupported_tools",
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-narrow-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "en",
+      "request_id": "50c4d882c34641dcb5732b10e1fe9bb8",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unsupported_tools"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unsupported_tools",
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-narrow-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "zh",
+      "request_id": "6ccba271ea024d2ebb87f037d19d08c8",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "keep"
+      },
+      "status": "executed",
+      "output_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522",
+      "execution_status": "unchanged",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-narrow-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "en",
+      "request_id": "f582fca85f8648a28c8afbe079507314",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "keep"
+      },
+      "status": "executed",
+      "output_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522",
+      "execution_status": "unchanged",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-narrow-20261127",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-severe-light",
+      "language": "zh",
+      "request_id": "ba83510803ba4717b3ce1251e462b98c",
+      "training_label_action": "decline",
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unreliable_quality"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unreliable_quality",
+      "quality_decline_obeyed": true
+    },
+    {
+      "model_id": "functional-v13-real-coverage-narrow-20261127",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-deep-light",
+      "language": "zh",
+      "request_id": "c97ffef5dd1042f4ace45e67612aaed4",
+      "training_label_action": "edit",
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "status": "executed",
+      "output_sha256": "d1e85ddfff3244df15528b433aeaec9e24843af32a1776d33d1d3eda9d434fb2",
+      "execution_status": "edited",
+      "offline_byte_identical": false,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-narrow-20261127",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-mild-noise-light",
+      "language": "zh",
+      "request_id": "e9478189e2b74f869dd110e398e5f446",
+      "training_label_action": "edit",
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "status": "executed",
+      "output_sha256": "c6413be536171d0eed9fb4489679f7621969e6613e5612096c0ac603d6c178fc",
+      "execution_status": "edited",
+      "offline_byte_identical": false,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-wide-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "request_id": "d102f0b0603e4a709952a52f6cab7297",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "temperature": -24
+        }
+      },
+      "status": "executed",
+      "output_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-wide-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-006",
+      "language": "en",
+      "request_id": "11591393c2d145edbf1a17cdbced8749",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "temperature": -24
+        }
+      },
+      "status": "executed",
+      "output_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-wide-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "request_id": "8f2eec21cd4847ebab0a7377e2e89363",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 85
+        }
+      },
+      "status": "executed",
+      "output_sha256": "9b5d3cd438777e903149e2028664b123e732206592e19661e614c0fe56a34e44",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-wide-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-001",
+      "language": "en",
+      "request_id": "887524c6a925492caff5631747facfe7",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 85
+        }
+      },
+      "status": "executed",
+      "output_sha256": "9b5d3cd438777e903149e2028664b123e732206592e19661e614c0fe56a34e44",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-wide-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "zh",
+      "request_id": "d4b103f1c0164851ab4c6dc22a41058b",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unsupported_tools"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unsupported_tools",
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-wide-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "en",
+      "request_id": "e7c62a12a0034381887c0625cfb9b26b",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unsupported_tools"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unsupported_tools",
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-wide-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "zh",
+      "request_id": "2e66cf213413425987dc0c8711af577a",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "keep"
+      },
+      "status": "executed",
+      "output_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522",
+      "execution_status": "unchanged",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-wide-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "en",
+      "request_id": "7c29982bf95f48e9b71d7c682c5090db",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "keep"
+      },
+      "status": "executed",
+      "output_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522",
+      "execution_status": "unchanged",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-wide-20261127",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-severe-light",
+      "language": "zh",
+      "request_id": "12ff2035934345939b7c55f143a0a3df",
+      "training_label_action": "decline",
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unreliable_quality"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unreliable_quality",
+      "quality_decline_obeyed": true
+    },
+    {
+      "model_id": "functional-v13-real-coverage-wide-20261127",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-deep-light",
+      "language": "zh",
+      "request_id": "d8b59b40ead54cfb9f70f6ec2cd2d025",
+      "training_label_action": "edit",
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "status": "executed",
+      "output_sha256": "d1e85ddfff3244df15528b433aeaec9e24843af32a1776d33d1d3eda9d434fb2",
+      "execution_status": "edited",
+      "offline_byte_identical": false,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v13-real-coverage-wide-20261127",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-mild-noise-light",
+      "language": "zh",
+      "request_id": "87264ed772814ae0b1545dca07a94127",
+      "training_label_action": "edit",
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "status": "executed",
+      "output_sha256": "c6413be536171d0eed9fb4489679f7621969e6613e5612096c0ac603d6c178fc",
+      "execution_status": "edited",
+      "offline_byte_identical": false,
+      "quality_decline_obeyed": null
+    }
+  ],
+  "user_feedback": false
+}

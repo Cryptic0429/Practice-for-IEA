@@ -1,0 +1,3141 @@
+{
+  "split": "development",
+  "name": "controlled-qualified-policy",
+  "created_at": "2026-11-07T02:22:25.382970+00:00",
+  "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+  "models": {
+    "magnitude-quality-e20": {
+      "model_id": "magnitude-quality-e20",
+      "policy": "magnitude-quality",
+      "head": "experiments/functional-v21-20261107/runs/seed-20261205/checkpoint-20.pt",
+      "head_sha256": "838342a2167038589a91b646ad98432ec4749e698d4b29ad7f2b520b366a26da",
+      "parent_sha256": "97c84f1799fb319799c86515402574b3b585593763e5388eb30d0df3e0d6ea90",
+      "parent_semantics_sha256": "6b72724a3f8f16de332ea87f0197bc11a41a34dc3218f5697fb87d164613cfaa",
+      "parent_LM_reinferred": false,
+      "new_CPU_head_inference": true,
+      "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+      "runtime": "functional_v21.runtime",
+      "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+      "schema": "functional-outcome-v1",
+      "feature_manifest_sha256": "c966e9a19e84543ec15d95ad715301e5288c3697b680c8376a85727b41117322",
+      "texture_implementation_sha256": "955c070cb0f22c97142635285ac101eccaeac8e0d1029fc0569948127606fc6e",
+      "feature_protocol_sha256": "f6295ffef820a29d3812e3390618d8463f7aeb117e8447c69b8b650190596581",
+      "protocol_sha256": "f6295ffef820a29d3812e3390618d8463f7aeb117e8447c69b8b650190596581"
+    }
+  },
+  "mapping": [
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-001-restore-exposure-mild",
+      "language": "zh",
+      "item_id": "d0c9f51b88aff0af"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-001-restore-exposure-mild",
+      "language": "en",
+      "item_id": "d0c9f51b88aff0af"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-001-restore-exposure-strong",
+      "language": "zh",
+      "item_id": "2b95d81d997f7266"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-001-restore-exposure-strong",
+      "language": "en",
+      "item_id": "58943a8a43e5f23d"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-001-style-temperature-weak",
+      "language": "zh",
+      "item_id": "20de945aff55bf41"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-001-style-temperature-weak",
+      "language": "en",
+      "item_id": "39b61375d7f25b30"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-001-style-temperature-strong",
+      "language": "zh",
+      "item_id": "9b62ae25307a64f4"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-001-style-temperature-strong",
+      "language": "en",
+      "item_id": "71d1b6631cdd104a"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-001-compound",
+      "language": "zh",
+      "item_id": "43c88b835824f355"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-001-compound",
+      "language": "en",
+      "item_id": "d87a8eb0432478d8"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-003-restore-contrast-mild",
+      "language": "zh",
+      "item_id": "5cb6514bbb81f224"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-003-restore-contrast-mild",
+      "language": "en",
+      "item_id": "a79d2acd15d1af50"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-003-restore-contrast-strong",
+      "language": "zh",
+      "item_id": "22be618115594d53"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-003-restore-contrast-strong",
+      "language": "en",
+      "item_id": "2f70136d5704dc70"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-003-style-saturation-weak",
+      "language": "zh",
+      "item_id": "5606b23c249f6d07"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-003-style-saturation-weak",
+      "language": "en",
+      "item_id": "5606b23c249f6d07"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-003-style-saturation-strong",
+      "language": "zh",
+      "item_id": "6afe234f2ce4e05e"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-003-style-saturation-strong",
+      "language": "en",
+      "item_id": "1d0cb3e9f8cb78d4"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-003-identity",
+      "language": "zh",
+      "item_id": "a9cbc1551b0d541b"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-003-identity",
+      "language": "en",
+      "item_id": "a9cbc1551b0d541b"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-014-restore-saturation-mild",
+      "language": "zh",
+      "item_id": "714faca5881692d2"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-014-restore-saturation-mild",
+      "language": "en",
+      "item_id": "c9130e2561f95101"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-014-restore-saturation-strong",
+      "language": "zh",
+      "item_id": "bd8f3eea7eb5fc49"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-014-restore-saturation-strong",
+      "language": "en",
+      "item_id": "bd8f3eea7eb5fc49"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-014-style-contrast-weak",
+      "language": "zh",
+      "item_id": "7cc7aba8dee70347"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-014-style-contrast-weak",
+      "language": "en",
+      "item_id": "25c8729fbd0d417b"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-014-style-contrast-strong",
+      "language": "zh",
+      "item_id": "1d56ae615d9a72fc"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-014-style-contrast-strong",
+      "language": "en",
+      "item_id": "4529a52ae459c45c"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-014-compound",
+      "language": "zh",
+      "item_id": "1b19301d695cc06b"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-014-compound",
+      "language": "en",
+      "item_id": "4c730f7f4ecf46d9"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-018-restore-exposure-mild",
+      "language": "zh",
+      "item_id": "7b913f0364f45f28"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-018-restore-exposure-mild",
+      "language": "en",
+      "item_id": "32b68c73354157d8"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-018-restore-exposure-strong",
+      "language": "zh",
+      "item_id": "011899384d90f97c"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-018-restore-exposure-strong",
+      "language": "en",
+      "item_id": "bc3161ed0219eeb9"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-018-style-sepia-weak",
+      "language": "zh",
+      "item_id": "e45270216c5955c9"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-018-style-sepia-weak",
+      "language": "en",
+      "item_id": "06793be3c20036d6"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-018-style-sepia-strong",
+      "language": "zh",
+      "item_id": "6ec4434ad42ffc12"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-018-style-sepia-strong",
+      "language": "en",
+      "item_id": "7fe9c53cb65738f2"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-018-identity",
+      "language": "zh",
+      "item_id": "2e5a6e6e577ded47"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-018-identity",
+      "language": "en",
+      "item_id": "2e5a6e6e577ded47"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-020-restore-contrast-mild",
+      "language": "zh",
+      "item_id": "8c38af52b45ebfce"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-020-restore-contrast-mild",
+      "language": "en",
+      "item_id": "48dde3ad80a8f522"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-020-restore-contrast-strong",
+      "language": "zh",
+      "item_id": "284e4f35639e0fbc"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-020-restore-contrast-strong",
+      "language": "en",
+      "item_id": "7861204db6d1b971"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-020-style-shadows-weak",
+      "language": "zh",
+      "item_id": "446494fe51b72d2d"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-020-style-shadows-weak",
+      "language": "en",
+      "item_id": "4b696a136efafa11"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-020-style-shadows-strong",
+      "language": "zh",
+      "item_id": "8f1416aa3860ca44"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-020-style-shadows-strong",
+      "language": "en",
+      "item_id": "9cdac3501e8d7e1b"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-020-compound",
+      "language": "zh",
+      "item_id": "e92822db0081d3dc"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-020-compound",
+      "language": "en",
+      "item_id": "cbf81eaca631095e"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-028-restore-saturation-mild",
+      "language": "zh",
+      "item_id": "be55b2ac8ef83848"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-028-restore-saturation-mild",
+      "language": "en",
+      "item_id": "98faced1709cc7dd"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-028-restore-saturation-strong",
+      "language": "zh",
+      "item_id": "cdd7d12811b1cf6c"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-028-restore-saturation-strong",
+      "language": "en",
+      "item_id": "534d26cf687382ee"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-028-style-temperature-weak",
+      "language": "zh",
+      "item_id": "383635c644c621bf"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-028-style-temperature-weak",
+      "language": "en",
+      "item_id": "4d0d484c54b0babe"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-028-style-temperature-strong",
+      "language": "zh",
+      "item_id": "da9f3cef1147278c"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-028-style-temperature-strong",
+      "language": "en",
+      "item_id": "d23dd11211dd8479"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-028-identity",
+      "language": "zh",
+      "item_id": "0c6e74f3cc4e47ee"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-028-identity",
+      "language": "en",
+      "item_id": "0c6e74f3cc4e47ee"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-031-restore-exposure-mild",
+      "language": "zh",
+      "item_id": "963ccb7b0b3a2eb5"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-031-restore-exposure-mild",
+      "language": "en",
+      "item_id": "855b8522b888cf1a"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-031-restore-exposure-strong",
+      "language": "zh",
+      "item_id": "d6c6115703c3dd15"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-031-restore-exposure-strong",
+      "language": "en",
+      "item_id": "707c55b84edfd5b3"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-031-style-saturation-weak",
+      "language": "zh",
+      "item_id": "f0b3b87364d2f263"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-031-style-saturation-weak",
+      "language": "en",
+      "item_id": "5f6b45d32a2cd852"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-031-style-saturation-strong",
+      "language": "zh",
+      "item_id": "d3ca22cd27eff9c0"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-031-style-saturation-strong",
+      "language": "en",
+      "item_id": "5d7ccf1050ce6f35"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-031-compound",
+      "language": "zh",
+      "item_id": "d1170bf30432c9e5"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-031-compound",
+      "language": "en",
+      "item_id": "1958cd7108350262"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-033-restore-contrast-mild",
+      "language": "zh",
+      "item_id": "13e64ad326633924"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-033-restore-contrast-mild",
+      "language": "en",
+      "item_id": "624787519ce6248e"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-033-restore-contrast-strong",
+      "language": "zh",
+      "item_id": "1098b6ef9b6e910c"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-033-restore-contrast-strong",
+      "language": "en",
+      "item_id": "8f2e1b6ce288761f"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-033-style-contrast-weak",
+      "language": "zh",
+      "item_id": "e446693826f790d9"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-033-style-contrast-weak",
+      "language": "en",
+      "item_id": "981cbfe321df0721"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-033-style-contrast-strong",
+      "language": "zh",
+      "item_id": "d72863e4eb17aac3"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-033-style-contrast-strong",
+      "language": "en",
+      "item_id": "4bc9e12367722a73"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-033-identity",
+      "language": "zh",
+      "item_id": "e90f17ba1e1061ba"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-033-identity",
+      "language": "en",
+      "item_id": "e90f17ba1e1061ba"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-040-restore-saturation-mild",
+      "language": "zh",
+      "item_id": "81639dd4e25f1368"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-040-restore-saturation-mild",
+      "language": "en",
+      "item_id": "380970c2f4283014"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-040-restore-saturation-strong",
+      "language": "zh",
+      "item_id": "612dae221e5f843a"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-040-restore-saturation-strong",
+      "language": "en",
+      "item_id": "6df381324b83d9df"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-040-style-sepia-weak",
+      "language": "zh",
+      "item_id": "92f6cbe2de9bdda8"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-040-style-sepia-weak",
+      "language": "en",
+      "item_id": "01cdd4d21c4de73d"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-040-style-sepia-strong",
+      "language": "zh",
+      "item_id": "aeec0b0bc3ac03fd"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-040-style-sepia-strong",
+      "language": "en",
+      "item_id": "aeec0b0bc3ac03fd"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-040-compound",
+      "language": "zh",
+      "item_id": "8cebed4e1d0872e3"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-040-compound",
+      "language": "en",
+      "item_id": "8927fd72823f1c44"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-055-restore-exposure-mild",
+      "language": "zh",
+      "item_id": "0c87c995ee780ebe"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-055-restore-exposure-mild",
+      "language": "en",
+      "item_id": "0332565d26030b0a"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-055-restore-exposure-strong",
+      "language": "zh",
+      "item_id": "08317620434063a2"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-055-restore-exposure-strong",
+      "language": "en",
+      "item_id": "413c6f09ffdaaf80"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-055-style-shadows-weak",
+      "language": "zh",
+      "item_id": "97c1b283dd3fee88"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-055-style-shadows-weak",
+      "language": "en",
+      "item_id": "208bce592e75a289"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-055-style-shadows-strong",
+      "language": "zh",
+      "item_id": "b03c4c2517e79db7"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-055-style-shadows-strong",
+      "language": "en",
+      "item_id": "4b1f905134e6de29"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-055-identity",
+      "language": "zh",
+      "item_id": "fe77717902773d8d"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-055-identity",
+      "language": "en",
+      "item_id": "fe77717902773d8d"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-006-restore-exposure-mild",
+      "language": "zh",
+      "item_id": "2dc3e9d3f3908aef"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-006-restore-exposure-mild",
+      "language": "en",
+      "item_id": "bdf1383d0d74eccc"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-006-restore-exposure-strong",
+      "language": "zh",
+      "item_id": "e3e9314d4494dfa4"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-006-restore-exposure-strong",
+      "language": "en",
+      "item_id": "23249549d77f98fc"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-006-style-temperature-weak",
+      "language": "zh",
+      "item_id": "f5096216eb731a86"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-006-style-temperature-weak",
+      "language": "en",
+      "item_id": "2deb5363023699fd"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-006-style-temperature-strong",
+      "language": "zh",
+      "item_id": "45dfa3182db4a5e0"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-006-style-temperature-strong",
+      "language": "en",
+      "item_id": "1f53fa11acac066c"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-006-compound",
+      "language": "zh",
+      "item_id": "091451b3db437290"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-006-compound",
+      "language": "en",
+      "item_id": "d7366abe186472c8"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-010-restore-contrast-mild",
+      "language": "zh",
+      "item_id": "1f5d347932f538ed"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-010-restore-contrast-mild",
+      "language": "en",
+      "item_id": "2c53da973165dd07"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-010-restore-contrast-strong",
+      "language": "zh",
+      "item_id": "bbaf6dadc278d653"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-010-restore-contrast-strong",
+      "language": "en",
+      "item_id": "80ca55a6ae20c967"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-010-style-saturation-weak",
+      "language": "zh",
+      "item_id": "f2ededf7c899bc58"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-010-style-saturation-weak",
+      "language": "en",
+      "item_id": "da7147c94596dae6"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-010-style-saturation-strong",
+      "language": "zh",
+      "item_id": "91e75ab6a631f507"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-010-style-saturation-strong",
+      "language": "en",
+      "item_id": "91e75ab6a631f507"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-010-identity",
+      "language": "zh",
+      "item_id": "0d6a7be0dd427510"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-010-identity",
+      "language": "en",
+      "item_id": "0d6a7be0dd427510"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-019-restore-saturation-mild",
+      "language": "zh",
+      "item_id": "e2281df44b8a6482"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-019-restore-saturation-mild",
+      "language": "en",
+      "item_id": "5230632184db4212"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-019-restore-saturation-strong",
+      "language": "zh",
+      "item_id": "c5d47d37f5a86c8f"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-019-restore-saturation-strong",
+      "language": "en",
+      "item_id": "e278bfce9c72eff8"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-019-style-contrast-weak",
+      "language": "zh",
+      "item_id": "0f41c6487c306e89"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-019-style-contrast-weak",
+      "language": "en",
+      "item_id": "e000e46dae15518f"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-019-style-contrast-strong",
+      "language": "zh",
+      "item_id": "70a3583bb1a4ed4b"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-019-style-contrast-strong",
+      "language": "en",
+      "item_id": "095f634487fb2bbd"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-019-compound",
+      "language": "zh",
+      "item_id": "4b7e2522936dc384"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-019-compound",
+      "language": "en",
+      "item_id": "508ec530cc443fce"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-022-restore-exposure-mild",
+      "language": "zh",
+      "item_id": "288414bf615b4256"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-022-restore-exposure-mild",
+      "language": "en",
+      "item_id": "2de3ac17c6c3d62f"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-022-restore-exposure-strong",
+      "language": "zh",
+      "item_id": "716c77452688618b"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-022-restore-exposure-strong",
+      "language": "en",
+      "item_id": "2e32e5dd9907cf97"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-022-style-sepia-weak",
+      "language": "zh",
+      "item_id": "f16fd9a86819debe"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-022-style-sepia-weak",
+      "language": "en",
+      "item_id": "8047aec76ae5fb6a"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-022-style-sepia-strong",
+      "language": "zh",
+      "item_id": "07ae0262c26680ec"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-022-style-sepia-strong",
+      "language": "en",
+      "item_id": "8742d8f98a2fb6ea"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-022-identity",
+      "language": "zh",
+      "item_id": "38ec413413b2ef09"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-022-identity",
+      "language": "en",
+      "item_id": "38ec413413b2ef09"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-027-restore-contrast-mild",
+      "language": "zh",
+      "item_id": "171f29b8aa142299"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-027-restore-contrast-mild",
+      "language": "en",
+      "item_id": "aed41a973fad4733"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-027-restore-contrast-strong",
+      "language": "zh",
+      "item_id": "01cabcea2a04d585"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-027-restore-contrast-strong",
+      "language": "en",
+      "item_id": "8f22b4eeb4cd1548"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-027-style-shadows-weak",
+      "language": "zh",
+      "item_id": "70912bdfcaffc087"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-027-style-shadows-weak",
+      "language": "en",
+      "item_id": "190ca00e7758990c"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-027-style-shadows-strong",
+      "language": "zh",
+      "item_id": "1f10366ad5a44d5d"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-027-style-shadows-strong",
+      "language": "en",
+      "item_id": "47cfcf04b92d02f7"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-027-compound",
+      "language": "zh",
+      "item_id": "ca1c163e4b3c63f0"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-027-compound",
+      "language": "en",
+      "item_id": "b0aa807932c13123"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-029-restore-saturation-mild",
+      "language": "zh",
+      "item_id": "02546f7c2b780309"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-029-restore-saturation-mild",
+      "language": "en",
+      "item_id": "fe9910803fa15e8a"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-029-restore-saturation-strong",
+      "language": "zh",
+      "item_id": "16568c8083ace3e1"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-029-restore-saturation-strong",
+      "language": "en",
+      "item_id": "eb12e562af4c5951"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-029-style-temperature-weak",
+      "language": "zh",
+      "item_id": "af49a53c62cd385f"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-029-style-temperature-weak",
+      "language": "en",
+      "item_id": "cbed032ec485788b"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-029-style-temperature-strong",
+      "language": "zh",
+      "item_id": "a2bf30727c847d79"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-029-style-temperature-strong",
+      "language": "en",
+      "item_id": "712638859c1a4b37"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-029-identity",
+      "language": "zh",
+      "item_id": "573cf7bef0ef1516"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-029-identity",
+      "language": "en",
+      "item_id": "573cf7bef0ef1516"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-030-restore-exposure-mild",
+      "language": "zh",
+      "item_id": "48380d49f23e425c"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-030-restore-exposure-mild",
+      "language": "en",
+      "item_id": "3303eace4053d413"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-030-restore-exposure-strong",
+      "language": "zh",
+      "item_id": "a2e9e78db5cdc4b8"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-030-restore-exposure-strong",
+      "language": "en",
+      "item_id": "fff8c8b665b1bc31"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-030-style-saturation-weak",
+      "language": "zh",
+      "item_id": "108f7a93dbe3262f"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-030-style-saturation-weak",
+      "language": "en",
+      "item_id": "108f7a93dbe3262f"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-030-style-saturation-strong",
+      "language": "zh",
+      "item_id": "fbe0f26b340a1ef7"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-030-style-saturation-strong",
+      "language": "en",
+      "item_id": "da7d6484fecec17e"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-030-compound",
+      "language": "zh",
+      "item_id": "ab01247dfda27a4c"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-030-compound",
+      "language": "en",
+      "item_id": "8c03cf795e410b72"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-041-restore-contrast-mild",
+      "language": "zh",
+      "item_id": "7416cf981996848d"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-041-restore-contrast-mild",
+      "language": "en",
+      "item_id": "3307800f19234a08"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-041-restore-contrast-strong",
+      "language": "zh",
+      "item_id": "b4b1b1664d82a1eb"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-041-restore-contrast-strong",
+      "language": "en",
+      "item_id": "1b80315c15927179"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-041-style-contrast-weak",
+      "language": "zh",
+      "item_id": "4c152ace79ce0be0"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-041-style-contrast-weak",
+      "language": "en",
+      "item_id": "bc8258862db4be63"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-041-style-contrast-strong",
+      "language": "zh",
+      "item_id": "08c80b8596901796"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-041-style-contrast-strong",
+      "language": "en",
+      "item_id": "d85bf5eadb1ffa68"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-041-identity",
+      "language": "zh",
+      "item_id": "9018e37136a18654"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-041-identity",
+      "language": "en",
+      "item_id": "9018e37136a18654"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-080-restore-saturation-mild",
+      "language": "zh",
+      "item_id": "74650de6494cba89"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-080-restore-saturation-mild",
+      "language": "en",
+      "item_id": "fac3d2541b223b17"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-080-restore-saturation-strong",
+      "language": "zh",
+      "item_id": "8607774cc9575725"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-080-restore-saturation-strong",
+      "language": "en",
+      "item_id": "3168c4ac22859210"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-080-style-sepia-weak",
+      "language": "zh",
+      "item_id": "41590f35d2ff40d7"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-080-style-sepia-weak",
+      "language": "en",
+      "item_id": "81638aae9a4af89a"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-080-style-sepia-strong",
+      "language": "zh",
+      "item_id": "434a4cf0bf5cff6b"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-080-style-sepia-strong",
+      "language": "en",
+      "item_id": "aaa30007bfd5bed9"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-080-compound",
+      "language": "zh",
+      "item_id": "e9e102cd3cbde6b6"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-080-compound",
+      "language": "en",
+      "item_id": "8221c8935b4a893d"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-106-restore-exposure-mild",
+      "language": "zh",
+      "item_id": "b2cfd94cb51144ac"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-106-restore-exposure-mild",
+      "language": "en",
+      "item_id": "a6eb0c7983dad044"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-106-restore-exposure-strong",
+      "language": "zh",
+      "item_id": "6848dffc37088d2d"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-106-restore-exposure-strong",
+      "language": "en",
+      "item_id": "5e89bf55cd04fa89"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-106-style-shadows-weak",
+      "language": "zh",
+      "item_id": "1645334f44336c80"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-106-style-shadows-weak",
+      "language": "en",
+      "item_id": "c1a8853c6a05b100"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-106-style-shadows-strong",
+      "language": "zh",
+      "item_id": "f8652021d007a062"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-106-style-shadows-strong",
+      "language": "en",
+      "item_id": "03f6a4b0b8af0777"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-106-identity",
+      "language": "zh",
+      "item_id": "87063acc7d2e4fd1"
+    },
+    {
+      "model_id": "magnitude-quality-e20",
+      "case_id": "development-106-identity",
+      "language": "en",
+      "item_id": "87063acc7d2e4fd1"
+    }
+  ],
+  "invalid": [],
+  "items": [
+    {
+      "item_id": "d0c9f51b88aff0af",
+      "case_id": "development-001-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-001-restore-exposure-mild-zh.png",
+      "image_sha256": "dce9f20ee2e1f108d2b5b38adaab8e6ae9eed8055b06834b5402a42afe2f43e2"
+    },
+    {
+      "item_id": "2b95d81d997f7266",
+      "case_id": "development-001-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-001-restore-exposure-strong-zh.png",
+      "image_sha256": "c43d2847a4b53d4fb723aa4dab3055a45bd39e4b8db680f8f9a168f6d57026c2"
+    },
+    {
+      "item_id": "58943a8a43e5f23d",
+      "case_id": "development-001-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-001-restore-exposure-strong-en.png",
+      "image_sha256": "0c9f014404702b63e9827148c1b845d0fbc5fbb43a9c09c120ed627ff32b6e87"
+    },
+    {
+      "item_id": "20de945aff55bf41",
+      "case_id": "development-001-style-temperature-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-001-style-temperature-weak-zh.png",
+      "image_sha256": "b944a800b5d23ae3a4c5d71fc8b7510bd63ef0debb4060f53d5aec3ae8af9b50"
+    },
+    {
+      "item_id": "39b61375d7f25b30",
+      "case_id": "development-001-style-temperature-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-001-style-temperature-weak-en.png",
+      "image_sha256": "dd9249b002e699897c6745525a686db86075994c9320cd1bdb42208ba1168bfb"
+    },
+    {
+      "item_id": "9b62ae25307a64f4",
+      "case_id": "development-001-style-temperature-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-001-style-temperature-strong-zh.png",
+      "image_sha256": "ac07f67fa795f0f62ba061d22510008933269ce9202528abf1f5f9a68922eada"
+    },
+    {
+      "item_id": "71d1b6631cdd104a",
+      "case_id": "development-001-style-temperature-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-001-style-temperature-strong-en.png",
+      "image_sha256": "a8728afebafacb201266d082ac6be203c3405cbefb20f8195b4cd26443dfa966"
+    },
+    {
+      "item_id": "43c88b835824f355",
+      "case_id": "development-001-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-001-compound-zh.png",
+      "image_sha256": "4afa3df4930a6cd534d40f7c2386d3f1dbee9fd5e7f415d4905840e0ace8f814"
+    },
+    {
+      "item_id": "d87a8eb0432478d8",
+      "case_id": "development-001-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-001-compound-en.png",
+      "image_sha256": "f3384a9c7d18c0c66e552499bc1ea46f802d8fa68dbb37ad224c47cfaf5c3950"
+    },
+    {
+      "item_id": "5cb6514bbb81f224",
+      "case_id": "development-003-restore-contrast-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-003-restore-contrast-mild-zh.png",
+      "image_sha256": "0da0d8ed41a9b1d30b4497b1d58953a72bd3b4798f2833a871832fede5c13799"
+    },
+    {
+      "item_id": "a79d2acd15d1af50",
+      "case_id": "development-003-restore-contrast-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-003-restore-contrast-mild-en.png",
+      "image_sha256": "687129d01ed784ef49a41d939911d7d6026a4369c56f45573e05e08d3b9c0f80"
+    },
+    {
+      "item_id": "22be618115594d53",
+      "case_id": "development-003-restore-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-003-restore-contrast-strong-zh.png",
+      "image_sha256": "974c4bbdb7234c1c867c244718ed4e3a8d2e2c132002cbfbec7b091570be8b33"
+    },
+    {
+      "item_id": "2f70136d5704dc70",
+      "case_id": "development-003-restore-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-003-restore-contrast-strong-en.png",
+      "image_sha256": "0b961fb72a1f1f43a5abb8c21c9a5a199cdf37225496ff51e152f6a818cbaa0a"
+    },
+    {
+      "item_id": "5606b23c249f6d07",
+      "case_id": "development-003-style-saturation-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-003-style-saturation-weak-zh.png",
+      "image_sha256": "ef5f481a7c091984ad7cba6c31240a524d57e5e6399547733ecfa82ea51bc727"
+    },
+    {
+      "item_id": "6afe234f2ce4e05e",
+      "case_id": "development-003-style-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-003-style-saturation-strong-zh.png",
+      "image_sha256": "1ef1361e798dea979666b1e968d4799e925d38480213728fa48b16b9ce7fd42f"
+    },
+    {
+      "item_id": "1d0cb3e9f8cb78d4",
+      "case_id": "development-003-style-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-003-style-saturation-strong-en.png",
+      "image_sha256": "a9bbb53c60a546d916a42e0ca13bc84657187136c217ff4afda04aef115069a0"
+    },
+    {
+      "item_id": "a9cbc1551b0d541b",
+      "case_id": "development-003-identity",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-003-identity-zh.png",
+      "image_sha256": "eb0d497bfdbd3f797881a65c0c6581b501ca9fbfae4b77adf361cc0215b81ee0"
+    },
+    {
+      "item_id": "714faca5881692d2",
+      "case_id": "development-014-restore-saturation-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-014-restore-saturation-mild-zh.png",
+      "image_sha256": "f6fd42af02d9d8741413e939582278eb5510a50242b2a800fb93b5b937fd2f05"
+    },
+    {
+      "item_id": "c9130e2561f95101",
+      "case_id": "development-014-restore-saturation-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-014-restore-saturation-mild-en.png",
+      "image_sha256": "66fb269164948d9b73a1630e6f74591923e6cb3168919c66f21de50cc0b47923"
+    },
+    {
+      "item_id": "bd8f3eea7eb5fc49",
+      "case_id": "development-014-restore-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-014-restore-saturation-strong-zh.png",
+      "image_sha256": "62321fa44926acca94da72195c3f54fd4de6174f371cb33254d975268667c6c4"
+    },
+    {
+      "item_id": "7cc7aba8dee70347",
+      "case_id": "development-014-style-contrast-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-014-style-contrast-weak-zh.png",
+      "image_sha256": "1b6f6b651ac36e5a332c872f76af1214ba583790f7995be4c79f6f376d8dd0f3"
+    },
+    {
+      "item_id": "25c8729fbd0d417b",
+      "case_id": "development-014-style-contrast-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-014-style-contrast-weak-en.png",
+      "image_sha256": "487388b7c994cc6b097d1ef6dbc668ea4eba9fedc3f41e523bc6db06e3476ab7"
+    },
+    {
+      "item_id": "1d56ae615d9a72fc",
+      "case_id": "development-014-style-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-014-style-contrast-strong-zh.png",
+      "image_sha256": "9819889cb902f0dc099aa951177cf8e85849920cc74637baa9f89e8f538951d1"
+    },
+    {
+      "item_id": "4529a52ae459c45c",
+      "case_id": "development-014-style-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-014-style-contrast-strong-en.png",
+      "image_sha256": "1e2eda9fe5a3e9e4eb8cd9a0055d0cd34e65076471d8b3079dee72137dd52b57"
+    },
+    {
+      "item_id": "1b19301d695cc06b",
+      "case_id": "development-014-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-014-compound-zh.png",
+      "image_sha256": "ac4789384e1337b9cf0c6c47abc67c210c5c8a41ff677ea0cdd2541f1360603b"
+    },
+    {
+      "item_id": "4c730f7f4ecf46d9",
+      "case_id": "development-014-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-014-compound-en.png",
+      "image_sha256": "a1935a097cd95e461665607ba3969dc4e7735b09be8490f60b08c7940780f057"
+    },
+    {
+      "item_id": "7b913f0364f45f28",
+      "case_id": "development-018-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-018-restore-exposure-mild-zh.png",
+      "image_sha256": "9d227243ba81cdba26a2783734b67dd1abaac41abaa436255356c641f70e3c00"
+    },
+    {
+      "item_id": "32b68c73354157d8",
+      "case_id": "development-018-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-018-restore-exposure-mild-en.png",
+      "image_sha256": "0bc7a4527c17f679f006d17691af59954d382a7ec0c513632a9ebc3e9e6bebc4"
+    },
+    {
+      "item_id": "011899384d90f97c",
+      "case_id": "development-018-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-018-restore-exposure-strong-zh.png",
+      "image_sha256": "f67ec8602354ad3a3daa61b159740dd059ee89251aa02bbd679dc258ff5ae018"
+    },
+    {
+      "item_id": "bc3161ed0219eeb9",
+      "case_id": "development-018-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-018-restore-exposure-strong-en.png",
+      "image_sha256": "bf661dbfddab6ef4408ddb305cd4e8cc2d9bc2397ce4ac36647a5b92e9a2b83d"
+    },
+    {
+      "item_id": "e45270216c5955c9",
+      "case_id": "development-018-style-sepia-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-018-style-sepia-weak-zh.png",
+      "image_sha256": "60910733e6c94fb45e0fd9d044e64badd6da62bbaa4bbb8f2d68ab0f82cd25ef"
+    },
+    {
+      "item_id": "06793be3c20036d6",
+      "case_id": "development-018-style-sepia-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-018-style-sepia-weak-en.png",
+      "image_sha256": "cad6d69bb66271ec994f13b2b8ccc0fa376630a4e6e59c4978f083be85274ab5"
+    },
+    {
+      "item_id": "6ec4434ad42ffc12",
+      "case_id": "development-018-style-sepia-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-018-style-sepia-strong-zh.png",
+      "image_sha256": "f889d027e7b0272163a637a0c60377ccbb6adefd93ec8260969ac248c7dbcd13"
+    },
+    {
+      "item_id": "7fe9c53cb65738f2",
+      "case_id": "development-018-style-sepia-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-018-style-sepia-strong-en.png",
+      "image_sha256": "bb74008526d4225c48b90cace5d51bc702788e1d9c813e550815e453e1eb650b"
+    },
+    {
+      "item_id": "2e5a6e6e577ded47",
+      "case_id": "development-018-identity",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-018-identity-zh.png",
+      "image_sha256": "967a32ff3bb984ad7f7561c11e87fcbdda9dd7ce9b56edf463f2d7d282d7a341"
+    },
+    {
+      "item_id": "8c38af52b45ebfce",
+      "case_id": "development-020-restore-contrast-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-020-restore-contrast-mild-zh.png",
+      "image_sha256": "bd28aa5458b43789d58754845140041808ad4a477987d2c05b42dab295ae93c1"
+    },
+    {
+      "item_id": "48dde3ad80a8f522",
+      "case_id": "development-020-restore-contrast-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-020-restore-contrast-mild-en.png",
+      "image_sha256": "ff5c88b250a9cbfbc944f0de2a95a45ed6b73702c83a54ab586860f4cc5e27a6"
+    },
+    {
+      "item_id": "284e4f35639e0fbc",
+      "case_id": "development-020-restore-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-020-restore-contrast-strong-zh.png",
+      "image_sha256": "2aa030fd3cf97b1a1680d5045023d40d262575875252621f2f4031ce4b7243ae"
+    },
+    {
+      "item_id": "7861204db6d1b971",
+      "case_id": "development-020-restore-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-020-restore-contrast-strong-en.png",
+      "image_sha256": "9aefa156f23aec66ec088621262426048aa7ffa595abb57a82a54f8feb01a88d"
+    },
+    {
+      "item_id": "446494fe51b72d2d",
+      "case_id": "development-020-style-shadows-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-020-style-shadows-weak-zh.png",
+      "image_sha256": "864b69e0e92bef0a0cda71fc08a09e940052cd5c71068949cbd19a6242940f31"
+    },
+    {
+      "item_id": "4b696a136efafa11",
+      "case_id": "development-020-style-shadows-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-020-style-shadows-weak-en.png",
+      "image_sha256": "cedbd099fb7919490b5e48669a3b8942d63ac3cb1d30f572604961dbc56eb38a"
+    },
+    {
+      "item_id": "8f1416aa3860ca44",
+      "case_id": "development-020-style-shadows-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-020-style-shadows-strong-zh.png",
+      "image_sha256": "0a1da02e27ba06f0c99c46c6eee815d179f9130500d67ff11b01c526d0786560"
+    },
+    {
+      "item_id": "9cdac3501e8d7e1b",
+      "case_id": "development-020-style-shadows-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-020-style-shadows-strong-en.png",
+      "image_sha256": "30e7301eff7f999aebe6997eabd4299f7c1068e7e4f3a8f8ce20d48922429b12"
+    },
+    {
+      "item_id": "e92822db0081d3dc",
+      "case_id": "development-020-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-020-compound-zh.png",
+      "image_sha256": "ef287a3d154e8a1be91b8828ac535eb9cd9ce94a650f4698d174b4509c754b55"
+    },
+    {
+      "item_id": "cbf81eaca631095e",
+      "case_id": "development-020-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-020-compound-en.png",
+      "image_sha256": "41a5a44a6435b33cdc472b1e76036b74009449ed77a1264f6816e517f498fce7"
+    },
+    {
+      "item_id": "be55b2ac8ef83848",
+      "case_id": "development-028-restore-saturation-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-028-restore-saturation-mild-zh.png",
+      "image_sha256": "958fa8b571895c5bf1df9dc1ed9f789e133556fd418dfb378d6d8d5e0de6dbc3"
+    },
+    {
+      "item_id": "98faced1709cc7dd",
+      "case_id": "development-028-restore-saturation-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-028-restore-saturation-mild-en.png",
+      "image_sha256": "0fc58a9455487505ff4d59cd326122224ee2bd6eb463603d55cfc1f2855a8a35"
+    },
+    {
+      "item_id": "cdd7d12811b1cf6c",
+      "case_id": "development-028-restore-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-028-restore-saturation-strong-zh.png",
+      "image_sha256": "749fa8ccf801f880304d765ddb8c50407b25d16bb3d10dd7ba908e93d881fa01"
+    },
+    {
+      "item_id": "534d26cf687382ee",
+      "case_id": "development-028-restore-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-028-restore-saturation-strong-en.png",
+      "image_sha256": "cd35f8a49d235bb17a4be755e9ecfecf0a4dca43c88ee65f25d2328a28149e67"
+    },
+    {
+      "item_id": "383635c644c621bf",
+      "case_id": "development-028-style-temperature-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-028-style-temperature-weak-zh.png",
+      "image_sha256": "8798eb20b4123e9a8be3b3a950b55f1b2f454f4a3dbf03105dffda98992742df"
+    },
+    {
+      "item_id": "4d0d484c54b0babe",
+      "case_id": "development-028-style-temperature-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-028-style-temperature-weak-en.png",
+      "image_sha256": "1629b49a47be0c2a2350617711847d350b11ea316f3610d602b8dc99cc627941"
+    },
+    {
+      "item_id": "da9f3cef1147278c",
+      "case_id": "development-028-style-temperature-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-028-style-temperature-strong-zh.png",
+      "image_sha256": "5987dc18d29704ea8ba25465cd6db0501110685ea1d6a44b155a3b2f63b27b90"
+    },
+    {
+      "item_id": "d23dd11211dd8479",
+      "case_id": "development-028-style-temperature-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-028-style-temperature-strong-en.png",
+      "image_sha256": "853e51cb2763b9744dfc7930cd58df8b7977f02f01415fb43d94fb2ca896cd83"
+    },
+    {
+      "item_id": "0c6e74f3cc4e47ee",
+      "case_id": "development-028-identity",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-028-identity-zh.png",
+      "image_sha256": "65e203f4971491c8df2fb18f41b047a39d7e4258da99f6423941e3bba01fccec"
+    },
+    {
+      "item_id": "963ccb7b0b3a2eb5",
+      "case_id": "development-031-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-031-restore-exposure-mild-zh.png",
+      "image_sha256": "9ff06feae3db9ff9e6733598160663bcea28a83dd2a8fd6a0bfc0a0ee542ede8"
+    },
+    {
+      "item_id": "855b8522b888cf1a",
+      "case_id": "development-031-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-031-restore-exposure-mild-en.png",
+      "image_sha256": "69a6d48716c6abb3b1065545e54e71f789610868e321a6a89281e35816223003"
+    },
+    {
+      "item_id": "d6c6115703c3dd15",
+      "case_id": "development-031-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-031-restore-exposure-strong-zh.png",
+      "image_sha256": "5cb9930869ab49d6e8f4255d1d975aebe6499aa9acbc4e6c78106f7197ff4c73"
+    },
+    {
+      "item_id": "707c55b84edfd5b3",
+      "case_id": "development-031-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-031-restore-exposure-strong-en.png",
+      "image_sha256": "fbecf0022abf1c6287f3b68194656f378c5e0660a1d5376b0de38034d0860f3c"
+    },
+    {
+      "item_id": "f0b3b87364d2f263",
+      "case_id": "development-031-style-saturation-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-031-style-saturation-weak-zh.png",
+      "image_sha256": "b8593d1f9f93f9ba013fc764c33d318ffb0a46331a6b5c6583296686ed210b22"
+    },
+    {
+      "item_id": "5f6b45d32a2cd852",
+      "case_id": "development-031-style-saturation-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-031-style-saturation-weak-en.png",
+      "image_sha256": "642312d5d8aaec50544feba2714f84785701916f63f1c67d562e74a1486377ff"
+    },
+    {
+      "item_id": "d3ca22cd27eff9c0",
+      "case_id": "development-031-style-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-031-style-saturation-strong-zh.png",
+      "image_sha256": "72280c0e8b91168dd82c46d21297ce04e03d4b441dbc685af44d1043bfc1caaa"
+    },
+    {
+      "item_id": "5d7ccf1050ce6f35",
+      "case_id": "development-031-style-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-031-style-saturation-strong-en.png",
+      "image_sha256": "1f0abf7321818ce1c998f4350a304475c4f900e4ffc133e9dc007805577cb575"
+    },
+    {
+      "item_id": "d1170bf30432c9e5",
+      "case_id": "development-031-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-031-compound-zh.png",
+      "image_sha256": "808e61140a2833b5d73b986ccc2e2b30310404305989df01a4645cde936ea656"
+    },
+    {
+      "item_id": "1958cd7108350262",
+      "case_id": "development-031-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-031-compound-en.png",
+      "image_sha256": "b7cd6e0a99d9f4eb5d17d4fafa556369af1efd607df968deb6925927607ef03e"
+    },
+    {
+      "item_id": "13e64ad326633924",
+      "case_id": "development-033-restore-contrast-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-033-restore-contrast-mild-zh.png",
+      "image_sha256": "24033c463a49649cbb7ee5e0c00c39724022270e29941208d3de3494032f136c"
+    },
+    {
+      "item_id": "624787519ce6248e",
+      "case_id": "development-033-restore-contrast-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-033-restore-contrast-mild-en.png",
+      "image_sha256": "05f383a8d382bb65fb64efa5b894ba8be0e2f4eb02c5d0c3758299e19df2d501"
+    },
+    {
+      "item_id": "1098b6ef9b6e910c",
+      "case_id": "development-033-restore-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-033-restore-contrast-strong-zh.png",
+      "image_sha256": "806dbe059f142043e0caaf927a1e438f41782ca0c10a3bd45de17a746a606a22"
+    },
+    {
+      "item_id": "8f2e1b6ce288761f",
+      "case_id": "development-033-restore-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-033-restore-contrast-strong-en.png",
+      "image_sha256": "b10bd4a01b0b415f992818e9391026ea6d75ce3dbaf0d826685b65e39cb8fda5"
+    },
+    {
+      "item_id": "e446693826f790d9",
+      "case_id": "development-033-style-contrast-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-033-style-contrast-weak-zh.png",
+      "image_sha256": "27a8accdbadfda1c0c456b38df30fda47e4eaa217b2c29d97df6c8985e95bdf4"
+    },
+    {
+      "item_id": "981cbfe321df0721",
+      "case_id": "development-033-style-contrast-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-033-style-contrast-weak-en.png",
+      "image_sha256": "44079e9f6ed1009194457ac8326e4d2bd825549c80599332f52747c4c115b8ca"
+    },
+    {
+      "item_id": "d72863e4eb17aac3",
+      "case_id": "development-033-style-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-033-style-contrast-strong-zh.png",
+      "image_sha256": "2c244b73fae6f836cb73775f7e12b2782fd51b4e7999d452f8d72f0b14d881af"
+    },
+    {
+      "item_id": "4bc9e12367722a73",
+      "case_id": "development-033-style-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-033-style-contrast-strong-en.png",
+      "image_sha256": "a7758e5e128fad3b783e9a26376b3db2657ace7797e4a66b3dafbbc1df3e7e89"
+    },
+    {
+      "item_id": "e90f17ba1e1061ba",
+      "case_id": "development-033-identity",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-033-identity-zh.png",
+      "image_sha256": "f72ed5d56436da533ea47944a43d7ac7d5f5fa987b1a73f6f01384e05aa2f294"
+    },
+    {
+      "item_id": "81639dd4e25f1368",
+      "case_id": "development-040-restore-saturation-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-040-restore-saturation-mild-zh.png",
+      "image_sha256": "170c411fc80ea8be056c706d61dd837d5909defcd955bb6754957fa02e6d2cc3"
+    },
+    {
+      "item_id": "380970c2f4283014",
+      "case_id": "development-040-restore-saturation-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-040-restore-saturation-mild-en.png",
+      "image_sha256": "aafe48b24d81e77d6d923f17341e01024d4ee342f9d78c725b515db09688fbcf"
+    },
+    {
+      "item_id": "612dae221e5f843a",
+      "case_id": "development-040-restore-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-040-restore-saturation-strong-zh.png",
+      "image_sha256": "dabdcf425ca164416053548725f5a42cc7c512daf0430a8f98c856c13886de12"
+    },
+    {
+      "item_id": "6df381324b83d9df",
+      "case_id": "development-040-restore-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-040-restore-saturation-strong-en.png",
+      "image_sha256": "7173585f1eaedb46accc9b72e146db184f9f9ca02df28a708aa267893e518f61"
+    },
+    {
+      "item_id": "92f6cbe2de9bdda8",
+      "case_id": "development-040-style-sepia-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-040-style-sepia-weak-zh.png",
+      "image_sha256": "2663449b57f7f95cb7dbc5759bb9a382e65ff5014a7c472ca9c7371abcbc36fe"
+    },
+    {
+      "item_id": "01cdd4d21c4de73d",
+      "case_id": "development-040-style-sepia-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-040-style-sepia-weak-en.png",
+      "image_sha256": "41c8735a2653b9c5a0d55165773b7bcefc9e6710787d3148563acd1694da3d8b"
+    },
+    {
+      "item_id": "aeec0b0bc3ac03fd",
+      "case_id": "development-040-style-sepia-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-040-style-sepia-strong-zh.png",
+      "image_sha256": "d6128eeda3e4bc077ecd7d1ebc63b1943f9fe2781d7db850aeeb8bdc4a8eca68"
+    },
+    {
+      "item_id": "8cebed4e1d0872e3",
+      "case_id": "development-040-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-040-compound-zh.png",
+      "image_sha256": "8c37fb4437082d787f10c9077b09a4e89d49cfae24d92fba59ca1e968d9ea86f"
+    },
+    {
+      "item_id": "8927fd72823f1c44",
+      "case_id": "development-040-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-040-compound-en.png",
+      "image_sha256": "c008c8cd42621436e2cbbc55c039fa8572400fe01efa73eb367e5138564bf501"
+    },
+    {
+      "item_id": "0c87c995ee780ebe",
+      "case_id": "development-055-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-055-restore-exposure-mild-zh.png",
+      "image_sha256": "c1b2f4262ce38427fd9efff9b7d4354609f1c5132d69d1ef6053cf3b3efeebb9"
+    },
+    {
+      "item_id": "0332565d26030b0a",
+      "case_id": "development-055-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-055-restore-exposure-mild-en.png",
+      "image_sha256": "994cbe0d73ec827d260dd7faf2113cd227b0b262a7406a146c5d8fb18e2f1575"
+    },
+    {
+      "item_id": "08317620434063a2",
+      "case_id": "development-055-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-055-restore-exposure-strong-zh.png",
+      "image_sha256": "1cb2744ddac4c334801bea169655f035ae650c35b2cc0244f8d9ace5d06eb188"
+    },
+    {
+      "item_id": "413c6f09ffdaaf80",
+      "case_id": "development-055-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-055-restore-exposure-strong-en.png",
+      "image_sha256": "ff6a38d4de7eed7b66ea5516334144adbf8e2b43b0de0e22adac004ba57f206a"
+    },
+    {
+      "item_id": "97c1b283dd3fee88",
+      "case_id": "development-055-style-shadows-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-055-style-shadows-weak-zh.png",
+      "image_sha256": "93d54c376c00fa5a979340ba0dd07aa12c5ba030107f7f219b3454a598328cc3"
+    },
+    {
+      "item_id": "208bce592e75a289",
+      "case_id": "development-055-style-shadows-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-055-style-shadows-weak-en.png",
+      "image_sha256": "f825263727ad8ff458768a427e1aec848ea43fbdc6f7b8702ec8596b8f474da0"
+    },
+    {
+      "item_id": "b03c4c2517e79db7",
+      "case_id": "development-055-style-shadows-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-055-style-shadows-strong-zh.png",
+      "image_sha256": "88f3059a90667a171522b2dd7e0732ab7c995977e8f3310ea35eea24ed6401d2"
+    },
+    {
+      "item_id": "4b1f905134e6de29",
+      "case_id": "development-055-style-shadows-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-055-style-shadows-strong-en.png",
+      "image_sha256": "3e5dd107427dd21c7f2c5c34a54c975eee21ae5b8f78632a2dfa2c43ba22c517"
+    },
+    {
+      "item_id": "fe77717902773d8d",
+      "case_id": "development-055-identity",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-055-identity-zh.png",
+      "image_sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c"
+    },
+    {
+      "item_id": "2dc3e9d3f3908aef",
+      "case_id": "development-006-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-006-restore-exposure-mild-zh.png",
+      "image_sha256": "10c2bceec39db2ac9eeeeba316a487d5c26fa4dd9369ee7848e6f74982824ebf"
+    },
+    {
+      "item_id": "bdf1383d0d74eccc",
+      "case_id": "development-006-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-006-restore-exposure-mild-en.png",
+      "image_sha256": "adb6b8732b1ebafb9a10a6e6794a7eba6c8702a714f629d3c476fcb65bbea6c9"
+    },
+    {
+      "item_id": "e3e9314d4494dfa4",
+      "case_id": "development-006-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-006-restore-exposure-strong-zh.png",
+      "image_sha256": "8cc541cd4aaa8a8c621e8fc2357c4a6ea1d6fe8733611c8726896c4b852827c7"
+    },
+    {
+      "item_id": "23249549d77f98fc",
+      "case_id": "development-006-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-006-restore-exposure-strong-en.png",
+      "image_sha256": "e9d8e537f9c4985b2a41e866aac161462ac09eb536f20098f9a3993a8b7eae40"
+    },
+    {
+      "item_id": "f5096216eb731a86",
+      "case_id": "development-006-style-temperature-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-006-style-temperature-weak-zh.png",
+      "image_sha256": "ff8a1b48960959897fc75ad27fb6c785a42fbc38373d811b937bbc2f58ebae11"
+    },
+    {
+      "item_id": "2deb5363023699fd",
+      "case_id": "development-006-style-temperature-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-006-style-temperature-weak-en.png",
+      "image_sha256": "f31d9086eac50e8fd942b88fba02aebd5390f00f2c89097900476201f01a0a8c"
+    },
+    {
+      "item_id": "45dfa3182db4a5e0",
+      "case_id": "development-006-style-temperature-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-006-style-temperature-strong-zh.png",
+      "image_sha256": "4831a5d439c33b39aa4cc4a8e218c1e6e81f463d59dbfbb61d19982fb4f5871d"
+    },
+    {
+      "item_id": "1f53fa11acac066c",
+      "case_id": "development-006-style-temperature-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-006-style-temperature-strong-en.png",
+      "image_sha256": "9389b9d42d441bffa53a6f69f04a005bcc0de395da65958976d68642e9fe6f20"
+    },
+    {
+      "item_id": "091451b3db437290",
+      "case_id": "development-006-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-006-compound-zh.png",
+      "image_sha256": "40e82a68ea5e8e150d18b8c880262ab501f642c5b991191afffb3bae75663a6d"
+    },
+    {
+      "item_id": "d7366abe186472c8",
+      "case_id": "development-006-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-006-compound-en.png",
+      "image_sha256": "edd7a8074ba86d1016289e87fdb7b20546993d150143da7241865dfe3120016c"
+    },
+    {
+      "item_id": "1f5d347932f538ed",
+      "case_id": "development-010-restore-contrast-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-010-restore-contrast-mild-zh.png",
+      "image_sha256": "289887d692e41cb8a516bda6ba4da51b480f93b9adc221ffb8cfeaeeb94a3251"
+    },
+    {
+      "item_id": "2c53da973165dd07",
+      "case_id": "development-010-restore-contrast-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-010-restore-contrast-mild-en.png",
+      "image_sha256": "f85ba6ce4dfcaf064375add3e722b05761ec85d09d5117a4b275225e7d0c75db"
+    },
+    {
+      "item_id": "bbaf6dadc278d653",
+      "case_id": "development-010-restore-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-010-restore-contrast-strong-zh.png",
+      "image_sha256": "bb099b961138475508722d95c986cbbe4efca2f3a27a0b85a4015666ab1fa9e9"
+    },
+    {
+      "item_id": "80ca55a6ae20c967",
+      "case_id": "development-010-restore-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-010-restore-contrast-strong-en.png",
+      "image_sha256": "fd292c31bfc45fa24fffd464752c90e5862d063ed792f89db36c508c02157ac8"
+    },
+    {
+      "item_id": "f2ededf7c899bc58",
+      "case_id": "development-010-style-saturation-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-010-style-saturation-weak-zh.png",
+      "image_sha256": "b63916f9c67561b077be56a9a2e5709eb399f49a8903053721b6e282fe41f83b"
+    },
+    {
+      "item_id": "da7147c94596dae6",
+      "case_id": "development-010-style-saturation-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-010-style-saturation-weak-en.png",
+      "image_sha256": "24515774f1934d3e4626600cfec5d2a92ac3c179abdac3eccbbc9142be84564c"
+    },
+    {
+      "item_id": "91e75ab6a631f507",
+      "case_id": "development-010-style-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-010-style-saturation-strong-zh.png",
+      "image_sha256": "ae238241638f9b1d9302edc9136f8cc0995f09550e45d507ea423da86b6fb415"
+    },
+    {
+      "item_id": "0d6a7be0dd427510",
+      "case_id": "development-010-identity",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-010-identity-zh.png",
+      "image_sha256": "f19e28288a427148eb5230d30fe1ee243124828b54c80a4c61a9081efea879ed"
+    },
+    {
+      "item_id": "e2281df44b8a6482",
+      "case_id": "development-019-restore-saturation-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-019-restore-saturation-mild-zh.png",
+      "image_sha256": "587b06bec88b1c5313e1f60da6b6d9b2d1d52f9e4f1a6dc2e8817f1f2640b466"
+    },
+    {
+      "item_id": "5230632184db4212",
+      "case_id": "development-019-restore-saturation-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-019-restore-saturation-mild-en.png",
+      "image_sha256": "dc1b989e580310c87a4c0d1288618802f1fcc9101f62e3e4e829115b7daece51"
+    },
+    {
+      "item_id": "c5d47d37f5a86c8f",
+      "case_id": "development-019-restore-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-019-restore-saturation-strong-zh.png",
+      "image_sha256": "5debe030ad8cb5eeed080bbfe1a9ef19a2acec3bb09ab09eaec22ee1b7b96ac9"
+    },
+    {
+      "item_id": "e278bfce9c72eff8",
+      "case_id": "development-019-restore-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-019-restore-saturation-strong-en.png",
+      "image_sha256": "c79d165074f19db32310c9a7db4fa92007243ac1a06cd986bb730e563523784e"
+    },
+    {
+      "item_id": "0f41c6487c306e89",
+      "case_id": "development-019-style-contrast-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-019-style-contrast-weak-zh.png",
+      "image_sha256": "f9ed128113f2dd756d62447c16a4942dad6b13a2bf0c677c5655cb2350d5b17a"
+    },
+    {
+      "item_id": "e000e46dae15518f",
+      "case_id": "development-019-style-contrast-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-019-style-contrast-weak-en.png",
+      "image_sha256": "3d7d00c360841fe7b7e5a4f5fc5af24eaf33522d90e2d3791ad31c12a21d47db"
+    },
+    {
+      "item_id": "70a3583bb1a4ed4b",
+      "case_id": "development-019-style-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-019-style-contrast-strong-zh.png",
+      "image_sha256": "e61468b0ad43fccdbd653c76f7d419985a900e8677581213be912253588c3767"
+    },
+    {
+      "item_id": "095f634487fb2bbd",
+      "case_id": "development-019-style-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-019-style-contrast-strong-en.png",
+      "image_sha256": "44039497258a8af0bcde81567c0a5f7a469d2d836ee77b6f970aabfc944c48ca"
+    },
+    {
+      "item_id": "4b7e2522936dc384",
+      "case_id": "development-019-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-019-compound-zh.png",
+      "image_sha256": "f8fe48e065d70023a8ce7141bf97f45f15f6a5699ea877c5f835943846837c57"
+    },
+    {
+      "item_id": "508ec530cc443fce",
+      "case_id": "development-019-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-019-compound-en.png",
+      "image_sha256": "f12d861321893499416af3a50547bce9a54e840feeb662aeea66478990e5e2c9"
+    },
+    {
+      "item_id": "288414bf615b4256",
+      "case_id": "development-022-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-022-restore-exposure-mild-zh.png",
+      "image_sha256": "fec8472e0c809ce3fdb31d402632f8e255d5ac47c6de765a02e4a80dacd169de"
+    },
+    {
+      "item_id": "2de3ac17c6c3d62f",
+      "case_id": "development-022-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-022-restore-exposure-mild-en.png",
+      "image_sha256": "f224176c280f132b3f8fe6ea2074f0619d53141be4c6408844e5b553da8a91c1"
+    },
+    {
+      "item_id": "716c77452688618b",
+      "case_id": "development-022-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-022-restore-exposure-strong-zh.png",
+      "image_sha256": "faef24fef5dcb4c9796272cbe0406981b869546482a41b2bedc4aee85577b31b"
+    },
+    {
+      "item_id": "2e32e5dd9907cf97",
+      "case_id": "development-022-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-022-restore-exposure-strong-en.png",
+      "image_sha256": "bbd84f9c78e6351120c1551208376ddec753f410e4a6c70ac7638aad90003b24"
+    },
+    {
+      "item_id": "f16fd9a86819debe",
+      "case_id": "development-022-style-sepia-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-022-style-sepia-weak-zh.png",
+      "image_sha256": "6246d29c5f6ac753d41ae8c04c14521ae1da40e3aa88dbd56fd76a09fd8e9c0a"
+    },
+    {
+      "item_id": "8047aec76ae5fb6a",
+      "case_id": "development-022-style-sepia-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-022-style-sepia-weak-en.png",
+      "image_sha256": "81082b269391be91904d2b1705e6837993009d4f0573c960abc215cd875bf0f0"
+    },
+    {
+      "item_id": "07ae0262c26680ec",
+      "case_id": "development-022-style-sepia-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-022-style-sepia-strong-zh.png",
+      "image_sha256": "9d838bbaa969c16c694272feedcfc6898d1ad9ef4df2c3bd0d67b9703d9ae8a7"
+    },
+    {
+      "item_id": "8742d8f98a2fb6ea",
+      "case_id": "development-022-style-sepia-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-022-style-sepia-strong-en.png",
+      "image_sha256": "43667ef99538e06912d199f68592ed5705383fd6fdd5cd19b1317b6f01c73f7e"
+    },
+    {
+      "item_id": "38ec413413b2ef09",
+      "case_id": "development-022-identity",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-022-identity-zh.png",
+      "image_sha256": "0baac0766f8640e91aa7c446981c0ec2173e726fcf1ce59fa1f7e9f797288cea"
+    },
+    {
+      "item_id": "171f29b8aa142299",
+      "case_id": "development-027-restore-contrast-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-027-restore-contrast-mild-zh.png",
+      "image_sha256": "bb03cc0eb4cf57096ce79723a3a74175925eeac45f66d6567bbda64a25586438"
+    },
+    {
+      "item_id": "aed41a973fad4733",
+      "case_id": "development-027-restore-contrast-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-027-restore-contrast-mild-en.png",
+      "image_sha256": "a5df2c424190152c976754b95f5e6ab45c1774fafe363646789724245da34c0b"
+    },
+    {
+      "item_id": "01cabcea2a04d585",
+      "case_id": "development-027-restore-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-027-restore-contrast-strong-zh.png",
+      "image_sha256": "4332dd86256289d409e7f713c020daa490160844abb45b5eb959fb47da07dc08"
+    },
+    {
+      "item_id": "8f22b4eeb4cd1548",
+      "case_id": "development-027-restore-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-027-restore-contrast-strong-en.png",
+      "image_sha256": "d7d3f93d911a97550e4c5054fb70f211cb3808697254ca45709677c243759049"
+    },
+    {
+      "item_id": "70912bdfcaffc087",
+      "case_id": "development-027-style-shadows-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-027-style-shadows-weak-zh.png",
+      "image_sha256": "e49d76a0110c293cac9ac0eb64362fdcde5acf2f97cbfe7737324625fff73591"
+    },
+    {
+      "item_id": "190ca00e7758990c",
+      "case_id": "development-027-style-shadows-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-027-style-shadows-weak-en.png",
+      "image_sha256": "75cf652f6f92d9f12d3d2b07d273242cbdfc7ff3b2d3633b93854d0a712a7e6b"
+    },
+    {
+      "item_id": "1f10366ad5a44d5d",
+      "case_id": "development-027-style-shadows-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-027-style-shadows-strong-zh.png",
+      "image_sha256": "6596c61d1ff73ecbf3d49c6229bbdb27c8b33f0bfab726b7b5d13a2ff7cd9ab5"
+    },
+    {
+      "item_id": "47cfcf04b92d02f7",
+      "case_id": "development-027-style-shadows-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-027-style-shadows-strong-en.png",
+      "image_sha256": "666b77107f49aa2d3425fe6a2ba48b1d53b595f524840614773c914e13cd4b10"
+    },
+    {
+      "item_id": "ca1c163e4b3c63f0",
+      "case_id": "development-027-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-027-compound-zh.png",
+      "image_sha256": "ecd95bb2c4258e0a25476bc40521ece372f22fe5623dfd69ecbd27b76d8975ab"
+    },
+    {
+      "item_id": "b0aa807932c13123",
+      "case_id": "development-027-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-027-compound-en.png",
+      "image_sha256": "23645e6e5cb565e064ee1e8a65b031c15523d1ee50f1005bbbf9c587280881c9"
+    },
+    {
+      "item_id": "02546f7c2b780309",
+      "case_id": "development-029-restore-saturation-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-029-restore-saturation-mild-zh.png",
+      "image_sha256": "419066ff2dc24db75a93bf37e9ba442e461074243d804de2dd6ce573b7dd4bc7"
+    },
+    {
+      "item_id": "fe9910803fa15e8a",
+      "case_id": "development-029-restore-saturation-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-029-restore-saturation-mild-en.png",
+      "image_sha256": "6c060a7a09046b2f6f8bcdccf82f21a58a549e87f459480fb387b3956f1bd85c"
+    },
+    {
+      "item_id": "16568c8083ace3e1",
+      "case_id": "development-029-restore-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-029-restore-saturation-strong-zh.png",
+      "image_sha256": "95d394ca215549839d3c5555ca131a026c9e24d2853764327a0a2fc0713d7a1d"
+    },
+    {
+      "item_id": "eb12e562af4c5951",
+      "case_id": "development-029-restore-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-029-restore-saturation-strong-en.png",
+      "image_sha256": "d01bbf786c3c89e37a7711e4971f566b79fb728f1837b180da76e09a32296810"
+    },
+    {
+      "item_id": "af49a53c62cd385f",
+      "case_id": "development-029-style-temperature-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-029-style-temperature-weak-zh.png",
+      "image_sha256": "31ead102ed9e588353e311ce0eb571b89f12330618df5138d9ac090d153e7254"
+    },
+    {
+      "item_id": "cbed032ec485788b",
+      "case_id": "development-029-style-temperature-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-029-style-temperature-weak-en.png",
+      "image_sha256": "accf6b30e509a8749462c26b41672586f7a1ca4fd90278e87153f8222d297e85"
+    },
+    {
+      "item_id": "a2bf30727c847d79",
+      "case_id": "development-029-style-temperature-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-029-style-temperature-strong-zh.png",
+      "image_sha256": "9de041d22d9e49344d6dc84a7040bbf0d598bc98c7871b15b6cb8155c67f9a3c"
+    },
+    {
+      "item_id": "712638859c1a4b37",
+      "case_id": "development-029-style-temperature-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-029-style-temperature-strong-en.png",
+      "image_sha256": "1192e09029e9ca561f708f7dd4d8bec25804fc40e4803e56053a15582af9259a"
+    },
+    {
+      "item_id": "573cf7bef0ef1516",
+      "case_id": "development-029-identity",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-029-identity-zh.png",
+      "image_sha256": "82103a8bfa05450d9e5c449dffa7ffdece905369a7bb7d8a87430c92b7b1633d"
+    },
+    {
+      "item_id": "48380d49f23e425c",
+      "case_id": "development-030-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-030-restore-exposure-mild-zh.png",
+      "image_sha256": "c284c6a706bfa786c0079c8ec56a81a20ea27fa837dbb08239c10c7b520653b0"
+    },
+    {
+      "item_id": "3303eace4053d413",
+      "case_id": "development-030-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-030-restore-exposure-mild-en.png",
+      "image_sha256": "1c6143ca6b0d8070d2402c97116951ee0cdaa4731312e8c663346fd58991c2f5"
+    },
+    {
+      "item_id": "a2e9e78db5cdc4b8",
+      "case_id": "development-030-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-030-restore-exposure-strong-zh.png",
+      "image_sha256": "a634644cd9a28afe572c7803a78c2884f60ae4a9f7f043c25abcd47080bde5d7"
+    },
+    {
+      "item_id": "fff8c8b665b1bc31",
+      "case_id": "development-030-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-030-restore-exposure-strong-en.png",
+      "image_sha256": "9b8e76e71029a7ab8b05ea42822b529f7cf5999813a502b1854e948faca1dc6b"
+    },
+    {
+      "item_id": "108f7a93dbe3262f",
+      "case_id": "development-030-style-saturation-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-030-style-saturation-weak-zh.png",
+      "image_sha256": "c70ac8f150970a4419eb14ff3ad1904b6de50a7d43f34ac875e8ae7b78c30164"
+    },
+    {
+      "item_id": "fbe0f26b340a1ef7",
+      "case_id": "development-030-style-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-030-style-saturation-strong-zh.png",
+      "image_sha256": "db8f37e742ce8e762ae36b83a61b9dd1c687a61dd1e4f7fe02145e93966989b3"
+    },
+    {
+      "item_id": "da7d6484fecec17e",
+      "case_id": "development-030-style-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-030-style-saturation-strong-en.png",
+      "image_sha256": "a38cb0aa7eef9a2c320ba6385a6feafe0edfe25dbeb520f581d5d3639d367afb"
+    },
+    {
+      "item_id": "ab01247dfda27a4c",
+      "case_id": "development-030-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-030-compound-zh.png",
+      "image_sha256": "c9fc54bb6a18b1a6b8b69505b24fbe87f76939086135613695db7323c5029dda"
+    },
+    {
+      "item_id": "8c03cf795e410b72",
+      "case_id": "development-030-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-030-compound-en.png",
+      "image_sha256": "4a89e3ed1a2ace44a1308c543d55a6e18afdf070e45b9237d1220905a085be2f"
+    },
+    {
+      "item_id": "7416cf981996848d",
+      "case_id": "development-041-restore-contrast-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-041-restore-contrast-mild-zh.png",
+      "image_sha256": "e3139c945b61373e86f6f850ba5270115c65f64b0622c085fe8d1993d81c9b61"
+    },
+    {
+      "item_id": "3307800f19234a08",
+      "case_id": "development-041-restore-contrast-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-041-restore-contrast-mild-en.png",
+      "image_sha256": "45f953f38de873bb270dc25dd226a022f5432b6acc126aa109984bd456a9c2ae"
+    },
+    {
+      "item_id": "b4b1b1664d82a1eb",
+      "case_id": "development-041-restore-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-041-restore-contrast-strong-zh.png",
+      "image_sha256": "b9f57fcead2b666a3e4d24ec9fadc0e683b0974d70d14b32ae375ac4782c3461"
+    },
+    {
+      "item_id": "1b80315c15927179",
+      "case_id": "development-041-restore-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-041-restore-contrast-strong-en.png",
+      "image_sha256": "730e689c4f27cf447c245ce7acb05b156d4bc8eed9c500ab848369ea2d3b0850"
+    },
+    {
+      "item_id": "4c152ace79ce0be0",
+      "case_id": "development-041-style-contrast-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-041-style-contrast-weak-zh.png",
+      "image_sha256": "7dd471352fb1a0bbe48e95b622e500f0b7b41f90eb6aada807480c66a83f02d2"
+    },
+    {
+      "item_id": "bc8258862db4be63",
+      "case_id": "development-041-style-contrast-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-041-style-contrast-weak-en.png",
+      "image_sha256": "7b0e68d5ee0b6f2122cb8a0c265744d994f5fa06447130df3d4d039d437ac68c"
+    },
+    {
+      "item_id": "08c80b8596901796",
+      "case_id": "development-041-style-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-041-style-contrast-strong-zh.png",
+      "image_sha256": "24c9f9571cb8b569dd5d6f70da60b07d60e1f3611b1622e40a6c63f3e193aa1d"
+    },
+    {
+      "item_id": "d85bf5eadb1ffa68",
+      "case_id": "development-041-style-contrast-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-041-style-contrast-strong-en.png",
+      "image_sha256": "85a2a70a2b2dfe7544525c73e0747bcbbb1aeca1693211e9f87ad6bb5a59f560"
+    },
+    {
+      "item_id": "9018e37136a18654",
+      "case_id": "development-041-identity",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-041-identity-zh.png",
+      "image_sha256": "e5c08da09137dc714c70031b9875351348c523978e1ace16e4d6fcfa318a3a2d"
+    },
+    {
+      "item_id": "74650de6494cba89",
+      "case_id": "development-080-restore-saturation-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-080-restore-saturation-mild-zh.png",
+      "image_sha256": "d4232752422f5c8995ab4b7b136dd8202fda5069f92342f577d0a8865f6add6a"
+    },
+    {
+      "item_id": "fac3d2541b223b17",
+      "case_id": "development-080-restore-saturation-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-080-restore-saturation-mild-en.png",
+      "image_sha256": "35913ce88d13e3070f5bdc47d5864a2cc9b48142fc6833b939a58cba5becf291"
+    },
+    {
+      "item_id": "8607774cc9575725",
+      "case_id": "development-080-restore-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-080-restore-saturation-strong-zh.png",
+      "image_sha256": "e6976c05bbd75e2f74345676068313570c2a82269623a1b94a07fe86cc2ee9ad"
+    },
+    {
+      "item_id": "3168c4ac22859210",
+      "case_id": "development-080-restore-saturation-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-080-restore-saturation-strong-en.png",
+      "image_sha256": "84ad6bd59960d20c5d41751f3920100158261054620996b3b92e3eddc520afa4"
+    },
+    {
+      "item_id": "41590f35d2ff40d7",
+      "case_id": "development-080-style-sepia-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-080-style-sepia-weak-zh.png",
+      "image_sha256": "b0fdceb6fb5afa9a429a8ae001b332aaaa2b8f6962841073f9c9b5000f1afb28"
+    },
+    {
+      "item_id": "81638aae9a4af89a",
+      "case_id": "development-080-style-sepia-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-080-style-sepia-weak-en.png",
+      "image_sha256": "c27eccd167e884b7d87a75ca8be3eb199f4775b7b5fa9c3ae10da324165ed4c1"
+    },
+    {
+      "item_id": "434a4cf0bf5cff6b",
+      "case_id": "development-080-style-sepia-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-080-style-sepia-strong-zh.png",
+      "image_sha256": "c806d23815f6610bd7a36bf315f4c1f5c0b0f1aa418891327d5ba962bc94b1ae"
+    },
+    {
+      "item_id": "aaa30007bfd5bed9",
+      "case_id": "development-080-style-sepia-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-080-style-sepia-strong-en.png",
+      "image_sha256": "a281a92ec53ff5ac88d02ea4d006ff731a60fe70913231e315ac32a7e6e93060"
+    },
+    {
+      "item_id": "e9e102cd3cbde6b6",
+      "case_id": "development-080-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-080-compound-zh.png",
+      "image_sha256": "90056db7c4ca418c7064967f7b930127b6d0eee25d83757b24b5aee7baa281ee"
+    },
+    {
+      "item_id": "8221c8935b4a893d",
+      "case_id": "development-080-compound",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-080-compound-en.png",
+      "image_sha256": "1be98d0948384a07f14f5d1e70e503d758a9c15958e595899f2359f16631869f"
+    },
+    {
+      "item_id": "b2cfd94cb51144ac",
+      "case_id": "development-106-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-106-restore-exposure-mild-zh.png",
+      "image_sha256": "922795eb9aa0c00f0d2e6e6eb6fde601f8db4338b7a9af78c0d47aa0c59b7a52"
+    },
+    {
+      "item_id": "a6eb0c7983dad044",
+      "case_id": "development-106-restore-exposure-mild",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-106-restore-exposure-mild-en.png",
+      "image_sha256": "be7781152042782fd36c000d29f687fb9d23f3c94647a243f564e12166da06ec"
+    },
+    {
+      "item_id": "6848dffc37088d2d",
+      "case_id": "development-106-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-106-restore-exposure-strong-zh.png",
+      "image_sha256": "65dbceb1c4fbdd4ece230f5ec6ae7cfa79c4cd0b69cc96db241d7fc2973a9e13"
+    },
+    {
+      "item_id": "5e89bf55cd04fa89",
+      "case_id": "development-106-restore-exposure-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-106-restore-exposure-strong-en.png",
+      "image_sha256": "9e26f6fe608cebcbcb4e6f3d55a596ca6dd8abdce25fda2102a91fd53ab57370"
+    },
+    {
+      "item_id": "1645334f44336c80",
+      "case_id": "development-106-style-shadows-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-106-style-shadows-weak-zh.png",
+      "image_sha256": "e0ab14fd16b22fb7f44fdc99787426a019c5130114ed5b7d47e1176cf924a575"
+    },
+    {
+      "item_id": "c1a8853c6a05b100",
+      "case_id": "development-106-style-shadows-weak",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-106-style-shadows-weak-en.png",
+      "image_sha256": "6aa9ed912971957c644a99c4b41a76f09b8dab3551ab73a29a2b28a3cc8a162e"
+    },
+    {
+      "item_id": "f8652021d007a062",
+      "case_id": "development-106-style-shadows-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-106-style-shadows-strong-zh.png",
+      "image_sha256": "6bde737c91edb9faaaab3d5034facba9e4c15f23389b45a3b6bf39e0ae0a516b"
+    },
+    {
+      "item_id": "03f6a4b0b8af0777",
+      "case_id": "development-106-style-shadows-strong",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-106-style-shadows-strong-en.png",
+      "image_sha256": "d32833d13bb01d9f237a19fc659bf673d4d110661fe2cf11c1b02ab36343445a"
+    },
+    {
+      "item_id": "87063acc7d2e4fd1",
+      "case_id": "development-106-identity",
+      "image": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/images/development-106-identity-zh.png",
+      "image_sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2"
+    }
+  ],
+  "sheets": [
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-001-restore-exposure-mild-01.jpg",
+      "sha256": "2ed77102ae5b7214fb742598fe36aacfbac26f7373351cc5d4a7a57a2ce7db42",
+      "case_id": "development-001-restore-exposure-mild",
+      "items": [
+        "d0c9f51b88aff0af"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-001-restore-exposure-strong-01.jpg",
+      "sha256": "3b616e5d8854c13414f13312d56b21e6e7b8d490c1183a71e7379222e73f008e",
+      "case_id": "development-001-restore-exposure-strong",
+      "items": [
+        "2b95d81d997f7266",
+        "58943a8a43e5f23d"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-001-style-temperature-weak-01.jpg",
+      "sha256": "81707f155174816a9660fabf862b1a9086c41490cf26d5a8e94f68b3d1e0c5d8",
+      "case_id": "development-001-style-temperature-weak",
+      "items": [
+        "20de945aff55bf41",
+        "39b61375d7f25b30"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-001-style-temperature-strong-01.jpg",
+      "sha256": "fc1b6c3d1c370ca979a9a96b12e4bedea4a0c2fa1a13b8125d9b25cf80e03779",
+      "case_id": "development-001-style-temperature-strong",
+      "items": [
+        "71d1b6631cdd104a",
+        "9b62ae25307a64f4"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-001-compound-01.jpg",
+      "sha256": "eb256615b58a73ee3e88a771eabd6985bffe0f1a8d3b34d2e786ea9b1c19c3ae",
+      "case_id": "development-001-compound",
+      "items": [
+        "43c88b835824f355",
+        "d87a8eb0432478d8"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-003-restore-contrast-mild-01.jpg",
+      "sha256": "16ece667323005c14951eaf31dad6ba83ad9f7f01e68e4db2c8fba5da6cd5e84",
+      "case_id": "development-003-restore-contrast-mild",
+      "items": [
+        "5cb6514bbb81f224",
+        "a79d2acd15d1af50"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-003-restore-contrast-strong-01.jpg",
+      "sha256": "7889ee47ccffcbf8e9fe04a3d24c6287ef84ed50ff60779172eacf4088ae75a6",
+      "case_id": "development-003-restore-contrast-strong",
+      "items": [
+        "22be618115594d53",
+        "2f70136d5704dc70"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-003-style-saturation-weak-01.jpg",
+      "sha256": "cc10fddcdeac082770f9b73788f9e328d027ad1ffb9ab3848fd7ac0fe6b5a8f3",
+      "case_id": "development-003-style-saturation-weak",
+      "items": [
+        "5606b23c249f6d07"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-003-style-saturation-strong-01.jpg",
+      "sha256": "7fcb8625d823cdaf098509c47f6d0bb0c1fb4ebd56c48e2a00c7e9fa10040913",
+      "case_id": "development-003-style-saturation-strong",
+      "items": [
+        "1d0cb3e9f8cb78d4",
+        "6afe234f2ce4e05e"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-014-restore-saturation-mild-01.jpg",
+      "sha256": "8fe1ed4c09001194b4f0fb34d1b62d6d6446c1a1ef13482c840f88d5db905ace",
+      "case_id": "development-014-restore-saturation-mild",
+      "items": [
+        "714faca5881692d2",
+        "c9130e2561f95101"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-014-style-contrast-weak-01.jpg",
+      "sha256": "c60c9ed0a5b25a2249e7468295955d04021d4952b723136731c7f6bda9d54584",
+      "case_id": "development-014-style-contrast-weak",
+      "items": [
+        "25c8729fbd0d417b",
+        "7cc7aba8dee70347"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-014-style-contrast-strong-01.jpg",
+      "sha256": "b14aa48073b092b22adf9cbc677787911f69ab6809b37bbd9856be9ffa0e7ed4",
+      "case_id": "development-014-style-contrast-strong",
+      "items": [
+        "1d56ae615d9a72fc",
+        "4529a52ae459c45c"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-014-compound-01.jpg",
+      "sha256": "869195b0d81b4ffccc6523490a938c12a707b31f5a81d8d1981d7a9e748af12d",
+      "case_id": "development-014-compound",
+      "items": [
+        "1b19301d695cc06b",
+        "4c730f7f4ecf46d9"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-018-restore-exposure-mild-01.jpg",
+      "sha256": "bb201c2ab63b55051e3ee51e2b2cf55b65fb52171ecf9265c06db9e0e8e2741c",
+      "case_id": "development-018-restore-exposure-mild",
+      "items": [
+        "32b68c73354157d8",
+        "7b913f0364f45f28"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-018-restore-exposure-strong-01.jpg",
+      "sha256": "900d9569391662cbd81a02187021220e2f5049790328bb7c7229ab1790f063fa",
+      "case_id": "development-018-restore-exposure-strong",
+      "items": [
+        "011899384d90f97c",
+        "bc3161ed0219eeb9"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-018-style-sepia-weak-01.jpg",
+      "sha256": "e071798ea2007491b161c05c9e76be894cb1f1f4ad5883ff7c5f3fbb2327f5a2",
+      "case_id": "development-018-style-sepia-weak",
+      "items": [
+        "06793be3c20036d6",
+        "e45270216c5955c9"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-018-style-sepia-strong-01.jpg",
+      "sha256": "cc7a9641a957384493c3bb37ee9db725e6a0a09b4704c24acf1f89d14b32078e",
+      "case_id": "development-018-style-sepia-strong",
+      "items": [
+        "6ec4434ad42ffc12",
+        "7fe9c53cb65738f2"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-020-restore-contrast-mild-01.jpg",
+      "sha256": "9a87a72347287e6d759f289ccb45ed8b81063da8c93fc00368989a8da0185d65",
+      "case_id": "development-020-restore-contrast-mild",
+      "items": [
+        "48dde3ad80a8f522",
+        "8c38af52b45ebfce"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-020-restore-contrast-strong-01.jpg",
+      "sha256": "1fca4302511bc5ecc55c402badc736379d698309e18e6ce44a9927d41c844472",
+      "case_id": "development-020-restore-contrast-strong",
+      "items": [
+        "284e4f35639e0fbc",
+        "7861204db6d1b971"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-020-style-shadows-weak-01.jpg",
+      "sha256": "d0ef46288af19f1ca52ff97280d535fbe579c12e5162ed1b03315b3826b0fc8c",
+      "case_id": "development-020-style-shadows-weak",
+      "items": [
+        "446494fe51b72d2d",
+        "4b696a136efafa11"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-020-style-shadows-strong-01.jpg",
+      "sha256": "6eef92407fac42ccb5823d90ca52d64b2b2d08de47bcb407348268e774c9304a",
+      "case_id": "development-020-style-shadows-strong",
+      "items": [
+        "8f1416aa3860ca44",
+        "9cdac3501e8d7e1b"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-020-compound-01.jpg",
+      "sha256": "8a1df68e533c9504fd17954235902745423cd621f7f62eb3ad9965aef6a18d4f",
+      "case_id": "development-020-compound",
+      "items": [
+        "cbf81eaca631095e",
+        "e92822db0081d3dc"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-028-restore-saturation-mild-01.jpg",
+      "sha256": "27b7673727ab10f93217f586664cacebfbc868df3f34b693d6b64534039ba491",
+      "case_id": "development-028-restore-saturation-mild",
+      "items": [
+        "98faced1709cc7dd",
+        "be55b2ac8ef83848"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-028-restore-saturation-strong-01.jpg",
+      "sha256": "b6a42cf8aaca3641389a3c116ce7a5eade3f4964f3907ea30bd6487b5df41eaa",
+      "case_id": "development-028-restore-saturation-strong",
+      "items": [
+        "534d26cf687382ee",
+        "cdd7d12811b1cf6c"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-028-style-temperature-weak-01.jpg",
+      "sha256": "f2e0755355d081b2a70dfff6adfa2360d7f3a86d87573937338a328756b7fdce",
+      "case_id": "development-028-style-temperature-weak",
+      "items": [
+        "383635c644c621bf"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-028-style-temperature-strong-01.jpg",
+      "sha256": "50a674023ebefa7717314d23723360d1343b10fa46310fb4e724f78852cc468f",
+      "case_id": "development-028-style-temperature-strong",
+      "items": [
+        "d23dd11211dd8479"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-031-restore-exposure-mild-01.jpg",
+      "sha256": "8808c1173aa2057bc35753e20a938d4ac2f1f874ff8c339ad777312d9e639ea1",
+      "case_id": "development-031-restore-exposure-mild",
+      "items": [
+        "855b8522b888cf1a",
+        "963ccb7b0b3a2eb5"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-031-restore-exposure-strong-01.jpg",
+      "sha256": "74ddf9261bbcb9bc63632c2aab2cc340e5e662cc0e42c94de868e648d84ba1b1",
+      "case_id": "development-031-restore-exposure-strong",
+      "items": [
+        "707c55b84edfd5b3",
+        "d6c6115703c3dd15"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-031-style-saturation-weak-01.jpg",
+      "sha256": "bd37636201749154f352e99e23c5420cf395b687051566328546af0e2c60fee1",
+      "case_id": "development-031-style-saturation-weak",
+      "items": [
+        "f0b3b87364d2f263"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-031-style-saturation-strong-01.jpg",
+      "sha256": "e6bfb697722799583976ee5bb585fc9353131756ace0db7d7fdff1972f1d811e",
+      "case_id": "development-031-style-saturation-strong",
+      "items": [
+        "5d7ccf1050ce6f35"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-031-compound-01.jpg",
+      "sha256": "b255844ec92e7e761674d504fcd052c4c316d46fda9c12876e2ab91f8ce0b4c1",
+      "case_id": "development-031-compound",
+      "items": [
+        "1958cd7108350262",
+        "d1170bf30432c9e5"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-033-restore-contrast-mild-01.jpg",
+      "sha256": "306ba7ca633f8b3026f7300a0fbf033a4c3edea19d781a84d9c5bb082746de16",
+      "case_id": "development-033-restore-contrast-mild",
+      "items": [
+        "13e64ad326633924",
+        "624787519ce6248e"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-033-restore-contrast-strong-01.jpg",
+      "sha256": "193d14670bd724628501a451c9420c8ba9abd7074e215340b773b0558317ca9b",
+      "case_id": "development-033-restore-contrast-strong",
+      "items": [
+        "1098b6ef9b6e910c",
+        "8f2e1b6ce288761f"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-033-style-contrast-weak-01.jpg",
+      "sha256": "2ec0d90a8ebff82476c0a2b7da794e3fff403cc9f33693b0d26eef837d3239c4",
+      "case_id": "development-033-style-contrast-weak",
+      "items": [
+        "981cbfe321df0721",
+        "e446693826f790d9"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-033-style-contrast-strong-01.jpg",
+      "sha256": "dd96b8c33a375406551da97fe8a3e3292d2153ca26691afdc5c031418d77a9ec",
+      "case_id": "development-033-style-contrast-strong",
+      "items": [
+        "4bc9e12367722a73",
+        "d72863e4eb17aac3"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-040-restore-saturation-mild-01.jpg",
+      "sha256": "d486c1dec14645d86f190f1f2c2824cbb7436c87380dc35b4f89d2442e0c9f11",
+      "case_id": "development-040-restore-saturation-mild",
+      "items": [
+        "380970c2f4283014",
+        "81639dd4e25f1368"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-040-restore-saturation-strong-01.jpg",
+      "sha256": "06fae759463345006b8ae99c697d611a87a01f7ca67a83357a787a907f77e510",
+      "case_id": "development-040-restore-saturation-strong",
+      "items": [
+        "612dae221e5f843a",
+        "6df381324b83d9df"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-040-style-sepia-weak-01.jpg",
+      "sha256": "d26a55b9e403afc40a40f2f5396df8b09da2a2c89a13ca413004520961ffcadc",
+      "case_id": "development-040-style-sepia-weak",
+      "items": [
+        "92f6cbe2de9bdda8"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-040-compound-01.jpg",
+      "sha256": "f15d5f57a3000f9de016250ef5f8af2a10480a275676d93d9241492960f71e10",
+      "case_id": "development-040-compound",
+      "items": [
+        "8927fd72823f1c44",
+        "8cebed4e1d0872e3"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-055-restore-exposure-mild-01.jpg",
+      "sha256": "8220f66690e97dfdaee6abb39a2e9c2c661cb862e7cb9a5b0247386178b2e191",
+      "case_id": "development-055-restore-exposure-mild",
+      "items": [
+        "0332565d26030b0a",
+        "0c87c995ee780ebe"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-055-restore-exposure-strong-01.jpg",
+      "sha256": "9a277623a9350404648fe454998058a20f2f98075a8f2509478426cc4cc12872",
+      "case_id": "development-055-restore-exposure-strong",
+      "items": [
+        "08317620434063a2",
+        "413c6f09ffdaaf80"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-055-style-shadows-weak-01.jpg",
+      "sha256": "0b3176d31dc93acea6e1d2f1c5e845c5483fd9214540a22bdc143b538d6961af",
+      "case_id": "development-055-style-shadows-weak",
+      "items": [
+        "208bce592e75a289",
+        "97c1b283dd3fee88"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-055-style-shadows-strong-01.jpg",
+      "sha256": "92829d704a1e8ae0919c0f4022e468634dac8528edae5db9a2108360e5ddb166",
+      "case_id": "development-055-style-shadows-strong",
+      "items": [
+        "4b1f905134e6de29",
+        "b03c4c2517e79db7"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-006-restore-exposure-mild-01.jpg",
+      "sha256": "f4954125043374e08d55a208eb462f5c4f4afceecba8c5a365fb6f52d50233c3",
+      "case_id": "development-006-restore-exposure-mild",
+      "items": [
+        "2dc3e9d3f3908aef",
+        "bdf1383d0d74eccc"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-006-restore-exposure-strong-01.jpg",
+      "sha256": "ce9c5e7cf43492f5bd2da5a5a274ee63ab7d5b8b99b898ddbe1b591825d1a18f",
+      "case_id": "development-006-restore-exposure-strong",
+      "items": [
+        "23249549d77f98fc",
+        "e3e9314d4494dfa4"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-006-style-temperature-weak-01.jpg",
+      "sha256": "8135b2633b9b54c3f9a2b0a5c991ba3a85189b720a6e689ffe41a2578c2d1c3e",
+      "case_id": "development-006-style-temperature-weak",
+      "items": [
+        "2deb5363023699fd",
+        "f5096216eb731a86"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-006-style-temperature-strong-01.jpg",
+      "sha256": "69d74bb00ae9e37f305feee1914dd6cf74087f55824fce78486fcc186389b375",
+      "case_id": "development-006-style-temperature-strong",
+      "items": [
+        "1f53fa11acac066c",
+        "45dfa3182db4a5e0"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-006-compound-01.jpg",
+      "sha256": "5156418e9502d55532cadff4d2d1f4dddcedc1fd32ebabd3464937155a09f402",
+      "case_id": "development-006-compound",
+      "items": [
+        "091451b3db437290",
+        "d7366abe186472c8"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-010-restore-contrast-mild-01.jpg",
+      "sha256": "258a4f54e3ff400c848838e6dce5dd601591a7c4a7a99af7c1b344c252804e43",
+      "case_id": "development-010-restore-contrast-mild",
+      "items": [
+        "1f5d347932f538ed",
+        "2c53da973165dd07"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-010-restore-contrast-strong-01.jpg",
+      "sha256": "b1588750be588452533259731870384b069b476b2ab76e823bdcac14a3a0ba60",
+      "case_id": "development-010-restore-contrast-strong",
+      "items": [
+        "80ca55a6ae20c967",
+        "bbaf6dadc278d653"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-010-style-saturation-weak-01.jpg",
+      "sha256": "47324890b8b495af8a0cf3b95de6742a30f3d0e4a846664eea6609a86c228763",
+      "case_id": "development-010-style-saturation-weak",
+      "items": [
+        "da7147c94596dae6",
+        "f2ededf7c899bc58"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-010-style-saturation-strong-01.jpg",
+      "sha256": "37e0e54920280442e32debdbfcbbca520d7e8ff73684813c6be76a16a44e56f1",
+      "case_id": "development-010-style-saturation-strong",
+      "items": [
+        "91e75ab6a631f507"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-019-restore-saturation-mild-01.jpg",
+      "sha256": "38def7618800b993da045df30aeb666072d17d17029a2362d18c02f911387f0f",
+      "case_id": "development-019-restore-saturation-mild",
+      "items": [
+        "5230632184db4212"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-019-restore-saturation-strong-01.jpg",
+      "sha256": "447ab17616a434d474c5f42ffa96f1a4b9f0b673d16c086e2bbd0151231520c8",
+      "case_id": "development-019-restore-saturation-strong",
+      "items": [
+        "c5d47d37f5a86c8f",
+        "e278bfce9c72eff8"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-019-style-contrast-weak-01.jpg",
+      "sha256": "6d252951395383a44dac691cecb2a663104ba90ba981a647dc1d65b2a6572884",
+      "case_id": "development-019-style-contrast-weak",
+      "items": [
+        "0f41c6487c306e89",
+        "e000e46dae15518f"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-019-style-contrast-strong-01.jpg",
+      "sha256": "bd04a71afc1b94998e5f310727d2f38591420c0f899602a7ddc7ea68e9a6fadf",
+      "case_id": "development-019-style-contrast-strong",
+      "items": [
+        "095f634487fb2bbd",
+        "70a3583bb1a4ed4b"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-019-compound-01.jpg",
+      "sha256": "70cb8fa58666fd12aa99e48ffc95aa5b5b04887df3cf5ceb456180b7effff022",
+      "case_id": "development-019-compound",
+      "items": [
+        "4b7e2522936dc384",
+        "508ec530cc443fce"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-022-restore-exposure-mild-01.jpg",
+      "sha256": "69afb0c41c2cf82fa2889bd4717441e8bd184d2658b04e23c0e38687ebc2c8db",
+      "case_id": "development-022-restore-exposure-mild",
+      "items": [
+        "288414bf615b4256",
+        "2de3ac17c6c3d62f"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-022-restore-exposure-strong-01.jpg",
+      "sha256": "a70a6d3784667178c69903a85de38dfc71fdf1fedb0aace1a663479cbe3461e9",
+      "case_id": "development-022-restore-exposure-strong",
+      "items": [
+        "2e32e5dd9907cf97",
+        "716c77452688618b"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-022-style-sepia-weak-01.jpg",
+      "sha256": "e17044b1827bb7194c42fb05949d6922be215f28edba1a5c1873361348db9f9b",
+      "case_id": "development-022-style-sepia-weak",
+      "items": [
+        "f16fd9a86819debe"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-022-style-sepia-strong-01.jpg",
+      "sha256": "2adbf2e0dbc9070989d3203a14f8b5a80fbb322a35fe6c261c07fcf7d9c9cd4b",
+      "case_id": "development-022-style-sepia-strong",
+      "items": [
+        "07ae0262c26680ec",
+        "8742d8f98a2fb6ea"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-027-restore-contrast-mild-01.jpg",
+      "sha256": "07b8acf0cf5f43624212bb6fc1cbab7519e09f8b1eb8de8ebb1ab340b96be833",
+      "case_id": "development-027-restore-contrast-mild",
+      "items": [
+        "171f29b8aa142299",
+        "aed41a973fad4733"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-027-restore-contrast-strong-01.jpg",
+      "sha256": "87539e622dda810298e08fddbf64349be85c471198a1c8151f8cf6714e232c02",
+      "case_id": "development-027-restore-contrast-strong",
+      "items": [
+        "01cabcea2a04d585",
+        "8f22b4eeb4cd1548"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-027-style-shadows-weak-01.jpg",
+      "sha256": "39641a96e623b7de318844f146b0323822bb36921f4a69d847ca167238e0fa04",
+      "case_id": "development-027-style-shadows-weak",
+      "items": [
+        "190ca00e7758990c",
+        "70912bdfcaffc087"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-027-style-shadows-strong-01.jpg",
+      "sha256": "dc2a5ff137a3143cb6b77e76b739ba0bd843f2d0c05597e193abde79bae86d48",
+      "case_id": "development-027-style-shadows-strong",
+      "items": [
+        "1f10366ad5a44d5d",
+        "47cfcf04b92d02f7"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-027-compound-01.jpg",
+      "sha256": "852dc78996b3734101def76fe7d2edcff34024ecba7f0797e8b66f118ef21b05",
+      "case_id": "development-027-compound",
+      "items": [
+        "b0aa807932c13123",
+        "ca1c163e4b3c63f0"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-029-restore-saturation-mild-01.jpg",
+      "sha256": "d68b4daf5d3774e7c40a8980f54e23f43151cc3d1345ff36b0871e3c90233a0f",
+      "case_id": "development-029-restore-saturation-mild",
+      "items": [
+        "02546f7c2b780309",
+        "fe9910803fa15e8a"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-029-restore-saturation-strong-01.jpg",
+      "sha256": "af44898fe65308d47079058d326fc4504cf8c93987d314a904d063727aea1d4d",
+      "case_id": "development-029-restore-saturation-strong",
+      "items": [
+        "16568c8083ace3e1",
+        "eb12e562af4c5951"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-029-style-temperature-weak-01.jpg",
+      "sha256": "8a4b5790e991266df24788fba738c2c3308de139867b33aa6e94b6c3e744b775",
+      "case_id": "development-029-style-temperature-weak",
+      "items": [
+        "af49a53c62cd385f",
+        "cbed032ec485788b"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-029-style-temperature-strong-01.jpg",
+      "sha256": "5a06eae04501e0829e16ba20aaca2b05678a4c69aee965948e0870f3961422a2",
+      "case_id": "development-029-style-temperature-strong",
+      "items": [
+        "a2bf30727c847d79"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-030-restore-exposure-mild-01.jpg",
+      "sha256": "ac8e9b659b85035b99419805482b060c6474f192dd772ab2f898b6164c03b6e4",
+      "case_id": "development-030-restore-exposure-mild",
+      "items": [
+        "3303eace4053d413",
+        "48380d49f23e425c"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-030-restore-exposure-strong-01.jpg",
+      "sha256": "dd52d2968e91cdba77b8abf7f20b65f76194fcbc5f2c8f90ca0da5bf48316db3",
+      "case_id": "development-030-restore-exposure-strong",
+      "items": [
+        "a2e9e78db5cdc4b8",
+        "fff8c8b665b1bc31"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-030-style-saturation-weak-01.jpg",
+      "sha256": "dfe8303c810cf308f01a622584222a47f54b3843ab3d8bda4cace70fdafd7bad",
+      "case_id": "development-030-style-saturation-weak",
+      "items": [
+        "108f7a93dbe3262f"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-030-style-saturation-strong-01.jpg",
+      "sha256": "29b1b10b586397c48cc5ad49c1d0418532bbf74a2c4ec1394a9512cdf455852f",
+      "case_id": "development-030-style-saturation-strong",
+      "items": [
+        "da7d6484fecec17e",
+        "fbe0f26b340a1ef7"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-030-compound-01.jpg",
+      "sha256": "05fe340f29d03ad1d5f88c79f6b03c1feab50fc946b245f570bc8e7767289f8c",
+      "case_id": "development-030-compound",
+      "items": [
+        "8c03cf795e410b72",
+        "ab01247dfda27a4c"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-041-restore-contrast-mild-01.jpg",
+      "sha256": "0de04d4f782b3a704da0eaa3237abdbe98e96a5d6a7c732e58dec5efdbb03717",
+      "case_id": "development-041-restore-contrast-mild",
+      "items": [
+        "3307800f19234a08",
+        "7416cf981996848d"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-041-restore-contrast-strong-01.jpg",
+      "sha256": "4cd13ae6e296382e36c2f7cc6c0ce52eeaf0e4e08cd81373a2e186a949a3f9d4",
+      "case_id": "development-041-restore-contrast-strong",
+      "items": [
+        "1b80315c15927179",
+        "b4b1b1664d82a1eb"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-041-style-contrast-weak-01.jpg",
+      "sha256": "fa617449f822b0bed415edc82a5e4ac8cde9591243c7e584f8c897d0330fb908",
+      "case_id": "development-041-style-contrast-weak",
+      "items": [
+        "bc8258862db4be63"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-041-style-contrast-strong-01.jpg",
+      "sha256": "63a0cd74e7943b968f713d6977012e3689e8b03ec5fb21cf51aac96bb1c3b717",
+      "case_id": "development-041-style-contrast-strong",
+      "items": [
+        "08c80b8596901796",
+        "d85bf5eadb1ffa68"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-080-restore-saturation-mild-01.jpg",
+      "sha256": "4ad7240335080529b3dc068ac244ccaa021e0b758c440f5077e0ffd7f7a9f651",
+      "case_id": "development-080-restore-saturation-mild",
+      "items": [
+        "74650de6494cba89",
+        "fac3d2541b223b17"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-080-restore-saturation-strong-01.jpg",
+      "sha256": "60a23f8e4065ce0c2b957fd57962e49d70236afa2d0e1297032f3219ad19ebf6",
+      "case_id": "development-080-restore-saturation-strong",
+      "items": [
+        "3168c4ac22859210",
+        "8607774cc9575725"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-080-style-sepia-weak-01.jpg",
+      "sha256": "0985fd3bd00d87d02d8fbeb7f7164c6b16fcaff139880ab18365b3e1dc73cc77",
+      "case_id": "development-080-style-sepia-weak",
+      "items": [
+        "41590f35d2ff40d7"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-080-style-sepia-strong-01.jpg",
+      "sha256": "5588a5fdb83a9da9fbb4394012141d1712745c3ac50f9f86130e063cf4d49ccb",
+      "case_id": "development-080-style-sepia-strong",
+      "items": [
+        "434a4cf0bf5cff6b",
+        "aaa30007bfd5bed9"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-080-compound-01.jpg",
+      "sha256": "d4d52cc608e58e3a6e464fcd05ae06229ec734cbd37d9a6482ce822e94dd23c1",
+      "case_id": "development-080-compound",
+      "items": [
+        "8221c8935b4a893d",
+        "e9e102cd3cbde6b6"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-106-restore-exposure-mild-01.jpg",
+      "sha256": "3c6404a6523dbe5123b764c261abd608ed2a429b73f66724703f888014e1b3b2",
+      "case_id": "development-106-restore-exposure-mild",
+      "items": [
+        "a6eb0c7983dad044",
+        "b2cfd94cb51144ac"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-106-restore-exposure-strong-01.jpg",
+      "sha256": "af8e92e2c0fc9b93b6c95f4a5f085c18a20f6976e45017f841245f492b6ab18f",
+      "case_id": "development-106-restore-exposure-strong",
+      "items": [
+        "5e89bf55cd04fa89",
+        "6848dffc37088d2d"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-106-style-shadows-weak-01.jpg",
+      "sha256": "992b995ba9f4e47d8cf07403d36863a71ce1ce9b44bb449a8b7056472048835d",
+      "case_id": "development-106-style-shadows-weak",
+      "items": [
+        "1645334f44336c80",
+        "c1a8853c6a05b100"
+      ]
+    },
+    {
+      "sheet": "experiments/functional-v21-20261107/review/development/controlled-qualified-policy/development-106-style-shadows-strong-01.jpg",
+      "sha256": "28e153c5302efc0e68bfebb8ced26e85d7f870b730f21dc7c2c862ab67c14eea",
+      "case_id": "development-106-style-shadows-strong",
+      "items": [
+        "03f6a4b0b8af0777",
+        "f8652021d007a062"
+      ]
+    }
+  ],
+  "reused_exact_image_observations": [
+    "01cdd4d21c4de73d",
+    "0c6e74f3cc4e47ee",
+    "0d6a7be0dd427510",
+    "2e5a6e6e577ded47",
+    "38ec413413b2ef09",
+    "4c152ace79ce0be0",
+    "4d0d484c54b0babe",
+    "573cf7bef0ef1516",
+    "5f6b45d32a2cd852",
+    "712638859c1a4b37",
+    "8047aec76ae5fb6a",
+    "81638aae9a4af89a",
+    "87063acc7d2e4fd1",
+    "9018e37136a18654",
+    "a9cbc1551b0d541b",
+    "aeec0b0bc3ac03fd",
+    "bd8f3eea7eb5fc49",
+    "d3ca22cd27eff9c0",
+    "da9f3cef1147278c",
+    "e2281df44b8a6482",
+    "e90f17ba1e1061ba",
+    "fe77717902773d8d"
+  ],
+  "review_policy": "Actual direct Codex observation. Exact same output for the same bilingual semantic case is reviewed once and mapped back; translations are not independent samples.",
+  "no_automatic_completion_ratings": true
+}

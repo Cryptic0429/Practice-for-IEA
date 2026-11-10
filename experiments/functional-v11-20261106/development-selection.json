@@ -1,0 +1,575 @@
+{
+  "at": "2026-11-06T00:51:21.162532+00:00",
+  "status": "failed_practical_gate",
+  "qualified": false,
+  "promoted": false,
+  "selected_model_id": null,
+  "route": "language_merger",
+  "trial_default_changed": false,
+  "stage1_qualified_checkpoints": [],
+  "results": {
+    "parent-editor-replay": {
+      "native_completed": 15,
+      "native_major": 0,
+      "old_completed": 4,
+      "old_major": 0,
+      "decision_controls": 20,
+      "feasible_native_refusals": 1,
+      "feasible_old_refusals": 0,
+      "model_inference_performed": false,
+      "stage1_passed": false
+    },
+    "language-merger-e1": {
+      "native_completed": 15,
+      "native_major": 0,
+      "old_completed": 4,
+      "old_major": 0,
+      "decision_controls": 20,
+      "feasible_native_refusals": 1,
+      "feasible_old_refusals": 0,
+      "model_inference_performed": true,
+      "stage1_passed": false
+    }
+  },
+  "controlled_development_summary": null,
+  "controlled_development_status": "not_run_failed_stage1",
+  "seed_replication_started": false,
+  "acceptance_status": "closed_not_evaluated",
+  "models": {
+    "functional-v11-negative-gain-20261123": {
+      "model_id": "functional-v11-negative-gain-20261123",
+      "evaluation_id": "language-merger-e1",
+      "display_name": "第十一轮 · 负曝光与指令纠错 · 第1轮（未通过）",
+      "trial_status": "实验模型，AI辅助评审；未通过功能门槛，仅供诊断试用。未知照片仍可能漏项、损伤画质或误拒绝；拒绝时不返回结果图。",
+      "adapter": "models/from-functional-v10/sft-negative-gain-correction/seed-01",
+      "adapter_sha256": "12243ea5f08ab9e2e75b082fd6e6a1e6e8b1efbd7eb4e102be3563ba084c4a56",
+      "origin": "base",
+      "full_weight_origin": {
+        "path": "models/Qwen2.5-VL-7B-Instruct",
+        "shards": [
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00001-of-00005.safetensors",
+            "sha256": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+            "bytes": 3900233256,
+            "mtime_ns": 1793432463546824622
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00002-of-00005.safetensors",
+            "sha256": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+            "bytes": 3864726320,
+            "mtime_ns": 1793432503644001111
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00003-of-00005.safetensors",
+            "sha256": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+            "bytes": 3864726424,
+            "mtime_ns": 1793432545341217818
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00004-of-00005.safetensors",
+            "sha256": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+            "bytes": 3864733680,
+            "mtime_ns": 1793432587834451242
+          },
+          {
+            "path": "models/Qwen2.5-VL-7B-Instruct/model-00005-of-00005.safetensors",
+            "sha256": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67",
+            "bytes": 1089994880,
+            "mtime_ns": 1793432599234781102
+          }
+        ],
+        "architecture": {
+          "hidden_size": 3584,
+          "intermediate_size": 18944,
+          "num_hidden_layers": 28,
+          "num_attention_heads": 28,
+          "num_key_value_heads": 4,
+          "vocab_size": 152064
+        },
+        "assets": {
+          "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "chat_template.json": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+          "model-info.json": "3f375296723cbb910e9c3350730e3395342ead9cb7ac0ec355a25dcefe5bf532",
+          "tokenizer_config.json": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+          "config.json": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+          "generation_config.json": "0a3aea82869fe29f20dc95ccf3e2bcff380eca1f5ad6447a4a4b37110b08e43e",
+          "model.safetensors.index.json": "73b333b0b16e5286ddba615d2caebcd495cf7e616f52eb217a81781393d79de9",
+          "preprocessor_config.json": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+          "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+        },
+        "prior_integrity_file": "configs/evaluation-weight-integrity-v1.json",
+        "prior_integrity_sha256": "43a0961e25db0e05dc92c69e4e7b520ac0fb8531420223dc6daf45f75257cbd1",
+        "source": "Pinned original Qwen revision cc594898137f460bfe9f0759e9844b3ce807cfb5"
+      },
+      "parent": "experiments/functional-v10-20261106/runs/language_merger-seed-20261121/final",
+      "parent_sha256": "772ead8e694bdf3d4fee2a189cc6e1222f7c2ebe539c7795364fbbfc7341ebbd",
+      "parent_status": "R10 failed research candidate14/20 native0 marked major; not a qualified champion",
+      "initial_adapter": "One adapter; all116 trained parent tensors copied exactly, including4 visual merger tensors; no stacking or new zero-B visual modules.",
+      "checkpoint": "experiments/functional-v11-20261106/runs/language_merger-seed-20261123/checkpoint-336",
+      "epoch": 1,
+      "step": 336,
+      "runtime_family": "functional_v11",
+      "training_route": "language_merger",
+      "editor": "functional-editor-v11-negative-value-gain-candidate",
+      "schema": "functional-outcome-v1",
+      "dataset_sha256": "fd998cd2bcf96a01f0312f17ba217e39ee593d04bdb1b73060cadc577f71328c",
+      "cases_sha256": "5604ab7aab492d3be0c0ca17f82c2329ec029a7b46174bee11a3d3e09fc6f359",
+      "actual_training_data": "data/training/functional-v11-20261106/train-accepted.json",
+      "semantic_cases": 672,
+      "training_records": 1344,
+      "original_photo_groups": 160,
+      "photo_domains": {
+        "portrait": 80,
+        "landscape": 80
+      },
+      "new_original_groups": 0,
+      "outcome_counts": {
+        "edit": 548,
+        "decline": 64,
+        "keep": 60
+      },
+      "original_GIER_English_cases": 97,
+      "AI_authored_cases": 575,
+      "status": "diagnostic_trial_only_not_promoted",
+      "diagnostic_choice": "Final epoch1 fixed before training; no loss or checkpoint search.",
+      "load_method": "Original Qwen full weights plus this ONE adapter; exactly the same R11 prompt/parser/editor as offline evaluation.",
+      "native_development_summary": {
+        "model_id": "language-merger-e1",
+        "status": "completed",
+        "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+        "human_review": false,
+        "reviewed_outputs": 40,
+        "missing_unique_images": [],
+        "fully_completed_both_languages": 15,
+        "raw_individual_completed_both_languages": 15,
+        "identical_strength_pairs": [],
+        "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+        "photo_groups": 20,
+        "all_tasks_complete_photo_groups": 15,
+        "major_quality_issues": 0,
+        "major_issue_cases": [],
+        "per_family": {
+          "brown_tone": {
+            "completed": 1,
+            "cases": 1
+          },
+          "compound": {
+            "completed": 4,
+            "cases": 6
+          },
+          "contrast": {
+            "completed": 1,
+            "cases": 1
+          },
+          "lighting": {
+            "completed": 6,
+            "cases": 7
+          },
+          "saturation": {
+            "completed": 3,
+            "cases": 4
+          },
+          "white_balance": {
+            "completed": 0,
+            "cases": 1
+          }
+        },
+        "per_language": {
+          "zh": {
+            "completed": 16,
+            "failed": 2,
+            "partial": 1,
+            "uncertain": 1
+          },
+          "en": {
+            "completed": 16,
+            "failed": 2,
+            "partial": 1,
+            "uncertain": 1
+          }
+        },
+        "per_domain": {
+          "portrait": {
+            "completed": 8,
+            "cases": 10
+          },
+          "landscape": {
+            "completed": 7,
+            "cases": 10
+          }
+        },
+        "selection_uses_L1": false,
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+        "review_sha256": "c35489473de72bdf8907682380bd1e906bf166af68f9bd3fbcb42910b06c326d",
+        "declined_language_outputs": 2,
+        "declined_semantic_cases": 1,
+        "refusal_policy": "Every decline on these feasible tasks is uncompleted; no result image is returned.",
+        "original_size_supplement_count": 1,
+        "review_derivation": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/native-development/derivation.json",
+        "review_derivation_sha256": "cfa530fede40aaa5862eb068d8924f433adc2c5afac251e5cc01a443a09407a9",
+        "raw_visual_notes_immutable": true,
+        "inference_performed": true,
+        "runtime": "functional_v11.runtime"
+      },
+      "old_native_summary": {
+        "model_id": "language-merger-e1",
+        "status": "completed",
+        "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+        "human_review": false,
+        "reviewed_outputs": 12,
+        "missing_unique_images": [],
+        "fully_completed_both_languages": 4,
+        "raw_individual_completed_both_languages": 4,
+        "identical_strength_pairs": [],
+        "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+        "photo_groups": 6,
+        "all_tasks_complete_photo_groups": 4,
+        "major_quality_issues": 0,
+        "major_issue_cases": [],
+        "per_family": {
+          "compound": {
+            "completed": 2,
+            "cases": 2
+          },
+          "lighting": {
+            "completed": 0,
+            "cases": 2
+          },
+          "saturation": {
+            "completed": 2,
+            "cases": 2
+          }
+        },
+        "per_language": {
+          "zh": {
+            "completed": 5,
+            "partial": 1
+          },
+          "en": {
+            "completed": 6
+          }
+        },
+        "per_domain": {
+          "portrait": {
+            "completed": 2,
+            "cases": 3
+          },
+          "landscape": {
+            "completed": 2,
+            "cases": 3
+          }
+        },
+        "selection_uses_L1": false,
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+        "review_sha256": "bd14fac32902037b607cd308b684578c2773d917c69a6de2357701c36bbb2aa3",
+        "declined_language_outputs": 0,
+        "declined_semantic_cases": 0,
+        "refusal_policy": "Every decline on these feasible tasks is uncompleted; no result image is returned.",
+        "original_size_supplement_count": 0,
+        "review_derivation": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/old-native/derivation.json",
+        "review_derivation_sha256": "4424735da464b7ddd720a58d53edbc145bda84ab8adaeb01f48e0e1b8701b851",
+        "raw_visual_notes_immutable": true,
+        "inference_performed": true,
+        "runtime": "functional_v11.runtime"
+      },
+      "decision_summary": {
+        "at": "2026-11-06T00:48:40.002104+00:00",
+        "model_id": "language-merger-e1",
+        "status": "completed",
+        "semantic_cases": 20,
+        "original_photo_groups": 10,
+        "passed_both_languages": 20,
+        "language_records": [
+          {
+            "case_id": "decision-dev-native-dev-001-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-001-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-001-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-001-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-067-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-067-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-067-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-067-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-016-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-016-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-016-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-016-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-006-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-006-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-006-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-006-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-011-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-011-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-011-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-011-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-161-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-161-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-161-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-161-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-100-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-100-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-100-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-100-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-002-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-002-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-002-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-002-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-148-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-148-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-148-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-148-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-004-keep",
+            "language": "zh",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-004-keep",
+            "language": "en",
+            "expected_action": "keep",
+            "observed_action": "keep",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-004-decline",
+            "language": "zh",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          },
+          {
+            "case_id": "decision-dev-native-dev-004-decline",
+            "language": "en",
+            "expected_action": "decline",
+            "observed_action": "decline",
+            "passed": true
+          }
+        ],
+        "assessment": "Deterministic decision-schema and exact-pixel/no-output contract checks; not a visual editing score or human judgment.",
+        "cases_sha256": "36684e39bab8e7d2365e21219b3823a2212546c62d620dd2a0b056d9d6438378"
+      },
+      "training_protocol_sha256": "964b7aa82147a182143d8a2067bc57ede69607fac2193ceb7e48406597b1b9ee",
+      "evaluation_protocol_sha256": "1db41db3e2e011fb38c72c375c954766149c4e5ab83d59fa618dd85d25b62707",
+      "origin_audit_sha256": "c0270a4d29c17daf94d3eb5f4df86c1ae7e31f59067e20022feee5d232f7d65f"
+    }
+  },
+  "public_conclusion": "固定第1轮模型未通过功能门槛；默认未升级，验收未开封，仅供诊断试用。",
+  "occupied_gpu_hours_at_registration": 14.670818524758015,
+  "independent_user_feedback": 0
+}

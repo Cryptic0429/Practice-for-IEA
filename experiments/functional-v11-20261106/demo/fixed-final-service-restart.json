@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-06T00:52:12.959253+00:00",
+  "old_owned_pids": [
+    4027009,
+    4027010
+  ],
+  "new": [
+    {
+      "module": "functional_v1.worker",
+      "pid": 4040202
+    },
+    {
+      "module": "functional_v1.web",
+      "pid": 4040203
+    }
+  ],
+  "worker_health": {
+    "status": "ready",
+    "loaded_model": null,
+    "gpu": "2",
+    "idle_unload_seconds": 120
+  },
+  "registered_models": 20,
+  "default_unchanged": "functional-current-20261104",
+  "original_author_service_pid_preserved": 3378799,
+  "previous_receipt": "experiments/functional-v10-20261106/demo/records-final-service-restart.json",
+  "previous_receipt_sha256": "87840dd536762a1ea52755a5a07fa11f500962f18171219fa0c4a30bffcb6bef"
+}

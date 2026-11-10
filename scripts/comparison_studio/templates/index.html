@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IEA · 修图对比台</title>
+  <meta name="description" content="同图同指令，对照体验 R1、R15、R23 与 R15 + R21 的真实修图结果。">
+  <link rel="stylesheet" href="/static/studio.css">
+  <script src="/static/studio.js" defer></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/"><span class="brand-mark">i.</span><span>IEA <span class="brand-sub">/ 修图对比台</span></span></a><div class="top-right"><span class="connection" id="connection">正在连接</span><button class="text-button" id="about-button">对比说明 ↗</button></div></header>
+<main>
+  <section class="intro"><div><p class="eyebrow">IMAGE EDITING · COMPARISON STUDIO</p><h1>同一张照片，<span>四种修图答案。</span></h1><p class="intro-copy">看看谁听懂了你的要求，谁保住了照片的细节。</p></div><div class="intro-meta"><span>04 <small>候选方案</small></span><span>02 <small>指令语言</small></span></div></section>
+  <section class="sample-section" aria-label="试用样例"><div class="section-line"><span class="step-label">先选一张试试看</span><span class="muted">历史开发样例 · 可换成自己的照片</span></div><div class="sample-strip" id="samples"></div></section>
+  <div class="workspace">
+    <aside class="input-panel">
+      <div class="panel-top"><span class="step-label">01 / 图片与要求</span><button id="reset-button" class="text-button">清空</button></div>
+      <label class="upload-zone" id="upload-zone" tabindex="0" role="button" aria-label="上传或拖入照片">
+        <input type="file" id="image-input" accept="image/png,image/jpeg,image/webp,image/bmp,image/tiff" hidden>
+        <img id="source-preview" alt="待编辑的原图" hidden>
+        <span class="upload-empty" id="upload-empty"><span class="upload-icon">＋</span><strong>放入你的照片</strong><span>点击上传，或拖到这里</span></span>
+        <span class="upload-overlay" id="upload-overlay" hidden>更换照片 ↗</span>
+      </label>
+      <div class="image-caption"><span id="image-name">JPG、PNG、WebP 等</span><span id="image-size">≤ 22 MB</span></div>
+      <form id="compare-form">
+        <label class="field-label" for="instruction-zh"><span>中文要求</span><span class="language-badge">ZH</span></label>
+        <textarea id="instruction-zh" rows="3" maxlength="3000" placeholder="例如：稍微提亮阴影，保留天空和肤色。" required></textarea>
+        <label class="field-label" for="instruction-en"><span>English instruction</span><span class="language-badge">EN</span></label>
+        <textarea id="instruction-en" rows="3" maxlength="3000" placeholder="E.g. Slightly lift the shadows while preserving the sky and skin tones." required></textarea>
+        <p class="field-note">请让两种语言表达同一要求。输入会原样交给每个模型。</p>
+        <button class="primary-button" id="run-button" type="submit"><span>开始四模型对比</span><span>↗</span></button>
+        <p id="compute-note" class="compute-note">正在读取推理配置…</p>
+      </form>
+      <div class="history"><div class="section-line"><span class="step-label">最近的对比</span><button class="text-button" id="refresh-history">刷新</button></div><div id="history-list" class="history-list"><p class="muted">完成的比较会保存在这里。</p></div></div>
+      <p class="privacy-note">照片与反馈保存在实验服务器，独立于训练数据。</p>
+    </aside>
+    <section class="results-panel" aria-label="模型对比结果">
+      <div class="results-toolbar"><div><span class="step-label">02 / 看结果，做选择</span><h2 id="result-title">四个候选，同场对照</h2></div><div class="toolbar-actions"><label class="blind-label"><input type="checkbox" id="blind-toggle">隐藏模型名</label><a id="download-all" class="small-button disabled" aria-disabled="true">下载全部 ↓</a></div></div>
+      <div class="view-bar"><div class="tabs" role="tablist" aria-label="结果语言"><button class="active" data-language="zh" role="tab" aria-selected="true">中文</button><button data-language="en" role="tab" aria-selected="false">English</button><button data-language="both" role="tab" aria-selected="false">双语并看</button></div><button class="text-button" id="original-button" disabled>查看原图 ↗</button></div>
+      <div class="progress-box" id="progress-box" hidden><div class="progress-label"><span id="progress-message"></span><span id="progress-count">0 / 8</span></div><div class="progress-track"><div id="progress-fill"></div></div></div>
+      <div class="context-note" id="context-note">选一张示例或上传照片，即可查看真实模型结果。</div>
+      <div class="model-grid" id="model-grid"></div>
+      <section class="verdict-panel" id="verdict-panel" hidden><div><span class="step-label">03 / 你的判断</span><h3>这一次，你更愿意用哪个结果？</h3><p>观察是否完成要求、力度是否合适，以及肤色、暗部和高光是否自然。</p></div><div class="preference-fields"><label>中文结果<select id="preferred-zh"></select></label><label>English result<select id="preferred-en"></select></label></div><textarea id="feedback-comment" rows="2" maxlength="4000" placeholder="记下原因，例如：R15 的肤色更自然，但天空偏亮。"></textarea><div class="save-line"><span id="feedback-message" class="muted">反馈不自动用于训练。</span><button class="small-button dark" id="save-feedback">保存我的评价</button></div></section>
+      <p class="results-footnote">拒绝和运行失败会单独显示，不会用原图冒充编辑结果。历史分数不用于自动评判你的照片。</p>
+    </section>
+  </div>
+</main>
+<footer><span>IEA / EXPERIMENTAL WORKSPACE</span><span>以实际图片为准 · 全局修图 · 单轮编辑</span></footer>
+<div class="toast" id="toast" role="status" hidden></div>
+<dialog id="image-dialog"><div class="dialog-toolbar"><strong id="dialog-title">原图</strong><div><button id="pixel-toggle" class="small-button">原始像素 1:1</button><button id="close-image" class="text-button" aria-label="关闭图片">关闭 ×</button></div></div><div class="dialog-image-wrap"><img id="dialog-image" alt="图片原尺寸检查"></div><p>可切换原始像素检查噪声、肤色与细节。原始像素模式下可滚动查看。</p></dialog>
+<dialog id="about-dialog"><div class="dialog-toolbar"><strong>这次如何比较</strong><button id="close-about" class="text-button">关闭 ×</button></div><div class="about-content"><h2>相同输入，比较完整方案。</h2><p>每次固定一张RGB原图和两条原样指令，运行4个候选，共得到8项结果。R1使用首轮默认检查点；R15使用第1轮；R23使用种子20261208；R21使用种子20261205、第20轮质量策略。</p><p>各候选保留训练时配套提示、解析器和编辑器。因此差异包含模型和工具的共同作用，不能仅归因于LoRA权重。所有候选在本次运行中使用相同底座精度和图片输入上限。</p><p>R15 + R21复用这次R15的决策与图文特征，再计算力度和质量判断。其耗时单列“控制头追加耗时”，不能视作完整模型推理耗时。</p><p>预置图片来自已查看过的历史开发集，供直观体验，不是新独立测试。上传新照片更适合检验你的实际使用场景。没有自动裁判或预设冠军。</p><div id="model-details"></div><p id="runtime-detail"></p></div></dialog>
+</body>
+</html>

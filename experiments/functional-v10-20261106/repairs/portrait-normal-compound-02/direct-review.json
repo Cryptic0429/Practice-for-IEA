@@ -1,0 +1,34 @@
+{
+  "at": "2026-11-05T21:18:47.578007+00:00",
+  "reviewer": "Codex direct original-size AI review; not human",
+  "manifest_sha256": "ab64ea7c04b343aae2053bc7cb98517c0eceec1217a07ecc053f200923a01e1e",
+  "observations": [
+    {
+      "id": "visual-risk-02-normal-compound-v2",
+      "completion": "completed",
+      "quality": "uncertain",
+      "evidence": "The three adjustments are visible, but the forearm and face remain rather warm-orange and naturalness is not sufficiently certain for a final training label."
+    },
+    {
+      "id": "visual-risk-02-normal-compound-v3",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "At original362x724 size, the face and scene receive a modest lift with gently stronger tonal separation and slightly richer sari/foliage colour. Skin remains close to the plausible warm canonical appearance, and face, hair, sari folds and background leaves remain readable without the original strong orange push."
+    }
+  ],
+  "selected_candidate": {
+    "id": "visual-risk-02-normal-compound-v3",
+    "image": "experiments/functional-v10-20261106/repairs/portrait-normal-compound-02/v3.png",
+    "sha256": "ef11affe5ac271b860fb55ccd459c6f4bbde007a8fda7bcb136c1d69865ebc80",
+    "parameters": {
+      "exposure": 10,
+      "contrast": 10,
+      "shadows": 15,
+      "saturation": 5
+    },
+    "status": "executed_unreviewed_not_admitted"
+  },
+  "old_candidate_status": "uncertain_due_panel_full_disagreement_not_admitted",
+  "selection_basis": "Visible instruction completion and natural skin/detail; no L1 or parameter-distance ranking.",
+  "training_dataset_admitted": false
+}

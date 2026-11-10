@@ -1,0 +1,2128 @@
+{
+  "at": "2026-11-06T19:01:42.125103+00:00",
+  "status": "completed",
+  "summaries": {
+    "native-development": {
+      "model_id": "parent-editor-only",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 40,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 15,
+      "raw_individual_completed_both_languages": 15,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 20,
+      "all_tasks_complete_photo_groups": 15,
+      "major_quality_issues": 0,
+      "major_issue_cases": [],
+      "per_family": {
+        "brown_tone": {
+          "completed": 1,
+          "cases": 1
+        },
+        "compound": {
+          "completed": 4,
+          "cases": 6
+        },
+        "contrast": {
+          "completed": 1,
+          "cases": 1
+        },
+        "lighting": {
+          "completed": 6,
+          "cases": 7
+        },
+        "saturation": {
+          "completed": 3,
+          "cases": 4
+        },
+        "white_balance": {
+          "completed": 0,
+          "cases": 1
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 16,
+          "failed": 2,
+          "uncertain": 2
+        },
+        "en": {
+          "completed": 16,
+          "failed": 2,
+          "uncertain": 2
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 8,
+          "cases": 10
+        },
+        "landscape": {
+          "completed": 7,
+          "cases": 10
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb",
+      "review_sha256": "e25398e24b3e3ebf6ff3091f1e721177ef2f883a44f6d7701dce72a9f6a1df50",
+      "inference_performed": false,
+      "GPU_hours": 0,
+      "model_forward_calls": 0,
+      "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+      "runtime": "Exact saved parent decisions; CPU editor replay only",
+      "declined_language_outputs": 2,
+      "declined_semantic_cases": 1,
+      "unchanged_reviews_inherited": true,
+      "AI_disputes_preserved": true
+    },
+    "old-native": {
+      "model_id": "parent-editor-only",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 12,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 4,
+      "raw_individual_completed_both_languages": 4,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 6,
+      "all_tasks_complete_photo_groups": 4,
+      "major_quality_issues": 0,
+      "major_issue_cases": [],
+      "per_family": {
+        "compound": {
+          "completed": 2,
+          "cases": 2
+        },
+        "lighting": {
+          "completed": 0,
+          "cases": 2
+        },
+        "saturation": {
+          "completed": 2,
+          "cases": 2
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 5,
+          "partial": 1
+        },
+        "en": {
+          "completed": 6
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 2,
+          "cases": 3
+        },
+        "landscape": {
+          "completed": 2,
+          "cases": 3
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6",
+      "review_sha256": "bfd18e8708e898bd786c8fcb84b79b94cce1494d9a046bc3e1bd6d3a05cd8beb",
+      "inference_performed": false,
+      "GPU_hours": 0,
+      "model_forward_calls": 0,
+      "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+      "runtime": "Exact saved parent decisions; CPU editor replay only",
+      "declined_language_outputs": 0,
+      "declined_semantic_cases": 0,
+      "unchanged_reviews_inherited": true,
+      "AI_disputes_preserved": true
+    },
+    "decision-development": {
+      "at": "2026-11-06T07:30:36.434320+00:00",
+      "model_id": "parent-editor-only",
+      "status": "completed",
+      "semantic_cases": 20,
+      "original_photo_groups": 10,
+      "passed_both_languages": 20,
+      "language_records": [
+        {
+          "case_id": "decision-dev-native-dev-001-keep",
+          "language": "zh",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-001-keep",
+          "language": "en",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-001-decline",
+          "language": "zh",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-001-decline",
+          "language": "en",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-067-keep",
+          "language": "zh",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-067-keep",
+          "language": "en",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-067-decline",
+          "language": "zh",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-067-decline",
+          "language": "en",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-016-keep",
+          "language": "zh",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-016-keep",
+          "language": "en",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-016-decline",
+          "language": "zh",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-016-decline",
+          "language": "en",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-006-keep",
+          "language": "zh",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-006-keep",
+          "language": "en",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-006-decline",
+          "language": "zh",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-006-decline",
+          "language": "en",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-011-keep",
+          "language": "zh",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-011-keep",
+          "language": "en",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-011-decline",
+          "language": "zh",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-011-decline",
+          "language": "en",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-161-keep",
+          "language": "zh",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-161-keep",
+          "language": "en",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-161-decline",
+          "language": "zh",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-161-decline",
+          "language": "en",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-100-keep",
+          "language": "zh",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-100-keep",
+          "language": "en",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-100-decline",
+          "language": "zh",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-100-decline",
+          "language": "en",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-002-keep",
+          "language": "zh",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-002-keep",
+          "language": "en",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-002-decline",
+          "language": "zh",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-002-decline",
+          "language": "en",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-148-keep",
+          "language": "zh",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-148-keep",
+          "language": "en",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-148-decline",
+          "language": "zh",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-148-decline",
+          "language": "en",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-004-keep",
+          "language": "zh",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-004-keep",
+          "language": "en",
+          "expected_action": "keep",
+          "observed_action": "keep",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-004-decline",
+          "language": "zh",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        },
+        {
+          "case_id": "decision-dev-native-dev-004-decline",
+          "language": "en",
+          "expected_action": "decline",
+          "observed_action": "decline",
+          "passed": true
+        }
+      ],
+      "assessment": "Deterministic decision-schema and exact-pixel/no-output contract checks; not a visual editing score or human judgment.",
+      "cases_sha256": "36684e39bab8e7d2365e21219b3823a2212546c62d620dd2a0b056d9d6438378",
+      "inference_performed": false,
+      "exact_prior_summary_sha256": "238777e7a31797522a771cc62e077359ada1bffdd246997054985038b24ab104"
+    },
+    "development": {
+      "model_id": "parent-editor-only",
+      "status": "completed",
+      "primary_reviewer": "Codex direct visual review; AI-assisted, not human",
+      "human_review": false,
+      "reviewed_outputs": 200,
+      "missing_unique_images": [],
+      "fully_completed_both_languages": 76,
+      "raw_individual_completed_both_languages": 76,
+      "identical_strength_pairs": [],
+      "strength_criterion": "Frozen style criteria require distinguishable weak/strong outcomes. Pixel-identical pairs excluded from completed counts; other outcomes require direct visual grading, not parameter error or L1.",
+      "photo_groups": 20,
+      "all_tasks_complete_photo_groups": 3,
+      "major_quality_issues": 1,
+      "major_issue_cases": [
+        "development-028-restore-saturation-mild"
+      ],
+      "per_family": {
+        "brown_tone": {
+          "completed": 8,
+          "cases": 8
+        },
+        "compound": {
+          "completed": 8,
+          "cases": 10
+        },
+        "contrast": {
+          "completed": 13,
+          "cases": 20
+        },
+        "identity": {
+          "completed": 10,
+          "cases": 10
+        },
+        "lighting": {
+          "completed": 17,
+          "cases": 24
+        },
+        "saturation": {
+          "completed": 15,
+          "cases": 20
+        },
+        "white_balance": {
+          "completed": 5,
+          "cases": 8
+        }
+      },
+      "per_language": {
+        "zh": {
+          "completed": 84,
+          "partial": 13,
+          "uncertain": 3
+        },
+        "en": {
+          "completed": 84,
+          "partial": 13,
+          "uncertain": 3
+        }
+      },
+      "per_domain": {
+        "portrait": {
+          "completed": 36,
+          "cases": 50
+        },
+        "landscape": {
+          "completed": 40,
+          "cases": 50
+        }
+      },
+      "selection_uses_L1": false,
+      "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737",
+      "review_sha256": "4fe4adeffdc31c34149b02e2059ad37becae03c1b755ff7710a8fcc25535d610",
+      "inference_performed": false,
+      "GPU_hours": 0,
+      "model_forward_calls": 0,
+      "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+      "runtime": "Exact saved parent decisions; CPU editor replay only",
+      "declined_language_outputs": 0,
+      "declined_semantic_cases": 0,
+      "unchanged_reviews_inherited": true,
+      "AI_disputes_preserved": true
+    }
+  },
+  "model_forward_calls": 0,
+  "GPU_hours": 0,
+  "changed_language_outputs": 24,
+  "unique_changed_comparisons": 15,
+  "raw_notes_sha256": "69af7a626dd607b532ac647652652133eaca145ee6e81a17d769f2a1d142097c",
+  "disagreements": [
+    {
+      "split": "native-development",
+      "case_id": "native-dev-011",
+      "language": "zh",
+      "prior": {
+        "item_id": "25950f8afa3ca2c3",
+        "case_id": "native-dev-011",
+        "completion": "partial",
+        "quality": "minor_issue",
+        "evidence": "At actual960x1280, the shirt and bright background lift a little, but the shaded face is still very dark with a stronger red-purple skin cast and deeper left cheek/lip shadows; grass becomes intense green. Eye, nose and shirt texture remain visible, so this is a visible minor colour/shadow side effect rather than total facial destruction. The requested useful slight brightening of the subject is only partial; not acceptable overall.",
+        "image_sha256": "c75395748c618e3bb8bf273d130d8542ce7d3457bb5b95d66f820f496e2832cb",
+        "sheet": "experiments/functional-v10-20261106/review/native-development/final-e2/native-dev-011-01.jpg",
+        "sheet_sha256": "45a414a247ae64a3a44d26c4ffaab69ab3d201c9b46e02bba897a74ec0b2d512",
+        "bundle": "final-e2",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T23:05:10.576558+00:00",
+        "original_size_supplement": {
+          "item_id": "25950f8afa3ca2c3",
+          "case_id": "native-dev-011",
+          "input_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+          "output_sha256": "c75395748c618e3bb8bf273d130d8542ce7d3457bb5b95d66f820f496e2832cb",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v10-20261106/review/native-development/final-e2/full-resolution/native-dev-011-INPUT.png",
+              "sha256": "d46474800c9103fe8f2534046860260a707cd0448bf5e757a76cd01b3994ccd4",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "6f93a7fd66848a59f18471e2be1514ec986b6a767904dd9dfb0a5ac6d2dba2f1"
+            },
+            {
+              "role": "25950f8afa3ca2c3",
+              "path": "experiments/functional-v10-20261106/review/native-development/final-e2/full-resolution/native-dev-011-25950f8afa3ca2c3.png",
+              "sha256": "7804b29a63f9af129d0a62de65941ce50e0bdb09e6ae9da78e3140dfee20f37c",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "95538f2ccd9ee9954f83c311ef40d219ebf0ea01e50e2fd7cc1bd75abce037b8"
+            }
+          ],
+          "completion": "partial",
+          "quality": "minor_issue",
+          "evidence": "At actual960x1280, the shirt and bright background lift a little, but the shaded face is still very dark with a stronger red-purple skin cast and deeper left cheek/lip shadows; grass becomes intense green. Eye, nose and shirt texture remain visible, so this is a visible minor colour/shadow side effect rather than total facial destruction. The requested useful slight brightening of the subject is only partial; not acceptable overall.",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T23:06:24.083815+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "ac01ec201f2b8716e6452abdb06b45a6a33140b487fc3951a4196fa867faa44b"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "25950f8afa3ca2c3",
+          "case_id": "native-dev-011",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "Contrast and colour are stronger, but the shaded face remains very dark and looks red-purple while the grass becomes intense green. A slight useful brightening of the subject is not convincingly completed. Original-size inspection is needed to judge the face/shadow damage severity.",
+          "image_sha256": "c75395748c618e3bb8bf273d130d8542ce7d3457bb5b95d66f820f496e2832cb",
+          "sheet": "experiments/functional-v10-20261106/review/native-development/final-e2/native-dev-011-01.jpg",
+          "sheet_sha256": "45a414a247ae64a3a44d26c4ffaab69ab3d201c9b46e02bba897a74ec0b2d512",
+          "bundle": "final-e2",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T23:05:10.576558+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/native-development/codex-observations.jsonl",
+          "sha256": "c35489473de72bdf8907682380bd1e906bf166af68f9bd3fbcb42910b06c326d"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "fresh_old": {
+        "key": "native-dev-011-f89e9726cc19",
+        "case_id": "native-dev-011",
+        "split": "native-development",
+        "label": "B",
+        "stage": "native",
+        "completion": "C",
+        "quality": "A",
+        "evidence": "The overview plus whole 960x1280 native INPUT and this anonymous output were directly viewed. Slight brightening, stronger contrast and richer grass/shirt colour satisfy the literal request; face/eye contours, shirt texture/folds, sand markings and sky gradient remain. The input already has pronounced cool-purple shade/blue clothing; this persists with the requested colour enhancement, rather than a new unrelated global hue. No broad new clipping, crushing or intrusive chroma blocks is seen. This is not a white-balance correction, face-recovery or optimal-aesthetics claim.",
+        "at": "2026-11-06T18:32:37.273087+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/native-dev-011-f89e9726cc19/review-en.jpg",
+        "sheet_sha256": "2fe7e820fede9d9fe0366f326035a4013e0315c20a18c0d09022a6d1632530d1",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/native-dev-011-f89e9726cc19/INPUT-native.png",
+            "sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+            "source": "data/training/functional-v6-20261105/inputs/native-dev-011.png",
+            "source_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+            "size": [
+              960,
+              1280
+            ]
+          },
+          {
+            "label": "B",
+            "path": "experiments/functional-v15-20261106/editor-only-review/native-dev-011-f89e9726cc19/B-native.png",
+            "sha256": "c75395748c618e3bb8bf273d130d8542ce7d3457bb5b95d66f820f496e2832cb",
+            "source": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/images/native-dev-011-zh.png",
+            "source_sha256": "c75395748c618e3bb8bf273d130d8542ce7d3457bb5b95d66f820f496e2832cb",
+            "size": [
+              960,
+              1280
+            ]
+          }
+        ],
+        "requests": {
+          "en": "increase contrast and brighten a bit, enhance colors",
+          "zh": "稍微提高对比度和亮度，并增强色彩。"
+        },
+        "language_rows": [
+          "zh",
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "fresh_new": {
+        "key": "native-dev-011-f89e9726cc19",
+        "case_id": "native-dev-011",
+        "split": "native-development",
+        "label": "A",
+        "stage": "native",
+        "completion": "C",
+        "quality": "A",
+        "evidence": "The overview plus whole 960x1280 native INPUT and this anonymous output were directly viewed. Slight brightening, stronger contrast and richer grass/shirt colour satisfy the literal request; face/eye contours, shirt texture/folds, sand markings and sky gradient remain. The input already has pronounced cool-purple shade/blue clothing; this persists with the requested colour enhancement, rather than a new unrelated global hue. No broad new clipping, crushing or intrusive chroma blocks is seen. This is not a white-balance correction, face-recovery or optimal-aesthetics claim.",
+        "at": "2026-11-06T18:32:37.270390+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/native-dev-011-f89e9726cc19/review-en.jpg",
+        "sheet_sha256": "2fe7e820fede9d9fe0366f326035a4013e0315c20a18c0d09022a6d1632530d1",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/native-dev-011-f89e9726cc19/INPUT-native.png",
+            "sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+            "source": "data/training/functional-v6-20261105/inputs/native-dev-011.png",
+            "source_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+            "size": [
+              960,
+              1280
+            ]
+          },
+          {
+            "label": "A",
+            "path": "experiments/functional-v15-20261106/editor-only-review/native-dev-011-f89e9726cc19/A-native.png",
+            "sha256": "f89e9726cc197d7fb699ed097734faa209d556ce682665f5816878e5e57fa18d",
+            "source": "experiments/functional-v15-20261106/editor-only/native-development/images/native-dev-011-zh.png",
+            "source_sha256": "f89e9726cc197d7fb699ed097734faa209d556ce682665f5816878e5e57fa18d",
+            "size": [
+              960,
+              1280
+            ]
+          }
+        ],
+        "requests": {
+          "en": "increase contrast and brighten a bit, enhance colors",
+          "zh": "稍微提高对比度和亮度，并增强色彩。"
+        },
+        "language_rows": [
+          "zh",
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "disagreed_fields": [
+        "completion",
+        "quality"
+      ],
+      "new_fields_kept_uncertain": [
+        "completion",
+        "quality"
+      ],
+      "policy": "Identical old output received conflicting AI grades. If new and old direct grades agree on that field, do not count it as a confident editor gain."
+    },
+    {
+      "split": "native-development",
+      "case_id": "native-dev-011",
+      "language": "en",
+      "prior": {
+        "item_id": "25950f8afa3ca2c3",
+        "case_id": "native-dev-011",
+        "completion": "partial",
+        "quality": "minor_issue",
+        "evidence": "At actual960x1280, the shirt and bright background lift a little, but the shaded face is still very dark with a stronger red-purple skin cast and deeper left cheek/lip shadows; grass becomes intense green. Eye, nose and shirt texture remain visible, so this is a visible minor colour/shadow side effect rather than total facial destruction. The requested useful slight brightening of the subject is only partial; not acceptable overall.",
+        "image_sha256": "c75395748c618e3bb8bf273d130d8542ce7d3457bb5b95d66f820f496e2832cb",
+        "sheet": "experiments/functional-v10-20261106/review/native-development/final-e2/native-dev-011-01.jpg",
+        "sheet_sha256": "45a414a247ae64a3a44d26c4ffaab69ab3d201c9b46e02bba897a74ec0b2d512",
+        "bundle": "final-e2",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T23:05:10.576558+00:00",
+        "original_size_supplement": {
+          "item_id": "25950f8afa3ca2c3",
+          "case_id": "native-dev-011",
+          "input_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+          "output_sha256": "c75395748c618e3bb8bf273d130d8542ce7d3457bb5b95d66f820f496e2832cb",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v10-20261106/review/native-development/final-e2/full-resolution/native-dev-011-INPUT.png",
+              "sha256": "d46474800c9103fe8f2534046860260a707cd0448bf5e757a76cd01b3994ccd4",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "6f93a7fd66848a59f18471e2be1514ec986b6a767904dd9dfb0a5ac6d2dba2f1"
+            },
+            {
+              "role": "25950f8afa3ca2c3",
+              "path": "experiments/functional-v10-20261106/review/native-development/final-e2/full-resolution/native-dev-011-25950f8afa3ca2c3.png",
+              "sha256": "7804b29a63f9af129d0a62de65941ce50e0bdb09e6ae9da78e3140dfee20f37c",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "95538f2ccd9ee9954f83c311ef40d219ebf0ea01e50e2fd7cc1bd75abce037b8"
+            }
+          ],
+          "completion": "partial",
+          "quality": "minor_issue",
+          "evidence": "At actual960x1280, the shirt and bright background lift a little, but the shaded face is still very dark with a stronger red-purple skin cast and deeper left cheek/lip shadows; grass becomes intense green. Eye, nose and shirt texture remain visible, so this is a visible minor colour/shadow side effect rather than total facial destruction. The requested useful slight brightening of the subject is only partial; not acceptable overall.",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T23:06:24.083815+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "ac01ec201f2b8716e6452abdb06b45a6a33140b487fc3951a4196fa867faa44b"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "25950f8afa3ca2c3",
+          "case_id": "native-dev-011",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "Contrast and colour are stronger, but the shaded face remains very dark and looks red-purple while the grass becomes intense green. A slight useful brightening of the subject is not convincingly completed. Original-size inspection is needed to judge the face/shadow damage severity.",
+          "image_sha256": "c75395748c618e3bb8bf273d130d8542ce7d3457bb5b95d66f820f496e2832cb",
+          "sheet": "experiments/functional-v10-20261106/review/native-development/final-e2/native-dev-011-01.jpg",
+          "sheet_sha256": "45a414a247ae64a3a44d26c4ffaab69ab3d201c9b46e02bba897a74ec0b2d512",
+          "bundle": "final-e2",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T23:05:10.576558+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v11-20261106/review-derivation/fixed-final-e1-final/review/native-development/codex-observations.jsonl",
+          "sha256": "c35489473de72bdf8907682380bd1e906bf166af68f9bd3fbcb42910b06c326d"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "fresh_old": {
+        "key": "native-dev-011-f89e9726cc19",
+        "case_id": "native-dev-011",
+        "split": "native-development",
+        "label": "B",
+        "stage": "native",
+        "completion": "C",
+        "quality": "A",
+        "evidence": "The overview plus whole 960x1280 native INPUT and this anonymous output were directly viewed. Slight brightening, stronger contrast and richer grass/shirt colour satisfy the literal request; face/eye contours, shirt texture/folds, sand markings and sky gradient remain. The input already has pronounced cool-purple shade/blue clothing; this persists with the requested colour enhancement, rather than a new unrelated global hue. No broad new clipping, crushing or intrusive chroma blocks is seen. This is not a white-balance correction, face-recovery or optimal-aesthetics claim.",
+        "at": "2026-11-06T18:32:37.273087+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/native-dev-011-f89e9726cc19/review-en.jpg",
+        "sheet_sha256": "2fe7e820fede9d9fe0366f326035a4013e0315c20a18c0d09022a6d1632530d1",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/native-dev-011-f89e9726cc19/INPUT-native.png",
+            "sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+            "source": "data/training/functional-v6-20261105/inputs/native-dev-011.png",
+            "source_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+            "size": [
+              960,
+              1280
+            ]
+          },
+          {
+            "label": "B",
+            "path": "experiments/functional-v15-20261106/editor-only-review/native-dev-011-f89e9726cc19/B-native.png",
+            "sha256": "c75395748c618e3bb8bf273d130d8542ce7d3457bb5b95d66f820f496e2832cb",
+            "source": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/images/native-dev-011-zh.png",
+            "source_sha256": "c75395748c618e3bb8bf273d130d8542ce7d3457bb5b95d66f820f496e2832cb",
+            "size": [
+              960,
+              1280
+            ]
+          }
+        ],
+        "requests": {
+          "en": "increase contrast and brighten a bit, enhance colors",
+          "zh": "稍微提高对比度和亮度，并增强色彩。"
+        },
+        "language_rows": [
+          "zh",
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "fresh_new": {
+        "key": "native-dev-011-f89e9726cc19",
+        "case_id": "native-dev-011",
+        "split": "native-development",
+        "label": "A",
+        "stage": "native",
+        "completion": "C",
+        "quality": "A",
+        "evidence": "The overview plus whole 960x1280 native INPUT and this anonymous output were directly viewed. Slight brightening, stronger contrast and richer grass/shirt colour satisfy the literal request; face/eye contours, shirt texture/folds, sand markings and sky gradient remain. The input already has pronounced cool-purple shade/blue clothing; this persists with the requested colour enhancement, rather than a new unrelated global hue. No broad new clipping, crushing or intrusive chroma blocks is seen. This is not a white-balance correction, face-recovery or optimal-aesthetics claim.",
+        "at": "2026-11-06T18:32:37.270390+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/native-dev-011-f89e9726cc19/review-en.jpg",
+        "sheet_sha256": "2fe7e820fede9d9fe0366f326035a4013e0315c20a18c0d09022a6d1632530d1",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/native-dev-011-f89e9726cc19/INPUT-native.png",
+            "sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+            "source": "data/training/functional-v6-20261105/inputs/native-dev-011.png",
+            "source_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+            "size": [
+              960,
+              1280
+            ]
+          },
+          {
+            "label": "A",
+            "path": "experiments/functional-v15-20261106/editor-only-review/native-dev-011-f89e9726cc19/A-native.png",
+            "sha256": "f89e9726cc197d7fb699ed097734faa209d556ce682665f5816878e5e57fa18d",
+            "source": "experiments/functional-v15-20261106/editor-only/native-development/images/native-dev-011-zh.png",
+            "source_sha256": "f89e9726cc197d7fb699ed097734faa209d556ce682665f5816878e5e57fa18d",
+            "size": [
+              960,
+              1280
+            ]
+          }
+        ],
+        "requests": {
+          "en": "increase contrast and brighten a bit, enhance colors",
+          "zh": "稍微提高对比度和亮度，并增强色彩。"
+        },
+        "language_rows": [
+          "zh",
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "disagreed_fields": [
+        "completion",
+        "quality"
+      ],
+      "new_fields_kept_uncertain": [
+        "completion",
+        "quality"
+      ],
+      "policy": "Identical old output received conflicting AI grades. If new and old direct grades agree on that field, do not count it as a confident editor gain."
+    },
+    {
+      "split": "development",
+      "case_id": "development-020-compound",
+      "language": "zh",
+      "prior": {
+        "item_id": "98bae97bb2e3cac4",
+        "case_id": "development-020-compound",
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "Whole771x1024 image shows lifted facial/jacket shadows but gray-purple/pale skin and a broad flatter rendering across dark fabric. Clothing patterns remain, but the quality side effect prevents a compound-task pass.",
+        "image_sha256": "0e64540de0bc6d03f9055cf04a7d3feceb80093e1e0f8f7dd3c31205ed9092a4",
+        "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-020-compound-01.jpg",
+        "sheet_sha256": "5c4870268ddf1fb13208cbaa593ba8cd1f64e88b44d267a98106069af28dffa9",
+        "bundle": "stage2",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-06T09:32:37.351616+00:00",
+        "original_size_supplement": {
+          "item_id": "98bae97bb2e3cac4",
+          "case_id": "development-020-compound",
+          "input_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+          "output_sha256": "0e64540de0bc6d03f9055cf04a7d3feceb80093e1e0f8f7dd3c31205ed9092a4",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-020-compound-INPUT.png",
+              "sha256": "42db1457fae0b7d050d0f2601fa6d3f9a313aa693cdec6d8d395ca620dcf97b7",
+              "size": [
+                771,
+                1024
+              ],
+              "pixel_sha256": "2b18491b8befd426df200933402c91d8d85c7c3bd8c164756b7f024cc5248ed5"
+            },
+            {
+              "role": "98bae97bb2e3cac4",
+              "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-020-compound-98bae97bb2e3cac4.png",
+              "sha256": "2b58ae6db72ab19f1fa41655c61102205721e6f3af3b8708b25173af69ecc0e7",
+              "size": [
+                771,
+                1024
+              ],
+              "pixel_sha256": "9ab20734fe8c3bed94b23bbd2c07df9301d51981240d2c0a2ed07b08ef9c2f9e"
+            }
+          ],
+          "completion": "completed",
+          "quality": "minor_issue",
+          "evidence": "Whole771x1024 image shows lifted facial/jacket shadows but gray-purple/pale skin and a broad flatter rendering across dark fabric. Clothing patterns remain, but the quality side effect prevents a compound-task pass.",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-06T09:41:46.024747+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "14ab1b42c9f52917c606505f451e5bb97689d9f5217fb970b6e2dd05194315b3"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "98bae97bb2e3cac4",
+          "case_id": "development-020-compound",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "Faces and dark clothing become lighter with visible stripes and contours, but native skin/fabric inspection is needed to check whether the lift has flattened local contrast.",
+          "image_sha256": "0e64540de0bc6d03f9055cf04a7d3feceb80093e1e0f8f7dd3c31205ed9092a4",
+          "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-020-compound-01.jpg",
+          "sheet_sha256": "5c4870268ddf1fb13208cbaa593ba8cd1f64e88b44d267a98106069af28dffa9",
+          "bundle": "stage2",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-06T09:32:37.351616+00:00"
+        }
+      },
+      "fresh_old": {
+        "key": "development-020-compound-744044872c60",
+        "case_id": "development-020-compound",
+        "split": "development",
+        "label": "B",
+        "stage": "native",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole771x1024 output and overview were directly viewed with the previously viewed byte-identical input (hash checked). Shadow lift is clear and pale clothes/faces retain structure, but a slight contrast increase is not clearly achieved; clothing/face shadow separation stays softened. Existing print grain is visible without newly dominant noise, clipping or unrelated colour damage. The partial grade concerns the missing contrast component, not failure to lift shadows; all compound requirements are needed for completion.",
+        "at": "2026-11-06T18:47:52.983681+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-020-compound-744044872c60/review-en.jpg",
+        "sheet_sha256": "c995269945c92785df39da73887b427a2c71029f8fef0a20abf46f74a5595216",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-020-compound-744044872c60/INPUT-native.png",
+            "sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+            "source": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+            "source_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+            "size": [
+              771,
+              1024
+            ]
+          },
+          {
+            "label": "B",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-020-compound-744044872c60/B-native.png",
+            "sha256": "0e64540de0bc6d03f9055cf04a7d3feceb80093e1e0f8f7dd3c31205ed9092a4",
+            "source": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/images/development-020-compound-zh.png",
+            "source_sha256": "0e64540de0bc6d03f9055cf04a7d3feceb80093e1e0f8f7dd3c31205ed9092a4",
+            "size": [
+              771,
+              1024
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "提亮暗部，同时轻微增强对比度，亮处不要过曝。",
+          "en": "Lift the shadows and slightly increase contrast without blowing out the highlights."
+        },
+        "language_rows": [
+          "zh"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "fresh_new": {
+        "key": "development-020-compound-744044872c60",
+        "case_id": "development-020-compound",
+        "split": "development",
+        "label": "A",
+        "stage": "native",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole771x1024 output and overview were directly viewed with the previously viewed byte-identical input (hash checked). Shadow lift is clear and pale clothes/faces retain structure, but a slight contrast increase is not clearly achieved; clothing/face shadow separation stays softened. Existing print grain is visible without newly dominant noise, clipping or unrelated colour damage. The partial grade concerns the missing contrast component, not failure to lift shadows; all compound requirements are needed for completion.",
+        "at": "2026-11-06T18:47:52.981462+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-020-compound-744044872c60/review-en.jpg",
+        "sheet_sha256": "c995269945c92785df39da73887b427a2c71029f8fef0a20abf46f74a5595216",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-020-compound-744044872c60/INPUT-native.png",
+            "sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+            "source": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+            "source_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+            "size": [
+              771,
+              1024
+            ]
+          },
+          {
+            "label": "A",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-020-compound-744044872c60/A-native.png",
+            "sha256": "744044872c60393403fd78f4a67b44108344d153ce62725acb2cbf6d72bd5dcf",
+            "source": "experiments/functional-v15-20261106/editor-only/development/images/development-020-compound-zh.png",
+            "source_sha256": "744044872c60393403fd78f4a67b44108344d153ce62725acb2cbf6d72bd5dcf",
+            "size": [
+              771,
+              1024
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "提亮暗部，同时轻微增强对比度，亮处不要过曝。",
+          "en": "Lift the shadows and slightly increase contrast without blowing out the highlights."
+        },
+        "language_rows": [
+          "zh"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "disagreed_fields": [
+        "completion",
+        "quality"
+      ],
+      "new_fields_kept_uncertain": [
+        "completion",
+        "quality"
+      ],
+      "policy": "Identical old output received conflicting AI grades. If new and old direct grades agree on that field, do not count it as a confident editor gain."
+    },
+    {
+      "split": "development",
+      "case_id": "development-020-compound",
+      "language": "en",
+      "prior": {
+        "item_id": "3713d1423be7ec51",
+        "case_id": "development-020-compound",
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "Whole771x1024 comparison shows a restrained shadow lift, yet male skin and dark jacket become grayer and flatter. Fine patterns survive, but natural skin/local separation is weakened rather than reliably improved.",
+        "image_sha256": "aed543b554e66f7cdf1c64f320f6cdc4966a0b6476607e0e9e8be3e5f865d520",
+        "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-020-compound-01.jpg",
+        "sheet_sha256": "5c4870268ddf1fb13208cbaa593ba8cd1f64e88b44d267a98106069af28dffa9",
+        "bundle": "stage2",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-06T09:32:37.351612+00:00",
+        "original_size_supplement": {
+          "item_id": "3713d1423be7ec51",
+          "case_id": "development-020-compound",
+          "input_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+          "output_sha256": "aed543b554e66f7cdf1c64f320f6cdc4966a0b6476607e0e9e8be3e5f865d520",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-020-compound-INPUT.png",
+              "sha256": "42db1457fae0b7d050d0f2601fa6d3f9a313aa693cdec6d8d395ca620dcf97b7",
+              "size": [
+                771,
+                1024
+              ],
+              "pixel_sha256": "2b18491b8befd426df200933402c91d8d85c7c3bd8c164756b7f024cc5248ed5"
+            },
+            {
+              "role": "3713d1423be7ec51",
+              "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-020-compound-3713d1423be7ec51.png",
+              "sha256": "09f4a8abfa0739e47d472147889b86e7f7498f89d7782264a1360b026f2a1b79",
+              "size": [
+                771,
+                1024
+              ],
+              "pixel_sha256": "9892d8e2e3771eb04f1f5255c15cef79190b177c9e652ac8f8b839d6a5bc6a20"
+            }
+          ],
+          "completion": "completed",
+          "quality": "minor_issue",
+          "evidence": "Whole771x1024 comparison shows a restrained shadow lift, yet male skin and dark jacket become grayer and flatter. Fine patterns survive, but natural skin/local separation is weakened rather than reliably improved.",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-06T09:41:46.026117+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "14ab1b42c9f52917c606505f451e5bb97689d9f5217fb970b6e2dd05194315b3"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "3713d1423be7ec51",
+          "case_id": "development-020-compound",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "A restrained shadow lift is visible in faces and dark clothing with some tonal separation retained. Native skin, dark fabric and white-collar checks remain required for the compound request.",
+          "image_sha256": "aed543b554e66f7cdf1c64f320f6cdc4966a0b6476607e0e9e8be3e5f865d520",
+          "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-020-compound-01.jpg",
+          "sheet_sha256": "5c4870268ddf1fb13208cbaa593ba8cd1f64e88b44d267a98106069af28dffa9",
+          "bundle": "stage2",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-06T09:32:37.351612+00:00"
+        }
+      },
+      "fresh_old": {
+        "key": "development-020-compound-06ecd8e4760b",
+        "case_id": "development-020-compound",
+        "split": "development",
+        "label": "B",
+        "stage": "native",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole771x1024 anonymous output and overview were directly viewed with the previously viewed byte-identical input (hash checked). Shadows lift while pale garments, faces and hair retain structure, but the requested slight contrast increase is not clearly achieved; dark/light separation remains softened. Existing print grain does not become dominant new noise or clipping. This compound request is partial despite successful shadow lifting; no model learning claim follows.",
+        "at": "2026-11-06T18:48:55.660749+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-020-compound-06ecd8e4760b/review-en.jpg",
+        "sheet_sha256": "89f408b4bca0c71a90171d946a1eab436dae586f664f0b0b2116b30e671a89f2",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-020-compound-06ecd8e4760b/INPUT-native.png",
+            "sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+            "source": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+            "source_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+            "size": [
+              771,
+              1024
+            ]
+          },
+          {
+            "label": "B",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-020-compound-06ecd8e4760b/B-native.png",
+            "sha256": "aed543b554e66f7cdf1c64f320f6cdc4966a0b6476607e0e9e8be3e5f865d520",
+            "source": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/images/development-020-compound-en.png",
+            "source_sha256": "aed543b554e66f7cdf1c64f320f6cdc4966a0b6476607e0e9e8be3e5f865d520",
+            "size": [
+              771,
+              1024
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "提亮暗部，同时轻微增强对比度，亮处不要过曝。",
+          "en": "Lift the shadows and slightly increase contrast without blowing out the highlights."
+        },
+        "language_rows": [
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "fresh_new": {
+        "key": "development-020-compound-06ecd8e4760b",
+        "case_id": "development-020-compound",
+        "split": "development",
+        "label": "A",
+        "stage": "native",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole771x1024 anonymous output and overview were directly viewed with the previously viewed byte-identical input (hash checked). Shadows lift while pale garments, faces and hair retain structure, but the requested slight contrast increase is not clearly achieved; dark/light separation remains softened. Existing print grain does not become dominant new noise or clipping. This compound request is partial despite successful shadow lifting; no model learning claim follows.",
+        "at": "2026-11-06T18:48:55.658285+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-020-compound-06ecd8e4760b/review-en.jpg",
+        "sheet_sha256": "89f408b4bca0c71a90171d946a1eab436dae586f664f0b0b2116b30e671a89f2",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-020-compound-06ecd8e4760b/INPUT-native.png",
+            "sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+            "source": "data/training/functional-v2-20261104/inputs/development-020/original.png",
+            "source_sha256": "cba6e6013908ebe62e348f223166343d1ea694f8269a10251ce4b1cf4249a570",
+            "size": [
+              771,
+              1024
+            ]
+          },
+          {
+            "label": "A",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-020-compound-06ecd8e4760b/A-native.png",
+            "sha256": "06ecd8e4760bd7b3cd196825d8b670842bb2216f6dd381aec214fa04b46c5544",
+            "source": "experiments/functional-v15-20261106/editor-only/development/images/development-020-compound-en.png",
+            "source_sha256": "06ecd8e4760bd7b3cd196825d8b670842bb2216f6dd381aec214fa04b46c5544",
+            "size": [
+              771,
+              1024
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "提亮暗部，同时轻微增强对比度，亮处不要过曝。",
+          "en": "Lift the shadows and slightly increase contrast without blowing out the highlights."
+        },
+        "language_rows": [
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "disagreed_fields": [
+        "completion",
+        "quality"
+      ],
+      "new_fields_kept_uncertain": [
+        "completion",
+        "quality"
+      ],
+      "policy": "Identical old output received conflicting AI grades. If new and old direct grades agree on that field, do not count it as a confident editor gain."
+    },
+    {
+      "split": "development",
+      "case_id": "development-055-style-shadows-strong",
+      "language": "zh",
+      "prior": {
+        "item_id": "ecfcc4b3b87b3447",
+        "case_id": "development-055-style-shadows-strong",
+        "completion": "partial",
+        "quality": "acceptable",
+        "evidence": "Hair and building shadows deepen mildly, but the requested noticeable effect is still weak. No conspicuous new clipping or extra colour change appears.",
+        "image_sha256": "47906575cd3b37459339eb4c6d57f14b42f3d13d8416cec146c1bcd6162ab19c",
+        "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-055-style-shadows-strong-01.jpg",
+        "sheet_sha256": "f540a7c3b5db5755aec5a62e39d63e08e15e3d43cd34c964a494fd992e265b0f",
+        "bundle": "stage2",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-06T09:33:56.422748+00:00"
+      },
+      "fresh_old": {
+        "key": "development-055-style-shadows-strong-9536f40de4b7",
+        "case_id": "development-055-style-shadows-strong",
+        "split": "development",
+        "label": "A",
+        "stage": "native",
+        "completion": "C",
+        "quality": "A",
+        "evidence": "Whole native 1024x681 output directly viewed with shared source INPUT previously seen and identical source SHA verified. Shadow darkening in hair/cardigan/buildings is visible, stronger than the weak variant in the overview comparison; red tie/blue-yellow knit, skin features and bright fabric remain. No new dominant artifact or broad clipping; pre-existing bright fabric and sunglass/face shadows are not treated as restoration.",
+        "at": "2026-11-06T18:56:02.802006+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-055-style-shadows-strong-9536f40de4b7/review-en.jpg",
+        "sheet_sha256": "86e8f13881c93a37dfb68a399c070cfaece91d86e49c19640a4044f93fc0f162",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-055-style-shadows-strong-9536f40de4b7/INPUT-native.png",
+            "sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+            "source": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+            "source_sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+            "size": [
+              1024,
+              681
+            ]
+          },
+          {
+            "label": "A",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-055-style-shadows-strong-9536f40de4b7/A-native.png",
+            "sha256": "47906575cd3b37459339eb4c6d57f14b42f3d13d8416cec146c1bcd6162ab19c",
+            "source": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/images/development-055-style-shadows-strong-zh.png",
+            "source_sha256": "47906575cd3b37459339eb4c6d57f14b42f3d13d8416cec146c1bcd6162ab19c",
+            "size": [
+              1024,
+              681
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "对这张照片，请明显压暗阴影，保留主体和细节，其他效果保持自然。",
+          "en": "For this photograph, noticeably darken the shadows while preserving the subject and detail; keep other aspects natural."
+        },
+        "language_rows": [
+          "zh"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "fresh_new": {
+        "key": "development-055-style-shadows-strong-9536f40de4b7",
+        "case_id": "development-055-style-shadows-strong",
+        "split": "development",
+        "label": "B",
+        "stage": "native",
+        "completion": "C",
+        "quality": "A",
+        "evidence": "Whole native 1024x681 output directly viewed with shared source INPUT previously seen and identical source SHA verified. Shadow darkening in hair/cardigan/buildings is visible, stronger than the weak variant in the overview comparison; red tie/blue-yellow knit, skin features and bright fabric remain. No new dominant artifact or broad clipping; pre-existing bright fabric and sunglass/face shadows are not treated as restoration.",
+        "at": "2026-11-06T18:56:02.804295+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-055-style-shadows-strong-9536f40de4b7/review-en.jpg",
+        "sheet_sha256": "86e8f13881c93a37dfb68a399c070cfaece91d86e49c19640a4044f93fc0f162",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-055-style-shadows-strong-9536f40de4b7/INPUT-native.png",
+            "sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+            "source": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+            "source_sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+            "size": [
+              1024,
+              681
+            ]
+          },
+          {
+            "label": "B",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-055-style-shadows-strong-9536f40de4b7/B-native.png",
+            "sha256": "9536f40de4b7bc7e653ab92b79ef16dc4d43e56c346c9a37034c0df2fe5f41a3",
+            "source": "experiments/functional-v15-20261106/editor-only/development/images/development-055-style-shadows-strong-zh.png",
+            "source_sha256": "9536f40de4b7bc7e653ab92b79ef16dc4d43e56c346c9a37034c0df2fe5f41a3",
+            "size": [
+              1024,
+              681
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "对这张照片，请明显压暗阴影，保留主体和细节，其他效果保持自然。",
+          "en": "For this photograph, noticeably darken the shadows while preserving the subject and detail; keep other aspects natural."
+        },
+        "language_rows": [
+          "zh"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "disagreed_fields": [
+        "completion"
+      ],
+      "new_fields_kept_uncertain": [
+        "completion"
+      ],
+      "policy": "Identical old output received conflicting AI grades. If new and old direct grades agree on that field, do not count it as a confident editor gain."
+    },
+    {
+      "split": "development",
+      "case_id": "development-055-style-shadows-strong",
+      "language": "en",
+      "prior": {
+        "item_id": "62dd960616241bba",
+        "case_id": "development-055-style-shadows-strong",
+        "completion": "partial",
+        "quality": "acceptable",
+        "evidence": "Only a small darkening of hair and building shadows is visible, insufficient for the explicit noticeable shadow-darkening request. Other content remains natural.",
+        "image_sha256": "ac882240d914737df1ef97e671f841e44b76886c9937de6caa65d644f420f05d",
+        "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-055-style-shadows-strong-01.jpg",
+        "sheet_sha256": "f540a7c3b5db5755aec5a62e39d63e08e15e3d43cd34c964a494fd992e265b0f",
+        "bundle": "stage2",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-06T09:33:56.422744+00:00"
+      },
+      "fresh_old": {
+        "key": "development-055-style-shadows-strong-2c214b21a264",
+        "case_id": "development-055-style-shadows-strong",
+        "split": "development",
+        "label": "B",
+        "stage": "native",
+        "completion": "C",
+        "quality": "A",
+        "evidence": "Whole native 1024x681 output directly viewed with shared source INPUT previously seen and identical source SHA verified. Shadow darkening in hair/cardigan/buildings is visible, stronger than the weak variant in the overview comparison; red tie/blue-yellow knit, skin features and bright fabric remain. No new dominant artifact or broad clipping; pre-existing bright fabric and sunglass/face shadows are not treated as restoration.",
+        "at": "2026-11-06T18:56:02.808183+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-055-style-shadows-strong-2c214b21a264/review-en.jpg",
+        "sheet_sha256": "ba3e9615440c8a69807afedc31ea2a606fbdbdf281e919dc0835244b28c09e28",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-055-style-shadows-strong-2c214b21a264/INPUT-native.png",
+            "sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+            "source": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+            "source_sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+            "size": [
+              1024,
+              681
+            ]
+          },
+          {
+            "label": "B",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-055-style-shadows-strong-2c214b21a264/B-native.png",
+            "sha256": "ac882240d914737df1ef97e671f841e44b76886c9937de6caa65d644f420f05d",
+            "source": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/images/development-055-style-shadows-strong-en.png",
+            "source_sha256": "ac882240d914737df1ef97e671f841e44b76886c9937de6caa65d644f420f05d",
+            "size": [
+              1024,
+              681
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "对这张照片，请明显压暗阴影，保留主体和细节，其他效果保持自然。",
+          "en": "For this photograph, noticeably darken the shadows while preserving the subject and detail; keep other aspects natural."
+        },
+        "language_rows": [
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "fresh_new": {
+        "key": "development-055-style-shadows-strong-2c214b21a264",
+        "case_id": "development-055-style-shadows-strong",
+        "split": "development",
+        "label": "A",
+        "stage": "native",
+        "completion": "C",
+        "quality": "A",
+        "evidence": "Whole native 1024x681 output directly viewed with shared source INPUT previously seen and identical source SHA verified. Shadow darkening in hair/cardigan/buildings is visible, stronger than the weak variant in the overview comparison; red tie/blue-yellow knit, skin features and bright fabric remain. No new dominant artifact or broad clipping; pre-existing bright fabric and sunglass/face shadows are not treated as restoration.",
+        "at": "2026-11-06T18:56:02.806283+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-055-style-shadows-strong-2c214b21a264/review-en.jpg",
+        "sheet_sha256": "ba3e9615440c8a69807afedc31ea2a606fbdbdf281e919dc0835244b28c09e28",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-055-style-shadows-strong-2c214b21a264/INPUT-native.png",
+            "sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+            "source": "data/training/functional-v2-20261104/inputs/development-055/original.png",
+            "source_sha256": "2f40b223d173953983e9c75f8bae9f86f99f0240cfe194018158f58bd5159a8c",
+            "size": [
+              1024,
+              681
+            ]
+          },
+          {
+            "label": "A",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-055-style-shadows-strong-2c214b21a264/A-native.png",
+            "sha256": "2c214b21a2645c643c0677b63eb89935f8906a25c2fbe578a2c8876bb2a0a734",
+            "source": "experiments/functional-v15-20261106/editor-only/development/images/development-055-style-shadows-strong-en.png",
+            "source_sha256": "2c214b21a2645c643c0677b63eb89935f8906a25c2fbe578a2c8876bb2a0a734",
+            "size": [
+              1024,
+              681
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "对这张照片，请明显压暗阴影，保留主体和细节，其他效果保持自然。",
+          "en": "For this photograph, noticeably darken the shadows while preserving the subject and detail; keep other aspects natural."
+        },
+        "language_rows": [
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "disagreed_fields": [
+        "completion"
+      ],
+      "new_fields_kept_uncertain": [
+        "completion"
+      ],
+      "policy": "Identical old output received conflicting AI grades. If new and old direct grades agree on that field, do not count it as a confident editor gain."
+    },
+    {
+      "split": "development",
+      "case_id": "development-027-compound",
+      "language": "zh",
+      "prior": {
+        "item_id": "3c0a4523636e9017",
+        "case_id": "development-027-compound",
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "Whole960x610 comparison shows a restrained shadow lift in bench and steps while curl relief, paving lines and bright leaf structure remain. Warm autumn light is retained without a broad gray veil.",
+        "image_sha256": "9c564304e91d45c7fb560a413ad4d49566dfbf2d52a9ea268515e6ff55c30427",
+        "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-027-compound-01.jpg",
+        "sheet_sha256": "87a4a107b46397a20bf0fbcf8c740ac7008ed9c9464afe6147dfcc91b492ce90",
+        "bundle": "stage2",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-06T09:36:20.072419+00:00",
+        "original_size_supplement": {
+          "item_id": "3c0a4523636e9017",
+          "case_id": "development-027-compound",
+          "input_sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+          "output_sha256": "9c564304e91d45c7fb560a413ad4d49566dfbf2d52a9ea268515e6ff55c30427",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-027-compound-INPUT.png",
+              "sha256": "a97245ec066148dd46d0ebcf78c4b5d786f4c82b2be7cb3693d11ee09ca9da8b",
+              "size": [
+                960,
+                610
+              ],
+              "pixel_sha256": "3c05c677c9619b4ccf70be33f3270061b1d009601da1c053d8b774e8d77a2c33"
+            },
+            {
+              "role": "3c0a4523636e9017",
+              "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-027-compound-3c0a4523636e9017.png",
+              "sha256": "9be4c9a874424bfd212fd0dd780cc5d539e45fd9d1377dc5938ed9058d9babc3",
+              "size": [
+                960,
+                610
+              ],
+              "pixel_sha256": "facdf815f929240e076807aac852844b2b9e998fcaf2c0c36384db1b14d88421"
+            }
+          ],
+          "completion": "completed",
+          "quality": "acceptable",
+          "evidence": "Whole960x610 comparison shows a restrained shadow lift in bench and steps while curl relief, paving lines and bright leaf structure remain. Warm autumn light is retained without a broad gray veil.",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-06T09:44:52.239784+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "14ab1b42c9f52917c606505f451e5bb97689d9f5217fb970b6e2dd05194315b3"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "3c0a4523636e9017",
+          "case_id": "development-027-compound",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "Bench and paving shadows brighten, but local tonal separation and bright leaf texture require native-size inspection before quality acceptance.",
+          "image_sha256": "9c564304e91d45c7fb560a413ad4d49566dfbf2d52a9ea268515e6ff55c30427",
+          "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-027-compound-01.jpg",
+          "sheet_sha256": "87a4a107b46397a20bf0fbcf8c740ac7008ed9c9464afe6147dfcc91b492ce90",
+          "bundle": "stage2",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-06T09:36:20.072419+00:00"
+        }
+      },
+      "fresh_old": {
+        "key": "development-027-compound-7c946a142076",
+        "case_id": "development-027-compound",
+        "split": "development",
+        "label": "B",
+        "stage": "native",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole native 960x610 output directly viewed; exact shared source INPUT viewed and SHA verified. Bench/wall dark detail lifts and bright walkway/ironwork/leaves are retained without a new dominant clipping or cast. Simultaneous contrast increase is not convincingly achieved: dark range looks flatter/lighter, so compound instruction remains partial despite acceptable basic image quality.",
+        "at": "2026-11-06T18:57:01.900241+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-027-compound-7c946a142076/review-en.jpg",
+        "sheet_sha256": "3b4fb20786b6fb4669e794b0925b842e29bbfca79c49d801777b0d940031fd1e",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-027-compound-7c946a142076/INPUT-native.png",
+            "sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+            "source": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+            "source_sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+            "size": [
+              960,
+              610
+            ]
+          },
+          {
+            "label": "B",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-027-compound-7c946a142076/B-native.png",
+            "sha256": "9c564304e91d45c7fb560a413ad4d49566dfbf2d52a9ea268515e6ff55c30427",
+            "source": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/images/development-027-compound-zh.png",
+            "source_sha256": "9c564304e91d45c7fb560a413ad4d49566dfbf2d52a9ea268515e6ff55c30427",
+            "size": [
+              960,
+              610
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "提亮暗部，同时轻微增强对比度，亮处不要过曝。",
+          "en": "Lift the shadows and slightly increase contrast without blowing out the highlights."
+        },
+        "language_rows": [
+          "zh"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "fresh_new": {
+        "key": "development-027-compound-7c946a142076",
+        "case_id": "development-027-compound",
+        "split": "development",
+        "label": "A",
+        "stage": "native",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole native 960x610 output directly viewed; exact shared source INPUT viewed and SHA verified. Bench/wall dark detail lifts and bright walkway/ironwork/leaves are retained without a new dominant clipping or cast. Simultaneous contrast increase is not convincingly achieved: dark range looks flatter/lighter, so compound instruction remains partial despite acceptable basic image quality.",
+        "at": "2026-11-06T18:57:01.894991+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-027-compound-7c946a142076/review-en.jpg",
+        "sheet_sha256": "3b4fb20786b6fb4669e794b0925b842e29bbfca79c49d801777b0d940031fd1e",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-027-compound-7c946a142076/INPUT-native.png",
+            "sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+            "source": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+            "source_sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+            "size": [
+              960,
+              610
+            ]
+          },
+          {
+            "label": "A",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-027-compound-7c946a142076/A-native.png",
+            "sha256": "7c946a142076c488df4aed49f99b6815ad2e5519b8dfa2cca9ed03588914a967",
+            "source": "experiments/functional-v15-20261106/editor-only/development/images/development-027-compound-zh.png",
+            "source_sha256": "7c946a142076c488df4aed49f99b6815ad2e5519b8dfa2cca9ed03588914a967",
+            "size": [
+              960,
+              610
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "提亮暗部，同时轻微增强对比度，亮处不要过曝。",
+          "en": "Lift the shadows and slightly increase contrast without blowing out the highlights."
+        },
+        "language_rows": [
+          "zh"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "disagreed_fields": [
+        "completion"
+      ],
+      "new_fields_kept_uncertain": [
+        "completion"
+      ],
+      "policy": "Identical old output received conflicting AI grades. If new and old direct grades agree on that field, do not count it as a confident editor gain."
+    },
+    {
+      "split": "development",
+      "case_id": "development-027-compound",
+      "language": "en",
+      "prior": {
+        "item_id": "a651f2da3e2a04a0",
+        "case_id": "development-027-compound",
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "Whole960x610 output keeps bench curls and paving structure readable while lifting their shadows. Bright leaf/wood highlights remain distinct; existing luminous bokeh is not claimed recovered.",
+        "image_sha256": "2ae3213799b7cb3ac02f58f0dde4ebefefd03ede927d429ca9611ebe10acfaa9",
+        "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-027-compound-01.jpg",
+        "sheet_sha256": "87a4a107b46397a20bf0fbcf8c740ac7008ed9c9464afe6147dfcc91b492ce90",
+        "bundle": "stage2",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-06T09:36:20.072422+00:00",
+        "original_size_supplement": {
+          "item_id": "a651f2da3e2a04a0",
+          "case_id": "development-027-compound",
+          "input_sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+          "output_sha256": "2ae3213799b7cb3ac02f58f0dde4ebefefd03ede927d429ca9611ebe10acfaa9",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-027-compound-INPUT.png",
+              "sha256": "a97245ec066148dd46d0ebcf78c4b5d786f4c82b2be7cb3693d11ee09ca9da8b",
+              "size": [
+                960,
+                610
+              ],
+              "pixel_sha256": "3c05c677c9619b4ccf70be33f3270061b1d009601da1c053d8b774e8d77a2c33"
+            },
+            {
+              "role": "a651f2da3e2a04a0",
+              "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-027-compound-a651f2da3e2a04a0.png",
+              "sha256": "7737bb8c0cbb07d8a412c008c51449ace6ef0522abefd0b3453a4096a82272e7",
+              "size": [
+                960,
+                610
+              ],
+              "pixel_sha256": "f666862cf48d9975b0a69e907d3d4d591c3e923c64f3f8c774e431522e5911c3"
+            }
+          ],
+          "completion": "completed",
+          "quality": "acceptable",
+          "evidence": "Whole960x610 output keeps bench curls and paving structure readable while lifting their shadows. Bright leaf/wood highlights remain distinct; existing luminous bokeh is not claimed recovered.",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-06T09:44:52.241502+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "14ab1b42c9f52917c606505f451e5bb97689d9f5217fb970b6e2dd05194315b3"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "a651f2da3e2a04a0",
+          "case_id": "development-027-compound",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "Bench shadows brighten and curl structure remains, but bright leaves/paving look stronger. Native-size highlight and shadow checks are required.",
+          "image_sha256": "2ae3213799b7cb3ac02f58f0dde4ebefefd03ede927d429ca9611ebe10acfaa9",
+          "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-027-compound-01.jpg",
+          "sheet_sha256": "87a4a107b46397a20bf0fbcf8c740ac7008ed9c9464afe6147dfcc91b492ce90",
+          "bundle": "stage2",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-06T09:36:20.072422+00:00"
+        }
+      },
+      "fresh_old": {
+        "key": "development-027-compound-44b902701db1",
+        "case_id": "development-027-compound",
+        "split": "development",
+        "label": "B",
+        "stage": "native",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole native 960x610 output directly viewed; exact shared source INPUT viewed and SHA verified. Bench/wall dark detail lifts and bright walkway/ironwork/leaves are retained without a new dominant clipping or cast. Simultaneous contrast increase is not convincingly achieved: dark range looks flatter/lighter, so compound instruction remains partial despite acceptable basic image quality.",
+        "at": "2026-11-06T18:57:01.905011+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-027-compound-44b902701db1/review-en.jpg",
+        "sheet_sha256": "5a20d7b7ef680e5dcc607fd373ce0810e9e9fb6f615404e5d4681b0101a0238c",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-027-compound-44b902701db1/INPUT-native.png",
+            "sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+            "source": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+            "source_sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+            "size": [
+              960,
+              610
+            ]
+          },
+          {
+            "label": "B",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-027-compound-44b902701db1/B-native.png",
+            "sha256": "2ae3213799b7cb3ac02f58f0dde4ebefefd03ede927d429ca9611ebe10acfaa9",
+            "source": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/images/development-027-compound-en.png",
+            "source_sha256": "2ae3213799b7cb3ac02f58f0dde4ebefefd03ede927d429ca9611ebe10acfaa9",
+            "size": [
+              960,
+              610
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "提亮暗部，同时轻微增强对比度，亮处不要过曝。",
+          "en": "Lift the shadows and slightly increase contrast without blowing out the highlights."
+        },
+        "language_rows": [
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "fresh_new": {
+        "key": "development-027-compound-44b902701db1",
+        "case_id": "development-027-compound",
+        "split": "development",
+        "label": "A",
+        "stage": "native",
+        "completion": "P",
+        "quality": "A",
+        "evidence": "Whole native 960x610 output directly viewed; exact shared source INPUT viewed and SHA verified. Bench/wall dark detail lifts and bright walkway/ironwork/leaves are retained without a new dominant clipping or cast. Simultaneous contrast increase is not convincingly achieved: dark range looks flatter/lighter, so compound instruction remains partial despite acceptable basic image quality.",
+        "at": "2026-11-06T18:57:01.902423+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-027-compound-44b902701db1/review-en.jpg",
+        "sheet_sha256": "5a20d7b7ef680e5dcc607fd373ce0810e9e9fb6f615404e5d4681b0101a0238c",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-027-compound-44b902701db1/INPUT-native.png",
+            "sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+            "source": "data/training/functional-v2-20261104/inputs/development-027/original.png",
+            "source_sha256": "c91752da2eaa54aa56539a5134311925134c211122f9e48863d391fed0ccaf12",
+            "size": [
+              960,
+              610
+            ]
+          },
+          {
+            "label": "A",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-027-compound-44b902701db1/A-native.png",
+            "sha256": "44b902701db164b79abc6badf0aa51c9c7c4827df8b9d7fe56960ef4dc9d2a42",
+            "source": "experiments/functional-v15-20261106/editor-only/development/images/development-027-compound-en.png",
+            "source_sha256": "44b902701db164b79abc6badf0aa51c9c7c4827df8b9d7fe56960ef4dc9d2a42",
+            "size": [
+              960,
+              610
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "提亮暗部，同时轻微增强对比度，亮处不要过曝。",
+          "en": "Lift the shadows and slightly increase contrast without blowing out the highlights."
+        },
+        "language_rows": [
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "disagreed_fields": [
+        "completion"
+      ],
+      "new_fields_kept_uncertain": [
+        "completion"
+      ],
+      "policy": "Identical old output received conflicting AI grades. If new and old direct grades agree on that field, do not count it as a confident editor gain."
+    },
+    {
+      "split": "development",
+      "case_id": "development-106-style-shadows-strong",
+      "language": "zh",
+      "prior": {
+        "item_id": "d3a4f5420eafc29f",
+        "case_id": "development-106-style-shadows-strong",
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "Whole1024x768 image confirms shadow darkening but shrub interiors and rock crevices merge into larger black regions with weaker fine separation. Bright ridges remain, but the explicit detail-preservation condition is not met.",
+        "image_sha256": "ea6ebc57ab3bd29bca1c201c4f702c00aa085fada31b5dddefad20121bf07754",
+        "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-106-style-shadows-strong-01.jpg",
+        "sheet_sha256": "6fcd0ba29673a49e5e558b9200eb0dfa564d0a7f37316277dd0f4713d89fe831",
+        "bundle": "stage2",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-06T09:37:41.486260+00:00",
+        "original_size_supplement": {
+          "item_id": "d3a4f5420eafc29f",
+          "case_id": "development-106-style-shadows-strong",
+          "input_sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+          "output_sha256": "ea6ebc57ab3bd29bca1c201c4f702c00aa085fada31b5dddefad20121bf07754",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-106-style-shadows-strong-INPUT.png",
+              "sha256": "ad478273ddbd5b10ba5564a9f9c407bc1f54df1548925d1f7accdc2241e6a372",
+              "size": [
+                1024,
+                768
+              ],
+              "pixel_sha256": "a70850a7a0f97fda7bd4f79cbc44a9dfafd7ce0fc8c3d3428fcee1a3ea9b310f"
+            },
+            {
+              "role": "d3a4f5420eafc29f",
+              "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-106-style-shadows-strong-d3a4f5420eafc29f.png",
+              "sha256": "8839607e37ff58f284bda75c967917a0dcec148bcd10fda902e80df06fa0ba09",
+              "size": [
+                1024,
+                768
+              ],
+              "pixel_sha256": "f34b273ed3dcc86fd144a382e8590df5cdf94ea55e4356805ea640a0a59d3de6"
+            }
+          ],
+          "completion": "completed",
+          "quality": "minor_issue",
+          "evidence": "Whole1024x768 image confirms shadow darkening but shrub interiors and rock crevices merge into larger black regions with weaker fine separation. Bright ridges remain, but the explicit detail-preservation condition is not met.",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-06T09:44:52.246117+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "14ab1b42c9f52917c606505f451e5bb97689d9f5217fb970b6e2dd05194315b3"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "d3a4f5420eafc29f",
+          "case_id": "development-106-style-shadows-strong",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "Shadows deepen strongly with bright rock ridges retained on the panel. Native-size dark shrubs and crevices need inspection for merged black detail.",
+          "image_sha256": "ea6ebc57ab3bd29bca1c201c4f702c00aa085fada31b5dddefad20121bf07754",
+          "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-106-style-shadows-strong-01.jpg",
+          "sheet_sha256": "6fcd0ba29673a49e5e558b9200eb0dfa564d0a7f37316277dd0f4713d89fe831",
+          "bundle": "stage2",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-06T09:37:41.486260+00:00"
+        }
+      },
+      "fresh_old": {
+        "key": "development-106-style-shadows-strong-ea7a3f10228b",
+        "case_id": "development-106-style-shadows-strong",
+        "split": "development",
+        "label": "B",
+        "stage": "native",
+        "completion": "C",
+        "quality": "A",
+        "evidence": "Whole native 1024x768 source and output directly viewed; identical INPUT hashes checked across weak/strong. Requested shadow darkening is visible, with stronger version distinctly deeper in shrubs and rock gaps. Lit foreground sandstone fissures, sky gradient and subject geometry remain. Deep foliage is dark already in source; no newly dominant colored blocks, broad highlight clipping or destroyed rock boundaries observed. This accepts darkening only, not a claim of recovered shadow detail.",
+        "at": "2026-11-06T18:57:25.959598+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-106-style-shadows-strong-ea7a3f10228b/review-en.jpg",
+        "sheet_sha256": "ca7841db218ab75df2efd0ffa5ae8552e0db1a45cf63bbcd47c31e8b52425b88",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-106-style-shadows-strong-ea7a3f10228b/INPUT-native.png",
+            "sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+            "source": "data/training/functional-v2-20261104/inputs/development-106/original.png",
+            "source_sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+            "size": [
+              1024,
+              768
+            ]
+          },
+          {
+            "label": "B",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-106-style-shadows-strong-ea7a3f10228b/B-native.png",
+            "sha256": "ea6ebc57ab3bd29bca1c201c4f702c00aa085fada31b5dddefad20121bf07754",
+            "source": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/images/development-106-style-shadows-strong-zh.png",
+            "source_sha256": "ea6ebc57ab3bd29bca1c201c4f702c00aa085fada31b5dddefad20121bf07754",
+            "size": [
+              1024,
+              768
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "对这张照片，请明显压暗阴影，保留主体和细节，其他效果保持自然。",
+          "en": "For this photograph, noticeably darken the shadows while preserving the subject and detail; keep other aspects natural."
+        },
+        "language_rows": [
+          "zh",
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "fresh_new": {
+        "key": "development-106-style-shadows-strong-ea7a3f10228b",
+        "case_id": "development-106-style-shadows-strong",
+        "split": "development",
+        "label": "A",
+        "stage": "native",
+        "completion": "C",
+        "quality": "A",
+        "evidence": "Whole native 1024x768 source and output directly viewed; identical INPUT hashes checked across weak/strong. Requested shadow darkening is visible, with stronger version distinctly deeper in shrubs and rock gaps. Lit foreground sandstone fissures, sky gradient and subject geometry remain. Deep foliage is dark already in source; no newly dominant colored blocks, broad highlight clipping or destroyed rock boundaries observed. This accepts darkening only, not a claim of recovered shadow detail.",
+        "at": "2026-11-06T18:57:25.957368+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-106-style-shadows-strong-ea7a3f10228b/review-en.jpg",
+        "sheet_sha256": "ca7841db218ab75df2efd0ffa5ae8552e0db1a45cf63bbcd47c31e8b52425b88",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-106-style-shadows-strong-ea7a3f10228b/INPUT-native.png",
+            "sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+            "source": "data/training/functional-v2-20261104/inputs/development-106/original.png",
+            "source_sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+            "size": [
+              1024,
+              768
+            ]
+          },
+          {
+            "label": "A",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-106-style-shadows-strong-ea7a3f10228b/A-native.png",
+            "sha256": "ea7a3f10228b5d786d8628e15d8e61d64343b3d920b49063ef0a126a0f4984ec",
+            "source": "experiments/functional-v15-20261106/editor-only/development/images/development-106-style-shadows-strong-zh.png",
+            "source_sha256": "ea7a3f10228b5d786d8628e15d8e61d64343b3d920b49063ef0a126a0f4984ec",
+            "size": [
+              1024,
+              768
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "对这张照片，请明显压暗阴影，保留主体和细节，其他效果保持自然。",
+          "en": "For this photograph, noticeably darken the shadows while preserving the subject and detail; keep other aspects natural."
+        },
+        "language_rows": [
+          "zh",
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "disagreed_fields": [
+        "quality"
+      ],
+      "new_fields_kept_uncertain": [
+        "quality"
+      ],
+      "policy": "Identical old output received conflicting AI grades. If new and old direct grades agree on that field, do not count it as a confident editor gain."
+    },
+    {
+      "split": "development",
+      "case_id": "development-106-style-shadows-strong",
+      "language": "en",
+      "prior": {
+        "item_id": "d3a4f5420eafc29f",
+        "case_id": "development-106-style-shadows-strong",
+        "completion": "completed",
+        "quality": "minor_issue",
+        "evidence": "Whole1024x768 image confirms shadow darkening but shrub interiors and rock crevices merge into larger black regions with weaker fine separation. Bright ridges remain, but the explicit detail-preservation condition is not met.",
+        "image_sha256": "ea6ebc57ab3bd29bca1c201c4f702c00aa085fada31b5dddefad20121bf07754",
+        "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-106-style-shadows-strong-01.jpg",
+        "sheet_sha256": "6fcd0ba29673a49e5e558b9200eb0dfa564d0a7f37316277dd0f4713d89fe831",
+        "bundle": "stage2",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-06T09:37:41.486260+00:00",
+        "original_size_supplement": {
+          "item_id": "d3a4f5420eafc29f",
+          "case_id": "development-106-style-shadows-strong",
+          "input_sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+          "output_sha256": "ea6ebc57ab3bd29bca1c201c4f702c00aa085fada31b5dddefad20121bf07754",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-106-style-shadows-strong-INPUT.png",
+              "sha256": "ad478273ddbd5b10ba5564a9f9c407bc1f54df1548925d1f7accdc2241e6a372",
+              "size": [
+                1024,
+                768
+              ],
+              "pixel_sha256": "a70850a7a0f97fda7bd4f79cbc44a9dfafd7ce0fc8c3d3428fcee1a3ea9b310f"
+            },
+            {
+              "role": "d3a4f5420eafc29f",
+              "path": "experiments/functional-v13-20261106/review/development/stage2/full-resolution/development-106-style-shadows-strong-d3a4f5420eafc29f.png",
+              "sha256": "8839607e37ff58f284bda75c967917a0dcec148bcd10fda902e80df06fa0ba09",
+              "size": [
+                1024,
+                768
+              ],
+              "pixel_sha256": "f34b273ed3dcc86fd144a382e8590df5cdf94ea55e4356805ea640a0a59d3de6"
+            }
+          ],
+          "completion": "completed",
+          "quality": "minor_issue",
+          "evidence": "Whole1024x768 image confirms shadow darkening but shrub interiors and rock crevices merge into larger black regions with weaker fine separation. Bright ridges remain, but the explicit detail-preservation condition is not met.",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-06T09:44:52.246117+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "14ab1b42c9f52917c606505f451e5bb97689d9f5217fb970b6e2dd05194315b3"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "d3a4f5420eafc29f",
+          "case_id": "development-106-style-shadows-strong",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "Shadows deepen strongly with bright rock ridges retained on the panel. Native-size dark shrubs and crevices need inspection for merged black detail.",
+          "image_sha256": "ea6ebc57ab3bd29bca1c201c4f702c00aa085fada31b5dddefad20121bf07754",
+          "sheet": "experiments/functional-v13-20261106/review/development/stage2/development-106-style-shadows-strong-01.jpg",
+          "sheet_sha256": "6fcd0ba29673a49e5e558b9200eb0dfa564d0a7f37316277dd0f4713d89fe831",
+          "bundle": "stage2",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-06T09:37:41.486260+00:00"
+        }
+      },
+      "fresh_old": {
+        "key": "development-106-style-shadows-strong-ea7a3f10228b",
+        "case_id": "development-106-style-shadows-strong",
+        "split": "development",
+        "label": "B",
+        "stage": "native",
+        "completion": "C",
+        "quality": "A",
+        "evidence": "Whole native 1024x768 source and output directly viewed; identical INPUT hashes checked across weak/strong. Requested shadow darkening is visible, with stronger version distinctly deeper in shrubs and rock gaps. Lit foreground sandstone fissures, sky gradient and subject geometry remain. Deep foliage is dark already in source; no newly dominant colored blocks, broad highlight clipping or destroyed rock boundaries observed. This accepts darkening only, not a claim of recovered shadow detail.",
+        "at": "2026-11-06T18:57:25.959598+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-106-style-shadows-strong-ea7a3f10228b/review-en.jpg",
+        "sheet_sha256": "ca7841db218ab75df2efd0ffa5ae8552e0db1a45cf63bbcd47c31e8b52425b88",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-106-style-shadows-strong-ea7a3f10228b/INPUT-native.png",
+            "sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+            "source": "data/training/functional-v2-20261104/inputs/development-106/original.png",
+            "source_sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+            "size": [
+              1024,
+              768
+            ]
+          },
+          {
+            "label": "B",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-106-style-shadows-strong-ea7a3f10228b/B-native.png",
+            "sha256": "ea6ebc57ab3bd29bca1c201c4f702c00aa085fada31b5dddefad20121bf07754",
+            "source": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/parent-frozen/images/development-106-style-shadows-strong-zh.png",
+            "source_sha256": "ea6ebc57ab3bd29bca1c201c4f702c00aa085fada31b5dddefad20121bf07754",
+            "size": [
+              1024,
+              768
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "对这张照片，请明显压暗阴影，保留主体和细节，其他效果保持自然。",
+          "en": "For this photograph, noticeably darken the shadows while preserving the subject and detail; keep other aspects natural."
+        },
+        "language_rows": [
+          "zh",
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "fresh_new": {
+        "key": "development-106-style-shadows-strong-ea7a3f10228b",
+        "case_id": "development-106-style-shadows-strong",
+        "split": "development",
+        "label": "A",
+        "stage": "native",
+        "completion": "C",
+        "quality": "A",
+        "evidence": "Whole native 1024x768 source and output directly viewed; identical INPUT hashes checked across weak/strong. Requested shadow darkening is visible, with stronger version distinctly deeper in shrubs and rock gaps. Lit foreground sandstone fissures, sky gradient and subject geometry remain. Deep foliage is dark already in source; no newly dominant colored blocks, broad highlight clipping or destroyed rock boundaries observed. This accepts darkening only, not a claim of recovered shadow detail.",
+        "at": "2026-11-06T18:57:25.957368+00:00",
+        "manifest_sha256": "6ed6d2fd0869084bd02774a225ffc639cd19b21289bfee623c88d21221fcdcf7",
+        "sheet": "experiments/functional-v15-20261106/editor-only-review/development-106-style-shadows-strong-ea7a3f10228b/review-en.jpg",
+        "sheet_sha256": "ca7841db218ab75df2efd0ffa5ae8552e0db1a45cf63bbcd47c31e8b52425b88",
+        "assets": [
+          {
+            "label": "INPUT",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-106-style-shadows-strong-ea7a3f10228b/INPUT-native.png",
+            "sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+            "source": "data/training/functional-v2-20261104/inputs/development-106/original.png",
+            "source_sha256": "15bae493fd5ca71c5044a44242e74773e432eb37411b9973cb650a7035dcfeb2",
+            "size": [
+              1024,
+              768
+            ]
+          },
+          {
+            "label": "A",
+            "path": "experiments/functional-v15-20261106/editor-only-review/development-106-style-shadows-strong-ea7a3f10228b/A-native.png",
+            "sha256": "ea7a3f10228b5d786d8628e15d8e61d64343b3d920b49063ef0a126a0f4984ec",
+            "source": "experiments/functional-v15-20261106/editor-only/development/images/development-106-style-shadows-strong-zh.png",
+            "source_sha256": "ea7a3f10228b5d786d8628e15d8e61d64343b3d920b49063ef0a126a0f4984ec",
+            "size": [
+              1024,
+              768
+            ]
+          }
+        ],
+        "requests": {
+          "zh": "对这张照片，请明显压暗阴影，保留主体和细节，其他效果保持自然。",
+          "en": "For this photograph, noticeably darken the shadows while preserving the subject and detail; keep other aspects natural."
+        },
+        "language_rows": [
+          "zh",
+          "en"
+        ],
+        "reviewer": "Codex direct anonymous-image AI review; not human or user approval",
+        "scope": "Editor-only fixed-parameter comparison; zero new model forwards or learning evidence."
+      },
+      "disagreed_fields": [
+        "quality"
+      ],
+      "new_fields_kept_uncertain": [
+        "quality"
+      ],
+      "policy": "Identical old output received conflicting AI grades. If new and old direct grades agree on that field, do not count it as a confident editor gain."
+    }
+  ],
+  "original_parent_summaries_preserved": true,
+  "conclusion": "Editor semantics correction is not model learning. Exact-old-render AI disagreements stay explicit; no L1 or automatic image grades. Development is repeatedly used, not an independent test."
+}

@@ -1,0 +1,9 @@
+{
+  "purpose": "Exploratory CPU ranking of already rendered candidates with a single AI reviewer. Tests the effect of same-input preference supervision. No VLM tuning, production or trial admission.",
+  "training_labels": "Exact complete vs failed pairs only. Group weight is equal regardless of number of pairs. All languages share a group and no translation copies are counted. Partial and uncertain outcomes are not pair labels.",
+  "models": "Two pairwise logistic linear scores. Both include normalized exposure and shadows slider strengths. Pixel version adds all nine existing R25 output and difference fields, unchanged. Standardize training pair differences only, floor at 1e-8, include negative mirrored differences, fit intercept-free liblinear, C 0.3. No feature or hyperparameter tuning.",
+  "evaluation": "Leave one entire original source group out, rank all three initial plus any reviewed refined variants. Ties prefer shadow +38, then original candidate order. Compare fixed +38 shadows, +77 shadows and +60 exposure against both fitted screens. Report selected complete, partial, uncertain and failed on all 16 original groups, and performance on groups with at least one completed result. Never count a tie as a correct pair.",
+  "historical_probe": "Once, fit all staged pairs and apply to the known R24 p227 same-source good/bad pair. This is a regression probe, not an unseen acceptance set.",
+  "decision": "Do not deploy. These labels are single AI visual judgments from a small original TRAIN group, and the ranker has no natural-language intent parser or refusal model. Keep the established acceptance sealed.",
+  "GPU_hours": 0
+}

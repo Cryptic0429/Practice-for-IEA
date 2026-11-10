@@ -1,0 +1,203 @@
+{
+  "at": "2026-11-06T12:22:24.893962+00:00",
+  "checks": [
+    {
+      "model_id": "functional-v14-visual-late4-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-006",
+      "language": "zh",
+      "request_id": "28ac248d5e7247ffbe2b1535a670e1a1",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "temperature": -24
+        }
+      },
+      "status": "executed",
+      "output_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v14-visual-late4-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-006",
+      "language": "en",
+      "request_id": "6317a228239e4738bd926a174703257c",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "temperature": -24
+        }
+      },
+      "status": "executed",
+      "output_sha256": "9bf43f1cf1854960409002af591e931c84e8e84018deb7037fe957b75045b3d0",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v14-visual-late4-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-001",
+      "language": "zh",
+      "request_id": "bf3c4eb5f37247778385404e8aecaa6e",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 95
+        }
+      },
+      "status": "executed",
+      "output_sha256": "018d4db48fd1f5b402edbe7c58600d12ed7b164923f9fb3b3ae33c11b8984765",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v14-visual-late4-20261127",
+      "split": "native-development",
+      "case_id": "native-dev-001",
+      "language": "en",
+      "request_id": "5227b0704db5434a93a1b413f58cf7ed",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 85
+        }
+      },
+      "status": "executed",
+      "output_sha256": "9b5d3cd438777e903149e2028664b123e732206592e19661e614c0fe56a34e44",
+      "execution_status": "edited",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v14-visual-late4-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "zh",
+      "request_id": "2c30170699144bc9b85d4cb0d4a24d70",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unsupported_tools"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unsupported_tools",
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v14-visual-late4-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "en",
+      "request_id": "467783573c644bfdbd1f9ec7fd09133f",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unsupported_tools"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unsupported_tools",
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v14-visual-late4-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "zh",
+      "request_id": "36b4fb91786a430b9c8d8587dbcc8a81",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "keep"
+      },
+      "status": "executed",
+      "output_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522",
+      "execution_status": "unchanged",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v14-visual-late4-20261127",
+      "split": "decision-development",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "en",
+      "request_id": "bcdbdebeafec425bb4fb2ac5681f8ba9",
+      "training_label_action": null,
+      "observed_decision": {
+        "action": "keep"
+      },
+      "status": "executed",
+      "output_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522",
+      "execution_status": "unchanged",
+      "offline_byte_identical": true,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v14-visual-late4-20261127",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-severe-light",
+      "language": "zh",
+      "request_id": "ca74fe35ec534bf58e4f80516af08b2d",
+      "training_label_action": "decline",
+      "observed_decision": {
+        "action": "decline",
+        "reason": "unreliable_quality"
+      },
+      "status": "declined",
+      "no_image_file": true,
+      "image_route_status": 404,
+      "reason_code": "unreliable_quality",
+      "quality_decline_obeyed": true
+    },
+    {
+      "model_id": "functional-v14-visual-late4-20261127",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-deep-light",
+      "language": "zh",
+      "request_id": "76d017b01bfb42ea9166dff8e689ba4c",
+      "training_label_action": "edit",
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "status": "executed",
+      "output_sha256": "d1e85ddfff3244df15528b433aeaec9e24843af32a1776d33d1d3eda9d434fb2",
+      "execution_status": "edited",
+      "offline_byte_identical": false,
+      "quality_decline_obeyed": null
+    },
+    {
+      "model_id": "functional-v14-visual-late4-20261127",
+      "split": "training-condition-check-not-generalization",
+      "case_id": "visual-risk-01-mild-noise-light",
+      "language": "zh",
+      "request_id": "f3d22c44f7ca41258c12c9514354fef1",
+      "training_label_action": "edit",
+      "observed_decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "status": "executed",
+      "output_sha256": "c6413be536171d0eed9fb4489679f7621969e6613e5612096c0ac603d6c178fc",
+      "execution_status": "edited",
+      "offline_byte_identical": false,
+      "quality_decline_obeyed": null
+    }
+  ],
+  "user_feedback": false
+}

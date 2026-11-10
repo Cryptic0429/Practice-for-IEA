@@ -18,9 +18,9 @@ def main():
     for name in ('README.md','实验记录与结论.md','原理与复用指南.md','models/README.md','models/catalog.json'):
         files.add(ROOT/name)
     # Prior inputs, parent adapters and frozen scripts are supplied by the verified round2 and round3/4 archives.
-    for directory in (ROOT/'experiments/functional-v5-20261105', ROOT/'experiments/functional-v6-20261105',
+    for directory in (ROOT/'experiments/functional-v5-20261105', ROOT/'experiments/functional-v6-20261105', ROOT/'experiments/functional-v7-20261105',
                       ROOT/'data/training/functional-v5-20261105', ROOT/'data/training/functional-v6-20261105',
-                      ROOT/'scripts/functional_v1', ROOT/'scripts/functional_v2', ROOT/'scripts/functional_v3', ROOT/'scripts/functional_v4', ROOT/'scripts/functional_v5', ROOT/'scripts/functional_v6',
+                      ROOT/'scripts/functional_v1', ROOT/'scripts/functional_v2', ROOT/'scripts/functional_v3', ROOT/'scripts/functional_v4', ROOT/'scripts/functional_v5', ROOT/'scripts/functional_v6', ROOT/'scripts/functional_v7',
                       ROOT/'models/from-functional-v2/sft-native-coverage', ROOT/'models/from-base/sft-native-coverage'):
         for p in directory.rglob('*'):
             if p.is_file() and '__pycache__' not in p.parts and p.suffix!='.lock':files.add(p)
@@ -29,7 +29,7 @@ def main():
                      'experiments/functional-v2-20261104/development-selection.json',
                      'data/stage1/ready/GIER-Edit/sft_train.json','data/stage1/ready/GIER-Edit/sft_test.json',
                      'data/stage1/splits/image-edit-3k-v1/group-assignments.json','data/sources/gier/GIER.json',
-                     'archives/functional-v2-20261104/receipt.json','archives/functional-v3-v4-20261105/receipt.json'):
+                     'archives/functional-v1-20261104/receipt.json','archives/functional-v2-20261104/receipt.json','archives/functional-v3-v4-20261105/receipt.json'):
         files.add(ROOT/relative)
     # Preserve only explicitly labelled agent browser/API uploads, never user trial data.
     for p in (ROOT/'experiments/functional-v1-20261104/demo/requests').glob('*/request.json'):
@@ -48,8 +48,8 @@ def main():
         else:unique[digest]=target
         manifest.append({'path':str(relative),'bytes':target.stat().st_size,'sha256':digest})
     write(stage/'MANIFEST.json',{'created_at':stamp(),'files':manifest,
-        'not_included':['Base Qwen weights, Python environments, prior-round images and parent adapters (restore verified round2 and round3/4 archives first), round7 exploratory editor/denoiser probes and external learned denoiser, non-agent trial uploads.'],
-        'dependencies': [dict(archive='archives/functional-v2-20261104/functional-v2-20261104.tar.gz',sha256='00fd797acb73b59b8f42c1aa49f1f24aa4edb26e9a76c080755795f0f1506b11'),dict(archive='archives/functional-v3-v4-20261105/functional-v3-v4-20261105.tar.gz',sha256='8ca75376b83ab70321ad41def1b97bd2c46d883ab080cabf1b0753ca91ed8780')],
+        'not_included':['Base Qwen weights, Python environments, prior-round images and parent adapters (restore verified round2 and round3/4 archives first), external SCUNet source/weights and later learned-denoiser results (round7 CPU preflight is included as a time-stamped snapshot), non-agent trial uploads.'],
+        'dependencies': [dict(archive='archives/functional-v1-20261104/functional-v1-20261104.tar.gz',sha256='5605fa8532feb37458ffa9f6624a7ef36521e6d34011fa2b8ea51de7165c2ca5'),dict(archive='archives/functional-v2-20261104/functional-v2-20261104.tar.gz',sha256='00fd797acb73b59b8f42c1aa49f1f24aa4edb26e9a76c080755795f0f1506b11'),dict(archive='archives/functional-v3-v4-20261105/functional-v3-v4-20261105.tar.gz',sha256='8ca75376b83ab70321ad41def1b97bd2c46d883ab080cabf1b0753ca91ed8780')],
         'deduplication':'Identical file bytes retain every original path through tar hard links.'})
     archive=out/'functional-v5-v6-20261105.tar.gz'
     with archive.open('wb') as raw,gzip.GzipFile(filename='',mode='wb',compresslevel=1,fileobj=raw,mtime=0) as compressed,tarfile.open(fileobj=compressed,mode='w') as tf:

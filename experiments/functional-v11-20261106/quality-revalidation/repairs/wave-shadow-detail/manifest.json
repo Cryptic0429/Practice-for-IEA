@@ -1,0 +1,59 @@
+{
+  "at": "2026-11-05T23:56:14.706627+00:00",
+  "case_id": "native-train-n190",
+  "instructions": {
+    "en": "Please add a lot of contrast and really enhance the colors.",
+    "zh": "请大幅提高对比度，并明显增强色彩。"
+  },
+  "candidates": [
+    {
+      "id": "native-train-n190-alt4",
+      "case_id": "native-train-n190",
+      "parameters": {
+        "exposure": -45,
+        "brightness": 45,
+        "contrast": 60,
+        "highlights": -20,
+        "shadows": 20,
+        "saturation": 30
+      },
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n190.png",
+        "sha256": "45981ce9a95460be520bf0033a83cdb9791c22ab7fd89e9b7e53de3532411bcf"
+      },
+      "output": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/repairs/wave-shadow-detail/alt4.png",
+        "sha256": "52151879c27036ebf2083381f3da2ab7fdfcf32400f2c52a9002a58d5ca846c8"
+      },
+      "status": "CPU_executed_not_viewed_not_admitted"
+    },
+    {
+      "id": "native-train-n190-alt5",
+      "case_id": "native-train-n190",
+      "parameters": {
+        "exposure": -50,
+        "brightness": 50,
+        "contrast": 55,
+        "highlights": -15,
+        "shadows": 35,
+        "saturation": 35
+      },
+      "input": {
+        "path": "data/training/functional-v6-20261105/inputs/native-train-n190.png",
+        "sha256": "45981ce9a95460be520bf0033a83cdb9791c22ab7fd89e9b7e53de3532411bcf"
+      },
+      "output": {
+        "path": "experiments/functional-v11-20261106/quality-revalidation/repairs/wave-shadow-detail/alt5.png",
+        "sha256": "b42854422cb5a4ec7e87989946149e6f53d819cc00fe8e7f10b9a26889782ff2"
+      },
+      "status": "CPU_executed_not_viewed_not_admitted"
+    }
+  ],
+  "panel": {
+    "path": "experiments/functional-v11-20261106/quality-revalidation/repairs/wave-shadow-detail/panel.jpg",
+    "sha256": "c1ca1c4d754565ecd24bc7077424e5cf6b91be8fa7ab31dae1dc40ed48c46325"
+  },
+  "reason": "Prior3 actual-pixel wave/rock reviews failed mainly due added rock-shadow crushing. Compensate negative exposure with brightness before strong contrast, then preserve highlights and shadows. Selection still requires viewing actual outputs.",
+  "GPU_hours": 0,
+  "training_started": false
+}

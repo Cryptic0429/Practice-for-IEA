@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-07T02:49:01.660689+00:00",
+  "model": "magnitude-quality-e20",
+  "policy": "magnitude-quality",
+  "epoch": 20,
+  "initial_seed": 20261205,
+  "replicate_seed": 20261206,
+  "initial_head": "experiments/functional-v21-20261107/runs/seed-20261205/checkpoint-20.pt",
+  "initial_head_sha256": "838342a2167038589a91b646ad98432ec4749e698d4b29ad7f2b520b366a26da",
+  "protocol_sha256": "f6295ffef820a29d3812e3390618d8463f7aeb117e8447c69b8b650190596581",
+  "stage1_gate_sha256": "a561231dadc7334edf4d7b6d22a65adc1743fe1b185053c2de4d311fced8ab67",
+  "controlled_evidence": {
+    "magnitude-quality-e20": {
+      "path": "experiments/functional-v21-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/magnitude-quality-e20/direct-functional-summary.json",
+      "sha256": "10d1676907ae97b36b46b372be9c7bb72320454afce47e889ffe116ef10169e2",
+      "complete": 82,
+      "major": 0,
+      "passed": true
+    }
+  },
+  "selection_reason": "Only one policy/checkpoint passed all declared development gates. No tied candidates require pairwise tie-breaking.",
+  "replication": "Same80epoch frozen CPU training, evaluate only the locked20epoch checkpoint andquality policy; no switching to80 if replication fails.",
+  "acceptance_opened": false,
+  "L1_used": false
+}

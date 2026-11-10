@@ -1,0 +1,44 @@
+{
+  "at": "2026-11-05T21:16:26.028045+00:00",
+  "source": "experiments/functional-v10-20261106/counterfactual-candidates/images/visual-risk-02-canonical.png",
+  "input_sha256": "602ab878da4e3b0991dbdba90b3cce15ad814966819fcda1f7e9ca6465e0eaa7",
+  "instructions": {
+    "zh": "请增加照片对比度，稍微提亮，并让颜色更鲜明；保留主体、天空和暗部细节，不要明显放大噪声。",
+    "en": "Increase contrast, brighten the photograph a little, and make the colours more vivid while retaining subject, sky and shadow detail without markedly amplifying noise."
+  },
+  "reason": "Contact panel judged original candidate acceptable; original-size viewing found conspicuous orange skin and strong yellow-green foliage. Keep the disagreement uncertain, exclude the old pixels from final labels and directly review new alternatives.",
+  "original_candidate": "experiments/functional-v10-20261106/style-candidates/images/visual-risk-02-normal-compound.png",
+  "original_candidate_sha256": "5db82f942e2549dd7f46bdcc5db118cb4af61c7024cf1e3508d476c6cca679a9",
+  "panel": {
+    "path": "experiments/functional-v10-20261106/extended-candidates/panels/visual-risk-02-normal-compound-repair.jpg",
+    "sha256": "49b20aa740477c98533a10ff49dfcb5ef3f6927651c95e9c6552a776ab003635"
+  },
+  "candidates": [
+    {
+      "id": "visual-risk-02-normal-compound-v2",
+      "image": "experiments/functional-v10-20261106/repairs/portrait-normal-compound-02/v2.png",
+      "sha256": "052f9d656b87aa6655202b3fa63c0ebb7925378389e063ea2824563c33ce43fe",
+      "parameters": {
+        "exposure": 10,
+        "contrast": 12,
+        "shadows": 20,
+        "saturation": 8
+      },
+      "status": "executed_unreviewed_not_admitted"
+    },
+    {
+      "id": "visual-risk-02-normal-compound-v3",
+      "image": "experiments/functional-v10-20261106/repairs/portrait-normal-compound-02/v3.png",
+      "sha256": "ef11affe5ac271b860fb55ccd459c6f4bbde007a8fda7bcb136c1d69865ebc80",
+      "parameters": {
+        "exposure": 10,
+        "contrast": 10,
+        "shadows": 15,
+        "saturation": 5
+      },
+      "status": "executed_unreviewed_not_admitted"
+    }
+  ],
+  "automatic_selection": false,
+  "L1_selection": false
+}

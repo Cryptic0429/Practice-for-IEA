@@ -1,0 +1,259 @@
+{
+  "at": "2026-11-05T20:42:09.257751+00:00",
+  "status": "actual_browser_checks_passed",
+  "checks": [
+    {
+      "request_id": "9b51c8565cf94e05b4fe056475ff0b06",
+      "model_id": "functional-v9-base-20261115",
+      "status": "executed",
+      "instruction": "请减弱照片中的棕色调。",
+      "reason_code": null,
+      "identity": {
+        "model_id": "functional-v9-base-20261115",
+        "display_name": "第九轮 · 原始Qwen起点 · 第4轮（未通过）",
+        "adapter_sha256": "d52166fea0abcf048a101c80e896a8de74f6ce386f09101c72cc772a37d9f902",
+        "editor": "functional-editor-v7-soft-rgb-candidate",
+        "schema": "functional-outcome-v1",
+        "runtime_family": "functional_v9",
+        "runtime_sha256": "4d9de4b350c1e0284b4e032f08ae6f8298cede2e41de3e3a9153bb43dbc61d37",
+        "editor_sha256": "8c3b02c304d79bca9d547fe471afe4a0136c1813c2cf30a0c343dd5e174f2b50",
+        "outcome_schema_sha256": "4d46bb208b18dab750ee77e94c8f063ca1c3b5189ff1a6990ff9d3c4c1ce4286",
+        "prompt_sha256": "89a184150fb28fc3d63ab184fa5a4aaccca192f35991b2450ece55c166519d92",
+        "training_data_sha256": "fe3f8e6479c5d74ea3783cc4edb643f1a2fc5a79ba50e826df5a5786ec8e068c",
+        "training_route": "base",
+        "full_weight_origin": "base",
+        "full_weight_identity": {
+          "path": "models/Qwen2.5-VL-7B-Instruct",
+          "shards": [
+            {
+              "path": "models/Qwen2.5-VL-7B-Instruct/model-00001-of-00005.safetensors",
+              "sha256": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+              "bytes": 3900233256,
+              "mtime_ns": 1793432463546824622
+            },
+            {
+              "path": "models/Qwen2.5-VL-7B-Instruct/model-00002-of-00005.safetensors",
+              "sha256": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+              "bytes": 3864726320,
+              "mtime_ns": 1793432503644001111
+            },
+            {
+              "path": "models/Qwen2.5-VL-7B-Instruct/model-00003-of-00005.safetensors",
+              "sha256": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+              "bytes": 3864726424,
+              "mtime_ns": 1793432545341217818
+            },
+            {
+              "path": "models/Qwen2.5-VL-7B-Instruct/model-00004-of-00005.safetensors",
+              "sha256": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+              "bytes": 3864733680,
+              "mtime_ns": 1793432587834451242
+            },
+            {
+              "path": "models/Qwen2.5-VL-7B-Instruct/model-00005-of-00005.safetensors",
+              "sha256": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67",
+              "bytes": 1089994880,
+              "mtime_ns": 1793432599234781102
+            }
+          ],
+          "architecture": {
+            "hidden_size": 3584,
+            "intermediate_size": 18944,
+            "num_hidden_layers": 28,
+            "num_attention_heads": 28,
+            "num_key_value_heads": 4,
+            "vocab_size": 152064
+          },
+          "assets": {
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+            "chat_template.json": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+            "model-info.json": "3f375296723cbb910e9c3350730e3395342ead9cb7ac0ec355a25dcefe5bf532",
+            "tokenizer_config.json": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+            "config.json": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+            "generation_config.json": "0a3aea82869fe29f20dc95ccf3e2bcff380eca1f5ad6447a4a4b37110b08e43e",
+            "model.safetensors.index.json": "73b333b0b16e5286ddba615d2caebcd495cf7e616f52eb217a81781393d79de9",
+            "preprocessor_config.json": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+            "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+          },
+          "prior_integrity_file": "configs/evaluation-weight-integrity-v1.json",
+          "prior_integrity_sha256": "43a0961e25db0e05dc92c69e4e7b520ac0fb8531420223dc6daf45f75257cbd1",
+          "source": "Pinned original Qwen revision cc594898137f460bfe9f0759e9844b3ce807cfb5"
+        },
+        "origin_audit_sha256": "c0270a4d29c17daf94d3eb5f4df86c1ae7e31f59067e20022feee5d232f7d65f"
+      },
+      "output_sha256": "2d5402ec267289725c5f360c9e8347bdc564a14b405964da2b4ea58114f534f4"
+    },
+    {
+      "request_id": "97cf53f84a7d4327a84f319583130b66",
+      "model_id": "functional-v9-author-20261115",
+      "status": "declined",
+      "instruction": "删除照片中所有人物。",
+      "reason_code": "unsupported_tools",
+      "identity": {
+        "model_id": "functional-v9-author-20261115",
+        "display_name": "第九轮 · 作者IEA起点 · 第4轮（未通过）",
+        "adapter_sha256": "c4e1c2d5054ea5f1decb6ac0d60dbd8aa41509730360d58f1461a7525a7ca988",
+        "editor": "functional-editor-v7-soft-rgb-candidate",
+        "schema": "functional-outcome-v1",
+        "runtime_family": "functional_v9",
+        "runtime_sha256": "4d9de4b350c1e0284b4e032f08ae6f8298cede2e41de3e3a9153bb43dbc61d37",
+        "editor_sha256": "8c3b02c304d79bca9d547fe471afe4a0136c1813c2cf30a0c343dd5e174f2b50",
+        "outcome_schema_sha256": "4d46bb208b18dab750ee77e94c8f063ca1c3b5189ff1a6990ff9d3c4c1ce4286",
+        "prompt_sha256": "89a184150fb28fc3d63ab184fa5a4aaccca192f35991b2450ece55c166519d92",
+        "training_data_sha256": "fe3f8e6479c5d74ea3783cc4edb643f1a2fc5a79ba50e826df5a5786ec8e068c",
+        "training_route": "author",
+        "full_weight_origin": "author",
+        "full_weight_identity": {
+          "path": "models/Qwen2.5-VL-7B-IEA",
+          "shards": [
+            {
+              "path": "models/Qwen2.5-VL-7B-IEA/model-00001-of-00004.safetensors",
+              "sha256": "c5dd573200d60dd8fca38cb9e84359d79f24e9ff28121a71d6147641789052bd",
+              "bytes": 4968243304,
+              "mtime_ns": 1793365800063648170
+            },
+            {
+              "path": "models/Qwen2.5-VL-7B-IEA/model-00002-of-00004.safetensors",
+              "sha256": "8e084e0a7c23ae2621facf56fcf11ff594e51486662c338d1486672d5514f905",
+              "bytes": 4991495816,
+              "mtime_ns": 1793365444197819275
+            },
+            {
+              "path": "models/Qwen2.5-VL-7B-IEA/model-00003-of-00004.safetensors",
+              "sha256": "4928cca0b97406966fca452ded16017c6ff3d0e114d51c0d5ef219f401248304",
+              "bytes": 4932751040,
+              "mtime_ns": 1793365654274572388
+            },
+            {
+              "path": "models/Qwen2.5-VL-7B-IEA/model-00004-of-00004.safetensors",
+              "sha256": "c7dd717707e80ef5db65b49cc285ebd529b552f26f06f5ee93c6dd7c854932e6",
+              "bytes": 1691924384,
+              "mtime_ns": 1793365705894909968
+            }
+          ],
+          "architecture": {
+            "hidden_size": 3584,
+            "intermediate_size": 18944,
+            "num_hidden_layers": 28,
+            "num_attention_heads": 28,
+            "num_key_value_heads": 4,
+            "vocab_size": 152064
+          },
+          "assets": {
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+            "added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "model-info.json": "85f61bd5b291d118bbbabea626f091be82919253638dc3c2e573dc12c9ef54bf",
+            "tokenizer_config.json": "37ab9b3df99c783a264eb7fd9847d17f2db28d9cc2f64b37e8bf4d60c81c8761",
+            "config.json": "53dc8e207b4b3433edc1da8549c45dc588f686d6160d6f36950bcfe577b2cf0d",
+            "generation_config.json": "74096ab8522ef854e06730ea689bc5f4a80f4c6fc78794c588a4071593e726c7",
+            "chat_template.jinja": "a0bc6f6fc7a29a80017a433e8f03a1cc1236e838a944a2d034295a60c4f2fddb",
+            "model.safetensors.index.json": "3067e9b0f35596ff3426a0d0ec8c982a51fa1e110c4fc30dcf3be9ea37409df6",
+            "preprocessor_config.json": "c1c9d43adb750cc52f317b130734fefa8edba78a5814066f6c10ecc1826e98af",
+            "tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+            "video_preprocessor_config.json": "4e7245236bbf2af8b304bbc3228519cccc3bf3601726f53b7a1b8d87a3043af9"
+          },
+          "prior_integrity_file": "configs/evaluation-weight-integrity-v1.json",
+          "prior_integrity_sha256": "43a0961e25db0e05dc92c69e4e7b520ac0fb8531420223dc6daf45f75257cbd1",
+          "source": "Existing author IEA full weights; publisher checksum not independently attested; exact content matches historical integrity receipt"
+        },
+        "origin_audit_sha256": "c0270a4d29c17daf94d3eb5f4df86c1ae7e31f59067e20022feee5d232f7d65f"
+      },
+      "output_sha256": null
+    },
+    {
+      "request_id": "6f2a55107ca5441ebaaa4ce9880be4cb",
+      "model_id": "functional-v9-author-20261115",
+      "status": "declined",
+      "instruction": "能把这张照片大幅提亮吗？",
+      "reason_code": "unreliable_quality",
+      "identity": {
+        "model_id": "functional-v9-author-20261115",
+        "display_name": "第九轮 · 作者IEA起点 · 第4轮（未通过）",
+        "adapter_sha256": "c4e1c2d5054ea5f1decb6ac0d60dbd8aa41509730360d58f1461a7525a7ca988",
+        "editor": "functional-editor-v7-soft-rgb-candidate",
+        "schema": "functional-outcome-v1",
+        "runtime_family": "functional_v9",
+        "runtime_sha256": "4d9de4b350c1e0284b4e032f08ae6f8298cede2e41de3e3a9153bb43dbc61d37",
+        "editor_sha256": "8c3b02c304d79bca9d547fe471afe4a0136c1813c2cf30a0c343dd5e174f2b50",
+        "outcome_schema_sha256": "4d46bb208b18dab750ee77e94c8f063ca1c3b5189ff1a6990ff9d3c4c1ce4286",
+        "prompt_sha256": "89a184150fb28fc3d63ab184fa5a4aaccca192f35991b2450ece55c166519d92",
+        "training_data_sha256": "fe3f8e6479c5d74ea3783cc4edb643f1a2fc5a79ba50e826df5a5786ec8e068c",
+        "training_route": "author",
+        "full_weight_origin": "author",
+        "full_weight_identity": {
+          "path": "models/Qwen2.5-VL-7B-IEA",
+          "shards": [
+            {
+              "path": "models/Qwen2.5-VL-7B-IEA/model-00001-of-00004.safetensors",
+              "sha256": "c5dd573200d60dd8fca38cb9e84359d79f24e9ff28121a71d6147641789052bd",
+              "bytes": 4968243304,
+              "mtime_ns": 1793365800063648170
+            },
+            {
+              "path": "models/Qwen2.5-VL-7B-IEA/model-00002-of-00004.safetensors",
+              "sha256": "8e084e0a7c23ae2621facf56fcf11ff594e51486662c338d1486672d5514f905",
+              "bytes": 4991495816,
+              "mtime_ns": 1793365444197819275
+            },
+            {
+              "path": "models/Qwen2.5-VL-7B-IEA/model-00003-of-00004.safetensors",
+              "sha256": "4928cca0b97406966fca452ded16017c6ff3d0e114d51c0d5ef219f401248304",
+              "bytes": 4932751040,
+              "mtime_ns": 1793365654274572388
+            },
+            {
+              "path": "models/Qwen2.5-VL-7B-IEA/model-00004-of-00004.safetensors",
+              "sha256": "c7dd717707e80ef5db65b49cc285ebd529b552f26f06f5ee93c6dd7c854932e6",
+              "bytes": 1691924384,
+              "mtime_ns": 1793365705894909968
+            }
+          ],
+          "architecture": {
+            "hidden_size": 3584,
+            "intermediate_size": 18944,
+            "num_hidden_layers": 28,
+            "num_attention_heads": 28,
+            "num_key_value_heads": 4,
+            "vocab_size": 152064
+          },
+          "assets": {
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+            "added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "model-info.json": "85f61bd5b291d118bbbabea626f091be82919253638dc3c2e573dc12c9ef54bf",
+            "tokenizer_config.json": "37ab9b3df99c783a264eb7fd9847d17f2db28d9cc2f64b37e8bf4d60c81c8761",
+            "config.json": "53dc8e207b4b3433edc1da8549c45dc588f686d6160d6f36950bcfe577b2cf0d",
+            "generation_config.json": "74096ab8522ef854e06730ea689bc5f4a80f4c6fc78794c588a4071593e726c7",
+            "chat_template.jinja": "a0bc6f6fc7a29a80017a433e8f03a1cc1236e838a944a2d034295a60c4f2fddb",
+            "model.safetensors.index.json": "3067e9b0f35596ff3426a0d0ec8c982a51fa1e110c4fc30dcf3be9ea37409df6",
+            "preprocessor_config.json": "c1c9d43adb750cc52f317b130734fefa8edba78a5814066f6c10ecc1826e98af",
+            "tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+            "video_preprocessor_config.json": "4e7245236bbf2af8b304bbc3228519cccc3bf3601726f53b7a1b8d87a3043af9"
+          },
+          "prior_integrity_file": "configs/evaluation-weight-integrity-v1.json",
+          "prior_integrity_sha256": "43a0961e25db0e05dc92c69e4e7b520ac0fb8531420223dc6daf45f75257cbd1",
+          "source": "Existing author IEA full weights; publisher checksum not independently attested; exact content matches historical integrity receipt"
+        },
+        "origin_audit_sha256": "c0270a4d29c17daf94d3eb5f4df86c1ae7e31f59067e20022feee5d232f7d65f"
+      },
+      "output_sha256": null
+    }
+  ],
+  "upload_edit_model_switch_download_feedback_observed": true,
+  "actual_download_path": "/Users/cryptic/Downloads/output (1).png",
+  "download_SHA256": "2d5402ec267289725c5f360c9e8347bdc564a14b405964da2b4ea58114f534f4",
+  "offline_and_HTTP_and_browser_bytes_identical": true,
+  "unsupported_and_quality_declines_no_visible_result_or_download": true,
+  "quality_photo": "native-train-n127",
+  "quality_check_is_training_photo_NOT_generalization": true,
+  "observed_feedback_records": 3,
+  "all_feedback_agent_integration_tests": true,
+  "independent_user_feedback": 0,
+  "worker_unloaded": true,
+  "UI_timing_note": "Quality-message wait returned a selector deadline before the asynchronous response appeared; fresh DOM inspection then confirmed the expected decline without resubmitting the request.",
+  "resource_snapshot": {
+    "occupied_GPU_hours": 13.708080782360497,
+    "cap": 16
+  }
+}

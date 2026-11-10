@@ -1,0 +1,132 @@
+{
+  "at": "2026-11-07T05:24:51.800538+00:00",
+  "checks": [
+    {
+      "request_id": "3e06f16d95eb449583160ae66bfa0507",
+      "model_id": "functional-v23-quality-20261207",
+      "case_id": "historical-case12-brown",
+      "language": "en",
+      "split": "historical-case12-not-independent",
+      "status": "executed",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 85
+        }
+      },
+      "offline_decision_parity": null,
+      "adapter_sha256": "ed69c6d862b3e2dd595df8cfb161308a4f2bd2045ad17e1d1d738482f490a7d3",
+      "output_sha256": "d427c8bfdaeb5338b9ed9a2f6a6905597b88900f74e6c077a653cbba4a415c6b"
+    },
+    {
+      "request_id": "856b66918e89467c8bac73bb2c307a4f",
+      "model_id": "functional-v23-quality-20261207",
+      "case_id": "native-dev-070",
+      "language": "zh",
+      "split": "native-development",
+      "status": "executed",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "offline_decision_parity": true,
+      "adapter_sha256": "ed69c6d862b3e2dd595df8cfb161308a4f2bd2045ad17e1d1d738482f490a7d3",
+      "output_sha256": "92750e2022eb82607ea62a568f6e972e29334317909b509284bd97b90b7dc2c2"
+    },
+    {
+      "request_id": "2ceefa432f6a4edf8a833f6ce4058055",
+      "model_id": "functional-v23-quality-20261207",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "en",
+      "split": "decision-development",
+      "status": "executed",
+      "decision": {
+        "action": "keep"
+      },
+      "offline_decision_parity": true,
+      "adapter_sha256": "ed69c6d862b3e2dd595df8cfb161308a4f2bd2045ad17e1d1d738482f490a7d3",
+      "output_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522"
+    },
+    {
+      "request_id": "8a7b682d242143b1807451f74e7e55b3",
+      "model_id": "functional-v23-quality-20261207",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "en",
+      "split": "decision-development",
+      "status": "declined",
+      "decision": {
+        "action": "decline",
+        "reason": "unsupported_tools"
+      },
+      "offline_decision_parity": true,
+      "adapter_sha256": "ed69c6d862b3e2dd595df8cfb161308a4f2bd2045ad17e1d1d738482f490a7d3",
+      "output_sha256": null
+    },
+    {
+      "request_id": "49d07558a2bb48c588739c1db8b567b6",
+      "model_id": "functional-v23-quality-20261208",
+      "case_id": "historical-case12-brown",
+      "language": "en",
+      "split": "historical-case12-not-independent",
+      "status": "executed",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "sepia": 95
+        }
+      },
+      "offline_decision_parity": null,
+      "adapter_sha256": "043489c53d6cc50625887665bf18edbe0f62c9aeb0fb16c0f481f3ead37af838",
+      "output_sha256": "05fb2a589a656f2dfff25c210d696c2b4531cfc0eac772a5e20934058a4c9559"
+    },
+    {
+      "request_id": "b3da758c46dc4f999b57b051637f9f8c",
+      "model_id": "functional-v23-quality-20261208",
+      "case_id": "native-dev-070",
+      "language": "zh",
+      "split": "native-development",
+      "status": "executed",
+      "decision": {
+        "action": "edit",
+        "parameters": {
+          "exposure": 65
+        }
+      },
+      "offline_decision_parity": true,
+      "adapter_sha256": "043489c53d6cc50625887665bf18edbe0f62c9aeb0fb16c0f481f3ead37af838",
+      "output_sha256": "92750e2022eb82607ea62a568f6e972e29334317909b509284bd97b90b7dc2c2"
+    },
+    {
+      "request_id": "8daa8193f2734beeb207e34856983e1e",
+      "model_id": "functional-v23-quality-20261208",
+      "case_id": "decision-dev-native-dev-001-keep",
+      "language": "en",
+      "split": "decision-development",
+      "status": "executed",
+      "decision": {
+        "action": "keep"
+      },
+      "offline_decision_parity": true,
+      "adapter_sha256": "043489c53d6cc50625887665bf18edbe0f62c9aeb0fb16c0f481f3ead37af838",
+      "output_sha256": "64c46ecd2af530e9bc0554ad81a8175b2271ecfaec354abbcb11d0726dcd0522"
+    },
+    {
+      "request_id": "5eda1fa28fa5448c94e836c3d65c01da",
+      "model_id": "functional-v23-quality-20261208",
+      "case_id": "decision-dev-native-dev-001-decline",
+      "language": "en",
+      "split": "decision-development",
+      "status": "declined",
+      "decision": {
+        "action": "decline",
+        "reason": "unsupported_tools"
+      },
+      "offline_decision_parity": true,
+      "adapter_sha256": "043489c53d6cc50625887665bf18edbe0f62c9aeb0fb16c0f481f3ead37af838",
+      "output_sha256": null
+    }
+  ],
+  "independent_user_feedback": 0
+}

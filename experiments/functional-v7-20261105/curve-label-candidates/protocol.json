@@ -1,0 +1,18 @@
+{
+  "at": "2026-11-05T11:00:01.737299+00:00",
+  "status": "frozen_before_training_candidate_replay",
+  "source_cases_sha256": "375c98f1f53730c0e926677e90bb18cdf630bcd00730aa4223f631be10c045a3",
+  "source_training_sha256": "a8c752ec8bd2ef5ca4e31173dd3973d7c72162be752a9aadb2623d385633014c",
+  "source_admission_sha256": "15ffca85292083fcaa90dd19b96e519ebd36dbb4111f9492a9e4b70e97393a45",
+  "renderer": "bounded-fixed",
+  "renderer_sha256": "18e498726d4dadeaa403574016c427c9ef324bb854e1adaed55f5083ec762600",
+  "code_sha256": "c94c337ff467884fb101d05c7e14f944596d16d86b38a4b69eae39126b543b3d",
+  "scope": "Only460 previously admitted round6 training tasks /160original groups80portrait80landscape. No new requests, translations, group changes or heldout samples.",
+  "purpose": "Inspect whether exactly the old parameters remain acceptable under changed tone semantics; these are CANDIDATES, not new admitted targets.",
+  "admission": "Byte/pixel-identical renders may reuse prior direct observation for the same request. Every changed render requires new direct visual review; reject or revise unclear/failed cases. No train-accepted data is created by this script.",
+  "visual_protocol": "Original input and two candidate labels at identical full-frame scale; old/new editor identity and parameters hidden in panels. Full-size follow-up required for cloth, face and high-dynamic-range detail.",
+  "GPU_hours": 0,
+  "training_started": false,
+  "live_editor_changed": false,
+  "acceptance_access": false
+}

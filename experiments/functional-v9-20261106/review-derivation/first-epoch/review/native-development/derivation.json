@@ -1,0 +1,2534 @@
+{
+  "at": "2026-11-05T19:59:29.569463+00:00",
+  "split": "native-development",
+  "name": "first-epoch",
+  "models": [
+    "base-e1",
+    "author-e1"
+  ],
+  "raw_observations": {
+    "path": "experiments/functional-v9-20261106/review/native-development/codex-observations.jsonl",
+    "sha256": "c463d02ae2341eb992722765fda742f201e7bda30f3da83becc8713d0a110dad",
+    "count": 109
+  },
+  "original_size_observations": {
+    "path": "experiments/functional-v9-20261106/review/native-development/codex-full-resolution-observations.jsonl",
+    "sha256": "475692fa79e9e173014b81e26278e2e5a8c71a51605449edaffb8e7984bd58c8",
+    "count": 9
+  },
+  "historical_sources": {
+    "experiments/functional-v2-20261104/review/natural-use/codex-observations.jsonl": "8dcd52f113d8cf7c2f48d10692918e619d54bb93c5452da30b8361bbafdea460",
+    "experiments/functional-v3-20261104/review/natural-use/codex-observations.jsonl": "79bd8dfd38bb2fbbdf219ef567a91b522e1f75d2d66f12b8ea257c17e4620d86",
+    "experiments/functional-v4-20261105/review/natural-use/codex-observations.jsonl": "6ecb99cacc7ddb4c49f88b1f1099fb60d6031a0bf2924a13c617f827ab85de71",
+    "experiments/functional-v5-20261105/review/natural-use/codex-observations.jsonl": "8cdfb75f6ed45417205ac10cf9b7031d586f58718a5017ce030a9de6e41d4d73",
+    "experiments/functional-v6-20261105/review/native-development/codex-observations.jsonl": "93345b46072d5ed5383722da37f6b178be46d7acb45cf9324c4ca35d2ed4d218",
+    "experiments/functional-v6-20261105/review/old-native/codex-observations.jsonl": "489237ac62a022f288a5eefe5a0a3e445ff13ecf13f84d5b60553cd48f51be76",
+    "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl": "0a8e6d95590813ef3563d7d19c8d90be7a85a9e97f4b581f5a08b7e3f01749c2",
+    "experiments/functional-v7-20261105/review/old-native/codex-observations.jsonl": "f396a7fdef831994580ef9ccecfc73cdef3323130db3b442b8e2dfcd266c41b6"
+  },
+  "disagreements": [
+    {
+      "item_id": "0d13f51e39e201e1",
+      "case_id": "native-dev-011",
+      "current": {
+        "item_id": "0d13f51e39e201e1",
+        "case_id": "native-dev-011",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸可见脸部左眼和下颌继续压黑，面部紫红和草地蓝衣过饱和更加突出；主体暗部未按要求提亮，面部可读性下降属于重大副作用。",
+        "image_sha256": "f11a8470ca0823b78d75abebe53b843bf6613e7878931ad5cdbe142f1479c369",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-011-01.jpg",
+        "sheet_sha256": "47fe5157a2a8d7bbb3842a7ce735d59034fce8528fae841a8ffe7408030d8afb",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:39:20.523461+00:00",
+        "original_size_supplement": {
+          "item_id": "0d13f51e39e201e1",
+          "case_id": "native-dev-011",
+          "input_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+          "output_sha256": "f11a8470ca0823b78d75abebe53b843bf6613e7878931ad5cdbe142f1479c369",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-011-INPUT.png",
+              "sha256": "d46474800c9103fe8f2534046860260a707cd0448bf5e757a76cd01b3994ccd4",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "6f93a7fd66848a59f18471e2be1514ec986b6a767904dd9dfb0a5ac6d2dba2f1"
+            },
+            {
+              "role": "0d13f51e39e201e1",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-011-0d13f51e39e201e1.png",
+              "sha256": "e446030fd5c00a6bb77a32ede528d0b0d170393a1fa2dbebe15a262c96af1cc8",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "3a8a13377b24227533d2edd0a7eb60a6603598c75c9543d5eb4971f40ca95c7a"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸可见脸部左眼和下颌继续压黑，面部紫红和草地蓝衣过饱和更加突出；主体暗部未按要求提亮，面部可读性下降属于重大副作用。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T17:53:39.628076+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "6cbeb534a4f5cc94a4437ca5148d6f468baaa1909f9865c7a7050a649af13908"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "0d13f51e39e201e1",
+          "case_id": "native-dev-011",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "色彩和对比度增加，但主体脸部看起来更暗，提亮要求未可靠落实；需原尺寸确认面部暗部损失。",
+          "image_sha256": "f11a8470ca0823b78d75abebe53b843bf6613e7878931ad5cdbe142f1479c369",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-011-01.jpg",
+          "sheet_sha256": "47fe5157a2a8d7bbb3842a7ce735d59034fce8528fae841a8ffe7408030d8afb",
+          "bundle": "first-epoch-and-baselines",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T17:39:20.523461+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "0d13f51e39e201e1",
+            "case_id": "native-dev-011",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "色彩和对比度增加，但主体脸部看起来更暗，提亮要求未可靠落实；需原尺寸确认面部暗部损失。",
+            "image_sha256": "f11a8470ca0823b78d75abebe53b843bf6613e7878931ad5cdbe142f1479c369",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-011-01.jpg",
+            "sheet_sha256": "47fe5157a2a8d7bbb3842a7ce735d59034fce8528fae841a8ffe7408030d8afb",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:39:20.523461+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "56b1b471e1371bd3",
+      "case_id": "native-dev-011",
+      "current": {
+        "item_id": "56b1b471e1371bd3",
+        "case_id": "native-dev-011",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸对照中脸部尤其左眼仍更暗，颈部和左臂进一步压黑，衣服和草地增强并未带来主体暗部提亮，关键人脸可读性下降。",
+        "image_sha256": "164b00ebd71d1d7b5b0f7454c3447aead6d7091b8dbe1198396fd0de05dfebc9",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-011-01.jpg",
+        "sheet_sha256": "47fe5157a2a8d7bbb3842a7ce735d59034fce8528fae841a8ffe7408030d8afb",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:39:20.523465+00:00",
+        "original_size_supplement": {
+          "item_id": "56b1b471e1371bd3",
+          "case_id": "native-dev-011",
+          "input_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+          "output_sha256": "164b00ebd71d1d7b5b0f7454c3447aead6d7091b8dbe1198396fd0de05dfebc9",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-011-INPUT.png",
+              "sha256": "d46474800c9103fe8f2534046860260a707cd0448bf5e757a76cd01b3994ccd4",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "6f93a7fd66848a59f18471e2be1514ec986b6a767904dd9dfb0a5ac6d2dba2f1"
+            },
+            {
+              "role": "56b1b471e1371bd3",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-011-56b1b471e1371bd3.png",
+              "sha256": "edb41dbc8957066b58d3a87fa9c84b7fa1c2784b54a37949349dffc27395629a",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "33879dfd671441ed32e853a4c88ae06e6fd669add1923e4452584f938b646c39"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸对照中脸部尤其左眼仍更暗，颈部和左臂进一步压黑，衣服和草地增强并未带来主体暗部提亮，关键人脸可读性下降。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T17:53:54.039413+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "6cbeb534a4f5cc94a4437ca5148d6f468baaa1909f9865c7a7050a649af13908"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "56b1b471e1371bd3",
+          "case_id": "native-dev-011",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "衣服和草地增强可见，主体脸仍偏暗，整体提亮与面部保留是否兼顾需要放大核验。",
+          "image_sha256": "164b00ebd71d1d7b5b0f7454c3447aead6d7091b8dbe1198396fd0de05dfebc9",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-011-01.jpg",
+          "sheet_sha256": "47fe5157a2a8d7bbb3842a7ce735d59034fce8528fae841a8ffe7408030d8afb",
+          "bundle": "first-epoch-and-baselines",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T17:39:20.523465+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "56b1b471e1371bd3",
+            "case_id": "native-dev-011",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "衣服和草地增强可见，主体脸仍偏暗，整体提亮与面部保留是否兼顾需要放大核验。",
+            "image_sha256": "164b00ebd71d1d7b5b0f7454c3447aead6d7091b8dbe1198396fd0de05dfebc9",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-011-01.jpg",
+            "sheet_sha256": "47fe5157a2a8d7bbb3842a7ce735d59034fce8528fae841a8ffe7408030d8afb",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:39:20.523465+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "d530bf481d8b9ded",
+      "case_id": "native-dev-011",
+      "current": {
+        "item_id": "d530bf481d8b9ded",
+        "case_id": "native-dev-011",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸对照可见脸部尤其左眼和下颌比原图更暗，皮肤偏紫红，绿色和蓝衣过强；主体暗部未提亮且面部细节更难辨，属于重大副作用。",
+        "image_sha256": "3ec640ed3c73306241258b02081ca9fa9cf8d6eb061cf81d9259cb59327db488",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-011-01.jpg",
+        "sheet_sha256": "47fe5157a2a8d7bbb3842a7ce735d59034fce8528fae841a8ffe7408030d8afb",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:39:20.523467+00:00",
+        "original_size_supplement": {
+          "item_id": "d530bf481d8b9ded",
+          "case_id": "native-dev-011",
+          "input_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+          "output_sha256": "3ec640ed3c73306241258b02081ca9fa9cf8d6eb061cf81d9259cb59327db488",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-011-INPUT.png",
+              "sha256": "d46474800c9103fe8f2534046860260a707cd0448bf5e757a76cd01b3994ccd4",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "6f93a7fd66848a59f18471e2be1514ec986b6a767904dd9dfb0a5ac6d2dba2f1"
+            },
+            {
+              "role": "d530bf481d8b9ded",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-011-d530bf481d8b9ded.png",
+              "sha256": "09e79ec125cdf7b0e2c5ba394fde3ab1bb6efb7b0b9b8ab87040d2709e83ba03",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "9160a28821e7989ccb62ee0a2f6216b447471aba8c61888ebf95522b00d0706c"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸对照可见脸部尤其左眼和下颌比原图更暗，皮肤偏紫红，绿色和蓝衣过强；主体暗部未提亮且面部细节更难辨，属于重大副作用。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T17:53:25.535211+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "6cbeb534a4f5cc94a4437ca5148d6f468baaa1909f9865c7a7050a649af13908"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "d530bf481d8b9ded",
+          "case_id": "native-dev-011",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "衣服较亮但脸仍很暗且偏红，草地色彩很强；需原尺寸确认暗部与偏色是否构成明显破坏。",
+          "image_sha256": "3ec640ed3c73306241258b02081ca9fa9cf8d6eb061cf81d9259cb59327db488",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-011-01.jpg",
+          "sheet_sha256": "47fe5157a2a8d7bbb3842a7ce735d59034fce8528fae841a8ffe7408030d8afb",
+          "bundle": "first-epoch-and-baselines",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T17:39:20.523467+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "d530bf481d8b9ded",
+            "case_id": "native-dev-011",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "衣服较亮但脸仍很暗且偏红，草地色彩很强；需原尺寸确认暗部与偏色是否构成明显破坏。",
+            "image_sha256": "3ec640ed3c73306241258b02081ca9fa9cf8d6eb061cf81d9259cb59327db488",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-011-01.jpg",
+            "sheet_sha256": "47fe5157a2a8d7bbb3842a7ce735d59034fce8528fae841a8ffe7408030d8afb",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:39:20.523467+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "70fd58104bba1f5a",
+      "case_id": "native-dev-040",
+      "current": {
+        "item_id": "70fd58104bba1f5a",
+        "case_id": "native-dev-040",
+        "completion": "uncertain",
+        "quality": "acceptable",
+        "evidence": "Repeated direct AI observations of this identical input/request/result disagree on completion. All raw observations are preserved; disputed fields stay uncertain. No human adjudication.",
+        "image_sha256": "f38c2c9fa4bcc0cacd9bfc6729bb95c5d47a7924d0ce96df9fcef65ab13d43a4",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-040-01.jpg",
+        "sheet_sha256": "a3780d4d48e721ed356bcf070e349eabdcfc716d90b73bfe4da3800c05b658d7",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:47:33.795178+00:00",
+        "adjudication": "historical_exact_render_disagreement",
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v6-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "case_id": "native-dev-040",
+            "completion": "partial",
+            "quality": "acceptable",
+            "evidence": "Only an extremely small change is visible; slight darkening is not clearly established.",
+            "item_id": "70fd58104bba1f5a",
+            "image_sha256": "f38c2c9fa4bcc0cacd9bfc6729bb95c5d47a7924d0ce96df9fcef65ab13d43a4",
+            "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-040-01.jpg",
+            "sheet_sha256": "54572a65598b06b08c86d137731a107404a83612edfb5e8c79b020a2af829e11",
+            "bundle": "baselines-e1",
+            "reviewer": "Codex direct visual review; AI-assisted, not human",
+            "observed_at": "2026-11-05T06:42:13.236151+00:00"
+          }
+        },
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "70fd58104bba1f5a",
+            "case_id": "native-dev-040",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "墙面、衣服和脸部整体小幅压暗，幅度符合略微压暗；格纹、篮筐和鞋面图案仍清晰可辨。",
+            "image_sha256": "f38c2c9fa4bcc0cacd9bfc6729bb95c5d47a7924d0ce96df9fcef65ab13d43a4",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-040-01.jpg",
+            "sheet_sha256": "a3780d4d48e721ed356bcf070e349eabdcfc716d90b73bfe4da3800c05b658d7",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:47:33.795178+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "completion"
+      ]
+    },
+    {
+      "item_id": "30e45236479b4778",
+      "case_id": "native-dev-070",
+      "current": {
+        "item_id": "30e45236479b4778",
+        "case_id": "native-dev-070",
+        "completion": "completed",
+        "quality": "major_issue",
+        "evidence": "原尺寸确实明显提亮，但天空和近景遍布粗颗粒、彩色压缩色块及条状斑纹；已有噪声被严重放大，结果达不到基本图像质量。",
+        "image_sha256": "e43fc0a50d8d8233be3099aed2aa917980092284edd1297e31df2a77b75a21ed",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+        "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:48:02.624535+00:00",
+        "original_size_supplement": {
+          "item_id": "30e45236479b4778",
+          "case_id": "native-dev-070",
+          "input_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+          "output_sha256": "e43fc0a50d8d8233be3099aed2aa917980092284edd1297e31df2a77b75a21ed",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-070-INPUT.png",
+              "sha256": "1494b2613cfb96315c279b86744089efd5474d9c4143d173864769d1edb34c6d",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "9e18aff862621928070409d367d302b043447b8cfecd3911caeb897a75fca843"
+            },
+            {
+              "role": "30e45236479b4778",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-070-30e45236479b4778.png",
+              "sha256": "0c260054173e76db525870c526e24ae0b8f58d72cecd875cd1a901eca0ffddc7",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "63a8865ba6e58905a5c428273bed759127eef86ac9d29e86c07ed094b4fcbf9e"
+            }
+          ],
+          "completion": "completed",
+          "quality": "major_issue",
+          "evidence": "原尺寸确实明显提亮，但天空和近景遍布粗颗粒、彩色压缩色块及条状斑纹；已有噪声被严重放大，结果达不到基本图像质量。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T17:54:19.381370+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "6cbeb534a4f5cc94a4437ca5148d6f468baaa1909f9865c7a7050a649af13908"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "30e45236479b4778",
+          "case_id": "native-dev-070",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "夜空和前景明显提亮，但天空及下方有大片彩色压缩噪声和块状结构，需要原尺寸核验是否达到重大质量损伤。",
+          "image_sha256": "e43fc0a50d8d8233be3099aed2aa917980092284edd1297e31df2a77b75a21ed",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+          "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+          "bundle": "first-epoch-and-baselines",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T17:48:02.624535+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "30e45236479b4778",
+            "case_id": "native-dev-070",
+            "completion": "completed",
+            "quality": "uncertain",
+            "evidence": "夜空和前景明显提亮，但天空及下方有大片彩色压缩噪声和块状结构，需要原尺寸核验是否达到重大质量损伤。",
+            "image_sha256": "e43fc0a50d8d8233be3099aed2aa917980092284edd1297e31df2a77b75a21ed",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+            "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:48:02.624535+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "31c8a6bfccc61bb8",
+      "case_id": "native-dev-070",
+      "current": {
+        "item_id": "31c8a6bfccc61bb8",
+        "case_id": "native-dev-070",
+        "completion": "completed",
+        "quality": "major_issue",
+        "evidence": "原尺寸中银河和地面确实更亮，但天空满布彩色颗粒和块状压缩痕迹，地面有条状噪声，提升亮度造成重大质量副作用。",
+        "image_sha256": "f7371db0babdb887bff75adf92bca339131dbbab9e023cb2f1e22204add3f2d9",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+        "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:48:02.624648+00:00",
+        "original_size_supplement": {
+          "item_id": "31c8a6bfccc61bb8",
+          "case_id": "native-dev-070",
+          "input_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+          "output_sha256": "f7371db0babdb887bff75adf92bca339131dbbab9e023cb2f1e22204add3f2d9",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-070-INPUT.png",
+              "sha256": "1494b2613cfb96315c279b86744089efd5474d9c4143d173864769d1edb34c6d",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "9e18aff862621928070409d367d302b043447b8cfecd3911caeb897a75fca843"
+            },
+            {
+              "role": "31c8a6bfccc61bb8",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-070-31c8a6bfccc61bb8.png",
+              "sha256": "c2601980eabb534d166558397827fefd9671794280eb53738fe3aaa85eea91de",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "5f972405711c751bb87c2addd9aab7c2b8a2dabcf60e0230f17be3496fd2cc07"
+            }
+          ],
+          "completion": "completed",
+          "quality": "major_issue",
+          "evidence": "原尺寸中银河和地面确实更亮，但天空满布彩色颗粒和块状压缩痕迹，地面有条状噪声，提升亮度造成重大质量副作用。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T17:54:41.783794+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "6cbeb534a4f5cc94a4437ca5148d6f468baaa1909f9865c7a7050a649af13908"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "31c8a6bfccc61bb8",
+          "case_id": "native-dev-070",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "银河和地面明显更亮，天空彩色颗粒大幅突出，前景仍有斑块，需要原尺寸核验质量。",
+          "image_sha256": "f7371db0babdb887bff75adf92bca339131dbbab9e023cb2f1e22204add3f2d9",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+          "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+          "bundle": "first-epoch-and-baselines",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T17:48:02.624648+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "31c8a6bfccc61bb8",
+            "case_id": "native-dev-070",
+            "completion": "completed",
+            "quality": "uncertain",
+            "evidence": "银河和地面明显更亮，天空彩色颗粒大幅突出，前景仍有斑块，需要原尺寸核验质量。",
+            "image_sha256": "f7371db0babdb887bff75adf92bca339131dbbab9e023cb2f1e22204add3f2d9",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+            "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:48:02.624648+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "5bde8e0decb4e76e",
+      "case_id": "native-dev-070",
+      "current": {
+        "item_id": "5bde8e0decb4e76e",
+        "case_id": "native-dev-070",
+        "completion": "partial",
+        "quality": "minor_issue",
+        "evidence": "原尺寸夜空仅中等提亮，地面仍接近黑色，未完成大幅提亮；已有彩色噪点与地面条纹更明显，质量有副作用但弱于严重灰亮色块结果。",
+        "image_sha256": "2afe2fa97536104c79c05bc1c8a114f2e9e01b1653a0e133cb39d71337ec73a8",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+        "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:48:02.624652+00:00",
+        "original_size_supplement": {
+          "item_id": "5bde8e0decb4e76e",
+          "case_id": "native-dev-070",
+          "input_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+          "output_sha256": "2afe2fa97536104c79c05bc1c8a114f2e9e01b1653a0e133cb39d71337ec73a8",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-070-INPUT.png",
+              "sha256": "1494b2613cfb96315c279b86744089efd5474d9c4143d173864769d1edb34c6d",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "9e18aff862621928070409d367d302b043447b8cfecd3911caeb897a75fca843"
+            },
+            {
+              "role": "5bde8e0decb4e76e",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-070-5bde8e0decb4e76e.png",
+              "sha256": "4db53517a6e6366254a45cc8ec9187908410839112d21d01b72c973a2af5d017",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "526ed46498dd6b92357c5641147db21c7a602a236709af80d04187c02231a7bf"
+            }
+          ],
+          "completion": "partial",
+          "quality": "minor_issue",
+          "evidence": "原尺寸夜空仅中等提亮，地面仍接近黑色，未完成大幅提亮；已有彩色噪点与地面条纹更明显，质量有副作用但弱于严重灰亮色块结果。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T17:54:58.960952+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "6cbeb534a4f5cc94a4437ca5148d6f468baaa1909f9865c7a7050a649af13908"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "5bde8e0decb4e76e",
+          "case_id": "native-dev-070",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "银河有所提亮，但前景仍非常黑，距离大幅提亮整幅图仍不足，天空颗粒和块状噪声需原尺寸检查。",
+          "image_sha256": "2afe2fa97536104c79c05bc1c8a114f2e9e01b1653a0e133cb39d71337ec73a8",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+          "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+          "bundle": "first-epoch-and-baselines",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T17:48:02.624652+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "5bde8e0decb4e76e",
+            "case_id": "native-dev-070",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "银河有所提亮，但前景仍非常黑，距离大幅提亮整幅图仍不足，天空颗粒和块状噪声需原尺寸检查。",
+            "image_sha256": "2afe2fa97536104c79c05bc1c8a114f2e9e01b1653a0e133cb39d71337ec73a8",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+            "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:48:02.624652+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "9214e235a710bd6e",
+      "case_id": "native-dev-070",
+      "current": {
+        "item_id": "9214e235a710bd6e",
+        "case_id": "native-dev-070",
+        "completion": "completed",
+        "quality": "major_issue",
+        "evidence": "原尺寸天空和地面显著提亮，但整图出现醒目的彩色颗粒、块状和条状压缩纹理，银河可见性改善同时图像质量严重下降。",
+        "image_sha256": "1e66916e4410e79e06570b34dee5afd0399effa9b3155bfa9266751687e6678e",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+        "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:48:02.624655+00:00",
+        "original_size_supplement": {
+          "item_id": "9214e235a710bd6e",
+          "case_id": "native-dev-070",
+          "input_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+          "output_sha256": "1e66916e4410e79e06570b34dee5afd0399effa9b3155bfa9266751687e6678e",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-070-INPUT.png",
+              "sha256": "1494b2613cfb96315c279b86744089efd5474d9c4143d173864769d1edb34c6d",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "9e18aff862621928070409d367d302b043447b8cfecd3911caeb897a75fca843"
+            },
+            {
+              "role": "9214e235a710bd6e",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-070-9214e235a710bd6e.png",
+              "sha256": "1dd3a134c575f8cb8e3c8ba01ae419f6bd51d4d34667a9ced6f9b50a854ec57f",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "f612a16e4af062e81078232bb3139b3a33ccc24bad33fda36e0a917ff7006272"
+            }
+          ],
+          "completion": "completed",
+          "quality": "major_issue",
+          "evidence": "原尺寸天空和地面显著提亮，但整图出现醒目的彩色颗粒、块状和条状压缩纹理，银河可见性改善同时图像质量严重下降。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T17:55:12.589843+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "6cbeb534a4f5cc94a4437ca5148d6f468baaa1909f9865c7a7050a649af13908"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "9214e235a710bd6e",
+          "case_id": "native-dev-070",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "整幅夜景明显变亮，但天空和近景粗糙色块也更显著，需要原尺寸核验质量是否可接受。",
+          "image_sha256": "1e66916e4410e79e06570b34dee5afd0399effa9b3155bfa9266751687e6678e",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+          "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+          "bundle": "first-epoch-and-baselines",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T17:48:02.624655+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v6-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "case_id": "native-dev-070",
+            "completion": "completed",
+            "quality": "major_issue",
+            "evidence": "A large brightness lift exposes extensive coloured block noise that overwhelms the dark terrain.",
+            "item_id": "9214e235a710bd6e",
+            "image_sha256": "1e66916e4410e79e06570b34dee5afd0399effa9b3155bfa9266751687e6678e",
+            "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-070-01.jpg",
+            "sheet_sha256": "e2cac1dbd24b1752dc8f5b8d4d97d897dd6b963d091584cc1faf340d879a51a6",
+            "bundle": "baselines-e1",
+            "reviewer": "Codex direct visual review; AI-assisted, not human",
+            "observed_at": "2026-11-05T06:43:14.455614+00:00"
+          }
+        },
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "9214e235a710bd6e",
+            "case_id": "native-dev-070",
+            "completion": "completed",
+            "quality": "uncertain",
+            "evidence": "整幅夜景明显变亮，但天空和近景粗糙色块也更显著，需要原尺寸核验质量是否可接受。",
+            "image_sha256": "1e66916e4410e79e06570b34dee5afd0399effa9b3155bfa9266751687e6678e",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+            "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:48:02.624655+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "faf16f95f8cf5250",
+      "case_id": "native-dev-070",
+      "current": {
+        "item_id": "faf16f95f8cf5250",
+        "case_id": "native-dev-070",
+        "completion": "partial",
+        "quality": "minor_issue",
+        "evidence": "原尺寸仅天空有中等提亮，前景仍很黑，整图大幅提亮未完成；已有彩色颗粒和条纹更突出，构成质量副作用。",
+        "image_sha256": "92750e2022eb82607ea62a568f6e972e29334317909b509284bd97b90b7dc2c2",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+        "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:48:02.624657+00:00",
+        "original_size_supplement": {
+          "item_id": "faf16f95f8cf5250",
+          "case_id": "native-dev-070",
+          "input_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+          "output_sha256": "92750e2022eb82607ea62a568f6e972e29334317909b509284bd97b90b7dc2c2",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-070-INPUT.png",
+              "sha256": "1494b2613cfb96315c279b86744089efd5474d9c4143d173864769d1edb34c6d",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "9e18aff862621928070409d367d302b043447b8cfecd3911caeb897a75fca843"
+            },
+            {
+              "role": "faf16f95f8cf5250",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-070-faf16f95f8cf5250.png",
+              "sha256": "45d447898edf3b5bd8145cde42af99bd23f9b43df18e17f8b7f5adce23b8a641",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "dfe68f6e3335bca6b3e468d467ce050dd0772638028d65a91f77f53994812a9e"
+            }
+          ],
+          "completion": "partial",
+          "quality": "minor_issue",
+          "evidence": "原尺寸仅天空有中等提亮，前景仍很黑，整图大幅提亮未完成；已有彩色颗粒和条纹更突出，构成质量副作用。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T17:55:27.520237+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "6cbeb534a4f5cc94a4437ca5148d6f468baaa1909f9865c7a7050a649af13908"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "faf16f95f8cf5250",
+          "case_id": "native-dev-070",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "夜空有所变亮但整幅图与地面仍很暗，大幅提亮只部分完成；彩色颗粒和块状噪声需要原尺寸核验。",
+          "image_sha256": "92750e2022eb82607ea62a568f6e972e29334317909b509284bd97b90b7dc2c2",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+          "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+          "bundle": "first-epoch-and-baselines",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T17:48:02.624657+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "faf16f95f8cf5250",
+            "case_id": "native-dev-070",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "夜空有所变亮但整幅图与地面仍很暗，大幅提亮只部分完成；彩色颗粒和块状噪声需要原尺寸核验。",
+            "image_sha256": "92750e2022eb82607ea62a568f6e972e29334317909b509284bd97b90b7dc2c2",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-070-01.jpg",
+            "sheet_sha256": "bcdeb41830211ea0102dc9d25c9699c60bc82e88fcddc380b762e47244ff3ceb",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:48:02.624657+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "41b95899dd30f395",
+      "case_id": "native-dev-100",
+      "current": {
+        "item_id": "41b95899dd30f395",
+        "case_id": "native-dev-100",
+        "completion": "uncertain",
+        "quality": "acceptable",
+        "evidence": "Repeated direct AI observations of this identical input/request/result disagree on completion. All raw observations are preserved; disputed fields stay uncertain. No human adjudication.",
+        "image_sha256": "52d07450c5d278c26aac0ac13bf151dde6c93e1e3806185267c74c55198b3c67",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-100-01.jpg",
+        "sheet_sha256": "2f008c779d59fe37f3d3e200255083b488ddb5d5dbbb2f832bdc4bfc7cbe207f",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:48:14.852146+00:00",
+        "adjudication": "historical_exact_render_disagreement",
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v6-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "case_id": "native-dev-100",
+            "completion": "partial",
+            "quality": "acceptable",
+            "evidence": "Colour changes are very small and insufficient for the requested more vivid/powerful barn and field rendering.",
+            "item_id": "41b95899dd30f395",
+            "image_sha256": "52d07450c5d278c26aac0ac13bf151dde6c93e1e3806185267c74c55198b3c67",
+            "sheet": "experiments/functional-v6-20261105/review/native-development/baselines-e1/native-dev-100-01.jpg",
+            "sheet_sha256": "0c6ea1b593f416710b0fbe7cfce16ac7144ad5ac3d88ea941b9279042339c9ee",
+            "bundle": "baselines-e1",
+            "reviewer": "Codex direct visual review; AI-assisted, not human",
+            "observed_at": "2026-11-05T06:43:14.458056+00:00"
+          }
+        },
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "41b95899dd30f395",
+            "case_id": "native-dev-100",
+            "completion": "completed",
+            "quality": "acceptable",
+            "evidence": "天空蓝色、谷仓红色和草地暖色更鲜明，云带、屋顶条纹与前景栅栏仍保留，未见明显色阶断裂。",
+            "image_sha256": "52d07450c5d278c26aac0ac13bf151dde6c93e1e3806185267c74c55198b3c67",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-100-01.jpg",
+            "sheet_sha256": "2f008c779d59fe37f3d3e200255083b488ddb5d5dbbb2f832bdc4bfc7cbe207f",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:48:14.852146+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "completion"
+      ]
+    },
+    {
+      "item_id": "2efd78948cde0d04",
+      "case_id": "native-dev-108",
+      "current": {
+        "item_id": "2efd78948cde0d04",
+        "case_id": "native-dev-108",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸中太阳周围白亮光晕显著扩大，码头反射和人物更黑，近景暗部层次损失；对比与颜色增加但提亮主体未完成，副作用重大。",
+        "image_sha256": "79d5092bef9eb429157b58edc0ffd6e1bd396d3e221254b7596c205e00d3ec8c",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-108-01.jpg",
+        "sheet_sha256": "8b09b626c7bebfdfc2e0086aeeeb603d7fbedf6160ec056a13ed93e60c1db0fd",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:48:40.495000+00:00",
+        "original_size_supplement": {
+          "item_id": "2efd78948cde0d04",
+          "case_id": "native-dev-108",
+          "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+          "output_sha256": "79d5092bef9eb429157b58edc0ffd6e1bd396d3e221254b7596c205e00d3ec8c",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-108-INPUT.png",
+              "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+            },
+            {
+              "role": "2efd78948cde0d04",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-108-2efd78948cde0d04.png",
+              "sha256": "c50de378086f8a37eb32c6de1f561a835206f6f930c4ccd682a3fc789f314958",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "77b4c50beb6f831458eb19a69c2d689477b9c89d37e882a0ab29181b621ec2fc"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸中太阳周围白亮光晕显著扩大，码头反射和人物更黑，近景暗部层次损失；对比与颜色增加但提亮主体未完成，副作用重大。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T17:55:55.366688+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "6cbeb534a4f5cc94a4437ca5148d6f468baaa1909f9865c7a7050a649af13908"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "2efd78948cde0d04",
+          "case_id": "native-dev-108",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "天空颜色和反差增强，但人物与码头暗部更深，略微提亮未充分完成，太阳周围白亮区域明显扩大需原尺寸检查。",
+          "image_sha256": "79d5092bef9eb429157b58edc0ffd6e1bd396d3e221254b7596c205e00d3ec8c",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-108-01.jpg",
+          "sheet_sha256": "8b09b626c7bebfdfc2e0086aeeeb603d7fbedf6160ec056a13ed93e60c1db0fd",
+          "bundle": "first-epoch-and-baselines",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T17:48:40.495000+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "2efd78948cde0d04",
+            "case_id": "native-dev-108",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "天空颜色和反差增强，但人物与码头暗部更深，略微提亮未充分完成，太阳周围白亮区域明显扩大需原尺寸检查。",
+            "image_sha256": "79d5092bef9eb429157b58edc0ffd6e1bd396d3e221254b7596c205e00d3ec8c",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-108-01.jpg",
+            "sheet_sha256": "8b09b626c7bebfdfc2e0086aeeeb603d7fbedf6160ec056a13ed93e60c1db0fd",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:48:40.495000+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "40e3efd1f77624d7",
+      "case_id": "native-dev-108",
+      "current": {
+        "item_id": "40e3efd1f77624d7",
+        "case_id": "native-dev-108",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸可见太阳周边大块白亮区扩大，人物、码头下方和倒影更暗，阴影细节继续丢失；未兼顾稍微提亮与质量，副作用重大。",
+        "image_sha256": "708b5abe62bb04ab394005bff9219e62afd412e7f9c5e5d1815ede4c8b46c86a",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-108-01.jpg",
+        "sheet_sha256": "8b09b626c7bebfdfc2e0086aeeeb603d7fbedf6160ec056a13ed93e60c1db0fd",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:48:40.495106+00:00",
+        "original_size_supplement": {
+          "item_id": "40e3efd1f77624d7",
+          "case_id": "native-dev-108",
+          "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+          "output_sha256": "708b5abe62bb04ab394005bff9219e62afd412e7f9c5e5d1815ede4c8b46c86a",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-108-INPUT.png",
+              "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+            },
+            {
+              "role": "40e3efd1f77624d7",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-108-40e3efd1f77624d7.png",
+              "sha256": "5b29715420c2245bb89f7c75f3def55e8e19284c97ef95e4dedba66b9daba222",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "7ce53657ab19f06b57687efbdf11d4ec813c3066163e7115b600c74a5cbd932a"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸可见太阳周边大块白亮区扩大，人物、码头下方和倒影更暗，阴影细节继续丢失；未兼顾稍微提亮与质量，副作用重大。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T17:56:10.050761+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "6cbeb534a4f5cc94a4437ca5148d6f468baaa1909f9865c7a7050a649af13908"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "40e3efd1f77624d7",
+          "case_id": "native-dev-108",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "蓝天及水面颜色增强，但近处码头和人物更黑，天空大块白区扩大，需原尺寸核验高光和阴影损失。",
+          "image_sha256": "708b5abe62bb04ab394005bff9219e62afd412e7f9c5e5d1815ede4c8b46c86a",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-108-01.jpg",
+          "sheet_sha256": "8b09b626c7bebfdfc2e0086aeeeb603d7fbedf6160ec056a13ed93e60c1db0fd",
+          "bundle": "first-epoch-and-baselines",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T17:48:40.495106+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "40e3efd1f77624d7",
+            "case_id": "native-dev-108",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "蓝天及水面颜色增强，但近处码头和人物更黑，天空大块白区扩大，需原尺寸核验高光和阴影损失。",
+            "image_sha256": "708b5abe62bb04ab394005bff9219e62afd412e7f9c5e5d1815ede4c8b46c86a",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-108-01.jpg",
+            "sheet_sha256": "8b09b626c7bebfdfc2e0086aeeeb603d7fbedf6160ec056a13ed93e60c1db0fd",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:48:40.495106+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "a07c71be09e2da4e",
+      "case_id": "native-dev-108",
+      "current": {
+        "item_id": "a07c71be09e2da4e",
+        "case_id": "native-dev-108",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸显示太阳周围白亮范围明显增大，码头倒影和人物仍比原图暗；颜色增强但提亮没有兼顾暗部，新增高光和阴影损失明显。",
+        "image_sha256": "08c514df8344eb898e1fe695b5f89c86a8ef0569255a1ae58df6c1b91d42e57d",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-108-01.jpg",
+        "sheet_sha256": "8b09b626c7bebfdfc2e0086aeeeb603d7fbedf6160ec056a13ed93e60c1db0fd",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:48:40.495110+00:00",
+        "original_size_supplement": {
+          "item_id": "a07c71be09e2da4e",
+          "case_id": "native-dev-108",
+          "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+          "output_sha256": "08c514df8344eb898e1fe695b5f89c86a8ef0569255a1ae58df6c1b91d42e57d",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-108-INPUT.png",
+              "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+            },
+            {
+              "role": "a07c71be09e2da4e",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-108-a07c71be09e2da4e.png",
+              "sha256": "c7f52b1c78463d3a65b13d8cd70c47ae22863e9a8f3035f8196a2703f3885d61",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "a3c30979ae390090e6427cdd0185609541fa9a00d523d95e85976ccca99db925"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸显示太阳周围白亮范围明显增大，码头倒影和人物仍比原图暗；颜色增强但提亮没有兼顾暗部，新增高光和阴影损失明显。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T17:56:26.734646+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "6cbeb534a4f5cc94a4437ca5148d6f468baaa1909f9865c7a7050a649af13908"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "a07c71be09e2da4e",
+          "case_id": "native-dev-108",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "画面对比和颜色增强，但人物仍暗、码头阴影更深，太阳周围大面积白亮区域需原尺寸核验。",
+          "image_sha256": "08c514df8344eb898e1fe695b5f89c86a8ef0569255a1ae58df6c1b91d42e57d",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-108-01.jpg",
+          "sheet_sha256": "8b09b626c7bebfdfc2e0086aeeeb603d7fbedf6160ec056a13ed93e60c1db0fd",
+          "bundle": "first-epoch-and-baselines",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T17:48:40.495110+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "a07c71be09e2da4e",
+            "case_id": "native-dev-108",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "画面对比和颜色增强，但人物仍暗、码头阴影更深，太阳周围大面积白亮区域需原尺寸核验。",
+            "image_sha256": "08c514df8344eb898e1fe695b5f89c86a8ef0569255a1ae58df6c1b91d42e57d",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-108-01.jpg",
+            "sheet_sha256": "8b09b626c7bebfdfc2e0086aeeeb603d7fbedf6160ec056a13ed93e60c1db0fd",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:48:40.495110+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "f24da27ff49690a2",
+      "case_id": "native-dev-108",
+      "current": {
+        "item_id": "f24da27ff49690a2",
+        "case_id": "native-dev-108",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸对照中整幅图更暗，人物及码头倒影细节被压黑，太阳白亮区仍比原图大；仅对比和颜色增加，基本质量副作用重大。",
+        "image_sha256": "e904fcfc4f25a054f19fbb985a4d62bc5b6f9a1951b4c41f94b669c598719d2f",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-108-01.jpg",
+        "sheet_sha256": "8b09b626c7bebfdfc2e0086aeeeb603d7fbedf6160ec056a13ed93e60c1db0fd",
+        "bundle": "first-epoch-and-baselines",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T17:48:40.495112+00:00",
+        "original_size_supplement": {
+          "item_id": "f24da27ff49690a2",
+          "case_id": "native-dev-108",
+          "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+          "output_sha256": "e904fcfc4f25a054f19fbb985a4d62bc5b6f9a1951b4c41f94b669c598719d2f",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-108-INPUT.png",
+              "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+            },
+            {
+              "role": "f24da27ff49690a2",
+              "path": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/full-resolution/native-dev-108-f24da27ff49690a2.png",
+              "sha256": "322ce028c425e5de090a912bc8e28cb6e97e1f321fef713b82708dca24682a22",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "94413d286513a15aa6e09d41b832dd56ac53b51c34e5d7cea87848748607d20a"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸对照中整幅图更暗，人物及码头倒影细节被压黑，太阳白亮区仍比原图大；仅对比和颜色增加，基本质量副作用重大。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T17:56:44.750582+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "6cbeb534a4f5cc94a4437ca5148d6f468baaa1909f9865c7a7050a649af13908"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "f24da27ff49690a2",
+          "case_id": "native-dev-108",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "颜色和对比度增强，整幅图却显得更暗，人物及码头阴影加深；太阳周围亮区与光晕需原尺寸检查。",
+          "image_sha256": "e904fcfc4f25a054f19fbb985a4d62bc5b6f9a1951b4c41f94b669c598719d2f",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-108-01.jpg",
+          "sheet_sha256": "8b09b626c7bebfdfc2e0086aeeeb603d7fbedf6160ec056a13ed93e60c1db0fd",
+          "bundle": "first-epoch-and-baselines",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T17:48:40.495112+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "f24da27ff49690a2",
+            "case_id": "native-dev-108",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "颜色和对比度增强，整幅图却显得更暗，人物及码头阴影加深；太阳周围亮区与光晕需原尺寸检查。",
+            "image_sha256": "e904fcfc4f25a054f19fbb985a4d62bc5b6f9a1951b4c41f94b669c598719d2f",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/first-epoch-and-baselines/native-dev-108-01.jpg",
+            "sheet_sha256": "8b09b626c7bebfdfc2e0086aeeeb603d7fbedf6160ec056a13ed93e60c1db0fd",
+            "bundle": "first-epoch-and-baselines",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T17:48:40.495112+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "21a002e45be4420e",
+      "case_id": "native-dev-011",
+      "current": {
+        "item_id": "21a002e45be4420e",
+        "case_id": "native-dev-011",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸左眼、下颌和手臂比输入更黑，人脸偏紫红，草地与蓝衣增强却未带来主体提亮，关键人脸可读性下降构成重大副作用。",
+        "image_sha256": "6cb48b4a3feeb6e88bad59bf22079c3dc728d2365f432a5de71c50e096ff8481",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-011-01.jpg",
+        "sheet_sha256": "04e73d9abebd44b432d3b65380eceaa65c839b010f83dd2ffc32f39a92e2fde0",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:00:41.087382+00:00",
+        "original_size_supplement": {
+          "item_id": "21a002e45be4420e",
+          "case_id": "native-dev-011",
+          "input_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+          "output_sha256": "6cb48b4a3feeb6e88bad59bf22079c3dc728d2365f432a5de71c50e096ff8481",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-011-INPUT.png",
+              "sha256": "d46474800c9103fe8f2534046860260a707cd0448bf5e757a76cd01b3994ccd4",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "6f93a7fd66848a59f18471e2be1514ec986b6a767904dd9dfb0a5ac6d2dba2f1"
+            },
+            {
+              "role": "21a002e45be4420e",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-011-21a002e45be4420e.png",
+              "sha256": "0d1aa8917310e4793ce48a49d2744fc0a64c3231d55499982334ab09d6a29e72",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "00d4db3c7f32a18a356bf3c058f56aabb7a368469ccbf3762d073244f7b11508"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸左眼、下颌和手臂比输入更黑，人脸偏紫红，草地与蓝衣增强却未带来主体提亮，关键人脸可读性下降构成重大副作用。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:06:06.713331+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "21a002e45be4420e",
+          "case_id": "native-dev-011",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "衣服与草地增强，但脸和左眼明显更暗，肤色偏紫红，主体提亮未完成，需要原尺寸确认脸部细节损失。",
+          "image_sha256": "6cb48b4a3feeb6e88bad59bf22079c3dc728d2365f432a5de71c50e096ff8481",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-011-01.jpg",
+          "sheet_sha256": "04e73d9abebd44b432d3b65380eceaa65c839b010f83dd2ffc32f39a92e2fde0",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:00:41.087382+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "21a002e45be4420e",
+            "case_id": "native-dev-011",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "衣服与草地增强，但脸和左眼明显更暗，肤色偏紫红，主体提亮未完成，需要原尺寸确认脸部细节损失。",
+            "image_sha256": "6cb48b4a3feeb6e88bad59bf22079c3dc728d2365f432a5de71c50e096ff8481",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-011-01.jpg",
+            "sheet_sha256": "04e73d9abebd44b432d3b65380eceaa65c839b010f83dd2ffc32f39a92e2fde0",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:00:41.087382+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "7620c733237b29e1",
+      "case_id": "native-dev-011",
+      "current": {
+        "item_id": "7620c733237b29e1",
+        "case_id": "native-dev-011",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸中面部和左眼进一步压黑，颈部及手臂细节更难辨，皮肤紫红明显，未完成主体提亮，质量副作用重大。",
+        "image_sha256": "ac33dfabb3ebd127e168fd7dab8ed052a288afb6d744ef280e32438885f0d34e",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-011-01.jpg",
+        "sheet_sha256": "04e73d9abebd44b432d3b65380eceaa65c839b010f83dd2ffc32f39a92e2fde0",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:00:41.087496+00:00",
+        "original_size_supplement": {
+          "item_id": "7620c733237b29e1",
+          "case_id": "native-dev-011",
+          "input_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+          "output_sha256": "ac33dfabb3ebd127e168fd7dab8ed052a288afb6d744ef280e32438885f0d34e",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-011-INPUT.png",
+              "sha256": "d46474800c9103fe8f2534046860260a707cd0448bf5e757a76cd01b3994ccd4",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "6f93a7fd66848a59f18471e2be1514ec986b6a767904dd9dfb0a5ac6d2dba2f1"
+            },
+            {
+              "role": "7620c733237b29e1",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-011-7620c733237b29e1.png",
+              "sha256": "9246cb08320afc4cab7ee408e014d029506cc55050c2c9724910c91fc94cba38",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "0cdfd7f8244c1741d23bd2da6bcb2fe1ac6db1cd8a51a86401445b2b71b77bc1"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸中面部和左眼进一步压黑，颈部及手臂细节更难辨，皮肤紫红明显，未完成主体提亮，质量副作用重大。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:06:52.640079+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "7620c733237b29e1",
+          "case_id": "native-dev-011",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "对比增强同时把脸部和手臂压黑，左眼更难辨，主体提亮没有完成，需要原尺寸核验质量。",
+          "image_sha256": "ac33dfabb3ebd127e168fd7dab8ed052a288afb6d744ef280e32438885f0d34e",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-011-01.jpg",
+          "sheet_sha256": "04e73d9abebd44b432d3b65380eceaa65c839b010f83dd2ffc32f39a92e2fde0",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:00:41.087496+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "7620c733237b29e1",
+            "case_id": "native-dev-011",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "对比增强同时把脸部和手臂压黑，左眼更难辨，主体提亮没有完成，需要原尺寸核验质量。",
+            "image_sha256": "ac33dfabb3ebd127e168fd7dab8ed052a288afb6d744ef280e32438885f0d34e",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-011-01.jpg",
+            "sheet_sha256": "04e73d9abebd44b432d3b65380eceaa65c839b010f83dd2ffc32f39a92e2fde0",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:00:41.087496+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "886a105d70521b7c",
+      "case_id": "native-dev-011",
+      "current": {
+        "item_id": "886a105d70521b7c",
+        "case_id": "native-dev-011",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸左眼、下颌和手臂比原图更黑，肤色偏紫红，草地饱和度增强但主体亮度没有改善，人脸细节继续压暗，副作用重大。",
+        "image_sha256": "a5b53d8c8a7f3a7abd2892e388e5be277e679c2b87953ea45b2c6b96619bea89",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-011-01.jpg",
+        "sheet_sha256": "04e73d9abebd44b432d3b65380eceaa65c839b010f83dd2ffc32f39a92e2fde0",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:00:41.087499+00:00",
+        "original_size_supplement": {
+          "item_id": "886a105d70521b7c",
+          "case_id": "native-dev-011",
+          "input_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+          "output_sha256": "a5b53d8c8a7f3a7abd2892e388e5be277e679c2b87953ea45b2c6b96619bea89",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-011-INPUT.png",
+              "sha256": "d46474800c9103fe8f2534046860260a707cd0448bf5e757a76cd01b3994ccd4",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "6f93a7fd66848a59f18471e2be1514ec986b6a767904dd9dfb0a5ac6d2dba2f1"
+            },
+            {
+              "role": "886a105d70521b7c",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-011-886a105d70521b7c.png",
+              "sha256": "1b91112a402b93ac5db0b347f1ec980f7bde57f6025713c1b6f785f30da051ad",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "3b23aacd8e85896971e80f0aa81b8599a59af9ffa5ab80b6dcca8ca72d2498a9"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸左眼、下颌和手臂比原图更黑，肤色偏紫红，草地饱和度增强但主体亮度没有改善，人脸细节继续压暗，副作用重大。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:07:46.540141+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "886a105d70521b7c",
+          "case_id": "native-dev-011",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "画面对比和颜色更强，但脸部及手臂明显更黑，树荫也更深，需要原尺寸核验关键人脸细节。",
+          "image_sha256": "a5b53d8c8a7f3a7abd2892e388e5be277e679c2b87953ea45b2c6b96619bea89",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-011-01.jpg",
+          "sheet_sha256": "04e73d9abebd44b432d3b65380eceaa65c839b010f83dd2ffc32f39a92e2fde0",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:00:41.087499+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "886a105d70521b7c",
+            "case_id": "native-dev-011",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "画面对比和颜色更强，但脸部及手臂明显更黑，树荫也更深，需要原尺寸核验关键人脸细节。",
+            "image_sha256": "a5b53d8c8a7f3a7abd2892e388e5be277e679c2b87953ea45b2c6b96619bea89",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-011-01.jpg",
+            "sheet_sha256": "04e73d9abebd44b432d3b65380eceaa65c839b010f83dd2ffc32f39a92e2fde0",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:00:41.087499+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "fe2e31a350c6873b",
+      "case_id": "native-dev-011",
+      "current": {
+        "item_id": "fe2e31a350c6873b",
+        "case_id": "native-dev-011",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸中面部左眼和下颌仍被压黑，皮肤紫红与衣服草地饱和增强明显；主体未得到提亮且关键脸部细节可读性下降。",
+        "image_sha256": "dcc383a322e004419fd2c80cb91e16befaed91bce4a7ae152d4d8e39956bc4df",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-011-01.jpg",
+        "sheet_sha256": "04e73d9abebd44b432d3b65380eceaa65c839b010f83dd2ffc32f39a92e2fde0",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:00:41.087501+00:00",
+        "original_size_supplement": {
+          "item_id": "fe2e31a350c6873b",
+          "case_id": "native-dev-011",
+          "input_sha256": "a876ca4204d3eb7425fbc3794429f9660d6cf093ba5efae16da4d21638e32b35",
+          "output_sha256": "dcc383a322e004419fd2c80cb91e16befaed91bce4a7ae152d4d8e39956bc4df",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-011-INPUT.png",
+              "sha256": "d46474800c9103fe8f2534046860260a707cd0448bf5e757a76cd01b3994ccd4",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "6f93a7fd66848a59f18471e2be1514ec986b6a767904dd9dfb0a5ac6d2dba2f1"
+            },
+            {
+              "role": "fe2e31a350c6873b",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-011-fe2e31a350c6873b.png",
+              "sha256": "3fde2e1f00c1e681b0638f4a17857daa1b2827179761f4771053900b2c7dc00e",
+              "size": [
+                960,
+                1280
+              ],
+              "pixel_sha256": "7b4477155ffb5122f0366283975fa3b26b5ffbaf215ab3a9826d2e01288feeb6"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸中面部左眼和下颌仍被压黑，皮肤紫红与衣服草地饱和增强明显；主体未得到提亮且关键脸部细节可读性下降。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:08:05.819314+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "fe2e31a350c6873b",
+          "case_id": "native-dev-011",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "衣服草地颜色增强，人脸尤其左眼仍暗且偏紫红，提亮主体没有完成，需原尺寸核验副作用。",
+          "image_sha256": "dcc383a322e004419fd2c80cb91e16befaed91bce4a7ae152d4d8e39956bc4df",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-011-01.jpg",
+          "sheet_sha256": "04e73d9abebd44b432d3b65380eceaa65c839b010f83dd2ffc32f39a92e2fde0",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:00:41.087501+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "fe2e31a350c6873b",
+            "case_id": "native-dev-011",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "衣服草地颜色增强，人脸尤其左眼仍暗且偏紫红，提亮主体没有完成，需原尺寸核验副作用。",
+            "image_sha256": "dcc383a322e004419fd2c80cb91e16befaed91bce4a7ae152d4d8e39956bc4df",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-011-01.jpg",
+            "sheet_sha256": "04e73d9abebd44b432d3b65380eceaa65c839b010f83dd2ffc32f39a92e2fde0",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:00:41.087501+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "552a055acf340e00",
+      "case_id": "native-dev-070",
+      "current": {
+        "item_id": "552a055acf340e00",
+        "case_id": "native-dev-070",
+        "completion": "completed",
+        "quality": "major_issue",
+        "evidence": "原尺寸夜空和地面明显变亮，但整图粗颗粒、彩色压缩色块与条纹被严重放大，银河可见而图像质量无法接受。",
+        "image_sha256": "21e8ed2a1a03672a0f722a948e58712491fb1342e6ea3125e2defdd8a86e921d",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-070-01.jpg",
+        "sheet_sha256": "512cbbe6c9ac383f4619d9c3707971b2c02a08f764df569f0f02ff2de876091c",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:01:37.790771+00:00",
+        "original_size_supplement": {
+          "item_id": "552a055acf340e00",
+          "case_id": "native-dev-070",
+          "input_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+          "output_sha256": "21e8ed2a1a03672a0f722a948e58712491fb1342e6ea3125e2defdd8a86e921d",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-070-INPUT.png",
+              "sha256": "1494b2613cfb96315c279b86744089efd5474d9c4143d173864769d1edb34c6d",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "9e18aff862621928070409d367d302b043447b8cfecd3911caeb897a75fca843"
+            },
+            {
+              "role": "552a055acf340e00",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-070-552a055acf340e00.png",
+              "sha256": "81195be297d5c37dc4112957f4409c48d624d7db3744c1f02868dc09edcaf46c",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "053982fc76ae98eb8c4b9517d45e2ba59474f6c59a0aae1ab8609687749cd852"
+            }
+          ],
+          "completion": "completed",
+          "quality": "major_issue",
+          "evidence": "原尺寸夜空和地面明显变亮，但整图粗颗粒、彩色压缩色块与条纹被严重放大，银河可见而图像质量无法接受。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:08:23.671053+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "552a055acf340e00",
+          "case_id": "native-dev-070",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "夜空和前景明显提亮，但天空和地面出现粗糙彩色颗粒及块状条纹，需要原尺寸检查质量。",
+          "image_sha256": "21e8ed2a1a03672a0f722a948e58712491fb1342e6ea3125e2defdd8a86e921d",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-070-01.jpg",
+          "sheet_sha256": "512cbbe6c9ac383f4619d9c3707971b2c02a08f764df569f0f02ff2de876091c",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:01:37.790771+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "552a055acf340e00",
+            "case_id": "native-dev-070",
+            "completion": "completed",
+            "quality": "uncertain",
+            "evidence": "夜空和前景明显提亮，但天空和地面出现粗糙彩色颗粒及块状条纹，需要原尺寸检查质量。",
+            "image_sha256": "21e8ed2a1a03672a0f722a948e58712491fb1342e6ea3125e2defdd8a86e921d",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-070-01.jpg",
+            "sheet_sha256": "512cbbe6c9ac383f4619d9c3707971b2c02a08f764df569f0f02ff2de876091c",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:01:37.790771+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "73742b49fb1a874f",
+      "case_id": "native-dev-070",
+      "current": {
+        "item_id": "73742b49fb1a874f",
+        "case_id": "native-dev-070",
+        "completion": "completed",
+        "quality": "major_issue",
+        "evidence": "原尺寸天空和地面提亮明显，彩色噪声、大片块状纹理和下方条纹也十分突出，已有压缩瑕疵严重放大构成重大副作用。",
+        "image_sha256": "06e5123f3fa66a3be1fb708f2abe34d6b6b08ae9f5ac4b384f44702194edb84d",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-070-01.jpg",
+        "sheet_sha256": "512cbbe6c9ac383f4619d9c3707971b2c02a08f764df569f0f02ff2de876091c",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:01:37.790880+00:00",
+        "original_size_supplement": {
+          "item_id": "73742b49fb1a874f",
+          "case_id": "native-dev-070",
+          "input_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+          "output_sha256": "06e5123f3fa66a3be1fb708f2abe34d6b6b08ae9f5ac4b384f44702194edb84d",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-070-INPUT.png",
+              "sha256": "1494b2613cfb96315c279b86744089efd5474d9c4143d173864769d1edb34c6d",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "9e18aff862621928070409d367d302b043447b8cfecd3911caeb897a75fca843"
+            },
+            {
+              "role": "73742b49fb1a874f",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-070-73742b49fb1a874f.png",
+              "sha256": "0c4d6f460a8b9021167e9f83660c7b4107159744b0d5b5a57180bfc9566e7ed9",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "0709cab2d9d085e97ee716325d9a1633b4a212d9b60a77434a8d501818bc77b7"
+            }
+          ],
+          "completion": "completed",
+          "quality": "major_issue",
+          "evidence": "原尺寸天空和地面提亮明显，彩色噪声、大片块状纹理和下方条纹也十分突出，已有压缩瑕疵严重放大构成重大副作用。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:08:45.884743+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "73742b49fb1a874f",
+          "case_id": "native-dev-070",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "整体亮度明显提高，但银河周边和近景有彩色颗粒、斑块和条纹，需要原尺寸核验。",
+          "image_sha256": "06e5123f3fa66a3be1fb708f2abe34d6b6b08ae9f5ac4b384f44702194edb84d",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-070-01.jpg",
+          "sheet_sha256": "512cbbe6c9ac383f4619d9c3707971b2c02a08f764df569f0f02ff2de876091c",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:01:37.790880+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "73742b49fb1a874f",
+            "case_id": "native-dev-070",
+            "completion": "completed",
+            "quality": "uncertain",
+            "evidence": "整体亮度明显提高，但银河周边和近景有彩色颗粒、斑块和条纹，需要原尺寸核验。",
+            "image_sha256": "06e5123f3fa66a3be1fb708f2abe34d6b6b08ae9f5ac4b384f44702194edb84d",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-070-01.jpg",
+            "sheet_sha256": "512cbbe6c9ac383f4619d9c3707971b2c02a08f764df569f0f02ff2de876091c",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:01:37.790880+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "fd171f234dd6254f",
+      "case_id": "native-dev-070",
+      "current": {
+        "item_id": "fd171f234dd6254f",
+        "case_id": "native-dev-070",
+        "completion": "completed",
+        "quality": "major_issue",
+        "evidence": "原尺寸中夜景明显提亮，但整图彩色噪点、块状压缩纹理与条纹大幅显现，结果不符合基本质量要求，属于重大副作用。",
+        "image_sha256": "33df5d81cd4d22d74ccd3e9db941d7aba11d6a4eeb1a66c2e2a98fc4f21eab4f",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-070-01.jpg",
+        "sheet_sha256": "512cbbe6c9ac383f4619d9c3707971b2c02a08f764df569f0f02ff2de876091c",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:01:37.790884+00:00",
+        "original_size_supplement": {
+          "item_id": "fd171f234dd6254f",
+          "case_id": "native-dev-070",
+          "input_sha256": "ebcc64cb878bce0863f5cc9a31fd2ba7334a0170010483302cbcc1a605c7776a",
+          "output_sha256": "33df5d81cd4d22d74ccd3e9db941d7aba11d6a4eeb1a66c2e2a98fc4f21eab4f",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-070-INPUT.png",
+              "sha256": "1494b2613cfb96315c279b86744089efd5474d9c4143d173864769d1edb34c6d",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "9e18aff862621928070409d367d302b043447b8cfecd3911caeb897a75fca843"
+            },
+            {
+              "role": "fd171f234dd6254f",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-070-fd171f234dd6254f.png",
+              "sha256": "6801b86ae0289943d42b41c49f85d873d8320483751b86fe071e365c44e977f6",
+              "size": [
+                960,
+                640
+              ],
+              "pixel_sha256": "0abc5987b401eb3f70a4dc7c6152ec335a9e79f3d68e295cb4da5b56287ab87b"
+            }
+          ],
+          "completion": "completed",
+          "quality": "major_issue",
+          "evidence": "原尺寸中夜景明显提亮，但整图彩色噪点、块状压缩纹理与条纹大幅显现，结果不符合基本质量要求，属于重大副作用。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:09:08.012547+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "fd171f234dd6254f",
+          "case_id": "native-dev-070",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "整图变亮但天空和地面噪声及色块明显突出，需要原尺寸判断重大质量副作用。",
+          "image_sha256": "33df5d81cd4d22d74ccd3e9db941d7aba11d6a4eeb1a66c2e2a98fc4f21eab4f",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-070-01.jpg",
+          "sheet_sha256": "512cbbe6c9ac383f4619d9c3707971b2c02a08f764df569f0f02ff2de876091c",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:01:37.790884+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "fd171f234dd6254f",
+            "case_id": "native-dev-070",
+            "completion": "completed",
+            "quality": "uncertain",
+            "evidence": "整图变亮但天空和地面噪声及色块明显突出，需要原尺寸判断重大质量副作用。",
+            "image_sha256": "33df5d81cd4d22d74ccd3e9db941d7aba11d6a4eeb1a66c2e2a98fc4f21eab4f",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-070-01.jpg",
+            "sheet_sha256": "512cbbe6c9ac383f4619d9c3707971b2c02a08f764df569f0f02ff2de876091c",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:01:37.790884+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "1a0b951f1847b479",
+      "case_id": "native-dev-108",
+      "current": {
+        "item_id": "1a0b951f1847b479",
+        "case_id": "native-dev-108",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸中太阳与周围天空变成大块灰白雾状平区，光线层次明显变平；人物稍亮但对比增强不足，天空的额外灰雾损伤重大。",
+        "image_sha256": "b468e9a9b2d5030c57ba55be16378f53ece0a932c4a06c2f7e25a9e465fcbc1b",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+        "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:02:00.283949+00:00",
+        "original_size_supplement": {
+          "item_id": "1a0b951f1847b479",
+          "case_id": "native-dev-108",
+          "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+          "output_sha256": "b468e9a9b2d5030c57ba55be16378f53ece0a932c4a06c2f7e25a9e465fcbc1b",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-INPUT.png",
+              "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+            },
+            {
+              "role": "1a0b951f1847b479",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-1a0b951f1847b479.png",
+              "sha256": "f0306a26365cd53b519204c2422a1ed30922a96cb366e8f00cc2df83fc22da5e",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "a9657ea3cc3d0da91ee8d5037624845407cf5a1ef690221d66a168cc0813561a"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸中太阳与周围天空变成大块灰白雾状平区，光线层次明显变平；人物稍亮但对比增强不足，天空的额外灰雾损伤重大。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:09:31.170787+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "1a0b951f1847b479",
+          "case_id": "native-dev-108",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "水面和人物略亮、颜色有所增强，但天空太阳周围变成大片灰白雾状区域，反差增强不足，需原尺寸检查。",
+          "image_sha256": "b468e9a9b2d5030c57ba55be16378f53ece0a932c4a06c2f7e25a9e465fcbc1b",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+          "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:02:00.283949+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "1a0b951f1847b479",
+            "case_id": "native-dev-108",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "水面和人物略亮、颜色有所增强，但天空太阳周围变成大片灰白雾状区域，反差增强不足，需原尺寸检查。",
+            "image_sha256": "b468e9a9b2d5030c57ba55be16378f53ece0a932c4a06c2f7e25a9e465fcbc1b",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+            "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:02:00.283949+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "38fd9a9a3b8952e0",
+      "case_id": "native-dev-108",
+      "current": {
+        "item_id": "38fd9a9a3b8952e0",
+        "case_id": "native-dev-108",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸可见人物与码头倒影压黑，太阳周围出现较大灰白平坦光晕，主体略提亮未完成，天空和阴影都有明显质量损伤。",
+        "image_sha256": "e8b1298de4c41735b0141b16fb8e77be1e4eed668b78f63a0f056eb696b8ff0f",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+        "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:02:00.284060+00:00",
+        "original_size_supplement": {
+          "item_id": "38fd9a9a3b8952e0",
+          "case_id": "native-dev-108",
+          "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+          "output_sha256": "e8b1298de4c41735b0141b16fb8e77be1e4eed668b78f63a0f056eb696b8ff0f",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-INPUT.png",
+              "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+            },
+            {
+              "role": "38fd9a9a3b8952e0",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-38fd9a9a3b8952e0.png",
+              "sha256": "ca71e1a8eed69c627a600355008bc42eb3387418404dd177a897af68c050a802",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "dfb4924958a12ae91cd6e4d757f79654d96c9e572c1f8843a244bf2ed905c0dc"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸可见人物与码头倒影压黑，太阳周围出现较大灰白平坦光晕，主体略提亮未完成，天空和阴影都有明显质量损伤。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:09:50.443091+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "38fd9a9a3b8952e0",
+          "case_id": "native-dev-108",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "画面颜色与对比增强，但人物和码头更黑，太阳周围出现灰白光晕，略提亮要求未充分完成。",
+          "image_sha256": "e8b1298de4c41735b0141b16fb8e77be1e4eed668b78f63a0f056eb696b8ff0f",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+          "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:02:00.284060+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "38fd9a9a3b8952e0",
+            "case_id": "native-dev-108",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "画面颜色与对比增强，但人物和码头更黑，太阳周围出现灰白光晕，略提亮要求未充分完成。",
+            "image_sha256": "e8b1298de4c41735b0141b16fb8e77be1e4eed668b78f63a0f056eb696b8ff0f",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+            "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:02:00.284060+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "486b3e6fca29eb92",
+      "case_id": "native-dev-108",
+      "current": {
+        "item_id": "486b3e6fca29eb92",
+        "case_id": "native-dev-108",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸人物、码头下方和倒影更黑，太阳周围灰白光晕扩大且层次变平；颜色对比增加没有完成提亮，额外质量损伤明显。",
+        "image_sha256": "f07ce7d807d033720f5593216b1de6c01ab31c30997a0816da1ce743e94a15ea",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+        "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:02:00.284065+00:00",
+        "original_size_supplement": {
+          "item_id": "486b3e6fca29eb92",
+          "case_id": "native-dev-108",
+          "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+          "output_sha256": "f07ce7d807d033720f5593216b1de6c01ab31c30997a0816da1ce743e94a15ea",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-INPUT.png",
+              "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+            },
+            {
+              "role": "486b3e6fca29eb92",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-486b3e6fca29eb92.png",
+              "sha256": "1da5fd3234e05055254d4a0d053c3dd49bd24ea5c4af695a6e24b5e394a26b3b",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "61b695b7ae87609247014f14045a61c228fa2233ec0148f8fef675b1ff98fd97"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸人物、码头下方和倒影更黑，太阳周围灰白光晕扩大且层次变平；颜色对比增加没有完成提亮，额外质量损伤明显。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:10:08.990804+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "486b3e6fca29eb92",
+          "case_id": "native-dev-108",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "整体比原图暗，人物和码头阴影更深，天空有灰白光晕；颜色增强但提亮未完成，需原尺寸核验质量。",
+          "image_sha256": "f07ce7d807d033720f5593216b1de6c01ab31c30997a0816da1ce743e94a15ea",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+          "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:02:00.284065+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "486b3e6fca29eb92",
+            "case_id": "native-dev-108",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "整体比原图暗，人物和码头阴影更深，天空有灰白光晕；颜色增强但提亮未完成，需原尺寸核验质量。",
+            "image_sha256": "f07ce7d807d033720f5593216b1de6c01ab31c30997a0816da1ce743e94a15ea",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+            "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:02:00.284065+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "72355abb78ca8889",
+      "case_id": "native-dev-108",
+      "current": {
+        "item_id": "72355abb78ca8889",
+        "case_id": "native-dev-108",
+        "completion": "completed",
+        "quality": "major_issue",
+        "evidence": "原尺寸中人物、水面和码头提亮且颜色增强，但太阳周围白亮区大幅扩展，下方码头反射更黑，高光层次明显损失，不能算合格完成。",
+        "image_sha256": "2473efbda0078c8a12cec444104be929827b1f7c4515c26bf32d02f635027d31",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+        "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:02:00.284067+00:00",
+        "original_size_supplement": {
+          "item_id": "72355abb78ca8889",
+          "case_id": "native-dev-108",
+          "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+          "output_sha256": "2473efbda0078c8a12cec444104be929827b1f7c4515c26bf32d02f635027d31",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-INPUT.png",
+              "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+            },
+            {
+              "role": "72355abb78ca8889",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-72355abb78ca8889.png",
+              "sha256": "99c385191f936c53f230383cb8246afabb809d07557dfdfcda6822b388ac5f15",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "adec59cf5e2abd35eb8fcb052092b45299f94e0e5bcaf1d99a9c751ae519ea1e"
+            }
+          ],
+          "completion": "completed",
+          "quality": "major_issue",
+          "evidence": "原尺寸中人物、水面和码头提亮且颜色增强，但太阳周围白亮区大幅扩展，下方码头反射更黑，高光层次明显损失，不能算合格完成。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:10:29.970217+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "72355abb78ca8889",
+          "case_id": "native-dev-108",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "水面、人物和码头适度提亮且颜色对比增强，但太阳周边白亮范围明显扩大，需原尺寸核验高光损失。",
+          "image_sha256": "2473efbda0078c8a12cec444104be929827b1f7c4515c26bf32d02f635027d31",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+          "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:02:00.284067+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "72355abb78ca8889",
+            "case_id": "native-dev-108",
+            "completion": "completed",
+            "quality": "uncertain",
+            "evidence": "水面、人物和码头适度提亮且颜色对比增强，但太阳周边白亮范围明显扩大，需原尺寸核验高光损失。",
+            "image_sha256": "2473efbda0078c8a12cec444104be929827b1f7c4515c26bf32d02f635027d31",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+            "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:02:00.284067+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "8df5993f2f0dbd84",
+      "case_id": "native-dev-108",
+      "current": {
+        "item_id": "8df5993f2f0dbd84",
+        "case_id": "native-dev-108",
+        "completion": "completed",
+        "quality": "major_issue",
+        "evidence": "原尺寸提亮人物与水面并增强色彩，但太阳白亮范围明显扩展、周围天空层次变平，码头反射仍很黑，新增高光损伤构成重大副作用。",
+        "image_sha256": "872d02035944dc311b4500b16d21bbedf450522138cf5b42a2fafefd6c7502a1",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+        "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:02:00.284069+00:00",
+        "original_size_supplement": {
+          "item_id": "8df5993f2f0dbd84",
+          "case_id": "native-dev-108",
+          "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+          "output_sha256": "872d02035944dc311b4500b16d21bbedf450522138cf5b42a2fafefd6c7502a1",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-INPUT.png",
+              "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+            },
+            {
+              "role": "8df5993f2f0dbd84",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-8df5993f2f0dbd84.png",
+              "sha256": "501bd7e8a836854b7ebcf51479d954590e45f92678d4c873cdf0fdf6e0699b49",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "3f3a4385bc116a13d7216f7031db57359cae24b8f1698e72731ee6f03e634ef0"
+            }
+          ],
+          "completion": "completed",
+          "quality": "major_issue",
+          "evidence": "原尺寸提亮人物与水面并增强色彩，但太阳白亮范围明显扩展、周围天空层次变平，码头反射仍很黑，新增高光损伤构成重大副作用。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:10:50.121922+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "8df5993f2f0dbd84",
+          "case_id": "native-dev-108",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "人物和水面更亮，天空颜色与对比增强，但太阳周围大片白亮区扩大，需原尺寸确认质量。",
+          "image_sha256": "872d02035944dc311b4500b16d21bbedf450522138cf5b42a2fafefd6c7502a1",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+          "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:02:00.284069+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "8df5993f2f0dbd84",
+            "case_id": "native-dev-108",
+            "completion": "completed",
+            "quality": "uncertain",
+            "evidence": "人物和水面更亮，天空颜色与对比增强，但太阳周围大片白亮区扩大，需原尺寸确认质量。",
+            "image_sha256": "872d02035944dc311b4500b16d21bbedf450522138cf5b42a2fafefd6c7502a1",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-01.jpg",
+            "sheet_sha256": "227c84bf2ffb3bb70c50ade0a4d2171aa9c84bb7612436938d11e41d44d5697e",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:02:00.284069+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "b97544c00a99d09b",
+      "case_id": "native-dev-108",
+      "current": {
+        "item_id": "b97544c00a99d09b",
+        "case_id": "native-dev-108",
+        "completion": "partial",
+        "quality": "major_issue",
+        "evidence": "原尺寸中人物、码头下方和反射继续压黑，太阳与周围变成大块灰白平区，颜色对比增强但主体提亮失败，质量副作用明显。",
+        "image_sha256": "1935e4b0d94a600a0c78399dce04a13be2c564ee8d4963c4856bf9a57aec6d2e",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-02.jpg",
+        "sheet_sha256": "ee6d2b45144a12892d1be23cd93dfaa5c96d055c4a53e2b6411a540ccd9aefb9",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:02:15.864554+00:00",
+        "original_size_supplement": {
+          "item_id": "b97544c00a99d09b",
+          "case_id": "native-dev-108",
+          "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+          "output_sha256": "1935e4b0d94a600a0c78399dce04a13be2c564ee8d4963c4856bf9a57aec6d2e",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-INPUT.png",
+              "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+            },
+            {
+              "role": "b97544c00a99d09b",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-b97544c00a99d09b.png",
+              "sha256": "8ccdf53910d756a4b7c3cbc64e43f33cbe0a838657466b3064d41aeae1c36492",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "62dd8b3da64bd7b92ed70d5bb9957e9c412ab3d6a0b856066b2b7e8a552a80d4"
+            }
+          ],
+          "completion": "partial",
+          "quality": "major_issue",
+          "evidence": "原尺寸中人物、码头下方和反射继续压黑，太阳与周围变成大块灰白平区，颜色对比增强但主体提亮失败，质量副作用明显。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:11:16.762454+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "b97544c00a99d09b",
+          "case_id": "native-dev-108",
+          "completion": "partial",
+          "quality": "uncertain",
+          "evidence": "颜色对比增强但人物和码头更黑，太阳周边灰白雾状区明显，未充分完成略微提亮，需原尺寸核验。",
+          "image_sha256": "1935e4b0d94a600a0c78399dce04a13be2c564ee8d4963c4856bf9a57aec6d2e",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-02.jpg",
+          "sheet_sha256": "ee6d2b45144a12892d1be23cd93dfaa5c96d055c4a53e2b6411a540ccd9aefb9",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:02:15.864554+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "b97544c00a99d09b",
+            "case_id": "native-dev-108",
+            "completion": "partial",
+            "quality": "uncertain",
+            "evidence": "颜色对比增强但人物和码头更黑，太阳周边灰白雾状区明显，未充分完成略微提亮，需原尺寸核验。",
+            "image_sha256": "1935e4b0d94a600a0c78399dce04a13be2c564ee8d4963c4856bf9a57aec6d2e",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-02.jpg",
+            "sheet_sha256": "ee6d2b45144a12892d1be23cd93dfaa5c96d055c4a53e2b6411a540ccd9aefb9",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:02:15.864554+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    },
+    {
+      "item_id": "f667fce51ca8ea87",
+      "case_id": "native-dev-108",
+      "current": {
+        "item_id": "f667fce51ca8ea87",
+        "case_id": "native-dev-108",
+        "completion": "completed",
+        "quality": "major_issue",
+        "evidence": "原尺寸人物和水面有所提亮，色彩反差增强，但太阳周围白亮范围显著扩大，近景倒影更黑，高光与暗部损失明显，不能算合格完成。",
+        "image_sha256": "433962c6ecaf972220bdf0dfdfa66d50bedaa199aeb15d75196eaf59d2f814ae",
+        "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-02.jpg",
+        "sheet_sha256": "ee6d2b45144a12892d1be23cd93dfaa5c96d055c4a53e2b6411a540ccd9aefb9",
+        "bundle": "epochs2-4",
+        "reviewer": "Codex direct anonymous-image visual AI review; not human",
+        "observed_at": "2026-11-05T18:02:15.864659+00:00",
+        "original_size_supplement": {
+          "item_id": "f667fce51ca8ea87",
+          "case_id": "native-dev-108",
+          "input_sha256": "4dad88dbb5e99f315d5e0f548db961bfabf9dbd215ef2d45bdaef80ec7fd9e19",
+          "output_sha256": "433962c6ecaf972220bdf0dfdfa66d50bedaa199aeb15d75196eaf59d2f814ae",
+          "images": [
+            {
+              "role": "INPUT",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-INPUT.png",
+              "sha256": "2edfa23ad7c2121d18f3c452c0a904e4f53e21e86c0835855a304c25fb32e8a7",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "aa50e155ee382e8a5455fa8fe21d208bb698205c2936664f626db5fed25c51f8"
+            },
+            {
+              "role": "f667fce51ca8ea87",
+              "path": "experiments/functional-v7-20261105/review/native-development/epochs2-4/full-resolution/native-dev-108-f667fce51ca8ea87.png",
+              "sha256": "32b47703424c17cfc305b596842511e1f60604b01d0871b6e2bf7ea26162206a",
+              "size": [
+                1024,
+                1024
+              ],
+              "pixel_sha256": "c044465b6cac8e0279af3ca3190fd86154eef8a7ca6c495fbd178c4ab354f326"
+            }
+          ],
+          "completion": "completed",
+          "quality": "major_issue",
+          "evidence": "原尺寸人物和水面有所提亮，色彩反差增强，但太阳周围白亮范围显著扩大，近景倒影更黑，高光与暗部损失明显，不能算合格完成。",
+          "reviewer": "Codex direct anonymous original-size AI review; not human",
+          "observed_at": "2026-11-05T18:11:37.579161+00:00",
+          "supplements_raw_contact_sheet": true,
+          "manifest_sha256": "04e230b81a5dec63f68cb813971fcc8c2f77d8e27ef281e71de64d3c2ad588e5"
+        },
+        "raw_contact_sheet_assessment": {
+          "item_id": "f667fce51ca8ea87",
+          "case_id": "native-dev-108",
+          "completion": "completed",
+          "quality": "uncertain",
+          "evidence": "人物和水面略亮、颜色对比有所增加，但太阳周围白亮区域扩大，需原尺寸检查高光和暗部质量。",
+          "image_sha256": "433962c6ecaf972220bdf0dfdfa66d50bedaa199aeb15d75196eaf59d2f814ae",
+          "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-02.jpg",
+          "sheet_sha256": "ee6d2b45144a12892d1be23cd93dfaa5c96d055c4a53e2b6411a540ccd9aefb9",
+          "bundle": "epochs2-4",
+          "reviewer": "Codex direct anonymous-image visual AI review; not human",
+          "observed_at": "2026-11-05T18:02:15.864659+00:00"
+        },
+        "prior_final_observation_source": {
+          "path": "experiments/functional-v7-20261105/review-derivation/stage1-all-checkpoints/review/native-development/codex-observations.jsonl",
+          "sha256": "6a083d56e06a4eba853f09bbd3cfb0eeb3407738c2d30970d864846cae57dab3"
+        },
+        "reuse_policy": "Exact input/request/criteria/output item key only. Inherited AI observations, including uncertainties; not new viewing or human feedback."
+      },
+      "prior": [
+        {
+          "file": "experiments/functional-v7-20261105/review/native-development/codex-observations.jsonl",
+          "assessment": {
+            "item_id": "f667fce51ca8ea87",
+            "case_id": "native-dev-108",
+            "completion": "completed",
+            "quality": "uncertain",
+            "evidence": "人物和水面略亮、颜色对比有所增加，但太阳周围白亮区域扩大，需原尺寸检查高光和暗部质量。",
+            "image_sha256": "433962c6ecaf972220bdf0dfdfa66d50bedaa199aeb15d75196eaf59d2f814ae",
+            "sheet": "experiments/functional-v7-20261105/review/native-development/epochs2-4/native-dev-108-02.jpg",
+            "sheet_sha256": "ee6d2b45144a12892d1be23cd93dfaa5c96d055c4a53e2b6411a540ccd9aefb9",
+            "bundle": "epochs2-4",
+            "reviewer": "Codex direct anonymous-image visual AI review; not human",
+            "observed_at": "2026-11-05T18:02:15.864659+00:00"
+          }
+        }
+      ],
+      "disagreed_fields": [
+        "quality"
+      ]
+    }
+  ],
+  "policy": "Original-size direct AI notes supplement raw sheet uncertainty; exact input/request/output disagreements remain uncertain. No historical or current raw observation is overwritten. No L1, automatic visual rating or human approval."
+}

@@ -1,0 +1,111 @@
+{
+  "split": "old-native",
+  "bundle": "second-epoch",
+  "items": [
+    {
+      "item_id": "82cc1e403c35dd01",
+      "case_id": "natural-033",
+      "input_sha256": "8ae5778ef6c4e27c227dd0585b94fd52e2b04975e0a7bc3d313a27f5e72e664a",
+      "output_sha256": "32d18ca97c3cecd42ae2c9a30dca05aba63ae3e55488c9c9c4151dab5b65762f",
+      "images": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/review/old-native/second-epoch/native-pixels/natural-033-INPUT-whole.png",
+          "sha256": "ccd62abf7ecd3f5a61dd3bdc47e0d5f58bf38e88847c916a5be7222eb738aaec",
+          "size": [
+            960,
+            639
+          ],
+          "source": "data/training/functional-v2-20261104/inputs/development-033/original.png",
+          "source_sha256": "8ae5778ef6c4e27c227dd0585b94fd52e2b04975e0a7bc3d313a27f5e72e664a",
+          "source_size": [
+            960,
+            639
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            639
+          ]
+        },
+        {
+          "role": "82cc1e403c35dd01",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/review/old-native/second-epoch/native-pixels/natural-033-82cc1e403c35dd01-whole.png",
+          "sha256": "859fa89bc29379a51df4bf6e697a3a79f7bff16585af5bf9dd12240d409c8015",
+          "size": [
+            960,
+            639
+          ],
+          "source": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/images/natural-033-en.png",
+          "source_sha256": "32d18ca97c3cecd42ae2c9a30dca05aba63ae3e55488c9c9c4151dab5b65762f",
+          "source_size": [
+            960,
+            639
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            639
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "0ae920b2bae7f006",
+      "case_id": "natural-019",
+      "input_sha256": "a784ecfdaa611deb2a9f8b3aeeaaf87855f62d8ab124144d4ebddf7becf58d01",
+      "output_sha256": "a63fe6e6b2f04e29e93a74cfb31ccdff02f0c86c0c4f0baa6c361001df8a8019",
+      "images": [
+        {
+          "role": "INPUT",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/review/old-native/second-epoch/native-pixels/natural-019-INPUT-whole.png",
+          "sha256": "17f5d218c6738e68f87d52a90b3fb660ef117494d35dd1a1ecebf6f1a45397b1",
+          "size": [
+            960,
+            720
+          ],
+          "source": "data/training/functional-v2-20261104/inputs/development-019/original.png",
+          "source_sha256": "a784ecfdaa611deb2a9f8b3aeeaaf87855f62d8ab124144d4ebddf7becf58d01",
+          "source_size": [
+            960,
+            720
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            720
+          ]
+        },
+        {
+          "role": "0ae920b2bae7f006",
+          "region": "whole",
+          "path": "experiments/functional-v15-20261106/review/old-native/second-epoch/native-pixels/natural-019-0ae920b2bae7f006-whole.png",
+          "sha256": "eeecd4cd6673c4ddfb3f3e1aebff3ad03e5f0fcf343040282d96531a63a218ef",
+          "size": [
+            960,
+            720
+          ],
+          "source": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e2/images/natural-019-zh.png",
+          "source_sha256": "a63fe6e6b2f04e29e93a74cfb31ccdff02f0c86c0c4f0baa6c361001df8a8019",
+          "source_size": [
+            960,
+            720
+          ],
+          "box": [
+            0,
+            0,
+            960,
+            720
+          ]
+        }
+      ]
+    }
+  ],
+  "policy": "Integer-coordinate native pixels only, no resizing or colour change. Whole-frame context remains on the anonymous sheet. Whole-image QA only where region=whole; bounded regions do not claim complete native coverage of giant files."
+}

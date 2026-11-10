@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-05T19:40:38.480437+00:00",
+  "checks": [
+    {
+      "path": "/v9",
+      "status": 200
+    },
+    {
+      "path": "/api/v9/experiment",
+      "status": 200
+    },
+    {
+      "path": "/v9?kind=excluded",
+      "status": 200
+    },
+    {
+      "path": "/v9/evaluation-image/native-acceptance/base-init/native-accept-001/zh/before",
+      "status": 404
+    }
+  ],
+  "actual_model_inference": false,
+  "acceptance_routes_closed": true
+}

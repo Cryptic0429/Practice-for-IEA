@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-05T17:20:07.622744+00:00",
+  "status": "clarification_before_direct_grading_of_any_round7_developer_result",
+  "frozen_evaluation_protocol_sha256": "56dcc62b7cc6f424b47d7ddc3b2d4a52494575a4c8404d253d446922ea809c3e",
+  "reason": "The user explicitly requires comparisons under the same new prompt and editor. Improvement over the old original pipeline alone cannot establish improvement from training.",
+  "unchanged": "All previously frozen native16/20, old4/6, zero-major, decision20/20 and controlled81/100 gates, case files, data and training settings remain unchanged.",
+  "additional_interpretation": "Before promotion or replication, a new checkpoint must also demonstrate functional superiority to the strongest same-new-runtime untrained baseline among the current default and its round6 parent. A higher completion count with no new major damage can establish this; a count tie requires a favourable identity-hidden paired visual comparison under the existing frozen ranking. Equal or worse results do not establish training benefit. Tool-only or prompt-only improvements are reported separately.",
+  "baseline_generation_status": "Some baseline predictions already exist; only execution/status counts have been inspected, not their images or functional grades. No new checkpoint predictions or direct developer-image grades have been inspected.",
+  "review_code_hashes": {
+    "scripts/functional_v7/visual_review.py": "f67444a268241dbbf9679f82259b1cd10fb02304c5f584d538a5070c56d6effb",
+    "scripts/functional_v6/visual_review.py": "6f8f72dad880a01bd51fad032ade729bebf5720bb249dfad3d0ba822426c4023"
+  },
+  "GPU_limit_unchanged": 16
+}

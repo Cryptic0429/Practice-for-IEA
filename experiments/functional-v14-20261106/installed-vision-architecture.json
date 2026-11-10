@@ -1,0 +1,252 @@
+{
+  "at": "2026-11-06T10:55:13.759988+00:00",
+  "vision_config": {
+    "return_dict": true,
+    "output_hidden_states": false,
+    "torchscript": false,
+    "dtype": null,
+    "pruned_heads": {},
+    "tie_word_embeddings": true,
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "is_decoder": false,
+    "cross_attention_hidden_size": null,
+    "add_cross_attention": false,
+    "tie_encoder_decoder": false,
+    "architectures": null,
+    "finetuning_task": null,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "task_specific_params": null,
+    "problem_type": null,
+    "tokenizer_class": null,
+    "prefix": null,
+    "bos_token_id": null,
+    "pad_token_id": null,
+    "eos_token_id": null,
+    "sep_token_id": null,
+    "decoder_start_token_id": null,
+    "max_length": 20,
+    "min_length": 0,
+    "do_sample": false,
+    "early_stopping": false,
+    "num_beams": 1,
+    "num_beam_groups": 1,
+    "diversity_penalty": 0.0,
+    "temperature": 1.0,
+    "top_k": 50,
+    "top_p": 1.0,
+    "typical_p": 1.0,
+    "repetition_penalty": 1.0,
+    "length_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "encoder_no_repeat_ngram_size": 0,
+    "bad_words_ids": null,
+    "num_return_sequences": 1,
+    "output_scores": false,
+    "return_dict_in_generate": false,
+    "forced_bos_token_id": null,
+    "forced_eos_token_id": null,
+    "remove_invalid_values": false,
+    "exponential_decay_length_penalty": null,
+    "suppress_tokens": null,
+    "begin_suppress_tokens": null,
+    "_name_or_path": "",
+    "transformers_version": "4.56.2",
+    "in_chans": 3,
+    "spatial_patch_size": 14,
+    "tf_legacy_loss": false,
+    "use_bfloat16": false,
+    "depth": 32,
+    "hidden_size": 1280,
+    "hidden_act": "silu",
+    "intermediate_size": 3420,
+    "num_heads": 16,
+    "in_channels": 3,
+    "patch_size": 14,
+    "spatial_merge_size": 2,
+    "temporal_patch_size": 2,
+    "tokens_per_second": 2,
+    "window_size": 112,
+    "fullatt_block_indexes": [
+      7,
+      15,
+      23,
+      31
+    ],
+    "out_hidden_size": 3584,
+    "initializer_range": 0.02,
+    "model_type": "qwen2_5_vl",
+    "output_attentions": false
+  },
+  "last4_linear_modules": [
+    {
+      "name": "model.visual.blocks.28.attn.qkv",
+      "shape": [
+        3840,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.28.attn.proj",
+      "shape": [
+        1280,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.28.mlp.gate_proj",
+      "shape": [
+        3420,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.28.mlp.up_proj",
+      "shape": [
+        3420,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.28.mlp.down_proj",
+      "shape": [
+        1280,
+        3420
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.29.attn.qkv",
+      "shape": [
+        3840,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.29.attn.proj",
+      "shape": [
+        1280,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.29.mlp.gate_proj",
+      "shape": [
+        3420,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.29.mlp.up_proj",
+      "shape": [
+        3420,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.29.mlp.down_proj",
+      "shape": [
+        1280,
+        3420
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.30.attn.qkv",
+      "shape": [
+        3840,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.30.attn.proj",
+      "shape": [
+        1280,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.30.mlp.gate_proj",
+      "shape": [
+        3420,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.30.mlp.up_proj",
+      "shape": [
+        3420,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.30.mlp.down_proj",
+      "shape": [
+        1280,
+        3420
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.31.attn.qkv",
+      "shape": [
+        3840,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.31.attn.proj",
+      "shape": [
+        1280,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.31.mlp.gate_proj",
+      "shape": [
+        3420,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.31.mlp.up_proj",
+      "shape": [
+        3420,
+        1280
+      ],
+      "class_name": "Linear"
+    },
+    {
+      "name": "model.visual.blocks.31.mlp.down_proj",
+      "shape": [
+        1280,
+        3420
+      ],
+      "class_name": "Linear"
+    }
+  ],
+  "forward_performed": false,
+  "GPU_hours": 0
+}

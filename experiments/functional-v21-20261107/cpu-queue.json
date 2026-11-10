@@ -1,0 +1,83 @@
+{
+  "at": "2026-11-07T01:47:31.809314+00:00",
+  "status": "completed",
+  "jobs": [
+    {
+      "args": [
+        "functional_v21.train"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v21.evaluate",
+        "--model",
+        "magnitude-e20",
+        "--policy",
+        "magnitude",
+        "--head",
+        "experiments/functional-v21-20261107/runs/seed-20261205/checkpoint-20.pt"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v21.evaluate",
+        "--model",
+        "magnitude-quality-e20",
+        "--policy",
+        "magnitude-quality",
+        "--head",
+        "experiments/functional-v21-20261107/runs/seed-20261205/checkpoint-20.pt"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v21.evaluate",
+        "--model",
+        "magnitude-e80",
+        "--policy",
+        "magnitude",
+        "--head",
+        "experiments/functional-v21-20261107/runs/seed-20261205/checkpoint-80.pt"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v21.evaluate",
+        "--model",
+        "magnitude-quality-e80",
+        "--policy",
+        "magnitude-quality",
+        "--head",
+        "experiments/functional-v21-20261107/runs/seed-20261205/checkpoint-80.pt"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v21.seed_reviews"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "functional_v21.visual_review",
+        "prepare",
+        "--split",
+        "old-native",
+        "--models",
+        "magnitude-e20",
+        "magnitude-quality-e20",
+        "magnitude-e80",
+        "magnitude-quality-e80",
+        "--name",
+        "shared-head-policies"
+      ],
+      "returncode": 0
+    }
+  ],
+  "GPU_calls": 0
+}

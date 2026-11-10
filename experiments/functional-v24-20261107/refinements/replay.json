@@ -1,0 +1,161 @@
+{
+  "at": "2026-11-07T06:26:09.097366+00:00",
+  "plan_sha256": "158e2098ae43c690a5da9b12b8dca7a78b8010a2798320aff51d812d4feec26b",
+  "cases": [
+    {
+      "id": "p444",
+      "source_sha256": "fa74b35ebb136225f2b04b421b0229fcb7f5d783304d4361fbc830d95f3372b1",
+      "native_crop_box": [
+        879,
+        724,
+        1169,
+        914
+      ],
+      "full_frame_size": [
+        2048,
+        2048
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "path": "experiments/functional-v24-20261107/refinements/candidates/p444-0.png",
+          "sha256": "985c6b0063ba807dfaa88e6e99f26bcc58006ea53a88482a42d96c5d036656cd",
+          "decision": {
+            "action": "keep"
+          }
+        },
+        {
+          "index": 1,
+          "path": "experiments/functional-v24-20261107/refinements/candidates/p444-1.png",
+          "sha256": "db9c71ea2a5ac5c1f39b8bb17b717a5f20fec2f23b9251db14cda9190354236e",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "shadows": 75
+            }
+          }
+        },
+        {
+          "index": 2,
+          "path": "experiments/functional-v24-20261107/refinements/candidates/p444-2.png",
+          "sha256": "48e3efe87ac9154234b37a733bac09f4624e4276b8a4231de3618f62499870c6",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 35,
+              "shadows": 65
+            }
+          }
+        }
+      ],
+      "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+      "panel": "p444.png",
+      "panel_sha256": "7cbd8745fa96e3bf6b81b7b4ca02592881e59b096be55c81ef187c52fec46abd"
+    },
+    {
+      "id": "p425",
+      "source_sha256": "06952f8e47838591a52d5252c2019996f0aee029e205a766d93c4f4d6c4d24b6",
+      "native_crop_box": [
+        1935,
+        1581,
+        2225,
+        1771
+      ],
+      "full_frame_size": [
+        4000,
+        2992
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "path": "experiments/functional-v24-20261107/refinements/candidates/p425-0.png",
+          "sha256": "0be67d5dc22649e605991fe09edd01ee3782c57a7e4389f221ac16efce1cd525",
+          "decision": {
+            "action": "keep"
+          }
+        },
+        {
+          "index": 1,
+          "path": "experiments/functional-v24-20261107/refinements/candidates/p425-1.png",
+          "sha256": "0cbc0b5a5fb61ec40cf44c064ecd8c29da93aca413636a83744cf60d7fd24ead",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 35,
+              "shadows": 75
+            }
+          }
+        },
+        {
+          "index": 2,
+          "path": "experiments/functional-v24-20261107/refinements/candidates/p425-2.png",
+          "sha256": "9352ca682600b6c597827d514500263daa8677261cfbf2f6608b1d89a75b60ea",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 50,
+              "shadows": 85,
+              "saturation": -35
+            }
+          }
+        }
+      ],
+      "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+      "panel": "p425.png",
+      "panel_sha256": "d76c7f3d28ebeff4b09654343cbaf221259b5549d650097d2293b585eefb297a"
+    },
+    {
+      "id": "p389",
+      "source_sha256": "e8c3cce23c01a1d2d33494d03b3cbe96a2ca765430035fc53d772093b15b391f",
+      "native_crop_box": [
+        3335,
+        2825,
+        3625,
+        3015
+      ],
+      "full_frame_size": [
+        6000,
+        4000
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "path": "experiments/functional-v24-20261107/refinements/candidates/p389-0.png",
+          "sha256": "ac3a9dab90ca3bb9ea5d3075f30372896212245401689ef6f50e0e869d755776",
+          "decision": {
+            "action": "keep"
+          }
+        },
+        {
+          "index": 1,
+          "path": "experiments/functional-v24-20261107/refinements/candidates/p389-1.png",
+          "sha256": "17166556c1ea91093da25a61142938ff9b25e1de9559567ee12c271420315df7",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 35,
+              "shadows": 75
+            }
+          }
+        },
+        {
+          "index": 2,
+          "path": "experiments/functional-v24-20261107/refinements/candidates/p389-2.png",
+          "sha256": "d82a29c38b109010dd3189fefd97c62c2dbf2a106dc3a6dc86c9e00fae3dbf02",
+          "decision": {
+            "action": "edit",
+            "parameters": {
+              "exposure": 55,
+              "shadows": 85,
+              "highlights": -20
+            }
+          }
+        }
+      ],
+      "editor": "functional-editor-v15-shared-shadow-gain-candidate",
+      "panel": "p389.png",
+      "panel_sha256": "cd1124de9c33e5a006324926082331693ab87861e70a08464256fbe89c252731"
+    }
+  ],
+  "GPU_hours": 0
+}

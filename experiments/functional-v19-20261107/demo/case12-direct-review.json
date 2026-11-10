@@ -1,0 +1,36 @@
+{
+  "at": "2026-11-07T00:16:47.248671+00:00",
+  "reviewer": "Codex direct native-pixel AI review; not human/user feedback",
+  "input": "data/images/7QSfy_7QSfy.jpg",
+  "input_sha256": "ddaad7fef7d08ddef197579b74ee86b7a08cdb5845d6e254fad2f6295e5d6195",
+  "input_and_results_size": [
+    960,
+    720
+  ],
+  "records": [
+    {
+      "language": "zh",
+      "request_id": "c61d8746a0f74956bd16a38a5a8e88fa",
+      "result": "experiments/functional-v19-20261107/demo/case12-zh-result.png",
+      "output_sha256": "05fb2a589a656f2dfff25c210d696c2b4531cfc0eac772a5e20934058a4c9559",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "Viewed the original960x720 input and this whole960x720 result. Foliage, path, mountains and sky receive a clear overall brown/sepia tone; framing, object boundaries, visible foliage/path texture and cloud shapes remain. Original softness is not claimed repaired. No broad new white clipping obscures the scene. This meets the literal brown-tone request, without claiming reference-pixel matching or general usefulness."
+    },
+    {
+      "language": "en",
+      "request_id": "cd6567514ab544e4973c9141f1aa0483",
+      "result": "experiments/functional-v19-20261107/demo/browser-download.png",
+      "output_sha256": "d427c8bfdaeb5338b9ed9a2f6a6905597b88900f74e6c077a653cbba4a415c6b",
+      "completion": "completed",
+      "quality": "acceptable",
+      "evidence": "Viewed the original960x720 input and this whole960x720 result. Foliage, path, mountains and sky receive a clear overall brown/sepia tone; framing, object boundaries, visible foliage/path texture and cloud shapes remain. Original softness is not claimed repaired. No broad new white clipping obscures the scene. This meets the literal brown-tone request, without claiming reference-pixel matching or general usefulness."
+    }
+  ],
+  "semantic_cases": 1,
+  "language_versions": 2,
+  "used_for_checkpoint_selection": false,
+  "independent_acceptance": false,
+  "model_selection_unchanged": true,
+  "limitation": "Repeatedly viewed historical source, now tested after the fixed failed model choice. One successful brown-tone regression is not evidence of overall practical usefulness."
+}

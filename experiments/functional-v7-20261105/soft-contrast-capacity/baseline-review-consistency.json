@@ -1,0 +1,217 @@
+{
+  "policy": "Same-pixel baseline disagreements retained as uncertain; earlier records are unchanged. No baseline score is replaced by this probe.",
+  "conflicts": [
+    {
+      "item_id": "train-007-restore-contrast-mild-8deae99b7d41",
+      "image_sha256": "1d8236f787ffefaffa47527aeeae022334a1b204299db0862d066fc836476915",
+      "fields": [
+        "completion"
+      ],
+      "previous": {
+        "item_id": "train-007-restore-contrast-mild-8deae99b7d41",
+        "case_id": "train-007-restore-contrast-mild",
+        "completion": "partial",
+        "quality": "acceptable",
+        "evidence": "The image remains relatively flat and the costumes retain a grey cast; restoration of natural contrast is incomplete.",
+        "sheet": "experiments/functional-v7-20261105/rgb-contrast-capacity/train-007-restore-contrast-mild.jpg",
+        "sheet_sha256": "e5d9f316fa6584f31bb74008197ced08e07de0b30264b796db52e38fee149006",
+        "reviewer": "Codex direct comparative visual AI review; not human",
+        "at": "2026-11-05T11:49:03.136687+00:00",
+        "new_training_admission": false
+      },
+      "current": {
+        "case_id": "train-007-restore-contrast-mild",
+        "label": "8deae99b7d41",
+        "completion": "complete",
+        "quality": "acceptable_at_panel_scale",
+        "notes": "输入灰雾较轻；输出主体和道路分离清楚，未见明显新增损伤。",
+        "needs_full_resolution": false
+      },
+      "resolution": {
+        "completion": "uncertain"
+      }
+    },
+    {
+      "item_id": "train-016-restore-contrast-mild-c38cdb899bcf",
+      "image_sha256": "9c0e8f9a704465beef7e82e64371d91b54cddbc1251941ac4b1e881eee2d0f06",
+      "fields": [
+        "completion"
+      ],
+      "previous": {
+        "item_id": "train-016-restore-contrast-mild-c38cdb899bcf",
+        "case_id": "train-016-restore-contrast-mild",
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "The baby clothing, trousers and background regain useful tonal separation with a natural face and readable knit detail at this scale.",
+        "sheet": "experiments/functional-v7-20261105/rgb-contrast-capacity/train-016-restore-contrast-mild.jpg",
+        "sheet_sha256": "3a8f8264ec124cd139cb68b635b6ca117c919e3a92228683901ae7ceb4f5a8a6",
+        "reviewer": "Codex direct comparative visual AI review; not human",
+        "at": "2026-11-05T11:49:03.138792+00:00",
+        "new_training_admission": false
+      },
+      "current": {
+        "case_id": "train-016-restore-contrast-mild",
+        "label": "c38cdb899bcf",
+        "completion": "partial",
+        "quality": "acceptable_at_panel_scale",
+        "notes": "有改善，但牛仔裤及头部背景仍偏灰，恢复不充分。",
+        "needs_full_resolution": false
+      },
+      "resolution": {
+        "completion": "uncertain"
+      }
+    },
+    {
+      "item_id": "train-025-restore-contrast-strong-65517557280f",
+      "image_sha256": "2e4d8ce7d91410d14ed0eaf257890b08fc0cef36f0e7ec76cac41dc35a46d310",
+      "fields": [
+        "quality"
+      ],
+      "previous": {
+        "item_id": "train-025-restore-contrast-strong-65517557280f",
+        "case_id": "train-025-restore-contrast-strong",
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "Hair and face regain visible separation from the strongly grey input, with eyes, lips and fine hair regions still legible; different valid renderings need not match old pixels.",
+        "sheet": "experiments/functional-v7-20261105/rgb-contrast-capacity/train-025-restore-contrast-strong.jpg",
+        "sheet_sha256": "e02a2571407009e28af553139376869afb9be4bb0b59c61ad375357c3490544f",
+        "reviewer": "Codex direct comparative visual AI review; not human",
+        "at": "2026-11-05T11:49:03.139618+00:00",
+        "new_training_admission": false
+      },
+      "current": {
+        "case_id": "train-025-restore-contrast-strong",
+        "label": "65517557280f",
+        "completion": "complete",
+        "quality": "uncertain",
+        "notes": "去灰较强；右侧衣袖边缘很亮，需全尺寸确认织物是否损失。",
+        "needs_full_resolution": true
+      },
+      "resolution": {
+        "quality": "uncertain"
+      }
+    },
+    {
+      "item_id": "train-025-restore-contrast-strong-74338fc24258",
+      "image_sha256": "bd9575c9f218523f0b1c7205f0a8ae6af3635e4ece6560a8ee7c014c4969f0ff",
+      "fields": [
+        "completion"
+      ],
+      "previous": {
+        "item_id": "train-025-restore-contrast-strong-74338fc24258",
+        "case_id": "train-025-restore-contrast-strong",
+        "completion": "partial",
+        "quality": "acceptable",
+        "evidence": "Face and hair remain broadly grey and flat, leaving the restoration incomplete.",
+        "sheet": "experiments/functional-v7-20261105/rgb-contrast-capacity/train-025-restore-contrast-strong.jpg",
+        "sheet_sha256": "e02a2571407009e28af553139376869afb9be4bb0b59c61ad375357c3490544f",
+        "reviewer": "Codex direct comparative visual AI review; not human",
+        "at": "2026-11-05T11:49:03.139620+00:00",
+        "new_training_admission": false
+      },
+      "current": {
+        "case_id": "train-025-restore-contrast-strong",
+        "label": "74338fc24258",
+        "completion": "complete",
+        "quality": "acceptable_at_panel_scale",
+        "notes": "黑位及脸部明暗分离恢复，但颜色仍较淡。",
+        "needs_full_resolution": false
+      },
+      "resolution": {
+        "completion": "uncertain"
+      }
+    },
+    {
+      "item_id": "train-034-restore-contrast-strong-7cf64babcae4",
+      "image_sha256": "b4a65bd07a0fcdfd102c9c608d89ab775e56ab3849e8a0979a54fb9b7d4ab525",
+      "fields": [
+        "quality"
+      ],
+      "previous": {
+        "item_id": "train-034-restore-contrast-strong-7cf64babcae4",
+        "case_id": "train-034-restore-contrast-strong",
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "The grey veil is corrected with natural dark clothing/face separation and clearer green grass; subject content remains intact.",
+        "sheet": "experiments/functional-v7-20261105/rgb-contrast-capacity/train-034-restore-contrast-strong.jpg",
+        "sheet_sha256": "ded1aa68024cbd4a70ab1c2df029593e487ef8699bb211c781b710132e54c8fb",
+        "reviewer": "Codex direct comparative visual AI review; not human",
+        "at": "2026-11-05T11:49:03.141028+00:00",
+        "new_training_admission": false
+      },
+      "current": {
+        "case_id": "train-034-restore-contrast-strong",
+        "label": "7cf64babcae4",
+        "completion": "complete",
+        "quality": "uncertain",
+        "notes": "去灰明显，白帽和上衣高亮区域较大，须核验细节。",
+        "needs_full_resolution": true
+      },
+      "resolution": {
+        "quality": "uncertain"
+      }
+    },
+    {
+      "item_id": "native-train-n048-91ddb5efec56",
+      "image_sha256": "40f2a92e7681f0dcbed11edfbb1a7e666a3954b51043aa3d188b063657d1ad30",
+      "fields": [
+        "completion",
+        "quality"
+      ],
+      "previous": {
+        "item_id": "native-train-n048-91ddb5efec56",
+        "case_id": "native-train-n048",
+        "completion": "completed",
+        "quality": "acceptable",
+        "evidence": "This exact previously adopted bridal target retains its earlier full-size lace/fold review; the current full-frame comparison does not replace that evidence.",
+        "sheet": "experiments/functional-v7-20261105/rgb-contrast-capacity/native-train-n048.jpg",
+        "sheet_sha256": "580cb90202d2065476615879a79e0244c4fd7b8296ef181c2a64f307d0d265bb",
+        "reviewer": "Codex direct comparative visual AI review; not human",
+        "at": "2026-11-05T11:49:03.142035+00:00",
+        "new_training_admission": false
+      },
+      "current": {
+        "case_id": "native-train-n048",
+        "label": "91ddb5efec56",
+        "completion": "partial",
+        "quality": "uncertain",
+        "notes": "明暗分离增强，但整体提亮是否足够不明确；婚纱须全尺寸复核。",
+        "needs_full_resolution": true
+      },
+      "resolution": {
+        "completion": "uncertain",
+        "quality": "uncertain"
+      }
+    },
+    {
+      "item_id": "native-train-n048-86b6aa372faa",
+      "image_sha256": "ca978c01e853097d6d44d08ecbf23c20f5636d733034cfa78410075c8e91eddd",
+      "fields": [
+        "completion"
+      ],
+      "previous": {
+        "item_id": "native-train-n048-86b6aa372faa",
+        "case_id": "native-train-n048",
+        "completion": "uncertain",
+        "quality": "uncertain",
+        "evidence": "Faces lift but this bridal photograph requires full-size checking of white skirt/hip folds and floral lace before accepting the new rendering.",
+        "sheet": "experiments/functional-v7-20261105/rgb-contrast-capacity/native-train-n048.jpg",
+        "sheet_sha256": "580cb90202d2065476615879a79e0244c4fd7b8296ef181c2a64f307d0d265bb",
+        "reviewer": "Codex direct comparative visual AI review; not human",
+        "at": "2026-11-05T11:49:03.142034+00:00",
+        "new_training_admission": false
+      },
+      "current": {
+        "case_id": "native-train-n048",
+        "label": "86b6aa372faa",
+        "completion": "partial",
+        "quality": "uncertain",
+        "notes": "暗部提亮，但图像略灰，对比度提高不明确；婚纱须全尺寸复核。",
+        "needs_full_resolution": true
+      },
+      "resolution": {
+        "completion": "uncertain"
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "at": "2026-11-07T07:49:07.818173+00:00",
+  "protocol_sha256": "b15c01032a68751249f2b390fc66f1f4193b3569e775c607fda7f4b599973c5e",
+  "device": "cpu",
+  "correct": 5,
+  "approved_bad": 1,
+  "refused_good": 2,
+  "rows": [
+    {
+      "id": "grain-portrait",
+      "candidate": "1",
+      "path": "experiments/functional-v28-20261107/absolute-boards/grain-portrait-1.png",
+      "sha256": "9f9f4717c0665b5b879cf99eafd524cc342b1925ebfa196fccd51093757fecc7",
+      "instruction": "Gently lift the shadows in this indoor portrait, keeping skin colour and hair detail without making grain stand out.",
+      "expected": "Yes",
+      "logits": {
+        "Yes": 22.26852035522461,
+        "No": 22.329994201660156
+      },
+      "selected": "No",
+      "unconstrained_top5": [
+        "No",
+        "Yes",
+        "NO",
+        "None",
+        "YES"
+      ]
+    },
+    {
+      "id": "grain-portrait",
+      "candidate": "2",
+      "path": "experiments/functional-v28-20261107/absolute-boards/grain-portrait-2.png",
+      "sha256": "ac4dce19fba2a0eb6f47a14f0125abe028c0074b7c6bef3303e6d4ec2463c469",
+      "instruction": "Gently lift the shadows in this indoor portrait, keeping skin colour and hair detail without making grain stand out.",
+      "expected": "No",
+      "logits": {
+        "Yes": 22.499717712402344,
+        "No": 22.27703094482422
+      },
+      "selected": "Yes",
+      "unconstrained_top5": [
+        "Yes",
+        "No",
+        "NO",
+        "None",
+        "YES"
+      ]
+    },
+    {
+      "id": "woodland-neither",
+      "candidate": "1",
+      "path": "experiments/functional-v28-20261107/absolute-boards/woodland-neither-1.png",
+      "sha256": "e91d115a75388f0a359b28418b2305f4a12ad39bceaf3e01010a92e34b39df91",
+      "instruction": "Lift the shadows of this woodland night scene so the trunks and ground in the lower half are clearly recognizable, without obvious colour blotches.",
+      "expected": "No",
+      "logits": {
+        "Yes": 21.600536346435547,
+        "No": 25.0059871673584
+      },
+      "selected": "No",
+      "unconstrained_top5": [
+        "No",
+        "Yes",
+        "NO",
+        " No",
+        "None"
+      ]
+    },
+    {
+      "id": "woodland-neither",
+      "candidate": "2",
+      "path": "experiments/functional-v28-20261107/absolute-boards/woodland-neither-2.png",
+      "sha256": "ae250445aee4795ead47c47ba60a0ee82ff149171733f3f44b850c786ab0cd77",
+      "instruction": "Lift the shadows of this woodland night scene so the trunks and ground in the lower half are clearly recognizable, without obvious colour blotches.",
+      "expected": "No",
+      "logits": {
+        "Yes": 21.67384910583496,
+        "No": 24.931331634521484
+      },
+      "selected": "No",
+      "unconstrained_top5": [
+        "No",
+        "Yes",
+        "NO",
+        " No",
+        "None"
+      ]
+    },
+    {
+      "id": "brown-vs-warm",
+      "candidate": "1",
+      "path": "experiments/functional-v28-20261107/absolute-boards/brown-vs-warm-1.png",
+      "sha256": "12e64cf0fe697d5b8bc369e1135cfacf82b5b6206d54266a94effc5d422d4fa7",
+      "instruction": "Apply a noticeable vintage brown sepia tone to the whole photo while keeping the valley and vegetation detail.",
+      "expected": "Yes",
+      "logits": {
+        "Yes": 22.019319534301758,
+        "No": 21.910621643066406
+      },
+      "selected": "Yes",
+      "unconstrained_top5": [
+        "Yes",
+        "No",
+        "NO",
+        "YES",
+        " Yes"
+      ]
+    },
+    {
+      "id": "brown-vs-warm",
+      "candidate": "2",
+      "path": "experiments/functional-v28-20261107/absolute-boards/brown-vs-warm-2.png",
+      "sha256": "39bbbaf23541050101ca1a74b0452a624c04060dead11859a22b65d65d909b24",
+      "instruction": "Apply a noticeable vintage brown sepia tone to the whole photo while keeping the valley and vegetation detail.",
+      "expected": "No",
+      "logits": {
+        "Yes": 21.449758529663086,
+        "No": 22.939477920532227
+      },
+      "selected": "No",
+      "unconstrained_top5": [
+        "No",
+        "Yes",
+        "NO",
+        " No",
+        "None"
+      ]
+    },
+    {
+      "id": "shadow-direction",
+      "candidate": "1",
+      "path": "experiments/functional-v28-20261107/absolute-boards/shadow-direction-1.png",
+      "sha256": "84573cff94cfd9e43398715a7e2389eadec75dff91ccfeeecec4ab7db0e88662",
+      "instruction": "Noticeably darken the shadows in the lakeside foreground, retaining detail in the bright water and sky.",
+      "expected": "Yes",
+      "logits": {
+        "Yes": 21.458873748779297,
+        "No": 22.71966552734375
+      },
+      "selected": "No",
+      "unconstrained_top5": [
+        "No",
+        "Yes",
+        "NO",
+        "None",
+        "The"
+      ]
+    },
+    {
+      "id": "shadow-direction",
+      "candidate": "2",
+      "path": "experiments/functional-v28-20261107/absolute-boards/shadow-direction-2.png",
+      "sha256": "4102ede9fd00e2d1839538625c10e07d8f1c402111ed31b95749e399deae9187",
+      "instruction": "Noticeably darken the shadows in the lakeside foreground, retaining detail in the bright water and sky.",
+      "expected": "No",
+      "logits": {
+        "Yes": 21.38396453857422,
+        "No": 23.236766815185547
+      },
+      "selected": "No",
+      "unconstrained_top5": [
+        "No",
+        "Yes",
+        "NO",
+        "None",
+        "Not"
+      ]
+    }
+  ],
+  "GPU_hours": 0,
+  "deployed": false
+}

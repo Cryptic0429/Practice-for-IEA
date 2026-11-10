@@ -1,0 +1,21 @@
+{
+  "description": "Post-freeze index only; authoritative immutable settings are training-protocol.json",
+  "protocol": "experiments/functional-v20-20261107/training-protocol.json",
+  "protocol_sha256": "813159880d27babb0f6114b083acf641d0585ac642568d1bf76be722c07e5a32",
+  "parent": "models/from-functional-v11/sft-shadow-correction/seed-01",
+  "parent_sha256": "97c84f1799fb319799c86515402574b3b585593763e5388eb30d0df3e0d6ea90",
+  "routes": [
+    "last",
+    "request_mean"
+  ],
+  "training_cases": "data/training/functional-v20-20261107/cases.json",
+  "entrypoints": {
+    "features": "functional_v20.features",
+    "train": "functional_v20.train",
+    "evaluate": "functional_v20.evaluate",
+    "runtime": "functional_v20.runtime"
+  },
+  "GPU_cap_hours": 24,
+  "public_trial_port": 12346,
+  "status": "all4checkpoints_failed_diagnostic_trials_only"
+}

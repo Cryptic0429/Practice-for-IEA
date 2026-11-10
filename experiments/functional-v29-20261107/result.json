@@ -1,0 +1,5404 @@
+{
+  "at": "2026-11-07T08:10:56.119491+00:00",
+  "receipt_sha256": "9a68b840a26e2f14e347aaf5195a98063b6d9e995fa9cd66e1028f03cef85e5e",
+  "visual_review_sha256": "d13b88d39f46c080200c801051f6f96350a4daac53ff4c7864c450cf4291cb37",
+  "summary": {
+    "frozen": {
+      "held_photos": {
+        "rows": 32,
+        "correct_rows": 25,
+        "semantic_requests": 16,
+        "bilingual_correct": 11,
+        "wrong_active_route": 7,
+        "opposite_direction": 3,
+        "expected_defer_but_active": 0,
+        "wanted_edit_but_deferred": 0
+      },
+      "held_text": {
+        "rows": 24,
+        "correct_rows": 20,
+        "semantic_requests": 12,
+        "bilingual_correct": 9,
+        "wrong_active_route": 4,
+        "opposite_direction": 1,
+        "expected_defer_but_active": 3,
+        "wanted_edit_but_deferred": 0
+      },
+      "r28_regression": {
+        "rows": 40,
+        "correct_rows": 34,
+        "semantic_requests": 20,
+        "bilingual_correct": 15,
+        "wrong_active_route": 6,
+        "opposite_direction": 3,
+        "expected_defer_but_active": 1,
+        "wanted_edit_but_deferred": 0
+      },
+      "fresh_all": {
+        "rows": 56,
+        "correct_rows": 45,
+        "semantic_requests": 28,
+        "bilingual_correct": 20,
+        "wrong_active_route": 11,
+        "opposite_direction": 4,
+        "expected_defer_but_active": 3,
+        "wanted_edit_but_deferred": 0
+      },
+      "image_execution": {
+        "language_verdicts": {
+          "wrong_route": 7,
+          "complete": 16,
+          "partial": 8,
+          "failed": 1
+        },
+        "both_languages_complete": 7,
+        "outputs_with_preexisting_visual_failure_grade": 1
+      }
+    },
+    "legacy_head": {
+      "held_photos": {
+        "rows": 32,
+        "correct_rows": 29,
+        "semantic_requests": 16,
+        "bilingual_correct": 13,
+        "wrong_active_route": 3,
+        "opposite_direction": 2,
+        "expected_defer_but_active": 0,
+        "wanted_edit_but_deferred": 0
+      },
+      "held_text": {
+        "rows": 24,
+        "correct_rows": 20,
+        "semantic_requests": 12,
+        "bilingual_correct": 10,
+        "wrong_active_route": 4,
+        "opposite_direction": 0,
+        "expected_defer_but_active": 4,
+        "wanted_edit_but_deferred": 0
+      },
+      "r28_regression": {
+        "rows": 40,
+        "correct_rows": 34,
+        "semantic_requests": 20,
+        "bilingual_correct": 16,
+        "wrong_active_route": 6,
+        "opposite_direction": 1,
+        "expected_defer_but_active": 5,
+        "wanted_edit_but_deferred": 0
+      },
+      "fresh_all": {
+        "rows": 56,
+        "correct_rows": 49,
+        "semantic_requests": 28,
+        "bilingual_correct": 23,
+        "wrong_active_route": 7,
+        "opposite_direction": 2,
+        "expected_defer_but_active": 4,
+        "wanted_edit_but_deferred": 0
+      },
+      "image_execution": {
+        "language_verdicts": {
+          "complete": 20,
+          "partial": 8,
+          "wrong_route": 3,
+          "failed": 1
+        },
+        "both_languages_complete": 9,
+        "outputs_with_preexisting_visual_failure_grade": 1
+      }
+    },
+    "augmented_head": {
+      "held_photos": {
+        "rows": 32,
+        "correct_rows": 31,
+        "semantic_requests": 16,
+        "bilingual_correct": 15,
+        "wrong_active_route": 1,
+        "opposite_direction": 1,
+        "expected_defer_but_active": 0,
+        "wanted_edit_but_deferred": 0
+      },
+      "held_text": {
+        "rows": 24,
+        "correct_rows": 22,
+        "semantic_requests": 12,
+        "bilingual_correct": 11,
+        "wrong_active_route": 2,
+        "opposite_direction": 0,
+        "expected_defer_but_active": 2,
+        "wanted_edit_but_deferred": 0
+      },
+      "r28_regression": {
+        "rows": 40,
+        "correct_rows": 39,
+        "semantic_requests": 20,
+        "bilingual_correct": 19,
+        "wrong_active_route": 1,
+        "opposite_direction": 1,
+        "expected_defer_but_active": 0,
+        "wanted_edit_but_deferred": 0
+      },
+      "fresh_all": {
+        "rows": 56,
+        "correct_rows": 53,
+        "semantic_requests": 28,
+        "bilingual_correct": 26,
+        "wrong_active_route": 3,
+        "opposite_direction": 1,
+        "expected_defer_but_active": 2,
+        "wanted_edit_but_deferred": 0
+      },
+      "image_execution": {
+        "language_verdicts": {
+          "complete": 22,
+          "partial": 8,
+          "wrong_route": 1,
+          "failed": 1
+        },
+        "both_languages_complete": 11,
+        "outputs_with_preexisting_visual_failure_grade": 1
+      }
+    },
+    "tail_lora": {
+      "held_photos": {
+        "rows": 32,
+        "correct_rows": 29,
+        "semantic_requests": 16,
+        "bilingual_correct": 13,
+        "wrong_active_route": 3,
+        "opposite_direction": 1,
+        "expected_defer_but_active": 0,
+        "wanted_edit_but_deferred": 0
+      },
+      "held_text": {
+        "rows": 24,
+        "correct_rows": 21,
+        "semantic_requests": 12,
+        "bilingual_correct": 10,
+        "wrong_active_route": 3,
+        "opposite_direction": 1,
+        "expected_defer_but_active": 2,
+        "wanted_edit_but_deferred": 0
+      },
+      "r28_regression": {
+        "rows": 40,
+        "correct_rows": 38,
+        "semantic_requests": 20,
+        "bilingual_correct": 18,
+        "wrong_active_route": 2,
+        "opposite_direction": 1,
+        "expected_defer_but_active": 1,
+        "wanted_edit_but_deferred": 0
+      },
+      "fresh_all": {
+        "rows": 56,
+        "correct_rows": 50,
+        "semantic_requests": 28,
+        "bilingual_correct": 23,
+        "wrong_active_route": 6,
+        "opposite_direction": 2,
+        "expected_defer_but_active": 2,
+        "wanted_edit_but_deferred": 0
+      },
+      "image_execution": {
+        "language_verdicts": {
+          "wrong_route": 3,
+          "complete": 20,
+          "partial": 8,
+          "failed": 1
+        },
+        "both_languages_complete": 9,
+        "outputs_with_preexisting_visual_failure_grade": 1
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "p021-shadow_up",
+      "group": "p021",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "给毕业照中两张脸没照到太阳的地方加些亮度，明亮的天空保持。",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 22.50019645690918,
+            "shadow_down": 22.161375045776367,
+            "global_up": 25.36107635498047,
+            "global_down": 21.49208641052246,
+            "defer": 22.527915954589844
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 39.01214599609375,
+            "shadow_down": 23.13060188293457,
+            "global_up": 39.03559875488281,
+            "global_down": 22.949737548828125,
+            "defer": 32.286746978759766
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 4.663149356842041,
+            "shadow_down": -3.235459804534912,
+            "global_up": 3.693603277206421,
+            "global_down": -2.445734739303589,
+            "defer": -2.675555944442749
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_up.png"
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 7.377089977264404,
+            "shadow_down": -3.640679359436035,
+            "global_up": 4.648014068603516,
+            "global_down": -3.03231143951416,
+            "defer": -5.350404739379883
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_up.png"
+        }
+      }
+    },
+    {
+      "id": "p021-shadow_up",
+      "group": "p021",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Give the unlit parts of both faces a little light, with the bright sky left alone.",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 22.66600227355957,
+            "shadow_down": 21.703113555908203,
+            "global_up": 23.707990646362305,
+            "global_down": 21.682161331176758,
+            "defer": 22.769023895263672
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 38.14019775390625,
+            "shadow_down": 23.874652862548828,
+            "global_up": 34.63990783691406,
+            "global_down": 24.423625946044922,
+            "defer": 33.436378479003906
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_up.png"
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 3.48465633392334,
+            "shadow_down": -3.6061136722564697,
+            "global_up": 2.906855344772339,
+            "global_down": -1.7120590209960938,
+            "defer": -1.0718562602996826
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_up.png"
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 5.2222394943237305,
+            "shadow_down": -2.0595109462738037,
+            "global_up": 1.4031379222869873,
+            "global_down": -2.6944491863250732,
+            "defer": -1.871260404586792
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_up.png"
+        }
+      }
+    },
+    {
+      "id": "p021-shadow_down",
+      "group": "p021",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "毕业照的暗面想再沉一点，天空和受光的衣服留住。",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 23.202299118041992,
+            "shadow_down": 24.40435028076172,
+            "global_up": 20.594884872436523,
+            "global_down": 24.350418090820312,
+            "defer": 21.783241271972656
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_down.png"
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 33.323333740234375,
+            "shadow_down": 40.00101089477539,
+            "global_up": 31.508874893188477,
+            "global_down": 37.81758499145508,
+            "defer": 35.10383605957031
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_down.png"
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": -0.13099431991577148,
+            "shadow_down": 4.874111175537109,
+            "global_up": -4.373640060424805,
+            "global_down": 2.3666930198669434,
+            "defer": -2.7350757122039795
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_down.png"
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 0.7255715727806091,
+            "shadow_down": 6.05218505859375,
+            "global_up": -4.51296329498291,
+            "global_down": 1.0447509288787842,
+            "defer": -3.3087189197540283
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_down.png"
+        }
+      }
+    },
+    {
+      "id": "p021-shadow_down",
+      "group": "p021",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Make the shaded parts of the graduation photo deeper while retaining the sky and lit clothing.",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 22.740215301513672,
+            "shadow_down": 26.379188537597656,
+            "global_up": 19.034957885742188,
+            "global_down": 20.984336853027344,
+            "defer": 21.597347259521484
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_down.png"
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 27.874366760253906,
+            "shadow_down": 42.1220703125,
+            "global_up": 27.06743621826172,
+            "global_down": 26.06371307373047,
+            "defer": 31.109947204589844
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_down.png"
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": -0.03651857376098633,
+            "shadow_down": 7.834780693054199,
+            "global_up": -3.9896721839904785,
+            "global_down": -2.2630574703216553,
+            "defer": -1.5415360927581787
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_down.png"
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 2.641599178314209,
+            "shadow_down": 12.476603507995605,
+            "global_up": -5.549431324005127,
+            "global_down": -2.4271295070648193,
+            "defer": -7.142510890960693
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p021-shadow_down.png"
+        }
+      }
+    },
+    {
+      "id": "p021-global_up",
+      "group": "p021",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "把这张毕业照整张提亮，脸和背景、天空都要有变化。",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 21.012317657470703,
+            "shadow_down": 20.40040397644043,
+            "global_up": 27.61250877380371,
+            "global_down": 22.701641082763672,
+            "defer": 23.32117462158203
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 32.951507568359375,
+            "shadow_down": 19.679386138916016,
+            "global_up": 38.51683807373047,
+            "global_down": 23.180437088012695,
+            "defer": 27.712312698364258
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -1.6528661251068115,
+            "shadow_down": -4.484469413757324,
+            "global_up": 9.077692985534668,
+            "global_down": -1.67014741897583,
+            "defer": -1.2722551822662354
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -1.1119811534881592,
+            "shadow_down": -4.841628551483154,
+            "global_up": 12.113954544067383,
+            "global_down": -0.028400499373674393,
+            "defer": -6.130067825317383
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        }
+      }
+    },
+    {
+      "id": "p021-global_up",
+      "group": "p021",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Raise the whole graduation photograph a little, including faces, background and sky.",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 21.934720993041992,
+            "shadow_down": 20.132051467895508,
+            "global_up": 24.334617614746094,
+            "global_down": 22.081979751586914,
+            "defer": 22.771732330322266
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 34.37998962402344,
+            "shadow_down": 20.5325927734375,
+            "global_up": 34.99568176269531,
+            "global_down": 25.348482131958008,
+            "defer": 31.58301544189453
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 0.907867431640625,
+            "shadow_down": -5.263609886169434,
+            "global_up": 6.211395263671875,
+            "global_down": -1.4198498725891113,
+            "defer": -0.43529272079467773
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 2.1743416786193848,
+            "shadow_down": -6.608349800109863,
+            "global_up": 7.0717973709106445,
+            "global_down": -1.4169539213180542,
+            "defer": -1.2207229137420654
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        }
+      }
+    },
+    {
+      "id": "p021-global_down",
+      "group": "p021",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "整张毕业照偏亮，收一点整体曝光，别压没衣服纹理。",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 22.215848922729492,
+            "shadow_down": 21.290485382080078,
+            "global_up": 25.145355224609375,
+            "global_down": 24.853023529052734,
+            "defer": 23.3572998046875
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 37.93230438232422,
+            "shadow_down": 25.84255599975586,
+            "global_up": 38.8133544921875,
+            "global_down": 36.66164016723633,
+            "defer": 34.83091354370117
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -0.7044012546539307,
+            "shadow_down": -2.1760733127593994,
+            "global_up": 2.9150681495666504,
+            "global_down": 2.048367738723755,
+            "defer": -2.0843570232391357
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -1.8359274864196777,
+            "shadow_down": -1.707122564315796,
+            "global_up": 3.611102819442749,
+            "global_down": 2.164095640182495,
+            "defer": -2.2304928302764893
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p021-global_up.png"
+        }
+      }
+    },
+    {
+      "id": "p021-global_down",
+      "group": "p021",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Take the entire graduation photo down a little in exposure, preserving clothing texture.",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 22.382675170898438,
+            "shadow_down": 22.123275756835938,
+            "global_up": 21.586044311523438,
+            "global_down": 25.288421630859375,
+            "defer": 21.732467651367188
+          },
+          "visual": "failed",
+          "own_intent_visual": "failed",
+          "output": "experiments/functional-v29-20261107/images/p021-global_down.png"
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 29.068681716918945,
+            "shadow_down": 31.611242294311523,
+            "global_up": 33.63330078125,
+            "global_down": 40.21971893310547,
+            "defer": 34.26377487182617
+          },
+          "visual": "failed",
+          "own_intent_visual": "failed",
+          "output": "experiments/functional-v29-20261107/images/p021-global_down.png"
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -1.7451492547988892,
+            "shadow_down": 0.28916311264038086,
+            "global_up": -1.693524718284607,
+            "global_down": 5.470149517059326,
+            "defer": -2.3194973468780518
+          },
+          "visual": "failed",
+          "own_intent_visual": "failed",
+          "output": "experiments/functional-v29-20261107/images/p021-global_down.png"
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -2.129824638366699,
+            "shadow_down": 2.3338513374328613,
+            "global_up": -1.766648292541504,
+            "global_down": 6.091875076293945,
+            "defer": -4.5296711921691895
+          },
+          "visual": "failed",
+          "own_intent_visual": "failed",
+          "output": "experiments/functional-v29-20261107/images/p021-global_down.png"
+        }
+      }
+    },
+    {
+      "id": "p457-shadow_up",
+      "group": "p457",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "把合照里偏暗的脸和衣服带亮一些，墙上灯的亮度保持。",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 22.80571937561035,
+            "shadow_down": 22.10654067993164,
+            "global_up": 25.522193908691406,
+            "global_down": 22.172515869140625,
+            "defer": 22.8828125
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-global_up.png"
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 38.37003707885742,
+            "shadow_down": 26.074859619140625,
+            "global_up": 40.322906494140625,
+            "global_down": 27.844776153564453,
+            "defer": 33.69268798828125
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-global_up.png"
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 3.649714946746826,
+            "shadow_down": -2.826075792312622,
+            "global_up": 3.728508949279785,
+            "global_down": -2.091149091720581,
+            "defer": -2.4614503383636475
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-global_up.png"
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 5.563540935516357,
+            "shadow_down": -3.408435821533203,
+            "global_up": 5.087894916534424,
+            "global_down": -2.5836341381073,
+            "defer": -4.657455921173096
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_up.png"
+        }
+      }
+    },
+    {
+      "id": "p457-shadow_up",
+      "group": "p457",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Bring up the shadowed faces and clothes in the group without raising the wall lamp.",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 26.251110076904297,
+            "shadow_down": 25.39344024658203,
+            "global_up": 22.19405174255371,
+            "global_down": 22.586803436279297,
+            "defer": 23.662399291992188
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_up.png"
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 43.11531066894531,
+            "shadow_down": 35.385337829589844,
+            "global_up": 30.269821166992188,
+            "global_down": 27.475980758666992,
+            "defer": 34.71373748779297
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_up.png"
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 5.281489372253418,
+            "shadow_down": -0.13086986541748047,
+            "global_up": -2.050548553466797,
+            "global_down": -2.142279863357544,
+            "defer": -0.9535319805145264
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_up.png"
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 7.962385177612305,
+            "shadow_down": 1.1546798944473267,
+            "global_up": -2.3939361572265625,
+            "global_down": -3.3394999504089355,
+            "defer": -3.3842437267303467
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_up.png"
+        }
+      }
+    },
+    {
+      "id": "p457-shadow_down",
+      "group": "p457",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "要加深人像暗调，吊灯的亮部不用变。",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 23.487873077392578,
+            "shadow_down": 25.603355407714844,
+            "global_up": 21.030982971191406,
+            "global_down": 22.64559555053711,
+            "defer": 22.655052185058594
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_down.png"
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 41.91717529296875,
+            "shadow_down": 43.685089111328125,
+            "global_up": 32.54158020019531,
+            "global_down": 30.554933547973633,
+            "defer": 37.490997314453125
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_down.png"
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 1.6632914543151855,
+            "shadow_down": 6.518938064575195,
+            "global_up": -4.981266021728516,
+            "global_down": -0.9534784555435181,
+            "defer": -2.2461535930633545
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_down.png"
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 2.08724045753479,
+            "shadow_down": 8.163609504699707,
+            "global_up": -5.360375881195068,
+            "global_down": -2.4350321292877197,
+            "defer": -2.454143762588501
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_down.png"
+        }
+      }
+    },
+    {
+      "id": "p457-shadow_down",
+      "group": "p457",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Give the people deeper shadows while leaving the bright lamp alone.",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 22.39920997619629,
+            "shadow_down": 25.9909725189209,
+            "global_up": 18.947525024414062,
+            "global_down": 20.563941955566406,
+            "defer": 21.462791442871094
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_down.png"
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 28.63146209716797,
+            "shadow_down": 43.84854507446289,
+            "global_up": 28.220502853393555,
+            "global_down": 26.635255813598633,
+            "defer": 32.68890380859375
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_down.png"
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 0.6993544101715088,
+            "shadow_down": 7.459138870239258,
+            "global_up": -4.349567890167236,
+            "global_down": -2.0003576278686523,
+            "defer": -1.804764986038208
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_down.png"
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 3.460165023803711,
+            "shadow_down": 11.817916870117188,
+            "global_up": -6.549584865570068,
+            "global_down": -2.4123106002807617,
+            "defer": -6.316863059997559
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-shadow_down.png"
+        }
+      }
+    },
+    {
+      "id": "p457-global_up",
+      "group": "p457",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "合照太暗，让人和墙、灯附近都更亮一点。",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 22.470855712890625,
+            "shadow_down": 21.896574020385742,
+            "global_up": 25.99201202392578,
+            "global_down": 22.382869720458984,
+            "defer": 22.97930145263672
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-global_up.png"
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 37.61721420288086,
+            "shadow_down": 25.647750854492188,
+            "global_up": 40.925926208496094,
+            "global_down": 26.4558048248291,
+            "defer": 33.62815856933594
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-global_up.png"
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 2.072718620300293,
+            "shadow_down": -2.8748233318328857,
+            "global_up": 5.11731481552124,
+            "global_down": -1.4506069421768188,
+            "defer": -2.865135908126831
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-global_up.png"
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 3.105787515640259,
+            "shadow_down": -3.4444384574890137,
+            "global_up": 7.422524929046631,
+            "global_down": -1.6189844608306885,
+            "defer": -5.463212013244629
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-global_up.png"
+        }
+      }
+    },
+    {
+      "id": "p457-global_up",
+      "group": "p457",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "The group photograph is too dim. Brighten the whole frame including people, walls and areas near the lamp.",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 20.39710807800293,
+            "shadow_down": 20.11123275756836,
+            "global_up": 27.812837600708008,
+            "global_down": 21.608556747436523,
+            "defer": 21.25348663330078
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-global_up.png"
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 30.236553192138672,
+            "shadow_down": 17.450965881347656,
+            "global_up": 38.95287322998047,
+            "global_down": 19.708580017089844,
+            "defer": 24.07861328125
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-global_up.png"
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -2.565931558609009,
+            "shadow_down": -4.668427467346191,
+            "global_up": 11.203085899353027,
+            "global_down": -1.4229240417480469,
+            "defer": -2.5453808307647705
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-global_up.png"
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -1.5787044763565063,
+            "shadow_down": -1.9351847171783447,
+            "global_up": 15.149096488952637,
+            "global_down": 1.1830579042434692,
+            "defer": -12.818331718444824
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p457-global_up.png"
+        }
+      }
+    },
+    {
+      "id": "p457-global_down",
+      "group": "p457",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "把合照整体再暗一点，墙面和人都一起收。",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 21.58868408203125,
+            "shadow_down": 20.377368927001953,
+            "global_up": 21.660282135009766,
+            "global_down": 27.16551399230957,
+            "defer": 21.393924713134766
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-global_down.png"
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 24.797534942626953,
+            "shadow_down": 26.216121673583984,
+            "global_up": 32.187034606933594,
+            "global_down": 44.02865219116211,
+            "defer": 32.338558197021484
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-global_down.png"
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -6.625777721405029,
+            "shadow_down": 0.2530536651611328,
+            "global_up": -0.4491938352584839,
+            "global_down": 8.52550220489502,
+            "defer": -1.705305814743042
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-global_down.png"
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -7.088751792907715,
+            "shadow_down": 0.42159250378608704,
+            "global_up": 1.057668924331665,
+            "global_down": 10.913949966430664,
+            "defer": -5.304072856903076
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-global_down.png"
+        }
+      }
+    },
+    {
+      "id": "p457-global_down",
+      "group": "p457",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Lower the whole group photograph a little, darkening both the wall and people.",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 20.148941040039062,
+            "shadow_down": 18.766029357910156,
+            "global_up": 19.860280990600586,
+            "global_down": 25.62729263305664,
+            "defer": 19.75579833984375
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-global_down.png"
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 19.532207489013672,
+            "shadow_down": 20.764263153076172,
+            "global_up": 26.54268455505371,
+            "global_down": 37.17698287963867,
+            "defer": 26.83507537841797
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-global_down.png"
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -7.748823642730713,
+            "shadow_down": 0.2188429832458496,
+            "global_up": 1.0332448482513428,
+            "global_down": 8.218807220458984,
+            "defer": -1.722299337387085
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-global_down.png"
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -9.175230979919434,
+            "shadow_down": 2.935727119445801,
+            "global_up": 1.8197689056396484,
+            "global_down": 10.74992561340332,
+            "defer": -6.331252574920654
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p457-global_down.png"
+        }
+      }
+    },
+    {
+      "id": "p165-shadow_up",
+      "group": "p165",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "把赛车下面与近处阴影抬亮些，明亮车漆和天保留。",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 24.914175033569336,
+            "shadow_down": 24.136510848999023,
+            "global_up": 25.307899475097656,
+            "global_down": 22.722171783447266,
+            "defer": 23.882640838623047
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_up.png"
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 43.09452438354492,
+            "shadow_down": 28.4981632232666,
+            "global_up": 37.111000061035156,
+            "global_down": 26.05591583251953,
+            "defer": 33.7264404296875
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_up.png"
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 6.909572601318359,
+            "shadow_down": -2.5579473972320557,
+            "global_up": 0.17164170742034912,
+            "global_down": -2.4022376537323,
+            "defer": -2.1202666759490967
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_up.png"
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 8.695438385009766,
+            "shadow_down": -3.7903215885162354,
+            "global_up": 0.5882626175880432,
+            "global_down": -3.9510159492492676,
+            "defer": -1.5405921936035156
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_up.png"
+        }
+      }
+    },
+    {
+      "id": "p165-shadow_up",
+      "group": "p165",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Lighten the shade under the race cars and in front, keeping the bright paint and sky unchanged.",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 24.027313232421875,
+            "shadow_down": 23.00594711303711,
+            "global_up": 22.720779418945312,
+            "global_down": 21.12832260131836,
+            "defer": 22.4095516204834
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_up.png"
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 39.020782470703125,
+            "shadow_down": 27.27653694152832,
+            "global_up": 29.224912643432617,
+            "global_down": 20.66494369506836,
+            "defer": 30.617345809936523
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_up.png"
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 6.798165321350098,
+            "shadow_down": -3.100388765335083,
+            "global_up": -0.20683443546295166,
+            "global_down": -2.0410330295562744,
+            "defer": -1.446882963180542
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_up.png"
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 8.517221450805664,
+            "shadow_down": -2.195289134979248,
+            "global_up": -0.7369614243507385,
+            "global_down": -3.743746042251587,
+            "defer": -1.841306209564209
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_up.png"
+        }
+      }
+    },
+    {
+      "id": "p165-shadow_down",
+      "group": "p165",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "车辆下面的阴影稍深一点，车漆高光和云保持。",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 24.333391189575195,
+            "shadow_down": 26.71484375,
+            "global_up": 20.57284927368164,
+            "global_down": 22.52075958251953,
+            "defer": 22.278776168823242
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_down.png"
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 38.00273132324219,
+            "shadow_down": 44.926353454589844,
+            "global_up": 30.680606842041016,
+            "global_down": 29.946815490722656,
+            "defer": 34.569297790527344
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_down.png"
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 1.4424800872802734,
+            "shadow_down": 7.529294013977051,
+            "global_up": -5.244993209838867,
+            "global_down": -1.3700611591339111,
+            "defer": -2.354304075241089
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_down.png"
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 3.0629591941833496,
+            "shadow_down": 9.753705024719238,
+            "global_up": -5.5139312744140625,
+            "global_down": -2.461181879043579,
+            "defer": -4.840749263763428
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_down.png"
+        }
+      }
+    },
+    {
+      "id": "p165-shadow_down",
+      "group": "p165",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Take the shadows beneath the cars a bit deeper, retaining paint highlights and clouds.",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 22.351512908935547,
+            "shadow_down": 26.287738800048828,
+            "global_up": 18.861007690429688,
+            "global_down": 21.040952682495117,
+            "defer": 21.209989547729492
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_down.png"
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 26.856388092041016,
+            "shadow_down": 42.231712341308594,
+            "global_up": 27.226612091064453,
+            "global_down": 26.101165771484375,
+            "defer": 31.527488708496094
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_down.png"
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": -0.35321199893951416,
+            "shadow_down": 7.876328468322754,
+            "global_up": -3.9696807861328125,
+            "global_down": -1.7986056804656982,
+            "defer": -1.7510745525360107
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_down.png"
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 2.0978269577026367,
+            "shadow_down": 11.9524507522583,
+            "global_up": -5.137637615203857,
+            "global_down": -1.9176061153411865,
+            "defer": -6.995815277099609
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-shadow_down.png"
+        }
+      }
+    },
+    {
+      "id": "p165-global_up",
+      "group": "p165",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "场地、车和天空一起提亮一些，保住车身和云层的细节。",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 22.10144805908203,
+            "shadow_down": 21.52042007446289,
+            "global_up": 26.049827575683594,
+            "global_down": 21.909944534301758,
+            "defer": 23.488502502441406
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_up.png"
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 36.67991638183594,
+            "shadow_down": 22.231277465820312,
+            "global_up": 37.72036361694336,
+            "global_down": 23.85757064819336,
+            "defer": 32.55651092529297
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_up.png"
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 2.5347437858581543,
+            "shadow_down": -3.826148509979248,
+            "global_up": 5.243943691253662,
+            "global_down": -2.871485471725464,
+            "defer": -1.0822789669036865
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_up.png"
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 3.334770441055298,
+            "shadow_down": -4.497044563293457,
+            "global_up": 6.241710186004639,
+            "global_down": -2.794520854949951,
+            "defer": -2.2828733921051025
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_up.png"
+        }
+      }
+    },
+    {
+      "id": "p165-global_up",
+      "group": "p165",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Brighten the entire race scene, including ground, cars and sky, while retaining paint and cloud detail.",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 20.63964080810547,
+            "shadow_down": 20.300777435302734,
+            "global_up": 26.06435775756836,
+            "global_down": 21.441320419311523,
+            "defer": 21.959716796875
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_up.png"
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 32.79422378540039,
+            "shadow_down": 19.164255142211914,
+            "global_up": 38.035247802734375,
+            "global_down": 22.41937255859375,
+            "defer": 27.99660873413086
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_up.png"
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 0.12433528900146484,
+            "shadow_down": -5.131457328796387,
+            "global_up": 9.119345664978027,
+            "global_down": -2.1783251762390137,
+            "defer": -1.9335739612579346
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_up.png"
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 1.154342770576477,
+            "shadow_down": -3.052018165588379,
+            "global_up": 10.735369682312012,
+            "global_down": -1.0934282541275024,
+            "defer": -7.743891716003418
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_up.png"
+        }
+      }
+    },
+    {
+      "id": "p165-global_down",
+      "group": "p165",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "整张车场照片降低一点曝光，保留原有色彩和可见细节。",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 22.249977111816406,
+            "shadow_down": 21.345218658447266,
+            "global_up": 22.755245208740234,
+            "global_down": 26.25614356994629,
+            "defer": 22.706825256347656
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_down.png"
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 29.387996673583984,
+            "shadow_down": 28.84210205078125,
+            "global_up": 35.955718994140625,
+            "global_down": 43.464881896972656,
+            "defer": 36.87286376953125
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_down.png"
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -2.4553308486938477,
+            "shadow_down": -0.7030529975891113,
+            "global_up": -1.2825051546096802,
+            "global_down": 6.364182949066162,
+            "defer": -1.9244239330291748
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_down.png"
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -3.1683781147003174,
+            "shadow_down": -0.7655661106109619,
+            "global_up": -0.8590360879898071,
+            "global_down": 7.512228965759277,
+            "defer": -2.718451499938965
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_down.png"
+        }
+      }
+    },
+    {
+      "id": "p165-global_down",
+      "group": "p165",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Give the whole race scene a small reduction in exposure, keeping the colours and visible detail.",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 21.92914581298828,
+            "shadow_down": 20.993011474609375,
+            "global_up": 22.460905075073242,
+            "global_down": 25.56580924987793,
+            "defer": 22.740474700927734
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_down.png"
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 29.732925415039062,
+            "shadow_down": 27.291893005371094,
+            "global_up": 34.96514892578125,
+            "global_down": 41.51507568359375,
+            "defer": 36.60867691040039
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_down.png"
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -2.5201973915100098,
+            "shadow_down": -1.4865283966064453,
+            "global_up": -0.3071671724319458,
+            "global_down": 5.771875858306885,
+            "defer": -1.4576003551483154
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_down.png"
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -2.489488124847412,
+            "shadow_down": -0.05756741762161255,
+            "global_up": -1.0347721576690674,
+            "global_down": 6.952342510223389,
+            "defer": -3.370924949645996
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p165-global_down.png"
+        }
+      }
+    },
+    {
+      "id": "p102-shadow_up",
+      "group": "p102",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "让湖边近处树石的暗部能看清一点，天边晚霞别跟着变亮。",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 24.777244567871094,
+            "shadow_down": 25.91390609741211,
+            "global_up": 21.55449104309082,
+            "global_down": 22.36615753173828,
+            "defer": 22.754117965698242
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_down.png"
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 44.366119384765625,
+            "shadow_down": 39.087799072265625,
+            "global_up": 30.203195571899414,
+            "global_down": 26.17892074584961,
+            "defer": 35.22744369506836
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_up.png"
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 3.899332046508789,
+            "shadow_down": 4.768898010253906,
+            "global_up": -4.775731563568115,
+            "global_down": -1.4073853492736816,
+            "defer": -2.4827044010162354
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_down.png"
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 7.040164947509766,
+            "shadow_down": 5.028221607208252,
+            "global_up": -4.908662796020508,
+            "global_down": -3.108474016189575,
+            "defer": -4.050323963165283
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_up.png"
+        }
+      }
+    },
+    {
+      "id": "p102-shadow_up",
+      "group": "p102",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Reveal a little more in the dark foreground by the lake, keeping the sunset unchanged.",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 22.726238250732422,
+            "shadow_down": 23.605125427246094,
+            "global_up": 22.385953903198242,
+            "global_down": 21.01354217529297,
+            "defer": 21.680572509765625
+          },
+          "visual": "wrong_route",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_down.png"
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 38.7905387878418,
+            "shadow_down": 33.15093994140625,
+            "global_up": 31.0341796875,
+            "global_down": 24.263381958007812,
+            "defer": 30.464380264282227
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_up.png"
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 5.356131076812744,
+            "shadow_down": -0.5343226194381714,
+            "global_up": -0.21903741359710693,
+            "global_down": -1.9222452640533447,
+            "defer": -2.6778666973114014
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_up.png"
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 11.453022003173828,
+            "shadow_down": -0.9104834794998169,
+            "global_up": -1.1718722581863403,
+            "global_down": -3.5686521530151367,
+            "defer": -5.801908493041992
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_up.png"
+        }
+      }
+    },
+    {
+      "id": "p102-shadow_down",
+      "group": "p102",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "把湖边前景暗面收深一些，天空的日落渐变保持。",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 23.188034057617188,
+            "shadow_down": 25.99093246459961,
+            "global_up": 20.740934371948242,
+            "global_down": 23.259540557861328,
+            "defer": 22.88519859313965
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_down.png"
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 40.55029296875,
+            "shadow_down": 43.55775451660156,
+            "global_up": 30.469011306762695,
+            "global_down": 32.983253479003906,
+            "defer": 36.82112503051758
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_down.png"
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": -0.006885528564453125,
+            "shadow_down": 6.866521835327148,
+            "global_up": -4.408872127532959,
+            "global_down": -0.6908940672874451,
+            "defer": -1.7587029933929443
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_down.png"
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 1.2052983045578003,
+            "shadow_down": 8.726247787475586,
+            "global_up": -5.153857707977295,
+            "global_down": -1.808621883392334,
+            "defer": -2.967980146408081
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_down.png"
+        }
+      }
+    },
+    {
+      "id": "p102-shadow_down",
+      "group": "p102",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Darken the foreground shadow tones at the lake and retain the sunset gradient.",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 23.446748733520508,
+            "shadow_down": 23.87283706665039,
+            "global_up": 19.702234268188477,
+            "global_down": 22.38793182373047,
+            "defer": 20.58254051208496
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_down.png"
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 33.39545440673828,
+            "shadow_down": 37.808048248291016,
+            "global_up": 27.80615997314453,
+            "global_down": 29.246875762939453,
+            "defer": 29.76636505126953
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_down.png"
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 1.7633190155029297,
+            "shadow_down": 3.8072311878204346,
+            "global_up": -3.1616225242614746,
+            "global_down": 0.12835705280303955,
+            "defer": -2.533961057662964
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_down.png"
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 2.1443750858306885,
+            "shadow_down": 8.087358474731445,
+            "global_up": -3.745753765106201,
+            "global_down": -1.3787167072296143,
+            "defer": -5.107708930969238
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-shadow_down.png"
+        }
+      }
+    },
+    {
+      "id": "p102-global_up",
+      "group": "p102",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "整幅湖边图增加一些曝光，前景、远山和天空都抬起来。",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 22.70750617980957,
+            "shadow_down": 21.631683349609375,
+            "global_up": 26.834197998046875,
+            "global_down": 22.60594940185547,
+            "defer": 23.799400329589844
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-global_up.png"
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 37.640541076660156,
+            "shadow_down": 24.370023727416992,
+            "global_up": 41.70053482055664,
+            "global_down": 26.450523376464844,
+            "defer": 32.890586853027344
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-global_up.png"
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 1.646843433380127,
+            "shadow_down": -3.705239772796631,
+            "global_up": 5.926392078399658,
+            "global_down": -1.7149770259857178,
+            "defer": -2.153844118118286
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-global_up.png"
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 1.6374706029891968,
+            "shadow_down": -4.278817653656006,
+            "global_up": 8.285599708557129,
+            "global_down": -1.1971195936203003,
+            "defer": -4.44547176361084
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-global_up.png"
+        }
+      }
+    },
+    {
+      "id": "p102-global_up",
+      "group": "p102",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Increase exposure across the lake scene, lifting foreground, mountains and sky together.",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 23.202552795410156,
+            "shadow_down": 20.965957641601562,
+            "global_up": 24.882776260375977,
+            "global_down": 22.14797592163086,
+            "defer": 23.088930130004883
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-global_up.png"
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 36.85765838623047,
+            "shadow_down": 23.599956512451172,
+            "global_up": 37.97822189331055,
+            "global_down": 25.915416717529297,
+            "defer": 33.80706787109375
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-global_up.png"
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 2.2252330780029297,
+            "shadow_down": -4.7742462158203125,
+            "global_up": 5.438149452209473,
+            "global_down": -1.4054923057556152,
+            "defer": -1.482389211654663
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-global_up.png"
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 1.708918571472168,
+            "shadow_down": -4.711248397827148,
+            "global_up": 7.25560998916626,
+            "global_down": -1.5545988082885742,
+            "defer": -2.6986374855041504
+          },
+          "visual": "complete",
+          "own_intent_visual": "complete",
+          "output": "experiments/functional-v29-20261107/images/p102-global_up.png"
+        }
+      }
+    },
+    {
+      "id": "p102-global_down",
+      "group": "p102",
+      "cohort": "held_photos",
+      "language": "zh",
+      "instruction": "整张湖边照整体调暗，天和地一起往下收一点。",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 20.969532012939453,
+            "shadow_down": 19.46819305419922,
+            "global_up": 21.349164962768555,
+            "global_down": 25.608089447021484,
+            "defer": 21.743576049804688
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p102-global_down.png"
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 25.496261596679688,
+            "shadow_down": 26.947067260742188,
+            "global_up": 34.06098175048828,
+            "global_down": 43.117591857910156,
+            "defer": 35.99250793457031
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p102-global_down.png"
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -5.845376968383789,
+            "shadow_down": -0.1881725788116455,
+            "global_up": 0.1522061824798584,
+            "global_down": 6.984354019165039,
+            "defer": -1.1050360202789307
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p102-global_down.png"
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -6.87797212600708,
+            "shadow_down": 0.1866723597049713,
+            "global_up": 0.6659698486328125,
+            "global_down": 8.85826301574707,
+            "defer": -2.8323159217834473
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p102-global_down.png"
+        }
+      }
+    },
+    {
+      "id": "p102-global_down",
+      "group": "p102",
+      "cohort": "held_photos",
+      "language": "en",
+      "instruction": "Darken the lake photo across the frame, bringing down both sky and ground.",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 22.12511444091797,
+            "shadow_down": 20.697219848632812,
+            "global_up": 21.4669132232666,
+            "global_down": 25.974037170410156,
+            "defer": 21.070558547973633
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p102-global_down.png"
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 25.415117263793945,
+            "shadow_down": 28.617456436157227,
+            "global_up": 31.690174102783203,
+            "global_down": 39.857303619384766,
+            "defer": 31.37755584716797
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p102-global_down.png"
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -3.607233762741089,
+            "shadow_down": -0.7240707874298096,
+            "global_up": -0.47895562648773193,
+            "global_down": 6.849979877471924,
+            "defer": -2.039109468460083
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p102-global_down.png"
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -3.887554407119751,
+            "shadow_down": 1.2078255414962769,
+            "global_up": -0.05153270065784454,
+            "global_down": 8.495256423950195,
+            "defer": -5.7647905349731445
+          },
+          "visual": "partial",
+          "own_intent_visual": "partial",
+          "output": "experiments/functional-v29-20261107/images/p102-global_down.png"
+        }
+      }
+    },
+    {
+      "id": "held-text-1",
+      "group": "held-text-1",
+      "cohort": "held_text",
+      "language": "zh",
+      "instruction": "把楼梯下没照到光的地方提起来，楼上的灯别跟着亮。",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 27.622039794921875,
+            "shadow_down": 25.383068084716797,
+            "global_up": 23.540416717529297,
+            "global_down": 24.36893081665039,
+            "defer": 25.11593246459961
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 49.17033386230469,
+            "shadow_down": 32.17591857910156,
+            "global_up": 34.031089782714844,
+            "global_down": 29.98212242126465,
+            "defer": 40.6376953125
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 5.24502420425415,
+            "shadow_down": -0.3256072998046875,
+            "global_up": -3.1430816650390625,
+            "global_down": -1.0776270627975464,
+            "defer": -0.6965186595916748
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 6.025257110595703,
+            "shadow_down": -1.6209312677383423,
+            "global_up": -2.533663511276245,
+            "global_down": -2.816098213195801,
+            "defer": 0.9464305639266968
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-1",
+      "group": "held-text-1",
+      "cohort": "held_text",
+      "language": "en",
+      "instruction": "Put more light into the shade under the stairs; leave the upstairs lights at the same level.",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 24.386890411376953,
+            "shadow_down": 24.041946411132812,
+            "global_up": 22.93313217163086,
+            "global_down": 21.82468032836914,
+            "defer": 22.41707420349121
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 42.42236328125,
+            "shadow_down": 34.40189743041992,
+            "global_up": 32.39276885986328,
+            "global_down": 25.692569732666016,
+            "defer": 32.96085739135742
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 5.819728851318359,
+            "shadow_down": -0.8702254295349121,
+            "global_up": -1.0159879922866821,
+            "global_down": -1.6695103645324707,
+            "defer": -2.2608611583709717
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 8.744115829467773,
+            "shadow_down": 0.4901575744152069,
+            "global_up": -1.6586966514587402,
+            "global_down": -3.1784801483154297,
+            "defer": -4.397086143493652
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-2",
+      "group": "held-text-2",
+      "cohort": "held_text",
+      "language": "zh",
+      "instruction": "把最暗的层次轻轻往上拉，高光按原来的样子。",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 24.61505126953125,
+            "shadow_down": 24.85747528076172,
+            "global_up": 22.43471908569336,
+            "global_down": 22.997268676757812,
+            "defer": 23.19305419921875
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 45.0103874206543,
+            "shadow_down": 38.47203826904297,
+            "global_up": 33.157432556152344,
+            "global_down": 29.263965606689453,
+            "defer": 37.476905822753906
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 5.16418981552124,
+            "shadow_down": 2.018693208694458,
+            "global_up": -3.966433525085449,
+            "global_down": -0.8994818329811096,
+            "defer": -2.3156025409698486
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 5.389443874359131,
+            "shadow_down": 1.5247422456741333,
+            "global_up": -3.549093008041382,
+            "global_down": -3.104456901550293,
+            "defer": -0.2590970993041992
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-2",
+      "group": "held-text-2",
+      "cohort": "held_text",
+      "language": "en",
+      "instruction": "Bring the lowest tones up gently while holding the highlights in place.",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 25.479829788208008,
+            "shadow_down": 24.71554946899414,
+            "global_up": 23.450603485107422,
+            "global_down": 22.408065795898438,
+            "defer": 23.809497833251953
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 42.441368103027344,
+            "shadow_down": 33.493858337402344,
+            "global_up": 33.023380279541016,
+            "global_down": 26.55967903137207,
+            "defer": 35.862648010253906
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 6.656730651855469,
+            "shadow_down": -1.9719483852386475,
+            "global_up": -1.172019124031067,
+            "global_down": -1.905996561050415,
+            "defer": -1.603327989578247
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 7.709353923797607,
+            "shadow_down": -0.7511434555053711,
+            "global_up": -2.075920820236206,
+            "global_down": -3.072883129119873,
+            "defer": -1.809645652770996
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-3",
+      "group": "held-text-3",
+      "cohort": "held_text",
+      "language": "zh",
+      "instruction": "只让画面里的暗处沉下去一点，受光的地方留原样。",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 24.449554443359375,
+            "shadow_down": 26.203548431396484,
+            "global_up": 21.535877227783203,
+            "global_down": 23.36166000366211,
+            "defer": 23.16112518310547
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 43.527313232421875,
+            "shadow_down": 42.86019515991211,
+            "global_up": 32.30843734741211,
+            "global_down": 31.0740966796875,
+            "defer": 38.6485595703125
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 2.4595375061035156,
+            "shadow_down": 5.823324203491211,
+            "global_up": -5.273181438446045,
+            "global_down": -0.6598997712135315,
+            "defer": -2.348182439804077
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 2.0464327335357666,
+            "shadow_down": 7.4329915046691895,
+            "global_up": -5.3689069747924805,
+            "global_down": -2.2213103771209717,
+            "defer": -1.8878881931304932
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-3",
+      "group": "held-text-3",
+      "cohort": "held_text",
+      "language": "en",
+      "instruction": "Let the shaded parts sink a little darker; keep illuminated areas where they are.",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 23.275829315185547,
+            "shadow_down": 25.513813018798828,
+            "global_up": 19.648786544799805,
+            "global_down": 22.895551681518555,
+            "defer": 21.743492126464844
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 31.67293357849121,
+            "shadow_down": 42.129493713378906,
+            "global_up": 29.30916976928711,
+            "global_down": 30.998497009277344,
+            "defer": 34.15155792236328
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 0.11704015731811523,
+            "shadow_down": 6.268701553344727,
+            "global_up": -4.225048542022705,
+            "global_down": 0.21720975637435913,
+            "defer": -2.374680757522583
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 0.20534922182559967,
+            "shadow_down": 10.63945484161377,
+            "global_up": -5.316376209259033,
+            "global_down": -0.6602233648300171,
+            "defer": -4.8686604499816895
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-4",
+      "group": "held-text-4",
+      "cohort": "held_text",
+      "language": "zh",
+      "instruction": "压低深灰区域的亮度，不调整整体曝光。",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 23.749820709228516,
+            "shadow_down": 25.571256637573242,
+            "global_up": 21.242570877075195,
+            "global_down": 23.421772003173828,
+            "defer": 22.869211196899414
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 40.449440002441406,
+            "shadow_down": 44.80619430541992,
+            "global_up": 34.41783905029297,
+            "global_down": 34.73855972290039,
+            "defer": 39.60553741455078
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 1.5744907855987549,
+            "shadow_down": 5.399864196777344,
+            "global_up": -4.852248191833496,
+            "global_down": 0.3293040990829468,
+            "defer": -2.4498865604400635
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 0.5003499984741211,
+            "shadow_down": 7.753303527832031,
+            "global_up": -5.472479820251465,
+            "global_down": -1.2102562189102173,
+            "defer": -1.5699241161346436
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-4",
+      "group": "held-text-4",
+      "cohort": "held_text",
+      "language": "en",
+      "instruction": "Lower brightness in the deep greys without adjusting overall exposure.",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 23.32223892211914,
+            "shadow_down": 24.48263168334961,
+            "global_up": 20.56191062927246,
+            "global_down": 22.15605926513672,
+            "defer": 22.300018310546875
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 33.81874084472656,
+            "shadow_down": 40.33573913574219,
+            "global_up": 31.669437408447266,
+            "global_down": 31.031909942626953,
+            "defer": 37.553192138671875
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 2.5239439010620117,
+            "shadow_down": 3.196565866470337,
+            "global_up": -3.6632256507873535,
+            "global_down": -0.1979021430015564,
+            "defer": -1.8564422130584717
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 1.7327860593795776,
+            "shadow_down": 6.796212673187256,
+            "global_up": -4.908642768859863,
+            "global_down": -1.62714421749115,
+            "defer": -1.9934265613555908
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-5",
+      "group": "held-text-5",
+      "cohort": "held_text",
+      "language": "zh",
+      "instruction": "整体比现在亮一点，暗部和亮部都一起变化。",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 22.428085327148438,
+            "shadow_down": 21.519893646240234,
+            "global_up": 26.551076889038086,
+            "global_down": 22.954723358154297,
+            "defer": 23.70642852783203
+          }
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 37.55371856689453,
+            "shadow_down": 23.40711212158203,
+            "global_up": 40.96886444091797,
+            "global_down": 26.363393783569336,
+            "defer": 34.499271392822266
+          }
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 1.2845346927642822,
+            "shadow_down": -3.61513614654541,
+            "global_up": 5.5852484703063965,
+            "global_down": -1.2472918033599854,
+            "defer": -2.008568048477173
+          }
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -0.8401428461074829,
+            "shadow_down": -4.090809345245361,
+            "global_up": 7.649041652679443,
+            "global_down": -1.0051379203796387,
+            "defer": -1.711073875427246
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-5",
+      "group": "held-text-5",
+      "cohort": "held_text",
+      "language": "en",
+      "instruction": "Make the image brighter across the board, not just in its shadows.",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 20.48590850830078,
+            "shadow_down": 20.102306365966797,
+            "global_up": 27.045429229736328,
+            "global_down": 22.395038604736328,
+            "defer": 22.65071678161621
+          }
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 31.499645233154297,
+            "shadow_down": 20.56954002380371,
+            "global_up": 40.77310562133789,
+            "global_down": 25.40929412841797,
+            "defer": 30.259424209594727
+          }
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -1.5906915664672852,
+            "shadow_down": -5.2679901123046875,
+            "global_up": 9.852004051208496,
+            "global_down": -1.4296462535858154,
+            "defer": -1.5638372898101807
+          }
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -0.8876968622207642,
+            "shadow_down": -3.040083646774292,
+            "global_up": 11.123869895935059,
+            "global_down": -0.13017138838768005,
+            "defer": -7.065455436706543
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-6",
+      "group": "held-text-6",
+      "cohort": "held_text",
+      "language": "zh",
+      "instruction": "从天空到地面都增加一些亮度，保留原色。",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 22.119047164916992,
+            "shadow_down": 21.163883209228516,
+            "global_up": 27.373096466064453,
+            "global_down": 22.739105224609375,
+            "defer": 23.625652313232422
+          }
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 34.759769439697266,
+            "shadow_down": 21.504728317260742,
+            "global_up": 40.87451934814453,
+            "global_down": 25.008155822753906,
+            "defer": 30.809114456176758
+          }
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 0.6953489780426025,
+            "shadow_down": -4.505839824676514,
+            "global_up": 7.58297872543335,
+            "global_down": -1.8742074966430664,
+            "defer": -1.899815320968628
+          }
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 0.16794560849666595,
+            "shadow_down": -4.812543869018555,
+            "global_up": 9.930120468139648,
+            "global_down": -1.2421869039535522,
+            "defer": -4.04131555557251
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-6",
+      "group": "held-text-6",
+      "cohort": "held_text",
+      "language": "en",
+      "instruction": "Raise the brightness from sky to ground while keeping the original colours.",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 22.247802734375,
+            "shadow_down": 21.006519317626953,
+            "global_up": 24.613296508789062,
+            "global_down": 21.814409255981445,
+            "defer": 23.536771774291992
+          }
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 36.46471405029297,
+            "shadow_down": 24.738481521606445,
+            "global_up": 37.03495788574219,
+            "global_down": 25.87127685546875,
+            "defer": 35.176239013671875
+          }
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 2.0325770378112793,
+            "shadow_down": -4.618256568908691,
+            "global_up": 4.9423017501831055,
+            "global_down": -1.9268708229064941,
+            "defer": -0.42903590202331543
+          }
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 2.1696650981903076,
+            "shadow_down": -3.947890520095825,
+            "global_up": 4.180566787719727,
+            "global_down": -2.1675174236297607,
+            "defer": -0.2345709204673767
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-7",
+      "group": "held-text-7",
+      "cohort": "held_text",
+      "language": "zh",
+      "instruction": "整幅照片收暗半档，天空也要一起收。",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 22.84814453125,
+            "shadow_down": 21.633943557739258,
+            "global_up": 22.85677719116211,
+            "global_down": 27.684412002563477,
+            "defer": 22.042518615722656
+          }
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 28.210102081298828,
+            "shadow_down": 31.34204864501953,
+            "global_up": 36.40315246582031,
+            "global_down": 46.68562316894531,
+            "defer": 34.975318908691406
+          }
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -4.243452072143555,
+            "shadow_down": 0.19926977157592773,
+            "global_up": -1.4141689538955688,
+            "global_down": 7.773575782775879,
+            "defer": -2.3165876865386963
+          }
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -5.699686527252197,
+            "shadow_down": 0.2748475968837738,
+            "global_up": 0.04361617565155029,
+            "global_down": 9.71230697631836,
+            "defer": -4.330387592315674
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-7",
+      "group": "held-text-7",
+      "cohort": "held_text",
+      "language": "en",
+      "instruction": "Take the entire shot half a stop down, including the sky.",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 22.258132934570312,
+            "shadow_down": 21.819782257080078,
+            "global_up": 21.718820571899414,
+            "global_down": 25.82479476928711,
+            "defer": 22.04593276977539
+          }
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 27.243791580200195,
+            "shadow_down": 29.301067352294922,
+            "global_up": 33.56666564941406,
+            "global_down": 41.44191360473633,
+            "defer": 34.44499206542969
+          }
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -2.931112289428711,
+            "shadow_down": -0.5493487119674683,
+            "global_up": -0.750686526298523,
+            "global_down": 6.073768138885498,
+            "defer": -1.8418829441070557
+          }
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -4.4866557121276855,
+            "shadow_down": 1.8079731464385986,
+            "global_up": -0.5088516473770142,
+            "global_down": 7.196542263031006,
+            "defer": -4.009532928466797
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-8",
+      "group": "held-text-8",
+      "cohort": "held_text",
+      "language": "zh",
+      "instruction": "室内这张整体太亮，连白墙也一起暗一点。",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 22.604019165039062,
+            "shadow_down": 21.764995574951172,
+            "global_up": 22.74685287475586,
+            "global_down": 25.781219482421875,
+            "defer": 22.113088607788086
+          }
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 35.93579864501953,
+            "shadow_down": 30.426969528198242,
+            "global_up": 37.064849853515625,
+            "global_down": 42.7027587890625,
+            "defer": 36.95149612426758
+          }
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -1.1687864065170288,
+            "shadow_down": -0.6882206201553345,
+            "global_up": -1.1281367540359497,
+            "global_down": 5.643725872039795,
+            "defer": -2.6593172550201416
+          }
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -0.8377386927604675,
+            "shadow_down": -1.37083899974823,
+            "global_up": -0.39570242166519165,
+            "global_down": 5.82627534866333,
+            "defer": -3.2209558486938477
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-8",
+      "group": "held-text-8",
+      "cohort": "held_text",
+      "language": "en",
+      "instruction": "This indoor shot is too bright all over. Bring it all down, including the white wall.",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 21.687332153320312,
+            "shadow_down": 20.369970321655273,
+            "global_up": 23.023502349853516,
+            "global_down": 27.405210494995117,
+            "defer": 22.110595703125
+          }
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 24.00322151184082,
+            "shadow_down": 23.480642318725586,
+            "global_up": 33.38758850097656,
+            "global_down": 41.0671501159668,
+            "defer": 32.065574645996094
+          }
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -6.002552509307861,
+            "shadow_down": -2.24564528465271,
+            "global_up": 1.347510814666748,
+            "global_down": 8.368660926818848,
+            "defer": -1.4681475162506104
+          }
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -6.460251331329346,
+            "shadow_down": -0.2317482829093933,
+            "global_up": 2.1538665294647217,
+            "global_down": 11.458300590515137,
+            "defer": -6.921159267425537
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-9",
+      "group": "held-text-9",
+      "cohort": "held_text",
+      "language": "zh",
+      "instruction": "亮度不动，只把色温调冷一些。",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 21.734546661376953,
+            "shadow_down": 21.603450775146484,
+            "global_up": 19.707012176513672,
+            "global_down": 20.69635009765625,
+            "defer": 24.11031723022461
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 37.7614860534668,
+            "shadow_down": 31.15475845336914,
+            "global_up": 30.178783416748047,
+            "global_down": 29.2105712890625,
+            "defer": 44.838279724121094
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 2.468247890472412,
+            "shadow_down": -1.6223795413970947,
+            "global_up": -2.4867682456970215,
+            "global_down": -2.160487651824951,
+            "defer": 3.800567626953125
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 0.27215349674224854,
+            "shadow_down": -2.9819254875183105,
+            "global_up": -4.996008396148682,
+            "global_down": -4.225520610809326,
+            "defer": 11.932628631591797
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-9",
+      "group": "held-text-9",
+      "cohort": "held_text",
+      "language": "en",
+      "instruction": "Leave brightness as it is and make the white balance a little cooler.",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 20.599761962890625,
+            "shadow_down": 19.68257713317871,
+            "global_up": 19.130172729492188,
+            "global_down": 19.628368377685547,
+            "defer": 24.64667510986328
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 26.54751968383789,
+            "shadow_down": 27.314207077026367,
+            "global_up": 29.607370376586914,
+            "global_down": 27.091882705688477,
+            "defer": 43.75689697265625
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -1.0281825065612793,
+            "shadow_down": -2.6610827445983887,
+            "global_up": -0.4218345880508423,
+            "global_down": -1.928560495376587,
+            "defer": 6.040511608123779
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -0.405825138092041,
+            "shadow_down": -0.9027177095413208,
+            "global_up": -4.886970043182373,
+            "global_down": -2.7867233753204346,
+            "defer": 8.981167793273926
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-10",
+      "group": "held-text-10",
+      "cohort": "held_text",
+      "language": "zh",
+      "instruction": "先提阴影，再给整张加点复古棕色。",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 22.370372772216797,
+            "shadow_down": 20.903305053710938,
+            "global_up": 19.38736343383789,
+            "global_down": 20.052654266357422,
+            "defer": 22.958826065063477
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 39.87165832519531,
+            "shadow_down": 32.22325897216797,
+            "global_up": 31.884143829345703,
+            "global_down": 30.168582916259766,
+            "defer": 44.284027099609375
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 2.903667449951172,
+            "shadow_down": -0.4625293016433716,
+            "global_up": -2.2627878189086914,
+            "global_down": -2.318338632583618,
+            "defer": 2.140134811401367
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 2.0799925327301025,
+            "shadow_down": -1.1609901189804077,
+            "global_up": -4.737600803375244,
+            "global_down": -4.7316484451293945,
+            "defer": 8.551436424255371
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-10",
+      "group": "held-text-10",
+      "cohort": "held_text",
+      "language": "en",
+      "instruction": "Lift the shadows and then add a vintage brown tone to the whole picture.",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 21.44873809814453,
+            "shadow_down": 18.671863555908203,
+            "global_up": 17.424453735351562,
+            "global_down": 17.559974670410156,
+            "defer": 20.610389709472656
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 32.21746063232422,
+            "shadow_down": 24.747421264648438,
+            "global_up": 26.49694061279297,
+            "global_down": 23.011999130249023,
+            "defer": 34.560081481933594
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 3.8610715866088867,
+            "shadow_down": -2.4879603385925293,
+            "global_up": 0.018048882484436035,
+            "global_down": -3.3642194271087646,
+            "defer": 1.9759491682052612
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 4.155367851257324,
+            "shadow_down": -1.212329387664795,
+            "global_up": -2.600252866744995,
+            "global_down": -5.540362358093262,
+            "defer": 5.196763038635254
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-11",
+      "group": "held-text-11",
+      "cohort": "held_text",
+      "language": "zh",
+      "instruction": "只把阳光照到的地方压一点，树荫不用变。",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 25.276491165161133,
+            "shadow_down": 24.417930603027344,
+            "global_up": 22.838043212890625,
+            "global_down": 23.743234634399414,
+            "defer": 23.872417449951172
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 47.11664581298828,
+            "shadow_down": 36.370704650878906,
+            "global_up": 34.60939025878906,
+            "global_down": 33.328697204589844,
+            "defer": 41.00304412841797
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 4.8900532722473145,
+            "shadow_down": 0.40046262741088867,
+            "global_up": -3.751725196838379,
+            "global_down": -0.35186702013015747,
+            "defer": -1.1859099864959717
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 3.8786230087280273,
+            "shadow_down": 0.5935415029525757,
+            "global_up": -4.428781986236572,
+            "global_down": -2.6528475284576416,
+            "defer": 2.6110503673553467
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-11",
+      "group": "held-text-11",
+      "cohort": "held_text",
+      "language": "en",
+      "instruction": "Tone down the sunlit areas only; keep the shade unchanged.",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 23.810588836669922,
+            "shadow_down": 22.390182495117188,
+            "global_up": 22.627138137817383,
+            "global_down": 21.98433494567871,
+            "defer": 23.220849990844727
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 41.289161682128906,
+            "shadow_down": 30.533321380615234,
+            "global_up": 33.541038513183594,
+            "global_down": 28.392507553100586,
+            "defer": 37.43496322631836
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 5.143739223480225,
+            "shadow_down": -3.25264835357666,
+            "global_up": -0.4751054048538208,
+            "global_down": -1.1441864967346191,
+            "defer": -0.26969337463378906
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 4.439054489135742,
+            "shadow_down": -1.9149954319000244,
+            "global_up": -2.2338037490844727,
+            "global_down": -2.7943835258483887,
+            "defer": 2.504122734069824
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-12",
+      "group": "held-text-12",
+      "cohort": "held_text",
+      "language": "zh",
+      "instruction": "照片还是原来的样子就好，别动暗处或亮处。",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 23.61170196533203,
+            "shadow_down": 22.15474510192871,
+            "global_up": 21.913602828979492,
+            "global_down": 22.324092864990234,
+            "defer": 26.55550765991211
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 36.67400360107422,
+            "shadow_down": 34.292518615722656,
+            "global_up": 36.33488464355469,
+            "global_down": 34.89930725097656,
+            "defer": 51.053260803222656
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 0.5392255783081055,
+            "shadow_down": -0.8197691440582275,
+            "global_up": -3.0275344848632812,
+            "global_down": -0.5449849367141724,
+            "defer": 3.853248119354248
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -1.8461467027664185,
+            "shadow_down": -0.6301912069320679,
+            "global_up": -5.796444416046143,
+            "global_down": -1.4564476013183594,
+            "defer": 9.729400634765625
+          }
+        }
+      }
+    },
+    {
+      "id": "held-text-12",
+      "group": "held-text-12",
+      "cohort": "held_text",
+      "language": "en",
+      "instruction": "Keep the photo the way it is, without changes to dark or bright areas.",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 21.621524810791016,
+            "shadow_down": 19.002004623413086,
+            "global_up": 20.52259063720703,
+            "global_down": 20.300344467163086,
+            "defer": 26.612415313720703
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 27.837087631225586,
+            "shadow_down": 27.686126708984375,
+            "global_up": 32.93359375,
+            "global_down": 29.541202545166016,
+            "defer": 48.42986297607422
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -3.4133214950561523,
+            "shadow_down": -2.2209341526031494,
+            "global_up": -0.5197626352310181,
+            "global_down": -0.3421352803707123,
+            "defer": 6.497332572937012
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -2.7677581310272217,
+            "shadow_down": -0.36716893315315247,
+            "global_up": -4.571368217468262,
+            "global_down": -0.0999756008386612,
+            "defer": 7.804337024688721
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-shadow-up-1",
+      "group": "reg-shadow-up-1",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "给脸上背光的部分补一点亮度，已经亮的地方保持。",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 23.718536376953125,
+            "shadow_down": 22.775644302368164,
+            "global_up": 24.35715103149414,
+            "global_down": 22.09069061279297,
+            "defer": 23.281814575195312
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 41.8416748046875,
+            "shadow_down": 25.766054153442383,
+            "global_up": 36.643028259277344,
+            "global_down": 25.187721252441406,
+            "defer": 35.45207214355469
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 6.466900825500488,
+            "shadow_down": -3.227781295776367,
+            "global_up": 0.6259386539459229,
+            "global_down": -2.173952102661133,
+            "defer": -1.691068410873413
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 8.04506778717041,
+            "shadow_down": -4.811156272888184,
+            "global_up": 0.43380671739578247,
+            "global_down": -3.9666640758514404,
+            "defer": 0.3008662462234497
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-shadow-up-1",
+      "group": "reg-shadow-up-1",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Open up the dim side of the face a bit and leave the lit side alone.",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 23.44110107421875,
+            "shadow_down": 23.685070037841797,
+            "global_up": 22.268264770507812,
+            "global_down": 21.422700881958008,
+            "defer": 22.206905364990234
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 40.04385757446289,
+            "shadow_down": 32.56922149658203,
+            "global_up": 30.78438949584961,
+            "global_down": 23.8978328704834,
+            "defer": 33.102500915527344
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 5.445143222808838,
+            "shadow_down": -0.8146816492080688,
+            "global_up": -1.068902850151062,
+            "global_down": -1.5497746467590332,
+            "defer": -2.0088326930999756
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 7.8928022384643555,
+            "shadow_down": 1.0927326679229736,
+            "global_up": -2.38919997215271,
+            "global_down": -2.981196165084839,
+            "defer": -3.615277051925659
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-shadow-up-2",
+      "group": "reg-shadow-up-2",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "把画面里的暗处提起来一截，天上亮云原样保留。",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 24.16661262512207,
+            "shadow_down": 24.051528930664062,
+            "global_up": 22.95781898498535,
+            "global_down": 22.918304443359375,
+            "defer": 23.020870208740234
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 44.04821014404297,
+            "shadow_down": 32.93512725830078,
+            "global_up": 32.915252685546875,
+            "global_down": 28.71068572998047,
+            "defer": 35.834190368652344
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 5.480648517608643,
+            "shadow_down": 0.3344440460205078,
+            "global_up": -2.744029998779297,
+            "global_down": -0.9149233102798462,
+            "defer": -2.1553738117218018
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 6.58388614654541,
+            "shadow_down": -1.1377131938934326,
+            "global_up": -2.63234806060791,
+            "global_down": -3.1708555221557617,
+            "defer": 0.3587917685508728
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-shadow-up-2",
+      "group": "reg-shadow-up-2",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Bring up the darker tones so more is visible, leaving the bright clouds as they are.",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 24.087982177734375,
+            "shadow_down": 24.601863861083984,
+            "global_up": 20.854812622070312,
+            "global_down": 22.791759490966797,
+            "defer": 22.04090118408203
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 36.72426986694336,
+            "shadow_down": 38.12800598144531,
+            "global_up": 30.359691619873047,
+            "global_down": 30.661823272705078,
+            "defer": 33.944671630859375
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 2.5935144424438477,
+            "shadow_down": 2.9567806720733643,
+            "global_up": -2.9246716499328613,
+            "global_down": -0.26510652899742126,
+            "defer": -2.357240915298462
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 3.1416516304016113,
+            "shadow_down": 5.968308925628662,
+            "global_up": -3.556936264038086,
+            "global_down": -1.5868494510650635,
+            "defer": -3.9665119647979736
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-shadow-down-1",
+      "group": "reg-shadow-down-1",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "把树下的阴影压得更深，天和水面不用变。",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 24.37779998779297,
+            "shadow_down": 27.602825164794922,
+            "global_up": 20.053146362304688,
+            "global_down": 21.87941551208496,
+            "defer": 22.2103271484375
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 34.242767333984375,
+            "shadow_down": 47.04294204711914,
+            "global_up": 29.864063262939453,
+            "global_down": 29.511884689331055,
+            "defer": 34.072731018066406
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 1.5550596714019775,
+            "shadow_down": 8.710115432739258,
+            "global_up": -6.261791229248047,
+            "global_down": -1.8389251232147217,
+            "defer": -2.1617090702056885
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 2.7407917976379395,
+            "shadow_down": 11.676307678222656,
+            "global_up": -6.5664472579956055,
+            "global_down": -2.5289623737335205,
+            "defer": -5.320986747741699
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-shadow-down-1",
+      "group": "reg-shadow-down-1",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Deepen the shade below the trees and leave the sky and water as they are.",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 22.426006317138672,
+            "shadow_down": 25.577119827270508,
+            "global_up": 18.682674407958984,
+            "global_down": 20.643741607666016,
+            "defer": 21.241975784301758
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 28.91026496887207,
+            "shadow_down": 42.24336242675781,
+            "global_up": 27.03167152404785,
+            "global_down": 24.875036239624023,
+            "defer": 31.731626510620117
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 0.6967780590057373,
+            "shadow_down": 7.048335075378418,
+            "global_up": -4.258477210998535,
+            "global_down": -1.8624565601348877,
+            "defer": -1.6204898357391357
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 3.045374870300293,
+            "shadow_down": 12.18670654296875,
+            "global_up": -6.602884769439697,
+            "global_down": -2.6397013664245605,
+            "defer": -5.99014949798584
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-shadow-down-2",
+      "group": "reg-shadow-down-2",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "拉低暗部的亮度，让人像的阴影更有深度，白衫别变。",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 24.187467575073242,
+            "shadow_down": 26.629518508911133,
+            "global_up": 20.704843521118164,
+            "global_down": 22.597970962524414,
+            "defer": 22.773460388183594
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 41.79356384277344,
+            "shadow_down": 46.38922119140625,
+            "global_up": 32.14624786376953,
+            "global_down": 31.306785583496094,
+            "defer": 37.57322311401367
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 1.8340682983398438,
+            "shadow_down": 7.001167297363281,
+            "global_up": -5.356042385101318,
+            "global_down": -1.1278555393218994,
+            "defer": -2.349027395248413
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 1.958362102508545,
+            "shadow_down": 9.02415657043457,
+            "global_up": -5.590872287750244,
+            "global_down": -2.1911072731018066,
+            "defer": -3.199753522872925
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-shadow-down-2",
+      "group": "reg-shadow-down-2",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Pull the shadow tones down for a deeper portrait, leaving the white shirt alone.",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 22.850147247314453,
+            "shadow_down": 25.58336639404297,
+            "global_up": 19.089879989624023,
+            "global_down": 20.98452377319336,
+            "defer": 21.290691375732422
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 30.68749237060547,
+            "shadow_down": 43.802947998046875,
+            "global_up": 28.687908172607422,
+            "global_down": 27.853927612304688,
+            "defer": 33.59923553466797
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 1.1267294883728027,
+            "shadow_down": 7.207586288452148,
+            "global_up": -4.494965553283691,
+            "global_down": -1.6053619384765625,
+            "defer": -2.230201005935669
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 1.422477126121521,
+            "shadow_down": 12.4856538772583,
+            "global_up": -6.247161388397217,
+            "global_down": -2.282808303833008,
+            "defer": -5.3787336349487305
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-global-up-1",
+      "group": "reg-global-up-1",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "这张整体太暗了，整幅图的曝光提一档。",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 21.75240135192871,
+            "shadow_down": 21.237024307250977,
+            "global_up": 27.073087692260742,
+            "global_down": 23.733814239501953,
+            "defer": 23.318233489990234
+          }
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 35.81417465209961,
+            "shadow_down": 22.226547241210938,
+            "global_up": 40.75390625,
+            "global_down": 27.03707504272461,
+            "defer": 31.127052307128906
+          }
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -0.5540661811828613,
+            "shadow_down": -3.4608817100524902,
+            "global_up": 7.137382984161377,
+            "global_down": -0.2630244195461273,
+            "defer": -2.8612592220306396
+          }
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -0.90898597240448,
+            "shadow_down": -4.233709335327148,
+            "global_up": 10.37190055847168,
+            "global_down": 0.2998062074184418,
+            "defer": -5.526918411254883
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-global-up-1",
+      "group": "reg-global-up-1",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "The whole frame is too dim. Bring the exposure up a notch across the image.",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 21.36166763305664,
+            "shadow_down": 20.779714584350586,
+            "global_up": 27.120433807373047,
+            "global_down": 23.817190170288086,
+            "defer": 22.877460479736328
+          }
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 33.71910095214844,
+            "shadow_down": 20.84331512451172,
+            "global_up": 40.83727264404297,
+            "global_down": 27.434133529663086,
+            "defer": 29.313329696655273
+          }
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -2.863274574279785,
+            "shadow_down": -3.8338308334350586,
+            "global_up": 9.034551620483398,
+            "global_down": 0.20568925142288208,
+            "defer": -2.5431931018829346
+          }
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -3.38112473487854,
+            "shadow_down": -1.7495033740997314,
+            "global_up": 11.715459823608398,
+            "global_down": 1.8046293258666992,
+            "defer": -8.389204025268555
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-global-up-2",
+      "group": "reg-global-up-2",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "全画面再亮一点，包括前景、人物和天空，保留层次。",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 21.541481018066406,
+            "shadow_down": 21.043184280395508,
+            "global_up": 28.157310485839844,
+            "global_down": 21.54281997680664,
+            "defer": 22.7030029296875
+          }
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 32.79786682128906,
+            "shadow_down": 18.57598114013672,
+            "global_up": 38.51807403564453,
+            "global_down": 19.884931564331055,
+            "defer": 26.285930633544922
+          }
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 1.1399903297424316,
+            "shadow_down": -4.758979797363281,
+            "global_up": 8.623218536376953,
+            "global_down": -2.564136266708374,
+            "defer": -2.4415524005889893
+          }
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 2.4444804191589355,
+            "shadow_down": -6.011717796325684,
+            "global_up": 12.896258354187012,
+            "global_down": -1.140855312347412,
+            "defer": -8.186108589172363
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-global-up-2",
+      "group": "reg-global-up-2",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Give the entire photo a little more light, including the foreground, people and sky, while keeping tonal detail.",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 21.446556091308594,
+            "shadow_down": 20.68731117248535,
+            "global_up": 27.08261489868164,
+            "global_down": 21.709766387939453,
+            "defer": 23.068979263305664
+          }
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 33.97154998779297,
+            "shadow_down": 21.549560546875,
+            "global_up": 37.78658676147461,
+            "global_down": 21.8369140625,
+            "defer": 27.979604721069336
+          }
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 0.24621820449829102,
+            "shadow_down": -5.1918487548828125,
+            "global_up": 9.064608573913574,
+            "global_down": -1.8601205348968506,
+            "defer": -2.258134126663208
+          }
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 1.0911847352981567,
+            "shadow_down": -3.2295169830322266,
+            "global_up": 11.279561042785645,
+            "global_down": -0.6320444345474243,
+            "defer": -8.509011268615723
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-global-down-1",
+      "group": "reg-global-down-1",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "整张稍微压暗一些，别只改阴影。",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 21.655332565307617,
+            "shadow_down": 20.597919464111328,
+            "global_up": 21.93097496032715,
+            "global_down": 25.595172882080078,
+            "defer": 21.169300079345703
+          }
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 28.012226104736328,
+            "shadow_down": 29.797956466674805,
+            "global_up": 36.23335266113281,
+            "global_down": 43.607913970947266,
+            "defer": 34.82687759399414
+          }
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -2.803555727005005,
+            "shadow_down": -0.6445207595825195,
+            "global_up": -0.7198001146316528,
+            "global_down": 6.468045711517334,
+            "defer": -2.301597833633423
+          }
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -4.095374584197998,
+            "shadow_down": -0.6521996259689331,
+            "global_up": 0.1431128829717636,
+            "global_down": 7.478262424468994,
+            "defer": -2.872742176055908
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-global-down-1",
+      "group": "reg-global-down-1",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Make the whole photograph a little darker, including its lighter areas.",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 21.624027252197266,
+            "shadow_down": 19.804767608642578,
+            "global_up": 21.692516326904297,
+            "global_down": 27.455615997314453,
+            "defer": 20.744922637939453
+          }
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 23.800369262695312,
+            "shadow_down": 23.892358779907227,
+            "global_up": 31.231510162353516,
+            "global_down": 41.51060485839844,
+            "defer": 29.65625762939453
+          }
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -6.121460914611816,
+            "shadow_down": -1.056274652481079,
+            "global_up": 0.07912957668304443,
+            "global_down": 9.112147331237793,
+            "defer": -2.0135691165924072
+          }
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -5.944252967834473,
+            "shadow_down": 0.3964909613132477,
+            "global_up": 0.7564404010772705,
+            "global_down": 11.910508155822754,
+            "defer": -7.1202216148376465
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-global-down-2",
+      "group": "reg-global-down-2",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "整体曝光太高，整幅画面往回收一档。",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 22.7425594329834,
+            "shadow_down": 21.822540283203125,
+            "global_up": 24.266382217407227,
+            "global_down": 26.12186050415039,
+            "defer": 23.441505432128906
+          }
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 37.9459114074707,
+            "shadow_down": 30.10894012451172,
+            "global_up": 39.293888092041016,
+            "global_down": 43.4419059753418,
+            "defer": 37.816566467285156
+          }
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -1.0377488136291504,
+            "shadow_down": -1.8294508457183838,
+            "global_up": 0.15264523029327393,
+            "global_down": 4.957197189331055,
+            "defer": -2.2437937259674072
+          }
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -2.4186296463012695,
+            "shadow_down": -2.249509572982788,
+            "global_up": 0.752261221408844,
+            "global_down": 5.437003135681152,
+            "defer": -1.519862174987793
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-global-down-2",
+      "group": "reg-global-down-2",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "The shot is too bright overall. Bring the exposure down across the frame.",
+      "expected": "global_down",
+      "predictions": {
+        "frozen": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 22.022411346435547,
+            "shadow_down": 20.853797912597656,
+            "global_up": 23.929330825805664,
+            "global_down": 27.046506881713867,
+            "defer": 22.799015045166016
+          }
+        },
+        "tail_lora": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": 24.957088470458984,
+            "shadow_down": 24.817171096801758,
+            "global_up": 36.52644348144531,
+            "global_down": 41.59703826904297,
+            "defer": 34.03830337524414
+          }
+        },
+        "legacy_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -4.116860866546631,
+            "shadow_down": -2.862008810043335,
+            "global_up": 1.6987731456756592,
+            "global_down": 7.070219039916992,
+            "defer": -1.7902066707611084
+          }
+        },
+        "augmented_head": {
+          "route": "global_down",
+          "logits": {
+            "shadow_up": -4.525254249572754,
+            "shadow_down": -1.2681775093078613,
+            "global_up": 2.183952808380127,
+            "global_down": 9.30733871459961,
+            "defer": -5.698401927947998
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-contrast-only",
+      "group": "reg-contrast-only",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "降低整体对比度，尽量保持平均亮度。",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 23.21182632446289,
+            "shadow_down": 22.36536407470703,
+            "global_up": 22.55431365966797,
+            "global_down": 23.49439811706543,
+            "defer": 25.93642234802246
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 39.07304382324219,
+            "shadow_down": 30.96961212158203,
+            "global_up": 35.497711181640625,
+            "global_down": 35.405052185058594,
+            "defer": 48.44776916503906
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -0.15393781661987305,
+            "shadow_down": -1.3667829036712646,
+            "global_up": -1.3476365804672241,
+            "global_down": 0.2995296120643616,
+            "defer": 2.5683774948120117
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -4.269487380981445,
+            "shadow_down": -1.1075851917266846,
+            "global_up": -3.087207555770874,
+            "global_down": -0.6009159684181213,
+            "defer": 9.065797805786133
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-contrast-only",
+      "group": "reg-contrast-only",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Reduce overall contrast while keeping the average brightness about the same.",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 23.602802276611328,
+            "shadow_down": 22.493457794189453,
+            "global_up": 21.78565216064453,
+            "global_down": 22.929155349731445,
+            "defer": 24.895097732543945
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 33.2516975402832,
+            "shadow_down": 33.8172721862793,
+            "global_up": 34.19707489013672,
+            "global_down": 34.250240325927734,
+            "defer": 45.444976806640625
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 1.0566411018371582,
+            "shadow_down": -1.1041055917739868,
+            "global_up": -1.739155888557434,
+            "global_down": 0.6135995984077454,
+            "defer": 1.1748876571655273
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -2.2113876342773438,
+            "shadow_down": 1.2703391313552856,
+            "global_up": -4.082830905914307,
+            "global_down": -0.3638572692871094,
+            "defer": 5.387058258056641
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-compound-light",
+      "group": "reg-compound-light",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "提亮脸上的暗部，再把天空的高光压下来。",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 20.232295989990234,
+            "shadow_down": 20.204124450683594,
+            "global_up": 20.224285125732422,
+            "global_down": 19.612979888916016,
+            "defer": 21.614681243896484
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 38.99837875366211,
+            "shadow_down": 25.977413177490234,
+            "global_up": 30.059223175048828,
+            "global_down": 25.319910049438477,
+            "defer": 37.39616775512695
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 3.478259563446045,
+            "shadow_down": -1.3519859313964844,
+            "global_up": -0.4923588037490845,
+            "global_down": -2.355980157852173,
+            "defer": 0.7212893962860107
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 3.015260934829712,
+            "shadow_down": -2.037984848022461,
+            "global_up": -2.9932327270507812,
+            "global_down": -4.485136032104492,
+            "defer": 6.502727508544922
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-compound-light",
+      "group": "reg-compound-light",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Lift the shadowed parts of the face and also pull down the bright sky highlights.",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 22.489383697509766,
+            "shadow_down": 20.458858489990234,
+            "global_up": 19.09197235107422,
+            "global_down": 19.200878143310547,
+            "defer": 21.410980224609375
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 33.99001693725586,
+            "shadow_down": 27.655742645263672,
+            "global_up": 28.673433303833008,
+            "global_down": 25.032705307006836,
+            "defer": 35.281219482421875
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 4.573861598968506,
+            "shadow_down": -1.6632496118545532,
+            "global_up": -0.7106679677963257,
+            "global_down": -2.538796901702881,
+            "defer": 0.3421034812927246
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 2.130934238433838,
+            "shadow_down": 1.6757826805114746,
+            "global_up": -2.324097156524658,
+            "global_down": -4.468352317810059,
+            "defer": 2.985034704208374
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-conditional",
+      "group": "reg-conditional",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "看看要不要调整曝光，保留现在的气氛。",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 22.6776123046875,
+            "shadow_down": 21.617095947265625,
+            "global_up": 22.574142456054688,
+            "global_down": 22.34076690673828,
+            "defer": 24.266332626342773
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 41.685123443603516,
+            "shadow_down": 27.68579864501953,
+            "global_up": 35.978816986083984,
+            "global_down": 30.612287521362305,
+            "defer": 44.141021728515625
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 1.837888240814209,
+            "shadow_down": -1.8736151456832886,
+            "global_up": -0.9363018274307251,
+            "global_down": -0.1987268030643463,
+            "defer": 1.1703295707702637
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 1.3350741863250732,
+            "shadow_down": -3.8189964294433594,
+            "global_up": -2.554434299468994,
+            "global_down": -1.8787537813186646,
+            "defer": 6.918227195739746
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-conditional",
+      "group": "reg-conditional",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "See if the exposure needs a change, while preserving the current mood.",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 23.94570541381836,
+            "shadow_down": 22.174896240234375,
+            "global_up": 22.431995391845703,
+            "global_down": 22.582962036132812,
+            "defer": 24.505523681640625
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 39.074649810791016,
+            "shadow_down": 30.88652801513672,
+            "global_up": 35.27714538574219,
+            "global_down": 32.63572692871094,
+            "defer": 43.2437744140625
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 2.304959297180176,
+            "shadow_down": -2.7487375736236572,
+            "global_up": -0.30914008617401123,
+            "global_down": -0.4392792582511902,
+            "defer": 1.193997859954834
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 2.133492946624756,
+            "shadow_down": -3.1567633152008057,
+            "global_up": -2.3030788898468018,
+            "global_down": -1.7238370180130005,
+            "defer": 5.049762725830078
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-leave-alone",
+      "group": "reg-leave-alone",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "暗部和亮部都原样保留，什么也别改。",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 21.044815063476562,
+            "shadow_down": 18.95305824279785,
+            "global_up": 20.144920349121094,
+            "global_down": 19.64752197265625,
+            "defer": 26.000362396240234
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 30.363121032714844,
+            "shadow_down": 27.244731903076172,
+            "global_up": 32.125450134277344,
+            "global_down": 29.268993377685547,
+            "defer": 48.153621673583984
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -2.761101007461548,
+            "shadow_down": -1.4170997142791748,
+            "global_up": -1.4349015951156616,
+            "global_down": -0.7095561027526855,
+            "defer": 6.321845054626465
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -3.0473783016204834,
+            "shadow_down": -1.102087378501892,
+            "global_up": -4.324760437011719,
+            "global_down": -0.8764841556549072,
+            "defer": 9.350427627563477
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-leave-alone",
+      "group": "reg-leave-alone",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Leave the shadows and highlights exactly as they are and make no changes.",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 21.35758399963379,
+            "shadow_down": 18.951793670654297,
+            "global_up": 20.53826332092285,
+            "global_down": 20.192211151123047,
+            "defer": 26.654987335205078
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 27.607269287109375,
+            "shadow_down": 27.62158966064453,
+            "global_up": 33.03648376464844,
+            "global_down": 29.436798095703125,
+            "defer": 48.6458740234375
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -3.0985631942749023,
+            "shadow_down": -2.01424503326416,
+            "global_up": -0.7455343008041382,
+            "global_down": -0.5420534610748291,
+            "defer": 6.401544570922852
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -2.256300926208496,
+            "shadow_down": -0.0338062047958374,
+            "global_up": -4.882228851318359,
+            "global_down": -0.3109956681728363,
+            "defer": 7.481485366821289
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-keep",
+      "group": "reg-R27-keep",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "请原样保留，不要编辑。",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 19.885948181152344,
+            "shadow_down": 17.432903289794922,
+            "global_up": 18.421321868896484,
+            "global_down": 18.197399139404297,
+            "defer": 25.878787994384766
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 25.860347747802734,
+            "shadow_down": 24.491798400878906,
+            "global_up": 28.668231964111328,
+            "global_down": 26.09567642211914,
+            "defer": 44.65912628173828
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -5.317305564880371,
+            "shadow_down": -1.0257357358932495,
+            "global_up": -1.0248140096664429,
+            "global_down": -1.1175179481506348,
+            "defer": 8.484472274780273
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -3.2591934204101562,
+            "shadow_down": -0.47624796628952026,
+            "global_up": -4.5569024085998535,
+            "global_down": -0.8353456854820251,
+            "defer": 9.126751899719238
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-keep",
+      "group": "reg-R27-keep",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Keep the picture unchanged.",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 20.502235412597656,
+            "shadow_down": 17.918811798095703,
+            "global_up": 19.444547653198242,
+            "global_down": 19.552001953125,
+            "defer": 26.85186767578125
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 25.133075714111328,
+            "shadow_down": 25.472064971923828,
+            "global_up": 30.57052993774414,
+            "global_down": 27.150413513183594,
+            "defer": 46.33055114746094
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -5.401267051696777,
+            "shadow_down": -2.2635931968688965,
+            "global_up": 0.05500519275665283,
+            "global_down": -0.6324735879898071,
+            "defer": 8.243231773376465
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -3.758558750152588,
+            "shadow_down": -0.011701017618179321,
+            "global_up": -4.283660888671875,
+            "global_down": -0.1675644814968109,
+            "defer": 8.219117164611816
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-remove",
+      "group": "reg-R27-remove",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "请把背景里的路人移除。",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 21.880094528198242,
+            "shadow_down": 19.375980377197266,
+            "global_up": 19.794166564941406,
+            "global_down": 20.325971603393555,
+            "defer": 28.376625061035156
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 27.202960968017578,
+            "shadow_down": 25.829761505126953,
+            "global_up": 28.87024688720703,
+            "global_down": 27.740283966064453,
+            "defer": 45.50205612182617
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -5.084598064422607,
+            "shadow_down": -1.6337764263153076,
+            "global_up": -0.8208285570144653,
+            "global_down": -2.1444833278656006,
+            "defer": 9.68277359008789
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -2.738363742828369,
+            "shadow_down": -1.5895814895629883,
+            "global_up": -3.764014959335327,
+            "global_down": -1.951496958732605,
+            "defer": 10.042633056640625
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-remove",
+      "group": "reg-R27-remove",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Remove the person in the background.",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 22.326902389526367,
+            "shadow_down": 19.638813018798828,
+            "global_up": 20.238079071044922,
+            "global_down": 20.75701141357422,
+            "defer": 28.384504318237305
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 26.625320434570312,
+            "shadow_down": 26.99785614013672,
+            "global_up": 29.931655883789062,
+            "global_down": 27.293956756591797,
+            "defer": 45.453147888183594
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -4.210320472717285,
+            "shadow_down": -3.3771305084228516,
+            "global_up": 0.27306127548217773,
+            "global_down": -1.9799189567565918,
+            "defer": 9.295337677001953
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -2.596484899520874,
+            "shadow_down": -0.7887376546859741,
+            "global_up": -3.626126527786255,
+            "global_down": -1.8558948040008545,
+            "defer": 8.865131378173828
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-sepia",
+      "group": "reg-R27-sepia",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "加一点棕褐色的复古色调。",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 23.274127960205078,
+            "shadow_down": 21.69713592529297,
+            "global_up": 21.8348331451416,
+            "global_down": 22.257783889770508,
+            "defer": 26.549915313720703
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 37.97228240966797,
+            "shadow_down": 30.073291778564453,
+            "global_up": 33.42129135131836,
+            "global_down": 32.16505813598633,
+            "defer": 48.304725646972656
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 0.4538891315460205,
+            "shadow_down": -2.975046157836914,
+            "global_up": -0.7504514455795288,
+            "global_down": -1.3571157455444336,
+            "defer": 4.628241062164307
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -0.9897312521934509,
+            "shadow_down": -3.702932119369507,
+            "global_up": -2.85872483253479,
+            "global_down": -2.1595327854156494,
+            "defer": 9.711185455322266
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-sepia",
+      "group": "reg-R27-sepia",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Add a subtle brown sepia tone.",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 22.446563720703125,
+            "shadow_down": 20.287425994873047,
+            "global_up": 20.969684600830078,
+            "global_down": 20.895496368408203,
+            "defer": 27.600004196166992
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 28.166126251220703,
+            "shadow_down": 27.8204288482666,
+            "global_up": 31.183452606201172,
+            "global_down": 28.317590713500977,
+            "defer": 46.37205123901367
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -2.116016387939453,
+            "shadow_down": -3.9160990715026855,
+            "global_up": 0.700809121131897,
+            "global_down": -1.9776029586791992,
+            "defer": 7.309989929199219
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -2.4604692459106445,
+            "shadow_down": -1.6413307189941406,
+            "global_up": -2.943716049194336,
+            "global_down": -1.9491182565689087,
+            "defer": 8.99290943145752
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-whole",
+      "group": "reg-R27-whole",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "把整张照片的曝光明显提高。",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 21.865928649902344,
+            "shadow_down": 21.00467872619629,
+            "global_up": 27.771331787109375,
+            "global_down": 22.299877166748047,
+            "defer": 23.910511016845703
+          }
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 34.11866760253906,
+            "shadow_down": 21.861299514770508,
+            "global_up": 40.287376403808594,
+            "global_down": 23.60995101928711,
+            "defer": 30.10793113708496
+          }
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 0.03376054763793945,
+            "shadow_down": -4.613347053527832,
+            "global_up": 8.423979759216309,
+            "global_down": -1.8133001327514648,
+            "defer": -2.032512903213501
+          }
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 0.9301978945732117,
+            "shadow_down": -5.081061840057373,
+            "global_up": 11.085219383239746,
+            "global_down": -0.9209254384040833,
+            "defer": -6.011643409729004
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-whole",
+      "group": "reg-R27-whole",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Raise the exposure of the whole photograph noticeably.",
+      "expected": "global_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 20.889503479003906,
+            "shadow_down": 19.64148712158203,
+            "global_up": 26.499765396118164,
+            "global_down": 22.874736785888672,
+            "defer": 23.759035110473633
+          }
+        },
+        "tail_lora": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 30.934696197509766,
+            "shadow_down": 19.698877334594727,
+            "global_up": 39.11289978027344,
+            "global_down": 25.673812866210938,
+            "defer": 32.079193115234375
+          }
+        },
+        "legacy_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -2.9859468936920166,
+            "shadow_down": -4.895021438598633,
+            "global_up": 9.272981643676758,
+            "global_down": -0.5125676393508911,
+            "defer": -0.8797399997711182
+          }
+        },
+        "augmented_head": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": -2.270216464996338,
+            "shadow_down": -3.7914881706237793,
+            "global_up": 9.982022285461426,
+            "global_down": 0.5693928003311157,
+            "defer": -4.489523887634277
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-darken",
+      "group": "reg-R27-darken",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "显著压暗阴影，保持高光。",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 23.18440055847168,
+            "shadow_down": 25.19207191467285,
+            "global_up": 20.458141326904297,
+            "global_down": 23.37409210205078,
+            "defer": 21.81199836730957
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 35.411712646484375,
+            "shadow_down": 43.651145935058594,
+            "global_up": 32.71875,
+            "global_down": 35.371826171875,
+            "defer": 37.54313278198242
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 0.85357666015625,
+            "shadow_down": 5.999565124511719,
+            "global_up": -4.576146602630615,
+            "global_down": 0.3312450647354126,
+            "defer": -2.6068084239959717
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 0.6604158282279968,
+            "shadow_down": 7.85159969329834,
+            "global_up": -4.870425701141357,
+            "global_down": -1.1179438829421997,
+            "defer": -2.5226924419403076
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-darken",
+      "group": "reg-R27-darken",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Darken the shadows noticeably, preserving highlights.",
+      "expected": "shadow_down",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 22.69573211669922,
+            "shadow_down": 24.480060577392578,
+            "global_up": 18.916976928710938,
+            "global_down": 21.907909393310547,
+            "defer": 20.018278121948242
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 31.512205123901367,
+            "shadow_down": 40.82890701293945,
+            "global_up": 27.800947189331055,
+            "global_down": 28.147974014282227,
+            "defer": 30.151248931884766
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 1.2492892742156982,
+            "shadow_down": 5.3541259765625,
+            "global_up": -3.7678651809692383,
+            "global_down": -0.18411454558372498,
+            "defer": -2.648285150527954
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 2.1079189777374268,
+            "shadow_down": 8.768271446228027,
+            "global_up": -4.665348529815674,
+            "global_down": -1.4847149848937988,
+            "defer": -4.726467132568359
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-unspecified",
+      "group": "reg-R27-unspecified",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "把暗部提亮，亮部原样保留。",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "global_up",
+          "logits": {
+            "shadow_up": 22.344575881958008,
+            "shadow_down": 22.99542999267578,
+            "global_up": 23.832462310791016,
+            "global_down": 21.1939697265625,
+            "defer": 22.36756134033203
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 39.81292724609375,
+            "shadow_down": 28.1818904876709,
+            "global_up": 36.10406494140625,
+            "global_down": 24.28675079345703,
+            "defer": 34.44190216064453
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 6.982177734375,
+            "shadow_down": -2.389439344406128,
+            "global_up": 0.4441267251968384,
+            "global_down": -2.8964428901672363,
+            "defer": -2.1408231258392334
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 7.5649518966674805,
+            "shadow_down": -3.5176334381103516,
+            "global_up": 0.35074520111083984,
+            "global_down": -4.811017990112305,
+            "defer": 0.415392130613327
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-unspecified",
+      "group": "reg-R27-unspecified",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Lift the shadows and keep the highlights unchanged.",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 27.396408081054688,
+            "shadow_down": 24.79436492919922,
+            "global_up": 20.86391830444336,
+            "global_down": 21.20539093017578,
+            "defer": 22.500497817993164
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 40.51686096191406,
+            "shadow_down": 32.05751037597656,
+            "global_up": 28.865694046020508,
+            "global_down": 24.29281997680664,
+            "defer": 33.02277374267578
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 7.892409324645996,
+            "shadow_down": -0.753778338432312,
+            "global_up": -3.7585573196411133,
+            "global_down": -1.8125786781311035,
+            "defer": -1.5617988109588623
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 6.321974754333496,
+            "shadow_down": 0.9580016136169434,
+            "global_up": -1.4665858745574951,
+            "global_down": -3.1959259510040283,
+            "defer": -2.6185009479522705
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-conflict",
+      "group": "reg-R27-conflict",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "暗部只提一点点，但同一处暗部也要大幅提亮。",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 21.73444175720215,
+            "shadow_down": 21.525020599365234,
+            "global_up": 20.62955093383789,
+            "global_down": 21.514297485351562,
+            "defer": 25.960838317871094
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 33.14162826538086,
+            "shadow_down": 32.004981994628906,
+            "global_up": 33.35069274902344,
+            "global_down": 32.517417907714844,
+            "defer": 48.89704895019531
+          }
+        },
+        "legacy_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -0.6722743511199951,
+            "shadow_down": -0.6639190912246704,
+            "global_up": -1.830365777015686,
+            "global_down": -1.3806333541870117,
+            "defer": 4.546177864074707
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -4.437733173370361,
+            "shadow_down": 0.09080561995506287,
+            "global_up": -4.484268665313721,
+            "global_down": -2.2311580181121826,
+            "defer": 11.063013076782227
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-conflict",
+      "group": "reg-R27-conflict",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Lift the shadows a little, but also lift the same shadows substantially.",
+      "expected": "defer",
+      "predictions": {
+        "frozen": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 24.378185272216797,
+            "shadow_down": 21.88017463684082,
+            "global_up": 20.628515243530273,
+            "global_down": 21.553085327148438,
+            "defer": 24.932945251464844
+          }
+        },
+        "tail_lora": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": 32.68426513671875,
+            "shadow_down": 27.826915740966797,
+            "global_up": 30.207664489746094,
+            "global_down": 27.676109313964844,
+            "defer": 40.015872955322266
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 3.3540053367614746,
+            "shadow_down": -2.6980063915252686,
+            "global_up": -1.1752885580062866,
+            "global_down": -1.8669438362121582,
+            "defer": 2.3890299797058105
+          }
+        },
+        "augmented_head": {
+          "route": "defer",
+          "logits": {
+            "shadow_up": -2.124168872833252,
+            "shadow_down": -0.5858936309814453,
+            "global_up": -2.46232008934021,
+            "global_down": -2.9751460552215576,
+            "defer": 8.146442413330078
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-keep_highlights",
+      "group": "reg-R27-keep_highlights",
+      "cohort": "r28_regression",
+      "language": "zh",
+      "instruction": "明显提亮阴影，不要提亮高光。",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_down",
+          "logits": {
+            "shadow_up": 25.990337371826172,
+            "shadow_down": 26.858619689941406,
+            "global_up": 21.909114837646484,
+            "global_down": 21.9644775390625,
+            "defer": 22.44822883605957
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 43.559288024902344,
+            "shadow_down": 36.42938995361328,
+            "global_up": 26.50531768798828,
+            "global_down": 22.184814453125,
+            "defer": 29.861595153808594
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 7.169120788574219,
+            "shadow_down": 4.101565361022949,
+            "global_up": -5.970039367675781,
+            "global_down": -2.439119815826416,
+            "defer": -2.858689546585083
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 8.127257347106934,
+            "shadow_down": 4.310567855834961,
+            "global_up": -4.714540004730225,
+            "global_down": -3.8555757999420166,
+            "defer": -3.866447687149048
+          }
+        }
+      }
+    },
+    {
+      "id": "reg-R27-keep_highlights",
+      "group": "reg-R27-keep_highlights",
+      "cohort": "r28_regression",
+      "language": "en",
+      "instruction": "Lift the shadows noticeably, but do not brighten the highlights.",
+      "expected": "shadow_up",
+      "predictions": {
+        "frozen": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 28.486988067626953,
+            "shadow_down": 25.72708511352539,
+            "global_up": 21.197021484375,
+            "global_down": 21.743324279785156,
+            "defer": 22.392881393432617
+          }
+        },
+        "tail_lora": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 39.84587478637695,
+            "shadow_down": 30.680509567260742,
+            "global_up": 27.598114013671875,
+            "global_down": 22.785999298095703,
+            "defer": 30.700199127197266
+          }
+        },
+        "legacy_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 7.984395980834961,
+            "shadow_down": -0.07703113555908203,
+            "global_up": -4.142303466796875,
+            "global_down": -1.8369476795196533,
+            "defer": -1.92177414894104
+          }
+        },
+        "augmented_head": {
+          "route": "shadow_up",
+          "logits": {
+            "shadow_up": 6.399956226348877,
+            "shadow_down": 2.1396422386169434,
+            "global_up": -1.283004879951477,
+            "global_down": -2.804837226867676,
+            "defer": -4.453050136566162
+          }
+        }
+      }
+    }
+  ],
+  "GPU_hours": 0,
+  "deployed": false,
+  "final_acceptance_opened": false
+}

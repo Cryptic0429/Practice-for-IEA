@@ -1,0 +1,11 @@
+{
+  "issue": "Missing remote EXP18/demo directory interrupted experimental CPU service restart before replacement launch.",
+  "affected_services": [
+    "functional_v1.worker 4111921",
+    "functional_v1.web 4121909"
+  ],
+  "GPU1_untouched": true,
+  "training_untouched": true,
+  "correction": "Create output directory before terminating services; resume the interrupted known-PID restart with live-process validation.",
+  "GPU_calls": 0
+}

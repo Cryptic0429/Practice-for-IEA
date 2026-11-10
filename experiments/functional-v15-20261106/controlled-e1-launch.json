@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-06T19:35:03.228690+00:00",
+  "pid": 4107568,
+  "command": [
+    "envs/iea-rl/bin/python",
+    "-m",
+    "functional_v15.evaluate",
+    "--route",
+    "language_merger",
+    "--model",
+    "language-merger-e1",
+    "--adapter",
+    "experiments/functional-v15-20261106/runs/language_merger-seed-20261127/checkpoint-463",
+    "--gpu",
+    "2",
+    "--splits",
+    "development"
+  ],
+  "gate_sha256": "74bf7756010ef05593b8bf762ecb326455252b4d08d20814ee3141af4c1b6028",
+  "adapter_sha256": "97c84f1799fb319799c86515402574b3b585593763e5388eb30d0df3e0d6ea90"
+}

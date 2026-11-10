@@ -1,0 +1,25 @@
+{
+  "failure_observations": "experiments/functional-v15-20261106/repair-observations.jsonl",
+  "failure_observations_sha256": "8b73812c7ad27ce10ba6798ec0d209313506c3b790ccb43a40b89bbe84613d08",
+  "recipes": {
+    "r13-train-native-073": [
+      {
+        "exposure": 55,
+        "brightness": 8,
+        "contrast": 18,
+        "shadows": 8,
+        "highlights": -25,
+        "saturation": 4
+      },
+      {
+        "exposure": 40,
+        "brightness": 15,
+        "contrast": 20,
+        "shadows": 15,
+        "highlights": -30,
+        "saturation": 4
+      }
+    ]
+  },
+  "reason": "Both previously proposed strong lifts harmed portrait skin/highlights. Reduce compounded exposure/brightness and saturation, increase highlight protection, keep the original significant-brightness/contrast/colour request unchanged. Finite CPU proposals, not model predictions."
+}

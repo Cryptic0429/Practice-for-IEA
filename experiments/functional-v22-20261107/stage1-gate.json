@@ -1,0 +1,60 @@
+{
+  "at": "2026-11-07T05:00:25.839616+00:00",
+  "eligible": [],
+  "results": {
+    "quality-seed-20261205-step1160": {
+      "old-native": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v22-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/quality-seed-20261205-step1160/direct-functional-summary.json",
+        "sha256": "bedbfa64e848d90cc45ba830ec1e04880f69694047765d8f44cd60c4def197a1"
+      },
+      "native-development": {
+        "completed": 15,
+        "major": 0,
+        "path": "experiments/functional-v22-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/quality-seed-20261205-step1160/direct-functional-summary.json",
+        "sha256": "d33e499c00e505be37e273dd1d27872a5db0fc32b4e1536ccd5773ea0df4e3fb"
+      },
+      "decision-development": {
+        "completed": 20,
+        "major": 0,
+        "path": "experiments/functional-v22-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/decision-development/quality-seed-20261205-step1160/decision-summary.json",
+        "sha256": "379a011bdef1bec193254fa24e4e4ba0bdbb55598cb4e95f5169a1d4576452f2"
+      }
+    },
+    "quality-seed-20261206-step1160": {
+      "old-native": {
+        "completed": 6,
+        "major": 0,
+        "path": "experiments/functional-v22-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/quality-seed-20261206-step1160/direct-functional-summary.json",
+        "sha256": "11f883f34b6d10e1ca6638344595e6a209d9ca945f7c103b512467c8efa73e9a"
+      },
+      "native-development": {
+        "completed": 13,
+        "major": 0,
+        "path": "experiments/functional-v22-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/quality-seed-20261206-step1160/direct-functional-summary.json",
+        "sha256": "b3b10e0468a30b89e16038847290e08dd313971e3b64b5b4c55b1002a4c72b92"
+      },
+      "decision-development": {
+        "completed": 20,
+        "major": 0,
+        "path": "experiments/functional-v22-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/decision-development/quality-seed-20261206-step1160/decision-summary.json",
+        "sha256": "1f337e1d5e3f7044b61aa9794be09152445f2fa3f8bc311dd4d89ac6fa045fcd"
+      }
+    }
+  },
+  "qualified": false,
+  "thresholds": {
+    "seeds_both_required": true,
+    "old_native_min_completed": 4,
+    "native_min_completed": 16,
+    "decision_controls_required": 20,
+    "controlled_min_completed": 81,
+    "major_allowed": 0,
+    "order": "Each fixed seed: old6 -> native20+controls20 -> controlled100 only if eligible. Any confirmed major failure prevents promotion; do not resolve every other uncertain detail of already failed seeds.",
+    "locked": "Both seeds, final1160updates, same quality policy fixed before training. No development-based checkpoint/seed/threshold substitution.",
+    "reviews": "Anonymous direct Codex visual AI plus native-pixel supplements; exact prior pixel disputes stay uncertain. Decline is not completed editing. Not human/user approval.",
+    "acceptance": "Still sealed; open only after both fixed seeds pass all development gates, then no checkpoint/parameter tuning.",
+    "later_budget_use": "If route fails, no larger training on unverified labels. Remaining GPU allocation may document fixed-model behavior on prospectively frozen additional non-training development/reliability requests; no acceptance relabeling or hidden follow-up training."
+  }
+}

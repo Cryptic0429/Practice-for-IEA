@@ -1,0 +1,44 @@
+{
+  "at": "2026-11-05T19:33:58.338256+00:00",
+  "pid": 3997333,
+  "status": "completed",
+  "jobs": [
+    {
+      "origin": "base",
+      "pid": 3997398,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-m",
+        "functional_v9.evaluate",
+        "--origin",
+        "base",
+        "--model",
+        "base-init",
+        "--gpu",
+        "2"
+      ],
+      "started_at": "2026-11-05T19:33:58.339235+00:00",
+      "returncode": 0,
+      "ended_at": "2026-11-05T19:36:52.816058+00:00"
+    },
+    {
+      "origin": "author",
+      "pid": 3998502,
+      "command": [
+        "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+        "-m",
+        "functional_v9.evaluate",
+        "--origin",
+        "author",
+        "--model",
+        "author-init",
+        "--gpu",
+        "2"
+      ],
+      "started_at": "2026-11-05T19:36:52.818064+00:00",
+      "returncode": 0,
+      "ended_at": "2026-11-05T19:41:31.438812+00:00"
+    }
+  ],
+  "finished_at": "2026-11-05T19:41:31.439719+00:00"
+}
