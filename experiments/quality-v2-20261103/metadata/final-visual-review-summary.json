@@ -1,0 +1,195 @@
+{
+  "status": "completed_observed_then_decoded",
+  "decoded_at": "2026-11-03T20:02:05.881241+00:00",
+  "observations_sha256": "aca0e40627779e8fee2ae2331bbcbda7da0d1fc1f5a56dc517d49b86da389f16",
+  "key_sha256": "528f8a4e86f75ef16c0efe2d0cb0e4515a176990de8423ffa684f183bb11ae0a",
+  "source_provenance_sha256": "241e8399a09516ee816ef2c5ca817013703bccf1f3ce322b97c0336f3e03fd66",
+  "cases": 30,
+  "outputs": 210,
+  "explicit_instruction_cases": 10,
+  "generic_or_empty_instruction_cases": 20,
+  "models": {
+    "A": {
+      "instruction": {
+        "not_assessable": 20,
+        "opposite": 3,
+        "partial": 6,
+        "aligned": 1
+      },
+      "strength": {
+        "uncertain": 8,
+        "insufficient": 6,
+        "excessive": 16
+      },
+      "unrelated_change": {
+        "uncertain": 20,
+        "minor": 5,
+        "major": 5
+      },
+      "reference_match_relative_input": {
+        "farther": 20,
+        "mixed": 9,
+        "closer": 1
+      }
+    },
+    "GRPO": {
+      "instruction": {
+        "not_assessable": 20,
+        "opposite": 2,
+        "partial": 7,
+        "aligned": 1
+      },
+      "strength": {
+        "uncertain": 9,
+        "insufficient": 6,
+        "excessive": 15
+      },
+      "unrelated_change": {
+        "uncertain": 20,
+        "minor": 4,
+        "major": 6
+      },
+      "reference_match_relative_input": {
+        "farther": 18,
+        "mixed": 9,
+        "closer": 3
+      }
+    },
+    "Seed20261103": {
+      "instruction": {
+        "not_assessable": 20,
+        "opposite": 2,
+        "partial": 6,
+        "aligned": 2
+      },
+      "strength": {
+        "uncertain": 19,
+        "insufficient": 7,
+        "excessive": 3,
+        "adequate": 1
+      },
+      "unrelated_change": {
+        "uncertain": 20,
+        "minor": 8,
+        "major": 1,
+        "none": 1
+      },
+      "reference_match_relative_input": {
+        "mixed": 16,
+        "farther": 10,
+        "closer": 4
+      }
+    },
+    "SFT": {
+      "instruction": {
+        "not_assessable": 20,
+        "partial": 8,
+        "opposite": 1,
+        "aligned": 1
+      },
+      "strength": {
+        "uncertain": 7,
+        "insufficient": 6,
+        "excessive": 17
+      },
+      "unrelated_change": {
+        "uncertain": 20,
+        "none": 1,
+        "major": 4,
+        "minor": 5
+      },
+      "reference_match_relative_input": {
+        "farther": 18,
+        "mixed": 10,
+        "closer": 2
+      }
+    },
+    "B": {
+      "instruction": {
+        "not_assessable": 20,
+        "aligned": 3,
+        "opposite": 1,
+        "partial": 6
+      },
+      "strength": {
+        "uncertain": 5,
+        "adequate": 1,
+        "excessive": 19,
+        "insufficient": 5
+      },
+      "unrelated_change": {
+        "uncertain": 20,
+        "minor": 6,
+        "major": 4
+      },
+      "reference_match_relative_input": {
+        "farther": 18,
+        "closer": 2,
+        "mixed": 10
+      }
+    },
+    "Seed20261105": {
+      "instruction": {
+        "not_assessable": 20,
+        "partial": 7,
+        "aligned": 2,
+        "opposite": 1
+      },
+      "strength": {
+        "uncertain": 18,
+        "insufficient": 7,
+        "excessive": 4,
+        "adequate": 1
+      },
+      "unrelated_change": {
+        "uncertain": 20,
+        "minor": 6,
+        "none": 3,
+        "major": 1
+      },
+      "reference_match_relative_input": {
+        "mixed": 14,
+        "farther": 10,
+        "closer": 6
+      }
+    },
+    "Seed20261104": {
+      "instruction": {
+        "not_assessable": 20,
+        "opposite": 1,
+        "partial": 7,
+        "aligned": 2
+      },
+      "strength": {
+        "uncertain": 20,
+        "insufficient": 8,
+        "excessive": 2
+      },
+      "unrelated_change": {
+        "uncertain": 20,
+        "minor": 8,
+        "none": 2
+      },
+      "reference_match_relative_input": {
+        "mixed": 18,
+        "farther": 8,
+        "closer": 4
+      }
+    }
+  },
+  "interpretation": [
+    "Compared with strongest original test baseline A, new seeds have2/10 direction-aligned judgments versus1/10; opposite judgments1-2 versus3. This is descriptive AI review, not statistical noninferiority proof.",
+    "Excessive-strength judgments fall from16/30 for A to3/30,2/30,4/30 for seeds03,04,05. Some explicit substantial-enhancement requests instead become insufficient.",
+    "Selected Seed04 has no major-unrelated-change judgments on10 explicit cases, versus5 for A; generic cases are unassessable for unrelatedness.",
+    "B has3/10 aligned judgments, exceeding each new seed2/10; do not claim superiority over every baseline on all instruction types.",
+    "Persistent failure cases include night visibility2, brown tone12, outlet removal14, backlit faces24 and soft portrait30. No output achieves local outlet removal or selective colorization23.",
+    "Reference match is a qualitative judgment, separate from measured pixelL1; no ranking of general aesthetics is established."
+  ],
+  "limits": [
+    "AI-assisted anonymous viewing of full-frame1800px9-panel sheets, not independent human review or a formal double-blind user study.",
+    "Model identities hidden per case until all210 notes frozen; reviewer knew aggregate campaign results and method hypotheses.",
+    "Only10/30 cases have specific requests; generic/empty requests never count as directional passes.",
+    "Fine sharpening details cannot be established at sheet scale; uncertainty and partial ratings retained.",
+    "Uniform preselected30 source groups; no case substitution, no new test-driven model selection."
+  ]
+}

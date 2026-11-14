@@ -1,0 +1,757 @@
+{
+  "observed_at": "2026-11-03T19:41:21.718503+00:00",
+  "workers": {
+    "worker-0": {
+      "status": "completed",
+      "task": "eval-SFT",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-2": {
+      "status": "completed",
+      "task": "eval-parameters-lr3e-5-s20261103",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-3": {
+      "status": "completed",
+      "task": "eval-GRPO",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-3k-replication-20261104": {
+      "status": "completed",
+      "task": "challenge",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-3k-replication-20261105": {
+      "status": "completed",
+      "task": "challenge",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-3k-stabilization": {
+      "status": "completed",
+      "task": "challenge",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-3k": {
+      "status": "training_completed_validation_separate",
+      "task": "json3k-train",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-calibrated-0": {
+      "status": "completed",
+      "task": "contrast-calibrated-lr1e-5-s20261103-analysis",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-calibrated-3": {
+      "status": "completed",
+      "task": "contrast-calibrated-lr3e-5-s20261103-analysis",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-capacity-expanded": {
+      "status": "completed",
+      "task": "expanded-memorize64-lr1e-4-s20261103-validate",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-capacity-long": {
+      "status": "completed",
+      "task": "json-memorize64-long512-lr1e-4-s20261103-validate",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-final-0": {
+      "status": "completed",
+      "task": "Seed20261103",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-final-2": {
+      "status": "completed",
+      "task": "Seed20261104",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-final-3": {
+      "status": "completed",
+      "task": "Seed20261105",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-instruction-challenge": {
+      "status": "completed",
+      "task": "json-calibrated-long1024-lr1e-4-s20261103-step256",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-json-0": {
+      "status": "completed",
+      "task": "json-calibrated-lr3e-5-s20261103-validate",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-json-2": {
+      "status": "completed",
+      "task": "A-json-schema-validate",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-json-3": {
+      "status": "completed",
+      "task": "B-json-schema-validate",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-long3k-validation": {
+      "status": "completed",
+      "task": "json-calibrated3k-long1024-lr1e-4-s20261103-step1024",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-long512-validation": {
+      "status": "completed",
+      "task": "json-calibrated-long1024-lr1e-4-s20261103-step1024",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-memorize-0": {
+      "status": "completed",
+      "task": "json-memorize64-lr1e-4-s20261103-validate",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-memorize-2": {
+      "status": "completed",
+      "task": "B-json-memorize64-control-training-probe",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-memorize-3": {
+      "status": "completed",
+      "task": "A-json-memorize64-control-training-probe",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-numerical": {
+      "status": "completed",
+      "task": "validate512",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-qualityweighted3k": {
+      "status": "completed",
+      "task": "challenge",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-replica-challenge-20261104": {
+      "status": "completed",
+      "task": "json-calibrated-locked256-lr1e-4-s20261104",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-replica-challenge-20261105": {
+      "status": "completed",
+      "task": "json-calibrated-locked256-lr1e-4-s20261105",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-replication-20261104": {
+      "status": "completed",
+      "task": "validate",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-replication-20261105": {
+      "status": "completed",
+      "task": "validate",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-restore-smoke": {
+      "status": "completed",
+      "task": null,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-trial-json-calibrated-lr1e-4-s20261103": {
+      "status": "completed",
+      "task": "json-calibrated-lr1e-4-s20261103-analysis",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "cpu-queue": {
+      "status": "completed",
+      "task": "parameters-lr3e-5-s20261103",
+      "pid_live": false,
+      "child_pid_live": false
+    }
+  },
+  "runs": {
+    "calibrated3k-quality-audit": {
+      "status": "completed",
+      "step": null,
+      "completed": 3000,
+      "all_logged_metrics_finite": null
+    },
+    "checkpoint-restore-smoke-v1": {
+      "status": "completed",
+      "step": null,
+      "completed": null,
+      "all_logged_metrics_finite": null
+    },
+    "contrast-calibrated-lr1e-5-s20261103": {
+      "status": "completed",
+      "step": 128,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "contrast-calibrated-lr3e-5-s20261103": {
+      "status": "completed",
+      "step": 128,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "contrast-label-search": {
+      "status": "completed",
+      "step": null,
+      "completed": 512,
+      "all_logged_metrics_finite": null
+    },
+    "contrast-label-search3k": {
+      "status": "completed",
+      "step": null,
+      "completed": 3000,
+      "all_logged_metrics_finite": null
+    },
+    "expanded-memorize64-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": 128,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "frozen-A-features-v1": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "frozen-A-features3k-v1": {
+      "status": "completed",
+      "step": null,
+      "completed": 3000,
+      "all_logged_metrics_finite": null
+    },
+    "full-lr1e-5-s20261103": {
+      "status": "completed",
+      "step": 128,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "json-calibrated-locked256-lr1e-4-s20261104": {
+      "status": "completed",
+      "step": 256,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "json-calibrated-locked256-lr1e-4-s20261105": {
+      "status": "completed",
+      "step": 256,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "json-calibrated-long1024-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": 1024,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "json-calibrated-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": 128,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "json-calibrated-lr3e-5-s20261103": {
+      "status": "completed",
+      "step": 128,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "json-calibrated3k-long1024-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": 1024,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "json-memorize64-long512-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": 512,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "json-memorize64-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": 128,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "json3k-qualityweighted512-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": 512,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "json3k-replica1024-lr1e-4-s20261104": {
+      "status": "completed",
+      "step": 1024,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "json3k-replica1024-lr1e-4-s20261105": {
+      "status": "completed",
+      "step": 1024,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "numeric-head512-s20261103": {
+      "status": "completed",
+      "step": 640,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "numeric-head64-s20261103": {
+      "status": "completed",
+      "step": 1000,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "numeric-ridge3k-cv-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": null,
+      "all_logged_metrics_finite": null
+    },
+    "numeric-ridge512-cv-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": null,
+      "all_logged_metrics_finite": null
+    },
+    "parameters-lr1e-5-s20261103": {
+      "status": "completed",
+      "step": 128,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "parameters-lr3e-5-s20261103": {
+      "status": "completed",
+      "step": 128,
+      "completed": null,
+      "all_logged_metrics_finite": true
+    },
+    "evaluation/validation-A": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-A-json-schema": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-B": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-B-json-schema": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-GRPO": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-SFT": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-contrast-calibrated-lr1e-5-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-contrast-calibrated-lr3e-5-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-expanded-memorize64-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-full-lr1e-5-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json-calibrated-locked256-lr1e-4-s20261104": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json-calibrated-locked256-lr1e-4-s20261105": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json-calibrated-long1024-lr1e-4-s20261103-step1024": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json-calibrated-long1024-lr1e-4-s20261103-step256": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json-calibrated-long1024-lr1e-4-s20261103-step512": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json-calibrated-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json-calibrated-lr3e-5-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json-calibrated3k-long1024-lr1e-4-s20261103-step1024": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json-calibrated3k-long1024-lr1e-4-s20261103-step256": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json-calibrated3k-long1024-lr1e-4-s20261103-step512": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json-memorize64-long512-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json-memorize64-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json3k-primary-swa512-1024-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json3k-qualityweighted512-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json3k-replica1024-lr1e-4-s20261104-swa": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-json3k-replica1024-lr1e-4-s20261105-swa": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-numeric-head512-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-numeric-ridge3k-cv-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-numeric-ridge512-cv-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-parameters-lr1e-5-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "evaluation/validation-parameters-lr3e-5-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 200,
+      "all_logged_metrics_finite": null
+    },
+    "training-probe-evaluation/train_probe-A-json-memorize64-control": {
+      "status": "completed",
+      "step": null,
+      "completed": 64,
+      "all_logged_metrics_finite": null
+    },
+    "training-probe-evaluation/train_probe-B-json-memorize64-control": {
+      "status": "completed",
+      "step": null,
+      "completed": 64,
+      "all_logged_metrics_finite": null
+    },
+    "training-probe-evaluation/train_probe-expanded-memorize64-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 64,
+      "all_logged_metrics_finite": null
+    },
+    "training-probe-evaluation/train_probe-json-memorize64-long512-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 64,
+      "all_logged_metrics_finite": null
+    },
+    "training-probe-evaluation/train_probe-json-memorize64-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 64,
+      "all_logged_metrics_finite": null
+    },
+    "training-probe-evaluation/train_probe-numeric-head64-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 64,
+      "all_logged_metrics_finite": null
+    },
+    "instruction-challenge/B-original-format": {
+      "status": "completed",
+      "step": null,
+      "completed": 48,
+      "all_logged_metrics_finite": null
+    },
+    "instruction-challenge/json-calibrated-locked256-lr1e-4-s20261104": {
+      "status": "completed",
+      "step": null,
+      "completed": 48,
+      "all_logged_metrics_finite": null
+    },
+    "instruction-challenge/json-calibrated-locked256-lr1e-4-s20261105": {
+      "status": "completed",
+      "step": null,
+      "completed": 48,
+      "all_logged_metrics_finite": null
+    },
+    "instruction-challenge/json-calibrated-long1024-lr1e-4-s20261103-step256": {
+      "status": "completed",
+      "step": null,
+      "completed": 48,
+      "all_logged_metrics_finite": null
+    },
+    "instruction-challenge/json-calibrated3k-long1024-lr1e-4-s20261103-step1024": {
+      "status": "completed",
+      "step": null,
+      "completed": 48,
+      "all_logged_metrics_finite": null
+    },
+    "instruction-challenge/json3k-primary-swa512-1024-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 48,
+      "all_logged_metrics_finite": null
+    },
+    "instruction-challenge/json3k-qualityweighted512-lr1e-4-s20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 48,
+      "all_logged_metrics_finite": null
+    },
+    "instruction-challenge/json3k-replica1024-lr1e-4-s20261104-swa": {
+      "status": "completed",
+      "step": null,
+      "completed": 48,
+      "all_logged_metrics_finite": null
+    },
+    "instruction-challenge/json3k-replica1024-lr1e-4-s20261105-swa": {
+      "status": "completed",
+      "step": null,
+      "completed": 48,
+      "all_logged_metrics_finite": null
+    },
+    "final-evaluation/A": {
+      "status": "completed",
+      "step": null,
+      "completed": 71,
+      "all_logged_metrics_finite": null
+    },
+    "final-evaluation/B": {
+      "status": "completed",
+      "step": null,
+      "completed": 71,
+      "all_logged_metrics_finite": null
+    },
+    "final-evaluation/GRPO": {
+      "status": "completed",
+      "step": null,
+      "completed": 71,
+      "all_logged_metrics_finite": null
+    },
+    "final-evaluation/SFT": {
+      "status": "completed",
+      "step": null,
+      "completed": 71,
+      "all_logged_metrics_finite": null
+    },
+    "final-evaluation/Seed20261103": {
+      "status": "completed",
+      "step": null,
+      "completed": 71,
+      "all_logged_metrics_finite": null
+    },
+    "final-evaluation/Seed20261104": {
+      "status": "completed",
+      "step": null,
+      "completed": 71,
+      "all_logged_metrics_finite": null
+    },
+    "final-evaluation/Seed20261105": {
+      "status": "completed",
+      "step": null,
+      "completed": 71,
+      "all_logged_metrics_finite": null
+    }
+  },
+  "calibration": [
+    "A-validation-200",
+    "A-validation-first32",
+    "B-validation-200",
+    "GRPO-validation-200",
+    "SFT-validation-200",
+    "full-lr1e-5-s20261103-validation-200",
+    "parameters-lr1e-5-s20261103-validation-200",
+    "parameters-lr3e-5-s20261103-validation-200"
+  ],
+  "auxiliary": {
+    "training-label-audit": {
+      "pid": 3621306,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "holdout-image-audit": {
+      "pid": 3621634,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "contrast-label-search": {
+      "pid": 3623325,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "feature-extraction": {
+      "pid": 3641028,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "long512-training": {
+      "pid": 3642377,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "calibration3k": {
+      "pid": 3644598,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "feature-extraction3k": {
+      "pid": 3644599,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "long3k-training": {
+      "pid": 3646815,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "ridge": {
+      "pid": 3643148,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "ridge-validation": {
+      "pid": 3643410,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "calibrated3k-quality-audit": {
+      "pid": 3656965,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    }
+  }
+}

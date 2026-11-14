@@ -1,0 +1,524 @@
+\documentclass[UTF8,fontset=none,zihao=5,a4paper]{ctexart}
+\usepackage[margin=23mm,headheight=16pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Menlo}[Scale=.82]
+\setCJKmainfont{Songti SC}[BoldFont={Heiti SC}]
+\setCJKsansfont{Heiti SC}
+\setCJKmonofont{Heiti SC}
+\usepackage{amsmath,amssymb,booktabs,longtable,array,tabularx,multirow}
+\usepackage[table]{xcolor}
+\usepackage{graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,fit}
+\usepackage{enumitem,fancyhdr,xurl}
+\usepackage[colorlinks=true,linkcolor=navy,urlcolor=teal,bookmarksnumbered=true]{hyperref}
+\definecolor{navy}{HTML}{173A59}
+\definecolor{teal}{HTML}{147D86}
+\definecolor{amber}{HTML}{B57A22}
+\definecolor{ink}{HTML}{273747}
+\definecolor{lightblue}{HTML}{F0F5FA}
+\definecolor{muted}{HTML}{637486}
+\hypersetup{pdftitle={IEA 模型谱系、评测与训练策略完整报告},pdfauthor={IEA 项目实验记录整理},pdfsubject={历史证据汇总，2026-11-12}}
+\ctexset{section={format=\Large\bfseries\sffamily\color{navy}},subsection={format=\large\bfseries\sffamily\color{navy}}}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{3pt}
+\linespread{1.12}
+\setlist{nosep,leftmargin=2em,topsep=5pt}
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{5pt}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{muted}IEA / 模型与实验报告}
+\fancyhead[R]{\small\sffamily\color{muted}证据截至 2026-11-12}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{.3pt}
+\newcommand{\note}[1]{\par\smallskip\noindent\colorbox{lightblue}{\parbox{\dimexpr\linewidth-2\fboxsep}{\small #1}}\par\smallskip}
+\newcommand{\source}[1]{\par\noindent{\footnotesize\color{muted}证据：#1}\par}
+\newcommand{\metric}[1]{\textsf{#1}}
+\emergencystretch=2em
+\input{generated/tables.tex}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\vspace*{12mm}
+{\sffamily\color{teal}\Large IEA EXPERIMENT REVIEW\par}
+\vspace{10mm}
+{\sffamily\bfseries\color{navy}\fontsize{29}{38}\selectfont 模型谱系、评测指标\\与训练策略完整报告\par}
+\vspace{8mm}
+{\Large 中英文指令驱动的全局图像编辑\par}
+\vspace{6mm}
+{\color{muted}2026年11月12日\quad / \quad 历史证据汇总版\par}
+\vspace{14mm}
+\noindent\begin{tabularx}{\linewidth}{@{}YYY@{}}
+\toprule
+\textbf{35份 LoRA} & \textbf{6份辅助头} & \textbf{4个交互候选}\\
+7份早期＋28份功能模型 & 登记的独立头权重 & R1、R15、R23、R15＋R21\\
+\bottomrule
+\end{tabularx}
+\vspace{10mm}
+\noindent\textbf{核心结论}\par
+标签校准在独立71图上得到三个种子一致的像素误差改善；课程数据显著改善受控任务，但未稳定迁移到自然请求。后期幅度与质量控制有局部收益，换种子复核及整体实用性仍未通过。
+\vspace{6mm}
+\note{本报告不是新的模型测试。全部数值来自已有训练、评测与交付记录；没有新增训练、GPU推理或开封最终验收。功能图像判断主要来自AI辅助评审，不能等同独立用户认可。}
+\vfill
+\noindent\small 报告源：\path{reports/model-review-20261112/}\\
+最终PDF：\path{output/pdf/iea-model-review-20261112.pdf}\\
+数据快照保留来源路径与SHA256，模型权重和历史冻结文件保持原位。
+\end{titlepage}
+\pagenumbering{roman}
+\hypersetup{pageanchor=true}
+\begingroup
+\small\linespread{1.0}\selectfont
+\setlength{\parskip}{0pt}
+\tableofcontents
+\endgroup
+\clearpage
+\pagenumbering{arabic}
+
+\section{报告范围与如何阅读结果}
+\subsection{项目解决的问题}
+IEA系统接收原图和中文或英文修图要求，使用视觉语言模型输出工具与参数，再由确定性编辑器执行。目前主要支持曝光、亮度、对比度、高光、阴影、饱和度、色温、色调和棕褐色等9种全局操作。它不是直接生成新画面的扩散编辑模型，也没有由本项目验证通过的物体移除、局部换色或真实去噪能力。
+
+项目探索了监督微调、重采样、标签校准、GRPO、DPO、视觉连接层与视觉末段微调、图像统计分支、连续控制头和质量拒绝。研究同时覆盖模型、执行工具、数据质量、评审与交互系统，不能把所有结果变化都归因于权重更新。
+
+\subsection{统计单位和证据等级}
+模型登记有42个入口、41个独立规范路径：35份LoRA和6份辅助头。R21首种子的“仅幅度”和“幅度＋质量”是同权重的两种运行策略，不是两个独立训练模型。R5的两个早期头、R29的CPU诊断LoRA及输出头、后期选择器另有产物，不纳入35份LoRA的历史口径。
+
+\noindent\begin{tabularx}{\linewidth}{@{}P{3.2cm}Y@{}}
+\toprule
+证据类型 & 本报告如何使用\\
+\midrule
+独立71图像素测试 & 早期7模型同集比较；相同原图组配对分析，未把3种子乘71算成213独立样本。\\
+R1冻结验收50 & 选模和代码锁定后评测；与后续20例开发集不可直接排总榜。\\
+反复使用的开发集 & 诊断改进方向；不能当新独立测试。\\
+换种子复核 & 检查收益是否稳定；R21锁定复核失败必须保留。\\
+接口、浏览器和下载核验 & 证明运行身份、协议与文件一致性，不证明画质成功率。\\
+独立用户体验 & 本次没有新增用户研究，也未重新审计后续个人反馈。\\
+\bottomrule
+\end{tabularx}
+
+\subsection{指标一览}
+\noindent\begin{tabularx}{\linewidth}{@{}P{3.1cm}P{1cm}Y@{}}
+\toprule
+指标 & 方向 & 衡量内容\\
+\midrule
+训练loss & 低 & 在各自监督目标上的训练拟合；不同损失定义不可混排。\\
+像素L1／RMSE & 低 & 与参考图的像素距离；对指令完成、审美、局部副作用不充分。\\
+双语完整完成数 & 高 & 同一语义的中文与英文都完成，且基本画质合格。\\
+重大副作用数 & 低 & 严重过曝、噪点、偏色、细节破坏等；会阻止晋升。\\
+旧任务回归／保持控制 & 高 & 是否遗忘已有任务，是否正确保持或拒绝不支持要求。\\
+执行成功／文件一致性 & 高 & 工程通路是否正常；不能替代功能质量指标。\\
+\bottomrule
+\end{tabularx}
+\source{E01--E04；指标的公式、分母与限制见附录A。}
+\clearpage
+
+\section{系统架构与模型谱系}
+\subsection{运行时架构：大模型、编辑器与可选小头}
+\begin{center}
+\resizebox{.98\linewidth}{!}{\input{figures/architecture.tex}}
+\end{center}
+\noindent\textbf{图1：完整修图流程及R21附加分支。} 图中R21只处理父模型已启用工具的幅度；保留父模型的工具种类、正负方向、保持及拒绝决策。质量风险来自输入特征预测，不是对本次输出图片执行视觉质检。
+
+LoRA父权重是训练初始化的来源。部署一个已训练适配器时，通常加载固定完整底座加这一份最终适配器，不再叠加其全部祖先。R9作者起点适配器必须匹配作者完整底座。R21则必须同时具备原始底座、实际R15适配器与对应头权重。
+
+四候选交互台共用统一方向和RGB像素的输入、确定性生成以及相同模型输入像素上限；R1保留首轮提示和编辑器，另外三个候选使用R15协议及编辑器。因此交互比较的是完整方案，并非只改变模型权重的严格消融。
+
+\note{图中的风险拒绝不等于完成修图，也不会返回原图冒充结果。保持原样则是合法动作，应保留输入像素。}
+\source{模型登记；R20--R23报告；交互台运行说明。}
+\clearpage
+
+\subsection{第一条谱系：早期训练与R1--R7}
+\begin{center}
+\resizebox{.95\linewidth}{!}{\input{figures/lineage_early.tex}}
+\end{center}
+\noindent\textbf{图2：早期及第一阶段功能模型。} 实线表示实际权重初始化；括号为该节点包含的独立LoRA数量。校准SFT从A出发，B、继续SFT、GRPO不是校准分支的前置阶段。
+
+R2课程、R3偏好纠错和R4图像统计输入分别回答不同假设。R6同时保留从原始底座起步的对照，R7才进一步测试语言层与视觉连接层的微调范围。
+\clearpage
+
+\subsection{第二条谱系：R9重新起步与R15后续分支}
+\begin{center}
+\resizebox{.99\linewidth}{!}{\input{figures/lineage_late.tex}}
+\end{center}
+\noindent\textbf{图3：重新训练后的分支。} R9虽然复用R7数据，但不继承R7权重。数据复用和权重继承必须分开。R8、R16、R17主要为诊断，没有新增登记LoRA。
+
+R20尝试让小头重预测动作、方向与幅度；R21缩小小头职责，保留R15语义，仅学幅度和风险；R22扩大质量监督。R23采用R22的数据池，直接更新R15的LoRA，是另一条路线。
+\source{E01及各轮模型metadata；完整35份模型路径见附录B。}
+\clearpage
+
+\section{不同指标下的模型表现}
+\subsection{统一像素误差榜：独立71图}
+\begin{table}[htbp]
+\centering\small
+\noindent\begin{tabularx}{\linewidth}{@{}cYrrc@{}}
+\toprule
+排名 & 模型 & L1 $\downarrow$ & 相对A改善 & 可执行\\
+\midrule
+\PixelRows
+\bottomrule
+\end{tabularx}
+\caption{相同71个独立原图组上的结果。排序为点估计顺序，不表示相邻模型差异均显著。}
+\end{table}
+
+校准SFT三个种子相对A的相对改善及95\%配对区间分别为：8.07\% [1.06\%,14.48\%]、9.46\% [2.05\%,15.85\%]、10.89\% [4.65\%,17.03\%]。区间未作多重比较校正。三个种子共享同71张图，不能扩大独立样本量。
+
+预先选定交付种子为20261104；没有因独立测试中20261105分数更低而重新选模。NoEdit的L1仍低于全部训练模型，所以可确认的是“相对旧自训练基线的像素误差改善”，不能声称普遍超过不编辑或证明审美优势。
+
+30个原图组的匿名AI观察中，过强编辑从A的16/30减少到新模型3/30、2/30、4/30。但只有10例具有明确请求，新模型完整符合为2/10，A为1/10；强增强要求仍可能力度不足。这些观察不构成独立用户研究。
+
+\subsection{另一评测集上的L1与RMSE：早期Stage 2}
+\noindent\begin{tabularx}{\linewidth}{@{}Yrrc@{}}
+\toprule
+新测试100 / 模型 & L1 $\downarrow$ & RMSE $\downarrow$ & 可执行\\
+\midrule
+NoEdit & 0.103948 & 0.130600 & 不适用\\
+A & 0.122471 & 0.150996 & 99\%\\
+继续SFT & 0.122514 & 0.151966 & 97\%\\
+GRPO & 0.124018 & 0.152556 & 98\%\\
+\bottomrule
+\end{tabularx}
+\note{Stage 2新100图与上述71图不同，运行栈也有历史差异，不能拼为同一排行榜。新100图没有证明GRPO优于A或SFT；后期R1--R23没有同一71图上的统一像素结果，不能补填推测值。}
+\source{E02、E03；原始数值快照保留逐项来源哈希。}
+\clearpage
+
+\subsection{R1：冻结验收与任务类别}
+\noindent\begin{tabularx}{\linewidth}{@{}P{2cm}Yc@{}}
+\toprule
+ID & 分支 & 双语完成 / 50\\
+\midrule
+旧校准模型 & 同一新提示与编辑器的对照 & 15/50\\
+\RoneRows
+\bottomrule
+\end{tabularx}
+
+\begin{table}[htbp]
+\centering
+\noindent\begin{tabularx}{\linewidth}{@{}Yrrrr@{}}
+\toprule
+任务 / 每类10例 & 旧模型 & R1-B & R1-C & R1-R\\
+\midrule
+光照与暗部 & 4 & 9 & 8 & 9\\
+白平衡 & 1 & 7 & 7 & 7\\
+饱和度 & 4 & 4 & 4 & 4\\
+对比度 & 6 & 2 & 2 & 2\\
+棕褐色风格 & 0 & 10 & 10 & 10\\
+\bottomrule
+\end{tabularx}
+\caption{总完成数提高与对比度退步同时存在。}
+\end{table}
+
+R1默认继续训练版在开发集为43/50、验收31/50；换种子固定同一训练轮次后为43/50、32/50。三个新模型均100/100语言输出可执行，未观察到新增重大质量破坏。验收上基础起点比默认多1例，没有据此更换默认模型。
+
+\subsection{R2：新课程与同预算旧数据对照}
+\noindent\begin{tabularx}{\linewidth}{@{}Yrrr@{}}
+\toprule
+同一受控开发集 & 父R1 & 旧数据对照e2 & 新课程e3\\
+\midrule
+双语完整完成 / 100 & 32 & 34 & 81\\
+重大副作用案例 & 0 & 0 & 2\\
+同图五任务均完成 / 20 & 0 & 0 & 4\\
+复合要求完成 / 10 & 0 & 2 & 10\\
+自然措辞探针完成 / 6 & 3 & 3 & 3\\
+\bottomrule
+\end{tabularx}
+
+新课程使强弱和复合要求的受控完成数明显增加，但100个任务只来自20个开发原图组。自然措辞探针仍为3/6，新课程还出现1例严重过曝。旧数据对照通过重复采样匹配720条训练呈现，并不是拥有同样多的不同语义。
+\source{E04（R1）、E05（R2）；双语及同图强弱判定见附录A。}
+\clearpage
+
+\subsection{功能模型全表：按评测集合分别呈现}
+\noindent 以下为R2之后25份登记LoRA的导出检查点。破折号表示该轮该版本未取得对应评分，不代表0分。最后一列分别为原始开发与受控开发的已确认重大问题数量；旧回归的副作用需结合原报告。
+
+{\small
+\begin{longtable}{@{}P{1.45cm}P{4.5cm}rrrr@{}}
+\caption{登记检查点的功能表现；不是跨集合的总排名。}\\
+\toprule
+ID & 分支 / 检查点 & 原始/20 & 旧/6 & 受控/100 & 重大 原/控\\
+\midrule\endfirsthead
+\toprule ID & 分支 / 检查点 & 原始/20 & 旧/6 & 受控/100 & 重大 原/控\\\midrule\endhead
+\bottomrule\endfoot
+\FunctionalRows
+\end{longtable}}
+
+\note{R2--R4的6例是自然措辞迁移探针，后续作为旧回归保留；原始20例开发组从R6阶段使用。R11当轮未跑受控100，后续R13中冻结父模型评为77/100；不能把后续数值伪装为R11当轮已完成的评测。相同分母也不自动保证提示、编辑器与评审记录完全相同。}
+
+R11新增训练结果为15/20，但父模型仅换新编辑器同样达到15/20。R15新权重为16/20、75/100，而同一父模型参数只换R15编辑器为15/20、76/100。工具收益和训练收益必须分开。R23虽然“已确认重大问题0”，仍保留夜景噪点的历史评审争议，不能等同画质风险为零。
+\source{各轮REPORT、direct-functional-summary与模型metadata；表格由提取脚本生成。}
+\clearpage
+
+\subsection{辅助控制头：六份登记权重}
+\noindent\begin{tabularx}{\linewidth}{@{}P{3.15cm}cccY@{}}
+\toprule
+模型 / 固定配置 & 原始/20 & 旧/6 & 受控/100 & 结论\\
+\midrule
+R20 最后位置 e80 & 9* & 6 & -- & 重大噪点1，失败\\
+R20 请求均值 e80 & -- & 3 & -- & 未扩大，出现空编辑错误\\
+R21 种子1 质量e20 & 16 & 5 & 82 & 此配置重大0；进入复核\\
+R21 种子2 质量e20 & 至少11* & 5 & -- & 夜景重大噪点，复核失败\\
+R22 种子1 step1160 & 15 & 4 & -- & 未达原始16/20门槛\\
+R22 种子2 step1160 & 13 & 6 & -- & 未达原始16/20门槛\\
+\bottomrule
+\end{tabularx}
+\par\small *保留未决细节、不继续扩大原尺寸复核时的已确认数量；不能与充分复核后的16/20作等精度比较。R21种子1的两个运行策略共用权重。\normalsize
+
+R21种子1仅幅度策略也是16/20、旧5/6，但原始开发有重大噪点1例；启用质量策略后对该夜景拒绝，无结果图，不计完成修图。换种子后拒绝不稳定：同一中文请求的风险sigmoid从0.6533变为0.00254；首种子训练到e80还降至约$1.23\times10^{-10}$。这些输出不是校准过的失败概率。
+
+R22扩大质量拒绝覆盖，从23个原图组增至55个，但没有新增独立照片；两个种子的原始任务完成数均未达门槛。R5早期两个连续头的最好自然探针为4/6，但有严重反向编辑，属于另列诊断，不在六个登记头内。
+
+\subsection{四候选交互台：执行状态与画质指标分开}
+\noindent\begin{tabularx}{\linewidth}{@{}Yrrr@{}}
+\toprule
+历史6图 $\times$ 中英 / 候选 & 生成结果 & 拒绝 & 执行失败\\
+\midrule
+R1 & 10 & 0 & 2\\
+R15 & 11 & 1 & 0\\
+R23 & 11 & 1 & 0\\
+R15＋R21 & 10 & 2 & 0\\
+\midrule
+合计48项 & 42 & 4 & 2\\
+\bottomrule
+\end{tabularx}
+另一次保持原样上传检查的8项输出均与输入像素一致；42张结果下载哈希与服务端一致，6项无结果接口返回404。48项是执行状态，不是48个独立任务，也不是42项画质合格。未据此生成新的模型质量排名。
+\source{R20--R23报告；2026-11-10交互台验证摘要。}
+\clearpage
+
+\section{较好候选采用了哪些训练方法}
+\subsection{校准SFT：像素改善证据最完整的早期路线}
+\textbf{起点与数据。} 从标准SFT模型A继续，使用3000条、1078个原图组。对比度标签搜索仅使用训练参考图，不使用独立测试参考。监督目标改为直接参数JSON，优化配方与导出方式同时调整。
+
+\textbf{配置。} 语言q/v的QLoRA，rank8、alpha16、有效batch4，学习率$10^{-4}$，余弦调度，预热52步；每个种子1024步、4096次训练呈现。导出同一轨迹step512与step1024的LoRA A/B张量各50\%平均。
+
+\textbf{为何值得保留。} 三个独立训练种子在同一独立71图上均较A改善，配对区间为正；过强编辑减少。\textbf{边界。} 权重张量平均不是两模型输出的精确平均；数据、格式、优化与导出同时变化，未隔离每项贡献。NoEdit的L1仍更低。
+
+\subsection{R1：把训练目标从像素代理转向明确功能}
+\textbf{起点与数据。} 默认和复核从校准种子20261104开始，另有原始Qwen起点对照。实际220语义、440条中英文、160个原图组；监督助手参数JSON。训练前同时修正工具语义并增加棕褐工具，模型比较采用相同新提示与编辑器。
+
+\textbf{配置。} NF4 QLoRA，语言q/v、rank8、alpha16、有效batch4，学习率$10^{-4}$，余弦调度与5\%预热，共4轮440步。默认导出e1/110步，基础起点导出e3/330步；换种子固定e1，不重新挑轮次。
+
+\textbf{结果。} 默认冻结验收31/50，旧校准模型15/50；复核32/50。光照、白平衡、棕褐改善，对比度实质退步。它是较明确的功能基线，不是全任务冠军。
+
+\subsection{R2课程：有效地教强弱与复合，但迁移不足}
+60张训练照片各构造问题恢复、轻重风格、复合要求和保持原样，合计360语义、720条双语，全部请求为AI构造。父模型为R1默认；rank8/alpha16、有效batch4、学习率$5\times10^{-5}$，4轮720步，导出e3/540步。旧数据重复采样到720条作为同预算对照。
+
+受控完成由32/100提高到81/100，对照仅34/100；复合由0/10提高到10/10。由于出现严重过曝且自然探针仍3/6，未晋升默认。这个结果支持任务覆盖与同图对照教学，但不支持把合成课程成绩视为真实用户泛化。
+\source{E03--E05；模型身份与检查点另见附录B。}
+\clearpage
+
+\subsection{R15：纠正阴影执行与标签，建立共同父模型}
+R15直接从R11初始化，复用925语义、1850双语、240原图组。新编辑器使用三通道共享阴影增益以减少逐通道处理导致的颜色变化；重核132个受影响标签，修订11个参数决策，对应22条语言标签。
+
+训练延续语言q/v与视觉连接层，共116张量、约267万可训练参数；rank8/alpha16、有效batch4、学习率$5\times10^{-5}$。执行2轮926步，登记e1/463步作为失败诊断候选；e2旧回归降至3/6。R15的重要性在于它是R18--R23共同的可复核基线，证据没有证明它全面胜过所有前序模型。
+
+\subsection{R15＋R21：冻结语义模型，单独学习幅度和风险}
+\textbf{输入与结构。} 冻结实际R15，取预生成最后位置3584维隐藏表示，加16项RGB统计及12项局部亮度/色度残差，共3612维。TRAIN拟合归一化；小头为128隐藏单元的MLP，输出9个正幅度与1个风险logit，共463754参数。
+
+\textbf{监督。} 复用925语义，其中780编辑、80保持、44质量拒绝、21工具不支持拒绝。质量监督仅使用编辑与质量拒绝，不能把保持或工具不支持当成坏画质。44质量拒绝只覆盖23个原图组，真实低光噪声覆盖有限。
+
+\textbf{训练。} AdamW，学习率0.001、weight decay 0.01，16个语义配对batch；每个种子80轮、4640步，固定保存e20/e80。小头CPU优化约14秒/种子，但特征来自7B前向，不能把总方案称为只花14秒训练。实际损失为
+\[
+\mathcal L_{R21}=4\mathcal L_{\mathrm{SmoothL1}}+\mathcal L_{\mathrm{risk\,BCE}}
+ +0.25(\mathcal L_{\mathrm{magnitude\,pair}}+\mathcal L_{\mathrm{risk\,pair}}).
+\]
+只对已启用工具监督幅度；风险采用加权BCE；双语幅度与风险一致性另有约束。推理时保留父模型方向与工具，质量策略在sigmoid风险至少0.5时拒绝。阈值未经独立风险校准。
+
+\textbf{结论。} 首种子e20表现最好，但锁定换种子复核失败；结构分工值得继续检验，不可宣布已得到可靠质量控制器。
+
+\subsection{R23：直接LoRA补训质量边界}
+从实际R15 e1继续，而非从R22小头训练。数据池979条件、1958双语、240原图组，其中802编辑、80保持、76质量拒绝、21工具不支持；新增54个准入条件但0张新独立照片。
+
+NF4双重量化、BF16计算、rank8/alpha16、112个语言q/v张量及4个连接层张量；有效batch4，学习率$10^{-4}$、5\%预热、余弦调度。两个种子各250步，实际1000次语言呈现，约0.51轮，不能说遍历全部数据。两组原始均16/20，旧回归3/6与4/6；仅第二组通过第一阶段，整条路线未通过。
+\source{R15训练协议；R21报告与head.py；R23报告与训练核验。}
+\clearpage
+
+\section{训练loss数值表与解释}
+\subsection{监督微调：到导出检查点的日志均值}
+\noindent 本表按数值排序，\textbf{不称为性能排名}。计算的是各轮开始至所选导出步的逐优化器步、已经舍入的日志loss的算术平均。不同起点、数据难度、输出格式和训练长度都影响其大小；它不是固定最终模型在同一测试集上的交叉熵。
+
+{\small
+\begin{longtable}{@{}cP{8.2cm}rr@{}}
+\caption{功能SFT的训练过程loss。缺失表示本次本地未取得对应日志。}\\
+\toprule 顺序 & 模型及导出版本 & 导出步 & 平均loss\\\midrule\endfirsthead
+\toprule 顺序 & 模型及导出版本 & 导出步 & 平均loss\\\midrule\endhead
+\bottomrule\endfoot
+\LossRows
+\end{longtable}}
+
+R2旧数据对照loss约0.01587，比新课程0.07527低得多，但功能只有34/100，新课程81/100。R23种子1的loss低于种子2，旧回归却为3/6而非4/6。这些是本项目中直接观察到的“低训练loss不等于更好使用效果”。
+
+\subsection{不同目标函数必须分表}
+\noindent\begin{tabularx}{\linewidth}{@{}YrP{5.3cm}@{}}
+\toprule
+模型与取值范围 & loss & 含义\\
+\midrule
+早期GRPO / 完整训练平均 & 0.00000610 & 策略优化目标，不是SFT交叉熵\\
+R3-D / 截至e1均值 & 0.36803 & DPO偏好项与SFT监督混合\\
+R18-P / 截至e2均值 & 0.05341 & SFT与排序项混合\\
+R21种子1 / e20当轮均值 & 0.09982 & 幅度、风险与双语一致性组合\\
+R21种子1 / e80当轮均值 & 0.05084 & loss更低，仍有重大夜景噪点\\
+\bottomrule
+\end{tabularx}
+
+辅助头“当轮平均”和LoRA“从开始到检查点的平均”也不是同一统计。R21 e80不能因loss下降而替代e20。早期A/B训练还包含解释性文本，不能把其loss绝对值与后期短JSON监督直接比较。
+\source{各轮trainer\_state.json、metrics.jsonl和原始训练日志；计算脚本与证据快照随报告保留。}
+\clearpage
+
+\section{后期诊断、失败机制与更好的方式}
+\subsection{R24--R33补充了什么证据}
+\noindent\begin{tabularx}{\linewidth}{@{}P{1.5cm}Y@{}}
+\toprule
+轮次 & 结果及可支持的解释\\
+\midrule
+R24 & 8张训练照片中5组找到可用参数、2组拒绝、1组不确定；有限候选可行性检查，不是新模型通过率。\\
+R25 & 两种质量筛查均漏过9个已知坏结果，说明简单阈值尚不足以替代画质判断。\\
+R26 & 训练10个偏好对全部排对，但实际仅6/16，与固定阴影档相同；拟合准确率不是交付能力。\\
+R27 & 新8图16请求，区分轻重后8/16升至13/16；像素排序器与固定分档逐条相同，无额外收益。\\
+R28 & 冻结Qwen成对评审47/48选右图，单图判断仍放行已知坏图；不能直接用作可靠奖励裁判。\\
+R29 & 4张留出图16请求，新方向/范围头11/16，冻结模型7/16，末层LoRA9/16；小样本仍有误路由。\\
+R30--31 & 新8图上R31完成5张、拒绝3张，无确认坏图交付，但漏掉2张本可用图；不能证明普遍安全。\\
+R32--33 & R33新12图24方向任务，分方向固定档17/24，旧固定档13/24；学习选择器最多2个合格交付，6任务四档皆无解。\\
+\bottomrule
+\end{tabularx}
+
+R24之后这些检查主要使用CPU，未增加已结算的功能实验GPU账本。其中R29确实进行了CPU训练，但与35份登记LoRA的计数口径分开；R33没有语言模型输入，不能声称完整自然语言修图能力达到17/24。
+
+\subsection{可以确认的经验与仍待验证的判断}
+\begin{enumerate}
+\item \textbf{先验证工具可行性。} 当候选中不存在好结果，增加排序模型不能解决问题。R11与R33说明工具执行变化本身可以带来收益。
+\item \textbf{优先让监督区分方向、范围和力度。} R2和R27支持同图对照的价值；但真实语言、夜景与高反差覆盖仍不足。
+\item \textbf{模型容量不是已证实的首要瓶颈。} 扩大语言范围、加训视觉末段和图像统计并未稳定提高结果；这不等于视觉信息永远无用。
+\item \textbf{偏好优化依赖偏好证据和评审可靠性。} 当前DPO与排序负结果只约束本项目的数据与预算，不证明方法普遍无效。
+\item \textbf{同时看完成、错误交付与误拒绝。} 只追求重大0可能过度拒绝；只追求输出率可能交付坏图。
+\item \textbf{保留失败和独立验证。} 单个种子或反复开发集高分不能代替换种子与新原图留出，用户偏好更不能由agent联调代替。
+\end{enumerate}
+
+下一阶段更合理的顺序是：真实失败收集与工具可行性核查，构造同图方向/范围/力度对照，进行最小匹配训练实验，再做新的原图组留出和用户盲比。该顺序是基于现有证据的建议，本报告没有启动这些实验。
+\clearpage
+
+\section{交付、复现与项目表达}
+\subsection{本次本地文件整理}
+新增专门报告源目录、PDF成品目录、统一工作区导航、根目录\path{AGENTS.md}与智能体交接模板。已有模型、数据、实验及归档保持原路径，避免破坏冻结清单、脚本与哈希。对根README仅增加导航入口，历史记录不重写。
+
+\noindent\begin{tabularx}{\linewidth}{@{}P{6.2cm}Y@{}}
+\toprule
+入口 & 用途\\
+\midrule
+\path{AGENTS.md} & 任务范围、证据规则、预算、协作与交付约定\\
+\path{docs/WORKSPACE_GUIDE.md} & 目录职责与最短阅读路径\\
+\path{docs/AGENT_HANDOFF_TEMPLATE.md} & 负责人、可写路径、证据、结果与待办的交接格式\\
+\path{reports/model-review-20261112/} & LaTeX正文、TikZ图、提取脚本及证据快照\\
+\path{output/pdf/} & 编译后的最终PDF\\
+\path{tmp/pdfs/} & 临时编译与渲染目录，验证后清理本任务文件\\
+\bottomrule
+\end{tabularx}
+
+智能体协作采用明确的文件所有权和交接记录；AGENTS只是共享约定，不会自动启动其他智能体或向其他聊天发送消息。对模型、数据、评审和前端分别分配可写范围，接手时按模型身份与输入哈希复核，避免多个智能体改同一冻结文件。
+
+\subsection{运行与算力边界}
+历史功能实验实际23.99923538698091 GPU小时，属于该阶段24小时预算，不是全部项目历史总算力。早期Stage 1/2及校准有各自账本。四候选验证与后续试用另设累计2 GPU小时上限，2026-11-10验证快照为0.05886小时；当前剩余量必须读取运行账本，本报告不推断实时值。
+
+既有服务在实验服务器，Mac通过SSH访问。\path{scripts/comparison_studio/open_local.sh}用于恢复本机入口；网页端口12348。是否在线、GPU是否空闲及预算剩余不是静态报告可以保证的。本次没有启动或停止任何模型服务。
+
+\subsection{适合用于简历的项目内容}
+可将项目定位为“基于Qwen2.5-VL的中英文指令图像编辑：参数高效微调、评测与交互系统”。重点包括可复现的35份LoRA/6份控制头实验管理、标签审计与双语分组评测、QLoRA/SFT/偏好方法对照、确定性编辑器及同图四候选试用。
+
+可引用的量化成果包括：独立71图上校准SFT相对A的L1降低8.07\%--10.89\%；R1同口径冻结验收15/50提升至31/50；R2受控开发32/100提升至81/100但自然迁移和重大副作用未解决。应标明数据范围，不写“实际用户成功率81\%”“已达到生产可用”“35个完整大模型”或“只用24 GPU小时完成全部项目”。个人贡献描述应与本人实际负责部分一致。
+\clearpage
+
+\appendix
+\section{指标、公式与比较规则}
+\subsection{像素L1与RMSE}
+对第$i$张图，将输出$\hat I_i$与参考图$I_i^*$按评测脚本的尺寸、色彩和归一化规则对齐，令$P_i$为像素通道元素数：
+\[
+\mathrm{L1}_i=\frac1{P_i}\sum_{p=1}^{P_i}|\hat I_{i,p}-I^*_{i,p}|,
+\qquad
+\mathrm{RMSE}_i=\sqrt{\frac1{P_i}\sum_{p=1}^{P_i}(\hat I_{i,p}-I^*_{i,p})^2}.
+\]
+历史表记录相应图像指标的样本汇总。L1对每个元素取绝对差，RMSE对大误差更敏感。统计前必须确认像素范围、resize、参考图、失败回退政策和汇总方式相同；不能用本报告公式改写历史数值。
+
+NoEdit以原图作为输出。它分数低，说明保留原图在该参考距离上更好，不代表其完成所有编辑请求。参考图也未必是唯一正确结果。输入与输出之间的L1仅是编辑强度，不能与输出对参考图的L1混称质量指标。
+
+相对A的误差改善定义为
+\[
+g=\frac{\overline{\mathrm{L1}}_A-\overline{\mathrm{L1}}_M}{\overline{\mathrm{L1}}_A}\times100\%.
+\]
+配对bootstrap按相同原图组共同重采样，保留模型间配对。早期71图置信区间未校正多重比较。没有统一测量的PSNR、SSIM、LPIPS或审美分数不在本报告中虚构排名。
+
+\subsection{SFT训练loss与本报告的日志均值}
+对被监督的助手token集合$\mathcal T$，典型SFT损失为
+\[
+\mathcal L_{\mathrm{SFT}}=-\frac1{|\mathcal T|}\sum_{t\in\mathcal T}\log p_\theta(y_t\mid x,y_{<t}).
+\]
+图像、用户文本和工具说明为条件输入；标签mask、token长度、梯度累积和训练器归一化决定实际记录值。它衡量目标token的预测，不直接衡量执行后的图像质量。
+
+本报告loss表取所选检查点$K$之前每个优化器步已记录的$\ell_k$：
+\[
+\bar\ell_{\le K}=\frac1K\sum_{k=1}^{K}\ell_k.
+\]
+提取脚本验证完整记录步数与$K$相同。由于日志四舍五入，表值与训练器内部全精度\texttt{train\_loss}可能有微小差异。这个平均值包含优化早期，不是最终权重的训练集重评，也不是验证loss。缺失日志不填0，权重平均导出的校准模型也不伪造唯一训练loss。
+
+DPO以偏好相对概率为目标；GRPO使用组内相对奖励的策略优化目标；R18叠加排序项；R21叠加回归、分类及一致性项。损失量纲和权重不同，绝对值不能直接比较。
+\clearpage
+
+\subsection{功能完成、重大问题与控制集}
+设第$i$个语义任务在语言$l$下的完整完成且基本质量合格标记为$c_{i,l}$，则双语完成数为
+\[
+C_{\mathrm{both}}=\sum_{i=1}^{N}\mathbf1[c_{i,\mathrm{zh}}=1\land c_{i,\mathrm{en}}=1].
+\]
+失败、部分完成、不确定及在可行编辑任务上的拒绝均不计完整完成。R2同图强弱任务还要求输出有可见强度区别；完全相同PNG不能同时满足预定轻重要求。参数不同也不自动证明视觉上有合适区别。
+
+重大问题以原始逐例评审和冻结标准为准，例如明显高光丢失、严重彩噪、肤色破坏。0表示在已评范围内没有按规则确认的重大案例，不能等同真实风险为零。历史相同像素的评审分歧保留不确定，不能因为模型版本更新就改成合格。
+
+保持/不支持控制20/20只验证指定保持或工具不支持请求的动作，不证明全部真实照片上的质量拒绝正确。质量拒绝需单独衡量错误交付、正确拒绝和有好候选却被拒绝的情况。
+
+\subsection{样本规模与跨版本比较}
+\begin{itemize}
+\item 71图测试以71原图组为独立单位；三种子和双语不增加原图独立性。
+\item R2受控100来自20张图各5任务，不能视为100独立照片。
+\item 1958条中英文记录对应979个条件任务和240原图组；合成欠曝、加噪、翻译及重复训练不是新增真实照片。
+\item R23每种子实际1000次语言呈现，数据池大小不是实际遍历量。
+\item R1验收50、原始开发20、旧回归6、受控开发100分别报告。相同分母也须检查来源哈希、要求、编辑器与评审规则。
+\item 受控开发反复使用、按开发结果尝试许多方案会降低其独立证据强度。最终验收是否开封须按阶段说明；R1已做首轮验收，后期最终验收未开封。
+\end{itemize}
+
+\subsection{工程指标、耗时与预算}
+执行成功率的分母是实际请求/语言输出；合法拒绝与异常失败分列。下载哈希一致证明取到了同一文件，不证明文件画质。API测试通过、浏览器可操作、UI截图可见与独立用户接受是不同证据。
+
+GPU小时按实际占用积分，多卡同时占用需相加；模型加载、推理和退出等按账本规则计入。R21 CPU头的优化耗时不包含7B特征提取。交互台显示的头追加耗时也不能当整条R15＋R21方案的总延迟。本报告没有新的统一延迟、吞吐或峰值显存排名。
+\clearpage
+
+\section{35份LoRA的规范路径索引}
+\noindent 本表中的路径相对项目根目录。完整底座在既有实验环境中；适配器目录不是完整7B模型。CAL-03/04/05对应种子20261103/04/05；种子数值是标识，不应当作实际训练日期。
+{\footnotesize
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{@{}P{1.7cm}P{13.6cm}@{}}
+\toprule ID & 规范路径\\\midrule\endfirsthead
+\toprule ID & 规范路径（续）\\\midrule\endhead
+\bottomrule\endfoot
+\InventoryRows
+\end{longtable}}
+
+\subsection{六个辅助头与四候选固定身份}
+R20的最后位置/请求均值头位于\path{models/from-functional-v15/continuous-controller-last/seed-01/}和\path{models/from-functional-v15/continuous-controller-request-mean/seed-01/}。
+R21两个种子位于\path{models/from-functional-v15/semantic-preserving-controller/seed-01/}及\path{seed-02/}。
+R22位于\path{models/from-functional-v15/quality-coverage-controller/seed-20261205/}及\path{seed-20261206/}。
+
+交互台固定R1-C、R15 e1、R23-2，以及相同R15配R21首种子e20质量策略。对应实际权重哈希以metadata为准；报告不通过显示名称猜测权重。原始Qwen底座固定revision为\path{cc594898137f460bfe9f0759e9844b3ce807cfb5}。
+\clearpage
+
+\section{证据入口与报告重建}
+\noindent 下列路径均相对项目根目录，历史兼容入口可能是软链接。机器可读快照\path{generated/evidence_snapshot.json}逐项保存读取文件的SHA256；正文中的未运行项与不确定结论不能由汇总表覆盖。
+
+{\footnotesize
+\begin{description}[style=nextline,leftmargin=1.15cm,labelwidth=.9cm]
+\input{generated/sources.tex}
+\end{description}}
+
+\subsection{生成与检查过程}
+\path{extract_evidence.py}只读取已有证据，验证35份LoRA与6份头的规范路径计数，为功能表和loss表绑定导出检查点。\path{build.sh}使用Tectonic编译LaTeX与TikZ图，生成可搜索文字与矢量架构图的PDF。交付前渲染每页、检查分页与越界、核验文本和页数；具体记录保存在\path{validation.json}。
+
+清理只针对本次编译、渲染目录，保留最终PDF、正文、必要图源、生成表格、提取脚本和证据快照。历史训练日志、模型权重、原图及归档没有作为“无用文件”删除。
+\end{document}

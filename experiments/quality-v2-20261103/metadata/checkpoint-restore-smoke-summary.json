@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "raw_checkpoint": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261104/checkpoint-512",
+  "source_adapter_sha256": "d7d8ec550fe67b1ca18b5fe03a689fa3220af91c127d9ff6d72c4cea0bbbf46a",
+  "chosen_inference_adapter_unchanged_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884",
+  "trainable_tensors": 112,
+  "restored_optimizer_step": 512,
+  "executed_optimizer_step": 513,
+  "restored_scheduler_step": 512,
+  "executed_scheduler_step": 513,
+  "rng_components": [
+    "python",
+    "numpy",
+    "cpu",
+    "cuda"
+  ],
+  "training_ids": [
+    "GIER-Edit:train:012138",
+    "GIER-Edit:train:025531",
+    "GIER-Edit:train:003838",
+    "GIER-Edit:train:015756"
+  ],
+  "training_losses": [
+    0.3158879578113556,
+    0.2743018567562103,
+    0.4074409306049347,
+    0.372534841299057
+  ],
+  "grad_norm_before_clip": 1.50197434425354,
+  "updated_adapter_sha256": "002682676afc7ff16afc139b438313f3054e34e709b75583f63bf0687e112ee1",
+  "elapsed_seconds": 19.78363562375307,
+  "limits": [
+    "Executed restoration and one4-row optimizer update, not exact replay of the historical next dataloader batches.",
+    "Raw training state is restored; fixedSWA export remains separately derived from raw512/1024 and is never paired with the raw optimizer.",
+    "No independent-test image, reference, prediction or score used; frozen inference adapter unchanged."
+  ]
+}

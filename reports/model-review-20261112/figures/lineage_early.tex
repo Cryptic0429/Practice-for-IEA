@@ -1,0 +1,36 @@
+\begin{tikzpicture}[font=\small,>=Stealth,
+ b/.style={draw=navy!65,fill=lightblue,rounded corners=3pt,text width=3.05cm,minimum height=1.05cm,align=center},
+ good/.style={b,fill=teal!10,draw=teal},
+ arr/.style={->,thick,draw=navy!75}]
+\node[b] (q) at (0,0) {原始 Qwen 底座};
+\node[b] (a) at (0,-1.65) {A：标准 SFT（1）};
+\node[b] (b) at (-4,-1.65) {B：重采样 SFT（1）};
+\node[b] (r1b) at (4,-1.65) {R1-B 基础起点（1）};
+\node[b] (sft) at (-4,-3.35) {继续 SFT（1）};
+\node[b] (grpo) at (0,-3.35) {L1 奖励 GRPO（1）};
+\node[good] (cal) at (4,-3.35) {校准 SFT（3）\\种子03／04／05};
+\node[good] (r1) at (4,-5.15) {R1-C／R1-R（2）\\均从校准种子04继续};
+\node[b] (r2s) at (0,-6.9) {R2-S 旧数据对照（1）};
+\node[good] (r2c) at (4,-6.9) {R2-C 新课程（1）\\后续使用 e3};
+\node[b] (r3) at (-4,-8.8) {R3 DPO／SFT（2）};
+\node[b] (r4) at (0,-8.8) {R4 普通／统计输入（2）};
+\node[b] (r6c) at (4,-8.8) {R6-C 继续训练（1）};
+\node[b] (r7) at (4,-10.6) {R7 语言／加连接层（2）};
+\node[b] (q2) at (-4,-5.15) {原始 Qwen（同一底座）};
+\node[b] (r6b) at (-4,-6.9) {R6-B 基础起点（1）};
+\draw[arr] (q)--(a);
+\draw[arr] (q)-|(b);
+\draw[arr] (q)-|(r1b);
+\draw[arr] (a)--(grpo);
+\draw[arr] (a.south)--++(0,-.3)-|(sft.north);
+\draw[arr] (a.south)--++(0,-.3)-|(cal.north);
+\draw[arr] (cal)--(r1);
+\draw[arr] (r1)--(r2c);
+\draw[arr] (r1)-| node[pos=.75,right,font=\scriptsize]{默认分支} (r2s);
+\draw[arr] (r2c)--(r6c);
+\draw[arr] (r2c.south)--++(0,-.4)-|(r4.north);
+\draw[arr] (r2c.south)--++(0,-.4)-|(r3.north);
+\draw[arr] (r6c)--node[right,font=\footnotesize]{e4}(r7);
+\draw[arr] (q2)--(r6b);
+\node[align=left,text width=7.2cm,font=\footnotesize,color=ink] at (-1.9,-10.55) {本图共20份LoRA：早期7份＋功能13份。\\R5在冻结R2之上训练小头，不计入35份LoRA。\\绿色仅表示重点讨论分支，不表示全部通过验收。};
+\end{tikzpicture}

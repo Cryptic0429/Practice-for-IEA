@@ -1,0 +1,48 @@
+{
+  "version": "goal-v2-development-acceptance-20261103",
+  "status": "frozen_before_any_sealed_test_inference",
+  "scope": "Image-Edit, original frozen parser/editor for primary model comparisons",
+  "iteration": {
+    "allowed": [
+      "training rows",
+      "full 200-group validation",
+      "existing tests for historical reporting only"
+    ],
+    "forbidden": [
+      "sealed test inference before model lock",
+      "sealed-test-driven checkpoint or recipe selection"
+    ]
+  },
+  "baseline_models": [
+    "A",
+    "B",
+    "SFT",
+    "GRPO"
+  ],
+  "baseline_rule": "All four original self-trained adapters frozen. Compare candidate to each on final test; identify strongest original baseline on that test for conservative goal assessment. Never select or revise candidate from these comparisons.",
+  "candidate_lock": [
+    "training recipe and seed list",
+    "checkpoint-selection rule based on full validation",
+    "all adapters and configuration SHA-256",
+    "generation prompt/parser/editor identity",
+    "primary endpoint and direction-review rubric"
+  ],
+  "primary_endpoint": {
+    "definition": "(mean baseline L1 - mean candidate L1) / mean baseline L1, paired on identical independent original-image groups; all samples retained with original fallback on invalid output",
+    "target": 0.03,
+    "replication": "At least 3 independent training seeds, each satisfying the point target against strongest frozen original baseline",
+    "uncertainty": "10000 paired source-group bootstrap draws; report each seed interval and seed-level range. Seed-averaged intervals resample source groups without pretending seed-by-image rows are independent. Report simultaneous-comparison limitations; no subgroup replaces primary endpoint."
+  },
+  "guardrails": {
+    "execution": "Report validity and executable rate per seed; must maintain strongest original baseline executable rate, failures never removed.",
+    "nonoperation": "Report exact pixel identity, empty/zero parameters, output-vs-input L1 distribution, and near-identity fraction at 1/255. More fallback or no-op is not accepted as a quality gain. Repeat improvement calculations on the predeclared union of samples with substantive edits in baseline or candidate as a diagnostic, without replacing all-row endpoint.",
+    "instruction": "Explicit direction checks use only instruction and input/output pixels: brightness via luminance, warmth via R-B, saturation via HSV S. Negated/conflicting/localized/ambiguous requests are marked not assessable by global proxy, not counted as passes. Separate partial/incorrect/excessive changes. Compare per-seed rates to baseline and inspect broader instructions in anonymized visual panels.",
+    "visual_review": "30 seeded source groups fixed before predictions, include input/reference and all compared outputs; record observations before decoding model order. AI-assisted review explicitly disclosed; no claim of human preference equivalence.",
+    "NoEdit": "Report NoEdit L1 alongside all models. Alpha=0 calibration is a diagnostic baseline, not an acceptable trained-model result."
+  },
+  "notes": [
+    "71 independent new groups may yield wide intervals; do not redefine an inconclusive result as success.",
+    "Any future editor revision requires a separate identity and matched baseline ablation; do not alter original historical outputs.",
+    "Initial single-seed pilots are development only; they cannot satisfy the multi-seed goal."
+  ]
+}

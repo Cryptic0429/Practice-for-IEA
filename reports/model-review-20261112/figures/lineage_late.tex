@@ -1,0 +1,28 @@
+\begin{tikzpicture}[font=\small,>=Stealth,
+ b/.style={draw=navy!65,fill=lightblue,rounded corners=3pt,text width=2.8cm,minimum height=1.1cm,align=center},
+ good/.style={b,fill=teal!10,draw=teal},
+ aux/.style={b,fill=amber!10,draw=amber!80!black},
+ arr/.style={->,thick,draw=navy!75}]
+\node[b] (q) at (-3,0) {原始 Qwen 底座};
+\node[b] (author) at (3,0) {作者完整 IEA 底座};
+\node[b] (r9b) at (-3,-1.65) {R9-B（1）\\登记导出 e4};
+\node[b] (r9a) at (3,-1.65) {R9-A（1）\\独立作者起点};
+\node[b] (r10) at (0,-3.45) {R10 语言／连接层（2）};
+\node[b] (r11) at (0,-5.1) {R11 负曝光纠错（1）};
+\node[b] (r12) at (-5.05,-7) {R12 工具说明（1）};
+\node[b] (r13) at (-1.68,-7) {R13 数据及范围（2）};
+\node[b] (r14) at (1.68,-7) {R14 视觉末段（1）};
+\node[good] (r15) at (5.05,-7) {R15 阴影纠错（1）};
+\node[b] (r18) at (-5.05,-9.35) {R18 排序／SFT（2）};
+\node[b] (r19) at (-1.68,-9.35) {R19 图像特征（1）};
+\node[good] (r23) at (1.68,-9.35) {R23 质量补训（2）};
+\node[aux] (heads) at (5.05,-9.35) {R20／R21／R22\\各2个独立辅助头};
+\draw[arr] (q)--(r9b);
+\draw[arr] (author)--(r9a);
+\draw[arr] (r9b)--node[midway,above,sloped,font=\footnotesize]{取 e1}(r10);
+\draw[arr] (r10)--node[right,font=\footnotesize]{连接层分支 e2}(r11);
+\foreach \x in {r12,r13,r14,r15}{\draw[arr] (r11.south)--++(0,-.4)-|(\x.north);}
+\foreach \x in {r18,r19,r23}{\draw[arr] (r15.south)--++(0,-.6)-|(\x.north);}
+\draw[arr,dashed,draw=amber!80!black] (r15)--(heads);
+\node[align=left,text width=13cm,font=\footnotesize,color=ink] at (0,-11.45) {本图新增15份LoRA，合计35份。虚线表示冻结父模型后附加小头。\\R9重新起步，不继承R7权重；R10使用R9的e1，而非登记的e4。\\R12／R13／R14／R15均直接从R11出发。R23从R15继续训练，仅复用R22数据，不继承R22小头。};
+\end{tikzpicture}

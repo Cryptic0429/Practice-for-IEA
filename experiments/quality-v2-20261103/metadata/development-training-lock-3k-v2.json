@@ -1,0 +1,56 @@
+{
+  "status": "frozen_training_recipe",
+  "locked_at": "2026-11-03T17:57:24.633184+00:00",
+  "family": "3k-v2",
+  "reason": "512-family seed20261105 improved only0.81%; larger source coverage has7.29% primary gain and512/1024 validation plateau.",
+  "training_rows": 3000,
+  "training_groups": 1078,
+  "training_sha256": "d1dc31ae91f583e1d672ba047d390723d3b1ce6494ea88f802bb67356a226a19",
+  "training_code_sha256": "bbc2ec0eef908bc19e9bca146090beed8bb904586def4f821285cf10bb26d3d7",
+  "start": "original frozen A",
+  "steps": 1024,
+  "effective_batch": 4,
+  "exposures": 4096,
+  "lr": 0.0001,
+  "warmup_steps": 52,
+  "seed_list": [
+    20261103,
+    20261104,
+    20261105
+  ],
+  "instruction_guardrail_passed": true,
+  "primary_metrics": {
+    "n": 200,
+    "mean_l1": 0.11598610375076532,
+    "NoEdit_l1": 0.11577512218966149,
+    "executable": 200,
+    "fallback": 0,
+    "empty": 0,
+    "zero": 0,
+    "pixel_identical": 0,
+    "near_identity": 2,
+    "mean_input_output_l1": 0.06376306967057434,
+    "direction_assessable": 32,
+    "all_assessed_directions_aligned": 30,
+    "source_sha256": "81b1540ac6c36d589419ac291c62b16fcda507fc9c181d622debcaa719df95fb",
+    "json_prompt_signature": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67"
+  },
+  "primary_comparison": {
+    "reference": "B",
+    "paired_mean_gain": 0.009125328683294355,
+    "relative_mean_gain": 0.07293760854431816,
+    "ci95_gain": [
+      0.002295569079113193,
+      0.016380269782617685
+    ],
+    "ci95_relative": [
+      0.018760075222201873,
+      0.12668769642925226
+    ],
+    "improved": 125,
+    "worsened": 75,
+    "ties": 0
+  },
+  "export_selection": "Predeclared raw1024 vs fixed50/50 parameter average of512/1024; choose using primaryseed20261103 only, before either new seed validation. SWA requires no worse L1/execution/global direction/no-op/challenge than raw; otherwise raw.",
+  "sealed_test_opened": false
+}

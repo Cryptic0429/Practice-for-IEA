@@ -1,0 +1,4672 @@
+{
+  "observed_at": "2026-11-03T19:41:21.718503+00:00",
+  "workers": {
+    "worker-0": {
+      "pid": 3615457,
+      "gpu": "0",
+      "started_at": "2026-11-03T12:11:35.449007+00:00",
+      "status": "completed",
+      "completed": [
+        {
+          "task": "eval-A",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T12:54:21.322399+00:00"
+        },
+        {
+          "task": "eval-SFT",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T13:37:12.333921+00:00"
+        }
+      ],
+      "tasks": [
+        [
+          "eval-A",
+          [
+            "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+            "/mnt/sdc/zhc/IEA/scripts/goal_v2_evaluate.py",
+            "--adapter",
+            "/mnt/sdc/zhc/IEA/outputs/stage1-A-image-edit-3k-v1",
+            "--name",
+            "A",
+            "--split",
+            "validation",
+            "--gpu",
+            "0",
+            "--max-gpu-seconds",
+            "5400"
+          ]
+        ],
+        [
+          "eval-SFT",
+          [
+            "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+            "/mnt/sdc/zhc/IEA/scripts/goal_v2_evaluate.py",
+            "--adapter",
+            "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/sft-control/final",
+            "--name",
+            "SFT",
+            "--split",
+            "validation",
+            "--gpu",
+            "0",
+            "--max-gpu-seconds",
+            "5400"
+          ]
+        ]
+      ],
+      "updated_at": "2026-11-03T13:37:12.349942+00:00",
+      "task": "eval-SFT",
+      "child_pid": 3620324,
+      "task_started_at": "2026-11-03T12:54:21.337509+00:00",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-2": {
+      "pid": 3615458,
+      "gpu": "2",
+      "started_at": "2026-11-03T12:11:35.449461+00:00",
+      "status": "completed",
+      "completed": [
+        {
+          "task": "full-lr1e-5-s20261103",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T12:18:05.593334+00:00"
+        },
+        {
+          "task": "parameters-lr1e-5-s20261103",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T12:24:45.737810+00:00"
+        },
+        {
+          "task": "parameters-lr3e-5-s20261103",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T12:30:50.850210+00:00"
+        },
+        {
+          "task": "eval-full-lr1e-5-s20261103",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T13:13:06.802266+00:00"
+        },
+        {
+          "task": "eval-parameters-lr1e-5-s20261103",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T13:55:47.726699+00:00"
+        },
+        {
+          "task": "eval-parameters-lr3e-5-s20261103",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T14:39:18.578887+00:00"
+        }
+      ],
+      "tasks": [
+        [
+          "full-lr1e-5-s20261103",
+          [
+            "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+            "/mnt/sdc/zhc/IEA/scripts/goal_v2_train.py",
+            "--name",
+            "full-lr1e-5-s20261103",
+            "--mode",
+            "full",
+            "--lr",
+            "1e-5",
+            "--gpu",
+            "2"
+          ]
+        ],
+        [
+          "parameters-lr1e-5-s20261103",
+          [
+            "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+            "/mnt/sdc/zhc/IEA/scripts/goal_v2_train.py",
+            "--name",
+            "parameters-lr1e-5-s20261103",
+            "--mode",
+            "parameters",
+            "--lr",
+            "1e-5",
+            "--gpu",
+            "2"
+          ]
+        ],
+        [
+          "parameters-lr3e-5-s20261103",
+          [
+            "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+            "/mnt/sdc/zhc/IEA/scripts/goal_v2_train.py",
+            "--name",
+            "parameters-lr3e-5-s20261103",
+            "--mode",
+            "parameters",
+            "--lr",
+            "3e-5",
+            "--gpu",
+            "2"
+          ]
+        ],
+        [
+          "eval-full-lr1e-5-s20261103",
+          [
+            "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+            "/mnt/sdc/zhc/IEA/scripts/goal_v2_evaluate.py",
+            "--adapter",
+            "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/full-lr1e-5-s20261103/final",
+            "--name",
+            "full-lr1e-5-s20261103",
+            "--split",
+            "validation",
+            "--gpu",
+            "2",
+            "--max-gpu-seconds",
+            "5400"
+          ]
+        ],
+        [
+          "eval-parameters-lr1e-5-s20261103",
+          [
+            "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+            "/mnt/sdc/zhc/IEA/scripts/goal_v2_evaluate.py",
+            "--adapter",
+            "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/parameters-lr1e-5-s20261103/final",
+            "--name",
+            "parameters-lr1e-5-s20261103",
+            "--split",
+            "validation",
+            "--gpu",
+            "2",
+            "--max-gpu-seconds",
+            "5400"
+          ]
+        ],
+        [
+          "eval-parameters-lr3e-5-s20261103",
+          [
+            "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+            "/mnt/sdc/zhc/IEA/scripts/goal_v2_evaluate.py",
+            "--adapter",
+            "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/parameters-lr3e-5-s20261103/final",
+            "--name",
+            "parameters-lr3e-5-s20261103",
+            "--split",
+            "validation",
+            "--gpu",
+            "2",
+            "--max-gpu-seconds",
+            "5400"
+          ]
+        ]
+      ],
+      "updated_at": "2026-11-03T14:39:18.579568+00:00",
+      "task": "eval-parameters-lr3e-5-s20261103",
+      "child_pid": 3628210,
+      "task_started_at": "2026-11-03T13:55:47.754214+00:00",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-3": {
+      "pid": 3615459,
+      "gpu": "3",
+      "started_at": "2026-11-03T12:11:35.451187+00:00",
+      "status": "completed",
+      "completed": [
+        {
+          "task": "eval-B",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T12:55:06.338435+00:00"
+        },
+        {
+          "task": "eval-GRPO",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T13:38:42.368525+00:00"
+        }
+      ],
+      "tasks": [
+        [
+          "eval-B",
+          [
+            "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+            "/mnt/sdc/zhc/IEA/scripts/goal_v2_evaluate.py",
+            "--adapter",
+            "/mnt/sdc/zhc/IEA/outputs/stage1-B-image-edit-3k-v1",
+            "--name",
+            "B",
+            "--split",
+            "validation",
+            "--gpu",
+            "3",
+            "--max-gpu-seconds",
+            "5400"
+          ]
+        ],
+        [
+          "eval-GRPO",
+          [
+            "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python",
+            "/mnt/sdc/zhc/IEA/scripts/goal_v2_evaluate.py",
+            "--adapter",
+            "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/formal-v1/selected",
+            "--name",
+            "GRPO",
+            "--split",
+            "validation",
+            "--gpu",
+            "3",
+            "--max-gpu-seconds",
+            "5400"
+          ]
+        ]
+      ],
+      "updated_at": "2026-11-03T13:38:42.389148+00:00",
+      "task": "eval-GRPO",
+      "child_pid": 3620520,
+      "task_started_at": "2026-11-03T12:55:06.368931+00:00",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-3k-replication-20261104": {
+      "pid": 3654566,
+      "gpu": "0",
+      "seed": 20261104,
+      "status": "completed",
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0
+        },
+        {
+          "task": "average",
+          "exit_code": 0
+        },
+        {
+          "task": "validate",
+          "exit_code": 0
+        },
+        {
+          "task": "challenge",
+          "exit_code": 0
+        }
+      ],
+      "updated_at": "2026-11-03T19:05:23.167563+00:00",
+      "task": "challenge",
+      "child_pid": 3660521,
+      "name": "json3k-replica1024-lr1e-4-s20261104",
+      "evaluation_name": "json3k-replica1024-lr1e-4-s20261104-swa",
+      "adapter": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261104/swa",
+      "export_selection_sha256": "26648318715bb6cc5e46da7340d2af4da317335586c19ff352ed40f37d84147e",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-3k-replication-20261105": {
+      "pid": 3654569,
+      "gpu": "3",
+      "seed": 20261105,
+      "status": "completed",
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0
+        },
+        {
+          "task": "average",
+          "exit_code": 0
+        },
+        {
+          "task": "validate",
+          "exit_code": 0
+        },
+        {
+          "task": "challenge",
+          "exit_code": 0
+        }
+      ],
+      "updated_at": "2026-11-03T19:03:48.802370+00:00",
+      "task": "challenge",
+      "child_pid": 3660417,
+      "name": "json3k-replica1024-lr1e-4-s20261105",
+      "evaluation_name": "json3k-replica1024-lr1e-4-s20261105-swa",
+      "adapter": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261105/swa",
+      "export_selection_sha256": "26648318715bb6cc5e46da7340d2af4da317335586c19ff352ed40f37d84147e",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-3k-stabilization": {
+      "pid": 3654730,
+      "gpu": "2",
+      "status": "completed",
+      "completed": [
+        {
+          "task": "average",
+          "exit_code": 0
+        },
+        {
+          "task": "validate",
+          "exit_code": 0
+        },
+        {
+          "task": "challenge",
+          "exit_code": 0
+        }
+      ],
+      "updated_at": "2026-11-03T18:15:38.285869+00:00",
+      "task": "challenge",
+      "name": "json3k-primary-swa512-1024-s20261103",
+      "child_pid": 3656155,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-3k": {
+      "pid": 3644904,
+      "status": "training_completed_validation_separate",
+      "completed": [
+        {
+          "task": "ridge-train",
+          "exit_code": 0
+        },
+        {
+          "task": "ridge-validate",
+          "exit_code": 0
+        },
+        {
+          "task": "json3k-train",
+          "exit_code": 0
+        }
+      ],
+      "updated_at": "2026-11-03T17:33:23.779942+00:00",
+      "task": "json3k-train",
+      "child_pid": 3646815,
+      "gpu": "2",
+      "validation_worker_pid": 3646816,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-calibrated-0": {
+      "pid": 3623530,
+      "gpu": "0",
+      "status": "completed",
+      "started_at": "2026-11-03T13:19:47.265963+00:00",
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T13:44:02.485782+00:00"
+        },
+        {
+          "task": "validate",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T14:26:58.322973+00:00"
+        }
+      ],
+      "updated_at": "2026-11-03T14:27:48.357301+00:00",
+      "task": "contrast-calibrated-lr1e-5-s20261103-analysis",
+      "child_pid": 3631273,
+      "task_started_at": "2026-11-03T13:44:02.487224+00:00",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-calibrated-3": {
+      "pid": 3623531,
+      "gpu": "3",
+      "status": "completed",
+      "started_at": "2026-11-03T13:19:47.264980+00:00",
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T13:45:47.440045+00:00"
+        },
+        {
+          "task": "validate",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T14:30:37.880039+00:00"
+        }
+      ],
+      "updated_at": "2026-11-03T14:31:27.891253+00:00",
+      "task": "contrast-calibrated-lr3e-5-s20261103-analysis",
+      "child_pid": 3631506,
+      "task_started_at": "2026-11-03T13:45:47.441507+00:00",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-capacity-expanded": {
+      "pid": 3638812,
+      "gpu": "3",
+      "status": "completed",
+      "started_at": "2026-11-03T15:46:18.965619+00:00",
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:53:14.100410+00:00"
+        },
+        {
+          "task": "training-probe",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:58:14.148369+00:00"
+        },
+        {
+          "task": "validate",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T16:12:24.303356+00:00"
+        }
+      ],
+      "updated_at": "2026-11-03T16:12:24.304015+00:00",
+      "task": "expanded-memorize64-lr1e-4-s20261103-validate",
+      "child_pid": 3639695,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-capacity-long": {
+      "pid": 3638811,
+      "gpu": "2",
+      "status": "completed",
+      "started_at": "2026-11-03T15:46:18.964050+00:00",
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T16:07:04.419396+00:00"
+        },
+        {
+          "task": "training-probe",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T16:11:14.518137+00:00"
+        },
+        {
+          "task": "validate",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T16:23:14.781428+00:00"
+        }
+      ],
+      "updated_at": "2026-11-03T16:23:14.782486+00:00",
+      "task": "json-memorize64-long512-lr1e-4-s20261103-validate",
+      "child_pid": 3641148,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-final-0": {
+      "pid": 3661012,
+      "gpu": "0",
+      "status": "completed",
+      "assigned": [
+        "A",
+        "SFT",
+        "Seed20261103"
+      ],
+      "completed": [
+        {
+          "model": "A",
+          "exit_code": 0
+        },
+        {
+          "model": "SFT",
+          "exit_code": 0
+        },
+        {
+          "model": "Seed20261103",
+          "exit_code": 0
+        }
+      ],
+      "updated_at": "2026-11-03T19:40:42.490503+00:00",
+      "task": "Seed20261103",
+      "child_pid": 3664334,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-final-2": {
+      "pid": 3661013,
+      "gpu": "2",
+      "status": "completed",
+      "assigned": [
+        "B",
+        "Seed20261104"
+      ],
+      "completed": [
+        {
+          "model": "B",
+          "exit_code": 0
+        },
+        {
+          "model": "Seed20261104",
+          "exit_code": 0
+        }
+      ],
+      "updated_at": "2026-11-03T19:31:47.325344+00:00",
+      "task": "Seed20261104",
+      "child_pid": 3663490,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-final-3": {
+      "pid": 3661014,
+      "gpu": "3",
+      "status": "completed",
+      "assigned": [
+        "GRPO",
+        "Seed20261105"
+      ],
+      "completed": [
+        {
+          "model": "GRPO",
+          "exit_code": 0
+        },
+        {
+          "model": "Seed20261105",
+          "exit_code": 0
+        }
+      ],
+      "updated_at": "2026-11-03T19:25:47.207972+00:00",
+      "task": "Seed20261105",
+      "child_pid": 3662758,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-instruction-challenge": {
+      "pid": 3647595,
+      "gpu": "3",
+      "status": "completed",
+      "completed": [
+        {
+          "name": "B-original-format",
+          "exit_code": 0
+        },
+        {
+          "name": "json-calibrated-long1024-lr1e-4-s20261103-step256",
+          "exit_code": 0
+        }
+      ],
+      "updated_at": "2026-11-03T17:23:17.425956+00:00",
+      "task": "json-calibrated-long1024-lr1e-4-s20261103-step256",
+      "child_pid": 3650680,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-json-0": {
+      "pid": 3631819,
+      "gpu": "0",
+      "status": "completed",
+      "started_at": "2026-11-03T14:34:43.775179+00:00",
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T14:41:13.936713+00:00"
+        },
+        {
+          "task": "validate",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T14:55:09.148149+00:00"
+        }
+      ],
+      "updated_at": "2026-11-03T14:55:09.149002+00:00",
+      "task": "json-calibrated-lr3e-5-s20261103-validate",
+      "child_pid": 3632853,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-json-2": {
+      "pid": 3631820,
+      "gpu": "2",
+      "status": "completed",
+      "started_at": "2026-11-03T14:34:43.776280+00:00",
+      "completed": [
+        {
+          "task": "validate",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:20:34.604103+00:00"
+        }
+      ],
+      "updated_at": "2026-11-03T15:20:34.604799+00:00",
+      "task": "A-json-schema-validate",
+      "child_pid": 3632282,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-json-3": {
+      "pid": 3631821,
+      "gpu": "3",
+      "status": "completed",
+      "started_at": "2026-11-03T14:34:43.777662+00:00",
+      "completed": [
+        {
+          "task": "validate",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:14:49.503583+00:00"
+        }
+      ],
+      "updated_at": "2026-11-03T15:14:49.516432+00:00",
+      "task": "B-json-schema-validate",
+      "child_pid": 3631824,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-long3k-validation": {
+      "pid": 3646816,
+      "status": "completed",
+      "gpu": "0",
+      "source": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json-calibrated3k-long1024-lr1e-4-s20261103",
+      "completed": [
+        {
+          "step": 256,
+          "name": "json-calibrated3k-long1024-lr1e-4-s20261103-step256"
+        },
+        {
+          "step": 512,
+          "name": "json-calibrated3k-long1024-lr1e-4-s20261103-step512"
+        },
+        {
+          "step": 1024,
+          "name": "json-calibrated3k-long1024-lr1e-4-s20261103-step1024"
+        }
+      ],
+      "updated_at": "2026-11-03T17:45:45.886270+00:00",
+      "task": "json-calibrated3k-long1024-lr1e-4-s20261103-step1024",
+      "step": 1024,
+      "child_pid": 3651559,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-long512-validation": {
+      "pid": 3642513,
+      "status": "completed",
+      "gpu": "3",
+      "source": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json-calibrated-long1024-lr1e-4-s20261103",
+      "completed": [
+        {
+          "step": 256,
+          "name": "json-calibrated-long1024-lr1e-4-s20261103-step256"
+        },
+        {
+          "step": 512,
+          "name": "json-calibrated-long1024-lr1e-4-s20261103-step512"
+        },
+        {
+          "step": 1024,
+          "name": "json-calibrated-long1024-lr1e-4-s20261103-step1024"
+        }
+      ],
+      "updated_at": "2026-11-03T17:09:45.469481+00:00",
+      "task": "json-calibrated-long1024-lr1e-4-s20261103-step1024",
+      "step": 1024,
+      "child_pid": 3648516,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-memorize-0": {
+      "pid": 3636687,
+      "gpu": "0",
+      "status": "completed",
+      "started_at": "2026-11-03T15:23:30.646506+00:00",
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:29:10.808423+00:00"
+        },
+        {
+          "task": "training-probe",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:33:20.891988+00:00"
+        },
+        {
+          "task": "validate",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:45:46.137488+00:00"
+        }
+      ],
+      "updated_at": "2026-11-03T15:45:46.138225+00:00",
+      "task": "json-memorize64-lr1e-4-s20261103-validate",
+      "child_pid": 3637615,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-memorize-2": {
+      "pid": 3636688,
+      "gpu": "2",
+      "status": "completed",
+      "started_at": "2026-11-03T15:23:30.647599+00:00",
+      "completed": [
+        {
+          "task": "training-probe",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:37:25.981224+00:00"
+        }
+      ],
+      "updated_at": "2026-11-03T15:37:26.000683+00:00",
+      "task": "B-json-memorize64-control-training-probe",
+      "child_pid": 3636694,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-memorize-3": {
+      "pid": 3636689,
+      "gpu": "3",
+      "status": "completed",
+      "started_at": "2026-11-03T15:23:30.651319+00:00",
+      "completed": [
+        {
+          "task": "training-probe",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:37:10.975403+00:00"
+        }
+      ],
+      "updated_at": "2026-11-03T15:37:10.987468+00:00",
+      "task": "A-json-memorize64-control-training-probe",
+      "child_pid": 3636693,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-numerical": {
+      "pid": 3641277,
+      "status": "completed",
+      "started_at": "2026-11-03T16:11:18.290931+00:00",
+      "updated_at": "2026-11-03T16:15:03.350711+00:00",
+      "task": "validate512",
+      "child_pid": 3642133,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-qualityweighted3k": {
+      "pid": 3657116,
+      "gpu": "2",
+      "status": "completed",
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0
+        },
+        {
+          "task": "validate",
+          "exit_code": 0
+        },
+        {
+          "task": "challenge",
+          "exit_code": 0
+        }
+      ],
+      "updated_at": "2026-11-03T19:12:10.592701+00:00",
+      "task": "challenge",
+      "name": "json3k-qualityweighted512-lr1e-4-s20261103",
+      "child_pid": 3661745,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-replica-challenge-20261104": {
+      "pid": 3651214,
+      "gpu": "2",
+      "seed": 20261104,
+      "status": "completed",
+      "updated_at": "2026-11-03T18:00:10.301760+00:00",
+      "task": "json-calibrated-locked256-lr1e-4-s20261104",
+      "child_pid": 3654424,
+      "exit_code": 0,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-replica-challenge-20261105": {
+      "pid": 3651215,
+      "gpu": "3",
+      "seed": 20261105,
+      "status": "completed",
+      "updated_at": "2026-11-03T17:51:05.631851+00:00",
+      "task": "json-calibrated-locked256-lr1e-4-s20261105",
+      "child_pid": 3653578,
+      "exit_code": 0,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-replication-20261104": {
+      "pid": 3648051,
+      "gpu": "2",
+      "seed": 20261104,
+      "status": "completed",
+      "updated_at": "2026-11-03T17:57:06.580877+00:00",
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0
+        },
+        {
+          "task": "validate",
+          "exit_code": 0
+        }
+      ],
+      "task": "validate",
+      "name": "json-calibrated-locked256-lr1e-4-s20261104",
+      "child_pid": 3653096,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-replication-20261105": {
+      "pid": 3648052,
+      "gpu": "3",
+      "seed": 20261105,
+      "status": "completed",
+      "updated_at": "2026-11-03T17:47:41.458972+00:00",
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0
+        },
+        {
+          "task": "validate",
+          "exit_code": 0
+        }
+      ],
+      "task": "validate",
+      "name": "json-calibrated-locked256-lr1e-4-s20261105",
+      "child_pid": 3652092,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-restore-smoke": {
+      "pid": 3663052,
+      "gpu": "3",
+      "status": "completed",
+      "updated_at": "2026-11-03T19:26:13.240834+00:00",
+      "child_pid": 3663397,
+      "exit_code": 0,
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "worker-trial-json-calibrated-lr1e-4-s20261103": {
+      "pid": 3634652,
+      "gpu": "0",
+      "status": "completed",
+      "started_at": "2026-11-03T14:58:49.643499+00:00",
+      "settings": {
+        "gpu": "0",
+        "name": "json-calibrated-lr1e-4-s20261103",
+        "lr": 0.0001,
+        "seed": 20261103,
+        "wait_for": "worker-json-0.json",
+        "json_only": true,
+        "training_file": "train-contrast-calibrated.json"
+      },
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:05:09.772439+00:00"
+        },
+        {
+          "task": "validate",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:18:39.908589+00:00"
+        }
+      ],
+      "updated_at": "2026-11-03T15:20:14.928934+00:00",
+      "task": "json-calibrated-lr1e-4-s20261103-analysis",
+      "child_pid": 3636333,
+      "task_started_at": "2026-11-03T15:05:09.773827+00:00",
+      "pid_live": false,
+      "child_pid_live": false
+    },
+    "cpu-queue": {
+      "pid": 3616599,
+      "started_at": "2026-11-03T12:17:19.583609+00:00",
+      "status": "completed",
+      "completed": [
+        "A",
+        "B",
+        "full-lr1e-5-s20261103",
+        "SFT",
+        "GRPO",
+        "parameters-lr1e-5-s20261103",
+        "parameters-lr3e-5-s20261103"
+      ],
+      "updated_at": "2026-11-03T14:45:40.542059+00:00",
+      "task": "parameters-lr3e-5-s20261103",
+      "child_pid": 3632302,
+      "pid_live": false,
+      "child_pid_live": false
+    }
+  },
+  "runs": {
+    "calibrated3k-quality-audit": {
+      "status": "completed",
+      "pid": 3656965,
+      "completed": 3000,
+      "total": 3000,
+      "workers": 8,
+      "elapsed_seconds": 196.72036629915237,
+      "summary.json": {
+        "status": "completed",
+        "training_rows": 3000,
+        "source_groups": 1078,
+        "source_sha256": "d1dc31ae91f583e1d672ba047d390723d3b1ce6494ea88f802bb67356a226a19",
+        "NoEdit_l1": 0.11533294590197814,
+        "label_l1": 0.06793607941207787,
+        "labels_improving_original": 2417,
+        "labels_worsening_original": 583,
+        "direction_assessable": 483,
+        "clear_direction_oppositions": 45,
+        "quality_weights_sha256": "d79965503323bfacba24ef408d594ee1af3499b4c24c518850b6c0dca7d18449",
+        "mean_normalized_weight": 1.0,
+        "weight_range": [
+          0.2992358506582756,
+          2.393886805266205
+        ],
+        "elapsed_seconds": 196.7200711593032,
+        "limits": [
+          "Training-only oracle/program replay; not model generalization.",
+          "Rows sharing a source group are dependent; counts are descriptive.",
+          "Global direction proxy excludes local/negated/ambiguous requests; not full semantics.",
+          "Weights never enter model inference, and do not use validation/test references."
+        ]
+      }
+    },
+    "checkpoint-restore-smoke-v1": {
+      "status": "completed",
+      "pid": 3663397,
+      "gpu": "3",
+      "elapsed_seconds": 19.78383357822895,
+      "summary.json": {
+        "passed": true,
+        "raw_checkpoint": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261104/checkpoint-512",
+        "source_adapter_sha256": "d7d8ec550fe67b1ca18b5fe03a689fa3220af91c127d9ff6d72c4cea0bbbf46a",
+        "chosen_inference_adapter_unchanged_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884",
+        "trainable_tensors": 112,
+        "restored_optimizer_step": 512,
+        "executed_optimizer_step": 513,
+        "restored_scheduler_step": 512,
+        "executed_scheduler_step": 513,
+        "rng_components": [
+          "python",
+          "numpy",
+          "cpu",
+          "cuda"
+        ],
+        "training_ids": [
+          "GIER-Edit:train:012138",
+          "GIER-Edit:train:025531",
+          "GIER-Edit:train:003838",
+          "GIER-Edit:train:015756"
+        ],
+        "training_losses": [
+          0.3158879578113556,
+          0.2743018567562103,
+          0.4074409306049347,
+          0.372534841299057
+        ],
+        "grad_norm_before_clip": 1.50197434425354,
+        "updated_adapter_sha256": "002682676afc7ff16afc139b438313f3054e34e709b75583f63bf0687e112ee1",
+        "elapsed_seconds": 19.78363562375307,
+        "limits": [
+          "Executed restoration and one4-row optimizer update, not exact replay of the historical next dataloader batches.",
+          "Raw training state is restored; fixedSWA export remains separately derived from raw512/1024 and is never paired with the raw optimizer.",
+          "No independent-test image, reference, prediction or score used; frozen inference adapter unchanged."
+        ]
+      }
+    },
+    "contrast-calibrated-lr1e-5-s20261103": {
+      "status": "completed",
+      "pid": 3626039,
+      "gpu": "0",
+      "step": 128,
+      "settings": {
+        "name": "contrast-calibrated-lr1e-5-s20261103",
+        "mode": "parameters",
+        "lr": 1e-05,
+        "gpu": "0",
+        "seed": 20261103,
+        "training_file": "train-contrast-calibrated.json"
+      },
+      "elapsed_seconds": 396.26768101751804,
+      "metrics": {
+        "train_runtime": 301.2496,
+        "train_samples_per_second": 1.7,
+        "train_steps_per_second": 0.425,
+        "train_loss": 0.2965103827882558,
+        "epoch": 1.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 128,
+        "train_runtime": 301.2496,
+        "train_samples_per_second": 1.7,
+        "train_steps_per_second": 0.425,
+        "total_flos": 1.5582046286106624e+16,
+        "train_loss": 0.2965103827882558,
+        "epoch": 1.0
+      },
+      "final-identity.json": {
+        "sha256": "dd2c6376e2fd7573652cadf4cd251e0cd5b8588d83eaffa6499bb9ecacbc87b8",
+        "steps": 128
+      }
+    },
+    "contrast-calibrated-lr3e-5-s20261103": {
+      "status": "completed",
+      "pid": 3626202,
+      "gpu": "3",
+      "step": 128,
+      "settings": {
+        "name": "contrast-calibrated-lr3e-5-s20261103",
+        "mode": "parameters",
+        "lr": 3e-05,
+        "gpu": "3",
+        "seed": 20261103,
+        "training_file": "train-contrast-calibrated.json"
+      },
+      "elapsed_seconds": 408.50094801187515,
+      "metrics": {
+        "train_runtime": 315.635,
+        "train_samples_per_second": 1.622,
+        "train_steps_per_second": 0.406,
+        "train_loss": 0.28249101631809026,
+        "epoch": 1.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 128,
+        "train_runtime": 315.635,
+        "train_samples_per_second": 1.622,
+        "train_steps_per_second": 0.406,
+        "total_flos": 1.5582046286106624e+16,
+        "train_loss": 0.28249101631809026,
+        "epoch": 1.0
+      },
+      "final-identity.json": {
+        "sha256": "9c3de9023182d16bf19302009449d4e3333ac5c0d3f1a557cd8ba4c438073c11",
+        "steps": 128
+      }
+    },
+    "contrast-label-search": {
+      "status": "completed",
+      "completed": 512,
+      "summary.json": {
+        "status": "completed",
+        "rows": 512,
+        "source_sha256": "de565c842980de3a1c0f66154cec602be42288f5574b35ae5f7d5d41e9ced5fc",
+        "training_sha256": "c8f45857edd963bb3c991d2df8ce5fc0372b0fc5abca6fad14b50d87cca5e378",
+        "changed_labels": 343,
+        "old_mean_l1": 0.07776674921660742,
+        "new_mean_l1": 0.06687331440753042,
+        "grid": [
+          -60,
+          -40,
+          -20,
+          0,
+          20,
+          40,
+          60
+        ],
+        "elapsed_seconds": 844.1672642678022,
+        "editor_sha256": "1a18fb3b00207f0b667b2ef1d0677d8d71a5abdf21ad89e4c66adea152c05f3c",
+        "limits": [
+          "Training-only label fitting, not a predictive-model result.",
+          "Other tools fixed; original frozen editor used.",
+          "Previously aligned explicit global directions and substantive edit threshold protected; broader semantics not guaranteed.",
+          "Reasoning text retained as context only; this variant must use parameter-only loss because reasoning may no longer match the new parameter values."
+        ]
+      }
+    },
+    "contrast-label-search3k": {
+      "status": "completed",
+      "pid": 3644598,
+      "workers": 8,
+      "completed": 3000,
+      "total": 3000,
+      "cached512_reused": true,
+      "elapsed_seconds": 759.1546119377017,
+      "summary.json": {
+        "status": "completed",
+        "rows": 3000,
+        "groups": 1078,
+        "source_sha256": "439ebf726d7e01c913a9e85c0866240268edb3b5919bb583b4823270fe361104",
+        "training_sha256": "d1dc31ae91f583e1d672ba047d390723d3b1ce6494ea88f802bb67356a226a19",
+        "changed_labels": 1957,
+        "old_mean_l1": 0.07949687440258761,
+        "new_mean_l1": 0.06793607941207787,
+        "grid": [
+          -60,
+          -40,
+          -20,
+          0,
+          20,
+          40,
+          60
+        ],
+        "cached_rows": 512,
+        "workers": 8,
+        "editor_sha256": "1a18fb3b00207f0b667b2ef1d0677d8d71a5abdf21ad89e4c66adea152c05f3c",
+        "elapsed_seconds": 759.1322892680764,
+        "limits": [
+          "Training-reference-based label fitting, not predictive model performance.",
+          "Same contrast-only search and direction/edit protections as prior512.",
+          "Original reference/label never enter model generation; reasoning must be masked or removed."
+        ]
+      }
+    },
+    "expanded-memorize64-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3638983,
+      "gpu": "3",
+      "step": 128,
+      "settings": {
+        "name": "expanded-memorize64-lr1e-4-s20261103",
+        "mode": "parameters",
+        "lr": 0.0001,
+        "gpu": "3",
+        "seed": 20261103,
+        "training_file": "train-memorize64.json"
+      },
+      "elapsed_seconds": 354.4773004129529,
+      "metrics": {
+        "train_runtime": 326.5575,
+        "train_samples_per_second": 1.568,
+        "train_steps_per_second": 0.392,
+        "train_loss": 0.33270198525860906,
+        "epoch": 8.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 128,
+        "train_runtime": 326.5575,
+        "train_samples_per_second": 1.568,
+        "train_steps_per_second": 0.392,
+        "total_flos": 1.4051907415277568e+16,
+        "train_loss": 0.33270198525860906,
+        "epoch": 8.0
+      },
+      "final-identity.json": {
+        "sha256": "7080e1be25615643c98bbd7f256366a6bc87c97af06f514f2ef7fa051c5348cf",
+        "steps": 128
+      }
+    },
+    "frozen-A-features-v1": {
+      "status": "completed",
+      "pid": 3641028,
+      "gpu": "0",
+      "started_at": "2026-11-03T16:08:19.322820+00:00",
+      "completed": 200,
+      "split": "validation",
+      "total": 200,
+      "updated_at": "2026-11-03T16:11:50.563950+00:00",
+      "elapsed_seconds": 211.2411293014884
+    },
+    "frozen-A-features3k-v1": {
+      "status": "completed",
+      "pid": 3644599,
+      "gpu": "2",
+      "started_at": "2026-11-03T16:27:52.218816+00:00",
+      "completed": 3000,
+      "split": "train",
+      "total": 3000,
+      "updated_at": "2026-11-03T16:41:07.778635+00:00",
+      "elapsed_seconds": 795.5598126798868
+    },
+    "full-lr1e-5-s20261103": {
+      "status": "completed",
+      "pid": 3615461,
+      "gpu": "2",
+      "step": 128,
+      "settings": {
+        "name": "full-lr1e-5-s20261103",
+        "mode": "full",
+        "lr": 1e-05,
+        "gpu": "2",
+        "seed": 20261103
+      },
+      "elapsed_seconds": 380.3168230801821,
+      "metrics": {
+        "train_runtime": 307.9141,
+        "train_samples_per_second": 1.663,
+        "train_steps_per_second": 0.416,
+        "train_loss": 0.5314420482609421,
+        "epoch": 1.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 128,
+        "train_runtime": 307.9141,
+        "train_samples_per_second": 1.663,
+        "train_steps_per_second": 0.416,
+        "total_flos": 1.5562836295968768e+16,
+        "train_loss": 0.5314420482609421,
+        "epoch": 1.0
+      },
+      "final-identity.json": {
+        "sha256": "87c68791c56c0d45154550d68080cfb3a976dc3f25a4cc95299e7d081457ce20",
+        "steps": 128
+      }
+    },
+    "json-calibrated-locked256-lr1e-4-s20261104": {
+      "status": "completed",
+      "pid": 3651576,
+      "gpu": "2",
+      "step": 256,
+      "settings": {
+        "name": "json-calibrated-locked256-lr1e-4-s20261104",
+        "mode": "parameters",
+        "lr": 0.0001,
+        "gpu": "2",
+        "seed": 20261104,
+        "training_file": "train-contrast-calibrated.json"
+      },
+      "elapsed_seconds": 697.1751794889569,
+      "metrics": {
+        "train_runtime": 604.0423,
+        "train_samples_per_second": 6.781,
+        "train_steps_per_second": 1.695,
+        "train_loss": 0.4055899399681948,
+        "epoch": 2.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 256,
+        "train_runtime": 604.0423,
+        "train_samples_per_second": 6.781,
+        "train_steps_per_second": 1.695,
+        "total_flos": 2.8447158083272704e+16,
+        "train_loss": 0.4055899399681948,
+        "epoch": 2.0
+      },
+      "final-identity.json": {
+        "sha256": "00468e8599283da78fc3c1a4283b81a705da36e7065bb8310952153200fe3be2",
+        "steps": 256
+      }
+    },
+    "json-calibrated-locked256-lr1e-4-s20261105": {
+      "status": "completed",
+      "pid": 3650981,
+      "gpu": "3",
+      "step": 256,
+      "settings": {
+        "name": "json-calibrated-locked256-lr1e-4-s20261105",
+        "mode": "parameters",
+        "lr": 0.0001,
+        "gpu": "3",
+        "seed": 20261105,
+        "training_file": "train-contrast-calibrated.json"
+      },
+      "elapsed_seconds": 692.329491764307,
+      "metrics": {
+        "train_runtime": 601.8343,
+        "train_samples_per_second": 6.806,
+        "train_steps_per_second": 1.701,
+        "train_loss": 0.4018824074883014,
+        "epoch": 2.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 256,
+        "train_runtime": 601.8343,
+        "train_samples_per_second": 6.806,
+        "train_steps_per_second": 1.701,
+        "total_flos": 2.8447158083272704e+16,
+        "train_loss": 0.4018824074883014,
+        "epoch": 2.0
+      },
+      "final-identity.json": {
+        "sha256": "f78c92cdc926946c362df6011a5a906154400f62d94a0b48dc901ca15221106d",
+        "steps": 256
+      }
+    },
+    "json-calibrated-long1024-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3642377,
+      "gpu": "0",
+      "step": 1024,
+      "settings": {
+        "name": "json-calibrated-long1024-lr1e-4-s20261103",
+        "mode": "parameters",
+        "lr": 0.0001,
+        "gpu": "0",
+        "seed": 20261103,
+        "training_file": "train-contrast-calibrated.json"
+      },
+      "elapsed_seconds": 2665.8277631402016,
+      "metrics": {
+        "train_runtime": 2570.3201,
+        "train_samples_per_second": 1.594,
+        "train_steps_per_second": 0.398,
+        "train_loss": 0.3331000425678212,
+        "epoch": 8.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 1024,
+        "train_runtime": 2570.3201,
+        "train_samples_per_second": 1.594,
+        "train_steps_per_second": 0.398,
+        "total_flos": 1.1378863233309082e+17,
+        "train_loss": 0.3331000425678212,
+        "epoch": 8.0
+      },
+      "final-identity.json": {
+        "sha256": "2c33afde8f9406843c88bea36cf54949cb5eac39530b5dcf85cfdca6d60b3ca4",
+        "steps": 1024
+      }
+    },
+    "json-calibrated-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3634654,
+      "gpu": "0",
+      "step": 128,
+      "settings": {
+        "name": "json-calibrated-lr1e-4-s20261103",
+        "mode": "parameters",
+        "lr": 0.0001,
+        "gpu": "0",
+        "seed": 20261103,
+        "training_file": "train-contrast-calibrated.json"
+      },
+      "elapsed_seconds": 370.6433266326785,
+      "metrics": {
+        "train_runtime": 280.3948,
+        "train_samples_per_second": 1.826,
+        "train_steps_per_second": 0.456,
+        "train_loss": 0.41386958793736994,
+        "epoch": 1.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 128,
+        "train_runtime": 280.3948,
+        "train_samples_per_second": 1.826,
+        "train_steps_per_second": 0.456,
+        "total_flos": 1.4223579041636352e+16,
+        "train_loss": 0.41386958793736994,
+        "epoch": 1.0
+      },
+      "final-identity.json": {
+        "sha256": "005cf39d505511aac7442c4b099eca5913489cda6ea6d4f6bad113b5bd0f50f7",
+        "steps": 128
+      }
+    },
+    "json-calibrated-lr3e-5-s20261103": {
+      "status": "completed",
+      "pid": 3631825,
+      "gpu": "0",
+      "step": 128,
+      "settings": {
+        "name": "json-calibrated-lr3e-5-s20261103",
+        "mode": "parameters",
+        "lr": 3e-05,
+        "gpu": "0",
+        "seed": 20261103,
+        "training_file": "train-contrast-calibrated.json"
+      },
+      "elapsed_seconds": 381.10646640509367,
+      "metrics": {
+        "train_runtime": 296.8889,
+        "train_samples_per_second": 1.725,
+        "train_steps_per_second": 0.431,
+        "train_loss": 0.43125377991236746,
+        "epoch": 1.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 128,
+        "train_runtime": 296.8889,
+        "train_samples_per_second": 1.725,
+        "train_steps_per_second": 0.431,
+        "total_flos": 1.4223579041636352e+16,
+        "train_loss": 0.43125377991236746,
+        "epoch": 1.0
+      },
+      "final-identity.json": {
+        "sha256": "5a6d76eb47828c1542ce6b0a48cea537a090e8138a8fd4539c90e1f99db8d8bb",
+        "steps": 128
+      }
+    },
+    "json-calibrated3k-long1024-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3646815,
+      "gpu": "2",
+      "step": 1024,
+      "settings": {
+        "name": "json-calibrated3k-long1024-lr1e-4-s20261103",
+        "mode": "parameters",
+        "lr": 0.0001,
+        "gpu": "2",
+        "seed": 20261103,
+        "training_file": "train3k-contrast-calibrated.json"
+      },
+      "elapsed_seconds": 2944.2733930051327,
+      "metrics": {
+        "train_runtime": 2498.4731,
+        "train_samples_per_second": 1.639,
+        "train_steps_per_second": 0.41,
+        "train_loss": 0.3677378537104232,
+        "epoch": 1.3653333333333333
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 1024,
+        "train_runtime": 2498.4731,
+        "train_samples_per_second": 1.639,
+        "train_steps_per_second": 0.41,
+        "total_flos": 1.1406627018087014e+17,
+        "train_loss": 0.3677378537104232,
+        "epoch": 1.3653333333333333
+      },
+      "final-identity.json": {
+        "sha256": "810c4c502ec545fe088221c040a781dd611b31f23fa8ef9ce17eb41159fe8a36",
+        "steps": 1024
+      }
+    },
+    "json-memorize64-long512-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3638814,
+      "gpu": "2",
+      "step": 512,
+      "settings": {
+        "name": "json-memorize64-long512-lr1e-4-s20261103",
+        "mode": "parameters",
+        "lr": 0.0001,
+        "gpu": "2",
+        "seed": 20261103,
+        "training_file": "train-memorize64.json"
+      },
+      "elapsed_seconds": 1237.161363735795,
+      "metrics": {
+        "train_runtime": 1202.0146,
+        "train_samples_per_second": 1.704,
+        "train_steps_per_second": 0.426,
+        "train_loss": 0.13754400449664672,
+        "epoch": 32.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 512,
+        "train_runtime": 1202.0146,
+        "train_samples_per_second": 1.704,
+        "train_steps_per_second": 0.426,
+        "total_flos": 5.61047064992809e+16,
+        "train_loss": 0.13754400449664672,
+        "epoch": 32.0
+      },
+      "final-identity.json": {
+        "sha256": "2fc234af8d8148d7f383f9c65d90cd60f9627bd990e8d287d78613eb0d6a7c46",
+        "steps": 512
+      }
+    },
+    "json-memorize64-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3636695,
+      "gpu": "0",
+      "step": 128,
+      "settings": {
+        "name": "json-memorize64-lr1e-4-s20261103",
+        "mode": "parameters",
+        "lr": 0.0001,
+        "gpu": "0",
+        "seed": 20261103,
+        "training_file": "train-memorize64.json"
+      },
+      "elapsed_seconds": 332.19661139696836,
+      "metrics": {
+        "train_runtime": 295.9351,
+        "train_samples_per_second": 1.73,
+        "train_steps_per_second": 0.433,
+        "train_loss": 0.3753149309195578,
+        "epoch": 8.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 128,
+        "train_runtime": 295.9351,
+        "train_samples_per_second": 1.73,
+        "train_steps_per_second": 0.433,
+        "total_flos": 1.4026176624820224e+16,
+        "train_loss": 0.3753149309195578,
+        "epoch": 8.0
+      },
+      "final-identity.json": {
+        "sha256": "99b92651e39aed5e8dade0298b91e0aba26ca0e67fec17bc1046a30c11f98dae",
+        "steps": 128
+      }
+    },
+    "json3k-qualityweighted512-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3657186,
+      "gpu": "2",
+      "step": 512,
+      "settings": {
+        "name": "json3k-qualityweighted512-lr1e-4-s20261103",
+        "mode": "parameters",
+        "lr": 0.0001,
+        "gpu": "2",
+        "seed": 20261103,
+        "training_file": "train3k-contrast-calibrated.json"
+      },
+      "elapsed_seconds": 1749.078222580254,
+      "metrics": {
+        "train_runtime": 1317.9838,
+        "train_samples_per_second": 3.108,
+        "train_steps_per_second": 0.777,
+        "train_loss": 0.39969692581507843,
+        "epoch": 0.6826666666666666
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 512,
+        "train_runtime": 1317.9838,
+        "train_samples_per_second": 3.108,
+        "train_steps_per_second": 0.777,
+        "total_flos": 5.697241198601626e+16,
+        "train_loss": 0.39969692581507843,
+        "epoch": 0.6826666666666666
+      },
+      "final-identity.json": {
+        "sha256": "b7ee91cec80b85decca32a98bad755ff917be185346b63b81df4a44bab758b30",
+        "steps": 512
+      }
+    },
+    "json3k-replica1024-lr1e-4-s20261104": {
+      "status": "completed",
+      "pid": 3654570,
+      "gpu": "0",
+      "step": 1024,
+      "settings": {
+        "name": "json3k-replica1024-lr1e-4-s20261104",
+        "mode": "parameters",
+        "lr": 0.0001,
+        "gpu": "0",
+        "seed": 20261104,
+        "training_file": "train3k-contrast-calibrated.json"
+      },
+      "elapsed_seconds": 3081.3263979256153,
+      "metrics": {
+        "train_runtime": 2652.6188,
+        "train_samples_per_second": 1.544,
+        "train_steps_per_second": 0.386,
+        "train_loss": 0.36743953020777553,
+        "epoch": 1.3653333333333333
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 1024,
+        "train_runtime": 2652.6188,
+        "train_samples_per_second": 1.544,
+        "train_steps_per_second": 0.386,
+        "total_flos": 1.1403673423961702e+17,
+        "train_loss": 0.36743953020777553,
+        "epoch": 1.3653333333333333
+      },
+      "final-identity.json": {
+        "sha256": "69ece0a9ca63fa9aa0f2d6203d0adcd8db72c8b379e78e2c54a69617ac97c988",
+        "steps": 1024
+      }
+    },
+    "json3k-replica1024-lr1e-4-s20261105": {
+      "status": "completed",
+      "pid": 3654572,
+      "gpu": "3",
+      "step": 1024,
+      "settings": {
+        "name": "json3k-replica1024-lr1e-4-s20261105",
+        "mode": "parameters",
+        "lr": 0.0001,
+        "gpu": "3",
+        "seed": 20261105,
+        "training_file": "train3k-contrast-calibrated.json"
+      },
+      "elapsed_seconds": 3044.032080113888,
+      "metrics": {
+        "train_runtime": 2597.8998,
+        "train_samples_per_second": 1.577,
+        "train_steps_per_second": 0.394,
+        "train_loss": 0.36694198836630676,
+        "epoch": 1.3653333333333333
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 1024,
+        "train_runtime": 2597.8998,
+        "train_samples_per_second": 1.577,
+        "train_steps_per_second": 0.394,
+        "total_flos": 1.1411087642915635e+17,
+        "train_loss": 0.36694198836630676,
+        "epoch": 1.3653333333333333
+      },
+      "final-identity.json": {
+        "sha256": "2c7099771e4a204087529f0f5666c60875513c87a5537b441d41ca0c2054b976",
+        "steps": 1024
+      }
+    },
+    "numeric-head512-s20261103": {
+      "status": "completed",
+      "pid": 3642112,
+      "step": 640,
+      "elapsed_seconds": 4.453502289950848,
+      "last_metrics": {
+        "step": 640,
+        "loss": 0.018046438694000244,
+        "train_mae16": 0.3274761438369751,
+        "within_half_unit_vectors": 21,
+        "active_f1": 0.9982316493988037
+      },
+      "all_logged_metrics_finite": true,
+      "final-identity.json": {
+        "head_sha256": "a6f00afd15894aa7aba3b1bf6ff48d6d01414024c3f1d60d9e7d813f5f1e2fdb",
+        "reload_forward_exact": true,
+        "steps": 640,
+        "training_mae16": 0.3274761438369751
+      }
+    },
+    "numeric-head64-s20261103": {
+      "status": "completed",
+      "pid": 3641773,
+      "step": 1000,
+      "elapsed_seconds": 6.555928371846676,
+      "last_metrics": {
+        "step": 1000,
+        "loss": 0.007909527979791164,
+        "train_mae16": 0.09761113673448563,
+        "within_half_unit_vectors": 27,
+        "active_f1": 1.0
+      },
+      "all_logged_metrics_finite": true,
+      "final-identity.json": {
+        "head_sha256": "a6caa382a1c8e3fdb22627da1df856d1ccfd7732311aeed67d79e33f075cb9b9",
+        "reload_forward_exact": true,
+        "steps": 1000,
+        "training_mae16": 0.09761113673448563
+      }
+    },
+    "numeric-ridge3k-cv-s20261103": {
+      "status": "completed",
+      "pid": 3646460,
+      "elapsed_seconds": 43.65263939648867,
+      "final-identity.json": {
+        "head_sha256": "492d05e85be4a3a6f70c42ceb93913957ba7eb51754446f29232e50226778a32",
+        "selected_alpha": 10.0,
+        "train_mae16": 6.245380687669812,
+        "oof_mae16": 6.748589535945929,
+        "serialization_forward_agreement_atol": 0.01,
+        "deterministic_fit": true,
+        "not_independent_training_seed_replication": true
+      }
+    },
+    "numeric-ridge512-cv-s20261103": {
+      "status": "completed",
+      "pid": 3643148,
+      "elapsed_seconds": 1.9958374723792076,
+      "final-identity.json": {
+        "head_sha256": "6761c1bba17d59b7b47d2dc2a272c518e7798b1f91ad700890510f89a0a5e615",
+        "selected_alpha": 10.0,
+        "train_mae16": 6.434146207551777,
+        "oof_mae16": 6.906577756243513,
+        "serialization_forward_agreement_atol": 0.01,
+        "deterministic_fit": true,
+        "not_independent_training_seed_replication": true
+      }
+    },
+    "parameters-lr1e-5-s20261103": {
+      "status": "completed",
+      "pid": 3616668,
+      "gpu": "2",
+      "step": 128,
+      "settings": {
+        "name": "parameters-lr1e-5-s20261103",
+        "mode": "parameters",
+        "lr": 1e-05,
+        "gpu": "2",
+        "seed": 20261103
+      },
+      "elapsed_seconds": 389.40797532349825,
+      "metrics": {
+        "train_runtime": 297.99,
+        "train_samples_per_second": 1.718,
+        "train_steps_per_second": 0.43,
+        "train_loss": 0.23206800501793623,
+        "epoch": 1.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 128,
+        "train_runtime": 297.99,
+        "train_samples_per_second": 1.718,
+        "train_steps_per_second": 0.43,
+        "total_flos": 1.5562836295968768e+16,
+        "train_loss": 0.23206800501793623,
+        "epoch": 1.0
+      },
+      "final-identity.json": {
+        "sha256": "fb7ad3e339d844bff06ea16628230efe87fb598ba2f6883cafc67d4036b68c6c",
+        "steps": 128
+      }
+    },
+    "parameters-lr3e-5-s20261103": {
+      "status": "completed",
+      "pid": 3617501,
+      "gpu": "2",
+      "step": 128,
+      "settings": {
+        "name": "parameters-lr3e-5-s20261103",
+        "mode": "parameters",
+        "lr": 3e-05,
+        "gpu": "2",
+        "seed": 20261103
+      },
+      "elapsed_seconds": 355.2110148072243,
+      "metrics": {
+        "train_runtime": 265.4491,
+        "train_samples_per_second": 1.929,
+        "train_steps_per_second": 0.482,
+        "train_loss": 0.2319379849359393,
+        "epoch": 1.0
+      },
+      "all_logged_metrics_finite": true,
+      "last_metrics": {
+        "step": 128,
+        "train_runtime": 265.4491,
+        "train_samples_per_second": 1.929,
+        "train_steps_per_second": 0.482,
+        "total_flos": 1.5562836295968768e+16,
+        "train_loss": 0.2319379849359393,
+        "epoch": 1.0
+      },
+      "final-identity.json": {
+        "sha256": "df29350822ecc84a71787c37f8d7eacc2d10b8664e7703866cb60da2e9e185c4",
+        "steps": 128
+      }
+    },
+    "evaluation/validation-A": {
+      "status": "completed",
+      "pid": 3615460,
+      "gpu": "0",
+      "started_at": "2026-11-03T12:11:39.397297+00:00",
+      "updated_at": "2026-11-03T12:54:16.220889+00:00",
+      "completed": 200,
+      "elapsed_seconds": 2556.823611304164,
+      "gpu_hours": 0.7102287810378605,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306",
+        "mean_l1": 0.12743576257256792,
+        "mean_rmse": 0.1555820501036942,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-A-json-schema": {
+      "status": "completed",
+      "pid": 3632282,
+      "gpu": "2",
+      "started_at": "2026-11-03T14:39:27.645387+00:00",
+      "updated_at": "2026-11-03T15:20:31.281297+00:00",
+      "completed": 200,
+      "elapsed_seconds": 2463.635927386582,
+      "gpu_hours": 0.6843433133057422,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306",
+        "mean_l1": 0.15206332314643078,
+        "mean_rmse": 0.1816328972694464,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 196,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-B": {
+      "status": "completed",
+      "pid": 3615462,
+      "gpu": "3",
+      "started_at": "2026-11-03T12:11:39.403799+00:00",
+      "updated_at": "2026-11-03T12:55:03.680189+00:00",
+      "completed": 200,
+      "elapsed_seconds": 2604.2764076814055,
+      "gpu_hours": 0.7234101133876377,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "1e8752c182dc40b86e5f974477b0ba83e3a674a5669fe9fd1fa8d2bc49082304",
+        "mean_l1": 0.12511143243405967,
+        "mean_rmse": 0.15308761727064849,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 198,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-B-json-schema": {
+      "status": "completed",
+      "pid": 3631824,
+      "gpu": "3",
+      "started_at": "2026-11-03T14:34:48.431892+00:00",
+      "updated_at": "2026-11-03T15:14:46.697649+00:00",
+      "completed": 200,
+      "elapsed_seconds": 2398.2657737359405,
+      "gpu_hours": 0.6661849372751183,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "1e8752c182dc40b86e5f974477b0ba83e3a674a5669fe9fd1fa8d2bc49082304",
+        "mean_l1": 0.15644846875220536,
+        "mean_rmse": 0.18659220691770315,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 196,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 1
+      }
+    },
+    "evaluation/validation-GRPO": {
+      "status": "completed",
+      "pid": 3620520,
+      "gpu": "3",
+      "started_at": "2026-11-03T12:55:10.775040+00:00",
+      "updated_at": "2026-11-03T13:38:38.841513+00:00",
+      "completed": 200,
+      "elapsed_seconds": 2608.0665011554956,
+      "gpu_hours": 0.7244629171428582,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "148c039763698694f30fe78efa63f71572a4c84d092374f222a4b19284f533d4",
+        "mean_l1": 0.12656915616011247,
+        "mean_rmse": 0.1545770032890141,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-SFT": {
+      "status": "completed",
+      "pid": 3620324,
+      "gpu": "0",
+      "started_at": "2026-11-03T12:54:26.148648+00:00",
+      "updated_at": "2026-11-03T13:37:06.164910+00:00",
+      "completed": 200,
+      "elapsed_seconds": 2560.016280926764,
+      "gpu_hours": 0.7111156337232225,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "167cc7f7aed2f87e01fd602e425fb2d66777f8a8f807e5509f2db69a77d3d78a",
+        "mean_l1": 0.12829824914922938,
+        "mean_rmse": 0.1563591169938445,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-contrast-calibrated-lr1e-5-s20261103": {
+      "status": "completed",
+      "pid": 3626964,
+      "gpu": "0",
+      "started_at": "2026-11-03T13:44:05.945552+00:00",
+      "updated_at": "2026-11-03T14:26:54.317056+00:00",
+      "completed": 200,
+      "elapsed_seconds": 2568.37152081728,
+      "gpu_hours": 0.713436533678323,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "dd2c6376e2fd7573652cadf4cd251e0cd5b8588d83eaffa6499bb9ecacbc87b8",
+        "mean_l1": 0.12511681087780743,
+        "mean_rmse": 0.15277484899386765,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-contrast-calibrated-lr3e-5-s20261103": {
+      "status": "completed",
+      "pid": 3627226,
+      "gpu": "3",
+      "started_at": "2026-11-03T13:45:52.345363+00:00",
+      "updated_at": "2026-11-03T14:30:36.505286+00:00",
+      "completed": 200,
+      "elapsed_seconds": 2684.1599408835173,
+      "gpu_hours": 0.7455999838374555,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "9c3de9023182d16bf19302009449d4e3333ac5c0d3f1a557cd8ba4c438073c11",
+        "mean_l1": 0.12366287474287674,
+        "mean_rmse": 0.15055138881783933,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 195,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-expanded-memorize64-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3639695,
+      "gpu": "3",
+      "started_at": "2026-11-03T15:58:18.260316+00:00",
+      "updated_at": "2026-11-03T16:12:20.904081+00:00",
+      "completed": 200,
+      "elapsed_seconds": 842.6437836363912,
+      "gpu_hours": 0.23406771779681246,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "7080e1be25615643c98bbd7f256366a6bc87c97af06f514f2ef7fa051c5348cf",
+        "mean_l1": 0.13249857664108278,
+        "mean_rmse": 0.15952550009824334,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-full-lr1e-5-s20261103": {
+      "status": "completed",
+      "pid": 3618152,
+      "gpu": "2",
+      "started_at": "2026-11-03T12:30:54.978488+00:00",
+      "updated_at": "2026-11-03T13:13:01.022913+00:00",
+      "completed": 200,
+      "elapsed_seconds": 2526.0444424673915,
+      "gpu_hours": 0.7016790119372308,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "87c68791c56c0d45154550d68080cfb3a976dc3f25a4cc95299e7d081457ce20",
+        "mean_l1": 0.12685515226563437,
+        "mean_rmse": 0.15470205683261157,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json-calibrated-locked256-lr1e-4-s20261104": {
+      "status": "completed",
+      "pid": 3653096,
+      "gpu": "2",
+      "started_at": "2026-11-03T17:45:15.387031+00:00",
+      "updated_at": "2026-11-03T17:57:00.243179+00:00",
+      "completed": 200,
+      "elapsed_seconds": 704.8561680614948,
+      "gpu_hours": 0.19579338015367587,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "00468e8599283da78fc3c1a4283b81a705da36e7065bb8310952153200fe3be2",
+        "mean_l1": 0.12257145648822189,
+        "mean_rmse": 0.15082058913074434,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 199,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json-calibrated-locked256-lr1e-4-s20261105": {
+      "status": "completed",
+      "pid": 3652092,
+      "gpu": "3",
+      "started_at": "2026-11-03T17:35:04.794395+00:00",
+      "updated_at": "2026-11-03T17:47:36.398618+00:00",
+      "completed": 200,
+      "elapsed_seconds": 751.60424092412,
+      "gpu_hours": 0.20877895592815346,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "f78c92cdc926946c362df6011a5a906154400f62d94a0b48dc901ca15221106d",
+        "mean_l1": 0.12409752157982439,
+        "mean_rmse": 0.1502063493989408,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json-calibrated-long1024-lr1e-4-s20261103-step1024": {
+      "status": "completed",
+      "pid": 3648516,
+      "gpu": "3",
+      "started_at": "2026-11-03T16:57:44.364822+00:00",
+      "updated_at": "2026-11-03T17:09:39.463120+00:00",
+      "completed": 200,
+      "elapsed_seconds": 715.0983175635338,
+      "gpu_hours": 0.19863842175445623,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "2c33afde8f9406843c88bea36cf54949cb5eac39530b5dcf85cfdca6d60b3ca4",
+        "mean_l1": 0.12019317944534123,
+        "mean_rmse": 0.14730244726873934,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json-calibrated-long1024-lr1e-4-s20261103-step256": {
+      "status": "completed",
+      "pid": 3644073,
+      "gpu": "3",
+      "started_at": "2026-11-03T16:25:21.877844+00:00",
+      "updated_at": "2026-11-03T16:39:08.812583+00:00",
+      "completed": 200,
+      "elapsed_seconds": 826.9347622990608,
+      "gpu_hours": 0.22970410082696213,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "8240f008753ff225e35a951abb5177819e7ba38b344c7cc203e881350ced91aa",
+        "mean_l1": 0.11494406301528215,
+        "mean_rmse": 0.14162836681120097,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json-calibrated-long1024-lr1e-4-s20261103-step512": {
+      "status": "completed",
+      "pid": 3646059,
+      "gpu": "3",
+      "started_at": "2026-11-03T16:39:21.701561+00:00",
+      "updated_at": "2026-11-03T16:52:07.490003+00:00",
+      "completed": 200,
+      "elapsed_seconds": 765.7884641438723,
+      "gpu_hours": 0.21271901794812745,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "d66c90c31458b270a1cd4375d73984bd7ec072f5855642bb860662e91177f8c1",
+        "mean_l1": 0.1183536976808682,
+        "mean_rmse": 0.14535082023590803,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json-calibrated-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3635114,
+      "gpu": "0",
+      "started_at": "2026-11-03T15:05:13.577314+00:00",
+      "updated_at": "2026-11-03T15:18:34.210378+00:00",
+      "completed": 200,
+      "elapsed_seconds": 800.6330831497908,
+      "gpu_hours": 0.22239807879759205,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "005cf39d505511aac7442c4b099eca5913489cda6ea6d4f6bad113b5bd0f50f7",
+        "mean_l1": 0.12496205249335617,
+        "mean_rmse": 0.15287084134295584,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json-calibrated-lr3e-5-s20261103": {
+      "status": "completed",
+      "pid": 3632853,
+      "gpu": "0",
+      "started_at": "2026-11-03T14:41:17.481360+00:00",
+      "updated_at": "2026-11-03T14:55:04.144461+00:00",
+      "completed": 200,
+      "elapsed_seconds": 826.6631207764149,
+      "gpu_hours": 0.22962864480084844,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "5a6d76eb47828c1542ce6b0a48cea537a090e8138a8fd4539c90e1f99db8d8bb",
+        "mean_l1": 0.12641218674369156,
+        "mean_rmse": 0.15531375098973513,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json-calibrated3k-long1024-lr1e-4-s20261103-step1024": {
+      "status": "completed",
+      "pid": 3651559,
+      "gpu": "0",
+      "started_at": "2026-11-03T17:33:25.032425+00:00",
+      "updated_at": "2026-11-03T17:45:43.317158+00:00",
+      "completed": 200,
+      "elapsed_seconds": 738.2847545742989,
+      "gpu_hours": 0.20507909868740373,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "810c4c502ec545fe088221c040a781dd611b31f23fa8ef9ce17eb41159fe8a36",
+        "mean_l1": 0.11598610375076532,
+        "mean_rmse": 0.14255959841422736,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json-calibrated3k-long1024-lr1e-4-s20261103-step256": {
+      "status": "completed",
+      "pid": 3648958,
+      "gpu": "0",
+      "started_at": "2026-11-03T17:01:34.411821+00:00",
+      "updated_at": "2026-11-03T17:15:00.960344+00:00",
+      "completed": 200,
+      "elapsed_seconds": 806.5485393702984,
+      "gpu_hours": 0.224041261083136,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "94aef4ee434f323c2a5b909e1f453c9dfe9ab3ada354bdcb2876dc0bfcf1dfdd",
+        "mean_l1": 0.12562805680092423,
+        "mean_rmse": 0.15507092176936565,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json-calibrated3k-long1024-lr1e-4-s20261103-step512": {
+      "status": "completed",
+      "pid": 3650177,
+      "gpu": "0",
+      "started_at": "2026-11-03T17:15:11.805414+00:00",
+      "updated_at": "2026-11-03T17:26:44.274278+00:00",
+      "completed": 200,
+      "elapsed_seconds": 692.4688813239336,
+      "gpu_hours": 0.19235246719792484,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "00cbecb8cc513378b12cd225211553249596a5fc077c90f8f4b463fee65eb6c7",
+        "mean_l1": 0.11605789258144796,
+        "mean_rmse": 0.14209251857362687,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json-memorize64-long512-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3641148,
+      "gpu": "2",
+      "started_at": "2026-11-03T16:11:17.983158+00:00",
+      "updated_at": "2026-11-03T16:23:09.659398+00:00",
+      "completed": 200,
+      "elapsed_seconds": 711.6762592121959,
+      "gpu_hours": 0.19768784989292423,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "2fc234af8d8148d7f383f9c65d90cd60f9627bd990e8d287d78613eb0d6a7c46",
+        "mean_l1": 0.1509392396733165,
+        "mean_rmse": 0.18068775710649787,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 199,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json-memorize64-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3637615,
+      "gpu": "0",
+      "started_at": "2026-11-03T15:33:24.824278+00:00",
+      "updated_at": "2026-11-03T15:45:44.043809+00:00",
+      "completed": 200,
+      "elapsed_seconds": 739.2195486873388,
+      "gpu_hours": 0.20533876364636752,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "99b92651e39aed5e8dade0298b91e0aba26ca0e67fec17bc1046a30c11f98dae",
+        "mean_l1": 0.1271326613333076,
+        "mean_rmse": 0.15490448823198677,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json3k-primary-swa512-1024-s20261103": {
+      "status": "completed",
+      "pid": 3654816,
+      "gpu": "2",
+      "started_at": "2026-11-03T18:00:22.045713+00:00",
+      "updated_at": "2026-11-03T18:12:29.149704+00:00",
+      "completed": 200,
+      "elapsed_seconds": 727.1040120050311,
+      "gpu_hours": 0.2019733368129366,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "7bde70bf58b75eda1baa6e2b8ac0d529c23db3fdfd00bfc7f11fd9ecb589f041",
+        "mean_l1": 0.11588283900171518,
+        "mean_rmse": 0.14254187836311757,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json3k-qualityweighted512-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3659924,
+      "gpu": "2",
+      "started_at": "2026-11-03T18:55:49.629335+00:00",
+      "updated_at": "2026-11-03T19:08:52.260246+00:00",
+      "completed": 200,
+      "elapsed_seconds": 782.6309347748756,
+      "gpu_hours": 0.21739748214268023,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "b7ee91cec80b85decca32a98bad755ff917be185346b63b81df4a44bab758b30",
+        "mean_l1": 0.15274863444268705,
+        "mean_rmse": 0.1800314906053245,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json3k-replica1024-lr1e-4-s20261104-swa": {
+      "status": "completed",
+      "pid": 3659286,
+      "gpu": "0",
+      "started_at": "2026-11-03T18:49:06.146916+00:00",
+      "updated_at": "2026-11-03T19:01:58.216689+00:00",
+      "completed": 200,
+      "elapsed_seconds": 772.0697910562158,
+      "gpu_hours": 0.2144638310227957,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884",
+        "mean_l1": 0.11495472422800958,
+        "mean_rmse": 0.14156506803818047,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-json3k-replica1024-lr1e-4-s20261105-swa": {
+      "status": "completed",
+      "pid": 3659019,
+      "gpu": "3",
+      "started_at": "2026-11-03T18:48:32.621320+00:00",
+      "updated_at": "2026-11-03T19:00:28.994195+00:00",
+      "completed": 200,
+      "elapsed_seconds": 716.3728993460536,
+      "gpu_hours": 0.19899247222890457,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "8f4317857ae43f4fe449683ca6a8ec3127b77e4a674986713a824218da9b8817",
+        "mean_l1": 0.11697718513663859,
+        "mean_rmse": 0.14316998278722168,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-numeric-head512-s20261103": {
+      "status": "completed",
+      "pid": 3642133,
+      "completed": 200,
+      "updated_at": "2026-11-03T16:14:58.779591+00:00",
+      "elapsed_seconds": 123.40830107778311,
+      "summary.json": {
+        "rows": 200,
+        "mean_l1": 0.13014642083086073,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "all_zero": 1,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "head_sha256": "a6f00afd15894aa7aba3b1bf6ff48d6d01414024c3f1d60d9e7d813f5f1e2fdb"
+      }
+    },
+    "evaluation/validation-numeric-ridge3k-cv-s20261103": {
+      "status": "completed",
+      "pid": 3646477,
+      "completed": 200,
+      "updated_at": "2026-11-03T16:44:02.901349+00:00",
+      "elapsed_seconds": 117.76872776448727,
+      "summary.json": {
+        "rows": 200,
+        "mean_l1": 0.11783910199068487,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "all_zero": 0,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "head_sha256": "492d05e85be4a3a6f70c42ceb93913957ba7eb51754446f29232e50226778a32"
+      }
+    },
+    "evaluation/validation-numeric-ridge512-cv-s20261103": {
+      "status": "completed",
+      "pid": 3643410,
+      "completed": 200,
+      "updated_at": "2026-11-03T16:22:17.346795+00:00",
+      "elapsed_seconds": 116.46091107279062,
+      "summary.json": {
+        "rows": 200,
+        "mean_l1": 0.12494438057765364,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 200,
+        "all_zero": 0,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "head_sha256": "6761c1bba17d59b7b47d2dc2a272c518e7798b1f91ad700890510f89a0a5e615"
+      }
+    },
+    "evaluation/validation-parameters-lr1e-5-s20261103": {
+      "status": "completed",
+      "pid": 3622658,
+      "gpu": "2",
+      "started_at": "2026-11-03T13:13:10.657389+00:00",
+      "updated_at": "2026-11-03T13:55:44.872000+00:00",
+      "completed": 200,
+      "elapsed_seconds": 2554.214632794261,
+      "gpu_hours": 0.7095040648699634,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "fb7ad3e339d844bff06ea16628230efe87fb598ba2f6883cafc67d4036b68c6c",
+        "mean_l1": 0.12670287104090674,
+        "mean_rmse": 0.154474159758538,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 199,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "evaluation/validation-parameters-lr3e-5-s20261103": {
+      "status": "completed",
+      "pid": 3628210,
+      "gpu": "2",
+      "started_at": "2026-11-03T13:55:52.662336+00:00",
+      "updated_at": "2026-11-03T14:39:17.061394+00:00",
+      "completed": 200,
+      "elapsed_seconds": 2604.399074703455,
+      "gpu_hours": 0.7234441875831948,
+      "summary.json": {
+        "rows": 200,
+        "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+        "adapter_sha256": "df29350822ecc84a71787c37f8d7eacc2d10b8664e7703866cb60da2e9e185c4",
+        "mean_l1": 0.12541262548184023,
+        "mean_rmse": 0.1533363748854026,
+        "baseline_l1": 0.11577512218966149,
+        "executable": 197,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "training-probe-evaluation/train_probe-A-json-memorize64-control": {
+      "status": "completed",
+      "pid": 3636693,
+      "gpu": "3",
+      "started_at": "2026-11-03T15:23:34.757844+00:00",
+      "updated_at": "2026-11-03T15:37:08.946553+00:00",
+      "completed": 64,
+      "elapsed_seconds": 814.1887280642986,
+      "gpu_hours": 0.22616353570380143,
+      "summary.json": {
+        "rows": 64,
+        "source_sha256": "59718421a2727392cf3344995a4bf9745cb9888d5a1cb116210dffa93895d2f0",
+        "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306",
+        "mean_l1": 0.14409100348711945,
+        "mean_rmse": 0.17260530480416492,
+        "baseline_l1": 0.11817180278012529,
+        "executable": 60,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "training-probe-evaluation/train_probe-B-json-memorize64-control": {
+      "status": "completed",
+      "pid": 3636694,
+      "gpu": "2",
+      "started_at": "2026-11-03T15:23:34.731507+00:00",
+      "updated_at": "2026-11-03T15:37:24.116240+00:00",
+      "completed": 64,
+      "elapsed_seconds": 829.3847517445683,
+      "gpu_hours": 0.2303846534010437,
+      "summary.json": {
+        "rows": 64,
+        "source_sha256": "59718421a2727392cf3344995a4bf9745cb9888d5a1cb116210dffa93895d2f0",
+        "adapter_sha256": "1e8752c182dc40b86e5f974477b0ba83e3a674a5669fe9fd1fa8d2bc49082304",
+        "mean_l1": 0.151151168247452,
+        "mean_rmse": 0.17968615007703193,
+        "baseline_l1": 0.11817180278012529,
+        "executable": 60,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 1
+      }
+    },
+    "training-probe-evaluation/train_probe-expanded-memorize64-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3639259,
+      "gpu": "3",
+      "started_at": "2026-11-03T15:53:18.409595+00:00",
+      "updated_at": "2026-11-03T15:58:09.282742+00:00",
+      "completed": 64,
+      "elapsed_seconds": 290.87319373339415,
+      "gpu_hours": 0.0807981094883548,
+      "summary.json": {
+        "rows": 64,
+        "source_sha256": "59718421a2727392cf3344995a4bf9745cb9888d5a1cb116210dffa93895d2f0",
+        "adapter_sha256": "7080e1be25615643c98bbd7f256366a6bc87c97af06f514f2ef7fa051c5348cf",
+        "mean_l1": 0.11272527437540703,
+        "mean_rmse": 0.13879413148970343,
+        "baseline_l1": 0.11817180278012529,
+        "executable": 64,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "training-probe-evaluation/train_probe-json-memorize64-long512-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3640766,
+      "gpu": "2",
+      "started_at": "2026-11-03T16:07:08.482573+00:00",
+      "updated_at": "2026-11-03T16:11:09.996762+00:00",
+      "completed": 64,
+      "elapsed_seconds": 241.51420595496893,
+      "gpu_hours": 0.06708727958094743,
+      "summary.json": {
+        "rows": 64,
+        "source_sha256": "59718421a2727392cf3344995a4bf9745cb9888d5a1cb116210dffa93895d2f0",
+        "adapter_sha256": "2fc234af8d8148d7f383f9c65d90cd60f9627bd990e8d287d78613eb0d6a7c46",
+        "mean_l1": 0.06790032028220594,
+        "mean_rmse": 0.0915478048264049,
+        "baseline_l1": 0.11817180278012529,
+        "executable": 64,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "training-probe-evaluation/train_probe-json-memorize64-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3637170,
+      "gpu": "0",
+      "started_at": "2026-11-03T15:29:14.982147+00:00",
+      "updated_at": "2026-11-03T15:33:18.815827+00:00",
+      "completed": 64,
+      "elapsed_seconds": 243.83370197564363,
+      "gpu_hours": 0.06773158401043879,
+      "summary.json": {
+        "rows": 64,
+        "source_sha256": "59718421a2727392cf3344995a4bf9745cb9888d5a1cb116210dffa93895d2f0",
+        "adapter_sha256": "99b92651e39aed5e8dade0298b91e0aba26ca0e67fec17bc1046a30c11f98dae",
+        "mean_l1": 0.12236109719378874,
+        "mean_rmse": 0.14829099655617028,
+        "baseline_l1": 0.11817180278012529,
+        "executable": 64,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0
+      }
+    },
+    "training-probe-evaluation/train_probe-numeric-head64-s20261103": {
+      "status": "completed",
+      "pid": 3641794,
+      "completed": 64,
+      "updated_at": "2026-11-03T16:12:41.981070+00:00",
+      "elapsed_seconds": 36.99952168762684,
+      "summary.json": {
+        "rows": 64,
+        "mean_l1": 0.06788908212911338,
+        "baseline_l1": 0.11817180278012529,
+        "executable": 64,
+        "all_zero": 0,
+        "source_sha256": "59718421a2727392cf3344995a4bf9745cb9888d5a1cb116210dffa93895d2f0",
+        "head_sha256": "a6caa382a1c8e3fdb22627da1df856d1ccfd7732311aeed67d79e33f075cb9b9"
+      }
+    },
+    "instruction-challenge/B-original-format": {
+      "status": "completed",
+      "pid": 3649731,
+      "gpu": "3",
+      "completed": 48,
+      "started_at": "2026-11-03T17:09:51.919114+00:00",
+      "elapsed_seconds": 617.2129302471876,
+      "summary.json": {
+        "requests": 48,
+        "source_groups": 8,
+        "executable": 48,
+        "aligned_requests": 32,
+        "strict_pairs": 8,
+        "ordered_pairs": 16,
+        "identical_parameter_pairs": 2,
+        "pairs": [
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "brightness",
+            "both_aligned": false,
+            "ordered": false,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "warmth",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": false,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "warmth",
+            "both_aligned": false,
+            "ordered": false,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "warmth",
+            "both_aligned": false,
+            "ordered": false,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": false,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "brightness",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "warmth",
+            "both_aligned": false,
+            "ordered": false,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": false,
+            "identical_parameters": true
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "brightness",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "brightness",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "warmth",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": false,
+            "identical_parameters": true
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          }
+        ],
+        "limits": "Balanced development challenge on8 training images; global proxies only, no reference target, aesthetics or local-edit assessment. Requests on same source are dependent."
+      }
+    },
+    "instruction-challenge/json-calibrated-locked256-lr1e-4-s20261104": {
+      "status": "completed",
+      "pid": 3654424,
+      "gpu": "2",
+      "completed": 48,
+      "started_at": "2026-11-03T17:57:18.686900+00:00",
+      "elapsed_seconds": 166.1503840610385,
+      "summary.json": {
+        "requests": 48,
+        "source_groups": 8,
+        "executable": 48,
+        "aligned_requests": 45,
+        "strict_pairs": 21,
+        "ordered_pairs": 24,
+        "identical_parameter_pairs": 0,
+        "pairs": [
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          }
+        ],
+        "limits": "Balanced development challenge on8 training images; global proxies only, no reference target, aesthetics or local-edit assessment. Requests on same source are dependent."
+      }
+    },
+    "instruction-challenge/json-calibrated-locked256-lr1e-4-s20261105": {
+      "status": "completed",
+      "pid": 3653578,
+      "gpu": "3",
+      "completed": 48,
+      "started_at": "2026-11-03T17:47:54.521470+00:00",
+      "elapsed_seconds": 186.1817143112421,
+      "summary.json": {
+        "requests": 48,
+        "source_groups": 8,
+        "executable": 48,
+        "aligned_requests": 42,
+        "strict_pairs": 18,
+        "ordered_pairs": 24,
+        "identical_parameter_pairs": 0,
+        "pairs": [
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "warmth",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "warmth",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          }
+        ],
+        "limits": "Balanced development challenge on8 training images; global proxies only, no reference target, aesthetics or local-edit assessment. Requests on same source are dependent."
+      }
+    },
+    "instruction-challenge/json-calibrated-long1024-lr1e-4-s20261103-step256": {
+      "status": "completed",
+      "pid": 3650680,
+      "gpu": "3",
+      "completed": 48,
+      "started_at": "2026-11-03T17:20:16.396839+00:00",
+      "elapsed_seconds": 177.57216849923134,
+      "summary.json": {
+        "requests": 48,
+        "source_groups": 8,
+        "executable": 48,
+        "aligned_requests": 45,
+        "strict_pairs": 21,
+        "ordered_pairs": 24,
+        "identical_parameter_pairs": 0,
+        "pairs": [
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          }
+        ],
+        "limits": "Balanced development challenge on8 training images; global proxies only, no reference target, aesthetics or local-edit assessment. Requests on same source are dependent."
+      }
+    },
+    "instruction-challenge/json-calibrated3k-long1024-lr1e-4-s20261103-step1024": {
+      "status": "completed",
+      "pid": 3653825,
+      "gpu": "0",
+      "completed": 48,
+      "started_at": "2026-11-03T17:51:44.375725+00:00",
+      "elapsed_seconds": 185.1445143967867,
+      "summary.json": {
+        "requests": 48,
+        "source_groups": 8,
+        "executable": 48,
+        "aligned_requests": 45,
+        "strict_pairs": 21,
+        "ordered_pairs": 24,
+        "identical_parameter_pairs": 0,
+        "pairs": [
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          }
+        ],
+        "limits": "Balanced development challenge on8 training images; global proxies only, no reference target, aesthetics or local-edit assessment. Requests on same source are dependent."
+      }
+    },
+    "instruction-challenge/json3k-primary-swa512-1024-s20261103": {
+      "status": "completed",
+      "pid": 3656155,
+      "gpu": "2",
+      "completed": 48,
+      "started_at": "2026-11-03T18:12:37.312126+00:00",
+      "elapsed_seconds": 175.61329436302185,
+      "summary.json": {
+        "requests": 48,
+        "source_groups": 8,
+        "executable": 48,
+        "aligned_requests": 46,
+        "strict_pairs": 22,
+        "ordered_pairs": 23,
+        "identical_parameter_pairs": 0,
+        "pairs": [
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": false,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          }
+        ],
+        "limits": "Balanced development challenge on8 training images; global proxies only, no reference target, aesthetics or local-edit assessment. Requests on same source are dependent."
+      }
+    },
+    "instruction-challenge/json3k-qualityweighted512-lr1e-4-s20261103": {
+      "status": "completed",
+      "pid": 3661745,
+      "gpu": "2",
+      "completed": 48,
+      "started_at": "2026-11-03T19:08:59.500473+00:00",
+      "elapsed_seconds": 186.99977760761976,
+      "summary.json": {
+        "requests": 48,
+        "source_groups": 8,
+        "executable": 48,
+        "aligned_requests": 39,
+        "strict_pairs": 15,
+        "ordered_pairs": 23,
+        "identical_parameter_pairs": 0,
+        "pairs": [
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "warmth",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "warmth",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "warmth",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": false,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          }
+        ],
+        "limits": "Balanced development challenge on8 training images; global proxies only, no reference target, aesthetics or local-edit assessment. Requests on same source are dependent."
+      }
+    },
+    "instruction-challenge/json3k-replica1024-lr1e-4-s20261104-swa": {
+      "status": "completed",
+      "pid": 3660521,
+      "gpu": "0",
+      "completed": 48,
+      "started_at": "2026-11-03T19:02:07.513528+00:00",
+      "elapsed_seconds": 191.93554981052876,
+      "summary.json": {
+        "requests": 48,
+        "source_groups": 8,
+        "executable": 48,
+        "aligned_requests": 44,
+        "strict_pairs": 20,
+        "ordered_pairs": 24,
+        "identical_parameter_pairs": 0,
+        "pairs": [
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          }
+        ],
+        "limits": "Balanced development challenge on8 training images; global proxies only, no reference target, aesthetics or local-edit assessment. Requests on same source are dependent."
+      }
+    },
+    "instruction-challenge/json3k-replica1024-lr1e-4-s20261105-swa": {
+      "status": "completed",
+      "pid": 3660417,
+      "gpu": "3",
+      "completed": 48,
+      "started_at": "2026-11-03T19:00:37.404061+00:00",
+      "elapsed_seconds": 186.56640350073576,
+      "summary.json": {
+        "requests": 48,
+        "source_groups": 8,
+        "executable": 48,
+        "aligned_requests": 46,
+        "strict_pairs": 22,
+        "ordered_pairs": 24,
+        "identical_parameter_pairs": 0,
+        "pairs": [
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:000706",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:005679",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:010428",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:011075",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:014192",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:016698",
+            "axis": "saturation",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "warmth",
+            "both_aligned": false,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:018657",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "brightness",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "warmth",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          },
+          {
+            "base_id": "GIER-Edit:train:025389",
+            "axis": "saturation",
+            "both_aligned": true,
+            "ordered": true,
+            "identical_parameters": false
+          }
+        ],
+        "limits": "Balanced development challenge on8 training images; global proxies only, no reference target, aesthetics or local-edit assessment. Requests on same source are dependent."
+      }
+    },
+    "final-evaluation/A": {
+      "status": "completed",
+      "pid": 3661022,
+      "gpu": "0",
+      "completed": 71,
+      "started_at": "2026-11-03T19:06:40.764669+00:00",
+      "updated_at": "2026-11-03T19:21:26.533018+00:00",
+      "elapsed_seconds": 885.7674762457609,
+      "summary.json": {
+        "rows": 71,
+        "model": "A",
+        "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306",
+        "source_sha256": "cc2b61108a17a856bd3f7c5da098c72aeba9c610f839e2dac6bd5935f3afbf0d",
+        "model_lock_sha256": "0c50d8f6d6137ef796290a8e7c1527c2443db98905123a3e4287b002dc43f2f4",
+        "mean_l1": 0.1392250871121831,
+        "mean_rmse": 0.17090676765574117,
+        "baseline_l1": 0.11892293972081282,
+        "executable": 71,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0,
+        "predictions_sha256": "99e2e301145b11f9c82cc802fdbc50a80c7c21eb0d8192badfa652825a7911d7"
+      }
+    },
+    "final-evaluation/B": {
+      "status": "completed",
+      "pid": 3661805,
+      "gpu": "2",
+      "completed": 71,
+      "started_at": "2026-11-03T19:12:15.291277+00:00",
+      "updated_at": "2026-11-03T19:27:12.687108+00:00",
+      "elapsed_seconds": 897.3950020521879,
+      "summary.json": {
+        "rows": 71,
+        "model": "B",
+        "adapter_sha256": "1e8752c182dc40b86e5f974477b0ba83e3a674a5669fe9fd1fa8d2bc49082304",
+        "source_sha256": "cc2b61108a17a856bd3f7c5da098c72aeba9c610f839e2dac6bd5935f3afbf0d",
+        "model_lock_sha256": "0c50d8f6d6137ef796290a8e7c1527c2443db98905123a3e4287b002dc43f2f4",
+        "mean_l1": 0.13993988923308714,
+        "mean_rmse": 0.1719421384934808,
+        "baseline_l1": 0.11892293972081282,
+        "executable": 70,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0,
+        "predictions_sha256": "4413521c471fb81b92e89c8cb5f7b49e30ee06de6bb24f4b5c3095e365537509"
+      }
+    },
+    "final-evaluation/GRPO": {
+      "status": "completed",
+      "pid": 3661021,
+      "gpu": "3",
+      "completed": 71,
+      "started_at": "2026-11-03T19:06:41.058322+00:00",
+      "updated_at": "2026-11-03T19:21:22.559316+00:00",
+      "elapsed_seconds": 881.4995293840766,
+      "summary.json": {
+        "rows": 71,
+        "model": "GRPO",
+        "adapter_sha256": "148c039763698694f30fe78efa63f71572a4c84d092374f222a4b19284f533d4",
+        "source_sha256": "cc2b61108a17a856bd3f7c5da098c72aeba9c610f839e2dac6bd5935f3afbf0d",
+        "model_lock_sha256": "0c50d8f6d6137ef796290a8e7c1527c2443db98905123a3e4287b002dc43f2f4",
+        "mean_l1": 0.14235150100151733,
+        "mean_rmse": 0.17406452529814462,
+        "baseline_l1": 0.11892293972081282,
+        "executable": 71,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0,
+        "predictions_sha256": "3ce29d2179d31218a43d42acc5b7d334626a7c3813ed68bd389227918214e736"
+      }
+    },
+    "final-evaluation/SFT": {
+      "status": "completed",
+      "pid": 3662775,
+      "gpu": "0",
+      "completed": 71,
+      "started_at": "2026-11-03T19:21:35.405536+00:00",
+      "updated_at": "2026-11-03T19:36:17.682458+00:00",
+      "elapsed_seconds": 882.2758726924658,
+      "summary.json": {
+        "rows": 71,
+        "model": "SFT",
+        "adapter_sha256": "167cc7f7aed2f87e01fd602e425fb2d66777f8a8f807e5509f2db69a77d3d78a",
+        "source_sha256": "cc2b61108a17a856bd3f7c5da098c72aeba9c610f839e2dac6bd5935f3afbf0d",
+        "model_lock_sha256": "0c50d8f6d6137ef796290a8e7c1527c2443db98905123a3e4287b002dc43f2f4",
+        "mean_l1": 0.14059129886945684,
+        "mean_rmse": 0.17312196100419255,
+        "baseline_l1": 0.11892293972081282,
+        "executable": 70,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0,
+        "predictions_sha256": "a2751c750e8847a56997dabbf0ada3fdce48d5fa4dec398b0487fe31213c3e96"
+      }
+    },
+    "final-evaluation/Seed20261103": {
+      "status": "completed",
+      "pid": 3664334,
+      "gpu": "0",
+      "completed": 71,
+      "started_at": "2026-11-03T19:36:26.311821+00:00",
+      "updated_at": "2026-11-03T19:40:36.782482+00:00",
+      "elapsed_seconds": 250.4697135463357,
+      "summary.json": {
+        "rows": 71,
+        "model": "Seed20261103",
+        "adapter_sha256": "7bde70bf58b75eda1baa6e2b8ac0d529c23db3fdfd00bfc7f11fd9ecb589f041",
+        "source_sha256": "cc2b61108a17a856bd3f7c5da098c72aeba9c610f839e2dac6bd5935f3afbf0d",
+        "model_lock_sha256": "0c50d8f6d6137ef796290a8e7c1527c2443db98905123a3e4287b002dc43f2f4",
+        "mean_l1": 0.12798524576298315,
+        "mean_rmse": 0.15774198205695605,
+        "baseline_l1": 0.11892293972081282,
+        "executable": 71,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0,
+        "predictions_sha256": "061cb7e84f02060ba5ba339ea9a722c2bbef21316735590a72d3306393a5b71b"
+      }
+    },
+    "final-evaluation/Seed20261104": {
+      "status": "completed",
+      "pid": 3663490,
+      "gpu": "2",
+      "completed": 71,
+      "started_at": "2026-11-03T19:27:21.407650+00:00",
+      "updated_at": "2026-11-03T19:31:41.972763+00:00",
+      "elapsed_seconds": 260.5634262934327,
+      "summary.json": {
+        "rows": 71,
+        "model": "Seed20261104",
+        "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884",
+        "source_sha256": "cc2b61108a17a856bd3f7c5da098c72aeba9c610f839e2dac6bd5935f3afbf0d",
+        "model_lock_sha256": "0c50d8f6d6137ef796290a8e7c1527c2443db98905123a3e4287b002dc43f2f4",
+        "mean_l1": 0.1260518955270117,
+        "mean_rmse": 0.1563648555926244,
+        "baseline_l1": 0.11892293972081282,
+        "executable": 71,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0,
+        "predictions_sha256": "ab07facddb9c65db8d0d38c98cfcb68e9433d616e9c55c5d5a53f8a938d0ed71"
+      }
+    },
+    "final-evaluation/Seed20261105": {
+      "status": "completed",
+      "pid": 3662758,
+      "gpu": "3",
+      "completed": 71,
+      "started_at": "2026-11-03T19:21:30.965125+00:00",
+      "updated_at": "2026-11-03T19:25:44.209863+00:00",
+      "elapsed_seconds": 253.24371121823788,
+      "summary.json": {
+        "rows": 71,
+        "model": "Seed20261105",
+        "adapter_sha256": "8f4317857ae43f4fe449683ca6a8ec3127b77e4a674986713a824218da9b8817",
+        "source_sha256": "cc2b61108a17a856bd3f7c5da098c72aeba9c610f839e2dac6bd5935f3afbf0d",
+        "model_lock_sha256": "0c50d8f6d6137ef796290a8e7c1527c2443db98905123a3e4287b002dc43f2f4",
+        "mean_l1": 0.12406970008643685,
+        "mean_rmse": 0.15381075306729952,
+        "baseline_l1": 0.11892293972081282,
+        "executable": 71,
+        "empty": 0,
+        "all_zero": 0,
+        "truncated": 0,
+        "predictions_sha256": "6defb33abd4ffc3cb87bc333cdaf0124febbf0a51d81d1b4616dd62128ffb0fe"
+      }
+    }
+  },
+  "calibration": {
+    "A-validation-200": {
+      "status": "completed",
+      "n": 200,
+      "source_sha256": "b9e2f7565369fb89b4af2f6f08a8a9285dd18e2a509e318ac25337956f689f1f",
+      "mean_l1": {
+        "NoEdit": 0.11577512218966149,
+        "original": 0.12743576257256792,
+        "blend-0.25": 0.11299576707184315,
+        "blend-0.5": 0.11454974710009992,
+        "blend-0.75": 0.1194722523726523,
+        "drop-brightness": 0.1348148657870479,
+        "drop-contrast": 0.12453089265152811,
+        "drop-temperature": 0.1281506912014447,
+        "label-original": 0.07547073677298613,
+        "continuous-contrast": 0.12222332427278161,
+        "label-continuous-contrast": 0.0747345272108214
+      },
+      "limits": [
+        "Validation-only exploratory diagnostics; not a model improvement claim.",
+        "One globally fixed blend coefficient per condition, no per-image reference-based tuning.",
+        "Edited pixels with failed outputs fall back to original and remain included."
+      ]
+    },
+    "A-validation-first32": {
+      "status": "completed",
+      "n": 32,
+      "source_sha256": "7dce4d32a4d30cebc2a3989cd9fb521b9f76c5b11a3d82dd15a781e1084ae17b",
+      "mean_l1": {
+        "NoEdit": 0.10391747439280152,
+        "original": 0.12332748365588486,
+        "blend-0.25": 0.10312909487402067,
+        "blend-0.5": 0.10684892209246755,
+        "blend-0.75": 0.1137010480160825,
+        "drop-brightness": 0.12229377077892423,
+        "drop-contrast": 0.11545474414015189,
+        "drop-temperature": 0.12367673381231725,
+        "label-original": 0.07432489622442517,
+        "continuous-contrast": 0.11405999161070213,
+        "label-continuous-contrast": 0.0710930828936398
+      },
+      "limits": [
+        "Validation-only exploratory diagnostics; not a model improvement claim.",
+        "One globally fixed blend coefficient per condition, no per-image reference-based tuning.",
+        "Edited pixels with failed outputs fall back to original and remain included."
+      ]
+    },
+    "B-validation-200": {
+      "status": "completed",
+      "n": 200,
+      "source_sha256": "f9c9c1945cacedf7646552279aa0f162b8ae0911d92b4d9b4019d31881ef9dab",
+      "mean_l1": {
+        "NoEdit": 0.11577512218966149,
+        "original": 0.12511143243405967,
+        "blend-0.25": 0.11268606760073453,
+        "blend-0.5": 0.11365582549013198,
+        "blend-0.75": 0.11782353629358112,
+        "drop-brightness": 0.13398325084708632,
+        "drop-contrast": 0.12096127443946898,
+        "drop-temperature": 0.1252261771680787,
+        "label-original": 0.07547073677298613,
+        "continuous-contrast": 0.11908238617703319,
+        "label-continuous-contrast": 0.0747345272108214
+      },
+      "limits": [
+        "Validation-only exploratory diagnostics; not a model improvement claim.",
+        "One globally fixed blend coefficient per condition, no per-image reference-based tuning.",
+        "Edited pixels with failed outputs fall back to original and remain included."
+      ]
+    },
+    "GRPO-validation-200": {
+      "status": "completed",
+      "n": 200,
+      "source_sha256": "3bcc584cdf6575c788e096c65dcd2084040c2043b0cba7ba2c16fd770c92daa6",
+      "mean_l1": {
+        "NoEdit": 0.11577512218966149,
+        "original": 0.12656915616011247,
+        "blend-0.25": 0.11294127298519015,
+        "blend-0.5": 0.11415593794547022,
+        "blend-0.75": 0.11893261137418448,
+        "drop-brightness": 0.13394168605329468,
+        "drop-contrast": 0.12293268189765513,
+        "drop-temperature": 0.1271316737565212,
+        "label-original": 0.07547073677298613,
+        "continuous-contrast": 0.12067956849001348,
+        "label-continuous-contrast": 0.0747345272108214
+      },
+      "limits": [
+        "Validation-only exploratory diagnostics; not a model improvement claim.",
+        "One globally fixed blend coefficient per condition, no per-image reference-based tuning.",
+        "Edited pixels with failed outputs fall back to original and remain included."
+      ]
+    },
+    "SFT-validation-200": {
+      "status": "completed",
+      "n": 200,
+      "source_sha256": "1272f3b57260d105eb9f158e8d181eb203200abc0fb53e6054a9f0244a7b6178",
+      "mean_l1": {
+        "NoEdit": 0.11577512218966149,
+        "original": 0.12829824914922938,
+        "blend-0.25": 0.11318215247243643,
+        "blend-0.5": 0.11488346410915255,
+        "blend-0.75": 0.12012828814797104,
+        "drop-brightness": 0.13486432910198345,
+        "drop-contrast": 0.12473944018594921,
+        "drop-temperature": 0.12876100663794204,
+        "label-original": 0.07547073677298613,
+        "continuous-contrast": 0.12269186145626008,
+        "label-continuous-contrast": 0.0747345272108214
+      },
+      "limits": [
+        "Validation-only exploratory diagnostics; not a model improvement claim.",
+        "One globally fixed blend coefficient per condition, no per-image reference-based tuning.",
+        "Edited pixels with failed outputs fall back to original and remain included."
+      ]
+    },
+    "full-lr1e-5-s20261103-validation-200": {
+      "status": "completed",
+      "n": 200,
+      "source_sha256": "27cef547be02ef54433f17230f197f0870cd7d765f905317f787262516803aba",
+      "mean_l1": {
+        "NoEdit": 0.11577512218966149,
+        "original": 0.12685515226563437,
+        "blend-0.25": 0.11258917156606912,
+        "blend-0.5": 0.11383233509026468,
+        "blend-0.75": 0.11882330763153731,
+        "drop-brightness": 0.13375889241928235,
+        "drop-contrast": 0.12413375865668058,
+        "drop-temperature": 0.12727167735574768,
+        "label-original": 0.07547073677298613,
+        "continuous-contrast": 0.12210273679345846,
+        "label-continuous-contrast": 0.0747345272108214
+      },
+      "limits": [
+        "Validation-only exploratory diagnostics; not a model improvement claim.",
+        "One globally fixed blend coefficient per condition, no per-image reference-based tuning.",
+        "Edited pixels with failed outputs fall back to original and remain included."
+      ]
+    },
+    "parameters-lr1e-5-s20261103-validation-200": {
+      "status": "completed",
+      "n": 200,
+      "source_sha256": "62a8590737efb31c4f579df2aa76ebce10b7ea29780722077d3a4fb262a5add4",
+      "mean_l1": {
+        "NoEdit": 0.11577512218966149,
+        "original": 0.12670287104090674,
+        "blend-0.25": 0.11238307611085474,
+        "blend-0.5": 0.11343881979584694,
+        "blend-0.75": 0.11841640507802367,
+        "drop-brightness": 0.1339187554665841,
+        "drop-contrast": 0.12402614201419056,
+        "drop-temperature": 0.1269502079184167,
+        "label-original": 0.07547073677298613,
+        "continuous-contrast": 0.12168703923933208,
+        "label-continuous-contrast": 0.0747345272108214
+      },
+      "limits": [
+        "Validation-only exploratory diagnostics; not a model improvement claim.",
+        "One globally fixed blend coefficient per condition, no per-image reference-based tuning.",
+        "Edited pixels with failed outputs fall back to original and remain included."
+      ]
+    },
+    "parameters-lr3e-5-s20261103-validation-200": {
+      "status": "completed",
+      "n": 200,
+      "source_sha256": "1f6e7e8eafd2b063eb0843a1d93892d91bebfa26b91ce3785056977e99857475",
+      "mean_l1": {
+        "NoEdit": 0.11577512218966149,
+        "original": 0.12541262548184023,
+        "blend-0.25": 0.11237075581913814,
+        "blend-0.5": 0.11330641252687201,
+        "blend-0.75": 0.11785222109174356,
+        "drop-brightness": 0.1332094538793899,
+        "drop-contrast": 0.1210152106708847,
+        "drop-temperature": 0.12588403161382303,
+        "label-original": 0.07547073677298613,
+        "continuous-contrast": 0.11951121719321237,
+        "label-continuous-contrast": 0.0747345272108214
+      },
+      "limits": [
+        "Validation-only exploratory diagnostics; not a model improvement claim.",
+        "One globally fixed blend coefficient per condition, no per-image reference-based tuning.",
+        "Edited pixels with failed outputs fall back to original and remain included."
+      ]
+    }
+  },
+  "auxiliary": {
+    "training-label-audit": {
+      "pid": 3621306,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "holdout-image-audit": {
+      "pid": 3621634,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "contrast-label-search": {
+      "pid": 3623325,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "feature-extraction": {
+      "pid": 3641028,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "long512-training": {
+      "pid": 3642377,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "calibration3k": {
+      "pid": 3644598,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "feature-extraction3k": {
+      "pid": 3644599,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "long3k-training": {
+      "pid": 3646815,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "ridge": {
+      "pid": 3643148,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "ridge-validation": {
+      "pid": 3643410,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    },
+    "calibrated3k-quality-audit": {
+      "pid": 3656965,
+      "pid_live": false,
+      "complete_report": true,
+      "unexpected_exit": false
+    }
+  }
+}

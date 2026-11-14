@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "n": 200,
+  "source_sha256": "f9c9c1945cacedf7646552279aa0f162b8ae0911d92b4d9b4019d31881ef9dab",
+  "mean_l1": {
+    "NoEdit": 0.11577512218966149,
+    "original": 0.12511143243405967,
+    "blend-0.25": 0.11268606760073453,
+    "blend-0.5": 0.11365582549013198,
+    "blend-0.75": 0.11782353629358112,
+    "drop-brightness": 0.13398325084708632,
+    "drop-contrast": 0.12096127443946898,
+    "drop-temperature": 0.1252261771680787,
+    "label-original": 0.07547073677298613,
+    "continuous-contrast": 0.11908238617703319,
+    "label-continuous-contrast": 0.0747345272108214
+  },
+  "limits": [
+    "Validation-only exploratory diagnostics; not a model improvement claim.",
+    "One globally fixed blend coefficient per condition, no per-image reference-based tuning.",
+    "Edited pixels with failed outputs fall back to original and remain included."
+  ]
+}

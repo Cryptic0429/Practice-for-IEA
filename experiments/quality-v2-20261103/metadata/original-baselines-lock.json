@@ -1,0 +1,44 @@
+{
+  "status": "frozen",
+  "at": "2026-11-03T13:42:47.083608+00:00",
+  "models": {
+    "A": {
+      "path": "/mnt/sdc/zhc/IEA/outputs/stage1-A-image-edit-3k-v1",
+      "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306",
+      "config_sha256": "e7302b266bba50dd679a7e20869dffa837cb1b23e166fa1392edba39c4a417b1",
+      "validation_l1": 0.12743576257256792,
+      "validation_executable": 200
+    },
+    "B": {
+      "path": "/mnt/sdc/zhc/IEA/outputs/stage1-B-image-edit-3k-v1",
+      "adapter_sha256": "1e8752c182dc40b86e5f974477b0ba83e3a674a5669fe9fd1fa8d2bc49082304",
+      "config_sha256": "35bab7526c80621359a288c274ccb21c9e19e554837e75b3a9a3ce4f4f60ea97",
+      "validation_l1": 0.12511143243405967,
+      "validation_executable": 198
+    },
+    "SFT": {
+      "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/sft-control/final",
+      "adapter_sha256": "167cc7f7aed2f87e01fd602e425fb2d66777f8a8f807e5509f2db69a77d3d78a",
+      "config_sha256": "480492e966f3fcff02af97235afd592fa490a806dce44c7e26f7cc3d72c56bf0",
+      "validation_l1": 0.12829824914922938,
+      "validation_executable": 200
+    },
+    "GRPO": {
+      "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/formal-v1/selected",
+      "adapter_sha256": "148c039763698694f30fe78efa63f71572a4c84d092374f222a4b19284f533d4",
+      "config_sha256": "ba186bf52e4aef3cf2459ab8457a77e66f54962eab8c7b27602810a7fc29cc2f",
+      "validation_l1": 0.12656915616011247,
+      "validation_executable": 200
+    }
+  },
+  "best_original_by_full_validation": "B",
+  "identity": {
+    "scripts/stage2_runtime.py": "800a1be9796885aede578327a20cc4f96b59962cab9681e809372baa5e894150",
+    "scripts/evaluation_core.py": "13892e9d43f62a90863ec07416b29e0d24e47e34623910c4cfa9d8435c4ebd52",
+    "scripts/goal_v2_evaluate.py": "7be6fdb3e1a59ceb7558365fda9d19641f5104c99944ab821ec6130feba34480",
+    "repo/src/image_editor.py": "1a18fb3b00207f0b667b2ef1d0677d8d71a5abdf21ad89e4c66adea152c05f3c",
+    "configs/evaluation-protocol-v1.json": "c8a24b374d35bad727a44a3c0119042d90fd1e3ce57d365e325704d5b6006970",
+    "data/goal-v2-20261103/manifest.json": "876be0e28f30b8535c7603713c181aa07ac033e07328c870d3ae53eca724d288"
+  },
+  "test_policy": "No goal-v2 sealed-test inference yet. Final evaluation must compare every original baseline without choosing or revising candidate from test results."
+}

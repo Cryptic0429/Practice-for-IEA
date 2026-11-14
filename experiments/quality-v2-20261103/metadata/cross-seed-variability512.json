@@ -1,0 +1,175 @@
+{
+  "scope": "Development cross-seed comparison; both use same512 data,256 updates,1024 scheduler horizon; no sealed test",
+  "n": 200,
+  "l1_seed3": 0.11494406301528215,
+  "l1_seed5": 0.12409752157982439,
+  "mean_seed5_minus_seed3": 0.009153458564542234,
+  "without_largest5_seed5_regressions": 0.007144219022339735,
+  "identical_vectors": 4,
+  "changed_counts": {
+    "exposure": 0,
+    "brightness": 155,
+    "contrast": 166,
+    "natural_contrast": 0,
+    "highlights": 47,
+    "shadows": 0,
+    "whites": 0,
+    "blacks": 0,
+    "saturation": 114,
+    "vibrance": 0,
+    "temperature": 104,
+    "tint": 101,
+    "sharpness": 55,
+    "vignette": 0,
+    "fade": 0,
+    "grain": 0
+  },
+  "largest_seed5_regressions": [
+    {
+      "id": "GIER-Edit:train:003355",
+      "l1_delta": 0.12928855046629906,
+      "seed3_parameters": {
+        "brightness": 5,
+        "contrast": 10,
+        "temperature": 10,
+        "saturation": 10,
+        "highlights": 5,
+        "tint": 5
+      },
+      "seed5_parameters": {
+        "brightness": 50,
+        "contrast": 20,
+        "saturation": 10,
+        "highlights": 10
+      }
+    },
+    {
+      "id": "GIER-Edit:train:022711",
+      "l1_delta": 0.07935672253370285,
+      "seed3_parameters": {
+        "brightness": 5,
+        "contrast": 0,
+        "temperature": 5,
+        "saturation": 5,
+        "highlights": 5,
+        "tint": 5
+      },
+      "seed5_parameters": {
+        "brightness": 15,
+        "contrast": -60,
+        "saturation": 10,
+        "highlights": 5,
+        "sharpness": 15
+      }
+    },
+    {
+      "id": "GIER-Edit:train:022942",
+      "l1_delta": 0.07833702862262726,
+      "seed3_parameters": {
+        "brightness": -50,
+        "contrast": -40
+      },
+      "seed5_parameters": {
+        "brightness": -50,
+        "contrast": -60,
+        "temperature": -5,
+        "saturation": -100,
+        "highlights": -50
+      }
+    },
+    {
+      "id": "GIER-Edit:train:010488",
+      "l1_delta": 0.07585924863815308,
+      "seed3_parameters": {
+        "brightness": 5,
+        "contrast": 0,
+        "temperature": 5,
+        "saturation": 5,
+        "highlights": 5,
+        "tint": 5
+      },
+      "seed5_parameters": {
+        "brightness": 15,
+        "contrast": 20,
+        "temperature": 5,
+        "saturation": 10,
+        "highlights": 5,
+        "tint": 5
+      }
+    },
+    {
+      "id": "GIER-Edit:train:005032",
+      "l1_delta": 0.07472745329141617,
+      "seed3_parameters": {
+        "brightness": 5,
+        "contrast": 0,
+        "temperature": 5,
+        "saturation": 0,
+        "highlights": 5,
+        "tint": 5
+      },
+      "seed5_parameters": {
+        "brightness": 5,
+        "contrast": -60,
+        "saturation": -100,
+        "highlights": 5
+      }
+    },
+    {
+      "id": "GIER-Edit:train:006264",
+      "l1_delta": 0.07456867396831512,
+      "seed3_parameters": {
+        "brightness": 10,
+        "contrast": 0,
+        "temperature": -100,
+        "saturation": 10,
+        "highlights": 5,
+        "tint": 5
+      },
+      "seed5_parameters": {
+        "brightness": 15,
+        "contrast": -20,
+        "temperature": -100,
+        "saturation": 100,
+        "highlights": 5,
+        "tint": -5
+      }
+    },
+    {
+      "id": "GIER-Edit:train:024129",
+      "l1_delta": 0.06477394700050354,
+      "seed3_parameters": {
+        "brightness": 5,
+        "contrast": -20,
+        "temperature": 5,
+        "saturation": 5,
+        "highlights": -5,
+        "tint": 5
+      },
+      "seed5_parameters": {
+        "brightness": 15,
+        "contrast": -20,
+        "saturation": 15,
+        "highlights": 5
+      }
+    },
+    {
+      "id": "GIER-Edit:train:021737",
+      "l1_delta": 0.06332382559776306,
+      "seed3_parameters": {
+        "brightness": -20,
+        "contrast": -20,
+        "temperature": 5,
+        "saturation": 5,
+        "highlights": -10,
+        "tint": 5
+      },
+      "seed5_parameters": {
+        "brightness": -20,
+        "contrast": -60,
+        "saturation": 10,
+        "highlights": -50
+      }
+    }
+  ]
+}

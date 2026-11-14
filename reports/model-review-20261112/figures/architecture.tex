@@ -1,0 +1,21 @@
+\begin{tikzpicture}[font=\small,>=Stealth,
+ box/.style={draw=navy!65,fill=lightblue,rounded corners=3pt,align=center,minimum height=1.15cm,text width=3.1cm},
+ aux/.style={box,draw=teal,fill=teal!7},
+ arr/.style={->,thick,draw=navy!80}]
+\node[box] (input) at (0,0) {原图＋字面指令\\中文或英文＋工具说明};
+\node[box] (model) at (4.4,0) {Qwen2.5-VL-7B\\激活一份最终 LoRA};
+\node[box] (decision) at (8.8,0) {结构化决策\\动作、工具、方向、幅度};
+\node[box] (editor) at (8.8,-2.25) {对应版本的编辑器\\9种全局工具};
+\node[box] (output) at (8.8,-4.5) {结果图／保持原样\\拒绝或错误时无结果图};
+\draw[arr] (input)--(model);
+\draw[arr] (model)--(decision);
+\draw[arr] (decision)--(editor);
+\draw[arr] (editor)--(output);
+\node[aux] (features) at (4.4,-2.25) {R21 可选分支\\3584维冻结表示\\＋16 RGB＋12残差};
+\node[aux] (head) at (4.4,-4.5) {3612 → 128 → 10\\小头：9幅度＋1风险\\约46.4万参数};
+\draw[arr,draw=teal] (model)--(features);
+\draw[arr,draw=teal] (features)--(head);
+\draw[arr,draw=teal] (head.east) -- ++(0.55,0) |- (editor.west);
+\node[font=\scriptsize,rotate=90,fill=white,inner sep=2pt] at (6.55,-3.35) {调幅／风险拒绝};
+\node[align=left,text width=4cm,font=\footnotesize,color=ink] at (-.1,-3.4) {常规候选：直接执行模型决策。\\[5pt]R15＋R21：保留R15的工具和方向，小头只调整幅度与风险拒绝。\\[5pt]R21根据输入预测风险，并不查看本次编辑后的图片。};
+\end{tikzpicture}

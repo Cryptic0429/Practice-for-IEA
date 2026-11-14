@@ -1,0 +1,282 @@
+{
+  "status": "incomplete",
+  "checked_at": "2026-11-03T20:16:36.022428+00:00",
+  "requirements": [
+    {
+      "requirement": "Frozen inference/editor/metric code and model identities",
+      "proved": true,
+      "evidence": {
+        "model_lock_sha256": "0c50d8f6d6137ef796290a8e7c1527c2443db98905123a3e4287b002dc43f2f4",
+        "checked_code_files": 13
+      },
+      "limits": []
+    },
+    {
+      "requirement": "Model and protocol locked before independent test opened",
+      "proved": true,
+      "evidence": {
+        "locked_at": "2026-11-03T19:06:00.578852+00:00",
+        "opened_at": "2026-11-03T19:07:05.978254+00:00",
+        "test_policy": "All model identities and protocol now fixed. Evaluate all71 with every original baseline and all3 seeds. No further test-driven tuning; inconclusive/failed result consumes this heldout for future confirmation."
+      },
+      "limits": []
+    },
+    {
+      "requirement": "Independent71 source groups, no training/validation overlap, complete data assets",
+      "proved": true,
+      "evidence": {
+        "group_counts": [
+          1078,
+          200,
+          71
+        ],
+        "disjoint": true,
+        "bundled_unique_images": 3074,
+        "test_source_sha256": "cc2b61108a17a856bd3f7c5da098c72aeba9c610f839e2dac6bd5935f3afbf0d"
+      },
+      "limits": [
+        "Project-record and conservative perceptual screening, not upstream-pretraining or full semantic-duplicate certification."
+      ]
+    },
+    {
+      "requirement": "At least3% paired mean L1 improvement for all3 seeds against every original baseline",
+      "proved": true,
+      "evidence": {
+        "strongest_original": "A",
+        "per_seed": {
+          "Seed20261103": {
+            "l1": 0.12798524576298315,
+            "relative_gain": 0.08073143700131598,
+            "paired_gain_ci95": [
+              0.0014394894650150232,
+              0.021217062205779628
+            ]
+          },
+          "Seed20261104": {
+            "l1": 0.1260518955270117,
+            "relative_gain": 0.09461794464209498,
+            "paired_gain_ci95": [
+              0.0027846494532177152,
+              0.023170996524892004
+            ]
+          },
+          "Seed20261105": {
+            "l1": 0.12406970008643685,
+            "relative_gain": 0.10885528851229605,
+            "paired_gain_ci95": [
+              0.006249942114202857,
+              0.024825043199275636
+            ]
+          }
+        },
+        "bootstrap": "10000 shared71-source-group resamples; no213-row pooling"
+      },
+      "limits": [
+        "Positive per-seed intervals; not every interval lower bound exceeds3%.",
+        "Unadjusted per-comparison intervals; no universal aesthetic claim."
+      ]
+    },
+    {
+      "requirement": "All497 saved image metrics replayed and coverage/no-op guards retained",
+      "proved": true,
+      "evidence": {
+        "models": 7,
+        "predictions": 497,
+        "each_candidate_executable": 71,
+        "near_identity_per_seed": {
+          "Seed20261103": 1,
+          "Seed20261104": 1,
+          "Seed20261105": 1
+        },
+        "metric_function": "Original frozen compute_diff_score; matching prediction-SHA diagnostics and every savedPNG SHA in archive manifest."
+      },
+      "limits": []
+    },
+    {
+      "requirement": "Three independent training seeds, fixed recipe/export and restorable raw checkpoints",
+      "proved": true,
+      "evidence": {
+        "Seed20261103": {
+          "seed": 20261103,
+          "updates": 1024,
+          "checkpoints": [
+            "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json-calibrated3k-long1024-lr1e-4-s20261103/checkpoint-512",
+            "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json-calibrated3k-long1024-lr1e-4-s20261103/checkpoint-1024"
+          ],
+          "fixed_mean112_tensors_exact": true,
+          "optimizer_states": 112
+        },
+        "Seed20261104": {
+          "seed": 20261104,
+          "updates": 1024,
+          "checkpoints": [
+            "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261104/checkpoint-512",
+            "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261104/checkpoint-1024"
+          ],
+          "fixed_mean112_tensors_exact": true,
+          "optimizer_states": 112
+        },
+        "Seed20261105": {
+          "seed": 20261105,
+          "updates": 1024,
+          "checkpoints": [
+            "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261105/checkpoint-512",
+            "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261105/checkpoint-1024"
+          ],
+          "fixed_mean112_tensors_exact": true,
+          "optimizer_states": 112
+        }
+      },
+      "limits": [
+        "Averaged inference weights are not paired with raw optimizer state; use raw checkpoint for continuation."
+      ]
+    },
+    {
+      "requirement": "Best model selected by validation, exact delivered inference replay and executed restore smoke",
+      "proved": true,
+      "evidence": {
+        "selected": "Seed20261104",
+        "inference_replay": {
+          "response_exact": true,
+          "parameter_exact": true,
+          "edited_png_exact": true,
+          "l1_exact": true
+        },
+        "restore_steps": [
+          512,
+          513
+        ]
+      },
+      "limits": [
+        "Restore uses fixed4 training rows, not exact historical next-dataloader replay."
+      ]
+    },
+    {
+      "requirement": "Instruction safeguards and all30 preselected anonymous cases reviewed before decoding",
+      "proved": true,
+      "evidence": {
+        "explicit10_counts": {
+          "A": {
+            "not_assessable": 20,
+            "opposite": 3,
+            "partial": 6,
+            "aligned": 1
+          },
+          "B": {
+            "not_assessable": 20,
+            "aligned": 3,
+            "opposite": 1,
+            "partial": 6
+          },
+          "SFT": {
+            "not_assessable": 20,
+            "partial": 8,
+            "opposite": 1,
+            "aligned": 1
+          },
+          "GRPO": {
+            "not_assessable": 20,
+            "opposite": 2,
+            "partial": 7,
+            "aligned": 1
+          },
+          "Seed20261103": {
+            "not_assessable": 20,
+            "opposite": 2,
+            "partial": 6,
+            "aligned": 2
+          },
+          "Seed20261104": {
+            "not_assessable": 20,
+            "opposite": 1,
+            "partial": 7,
+            "aligned": 2
+          },
+          "Seed20261105": {
+            "not_assessable": 20,
+            "partial": 7,
+            "aligned": 2,
+            "opposite": 1
+          }
+        },
+        "generic_unassessable": 20,
+        "observations_sha256": "aca0e40627779e8fee2ae2331bbcbda7da0d1fc1f5a56dc517d49b86da389f16",
+        "global_proxy_assessable": 9
+      },
+      "limits": [
+        "AI-assisted anonymous viewing of full-frame1800px9-panel sheets, not independent human review or a formal double-blind user study.",
+        "Model identities hidden per case until all210 notes frozen; reviewer knew aggregate campaign results and method hypotheses.",
+        "Only10/30 cases have specific requests; generic/empty requests never count as directional passes.",
+        "Fine sharpening details cannot be established at sheet scale; uncertainty and partial ratings retained.",
+        "Uniform preselected30 source groups; no case substitution, no new test-driven model selection.",
+        "Some instruction subtypes regress; B has3/10 fully aligned versus2/10 each new seed. No complete local-edit capability or statistical semantic noninferiority established."
+      ]
+    },
+    {
+      "requirement": "NoEdit honestly reported without claiming stable superiority over it",
+      "proved": true,
+      "evidence": {
+        "NoEdit_l1": 0.11892293972081282,
+        "selected_l1": 0.1260518955270117,
+        "conclusion": "Stable improvement over original self-trained baselines; no demonstrated advantage over NoEdit or general aesthetics."
+      },
+      "limits": []
+    },
+    {
+      "requirement": "Frozen environment and external base identity verified and disclosed",
+      "proved": true,
+      "evidence": {
+        "base_files_rehashed_now": 16,
+        "base_revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+        "base_weights_in_archive": false,
+        "packages": 66
+      },
+      "limits": [
+        "Base shards and venv binaries external; not a standalone installed offline environment."
+      ]
+    },
+    {
+      "requirement": "Complete success and negative findings preserved",
+      "proved": true,
+      "evidence": {
+        "outputs/goal-v2-20261103/evaluation/validation-json-calibrated-locked256-lr1e-4-s20261104/summary.json": 0.12257145648822189,
+        "outputs/goal-v2-20261103/evaluation/validation-json-calibrated-locked256-lr1e-4-s20261105/summary.json": 0.12409752157982439,
+        "outputs/goal-v2-20261103/evaluation/validation-json3k-qualityweighted512-lr1e-4-s20261103/summary.json": 0.15274863444268705,
+        "outputs/goal-v2-20261103/evaluation/validation-json-memorize64-long512-lr1e-4-s20261103/summary.json": 0.1509392396733165
+      },
+      "limits": []
+    },
+    {
+      "requirement": "At most3 campaign GPUs and protected GPU1 untouched; GPU work terminal",
+      "proved": true,
+      "evidence": {
+        "telemetry_covered_gpu_hours": 19.514217500024372,
+        "active_gpu_pids": [
+          "3378799"
+        ],
+        "protected_existing_pid": 3378799
+      },
+      "limits": [
+        "Not a full resource/billing total: startup/teardown sample gaps, restore smoke and delivery replay have no telemetry span.",
+        "Host nvidia-smi timestamps parsed in verified CST UTC+8; archive work is CPU/I/O only.",
+        "Only campaign0/2/3 used; existing GPU1 demo retained."
+      ]
+    },
+    {
+      "requirement": "Full archive downloaded and every member independently verified locally",
+      "proved": false,
+      "evidence": {
+        "status": "pending_local_download_and_verification",
+        "archive_bytes": 35127859200
+      },
+      "limits": []
+    }
+  ],
+  "all_requirements_proved": false,
+  "pending_requirements": [
+    "Full archive downloaded and every member independently verified locally"
+  ],
+  "archive_sha256": "994191f6cdc844b71ae86adadebcb11ee753d39109c1c13f2b997ad08450ae74",
+  "selected": "Seed20261104",
+  "objective_scope": "At least3% paired mean L1 improvement versus original best self-trained baseline,3 training seeds, execution/instruction safeguards, NoEdit report and full delivery; no expanded claim of universal editing quality."
+}

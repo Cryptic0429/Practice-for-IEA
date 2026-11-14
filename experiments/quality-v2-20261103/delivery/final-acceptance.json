@@ -1,0 +1,128 @@
+{
+  "status": "complete",
+  "completed_at": "2026-11-03T20:37:29.648450+00:00",
+  "objective": "Independent new-test paired mean L1 gain at least3% versus strongest initial self-trained model, at least3 training seeds, execution/instruction safeguards, NoEdit reporting and full delivery.",
+  "requirements_proved": 13,
+  "pending": [],
+  "model": {
+    "selected": "Seed20261104",
+    "local_adapter": "/Users/cryptic/Desktop/Project/IEA/artifacts/goal-v2-20261103/selected-adapter",
+    "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884",
+    "selection_rule": "Minimum full200 validation L1 among the three predeclared same-recipe seeds; never replace from final test results.",
+    "all_training_seeds": [
+      20261103,
+      20261104,
+      20261105
+    ]
+  },
+  "results": {
+    "status": "complete",
+    "completed_at": "2026-11-03T20:37:29.648450+00:00",
+    "selected": "Seed20261104",
+    "test_groups": 71,
+    "baseline": "A",
+    "baseline_l1": 0.1392250871121831,
+    "NoEdit_l1": 0.11892293972081282,
+    "selected_l1": 0.1260518955270117,
+    "relative_gain_per_seed": {
+      "Seed20261103": 0.08073143700131598,
+      "Seed20261104": 0.09461794464209498,
+      "Seed20261105": 0.10885528851229605
+    },
+    "archive_verified": true,
+    "requirement_checks_proved": 13,
+    "visual_review_cases": 30,
+    "visual_output_observations": 210,
+    "final_acceptance": "artifacts/goal-v2-20261103/final-acceptance.json",
+    "limits": [
+      "No stable superiority over NoEdit demonstrated.",
+      "L1 improvement is relative to old self-trained models; no universal aesthetic/local-edit claim.",
+      "AI-assisted anonymous review, not a human user study.",
+      "Base weight shards remain external under frozen revision and SHA audit."
+    ]
+  },
+  "archive": {
+    "passed": true,
+    "archive": "/Users/cryptic/Desktop/Project/IEA/artifacts/goal-v2-20261103/iea-goal-v2-20261103.tar",
+    "archive_sha256": "994191f6cdc844b71ae86adadebcb11ee753d39109c1c13f2b997ad08450ae74",
+    "archive_bytes": 35127859200,
+    "manifest_sha256": "e982d48b40d3deddd6266e41847ec06e94c57eab5d1b28c67d60116208140bbb",
+    "verified_members": 13841,
+    "verified_member_bytes": 35099962563,
+    "referenced_image_assets": 3074,
+    "verification": "Entire raw tar SHA plus exact member set, member sizes and every member SHA verified locally; no file extraction or unpickling required.",
+    "completed_at": "2026-11-03T20:34:47.022150+00:00"
+  },
+  "archive_manifest": {
+    "path": "/Users/cryptic/Desktop/Project/IEA/artifacts/goal-v2-20261103/MANIFEST.json",
+    "sha256": "e982d48b40d3deddd6266e41847ec06e94c57eab5d1b28c67d60116208140bbb"
+  },
+  "completion_audit": {
+    "path": "/Users/cryptic/Desktop/Project/IEA/artifacts/goal-v2-20261103/completion-audit.json",
+    "sha256": "fa6a35c492743f6a6c4c0614e284a64e11afab53bdfbfdbafcd4a4379192e54b"
+  },
+  "visual_review": {
+    "cases": 30,
+    "outputs": 210,
+    "explicit_requests": 10,
+    "generic_unassessable": 20,
+    "observations_sha256": "aca0e40627779e8fee2ae2331bbcbda7da0d1fc1f5a56dc517d49b86da389f16",
+    "summary_sha256": "df206a96956677cf91c6fd2dbb4681661a749fb1669380850b7aea02bc6346bf",
+    "limitations": [
+      "AI-assisted anonymous viewing of full-frame1800px9-panel sheets, not independent human review or a formal double-blind user study.",
+      "Model identities hidden per case until all210 notes frozen; reviewer knew aggregate campaign results and method hypotheses.",
+      "Only10/30 cases have specific requests; generic/empty requests never count as directional passes.",
+      "Fine sharpening details cannot be established at sheet scale; uncertainty and partial ratings retained.",
+      "Uniform preselected30 source groups; no case substitution, no new test-driven model selection."
+    ]
+  },
+  "local_adapter_verification": {
+    "path": "/Users/cryptic/Desktop/Project/IEA/artifacts/goal-v2-20261103/adapter-delivery-verification.json",
+    "sha256": "2b510e67ef015db606d5c673159e023766c8cd298da01f597cbe9ed78aa8d0cd"
+  },
+  "documents": [
+    {
+      "path": "/Users/cryptic/Desktop/Project/IEA/README.md",
+      "sha256": "a1b70fd3f07aa4f365a73504a8b30f732075f52c3efbd7fe351394cbb369d166"
+    },
+    {
+      "path": "/Users/cryptic/Desktop/Project/IEA/实验记录与结论.md",
+      "sha256": "49a1703ad3c568a545078ec1ae8aecda7b61b75f2a0ae5a841803b637f00a482"
+    },
+    {
+      "path": "/Users/cryptic/Desktop/Project/IEA/原理与复用指南.md",
+      "sha256": "30793f6d43f915cda60605414ae754b4ca0e59a2ccaae1d4d721c3c74cfeaefb"
+    }
+  ],
+  "external_dependencies": {
+    "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "base_shards_bundled": false,
+    "base_audit_sha256": "fc0c59b5ecf93dc277169f9f843295092a4006274e79cc4e0a969cea33058325",
+    "note": "Current-state base files were rehashed during completion audit; venv binaries and base shards external, exact versions/configs included."
+  },
+  "verification_tools": [
+    {
+      "path": "/Users/cryptic/Desktop/Project/IEA/artifacts/goal-v2-20261103/delivery-tools/goal_v2_completion_audit.py",
+      "sha256": "5bf7ca031f6291042ebb7c8c65a743f88f67e538a908b85136612e47f85920d5"
+    },
+    {
+      "path": "/Users/cryptic/Desktop/Project/IEA/artifacts/goal-v2-20261103/delivery-tools/goal_v2_verify_archive.py",
+      "sha256": "2fa2f0d87f5393e437c9212f15f819b1c2704e022177b7ddb393ca8780f0a587"
+    }
+  ],
+  "resource_account": {
+    "path": "/Users/cryptic/Desktop/Project/IEA/metadata/goal-v2-20261103/resource-account.json",
+    "sampled_span_gpu_hours": 19.514217500024372,
+    "scope": "Telemetry-covered occupancy, excludes sample gaps and unmonitored smoke/replay; not a complete billing total."
+  },
+  "negative_findings": [
+    "Original SFT and GRPO did not improve earlier independent test.",
+    "512-row apparent single-seed gain failed replication.",
+    "64-row exact memorization worsened validation.",
+    "Quality-weighted512-update variant worsened validation to0.15274863.",
+    "Composite winning recipe has not isolated causal contributions of coverage, JSON supervision, calibration and averaging."
+  ],
+  "snapshot_policy": "Archive is immutable and excludes this external receipt and subsequently generated completion audit. Final verification, audit, delivered-adapter receipt and current reading docs are sidecars; numeric-stage historical pending strings are not rewritten.",
+  "objective_status": "achieved_with_reported_limits"
+}

@@ -1,0 +1,107 @@
+{
+  "status": "frozen_for_final_test",
+  "locked_at": "2026-11-03T19:06:00.578852+00:00",
+  "family": "3k-v2",
+  "variant": "swa",
+  "models": {
+    "A": {
+      "path": "/mnt/sdc/zhc/IEA/outputs/stage1-A-image-edit-3k-v1",
+      "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306",
+      "config_sha256": "e7302b266bba50dd679a7e20869dffa837cb1b23e166fa1392edba39c4a417b1",
+      "format": "original",
+      "role": "baseline"
+    },
+    "B": {
+      "path": "/mnt/sdc/zhc/IEA/outputs/stage1-B-image-edit-3k-v1",
+      "adapter_sha256": "1e8752c182dc40b86e5f974477b0ba83e3a674a5669fe9fd1fa8d2bc49082304",
+      "config_sha256": "35bab7526c80621359a288c274ccb21c9e19e554837e75b3a9a3ce4f4f60ea97",
+      "format": "original",
+      "role": "baseline"
+    },
+    "SFT": {
+      "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/sft-control/final",
+      "adapter_sha256": "167cc7f7aed2f87e01fd602e425fb2d66777f8a8f807e5509f2db69a77d3d78a",
+      "config_sha256": "480492e966f3fcff02af97235afd592fa490a806dce44c7e26f7cc3d72c56bf0",
+      "format": "original",
+      "role": "baseline"
+    },
+    "GRPO": {
+      "path": "/mnt/sdc/zhc/IEA/outputs/stage2-A-edit-grpo-v1/formal-v1/selected",
+      "adapter_sha256": "148c039763698694f30fe78efa63f71572a4c84d092374f222a4b19284f533d4",
+      "config_sha256": "ba186bf52e4aef3cf2459ab8457a77e66f54962eab8c7b27602810a7fc29cc2f",
+      "format": "original",
+      "role": "baseline"
+    },
+    "Seed20261103": {
+      "path": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-primary-swa512-1024-s20261103/adapter",
+      "adapter_sha256": "7bde70bf58b75eda1baa6e2b8ac0d529c23db3fdfd00bfc7f11fd9ecb589f041",
+      "config_sha256": "480492e966f3fcff02af97235afd592fa490a806dce44c7e26f7cc3d72c56bf0",
+      "format": "json",
+      "role": "candidate",
+      "seed": 20261103,
+      "validation_name": "json3k-primary-swa512-1024-s20261103",
+      "validation_l1": 0.11588283900171518
+    },
+    "Seed20261104": {
+      "path": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261104/swa",
+      "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884",
+      "config_sha256": "ba186bf52e4aef3cf2459ab8457a77e66f54962eab8c7b27602810a7fc29cc2f",
+      "format": "json",
+      "role": "candidate",
+      "seed": 20261104,
+      "validation_name": "json3k-replica1024-lr1e-4-s20261104-swa",
+      "validation_l1": 0.11495472422800958
+    },
+    "Seed20261105": {
+      "path": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261105/swa",
+      "adapter_sha256": "8f4317857ae43f4fe449683ca6a8ec3127b77e4a674986713a824218da9b8817",
+      "config_sha256": "480492e966f3fcff02af97235afd592fa490a806dce44c7e26f7cc3d72c56bf0",
+      "format": "json",
+      "role": "candidate",
+      "seed": 20261105,
+      "validation_name": "json3k-replica1024-lr1e-4-s20261105-swa",
+      "validation_l1": 0.11697718513663859
+    }
+  },
+  "baseline_keys": [
+    "A",
+    "B",
+    "SFT",
+    "GRPO"
+  ],
+  "candidate_keys": [
+    "Seed20261103",
+    "Seed20261104",
+    "Seed20261105"
+  ],
+  "training_seeds": [
+    20261103,
+    20261104,
+    20261105
+  ],
+  "best_by_validation": "Seed20261104",
+  "selection_rule": "Minimum full200 validation L1 among the three predeclared same-recipe seeds; never replace from final test results.",
+  "final_protocol_sha256": "dd9184f4f042fd89d18aa9f7d1f4ab957ed8d7b342c558a95c6572119eecdf6c",
+  "development_gate_sha256": "d86581c25eb123dbe29048d223fa5e0e4a356afbfa84562a66daeabf6907640b",
+  "export_selection_sha256": "26648318715bb6cc5e46da7340d2af4da317335586c19ff352ed40f37d84147e",
+  "training_recipe_sha256": "c4abd01ce32dcd30ed778d33051efb3315c97d5b828653c305e03e22a1391eab",
+  "base_source_audit_sha256": "fc0c59b5ecf93dc277169f9f843295092a4006274e79cc4e0a969cea33058325",
+  "analysis_supplement_sha256": "5875656b9bae3ca5483d14b4e234ba6045f189cc538d052532575df08c7637e8",
+  "test_source_sha256": "cc2b61108a17a856bd3f7c5da098c72aeba9c610f839e2dac6bd5935f3afbf0d",
+  "code_hashes": {
+    "scripts/goal_v2_final_evaluate.py": "a805332dab15d5e904dd41dcb707122b0ab11d4b6c458c8f20769166cf0d520a",
+    "scripts/stage2_runtime.py": "800a1be9796885aede578327a20cc4f96b59962cab9681e809372baa5e894150",
+    "scripts/evaluation_core.py": "13892e9d43f62a90863ec07416b29e0d24e47e34623910c4cfa9d8435c4ebd52",
+    "scripts/goal_v2_json_runtime.py": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67",
+    "scripts/goal_v2_analyze_validation.py": "f81bdfde1acbaeb271cff133a697034ca317f05ff70e93d9e245d9de8f8dcebb",
+    "repo/src/image_editor.py": "1a18fb3b00207f0b667b2ef1d0677d8d71a5abdf21ad89e4c66adea152c05f3c",
+    "repo/src/utils.py": "744a7da474f08555b5fa7fed08f140fa15e25190e919a5006a3a3b6b9f603c01",
+    "repo/src/config.py": "d90b860dda91563de4fc13ab8ef8b9eb71bfe50f7d79e15ec600b22dcc5b9399",
+    "configs/evaluation-protocol-v1.json": "c8a24b374d35bad727a44a3c0119042d90fd1e3ce57d365e325704d5b6006970",
+    "scripts/goal_v2_analyze_final.py": "b7a7144834eaa48547139da513aa8f35545fbf890c9a24502760d4be513f933f",
+    "scripts/goal_v2_lock_final_models.py": "57edba6f36c4caa661577e123d1576b83653f649ede93de7997d2394a91f154c",
+    "scripts/goal_v2_average_adapter.py": "21c55cf253ac9fc479ed8a3950c7acde48d5c2432c42f9d3986d3082a1a37a1a",
+    "scripts/goal_v2_final_worker.py": "868df7fb6eb2f6df5bc834fba16286c9c6ac3fde2b5697f33847223c488c86b1"
+  },
+  "test_policy": "All model identities and protocol now fixed. Evaluate all71 with every original baseline and all3 seeds. No further test-driven tuning; inconclusive/failed result consumes this heldout for future confirmation."
+}

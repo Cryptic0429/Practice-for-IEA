@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "completed_at": "2026-11-03T20:37:29.648450+00:00",
+  "selected": "Seed20261104",
+  "test_groups": 71,
+  "baseline": "A",
+  "baseline_l1": 0.1392250871121831,
+  "NoEdit_l1": 0.11892293972081282,
+  "selected_l1": 0.1260518955270117,
+  "relative_gain_per_seed": {
+    "Seed20261103": 0.08073143700131598,
+    "Seed20261104": 0.09461794464209498,
+    "Seed20261105": 0.10885528851229605
+  },
+  "archive_verified": true,
+  "requirement_checks_proved": 13,
+  "visual_review_cases": 30,
+  "visual_output_observations": 210,
+  "final_acceptance": "artifacts/goal-v2-20261103/final-acceptance.json",
+  "limits": [
+    "No stable superiority over NoEdit demonstrated.",
+    "L1 improvement is relative to old self-trained models; no universal aesthetic/local-edit claim.",
+    "AI-assisted anonymous review, not a human user study.",
+    "Base weight shards remain external under frozen revision and SHA audit."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306",
+  "feature_code_sha256": "6b55e5aeada0f55548ec429dff74b3da87d00d5518529bcea5a361014bc70001",
+  "json_runtime_sha256": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67",
+  "frozen": true,
+  "inputs": "original image plus original system/user request and identical JSON schema; no reference/label",
+  "features": [
+    "last prompt-token hidden state",
+    "mean non-image prompt-token hidden state",
+    "mean image-token hidden state",
+    "28 original photo statistics"
+  ],
+  "splits": [
+    "train",
+    "validation"
+  ],
+  "training_pool": "original3k",
+  "test_access": false,
+  "cache_origin_identity": {
+    "adapter_sha256": "c40552634bfa9a55f2d8a1584361331b7c17b753a46f1f5efa659de459e16306",
+    "feature_code_sha256": "7651f2c35bd371fb5d24fc7c7b226e7a10ca5a823eda7f3d1da6847b1cb0fe87",
+    "json_runtime_sha256": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67",
+    "frozen": true,
+    "inputs": "original image plus original system/user request and identical JSON schema; no reference/label",
+    "features": [
+      "last prompt-token hidden state",
+      "mean non-image prompt-token hidden state",
+      "mean image-token hidden state",
+      "28 original photo statistics"
+    ],
+    "splits": [
+      "train",
+      "validation"
+    ],
+    "test_access": false,
+    "train": {
+      "rows": 512,
+      "source_sha256": "de565c842980de3a1c0f66154cec602be42288f5574b35ae5f7d5d41e9ced5fc",
+      "features_sha256": "d68963dd03264a36281ab188745a76844bbae4ff15e34586e299337771b01a37",
+      "feature_dim": 10780
+    },
+    "validation": {
+      "rows": 200,
+      "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+      "features_sha256": "5471819e793eea5264c90af8a4edf9fb1d24a08bc2e5c2d0490df851dc5eb013",
+      "feature_dim": 10780
+    }
+  },
+  "stage2_runtime_sha256": "800a1be9796885aede578327a20cc4f96b59962cab9681e809372baa5e894150",
+  "train": {
+    "rows": 3000,
+    "source_sha256": "439ebf726d7e01c913a9e85c0866240268edb3b5919bb583b4823270fe361104",
+    "features_sha256": "e10a0575146f8994c47d19daa76de357c0c007c1f2fd3434dba52783fd8ce6ce",
+    "feature_dim": 10780
+  },
+  "validation": {
+    "rows": 200,
+    "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+    "features_sha256": "5471819e793eea5264c90af8a4edf9fb1d24a08bc2e5c2d0490df851dc5eb013",
+    "feature_dim": 10780
+  },
+  "reused_input_identical_train512": 512
+}

@@ -1,0 +1,63 @@
+{
+  "status": "frozen_before_test_inference",
+  "frozen_at": "2026-11-03T17:31:24.821416+00:00",
+  "test_source": {
+    "path": "/mnt/sdc/zhc/IEA/data/goal-v2-20261103/test_sealed.json",
+    "sha256": "cc2b61108a17a856bd3f7c5da098c72aeba9c610f839e2dac6bd5935f3afbf0d",
+    "rows": 71,
+    "groups": 71
+  },
+  "test_manifest_sha256": "876be0e28f30b8535c7603713c181aa07ac033e07328c870d3ae53eca724d288",
+  "base_protocol_sha256": "c8a24b374d35bad727a44a3c0119042d90fd1e3ce57d365e325704d5b6006970",
+  "acceptance_protocol_sha256": "8ed2a008d8903bde73f70bb20e19d9461991c5ebcb5001d5306679b2657bde1a",
+  "original_baselines_lock_sha256": "4ebb435a03ad2ae2ecca78f074a34d57e1f4538630ad380d4fdad9712cd6c73b",
+  "code_hashes": {
+    "scripts/goal_v2_final_evaluate.py": "a805332dab15d5e904dd41dcb707122b0ab11d4b6c458c8f20769166cf0d520a",
+    "scripts/stage2_runtime.py": "800a1be9796885aede578327a20cc4f96b59962cab9681e809372baa5e894150",
+    "scripts/evaluation_core.py": "13892e9d43f62a90863ec07416b29e0d24e47e34623910c4cfa9d8435c4ebd52",
+    "scripts/goal_v2_json_runtime.py": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67",
+    "scripts/goal_v2_analyze_validation.py": "f81bdfde1acbaeb271cff133a697034ca317f05ff70e93d9e245d9de8f8dcebb",
+    "repo/src/image_editor.py": "1a18fb3b00207f0b667b2ef1d0677d8d71a5abdf21ad89e4c66adea152c05f3c",
+    "repo/src/utils.py": "744a7da474f08555b5fa7fed08f140fa15e25190e919a5006a3a3b6b9f603c01",
+    "repo/src/config.py": "d90b860dda91563de4fc13ab8ef8b9eb71bfe50f7d79e15ec600b22dcc5b9399",
+    "configs/evaluation-protocol-v1.json": "c8a24b374d35bad727a44a3c0119042d90fd1e3ce57d365e325704d5b6006970"
+  },
+  "models": {
+    "baseline_keys": [
+      "A",
+      "B",
+      "SFT",
+      "GRPO"
+    ],
+    "candidate_keys": [
+      "Seed20261103",
+      "Seed20261104",
+      "Seed20261105"
+    ],
+    "baseline_format": "original",
+    "candidate_format": "json-only-schema-v1",
+    "generation": {
+      "do_sample": false,
+      "max_new_tokens": 512,
+      "repetition_penalty": 1.0,
+      "num_return_sequences": 1
+    }
+  },
+  "primary": "Each of3 locked independent training seeds must improve full71 paired mean L1 by at least3% against every original frozen baseline; identify strongest baseline conservatively. All rows and failures retained.",
+  "uncertainty": {
+    "draws": 10000,
+    "seed": 20261103,
+    "unit": "source group",
+    "seed_mean": "Resample identical71 groups jointly across all3 seeds; do not pool213 seed-by-image rows as independent",
+    "report": "Per-seed paired intervals and seed-level range; inconclusive results are not proof of goal success"
+  },
+  "guardrails": {
+    "execution": "Maintain strongest original baseline execution; report failures and common-executable comparison",
+    "nonoperation": "Report empty/zero, pixel identity, near identity<1/255, edit-L1 distribution and substantive-edit union comparison; do not manufacture gains via fallback or no-op",
+    "instruction": "Frozen global brightness/warmth/saturation proxies, unassessable requests excluded from pass counts; per-seed compared with strongest baseline; broader anonymized visual review",
+    "NoEdit": "Always report unedited original L1"
+  },
+  "visual_plan_sha256": "209c212667af140afec3efcbb249fd8a0fc0582207b0eb419ea7a003bf52b24d",
+  "future_test_policy": "No test-driven model/recipe selection. If unsuccessful or inconclusive, inspected71 are regression data for future work, requiring a new independent confirmation set.",
+  "pending": "Final model identities and development gate must be frozen before this evaluator can run. No inference performed by preparation."
+}

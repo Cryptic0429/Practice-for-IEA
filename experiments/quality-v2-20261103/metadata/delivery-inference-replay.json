@@ -1,0 +1,57 @@
+{
+  "id": "GIER-Edit:test:000279",
+  "model": "Seed20261104",
+  "adapter_sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884",
+  "response_text": "```json\n{\n    \"brightness\": 10,\n    \"contrast\": 0,\n    \"temperature\": 5,\n    \"saturation\": 10,\n    \"highlights\": 5,\n    \"tint\": 5\n}\n```",
+  "response_length": 54,
+  "parsing": {
+    "json_valid": true,
+    "tool_names_valid": true,
+    "values_valid": true,
+    "valid": true,
+    "parameters": {
+      "brightness": 10,
+      "contrast": 0,
+      "temperature": 5,
+      "saturation": 10,
+      "highlights": 5,
+      "tint": 5
+    },
+    "error": null
+  },
+  "scoring": {
+    "editor_success": true,
+    "input_readable": true,
+    "reference_readable": true,
+    "fallback_used": false,
+    "metric_error": null,
+    "editor_error": null,
+    "baseline_metrics": {
+      "pixel_L1": 0.14101506769657135,
+      "pixel_L2": 0.1774907410144806,
+      "final_score": 0.15925290435552597
+    },
+    "edited_metrics": {
+      "pixel_L1": 0.15956716239452362,
+      "pixel_L2": 0.2018323838710785,
+      "final_score": 0.18069977313280106
+    },
+    "l1_improvement": -0.01855209469795227,
+    "score_improvement": -0.021446868777275085,
+    "edited_image_path": "outputs/goal-v2-20261103/delivery-inference-replay-v1/edited.png",
+    "parameter_metrics": {
+      "nonzero_true_positive": 4,
+      "nonzero_predicted": 5,
+      "nonzero_target": 5,
+      "mean_absolute_error_16": 10.625
+    }
+  },
+  "edited_image_sha256": "e7a74648881f375446eaa71f18959de2d5492918ef993818cd9def110954b9c5",
+  "input_contract": "Only original image, system and user request; references/labels excluded before generation.",
+  "replay_checks": {
+    "response_exact": true,
+    "parameter_exact": true,
+    "edited_png_exact": true,
+    "l1_exact": true
+  }
+}

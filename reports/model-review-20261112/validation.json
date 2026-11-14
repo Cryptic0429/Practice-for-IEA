@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "date": "2026-11-12",
+  "timezone": "Asia/Shanghai",
+  "pdf": "output/pdf/iea-model-review-20261112.pdf",
+  "pdf_sha256": "9c17a4591e467cde9c1c7fe3b55fef66faa55d5ba97cad5321ff7c7f5ebdbf8e",
+  "pdf_bytes": 500495,
+  "pages": 20,
+  "compiler": "Tectonic 0.17.0 / XeTeX",
+  "source_language": "LaTeX with TikZ vector diagrams",
+  "visual_review": {
+    "reviewer": "AI assistant",
+    "all_pages_rendered_and_inspected": true,
+    "render_dpi": 110,
+    "architecture_diagrams": 3,
+    "overlap_or_clipping_remaining": false,
+    "independent_human_review": false
+  },
+  "automated_checks": {
+    "source_hashes_verified": 147,
+    "unique_catalog_adapters": 35,
+    "registered_auxiliary_heads": 6,
+    "functional_adapters": 28,
+    "all_35_canonical_adapter_paths_found_in_pdf": true,
+    "text_characters_per_page": [
+      428,
+      3689,
+      943,
+      715,
+      544,
+      621,
+      1027,
+      643,
+      1287,
+      820,
+      1019,
+      1203,
+      1041,
+      404,
+      1061,
+      1124,
+      976,
+      941,
+      2645,
+      2556
+    ],
+    "no_missing_glyphs": true,
+    "no_overfull_or_underfull_boxes": true,
+    "no_out_of_page_text": true,
+    "missing_training_logs": [
+      "R1-R",
+      "R4-P",
+      "R4-M"
+    ],
+    "new_document_links_checked": 18
+  },
+  "limitations": [
+    "Historical evidence synthesis, not a new benchmark.",
+    "Functional grading is AI-assisted.",
+    "No new GPU use or live service/budget audit.",
+    "Uses macOS fonts; replacing fonts requires layout revalidation."
+  ],
+  "report_source_sha256": {
+    "reports/model-review-20261112/README.md": "9f339d028bb4fc134befef90c3f91b933dbb2e828c22c1bbe9209ff896d301e8",
+    "reports/model-review-20261112/report.tex": "3d73dfccf26e5cd9262f997b05949bddef51408092c18cf7f65621effe24b692",
+    "reports/model-review-20261112/build.sh": "1810ee93383e2e0d9d0645e9c1e92b6f23ec2f5a4dfdedea46a89725a2de890c",
+    "reports/model-review-20261112/extract_evidence.py": "3e174be1b0d6547ab08ef0285cc46a108171f3ee5605be9cf05d272fde842b21",
+    "reports/model-review-20261112/generated/sources.tex": "604610f0c9eec60fcd69fd04bfa460ef6106350d519c91526dd8f3a2263c58eb",
+    "reports/model-review-20261112/generated/evidence_snapshot.json": "28363fd4155b46641db32633d4b0ebff89dd74b0475cd7e22ef1e50c78caf893",
+    "reports/model-review-20261112/generated/tables.tex": "91463385ab43443ca11cdf0e61b4bd6857d4437d3fcb131c23532e0a7a257894",
+    "reports/model-review-20261112/figures/lineage_early.tex": "0133a2f29426dcf3bd6b6dcde5e0978b1e0cd7163f280e823ad9f6d9c287e6ba",
+    "reports/model-review-20261112/figures/lineage_late.tex": "409481464dfff6f7d8b0506e07b095edf4a1f009bb1d4cf211721f00568cacca",
+    "reports/model-review-20261112/figures/architecture.tex": "baa5b1e1a30a0d672e8e719b35c5a687fe9a8384e90afa913abc0426d4473b7f"
+  },
+  "cleanup": {
+    "scope": "tmp/pdfs/model-review-20261112",
+    "temporary_files_removed": 28,
+    "temporary_bytes_removed": 6176268,
+    "retained": [
+      "final PDF",
+      "LaTeX and TikZ sources",
+      "extraction/build scripts",
+      "generated tables and evidence snapshot"
+    ],
+    "historical_experiment_files_removed": false,
+    "completed": true
+  },
+  "workspace_changes": [
+    "AGENTS.md",
+    "docs/WORKSPACE_GUIDE.md",
+    "docs/AGENT_HANDOFF_TEMPLATE.md",
+    "docs/handoffs/model-review-20261112.md",
+    "README.md navigation only",
+    ".gitignore text-source allowlist only",
+    "reports/model-review-20261112/",
+    "output/pdf/iea-model-review-20261112.pdf"
+  ]
+}

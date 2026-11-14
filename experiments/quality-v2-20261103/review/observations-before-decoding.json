@@ -1,0 +1,2017 @@
+{
+  "status": "complete_before_decoding",
+  "reviewer": "AI-assisted direct visual inspection; no human-user-study claim",
+  "started_at": "2026-11-03T19:47:32.136590+00:00",
+  "manifest_sha256": "f2c4aae00c147dd97521526f0b8f117392a10c9d57f31721b33379f8e5784056",
+  "model_identities_decoded": false,
+  "rubric": {
+    "instruction": [
+      "aligned",
+      "partial",
+      "opposite",
+      "not_assessable"
+    ],
+    "strength": [
+      "adequate",
+      "excessive",
+      "insufficient",
+      "uncertain"
+    ],
+    "unrelated_change": [
+      "none",
+      "minor",
+      "major",
+      "uncertain"
+    ],
+    "reference_match_relative_input": [
+      "closer",
+      "mixed",
+      "farther",
+      "uncertain"
+    ]
+  },
+  "scope": "Thirty preselected independent source groups; seven anonymous model outputs each. Generic requests are not scored as directional passes. All observations saved before reading the decoding key.",
+  "cases": [
+    {
+      "case": 1,
+      "scene_note": "No specific request; archival group photo. Reference removes strong yellow cast and deepens blacks; none of the outputs reproduces its white balance.",
+      "id": "GIER-Edit:test:000279",
+      "group_id": "1e047f250338562ce22ea9b3de2d592ec8e2d45198907504ddcf134499bacee0",
+      "instruction": "",
+      "observed_at": "2026-11-03T19:51:58.552268+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Stronger orange/red cast and contrast than input; reference is much cooler."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Matches Output1 visually; orange cast persists and shadows deepen."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Small tonal change, retains input yellow cast; not a clear restoration."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Warm and higher contrast; no reference-like removal of yellow cast."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Orange warmth and dense shadows remain unlike cooler reference."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Conservative tonal change; retains warm faded appearance."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Slightly greener yellow warmth with mild tonal change; white balance unresolved."
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "scene_note": "Man in front of car at night. Request explicitly needs better visibility. Output5 visibly lifts face, clothing and ground; several others deepen the shadows.",
+      "id": "GIER-Edit:test:000283",
+      "group_id": "3cca54058b33fd8c85f3464840910749b1d2504dea0ccb25ead7eae3a3bfc7b9",
+      "instruction": "Change the lighting of the image so that the man and the car are more visible.",
+      "observed_at": "2026-11-03T19:52:09.568230+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Car highlights increase slightly but face remains very dark; foreground shadows deepen."
+        },
+        {
+          "output": "Output2",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "none",
+          "reference_match_relative_input": "mixed",
+          "note": "Very small lighting change; man remains insufficiently visible."
+        },
+        {
+          "output": "Output3",
+          "instruction": "opposite",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Higher contrast makes face, trousers and ground shadows darker."
+        },
+        {
+          "output": "Output4",
+          "instruction": "opposite",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Deep blacks obscure the person despite stronger car highlights."
+        },
+        {
+          "output": "Output5",
+          "instruction": "aligned",
+          "strength": "adequate",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "closer",
+          "note": "Whole scene lifts and man is more visible; less saturated than reference."
+        },
+        {
+          "output": "Output6",
+          "instruction": "opposite",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Warm contrast increase leaves person darker than requested."
+        },
+        {
+          "output": "Output7",
+          "instruction": "opposite",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Deepened foreground and face shadows work against visibility."
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "scene_note": "Generic enhancement request. Reference strengthens dark detail and red motorcycle while preserving more pale background texture than aggressive outputs.",
+      "id": "GIER-Edit:test:000297",
+      "group_id": "42fc8326f306369c4e6f6a3dd18765b34121760b61cd793af66173ef994dea18",
+      "instruction": "Please simply make this image better.",
+      "observed_at": "2026-11-03T19:52:19.451799+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Subject contrast increases but background and motorcycle highlights wash out."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild warm lift; retains faded contrast and modest background detail."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Stronger reds and dark clothing approach reference; pale background loses texture and skin pinkens."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Same conservative look as Output2; lacks reference black depth."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Matches Output3 visually with pink skin and high bright-background loss."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Bright warm wash lifts pale surfaces without restoring dark detail."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Subject contrast restored but skin shifts pink and highlights are washed out."
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "scene_note": "Generic request; child with balloon, original motion blur. Reference very similar in exposure with somewhat stronger edge definition. No output repairs motion blur.",
+      "id": "GIER-Edit:test:000344",
+      "group_id": "f46366220c8b0387ceb32eafb8de6b70933de6141807d90bed489721f0d1276d",
+      "instruction": "Please simply make this image better.",
+      "observed_at": "2026-11-03T19:52:32.790612+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Small brightness lift; child and ground retain original blur."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild brighter rendering without clear restoration of blurred face."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Subtle global lift; door and paving remain similar, blur persists."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Conservative brightness and tone adjustment; detail improvement uncertain."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild global lift with original framing and blur preserved."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Edge texture is stronger but noise/halos also more visible around paving and clothing."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Stronger texture than input; sharpened noise does not resolve motion blur."
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "scene_note": "Explicit sharpening request on grainy portrait. Sheet resolution supports broad texture comparisons but cannot establish fine-detail restoration.",
+      "id": "GIER-Edit:test:000626",
+      "group_id": "4bc3df578fb1d2ab0ae11a27d94979149c7d2c0b9cf82ee2e4b8d0c91927c990",
+      "instruction": "Please, sharpen the photo",
+      "observed_at": "2026-11-03T19:52:49.947025+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "partial",
+          "strength": "uncertain",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Contrast increases but bright left background is washed out; sharpening not clearly separable."
+        },
+        {
+          "output": "Output2",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Slight tonal lift with little clear increase in fine facial texture."
+        },
+        {
+          "output": "Output3",
+          "instruction": "aligned",
+          "strength": "adequate",
+          "unrelated_change": "none",
+          "reference_match_relative_input": "closer",
+          "note": "Stronger grain and edge definition resemble reference without large exposure shift."
+        },
+        {
+          "output": "Output4",
+          "instruction": "partial",
+          "strength": "uncertain",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Background highlights wash out with strong contrast; clear sharpening uncertain."
+        },
+        {
+          "output": "Output5",
+          "instruction": "aligned",
+          "strength": "excessive",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "mixed",
+          "note": "Visible stronger texture includes noise; warm skin and clipped background are substantial side effects."
+        },
+        {
+          "output": "Output6",
+          "instruction": "partial",
+          "strength": "uncertain",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Strong brightness/contrast and warm skin dominate; background detail is lost."
+        },
+        {
+          "output": "Output7",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild change leaves original softness; exposure shift is more evident than sharpening."
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "scene_note": "Generic enhancement of hazy child portrait. Reference lifts face and cools color; all outputs preserve haze and original content.",
+      "id": "GIER-Edit:train:000299",
+      "group_id": "3c0e83776f6adb363c804f3efccc47128fe53da52c56009334f2c7b515451ee1",
+      "instruction": "What will you do to improve this image?",
+      "observed_at": "2026-11-03T19:53:01.729314+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild contrast lift but face remains darker than reference."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Face and shirt brighten toward reference though haze remains."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Warm tone persists; limited brightening of face."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Black level lifts into gray haze, with less reference-like contrast."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Moderate cool brighter face approximates part of reference change."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Moderate brightness lift helps face but leaves yellow-green haze."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Brightens face and shirt modestly; no removal of original haze."
+        }
+      ]
+    },
+    {
+      "case": 7,
+      "scene_note": "Generic restoration request. Reference corrects magenta cast toward brown hair and neutral dark shirt; every output retains pink/magenta cast.",
+      "id": "GIER-Edit:train:000941",
+      "group_id": "0b3f7fd17ddd788e541754b6df4219f31d5c2cbba1e377074aacd3e4ef9fa6e7",
+      "instruction": "How to enhance this image?",
+      "observed_at": "2026-11-03T19:53:10.890962+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Small lift with pink hair and purple shirt still present."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Conservative change retains original cast and faded dark areas."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Higher bright contrast and pink skin move away from neutral reference."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild change leaves magenta cast unresolved."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Stronger pink warmth and washed background do not match corrected reference."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Pink cast is amplified with stronger contrast."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Red-pink hair and skin remain exaggerated versus reference."
+        }
+      ]
+    },
+    {
+      "case": 8,
+      "scene_note": "Generic enhancement portrait with severe purple cast. Reference neutralizes cast; all anonymous outputs retain it.",
+      "id": "GIER-Edit:train:002422",
+      "group_id": "5edbde2db9ec0bb2d37bfb66a4616e77a1f881410a4e1f99a9e372a33dcfe371",
+      "instruction": "What will you do to improve this image?",
+      "observed_at": "2026-11-03T19:53:22.198645+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Purple face, hair and sweater persist despite mild tonal change."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Increased magenta and bright contrast amplify original cast."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Strong purple-magenta skin and high sweater brightness diverge from reference."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Brighter contrast leaves vivid purple cast unresolved."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Slight brightness shift retains original purple appearance."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Vivid magenta face and hair remain unlike neutral reference."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Conservative output preserves original cast and detail."
+        }
+      ]
+    },
+    {
+      "case": 9,
+      "scene_note": "Generic enhancement seascape. Reference strengthens water/foam texture and darker silhouette without large brightening. Outputs mostly brighten pale foam.",
+      "id": "GIER-Edit:train:002931",
+      "group_id": "67667532a2f2e464ee02e87b72e48f41ceaa59808eb24d21b58e0483ce9d3fb6",
+      "instruction": "Edit this image to make it more beautiful",
+      "observed_at": "2026-11-03T19:53:31.426811+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Small cyan-bright shift retains soft water texture."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Foam is brighter and less textured than reference."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Brightened wave foam loses subtle detail relative to darker reference."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Bright blue wash and foam highlights diverge from reference texture."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Pale water becomes brighter with limited texture improvement."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Strong white foam and brighter sky obscure reference-like tonal detail."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Brightness and cool tone increase while water texture remains soft."
+        }
+      ]
+    },
+    {
+      "case": 10,
+      "scene_note": "Generic stadium scene. Reference is unusually dark blue; cannot interpret it as a unique aesthetic target. Outputs preserve natural green but do not match reference.",
+      "id": "GIER-Edit:train:000865",
+      "group_id": "a43378be4c20df5f121d73f14ff1889d8af2b02343d1abe485c41d171094be7c",
+      "instruction": "Please simply make this image better.",
+      "observed_at": "2026-11-03T19:53:40.666560+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Small brighter field change; no reference blue-dark transformation."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Brighter green field and white stands remain unlike reference."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Deep black roof and foreground with bright stands increase tonal clipping."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Contrast darkens roof and people while whitening sunlit stands."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Conservative global enhancement leaves reference color mismatch."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Foreground and roof become very dark; sunlit stand detail is washed out."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "High contrast green field with black shadows; reference blue cast absent."
+        }
+      ]
+    },
+    {
+      "case": 11,
+      "scene_note": "Generic enhancement family portrait. Reference cools orange cast to greener neutral tones. All outputs stay orange; several brighten faces excessively.",
+      "id": "GIER-Edit:test:000027",
+      "group_id": "901eeaf1d441cb95fa81a8ea751f668087501a0a043b06c19167f78165454ca7",
+      "instruction": "Edit this image to make it more beautiful",
+      "observed_at": "2026-11-03T19:53:50.504812+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Faces and red dress become strongly orange with pale highlight loss."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Moderate warm brightening; reference cooling absent."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Strong orange skin and red dress saturation diverge from reference."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Bright warm contrast washes facial detail and keeps cast."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild enhancement preserves more facial tone but does not correct orange cast."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Faces brighten substantially and reds become more intense."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Conservative tone change leaves original warm cast and content intact."
+        }
+      ]
+    },
+    {
+      "case": 12,
+      "scene_note": "Explicit brown-tone request. Reference gives broad amber/brown rendering; no output achieves that color transformation.",
+      "id": "GIER-Edit:train:001364",
+      "group_id": "92bc863777e06c654c4f01aab983da4de9887cc005e90e9b4e72c73c04973bfc",
+      "instruction": "Please, add brown tone",
+      "observed_at": "2026-11-03T19:53:59.303637+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "opposite",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Greener/cyan foliage and blown sky oppose the requested brown rendering."
+        },
+        {
+          "output": "Output2",
+          "instruction": "opposite",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Green saturation and bright cyan-white sky increase without brown tone."
+        },
+        {
+          "output": "Output3",
+          "instruction": "opposite",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Darker saturated greens remain opposite to reference brown foliage."
+        },
+        {
+          "output": "Output4",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Small warm lift, but foliage stays green and brown transformation is absent."
+        },
+        {
+          "output": "Output5",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Slight yellow warmth still falls far short of brown tone."
+        },
+        {
+          "output": "Output6",
+          "instruction": "opposite",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Bright cyan sky and vivid greens dominate instead of brown tone."
+        },
+        {
+          "output": "Output7",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild warmth on path and grass; no convincing brown overall tone."
+        }
+      ]
+    },
+    {
+      "case": 13,
+      "scene_note": "Generic request on strongly color-damaged/double-exposed portrait. Reference is grayscale with more visible face. No output achieves grayscale restoration.",
+      "id": "GIER-Edit:train:005901",
+      "group_id": "d34f1bc042ca4708072cef657dea5b2866a66c9138bc7d4e7a6570c5afdd91f3",
+      "instruction": "What will you do to improve this image?",
+      "observed_at": "2026-11-03T19:54:13.379625+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Left highlight is reduced somewhat but right half becomes nearly black; color damage remains."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "More left facial lines appear, while severe yellow and crushed right side remain."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Bright left face is further washed out and magenta pattern remains."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Left region darkens modestly but right-side detail is crushed."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Additional brightness destroys pale facial detail; no grayscale correction."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Left highlights wash out more; original severe cast persists."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Some left facial texture appears at cost of deep black right side."
+        }
+      ]
+    },
+    {
+      "case": 14,
+      "scene_note": "Compound request: improve lighting, stronger red dress, remove outlet. Outlet remains in every output; global edits cannot satisfy removal. Reference is cooler/darker.",
+      "id": "GIER-Edit:test:000014",
+      "group_id": "160ba459e56b0f350b3ecf8ac3566231cdcbd5b1ec5ec908f2fe0c18162aa18f",
+      "instruction": " Improve Lighting/Quality (redness of dress more prominent) + remove outlet thing please c:",
+      "observed_at": "2026-11-03T19:54:26.697858+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "partial",
+          "strength": "uncertain",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Dress red deepens but orange skin persists and outlet remains."
+        },
+        {
+          "output": "Output2",
+          "instruction": "partial",
+          "strength": "excessive",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Dress reddens but shadows shift blue/purple; outlet remains visible."
+        },
+        {
+          "output": "Output3",
+          "instruction": "partial",
+          "strength": "uncertain",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Small red/contrast increase; warm cast and outlet remain."
+        },
+        {
+          "output": "Output4",
+          "instruction": "partial",
+          "strength": "excessive",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Red dress stronger, but warm wall/skin and deep shadows increase; no removal."
+        },
+        {
+          "output": "Output5",
+          "instruction": "partial",
+          "strength": "uncertain",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Moderate red enhancement with outlet unchanged and warm lighting."
+        },
+        {
+          "output": "Output6",
+          "instruction": "partial",
+          "strength": "excessive",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Blue-black hair and purple shadows accompany red dress; outlet untouched."
+        },
+        {
+          "output": "Output7",
+          "instruction": "partial",
+          "strength": "excessive",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Strong shadow hue shift and red saturation; outlet remains."
+        }
+      ]
+    },
+    {
+      "case": 15,
+      "scene_note": "No specific request. Reference deepens jacket/foliage and cools tone. All outputs brighten and none reproduces reference tonality.",
+      "id": "GIER-Edit:test:000075",
+      "group_id": "fe4c054aa94308ab363863c00fc338cf148d7c7f34662cbc08e95e717a988b2d",
+      "instruction": "",
+      "observed_at": "2026-11-03T19:54:38.225594+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Face and upper leaves brighten strongly; reference instead deepens dark regions."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Moderate brightening lacks reference cool contrast."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Warm brighter skin and pale leaf highlights diverge from reference."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Small lift maintains gray jacket rather than reference deep blue-black."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Mild brighter face and foliage do not match darker reference."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Skin and leaf highlights brighten excessively versus reference."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Sharper stronger contrast accompanies brighter leaves and face, with reference tone absent."
+        }
+      ]
+    },
+    {
+      "case": 16,
+      "scene_note": "Generic restoration portrait. Reference restores deep suit blacks and warm face. Several outputs add mild contrast but all retain more faded blacks than reference.",
+      "id": "GIER-Edit:train:000604",
+      "group_id": "52c070133bd63ec219eedc5d4f431d4af629f0fd16052cbb9d7cba43377d93b5",
+      "instruction": "Please simply make this image better.",
+      "observed_at": "2026-11-03T19:54:49.907535+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Conservative change keeps gray faded suit and low facial contrast."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild warm change but dark suit remains faded."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Face warms and dark areas gain contrast, though suit is still lighter than reference."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Moderate warm contrast moves toward reference without major content change."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Warm facial tone and slightly darker suit partially match restoration."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Mild contrast and warmer face approximate reference direction."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Small change preserves original faded gray-black levels."
+        }
+      ]
+    },
+    {
+      "case": 17,
+      "scene_note": "Explicit lighten-entire-image request with strongly backlit person. All outputs leave face much darker than reference; Output7 has the clearest shadow lift.",
+      "id": "GIER-Edit:train:001067",
+      "group_id": "a4a14942885f6b6f8d9ccbecc0272b4c0467cd10e5130c129279b8e84845bf5d",
+      "instruction": "Lighten the entire image, please",
+      "observed_at": "2026-11-03T19:55:02.884042+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Food brightens but face remains dark and jacket shadows deepen."
+        },
+        {
+          "output": "Output2",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Foreground food lifts slightly while facial visibility barely changes."
+        },
+        {
+          "output": "Output3",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "High contrast keeps face and jacket too dark for entire-image lightening."
+        },
+        {
+          "output": "Output4",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Small lift around plate without adequate facial shadow recovery."
+        },
+        {
+          "output": "Output5",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild brightening still leaves face largely obscured."
+        },
+        {
+          "output": "Output6",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Food and background brighten more than person; strong backlighting persists."
+        },
+        {
+          "output": "Output7",
+          "instruction": "aligned",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "closer",
+          "note": "Shadows and jacket visibly lift but face remains below reference visibility."
+        }
+      ]
+    },
+    {
+      "case": 18,
+      "scene_note": "Generic enhancement portrait. Reference applies a strong green-dark grade, not an unambiguous aesthetic target. Outputs mostly warm/brighten face.",
+      "id": "GIER-Edit:train:002009",
+      "group_id": "1fc4b56a293dcd367c684a6a3e1ca1c52d80ef89477ddf846922341ee9c2c7ff",
+      "instruction": "How to enhance this image?",
+      "observed_at": "2026-11-03T19:55:12.915380+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Warm bright face and wood remain unlike dark green reference."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Moderate warm lift; no reference-like hue transformation."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Face highlights become very pale and orange contrast increases."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Bright face loses tonal detail while dark shirt remains dense."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Strong facial brightness and red hair/wall saturation."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Very bright face and stronger warm contrast diverge from reference."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Mild brighter rendering retains more skin tone but differs from green reference."
+        }
+      ]
+    },
+    {
+      "case": 19,
+      "scene_note": "Explicit increase saturation and darken colors. Most outputs saturate blue but also brighten white shirt/skin, missing the darkening component.",
+      "id": "GIER-Edit:train:004418",
+      "group_id": "e96f26649b97c6e524a88eed80d6adc1b72808e87e3f72d963b003dd57eada42",
+      "instruction": "Make the image more saturated, darken colors",
+      "observed_at": "2026-11-03T19:55:23.855287+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "none",
+          "reference_match_relative_input": "mixed",
+          "note": "Modest deeper blue and slight darkening, but saturation/darkening change is weak."
+        },
+        {
+          "output": "Output2",
+          "instruction": "partial",
+          "strength": "excessive",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Blue saturation increases while shirt and skin become much brighter."
+        },
+        {
+          "output": "Output3",
+          "instruction": "partial",
+          "strength": "excessive",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Strong blue and warm skin with brighter whites instead of overall darker colors."
+        },
+        {
+          "output": "Output4",
+          "instruction": "partial",
+          "strength": "excessive",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Saturates backdrop but brightens people and loses pale clothing detail."
+        },
+        {
+          "output": "Output5",
+          "instruction": "partial",
+          "strength": "excessive",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Vivid blue with brightened shirt/skin contradicts requested darkening component."
+        },
+        {
+          "output": "Output6",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "none",
+          "reference_match_relative_input": "mixed",
+          "note": "Conservative darker rendering; saturation increase is modest and reference pink tone absent."
+        },
+        {
+          "output": "Output7",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Some blue saturation but skin and shirt brighten rather than darken."
+        }
+      ]
+    },
+    {
+      "case": 20,
+      "scene_note": "Generic portrait of two people. Reference subtly warms and softens cool cast. High-contrast outputs deepen already dark clothing.",
+      "id": "GIER-Edit:train:001518",
+      "group_id": "8edff3a40a48cd910b3d7a4c8178d1451221e9a79dba50cdc168a6769d2fac4a",
+      "instruction": "Edit this image to make it more beautiful",
+      "observed_at": "2026-11-03T19:55:33.939483+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Strong facial highlights, orange hair and black clothing lose subtle detail."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild tone change preserves detail but reference warm shift is limited."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Small warm brightening partly resembles reference while blue clothing remains."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Deep blacks and strong warm facial contrast exceed subtle reference edit."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Faces become strongly contrasty and clothing detail is crushed."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "High orange/black contrast loses dark texture."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Lifted gray shadows preserve more clothing texture but add haze."
+        }
+      ]
+    },
+    {
+      "case": 21,
+      "scene_note": "No specific request; dark cat photograph. Reference strongly lifts white fur and background. Outputs mostly remain dark; Output6 particularly crushes shadows.",
+      "id": "GIER-Edit:train:003951",
+      "group_id": "c85f0c87d63f98a8838ca5e1a41538cb9e41dd6d0dbd9d499f52d858d42e2d3f",
+      "instruction": "",
+      "observed_at": "2026-11-03T19:55:47.946435+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Warmer yellow fur with little useful shadow lift."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Some lift of white chest and background approaches reference, still too dark."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Small warm contrast change leaves cat and background underexposed."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Chest is more neutral white but face/background stay much darker than reference."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Slight contrast and warmth leave dark original appearance."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Face, ears and body shadows become nearly black."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "White chest slightly lifts but shadow detail remains limited."
+        }
+      ]
+    },
+    {
+      "case": 22,
+      "scene_note": "No specific request; dark surf scene. Reference is much brighter and bluer. No output reaches reference sky brightness.",
+      "id": "GIER-Edit:test:000415",
+      "group_id": "c07e45564212b8086192d214b67162dde96804ab60a22a03e85b0490c8436b16",
+      "instruction": "",
+      "observed_at": "2026-11-03T19:56:01.276024+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Modest lifted sky/water moves toward bright reference but green cast remains."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Small shadow lift retains more sky visibility; reference still far brighter."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Foam and water contrast increase while sky stays dark and green."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "White surf strengthens but dark sky/horizon remain unlike reference."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "More vivid green water and bright surf; little reference-like exposure recovery."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Surf brightens, but sky remains very dark with green cast."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "High surf contrast and green foreground, no substantial sky recovery."
+        }
+      ]
+    },
+    {
+      "case": 23,
+      "scene_note": "No specific request; monochrome couple portrait. Reference is selectively colorized. Every output stays essentially monochrome, a tool-expression limitation.",
+      "id": "GIER-Edit:train:001613",
+      "group_id": "b0d5a54ee6cc9ac784396ce8b76d4feb875ac75bdd00452f815147dfe53bf728",
+      "instruction": "",
+      "observed_at": "2026-11-03T19:56:13.144223+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild warm-gray tone change without reference colorization."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Small contrast lift preserves grayscale; reference colors absent."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Slight warm gray rendering, no blue suit or purple dress."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "More contrast helps dark suit but brightens faces/dress too much; still monochrome."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Subtle warm-gray contrast without reference selective colors."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Mild cool-gray change with all selective colorization missing."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "mixed",
+          "note": "Bright faces/dress and stronger contrast; still lacks colorization."
+        }
+      ]
+    },
+    {
+      "case": 24,
+      "scene_note": "Compound local request to reveal two faces and reduce glare. Reference cools sky and improves face contrast. All outputs keep warm glare; several worsen sky brightness.",
+      "id": "GIER-Edit:train:003603",
+      "group_id": "b490a48aae5631e85c5db74c9a0a2abefc8c5f05b624be525f961a4ab799fb9d",
+      "instruction": "Make the faces of the two women more apparent, decrease sun glare",
+      "observed_at": "2026-11-03T19:56:25.377303+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "opposite",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Bright sky/glare increases while faces remain shadowed."
+        },
+        {
+          "output": "Output2",
+          "instruction": "opposite",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "High contrast brightens sky and deepens dress/shadows rather than revealing faces."
+        },
+        {
+          "output": "Output3",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "mixed",
+          "note": "Faces lift slightly, but bright sky and orange flare persist or increase."
+        },
+        {
+          "output": "Output4",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Shadow lift helps faces a little; sun glare remains untreated."
+        },
+        {
+          "output": "Output5",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "mixed",
+          "note": "Faces brighten modestly but sky washout works against glare reduction."
+        },
+        {
+          "output": "Output6",
+          "instruction": "opposite",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Contrast deepens people shadows and amplifies bright sky."
+        },
+        {
+          "output": "Output7",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "mixed",
+          "note": "Faces somewhat clearer but strong orange flare and bright sky remain."
+        }
+      ]
+    },
+    {
+      "case": 25,
+      "scene_note": "No specific request; building under clouds. Reference darkens/cools scene with dramatic clouds; outputs brighten grass and sky.",
+      "id": "GIER-Edit:train:000718",
+      "group_id": "5abbb2d9aacc56e1f27c813a0cd0ac3c531d582a2ae4dc7c0fbfd996248a1e7e",
+      "instruction": "",
+      "observed_at": "2026-11-03T19:56:35.673325+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Brighter yellow-green grass and sky differ from darker reference."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Large white sky area loses cloud detail and grass saturates."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Moderate bright lift with no dramatic cloud darkening."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Sky highlights wash out while grass becomes vivid green."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Bright sky and saturated grass diverge from reference cool shadows."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Small brightening retains more cloud detail but misses reference tonality."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Dark building contrast combined with whitened sky and vivid grass."
+        }
+      ]
+    },
+    {
+      "case": 26,
+      "scene_note": "Generic enhancement of night street image including original overlaid caption. Reference lifts background and people strongly with visible noise. No output removes or alters scene objects.",
+      "id": "GIER-Edit:train:002125",
+      "group_id": "441e31617a02cee51b171c2484b33bb2ea6428c2602f539be2507c7e0bda83d2",
+      "instruction": "Please simply make this image better.",
+      "observed_at": "2026-11-03T19:56:48.684881+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Small background/flag lift approaches reference exposure but people stay dark."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Mild shadow lift improves building visibility, less than reference."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Moderate lift in building and flag; dark person remains unclear."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Deep blacks obscure person and building while flag/mask become stark white."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Brighter building and flag partly match reference lightening."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "High contrast deepens person and upper building into black."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Black shadows and bright mask/flag increase tonal clipping."
+        }
+      ]
+    },
+    {
+      "case": 27,
+      "scene_note": "Explicit substantial brightness, contrast and color increase. Stronger outputs follow requested directions but wash out bright grass/tree/sky. Reference is more restrained.",
+      "id": "GIER-Edit:train:001455",
+      "group_id": "a3451a4931947bd3b5bd2ec19593ace5d30c7404b5181c9c421edb471e4102fc",
+      "instruction": "Significantly increase brightness, contrast and overall colors of the image",
+      "observed_at": "2026-11-03T19:57:04.183311+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "aligned",
+          "strength": "excessive",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "All requested directions increase, with broad bright grass and tree highlight loss."
+        },
+        {
+          "output": "Output2",
+          "instruction": "aligned",
+          "strength": "adequate",
+          "unrelated_change": "none",
+          "reference_match_relative_input": "closer",
+          "note": "Moderate brightness/color increase keeps more texture and approaches reference."
+        },
+        {
+          "output": "Output3",
+          "instruction": "aligned",
+          "strength": "excessive",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Blue shirt and contrast strengthen but background highlights wash out."
+        },
+        {
+          "output": "Output4",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "none",
+          "reference_match_relative_input": "mixed",
+          "note": "Only mild lift; substantial contrast/color increase is not evident."
+        },
+        {
+          "output": "Output5",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "none",
+          "reference_match_relative_input": "mixed",
+          "note": "Conservative brightness shift falls short of requested significant enhancement."
+        },
+        {
+          "output": "Output6",
+          "instruction": "aligned",
+          "strength": "excessive",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Brighter grass and stronger color with visible pale-background washout."
+        },
+        {
+          "output": "Output7",
+          "instruction": "aligned",
+          "strength": "excessive",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Strong brightness/color/contrast but lighter tree and grass lose detail."
+        }
+      ]
+    },
+    {
+      "case": 28,
+      "scene_note": "No specific request; lavender field. Reference lifts foreground flowers and subject. Several outputs strengthen blue/black contrast instead.",
+      "id": "GIER-Edit:train:001000",
+      "group_id": "223fe56053c91ae299aea550ee1310c06f07d7e375157acaeb6459006d59d034",
+      "instruction": "",
+      "observed_at": "2026-11-03T19:57:17.172673+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Sky becomes vivid blue but dark flower rows and trees remain crushed."
+        },
+        {
+          "output": "Output2",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Modest foreground lift approximates reference, though much darker."
+        },
+        {
+          "output": "Output3",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "High contrast darkens field shadows despite brighter shirt."
+        },
+        {
+          "output": "Output4",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Small exposure/foreground lift moves toward reference."
+        },
+        {
+          "output": "Output5",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Deep black vegetation and strong blue sky diverge from lifted lavender reference."
+        },
+        {
+          "output": "Output6",
+          "instruction": "not_assessable",
+          "strength": "uncertain",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "closer",
+          "note": "Broad shadow lift reveals field more clearly but adds gray haze."
+        },
+        {
+          "output": "Output7",
+          "instruction": "not_assessable",
+          "strength": "excessive",
+          "unrelated_change": "uncertain",
+          "reference_match_relative_input": "farther",
+          "note": "Strong blue sky with dark flowers and tree shadows misses reference exposure."
+        }
+      ]
+    },
+    {
+      "case": 29,
+      "scene_note": "Explicit sharpening monochrome piano portrait. Reference also removes broad haze/texture. Edge-sharpened outputs amplify halos and original texture rather than restoring clean detail.",
+      "id": "GIER-Edit:train:000765",
+      "group_id": "38688920be6db7be4895315e6f228f34669beda4dcee138779bf6c2aca8abfe9",
+      "instruction": "Sharpen the image completely",
+      "observed_at": "2026-11-03T19:57:31.483355+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Bright contrast washes hands/shoes; haze persists and sharpening is limited."
+        },
+        {
+          "output": "Output2",
+          "instruction": "aligned",
+          "strength": "excessive",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Visible strong edge sharpening with bright halos around person; texture/noise also amplified."
+        },
+        {
+          "output": "Output3",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Strong exposure lift washes sky, face and shoes without cleaning haze."
+        },
+        {
+          "output": "Output4",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Tonal lift dominates; original broad haze remains."
+        },
+        {
+          "output": "Output5",
+          "instruction": "aligned",
+          "strength": "excessive",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Sharp edge halos around subject and grain remain unlike clean reference."
+        },
+        {
+          "output": "Output6",
+          "instruction": "aligned",
+          "strength": "excessive",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "mixed",
+          "note": "Strong edges sharpen instruction direction but add halos and retain haze."
+        },
+        {
+          "output": "Output7",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Brighter face and shoes without clear reference-like detail restoration."
+        }
+      ]
+    },
+    {
+      "case": 30,
+      "scene_note": "Explicit sharpening/clarity portrait with filter flowers. Reference deepens tone and detail. No output shows convincing fine-detail restoration at sheet scale.",
+      "id": "GIER-Edit:train:001423",
+      "group_id": "d0778425b5102c684b55befad22d1b0d270de72b1fec0a6c688aff7dc98d671a",
+      "instruction": "Sharpen image making it more  clear.",
+      "observed_at": "2026-11-03T19:57:51.716492+00:00",
+      "outputs": [
+        {
+          "output": "Output1",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Strong brightening washes forehead/chest and flower highlights; clarity gain not evident."
+        },
+        {
+          "output": "Output2",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Small tonal change with original softness retained."
+        },
+        {
+          "output": "Output3",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Mild lift retains soft facial details rather than reference clarity."
+        },
+        {
+          "output": "Output4",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "minor",
+          "reference_match_relative_input": "farther",
+          "note": "Conservative brightening without clear sharpening of eyes/hair."
+        },
+        {
+          "output": "Output5",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Very pale highlights and skin obscure detail rather than restoring clarity."
+        },
+        {
+          "output": "Output6",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Bright face/chest and saturated flowers dominate; fine detail remains soft."
+        },
+        {
+          "output": "Output7",
+          "instruction": "partial",
+          "strength": "insufficient",
+          "unrelated_change": "major",
+          "reference_match_relative_input": "farther",
+          "note": "Bright highlights wash out while requested sharpening is not clear."
+        }
+      ]
+    }
+  ],
+  "completed_at": "2026-11-03T19:57:51.716621+00:00"
+}

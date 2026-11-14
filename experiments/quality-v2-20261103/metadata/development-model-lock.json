@@ -1,0 +1,45 @@
+{
+  "status": "frozen_development_candidate",
+  "name": "json-calibrated-long1024-lr1e-4-s20261103-step256",
+  "adapter": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json-calibrated-long1024-lr1e-4-s20261103/checkpoint-256",
+  "adapter_sha256": "8240f008753ff225e35a951abb5177819e7ba38b344c7cc203e881350ced91aa",
+  "adapter_config_sha256": "480492e966f3fcff02af97235afd592fa490a806dce44c7e26f7cc3d72c56bf0",
+  "format": "json",
+  "selected_step": 256,
+  "training_rows": 512,
+  "effective_batch": 4,
+  "epochs": 2,
+  "optimizer_updates": 256,
+  "scheduler_horizon": 1024,
+  "warmup_steps": 52,
+  "lr": 0.0001,
+  "training_file": "train-contrast-calibrated.json",
+  "training_sha256": "c8f45857edd963bb3c991d2df8ce5fc0372b0fc5abca6fad14b50d87cca5e378",
+  "seed_list": [
+    20261103,
+    20261104,
+    20261105
+  ],
+  "evaluation_identity": {
+    "adapter": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json-calibrated-long1024-lr1e-4-s20261103/checkpoint-256",
+    "adapter_sha256": "8240f008753ff225e35a951abb5177819e7ba38b344c7cc203e881350ced91aa",
+    "split": "validation",
+    "name": "json-calibrated-long1024-lr1e-4-s20261103-step256",
+    "gpu": "3",
+    "seed": 20261101,
+    "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+    "goal_v2_evaluate_json.py": "9f2ec4ee07c0632ee7bf0b14fdf7356ac0f9657582d0e3587d33778b32d1c1c2",
+    "stage2_runtime.py": "800a1be9796885aede578327a20cc4f96b59962cab9681e809372baa5e894150",
+    "evaluation_core.py": "13892e9d43f62a90863ec07416b29e0d24e47e34623910c4cfa9d8435c4ebd52",
+    "goal_v2_json_runtime.py": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67"
+  },
+  "selection_report_sha256": "d30e8b84aa66021c1fbb093c0bae60405c946d48b48e8de3e6ab7729f6f0f394",
+  "locked_at": "2026-11-03T16:52:28.267582+00:00",
+  "selection": "Full200 validation L1 with execution/direction/no-op checks; later512/1024 and3k runs remain exploratory controls, not revisions to this candidate.",
+  "pending": [
+    "balanced opposite-instruction guardrail",
+    "additional independent training seeds",
+    "final recipe/model/protocol lock",
+    "sealed71 final evaluation and archive"
+  ]
+}

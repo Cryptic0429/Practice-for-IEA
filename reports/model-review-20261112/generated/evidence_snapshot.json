@@ -1,0 +1,1525 @@
+{
+  "as_of": "2026-11-12 Asia/Shanghai",
+  "catalog_entries": 42,
+  "unique_adapters": 35,
+  "unique_registered_heads": 6,
+  "pixel_test": {
+    "status": "numerical_complete_visual_review_pending",
+    "model_lock_sha256": "0c50d8f6d6137ef796290a8e7c1527c2443db98905123a3e4287b002dc43f2f4",
+    "test_source_sha256": "cc2b61108a17a856bd3f7c5da098c72aeba9c610f839e2dac6bd5935f3afbf0d",
+    "independent_source_groups": 71,
+    "training_seeds": [
+      20261103,
+      20261104,
+      20261105
+    ],
+    "models": {
+      "A": {
+        "n": 71,
+        "mean_l1": 0.1392250871121831,
+        "NoEdit_l1": 0.11892293972081282,
+        "executable": 71,
+        "fallback": 0,
+        "empty": 0,
+        "zero": 0,
+        "empty_or_zero": 0,
+        "pixel_identical": 0,
+        "near_identity": 1,
+        "mean_input_output_l1": 0.06605958990944057,
+        "edit_l1_quantiles_0_05_50_95_100": [
+          0.0032349210159451354,
+          0.026312730826583565,
+          0.061479890112783396,
+          0.1410048391304764,
+          0.17438456217447917
+        ],
+        "direction_assessable": 9,
+        "all_assessed_directions_aligned": 5,
+        "max_saved_pixel_metric_replay_error": 0.0,
+        "predictions_sha256": "99e2e301145b11f9c82cc802fdbc50a80c7c21eb0d8192badfa652825a7911d7"
+      },
+      "B": {
+        "n": 71,
+        "mean_l1": 0.13993988923308714,
+        "NoEdit_l1": 0.11892293972081282,
+        "executable": 70,
+        "fallback": 1,
+        "empty": 0,
+        "zero": 0,
+        "empty_or_zero": 0,
+        "pixel_identical": 1,
+        "near_identity": 2,
+        "mean_input_output_l1": 0.07060379963558505,
+        "edit_l1_quantiles_0_05_50_95_100": [
+          0.0,
+          0.025850327809651692,
+          0.062028421140184586,
+          0.1768828223733341,
+          0.23822283277324602
+        ],
+        "direction_assessable": 9,
+        "all_assessed_directions_aligned": 5,
+        "max_saved_pixel_metric_replay_error": 0.0,
+        "predictions_sha256": "4413521c471fb81b92e89c8cb5f7b49e30ee06de6bb24f4b5c3095e365537509"
+      },
+      "SFT": {
+        "n": 71,
+        "mean_l1": 0.14059129886945684,
+        "NoEdit_l1": 0.11892293972081282,
+        "executable": 70,
+        "fallback": 1,
+        "empty": 0,
+        "zero": 0,
+        "empty_or_zero": 0,
+        "pixel_identical": 1,
+        "near_identity": 2,
+        "mean_input_output_l1": 0.06558908440071849,
+        "edit_l1_quantiles_0_05_50_95_100": [
+          0.0,
+          0.023813875983743106,
+          0.0634760763130936,
+          0.12611619163961973,
+          0.24125533758425244
+        ],
+        "direction_assessable": 9,
+        "all_assessed_directions_aligned": 5,
+        "max_saved_pixel_metric_replay_error": 0.0,
+        "predictions_sha256": "a2751c750e8847a56997dabbf0ada3fdce48d5fa4dec398b0487fe31213c3e96"
+      },
+      "GRPO": {
+        "n": 71,
+        "mean_l1": 0.14235150100151733,
+        "NoEdit_l1": 0.11892293972081282,
+        "executable": 71,
+        "fallback": 0,
+        "empty": 0,
+        "zero": 0,
+        "empty_or_zero": 0,
+        "pixel_identical": 0,
+        "near_identity": 1,
+        "mean_input_output_l1": 0.06689153677256389,
+        "edit_l1_quantiles_0_05_50_95_100": [
+          0.0032349210159451354,
+          0.025519715103448606,
+          0.06230111963608686,
+          0.1376905403885187,
+          0.20288856356751686
+        ],
+        "direction_assessable": 9,
+        "all_assessed_directions_aligned": 4,
+        "max_saved_pixel_metric_replay_error": 0.0,
+        "predictions_sha256": "3ce29d2179d31218a43d42acc5b7d334626a7c3813ed68bd389227918214e736"
+      },
+      "Seed20261103": {
+        "n": 71,
+        "mean_l1": 0.12798524576298315,
+        "NoEdit_l1": 0.11892293972081282,
+        "executable": 71,
+        "fallback": 0,
+        "empty": 0,
+        "zero": 0,
+        "empty_or_zero": 0,
+        "pixel_identical": 0,
+        "near_identity": 1,
+        "mean_input_output_l1": 0.0481364970196021,
+        "edit_l1_quantiles_0_05_50_95_100": [
+          0.0016156613826751709,
+          0.02219406015732709,
+          0.04528319788914101,
+          0.09489086001527075,
+          0.19733041501512713
+        ],
+        "direction_assessable": 9,
+        "all_assessed_directions_aligned": 8,
+        "max_saved_pixel_metric_replay_error": 0.0,
+        "predictions_sha256": "061cb7e84f02060ba5ba339ea9a722c2bbef21316735590a72d3306393a5b71b"
+      },
+      "Seed20261104": {
+        "n": 71,
+        "mean_l1": 0.1260518955270117,
+        "NoEdit_l1": 0.11892293972081282,
+        "executable": 71,
+        "fallback": 0,
+        "empty": 0,
+        "zero": 0,
+        "empty_or_zero": 0,
+        "pixel_identical": 0,
+        "near_identity": 1,
+        "mean_input_output_l1": 0.047662143528181614,
+        "edit_l1_quantiles_0_05_50_95_100": [
+          0.001964864543839997,
+          0.023298142003078087,
+          0.04645179673737171,
+          0.060849294475480625,
+          0.2207675859039905
+        ],
+        "direction_assessable": 9,
+        "all_assessed_directions_aligned": 9,
+        "max_saved_pixel_metric_replay_error": 0.0,
+        "predictions_sha256": "ab07facddb9c65db8d0d38c98cfcb68e9433d616e9c55c5d5a53f8a938d0ed71"
+      },
+      "Seed20261105": {
+        "n": 71,
+        "mean_l1": 0.12406970008643685,
+        "NoEdit_l1": 0.11892293972081282,
+        "executable": 71,
+        "fallback": 0,
+        "empty": 0,
+        "zero": 0,
+        "empty_or_zero": 0,
+        "pixel_identical": 0,
+        "near_identity": 1,
+        "mean_input_output_l1": 0.048387279256342924,
+        "edit_l1_quantiles_0_05_50_95_100": [
+          0.003126963914609423,
+          0.01764978334015491,
+          0.04416179656982422,
+          0.12618879056444354,
+          0.19733041501512713
+        ],
+        "direction_assessable": 9,
+        "all_assessed_directions_aligned": 9,
+        "max_saved_pixel_metric_replay_error": 0.0,
+        "predictions_sha256": "6defb33abd4ffc3cb87bc333cdaf0124febbf0a51d81d1b4616dd62128ffb0fe"
+      }
+    },
+    "NoEdit_l1": 0.11892293972081282,
+    "strongest_original_baseline": "A",
+    "per_seed_comparisons": {
+      "Seed20261103": {
+        "A": {
+          "paired_mean_gain": 0.011239841349199938,
+          "relative_mean_gain": 0.08073143700131598,
+          "ci95_gain": [
+            0.0014394894650150232,
+            0.021217062205779628
+          ],
+          "ci95_relative": [
+            0.010635920103030268,
+            0.14478788165778272
+          ],
+          "improved": 49,
+          "worsened": 22,
+          "ties": 0
+        },
+        "B": {
+          "paired_mean_gain": 0.011954643470103997,
+          "relative_mean_gain": 0.0854269896569095,
+          "ci95_gain": [
+            0.000693550701400685,
+            0.023531047620976173
+          ],
+          "ci95_relative": [
+            0.005499132197612347,
+            0.1575708509836688
+          ],
+          "improved": 44,
+          "worsened": 27,
+          "ties": 0
+        },
+        "SFT": {
+          "paired_mean_gain": 0.01260605310647368,
+          "relative_mean_gain": 0.08966453264066342,
+          "ci95_gain": [
+            0.001896653867623454,
+            0.02368435721379593
+          ],
+          "ci95_relative": [
+            0.014184072098553631,
+            0.15805698435995838
+          ],
+          "improved": 48,
+          "worsened": 23,
+          "ties": 0
+        },
+        "GRPO": {
+          "paired_mean_gain": 0.014366255238534175,
+          "relative_mean_gain": 0.10092099582694983,
+          "ci95_gain": [
+            0.003655065858775986,
+            0.02517360266024233
+          ],
+          "ci95_relative": [
+            0.026930334102679566,
+            0.16720456385907492
+          ],
+          "improved": 47,
+          "worsened": 24,
+          "ties": 0
+        },
+        "NoEdit": {
+          "paired_mean_gain": -0.009062306042170336,
+          "relative_mean_gain": -0.07620317882693857,
+          "ci95_gain": [
+            -0.017462996773103673,
+            -0.001208741004737824
+          ],
+          "ci95_relative": [
+            -0.15568878576388925,
+            -0.009545207939811038
+          ],
+          "improved": 32,
+          "worsened": 39,
+          "ties": 0
+        }
+      },
+      "Seed20261104": {
+        "A": {
+          "paired_mean_gain": 0.013173191585171391,
+          "relative_mean_gain": 0.09461794464209498,
+          "ci95_gain": [
+            0.0027846494532177152,
+            0.023170996524892004
+          ],
+          "ci95_relative": [
+            0.02046696965634153,
+            0.15854733780314145
+          ],
+          "improved": 51,
+          "worsened": 20,
+          "ties": 0
+        },
+        "B": {
+          "paired_mean_gain": 0.013887993706075448,
+          "relative_mean_gain": 0.09924256609166869,
+          "ci95_gain": [
+            0.002924485111766508,
+            0.024595697302023652
+          ],
+          "ci95_relative": [
+            0.02179142775476305,
+            0.16528699348303907
+          ],
+          "improved": 48,
+          "worsened": 23,
+          "ties": 0
+        },
+        "SFT": {
+          "paired_mean_gain": 0.014539403342445132,
+          "relative_mean_gain": 0.1034160965818048,
+          "ci95_gain": [
+            0.0035078234354060313,
+            0.025399311587319406
+          ],
+          "ci95_relative": [
+            0.026919310014552177,
+            0.17021918968268415
+          ],
+          "improved": 50,
+          "worsened": 21,
+          "ties": 0
+        },
+        "GRPO": {
+          "paired_mean_gain": 0.016299605474505627,
+          "relative_mean_gain": 0.11450251918546253,
+          "ci95_gain": [
+            0.005312455206138778,
+            0.02676958676926057
+          ],
+          "ci95_relative": [
+            0.03969453465192484,
+            0.17901082301581028
+          ],
+          "improved": 49,
+          "worsened": 22,
+          "ties": 0
+        },
+        "NoEdit": {
+          "paired_mean_gain": -0.007128955806198884,
+          "relative_mean_gain": -0.059946010609349565,
+          "ci95_gain": [
+            -0.016646785334303554,
+            0.0013347926474189464
+          ],
+          "ci95_relative": [
+            -0.14691745996183103,
+            0.010668308852722895
+          ],
+          "improved": 31,
+          "worsened": 40,
+          "ties": 0
+        }
+      },
+      "Seed20261105": {
+        "A": {
+          "paired_mean_gain": 0.015155387025746241,
+          "relative_mean_gain": 0.10885528851229605,
+          "ci95_gain": [
+            0.006249942114202857,
+            0.024825043199275636
+          ],
+          "ci95_relative": [
+            0.04654033437672456,
+            0.17028871118699754
+          ],
+          "improved": 55,
+          "worsened": 16,
+          "ties": 0
+        },
+        "B": {
+          "paired_mean_gain": 0.0158701891466503,
+          "relative_mean_gain": 0.11340718671154972,
+          "ci95_gain": [
+            0.005969333056275222,
+            0.026315691813656037
+          ],
+          "ci95_relative": [
+            0.04483442840330228,
+            0.1785597922536674
+          ],
+          "improved": 49,
+          "worsened": 22,
+          "ties": 0
+        },
+        "SFT": {
+          "paired_mean_gain": 0.016521598783019984,
+          "relative_mean_gain": 0.11751508746185477,
+          "ci95_gain": [
+            0.00697891316704557,
+            0.026281905329202524
+          ],
+          "ci95_relative": [
+            0.05216682077154931,
+            0.1792146102611629
+          ],
+          "improved": 53,
+          "worsened": 18,
+          "ties": 0
+        },
+        "GRPO": {
+          "paired_mean_gain": 0.018281800915080477,
+          "relative_mean_gain": 0.1284271734857619,
+          "ci95_gain": [
+            0.009185550689474273,
+            0.02811709983851497
+          ],
+          "ci95_relative": [
+            0.06696454012137727,
+            0.18847761043126424
+          ],
+          "improved": 55,
+          "worsened": 16,
+          "ties": 0
+        },
+        "NoEdit": {
+          "paired_mean_gain": -0.005146760365624033,
+          "relative_mean_gain": -0.04327811251308391,
+          "ci95_gain": [
+            -0.013567300610864063,
+            0.0027755817979685667
+          ],
+          "ci95_relative": [
+            -0.11731132979087987,
+            0.022915999862364124
+          ],
+          "improved": 32,
+          "worsened": 39,
+          "ties": 0
+        }
+      }
+    },
+    "seed_average_comparison": {
+      "paired_mean_gain": 0.01318947332003919,
+      "relative_mean_gain": 0.09473489005190233,
+      "ci95_gain": [
+        0.004344419271361628,
+        0.022362956869267828
+      ],
+      "ci95_relative": [
+        0.032695582932346604,
+        0.15119930369145823
+      ],
+      "improved": 52,
+      "worsened": 19,
+      "ties": 0
+    },
+    "seed_relative_gain_range": [
+      0.08073143700131598,
+      0.10885528851229605
+    ],
+    "guardrails": {
+      "Seed20261103": {
+        "point_target": true,
+        "positive_paired_interval": true,
+        "execution_maintained": true,
+        "gain_not_explained_by_noop": true,
+        "common_executable_gain_remains": true,
+        "substantive_union_gain_remains": true,
+        "global_direction_noninferior": true
+      },
+      "Seed20261104": {
+        "point_target": true,
+        "positive_paired_interval": true,
+        "execution_maintained": true,
+        "gain_not_explained_by_noop": true,
+        "common_executable_gain_remains": true,
+        "substantive_union_gain_remains": true,
+        "global_direction_noninferior": true
+      },
+      "Seed20261105": {
+        "point_target": true,
+        "positive_paired_interval": true,
+        "execution_maintained": true,
+        "gain_not_explained_by_noop": true,
+        "common_executable_gain_remains": true,
+        "substantive_union_gain_remains": true,
+        "global_direction_noninferior": true
+      }
+    },
+    "subset_robustness": {
+      "Seed20261103": {
+        "common_executable": {
+          "n": 71,
+          "paired_mean_gain": 0.011239841349199938,
+          "relative_gain": 0.08073143700131598
+        },
+        "substantive_edit_union": {
+          "n": 70,
+          "paired_mean_gain": 0.011386106189872538,
+          "relative_gain": 0.08065325900770394
+        },
+        "both_substantive_edits": {
+          "n": 70,
+          "paired_mean_gain": 0.011386106189872538,
+          "relative_gain": 0.08065325900770394
+        },
+        "positive_noop_gain_removed": {
+          "n": 71,
+          "affected_rows": 1,
+          "paired_mean_gain": 0.01122573849705743,
+          "relative_gain": 0.08063014166413911,
+          "ci95_gain": [
+            0.0014236516227394771,
+            0.021210053534260098
+          ],
+          "definition": "Set positive baseline-minus-candidate gains to zero on candidate fallback, empty/zero or editL1<1/255 rows; keep negative gains and all71 rows."
+        }
+      },
+      "Seed20261104": {
+        "common_executable": {
+          "n": 71,
+          "paired_mean_gain": 0.013173191585171391,
+          "relative_gain": 0.09461794464209498
+        },
+        "substantive_edit_union": {
+          "n": 70,
+          "paired_mean_gain": 0.013352421378450734,
+          "relative_gain": 0.09458161392997214
+        },
+        "both_substantive_edits": {
+          "n": 70,
+          "paired_mean_gain": 0.013352421378450734,
+          "relative_gain": 0.09458161392997214
+        },
+        "positive_noop_gain_removed": {
+          "n": 71,
+          "affected_rows": 1,
+          "paired_mean_gain": 0.01316435910551481,
+          "relative_gain": 0.09455450435385537,
+          "ci95_gain": [
+            0.0027846494532177152,
+            0.023170812155159422
+          ],
+          "definition": "Set positive baseline-minus-candidate gains to zero on candidate fallback, empty/zero or editL1<1/255 rows; keep negative gains and all71 rows."
+        }
+      },
+      "Seed20261105": {
+        "common_executable": {
+          "n": 71,
+          "paired_mean_gain": 0.015155387025746241,
+          "relative_gain": 0.10885528851229605
+        },
+        "substantive_edit_union": {
+          "n": 70,
+          "paired_mean_gain": 0.015379812022937195,
+          "relative_gain": 0.10894259564161318
+        },
+        "both_substantive_edits": {
+          "n": 70,
+          "paired_mean_gain": 0.015379812022937195,
+          "relative_gain": 0.10894259564161318
+        },
+        "positive_noop_gain_removed": {
+          "n": 71,
+          "affected_rows": 1,
+          "paired_mean_gain": 0.015155387025746241,
+          "relative_gain": 0.10885528851229605,
+          "ci95_gain": [
+            0.006249942114202857,
+            0.024825043199275636
+          ],
+          "definition": "Set positive baseline-minus-candidate gains to zero on candidate fallback, empty/zero or editL1<1/255 rows; keep negative gains and all71 rows."
+        }
+      }
+    },
+    "all_numerical_checks_passed": true,
+    "goal_complete": false,
+    "pending": [
+      "Anonymous30-case broader visual review and decoding",
+      "Final selected adapter/environment/configuration/full-result archive verification",
+      "Root completion audit"
+    ],
+    "limits": [
+      "Intervals resample71 original source groups jointly across seeds, not213 independent seed-by-image rows.",
+      "Per-comparison95% intervals; report all frozen original baselines and each seed, with selection/multiplicity limitations.",
+      "Global direction proxies do not establish local edits or aesthetics; AI-assisted review is separately required.",
+      "No further test-driven model/recipe selection. If not confirmed, this71-group set becomes regression data."
+    ]
+  },
+  "functional_adapters": [
+    {
+      "id": "R1-B",
+      "round": 1,
+      "path": "models/from-base/sft-functional/seed-01",
+      "label": "基础起点 e3",
+      "evaluation_id": "functional-base-20261104",
+      "training": {
+        "mean_logged_loss": 0.06795575757575757,
+        "logged_steps": 330,
+        "selected_step": 330,
+        "source": "experiments/functional-v1-20261104/train-base-20261104.log",
+        "objective": "SFT"
+      },
+      "acceptance": {
+        "completed": 32,
+        "major": 0,
+        "path": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/direct-functional-summary.json",
+        "cases_sha256": "1746f219ee9978f06bf3c1b742204cdc8f2d785753d7c0a9db2e46faa88f6a23"
+      }
+    },
+    {
+      "id": "R1-C",
+      "round": 1,
+      "path": "models/from-sft-calibrated/sft-functional/seed-01",
+      "label": "继续训练 e1",
+      "evaluation_id": "functional-current-20261104",
+      "training": {
+        "mean_logged_loss": 0.1341,
+        "logged_steps": 110,
+        "selected_step": 110,
+        "source": "experiments/functional-v1-20261104/train-current-20261104.log",
+        "objective": "SFT"
+      },
+      "acceptance": {
+        "completed": 31,
+        "major": 0,
+        "path": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-current-20261104/direct-functional-summary.json",
+        "cases_sha256": "1746f219ee9978f06bf3c1b742204cdc8f2d785753d7c0a9db2e46faa88f6a23"
+      }
+    },
+    {
+      "id": "R1-R",
+      "round": 1,
+      "path": "models/from-sft-calibrated/sft-functional/seed-02",
+      "label": "继续训练复核 e1",
+      "evaluation_id": "functional-current-20261105",
+      "training": {
+        "mean_logged_loss": null,
+        "logged_steps": 0,
+        "selected_step": 110,
+        "source": null,
+        "objective": "SFT"
+      },
+      "acceptance": {
+        "completed": 32,
+        "major": 0,
+        "path": "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-current-20261105/direct-functional-summary.json",
+        "cases_sha256": "1746f219ee9978f06bf3c1b742204cdc8f2d785753d7c0a9db2e46faa88f6a23"
+      }
+    },
+    {
+      "id": "R2-C",
+      "round": 2,
+      "path": "models/from-functional-v1/sft-curriculum/seed-01",
+      "label": "课程 SFT e3",
+      "evaluation_id": "curriculum-e3",
+      "training": {
+        "mean_logged_loss": 0.07526814814814815,
+        "logged_steps": 540,
+        "selected_step": 540,
+        "source": "experiments/functional-v2-20261104/runs/curriculum-seed-20261106/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": null,
+      "controlled": {
+        "completed": 81,
+        "major": 2,
+        "path": "experiments/functional-v2-20261104/evaluation/functional-editor-v1.2-sepia/development/curriculum-e3/direct-functional-summary.json",
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+      },
+      "old": {
+        "completed": 3,
+        "major": 1,
+        "path": "experiments/functional-v2-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/curriculum-e3/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R2-S",
+      "round": 2,
+      "path": "models/from-functional-v1/sft-control/seed-01",
+      "label": "旧数据对照 e2",
+      "evaluation_id": "control-e2",
+      "training": {
+        "mean_logged_loss": 0.0158675,
+        "logged_steps": 360,
+        "selected_step": 360,
+        "source": "experiments/functional-v2-20261104/runs/control-seed-20261106/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": null,
+      "controlled": {
+        "completed": 34,
+        "major": 0,
+        "path": "experiments/functional-v2-20261104/evaluation/functional-editor-v1.2-sepia/development/control-e2/direct-functional-summary.json",
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+      },
+      "old": {
+        "completed": 3,
+        "major": 0,
+        "path": "experiments/functional-v2-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/control-e2/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R3-D",
+      "round": 3,
+      "path": "models/from-functional-v2/dpo-correction/seed-01",
+      "label": "DPO 纠错 e1",
+      "evaluation_id": "dpo-e1",
+      "training": {
+        "mean_logged_loss": 0.368025,
+        "logged_steps": 24,
+        "selected_step": 24,
+        "source": "experiments/functional-v3-20261104/runs/dpo-seed-20261107/trainer_state.json",
+        "objective": "DPO+SFT"
+      },
+      "native": null,
+      "controlled": {
+        "completed": 81,
+        "major": 1,
+        "path": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/development/dpo-e1/direct-functional-summary.json",
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+      },
+      "old": {
+        "completed": 3,
+        "major": 1,
+        "path": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e1/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R3-S",
+      "round": 3,
+      "path": "models/from-functional-v2/sft-correction/seed-01",
+      "label": "SFT 纠错 e1",
+      "evaluation_id": "sft-e1",
+      "training": {
+        "mean_logged_loss": 0.20784583333333334,
+        "logged_steps": 24,
+        "selected_step": 24,
+        "source": "experiments/functional-v3-20261104/runs/sft-seed-20261107/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": null,
+      "controlled": {
+        "completed": 80,
+        "major": 1,
+        "path": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/development/sft-e1/direct-functional-summary.json",
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+      },
+      "old": {
+        "completed": 3,
+        "major": 0,
+        "path": "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/sft-e1/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R4-P",
+      "round": 4,
+      "path": "models/from-functional-v2/sft-input-plain/seed-01",
+      "label": "普通输入 e1",
+      "evaluation_id": "plain-e1",
+      "training": {
+        "mean_logged_loss": null,
+        "logged_steps": 0,
+        "selected_step": 230,
+        "source": null,
+        "objective": "SFT"
+      },
+      "native": null,
+      "controlled": {
+        "completed": 79,
+        "major": 2,
+        "path": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/development/plain-e1/direct-functional-summary.json",
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+      },
+      "old": {
+        "completed": 2,
+        "major": 0,
+        "path": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/natural-use/plain-e1/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R4-M",
+      "round": 4,
+      "path": "models/from-functional-v2/sft-input-measured/seed-01",
+      "label": "统计观测输入 e1",
+      "evaluation_id": "measured-e1",
+      "training": {
+        "mean_logged_loss": null,
+        "logged_steps": 0,
+        "selected_step": 230,
+        "source": null,
+        "objective": "SFT"
+      },
+      "native": null,
+      "controlled": {
+        "completed": 80,
+        "major": 2,
+        "path": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/development/measured-e1/direct-functional-summary.json",
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+      },
+      "old": {
+        "completed": 3,
+        "major": 0,
+        "path": "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/natural-use/measured-e1/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R6-B",
+      "round": 6,
+      "path": "models/from-base/sft-native-coverage/seed-01",
+      "label": "基础起点 e4",
+      "evaluation_id": "base-e4",
+      "training": {
+        "mean_logged_loss": 0.08681358695652173,
+        "logged_steps": 920,
+        "selected_step": 920,
+        "source": "experiments/functional-v6-20261105/train-base.log",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 12,
+        "major": 3,
+        "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e4/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 3,
+        "major": 1,
+        "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e4/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R6-C",
+      "round": 6,
+      "path": "models/from-functional-v2/sft-native-coverage/seed-01",
+      "label": "继续训练 e4",
+      "evaluation_id": "continued-e4",
+      "training": {
+        "mean_logged_loss": 0.05372358695652174,
+        "logged_steps": 920,
+        "selected_step": 920,
+        "source": "experiments/functional-v6-20261105/train-continued.log",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 15,
+        "major": 3,
+        "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e4/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 3,
+        "major": 0,
+        "path": "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e4/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R7-L",
+      "round": 7,
+      "path": "models/from-functional-v6/sft-outcome-language/seed-01",
+      "label": "语言层 e4",
+      "evaluation_id": "language-e4",
+      "training": {
+        "mean_logged_loss": 0.031035281385281385,
+        "logged_steps": 924,
+        "selected_step": 924,
+        "source": "experiments/functional-v7-20261105/runs/language-seed-20261112/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 14,
+        "major": 3,
+        "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e4/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R7-M",
+      "round": 7,
+      "path": "models/from-functional-v6/sft-outcome-language-merger/seed-01",
+      "label": "语言及连接层 e4",
+      "evaluation_id": "language-merger-e4",
+      "training": {
+        "mean_logged_loss": 0.03031082251082251,
+        "logged_steps": 924,
+        "selected_step": 924,
+        "source": "experiments/functional-v7-20261105/runs/language_merger-seed-20261112/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 14,
+        "major": 3,
+        "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e4/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 5,
+        "major": 0,
+        "path": "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R9-B",
+      "round": 9,
+      "path": "models/from-base/sft-fresh-outcome/seed-01",
+      "label": "Qwen 起点 e4",
+      "evaluation_id": "base-e4",
+      "training": {
+        "mean_logged_loss": 0.057150324675324674,
+        "logged_steps": 924,
+        "selected_step": 924,
+        "source": "experiments/functional-v9-20261106/runs/base-seed-20261115/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 13,
+        "major": 2,
+        "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e4/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R9-A",
+      "round": 9,
+      "path": "models/from-author-iea/sft-fresh-outcome/seed-01",
+      "label": "作者起点 e4",
+      "evaluation_id": "author-e4",
+      "training": {
+        "mean_logged_loss": 0.17352813852813853,
+        "logged_steps": 924,
+        "selected_step": 924,
+        "source": "experiments/functional-v9-20261106/runs/author-seed-20261115/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 12,
+        "major": 2,
+        "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e4/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 3,
+        "major": 0,
+        "path": "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e4/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R10-L",
+      "round": 10,
+      "path": "models/from-functional-v9/sft-condition-language/seed-01",
+      "label": "语言层 e2",
+      "evaluation_id": "language-e2",
+      "training": {
+        "mean_logged_loss": 0.059742083333333335,
+        "logged_steps": 240,
+        "selected_step": 240,
+        "source": "experiments/functional-v10-20261106/runs/language-seed-20261121/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 13,
+        "major": 0,
+        "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e2/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R10-M",
+      "round": 10,
+      "path": "models/from-functional-v9/sft-condition-language-merger/seed-01",
+      "label": "语言及连接层 e2",
+      "evaluation_id": "language-merger-e2",
+      "training": {
+        "mean_logged_loss": 0.05713083333333333,
+        "logged_steps": 240,
+        "selected_step": 240,
+        "source": "experiments/functional-v10-20261106/runs/language_merger-seed-20261121/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 14,
+        "major": 0,
+        "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e2/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R11",
+      "round": 11,
+      "path": "models/from-functional-v10/sft-negative-gain-correction/seed-01",
+      "label": "负曝光纠错 e1",
+      "evaluation_id": "language-merger-e1",
+      "training": {
+        "mean_logged_loss": 0.04950595238095238,
+        "logged_steps": 336,
+        "selected_step": 336,
+        "source": "experiments/functional-v11-20261106/runs/language_merger-seed-20261123/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 15,
+        "major": 0,
+        "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R12",
+      "round": 12,
+      "path": "models/from-functional-v11/sft-manual-calibration/seed-01",
+      "label": "工具说明微调 e1",
+      "evaluation_id": "language-merger-e1",
+      "training": {
+        "mean_logged_loss": 0.0424224,
+        "logged_steps": 125,
+        "selected_step": 125,
+        "source": "experiments/functional-v12-20261106/runs/language_merger-seed-20261125/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 14,
+        "major": 0,
+        "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R13-N",
+      "round": 13,
+      "path": "models/from-functional-v11/sft-real-coverage/language_merger/seed-01",
+      "label": "原微调范围 e1",
+      "evaluation_id": "language-merger-e1",
+      "training": {
+        "mean_logged_loss": 0.06685550755939525,
+        "logged_steps": 463,
+        "selected_step": 463,
+        "source": "experiments/functional-v13-20261106/runs/language_merger-seed-20261127/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 16,
+        "major": 0,
+        "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": {
+        "completed": 73,
+        "major": 1,
+        "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+      },
+      "old": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R13-W",
+      "round": 13,
+      "path": "models/from-functional-v11/sft-real-coverage/all_language_merger/seed-01",
+      "label": "扩展语言范围 e1",
+      "evaluation_id": "all-language-merger-e1",
+      "training": {
+        "mean_logged_loss": 0.06504838012958963,
+        "logged_steps": 463,
+        "selected_step": 463,
+        "source": "experiments/functional-v13-20261106/runs/all_language_merger-seed-20261127/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 16,
+        "major": 0,
+        "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": {
+        "completed": 73,
+        "major": 0,
+        "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/all-language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+      },
+      "old": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R14",
+      "round": 14,
+      "path": "models/from-functional-v11/sft-visual-late4/seed-01",
+      "label": "视觉末四层 e1",
+      "evaluation_id": "visual-late4-e1",
+      "training": {
+        "mean_logged_loss": 0.06672850971922246,
+        "logged_steps": 463,
+        "selected_step": 463,
+        "source": "experiments/functional-v14-20261106/runs/visual_late4-seed-20261127/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 16,
+        "major": 0,
+        "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/visual-late4-e1/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": {
+        "completed": 73,
+        "major": 1,
+        "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/visual-late4-e1/direct-functional-summary.json",
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+      },
+      "old": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R15",
+      "round": 15,
+      "path": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "label": "阴影纠错 e1",
+      "evaluation_id": "language-merger-e1",
+      "training": {
+        "mean_logged_loss": 0.06781209503239741,
+        "logged_steps": 463,
+        "selected_step": 463,
+        "source": "experiments/functional-v15-20261106/runs/language_merger-seed-20261127/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 16,
+        "major": 0,
+        "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": {
+        "completed": 75,
+        "major": 1,
+        "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "15de30de79dfcf00c6f22c7ced928720c5a73b88a49bc8885639f8e606509737"
+      },
+      "old": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R18-P",
+      "round": 18,
+      "path": "models/from-functional-v15/sft-counterfactual-ranking/seed-01",
+      "label": "偏好排序 e2",
+      "evaluation_id": "counterfactual-rank-e2",
+      "training": {
+        "mean_logged_loss": 0.053406287425149704,
+        "logged_steps": 1002,
+        "selected_step": 1002,
+        "source": "experiments/functional-v18-20261107/runs/counterfactual_rank-seed-20261129/trainer_state.json",
+        "objective": "SFT+ranking"
+      },
+      "native": {
+        "completed": 16,
+        "major": 0,
+        "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/counterfactual-rank-e2/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 3,
+        "major": 0,
+        "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R18-S",
+      "round": 18,
+      "path": "models/from-functional-v15/sft-repeated-positive-control/seed-01",
+      "label": "匹配 SFT e2",
+      "evaluation_id": "matched-sft-e2",
+      "training": {
+        "mean_logged_loss": 0.04863213572854291,
+        "logged_steps": 1002,
+        "selected_step": 1002,
+        "source": "experiments/functional-v18-20261107/runs/matched_sft-seed-20261129/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 16,
+        "major": 0,
+        "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/matched-sft-e2/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 3,
+        "major": 0,
+        "path": "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R19",
+      "round": 19,
+      "path": "models/from-functional-v15/sft-photometric-bridge/seed-01",
+      "label": "图像统计分支 e2",
+      "evaluation_id": "photometric-bridge-e2",
+      "training": {
+        "mean_logged_loss": 0.04703842315369262,
+        "logged_steps": 1002,
+        "selected_step": 1002,
+        "source": "experiments/functional-v19-20261107/runs/photometric_bridge-seed-20261129/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 16,
+        "major": 1,
+        "path": "experiments/functional-v19-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/photometric-bridge-e2/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v19-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/photometric-bridge-e2/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R23-1",
+      "round": 23,
+      "path": "models/from-functional-v15/sft-quality-coverage/seed-20261207",
+      "label": "种子20261207",
+      "evaluation_id": "lora-seed-20261207-step250",
+      "training": {
+        "mean_logged_loss": 0.0568132,
+        "logged_steps": 250,
+        "selected_step": 250,
+        "source": "experiments/functional-v23-20261107/runs/seed-20261207/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 16,
+        "major": 0,
+        "path": "experiments/functional-v23-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/lora-seed-20261207-step250/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 3,
+        "major": 0,
+        "path": "experiments/functional-v23-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/lora-seed-20261207-step250/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    },
+    {
+      "id": "R23-2",
+      "round": 23,
+      "path": "models/from-functional-v15/sft-quality-coverage/seed-20261208",
+      "label": "种子20261208",
+      "evaluation_id": "lora-seed-20261208-step250",
+      "training": {
+        "mean_logged_loss": 0.0591572,
+        "logged_steps": 250,
+        "selected_step": 250,
+        "source": "experiments/functional-v23-20261107/runs/seed-20261208/trainer_state.json",
+        "objective": "SFT"
+      },
+      "native": {
+        "completed": 16,
+        "major": 0,
+        "path": "experiments/functional-v23-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/lora-seed-20261208-step250/direct-functional-summary.json",
+        "cases_sha256": "b5dd363845ff5caadafd8debe9ea9e75eac0eee4bcb18a03e3405274b5dc79cb"
+      },
+      "controlled": null,
+      "old": {
+        "completed": 4,
+        "major": 0,
+        "path": "experiments/functional-v23-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/lora-seed-20261208-step250/direct-functional-summary.json",
+        "cases_sha256": "3a5090c62b02f8f192dba3af924ec0de76f75dc3f121396c2f17322cd72f6dc6"
+      }
+    }
+  ],
+  "registered_paths": [
+    "models/from-author-iea/sft-fresh-outcome/seed-01",
+    "models/from-base/sft-fresh-outcome/seed-01",
+    "models/from-base/sft-functional/seed-01",
+    "models/from-base/sft-native-coverage/seed-01",
+    "models/from-base/sft-resampled",
+    "models/from-base/sft-standard",
+    "models/from-functional-v1/sft-control/seed-01",
+    "models/from-functional-v1/sft-curriculum/seed-01",
+    "models/from-functional-v10/sft-negative-gain-correction/seed-01",
+    "models/from-functional-v11/sft-manual-calibration/seed-01",
+    "models/from-functional-v11/sft-real-coverage/all_language_merger/seed-01",
+    "models/from-functional-v11/sft-real-coverage/language_merger/seed-01",
+    "models/from-functional-v11/sft-shadow-correction/seed-01",
+    "models/from-functional-v11/sft-visual-late4/seed-01",
+    "models/from-functional-v15/continuous-controller-last/seed-01",
+    "models/from-functional-v15/continuous-controller-request-mean/seed-01",
+    "models/from-functional-v15/quality-coverage-controller/seed-20261205",
+    "models/from-functional-v15/quality-coverage-controller/seed-20261206",
+    "models/from-functional-v15/semantic-preserving-controller/seed-01",
+    "models/from-functional-v15/semantic-preserving-controller/seed-02",
+    "models/from-functional-v15/sft-counterfactual-ranking/seed-01",
+    "models/from-functional-v15/sft-photometric-bridge/seed-01",
+    "models/from-functional-v15/sft-quality-coverage/seed-20261207",
+    "models/from-functional-v15/sft-quality-coverage/seed-20261208",
+    "models/from-functional-v15/sft-repeated-positive-control/seed-01",
+    "models/from-functional-v2/dpo-correction/seed-01",
+    "models/from-functional-v2/sft-correction/seed-01",
+    "models/from-functional-v2/sft-input-measured/seed-01",
+    "models/from-functional-v2/sft-input-plain/seed-01",
+    "models/from-functional-v2/sft-native-coverage/seed-01",
+    "models/from-functional-v6/sft-outcome-language-merger/seed-01",
+    "models/from-functional-v6/sft-outcome-language/seed-01",
+    "models/from-functional-v9/sft-condition-language-merger/seed-01",
+    "models/from-functional-v9/sft-condition-language/seed-01",
+    "models/from-sft-calibrated/sft-functional/seed-01",
+    "models/from-sft-calibrated/sft-functional/seed-02",
+    "models/from-sft-standard/grpo-l1",
+    "models/from-sft-standard/sft-calibrated/seed-01",
+    "models/from-sft-standard/sft-calibrated/seed-02",
+    "models/from-sft-standard/sft-calibrated/seed-03",
+    "models/from-sft-standard/sft-continued"
+  ],
+  "source_sha256": {
+    "models/catalog.json": "d058a6582450a9780ec0a00f6e3cac3e52ee741f21d98b3a8ddbec2f54a4d6c1",
+    "metadata/goal-v2-20261103/final-analysis-summary.json": "fc8af5f91d225467f097d895fd3c3491a3f9745e00e34d7906beb883737db737",
+    "experiments/functional-v1-20261104/train-base-20261104.log": "2304c63e51516b27710b1c4ca8227d3dbdb4324ee721184972ed97780e534ee3",
+    "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-base-20261104/direct-functional-summary.json": "16fb75748b52bc429e9710c562e1036dd20c7b60c834b680c8fe11114cfbf3dd",
+    "experiments/functional-v1-20261104/train-current-20261104.log": "5f5818c1f2c4f314d313cada7bc6d9dd4e976d641fcf8ccc0959bec405542ad1",
+    "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-current-20261104/direct-functional-summary.json": "cbec9f0e1a5818357a680d755e4b804b2f897eb962fbc09829ec897aca5ba007",
+    "experiments/functional-v1-20261104/evaluation/functional-editor-v1.2-sepia/acceptance/functional-current-20261105/direct-functional-summary.json": "1e6a63530ca783d0e6e0d5f97c75fb25e54655f97cfa5062fad514fbff86d734",
+    "models/from-functional-v1/sft-curriculum/seed-01/metadata.json": "21934eaa5920c54760693e5a2596c60a4edd1c939337100b3f5d643c0c6719a8",
+    "experiments/functional-v2-20261104/runs/curriculum-seed-20261106/trainer_state.json": "a61f4402f75f4d6ac1e344a56200de772e0a3449470886ebfd298b41328b8b45",
+    "experiments/functional-v2-20261104/evaluation/functional-editor-v1.2-sepia/development/curriculum-e3/direct-functional-summary.json": "564e6fb421d6466d2abf139a48f0739c3622a5bc897a3d84936efb3bae642751",
+    "experiments/functional-v2-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/curriculum-e3/direct-functional-summary.json": "fbe3bcdd76da49ac1aa940c28eb83d691dbebcc1059e9bd06dc2b4166cf47885",
+    "models/from-functional-v1/sft-control/seed-01/metadata.json": "7144e7df7b58b75519fff010d5da4383cbbc538de4afcefa1c3050eec246ab07",
+    "experiments/functional-v2-20261104/runs/control-seed-20261106/trainer_state.json": "1b33f44320f03621b39d90510380464eb5ed65e4d172d785c4d6660feba7548d",
+    "experiments/functional-v2-20261104/evaluation/functional-editor-v1.2-sepia/development/control-e2/direct-functional-summary.json": "cc9dd2136a8d7cfa5f6e217e3b6df4e07bb32416200f95cb726be50493bba84a",
+    "experiments/functional-v2-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/control-e2/direct-functional-summary.json": "99c3a72ae2e6dcd7cce38b821763ef064d2c99481d1e6a30f7c4083c1a3e7010",
+    "models/from-functional-v2/dpo-correction/seed-01/metadata.json": "89eea5faa46018368e99910778b3ca71bd4113128de9339d7570ffe192e5261e",
+    "experiments/functional-v3-20261104/runs/dpo-seed-20261107/trainer_state.json": "7e7479412b21e785e2fb79943415c37d46809fb30baf80d74c08db5e339c37e9",
+    "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/development/dpo-e1/direct-functional-summary.json": "4ac320e287e8c6dbb03562e9c27a292db330cd2bd31c097ac93ea5d7fc896cc9",
+    "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/dpo-e1/direct-functional-summary.json": "8f16ab019eceaff92ab8a981b3484dd655eacff1023bd63e9dcfcc23c4c2cf90",
+    "models/from-functional-v2/sft-correction/seed-01/metadata.json": "e6d1b46a475b85e0bb1a56652d9b07394cada7ce6dcf034bf8eeb476c4264e4e",
+    "experiments/functional-v3-20261104/runs/sft-seed-20261107/trainer_state.json": "7c28fe7be8c80f9203abc4a0b9056ad38e5ac21e76175d555cb6985b4c58685b",
+    "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/development/sft-e1/direct-functional-summary.json": "a47c9a33b597eea943dd3d8778cf99fb8f491f52181396e5da99f7c37ff5438c",
+    "experiments/functional-v3-20261104/evaluation/functional-editor-v1.2-sepia/natural-use/sft-e1/direct-functional-summary.json": "338012f8f84a04cf094d48c99160bfd278f080a8cd4cad4cca84981a34df14a2",
+    "models/from-functional-v2/sft-input-plain/seed-01/metadata.json": "ad55fc5e0c1e195a8d17c7b27f07b6999627dc6bb174e8a5fc0a4b2db44b15b9",
+    "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/development/plain-e1/direct-functional-summary.json": "d95012a799829bfe92449b8c86bf32ab8ca27da8efa3657f2e20e9b2efb0fd5b",
+    "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/natural-use/plain-e1/direct-functional-summary.json": "69987b18bab91c878ef5dc3160b4d1462f55b86018eb0842d65a0f7af7150d50",
+    "models/from-functional-v2/sft-input-measured/seed-01/metadata.json": "7f0b4b581c61d23ac2f761a38b2b3d4761febd7430075800599b942020df120f",
+    "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/development/measured-e1/direct-functional-summary.json": "0918618fb9f9cbd32465bc627aba62885ac89570e107a6d6f564c05b454e396a",
+    "experiments/functional-v4-20261105/evaluation/functional-editor-v1.2-sepia/natural-use/measured-e1/direct-functional-summary.json": "f88ee20023ec0b613a93648723847edf0c40c9efaa396f1af1fb9519b0a5d0ac",
+    "models/from-base/sft-native-coverage/seed-01/metadata.json": "2d1433803b5b1bce53e8172d81eb18683e78dc0279525491f033bfb6bdcbfb95",
+    "experiments/functional-v6-20261105/train-base.log": "06e8a4e86fcb2fa21eb1234ed2596ad65befaf5b69813470a97ec740ff432c3d",
+    "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/base-e4/direct-functional-summary.json": "99073d102308e10cfe5b31a72793db667b229a9355d85afa947f476c2949d882",
+    "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/base-e4/direct-functional-summary.json": "53d84c88096494f7b9f65625d7917f5b651283ce95acb41efd395aebba2ba50a",
+    "models/from-functional-v2/sft-native-coverage/seed-01/metadata.json": "f573fde0bbc838b4327055d342644667dc487fa52139d9d9470c64fcaa0897e5",
+    "experiments/functional-v6-20261105/train-continued.log": "73c00744ba7a55567138b12a5bf70d9466a7567d66ad59a7f1bb3e19045dec2a",
+    "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/native-development/continued-e4/direct-functional-summary.json": "60b7ba87458dd7cd74c65f7359fcb4814401e9a56a5d8c39427a2f6ccb3abbf8",
+    "experiments/functional-v6-20261105/evaluation/functional-editor-v1.2-sepia/old-native/continued-e4/direct-functional-summary.json": "f193a30e682d04aefb5669ee4dc5d71aa7a2b9642c47036a26fbfe1167b1d11d",
+    "models/from-functional-v6/sft-outcome-language/seed-01/metadata.json": "50a6066d2350a1c583c7a0c45e3b9937ad81d6b67815e0046f7ad232c8011352",
+    "experiments/functional-v7-20261105/runs/language-seed-20261112/trainer_state.json": "a6fd1b97153cd2495319e2fa983311ee6bf89ee902251c5369356b4176f8d31b",
+    "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e4/direct-functional-summary.json": "6573c93c5dcb617127e2fd2eb9388b9fa063b73f539a147598d49d4778247096",
+    "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e4/direct-functional-summary.json": "d4bd593541eb8920ffdbf92a38418db31ec0595616f2def13af1aeccf4666262",
+    "models/from-functional-v6/sft-outcome-language-merger/seed-01/metadata.json": "52c784af0661bb29b0b75fc71f67d1888a8ed9fc7c89334937585cfa251e67a4",
+    "experiments/functional-v7-20261105/runs/language_merger-seed-20261112/trainer_state.json": "2f25a0a3f6cd595a2ae357a9c9475c86bf1275d470c931fa95527757d07030ed",
+    "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e4/direct-functional-summary.json": "5f61604b72eb65c54d668c291d6da7827ab4c5b5f9162df32a0f333753076fe0",
+    "experiments/functional-v7-20261105/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e4/direct-functional-summary.json": "59b8e314b2b9fd0e567ce4e48da9ce0ff5682b9f06b21ae0778971e96d3bc8d3",
+    "models/from-base/sft-fresh-outcome/seed-01/metadata.json": "6e9a59f01d118aa151ddd1a8179267265a9224034878432de6d8576e8f688535",
+    "experiments/functional-v9-20261106/runs/base-seed-20261115/trainer_state.json": "da7fba4c09257f40e43d030659391f18410075471e903b77556c331f92c9feb3",
+    "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/base-e4/direct-functional-summary.json": "ade8225d4eeac0c33e67da311b503dad1ce57fe784635d6c952a87cb99303e4d",
+    "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/base-e4/direct-functional-summary.json": "c8c9c039808c6911067f3a16c633ea7a95de298851614916e80e5a734cbc5352",
+    "models/from-author-iea/sft-fresh-outcome/seed-01/metadata.json": "630305fe48628cd0a23b4dd61d944362ffd64268138b022d1ea82d86125174eb",
+    "experiments/functional-v9-20261106/runs/author-seed-20261115/trainer_state.json": "f43ddcd7bd7e9dec42a0e6f46ae052c1eb77e7294b54d0e44b8cb19d5920f41b",
+    "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/author-e4/direct-functional-summary.json": "1e63d1a15e288d632baaab917abff7f9fb9fa2bc593ecd0190f91ddcc444f2ea",
+    "experiments/functional-v9-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/author-e4/direct-functional-summary.json": "2250cba327881b93c942fbfc3b510bf525ac80f45b8d4b6578e5a4f07feff12b",
+    "models/from-functional-v9/sft-condition-language/seed-01/metadata.json": "cb92c63574429360b2873c3b02e05255f1730a897d7acd69c9100b43ba2fa13f",
+    "experiments/functional-v10-20261106/runs/language-seed-20261121/trainer_state.json": "4ce42a6ecd4948a04a5d78cf2abb032a1b919f1bee9faa494defb1a4aca0fb26",
+    "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-e2/direct-functional-summary.json": "088cd9daac936c1383195101cdb1718e3499216d5c3a4115832a107b8b048b79",
+    "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-e2/direct-functional-summary.json": "27de2af8b64a8c57f28e6c2fc14c9dbdaea241ee3dd1b5329a83158abf8dd227",
+    "models/from-functional-v9/sft-condition-language-merger/seed-01/metadata.json": "dbc387314224f3d286b5c5288b85f09c75d3d46abb1cd0b787f85ae4f3d66291",
+    "experiments/functional-v10-20261106/runs/language_merger-seed-20261121/trainer_state.json": "4c9a27691122ec2240d67964ba6e6b67dc551d533dd10d27ce62301a8a295853",
+    "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/native-development/language-merger-e2/direct-functional-summary.json": "85cf82de79ad439a5ad5b07d1ad5c28f003fd4282f0e31125a1b38563fd23335",
+    "experiments/functional-v10-20261106/evaluation/functional-editor-v7-soft-rgb-candidate/old-native/language-merger-e2/direct-functional-summary.json": "7516e4f1361b86a20f8dd86f231808994d3166cc9931edb56a09430d35b866c4",
+    "models/from-functional-v10/sft-negative-gain-correction/seed-01/metadata.json": "16098b52b5313afc42f07978fa4d5038c48ed54e78e762e5a9ed66e901425a25",
+    "experiments/functional-v11-20261106/runs/language_merger-seed-20261123/trainer_state.json": "5c94dd77208e6d742e3dcd8307318333d4f1ac617ade4962fe8a3b29a5564443",
+    "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-functional-summary.json": "4e4ec714cc8ead51bf7e6181550cebcc2482e3cab7db7cf7e47e854ed9161634",
+    "experiments/functional-v11-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-functional-summary.json": "e64e00e0ee8d2beab5ab9f0621a1d9180d4dcace7748568830c67e7665a9f155",
+    "models/from-functional-v11/sft-manual-calibration/seed-01/metadata.json": "86b6fa4e00153496f8c715d7f58e6c42be3d578bf0455dd6cf9356059f270ec3",
+    "experiments/functional-v12-20261106/runs/language_merger-seed-20261125/trainer_state.json": "905c7edde5e2eab87b9b4a1c6720f8844966d4b49e8b06aaf07998cb1a496a5a",
+    "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-functional-summary.json": "7693b55a1dfcdb9e9b3d4975e994827254e1d26041d631bbf09b7d955e5c8451",
+    "experiments/functional-v12-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-functional-summary.json": "16b110655953c4674f1afbdfb46068c69b967363c347c5631ba80440736d487b",
+    "models/from-functional-v11/sft-real-coverage/language_merger/seed-01/metadata.json": "dcc0399ed329f885c7940636a64d8e1173f20ef8782f3bedccb9decf1746f8b4",
+    "experiments/functional-v13-20261106/runs/language_merger-seed-20261127/trainer_state.json": "b547a4c4ad7781066a5d37f183ebaf07c8a2b97b5bc4c6c036c1ec613722967f",
+    "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/language-merger-e1/direct-functional-summary.json": "02a39cddad67a7dabbdf64565abe9f05a65229dd68734925f2c9bdc22d8b00bf",
+    "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/language-merger-e1/direct-functional-summary.json": "c5bf111dc859826663aa9181c7cca4f7c81ec1e3f0ecd2bb3507685e45af3721",
+    "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/language-merger-e1/direct-functional-summary.json": "23a27b9eb1ff340309c4e3be78873d62c284e74c851e15fd32f6a98e0eea7e26",
+    "models/from-functional-v11/sft-real-coverage/all_language_merger/seed-01/metadata.json": "a469e578fe267bf7760e79423e1168941b60395caa640b1fbca7545a5a7b2952",
+    "experiments/functional-v13-20261106/runs/all_language_merger-seed-20261127/trainer_state.json": "141b13c7034c4498b3e148e3aa71a9f9c6e3ed776d4088eed1b210cd3f205e13",
+    "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/all-language-merger-e1/direct-functional-summary.json": "47ba1ae9f429b1765206647ea3ff611b4bcad98b5e5946a54a00be2716d75cb8",
+    "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/all-language-merger-e1/direct-functional-summary.json": "7f8b161bb48fff19428bb96fa9915ffba5d7b8a71685110d38cd86935c14a33b",
+    "experiments/functional-v13-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/all-language-merger-e1/direct-functional-summary.json": "5ac0ed3e02242bb9404e8a0044368ba136c60cfe3163f5a4850bd9e785d0c97b",
+    "models/from-functional-v11/sft-visual-late4/seed-01/metadata.json": "9fc04a4e4f320d0baad30063030db068bb7ab1218e973c67b251e7d676250fde",
+    "experiments/functional-v14-20261106/runs/visual_late4-seed-20261127/trainer_state.json": "3b34e154fb5f18d6d131a245bee9c11aa8ded97ddbb1639406b0bc0e20f7e89e",
+    "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/native-development/visual-late4-e1/direct-functional-summary.json": "a1c8fb3bfaddab6793d293d3ffc3f3b55b7a31e46fa3690a06068d2b654cf30f",
+    "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/development/visual-late4-e1/direct-functional-summary.json": "24e067458a707359c7f057bc0d7bb6414051b50160b49cf5e473df03e58eca97",
+    "experiments/functional-v14-20261106/evaluation/functional-editor-v11-negative-value-gain-candidate/old-native/visual-late4-e1/direct-functional-summary.json": "4dd434da701c5cd193dbb309c1c674426602dc76b3e111f1f3fb1771b0daa983",
+    "models/from-functional-v11/sft-shadow-correction/seed-01/metadata.json": "763e573526812f5b1cd57d56ce87e140001bd8e47888c1c887f914dfe2181c82",
+    "experiments/functional-v15-20261106/runs/language_merger-seed-20261127/trainer_state.json": "df54a945e3e0199b6d7f023c82b0e1e4720de25f9064750569451de646abbd4d",
+    "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/language-merger-e1/direct-functional-summary.json": "2824aec931c5c8924285c2ae356d25733fa8bef213b7f3ad50937928e2703c4a",
+    "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/development/language-merger-e1/direct-functional-summary.json": "1258c518905e3501a9d0a9515b739c074c63b8d9be85fa259f2c38be1e6c9805",
+    "experiments/functional-v15-20261106/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/language-merger-e1/direct-functional-summary.json": "8449939409ab1a872cca21ca645c7c1e22985f1a40bacaf9f394996b60040390",
+    "models/from-functional-v15/sft-counterfactual-ranking/seed-01/metadata.json": "d63a618b8df73f4605263f1a79a17d6f88e11a59f9f1bbb552f3b71fd5e885c1",
+    "experiments/functional-v18-20261107/runs/counterfactual_rank-seed-20261129/trainer_state.json": "bf06f3ac01d0fb7905f1e3afc5da18af3dc4292e43b8a52ec352956efb5a8908",
+    "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/counterfactual-rank-e2/direct-functional-summary.json": "40d551b272fc81d0b053c42931bd166e7463a9b5fcf578270cc1eacbcbc33c2b",
+    "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/counterfactual-rank-e2/direct-functional-summary.json": "6de1a4a3420c4179a82770b867d95d1a6235b7c767f654a9829a05898b1b479a",
+    "models/from-functional-v15/sft-repeated-positive-control/seed-01/metadata.json": "78a0151eeaa19395a33fd87b608d58e79167e3c4495ca2201a463fe4b2f5891e",
+    "experiments/functional-v18-20261107/runs/matched_sft-seed-20261129/trainer_state.json": "b377311e718035ee031c9e0c2dddb6cdd99187aa524ac147ef30f57b3bad1ecf",
+    "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/matched-sft-e2/direct-functional-summary.json": "14dff61855b06f8adbefebfc7e25886bae4628a675eb24064c509154f6c5eded",
+    "experiments/functional-v18-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/matched-sft-e2/direct-functional-summary.json": "8fb986e807a6ceee1a8f12f8db25a84de56aa7a5f8a19a60fbf09c071e43ec43",
+    "models/from-functional-v15/sft-photometric-bridge/seed-01/metadata.json": "e8e76e0671fb81c2c0b34fcfd2acce44fa846d2e3c3f3f3c6538b120922d55b9",
+    "experiments/functional-v19-20261107/runs/photometric_bridge-seed-20261129/trainer_state.json": "f16575c7fa2eab9b2de3214a9e293231fb8790512607f9ba49a28e942f459242",
+    "experiments/functional-v19-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/photometric-bridge-e2/direct-functional-summary.json": "46d7455cb8429c7c016bb3ee64185faab69109070776d5c202864749582e2a47",
+    "experiments/functional-v19-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/photometric-bridge-e2/direct-functional-summary.json": "8df697a5c5cabe9fea81b4c97d2ce777217e9c146f7666d669a083fa47ea51ac",
+    "models/from-functional-v15/sft-quality-coverage/seed-20261207/metadata.json": "74ae697f9acda94733655ea85c3ffcc79a4dad086d8e5d44ad659e0ee73bec7c",
+    "experiments/functional-v23-20261107/runs/seed-20261207/trainer_state.json": "233ba688a395c68bf31811a8514db59af1da14d7be40f4d2afbd0b3725e1ae0d",
+    "experiments/functional-v23-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/lora-seed-20261207-step250/direct-functional-summary.json": "b9db0e1ee907f8b691c0c11f0c608ecd086c3beb419105dd6504b92705793293",
+    "experiments/functional-v23-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/lora-seed-20261207-step250/direct-functional-summary.json": "9d4962c908d2805ba45838f63a8e225264ac1eee120de99d8010f7c3133b0076",
+    "models/from-functional-v15/sft-quality-coverage/seed-20261208/metadata.json": "645ed75cd56635bd50a11b1b8758127ba164148a5fd42e8f33f641b75d380dad",
+    "experiments/functional-v23-20261107/runs/seed-20261208/trainer_state.json": "cfc1076fad422845f08fce07b106faa41f29b6e9a00083945d6f0fcfcd1d66da",
+    "experiments/functional-v23-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/native-development/lora-seed-20261208-step250/direct-functional-summary.json": "c620cdc632778e5e564820f3869abcd3e40663d401e7275b51e4ab7bb5b812c9",
+    "experiments/functional-v23-20261107/evaluation/functional-editor-v15-shared-shadow-gain-candidate/old-native/lora-seed-20261208-step250/direct-functional-summary.json": "eab44ad5aeafc6986f8adf9e8931f0f6b25a2931503ce94899515f1b31422378",
+    "实验记录与结论.md": "b03b382342a7c2816ef645591f85048fb33c4def4dfae1c8656fe3ebd63b730c",
+    "experiments/functional-v1-20261104/REPORT.md": "a71a8268ada20f87284c6f7dddd56d9ac1b85c1c980679c87620eae8a0f45a3e",
+    "experiments/functional-v2-20261104/REPORT.md": "193f094f20aa4a0284db77d1395b54ba28326683a5be729051f20189c5ad7b98",
+    "experiments/functional-v3-20261104/REPORT.md": "ed27ef92f16ea1fe8cbc4530c4e851f7c0ac693fba0f9228643c131909e25fd6",
+    "experiments/functional-v4-20261105/REPORT.md": "aaed6d7eb22bbd1ca64557696725329976c8971a4fce02eb5f98035b5e7a6562",
+    "experiments/functional-v5-20261105/REPORT.md": "6e3a58c0fe13a397ceb032a772a5dde91af66d5e9d5c46d692fbf1478671e1ab",
+    "experiments/functional-v6-20261105/REPORT.md": "922d1bda0e3b3a3e07adf088541b3209e086a74034e7ec563f5441095c8511aa",
+    "experiments/functional-v7-20261105/REPORT.md": "68379c6a37cf333afab7197a0b31635c91fa6799dd54453e08d3cd637582619d",
+    "experiments/functional-v8-20261106/REPORT.md": "bda7092f7226cfa13a515abfb2d2389b5a17092f0dc05a42723e6a2b3cdec2ff",
+    "experiments/functional-v9-20261106/REPORT.md": "93ab7d473c8f707b3e8a6d529a0449342c868fed7360b1ba3baabad645bc2b4b",
+    "experiments/functional-v10-20261106/REPORT.md": "fb774885165843643fdfb7542f3e5f51691d43d6cc8756555de5e607bbc87bf2",
+    "experiments/functional-v11-20261106/REPORT.md": "ab5f3714ecbaff8635ee0b261525b898cad9ff53176dcb8d6006ff1518a11021",
+    "experiments/functional-v12-20261106/REPORT.md": "7829cbffada199efc8d8c75703dc165fa57318c9df2fe2c6b1fc22c3758bbeee",
+    "experiments/functional-v13-20261106/REPORT.md": "0203c4da3894a5df12eb2ef5d4f7d0cee3ba7ccd44c4975722db9b080df447a1",
+    "experiments/functional-v14-20261106/REPORT.md": "100f6f9d58c1a44fdadc24cb1086ff0ec5b364e06b22efe8252e0c785293468d",
+    "experiments/functional-v15-20261106/REPORT.md": "5e2ee9ed02ce188b75518b0d54aba29bf215d6353a742a7a54630f0d9a59a889",
+    "experiments/functional-v16-20261106/REPORT.md": "2a4dab7a2141638fb05268c9d6da7c40c7323eae0795601a1dd8a30e5138384d",
+    "experiments/functional-v17-20261107/REPORT.md": "9190b773b314ca631912cb281b5e64e847fa8d2511c672bae603a72a066ab92a",
+    "experiments/functional-v18-20261107/REPORT.md": "8d0de29f175605b12d3cc113a1b987f71fa053704350333370870cd50c6114ed",
+    "experiments/functional-v19-20261107/REPORT.md": "c0ef51a09d33abe5e513857e09d7d0947163328bb58428fb34aadcaa11d865c2",
+    "experiments/functional-v20-20261107/REPORT.md": "a06cdf470a84254b5c447e2f514f7b97712228e20509326eaf9b6f1f79f01c82",
+    "experiments/functional-v21-20261107/REPORT.md": "ff706c57022e36f75db198fe23b51d680c33039e0dc195bd720884e0c6989dd7",
+    "experiments/functional-v22-20261107/REPORT.md": "e25ae9d7161f7a567653000d5dbc3e14f84254641c67998aeacc0c5bc18a4ffb",
+    "experiments/functional-v23-20261107/REPORT.md": "45059e569ebff739d7d053cdf1e4ef7a1886aebe23d686e9e6dd280d99f32e93",
+    "experiments/functional-v24-20261107/REPORT.md": "d40f48a8cebe7c3a3f0cecc7bea17bc258c98c7f89026631f47408bfc7452692",
+    "experiments/functional-v25-20261107/REPORT.md": "f57040d7c52dc6cffbb7e75782782e7b2972252d8bf4f13b1b51b48dd626c558",
+    "experiments/functional-v26-20261107/REPORT.md": "630aa44a40bd20f3a91a7b8eed39b60dd2a9b5b960074a38df0c5478dd237cf3",
+    "experiments/functional-v27-20261107/REPORT.md": "3c716a7ad6c61f32036197f449d4b53786e2542813d5edafa71d7890420a9d0b",
+    "experiments/functional-v28-20261107/REPORT.md": "a68f943d2191772670101c7325d632c52abcf3a1ffbe5bef1ed8bcc87eb5ab43",
+    "experiments/functional-v29-20261107/REPORT.md": "551a397d1a7187161d7b371a163a76c69a5230c68101efd74df2edc87b57c50f",
+    "experiments/functional-v30-20261107/REPORT.md": "f71cd7553b0b7f312f5b7615826bad5a0769c2c3174371374a8295d18a551105",
+    "experiments/functional-v31-20261107/REPORT.md": "2f539749a846432a70ab1340798b5e6b11b49318e35c58294ea9d79af33a57da",
+    "experiments/functional-v32-20261107/REPORT.md": "63226ab02c6beebbd01a6ef37d194ce3b6f4d6d00773a14c1480909283f2fd13",
+    "experiments/functional-v33-20261107/REPORT.md": "1efefe96e37c2f76b4e1b700310736d11dd87aca275c5819a0357547ee55b96e",
+    "docs/COMPARISON_STUDIO.md": "c306a51e4a305eccf96278ef71bead9c7c610a44bd90af6a003a1d08fcc4c98b",
+    "scripts/comparison_studio/README.md": "8d456c226d8611e66cf39ed71ec657fe0f3e466873cda32f811119c0be44fb89",
+    "experiments/functional-v15-20261106/training-protocol.json": "850927ab7930df962ba1c5840a11ed50519f21e25f106c0b0ab121be4148f726",
+    "scripts/functional_v21/head.py": "36ee55aef5a71c60898bfc6e5bda56e561e5623b3b873649563665c6eeeb46c4"
+  },
+  "loss_definition": "Arithmetic mean of per-optimizer-step rounded logged losses from this run start through exported checkpoint; no inference performed.",
+  "missing_training_logs": [
+    "R1-R",
+    "R4-P",
+    "R4-M"
+  ],
+  "scope": "Historical evidence snapshot; not a new benchmark or live resource/feedback audit."
+}

@@ -1,0 +1,11 @@
+\begin{tikzpicture}[font=\small,node distance=6mm,box/.style={draw,rounded corners=2pt,align=center,minimum height=10mm,text width=35mm},arr/.style={-{Stealth[length=2mm]},thick}]
+\node[box] (input) {原图＋原样中文／英文要求};
+\node[box,right=8mm of input,text width=45mm] (vlm) {固定Qwen底座＋一份LoRA\\R1 或 R15};
+\node[box,right=8mm of vlm] (decision) {结构化决策\\编辑／保持／拒绝};
+\node[box,below=9mm of decision] (editor) {配套确定性编辑器\\九种全局工具};
+\node[box,left=8mm of editor,text width=45mm] (head) {可选R21小头，仅配R15\\调幅度、预测风险\\保留工具与方向};
+\node[box,left=8mm of head] (output) {结果图或拒绝状态\\保存参数与身份};
+\draw[arr] (input)--(vlm);\draw[arr] (vlm)--(decision);
+\draw[arr] (decision)--(editor);\draw[arr] (vlm)--(head);
+\draw[arr] (head)--(editor);\draw[arr] (editor.south)--++(0,-6mm)-|(output.south);
+\end{tikzpicture}

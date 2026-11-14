@@ -1,0 +1,121 @@
+{
+  "initial_dtypes": {
+    "torch.float32": 112
+  },
+  "runs": {
+    "full-lr1e-5-s20261103": {
+      "adapter_dtypes": {
+        "torch.float32": 112
+      },
+      "optimizer_exp_avg_dtypes": {
+        "torch.float32": 112
+      },
+      "groups": {
+        "lora_A": {
+          "scalar_count": 1605632,
+          "unchanged_scalars": 10,
+          "unchanged_fraction": 6.228077168367347e-06
+        },
+        "lora_B": {
+          "scalar_count": 917504,
+          "unchanged_scalars": 0,
+          "unchanged_fraction": 0.0
+        }
+      }
+    },
+    "parameters-lr1e-5-s20261103": {
+      "adapter_dtypes": {
+        "torch.float32": 112
+      },
+      "optimizer_exp_avg_dtypes": {
+        "torch.float32": 112
+      },
+      "groups": {
+        "lora_A": {
+          "scalar_count": 1605632,
+          "unchanged_scalars": 7,
+          "unchanged_fraction": 4.359654017857143e-06
+        },
+        "lora_B": {
+          "scalar_count": 917504,
+          "unchanged_scalars": 0,
+          "unchanged_fraction": 0.0
+        }
+      }
+    },
+    "contrast-calibrated-lr1e-5-s20261103": {
+      "adapter_dtypes": {
+        "torch.float32": 112
+      },
+      "optimizer_exp_avg_dtypes": {
+        "torch.float32": 112
+      },
+      "groups": {
+        "lora_A": {
+          "scalar_count": 1605632,
+          "unchanged_scalars": 0,
+          "unchanged_fraction": 0.0
+        },
+        "lora_B": {
+          "scalar_count": 917504,
+          "unchanged_scalars": 1,
+          "unchanged_fraction": 1.0899135044642857e-06
+        }
+      }
+    },
+    "contrast-calibrated-lr3e-5-s20261103": {
+      "adapter_dtypes": {
+        "torch.float32": 112
+      },
+      "optimizer_exp_avg_dtypes": {
+        "torch.float32": 112
+      },
+      "groups": {
+        "lora_A": {
+          "scalar_count": 1605632,
+          "unchanged_scalars": 1,
+          "unchanged_fraction": 6.228077168367346e-07
+        },
+        "lora_B": {
+          "scalar_count": 917504,
+          "unchanged_scalars": 1,
+          "unchanged_fraction": 1.0899135044642857e-06
+        }
+      }
+    }
+  },
+  "scalar_adamw_probe": [
+    {
+      "dtype": "torch.bfloat16",
+      "lr": 1e-05,
+      "steps": 128,
+      "initial": 0.02001953125,
+      "final": 0.02001953125,
+      "unchanged": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "lr": 3e-05,
+      "steps": 128,
+      "initial": 0.02001953125,
+      "final": 0.02001953125,
+      "unchanged": true
+    },
+    {
+      "dtype": "torch.float32",
+      "lr": 1e-05,
+      "steps": 128,
+      "initial": 0.019999999552965164,
+      "final": 0.018719930201768875,
+      "unchanged": false
+    },
+    {
+      "dtype": "torch.float32",
+      "lr": 3e-05,
+      "steps": 128,
+      "initial": 0.019999999552965164,
+      "final": 0.0161600299179554,
+      "unchanged": false
+    }
+  ]
+}

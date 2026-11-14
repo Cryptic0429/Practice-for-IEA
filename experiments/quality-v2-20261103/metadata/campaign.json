@@ -1,0 +1,713 @@
+{
+  "status": "complete",
+  "started_date": "2026-11-03",
+  "remote_root": "/mnt/sdc/zhc/IEA",
+  "gpus": [
+    0,
+    2,
+    3
+  ],
+  "protected_gpu": 1,
+  "workers": {
+    "0": 3615457,
+    "2": 3615458,
+    "3": 3615459
+  },
+  "cpu_calibration_pid": 3616076,
+  "data_manifest": "metadata/goal-v2-20261103/data-manifest.json",
+  "initial_pilots": {
+    "training_rows": 512,
+    "validation_groups": 200,
+    "sealed_test_groups": 71,
+    "steps": 128,
+    "effective_batch": 4,
+    "start": "original frozen Stage1 A adapter",
+    "seed": 20261103,
+    "arms": [
+      {
+        "loss": "full",
+        "lr": 1e-05
+      },
+      {
+        "loss": "parameters",
+        "lr": 1e-05
+      },
+      {
+        "loss": "parameters",
+        "lr": 3e-05
+      }
+    ]
+  },
+  "baseline_pool": [
+    "A",
+    "B",
+    "SFT",
+    "GRPO"
+  ],
+  "baseline_comparison": "Same runtime and editor, full validation. Freeze baseline and candidate identities before sealed test. Final reporting includes every original baseline to establish improvement over the strongest current self-trained model.",
+  "completion_requirements": {
+    "independent_test": "New 71 source groups, project-record screened and sealed before pilots; no development scoring",
+    "l1": "At least 3% paired mean relative L1 improvement over strongest frozen original self-trained baseline; report paired group-bootstrap intervals",
+    "multi_seed": "At least 3 independently trained seeds of locked recipe; report each seed, do not count candidate samples as seeds",
+    "coverage": "Maintain baseline executable rate, retain all errors with fallback, additionally report successful-case matched comparisons",
+    "instructions": "Predefine explicit instruction categories on development data, keep same scoring and blinded review rubric for final; disclose AI review limitations",
+    "no_shortcuts": "Report NoEdit, empty/zero parameters, identical pixels, and explicit no-op frequencies; increased failure fallback/no-op is not evidence of success",
+    "delivery": "Best adapter, hashes, restorable checkpoints, frozen environment and configs, full predictions/images, numerical/qualitative results, negative findings and archive verification"
+  },
+  "next_actions": [],
+  "budget": "No overall GPU-hour limit provided. Small bounded pilots first; time/resource caps per job preserve recoverable checkpoints. Account actual GPU-hours.",
+  "prior_goal_turn_classification": "progress: new holdout frozen and live baseline/pilot/CPU diagnostic jobs launched",
+  "source_sha256": {
+    "scripts/goal_v2_train.py": "d3f847017332c5e8717b816c8c1bf6d59bef2998758fa8e5146bd7978cb6b3b1",
+    "scripts/goal_v2_prepare.py": "95b5c868e9441ed6ccde33a424d195c12dff2f20c0732c48fff829160dea1c1e",
+    "scripts/goal_v2_evaluate.py": "7be6fdb3e1a59ceb7558365fda9d19641f5104c99944ab821ec6130feba34480",
+    "scripts/goal_v2_worker.py": "c8b41eeef3fe4d6e189f21b52449313b5814e1d4ea54a167ce904e32a07c5c13",
+    "scripts/goal_v2_calibrate.py": "4e6f548201b34b528bc1178406ba48df08f1d57bce15b0ffc411a0541143dcf0"
+  },
+  "latest_observed_at": "2026-11-03T20:37:29.648450+00:00",
+  "last_goal_turn_classification": "progress:all13 objective requirements proved;35.13GB archive downloaded and all13841 members plus full archive SHA verified; final selected seed04 adapter, environment, source, full results and failures delivered",
+  "cpu_queue_pid": 3616599,
+  "supervision_audit": {
+    "same_training_rows": 512,
+    "full_supervised_tokens": 111487,
+    "parameters_supervised_tokens": 24937,
+    "warning": "Loss values use different token scopes and are not comparable as image quality."
+  },
+  "completed_validation": {
+    "A": {
+      "l1": 0.12743576257256792,
+      "executable": 200
+    },
+    "A-json-schema": {
+      "l1": 0.15206332314643078,
+      "executable": 196
+    },
+    "B": {
+      "l1": 0.12511143243405967,
+      "executable": 198
+    },
+    "B-json-schema": {
+      "l1": 0.15644846875220536,
+      "executable": 196
+    },
+    "GRPO": {
+      "l1": 0.12656915616011247,
+      "executable": 200
+    },
+    "SFT": {
+      "l1": 0.12829824914922938,
+      "executable": 200
+    },
+    "contrast-calibrated-lr1e-5-s20261103": {
+      "l1": 0.12511681087780743,
+      "executable": 200
+    },
+    "contrast-calibrated-lr3e-5-s20261103": {
+      "l1": 0.12366287474287674,
+      "executable": 195
+    },
+    "expanded-memorize64-lr1e-4-s20261103": {
+      "l1": 0.13249857664108278,
+      "executable": 200
+    },
+    "full-lr1e-5-s20261103": {
+      "l1": 0.12685515226563437,
+      "executable": 200
+    },
+    "json-calibrated-long1024-lr1e-4-s20261103-step1024": {
+      "l1": 0.12019317944534123,
+      "executable": 200
+    },
+    "json-calibrated-long1024-lr1e-4-s20261103-step256": {
+      "l1": 0.11494406301528215,
+      "executable": 200
+    },
+    "json-calibrated-long1024-lr1e-4-s20261103-step512": {
+      "l1": 0.1183536976808682,
+      "executable": 200
+    },
+    "json-calibrated-lr1e-4-s20261103": {
+      "l1": 0.12496205249335617,
+      "executable": 200
+    },
+    "json-calibrated-lr3e-5-s20261103": {
+      "l1": 0.12641218674369156,
+      "executable": 200
+    },
+    "json-calibrated3k-long1024-lr1e-4-s20261103-step256": {
+      "l1": 0.12562805680092423,
+      "executable": 200
+    },
+    "json-calibrated3k-long1024-lr1e-4-s20261103-step512": {
+      "l1": 0.11605789258144796,
+      "executable": 200
+    },
+    "json-memorize64-long512-lr1e-4-s20261103": {
+      "l1": 0.1509392396733165,
+      "executable": 199
+    },
+    "json-memorize64-lr1e-4-s20261103": {
+      "l1": 0.1271326613333076,
+      "executable": 200
+    },
+    "numeric-head512-s20261103": {
+      "l1": 0.13014642083086073,
+      "executable": 200
+    },
+    "numeric-ridge3k-cv-s20261103": {
+      "l1": 0.11783910199068487,
+      "executable": 200
+    },
+    "numeric-ridge512-cv-s20261103": {
+      "l1": 0.12494438057765364,
+      "executable": 200
+    },
+    "parameters-lr1e-5-s20261103": {
+      "l1": 0.12670287104090674,
+      "executable": 199
+    },
+    "parameters-lr3e-5-s20261103": {
+      "l1": 0.12541262548184023,
+      "executable": 197
+    },
+    "NoEdit": {
+      "l1": 0.11577512218966149
+    }
+  },
+  "training_label_audit": {
+    "n": 512,
+    "labels_improving_reference": 329,
+    "direction_assessable": 86,
+    "clear_direction_conflicts": 12
+  },
+  "heldout_near_duplicate_audit": {
+    "new_groups": 71,
+    "other_source_groups": 1581,
+    "flagged": 0,
+    "no_model_inference_or_reference_edit_scoring": true,
+    "limitations": "Conservative pHash plus grayscale correlation/MAE screen, not full semantic-duplicate certification."
+  },
+  "new_data_experiment": {
+    "search_pid": 3623325,
+    "scope": "Train512 only; contrast coordinate search with original editor, protect already aligned directions and substantive edit threshold",
+    "initial_grid": [
+      -60,
+      -40,
+      -20,
+      0,
+      20,
+      40,
+      60
+    ],
+    "worker_pids": {
+      "0": 3623530,
+      "3": 3623531
+    },
+    "launch_gate": "Old GPU queue completed, GPU memory <512MiB, train-label mean L1 gain >1%, at least25 changed labels",
+    "arms": [
+      "contrast-calibrated-lr1e-5-s20261103",
+      "contrast-calibrated-lr3e-5-s20261103"
+    ],
+    "same_budget": "512 rows,128 steps; parameter-only loss, same A start; original editor unchanged",
+    "search_result": {
+      "status": "completed",
+      "rows": 512,
+      "source_sha256": "de565c842980de3a1c0f66154cec602be42288f5574b35ae5f7d5d41e9ced5fc",
+      "training_sha256": "c8f45857edd963bb3c991d2df8ce5fc0372b0fc5abca6fad14b50d87cca5e378",
+      "changed_labels": 343,
+      "old_mean_l1": 0.07776674921660742,
+      "new_mean_l1": 0.06687331440753042,
+      "grid": [
+        -60,
+        -40,
+        -20,
+        0,
+        20,
+        40,
+        60
+      ],
+      "elapsed_seconds": 844.1672642678022,
+      "editor_sha256": "1a18fb3b00207f0b667b2ef1d0677d8d71a5abdf21ad89e4c66adea152c05f3c",
+      "limits": [
+        "Training-only label fitting, not a predictive-model result.",
+        "Other tools fixed; original frozen editor used.",
+        "Previously aligned explicit global directions and substantive edit threshold protected; broader semantics not guaranteed.",
+        "Reasoning text retained as context only; this variant must use parameter-only loss because reasoning may no longer match the new parameter values."
+      ]
+    },
+    "source_integrity_audit": "Same512 ID/group/image/prompt, only contrast labels and matching answer JSON changed; every row nonworse reference L1; substantive original edits retained.",
+    "training_status": "Both calibrated-label pilots completed128 steps, finite metrics; checkpoint64/128 weight/optimizer/scheduler/RNG audits all passed; full validation ongoing."
+  },
+  "on_test_failure": "Do not tune or select from the sealed71 results. If further development is necessary, treat inspected tests as regression and obtain a genuinely new independent confirmatory set.",
+  "precision_audit": "Actual adapter and AdamW states FP32; essentially every scalar updated. BF16-stagnation hypothesis rejected; no extra precision trial.",
+  "json_format_experiment": {
+    "workers": {
+      "0": 3631819,
+      "2": 3631820,
+      "3": 3631821
+    },
+    "candidate": "json-calibrated-lr3e-5-s20261103",
+    "controls": [
+      "A-json-schema",
+      "B-json-schema"
+    ],
+    "same_training_rows": 512,
+    "steps": 128,
+    "lr": 3e-05,
+    "start_adapter": "A",
+    "input_change": "Identical system JSON-only schema suffix for trained candidate and frozen controls; user editing instruction unchanged.",
+    "target_change": "JSON-only answer target removes teacher-forced reasoning context.",
+    "early_behavior_diagnostic": "First24 candidate outputs all direct JSON, mean53.08 tokens; not an image-quality claim.",
+    "higher_lr_trial": {
+      "name": "json-calibrated-lr1e-4-s20261103",
+      "pid": 3634652,
+      "gpu": 0,
+      "seed": 20261103,
+      "lr": 0.0001,
+      "same_training_rows": 512,
+      "same_steps": 128,
+      "changed_factor": "learning rate only",
+      "status": "live training, finite metrics at step21"
+    }
+  },
+  "capacity_diagnostics": {
+    "training_file": "train-memorize64.json",
+    "groups": 64,
+    "label_execution_l1": 0.06790032028220594,
+    "NoEdit_l1": 0.11817180278012529,
+    "initial_qv128": {
+      "epochs": 8,
+      "train_probe_l1": 0.12236109719378874,
+      "validation_l1": 0.1271326613333076
+    },
+    "expanded128": {
+      "epochs": 8,
+      "trainable_parameters": 19267584,
+      "train_probe_l1": 0.11272527437540703,
+      "executable": 64,
+      "validation_status": "completed200; no gain",
+      "validation_l1": 0.13249857664108278
+    },
+    "qv512": {
+      "epochs": 32,
+      "status": "all evaluations completed; overfitting despite exact training fit",
+      "train_probe_l1": 0.06790032028220594,
+      "exact_dense_vectors": 64,
+      "n": 64,
+      "executable": 64,
+      "checkpoint512_state_audit": "passed",
+      "validation_l1": 0.1509392396733165,
+      "validation_executable": 199
+    },
+    "interpretation": "Original q/v model CAN fit64 with sufficient optimization: all64 parameter vectors exact after32epochs. Expanded8epochs improves train fit but worsens validation. Prioritize bounded full512 longer optimization and evaluate generalization."
+  },
+  "long_optimization_full512": {
+    "name": "json-calibrated-long1024-lr1e-4-s20261103",
+    "pid": 3642377,
+    "gpu": 0,
+    "start": "original A",
+    "training_file": "train-contrast-calibrated.json",
+    "steps": 1024,
+    "effective_batch": 4,
+    "epochs": 8,
+    "expected_exposures": 4096,
+    "lr": 0.0001,
+    "validation_steps": [
+      256,
+      512,
+      1024
+    ],
+    "validation_worker_pid": 3642513,
+    "validation_gpu": 3,
+    "test_access": false,
+    "status": "loading at last check"
+  },
+  "numerical_head_diagnostic": {
+    "feature_extractor_pid": 3641028,
+    "feature_status": "completed input-only train512 and validation200",
+    "frozen_backbone": "A",
+    "features": [
+      "last prompt hidden",
+      "mean text hidden",
+      "mean image hidden",
+      "28 input-image statistics"
+    ],
+    "structured_output": "16 tool activation gates plus continuous numerical values, threshold .5, range [-100,100]",
+    "seed": 20261103,
+    "training64_mae16": 0.09761113673448563,
+    "training64_native_editor_l1": 0.06788908212911338,
+    "training512_mae16": 0.3274761438369751,
+    "validation_status": "completed200; no gain",
+    "test_access": false,
+    "worker_pid": 3641277,
+    "validation_l1": 0.13014642083086073,
+    "validation_executable": 200
+  },
+  "numerical_ridge_diagnostic": {
+    "name": "numeric-ridge512-cv-s20261103",
+    "selected_alpha": 10.0,
+    "train_only_cv": "fivefold source-group CV on414 training groups",
+    "oof_mae16": 6.906577756243513,
+    "validation_l1": 0.12494438057765364,
+    "validation_executable": 200,
+    "training_seed_replication": false,
+    "interpretation": "Regularization reduces overfitting; only~0.13% point improvement over B, not goal success."
+  },
+  "data_coverage_3k": {
+    "manifest": "metadata/goal-v2-20261103/training-variants-3k.json",
+    "rows": 3000,
+    "groups": 1078,
+    "original_source_sha256": "439ebf726d7e01c913a9e85c0866240268edb3b5919bb583b4823270fe361104",
+    "overlap_validation_sealed71_oldtest200_stage2new100": 0,
+    "calibration_pid": 3644598,
+    "feature_extractor_pid": 3644599,
+    "worker_pid": 3644904,
+    "status": "All1024 training updates completed, finite metrics; checkpoint validation ongoing; GPU2 handed to independent seed20261104.",
+    "next": "Train-group CV numerical ridge; matched1024-update/4096-exposure JSON SFT on3k after calibration quality gate.",
+    "validation_plan": "checkpoint256/512/1024; GPU0 after original512 training is terminal and GPU memory is free",
+    "test_access": false,
+    "calibration_summary": {
+      "status": "completed",
+      "rows": 3000,
+      "groups": 1078,
+      "source_sha256": "439ebf726d7e01c913a9e85c0866240268edb3b5919bb583b4823270fe361104",
+      "training_sha256": "d1dc31ae91f583e1d672ba047d390723d3b1ce6494ea88f802bb67356a226a19",
+      "changed_labels": 1957,
+      "old_mean_l1": 0.07949687440258761,
+      "new_mean_l1": 0.06793607941207787,
+      "grid": [
+        -60,
+        -40,
+        -20,
+        0,
+        20,
+        40,
+        60
+      ],
+      "cached_rows": 512,
+      "workers": 8,
+      "editor_sha256": "1a18fb3b00207f0b667b2ef1d0677d8d71a5abdf21ad89e4c66adea152c05f3c",
+      "elapsed_seconds": 759.1322892680764,
+      "limits": [
+        "Training-reference-based label fitting, not predictive model performance.",
+        "Same contrast-only search and direction/edit protections as prior512.",
+        "Original reference/label never enter model generation; reasoning must be masked or removed."
+      ]
+    },
+    "ridge_validation": {
+      "n": 200,
+      "mean_l1": 0.11783910199068487,
+      "NoEdit_l1": 0.11577512218966149,
+      "executable": 200,
+      "fallback": 0,
+      "empty": 0,
+      "zero": 0,
+      "pixel_identical": 0,
+      "near_identity": 1,
+      "mean_input_output_l1": 0.04496783077307776,
+      "direction_assessable": 32,
+      "all_assessed_directions_aligned": 29,
+      "source_sha256": "877604a9bc943d8005f031221197b26f34e3ef44afefc94ef45a1bf436b07c64",
+      "json_prompt_signature": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67"
+    },
+    "training_pid": 3646815,
+    "validation_worker_pid": 3646816
+  },
+  "first_promising_development_candidate": {
+    "name": "json-calibrated-long1024-lr1e-4-s20261103-step256",
+    "steps": 256,
+    "planned_scheduler_steps": 1024,
+    "adapter_sha256": "8240f008753ff225e35a951abb5177819e7ba38b344c7cc203e881350ced91aa",
+    "metrics": {
+      "n": 200,
+      "mean_l1": 0.11494406301528215,
+      "NoEdit_l1": 0.11577512218966149,
+      "executable": 200,
+      "fallback": 0,
+      "empty": 0,
+      "zero": 0,
+      "pixel_identical": 0,
+      "near_identity": 2,
+      "mean_input_output_l1": 0.05435616007856295,
+      "direction_assessable": 32,
+      "all_assessed_directions_aligned": 31,
+      "source_sha256": "9dfdb3c76e27ba062d36dde787fa588ea3d98022378ccb03d36d877c517054b8",
+      "json_prompt_signature": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67"
+    },
+    "paired_comparison": {
+      "reference": "B",
+      "paired_mean_gain": 0.010167369418777526,
+      "relative_mean_gain": 0.08126650955048625,
+      "ci95_gain": [
+        0.003127832367666997,
+        0.017495971926720814
+      ],
+      "ci95_relative": [
+        0.025879255330206307,
+        0.13561517189729613
+      ],
+      "improved": 125,
+      "worsened": 75,
+      "ties": 0
+    },
+    "successful_common_subset_n": 198,
+    "successful_common_subset_mean_gain": 0.010654847640920468,
+    "status": "single-seed development gain; same recipe failed multiseed confirmation; preserved as negative finding, not final candidate lock"
+  },
+  "instruction_challenge": {
+    "manifest": "metadata/goal-v2-20261103/instruction-challenge-manifest.json",
+    "source_groups": 8,
+    "requests": 48,
+    "axes": [
+      "brightness",
+      "warmth",
+      "saturation"
+    ],
+    "balanced_positive_negative": true,
+    "references_or_labels": false,
+    "worker_pid": 3647595,
+    "gpu": 3,
+    "queue_gate": "Existing GPU3 long512 checkpoint validations complete; then B original format; candidate only after development-model-lock.json is frozen",
+    "purpose": "Additional development conditioning guardrail; does not prove independent-test or full local-edit semantics",
+    "status": "completed on B and frozen primary candidate",
+    "baseline": {
+      "executable": 48,
+      "aligned_requests": 32,
+      "strict_pairs": 8,
+      "ordered_pairs": 16,
+      "identical_parameter_pairs": 2
+    },
+    "candidate": {
+      "executable": 48,
+      "aligned_requests": 45,
+      "strict_pairs": 21,
+      "ordered_pairs": 24,
+      "identical_parameter_pairs": 0
+    },
+    "gate": "passed before replication training",
+    "limits": "48 requests depend on8 training source groups; global direction tests, not aesthetic/local-edit or independent-test proof"
+  },
+  "development_recipe_lock": "metadata/goal-v2-20261103/development-model-lock.json",
+  "seed_replication": {
+    "seeds": [
+      20261103,
+      20261104,
+      20261105
+    ],
+    "primary_selected_step": 256,
+    "scheduler_horizon": 1024,
+    "warmup_steps": 52,
+    "effective_exposures": 1024,
+    "additional_workers": {
+      "20261104": 3648051,
+      "20261105": 3648052
+    },
+    "status": "FAILED stability gate: seeds20261104/20261105 achieved2.03%/0.81%, below3%; do not open sealed test for this recipe.",
+    "gates": [
+      "Maintain baselineB executable, aligned-request and strict positive/negative pair counts on48-request8-source development challenge",
+      "GPU2 after existing3k training ends; GPU3 after challenge worker ends"
+    ],
+    "final_test_access": false,
+    "replica_challenge_workers": {
+      "20261104": 3651214,
+      "20261105": 3651215
+    },
+    "validation_l1": {
+      "20261103": 0.11494406301528215,
+      "20261104": 0.12257145648822189,
+      "20261105": 0.12409752157982439
+    },
+    "validation_executable": {
+      "20261103": 200,
+      "20261104": 199,
+      "20261105": 200
+    }
+  },
+  "final_evaluation_preparation": {
+    "protocol": "metadata/goal-v2-20261103/final-protocol.json",
+    "protocol_sha256": "dd9184f4f042fd89d18aa9f7d1f4ab957ed8d7b342c558a95c6572119eecdf6c",
+    "visual_plan": "metadata/goal-v2-20261103/final-visual-plan.json",
+    "visual_cases": 30,
+    "test_opened": true,
+    "final_model_lock_present": true,
+    "inference_gate": "All3 trained models and development guardrails must pass, followed by final identity lock. No test inference performed.",
+    "model_lock": "metadata/goal-v2-20261103/final-models-lock.json",
+    "development_gate": "metadata/goal-v2-20261103/multiseed-development-gate.json",
+    "best_by_validation": "Seed20261104",
+    "status": "Final71 inference live; no model/recipe changes allowed from test results"
+  },
+  "current_family": "3k-v2",
+  "three_k_replication": {
+    "training_lock": "metadata/goal-v2-20261103/development-training-lock-3k-v2.json",
+    "training_rows": 3000,
+    "groups": 1078,
+    "steps": 1024,
+    "effective_batch": 4,
+    "exposures": 4096,
+    "lr": 0.0001,
+    "warmup_steps": 52,
+    "primary_validation_l1": 0.11598610375076532,
+    "primary_relative_gain": 0.07293760854431816,
+    "primary_global_direction_aligned": 30,
+    "primary_challenge_aligned": 45,
+    "primary_challenge_strict_pairs": 21,
+    "workers": {
+      "20261104": {
+        "pid": 3654566,
+        "gpu": 0
+      },
+      "20261105": {
+        "pid": 3654569,
+        "gpu": 3
+      }
+    },
+    "status": "All3 training/validation/challenge/checkpoint/export gates passed; final identities frozen before independent test",
+    "export_selection": "metadata/goal-v2-20261103/3k-export-selection.json",
+    "per_seed_validation": {
+      "Seed20261103": {
+        "l1": 0.11588283900171518,
+        "relative_gain": 0.0737629907419408,
+        "execution": 200,
+        "direction_aligned": 31,
+        "balanced_challenge": {
+          "executable": 48,
+          "aligned_requests": 46,
+          "strict_pairs": 22,
+          "ordered_pairs": 23
+        }
+      },
+      "Seed20261104": {
+        "l1": 0.11495472422800958,
+        "relative_gain": 0.08118129581326006,
+        "execution": 200,
+        "direction_aligned": 30,
+        "balanced_challenge": {
+          "executable": 48,
+          "aligned_requests": 44,
+          "strict_pairs": 20,
+          "ordered_pairs": 24
+        }
+      },
+      "Seed20261105": {
+        "l1": 0.11697718513663859,
+        "relative_gain": 0.06501601923316061,
+        "execution": 200,
+        "direction_aligned": 31,
+        "balanced_challenge": {
+          "executable": 48,
+          "aligned_requests": 46,
+          "strict_pairs": 22,
+          "ordered_pairs": 24
+        }
+      }
+    }
+  },
+  "checkpoint_average_control": {
+    "worker_pid": 3654730,
+    "gpu": 2,
+    "wait_for": "old512 seed20261104 instruction challenge terminal and GPU2 free",
+    "snapshots": [
+      512,
+      1024
+    ],
+    "weights": [
+      0.5,
+      0.5
+    ],
+    "kind": "Arithmetic mean of same-run LoRA A/B parameter tensors; not pixel/output blending",
+    "selection": "Use primaryseed20261103 only; choose SWA only when no worse raw L1/execution/direction/no-op/challenge; else raw. Freeze common export before new replica validation.",
+    "test_access": false,
+    "status": "Primary validation and challenge completed; SWA selected for all3k seeds",
+    "validation_l1": 0.11588283900171518,
+    "relative_gain": 0.0737629907419408,
+    "global_directions_aligned": 31,
+    "near_identity": 1,
+    "challenge_aligned": 46,
+    "strict_pairs": 22,
+    "ordered_pairs": 23,
+    "ordering_tradeoff": "23/24 vs raw24/24; primary aligned/strict counts improve and baselineB16/24; diagnostic regression retained."
+  },
+  "quality_weighted_control": {
+    "audit": "metadata/goal-v2-20261103/calibrated3k-quality-audit-summary.json",
+    "training_rows": 3000,
+    "groups": 1078,
+    "labels_improving_original": 2417,
+    "labels_worsening_original": 583,
+    "direction_assessable": 483,
+    "clear_direction_oppositions": 45,
+    "worker_pid": 3657116,
+    "gpu": 2,
+    "training_name": "json3k-qualityweighted512-lr1e-4-s20261103",
+    "updates": 512,
+    "scheduler_horizon": 1024,
+    "mean_quality_weight": 1.0,
+    "all_rows_retained": true,
+    "scope": "Training-reference-based bounded loss weighting only; no inference weights or validation/test references",
+    "status": "Training launched after audit quality gate; no model result yet"
+  },
+  "base_and_environment_current_audit": {
+    "files_verified": 16,
+    "bytes": 16606069268,
+    "base_and_A_sha_match_original": true,
+    "base_audit": "metadata/goal-v2-20261103/base-source-current-audit.json",
+    "runtime_packages": "metadata/goal-v2-20261103/runtime-packages-current.json",
+    "package_count": 66
+  },
+  "final_workers": {
+    "0": 3661012,
+    "2": 3661013,
+    "3": 3661014
+  },
+  "selected_local_adapters": "artifacts/goal-v2-20261103/adapters",
+  "completed_at": "2026-11-03T20:37:29.648450+00:00",
+  "final_acceptance": "artifacts/goal-v2-20261103/final-acceptance.json",
+  "final_gpu_state": {
+    "campaign_gpu_jobs": "terminal",
+    "active_gpu_pids": [
+      3378799
+    ],
+    "protected_existing_demo_untouched": true
+  },
+  "historical_live_worker_snapshots": {
+    "worker-capacity-expanded": {
+      "pid": 3638812,
+      "gpu": "3",
+      "status": "running",
+      "started_at": "2026-11-03T15:46:18.965619+00:00",
+      "completed": [
+        {
+          "task": "train",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:53:14.100410+00:00"
+        },
+        {
+          "task": "training-probe",
+          "exit_code": 0,
+          "finished_at": "2026-11-03T15:58:14.148369+00:00"
+        }
+      ],
+      "updated_at": "2026-11-03T16:03:04.194867+00:00",
+      "task": "expanded-memorize64-lr1e-4-s20261103-validate",
+      "child_pid": 3639695,
+      "pid_live": true,
+      "pid_command": "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python /mnt/sdc/zhc/IEA/scripts/goal_v2_capacity_worker.py --mode expanded ",
+      "child_pid_live": true,
+      "child_pid_command": "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python /mnt/sdc/zhc/IEA/scripts/goal_v2_evaluate_expanded.py --adapter /mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/expanded-memorize64-lr1e-4-s20261103/final --name expanded-memorize64-lr1e-4-s20261103 --split validation --gpu 3 --max-gpu-seconds 5400 "
+    },
+    "worker-capacity-long": {
+      "pid": 3638811,
+      "gpu": "2",
+      "status": "running",
+      "started_at": "2026-11-03T15:46:18.964050+00:00",
+      "completed": [],
+      "updated_at": "2026-11-03T16:03:04.346214+00:00",
+      "task": "json-memorize64-long512-lr1e-4-s20261103-train",
+      "child_pid": 3638814,
+      "pid_live": true,
+      "pid_command": "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python /mnt/sdc/zhc/IEA/scripts/goal_v2_capacity_worker.py --mode long ",
+      "child_pid_live": true,
+      "child_pid_command": "/mnt/sdc/zhc/IEA/envs/iea-rl/bin/python /mnt/sdc/zhc/IEA/scripts/goal_v2_train_memorize64_long.py --name json-memorize64-long512-lr1e-4-s20261103 --mode parameters --lr 1e-4 --gpu 2 --training-file train-memorize64.json "
+    }
+  },
+  "live_workers": {}
+}

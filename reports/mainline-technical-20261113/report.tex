@@ -1,0 +1,206 @@
+\documentclass[UTF8,fontset=none,zihao=5,a4paper]{ctexart}
+\usepackage[margin=22mm,headheight=15pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Arial}\setsansfont{Arial}\setmonofont{Arial}
+\setCJKmainfont{Heiti SC}[BoldFont={Heiti SC}]
+\setCJKsansfont{Heiti SC}[BoldFont={Heiti SC}]
+\setCJKmonofont{Heiti SC}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{booktabs,longtable,tabularx,array,graphicx,tikz,enumitem,fancyhdr,xurl}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage[hidelinks,bookmarksnumbered=true]{hyperref}
+\hypersetup{pdftitle={IEA 主线技术报告：模型收敛与可复现工程},pdfauthor={IEA 项目},pdfsubject={2026-11-13 主线整理版}}
+\ctexset{section={format=\Large\bfseries\sffamily,beforeskip=14pt,afterskip=7pt},subsection={format=\large\bfseries\sffamily,beforeskip=10pt,afterskip=5pt}}
+\setlength{\parskip}{3pt}\setlength{\parindent}{2em}\linespread{1.12}
+\setlist{nosep,leftmargin=2em,topsep=4pt}\renewcommand{\arraystretch}{1.24}
+\setlength{\tabcolsep}{4pt}\emergencystretch=3em
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small IEA / 主线技术报告}\fancyhead[R]{\small 2026-11-13}\fancyfoot[C]{\small\thepage}
+\newcommand{\evidence}[1]{\par\noindent{\footnotesize 证据：#1}\par}
+\newcommand{\code}[1]{\texttt{#1}}
+\begin{document}
+\begin{center}
+{\fontsize{25}{33}\selectfont IEA 主线技术报告\par}
+\vspace{5pt}{\Large 中英文指令图像编辑：模型收敛与可复现工程\par}
+\vspace{5pt}2026年11月13日\quad / \quad 主线整理版
+\end{center}
+\noindent\textbf{摘要}\quad 项目将视觉语言模型输出的编辑决策交给确定性工具执行，研究如何同时满足指令语义、编辑力度与画质要求。本次将本地交付收敛为三份LoRA和一份可选控制头：校准SFT、R1、R15与R21首种子第20轮。前三者分别承担早期数据校准复现、功能基线与后期方案主体；R21承担保留语义前提下的幅度与风险控制实验。R23等旁支及完整中间产物迁至SJTU1，原完整报告与源码保留。本报告解释保留依据、实际父权重、指标边界与恢复方法，不把文件精简解释为新模型性能提升。
+
+\section{项目范围与主线选择}
+\subsection{任务与实际能力}
+输入是一张照片和一条原样中文或英文要求。Qwen2.5-VL-7B输出结构化编辑决策，随后由确定性编辑器执行曝光、亮度、对比度、高光、阴影、饱和度、色温、色调和棕褐色九类全局调整。后期协议还显式区分编辑、保持与拒绝。不支持的物体移除、局部重绘或真实去噪不能借由提示包装成已实现能力。
+
+底座和最终LoRA共同构成一次推理；祖先适配器说明训练初始化，部署时不逐层叠加。R21不是新的7B模型，而是冻结R15之后附加的小网络。质量风险基于输入特征预测，不是对生成结果执行独立视觉质检。
+
+\subsection{保留什么，以及为什么}
+\noindent\begin{tabularx}{\linewidth}{@{}P{2.5cm}P{3.4cm}Y@{}}\toprule
+本地组件 & 固定身份 & 保留理由与使用位置\\\midrule
+校准SFT & seed 20261104；3c89d279… & 保留历史预选种子，复现标签校准收益，并作为R1训练起点。不按测试榜重选种子。\\
+R1 & seed 20261104；e1/110步；54161bd9… & 具有冻结50例验收记录的功能基线；保留首轮提示与编辑器。\\
+R15 & seed 20261127；e1/463步；97c84f17… & 后期结构化决策与独立阴影编辑器的主体，供进一步诊断和交互比较。\\
+R21控制头 & seed 20261205；e20/1160步；838342a2… & 与R15组成可选实验方案；只改幅度和风险，保留首种子的可复现检查点及复核失败证据。\\\bottomrule
+\end{tabularx}
+
+这里的“主线”是维护与交付范围，不是通过实用性验收的模型排名。R15未通过全部功能门槛；R21换种子复核失败，因此不提升为可靠生产默认。三份LoRA中，校准SFT用于历史研究复现；交互比较保留R1、R15和R15＋R21三个完整方案。
+
+\subsection{哪些步骤从日常工作流中移出}
+旁支可以从本地移出，但不能事后断言全部实验“没有用”。对照实验用于排除假设；其权重无需常驻本地，失败结果仍是结论成立的条件。
+
+\noindent\begin{tabularx}{\linewidth}{@{}P{3.2cm}Y@{}}\toprule
+移至服务器的路线 & 证据与精简决策\\\midrule
+重采样、继续SFT、GRPO & 独立71图上未优于校准SFT；保留指标和完整档案，不作为当前推理依赖。\\
+课程训练、DPO及纠错支线 & 课程在受控任务上有收益，但自然请求与严重副作用仍有问题；不能据训练目标名称保留全部候选。\\
+扩大语言或视觉微调范围 & 更大训练范围没有带来稳定功能晋升。保留实际训练祖先，推理只使用最终适配器。\\
+R18/R19/R20/R22 & 偏好训练、统计分支或更宽控制职责未稳定通过验收；其代码中被主线协议依赖的部分仍保留。\\
+R23直接LoRA & 较好的种子原始开发16/20、旧任务4/6，与R15相同；受控100例未运行，另一种子旧任务3/6，整条路线未通过。新增权重未提供足够的本地保留价值。\\
+重复种子、中间检查点 & 转到SJTU1，保留种子、哈希、训练日志与恢复索引。复核失败不因清理本地文件而消失。\\\bottomrule
+\end{tabularx}
+\evidence{旧报告证据快照；各轮冻结报告；模型身份文件。以上是基于既有结果的维护决策，没有重跑选模。}
+
+\section{架构与真实训练关系}
+\subsection{运行时架构}
+\begin{center}\input{figures/runtime.tex}\end{center}
+\noindent\textbf{图1：主线推理架构。} R1与R15互斥使用各自适配器和配套协议。R15＋R21精确复用R15的语义决策；风险策略可以将可编辑请求拒绝，拒绝没有结果图，也不计为完成修图。保持原样则是合法的保持动作。
+
+R21输入为3584维冻结图文表示、16维RGB统计和12维局部残差观测，共3612维。网络为3612→128→10，含GELU与0.1 dropout，共463754个参数；九个输出经sigmoid得到工具幅度，另一个输出为风险logit。局部残差也可能来自真实纹理，不能直接解释为噪声真值。
+
+\subsection{训练谱系与部署依赖分离}
+\begin{center}\input{figures/lineage.tex}\end{center}
+\noindent\textbf{图2：精简后的真实谱系。} 虚线框为只在SJTU1保留权重的历史祖先；实线框为本地保留组件。R9使用既有数据但从原始完整底座重新训练，R15直接继承R11。R1与R15是两条研究阶段的代表，不能画成R1直接训练得到R15。图中省略了不通向这两个交付节点的旁支。
+
+校准SFT也不是从R1训练得到。其训练从Stage A初始化，三个种子共享训练配方；交付选择在独立测试之前锁定为20261104。R15继承R11的116个LoRA张量，其中4个来自视觉连接层，没有额外叠加父适配器。R21冻结底座与R15，只训练小头。
+
+\section{主线结果与指标解释}
+\subsection{像素误差：只比较同一独立71图评测}
+\noindent\begin{tabularx}{\linewidth}{@{}Yrr@{}}\toprule
+方案 & 平均像素L1，越低越好 & 相对Stage A改善\\\midrule
+不编辑NoEdit & 0.118923 & 不作为训练模型排名\\
+校准SFT，种子20261105（服务器复核） & 0.124070 & 10.89\%\\
+校准SFT，种子20261104（本地保留） & 0.126052 & 9.46\%\\
+校准SFT，种子20261103（服务器复核） & 0.127985 & 8.07\%\\
+Stage A基线（服务器） & 0.139225 & 基准\\\bottomrule
+\end{tabularx}
+
+三个种子对Stage A的配对95\%区间分别为[4.65\%,17.03\%]、[2.05\%,15.85\%]、[1.06\%,14.48\%]，未作多重比较校正。三个种子共用71个原图组，不是213个独立样本。NoEdit仍有更低像素误差，故证据支持“相对旧训练基线改善”，不支持“全面超过不编辑”或“审美质量提高9.46\%”。R1、R15、R21没有同口径的该组像素结果，不补造缺失分数。
+\evidence{原完整报告快照中的pixel\_test；历史final-analysis-summary.json。}
+
+\subsection{功能表现：分母和开发阶段必须同时报告}
+\noindent\begin{tabularx}{\linewidth}{@{}P{2.5cm}ccccY@{}}\toprule
+方案 & 原始20 & 旧任务6 & 控制20 & 受控100 & 结论\\\midrule
+R15 & 16 & 4 & 20 & 75 & 受控有1例重大问题，未通过。\\
+R15＋R21首种子e20质量策略 & 16 & 5 & 20 & 82 & 首种子受控重大0，换种子复核失败。\\
+R23较好种子（归档对照） & 16 & 4 & 20 & 未运行 & 无足够证据替代R15，路线未通过。\\\bottomrule
+\end{tabularx}
+
+这里的完成数要求同一语义的中文和英文都完整完成且画质合格。保持／拒绝控制20例是行为协议测试，不能解释为全面可靠的质量识别。受控100例包含条件构造，与20个原始开发任务不是同一分布。R21首种子相对R15增加7例受控完成、减少1例重大问题，但这是反复使用的开发集上的局部结果，不能直接外推用户成功率。
+
+R1另有冻结50例验收：31/50，旧SFT基线15/50；两个对照／复核候选为32/50。R1不是该冻结集点估计最高的模型，其保留价值是已锁定的默认身份和可追溯验收。该50例不能与后期20例或100例混排，也不能将31/50对16/20解释为R15提升18个百分点。
+
+R21第二种子在锁定第20轮质量策略后，再次对夜景执行提亮并产生严重噪点。首种子e80的训练loss更低，也出现同类重大问题；最终验收未开封。保留失败记录比在本地保留全部失败权重更有价值。
+\evidence{R1 results.json与REPORT.md；R15/R21元数据、逐例汇总、replication-lock.json；R23 REPORT.md。功能评审主要为AI辅助，不是独立用户研究。}
+
+\subsection{训练loss为什么不能决定部署榜单}
+\noindent\begin{tabularx}{\linewidth}{@{}P{3.1cm}rY@{}}\toprule
+模型／时点 & 记录loss & 实际统计口径\\\midrule
+R1所选e1 & 0.134100 & 前110步日志损失的均值，SFT token监督。\\
+R15所选e1 & 0.067812 & 前463步日志损失的均值，结构化决策SFT。\\
+R23较好种子末轮 & 0.059157 & 前250步日志损失的均值；功能结果未优于R15。\\
+R21首种子e20 & 0.099821 & 第20轮小头复合损失的batch均值。\\
+R21首种子e80 & 0.050839 & 第80轮同目标均值更低，但有重大画质问题。\\\bottomrule
+\end{tabularx}
+
+前三行虽同属监督学习，数据、目标文本、token长度和日志平均方式不同，数值顺序不是质量顺序。R21损失包含幅度、风险与双语一致性项，不能与语言模型交叉熵混排。即使在同一R21训练内部，loss下降约一半也没有保证画质门槛通过。训练loss用于确认优化过程；部署选择依赖冻结的功能、回归和副作用指标。
+
+\section{保留模型的训练方法}
+\subsection{校准SFT：先修正标签与执行器的对应关系}
+早期训练误差的一部分来自参数标签与实际编辑效果不匹配。校准路线调整监督标签，采用JSON参数监督；从Stage A继续QLoRA训练。实际训练集3000条、1078个原图组，学习率0.0001、有效batch 4，训练1024步，共4096次样本呈现。1024步并不等于把3000条数据完整遍历若干整数轮。
+
+交付导出将同一训练轨迹第512步与第1024步的LoRA A/B张量各以0.5权重平均；这是因子张量平均，不等于直接平均其乘积，也不是跨种子融合。保留种子20261104的预选导出身份，其余种子的指标和权重留在服务器。该阶段教训是先核查数据目标、工具方向与强度，再增加算法复杂度；像素L1改善仍需与自然指令完成和副作用评审共同解释。
+
+\subsection{R1：从校准初始化转向中英文功能监督}
+R1从校准SFT种子20261104初始化，使用160个原图组上的220个语义案例、440条中英文记录。QLoRA采用NF4双量化、BF16计算、r=8、alpha=16；学习率0.0001，有效batch 4，训练保存四轮检查点。主线保留经开发选择的第1轮110步，而不是最后一轮或训练loss最小者。
+
+中英文为同一语义的配对输入，标签只监督合法参数输出。该策略强化工具方向、指定力度及不做无关增强；其冻结验收结果优于早期SFT基线，但对比度和复合要求仍有回退。数据隔离以原始图像组为单位，同图翻译或合成退化不增加独立照片数。
+
+\subsection{R15：修正阴影标签与执行器，同时保持明确消融}
+R15直接从R11初始化，复用925个语义案例、1850条中英文记录、240个原图组。训练集含780编辑、80保持及65拒绝案例；154条保留原始英文，771条为AI构造语义案例。该轮没有新增独立原图；132个阴影相关目标复查，11个决策修正，配合独立阴影增益编辑器。
+
+训练使用NF4/BF16、r=8、alpha=16、dropout=0，学习率0.00005，有效batch 4，AdamW、cosine调度、5\% warmup。共训练两轮926步；保留第1轮463步的116张量适配器，共2674688个可训练参数。后续训练并非必须保留的部署阶段。
+
+收益归因需要编辑器对照：旧父参数只替换编辑器，原始开发15/20、受控76/100；R15训练后16/20、75/100。由此只能说部分原始请求改善，不能声称训练全面提升。清理项目时保留配套编辑器、协议和该消融证据，避免将工具收益误记为模型收益。
+
+\subsection{R21：冻结语义，仅学习幅度和风险}
+R21复用R15的925语义数据，不引入新照片、请求或正参数标签。风险训练只用780个编辑和44个质量拒绝案例，44例拒绝仅覆盖23个原图组；80保持及21工具不支持拒绝不作风险标签。训练集统计量用于标准化，开发集不参与拟合。
+
+小头在CPU上训练，AdamW学习率0.001、weight decay 0.01；每个batch含16个语义及其32条双语输入。每轮58步，训练80轮4640步，保存e20与e80；本地保留e20。损失为：4×活跃工具幅度SmoothL1＋支持任务上的加权风险BCE＋0.25×双语幅度与风险一致性。风险sigmoid达到0.5时，质量策略可以拒绝父模型的编辑决定；这个阈值不是经独立校准的置信度。
+
+更小的控制职责有助于避免头网络重新发明工具或反转方向，但没有解决稀少风险标签与换种子不稳定。可选头保留的目的，是继续检验这一结构，而不是承诺风险检测可靠。
+
+\section{工程收敛与可复现工作流}
+\subsection{本地是紧凑工作区，SJTU1是完整历史档案}
+本地只保留三份LoRA与一份控制头的规范目录、模型配置和身份文件。完整Qwen底座留在SJTU1，不重复下载到Mac。根目录入口由AGENTS.md、README.md、Makefile和主线清单组成；脚本保留必要的冻结协议依赖，历史包名不等于额外模型常驻。
+
+\noindent\begin{tabularx}{\linewidth}{@{}P{4.3cm}Y@{}}\toprule
+目录／入口 & 职责\\\midrule
+\path{models/mainline.json} & 四个组件的权重与配置哈希、固定角色及依赖。\\
+\path{scripts/project/} & 本地完整性检查和按清单恢复；不会启动训练。\\
+\path{scripts/comparison_studio/} & 主线三个方案的交互代码，R21复用R15；本次不修改已运行的远端服务。\\
+\path{data/training/} & 主线标签和来源定义；大图及缓存按需从SJTU1恢复。\\
+\path{experiments/} & 主线冻结协议、日志、结果，以及运行依赖和必要反证。\\
+\path{docs/archive/} & 清理前逐文件SHA256清单、远端核验收据和清理记录。\\
+\path{reports/}、\path{output/pdf/} & 新旧报告源码与成品；旧报告保持原字节。\\\bottomrule
+\end{tabularx}
+
+归档位置为\path{SJTU1:/mnt/sdc/zhc/IEA-local-archives/20261113-pre-mainline/}。其中tree保存清理前的本地文件结构，独立复制而非与运行目录共享硬链接；SHA256核验通过后才清理本地副本。服务器原实验目录\path{/mnt/sdc/zhc/IEA}仍保留完整底座、原环境及此前未下载到本地的训练缓存。Git历史不是模型备份；主项目Git元数据保持不动。
+
+\subsection{三种复现层次}
+\begin{enumerate}
+\item 文档与证据复现：本地运行\code{make verify}检查主线权重、协议代码和旧报告保护情况；\code{make report}重新编译本报告。原报告用自身build.sh重建，无需重新推理。
+\item 运行复现：用登记的原始Qwen底座、唯一最终LoRA、对应提示／解析器／编辑器及固定头检查点。底座精度、输入像素上限、确定性生成均是结果身份的一部分；FP32 CPU与NF4/BF16 GPU不可宣称逐像素一致。
+\item 训练复现：从SJTU1恢复对应数据、初始化权重、冻结代码、优化器设置和缓存，在独立运行目录重建。已有训练脚本采用防覆盖检查，不能直接在历史输出目录重跑。完整历史底座与环境不包含于紧凑本地包；本次没有新训练或位级一致性复训验证。
+\end{enumerate}
+
+恢复工具默认只预览。\path{scripts/project/assets.py restore}接受路径前缀或证据profile、显式目标目录以及\code{--execute}；下载先进入临时目录，逐文件核验后才交付，拒绝覆盖不同内容。profile用于恢复已归档本地证据，不伪装成包含所有服务器外部依赖的独立训练包。具体命令与依赖边界见\path{docs/REPRODUCIBILITY.md}。
+
+\subsection{整理验证与保留边界}
+清理以逐文件清单为准：仅处理清理前已登记、远端验证成功且不在保留集合内的文件；删除前再次核对本地内容未变。新报告、交接材料及原报告不在删除集合。已运行的SJTU1服务、原模型和预算账本没有被重置，也没有触发GPU任务。历史24 GPU小时已结算，交互预算另计，不能因重新组织目录获得新的训练预算。
+
+本次交付核查包含主线权重与配置哈希、冻结协议代码、归档可恢复性、编辑器与接口的CPU测试、LaTeX编译和逐页渲染。具体数量、文件清单及验收结果记录于随附validation.json与归档收据；它们证明工程完整性，不产生新的图像质量分数。
+
+\section{从实验中保留的技术结论}
+第一，先修正标签和执行器，再扩大训练范围。校准SFT的跨种子像素改善比“更复杂算法必然更好”更有证据；同时NoEdit更低的L1提醒我们，参考图距离不等于真实修图价值。
+
+第二，冻结语义、缩小辅助头职责比重新预测全部控制量更容易解释，但稳定性仍取决于数据覆盖。R21保留工具、方向、保持和拒绝的结构约束值得继续研究，首种子开发分数不够支持上线。
+
+第三，模型更新必须与编辑器更新分开归因。R15在原始20例与受控100例上方向并不一致，保留父参数配新编辑器的对照可以避免过度归功于微调。
+
+第四，把最终验收作为准入条件而非展示材料。反复使用的开发集、同图双语和合成条件不能代替新独立照片；下一步应围绕未见照片、质量拒绝覆盖与预注册换种子复核展开，而不是继续堆叠模型编号。
+
+第五，可复现不要求所有权重常驻每台电脑。保留少数固定身份的运行组件、明确的数据和代码契约、可核验的服务器档案，就能减少选择负担，同时保留完整研究证据。上述结论限定在现有实验范围内，不代表任务已经达到稳定生产质量。
+
+\appendix
+\section{指标、单位和证据入口}
+\subsection{像素指标}
+像素L1是预测图与参考图逐通道绝对差的均值；RGB值归一化到[0,1]。RMSE是平方差均值开方，对大偏差更敏感。比较需要同一图像对齐、分辨率、颜色处理及聚合方式；本报告主线像素表没有跨集混入Stage 2的100图RMSE。
+
+相对改善＝（基线误差－模型误差）／基线误差。该百分比描述误差变化，不是通过率，也不是审美质量分。逐图平均和逐像素池化不是同一统计量。NoEdit作为必要参照保留，避免模型仅因接近原图就被误判为理解指令。
+
+\subsection{功能与训练指标}
+双语完整完成数以语义案例为单位：中文、英文均完成且画质合格才记1。每例两条语言输出不算两个独立任务。重大问题指足以阻止晋升的严重过曝、噪点、偏色或细节损伤。保持／拒绝控制通过仅证明给定控制案例按预期处理；拒绝可行编辑请求仍为未完成。
+
+训练交叉熵只覆盖被监督的输出token；SFT日志的步均值不等价于全数据token加权均值。R21复合损失依赖各项权重和掩码，不能与语言交叉熵或像素L1直接比较。执行率描述产生合法输出的比例，不保证请求完成。页面和下载测试仅属于工程验证。
+
+\subsection{可追溯证据}
+\noindent\begin{tabularx}{\linewidth}{@{}P{2.4cm}Y@{}}\toprule
+内容 & 本地入口\\\midrule
+旧全量统计 & \path{reports/model-review-20261112/generated/evidence_snapshot.json}\\
+主线身份 & \path{models/mainline.json}及各模型原始身份文件\\
+功能结论 & \path{experiments/functional-v1-20261104/REPORT.md}、\path{experiments/functional-v15-20261106/REPORT.md}、\path{experiments/functional-v21-20261107/REPORT.md}\\
+移出R23依据 & \path{experiments/functional-v23-20261107/REPORT.md}\\
+归档与恢复 & \path{docs/archive/archive-receipt.json}、\path{docs/archive/manifest-before.json}、\path{docs/REPRODUCIBILITY.md}\\
+当前整理验证 & \path{reports/mainline-technical-20261113/validation.json}\\\bottomrule
+\end{tabularx}
+
+原完整报告回答“所有尝试发生了什么”；本报告回答“现在维护什么、为什么、如何复现”。两者并存。原报告的历史路径如已迁到SJTU1，应按本次归档清单解析；不回写历史报告或改动冻结结论。
+\end{document}

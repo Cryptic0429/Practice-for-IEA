@@ -1,0 +1,155 @@
+{
+  "schema": "iea-mainline-v1",
+  "date": "2026-11-13",
+  "models": [
+    {
+      "id": "calibrated_sft",
+      "name": "早期校准基线",
+      "path": "models/from-sft-standard/sft-calibrated/seed-02",
+      "kind": "lora_adapter",
+      "role": "早期标签校准复现与R1初始化（对照基线）",
+      "tier": "baseline",
+      "alias_paths": [
+        "models/baselines/early_calibrated_sft"
+      ],
+      "seed": 20261104,
+      "requires": [
+        "Qwen2.5-VL-7B-Instruct"
+      ],
+      "files": [
+        {
+          "path": "models/from-sft-standard/sft-calibrated/seed-02/adapter_config.json",
+          "bytes": 879,
+          "sha256": "ba186bf52e4aef3cf2459ab8457a77e66f54962eab8c7b27602810a7fc29cc2f"
+        },
+        {
+          "path": "models/from-sft-standard/sft-calibrated/seed-02/adapter_model.safetensors",
+          "bytes": 10108960,
+          "sha256": "3c89d279a45180492bee2bc5e0450e8a67ab0d78f01c73946763d3e4cad78884"
+        },
+        {
+          "path": "models/from-sft-standard/sft-calibrated/seed-02/averaging.json",
+          "bytes": 1205,
+          "sha256": "a24ea0b6c284753c08246d8c9e579171c7862417c275d7ed94fd52a716d9c3e3"
+        },
+        {
+          "path": "models/from-sft-standard/sft-calibrated/seed-02/model-info.json",
+          "bytes": 2135,
+          "sha256": "38b4fd58d945ef931e365d69f2890e7e3e92054661da1afb4d99156da1b5de7e"
+        }
+      ]
+    },
+    {
+      "id": "r1",
+      "name": "早期功能基线",
+      "path": "models/from-sft-calibrated/sft-functional/seed-01",
+      "kind": "lora_adapter",
+      "role": "首轮功能基线对照",
+      "tier": "baseline",
+      "alias_paths": [
+        "models/baselines/early_functional_baseline"
+      ],
+      "seed": 20261104,
+      "requires": [
+        "Qwen2.5-VL-7B-Instruct"
+      ],
+      "files": [
+        {
+          "path": "models/from-sft-calibrated/sft-functional/seed-01/adapter_config.json",
+          "bytes": 879,
+          "sha256": "480492e966f3fcff02af97235afd592fa490a806dce44c7e26f7cc3d72c56bf0"
+        },
+        {
+          "path": "models/from-sft-calibrated/sft-functional/seed-01/adapter_model.safetensors",
+          "bytes": 10108960,
+          "sha256": "54161bd9c9f2e3aa518572be6cf1dad81f8bebe33d92d31107d64d1f3c4435b0"
+        },
+        {
+          "path": "models/from-sft-calibrated/sft-functional/seed-01/model-info.json",
+          "bytes": 2040,
+          "sha256": "7b4f22ac88ec1a0c7cc32ace5964b36783a0ed522a0afde669bcfc5cd824e777"
+        }
+      ]
+    },
+    {
+      "id": "r15",
+      "name": "语义决策主干",
+      "path": "models/from-functional-v11/sft-shadow-correction/seed-01",
+      "kind": "lora_adapter",
+      "role": "核心语义主干（IEA-Core共享底座，单独运行作无控制头消融对照；未通过全部功能门槛）",
+      "tier": "core_backbone",
+      "alias_paths": [
+        "models/core/semantic_backbone",
+        "models/baselines/ablation_no_controller"
+      ],
+      "seed": 20261127,
+      "requires": [
+        "Qwen2.5-VL-7B-Instruct"
+      ],
+      "files": [
+        {
+          "path": "models/from-functional-v11/sft-shadow-correction/seed-01/adapter_config.json",
+          "bytes": 950,
+          "sha256": "5f538a6f7c8a45566a6c341a26797282501c881b97bf70fd1d47c125cb611115"
+        },
+        {
+          "path": "models/from-functional-v11/sft-shadow-correction/seed-01/adapter_model.safetensors",
+          "bytes": 10715680,
+          "sha256": "97c84f1799fb319799c86515402574b3b585593763e5388eb30d0df3e0d6ea90"
+        },
+        {
+          "path": "models/from-functional-v11/sft-shadow-correction/seed-01/metadata.json",
+          "bytes": 20815,
+          "sha256": "763e573526812f5b1cd57d56ce87e140001bd8e47888c1c887f914dfe2181c82"
+        }
+      ]
+    },
+    {
+      "id": "r21_head",
+      "name": "幅度与风险控制头",
+      "path": "models/from-functional-v15/semantic-preserving-controller/seed-01",
+      "kind": "controller_head",
+      "role": "核心方案控制头（与语义主干组成IEA-Core；首种子受控82/100，换种子复核失败）",
+      "tier": "core_controller",
+      "alias_paths": [
+        "models/core/controller_head"
+      ],
+      "seed": 20261205,
+      "requires": [
+        "r15"
+      ],
+      "files": [
+        {
+          "path": "models/from-functional-v15/semantic-preserving-controller/seed-01/controller.pt",
+          "bytes": 1887172,
+          "sha256": "838342a2167038589a91b646ad98432ec4749e698d4b29ad7f2b520b366a26da"
+        },
+        {
+          "path": "models/from-functional-v15/semantic-preserving-controller/seed-01/metadata.json",
+          "bytes": 4481,
+          "sha256": "0a4efb655545aae5cba71d0ab72bcfab8f41f70788f3d4c2ffee8bd4cf533efb"
+        }
+      ]
+    }
+  ],
+  "core_pipeline": "r15+r21_head",
+  "baselines": [
+    "r15",
+    "r1",
+    "calibrated_sft"
+  ],
+  "runtime_options": [
+    "r15+r21_head",
+    "r15",
+    "r1"
+  ],
+  "production_qualified": false,
+  "base": {
+    "host": "SJTU1",
+    "path": "/mnt/sdc/zhc/IEA/models/Qwen2.5-VL-7B-Instruct",
+    "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "local": false
+  },
+  "archive": "docs/archive/archive-receipt.json",
+  "original_report": "output/pdf/iea-model-review-20261112.pdf"
+}

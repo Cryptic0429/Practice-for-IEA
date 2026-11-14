@@ -1,1 +1,0 @@
-本目录cases.json与train-accepted.json为便于查看保存的逐字节副本。实际第五轮训练读取第四轮冻结文件；两者SHA相同，原路径和数据SHA以第五轮feature-protocol.json为准。没有新增或改写训练标签。

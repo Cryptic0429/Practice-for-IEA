@@ -1,0 +1,14 @@
+\begin{tikzpicture}[font=\small,box/.style={draw,rounded corners=2pt,align=center,minimum height=10mm,text width=30mm},old/.style={box,dashed},arr/.style={-{Stealth[length=2mm]},thick}]
+\node[old] (base) at (0,0) {原始Qwen底座\\SJTU1};
+\node[old] (a) at (4,0) {Stage A};
+\node[box] (cal) at (8,0) {校准SFT\\seed 20261104};
+\node[box] (r1) at (12,0) {R1\\e1／110步};
+\node[old] (r9) at (0,-2) {R9原始底座起点};
+\node[old] (r10) at (4,-2) {R10连接层路线};
+\node[old] (r11) at (8,-2) {R11};
+\node[box] (r15) at (12,-2) {R15\\e1／463步};
+\node[box,text width=47mm] (r21) at (10,-3.8) {R21 e20控制头\\冻结R15，仅训练小头};
+\draw[arr] (base)--(a);\draw[arr] (a)--(cal);\draw[arr] (cal)--(r1);
+\draw[arr] (base)--(r9);\draw[arr] (r9)--(r10);\draw[arr] (r10)--(r11);\draw[arr] (r11)--(r15);
+\draw[arr] (r15.south)|-(r21.east);
+\end{tikzpicture}

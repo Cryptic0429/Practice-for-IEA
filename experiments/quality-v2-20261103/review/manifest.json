@@ -1,0 +1,3668 @@
+{
+  "role": "anonymous_final_review",
+  "model_lock_sha256": "0c50d8f6d6137ef796290a8e7c1527c2443db98905123a3e4287b002dc43f2f4",
+  "visual_plan_sha256": "209c212667af140afec3efcbb249fd8a0fc0582207b0eb419ea7a003bf52b24d",
+  "cases": [
+    {
+      "case": 1,
+      "id": "GIER-Edit:test:000279",
+      "group_id": "1e047f250338562ce22ea9b3de2d592ec8e2d45198907504ddcf134499bacee0",
+      "instruction": "",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "6ef3256e526f292b0908d910dc4a83d69bc04bdd40cc6c56cb31e9bb682d0452"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "b6423d6768cb80ecca549d70cbc1f5a7fb878e74f0311ed9b11a343abb235b9d"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "1b9639452044aded1f6b682ffe9515c61e1e75a4f3d97659d1827b5826834070"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "1b9639452044aded1f6b682ffe9515c61e1e75a4f3d97659d1827b5826834070"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "3efe02948f5df8e1e06c627d27047587ab8432723e6e014d7a8e0bc669baba10"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "7c3025b96ccb9c78c67f5f5c79456d6949c664fec62af5752b8666c1fe7b2318"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "4271be46370ec05ba2afa0609e292d435cb277811992f5de8284b5d38eae023a"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "ebd32039d14d9a7e92e2b0c87aee4b8200cd0be598da3a7de7708bc20cff51a7"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "e7a74648881f375446eaa71f18959de2d5492918ef993818cd9def110954b9c5"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            32,
+            144,
+            567,
+            539
+          ],
+          [
+            632,
+            144,
+            1167,
+            539
+          ],
+          [
+            1232,
+            144,
+            1767,
+            539
+          ],
+          [
+            32,
+            594,
+            567,
+            989
+          ],
+          [
+            632,
+            594,
+            1167,
+            989
+          ],
+          [
+            1232,
+            594,
+            1767,
+            989
+          ],
+          [
+            32,
+            1044,
+            567,
+            1439
+          ],
+          [
+            632,
+            1044,
+            1167,
+            1439
+          ],
+          [
+            1232,
+            1044,
+            1767,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 2,
+      "id": "GIER-Edit:test:000283",
+      "group_id": "3cca54058b33fd8c85f3464840910749b1d2504dea0ccb25ead7eae3a3bfc7b9",
+      "instruction": "Change the lighting of the image so that the man and the car are more visible.",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "57b217ff047f2ed1d326985215aa182982d18b78a243bf569aca8c8e37bb15d3"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "6ee63447e295cb9cbd2768844e2fb290df8b1cc3216c2f43d8ad2ea1fb1ea904"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "a271a617ee5a53d4e5bf2f15bae819e9302d550df63465a51ba33e2fc9b5184b"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "5c38c14477294b4fbc205bf291c655cdc882dbd469bf7f5650567cc5ad776fa1"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "dbff30f871b798fdc8493a6009296c96deeba2dedf2f41cc4219e94f12f2eec8"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "efaa478a52bc0246282b50acbf40d11add57b1fda16601d3c9831cebe6d9bb0c"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "4ec1855892320c3737e3c1ff94a1b1cbfba58c7f02047a3f46905f6e97db3cd1"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "0a74cff47562ee5af877824e2e2036b586e5809b32389b89aff1374f4243b3d9"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "55205bfb819e8ae046df80231f4a9f608aca0e21ad4d70aa7294af0f6a5b526e"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            152,
+            144,
+            448,
+            539
+          ],
+          [
+            752,
+            144,
+            1048,
+            539
+          ],
+          [
+            1352,
+            144,
+            1648,
+            539
+          ],
+          [
+            152,
+            594,
+            448,
+            989
+          ],
+          [
+            752,
+            594,
+            1048,
+            989
+          ],
+          [
+            1352,
+            594,
+            1648,
+            989
+          ],
+          [
+            152,
+            1044,
+            448,
+            1439
+          ],
+          [
+            752,
+            1044,
+            1048,
+            1439
+          ],
+          [
+            1352,
+            1044,
+            1648,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 3,
+      "id": "GIER-Edit:test:000297",
+      "group_id": "42fc8326f306369c4e6f6a3dd18765b34121760b61cd793af66173ef994dea18",
+      "instruction": "Please simply make this image better.",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "18ddc55903e2f70589601e31a73ea3dc9a66605fa087675044e3614b09a5dca7"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "8c39f012ef8773556fcc8f082a64dc51df985f239a89f2914a02b1603c73ebdb"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "e952acae271f25adba4b7294cde28267d65a20cbdecaa09088f044283411bdb2"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "03b6328b45e651a6dec7b933c8d3f86588135b2cc3821dc6cf0b2bc45768e6eb"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "1a981dd1e2c870c0f24bcab69d7574c499bd039b2818ff51228c8b10f4c840bc"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "03b6328b45e651a6dec7b933c8d3f86588135b2cc3821dc6cf0b2bc45768e6eb"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "1a981dd1e2c870c0f24bcab69d7574c499bd039b2818ff51228c8b10f4c840bc"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "dbcf728392489ea3779701b35abe7f69872a8b92c3d256741c5d419327edd926"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "4ad4e91978ea8184f455fbd30a6f6b801c56b282e8cbacc0f7fde484aee24a12"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            78,
+            144,
+            522,
+            539
+          ],
+          [
+            678,
+            144,
+            1122,
+            539
+          ],
+          [
+            1278,
+            144,
+            1722,
+            539
+          ],
+          [
+            78,
+            594,
+            522,
+            989
+          ],
+          [
+            678,
+            594,
+            1122,
+            989
+          ],
+          [
+            1278,
+            594,
+            1722,
+            989
+          ],
+          [
+            78,
+            1044,
+            522,
+            1439
+          ],
+          [
+            678,
+            1044,
+            1122,
+            1439
+          ],
+          [
+            1278,
+            1044,
+            1722,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 4,
+      "id": "GIER-Edit:test:000344",
+      "group_id": "f46366220c8b0387ceb32eafb8de6b70933de6141807d90bed489721f0d1276d",
+      "instruction": "Please simply make this image better.",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "27ca87ce21e81fe4a8cc3691f7e1d78749c132e02a3460a72af3b9a15d6e5ac5"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.png",
+          "sha256": "18eeca18a5ce2594568f7921fcb9fdbe662382c90c3aa5707abaca1f4d5f7116"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "6a130a6130f4157c737b72a6fa3b7c92721efb54ede212cdff1710e7dc064b94"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "83a30116538187f4c153bb666bb59d2a930449a2cc4f867cb804741e7de867e4"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "4d57967474230c6d04badfc390afc6c3b05fbed787befd523d6a652898905bb0"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "ba140ed86191efa3cdf884a367a8f01502096e7ebba3d0f77d8071237aefa87f"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "4d57967474230c6d04badfc390afc6c3b05fbed787befd523d6a652898905bb0"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "d83de56c253bdad85f82175143a607cc7e3908f4f5c61ec313d61a7426ea5b8b"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "d83de56c253bdad85f82175143a607cc7e3908f4f5c61ec313d61a7426ea5b8b"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            189,
+            144,
+            411,
+            539
+          ],
+          [
+            789,
+            144,
+            1011,
+            539
+          ],
+          [
+            1389,
+            144,
+            1611,
+            539
+          ],
+          [
+            189,
+            594,
+            411,
+            989
+          ],
+          [
+            789,
+            594,
+            1011,
+            989
+          ],
+          [
+            1389,
+            594,
+            1611,
+            989
+          ],
+          [
+            189,
+            1044,
+            411,
+            1439
+          ],
+          [
+            789,
+            1044,
+            1011,
+            1439
+          ],
+          [
+            1389,
+            1044,
+            1611,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 5,
+      "id": "GIER-Edit:test:000626",
+      "group_id": "4bc3df578fb1d2ab0ae11a27d94979149c7d2c0b9cf82ee2e4b8d0c91927c990",
+      "instruction": "Please, sharpen the photo",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "7b3b6b8296d87721ce30dc1b903f3ff3d23c7cff86ecdf9b4189595a99021776"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "5c62680b20d357ca94fa804a703f69799c5f6b551bc0027a0592f2a6242d8b03"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "2a5a918e529b63c0e3eed48b0cbde429c42befb984f61dc210b6c69a012d03bf"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "e7c83d4b619820fc74f0ba0fdd6281fa2c6093e37cca270c8617af5d9d1ea192"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "4d0126d0d94c2319b8c1026269cc832fe7f11d86e782a70b09840631b79cce08"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "46413cf736fde31bdd4a6bace44e4640deb4e335d5c655112f375d76a4479e6d"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "1019f650072c16d516fc18c48c9571503abe62d1860745aaa5e16e8da5a1b2d2"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "2a5a918e529b63c0e3eed48b0cbde429c42befb984f61dc210b6c69a012d03bf"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "e7c83d4b619820fc74f0ba0fdd6281fa2c6093e37cca270c8617af5d9d1ea192"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            52,
+            144,
+            547,
+            539
+          ],
+          [
+            652,
+            144,
+            1147,
+            539
+          ],
+          [
+            1252,
+            144,
+            1747,
+            539
+          ],
+          [
+            52,
+            594,
+            547,
+            989
+          ],
+          [
+            652,
+            594,
+            1147,
+            989
+          ],
+          [
+            1252,
+            594,
+            1747,
+            989
+          ],
+          [
+            52,
+            1044,
+            547,
+            1439
+          ],
+          [
+            652,
+            1044,
+            1147,
+            1439
+          ],
+          [
+            1252,
+            1044,
+            1747,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 6,
+      "id": "GIER-Edit:train:000299",
+      "group_id": "3c0e83776f6adb363c804f3efccc47128fe53da52c56009334f2c7b515451ee1",
+      "instruction": "What will you do to improve this image?",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "d4ad6fc7e22100228d2c634b4a1f5d7c5874fda7785de11f55417a3ff89edb93"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "0835d5c60ba79c912a5d9b002ddd8a6d068e5ac33e987607536090cab371a6cc"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "34c4f15cf1e7ac8bb91c067b55a5859708754b4debb0122669620770ca1af943"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "35f608b8f5bfc714404e1e1d7b8b2debf9cc233c84b98744ee12b88bc297f833"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "509afe7d87a622fb521aa2141c8a6bff0ceb29955f0cd75c08e7f32a951ee256"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "3d70d4df05ec93914b1b22eb41ea00cc972b7dd849a29e6ee344f87cb807b7d6"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "f29f97095adbf8d9bb9290b490109372bfa55132ac2c6823759cb28c8fa6c100"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "f95e735307a7f215b832b28412401741694503b4eee14d7eb0d15c3332bc47e8"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "9cca3c7983180edba0cdcf8bb90616362214dc2c8bbe5662d3355e2439a3cc0e"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            151,
+            144,
+            448,
+            539
+          ],
+          [
+            751,
+            144,
+            1048,
+            539
+          ],
+          [
+            1351,
+            144,
+            1648,
+            539
+          ],
+          [
+            151,
+            594,
+            448,
+            989
+          ],
+          [
+            751,
+            594,
+            1048,
+            989
+          ],
+          [
+            1351,
+            594,
+            1648,
+            989
+          ],
+          [
+            151,
+            1044,
+            448,
+            1439
+          ],
+          [
+            751,
+            1044,
+            1048,
+            1439
+          ],
+          [
+            1351,
+            1044,
+            1648,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 7,
+      "id": "GIER-Edit:train:000941",
+      "group_id": "0b3f7fd17ddd788e541754b6df4219f31d5c2cbba1e377074aacd3e4ef9fa6e7",
+      "instruction": "How to enhance this image?",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "83ef0f10df48cfa84d2166d9edfa041e7971ab18d903629cf528da6330ffe05e"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "fca14617283d167e6d4bb7b848d25aa90cc57d737137dd910d97729f27ec2fb2"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "efb24c129879c084f30f18adc249c5f3422a725c2d706e6106d0b4d87d26ea2b"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "7097737a90284126448cf82b9f7f99e9b91acc4c9bafd5379c8192911231a3c6"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "2c5dd0f3114bbea1edb2b393c799a93edf5af8ef40b941150463843105d81f42"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "fa8b8f8be750c6533c0151e807dbe689b9a1aada8b1007a60c88798594247cee"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "93024a3a8498e65a6ad804037c0f1c384ed4a4a8f27a2e0c6fa56b1ee8a24687"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "8ffd9fd0ef4592384b1cd8874d7162996cfb322f173c861020c66f2def621a93"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "2c5dd0f3114bbea1edb2b393c799a93edf5af8ef40b941150463843105d81f42"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            181,
+            144,
+            418,
+            539
+          ],
+          [
+            781,
+            144,
+            1018,
+            539
+          ],
+          [
+            1381,
+            144,
+            1618,
+            539
+          ],
+          [
+            181,
+            594,
+            418,
+            989
+          ],
+          [
+            781,
+            594,
+            1018,
+            989
+          ],
+          [
+            1381,
+            594,
+            1618,
+            989
+          ],
+          [
+            181,
+            1044,
+            418,
+            1439
+          ],
+          [
+            781,
+            1044,
+            1018,
+            1439
+          ],
+          [
+            1381,
+            1044,
+            1618,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 8,
+      "id": "GIER-Edit:train:002422",
+      "group_id": "5edbde2db9ec0bb2d37bfb66a4616e77a1f881410a4e1f99a9e372a33dcfe371",
+      "instruction": "What will you do to improve this image?",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "db99975f7a6081e7e6c0713d60aeb737f21e3915a32122e2d26643a9a43cf7ab"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "9628e7297b046e29efe380d4f24413c3523c6bb6bafda5fa1adfa476541a45b0"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "c8ee8561fe70d1f9cc71e39105033272cdaa6e53c499a7ed6f977538971e19d6"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "4fc917034faf521a1aad76ac6c9cda28967e2eacb4a27ff0162747a5dc038aeb"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "20890c5825191cd999c1699c46bac076e4e4d1b23091060e3c855651f23d467f"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "20890c5825191cd999c1699c46bac076e4e4d1b23091060e3c855651f23d467f"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "7f02e9d22ce9d3bac981570991313054394f7fbadab1386051e3446dccfd607b"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "20890c5825191cd999c1699c46bac076e4e4d1b23091060e3c855651f23d467f"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "6db81aa6d3e3d28aec80d9192fe84e1d24ee899507ac1bdbda7050091e3c56cf"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            160,
+            144,
+            439,
+            539
+          ],
+          [
+            760,
+            144,
+            1039,
+            539
+          ],
+          [
+            1360,
+            144,
+            1639,
+            539
+          ],
+          [
+            160,
+            594,
+            439,
+            989
+          ],
+          [
+            760,
+            594,
+            1039,
+            989
+          ],
+          [
+            1360,
+            594,
+            1639,
+            989
+          ],
+          [
+            160,
+            1044,
+            439,
+            1439
+          ],
+          [
+            760,
+            1044,
+            1039,
+            1439
+          ],
+          [
+            1360,
+            1044,
+            1639,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 9,
+      "id": "GIER-Edit:train:002931",
+      "group_id": "67667532a2f2e464ee02e87b72e48f41ceaa59808eb24d21b58e0483ce9d3fb6",
+      "instruction": "Edit this image to make it more beautiful",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "dfd4590090fcdc78b18fdba8735deab8e7e13c460e75ea3cb33dcc39c0cfebdb"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "18196f1dbbbe7a36e9262d1f3e6bacee66977e880e512f9f4ac7f4aa22156f85"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "cb35ed23a5c97457c5f75446ee585068d8fab8f800fe52b63ef0cdc89a45f365"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "ff999ae6c8d27ef67eed652c6d5aa7b3dfbab657fa76bfd91d1fc8b4cbaf0c10"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "c45fb431bb873e96c41e14205b543a3d81892f2e3cf9c2d4d204dd65652a939b"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "08b1a86655c9c9aab2f949e6b9d6292353de7a2bfd251e8bbcb6f41f2acf7c0c"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "9c9730b4ff430ec9c0786c8a6a3cf6eeb1a78c2b54f117cd3719b8fbb3fecfc9"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "7431cbfec4360183a56cbbfb77f0c872eee7f9605438e342fb533c52203628e1"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "a3353116729a490fca7783e888f110a99aeee996f43daf84e02bcc186d2e9068"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            10,
+            178,
+            590,
+            504
+          ],
+          [
+            610,
+            178,
+            1190,
+            504
+          ],
+          [
+            1210,
+            178,
+            1790,
+            504
+          ],
+          [
+            10,
+            628,
+            590,
+            954
+          ],
+          [
+            610,
+            628,
+            1190,
+            954
+          ],
+          [
+            1210,
+            628,
+            1790,
+            954
+          ],
+          [
+            10,
+            1078,
+            590,
+            1404
+          ],
+          [
+            610,
+            1078,
+            1190,
+            1404
+          ],
+          [
+            1210,
+            1078,
+            1790,
+            1404
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 10,
+      "id": "GIER-Edit:train:000865",
+      "group_id": "a43378be4c20df5f121d73f14ff1889d8af2b02343d1abe485c41d171094be7c",
+      "instruction": "Please simply make this image better.",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "4e8b1bb4bde5ee8903a88b56bdda9057ed54bc20f7cd698cdeb74362ce0071a9"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "ca5396459b7ee2804e69794fa93ad254733783d2795ba7b66118a6f67ed06c85"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "f8622aea9e5afe85ea48af51a0ced4d038b8c5b0c558441554c9187f7b67f60f"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "78bfe0ab2b8e4d5eaa64e0970add706f2b3a9c22c8f7a843805664d8a92366aa"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "ecbdd9f685109c9ac7f4a9519badb1af5636f412d199dc58d5b97f5242e79e03"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "ecbdd9f685109c9ac7f4a9519badb1af5636f412d199dc58d5b97f5242e79e03"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "78bfe0ab2b8e4d5eaa64e0970add706f2b3a9c22c8f7a843805664d8a92366aa"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "314c804134ed9ffc60cd601a72bdfd486fdbf55af0e8ebb3724f3544cad49160"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "ecbdd9f685109c9ac7f4a9519badb1af5636f412d199dc58d5b97f5242e79e03"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            36,
+            144,
+            563,
+            539
+          ],
+          [
+            636,
+            144,
+            1163,
+            539
+          ],
+          [
+            1236,
+            144,
+            1763,
+            539
+          ],
+          [
+            36,
+            594,
+            563,
+            989
+          ],
+          [
+            636,
+            594,
+            1163,
+            989
+          ],
+          [
+            1236,
+            594,
+            1763,
+            989
+          ],
+          [
+            36,
+            1044,
+            563,
+            1439
+          ],
+          [
+            636,
+            1044,
+            1163,
+            1439
+          ],
+          [
+            1236,
+            1044,
+            1763,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 11,
+      "id": "GIER-Edit:test:000027",
+      "group_id": "901eeaf1d441cb95fa81a8ea751f668087501a0a043b06c19167f78165454ca7",
+      "instruction": "Edit this image to make it more beautiful",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "008b8b79c4e951b77ca97d1285d7525513d15db2ef77f2c086be0d0d81c24f59"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "4bf5892ad0e73e3a0676dfa64271d5476b06de9ae4fa1a9901f3a4d6b555c9b5"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "1622cb0208318c21229d4c7acf6b407f33bbe05e11a2a7bf7c751ff3b2a8df20"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "e0eff9eb09ec4c765ec316da3e221845dc04ff7a338a0924e7540102585ff741"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "1622cb0208318c21229d4c7acf6b407f33bbe05e11a2a7bf7c751ff3b2a8df20"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "1622cb0208318c21229d4c7acf6b407f33bbe05e11a2a7bf7c751ff3b2a8df20"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "3ef5e80a068c9e10d816609a997478d7d08b83d5e62873235d860bee186c4c4f"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "f1e89cc4ce3fe362b3c860efd0a0c7f5c8c97ea496c352b7d63d15dfbb89de6d"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "e0eff9eb09ec4c765ec316da3e221845dc04ff7a338a0924e7540102585ff741"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            152,
+            144,
+            448,
+            539
+          ],
+          [
+            752,
+            144,
+            1048,
+            539
+          ],
+          [
+            1352,
+            144,
+            1648,
+            539
+          ],
+          [
+            152,
+            594,
+            448,
+            989
+          ],
+          [
+            752,
+            594,
+            1048,
+            989
+          ],
+          [
+            1352,
+            594,
+            1648,
+            989
+          ],
+          [
+            152,
+            1044,
+            448,
+            1439
+          ],
+          [
+            752,
+            1044,
+            1048,
+            1439
+          ],
+          [
+            1352,
+            1044,
+            1648,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 12,
+      "id": "GIER-Edit:train:001364",
+      "group_id": "92bc863777e06c654c4f01aab983da4de9887cc005e90e9b4e72c73c04973bfc",
+      "instruction": "Please, add brown tone",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "ddaad7fef7d08ddef197579b74ee86b7a08cdb5845d6e254fad2f6295e5d6195"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "d615a8598d5f1e0aa8d1b5bb53710d81d1abb437338f4805130694f16ee5433b"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "b9ea07a0cf227a9528b39280d56c35e3b83db2cb41bc101accd0142c71842f62"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "b9ea07a0cf227a9528b39280d56c35e3b83db2cb41bc101accd0142c71842f62"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "3a026f717b548101a07339c755af71376a521960ccb921395f45da968f7b0f40"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "324fafa50a254e44d3c1621f3028c774b38c9d8fc702ce696953e11fa4163847"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "4ccb5974dd9b3d673ffcdaf0fa78bc2d19d8dba5cf26cfcf62ec1d9e20729d40"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "1f3de4e6087a5431cd4b8c1ce39a3b5ac8a81b81024051966cb11844e0afda74"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "4ccb5974dd9b3d673ffcdaf0fa78bc2d19d8dba5cf26cfcf62ec1d9e20729d40"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            36,
+            144,
+            563,
+            539
+          ],
+          [
+            636,
+            144,
+            1163,
+            539
+          ],
+          [
+            1236,
+            144,
+            1763,
+            539
+          ],
+          [
+            36,
+            594,
+            563,
+            989
+          ],
+          [
+            636,
+            594,
+            1163,
+            989
+          ],
+          [
+            1236,
+            594,
+            1763,
+            989
+          ],
+          [
+            36,
+            1044,
+            563,
+            1439
+          ],
+          [
+            636,
+            1044,
+            1163,
+            1439
+          ],
+          [
+            1236,
+            1044,
+            1763,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 13,
+      "id": "GIER-Edit:train:005901",
+      "group_id": "d34f1bc042ca4708072cef657dea5b2866a66c9138bc7d4e7a6570c5afdd91f3",
+      "instruction": "What will you do to improve this image?",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "bdcabe44e2d85ce28713af79d4b0aed0927ef2db3b49f957e30ab5e7e12cc76e"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "160f1ba77e4923a7ea2bce5b1e853e2325804809afc1208260150922514b866e"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "34402d545c19ed41a0fb11cd3bb6c7235fc32f3ccad78a8626f6b6bd3ada6103"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "34402d545c19ed41a0fb11cd3bb6c7235fc32f3ccad78a8626f6b6bd3ada6103"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "4f2cb409eb118d572a457a93b322b9b6537e9b49bccba7bd3b82267030a6b0d2"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "34402d545c19ed41a0fb11cd3bb6c7235fc32f3ccad78a8626f6b6bd3ada6103"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "95dfcb9806d203ecf40a88ddd473f4310aa12947084214e4c3c0fddb451fdc4b"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "95dfcb9806d203ecf40a88ddd473f4310aa12947084214e4c3c0fddb451fdc4b"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "6577509894acc09c0e7de7b76f7aaf033ead5fd68b21018f874429fa0342a8e2"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            10,
+            149,
+            590,
+            534
+          ],
+          [
+            610,
+            149,
+            1190,
+            534
+          ],
+          [
+            1210,
+            149,
+            1790,
+            534
+          ],
+          [
+            10,
+            599,
+            590,
+            984
+          ],
+          [
+            610,
+            599,
+            1190,
+            984
+          ],
+          [
+            1210,
+            599,
+            1790,
+            984
+          ],
+          [
+            10,
+            1049,
+            590,
+            1434
+          ],
+          [
+            610,
+            1049,
+            1190,
+            1434
+          ],
+          [
+            1210,
+            1049,
+            1790,
+            1434
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 14,
+      "id": "GIER-Edit:test:000014",
+      "group_id": "160ba459e56b0f350b3ecf8ac3566231cdcbd5b1ec5ec908f2fe0c18162aa18f",
+      "instruction": " Improve Lighting/Quality (redness of dress more prominent) + remove outlet thing please c:",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "763d5ffa2012224393103586d9527666acecdf4aa2c3efa1e88694235b14b2fa"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "26ed6611076a5a7b099258b691d3f7422138f0132954fcc32f1de9c1f7095dd3"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "9d531102b65db6b77d72a99c9768355eecf4145a7e41eaecd8faad3a447b3a63"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "b3fcf96acde1434df4e6ddc2776a5a52b8a7380a08cc45fd5eb57f4e7e3eba38"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "3f811f717ded70397c0c257824209a5070c76f0a9fad4bf776bf6c6beef4297d"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "40f650d7b1ec524ee79c5365676d680a3c273a8a82dcbec2d1e577f90b09baeb"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "9d531102b65db6b77d72a99c9768355eecf4145a7e41eaecd8faad3a447b3a63"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "b3fcf96acde1434df4e6ddc2776a5a52b8a7380a08cc45fd5eb57f4e7e3eba38"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "b3fcf96acde1434df4e6ddc2776a5a52b8a7380a08cc45fd5eb57f4e7e3eba38"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            152,
+            144,
+            448,
+            539
+          ],
+          [
+            752,
+            144,
+            1048,
+            539
+          ],
+          [
+            1352,
+            144,
+            1648,
+            539
+          ],
+          [
+            152,
+            594,
+            448,
+            989
+          ],
+          [
+            752,
+            594,
+            1048,
+            989
+          ],
+          [
+            1352,
+            594,
+            1648,
+            989
+          ],
+          [
+            152,
+            1044,
+            448,
+            1439
+          ],
+          [
+            752,
+            1044,
+            1048,
+            1439
+          ],
+          [
+            1352,
+            1044,
+            1648,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 15,
+      "id": "GIER-Edit:test:000075",
+      "group_id": "fe4c054aa94308ab363863c00fc338cf148d7c7f34662cbc08e95e717a988b2d",
+      "instruction": "",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "4918d7c7a8711f8f700210bf0912804bfd79a0db594d5c91d3b1734031068e07"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "1f35e23f62e707b6c3960de46531172427532d89362bd6cd6cd163a92e9aea4c"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "e6075c077e5bb007f67f77ece7d531393dd19286b5e33da3a2eeb1dc9c83d004"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "fd3ae85613027ee9315d3fd6b0b5aeebec9a2101da7637b17a732133c52847e3"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "e6075c077e5bb007f67f77ece7d531393dd19286b5e33da3a2eeb1dc9c83d004"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "051ece93f52112650835f6f659de2aa024887d82748a6e9c72e0d349cde245aa"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "31775927b72c58f8b4c852884df5a8ccfb6d91fa87e5b51da73768124dc10208"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "e46daad2ba4db62df91691521797e3c53255b8260d7d4abf6767c3c9ca006be2"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "d55fd5f84595b0eeec2e7bdcb253eb441e406e241cf722d686ea8f13aed72cc1"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            188,
+            144,
+            412,
+            539
+          ],
+          [
+            788,
+            144,
+            1012,
+            539
+          ],
+          [
+            1388,
+            144,
+            1612,
+            539
+          ],
+          [
+            188,
+            594,
+            412,
+            989
+          ],
+          [
+            788,
+            594,
+            1012,
+            989
+          ],
+          [
+            1388,
+            594,
+            1612,
+            989
+          ],
+          [
+            188,
+            1044,
+            412,
+            1439
+          ],
+          [
+            788,
+            1044,
+            1012,
+            1439
+          ],
+          [
+            1388,
+            1044,
+            1612,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 16,
+      "id": "GIER-Edit:train:000604",
+      "group_id": "52c070133bd63ec219eedc5d4f431d4af629f0fd16052cbb9d7cba43377d93b5",
+      "instruction": "Please simply make this image better.",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "888f2d8be889b290a7f7daa84bbd0bfd67c4874ef67cfa4bb3b8542bfb1a47b3"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "8783b1e08721dc100362256259120b98e3b7cc70ca265bbf45633690aec662d3"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "6142bad4e82b239b3d4c877d16e42791375fd0debe84a1730c9866989c55bb7a"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "7a6e84a8c667ce2c2d74ad79f770d4ed231e2dc313230604bdae9b57a73cd036"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "58699269e1a0188aa8e8fbd223dc7c5461bb885a5e1da47a45332d01943ef92f"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "06f44b378485ea945b5fbf66edd872a08932e44808d2f160b0a28274138fa649"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "58699269e1a0188aa8e8fbd223dc7c5461bb885a5e1da47a45332d01943ef92f"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "7654a288bbbe8fdbf68e7295bae23ad4ff8c9d58cd28946d46ffa48f6f8f0fb6"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "7a6e84a8c667ce2c2d74ad79f770d4ed231e2dc313230604bdae9b57a73cd036"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            141,
+            144,
+            459,
+            539
+          ],
+          [
+            741,
+            144,
+            1059,
+            539
+          ],
+          [
+            1341,
+            144,
+            1659,
+            539
+          ],
+          [
+            141,
+            594,
+            459,
+            989
+          ],
+          [
+            741,
+            594,
+            1059,
+            989
+          ],
+          [
+            1341,
+            594,
+            1659,
+            989
+          ],
+          [
+            141,
+            1044,
+            459,
+            1439
+          ],
+          [
+            741,
+            1044,
+            1059,
+            1439
+          ],
+          [
+            1341,
+            1044,
+            1659,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 17,
+      "id": "GIER-Edit:train:001067",
+      "group_id": "a4a14942885f6b6f8d9ccbecc0272b4c0467cd10e5130c129279b8e84845bf5d",
+      "instruction": "Lighten the entire image, please",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "24eaa8a0d69b759c9985af9dcb381a522cca6f99b29dce2e56c44ee54ed8684b"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "d7aaf38b7c54380019a0dca350aef1da0ddcfbe58eeb50cfd13635e861fb72f6"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "0b89a22db60e7b983997dff292541bafee049f8c219466b754d486268959fcf9"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "e87b3920c01b8b0374b44e873bbec395bad93433491187702955302806fcb4f3"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "0b89a22db60e7b983997dff292541bafee049f8c219466b754d486268959fcf9"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "e87b3920c01b8b0374b44e873bbec395bad93433491187702955302806fcb4f3"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "c58bf81a1e5b646ef1bdf11d1be4dcb6b014ec124455909aa5c47a69418fdb27"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "c58bf81a1e5b646ef1bdf11d1be4dcb6b014ec124455909aa5c47a69418fdb27"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "9b596d52974e82da78429449b1d70efe1ec1ae6add21d199b9ccb868054a870a"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            102,
+            144,
+            497,
+            539
+          ],
+          [
+            702,
+            144,
+            1097,
+            539
+          ],
+          [
+            1302,
+            144,
+            1697,
+            539
+          ],
+          [
+            102,
+            594,
+            497,
+            989
+          ],
+          [
+            702,
+            594,
+            1097,
+            989
+          ],
+          [
+            1302,
+            594,
+            1697,
+            989
+          ],
+          [
+            102,
+            1044,
+            497,
+            1439
+          ],
+          [
+            702,
+            1044,
+            1097,
+            1439
+          ],
+          [
+            1302,
+            1044,
+            1697,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 18,
+      "id": "GIER-Edit:train:002009",
+      "group_id": "1fc4b56a293dcd367c684a6a3e1ca1c52d80ef89477ddf846922341ee9c2c7ff",
+      "instruction": "How to enhance this image?",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "2fac1826222ea692c1d63776ed15a8d398989bf0ed50a356275702b8434c9e9f"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "36c213e76da707db296ff987746539a897935d314d9e673a5c9c14a6c44c1239"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "482deac207d7f578007f62738f2ef3ba03574c64f7e783bcddb750df143895ce"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "6e5e615dc07174c6627431cf25f49c9f620aeeea6fd7915ca9db64a97aaf177b"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "5109018b2c15bbe60a917b770e6760bf08d6f26f788953403e815b31d2f56ee0"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "a4a67c7d644b5a876067a0deb04b4425fe46fca53cab4ab1a3b1e12b28151e0c"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "782bdce7028d267932b8b27e47b91bde237ccd77c35728fa03b5ce00c3926302"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "5109018b2c15bbe60a917b770e6760bf08d6f26f788953403e815b31d2f56ee0"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "bde311070a5aefd067cb581be8172b6c2126fa3a95b4a2e5d3efa5ef191ad417"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            108,
+            144,
+            492,
+            539
+          ],
+          [
+            708,
+            144,
+            1092,
+            539
+          ],
+          [
+            1308,
+            144,
+            1692,
+            539
+          ],
+          [
+            108,
+            594,
+            492,
+            989
+          ],
+          [
+            708,
+            594,
+            1092,
+            989
+          ],
+          [
+            1308,
+            594,
+            1692,
+            989
+          ],
+          [
+            108,
+            1044,
+            492,
+            1439
+          ],
+          [
+            708,
+            1044,
+            1092,
+            1439
+          ],
+          [
+            1308,
+            1044,
+            1692,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 19,
+      "id": "GIER-Edit:train:004418",
+      "group_id": "e96f26649b97c6e524a88eed80d6adc1b72808e87e3f72d963b003dd57eada42",
+      "instruction": "Make the image more saturated, darken colors",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "9ea27af516832840aa42060fea607298858f0c4629c94f04903baaeff11a1713"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "c4b6e5b01636572beff91852e50a903cf2b317831ac701fc0c963606d71b8ba2"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "2114c8b8fbc4e48d110d35656e049a06b6c7962e495a8a8a72ce372016e89bb1"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "f9c3b0e83009dc74e4d36fd84466fb3593211a516e238dc67499e74ab86df5f5"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "f9c3b0e83009dc74e4d36fd84466fb3593211a516e238dc67499e74ab86df5f5"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "f9c3b0e83009dc74e4d36fd84466fb3593211a516e238dc67499e74ab86df5f5"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "8fe61ed91d02c785b5a072adf63b687deb7342c4bde8683889e35e0a211f933c"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "f7bf078cd2daf5b356a28325f36567ebadd3bad124a79707ac48c9690b269c1c"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "139eda63009a88595472de5bf8d7c9d797e3a8f43ff553b40d33006579436297"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            182,
+            144,
+            418,
+            539
+          ],
+          [
+            782,
+            144,
+            1018,
+            539
+          ],
+          [
+            1382,
+            144,
+            1618,
+            539
+          ],
+          [
+            182,
+            594,
+            418,
+            989
+          ],
+          [
+            782,
+            594,
+            1018,
+            989
+          ],
+          [
+            1382,
+            594,
+            1618,
+            989
+          ],
+          [
+            182,
+            1044,
+            418,
+            1439
+          ],
+          [
+            782,
+            1044,
+            1018,
+            1439
+          ],
+          [
+            1382,
+            1044,
+            1618,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 20,
+      "id": "GIER-Edit:train:001518",
+      "group_id": "8edff3a40a48cd910b3d7a4c8178d1451221e9a79dba50cdc168a6769d2fac4a",
+      "instruction": "Edit this image to make it more beautiful",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "e399933b229530ecb75c94714ca830447d33d7116b1d775264ce740692f951bb"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "4d2ed16b964ad5a4441a2583be27d52c9287002848f7245b710e17ea7bf6ede9"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "9cf54d277cd3c8c6ab5fc58a6da591c6fb047a853bc1c8e94e3e404915fbcbc4"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "dbc1a724e6804c0845b1e144a98ce96e52e3244252fdbdc4b2a830cbc7180701"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "80e39bf9de2a21a55cea3ea6b62805e2959cf3b8dee61223d748547723f6456e"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "f3eb8aa2bdc5d1112de5c4cea27d4a582c276660b84f429bdf2523a48d4e3888"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "f3eb8aa2bdc5d1112de5c4cea27d4a582c276660b84f429bdf2523a48d4e3888"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "f3eb8aa2bdc5d1112de5c4cea27d4a582c276660b84f429bdf2523a48d4e3888"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "dbc1a724e6804c0845b1e144a98ce96e52e3244252fdbdc4b2a830cbc7180701"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            169,
+            144,
+            431,
+            539
+          ],
+          [
+            769,
+            144,
+            1031,
+            539
+          ],
+          [
+            1369,
+            144,
+            1631,
+            539
+          ],
+          [
+            169,
+            594,
+            431,
+            989
+          ],
+          [
+            769,
+            594,
+            1031,
+            989
+          ],
+          [
+            1369,
+            594,
+            1631,
+            989
+          ],
+          [
+            169,
+            1044,
+            431,
+            1439
+          ],
+          [
+            769,
+            1044,
+            1031,
+            1439
+          ],
+          [
+            1369,
+            1044,
+            1631,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 21,
+      "id": "GIER-Edit:train:003951",
+      "group_id": "c85f0c87d63f98a8838ca5e1a41538cb9e41dd6d0dbd9d499f52d858d42e2d3f",
+      "instruction": "",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "e69cb345a73ecc77fbd9b0fc2b53597c2285d1afdbfca6cff8d28a7010025ed3"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "aab2fb4d01ebb90e40d3c5f2cccb211db5cb768d72ae2a4087b0127728679367"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "33f0b068b152c78e9b9bd42855704ca8a58329aeb9d7368715810ff7252e5a47"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "224eeb5ed883c876c80b4a7695ba77dd9b328e90da93a0ecee86cca6aed7fe49"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "1273311629e42a7a235c9deb14ab7590782838a8db8414e274e1e52c761af3ec"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "6ff4e4c4081a1f59398caae3a8884d95485ab564cb182e9a269223ef0339a668"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "9f3bebfb92a2a19cdd7f2d623456aa78e66771c0883052c475f8b08a23d26cf0"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "317d60ab2a1dcbf970906f2f0892058597c7c234630c949ee12b78d972c83016"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "d6ea87166c12f1eb5223aa4640a511d636e3fce2fd9aec5ebd43aa6483b5cca3"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            157,
+            144,
+            442,
+            539
+          ],
+          [
+            757,
+            144,
+            1042,
+            539
+          ],
+          [
+            1357,
+            144,
+            1642,
+            539
+          ],
+          [
+            157,
+            594,
+            442,
+            989
+          ],
+          [
+            757,
+            594,
+            1042,
+            989
+          ],
+          [
+            1357,
+            594,
+            1642,
+            989
+          ],
+          [
+            157,
+            1044,
+            442,
+            1439
+          ],
+          [
+            757,
+            1044,
+            1042,
+            1439
+          ],
+          [
+            1357,
+            1044,
+            1642,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 22,
+      "id": "GIER-Edit:test:000415",
+      "group_id": "c07e45564212b8086192d214b67162dde96804ab60a22a03e85b0490c8436b16",
+      "instruction": "",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "18e2fe496a55d907c20dc9eda8d51329e97edd098b79a7e8e00c24d415ef7403"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "49b754dd3ecfb4c89e75d5d04243dfa50a228acfd0bbb2625c91eb7e5f4b8636"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "f9a1ee7b1ac350796ebfe89bd7e45edc188dc670a6abd5822efe78c84ebe6aa9"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "f9a1ee7b1ac350796ebfe89bd7e45edc188dc670a6abd5822efe78c84ebe6aa9"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "a9c1bda98023cb6882cbe2915a07bb1a640cc22cd5c2534cb6122012846b5f13"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "51da3e2f50a289ea5bb835d8353e2908d7f8a424306df1533307078d511e5b1b"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "fe95bdca1945b135fdefa5ec15ec0f3da4858548ca12bd0c1a03807fc235ac07"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "51da3e2f50a289ea5bb835d8353e2908d7f8a424306df1533307078d511e5b1b"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "2d9278a5fa67702e69fb9fc5210cc1711b6be60e3f57f7002c377e13a8696e98"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            10,
+            148,
+            590,
+            535
+          ],
+          [
+            610,
+            148,
+            1190,
+            535
+          ],
+          [
+            1210,
+            148,
+            1790,
+            535
+          ],
+          [
+            10,
+            598,
+            590,
+            985
+          ],
+          [
+            610,
+            598,
+            1190,
+            985
+          ],
+          [
+            1210,
+            598,
+            1790,
+            985
+          ],
+          [
+            10,
+            1048,
+            590,
+            1435
+          ],
+          [
+            610,
+            1048,
+            1190,
+            1435
+          ],
+          [
+            1210,
+            1048,
+            1790,
+            1435
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 23,
+      "id": "GIER-Edit:train:001613",
+      "group_id": "b0d5a54ee6cc9ac784396ce8b76d4feb875ac75bdd00452f815147dfe53bf728",
+      "instruction": "",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "cfe3904614cd1b21b42ae24247150ffceea99dd88e129643d461c9c8b6afc89d"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "be89ccad08ee798173b3a02dc6d40cea5d29b372f877ba4618f2f33a3f1a7276"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "8627910522c635ed95eac8074f150e4e142574a244cacbae5ac1d78a58b6484c"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "acc8cc9c1f3d568403588b2a55bfc1c9db3f968fa291b5e5638556092605e48a"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "8627910522c635ed95eac8074f150e4e142574a244cacbae5ac1d78a58b6484c"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "889c8e3859987fc54098fa6898a33cc088118943ed11ead3e19208364d204a02"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "4da2576a6489aaa5a91c5852f46c1d39ecbb182dab2994e8ea129291f3e0a644"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "acc8cc9c1f3d568403588b2a55bfc1c9db3f968fa291b5e5638556092605e48a"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "5a1868f4a7cc8e28945361638318ee65a60fe7282b862585d63a555a4cc7a3ae"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            177,
+            144,
+            422,
+            539
+          ],
+          [
+            777,
+            144,
+            1022,
+            539
+          ],
+          [
+            1377,
+            144,
+            1622,
+            539
+          ],
+          [
+            177,
+            594,
+            422,
+            989
+          ],
+          [
+            777,
+            594,
+            1022,
+            989
+          ],
+          [
+            1377,
+            594,
+            1622,
+            989
+          ],
+          [
+            177,
+            1044,
+            422,
+            1439
+          ],
+          [
+            777,
+            1044,
+            1022,
+            1439
+          ],
+          [
+            1377,
+            1044,
+            1622,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 24,
+      "id": "GIER-Edit:train:003603",
+      "group_id": "b490a48aae5631e85c5db74c9a0a2abefc8c5f05b624be525f961a4ab799fb9d",
+      "instruction": "Make the faces of the two women more apparent, decrease sun glare",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "e6b2e501d1ee340956b77b13031acce64a613b43b22ea51c0578296fa0918c66"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "e9338bb82d133e95909ef7d7857e40479cde27d5d77156dec8b7f6e9a12d39ff"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "9c579a6ab00a6e5cab896d718fbad3fd8ffb5b5be36bf356a181cc5470db8dbc"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "3fd941c851386b384022b5f2b49770c829e740a9283cc95b4b822f7742319ab1"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "9c579a6ab00a6e5cab896d718fbad3fd8ffb5b5be36bf356a181cc5470db8dbc"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "e4a250aa752a3fc6e046accaef1baa2a5e062e487739ea56127511e96b24c1bf"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "7272afffcfbddc879e7ed90d24816922c3e91607637cc92e120d0d4cb374133a"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "3fd941c851386b384022b5f2b49770c829e740a9283cc95b4b822f7742319ab1"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "7272afffcfbddc879e7ed90d24816922c3e91607637cc92e120d0d4cb374133a"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            154,
+            144,
+            446,
+            539
+          ],
+          [
+            754,
+            144,
+            1046,
+            539
+          ],
+          [
+            1354,
+            144,
+            1646,
+            539
+          ],
+          [
+            154,
+            594,
+            446,
+            989
+          ],
+          [
+            754,
+            594,
+            1046,
+            989
+          ],
+          [
+            1354,
+            594,
+            1646,
+            989
+          ],
+          [
+            154,
+            1044,
+            446,
+            1439
+          ],
+          [
+            754,
+            1044,
+            1046,
+            1439
+          ],
+          [
+            1354,
+            1044,
+            1646,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 25,
+      "id": "GIER-Edit:train:000718",
+      "group_id": "5abbb2d9aacc56e1f27c813a0cd0ac3c531d582a2ae4dc7c0fbfd996248a1e7e",
+      "instruction": "",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "a4c0b4afb241e4dd6e100d1e69a784312cfc891bd4145df888bff4a35ca0edf0"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "a41a6eb873ae38100451f328b989783109b1dd49c77abd49b6e19e331c55858c"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "ed576ae5ec001636b4482ee827c683962da4eb047fd8f1ec3b40ce60798c7277"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "f834cca9c61981135ed481ad103ed3813f166a8eee4bc5fa72684cb9061d0228"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "15021369acb54c32fc27ee35475ac07346c8a7ebcef229423cbb05a8c46feef4"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "f834cca9c61981135ed481ad103ed3813f166a8eee4bc5fa72684cb9061d0228"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "f834cca9c61981135ed481ad103ed3813f166a8eee4bc5fa72684cb9061d0228"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "5d6b5a6c1b076f9dad0c47b8b834d7983142a7bda3a271808cdadcffea1223e2"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "bb82374f67e49220b53f35f6f5feae5c872799aa1953c6d89eb2b976c8a7fb84"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            10,
+            178,
+            590,
+            504
+          ],
+          [
+            610,
+            178,
+            1190,
+            504
+          ],
+          [
+            1210,
+            178,
+            1790,
+            504
+          ],
+          [
+            10,
+            628,
+            590,
+            954
+          ],
+          [
+            610,
+            628,
+            1190,
+            954
+          ],
+          [
+            1210,
+            628,
+            1790,
+            954
+          ],
+          [
+            10,
+            1078,
+            590,
+            1404
+          ],
+          [
+            610,
+            1078,
+            1190,
+            1404
+          ],
+          [
+            1210,
+            1078,
+            1790,
+            1404
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 26,
+      "id": "GIER-Edit:train:002125",
+      "group_id": "441e31617a02cee51b171c2484b33bb2ea6428c2602f539be2507c7e0bda83d2",
+      "instruction": "Please simply make this image better.",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.png",
+          "sha256": "23b09b32636ecdf2ebb7f6273cc2ccc3f381617804f8fd71b1afbbf5e556357c"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.png",
+          "sha256": "dad2fc275d01e20edee8fb59f85ffbfb12036cc305b6d380b82409805936c113"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "5347a5ce9197897c4b4dd3b13d93e7bb9df96163d86783251ec494fdc802e655"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "741a47e0ffedc95618f5f678888c7ef2845aaa9bfa70deff67a64f294f1523a4"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "420706e4533c543613c3bd5551537d396df9ee05d2630e41c468cad5ac72fdb3"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "c91b69b26b93142c51ae3fe911b03d26742e168521017055833dd473b832ab37"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "1cfd20d6ae63e790e29819742edb069494dda65146e49c4fc50fd3c9efed6e84"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "c91b69b26b93142c51ae3fe911b03d26742e168521017055833dd473b832ab37"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "a7ac9949a62a79da649a6e9744131a42000bce786add300e31a1fe990565b526"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            35,
+            144,
+            564,
+            539
+          ],
+          [
+            635,
+            144,
+            1164,
+            539
+          ],
+          [
+            1235,
+            144,
+            1764,
+            539
+          ],
+          [
+            35,
+            594,
+            564,
+            989
+          ],
+          [
+            635,
+            594,
+            1164,
+            989
+          ],
+          [
+            1235,
+            594,
+            1764,
+            989
+          ],
+          [
+            35,
+            1044,
+            564,
+            1439
+          ],
+          [
+            635,
+            1044,
+            1164,
+            1439
+          ],
+          [
+            1235,
+            1044,
+            1764,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 27,
+      "id": "GIER-Edit:train:001455",
+      "group_id": "a3451a4931947bd3b5bd2ec19593ace5d30c7404b5181c9c421edb471e4102fc",
+      "instruction": "Significantly increase brightness, contrast and overall colors of the image",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "5f462857b5b689acf68c05a213b6ea723f4d8848b9038f92ae7061dadff57f06"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "7d91ebe82374b5e24ddd79c575f77b14f25de79654c38638960a4e9a7ff10d29"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "bb13971db3b3e39ce388c9c634a2ab588a455d393618af88c647c01be93c5f65"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "bbfdb759085be9ad21cb7b94244f32d1af5f1fa864980bd7ba546fb45c8d6176"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "b01be1a99913c7173bb67e2d89cb0cdf59fc77eab5ef2015a0d8c35a4543ca17"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "82aa162d03e71ea20441a2dabd0765dd2680bf489cc72bf97f59250e345ccdb8"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "82aa162d03e71ea20441a2dabd0765dd2680bf489cc72bf97f59250e345ccdb8"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "221bd920b10c3d9a3325f334ba378d4390d666386e1778a5cdec2b5269838ef4"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "bb13971db3b3e39ce388c9c634a2ab588a455d393618af88c647c01be93c5f65"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            10,
+            148,
+            590,
+            535
+          ],
+          [
+            610,
+            148,
+            1190,
+            535
+          ],
+          [
+            1210,
+            148,
+            1790,
+            535
+          ],
+          [
+            10,
+            598,
+            590,
+            985
+          ],
+          [
+            610,
+            598,
+            1190,
+            985
+          ],
+          [
+            1210,
+            598,
+            1790,
+            985
+          ],
+          [
+            10,
+            1048,
+            590,
+            1435
+          ],
+          [
+            610,
+            1048,
+            1190,
+            1435
+          ],
+          [
+            1210,
+            1048,
+            1790,
+            1435
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 28,
+      "id": "GIER-Edit:train:001000",
+      "group_id": "223fe56053c91ae299aea550ee1310c06f07d7e375157acaeb6459006d59d034",
+      "instruction": "",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "dd4c09a0e8a70536ea7ea17398abb75afabb9ae272ca2b9b3ae49c0b36ea3c02"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "e604f213b20625cfd8df817e0b7f31c07a9a3679dfd2f0fd50d9f7d4f6cbf6d4"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "2b80eeacbc66e7b6d9eebde8916e60376b085dd9d8a7f8be1247b31c0f852b4b"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "b6eabf3347104c18251da96e046d799c7655b0c1ded5d60b1b0041be0b4a81ca"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "c5a34e20ae5d123a4fc63f3468125cdeec88c3432c13192badba101ca447edc0"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "5b1dd31671834a625b99e9690ccd89faf31b741611579bab3d5dba7ad40386eb"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "c5a34e20ae5d123a4fc63f3468125cdeec88c3432c13192badba101ca447edc0"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "7888c011ca795d43d98d337ee0f2258b11fd5c374ee3622de65ce7adf40348d3"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "aff66bbd2218ab7fda246737be605d2d9d78f72b270614d1df9e4d3eab9f1f1f"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            10,
+            149,
+            590,
+            533
+          ],
+          [
+            610,
+            149,
+            1190,
+            533
+          ],
+          [
+            1210,
+            149,
+            1790,
+            533
+          ],
+          [
+            10,
+            599,
+            590,
+            983
+          ],
+          [
+            610,
+            599,
+            1190,
+            983
+          ],
+          [
+            1210,
+            599,
+            1790,
+            983
+          ],
+          [
+            10,
+            1049,
+            590,
+            1433
+          ],
+          [
+            610,
+            1049,
+            1190,
+            1433
+          ],
+          [
+            1210,
+            1049,
+            1790,
+            1433
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 29,
+      "id": "GIER-Edit:train:000765",
+      "group_id": "38688920be6db7be4895315e6f228f34669beda4dcee138779bf6c2aca8abfe9",
+      "instruction": "Sharpen the image completely",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "8c1dfc64dd40a9141d8ec22ce9ff11006e2431807e9723fdf6fd146b29225a3c"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "29d41a89bc59bb7bc6c793b8b14eff3f9ad1463cab4b84edd987297b7470bb0c"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "9a4683a16cfc90778dc66e5aaf5e79a3ff7007a38f02e0729f12607f7740411f"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "8d1d7be241e77ce08fefdef4745c0eb8bbcd8fb3049be1aabdef4ad8763d6dd9"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "12c952e0738a32b689db40d860423895083c38a402d2aed6864bc4bdd8065be6"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "a19ae697d6718c8d3ccfcb39fe03fd384b44b48a3473770385f0080507cbb32c"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "1711722f6eab859e05365501445735199ec198d5f688079a12057b55ed98131d"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "8d1d7be241e77ce08fefdef4745c0eb8bbcd8fb3049be1aabdef4ad8763d6dd9"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "a19ae697d6718c8d3ccfcb39fe03fd384b44b48a3473770385f0080507cbb32c"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            102,
+            144,
+            498,
+            539
+          ],
+          [
+            702,
+            144,
+            1097,
+            539
+          ],
+          [
+            1302,
+            144,
+            1698,
+            539
+          ],
+          [
+            102,
+            594,
+            498,
+            989
+          ],
+          [
+            702,
+            594,
+            1098,
+            989
+          ],
+          [
+            1302,
+            594,
+            1698,
+            989
+          ],
+          [
+            102,
+            1044,
+            498,
+            1439
+          ],
+          [
+            702,
+            1044,
+            1098,
+            1439
+          ],
+          [
+            1302,
+            1044,
+            1698,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    },
+    {
+      "case": 30,
+      "id": "GIER-Edit:train:001423",
+      "group_id": "d0778425b5102c684b55befad22d1b0d270de72b1fec0a6c688aff7dc98d671a",
+      "instruction": "Sharpen image making it more  clear.",
+      "panels": [
+        {
+          "label": "Input",
+          "file": "Input.jpg",
+          "sha256": "b8aea7e22d2d9cf8afca91953e900381d2451de7648ede69ab573ed1dae9d4bf"
+        },
+        {
+          "label": "Reference",
+          "file": "Reference.jpg",
+          "sha256": "7c0bbee4a373c023d24b91c9f9475d041b59a4ea6ff7cf653e38f83deb424347"
+        },
+        {
+          "label": "Output1",
+          "file": "Output1.png",
+          "sha256": "8f28a7eced75071cb147b38ef3014aace6313bca1657858507980fb60d4391e3"
+        },
+        {
+          "label": "Output2",
+          "file": "Output2.png",
+          "sha256": "11e223bda9768084c16f36c1cf361712490044dc85af62b758fef95a4981145b"
+        },
+        {
+          "label": "Output3",
+          "file": "Output3.png",
+          "sha256": "1e1cee8bf00fc334eacc593e2c0215ce54828116f81ef1bfc2a2862a41ba49b7"
+        },
+        {
+          "label": "Output4",
+          "file": "Output4.png",
+          "sha256": "1e1cee8bf00fc334eacc593e2c0215ce54828116f81ef1bfc2a2862a41ba49b7"
+        },
+        {
+          "label": "Output5",
+          "file": "Output5.png",
+          "sha256": "d2b070cf581d62875e1ab11a5f4be30f0a8993af448acca0bac411c89a6c765b"
+        },
+        {
+          "label": "Output6",
+          "file": "Output6.png",
+          "sha256": "7978912413091586c6a47757ec34e431216c18d58255f81c6348f7a61dcdc0e9"
+        },
+        {
+          "label": "Output7",
+          "file": "Output7.png",
+          "sha256": "7978912413091586c6a47757ec34e431216c18d58255f81c6348f7a61dcdc0e9"
+        }
+      ],
+      "geometry": {
+        "canvas": [
+          1800,
+          1524
+        ],
+        "image_boxes": [
+          [
+            189,
+            144,
+            411,
+            539
+          ],
+          [
+            789,
+            144,
+            1011,
+            539
+          ],
+          [
+            1389,
+            144,
+            1611,
+            539
+          ],
+          [
+            189,
+            594,
+            411,
+            989
+          ],
+          [
+            789,
+            594,
+            1011,
+            989
+          ],
+          [
+            1389,
+            594,
+            1611,
+            989
+          ],
+          [
+            189,
+            1044,
+            411,
+            1439
+          ],
+          [
+            789,
+            1044,
+            1011,
+            1439
+          ],
+          [
+            1389,
+            1044,
+            1611,
+            1439
+          ]
+        ],
+        "cell_size": [
+          600,
+          450
+        ],
+        "crop": "none",
+        "colour_adjustment": "none",
+        "alignment": "fixed equal grid; every image contained within its cell"
+      }
+    }
+  ],
+  "display_policy": "Native pixels decoded by same OpenCV pathway as evaluation; full-frame aspect-preserving equal letterboxes; no colour edits or crop."
+}

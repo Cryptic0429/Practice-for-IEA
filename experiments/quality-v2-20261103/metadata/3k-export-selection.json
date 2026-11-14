@@ -1,0 +1,94 @@
+{
+  "status": "frozen_before_replica_validation",
+  "variant": "swa",
+  "frozen_at": "2026-11-03T18:18:14.694928+00:00",
+  "family": "3k-v2",
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "checkpoints": [
+    512,
+    1024
+  ],
+  "seed_list": [
+    20261103,
+    20261104,
+    20261105
+  ],
+  "primary_seed": 20261103,
+  "primary_evaluation_name": "json3k-primary-swa512-1024-s20261103",
+  "primary_adapter": "/mnt/sdc/zhc/IEA/outputs/goal-v2-20261103/json3k-primary-swa512-1024-s20261103/adapter",
+  "primary_adapter_sha256": "7bde70bf58b75eda1baa6e2b8ac0d529c23db3fdfd00bfc7f11fd9ecb589f041",
+  "averaging_code_sha256": "21c55cf253ac9fc479ed8a3950c7acde48d5c2432c42f9d3986d3082a1a37a1a",
+  "raw_metrics": {
+    "n": 200,
+    "mean_l1": 0.11598610375076532,
+    "NoEdit_l1": 0.11577512218966149,
+    "executable": 200,
+    "fallback": 0,
+    "empty": 0,
+    "zero": 0,
+    "pixel_identical": 0,
+    "near_identity": 2,
+    "mean_input_output_l1": 0.06376306967057434,
+    "direction_assessable": 32,
+    "all_assessed_directions_aligned": 30,
+    "source_sha256": "81b1540ac6c36d589419ac291c62b16fcda507fc9c181d622debcaa719df95fb",
+    "json_prompt_signature": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67"
+  },
+  "selected_metrics": {
+    "n": 200,
+    "mean_l1": 0.11588283900171518,
+    "NoEdit_l1": 0.11577512218966149,
+    "executable": 200,
+    "fallback": 0,
+    "empty": 0,
+    "zero": 0,
+    "pixel_identical": 0,
+    "near_identity": 1,
+    "mean_input_output_l1": 0.06232184179974537,
+    "direction_assessable": 32,
+    "all_assessed_directions_aligned": 31,
+    "source_sha256": "721f55b127ae2dee5b643bf825cd6c2aae18054a2ff0c52fa8eb58585a222523",
+    "json_prompt_signature": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67"
+  },
+  "selected_comparison": {
+    "reference": "B",
+    "paired_mean_gain": 0.009228593432344495,
+    "relative_mean_gain": 0.0737629907419408,
+    "ci95_gain": [
+      0.0025195077101234356,
+      0.016343306397437113
+    ],
+    "ci95_relative": [
+      0.02087752293160766,
+      0.12709201374994547
+    ],
+    "improved": 125,
+    "worsened": 75,
+    "ties": 0
+  },
+  "challenge_gate_fields": [
+    "executable",
+    "aligned_requests",
+    "strict_pairs"
+  ],
+  "challenge_rule_source": "Existing instruction-gate operational definition; ordered pairs are reported separately.",
+  "raw_challenge": {
+    "executable": 48,
+    "aligned_requests": 45,
+    "strict_pairs": 21,
+    "ordered_pairs": 24
+  },
+  "selected_challenge": {
+    "executable": 48,
+    "aligned_requests": 46,
+    "strict_pairs": 22,
+    "ordered_pairs": 23
+  },
+  "tradeoff": "Ordered pairs23/24 vs raw24/24: one diagnostic ordering regression retained; main aligned requests46/48 vs45/48 and strict pairs22/24 vs21/24 improve. BaselineB ordered16/24.",
+  "replica_validation_seen": false,
+  "test_opened": false,
+  "rule": "Use same fixed selected export for all three seeds; never pick export per replica or from final tests."
+}

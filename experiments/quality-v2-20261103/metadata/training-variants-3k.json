@@ -1,0 +1,45 @@
+{
+  "status": "frozen_train3k_only",
+  "files": {
+    "train3k": {
+      "path": "/mnt/sdc/zhc/IEA/data/goal-v2-20261103/train3k.json",
+      "sha256": "439ebf726d7e01c913a9e85c0866240268edb3b5919bb583b4823270fe361104",
+      "rows": 3000,
+      "groups": 1078,
+      "source_path": "/mnt/sdc/zhc/IEA/data/stage1/splits/image-edit-3k-v1/train.json",
+      "source_sha256": "439ebf726d7e01c913a9e85c0866240268edb3b5919bb583b4823270fe361104"
+    },
+    "train3k-contrast-calibrated": {
+      "path": "/mnt/sdc/zhc/IEA/data/goal-v2-20261103/train3k-contrast-calibrated.json",
+      "sha256": "d1dc31ae91f583e1d672ba047d390723d3b1ce6494ea88f802bb67356a226a19",
+      "rows": 3000,
+      "groups": 1078,
+      "source_sha256": "439ebf726d7e01c913a9e85c0866240268edb3b5919bb583b4823270fe361104"
+    }
+  },
+  "overlap_checks": {
+    "validation": {
+      "rows": 200,
+      "source_sha256": "804f41347c0b6f161a67b4a8c08ebd1c86968a0b8e3b1cdd9cbcee5349046197",
+      "overlap_groups": 0
+    },
+    "sealed71": {
+      "rows": 71,
+      "source_sha256": "cc2b61108a17a856bd3f7c5da098c72aeba9c610f839e2dac6bd5935f3afbf0d",
+      "overlap_groups": 0
+    },
+    "old_test200": {
+      "rows": 200,
+      "source_sha256": "589d8ea8184292898509f9a7a9dba77c8334732316e410b4006bf39fb4dd0298",
+      "overlap_groups": 0
+    },
+    "stage2_new100": {
+      "rows": 100,
+      "source_sha256": "c6d72fd644e8d57fea3328da4d0b544d80b7ab2998400061f1ba6810ebc2dc05",
+      "overlap_groups": 0
+    }
+  },
+  "test_images_or_references_scored": false,
+  "purpose": "Broader coverage control using original A training pool; no expansion into heldouts",
+  "calibration_summary_sha256": "1ab97ec75967cac0c6003b88f0378547e8d3b1d7a3cca641fc04dfd66b148810"
+}

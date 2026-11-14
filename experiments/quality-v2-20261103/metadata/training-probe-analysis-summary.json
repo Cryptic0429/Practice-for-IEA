@@ -1,0 +1,101 @@
+{
+  "status": "completed_probes_only",
+  "independent_training_groups": 64,
+  "initial_probe_training_exposures": 512,
+  "initial_probe_training_epochs": 8,
+  "label_execution_l1": 0.06790032028220594,
+  "models": {
+    "A-json-memorize64-control": {
+      "n": 64,
+      "mean_l1": 0.14409100348711945,
+      "NoEdit_l1": 0.11817180278012529,
+      "executable": 60,
+      "exact_dense_parameter_vectors": 0,
+      "parameter_mae16_valid_only": 8.354166666666666,
+      "contrast_mae_valid_only": 33,
+      "gap_to_label_execution": 0.07619068320491351,
+      "source_sha256": "44f7343cae92df6904b649ba9c0b3f88ee649860b3fa24c3a2b90c15a3551007"
+    },
+    "B-json-memorize64-control": {
+      "n": 64,
+      "mean_l1": 0.151151168247452,
+      "NoEdit_l1": 0.11817180278012529,
+      "executable": 60,
+      "exact_dense_parameter_vectors": 0,
+      "parameter_mae16_valid_only": 9.005208333333334,
+      "contrast_mae_valid_only": 33.5,
+      "gap_to_label_execution": 0.08325084796524607,
+      "source_sha256": "a9a4a1e251ed5a06d1c9165849b24ea811859dba6d5248b9b7ebb50db8aa3bfc"
+    },
+    "expanded-memorize64-lr1e-4-s20261103": {
+      "n": 64,
+      "mean_l1": 0.11272527437540703,
+      "NoEdit_l1": 0.11817180278012529,
+      "executable": 64,
+      "exact_dense_parameter_vectors": 4,
+      "parameter_mae16_valid_only": 5.99609375,
+      "contrast_mae_valid_only": 24.609375,
+      "gap_to_label_execution": 0.044824954093201086,
+      "source_sha256": "9bf2d307b40cf539cc08987e469a42dc0e9f53f281211bd57ab38eca091bcf36",
+      "training_scope": {
+        "rows": 64,
+        "independent_groups": 64,
+        "epochs": 8.0,
+        "expected_sample_exposures": 512,
+        "purpose": "Training fitting diagnostic, not a generalization claim"
+      }
+    },
+    "json-memorize64-long512-lr1e-4-s20261103": {
+      "n": 64,
+      "mean_l1": 0.06790032028220594,
+      "NoEdit_l1": 0.11817180278012529,
+      "executable": 64,
+      "exact_dense_parameter_vectors": 64,
+      "parameter_mae16_valid_only": 0,
+      "contrast_mae_valid_only": 0,
+      "gap_to_label_execution": 0.0,
+      "source_sha256": "3f79b7832414163b7f3463ac779f6da4dd7e077285c7f7938c31e0c7a50ed19d",
+      "training_scope": {
+        "rows": 64,
+        "independent_groups": 64,
+        "epochs": 32.0,
+        "expected_sample_exposures": 2048,
+        "purpose": "Training fitting diagnostic, not a generalization claim"
+      }
+    },
+    "json-memorize64-lr1e-4-s20261103": {
+      "n": 64,
+      "mean_l1": 0.12236109719378874,
+      "NoEdit_l1": 0.11817180278012529,
+      "executable": 64,
+      "exact_dense_parameter_vectors": 0,
+      "parameter_mae16_valid_only": 6.50390625,
+      "contrast_mae_valid_only": 27.5,
+      "gap_to_label_execution": 0.0544607769115828,
+      "source_sha256": "bb9d9cb2a82b74fb128d0064d629a1e113860b13fac0cb80714670d9388efe09",
+      "training_scope": {
+        "rows": 64,
+        "independent_groups": 64,
+        "epochs": 8.0,
+        "expected_sample_exposures": 512,
+        "purpose": "Training fitting diagnostic, not a generalization claim"
+      }
+    },
+    "numeric-head64-s20261103": {
+      "n": 64,
+      "mean_l1": 0.06788908212911338,
+      "NoEdit_l1": 0.11817180278012529,
+      "executable": 64,
+      "exact_dense_parameter_vectors": 0,
+      "parameter_mae16_valid_only": 0.09761108737438917,
+      "contrast_mae_valid_only": 0.33023855090141296,
+      "gap_to_label_execution": -1.1238153092563152e-05,
+      "source_sha256": "09ea0434beec185b4a60a1728d6d10218b211d1abf6a35acabd3a62efa70a0bc"
+    }
+  },
+  "limits": [
+    "Training memorization diagnostic; cannot establish held-out generalization or satisfy the goal.",
+    "All models receive only original image and original user editing request plus identical JSON-only schema; no reference or label input.",
+    "Parameter MAE among valid outputs is secondary and must be read with executable coverage; image L1 retains every failure."
+  ]
+}

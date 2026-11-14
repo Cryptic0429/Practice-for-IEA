@@ -1,0 +1,700 @@
+{
+  "scope": "Union of first-to-last sampled telemetry spans by GPU, including monitored loading/waiting; excludes gaps and unmonitored tasks.",
+  "gpu_hours_covered_by_telemetry": {
+    "0": 6.420257222255071,
+    "2": 6.764454166558053,
+    "3": 6.329506111211247
+  },
+  "summed_gpu_hours_covered": 19.514217500024372,
+  "telemetry_files": 68,
+  "unassigned": [],
+  "spans": [
+    {
+      "path": "outputs/goal-v2-20261103/contrast-calibrated-lr1e-5-s20261103/gpu.csv",
+      "gpu": "0",
+      "samples": 80,
+      "start_utc": 1793713042.028,
+      "end_utc": 1793713437.154,
+      "sampled_span_seconds": 395.12599992752075,
+      "max_memory_mib": 10115.0,
+      "max_temperature_c": 70.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/contrast-calibrated-lr3e-5-s20261103/gpu.csv",
+      "gpu": "3",
+      "samples": 82,
+      "start_utc": 1793713132.761,
+      "end_utc": 1793713537.906,
+      "sampled_span_seconds": 405.1449999809265,
+      "max_memory_mib": 10115.0,
+      "max_temperature_c": 66.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-A/gpu.csv",
+      "gpu": "0",
+      "samples": 1278,
+      "start_utc": 1793707899.439,
+      "end_utc": 1793710454.832,
+      "sampled_span_seconds": 2555.393000125885,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 56.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-A-json-schema/gpu.csv",
+      "gpu": "2",
+      "samples": 1232,
+      "start_utc": 1793716767.687,
+      "end_utc": 1793719231.006,
+      "sampled_span_seconds": 2463.319000005722,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 55.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-B/gpu.csv",
+      "gpu": "3",
+      "samples": 1302,
+      "start_utc": 1793707899.447,
+      "end_utc": 1793710502.869,
+      "sampled_span_seconds": 2603.4219999313354,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 49.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-B-json-schema/gpu.csv",
+      "gpu": "3",
+      "samples": 1199,
+      "start_utc": 1793716488.475,
+      "end_utc": 1793718885.786,
+      "sampled_span_seconds": 2397.311000108719,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 51.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-GRPO/gpu.csv",
+      "gpu": "3",
+      "samples": 1304,
+      "start_utc": 1793710510.8,
+      "end_utc": 1793713118.208,
+      "sampled_span_seconds": 2607.4079999923706,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 48.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-SFT/gpu.csv",
+      "gpu": "0",
+      "samples": 1280,
+      "start_utc": 1793710466.191,
+      "end_utc": 1793713025.616,
+      "sampled_span_seconds": 2559.4249999523163,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 57.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-contrast-calibrated-lr1e-5-s20261103/gpu.csv",
+      "gpu": "0",
+      "samples": 1284,
+      "start_utc": 1793713445.991,
+      "end_utc": 1793716013.37,
+      "sampled_span_seconds": 2567.3789999485016,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 58.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-contrast-calibrated-lr3e-5-s20261103/gpu.csv",
+      "gpu": "3",
+      "samples": 1342,
+      "start_utc": 1793713552.387,
+      "end_utc": 1793716235.828,
+      "sampled_span_seconds": 2683.440999984741,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 49.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-expanded-memorize64-lr1e-4-s20261103/gpu.csv",
+      "gpu": "3",
+      "samples": 422,
+      "start_utc": 1793721498.303,
+      "end_utc": 1793722340.762,
+      "sampled_span_seconds": 842.4590001106262,
+      "max_memory_mib": 12287.0,
+      "max_temperature_c": 52.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-full-lr1e-5-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 1263,
+      "start_utc": 1793709055.023,
+      "end_utc": 1793711580.337,
+      "sampled_span_seconds": 2525.313999891281,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 52.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json-calibrated-locked256-lr1e-4-s20261104/gpu.csv",
+      "gpu": "2",
+      "samples": 353,
+      "start_utc": 1793727915.431,
+      "end_utc": 1793728619.828,
+      "sampled_span_seconds": 704.3970000743866,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 61.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json-calibrated-locked256-lr1e-4-s20261105/gpu.csv",
+      "gpu": "3",
+      "samples": 376,
+      "start_utc": 1793727304.838,
+      "end_utc": 1793728055.259,
+      "sampled_span_seconds": 750.4210000038147,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 53.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json-calibrated-long1024-lr1e-4-s20261103-step1024/gpu.csv",
+      "gpu": "3",
+      "samples": 358,
+      "start_utc": 1793725064.408,
+      "end_utc": 1793725778.81,
+      "sampled_span_seconds": 714.4019999504089,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 54.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json-calibrated-long1024-lr1e-4-s20261103-step256/gpu.csv",
+      "gpu": "3",
+      "samples": 414,
+      "start_utc": 1793723121.924,
+      "end_utc": 1793723948.415,
+      "sampled_span_seconds": 826.4909999370575,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 51.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json-calibrated-long1024-lr1e-4-s20261103-step512/gpu.csv",
+      "gpu": "3",
+      "samples": 383,
+      "start_utc": 1793723961.769,
+      "end_utc": 1793724726.217,
+      "sampled_span_seconds": 764.4479999542236,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 51.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json-calibrated-lr1e-4-s20261103/gpu.csv",
+      "gpu": "0",
+      "samples": 401,
+      "start_utc": 1793718313.618,
+      "end_utc": 1793719114.037,
+      "sampled_span_seconds": 800.4189999103546,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 62.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json-calibrated-lr3e-5-s20261103/gpu.csv",
+      "gpu": "0",
+      "samples": 414,
+      "start_utc": 1793716877.523,
+      "end_utc": 1793717703.975,
+      "sampled_span_seconds": 826.4519999027252,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 62.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json-calibrated3k-long1024-lr1e-4-s20261103-step1024/gpu.csv",
+      "gpu": "0",
+      "samples": 369,
+      "start_utc": 1793727205.076,
+      "end_utc": 1793727941.491,
+      "sampled_span_seconds": 736.414999961853,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 63.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json-calibrated3k-long1024-lr1e-4-s20261103-step256/gpu.csv",
+      "gpu": "0",
+      "samples": 404,
+      "start_utc": 1793725294.456,
+      "end_utc": 1793726100.917,
+      "sampled_span_seconds": 806.4609999656677,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 63.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json-calibrated3k-long1024-lr1e-4-s20261103-step512/gpu.csv",
+      "gpu": "0",
+      "samples": 347,
+      "start_utc": 1793726111.851,
+      "end_utc": 1793726804.24,
+      "sampled_span_seconds": 692.3889999389648,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 63.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json-memorize64-long512-lr1e-4-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 356,
+      "start_utc": 1793722278.052,
+      "end_utc": 1793722988.456,
+      "sampled_span_seconds": 710.404000043869,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 59.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json-memorize64-lr1e-4-s20261103/gpu.csv",
+      "gpu": "0",
+      "samples": 370,
+      "start_utc": 1793720004.868,
+      "end_utc": 1793720743.282,
+      "sampled_span_seconds": 738.4140000343323,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 63.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json3k-primary-swa512-1024-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 364,
+      "start_utc": 1793728822.112,
+      "end_utc": 1793729548.513,
+      "sampled_span_seconds": 726.4010000228882,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 58.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json3k-qualityweighted512-lr1e-4-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 392,
+      "start_utc": 1793732149.676,
+      "end_utc": 1793732932.12,
+      "sampled_span_seconds": 782.4439997673035,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 56.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json3k-replica1024-lr1e-4-s20261104-swa/gpu.csv",
+      "gpu": "0",
+      "samples": 386,
+      "start_utc": 1793731746.192,
+      "end_utc": 1793732516.614,
+      "sampled_span_seconds": 770.422000169754,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 63.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-json3k-replica1024-lr1e-4-s20261105-swa/gpu.csv",
+      "gpu": "3",
+      "samples": 358,
+      "start_utc": 1793731712.663,
+      "end_utc": 1793732427.061,
+      "sampled_span_seconds": 714.3980000019073,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 54.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-parameters-lr1e-5-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 1277,
+      "start_utc": 1793711590.699,
+      "end_utc": 1793714144.102,
+      "sampled_span_seconds": 2553.4030001163483,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 53.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/evaluation/validation-parameters-lr3e-5-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 1302,
+      "start_utc": 1793714152.708,
+      "end_utc": 1793716756.08,
+      "sampled_span_seconds": 2603.371999979019,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 55.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/expanded-memorize64-lr1e-4-s20261103/gpu.csv",
+      "gpu": "3",
+      "samples": 71,
+      "start_utc": 1793720833.333,
+      "end_utc": 1793721183.456,
+      "sampled_span_seconds": 350.1230001449585,
+      "max_memory_mib": 10435.0,
+      "max_temperature_c": 67.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/final-evaluation/A/gpu-attempt-3661022.csv",
+      "gpu": "0",
+      "samples": 443,
+      "start_utc": 1793732800.807,
+      "end_utc": 1793733685.293,
+      "sampled_span_seconds": 884.4860000610352,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 59.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/final-evaluation/B/gpu-attempt-3661805.csv",
+      "gpu": "2",
+      "samples": 449,
+      "start_utc": 1793733135.335,
+      "end_utc": 1793734031.805,
+      "sampled_span_seconds": 896.4700000286102,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 55.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/final-evaluation/GRPO/gpu-attempt-3661021.csv",
+      "gpu": "3",
+      "samples": 441,
+      "start_utc": 1793732801.104,
+      "end_utc": 1793733681.575,
+      "sampled_span_seconds": 880.470999956131,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 49.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/final-evaluation/SFT/gpu-attempt-3662775.csv",
+      "gpu": "0",
+      "samples": 441,
+      "start_utc": 1793733695.454,
+      "end_utc": 1793734575.924,
+      "sampled_span_seconds": 880.4700000286102,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 58.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/final-evaluation/Seed20261103/gpu-attempt-3664334.csv",
+      "gpu": "0",
+      "samples": 126,
+      "start_utc": 1793734586.355,
+      "end_utc": 1793734836.505,
+      "sampled_span_seconds": 250.15000009536743,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 63.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/final-evaluation/Seed20261104/gpu-attempt-3663490.csv",
+      "gpu": "2",
+      "samples": 131,
+      "start_utc": 1793734041.451,
+      "end_utc": 1793734301.591,
+      "sampled_span_seconds": 260.1400001049042,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 53.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/final-evaluation/Seed20261105/gpu-attempt-3662758.csv",
+      "gpu": "3",
+      "samples": 127,
+      "start_utc": 1793733691.008,
+      "end_utc": 1793733943.142,
+      "sampled_span_seconds": 252.1340000629425,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 53.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/frozen-A-features-v1/gpu.csv",
+      "gpu": "0",
+      "samples": 43,
+      "start_utc": 1793722099.386,
+      "end_utc": 1793722309.462,
+      "sampled_span_seconds": 210.07599997520447,
+      "max_memory_mib": 12155.0,
+      "max_temperature_c": 70.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/frozen-A-features3k-v1/gpu.csv",
+      "gpu": "2",
+      "samples": 160,
+      "start_utc": 1793723272.266,
+      "end_utc": 1793724067.553,
+      "sampled_span_seconds": 795.2869999408722,
+      "max_memory_mib": 12155.0,
+      "max_temperature_c": 67.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/full-lr1e-5-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 77,
+      "start_utc": 1793707899.911,
+      "end_utc": 1793708280.031,
+      "sampled_span_seconds": 380.1199998855591,
+      "max_memory_mib": 10115.0,
+      "max_temperature_c": 67.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/instruction-challenge/B-original-format/gpu.csv",
+      "gpu": "3",
+      "samples": 124,
+      "start_utc": 1793725791.964,
+      "end_utc": 1793726407.128,
+      "sampled_span_seconds": 615.1640000343323,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 47.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/instruction-challenge/json-calibrated-locked256-lr1e-4-s20261104/gpu.csv",
+      "gpu": "2",
+      "samples": 34,
+      "start_utc": 1793728638.732,
+      "end_utc": 1793728803.781,
+      "sampled_span_seconds": 165.04899978637695,
+      "max_memory_mib": 12155.0,
+      "max_temperature_c": 55.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/instruction-challenge/json-calibrated-locked256-lr1e-4-s20261105/gpu.csv",
+      "gpu": "3",
+      "samples": 38,
+      "start_utc": 1793728074.57,
+      "end_utc": 1793728259.622,
+      "sampled_span_seconds": 185.05200004577637,
+      "max_memory_mib": 12155.0,
+      "max_temperature_c": 47.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/instruction-challenge/json-calibrated-long1024-lr1e-4-s20261103-step256/gpu.csv",
+      "gpu": "3",
+      "samples": 36,
+      "start_utc": 1793726416.439,
+      "end_utc": 1793726591.486,
+      "sampled_span_seconds": 175.04700016975403,
+      "max_memory_mib": 12155.0,
+      "max_temperature_c": 53.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/instruction-challenge/json-calibrated3k-long1024-lr1e-4-s20261103-step1024/gpu.csv",
+      "gpu": "0",
+      "samples": 38,
+      "start_utc": 1793728304.422,
+      "end_utc": 1793728489.474,
+      "sampled_span_seconds": 185.05200004577637,
+      "max_memory_mib": 12155.0,
+      "max_temperature_c": 53.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/instruction-challenge/json3k-primary-swa512-1024-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 36,
+      "start_utc": 1793729557.355,
+      "end_utc": 1793729732.404,
+      "sampled_span_seconds": 175.04900002479553,
+      "max_memory_mib": 12155.0,
+      "max_temperature_c": 52.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/instruction-challenge/json3k-qualityweighted512-lr1e-4-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 38,
+      "start_utc": 1793732939.542,
+      "end_utc": 1793733124.591,
+      "sampled_span_seconds": 185.04900002479553,
+      "max_memory_mib": 12155.0,
+      "max_temperature_c": 50.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/instruction-challenge/json3k-replica1024-lr1e-4-s20261104-swa/gpu.csv",
+      "gpu": "0",
+      "samples": 39,
+      "start_utc": 1793732527.559,
+      "end_utc": 1793732717.616,
+      "sampled_span_seconds": 190.0569999217987,
+      "max_memory_mib": 12155.0,
+      "max_temperature_c": 60.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/instruction-challenge/json3k-replica1024-lr1e-4-s20261105-swa/gpu.csv",
+      "gpu": "3",
+      "samples": 38,
+      "start_utc": 1793732437.447,
+      "end_utc": 1793732622.505,
+      "sampled_span_seconds": 185.05800008773804,
+      "max_memory_mib": 12155.0,
+      "max_temperature_c": 51.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/json-calibrated-locked256-lr1e-4-s20261104/gpu.csv",
+      "gpu": "2",
+      "samples": 140,
+      "start_utc": 1793727211.212,
+      "end_utc": 1793727906.424,
+      "sampled_span_seconds": 695.212000131607,
+      "max_memory_mib": 10115.0,
+      "max_temperature_c": 68.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/json-calibrated-locked256-lr1e-4-s20261105/gpu.csv",
+      "gpu": "3",
+      "samples": 139,
+      "start_utc": 1793726605.426,
+      "end_utc": 1793727295.662,
+      "sampled_span_seconds": 690.2359998226166,
+      "max_memory_mib": 12135.0,
+      "max_temperature_c": 69.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/json-calibrated-long1024-lr1e-4-s20261103/gpu.csv",
+      "gpu": "0",
+      "samples": 533,
+      "start_utc": 1793722391.132,
+      "end_utc": 1793725052.015,
+      "sampled_span_seconds": 2660.8830001354218,
+      "max_memory_mib": 12135.0,
+      "max_temperature_c": 71.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/json-calibrated-lr1e-4-s20261103/gpu.csv",
+      "gpu": "0",
+      "samples": 75,
+      "start_utc": 1793717934.106,
+      "end_utc": 1793718304.211,
+      "sampled_span_seconds": 370.1050000190735,
+      "max_memory_mib": 10115.0,
+      "max_temperature_c": 71.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/json-calibrated-lr3e-5-s20261103/gpu.csv",
+      "gpu": "0",
+      "samples": 77,
+      "start_utc": 1793716489.006,
+      "end_utc": 1793716869.112,
+      "sampled_span_seconds": 380.10599994659424,
+      "max_memory_mib": 10115.0,
+      "max_temperature_c": 71.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/json-calibrated3k-long1024-lr1e-4-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 589,
+      "start_utc": 1793724252.042,
+      "end_utc": 1793727192.946,
+      "sampled_span_seconds": 2940.904000043869,
+      "max_memory_mib": 12135.0,
+      "max_temperature_c": 69.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/json-memorize64-long512-lr1e-4-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 248,
+      "start_utc": 1793720783.969,
+      "end_utc": 1793722019.349,
+      "sampled_span_seconds": 1235.3799998760223,
+      "max_memory_mib": 10115.0,
+      "max_temperature_c": 68.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/json-memorize64-lr1e-4-s20261103/gpu.csv",
+      "gpu": "0",
+      "samples": 67,
+      "start_utc": 1793719415.172,
+      "end_utc": 1793719745.288,
+      "sampled_span_seconds": 330.1160001754761,
+      "max_memory_mib": 10115.0,
+      "max_temperature_c": 70.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/json3k-qualityweighted512-lr1e-4-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 350,
+      "start_utc": 1793730389.368,
+      "end_utc": 1793732134.899,
+      "sampled_span_seconds": 1745.5309998989105,
+      "max_memory_mib": 10115.0,
+      "max_temperature_c": 70.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261104/gpu.csv",
+      "gpu": "0",
+      "samples": 617,
+      "start_utc": 1793728649.512,
+      "end_utc": 1793731730.52,
+      "sampled_span_seconds": 3081.007999897003,
+      "max_memory_mib": 10115.0,
+      "max_temperature_c": 71.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/json3k-replica1024-lr1e-4-s20261105/gpu.csv",
+      "gpu": "3",
+      "samples": 609,
+      "start_utc": 1793728649.579,
+      "end_utc": 1793731690.562,
+      "sampled_span_seconds": 3040.9830000400543,
+      "max_memory_mib": 12107.0,
+      "max_temperature_c": 67.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/parameters-lr1e-5-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 78,
+      "start_utc": 1793708289.895,
+      "end_utc": 1793708675.006,
+      "sampled_span_seconds": 385.11100006103516,
+      "max_memory_mib": 10115.0,
+      "max_temperature_c": 68.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/parameters-lr3e-5-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 72,
+      "start_utc": 1793708690.058,
+      "end_utc": 1793709045.157,
+      "sampled_span_seconds": 355.0989999771118,
+      "max_memory_mib": 10115.0,
+      "max_temperature_c": 70.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/training-probe-evaluation/train_probe-A-json-memorize64-control/gpu.csv",
+      "gpu": "3",
+      "samples": 407,
+      "start_utc": 1793719414.804,
+      "end_utc": 1793720227.25,
+      "sampled_span_seconds": 812.4460000991821,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 51.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/training-probe-evaluation/train_probe-B-json-memorize64-control/gpu.csv",
+      "gpu": "2",
+      "samples": 415,
+      "start_utc": 1793719414.775,
+      "end_utc": 1793720243.218,
+      "sampled_span_seconds": 828.4429998397827,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 55.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/training-probe-evaluation/train_probe-expanded-memorize64-lr1e-4-s20261103/gpu.csv",
+      "gpu": "3",
+      "samples": 146,
+      "start_utc": 1793721198.476,
+      "end_utc": 1793721488.638,
+      "sampled_span_seconds": 290.1619999408722,
+      "max_memory_mib": 12287.0,
+      "max_temperature_c": 54.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/training-probe-evaluation/train_probe-json-memorize64-long512-lr1e-4-s20261103/gpu.csv",
+      "gpu": "2",
+      "samples": 121,
+      "start_utc": 1793722028.527,
+      "end_utc": 1793722268.664,
+      "sampled_span_seconds": 240.13700008392334,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 58.0
+    },
+    {
+      "path": "outputs/goal-v2-20261103/training-probe-evaluation/train_probe-json-memorize64-lr1e-4-s20261103/gpu.csv",
+      "gpu": "0",
+      "samples": 122,
+      "start_utc": 1793719755.027,
+      "end_utc": 1793719997.149,
+      "sampled_span_seconds": 242.12199997901917,
+      "max_memory_mib": 12231.0,
+      "max_temperature_c": 60.0
+    }
+  ],
+  "protected_gpu": 1,
+  "maximum_distinct_campaign_gpus": 3,
+  "limits": [
+    "Not a full resource/billing total: startup/teardown sample gaps, restore smoke and delivery replay have no telemetry span.",
+    "Host nvidia-smi timestamps parsed in verified CST UTC+8; archive work is CPU/I/O only.",
+    "Only campaign0/2/3 used; existing GPU1 demo retained."
+  ]
+}

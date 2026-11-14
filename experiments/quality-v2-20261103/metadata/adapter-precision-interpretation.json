@@ -1,0 +1,6 @@
+{
+  "hypothesis": "BF16 rounding prevents meaningful low-learning-rate adapter updates",
+  "result": "not supported for actual pilots",
+  "evidence": "All112 adapter tensors and all112 AdamW exp_avg states are float32; essentially every adapter scalar changed. BF16 scalar toy is illustrative, not the actual pilot configuration.",
+  "action": "No redundant FP32-vs-BF16 training trial launched."
+}

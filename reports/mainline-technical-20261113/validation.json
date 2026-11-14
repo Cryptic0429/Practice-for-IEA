@@ -1,0 +1,86 @@
+{
+  "status": "completed",
+  "date": "2026-11-13",
+  "pdf": "output/pdf/iea-mainline-technical-20261113.pdf",
+  "pdf_sha256": "e84a3079ba11f49cb5beba035d6cb11f08b84996812a992adc5d27f6f5312f26",
+  "pdf_bytes": 327912,
+  "pages": 7,
+  "source_sha256": "beb8e9edef38b80baa659e4110183cd926e5d2cc32c10ab0261f0e3773074748",
+  "fonts": [
+    "Arial-BoldMT",
+    "ArialMT",
+    "STHeitiSC-Light"
+  ],
+  "continuous_sections": true,
+  "visual_review": "All 7 pages rendered and inspected; final wording adjustment checked on page 5. No clipping, missing glyphs or TeX overflow.",
+  "old_report_unchanged_sha256": "9c17a4591e467cde9c1c7fe3b55fef66faa55d5ba97cad5321ff7c7f5ebdbf8e",
+  "integrity": {
+    "mainline_components": 4,
+    "lora": 3,
+    "controller_heads": 1,
+    "protocol_code_hash_checks": 191,
+    "retained_evidence_hash_checks": 669,
+    "old_report_file_checks": 12
+  },
+  "tests": {
+    "asset_management_unittests": 3,
+    "runtime_unittests": 4,
+    "unchanged_nonshadow_editor_cases": 98,
+    "preset_image_endpoints": 6,
+    "studio_candidates": [
+      "r1",
+      "r15",
+      "r21"
+    ],
+    "javascript_syntax": "passed",
+    "git_diff_check": "passed"
+  },
+  "restore_smoke": {
+    "verified": true,
+    "entries": [
+      {
+        "path": "output/pdf/iea-model-review-20261112.pdf",
+        "sha256": "9c17a4591e467cde9c1c7fe3b55fef66faa55d5ba97cad5321ff7c7f5ebdbf8e",
+        "bytes": 500495
+      },
+      {
+        "path": "models/from-functional-v15/sft-quality-coverage/seed-20261208/adapter_model.safetensors",
+        "sha256": "043489c53d6cc50625887665bf18edbe0f62c9aeb0fb16c0f481f3ead37af838",
+        "bytes": 10715680
+      },
+      {
+        "path": "models/from-functional-v15/sft-quality-coverage/seed-20261208/metadata.json",
+        "sha256": "645ed75cd56635bd50a11b1b8758127ba164148a5fd42e8f33f641b75d380dad",
+        "bytes": 1790
+      },
+      {
+        "path": "models/from-functional-v15/sft-quality-coverage/seed-20261208/README.md",
+        "sha256": "a626d8eb464babc61a5f55194a5feb42d6f42ce9d93f37438e2fe7d6ad94078f",
+        "bytes": 5246
+      },
+      {
+        "path": "models/from-functional-v15/sft-quality-coverage/seed-20261208/training_args.bin",
+        "sha256": "6753d09f8f5402cd02f42f6d0f007bb6dffcb498ad94b8609085a97e9d2a25b3",
+        "bytes": 5496
+      },
+      {
+        "path": "models/from-functional-v15/sft-quality-coverage/seed-20261208/adapter_config.json",
+        "sha256": "5f538a6f7c8a45566a6c341a26797282501c881b97bf70fd1d47c125cb611115",
+        "bytes": 950
+      }
+    ],
+    "destination_was_temporary": true
+  },
+  "archive_receipt": "docs/archive/archive-receipt.json",
+  "archive_entries": 25353,
+  "supplementary_git_metadata_files": 58,
+  "cleanup_result": "docs/archive/cleanup-result.json",
+  "no_GPU_training_or_inference": true,
+  "existing_remote_services_unmodified": true,
+  "limits": [
+    "Full base, training environment and some caches remain on SJTU1; local package is not self-contained.",
+    "No new training replay or model-quality evaluation was performed.",
+    "R21 replication failed; maintained as an experimental option."
+  ],
+  "compiler_and_preview_files_removed": 13
+}

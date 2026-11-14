@@ -1,9 +1,0 @@
-{
-  "at": "2026-11-07T05:02:18.807536+00:00",
-  "status": "passed_before_any_GPU_training",
-  "protocol_sha256": "c07c96b8ec24ed739d18a23dd6fbc1cab74cbc7360012257e8a5615fd9d1151b",
-  "cache_sha256": "ab5547c1c9484f4cd8e4381698d62f860dc9037a05c972281b2bd8d0082827ac",
-  "entry_sha256": "b0148c45cc5c930fbcc1ca08aa875e4ebf44b127bae6c3ea1bdf6d2ef2d5a01e",
-  "rows": 1958,
-  "reason": "108 newly built CPU entries retain the processor BatchFeature wrapper. First launch failed during weights_only load before GPUJob/model creation. Explicitly allowlist that owned wrapper; no weights_only=False, no source/cache/protocol modification, no learning/input change. Original failed logs retained."
-}

@@ -1,0 +1,2586 @@
+[
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nJust refine this image, make it better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears to be taken outdoors with natural light, and the exposure seems balanced. There is no strong need to increase or decrease brightness.\n2. Color: The colors in the image could be made more vivid to enhance the overall look, especially the greens of the grass and the colors of the flowers. Increasing color intensity would make the image more lively.\n3. Contrast/Sharpness: The image could benefit from a slight boost in contrast to make the subjects and background stand out more distinctly.\n4. Effects/Objects: No special effects or object-level edits are necessary. The composition is fine as is.\n5. Summary: To optimize the image, I would increase saturation for more vivid colors, slightly boost contrast, and possibly add a touch of brightness if needed. Adjusting tint could help balance any color cast.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 5,\n    \"contrast\": 5,\n    \"saturation\": 80,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2hdf7y_2hdf7y.jpg"
+    ],
+    "id": "GIER-Edit:train:000959",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2hdf7y_2hdf7y.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2hdf7y_Do27mvO.jpg",
+      "label": {
+        "brightness": 5,
+        "contrast": 5,
+        "saturation": 80,
+        "tint": 5
+      },
+      "instruction": "Just refine this image, make it better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "2hdf7y_Do27mvO_9",
+    "source_row": 959,
+    "group_id": "00137ea0c94724b58d428df363a70be85b56e59b4e33dd5357abb414a9e259ee"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nIncrease brightness a little\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image is quite dark, especially in the background and on the subjects' clothing. Increasing the brightness would help make the details more visible and the overall image lighter.\n2. Color: The colors appear muted due to the darkness. Increasing saturation could help bring out the colors more, but care should be taken not to oversaturate. There is no strong color cast, but a slight tint adjustment could be used if needed.\n3. Contrast/Sharpness: The image has low contrast, making it look a bit flat. Increasing contrast would help define the subjects and background better.\n4. Effects/Objects: No special effects or object-level edits are needed. No vignetting or cropping is necessary.\n5. Summary: To optimize the image, I would significantly increase brightness, moderately increase contrast, slightly boost saturation, and consider a minor highlights adjustment to avoid overexposing the brightest areas. A slight tint adjustment could be used if the image looks too cool or warm after brightening.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 45,\n    \"contrast\": 20,\n    \"saturation\": 45,\n    \"highlights\": 10,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/kyybY_kyybY.jpg"
+    ],
+    "id": "GIER-Edit:train:000577",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/kyybY_kyybY.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/kyybY_mYpgD.jpg",
+      "label": {
+        "brightness": 45,
+        "contrast": 20,
+        "saturation": 45,
+        "highlights": 10,
+        "tint": 5
+      },
+      "instruction": "Increase brightness a little",
+      "inst_type": "amateur",
+      "task_type": "image_editing"
+    },
+    "source_id": "kyybY_mYpgD_4",
+    "source_row": 577,
+    "group_id": "01a954296c8ecd99231f1f26e0f10763038db565eac267d3d8535f7c2fb605b2"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nEdit this image to make it more beautiful\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears slightly faded and overexposed, but the main issue is not brightness.\n2. Color: There is a strong red/pink color cast over the entire image, making it look unnatural. Reducing the red tone and possibly cooling the image would help. The saturation is also high due to the color cast, so reducing saturation could help balance the colors. Adjusting the tint towards green may also help counteract the red/magenta cast.\n3. Contrast/Sharpness: The image is a bit washed out, but the main issue is the color cast, not contrast or sharpness.\n4. Effects/Objects: No obvious vignetting, cropping, or object-level edits are needed.\n5. Summary: The most important changes would be to reduce the red/pink color cast by lowering temperature (cooler), reducing saturation, and shifting tint towards green.\n</think>\n<answer>\n```json\n{\n    \"temperature\": -100,\n    \"saturation\": -5,\n    \"tint\": -90\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2pw8ig_2pw8ig.jpg"
+    ],
+    "id": "GIER-Edit:test:000275",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2pw8ig_2pw8ig.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2pw8ig_qSAe10H.jpg",
+      "label": {
+        "temperature": -100,
+        "saturation": -5,
+        "tint": -90
+      },
+      "instruction": "Edit this image to make it more beautiful",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "2pw8ig_qSAe10H_8",
+    "source_row": 275,
+    "group_id": "022fce851042a887e4e107b6ae66555aee4df6cfa18f4da2243d2752bddcd752"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nHow to enhance this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears to be taken at night with some artificial lighting. The overall exposure and brightness seem a bit high, causing some areas (especially the people and railing) to look washed out. Reducing brightness and possibly highlights would help recover detail in the bright areas.\n2. Color: The colors look natural for a night scene, so no major changes to saturation, vibrance, temperature, or tint are needed.\n3. Contrast/Sharpness: The contrast seems appropriate for a night photo, and sharpness is not an issue.\n4. Effects/Objects: No vignetting, fading, or object-level edits are necessary.\n5. Summary: The main improvement would be to reduce the overall brightness and highlights to bring back detail and make the image look more natural for a night scene.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -90,\n    \"highlights\": -30\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/54cydq_54cydq.jpg"
+    ],
+    "id": "GIER-Edit:train:001947",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/54cydq_54cydq.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/54cydq_Qpx4gGz.jpg",
+      "label": {
+        "brightness": -90,
+        "highlights": -30
+      },
+      "instruction": "How to enhance this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "54cydq_Qpx4gGz_12",
+    "source_row": 1947,
+    "group_id": "05040ac9d0b32ee1f22c757f2182dbba9b8b07b297266c9677ac091f2117f11e"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nRemove purple tone from the image, please\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears underexposed and quite dark, especially on the faces and shirts. Increasing brightness and possibly highlights would help to make the subjects more visible and the image more balanced.\n2. Color: There is a strong pink/purple tint over the entire image, making the skin tones and whites look unnatural. Reducing the tint (towards green) and adjusting the temperature to be more neutral (less magenta/pink, possibly a bit cooler) would help. The colors also look a bit oversaturated due to the lighting, so reducing saturation slightly could help normalize the colors.\n3. Contrast/Sharpness: The image looks a bit flat, so a slight increase in contrast could help add depth and definition.\n4. Effects/Objects: No obvious vignetting, fading, or object-level edits are needed.\n5. Summary: Increase brightness and highlights, reduce pink tint (move tint towards green), adjust temperature to be more neutral, slightly reduce saturation, and increase contrast for a more natural and balanced look.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 30,\n    \"contrast\": 5,\n    \"temperature\": -10,\n    \"saturation\": -30,\n    \"highlights\": 5,\n    \"tint\": -15\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2uy3mn_2uy3mn.jpg"
+    ],
+    "id": "GIER-Edit:train:001825",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2uy3mn_2uy3mn.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2uy3mn_ctsCZfB.jpg",
+      "label": {
+        "brightness": 30,
+        "contrast": 5,
+        "temperature": -10,
+        "saturation": -30,
+        "highlights": 5,
+        "tint": -15
+      },
+      "instruction": "Remove purple tone from the image, please",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "2uy3mn_ctsCZfB_2",
+    "source_row": 1825,
+    "group_id": "06b6614b510db99c7010d4b2e345d75b3358f56afc2b16f3ded37d0b1e4dca57"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\ndarken a bit, decrease saturnation, add darker effect\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit bright, so reducing the brightness would help darken the overall look.\n2. Color: The colors seem slightly muted, but not completely desaturated. Lowering the saturation a little could help with a more subdued, darker mood.\n3. Contrast/Sharpness: Increasing the contrast would help maintain definition and prevent the image from looking too flat after darkening.\n4. Effects/Objects: No additional effects or object-level edits are necessary.\n5. Summary: To optimize the image, I would decrease brightness, slightly lower saturation, and increase contrast to keep the image crisp and visually appealing.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -15,\n    \"contrast\": 5,\n    \"saturation\": -45\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/79R0N_79R0N.jpg"
+    ],
+    "id": "GIER-Edit:train:004451",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/79R0N_79R0N.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/79R0N_8WsPy.jpg",
+      "label": {
+        "brightness": -15,
+        "contrast": 5,
+        "saturation": -45
+      },
+      "instruction": "darken a bit, decrease saturnation, add darker effect",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "79R0N_8WsPy_2",
+    "source_row": 4451,
+    "group_id": "09a2ad93dde67c4f09b1ed2f94727c95f74f0935d0b084fc905449d96e763aeb"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nHow to enhance this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dull and underexposed, so increasing the brightness would help make it look more lively. Highlights could be slightly increased to add more light to the brightest areas.\n2. Color: The image has a noticeable pink tint, making the colors look unnatural. Adjusting the temperature towards a cooler (more natural) tone would help. Increasing saturation would also help restore more natural, vivid colors.\n3. Contrast/Sharpness: The image looks a bit flat, so increasing the contrast would help add depth and definition.\n4. Effects/Objects: No special effects or object-level edits are needed.\n5. Summary: Increase brightness, contrast, and saturation; reduce the pink tint by cooling the temperature; slightly boost highlights.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 15,\n    \"contrast\": 10,\n    \"temperature\": -35,\n    \"saturation\": 55,\n    \"highlights\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3yd1k4_3yd1k4.jpg"
+    ],
+    "id": "GIER-Edit:train:000941",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3yd1k4_3yd1k4.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3yd1k4_Tz9HOxd.jpg",
+      "label": {
+        "brightness": 15,
+        "contrast": 10,
+        "temperature": -35,
+        "saturation": 55,
+        "highlights": 5
+      },
+      "instruction": "How to enhance this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "3yd1k4_Tz9HOxd_10",
+    "source_row": 941,
+    "group_id": "0b3f7fd17ddd788e541754b6df4219f31d5c2cbba1e377074aacd3e4ef9fa6e7"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\n Improve Lighting/Quality (redness of dress more prominent) + remove outlet thing please c:\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit too bright, especially on the wall and floor, which are somewhat washed out. Reducing brightness slightly could help recover detail.\n2. Color: The image has a strong yellow/orange cast, making it look overly warm. Adjusting the temperature to be cooler would help neutralize this.\n3. Contrast/Sharpness: The image looks a bit flat; increasing contrast a little would help add depth and definition, especially to the dress and background.\n4. Effects/Objects: No obvious vignetting, fading, or object-level edits are needed.\n5. Summary: To optimize the image, I would slightly decrease brightness, cool down the temperature, increase contrast a bit, and possibly adjust highlights to recover detail. Saturation could be left as is or slightly reduced if the colors look too intense after other adjustments.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -25,\n    \"contrast\": 10,\n    \"temperature\": -60,\n    \"saturation\": -5,\n    \"highlights\": -10\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/42vwy1_42vwy1.jpg"
+    ],
+    "id": "GIER-Edit:test:000014",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/42vwy1_42vwy1.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/42vwy1_VQfsEUy.jpg",
+      "label": {
+        "brightness": -25,
+        "contrast": 10,
+        "temperature": -60,
+        "saturation": -5,
+        "highlights": -10
+      },
+      "instruction": " Improve Lighting/Quality (redness of dress more prominent) + remove outlet thing please c:",
+      "inst_type": "amateur",
+      "task_type": "image_editing"
+    },
+    "source_id": "42vwy1_VQfsEUy_2",
+    "source_row": 14,
+    "group_id": "160ba459e56b0f350b3ecf8ac3566231cdcbd5b1ec5ec908f2fe0c18162aa18f"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\ndarken a bit, make the picture more colorful\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit washed out and slightly overexposed in the highlights, but the overall brightness could be increased just a little to make the subjects stand out more.\n2. Color: The colors look muted and could benefit from a boost in saturation to make the image more lively. The image also has a cool tone, so a slight increase in temperature could make it warmer and more inviting. Tint adjustment may help balance any color cast.\n3. Contrast/Sharpness: The image lacks contrast, so increasing contrast would help define the subjects and background better.\n4. Effects/Objects: No special effects or object-level edits are needed.\n5. Summary: Slightly increase brightness, boost contrast, increase saturation, warm up the temperature, and possibly adjust tint for color balance.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 5,\n    \"contrast\": 15,\n    \"temperature\": 5,\n    \"saturation\": 85,\n    \"highlights\": -60,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3f9imk_3f9imk.jpg"
+    ],
+    "id": "GIER-Edit:test:000436",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3f9imk_3f9imk.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3f9imk_vacABdD.jpg",
+      "label": {
+        "brightness": 5,
+        "contrast": 15,
+        "temperature": 5,
+        "saturation": 85,
+        "highlights": -60,
+        "tint": 5
+      },
+      "instruction": "darken a bit, make the picture more colorful",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "3f9imk_vacABdD_3",
+    "source_row": 436,
+    "group_id": "18802ccfc93df1481772e5a6a0a9ac51d2771dace44b5dfba646ccd41fa585b2"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> First, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears quite bright already, but to further enhance the lightness, a slight increase in brightness could be considered.\n2. Color: No significant color changes are needed; the image is already very light and neutral.\n3. Contrast/Sharpness: The image has low contrast, so to maintain a soft look, contrast should not be increased much, or could even be slightly reduced to avoid harshness.\n4. Effects/Objects: No vignetting, fading, or object-level edits are necessary.\n5. Summary: A small increase in brightness and a slight decrease in contrast would help make the image look even lighter and softer.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 5,\n    \"contrast\": -35\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cVh8k_cVh8k.jpg"
+    ],
+    "id": "GIER-Edit:train:002749",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cVh8k_cVh8k.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/cVh8k_4Tmbk.jpg",
+      "label": {
+        "brightness": 5,
+        "contrast": -35
+      },
+      "instruction": "",
+      "inst_type": "none",
+      "task_type": "image_editing"
+    },
+    "source_id": "cVh8k_4Tmbk_11",
+    "source_row": 2749,
+    "group_id": "1888c9737f325d37da3c57a4ebcdf614a8a23267569df1893fc28617c26ab0d5"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nHow to enhance this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit washed out and bright, especially around the window area. To improve the image, reducing the overall brightness and exposure would help darken the scene and bring out more detail in the midtones and shadows.\n2. Color: The colors look muted, but since only brightness, contrast, and exposure are allowed, no direct color adjustments can be made.\n3. Contrast/Sharpness: Increasing the contrast would help make the darks and lights more distinct, giving the image more depth and making the colors appear richer.\n4. Effects/Objects: No vignetting, fading, or object-level edits are necessary for this image.\n5. Summary: To optimize the image, I would decrease brightness and exposure to darken the image, and increase contrast to make the colors and details pop.\n</think>\n<answer>\n```json\n{\n    \"exposure\": -5,\n    \"brightness\": -20,\n    \"contrast\": 55\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2ehoj9_2ehoj9.jpg"
+    ],
+    "id": "GIER-Edit:train:002761",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2ehoj9_2ehoj9.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2ehoj9_dgSLSBE.jpg",
+      "label": {
+        "exposure": -5,
+        "brightness": -20,
+        "contrast": 55
+      },
+      "instruction": "How to enhance this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "2ehoj9_dgSLSBE_11",
+    "source_row": 2761,
+    "group_id": "1c5bb518926ab2d30acff0150f7bd866e33d915d1c1656845bc897e622d70ea3"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> First, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears somewhat dark and underexposed, so increasing the brightness would help make the details more visible.\n2. Color: There is a strong brown/yellowish tint, making the image look aged or discolored. Adjusting the temperature towards cooler tones and possibly shifting the tint away from magenta/yellow would help neutralize this. Increasing saturation could help restore some color vibrancy lost to the brown cast.\n3. Contrast/Sharpness: The image looks a bit flat, so increasing the contrast would help add depth and definition.\n4. Effects/Objects: No obvious vignetting, fading, or object-level edits are needed.\n5. Summary: Increase brightness, increase contrast, decrease temperature (cooler), adjust tint to reduce brown/yellow, and increase saturation to restore color.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 15,\n    \"contrast\": 5,\n    \"temperature\": -90,\n    \"saturation\": 30,\n    \"tint\": 45\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2wes9i_2wes9i.jpg"
+    ],
+    "id": "GIER-Edit:test:000279",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2wes9i_2wes9i.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2wes9i_Q6FvNyZ.jpg",
+      "label": {
+        "brightness": 15,
+        "contrast": 5,
+        "temperature": -90,
+        "saturation": 30,
+        "tint": 45
+      },
+      "instruction": "",
+      "inst_type": "none",
+      "task_type": "image_editing"
+    },
+    "source_id": "2wes9i_Q6FvNyZ_13",
+    "source_row": 279,
+    "group_id": "1e047f250338562ce22ea9b3de2d592ec8e2d45198907504ddcf134499bacee0"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nHow to enhance this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears to have balanced exposure and brightness, so no major adjustment is needed in this area.\n2. Color: The image could benefit from a more creative color tone. Adding a color cast or shifting the tint/temperature could give it a unique look. Increasing the green tones or cooling the image might be interesting. Saturation could be slightly increased or decreased depending on the desired effect.\n3. Contrast/Sharpness: The contrast could be slightly increased to make the subject stand out more.\n4. Effects/Objects: No additional effects or object-level edits are necessary.\n5. Summary: Adjusting the tint towards green, possibly cooling the temperature, and tweaking contrast and saturation would enhance the image creatively.\n</think>\n<answer>\n```json\n{\n    \"contrast\": 5,\n    \"temperature\": -45,\n    \"saturation\": 10,\n    \"tint\": 90\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bgpgC_bgpgC.jpg"
+    ],
+    "id": "GIER-Edit:train:002009",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bgpgC_bgpgC.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/bgpgC_qBQ31.jpg",
+      "label": {
+        "contrast": 5,
+        "temperature": -45,
+        "saturation": 10,
+        "tint": 90
+      },
+      "instruction": "How to enhance this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "bgpgC_qBQ31_7",
+    "source_row": 2009,
+    "group_id": "1fc4b56a293dcd367c684a6a3e1ca1c52d80ef89477ddf846922341ee9c2c7ff"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> First, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dark, especially in the foreground and on the subject. Increasing the brightness significantly would help make the photo look more lively and clear. Adjusting highlights upward could also help bring out the lighter areas, but care should be taken not to blow out the sky.\n2. Color: The colors, especially the lavender and greenery, could be made more vibrant. Increasing saturation would help the colors pop and look more appealing.\n3. Contrast/Sharpness: The image could benefit from a moderate increase in contrast to add depth and separation between the subject and the background.\n4. Effects/Objects: No obvious need for vignetting, fading, cropping, or object-level edits.\n5. Summary: To optimize the image, I would increase brightness a lot, boost contrast moderately, increase saturation for richer colors, and slightly raise highlights to enhance the light areas.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 35,\n    \"contrast\": 15,\n    \"saturation\": 70,\n    \"highlights\": 15\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3cusbf_3cusbf.jpg"
+    ],
+    "id": "GIER-Edit:train:001000",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3cusbf_3cusbf.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3cusbf_NZ4JD3k.jpg",
+      "label": {
+        "brightness": 35,
+        "contrast": 15,
+        "saturation": 70,
+        "highlights": 15
+      },
+      "instruction": "",
+      "inst_type": "none",
+      "task_type": "image_editing"
+    },
+    "source_id": "3cusbf_NZ4JD3k_12",
+    "source_row": 1000,
+    "group_id": "223fe56053c91ae299aea550ee1310c06f07d7e375157acaeb6459006d59d034"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nWhat will you do to improve this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image should be checked for overall brightness. If it appears too dark or too bright, a moderate adjustment to brightness may help balance the exposure.\n2. Color: To create a more classic or artistic look, reducing the color intensity (saturation) can be considered. Adjusting temperature and tint can also help fine-tune the color balance, but for a neutral look, these should be kept minimal.\n3. Contrast/Sharpness: Increasing contrast can help make the subject stand out more by deepening the difference between light and dark areas.\n4. Effects/Objects: No object-level edits or special effects are necessary for a clean, classic look.\n5. Summary: Likely parameter changes include reducing saturation significantly, possibly increasing contrast, and making minor adjustments to brightness if needed.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -50,\n    \"contrast\": 5,\n    \"temperature\": 10,\n    \"saturation\": -95,\n    \"highlights\": 10,\n    \"tint\": 25\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/dgCMg_dgCMg.jpg"
+    ],
+    "id": "GIER-Edit:train:000830",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/dgCMg_dgCMg.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/dgCMg_4hjZl.jpg",
+      "label": {
+        "brightness": -50,
+        "contrast": 5,
+        "temperature": 10,
+        "saturation": -95,
+        "highlights": 10,
+        "tint": 25
+      },
+      "instruction": "What will you do to improve this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "dgCMg_4hjZl_6",
+    "source_row": 830,
+    "group_id": "36cfb0c926cb8871ba9c4153eb262d5ffd839a6d7d84d147a4da40c8b636b231"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nSharpen the image completely\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dark and could benefit from an increase in brightness to make the subject and background more visible.\n2. Color: The image is black and white, so no color adjustments are needed.\n3. Contrast/Sharpness: The image looks a bit flat and soft. Increasing contrast would help define the subject and piano better, and sharpening would enhance the clarity of edges and details.\n4. Effects/Objects: No vignetting, fading, or object-level edits are necessary.\n5. Summary: Increasing brightness, contrast, and sharpness would make the image look clearer, more defined, and visually appealing.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 15,\n    \"contrast\": 10,\n    \"sharpness\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4jcpgb_4jcpgb.jpg"
+    ],
+    "id": "GIER-Edit:train:000765",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4jcpgb_4jcpgb.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4jcpgb_0CjyfOh.jpg",
+      "label": {
+        "brightness": 15,
+        "contrast": 10,
+        "sharpness": 5
+      },
+      "instruction": "Sharpen the image completely",
+      "inst_type": "amateur",
+      "task_type": "image_editing"
+    },
+    "source_id": "4jcpgb_0CjyfOh_2",
+    "source_row": 765,
+    "group_id": "38688920be6db7be4895315e6f228f34669beda4dcee138779bf6c2aca8abfe9"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nWhat will you do to improve this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image could benefit from being slightly darker to add depth and drama, especially since the background is already dark and the characters could stand out more.\n2. Color: Enhancing the color intensity would make the characters' outfits and hair pop more, so increasing saturation would help.\n3. Contrast/Sharpness: Increasing contrast would make the separation between the dark and light areas more pronounced, giving the image a more dynamic look. A slight increase in sharpness could help define the lines and details.\n4. Effects/Objects: No cropping, rotation, or object-level edits are needed. No vignetting or fading effects are necessary.\n5. Summary: To optimize the image, I would slightly decrease brightness, increase contrast, boost saturation, and add a bit of sharpness. Highlights could be slightly reduced to prevent any bright areas from blowing out.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -35,\n    \"contrast\": 15,\n    \"saturation\": 15,\n    \"highlights\": -5,\n    \"sharpness\": 20\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4jdfnj_4jdfnj.jpg"
+    ],
+    "id": "GIER-Edit:test:000792",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4jdfnj_4jdfnj.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4jdfnj_wgdG3Xk.jpg",
+      "label": {
+        "brightness": -35,
+        "contrast": 15,
+        "saturation": 15,
+        "highlights": -5,
+        "sharpness": 20
+      },
+      "instruction": "What will you do to improve this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "4jdfnj_wgdG3Xk_6",
+    "source_row": 792,
+    "group_id": "387564b9b9de0e905d1739b6f30d83ba60e1bb03ccb32ccccccda0f60ce207e7"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nWhat will you do to improve this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears quite dark and dull, so increasing the brightness would help make it look better. Boosting highlights could also help make the lighter areas stand out more and give the image a cleaner, whiter look.\n2. Color: The colors look muted and a bit muddy. Increasing saturation slightly could help the colors pop a bit more, but not too much to keep the image looking natural.\n3. Contrast/Sharpness: No significant changes in contrast or sharpness are necessary based on the available operators.\n4. Effects/Objects: No vignetting, fading, or object-level edits are needed.\n5. Summary: To improve the image, I would increase brightness, boost highlights, and slightly increase saturation for a fresher, whiter, and more vibrant look.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 15,\n    \"saturation\": 10,\n    \"highlights\": 15\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4ko0e4_4ko0e4.jpg"
+    ],
+    "id": "GIER-Edit:train:000299",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4ko0e4_4ko0e4.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4ko0e4_AhYg41g.jpg",
+      "label": {
+        "brightness": 15,
+        "saturation": 10,
+        "highlights": 15
+      },
+      "instruction": "What will you do to improve this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "4ko0e4_AhYg41g_9",
+    "source_row": 299,
+    "group_id": "3c0e83776f6adb363c804f3efccc47128fe53da52c56009334f2c7b515451ee1"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nChange the lighting of the image so that the man and the car are more visible.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image is quite dark, especially in the foreground and on the subject. Increasing the brightness significantly would help make the subject and car more visible. Highlights could be slightly reduced to prevent the car headlights from blowing out further.\n2. Color: The image looks a bit muted and yellowish due to the street lighting. Boosting saturation will make the colors pop more. Adjusting the temperature slightly towards cooler tones can help balance the yellow/orange cast. A slight tint adjustment towards magenta may also help neutralize any greenish cast.\n3. Contrast/Sharpness: Increasing contrast will help define the subject and car against the background, making the image look more dynamic.\n4. Effects/Objects: No cropping, rotation, or object-level edits are needed. No vignetting or fading is necessary.\n5. Summary: Increase brightness a lot, boost contrast, increase saturation, slightly cool down the temperature, and add a touch of magenta tint. Slightly lower highlights to control the headlight glare.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 35,\n    \"contrast\": 30,\n    \"temperature\": -5,\n    \"saturation\": 50,\n    \"highlights\": -5,\n    \"tint\": 35\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/ar3izr_ar3izr.jpg"
+    ],
+    "id": "GIER-Edit:test:000283",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/ar3izr_ar3izr.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/ar3izr_ClERIcf.jpg",
+      "label": {
+        "brightness": 35,
+        "contrast": 30,
+        "temperature": -5,
+        "saturation": 50,
+        "highlights": -5,
+        "tint": 35
+      },
+      "instruction": "Change the lighting of the image so that the man and the car are more visible.",
+      "inst_type": "amateur",
+      "task_type": "image_editing"
+    },
+    "source_id": "ar3izr_ClERIcf_5",
+    "source_row": 283,
+    "group_id": "3cca54058b33fd8c85f3464840910749b1d2504dea0ccb25ead7eae3a3bfc7b9"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nIncrease the brightness of the entire photo, edit the colors to favor an intense orange.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image is taken at night with lots of lights, but the overall exposure is a bit dark. Increasing brightness could help make the subject and background more visible.\n2. Color: The image could benefit from a boost in color intensity to make the lights and jacket pop. Adding warmth or a tint could enhance the mood.\n3. Contrast/Sharpness: Increasing contrast would help define the subject against the background and make the lights stand out more.\n4. Effects/Objects: No major effects or object-level edits are needed, just overall enhancements.\n5. Summary: Likely adjustments include increasing brightness, contrast, saturation, and possibly adding a warm tint to enhance the overall look.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 30,\n    \"contrast\": 35,\n    \"saturation\": 90,\n    \"highlights\": 45,\n    \"tint\": 10\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/s46Mc_s46Mc.jpg"
+    ],
+    "id": "GIER-Edit:train:001005",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/s46Mc_s46Mc.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/s46Mc_bK8NM.jpg",
+      "label": {
+        "brightness": 30,
+        "contrast": 35,
+        "saturation": 90,
+        "highlights": 45,
+        "tint": 10
+      },
+      "instruction": "Increase the brightness of the entire photo, edit the colors to favor an intense orange.",
+      "inst_type": "amateur",
+      "task_type": "image_editing"
+    },
+    "source_id": "s46Mc_bK8NM_6",
+    "source_row": 1005,
+    "group_id": "4089d7bfb0e5ab4f37d96ac514ebde2e9a6c485ef8dc695421c107e3316dff46"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nPlease simply make this image better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit washed out and faded, so a slight increase in brightness could help, but not too much to avoid further washing out. Highlights could be slightly reduced to recover some detail in the brightest areas.\n2. Color: The colors look muted and pale. Increasing saturation will make the colors more vivid. Adjusting temperature towards a slightly warmer tone could enhance the overall look. A small tint adjustment towards magenta or green may help balance any color cast.\n3. Contrast/Sharpness: The image lacks boldness and depth, so increasing contrast will help make the darks and lights more distinct.\n4. Effects/Objects: No cropping, rotation, or object-level edits are needed. No vignette or fade is necessary.\n5. Summary: Increase brightness slightly, boost contrast, increase saturation, warm up the temperature a bit, and possibly adjust tint for color balance. Lower highlights a bit to recover detail.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 5,\n    \"contrast\": 15,\n    \"temperature\": 5,\n    \"saturation\": 30,\n    \"highlights\": -60,\n    \"tint\": 10\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2qgz1o_2qgz1o.jpg"
+    ],
+    "id": "GIER-Edit:test:000297",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2qgz1o_2qgz1o.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2qgz1o_OnWw5wA.jpg",
+      "label": {
+        "brightness": 5,
+        "contrast": 15,
+        "temperature": 5,
+        "saturation": 30,
+        "highlights": -60,
+        "tint": 10
+      },
+      "instruction": "Please simply make this image better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "2qgz1o_OnWw5wA_6",
+    "source_row": 297,
+    "group_id": "42fc8326f306369c4e6f6a3dd18765b34121760b61cd793af66173ef994dea18"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nPlease simply make this image better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears quite dark, especially in the foreground and on the subjects. Increasing the exposure and/or brightness would help make the details more visible and the image more lively.\n2. Color: The colors look a bit muted due to the darkness, but there is no strong color cast or need for warmth/coolness adjustment.\n3. Contrast/Sharpness: The image has decent contrast, but if the exposure and brightness are increased, the contrast may need to be slightly reduced to prevent the image from looking washed out.\n4. Effects/Objects: No vignetting, fading, or object-level edits are necessary.\n5. Summary: To optimize the image, I would increase the exposure and brightness to lighten the image, and slightly decrease the contrast to avoid losing detail in the highlights and shadows.\n</think>\n<answer>\n```json\n{\n    \"exposure\": 65,\n    \"brightness\": 40,\n    \"contrast\": -10\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2nwlk3_2nwlk3.png"
+    ],
+    "id": "GIER-Edit:train:002125",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2nwlk3_2nwlk3.png",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2nwlk3_wnUxdpE.png",
+      "label": {
+        "exposure": 65,
+        "brightness": 40,
+        "contrast": -10
+      },
+      "instruction": "Please simply make this image better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "2nwlk3_wnUxdpE_5",
+    "source_row": 2125,
+    "group_id": "441e31617a02cee51b171c2484b33bb2ea6428c2602f539be2507c7e0bda83d2"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nJust refine this image, make it better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image could benefit from a slight increase in brightness to make the scene more vivid, especially in the shadowed areas.\n2. Color: The sunset scene would look more appealing with enhanced warmth and richer colors. Increasing the temperature will add warmth, and a boost in saturation will make the colors pop. Adjusting the tint slightly towards magenta can enhance the orange tones.\n3. Contrast/Sharpness: Increasing contrast will help define the silhouettes and make the sunset colors stand out more.\n4. Effects/Objects: No vignetting, fading, or object-level edits are necessary for this scene.\n5. Summary: Slightly increase brightness, boost contrast, raise temperature for warmth, increase saturation, and adjust tint towards magenta for a richer orange sunset effect.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 5,\n    \"contrast\": 5,\n    \"temperature\": 35,\n    \"saturation\": 75,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8GHhL_8GHhL.jpg"
+    ],
+    "id": "GIER-Edit:train:002452",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8GHhL_8GHhL.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8GHhL_gGQ41.jpg",
+      "label": {
+        "brightness": 5,
+        "contrast": 5,
+        "temperature": 35,
+        "saturation": 75,
+        "tint": 5
+      },
+      "instruction": "Just refine this image, make it better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "8GHhL_gGQ41_9",
+    "source_row": 2452,
+    "group_id": "487039967d6ff2b77a038464d16aa0e89025c9a4e98bcf48d568906b195c2f3c"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nplease sharpen the color to make picture more clear. The contrasts of color more sharp\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears slightly dim, so a small increase in brightness could help make it look more lively. The highlights could be slightly reduced to control any glare from the lights on the faces and shirts.\n2. Color: The image has a noticeable yellow/warm cast, so reducing the temperature (making it cooler) would help. The colors could be a bit more vibrant, so a slight increase in saturation may be beneficial. Adjusting the tint towards green (away from magenta) could also help balance the color.\n3. Contrast/Sharpness: The image could benefit from a slight increase in contrast to make the suits and background pop more.\n4. Effects/Objects: No major effects or object-level edits are needed.\n5. Summary: Slightly increase brightness, reduce highlights, cool down the temperature, adjust tint towards green, increase contrast, and possibly boost saturation a bit.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 5,\n    \"contrast\": 5,\n    \"temperature\": -55,\n    \"saturation\": 5,\n    \"highlights\": -5,\n    \"tint\": -5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/486jtg_486jtg.jpg"
+    ],
+    "id": "GIER-Edit:train:000475",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/486jtg_486jtg.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/486jtg_xnTvM2h.jpg",
+      "label": {
+        "brightness": 5,
+        "contrast": 5,
+        "temperature": -55,
+        "saturation": 5,
+        "highlights": -5,
+        "tint": -5
+      },
+      "instruction": "please sharpen the color to make picture more clear. The contrasts of color more sharp",
+      "inst_type": "amateur",
+      "task_type": "image_editing"
+    },
+    "source_id": "486jtg_xnTvM2h_3",
+    "source_row": 475,
+    "group_id": "4b8164c01d9a620aded16eef82eae9fee6bac13def8ef1f3fe3800ea37afdafc"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nPlease, sharpen the photo\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears to have adequate exposure and brightness, so no major adjustments are needed in this area.\n2. Color: The color intensity and warmth seem natural and do not require significant changes.\n3. Contrast/Sharpness: The image looks a bit soft and could benefit from increased sharpness to bring out more detail. Increasing contrast slightly would also help to make the image pop and add depth.\n4. Effects/Objects: No vignetting, fading, or object-level edits are necessary.\n5. Summary: To optimize the image, I would increase sharpness to enhance detail and slightly boost contrast for a more dynamic look.\n</think>\n<answer>\n```json\n{\n    \"contrast\": 5,\n    \"sharpness\": 55\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4c1h6n_4c1h6n.jpg"
+    ],
+    "id": "GIER-Edit:test:000626",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4c1h6n_4c1h6n.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4c1h6n_Izx4TcL.jpg",
+      "label": {
+        "contrast": 5,
+        "sharpness": 55
+      },
+      "instruction": "Please, sharpen the photo",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "4c1h6n_Izx4TcL_1",
+    "source_row": 626,
+    "group_id": "4bc3df578fb1d2ab0ae11a27d94979149c7d2c0b9cf82ee2e4b8d0c91927c990"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nJust refine this image, make it better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image could benefit from a noticeable increase in brightness to give it a more radiant and lively feel, especially to enhance the wedding scene.\n2. Color: To create a warmer, more inviting atmosphere, a significant increase in temperature would add a yellowish tone. Boosting saturation would make the colors pop more, and a slight adjustment to tint towards magenta could help balance the warmth.\n3. Contrast/Sharpness: Increasing contrast would help define the subjects and make the image more dynamic.\n4. Effects/Objects: No object-level edits or special effects are necessary for this type of enhancement.\n5. Summary: Likely adjustments include a strong increase in temperature, a boost in brightness, higher contrast, increased saturation, and a slight tint adjustment.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 40,\n    \"contrast\": 15,\n    \"temperature\": 100,\n    \"saturation\": 15,\n    \"highlights\": 10,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35rxgc_35rxgc.jpg"
+    ],
+    "id": "GIER-Edit:train:001543",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35rxgc_35rxgc.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/35rxgc_3TUBgDg.jpg",
+      "label": {
+        "brightness": 40,
+        "contrast": 15,
+        "temperature": 100,
+        "saturation": 15,
+        "highlights": 10,
+        "tint": 5
+      },
+      "instruction": "Just refine this image, make it better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "35rxgc_3TUBgDg_10",
+    "source_row": 1543,
+    "group_id": "4d3dd6d32257fea1cba591c688ce6d21524fc1a8ff52bf50f8b506ee4fb128b8"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nWhat will you do to improve this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image could benefit from a slight increase in brightness to make the scene look more lively and sunlit.\n2. Color: The image would look more vibrant with a boost in saturation. Adding warmth (increasing temperature) would enhance the yellow and golden tones, making the landscape appear sunnier. A slight adjustment to tint towards magenta could balance any excess green.\n3. Contrast/Sharpness: Increasing contrast would help the details in the landscape and the people stand out more, giving the image a crisper look.\n4. Effects/Objects: No obvious need for vignetting, fading, cropping, or object-level edits.\n5. Summary: Likely parameter changes include increasing brightness, contrast, temperature, saturation, and possibly a slight tint adjustment.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 5,\n    \"contrast\": 15,\n    \"temperature\": 10,\n    \"saturation\": 30,\n    \"highlights\": 5,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/g7fjC_g7fjC.jpg"
+    ],
+    "id": "GIER-Edit:train:000574",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/g7fjC_g7fjC.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/g7fjC_4rT8s.jpg",
+      "label": {
+        "brightness": 5,
+        "contrast": 15,
+        "temperature": 10,
+        "saturation": 30,
+        "highlights": 5,
+        "tint": 5
+      },
+      "instruction": "What will you do to improve this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "g7fjC_4rT8s_5",
+    "source_row": 574,
+    "group_id": "4ebaeec9b461de3493f2e0c184097a6b4ceb67591d879751057f606ef3ce70bc"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nJust refine this image, make it better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dim and could benefit from a significant increase in brightness to make the subjects and background more visible and lively.\n2. Color: The colors look slightly faded, so a moderate boost in saturation could help make the image more vibrant.\n3. Contrast/Sharpness: The image has a somewhat flat look, so increasing the contrast moderately would help add depth and definition.\n4. Effects/Objects: No obvious need for vignetting, fading, cropping, or object-level edits.\n5. Summary: The image would look nicer with a strong increase in brightness, a moderate increase in contrast, and a slight boost in saturation.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 35,\n    \"contrast\": 15,\n    \"saturation\": 15\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/21lw2u_21lw2u.jpg"
+    ],
+    "id": "GIER-Edit:train:002697",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/21lw2u_21lw2u.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/21lw2u_A2i68BT.jpg",
+      "label": {
+        "brightness": 35,
+        "contrast": 15,
+        "saturation": 15
+      },
+      "instruction": "Just refine this image, make it better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "21lw2u_A2i68BT_8",
+    "source_row": 2697,
+    "group_id": "509914d21133658593a9b442e33437c7f6ea9dafff299f512bb514003883af71"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nPlease simply make this image better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit faded and washed out, so reducing brightness slightly could help restore depth. Highlights may need to be reduced to recover detail in lighter areas.\n2. Color: The image looks a bit desaturated and cool. Increasing saturation will make the colors pop more, and warming up the temperature will give a more natural look. Tint adjustment may be needed if there is a color cast.\n3. Contrast/Sharpness: Increasing contrast will help make the image clearer and more defined.\n4. Effects/Objects: No special effects or object-level edits are needed.\n5. Summary: Slightly decrease brightness, increase contrast, boost saturation, warm up the temperature, possibly adjust tint, and reduce highlights for clarity.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -10,\n    \"contrast\": 35,\n    \"temperature\": 10,\n    \"saturation\": 15,\n    \"highlights\": -10,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/25gxau_25gxau.jpg"
+    ],
+    "id": "GIER-Edit:train:000604",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/25gxau_25gxau.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/25gxau_Q8PUeP3.jpg",
+      "label": {
+        "brightness": -10,
+        "contrast": 35,
+        "temperature": 10,
+        "saturation": 15,
+        "highlights": -10,
+        "tint": 5
+      },
+      "instruction": "Please simply make this image better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "25gxau_Q8PUeP3_6",
+    "source_row": 604,
+    "group_id": "52c070133bd63ec219eedc5d4f431d4af629f0fd16052cbb9d7cba43377d93b5"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> First, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image could benefit from being slightly darker to create a moodier atmosphere and enhance the dramatic sky. Lowering brightness and/or exposure would help achieve this.\n2. Color: The colors could be made a bit more vibrant to make the greens and reds pop, but not overly saturated.\n3. Contrast/Sharpness: Increasing contrast significantly would help define the clouds and the structure, making the image more striking and dynamic.\n4. Effects/Objects: No cropping, rotation, or object-level edits are needed. No vignette or fade is required based on the available operators.\n5. Summary: To optimize the image, I would slightly decrease brightness and/or exposure, increase contrast a lot, and boost saturation a bit for enhanced colors.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -45,\n    \"exposure\": -10,\n    \"contrast\": 20,\n    \"saturation\": 70\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4ken2j_4ken2j.jpg"
+    ],
+    "id": "GIER-Edit:train:000718",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4ken2j_4ken2j.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4ken2j_9F4wGVG.jpg",
+      "label": {
+        "brightness": -45,
+        "exposure": -10,
+        "contrast": 20,
+        "saturation": 70
+      },
+      "instruction": "",
+      "inst_type": "none",
+      "task_type": "image_editing"
+    },
+    "source_id": "4ken2j_9F4wGVG_12",
+    "source_row": 718,
+    "group_id": "5abbb2d9aacc56e1f27c813a0cd0ac3c531d582a2ae4dc7c0fbfd996248a1e7e"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nEdit this image to make it more beautiful\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image could benefit from a moderate increase in brightness to make the subjects stand out more and give the photo a livelier feel.\n2. Color: The image might look nicer with a slight boost in color vibrancy, but not too much. Adding a subtle cool (blue) tone could make the image feel fresher. This can be achieved by lowering the temperature slightly and possibly adjusting the tint a bit toward blue-magenta.\n3. Contrast/Sharpness: A small increase in contrast could help define the subjects and background separation.\n4. Effects/Objects: No major effects or object-level edits are needed for this image.\n5. Summary: Likely parameter changes include a moderate increase in brightness, a slight increase in contrast, a small decrease in temperature for a blue tone, a minor adjustment in tint, and a slight boost in saturation.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 20,\n    \"contrast\": 5,\n    \"temperature\": -45,\n    \"saturation\": 5,\n    \"highlights\": 20,\n    \"tint\": 20\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/b2k1K_b2k1K.jpg"
+    ],
+    "id": "GIER-Edit:test:000734",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/b2k1K_b2k1K.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/b2k1K_sx8dr.jpg",
+      "label": {
+        "brightness": 20,
+        "contrast": 5,
+        "temperature": -45,
+        "saturation": 5,
+        "highlights": 20,
+        "tint": 20
+      },
+      "instruction": "Edit this image to make it more beautiful",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "b2k1K_sx8dr_6",
+    "source_row": 734,
+    "group_id": "5aed8f68fc9d4917f5897f8f9d9e23838b991d6bbc2bdd487a935766c4d3d834"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nPlease simply make this image better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears somewhat dark, especially in the background and on the subject. Increasing the overall brightness would help make the image look more lively and clear. Adjusting highlights could also help bring out the lighter areas without overexposing.\n2. Color: The colors look natural and vibrant enough, so no major changes to saturation or vibrance are needed.\n3. Contrast/Sharpness: The image could benefit from a slight increase in contrast to make the subject stand out more against the background.\n4. Effects/Objects: No additional effects or object-level edits are necessary.\n5. Summary: Increasing brightness, slightly boosting contrast, and possibly raising highlights would make the image look nicer and more visually appealing.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 35,\n    \"contrast\": 10,\n    \"highlights\": 25\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7Qr6K_7Qr6K.jpg"
+    ],
+    "id": "GIER-Edit:train:000641",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7Qr6K_7Qr6K.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7Qr6K_3d41B.jpg",
+      "label": {
+        "brightness": 35,
+        "contrast": 10,
+        "highlights": 25
+      },
+      "instruction": "Please simply make this image better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "7Qr6K_3d41B_5",
+    "source_row": 641,
+    "group_id": "5d5cca17a27a110da0cb64ae8e4e1e61f842db841872171fd41e230bba0d1fbd"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nWhat will you do to improve this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dark and flat, with some loss of detail in the highlights. Increasing highlights could help bring out more detail in the lighter areas.\n2. Color: The image has a faded, purplish cast and lacks vibrancy. Increasing saturation and possibly adjusting the temperature to be less cool (warmer) would help restore natural color. A slight tint adjustment may be needed to correct the color cast.\n3. Contrast/Sharpness: The image looks low in contrast, so increasing contrast would help make the image pop and add depth.\n4. Effects/Objects: No special effects or object-level edits are needed.\n5. Summary: To optimize the image, I would increase contrast, saturation, and highlights, and adjust temperature and tint to correct the color cast and add vibrancy.\n</think>\n<answer>\n```json\n{\n    \"contrast\": 10,\n    \"temperature\": 75,\n    \"saturation\": 15,\n    \"highlights\": 10,\n    \"tint\": -10\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3odj4z_3odj4z.jpg"
+    ],
+    "id": "GIER-Edit:train:002422",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3odj4z_3odj4z.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3odj4z_XcAWvt4.jpg",
+      "label": {
+        "contrast": 10,
+        "temperature": 75,
+        "saturation": 15,
+        "highlights": 10,
+        "tint": -10
+      },
+      "instruction": "What will you do to improve this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "3odj4z_XcAWvt4_7",
+    "source_row": 2422,
+    "group_id": "5edbde2db9ec0bb2d37bfb66a4616e77a1f881410a4e1f99a9e372a33dcfe371"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nEdit this image to make it more beautiful\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dim and could benefit from a slight increase in brightness to make the subject and waves more visible.\n2. Color: The colors look muted, but since only brightness, contrast, and sharpness are available, no color adjustments will be made.\n3. Contrast/Sharpness: The image is somewhat soft and lacks definition, especially in the details of the surfer and the waves. Increasing sharpness will help bring out more detail. A moderate boost in contrast will help the subject stand out from the background.\n4. Effects/Objects: No vignetting, cropping, or object-level edits are necessary.\n5. Summary: Slightly increase brightness, moderately increase contrast, and significantly increase sharpness to make the image clearer and more defined.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 5,\n    \"contrast\": 10,\n    \"sharpness\": 90\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6ihiw1_6ihiw1.jpg"
+    ],
+    "id": "GIER-Edit:train:002931",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6ihiw1_6ihiw1.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6ihiw1_1dwcMD8.jpg",
+      "label": {
+        "brightness": 5,
+        "contrast": 10,
+        "sharpness": 90
+      },
+      "instruction": "Edit this image to make it more beautiful",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "6ihiw1_1dwcMD8_5",
+    "source_row": 2931,
+    "group_id": "67667532a2f2e464ee02e87b72e48f41ceaa59808eb24d21b58e0483ce9d3fb6"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nsharpen a bit\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears to have adequate brightness and exposure, so no major adjustments are needed in this area.\n2. Color: The color intensity and warmth look natural, so no changes to saturation, vibrance, temperature, or tint are necessary.\n3. Contrast/Sharpness: The image could benefit from increased sharpness to make the details clearer and more defined.\n4. Effects/Objects: There are no obvious needs for vignetting, fading, cropping, or object-level edits.\n5. Summary: The main improvement would be to increase the sharpness to make the image clearer.\n</think>\n<answer>\n```json\n{\n    \"sharpness\": 60\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/hwqgT_hwqgT.jpg"
+    ],
+    "id": "GIER-Edit:test:000983",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/hwqgT_hwqgT.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/hwqgT_ZsrbS.jpg",
+      "label": {
+        "sharpness": 60
+      },
+      "instruction": "sharpen a bit",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "hwqgT_ZsrbS_2",
+    "source_row": 983,
+    "group_id": "690228c7af34f24d392f1b04fd47aff97afc41dfc66a7a3d467dfdf758c3a7e6"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> First, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit washed out and bright, especially on the skin and clothing. Reducing the brightness slightly could help bring back some detail.\n2. Color: The colors look natural, so no major changes to color intensity or warmth are needed.\n3. Contrast/Sharpness: Increasing the contrast a bit would help add depth and definition, making the image look less flat.\n4. Effects/Objects: No vignetting, fading, or object-level edits are necessary.\n5. Summary: Slightly decrease brightness and slightly increase contrast to improve the image.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -10,\n    \"contrast\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8ndj7e_8ndj7e.jpg"
+    ],
+    "id": "GIER-Edit:train:002811",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8ndj7e_8ndj7e.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8ndj7e_1pmfeXL.jpg",
+      "label": {
+        "brightness": -10,
+        "contrast": 5
+      },
+      "instruction": "",
+      "inst_type": "none",
+      "task_type": "image_editing"
+    },
+    "source_id": "8ndj7e_1pmfeXL_12",
+    "source_row": 2811,
+    "group_id": "6c05f5e98dfb83a44b10e712702dcb88c1096ad6656355eca203f89e1ee26423"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nJust refine this image, make it better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dim and faded, so increasing the brightness slightly would help clear it up.\n2. Color: The image has a yellow-green cast, so adjusting the temperature to be warmer or cooler could help correct the hue and colorization.\n3. Contrast/Sharpness: The image looks a bit flat, so increasing the contrast would help make details stand out more.\n4. Effects/Objects: No major effects or object-level edits are needed.\n5. Summary: Slightly increase brightness, adjust temperature to correct the color cast, and increase contrast for clarity.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 10,\n    \"contrast\": 10,\n    \"temperature\": 15\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3vdb8z_3vdb8z.jpg"
+    ],
+    "id": "GIER-Edit:test:000150",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3vdb8z_3vdb8z.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3vdb8z_dARvkEJ.jpg",
+      "label": {
+        "brightness": 10,
+        "contrast": 10,
+        "temperature": 15
+      },
+      "instruction": "Just refine this image, make it better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "3vdb8z_dARvkEJ_6",
+    "source_row": 150,
+    "group_id": "6c3e2e1a6ea7149be981003b3426201c5abc8965b0c1550de877133084a9df4c"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nEdit this image to make it more beautiful\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image could benefit from a slight increase in brightness to make it more lively, but not too much as the lighting is already decent. Highlights could be increased a bit to make the bright areas pop.\n2. Color: The colors look a bit muted and cool. Increasing saturation will make the image more colorful and vivid. Adjusting the temperature slightly warmer and possibly a small tint adjustment could help balance the skin tones and background.\n3. Contrast/Sharpness: Increasing contrast will help the image look more dynamic and less flat. Increasing sharpness will make the details, like the confetti and clothing, stand out more.\n4. Effects/Objects: No special effects or object-level edits are needed.\n5. Summary: Slightly increase brightness, boost contrast, increase saturation, warm up the temperature a bit, possibly adjust tint, and increase sharpness for a vivid, colorful, and lively image.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 20,\n    \"contrast\": 65,\n    \"temperature\": 5,\n    \"saturation\": 30,\n    \"highlights\": 15,\n    \"tint\": 5,\n    \"sharpness\": 30\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2skflv_2skflv.jpg"
+    ],
+    "id": "GIER-Edit:train:000713",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2skflv_2skflv.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2skflv_GVAL8Y6.jpg",
+      "label": {
+        "brightness": 20,
+        "contrast": 65,
+        "temperature": 5,
+        "saturation": 30,
+        "highlights": 15,
+        "tint": 5,
+        "sharpness": 30
+      },
+      "instruction": "Edit this image to make it more beautiful",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "2skflv_GVAL8Y6_5",
+    "source_row": 713,
+    "group_id": "749023476b80300fcde47d4a2fbb4a4acecfc9014721cd9a804589fc5f5c09e1"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nbrighten a bit, increase contrast and make it more colorful\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dark, especially in the foreground and on the people. Increasing the brightness and possibly lifting the highlights would help make the image look more lively and the subjects more visible.\n2. Color: The colors look a bit muted, especially in the sky and water. Increasing the saturation will make the colors more vivid. Adjusting the temperature slightly warmer could enhance the sunset effect, and a slight tint adjustment may help balance any color cast.\n3. Contrast/Sharpness: The image could benefit from a boost in contrast to make the scene pop and add depth.\n4. Effects/Objects: No special effects or object-level edits are needed.\n5. Summary: Increase brightness, contrast, saturation, possibly warm up the temperature, and adjust tint for color balance.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 35,\n    \"contrast\": 5,\n    \"temperature\": 5,\n    \"saturation\": 60,\n    \"highlights\": 20,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/p0C7C_p0C7C.jpg"
+    ],
+    "id": "GIER-Edit:test:000223",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/p0C7C_p0C7C.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/p0C7C_m2GfD.jpg",
+      "label": {
+        "brightness": 35,
+        "contrast": 5,
+        "temperature": 5,
+        "saturation": 60,
+        "highlights": 20,
+        "tint": 5
+      },
+      "instruction": "brighten a bit, increase contrast and make it more colorful",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "p0C7C_m2GfD_2",
+    "source_row": 223,
+    "group_id": "7e4b6955616f8145bd72cb1af130fdd4832e15282986b5ed8b581b1b69354c14"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nLighten up the picture a lot with a blue tint.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears quite dark, especially in the foreground. Increasing the brightness would help make the subjects more visible and improve overall clarity.\n2. Color: The colors look muted and a bit cold. Enhancing the saturation would make the colors pop more, and a slight adjustment to tint could help balance any color cast.\n3. Contrast/Sharpness: The image lacks some definition between light and dark areas. Increasing the contrast would help add depth and make the image more dynamic.\n4. Effects/Objects: No obvious need for vignetting, fading, or object-level edits.\n5. Summary: To optimize the image, I would increase brightness, boost saturation, increase contrast, and possibly adjust the tint slightly to correct any color imbalance.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 35,\n    \"contrast\": 35,\n    \"saturation\": 5,\n    \"tint\": 35\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2r94jw_2r94jw.jpg"
+    ],
+    "id": "GIER-Edit:train:004397",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2r94jw_2r94jw.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2r94jw_yeevAns.jpg",
+      "label": {
+        "brightness": 35,
+        "contrast": 35,
+        "saturation": 5,
+        "tint": 35
+      },
+      "instruction": "Lighten up the picture a lot with a blue tint.",
+      "inst_type": "amateur",
+      "task_type": "image_editing"
+    },
+    "source_id": "2r94jw_yeevAns_5",
+    "source_row": 4397,
+    "group_id": "7f101a1fd405cf2e905a0fc2f99d259864ebea64724dc80d05dd5fb0c5f83f25"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nEdit this image to make it more beautiful\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dark, especially in the foreground and midtones. Increasing brightness will help make the scene more visible. Highlights could be increased to bring out the light in the sky.\n2. Color: The image looks a bit muted and could benefit from a boost in color intensity. Increasing saturation will make the colors more vivid. The temperature seems neutral, but a slight adjustment could help if the image feels too cool or warm. Tint adjustment is likely unnecessary unless there is a visible color cast.\n3. Contrast/Sharpness: The image could use more contrast to make the mountains and clouds stand out. Increasing sharpness will help make the details in the landscape and water clearer.\n4. Effects/Objects: No vignetting, fading, cropping, or object-level edits are needed.\n5. Summary: Increase brightness, contrast, saturation, highlights, and sharpness to make the image more visible, colorful, and clear. Adjust temperature and tint only if needed for color balance.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 25,\n    \"contrast\": 5,\n    \"temperature\": 5,\n    \"saturation\": 15,\n    \"highlights\": 10,\n    \"tint\": -25,\n    \"sharpness\": 55\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/wg2PN_wg2PN.jpg"
+    ],
+    "id": "GIER-Edit:test:000064",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/wg2PN_wg2PN.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/wg2PN_l4fCw.jpg",
+      "label": {
+        "brightness": 25,
+        "contrast": 5,
+        "temperature": 5,
+        "saturation": 15,
+        "highlights": 10,
+        "tint": -25,
+        "sharpness": 55
+      },
+      "instruction": "Edit this image to make it more beautiful",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "wg2PN_l4fCw_7",
+    "source_row": 64,
+    "group_id": "897894d0ec177c94c44a66cbe79ae9527747af10c2b87021adb1c56020913faa"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nEdit this image to make it more beautiful\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dark, so a slight increase in brightness could help make the subjects stand out more.\n2. Color: The image could benefit from a warmer tone, which can sometimes be achieved by increasing saturation, but since temperature/tint are not allowed, boosting saturation may help bring out warmer colors.\n3. Contrast/Sharpness: Increasing contrast can help define the subjects and make the image pop. Sharpness seems adequate, but a very slight increase could help with clarity.\n4. Effects/Objects: No vignetting, fading, or object-level edits are needed.\n5. Summary: Slightly increase brightness, contrast, and saturation to enhance warmth and clarity. Optionally, a minor boost in sharpness.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 15,\n    \"contrast\": 5,\n    \"saturation\": 20,\n    \"highlights\": -10,\n    \"sharpness\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4wdh3a_4wdh3a.jpg"
+    ],
+    "id": "GIER-Edit:train:001518",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4wdh3a_4wdh3a.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4wdh3a_kheihJH.jpg",
+      "label": {
+        "brightness": 15,
+        "contrast": 5,
+        "saturation": 20,
+        "highlights": -10,
+        "sharpness": 5
+      },
+      "instruction": "Edit this image to make it more beautiful",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "4wdh3a_kheihJH_4",
+    "source_row": 1518,
+    "group_id": "8edff3a40a48cd910b3d7a4c8178d1451221e9a79dba50cdc168a6769d2fac4a"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nCould you please change the blue to green?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears to have a balanced exposure and brightness, with a glowing symbol in the center. No major adjustments needed for brightness or exposure.\n2. Color: The dominant color is blue, especially in the background and glow. If a different color mood is desired, adjusting the temperature or tint could shift the overall hue. Increasing temperature would move the blue toward green/yellow.\n3. Contrast/Sharpness: The image has strong contrast between the bright symbol and the dark background. No significant changes needed for contrast or sharpness.\n4. Effects/Objects: No vignetting, fading, or object-level edits seem necessary. The focus is on the color.\n5. Summary: The most likely parameter to adjust for a color shift from blue to green is the temperature, increasing it to warm up the image and move the blue tones toward green.\n</think>\n<answer>\n```json\n{\n    \"temperature\": 75\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2zo5ht_2zo5ht.png"
+    ],
+    "id": "GIER-Edit:train:002136",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2zo5ht_2zo5ht.png",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2zo5ht_Wd3y394.jpg",
+      "label": {
+        "temperature": 75
+      },
+      "instruction": "Could you please change the blue to green?",
+      "inst_type": "amateur",
+      "task_type": "image_editing"
+    },
+    "source_id": "2zo5ht_Wd3y394_4",
+    "source_row": 2136,
+    "group_id": "901b61fc0b0e4f402b3c1edc449512379aa698342dd064840b01b7b8a057ffb7"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nEdit this image to make it more beautiful\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears quite dim and underexposed, so a significant increase in brightness would help make the photo look more lively and clear.\n2. Color: The colors look a bit muted and yellowish, so increasing saturation could help, and adjusting the temperature to be slightly cooler might balance the warmth. A slight tint adjustment could also help correct any color cast.\n3. Contrast/Sharpness: The image is a bit flat, so a moderate increase in contrast would add depth. The image is also a little soft, so a slight increase in sharpness could help details stand out.\n4. Effects/Objects: No vignetting, fading, or object-level edits are needed.\n5. Summary: Substantially increase brightness, moderately increase contrast, slightly cool the temperature, boost saturation, possibly adjust tint, and slightly increase sharpness.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 20,\n    \"contrast\": 15,\n    \"temperature\": -65,\n    \"saturation\": 10,\n    \"tint\": 60,\n    \"sharpness\": 35\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8e0949_8e0949.jpg"
+    ],
+    "id": "GIER-Edit:test:000027",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8e0949_8e0949.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8e0949_AGMNk1o.jpg",
+      "label": {
+        "brightness": 20,
+        "contrast": 15,
+        "temperature": -65,
+        "saturation": 10,
+        "tint": 60,
+        "sharpness": 35
+      },
+      "instruction": "Edit this image to make it more beautiful",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "8e0949_AGMNk1o_7",
+    "source_row": 27,
+    "group_id": "901eeaf1d441cb95fa81a8ea751f668087501a0a043b06c19167f78165454ca7"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nPlease, add brown tone\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image could benefit from a slight increase in brightness to make the scene more vivid and lively.\n2. Color: To achieve a brown tone, the image should be made warmer by increasing the temperature. Additionally, increasing the saturation will help intensify the colors, and a slight adjustment to the tint towards magenta can enhance the brownish effect.\n3. Contrast/Sharpness: No changes needed here as per the allowed operators.\n4. Effects/Objects: No vignetting, fading, or object-level edits are necessary.\n5. Summary: Increase brightness, increase temperature significantly for warmth, boost saturation, and slightly adjust tint towards magenta for a brown tone.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 5,\n    \"temperature\": 85,\n    \"saturation\": 80,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7QSfy_7QSfy.jpg"
+    ],
+    "id": "GIER-Edit:train:001364",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7QSfy_7QSfy.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7QSfy_5V4XJ.jpg",
+      "label": {
+        "brightness": 5,
+        "temperature": 85,
+        "saturation": 80,
+        "tint": 5
+      },
+      "instruction": "Please, add brown tone",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "7QSfy_5V4XJ_1",
+    "source_row": 1364,
+    "group_id": "92bc863777e06c654c4f01aab983da4de9887cc005e90e9b4e72c73c04973bfc"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nEdit this image to make it more beautiful\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears quite dark, especially in the foreground and on the subject. Increasing the exposure and/or brightness would help make the subject more visible and the overall image lighter.\n2. Color: The image has a strong red cast, likely due to the lighting and the red gown. Reducing the red tint (if possible) or adjusting the color balance would help, but with the allowed parameters, this can only be indirectly addressed by exposure/brightness.\n3. Contrast/Sharpness: The image looks a bit flat, so a slight increase in contrast could help add depth and definition.\n4. Effects/Objects: No obvious need for vignetting, fading, or object-level edits.\n5. Summary: The main improvements would be to increase exposure and brightness to lighten the image, and possibly increase contrast for more definition.\n</think>\n<answer>\n```json\n{\n    \"exposure\": 15,\n    \"brightness\": 30,\n    \"contrast\": 35\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4liav7_4liav7.jpg"
+    ],
+    "id": "GIER-Edit:train:000177",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4liav7_4liav7.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4liav7_Bc6K13O.jpg",
+      "label": {
+        "exposure": 15,
+        "brightness": 30,
+        "contrast": 35
+      },
+      "instruction": "Edit this image to make it more beautiful",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "4liav7_Bc6K13O_5",
+    "source_row": 177,
+    "group_id": "993545d7c3718477c47d1787ad2fc7fae15f2139e12d9e0874b962541c9b34d1"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nSignificantly increase brightness, contrast and overall colors of the image\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image could benefit from a significant increase in brightness to make it look more lively and vibrant.\n2. Color: The colors in the image appear a bit muted, so increasing the saturation would help make the colors pop and look more appealing.\n3. Contrast/Sharpness: Boosting the contrast would help add depth and definition to the image, making the subject stand out more.\n4. Effects/Objects: No special effects or object-level edits are necessary for this image.\n5. Summary: To optimize the image, I would significantly increase brightness, saturation, and contrast. I would also slightly adjust highlights to ensure the brightest areas are not blown out.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 15,\n    \"contrast\": 5,\n    \"saturation\": 25,\n    \"highlights\": -20\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/kVfGM_kVfGM.jpg"
+    ],
+    "id": "GIER-Edit:train:001455",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/kVfGM_kVfGM.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/kVfGM_8dTvC.jpg",
+      "label": {
+        "brightness": 15,
+        "contrast": 5,
+        "saturation": 25,
+        "highlights": -20
+      },
+      "instruction": "Significantly increase brightness, contrast and overall colors of the image",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "kVfGM_8dTvC_3",
+    "source_row": 1455,
+    "group_id": "a3451a4931947bd3b5bd2ec19593ace5d30c7404b5181c9c421edb471e4102fc"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nPlease simply make this image better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears to be a bit dark, especially in the foreground and under the roof. Increasing brightness could help bring out more detail in the shadowed areas. Adjusting highlights may also help to balance the exposure in the brighter parts of the field.\n2. Color: The image has a natural color balance, but it could be made more visually interesting by adjusting the temperature or tint. If a cooler or more stylized look is desired, lowering the temperature or shifting the tint towards blue/magenta could be effective. Increasing or decreasing saturation could also impact the vibrancy of the colors.\n3. Contrast/Sharpness: The image could benefit from a slight increase in contrast to make the field and stadium details pop more.\n4. Effects/Objects: No obvious need for vignetting, fading, or object-level edits. The composition is already strong.\n5. Summary: Likely parameter changes include a moderate increase in brightness, a possible boost in contrast, and color adjustments (temperature/tint) for a cooler or more stylized look. Saturation could be tweaked for more vividness.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -90,\n    \"contrast\": 15,\n    \"temperature\": -75,\n    \"saturation\": -5,\n    \"highlights\": -80,\n    \"tint\": 35\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4ky5m6_4ky5m6.jpg"
+    ],
+    "id": "GIER-Edit:train:000865",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4ky5m6_4ky5m6.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4ky5m6_8m2StRU.jpg",
+      "label": {
+        "brightness": -90,
+        "contrast": 15,
+        "temperature": -75,
+        "saturation": -5,
+        "highlights": -80,
+        "tint": 35
+      },
+      "instruction": "Please simply make this image better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "4ky5m6_8m2StRU_5",
+    "source_row": 865,
+    "group_id": "a43378be4c20df5f121d73f14ff1889d8af2b02343d1abe485c41d171094be7c"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nLighten the entire image, please\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears quite dark overall, especially in the foreground and on the subject. Increasing the brightness would help make the image look lighter and more inviting. Adjusting highlights could also help bring out more detail in the brighter areas without overexposing them.\n2. Color: The color intensity seems fine; no major changes needed in saturation or vibrance.\n3. Contrast/Sharpness: The image looks a bit flat, so a slight increase in contrast could help add depth and make the subject and food stand out more.\n4. Effects/Objects: No obvious need for vignetting, fading, or object-level edits.\n5. Summary: To optimize the image, I would increase brightness, slightly boost contrast, and adjust highlights to balance the exposure.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 30,\n    \"contrast\": 10,\n    \"highlights\": 10\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4D936_4D936.jpg"
+    ],
+    "id": "GIER-Edit:train:001067",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4D936_4D936.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4D936_wCtZH.jpg",
+      "label": {
+        "brightness": 30,
+        "contrast": 10,
+        "highlights": 10
+      },
+      "instruction": "Lighten the entire image, please",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "4D936_wCtZH_1",
+    "source_row": 1067,
+    "group_id": "a4a14942885f6b6f8d9ccbecc0272b4c0467cd10e5130c129279b8e84845bf5d"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nEdit this image to make it more beautiful\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dim, but not overly so. No major adjustment needed for brightness or exposure.\n2. Color: The colors look slightly muted, but not drastically so. No strong need for color adjustments.\n3. Contrast/Sharpness: The image is somewhat soft and lacks definition. Increasing sharpness would help make details clearer. The contrast could also be increased to make the image pop more and add depth.\n4. Effects/Objects: No vignetting, fading, or object-level edits are necessary.\n5. Summary: To optimize the image, increasing both contrast and sharpness would help make it look clearer and more visually appealing.\n</think>\n<answer>\n```json\n{\n    \"contrast\": 15,\n    \"sharpness\": 60\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/427y8s_427y8s.jpg"
+    ],
+    "id": "GIER-Edit:test:000408",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/427y8s_427y8s.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/427y8s_FtZNyV3.jpg",
+      "label": {
+        "contrast": 15,
+        "sharpness": 60
+      },
+      "instruction": "Edit this image to make it more beautiful",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "427y8s_FtZNyV3_6",
+    "source_row": 408,
+    "group_id": "a5a6cadf18c8f26a9c3999771a50353bb0d15752d422898a28576213e26ca90f"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nHow to enhance this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears well-exposed and bright enough, so no major changes are needed in brightness or exposure.\n2. Color: The colors, especially the greens of the plants, could be made more vivid and intense to make the image pop and look more lively.\n3. Contrast/Sharpness: Increasing the contrast would help the plants stand out more against the background and add depth to the image.\n4. Effects/Objects: No vignetting, fading, or object-level edits are necessary for this image.\n5. Summary: To make the image look nicer, increasing the saturation and contrast would enhance the color intensity and overall visual impact.\n</think>\n<answer>\n```json\n{\n    \"contrast\": 10,\n    \"saturation\": 15\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4mptsj_4mptsj.jpg"
+    ],
+    "id": "GIER-Edit:test:000123",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4mptsj_4mptsj.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4mptsj_gdK2sZ4.jpg",
+      "label": {
+        "contrast": 10,
+        "saturation": 15
+      },
+      "instruction": "How to enhance this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "4mptsj_gdK2sZ4_10",
+    "source_row": 123,
+    "group_id": "a86a901a61a782d827f91f8d4b0ccecd64900c5dbe1dce1bddc21096b615e526"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nJust refine this image, make it better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dark, especially in the foreground and on the subjects. Increasing the brightness would help make the image look more lively and clear.\n2. Color: The image has a neutral to cool tone. Adding warmth or a yellowish tint could make the image feel more inviting and vibrant. Increasing saturation slightly could also enhance the colors.\n3. Contrast/Sharpness: The image could benefit from a slight increase in contrast to make the subjects stand out more from the background.\n4. Effects/Objects: No major effects or object-level edits are needed; the focus is on overall color and tone.\n5. Summary: Likely adjustments include increasing brightness, adding warmth (yellow tint), boosting saturation a bit, and increasing contrast slightly.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 30,\n    \"contrast\": 5,\n    \"saturation\": 10,\n    \"highlights\": -5,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xWFx_3xWFx.jpg"
+    ],
+    "id": "GIER-Edit:test:000067",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xWFx_3xWFx.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3xWFx_7pmJ6.jpg",
+      "label": {
+        "brightness": 30,
+        "contrast": 5,
+        "saturation": 10,
+        "highlights": -5,
+        "tint": 5
+      },
+      "instruction": "Just refine this image, make it better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "3xWFx_7pmJ6_9",
+    "source_row": 67,
+    "group_id": "a9c4cda5efd021810b94481bbfb23f7890ef6f8c1ead18a7009b06fa86d67ea2"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> First, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears to have a neutral exposure, so no major adjustment is needed for brightness or exposure.\n2. Color: The image is in black and white, so to make it look nicer and more modern, adding color (increasing saturation) and possibly warming up the temperature would help.\n3. Contrast/Sharpness: The contrast and sharpness seem fine for a vintage photo, so no major changes are needed here.\n4. Effects/Objects: No vignetting, fading, or object-level edits are necessary.\n5. Summary: The main improvements would be to add color by increasing saturation and possibly adjusting the temperature to make the image look more natural and lively.\n</think>\n<answer>\n```json\n{\n    \"temperature\": 5,\n    \"saturation\": 100\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/pq5bh_pq5bh.jpg"
+    ],
+    "id": "GIER-Edit:train:001613",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/pq5bh_pq5bh.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/pq5bh_qBWry.jpg",
+      "label": {
+        "temperature": 5,
+        "saturation": 100
+      },
+      "instruction": "",
+      "inst_type": "none",
+      "task_type": "image_editing"
+    },
+    "source_id": "pq5bh_qBWry_12",
+    "source_row": 1613,
+    "group_id": "b0d5a54ee6cc9ac784396ce8b76d4feb875ac75bdd00452f815147dfe53bf728"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nJust refine this image, make it better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dark and could benefit from a slight increase in brightness to make the subjects more visible. Highlights may also need to be adjusted to recover some detail in the lighter areas.\n2. Color: The image has a strong orange tint, making the colors look unnatural. Adjusting the temperature towards a cooler value would help neutralize the orange cast. Saturation may need to be slightly reduced to prevent colors from looking too intense after correcting the tint.\n3. Contrast/Sharpness: The image looks a bit flat, so a moderate increase in contrast could help add depth and definition.\n4. Effects/Objects: No obvious vignetting, fading, or object-level edits are needed.\n5. Summary: Increase brightness, cool down the temperature to remove the orange tint, slightly reduce saturation, increase contrast, and adjust highlights for better detail.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 10,\n    \"contrast\": 5,\n    \"temperature\": -65,\n    \"saturation\": -10,\n    \"highlights\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9ynbfn_9ynbfn.jpg"
+    ],
+    "id": "GIER-Edit:train:003262",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9ynbfn_9ynbfn.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/9ynbfn_KP6zhDf.jpg",
+      "label": {
+        "brightness": 10,
+        "contrast": 5,
+        "temperature": -65,
+        "saturation": -10,
+        "highlights": 5
+      },
+      "instruction": "Just refine this image, make it better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "9ynbfn_KP6zhDf_7",
+    "source_row": 3262,
+    "group_id": "b16f9e5b147df4ea7be5bccf128f45e7e7b2fda2553f9a7b50bac79ca4d87b02"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nMake the faces of the two women more apparent, decrease sun glare\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dark, especially in the foreground and on the subjects. Increasing the brightness would help make the subjects and details more visible.\n2. Color: The colors look somewhat muted and could benefit from a boost in saturation to make the image more vibrant. The image is also a bit warm due to the sunset, so a slight adjustment to temperature and tint could help balance the tones.\n3. Contrast/Sharpness: The image could use a significant increase in contrast to make the details pop and add depth. Increasing sharpness would also help define the edges and details, especially in the background and on the subjects.\n4. Effects/Objects: No obvious need for vignetting, fading, cropping, or object-level edits.\n5. Summary: Increase brightness, contrast, saturation, and sharpness. Adjust temperature and tint slightly to balance the color tones.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 15,\n    \"contrast\": 25,\n    \"saturation\": 15,\n    \"temperature\": -5,\n    \"tint\": 15,\n    \"sharpness\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nGzgK_nGzgK.jpg"
+    ],
+    "id": "GIER-Edit:train:003603",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nGzgK_nGzgK.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/nGzgK_3Ldc9.jpg",
+      "label": {
+        "brightness": 15,
+        "contrast": 25,
+        "saturation": 15,
+        "temperature": -5,
+        "tint": 15,
+        "sharpness": 5
+      },
+      "instruction": "Make the faces of the two women more apparent, decrease sun glare",
+      "inst_type": "amateur",
+      "task_type": "image_editing"
+    },
+    "source_id": "nGzgK_3Ldc9_4",
+    "source_row": 3603,
+    "group_id": "b490a48aae5631e85c5db74c9a0a2abefc8c5f05b624be525f961a4ab799fb9d"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nWhat will you do to improve this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears to be a bit overexposed, especially around the light source on the wall. Reducing the overall brightness and possibly the highlights would help to balance the exposure and recover some details in the bright areas.\n2. Color: The colors look a bit washed out due to the strong light. Slightly reducing the saturation could help to make the image look more natural.\n3. Contrast/Sharpness: Increasing the contrast would help to add depth and definition, making the subjects stand out more against the background.\n4. Effects/Objects: No obvious need for vignetting, cropping, or object-level edits.\n5. Summary: To optimize the image, I would reduce brightness and highlights, slightly decrease saturation, and increase contrast for a more balanced and visually appealing result.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -5,\n    \"contrast\": 15,\n    \"saturation\": -10,\n    \"highlights\": -80,\n    \"tint\": 25\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/x5xr7_x5xr7.jpg"
+    ],
+    "id": "GIER-Edit:test:000232",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/x5xr7_x5xr7.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/x5xr7_qcSpj.jpg",
+      "label": {
+        "brightness": -5,
+        "contrast": 15,
+        "saturation": -10,
+        "highlights": -80,
+        "tint": 25
+      },
+      "instruction": "What will you do to improve this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "x5xr7_qcSpj_8",
+    "source_row": 232,
+    "group_id": "b977402f80950b37b2f5c813da369b263e5ab6f2a09f2d5e56929297bc405ac9"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> First, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears quite dark, especially in the shadows and midtones. Increasing the brightness will help make the details more visible. Adjusting highlights may also help to bring out the lighter areas without overexposing.\n2. Color: The colors look muted and dull. Increasing saturation will make the colors more vivid. Adjusting temperature and tint can help balance the color cast and make the image look more natural or vibrant.\n3. Contrast/Sharpness: The image could benefit from a slight increase in contrast to make the details pop and add depth.\n4. Effects/Objects: No special effects or object-level edits are needed.\n5. Summary: Increase brightness, boost saturation, slightly increase contrast, and adjust temperature and tint for a more colorful and lively image.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 65,\n    \"contrast\": 75,\n    \"temperature\": 5,\n    \"saturation\": 30,\n    \"highlights\": 30,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2pmnya_2pmnya.jpg"
+    ],
+    "id": "GIER-Edit:test:000415",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2pmnya_2pmnya.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/2pmnya_RjIOJJ4.jpg",
+      "label": {
+        "brightness": 65,
+        "contrast": 75,
+        "temperature": 5,
+        "saturation": 30,
+        "highlights": 30,
+        "tint": 5
+      },
+      "instruction": "",
+      "inst_type": "none",
+      "task_type": "image_editing"
+    },
+    "source_id": "2pmnya_RjIOJJ4_11",
+    "source_row": 415,
+    "group_id": "c07e45564212b8086192d214b67162dde96804ab60a22a03e85b0490c8436b16"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nRemove the pink tone in the image\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dark and could benefit from a slight increase in brightness to make the subjects more visible.\n2. Color: There is a noticeable pink/magenta color cast over the image, which makes the whites and skin tones look unnatural. Adjusting the temperature to be warmer (more yellow) and reducing the magenta tint (moving towards green) would help neutralize the color cast. Saturation may need a slight boost to restore natural color after correcting the tint.\n3. Contrast/Sharpness: The image looks a bit flat, so increasing the contrast would help add depth. Some sharpening could help bring out details in the image.\n4. Effects/Objects: No obvious vignetting, fading, or object-level edits are needed.\n5. Summary: Increase brightness, increase contrast, adjust temperature and tint to remove the pink cast, slightly boost saturation, and add a bit of sharpness.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 5,\n    \"contrast\": 30,\n    \"temperature\": 25,\n    \"tint\": -65,\n    \"saturation\": 35,\n    \"highlights\": 5,\n    \"sharpness\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4svCP_4svCP.jpg"
+    ],
+    "id": "GIER-Edit:train:002438",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4svCP_4svCP.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4svCP_kgFWc.jpg",
+      "label": {
+        "brightness": 5,
+        "contrast": 30,
+        "temperature": 25,
+        "tint": -65,
+        "saturation": 35,
+        "highlights": 5,
+        "sharpness": 5
+      },
+      "instruction": "Remove the pink tone in the image",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "4svCP_kgFWc_1",
+    "source_row": 2438,
+    "group_id": "c6ffacbc2228f767a4d3acda40eb115b3990aaa2c5e2585bc0fec1ffce52e0a8"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> First, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image is very dark and underexposed, so it would benefit from a significant increase in brightness.\n2. Color: The image appears muted and yellowish, so increasing saturation and possibly adjusting the temperature to be less warm (cooler) could help. Tint may need a slight adjustment to balance any color cast.\n3. Contrast/Sharpness: The image looks flat, so increasing contrast would help define the subject better.\n4. Effects/Objects: No vignette, fade, or object-level edits are needed.\n5. Summary: Substantially increase brightness, boost contrast, increase saturation, adjust temperature to be cooler, and possibly tweak tint for color balance.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 55,\n    \"contrast\": 100,\n    \"temperature\": -5,\n    \"saturation\": 5,\n    \"tint\": 60\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7xblyj_7xblyj.jpg"
+    ],
+    "id": "GIER-Edit:train:003951",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7xblyj_7xblyj.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/7xblyj_FbJYFon.jpg",
+      "label": {
+        "brightness": 55,
+        "contrast": 100,
+        "temperature": -5,
+        "saturation": 5,
+        "tint": 60
+      },
+      "instruction": "",
+      "inst_type": "none",
+      "task_type": "image_editing"
+    },
+    "source_id": "7xblyj_FbJYFon_9",
+    "source_row": 3951,
+    "group_id": "c85f0c87d63f98a8838ca5e1a41538cb9e41dd6d0dbd9d499f52d858d42e2d3f"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nHow to enhance this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears to be well-lit, so no major changes to brightness or exposure are necessary.\n2. Color: The image could benefit from a slight increase in color vibrancy and a shift towards a cooler or greener tone to give it a unique look.\n3. Contrast/Sharpness: The image is a bit soft, so a slight increase in sharpness could help define details.\n4. Effects/Objects: No additional effects or object-level edits are needed.\n5. Summary: Adjust the temperature towards green, slightly increase saturation for more vivid colors, and add a bit of sharpness for clarity.\n</think>\n<answer>\n```json\n{\n    \"temperature\": -10,\n    \"saturation\": 15,\n    \"sharpness\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5QR6q_5QR6q.jpg"
+    ],
+    "id": "GIER-Edit:test:000104",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5QR6q_5QR6q.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5QR6q_72HlH.jpg",
+      "label": {
+        "temperature": -10,
+        "saturation": 15,
+        "sharpness": 5
+      },
+      "instruction": "How to enhance this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "5QR6q_72HlH_11",
+    "source_row": 104,
+    "group_id": "cd62595f8d108cd9867d8b331aaa3c57224314cf6a382cd9911793aebf28c3ef"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> First, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit faded and washed out, possibly due to age or overexposure. Increasing brightness slightly could help, but not too much as the highlights are already strong. Reducing highlights may help recover some detail in the brightest areas.\n2. Color: The colors look dull and faded. Increasing saturation will make the colors more vivid. Adjusting temperature to be slightly warmer could enhance the overall feel. Tint may need a slight adjustment if there is a color cast.\n3. Contrast/Sharpness: The image lacks contrast, making it look flat. Increasing contrast will help make the image pop and look more vivid.\n4. Effects/Objects: No obvious need for vignetting, cropping, or object-level edits.\n5. Summary: To optimize the image, I would increase brightness a little, boost contrast, increase saturation, warm up the temperature, slightly adjust tint if needed, and reduce highlights to recover detail.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 10,\n    \"contrast\": 15,\n    \"temperature\": 5,\n    \"saturation\": 5,\n    \"highlights\": -25,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8c23zj_8c23zj.jpg"
+    ],
+    "id": "GIER-Edit:train:002022",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8c23zj_8c23zj.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/8c23zj_ISMkJAP.jpg",
+      "label": {
+        "brightness": 10,
+        "contrast": 15,
+        "temperature": 5,
+        "saturation": 5,
+        "highlights": -25,
+        "tint": 5
+      },
+      "instruction": "",
+      "inst_type": "none",
+      "task_type": "image_editing"
+    },
+    "source_id": "8c23zj_ISMkJAP_10",
+    "source_row": 2022,
+    "group_id": "cda8d80313584e89ad23233f6c1aecaef8d2cc3811fb7f27b167e706779d3600"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nPlease, increase color intensity\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears well-lit, but a slight increase in brightness could make the colors pop more.\n2. Color: The icons at the bottom could benefit from more intense color to stand out, so increasing saturation would help. Adjusting temperature slightly warmer could enhance the vibrancy of the fire and water icons.\n3. Contrast/Sharpness: Increasing contrast would help the icons and text stand out more crisply against the white background.\n4. Effects/Objects: No vignetting, fading, or object-level edits are needed for this clean logo image.\n5. Summary: Slightly increase brightness, boost saturation, add a bit of warmth with temperature, and increase contrast for a more vibrant and appealing look.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 5,\n    \"contrast\": 5,\n    \"temperature\": 5,\n    \"saturation\": 15,\n    \"highlights\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4tnvqf_4tnvqf.jpg"
+    ],
+    "id": "GIER-Edit:train:001072",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4tnvqf_4tnvqf.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/4tnvqf_ei02Ytm.png",
+      "label": {
+        "brightness": 5,
+        "contrast": 5,
+        "temperature": 5,
+        "saturation": 15,
+        "highlights": 5
+      },
+      "instruction": "Please, increase color intensity",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "4tnvqf_ei02Ytm_1",
+    "source_row": 1072,
+    "group_id": "cf2fba933f978c55c0081a681c41e560fb2eaab6d2a63a77e26ded628e515d00"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nSharpen image making it more  clear.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears quite bright and slightly washed out. Reducing the brightness would help to bring out more detail and depth.\n2. Color: The colors look a bit faded, so a slight increase in saturation could help, but the main focus should be on the overall darkness.\n3. Contrast/Sharpness: Increasing contrast would help to define the features and make the image less flat. Sharpness seems adequate, so no major adjustment is needed there.\n4. Effects/Objects: No special effects or object-level edits are necessary.\n5. Summary: The image would benefit from lowering brightness, increasing contrast, and possibly a minor boost in saturation. Sharpness can remain unchanged.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -40,\n    \"contrast\": 10,\n    \"saturation\": 50,\n    \"sharpness\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/rFbVV_rFbVV.jpg"
+    ],
+    "id": "GIER-Edit:train:001423",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/rFbVV_rFbVV.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/rFbVV_8FF9Z.jpg",
+      "label": {
+        "brightness": -40,
+        "contrast": 10,
+        "saturation": 50,
+        "sharpness": 5
+      },
+      "instruction": "Sharpen image making it more  clear.",
+      "inst_type": "amateur",
+      "task_type": "image_editing"
+    },
+    "source_id": "rFbVV_8FF9Z_6",
+    "source_row": 1423,
+    "group_id": "d0778425b5102c684b55befad22d1b0d270de72b1fec0a6c688aff7dc98d671a"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nWhat will you do to improve this image?\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image has a strong yellow burn on the left, making it overly bright in that area, while the rest is underexposed. Reducing overall brightness and especially highlights can help recover detail and balance the exposure.\n2. Color: The image has a strong yellow/orange cast from the burn. Removing this color cast and making the image more neutral or monochrome would help. Reducing saturation and possibly adjusting temperature (cooler) and tint (towards magenta) can neutralize the color.\n3. Contrast/Sharpness: The image is a bit flat due to the burn, so increasing contrast can help bring out details and separate tones.\n4. Effects/Objects: No cropping or object-level edits are needed, but the main focus is on correcting the burn and restoring detail.\n5. Summary: Likely parameter changes: decrease brightness, decrease highlights, increase contrast, reduce saturation (possibly to black and white), cool down temperature, adjust tint to counteract yellow/green cast.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -80,\n    \"contrast\": 15,\n    \"temperature\": -35,\n    \"saturation\": -50,\n    \"highlights\": -85,\n    \"tint\": 45\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/34z8tx_34z8tx.jpg"
+    ],
+    "id": "GIER-Edit:train:005901",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/34z8tx_34z8tx.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/34z8tx_aumd52W.jpg",
+      "label": {
+        "brightness": -80,
+        "contrast": 15,
+        "temperature": -35,
+        "saturation": -50,
+        "highlights": -85,
+        "tint": 45
+      },
+      "instruction": "What will you do to improve this image?",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "34z8tx_aumd52W_6",
+    "source_row": 5901,
+    "group_id": "d34f1bc042ca4708072cef657dea5b2866a66c9138bc7d4e7a6570c5afdd91f3"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nJust refine this image, make it better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dark, especially in the foreground. Increasing the brightness slightly would help bring out more detail.\n2. Color: The colors look a bit muted and cool. Boosting the saturation will make the colors more vivid. Increasing the temperature will add warmth, making the image feel more lively. A slight adjustment to tint towards magenta could help balance the color cast.\n3. Contrast/Sharpness: The image could benefit from increased contrast to make the details pop and give more depth.\n4. Effects/Objects: No special effects or object-level edits are needed.\n5. Summary: Increase brightness, contrast, saturation, temperature, and slightly adjust tint for a more vivid and lively image.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 10,\n    \"contrast\": 15,\n    \"temperature\": 10,\n    \"saturation\": 35,\n    \"highlights\": 15,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6qS92_6qS92.jpg"
+    ],
+    "id": "GIER-Edit:test:000026",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6qS92_6qS92.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6qS92_9P1s4.jpg",
+      "label": {
+        "brightness": 10,
+        "contrast": 15,
+        "temperature": 10,
+        "saturation": 35,
+        "highlights": 15,
+        "tint": 5
+      },
+      "instruction": "Just refine this image, make it better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "6qS92_9P1s4_9",
+    "source_row": 26,
+    "group_id": "e1b6a951bb06dc27988ec111473248d0aef3e80152cf046aa38db2a8463c2396"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nSharpen the entire image\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears quite dark, especially in the foreground. Increasing the brightness would help make the subjects more visible.\n2. Color: The colors are muted due to the darkness, but no strong color cast is present, so color adjustments may not be necessary.\n3. Contrast/Sharpness: The image looks a bit flat and soft. Increasing contrast would help define the subjects and sparklers better. Increasing sharpness would help bring out more detail, especially in the low-light setting.\n4. Effects/Objects: No vignetting, cropping, or object-level edits are needed.\n5. Summary: To improve the image, increase brightness, boost contrast, and enhance sharpness.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 20,\n    \"contrast\": 35,\n    \"sharpness\": 15\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/1qxol9_1qxol9.jpg"
+    ],
+    "id": "GIER-Edit:train:000704",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/1qxol9_1qxol9.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/1qxol9_HjDBspn.jpg",
+      "label": {
+        "brightness": 20,
+        "contrast": 35,
+        "sharpness": 15
+      },
+      "instruction": "Sharpen the entire image",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "1qxol9_HjDBspn_2",
+    "source_row": 704,
+    "group_id": "e4a2ede48cab22391daf7678d8e4e9202224b02c16b3f3aa7ca221cdbb0c4499"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nPlease, enhance the lightness and make look more visible\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears underexposed and quite dark, especially on the subject. Increasing brightness and possibly highlights would help make the subject more visible and the image lighter overall.\n2. Color: The colors look muted and a bit cool. Increasing saturation would make the colors pop more, and a slight increase in temperature could add warmth. Adjusting tint may help balance any color cast.\n3. Contrast/Sharpness: The image is a bit flat, so a moderate increase in contrast could help define the subject better.\n4. Effects/Objects: No obvious vignetting, fading, or object-level edits are needed.\n5. Summary: Increase brightness, highlights, contrast, saturation, temperature, and possibly adjust tint for a more balanced and vibrant look.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 45,\n    \"contrast\": 15,\n    \"temperature\": 15,\n    \"saturation\": 10,\n    \"highlights\": 20,\n    \"tint\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5Cn1t_5Cn1t.jpg"
+    ],
+    "id": "GIER-Edit:test:000084",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5Cn1t_5Cn1t.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5Cn1t_ZXyB4.jpg",
+      "label": {
+        "brightness": 45,
+        "contrast": 15,
+        "temperature": 15,
+        "saturation": 10,
+        "highlights": 20,
+        "tint": 5
+      },
+      "instruction": "Please, enhance the lightness and make look more visible",
+      "inst_type": "expert",
+      "task_type": "image_editing"
+    },
+    "source_id": "5Cn1t_ZXyB4_1",
+    "source_row": 84,
+    "group_id": "e6979770ac3807c725ba9d8d71df0d6839ec4b75a693ecf7da3f0607dab1d2da"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nMake the image more saturated, darken colors\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears slightly overexposed and washed out, so reducing brightness a bit could help restore detail.\n2. Color: The colors look a bit muted and could benefit from increased intensity for a more vibrant look.\n3. Contrast/Sharpness: The image would look better with higher contrast to add depth, and increasing sharpness would make details stand out more.\n4. Effects/Objects: No special effects or object-level edits are needed.\n5. Summary: Decrease brightness, increase contrast, boost saturation, and increase sharpness for a more vivid and crisp image.\n</think>\n<answer>\n```json\n{\n    \"brightness\": -20,\n    \"contrast\": 10,\n    \"saturation\": 15,\n    \"sharpness\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/krgm7_krgm7.jpg"
+    ],
+    "id": "GIER-Edit:train:004418",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/krgm7_krgm7.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/krgm7_ZWHjc.jpg",
+      "label": {
+        "brightness": -20,
+        "contrast": 10,
+        "saturation": 15,
+        "sharpness": 5
+      },
+      "instruction": "Make the image more saturated, darken colors",
+      "inst_type": "amateur",
+      "task_type": "image_editing"
+    },
+    "source_id": "krgm7_ZWHjc_4",
+    "source_row": 4418,
+    "group_id": "e96f26649b97c6e524a88eed80d6adc1b72808e87e3f72d963b003dd57eada42"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> You can follow user instructions to determine the adjustments:\nPlease simply make this image better.\nFirst, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears to have adequate exposure and brightness, so no major adjustments are needed in this area.\n2. Color: The colors look natural and do not seem overly muted or saturated, so no significant changes to color intensity or warmth are necessary.\n3. Contrast/Sharpness: The image is noticeably soft and could benefit from a slight increase in sharpness to bring out more detail and clarity.\n4. Effects/Objects: There are no obvious needs for vignetting, fading, or object-level edits.\n5. Summary: The main improvement would be to slightly increase the sharpness to make the image clearer.\n</think>\n<answer>\n```json\n{\n    \"sharpness\": 30\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3rs7p2_3rs7p2.jpg"
+    ],
+    "id": "GIER-Edit:test:000344",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3rs7p2_3rs7p2.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/3rs7p2_9DKvcrq.png",
+      "label": {
+        "sharpness": 30
+      },
+      "instruction": "Please simply make this image better.",
+      "inst_type": "general",
+      "task_type": "image_editing"
+    },
+    "source_id": "3rs7p2_9DKvcrq_6",
+    "source_row": 344,
+    "group_id": "f46366220c8b0387ceb32eafb8de6b70933de6141807d90bed489721f0d1276d"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> First, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears a bit dark, especially in the shadowed areas. Increasing the brightness would help make the image look more lively and clear. Highlights could also be slightly increased to bring out the lighter areas.\n2. Color: The colors look a bit muted. Increasing the saturation would make the colors pop more. The image has a slightly cool tone, so a small increase in temperature could make it warmer and more inviting. Tint adjustment does not seem necessary unless a color cast is present.\n3. Contrast/Sharpness: The image could benefit from a slight increase in contrast to add depth and definition.\n4. Effects/Objects: No special effects or object-level edits are needed.\n5. Summary: Increase brightness significantly, slightly boost contrast, increase saturation, and possibly warm up the image with a higher temperature.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 10,\n    \"contrast\": 5,\n    \"temperature\": 5,\n    \"saturation\": 5,\n    \"highlights\": 20,\n    \"tint\": -25\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6nGrj_6nGrj.jpg"
+    ],
+    "id": "GIER-Edit:train:001606",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6nGrj_6nGrj.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/6nGrj_hPrs0.jpg",
+      "label": {
+        "brightness": 10,
+        "contrast": 5,
+        "temperature": 5,
+        "saturation": 5,
+        "highlights": 20,
+        "tint": -25
+      },
+      "instruction": "",
+      "inst_type": "none",
+      "task_type": "image_editing"
+    },
+    "source_id": "6nGrj_hPrs0_12",
+    "source_row": 1606,
+    "group_id": "f499bcc69f4bc7c745d7bb8f4796d4097148a9bf66a1a578168e41a2a668466f"
+  },
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "You are an expert image editor. You know how to edit a photo and refine it. In this task, you will be given an input image, and your task is to determine the JSON object of parameters that could use in an image editor and makes it looks nicer."
+      },
+      {
+        "role": "user",
+        "content": "<image> First, provide your thoughts about how to optimize the input image. Then, output the parameters in a JSON object format."
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n1. Brightness/Exposure: The image appears to have adequate brightness, but a slight increase could help make the subject stand out more.\n2. Color: The colors look a bit muted; increasing color intensity would make the image more vibrant. Adjusting the temperature and tint could help achieve a more appealing color balance.\n3. Contrast/Sharpness: The image could benefit from a boost in contrast to make the subject pop against the background. Increasing sharpness would enhance the details, especially in the jacket and leaves.\n4. Effects/Objects: No special effects or object-level edits are needed.\n5. Summary: Slightly increase brightness, boost saturation, adjust temperature and tint for a more balanced color, increase contrast, and enhance sharpness for a crisper look.\n</think>\n<answer>\n```json\n{\n    \"brightness\": 5,\n    \"contrast\": 10,\n    \"saturation\": 80,\n    \"temperature\": -35,\n    \"tint\": 5,\n    \"sharpness\": 5\n}\n```\n</answer>"
+      }
+    ],
+    "images": [
+      "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5HYf2_5HYf2.jpg"
+    ],
+    "id": "GIER-Edit:test:000075",
+    "extra_info": {
+      "origin_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5HYf2_5HYf2.jpg",
+      "reference_image_path": "/mnt/sdc/zhc/IEA/repo/datasets/GIER/images/5HYf2_fspzm.jpg",
+      "label": {
+        "brightness": 5,
+        "contrast": 10,
+        "saturation": 80,
+        "temperature": -35,
+        "tint": 5,
+        "sharpness": 5
+      },
+      "instruction": "",
+      "inst_type": "none",
+      "task_type": "image_editing"
+    },
+    "source_id": "5HYf2_fspzm_12",
+    "source_row": 75,
+    "group_id": "fe4c054aa94308ab363863c00fc338cf148d7c7f34662cbc08e95e717a988b2d"
+  }
+]

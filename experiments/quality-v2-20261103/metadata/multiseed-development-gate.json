@@ -1,0 +1,175 @@
+{
+  "passed": true,
+  "family": "3k-v2",
+  "variant": "swa",
+  "checked_at": "2026-11-03T19:06:00.456708+00:00",
+  "training_seeds": [
+    20261103,
+    20261104,
+    20261105
+  ],
+  "proof": {
+    "Seed20261103": {
+      "checks": {
+        "point_target": true,
+        "positive_interval": true,
+        "execution_maintained": true,
+        "direction_maintained": true,
+        "no_noop_gain_explanation": true,
+        "balanced_instruction_maintained": true
+      },
+      "validation_metrics": {
+        "n": 200,
+        "mean_l1": 0.11588283900171518,
+        "NoEdit_l1": 0.11577512218966149,
+        "executable": 200,
+        "fallback": 0,
+        "empty": 0,
+        "zero": 0,
+        "pixel_identical": 0,
+        "near_identity": 1,
+        "mean_input_output_l1": 0.06232184179974537,
+        "direction_assessable": 32,
+        "all_assessed_directions_aligned": 31,
+        "source_sha256": "721f55b127ae2dee5b643bf825cd6c2aae18054a2ff0c52fa8eb58585a222523",
+        "json_prompt_signature": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67"
+      },
+      "comparison": {
+        "reference": "B",
+        "paired_mean_gain": 0.009228593432344495,
+        "relative_mean_gain": 0.0737629907419408,
+        "ci95_gain": [
+          0.0025195077101234356,
+          0.016343306397437113
+        ],
+        "ci95_relative": [
+          0.02087752293160766,
+          0.12709201374994547
+        ],
+        "improved": 125,
+        "worsened": 75,
+        "ties": 0
+      },
+      "no_positive_noop_credit_relative_gain": 0.07192483054935625,
+      "no_positive_noop_credit_ci95_gain_lower": 0.002335438297479414,
+      "balanced_challenge": {
+        "executable": 48,
+        "aligned_requests": 46,
+        "strict_pairs": 22,
+        "ordered_pairs": 23
+      },
+      "validation_predictions_sha256": "721f55b127ae2dee5b643bf825cd6c2aae18054a2ff0c52fa8eb58585a222523",
+      "checkpoint_audit_sha256": "9f997932663d3c04a8ca053862e904d0332e0deb5f1440730a171773f620b766",
+      "challenge_predictions_sha256": "edc9a7118f7219404da48eb6b45168078e7c7d8c1e89f80c22aed1f0871fb08c"
+    },
+    "Seed20261104": {
+      "checks": {
+        "point_target": true,
+        "positive_interval": true,
+        "execution_maintained": true,
+        "direction_maintained": true,
+        "no_noop_gain_explanation": true,
+        "balanced_instruction_maintained": true
+      },
+      "validation_metrics": {
+        "n": 200,
+        "mean_l1": 0.11495472422800958,
+        "NoEdit_l1": 0.11577512218966149,
+        "executable": 200,
+        "fallback": 0,
+        "empty": 0,
+        "zero": 0,
+        "pixel_identical": 0,
+        "near_identity": 1,
+        "mean_input_output_l1": 0.06312876665241579,
+        "direction_assessable": 32,
+        "all_assessed_directions_aligned": 30,
+        "source_sha256": "620569d407c23af04846edc2ebec5ed93ca58cb1df68ee18b6eebf238f9475c3",
+        "json_prompt_signature": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67"
+      },
+      "comparison": {
+        "reference": "B",
+        "paired_mean_gain": 0.010156708206050098,
+        "relative_mean_gain": 0.08118129581326006,
+        "ci95_gain": [
+          0.0030371467588702216,
+          0.017508167355787006
+        ],
+        "ci95_relative": [
+          0.02512283566413944,
+          0.13521298946427604
+        ],
+        "improved": 124,
+        "worsened": 76,
+        "ties": 0
+      },
+      "no_positive_noop_credit_relative_gain": 0.07934313562067552,
+      "no_positive_noop_credit_ci95_gain_lower": 0.0028318285999121146,
+      "balanced_challenge": {
+        "executable": 48,
+        "aligned_requests": 44,
+        "strict_pairs": 20,
+        "ordered_pairs": 24
+      },
+      "validation_predictions_sha256": "620569d407c23af04846edc2ebec5ed93ca58cb1df68ee18b6eebf238f9475c3",
+      "checkpoint_audit_sha256": "bbdb7d1fbf0979aae7cdca25ef7d64bf8fa20edb3b9fb7a1ccac48fa3b6e9286",
+      "challenge_predictions_sha256": "f7989c3c67d62edfa3112634fbc98bb5ecef9e5f388d762d28c7636a2a68f5d3"
+    },
+    "Seed20261105": {
+      "checks": {
+        "point_target": true,
+        "positive_interval": true,
+        "execution_maintained": true,
+        "direction_maintained": true,
+        "no_noop_gain_explanation": true,
+        "balanced_instruction_maintained": true
+      },
+      "validation_metrics": {
+        "n": 200,
+        "mean_l1": 0.11697718513663859,
+        "NoEdit_l1": 0.11577512218966149,
+        "executable": 200,
+        "fallback": 0,
+        "empty": 0,
+        "zero": 0,
+        "pixel_identical": 0,
+        "near_identity": 1,
+        "mean_input_output_l1": 0.06344921091841715,
+        "direction_assessable": 32,
+        "all_assessed_directions_aligned": 31,
+        "source_sha256": "5e5c6822f47d1bdde6ced6b5a5e12b6f44c9957b7f7e8732d94f3d9f6fc4b4af",
+        "json_prompt_signature": "98530af5cbd391e72de14d641098b8c248e073de20bdf87135f62adb75e16d67"
+      },
+      "comparison": {
+        "reference": "B",
+        "paired_mean_gain": 0.008134247297421097,
+        "relative_mean_gain": 0.06501601923316061,
+        "ci95_gain": [
+          0.0014147390098078177,
+          0.015125183918280525
+        ],
+        "ci95_relative": [
+          0.011573201061883797,
+          0.11642046105584841
+        ],
+        "improved": 128,
+        "worsened": 72,
+        "ties": 0
+      },
+      "no_positive_noop_credit_relative_gain": 0.06317785904057606,
+      "no_positive_noop_credit_ci95_gain_lower": 0.0011597472173161805,
+      "balanced_challenge": {
+        "executable": 48,
+        "aligned_requests": 46,
+        "strict_pairs": 22,
+        "ordered_pairs": 24
+      },
+      "validation_predictions_sha256": "5e5c6822f47d1bdde6ced6b5a5e12b6f44c9957b7f7e8732d94f3d9f6fc4b4af",
+      "checkpoint_audit_sha256": "1fa20de4602f852fa4de30aeaeb335711d2fec6281db94613ba7a077b28d19d8",
+      "challenge_predictions_sha256": "b34e0492343e277c21431a58d522925efed230740b3e9e38c202d6d08c539a47"
+    }
+  },
+  "failed_checks": [],
+  "test_opened": false,
+  "scope": "Development gate only; final independent test, broader visual review and archive verification remain required."
+}

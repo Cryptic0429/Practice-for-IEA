@@ -1,0 +1,25 @@
+{
+  "status": "completed",
+  "training_rows": 3000,
+  "source_groups": 1078,
+  "source_sha256": "d1dc31ae91f583e1d672ba047d390723d3b1ce6494ea88f802bb67356a226a19",
+  "NoEdit_l1": 0.11533294590197814,
+  "label_l1": 0.06793607941207787,
+  "labels_improving_original": 2417,
+  "labels_worsening_original": 583,
+  "direction_assessable": 483,
+  "clear_direction_oppositions": 45,
+  "quality_weights_sha256": "d79965503323bfacba24ef408d594ee1af3499b4c24c518850b6c0dca7d18449",
+  "mean_normalized_weight": 1.0,
+  "weight_range": [
+    0.2992358506582756,
+    2.393886805266205
+  ],
+  "elapsed_seconds": 196.7200711593032,
+  "limits": [
+    "Training-only oracle/program replay; not model generalization.",
+    "Rows sharing a source group are dependent; counts are descriptive.",
+    "Global direction proxy excludes local/negated/ambiguous requests; not full semantics.",
+    "Weights never enter model inference, and do not use validation/test references."
+  ]
+}

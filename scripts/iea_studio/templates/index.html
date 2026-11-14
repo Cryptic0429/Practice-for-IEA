@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IEA · 智能对话修图工作台</title>
+  <meta name="description" content="多轮对话驱动的全局智能修图系统：语义规划、幅度与风险控制、无损重算与自检闭环。">
+  <link rel="stylesheet" href="/static/studio.css">
+  <script src="/static/studio.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-left">
+    <a class="brand" href="/">
+      <span class="brand-mark">IEA</span>
+      <span class="brand-title">智能修图工作室</span>
+    </a>
+    <nav class="mode-switch" aria-label="工作模式切换">
+      <button type="button" class="mode-tab active" data-mode="agent">对话修图</button>
+      <button type="button" class="mode-tab" data-mode="compare">基线对照</button>
+    </nav>
+  </div>
+  <div class="topbar-right">
+    <button type="button" class="ghost-button" id="open-samples-btn">示例图库</button>
+    <span class="status-pill" id="connection">正在连接</span>
+    <button type="button" class="text-button" id="about-button">系统说明 ↗</button>
+  </div>
+</header>
+
+<main class="shell">
+  <!-- ==================== MODE 1: MULTI-TURN CONVERSATIONAL AGENT ==================== -->
+  <section id="agent-view" class="agent-workspace">
+    <div class="stage-column">
+      <div class="stage-bar">
+        <div class="stage-title-group">
+          <span class="eyebrow">NON-DESTRUCTIVE DARKROOM</span>
+          <h1 id="agent-photo-title">载入一张照片开始修图</h1>
+        </div>
+        <div class="stage-actions">
+          <label class="ghost-button upload-trigger" tabindex="0">
+            <input type="file" id="agent-image-input" accept="image/png,image/jpeg,image/webp,image/bmp,image/tiff" hidden>
+            上传照片
+          </label>
+          <button type="button" class="ghost-button" id="agent-samples-inline">从示例选择</button>
+          <button type="button" class="ghost-button" id="agent-pixel-open" disabled>1:1 原像素</button>
+          <a class="ghost-button disabled" id="agent-download-image" aria-disabled="true">下载成片 ↓</a>
+          <a class="ghost-button disabled" id="agent-download-zip" aria-disabled="true">导出会话</a>
+        </div>
+      </div>
+
+      <div class="darkroom-canvas" id="agent-canvas-wrap">
+        <div class="darkroom-empty" id="agent-empty-state">
+          <div class="empty-ring">＋</div>
+          <h2>拖入您的照片，或从示例图库快速体验</h2>
+          <p>支持多轮自然语言对话修图，系统始终基于初始原图与累计参数无损重算，画质零累积损耗。</p>
+          <div class="empty-actions">
+            <button type="button" class="solid-button" id="empty-upload-btn">选择本地照片</button>
+            <button type="button" class="ghost-button dark-ghost" id="empty-samples-btn">打开示例图库</button>
+          </div>
+        </div>
+
+        <div class="split-viewer" id="agent-split-viewer" hidden>
+          <img id="agent-after-img" alt="当前轮次修图结果">
+          <img id="agent-before-img" class="before-layer" alt="初始原图">
+          <div class="split-divider" id="agent-split-divider"></div>
+          <input type="range" min="0" max="100" value="50" class="split-range" id="agent-split-slider" aria-label="拖动对比原图与当前效果">
+          <span class="canvas-tag left">初始原图</span>
+          <span class="canvas-tag right" id="agent-active-tag">当前效果</span>
+        </div>
+      </div>
+
+      <div class="timeline-card">
+        <div class="card-subhead">
+          <span>版本时间轴（点击任意节点无损切换）</span>
+          <span class="mono-muted" id="agent-image-meta">未载入图像</span>
+        </div>
+        <div class="timeline-strip" id="agent-timeline">
+          <span class="muted">载入照片后，每一轮有效调整都会在此生成可回溯快照。</span>
+        </div>
+      </div>
+
+      <div class="telemetry-grid">
+        <section class="panel-card">
+          <div class="card-subhead">
+            <span>累计全局参数（9 维确定性滑块）</span>
+            <span class="mono-muted" id="agent-params-count">0 项生效</span>
+          </div>
+          <div class="params-grid" id="agent-params-grid"></div>
+        </section>
+
+        <section class="panel-card">
+          <div class="card-subhead">
+            <span>硬指标护栏与自检状态</span>
+            <span class="guard-badge" id="agent-guard-badge">待运行</span>
+          </div>
+          <div class="metrics-grid" id="agent-metrics-grid">
+            <div class="metric-cell"><small>平均亮度</small><strong id="metric-lum">—</strong></div>
+            <div class="metric-cell"><small>高光溢出</small><strong id="metric-white">—</strong></div>
+            <div class="metric-cell"><small>暗部死黑</small><strong id="metric-black">—</strong></div>
+            <div class="metric-cell"><small>色温倾向</small><strong id="metric-warmth">—</strong></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <aside class="chat-column">
+      <div class="chat-card">
+        <div class="chat-header">
+          <div>
+            <span class="eyebrow">CONVERSATIONAL AGENT</span>
+            <h2>修图对话助手</h2>
+          </div>
+          <div class="chat-tools">
+            <button type="button" class="text-button" id="agent-undo-btn" disabled>撤销</button>
+            <button type="button" class="text-button" id="agent-reset-btn" disabled>还原原图</button>
+          </div>
+        </div>
+
+        <div class="session-bar">
+          <label class="session-select-wrap">
+            <span>最近会话</span>
+            <select id="agent-session-select"><option value="">新建或选择会话…</option></select>
+          </label>
+          <span class="engine-chip" id="agent-mode-chip">检测运行模式中…</span>
+        </div>
+
+        <div class="chat-stream" id="agent-chat-stream">
+          <div class="chat-bubble assistant">
+            <p>您好！上传照片或从右上角「示例图库」挑选一张图片后，就可以用自然语言告诉我您的修图想法。</p>
+            <p class="bubble-sub">支持多轮微调（如“再暖一点”、“把刚才的调整退回一半”）、撤销回退以及超出全局调色范围的智能拒修提示。</p>
+          </div>
+        </div>
+
+        <div class="quick-prompts" id="agent-quick-prompts">
+          <button type="button" data-prompt="稍微提亮阴影，保留天空和肤色细节">提亮阴影保高光</button>
+          <button type="button" data-prompt="再暖一点，色彩稍微鲜艳一些">再暖一点</button>
+          <button type="button" data-prompt="把刚才的调整退回一半">退回一半</button>
+          <button type="button" data-prompt="撤销上一步">撤销上一步</button>
+        </div>
+
+        <form class="chat-composer" id="agent-chat-form">
+          <textarea id="agent-chat-input" rows="2" maxlength="3000" placeholder="描述您的调色想法，例如：画面偏暗，帮我提亮暗部并稍微压低高光…（Enter 发送，Shift+Enter 换行）"></textarea>
+          <button type="submit" class="solid-button" id="agent-send-btn" disabled>发送指令</button>
+        </form>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ==================== MODE 2: CORE VS BASELINES COMPARISON ==================== -->
+  <section id="compare-view" class="compare-workspace" hidden>
+    <div class="compare-hero">
+      <div>
+        <span class="eyebrow">SINGLE-TURN BENCHMARK STUDIO</span>
+        <h1>核心引擎与基线方案同场对照</h1>
+        <p>使用同一张照片与原样中英文指令，并排检验核心方案、消融对照与历史基线的输出表现。</p>
+      </div>
+      <div class="hero-actions">
+        <button type="button" class="ghost-button" id="compare-open-samples">从示例库填充</button>
+      </div>
+    </div>
+
+    <div class="compare-grid-shell">
+      <aside class="panel-card compare-sidebar">
+        <div class="card-subhead"><span>01 / 输入照片与双语指令</span><button type="button" class="text-button" id="reset-button">清空</button></div>
+        <label class="upload-zone" id="upload-zone" tabindex="0" role="button" aria-label="上传或拖入照片">
+          <input type="file" id="image-input" accept="image/png,image/jpeg,image/webp,image/bmp,image/tiff" hidden>
+          <img id="source-preview" alt="待编辑的原图" hidden>
+          <span class="upload-empty" id="upload-empty"><strong>点击或拖入待对比照片</strong><small>JPG / PNG / WebP · ≤ 22 MB</small></span>
+          <span class="upload-overlay" id="upload-overlay" hidden>更换照片 ↗</span>
+        </label>
+        <div class="image-caption"><span id="image-name">未选择图片</span><span id="image-size">≤ 22 MB</span></div>
+
+        <form id="compare-form">
+          <label class="field-label" for="instruction-zh"><span>中文要求</span><span class="language-badge">ZH</span></label>
+          <textarea id="instruction-zh" rows="3" maxlength="3000" placeholder="例如：稍微提亮阴影，保留天空和肤色。" required></textarea>
+          <label class="field-label" for="instruction-en"><span>English instruction</span><span class="language-badge">EN</span></label>
+          <textarea id="instruction-en" rows="3" maxlength="3000" placeholder="E.g. Slightly lift the shadows while preserving the sky and skin tones." required></textarea>
+          <p class="field-note">中英文将原样提交给各个候选方案，不进行自动翻译。</p>
+          <button class="solid-button full-width" id="run-button" type="submit"><span>运行核心与对照方案</span></button>
+          <p id="compute-note" class="compute-note">正在读取推理配置…</p>
+        </form>
+
+        <div class="history-block">
+          <div class="card-subhead"><span>历史对比记录</span><button type="button" class="text-button" id="refresh-history">刷新</button></div>
+          <div id="history-list" class="history-list"><p class="muted">暂无记录</p></div>
+        </div>
+      </aside>
+
+      <section class="compare-results">
+        <div class="results-toolbar">
+          <div>
+            <span class="eyebrow">02 / 对比结果</span>
+            <h2 id="result-title">核心引擎输出与基线对照</h2>
+          </div>
+          <div class="toolbar-actions">
+            <label class="blind-label"><input type="checkbox" id="blind-toggle">盲测隐藏方案名</label>
+            <button type="button" class="ghost-button" id="original-button" disabled>查看原图 ↗</button>
+            <a id="download-all" class="ghost-button disabled" aria-disabled="true">下载全部 ↓</a>
+          </div>
+        </div>
+
+        <div class="view-bar">
+          <div class="tabs" role="tablist" aria-label="结果语言">
+            <button type="button" class="active" data-language="zh" role="tab" aria-selected="true">中文</button>
+            <button type="button" data-language="en" role="tab" aria-selected="false">English</button>
+            <button type="button" data-language="both" role="tab" aria-selected="false">双语并看</button>
+          </div>
+          <span class="context-note" id="context-note">选择示例或上传照片后发起对比。</span>
+        </div>
+
+        <div class="progress-box" id="progress-box" hidden>
+          <div class="progress-label"><span id="progress-message"></span><span id="progress-count">0 / 6</span></div>
+          <div class="progress-track"><div id="progress-fill"></div></div>
+        </div>
+
+        <div id="model-grid"></div>
+
+        <section class="verdict-panel" id="verdict-panel" hidden>
+          <div>
+            <span class="eyebrow">03 / 主观评价</span>
+            <h3>这一次，您更倾向采用哪组结果？</h3>
+            <p>可从指令完成度、调色力度、肤色与暗部噪点自然度进行记录（评价仅作实验记录，不自动用于模型训练）。</p>
+          </div>
+          <div class="preference-fields">
+            <label>中文最优方案<select id="preferred-zh"></select></label>
+            <label>English preference<select id="preferred-en"></select></label>
+          </div>
+          <textarea id="feedback-comment" rows="2" maxlength="4000" placeholder="填写原因，例如：核心引擎对高光的保护更自然。"></textarea>
+          <div class="save-line">
+            <span id="feedback-message" class="muted">评价数据独立隔离存储。</span>
+            <button type="button" class="solid-button" id="save-feedback">保存评价</button>
+          </div>
+        </section>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>IEA · 智能全局图像编辑工作室</span>
+  <span>基于原图无损重算 · 9 维确定性调色 · 严禁以拒修充当成片</span>
+</footer>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<!-- Sample Gallery Modal -->
+<dialog id="samples-dialog" class="modal-wide">
+  <div class="dialog-toolbar">
+    <div>
+      <strong>示例图库（历史开发样例）</strong>
+      <p class="dialog-sub">选择任意样例可立即开启多轮对话修图，或在对照模式下填入双语指令</p>
+    </div>
+    <button type="button" id="close-samples" class="text-button">关闭 ×</button>
+  </div>
+  <div class="samples-gallery" id="samples"></div>
+</dialog>
+
+<!-- 1:1 Pixel Inspection Modal -->
+<dialog id="image-dialog" class="modal-wide">
+  <div class="dialog-toolbar">
+    <strong id="dialog-title">原图检查</strong>
+    <div class="dialog-actions">
+      <button type="button" id="pixel-toggle" class="ghost-button">原始像素 1:1</button>
+      <button type="button" id="close-image" class="text-button">关闭 ×</button>
+    </div>
+  </div>
+  <div class="dialog-image-wrap"><img id="dialog-image" alt="图片原尺寸检查"></div>
+  <p class="dialog-foot">可切换 1:1 原始像素模式检查暗部噪点、高光细节与肤色过渡。</p>
+</dialog>
+
+<!-- System Architecture Modal -->
+<dialog id="about-dialog" class="modal-medium">
+  <div class="dialog-toolbar">
+    <strong>系统架构与运行说明</strong>
+    <button type="button" id="close-about" class="text-button">关闭 ×</button>
+  </div>
+  <div class="about-content">
+    <h2>多轮对话规划 + 确定性调色执行 + 自检闭环</h2>
+    <p><strong>1. 双模式协同推理</strong>：在支持完整视觉语言底座的 GPU 环境下，对话规划与视觉复检层临时关闭适配器以进行多轮语义理解与质量复核；参数决策层启用调色主干与幅度风险控制头，输出精准的 9 维全局参数。</p>
+    <p><strong>2. 无损重算与版本回溯</strong>：系统始终保留初始原图，每一轮仅更新累计调色参数并直接从原图重新渲染，不产生反复压缩或截断导致的画质劣化，并支持一键撤销或切换任意历史轮次。</p>
+    <p><strong>3. 两级自检闭环</strong>：渲染后先经毫秒级图像硬指标护栏检查高光死白与暗部死黑比例，再由视觉复检确认；若存在明显画质风险，系统自动按比例衰减调整幅度重试或安全回退。</p>
+    <p><strong>4. 能力边界</strong>：当前支持曝光、亮度、对比度、高光、阴影、饱和度、色温、色调与复古 9 类全局调节，不支持局部重绘或物体移除；当前版本仍属研究与交互原型，上传图片不自动用于模型训练。</p>
+    <div id="model-details"></div>
+    <p id="runtime-detail"></p>
+  </div>
+</dialog>
+</body>
+</html>
