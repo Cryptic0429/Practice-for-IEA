@@ -1,5 +1,7 @@
-# 主线数据定义
+# Dataset Metadata & Benchmark Definitions
 
-本地保留校准SFT、R1、R15、R21的标签／来源定义，以及交互台六张示例图。大体积训练图片、目标候选图、重复预览与特征缓存已移至SJTU1；JSON中的历史路径和哈希保持原样。
+This directory retains structured JSON case definitions, admission records, and bilingual evaluation splits for `calibrated_sft`, `r1`, `r15`, and `r21_head`.
 
-此目录不是完整离线训练集。按`../docs/REPRODUCIBILITY.md`恢复对应证据profile和服务器外部依赖后，再进行训练准备。不得用缺图占位符或开发图补齐训练集；双语翻译与合成条件按原图组统计。
+- Raw source photographs, target candidate renders, and large feature caches are excluded from Git via `.gitignore` (see [Reproducibility & Weight Setup](../docs/REPRODUCIBILITY.md)).
+- Subdirectories under `data/training/` are kept byte-exact to preserve SHA256 verification in `make verify`.
+- Bilingual translations and synthetic noise conditions are tracked by original image group rather than counted as independent photographs.

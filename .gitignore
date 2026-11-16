@@ -1,13 +1,19 @@
-# Compact project: text sources in Git; model/data/runtime binaries stay private.
+# Python packaging, environments, and caches
 /.venv*/
 /envs/
+/build/
+/dist/
+/*.egg-info/
+**/.pytest_cache/
+**/__pycache__/
+**/*.pyc
+
+# Runtime artifacts, local datasets, and model binaries
 /cache/
 /tmp/
 /output/
 /archives/
 /data/sources/
-**/__pycache__/
-**/*.pyc
 **/.DS_Store
 **/.env
 **/.env.*

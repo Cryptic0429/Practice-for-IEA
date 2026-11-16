@@ -2,11 +2,12 @@
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 import torch
 from safetensors.torch import load_file
 
-ROOT=Path('/mnt/sdc/zhc/IEA')
+ROOT=Path(os.environ.get('IEA_ROOT',Path(__file__).resolve().parents[1]))
 
 
 def main():

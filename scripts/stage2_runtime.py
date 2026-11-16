@@ -2,6 +2,7 @@
 import contextlib
 import hashlib
 import math
+import os
 import types
 import weakref
 from pathlib import Path
@@ -11,7 +12,7 @@ from PIL import Image
 from peft import PeftModel, prepare_model_for_kbit_training, get_peft_model_state_dict
 from transformers import AutoProcessor, BitsAndBytesConfig, Qwen2_5_VLForConditionalGeneration
 
-ROOT = Path('/mnt/sdc/zhc/IEA')
+ROOT = Path(os.environ.get('IEA_ROOT', Path(__file__).resolve().parents[1]))
 BASE = ROOT/'models/Qwen2.5-VL-7B-Instruct'
 ADAPTER = ROOT/'outputs/stage1-A-image-edit-3k-v1'
 

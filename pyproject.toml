@@ -1,0 +1,90 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iea"
+version = "0.1.0"
+description = "Interactive Image Editing Agent (IEA): multi-turn conversational photo editing with dual-mode Qwen2.5-VL, magnitude/risk controller head, and non-destructive rendering."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+keywords = [
+    "image-editing",
+    "vision-language-model",
+    "multimodal-agent",
+    "qwen2.5-vl",
+    "lora",
+    "photo-retouching",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Multimedia :: Graphics :: Editors",
+]
+dependencies = [
+    "numpy>=2.0",
+    "Pillow>=10.0",
+    "Flask>=3.0",
+    "opencv-python-headless>=4.10",
+]
+
+[project.optional-dependencies]
+gpu = [
+    "torch>=2.4",
+    "transformers>=4.49",
+    "peft>=0.14",
+    "accelerate>=1.0",
+    "bitsandbytes>=0.44",
+    "safetensors>=0.4",
+]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Cryptic0429/Practice-for-IEA"
+Repository = "https://github.com/Cryptic0429/Practice-for-IEA"
+Issues = "https://github.com/Cryptic0429/Practice-for-IEA/issues"
+
+[project.scripts]
+iea-studio = "iea.cli:studio"
+iea-verify = "iea.cli:verify"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = [".", "scripts"]
+include = [
+    "iea*",
+    "iea_agent*",
+    "iea_studio*",
+    "project*",
+    "functional_v1*",
+    "functional_v6*",
+    "functional_v7*",
+    "functional_v9*",
+    "functional_v11*",
+    "functional_v13*",
+    "functional_v15*",
+    "functional_v18*",
+    "functional_v19*",
+    "functional_v20*",
+    "functional_v21*",
+]
+
+[tool.setuptools.package-dir]
+iea = "iea"
+"" = "scripts"
+
+[tool.setuptools.package-data]
+iea_studio = ["templates/*.html", "static/*"]

@@ -1,9 +1,9 @@
 """Fixed50/50 average of LoRA parameter tensors from two checkpoints of the same run."""
-import argparse,hashlib,json,shutil
+import argparse,hashlib,json,os,shutil
 from pathlib import Path
 import torch
 from safetensors.torch import load_file,save_file
-ROOT=Path('/mnt/sdc/zhc/IEA')
+ROOT=Path(os.environ.get('IEA_ROOT',Path(__file__).resolve().parents[1]))
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--left',type=Path,required=True);ap.add_argument('--right',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args()

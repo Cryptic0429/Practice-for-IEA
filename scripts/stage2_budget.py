@@ -1,9 +1,10 @@
 """Read-only resource ledger from explicit run records and actual process liveness."""
 from datetime import datetime,timezone
 import json
+import os
 from pathlib import Path
 
-ROOT=Path('/mnt/sdc/zhc/IEA')
+ROOT=Path(os.environ.get('IEA_ROOT',Path(__file__).resolve().parents[1]))
 TERMINAL={'failed','completed','completed_training','awaiting_independent_reload','budget_stopped'}
 
 

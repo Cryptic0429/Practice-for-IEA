@@ -1,7 +1,7 @@
 """Independent full3k training; primary-seed-only export selection precedes replica validation."""
 import argparse,datetime,hashlib,json,os,subprocess,time
 from pathlib import Path
-ROOT=Path('/mnt/sdc/zhc/IEA');OUT=ROOT/'outputs/goal-v2-20261103'
+ROOT=Path(os.environ.get('IEA_ROOT',Path(__file__).resolve().parents[1]));OUT=ROOT/'outputs/goal-v2-20261103'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--gpu',choices=['0','3'],required=True);ap.add_argument('--seed',type=int,required=True);a=ap.parse_args();assert (a.gpu,a.seed) in [('0',20261104),('3',20261105)]
