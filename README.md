@@ -175,7 +175,30 @@ Practice-for-IEA/
 
 ---
 
-## Acknowledgments & License
+## Acknowledgments & Citation
 
-- Built on [`Qwen/Qwen2.5-VL-7B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct).
-- Licensed under the [Apache License 2.0](LICENSE).
+This repository is an independent practice and experimental extension inspired by and building upon the **IEA** paper and open-source ecosystem:
+
+- **IEA Paper**: [*IEA: Amateur-Friendly Conversational Image Editing Agent via Three Stages of Multitask Alignment*](https://arxiv.org/abs/2606.08016) (CVPR 2026 Findings) by Zichen Zhu, Yuheng Sun, Mingxuan Zhu, Wenjie Ma, Situo Zhang, Zhexiang Wang, Ziyue Yang, Danyang Zhang, Kunyao Lan, Zihan Zhao, Dingye Liu, Siqi Xiang, Lu Chen, and Kai Yu. Official code and weights are available at [OpenDFM/Image_Edit_Agent](https://github.com/OpenDFM/Image_Edit_Agent) and [OpenDFM/Qwen2.5-VL-7B-IEA](https://huggingface.co/OpenDFM/Qwen2.5-VL-7B-IEA).
+- **Base Model**: Built on [`Qwen/Qwen2.5-VL-7B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct).
+- **Dataset**: Incorporates benchmarks and training subsets derived from the GIER (Language-Guided Global Image Editing) dataset.
+
+If you find the original IEA framework useful in your research, please cite the original paper:
+
+```bibtex
+@inproceedings{zhu2026iea,
+  title     = {IEA: Amateur-Friendly Conversational Image Editing Agent via Three Stages of Multitask Alignment},
+  author    = {Zhu, Zichen and Sun, Yuheng and Zhu, Mingxuan and Ma, Wenjie and Zhang, Situo and Wang, Zhexiang and Yang, Ziyue and Zhang, Danyang and Lan, Kunyao and Zhao, Zihan and Liu, Dingye and Xiang, Siqi and Chen, Lu and Yu, Kai},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Findings},
+  year      = {2026},
+  eprint    = {2606.08016},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV}
+}
+```
+
+---
+
+## License
+
+This project is licensed under the [Apache License 2.0](LICENSE). All third-party models (`Qwen2.5-VL-7B-Instruct`) and datasets (`GIER`) remain subject to their respective original licenses.
