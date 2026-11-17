@@ -2,6 +2,8 @@
 
 IEA separates **high-level conversational reasoning**, **structured parameter & risk prediction**, **deterministic pixel rendering**, and **quality safety verification** into four composable layers.
 
+> Module paths such as `scripts/functional_v15/` and `scripts/functional_v21/` are internal protocol version directories; the mapping between public component names and these versions is documented in [Model Versions & Provenance](MODEL_VERSIONS.md).
+
 ---
 
 ## 1. Dual-Mode Single-VLM Backend (`scripts/iea_agent/backend.py`)
@@ -11,7 +13,7 @@ Rather than loading separate LLM/VLM instances for chat planning, retouching, an
 | Stage | Adapter State | Active Weights | Responsibility |
 |---|---|---|---|
 | **Planner** | Disabled (`disable_adapter()`) | Native `Qwen2.5-VL-7B` | Multi-turn intent classification (`edit`, `adjust_relative`, `undo`, `reset`, `keep`, `unsupported`, `chat`), relative delta/scale extraction, and instruction normalization |
-| **Predictor** | Enabled (`semantic_backbone`) | `r15` LoRA + `r21_head` MLP | Structured 9-tool decision (`edit`, `keep`, `decline`), direction locking, magnitude calibration, and quality-risk estimation |
+| **Predictor** | Enabled (`semantic_backbone`) | Semantic Backbone LoRA + Controller Head MLP | Structured 9-tool decision (`edit`, `keep`, `decline`), direction locking, magnitude calibration, and quality-risk estimation |
 | **Critic** | Disabled (`disable_adapter()`) | Native `Qwen2.5-VL-7B` | Side-by-side visual comparison of `source_rgb` vs. rendered output against luminance/clipping deltas |
 
 For local development without a GPU, `RuleBasedCPUPlannerBackend` (`mode_name = "cpu_rule_fallback"`) provides deterministic bilingual intent parsing so the entire multi-turn state machine, renderer, and guardrail pipeline can be exercised end-to-end on CPU.
@@ -20,7 +22,7 @@ For local development without a GPU, `RuleBasedCPUPlannerBackend` (`mode_name = 
 
 ## 2. Magnitude & Risk Controller Head (`scripts/functional_v21/head.py`)
 
-The semantic backbone (`r15`) determines **whether** to edit/keep/decline, **which** tools to activate, and **in which direction** (sign). The frozen `r15` adapter is then paired with a 463,754-parameter MLP (`Head`) trained on 925 bilingual semantic pairs:
+The Semantic Backbone determines **whether** to edit/keep/decline, **which** tools to activate, and **in which direction** (sign). The frozen backbone adapter is then paired with a 463,754-parameter MLP (`Head`) trained on 925 bilingual semantic pairs:
 
 - **Inputs (3,612-D)**:
   - `3584-D` RMS-normalized last-token hidden state from the frozen 7B backbone
@@ -45,7 +47,7 @@ Key invariants verified by `tests/test_runtime.py`:
 - **Source-Anchored Re-Rendering**: `SessionState` stores the immutable `source.png` and a stack of turn snapshots. Every turn updates `current_params` and calls `edit(source_rgb, current_params, "bounded-fixed")` directly from the original pixels.
 - **Zero Cumulative Degradation**: Multi-turn adjustments, undo (`steps_back`), checkout to any historical turn, and reset (`turn 0`) never re-encode intermediate outputs.
 - **Exact No-Op Guarantee**: Empty parameter dicts or `keep` actions return bit-identical RGB pixels.
-- **Shared-Luminance Shadow Gain (`v15`)**: Shadows are lifted using a shared luminance gain mask rather than per-channel gamma, reducing gray haze and hue shifts in dark regions.
+- **Shared-Luminance Shadow Gain**: Shadows are lifted using a shared luminance gain mask rather than per-channel gamma, reducing gray haze and hue shifts in dark regions.
 
 ---
 

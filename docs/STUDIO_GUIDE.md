@@ -3,7 +3,7 @@
 **IEA Studio** (`scripts/iea_studio/`) is a darkroom-inspired Flask web application with two integrated modes:
 
 1. **Conversational Retouching Workspace (Default View)**: Multi-turn natural language photo editing with lossless version timeline, split before/after slider, 1:1 pixel viewer, 9-parameter telemetry, guardrail status badge, and ZIP session export.
-2. **Baseline Comparison View**: Side-by-side bilingual (`zh` / `en`) evaluation workbench comparing **IEA Core (`r15 + r21_head`)**, **No-Controller Ablation (`r15`)**, and **Early Functional Baseline (`r1`)**, with optional blind-test mode and structured feedback export.
+2. **Baseline Comparison View**: Side-by-side bilingual (`zh` / `en`) evaluation workbench comparing **IEA Core (Semantic Backbone + Controller Head)**, the **Backbone-Only Ablation**, and the **Early Functional Baseline**, with optional blind-test mode and structured feedback export.
 
 ---
 

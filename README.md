@@ -8,7 +8,7 @@
 **IEA (Interactive Image Editing Agent)** is a multi-turn conversational global photo-editing system built on [`Qwen2.5-VL-7B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct). It couples a dual-mode Vision-Language Model (zero-VRAM adapter toggling on a single 7B base), a lightweight magnitude & risk controller head, a deterministic 9-slider non-destructive rendering engine, and a two-stage self-check loop (CPU hard-metric guardrails + VLM visual Critic) inside an interactive darkroom Web Studio.
 
 > [!NOTE]
-> **Research Prototype Status (`production_qualified: false`)**: While the primary controller configuration (`seed 20261205 / e20`) improves controlled development pass rate from `75/100` to `82/100` (with 0 major artifacts vs. 1), cross-seed replication (`seed 20261206`) failed to reliably prevent night-scene noise amplification. See [Evaluation & Limitations](docs/EVALUATION.md) for full empirical findings.
+> **Research Prototype Status (`production_qualified: false`)**: The primary configuration (Semantic Backbone + Controller Head) improves the controlled development pass rate from `75/100` to `82/100` with 0 major artifacts (vs. 1 for the backbone-only ablation). However, an independent replication run of the Controller Head failed to reliably prevent night-scene noise amplification. See [Evaluation & Limitations](docs/EVALUATION.md) for the full empirical findings.
 
 ---
 
@@ -16,7 +16,7 @@
 
 - **Single-Model Dual-Mode Inference (`DualModeVLMBackend`)**: Uses PEFT `disable_adapter()` for native VLM conversational planning and visual critique, and enables the trained LoRA + controller head for structured parameter prediction—with zero extra base-model VRAM.
 - **9-Dimensional Deterministic Non-Destructive Renderer**: Every turn re-renders directly from the immutable original RGB image (`source_rgb`) using cumulative parameters (`exposure`, `brightness`, `contrast`, `highlights`, `shadows`, `saturation`, `temperature`, `tint`, `sepia`), preventing cumulative compression or quantization drift across multi-turn edits.
-- **Magnitude & Quality-Risk Controller Head (`functional_v21`)**: A 463,754-parameter MLP over frozen 3584-D hidden states, 16 image statistics, and 12 local luminance/chroma texture residuals that calibrates adjustment strength and flags high-risk inputs (`unreliable_quality`).
+- **Magnitude & Quality-Risk Controller Head**: A 463,754-parameter MLP over frozen 3584-D hidden states, 16 image statistics, and 12 local luminance/chroma texture residuals that calibrates adjustment strength and flags high-risk inputs (`unreliable_quality`).
 - **Two-Stage Self-Check Loop**: Post-render CPU hard-metric guardrails (`evaluate_cpu_guardrail`) check highlight clipping, shadow crushing, and contrast collapse in milliseconds, followed by a VLM Critic check. Failures attenuate deltas (`0.6×`, up to 2 retries) or roll back cleanly.
 - **Darkroom Web Studio (`iea_studio`)**: Multi-turn chat workspace with before/after split slider, lossless turn timeline checkout/undo/reset, parameter telemetry, sample gallery, and a side-by-side bilingual baseline comparison view. Runs out of the box on CPU in deterministic demo mode (`cpu_rule_fallback`).
 
@@ -37,7 +37,7 @@ User Photo + Multi-Turn Natural Language
    │  • Semantic backbone selects active tools & adjustment directions
    │  • Controller head calibrates 9-D magnitudes & predicts quality risk
    ▼
-[3. Non-Destructive Renderer]  (functional_v15 bounded-fixed editor)
+[3. Non-Destructive Renderer]  (deterministic bounded-fixed editor)
    │  • Always renders from immutable source_rgb + cumulative parameters
    ▼
 [4. Two-Stage Self-Check Loop]  (CPU Guardrails + Visual VLM Critic)
@@ -53,15 +53,15 @@ For mathematical details, tensor contracts, and module interfaces, see [docs/ARC
 
 All model paths, SHA256 digests, and semantic aliases are defined in [`models/mainline.json`](models/mainline.json).
 
-| Tier | Component | Directory Alias | Summary & Key Observations |
+| Tier | Component | Semantic Alias | Summary & Key Observations |
 |---|---|---|---|
-| **Core Backbone** | Semantic Decision Backbone (`r15`) | `models/core/semantic_backbone` | LoRA adapter (`seed 20261127`, epoch 1) + shared-luminance shadow-gain editor |
-| **Core Controller** | Magnitude & Risk Head (`r21_head`) | `models/core/controller_head` | 463K-param MLP (`seed 20261205`, epoch 20); primary seed `82/100` controlled dev (`16/20` raw dev, `5/6` legacy regression, 0 major artifacts), **cross-seed replication failed** |
-| **Ablation Baseline** | No-Controller Backbone (`r15`) | `models/baselines/ablation_no_controller` | Semantic backbone without controller head (`75/100` controlled dev, 1 major saturation artifact) |
-| **Functional Baseline** | Early Functional Baseline (`r1`) | `models/baselines/early_functional_baseline` | First-generation bilingual functional LoRA (`31/50` frozen acceptance vs. `15/50` legacy baseline) |
-| **SFT Baseline** | Calibrated SFT (`calibrated_sft`) | `models/baselines/early_calibrated_sft` | 3k parameter-calibrated SFT baseline (`-9.46%` L1 vs. Stage A on 71 images) |
+| **Core** | Semantic Backbone | `models/core/semantic_backbone` | LoRA adapter selecting active tools & adjustment directions; paired with the shared-luminance shadow-gain renderer |
+| **Core** | Controller Head | `models/core/controller_head` | 463K-param MLP calibrating magnitudes & predicting quality risk; primary configuration reaches `82/100` controlled dev (`16/20` raw dev, `5/6` legacy regression, 0 major artifacts), **independent replication failed** |
+| **Baseline** | Backbone-Only Ablation | `models/baselines/ablation_no_controller` | Semantic Backbone without the Controller Head (`75/100` controlled dev, 1 major saturation artifact) |
+| **Baseline** | Early Functional Baseline | `models/baselines/early_functional_baseline` | First-generation bilingual functional LoRA (`31/50` frozen acceptance vs. `15/50` for the Calibrated SFT Baseline) |
+| **Baseline** | Calibrated SFT Baseline | `models/baselines/early_calibrated_sft` | 3k parameter-calibrated SFT baseline (`-9.46%` L1 vs. Stage A on 71 images) |
 
-Detailed ablation tables, dataset provenance, and failure-mode analyses are documented in [docs/EVALUATION.md](docs/EVALUATION.md).
+Detailed ablation tables, dataset provenance, and failure-mode analyses are documented in [docs/EVALUATION.md](docs/EVALUATION.md). Training seeds, checkpoints, internal version IDs, and physical archive paths are mapped in [docs/MODEL_VERSIONS.md](docs/MODEL_VERSIONS.md).
 
 ---
 
@@ -144,7 +144,7 @@ Practice-for-IEA/
 │   ├── iea_agent/            # Multi-turn agent orchestrator, dual-mode backend, guardrails, state stack
 │   ├── iea_studio/           # Darkroom Web Studio (Flask backend + HTML/CSS/JS frontend)
 │   ├── project/              # Repository layout & SHA256 integrity verification (`assets.py`)
-│   ├── functional_v1..v21/   # Frozen protocol modules, deterministic editors, & controller head
+│   ├── functional_v1..v21/   # Versioned research protocols (frozen), renderer, & controller head
 │   └── goal_v2_*, stage2_*   # Historical training & evaluation scripts
 ├── models/
 │   ├── core/                 # Symlinks to core semantic backbone & controller head
@@ -169,7 +169,8 @@ Practice-for-IEA/
 
 - [Architecture & Design](docs/ARCHITECTURE.md) — Dual-mode VLM toggling, controller head, 9-tool editor math, and guardrails
 - [Studio & Web UI Guide](docs/STUDIO_GUIDE.md) — Multi-turn workspace, comparison mode, and REST API reference
-- [Evaluation & Limitations](docs/EVALUATION.md) — Ablations, dataset composition, and cross-seed replication analysis
+- [Evaluation & Limitations](docs/EVALUATION.md) — Ablations, dataset composition, and replication analysis
+- [Model Versions & Provenance](docs/MODEL_VERSIONS.md) — Component ↔ version mapping, training recipes, and experiment record index
 - [Reproducibility & Weight Setup](docs/REPRODUCIBILITY.md) — Base model setup, weight verification, and training protocols
 - [Contributing Guide](CONTRIBUTING.md) — Development workflow and frozen-protocol boundaries
 

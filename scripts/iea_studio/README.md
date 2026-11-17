@@ -9,7 +9,7 @@ Web workspace combining a **multi-turn conversational retouching studio** (defau
    - Runs in `cpu_rule_fallback` mode out of the box without a GPU, or switches to `gpu_dual_mode` (`--enable-agent-vlm --device cuda`) when the 7B base + weights are configured.
    - Executes post-render highlight/shadow/contrast guardrails and Critic checks, attenuating or rolling back risky edits automatically.
 2. **Baseline Comparison**:
-   - Compares **IEA Core (`r15 + r21_head`)**, **No-Controller Ablation (`r15`)**, and **Early Functional Baseline (`r1`)** side by side across Chinese & English prompts, with optional blind-test mode and 1:1 pixel inspection.
+   - Compares **IEA Core (Semantic Backbone + Controller Head)**, the **Backbone-Only Ablation**, and the **Early Functional Baseline** side by side across Chinese & English prompts, with optional blind-test mode and 1:1 pixel inspection.
 
 ## Quick Launch & Testing
 

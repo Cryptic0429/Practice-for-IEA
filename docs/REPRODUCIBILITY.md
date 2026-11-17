@@ -36,10 +36,10 @@ To enable `DualModeVLMBackend` (`--enable-agent-vlm --device cuda`):
      --revision cc594898137f460bfe9f0759e9844b3ce807cfb5 \
      --local-dir models/Qwen2.5-VL-7B-Instruct
    ```
-2. **Place Trained Adapters & Controller Head** at the canonical paths specified in [`models/mainline.json`](../models/mainline.json):
-   - `models/from-functional-v11/sft-shadow-correction/seed-01/adapter_model.safetensors` (`sha256: 97c84f1799fb...`)
-   - `models/from-functional-v15/semantic-preserving-controller/seed-01/controller.pt` (`sha256: 838342a21670...`)
-   - *(Optional baselines)* `models/from-sft-calibrated/sft-functional/seed-01/adapter_model.safetensors` and `models/from-sft-standard/sft-calibrated/seed-02/adapter_model.safetensors`
+2. **Place Trained Adapters & Controller Head** under the semantic aliases (symlinks that resolve to the canonical archive paths in [`models/mainline.json`](../models/mainline.json), where expected SHA256 digests are listed):
+   - `models/core/semantic_backbone/adapter_model.safetensors` — Semantic Backbone LoRA
+   - `models/core/controller_head/controller.pt` — Controller Head
+   - *(Optional baselines)* `models/baselines/early_functional_baseline/adapter_model.safetensors` and `models/baselines/early_calibrated_sft/adapter_model.safetensors`
 3. **Verify Binary Checksums**:
    ```bash
    make verify-strict
@@ -51,14 +51,9 @@ To enable `DualModeVLMBackend` (`--enable-agent-vlm --device cuda`):
 
 ## 3. Training Recipes (Reference)
 
-| Stage | Initialization | Recipe Summary | Entrypoint |
-|---|---|---|---|
-| `calibrated_sft` | Stage A | 3,000 samples, `lr=1e-4`, 1,024 steps, `seed=20261104`, 50/50 weight average (ckpt 512 & 1024) | `scripts/goal_v2_train_json3k_long.py` |
-| `r1` | `calibrated_sft` | 440 bilingual records, 4 epochs, `lr=1e-4`, effective batch 4, NF4 QLoRA (`r=8, alpha=16`) | `python -m functional_v1.train --start current --gpu 0 --seed 20261104` |
-| `r15` | `r11` final | 1,850 bilingual records, 2 epochs (926 steps), `lr=5e-5`, batch 4, `seed=20261127` | `python -m functional_v15.train --route language_merger --gpu 0 --seed 20261127` |
-| `r21_head` | Frozen `r15` | 925 semantic pairs, CPU MLP (`463,754` params), 80 epochs, `lr=1e-3`, `seed=20261205` (e20) | `python -m functional_v21.train --seed 20261205` |
+Per-component training recipes, initialization lineage, seeds, selected checkpoints, and entrypoint commands are documented in [Model Versions & Provenance §4](MODEL_VERSIONS.md#4-training-recipes), alongside the [experiment record index](MODEL_VERSIONS.md#5-experiment-record-index).
 
-*Lineage Note*: `r15` was initialized from `r11` (reflected in the physical directory prefix `from-functional-v11`), **not** directly from `r1`. At inference time, only a single final LoRA adapter is loaded onto the frozen 7B base—ancestor LoRAs are never stacked.
+*Lineage Note*: the Semantic Backbone was initialized from an intermediate protocol checkpoint, **not** directly from the Early Functional Baseline (this is what the `from-functional-v11` archive prefix records). At inference time, only a single final LoRA adapter is loaded onto the frozen 7B base—ancestor LoRAs are never stacked.
 
 ---
 

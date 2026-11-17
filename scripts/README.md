@@ -8,8 +8,10 @@
 
 ## Frozen Protocol & Legacy Research Modules
 
-- `functional_v15/`: Core semantic backbone training/evaluation protocol and shared-luminance shadow-gain renderer (`editor.py`).
-- `functional_v21/`: Magnitude & risk controller head (`head.py`), texture residual extractor (`texture.py`), strict composition contract (`compose()`), and training/evaluation scripts.
+These directories carry internal protocol version numbers; the mapping to public component names is in [Model Versions & Provenance](../docs/MODEL_VERSIONS.md#3-protocol-module-map-scripts).
+
+- `functional_v15/`: Semantic Backbone training/evaluation protocol and the shared-luminance shadow-gain renderer (`editor.py`) used at runtime.
+- `functional_v21/`: Controller Head (`head.py`), texture residual extractor (`texture.py`), strict composition contract (`compose()`), and training/evaluation scripts.
 - `functional_v1/` – `functional_v20/`: Historical protocol modules retained byte-exact to preserve the 191 SHA256 code checks in `make verify`.
 - `goal_v2_*`, `stage2_*`, `evaluation_core.py`: Historical calibration and RL training/audit scripts.
 
